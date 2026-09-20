@@ -240,6 +240,14 @@ def make_microduck_double_balance_env_cfg(
     cfg.decimation = _decimation_for(dt)
     cfg.sim.nconmax = max(getattr(cfg.sim, "nconmax", 0) or 0, 256)
 
+    # The inherited guard only watches the robot.  Both balls have free joints,
+    # and a contact blow-up in either one must recycle the environment before
+    # Stage-04 observations or rewards consume a non-finite state.
+    cfg.terminations["nan_state"].params["extra_entity_names"] = (
+        "ball",
+        "top_ball",
+    )
+
     original_spawn = cfg.events.pop("reset_basketball")
     original_spawn.func = microduck_mdp.reset_double_balance
     original_spawn.params.update(

@@ -970,6 +970,7 @@ def robot_state_is_nan(
     env: ManagerBasedRlEnv,
     asset_cfg: SceneEntityCfg = _DEFAULT_ASSET_CFG,
     sensor_names: tuple[str, ...] = (),
+    extra_entity_names: tuple[str, ...] = (),
 ) -> torch.Tensor:
     """Terminate environments where MuJoCo produced NaN joint positions.
 
@@ -996,14 +997,22 @@ def robot_state_is_nan(
     l'entraînement. On teste la non-finitude (NaN ET inf, l'inf devenant NaN en
     aval lors de la normalisation de projected_gravity).
     """
+    def _bad_entity_state(asset: Entity) -> torch.Tensor:
+        d = asset.data
+        bad_state = ~torch.isfinite(d.joint_pos).all(dim=1)
+        bad_state |= ~torch.isfinite(d.joint_vel).all(dim=1)
+        bad_state |= ~torch.isfinite(d.root_link_pos_w).all(dim=1)
+        bad_state |= ~torch.isfinite(d.root_link_quat_w).all(dim=1)
+        bad_state |= ~torch.isfinite(d.root_link_lin_vel_w).all(dim=1)
+        bad_state |= ~torch.isfinite(d.root_link_ang_vel_w).all(dim=1)
+        return bad_state
+
     asset: Entity = env.scene[asset_cfg.name]
-    d = asset.data
-    bad = ~torch.isfinite(d.joint_pos).all(dim=1)
-    bad |= ~torch.isfinite(d.joint_vel).all(dim=1)
-    bad |= ~torch.isfinite(d.root_link_pos_w).all(dim=1)
-    bad |= ~torch.isfinite(d.root_link_quat_w).all(dim=1)
-    bad |= ~torch.isfinite(d.root_link_lin_vel_w).all(dim=1)
-    bad |= ~torch.isfinite(d.root_link_ang_vel_w).all(dim=1)
+    bad = _bad_entity_state(asset)
+    for entity_name in extra_entity_names:
+        if entity_name == asset_cfg.name:
+            continue
+        bad |= _bad_entity_state(env.scene[entity_name])
 
     # Contact FORCES can blow up a step before qpos/qvel do: MuJoCo resolves a
     # degenerate contact into an inf/NaN impulse while the integrated state is

@@ -105,6 +105,37 @@ def test_actor_observation_contract_is_not_extended(cfg):
     assert all("top_ball" not in name for name in derived_terms)
 
 
+def test_nan_guard_covers_both_free_ball_entities(cfg):
+    nan_guard = cfg.terminations["nan_state"]
+    assert nan_guard.func is microduck_mdp.robot_state_is_nan
+    assert nan_guard.params["extra_entity_names"] == ("ball", "top_ball")
+
+    def finite_entity():
+        return SimpleNamespace(
+            data=SimpleNamespace(
+                joint_pos=torch.zeros(2, 1),
+                joint_vel=torch.zeros(2, 1),
+                root_link_pos_w=torch.zeros(2, 3),
+                root_link_quat_w=torch.tensor([[1.0, 0.0, 0.0, 0.0]] * 2),
+                root_link_lin_vel_w=torch.zeros(2, 3),
+                root_link_ang_vel_w=torch.zeros(2, 3),
+            )
+        )
+
+    class FakeScene(dict):
+        sensors = {}
+
+    scene = FakeScene(
+        robot=finite_entity(), ball=finite_entity(), top_ball=finite_entity()
+    )
+    scene["top_ball"].data.root_link_lin_vel_w[1, 0] = float("inf")
+    env = SimpleNamespace(scene=scene)
+    bad = microduck_mdp.robot_state_is_nan(
+        env, extra_entity_names=("ball", "top_ball")
+    )
+    torch.testing.assert_close(bad, torch.tensor([False, True]))
+
+
 def test_tray_is_explicit_fixed_child_with_full_dimensions(model):
     tray_body = model.body(f"robot/{TRAY_BODY_NAME}").id
     jaw_body = model.body("robot/jaw_soft").id
