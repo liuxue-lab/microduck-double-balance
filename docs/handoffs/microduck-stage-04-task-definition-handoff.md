@@ -368,14 +368,22 @@ Stage 05 应完成：
    SHA-256；模型文件仍不进入 Git。
 2. 审计 checkpoint 中 Actor、critic、normalizer 和 LSTM 状态字典的真实键名与
    形状，不根据经验猜测。
-3. Actor 输入仍为 61 维，应直接保持原形状。理想中心静止上球状态为六个零，
-   在其他输入和 LSTM 状态相同时，新旧 Actor 动作必须数值一致。
+3. Actor 输入仍为 61 维，但原第 55–60 列只接收恒零填充，其 LSTM 输入权重仍是
+   未训练的随机初始化值，且 normalizer 的方差和标准差均为 0。迁移时必须将这
+   6 列 normalizer 重置为零均值、单位方差/标准差，并将对应 LSTM 输入列置零。
+   理想中心静止上球状态为六个零；在其他输入和 LSTM 状态相同时，新旧 Actor
+   动作及隐状态必须逐步数值一致。迁移初始时，任意上球输入也不得通过旧随机
+   权重扰动继承策略。
 4. critic 输入从 76 增至 85。保留旧 76 列，新增 9 列显式零初始化；不能静默
    丢弃旧 critic，也不能把 Actor 一致性误写成整个 PPO checkpoint 完全一致。
 5. 对 normalizer 做同样的 61/85 维审计和迁移，新增 critic 维采用零均值、单位
    方差或与框架状态一致的中性初始化，并用测试锁定。
-6. 生成合成观测序列，比较旧 Actor 与迁移后 Actor 的逐步动作和 LSTM 隐状态。
-7. 只做加载、迁移和数值一致性，不运行 PPO；训练 smoke 属于 Stage 06。
+6. 原 Adam 保存了 21 项旧任务 moments，学习率已衰减到 `2e-5`。迁移时显式
+   清空 moments、保留参数分组并把学习率恢复为当前配置的 `1e-3`；不得让变宽
+   critic 携带形状不匹配的旧 optimizer 状态，也不得静默沿用末期学习率。
+7. 生成合成观测序列，比较旧 Actor 与迁移后 Actor 的逐步动作和 LSTM 隐状态，
+   并比较旧 critic 与迁移后 critic 在任意新增 9 维输入下的 value 输出。
+8. 只做加载、迁移和数值一致性，不构建或运行 PPO；训练 smoke 属于 Stage 06。
 
 ## 15. Stage 05 验收建议
 
@@ -387,6 +395,9 @@ CriticInputMigrated76To85=PASS
 NormalizerMigration=PASS
 ZeroTopBallActorActionParity=PASS
 LstmHiddenStateParity=PASS
+ActorNewInputIsolation=PASS
+CriticValueParity=PASS
+OptimizerRebuilt=PASS
 OriginalCheckpointUnmodified=PASS
 NoPpoTraining=PASS
 FullCpuTestSuite=PASS
