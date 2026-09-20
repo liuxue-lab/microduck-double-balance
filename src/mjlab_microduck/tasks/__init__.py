@@ -336,3 +336,19 @@ register_mjlab_task(
     rl_cfg=MicroduckBasketballRlCfg,
     runner_cls=MicroduckOnPolicyRunner,
 )
+
+# Stage-03 double-balance physics scene: released basketball stack plus a
+# rimless head tray and one unconstrained top ball.  Policy-facing additions
+# are intentionally deferred to Stage 04.
+from mjlab_microduck.tasks.microduck_double_balance_env_cfg import (  # noqa: E402
+    MicroduckDoubleBalanceRlCfg,
+    make_microduck_double_balance_env_cfg,
+)
+
+register_mjlab_task(
+    task_id="Mjlab-DoubleBalance-MicroDuck",
+    env_cfg=make_microduck_double_balance_env_cfg(),
+    play_env_cfg=make_microduck_double_balance_env_cfg(play=True),
+    rl_cfg=MicroduckDoubleBalanceRlCfg,
+    runner_cls=MicroduckOnPolicyRunner,
+)

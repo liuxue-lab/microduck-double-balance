@@ -8224,6 +8224,75 @@ def reset_basketball(
     _tug_place_duck(env, "robot", env_ids, xy, z, yaw, tilt_noise_deg, joint_noise)
 
 
+def reset_double_balance(
+    env: ManagerBasedRlEnv,
+    env_ids: torch.Tensor,
+    ball_radius: float = 0.12,
+    root_height: float = 0.125,
+    xy_noise: float = 0.01,
+    yaw_range: tuple[float, float] = (-math.pi, math.pi),
+    tilt_noise_deg: float = 2.0,
+    joint_noise: float = 0.05,
+    ball_vel_noise: float = 0.0,
+    top_ball_radius: float = 0.02,
+    tray_site_name: str = "double_balance_tray_frame",
+    top_ball_xy_noise: float = 0.0,
+    top_ball_clearance: float = 0.0005,
+) -> None:
+    """Reset the lower stack first, then place the free top ball from the tray.
+
+    The tray is a fixed child of ``jaw_soft``, so its world pose depends on the
+    freshly written robot root and joint state.  An explicit forward pass is
+    required between those writes and the tray-frame read; without it the top
+    ball would be placed from the previous episode's head pose.  The outer env
+    reset performs its normal final forward pass after the top-ball write.
+    """
+    reset_basketball(
+        env,
+        env_ids,
+        ball_radius=ball_radius,
+        root_height=root_height,
+        xy_noise=xy_noise,
+        yaw_range=yaw_range,
+        tilt_noise_deg=tilt_noise_deg,
+        joint_noise=joint_noise,
+        ball_vel_noise=ball_vel_noise,
+    )
+
+    # Refresh jaw/tray kinematics after reset_basketball wrote root and joints.
+    # This is intentionally the only intermediate forward in the reset chain.
+    env.sim.forward()
+    robot: Entity = env.scene["robot"]
+    top_ball: Entity = env.scene["top_ball"]
+    tray_site_ids, _ = robot.find_sites(tray_site_name)
+    if len(tray_site_ids) != 1:
+        raise ValueError(
+            f"Expected exactly one tray site named {tray_site_name!r}, "
+            f"found {len(tray_site_ids)}"
+        )
+    tray_pose = robot.data.site_pose_w[env_ids, tray_site_ids[0]]
+
+    n, dev = len(env_ids), env.device
+    local_offset = torch.zeros(n, 3, device=dev)
+    if top_ball_xy_noise > 0.0:
+        local_offset[:, :2] = (
+            torch.rand(n, 2, device=dev) * 2.0 - 1.0
+        ) * top_ball_xy_noise
+    local_offset[:, 2] = top_ball_radius + top_ball_clearance
+    top_pos = tray_pose[:, :3] + _quat_rotate(tray_pose[:, 3:7], local_offset)
+
+    top_quat = torch.zeros(n, 4, device=dev)
+    top_quat[:, 0] = 1.0
+    top_ball.write_root_link_pose_to_sim(
+        torch.cat((top_pos, top_quat), dim=-1), env_ids=env_ids
+    )
+    # A reset must clear every residual translational and angular velocity.  No
+    # action term or event applies a wrench to this entity afterwards.
+    top_ball.write_root_link_velocity_to_sim(
+        torch.zeros(n, 6, device=dev), env_ids=env_ids
+    )
+
+
 # --- ball hold (difficulty axis) ------------------------------------------------------
 
 
