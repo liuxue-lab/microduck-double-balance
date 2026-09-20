@@ -52,7 +52,7 @@ from mjlab_microduck.tasks.microduck_velocity_env_cfg import (
 # Size-7 basketball: 0.24 m, 0.62 kg.  MICRODUCK_BB_BALL_RADIUS for other balls.
 BALL_RADIUS = float(os.getenv("MICRODUCK_BB_BALL_RADIUS", "0.12"))
 BALL_MASS = 0.62
-BALL_FRICTION = (1.2, 0.01, 0.001)  # sliding, rolling, torsional (rubber on a hall floor)
+BALL_FRICTION = (1.2, 0.01, 0.001)  # sliding, torsional, rolling (rubber on a hall floor)
 BALL_RGBA = (0.91, 0.42, 0.12, 1.0)
 ROOT_HEIGHT = 0.125  # duck root above the sole plane when standing (velocity spawn z)
 EPISODE_LENGTH_S = 10.0

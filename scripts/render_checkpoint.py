@@ -106,7 +106,7 @@ def main(cfg: Cfg) -> None:
         rmodel.vis.map.fogstart, rmodel.vis.map.fogend = start, end
         rmodel.vis.rgba.fog[:] = [0.17, 0.23, 0.34, 1.0]  # the floor's far tone
     names = tuple(n for n in cfg.entities.split(",") if n and "trunk_base" in raw_env.scene[n].body_names)
-    effects = CrashEffects(raw_env, entity_names=names, ground_only=False) if cfg.effects and names else None
+    effects = CrashEffects(raw_env, entity_names=names) if cfg.effects and names else None
     from mjlab.utils.wrappers import VideoRecorder
 
     steps = round(cfg.duration_s / raw_env.step_dt)
