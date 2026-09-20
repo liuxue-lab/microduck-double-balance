@@ -411,14 +411,73 @@ Stage 06 应完成：
 Stage 06 只验证训练链路可运行，不能把 5 iteration 的结果写成正式训练性能，
 也不能报告双重平衡正式成功率。首次带辅助课程训练属于 Stage 07。
 
-## 14. 下一对话接续提示词
+## 14. 固定本地提交、下载与 SSH 推送规范
+
+后续所有阶段必须继续使用：
+
+```text
+docs/handoffs/microduck-local-ssh-push-protocol.md
+```
+
+固定位置与远端：
+
+```text
+LocalRepository=/home/lx/microduck-double-balance/workspace
+DownloadDirectory=/home/lx/下载
+OriginSSH=git@github.com:liuxue-lab/microduck-double-balance.git
+Branch=double-balance
+```
+
+桌面端 Codex 直接在本地仓库完成代码、测试、交接文档、提交和注释标签，但不
+代替用户推送。用户按既有 SSH 方式执行：
+
+```bash
+cd /home/lx/microduck-double-balance/workspace
+git push origin double-balance
+git push origin stage-XX-complete
+```
+
+网页端或隔离环境无法直接写入用户本地仓库时，才提供增量 Git bundle，用户下载
+到 `/home/lx/下载` 后导入。Stage 05 的固定实例是：
+
+```text
+/home/lx/下载/microduck-stage-05-from-stage-04.bundle
+```
+
+```bash
+cd /home/lx/microduck-double-balance/workspace
+
+git bundle verify /home/lx/下载/microduck-stage-05-from-stage-04.bundle
+
+git fetch /home/lx/下载/microduck-stage-05-from-stage-04.bundle \
+  refs/heads/double-balance:refs/remotes/stage05/double-balance \
+  refs/tags/stage-05-complete:refs/tags/stage-05-complete
+
+git switch double-balance
+git merge --ff-only refs/remotes/stage05/double-balance
+
+git push origin double-balance
+git push origin stage-05-complete
+```
+
+正常出现分支更新和 `[new tag]` 后即接受推送成功，不再要求用户每个阶段重复完整
+远端验收。仅在 push 报错、non-fast-forward、标签冲突、SHA 不一致、bundle
+导入结果不确定或用户明确要求时执行一次远端核验。
+
+常见故障的固定处理已集中写入长期规范，包括：`Everything up-to-date` 但本地仍
+停在上一阶段、`src refspec ... does not match any`、标签不存在、HTTPS 密码
+提示、SSH key 未加载、non-fast-forward、标签冲突和 bundle 下载路径错误。
+
+后续交接文档不得删除或替换本节及长期规范的引用。
+
+## 15. 下一对话接续提示词
 
 ```text
 请完整读取 microduck-stage-05-checkpoint-migration-handoff.md，先核验 stage-05-complete 标签、迁移检查点 SHA-256 和工作树状态，然后开始 Stage 06。
 
 本阶段只使用迁移检查点完成真实 runner 严格加载、64 环境 5 iteration PPO smoke、保存与重载检查点及云端规模预检。不要启动正式长期训练，不要修改 Stage 03 物理参数或 Stage 04 任务定义，不要把 smoke 结果写成双重平衡成功率。
 
-完成 Stage 06 全部验收、交接文档、提交、stage-06-complete 标签和远端推送后结束对话。
+完成 Stage 06 全部验收、交接文档、本地提交和 stage-06-complete 注释标签后停止。保留并遵守 docs/handoffs/microduck-local-ssh-push-protocol.md，由用户使用既有 SSH 远端推送；正常推送成功后不要重复要求完整远端验收。
 ```
 
 交接结束。

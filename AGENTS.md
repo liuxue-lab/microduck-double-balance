@@ -23,6 +23,27 @@ uv run --with pytest pytest tests/
 A 5-iteration smoke test at 64 envs catches ~95% of config errors for cents.
 Never launch a long run without one.
 
+## Local Git handoff and push convention
+
+- The canonical local checkout is
+  `/home/lx/microduck-double-balance/workspace`; the canonical download
+  directory is `/home/lx/下载`.
+- Stage-end code, tests, documentation, commits, and annotated tags are created
+  locally. Stop before pushing: the user pushes with the existing SSH remote
+  `git@github.com:liuxue-lab/microduck-double-balance.git`.
+- Never switch this repository to HTTPS authentication or ask for a GitHub
+  password/PAT merely to publish a stage.
+- When work was produced in an isolated web/cloud workspace, export an
+  incremental Git bundle. The user downloads it to `/home/lx/下载`, imports it
+  into the canonical checkout, and then performs the same SSH push.
+- A normal successful `git push` result is sufficient. Do not repeatedly ask
+  the user to run the full remote verification block. Verify remotely only
+  after an error, a non-fast-forward/mismatch, an uncertain imported ref, or an
+  explicit user request.
+- Every stage handoff must retain a reference to
+  `docs/handoffs/microduck-local-ssh-push-protocol.md` and must not replace its
+  conventions with a new ad-hoc upload procedure.
+
 ## Repo map
 
 - `src/mjlab_microduck/tasks/mdp.py` — ALL custom MDP functions (rewards, events,
