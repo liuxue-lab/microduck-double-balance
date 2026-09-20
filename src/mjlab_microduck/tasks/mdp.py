@@ -8140,6 +8140,367 @@ def basketball_state(env: ManagerBasedRlEnv, pos_scale: float = 3.0, vel_scale: 
     return torch.nan_to_num(obs, nan=0.0, posinf=0.0, neginf=0.0)
 
 
+def _double_balance_top_ball_kinematics(
+    env: ManagerBasedRlEnv,
+    tray_site_name: str = "double_balance_tray_frame",
+) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
+    """Return top-ball position, relative velocity, and angular velocity in tray axes."""
+    from mjlab.utils.lab_api.math import quat_apply_inverse
+
+    robot = env.scene["robot"]
+    top_ball = env.scene["top_ball"]
+    tray_site_id = _double_balance_tray_site_id(
+        env, tray_site_name=tray_site_name
+    )
+
+    tray_pose = robot.data.site_pose_w[:, tray_site_id]
+    tray_lin_vel = robot.data.site_lin_vel_w[:, tray_site_id]
+    tray_quat = tray_pose[:, 3:7]
+    position_tray = quat_apply_inverse(
+        tray_quat,
+        top_ball.data.root_link_pos_w - tray_pose[:, :3],
+    )
+    velocity_tray = quat_apply_inverse(
+        tray_quat,
+        top_ball.data.root_link_lin_vel_w - tray_lin_vel,
+    )
+    angular_velocity_tray = quat_apply_inverse(
+        tray_quat,
+        top_ball.data.root_link_ang_vel_w,
+    )
+    return tuple(
+        torch.nan_to_num(value, nan=0.0, posinf=0.0, neginf=0.0)
+        for value in (position_tray, velocity_tray, angular_velocity_tray)
+    )
+
+
+def _double_balance_tray_site_id(
+    env: ManagerBasedRlEnv,
+    tray_site_name: str = "double_balance_tray_frame",
+) -> int:
+    """Resolve the single tray site once per environment and robot instance."""
+    robot = env.scene["robot"]
+    cache = env.__dict__.setdefault("_double_balance_tray_site_ids", {})
+    cache_key = (id(robot), tray_site_name)
+    tray_site_id = cache.get(cache_key)
+    if tray_site_id is None:
+        site_ids, _ = robot.find_sites(tray_site_name)
+        if len(site_ids) != 1:
+            raise ValueError(
+                f"Expected exactly one tray site named {tray_site_name!r}, "
+                f"found {len(site_ids)}"
+            )
+        tray_site_id = site_ids[0]
+        cache[cache_key] = tray_site_id
+    return tray_site_id
+
+
+def double_balance_top_ball_actor_state(
+    env: ManagerBasedRlEnv,
+    tray_site_name: str = "double_balance_tray_frame",
+    ball_radius: float = 0.02,
+    position_scale: tuple[float, float, float] = (20.0, 25.0, 50.0),
+    velocity_scale: float = 2.0,
+) -> torch.Tensor:
+    """Six normalized oracle features occupying the existing body-command slot.
+
+    Layout is ``[x/0.05, y/0.04, (z-R)/0.02, vx/0.5, vy/0.5, vz/0.5]``
+    in tray coordinates.  It is a simulation baseline and an estimator-facing
+    interface, not a claim that the current robot measures the ball directly.
+    """
+    position, velocity, _ = _double_balance_top_ball_kinematics(
+        env, tray_site_name=tray_site_name
+    )
+    centered_position = position.clone()
+    centered_position[:, 2] -= ball_radius
+    scaled_position = torch.stack(
+        tuple(
+            centered_position[:, index] * value
+            for index, value in enumerate(position_scale)
+        ),
+        dim=-1,
+    )
+    return torch.cat(
+        (scaled_position, velocity * velocity_scale), dim=-1
+    )
+
+
+def double_balance_top_ball_critic_state(
+    env: ManagerBasedRlEnv,
+    tray_site_name: str = "double_balance_tray_frame",
+    ball_radius: float = 0.02,
+    position_scale: tuple[float, float, float] = (20.0, 25.0, 50.0),
+    velocity_scale: float = 2.0,
+    angular_velocity_scale: float = 0.2,
+) -> torch.Tensor:
+    """Actor's six top-ball features plus privileged angular velocity (3)."""
+    position, velocity, angular_velocity = _double_balance_top_ball_kinematics(
+        env, tray_site_name=tray_site_name
+    )
+    centered_position = position.clone()
+    centered_position[:, 2] -= ball_radius
+    scaled_position = torch.stack(
+        tuple(
+            centered_position[:, index] * value
+            for index, value in enumerate(position_scale)
+        ),
+        dim=-1,
+    )
+    return torch.cat(
+        (
+            scaled_position,
+            velocity * velocity_scale,
+            angular_velocity * angular_velocity_scale,
+        ),
+        dim=-1,
+    )
+
+
+def double_balance_top_score_from_values(
+    position_tray: torch.Tensor,
+    velocity_tray: torch.Tensor,
+    ball_radius: float = 0.02,
+    x_std: float = 0.020,
+    y_std: float = 0.016,
+    z_std: float = 0.006,
+    velocity_std: float = 0.12,
+) -> torch.Tensor:
+    """Multiplicative top-ball score; any deficient factor collapses the score."""
+    if min(x_std, y_std, z_std, velocity_std) <= 0.0:
+        raise ValueError("Double-balance reward standard deviations must be positive")
+    planar = torch.exp(
+        -(position_tray[:, 0] / x_std).square()
+        - (position_tray[:, 1] / y_std).square()
+    )
+    height = torch.exp(-((position_tray[:, 2] - ball_radius) / z_std).square())
+    speed = torch.exp(
+        -torch.sum(velocity_tray.square(), dim=-1) / (velocity_std * velocity_std)
+    )
+    return planar * height * speed
+
+
+def double_balance_lower_score(
+    env: ManagerBasedRlEnv,
+    ball_radius: float = 0.12,
+    root_height: float = 0.125,
+    upright_std: float = 0.30,
+    center_std: float = 0.04,
+    height_std: float = 0.03,
+) -> torch.Tensor:
+    """Product of the three non-contact lower-stack balance factors."""
+    return (
+        wrestle_upright(env, std=upright_std)
+        * basketball_centered(env, std=center_std)
+        * basketball_height(
+            env,
+            ball_radius=ball_radius,
+            root_height=root_height,
+            std=height_std,
+        )
+    )
+
+
+def double_balance_task_reward(
+    env: ManagerBasedRlEnv,
+    tray_site_name: str = "double_balance_tray_frame",
+    top_ball_radius: float = 0.02,
+    lower_ball_radius: float = 0.12,
+    lower_root_height: float = 0.125,
+) -> torch.Tensor:
+    """Dense, non-jackpot reward requiring both balance layers at once."""
+    position, velocity, _ = _double_balance_top_ball_kinematics(
+        env, tray_site_name=tray_site_name
+    )
+    top = double_balance_top_score_from_values(
+        position, velocity, ball_radius=top_ball_radius
+    )
+    lower = double_balance_lower_score(
+        env,
+        ball_radius=lower_ball_radius,
+        root_height=lower_root_height,
+    )
+    return torch.nan_to_num(top * lower, nan=0.0, posinf=0.0, neginf=0.0)
+
+
+def double_balance_top_ball_speed_l2(
+    env: ManagerBasedRlEnv,
+    tray_site_name: str = "double_balance_tray_frame",
+) -> torch.Tensor:
+    """Squared top-ball speed relative to the tray (>=0; use negative weight)."""
+    _, velocity, _ = _double_balance_top_ball_kinematics(
+        env, tray_site_name=tray_site_name
+    )
+    return torch.sum(velocity.square(), dim=-1)
+
+
+def double_balance_tray_tilt_l2(
+    env: ManagerBasedRlEnv,
+    tray_site_name: str = "double_balance_tray_frame",
+) -> torch.Tensor:
+    """Squared horizontal component of tray normal (>=0; use negative weight)."""
+    robot = env.scene["robot"]
+    site_id = _double_balance_tray_site_id(env, tray_site_name=tray_site_name)
+    quat = robot.data.site_pose_w[:, site_id, 3:7]
+    local_up = torch.zeros(env.num_envs, 3, device=env.device)
+    local_up[:, 2] = 1.0
+    normal_w = _quat_rotate(quat, local_up)
+    return torch.nan_to_num(
+        normal_w[:, :2].square().sum(dim=-1),
+        nan=1.0,
+        posinf=1.0,
+        neginf=1.0,
+    )
+
+
+def double_balance_top_ball_lost_from_values(
+    position_tray: torch.Tensor,
+    tray_half_extents: tuple[float, float] = (0.050, 0.040),
+    ball_radius: float = 0.020,
+) -> torch.Tensor:
+    """True only after the free sphere is outside the tray's recoverable envelope."""
+    x_limit = tray_half_extents[0] + ball_radius
+    y_limit = tray_half_extents[1] + ball_radius
+    return (
+        (position_tray[:, 0].abs() > x_limit)
+        | (position_tray[:, 1].abs() > y_limit)
+        | (position_tray[:, 2] < -ball_radius)
+    )
+
+
+def double_balance_top_ball_lost(
+    env: ManagerBasedRlEnv,
+    tray_site_name: str = "double_balance_tray_frame",
+    tray_half_extents: tuple[float, float] = (0.050, 0.040),
+    ball_radius: float = 0.020,
+) -> torch.Tensor:
+    position, _, _ = _double_balance_top_ball_kinematics(
+        env, tray_site_name=tray_site_name
+    )
+    return double_balance_top_ball_lost_from_values(
+        position,
+        tray_half_extents=tray_half_extents,
+        ball_radius=ball_radius,
+    )
+
+
+def double_balance_stable_from_values(
+    position_tray: torch.Tensor,
+    velocity_tray: torch.Tensor,
+    lower_offset: torch.Tensor,
+    lower_height: torch.Tensor,
+    robot_tilt: torch.Tensor,
+    lower_ball_speed: torch.Tensor,
+    ball_radius: float = 0.020,
+    top_center_radius: float = 0.012,
+    top_height_tolerance: float = 0.006,
+    top_speed_limit: float = 0.08,
+    lower_offset_limit: float = 0.06,
+    lower_height_min: float = 0.20,
+    lower_height_max: float = 0.29,
+    robot_tilt_limit_deg: float = 20.0,
+    lower_ball_speed_limit: float = 0.15,
+) -> torch.Tensor:
+    """Strict instantaneous success condition spanning both balance layers."""
+    top_centered = (
+        torch.linalg.vector_norm(position_tray[:, :2], dim=-1)
+        <= top_center_radius
+    )
+    top_height_ok = (
+        position_tray[:, 2] - ball_radius
+    ).abs() <= top_height_tolerance
+    top_speed_ok = torch.linalg.vector_norm(velocity_tray, dim=-1) <= top_speed_limit
+    return (
+        top_centered
+        & top_height_ok
+        & top_speed_ok
+        & (lower_offset <= lower_offset_limit)
+        & (lower_height >= lower_height_min)
+        & (lower_height <= lower_height_max)
+        & (robot_tilt <= math.radians(robot_tilt_limit_deg))
+        & (lower_ball_speed <= lower_ball_speed_limit)
+    )
+
+
+def double_balance_stable(
+    env: ManagerBasedRlEnv,
+    tray_site_name: str = "double_balance_tray_frame",
+    ball_radius: float = 0.020,
+    require_unassisted: bool = True,
+) -> torch.Tensor:
+    """Instantaneous double-balance success, optionally rejecting hold assistance."""
+    position, velocity, _ = _double_balance_top_ball_kinematics(
+        env, tray_site_name=tray_site_name
+    )
+    robot = env.scene["robot"]
+    lower_ball = env.scene["ball"]
+    lower_pos = _bb_ball_pos(env)
+    root_pos = torch.nan_to_num(robot.data.root_link_pos_w, nan=0.0)
+    stable = double_balance_stable_from_values(
+        position,
+        velocity,
+        torch.linalg.vector_norm(root_pos[:, :2] - lower_pos[:, :2], dim=-1),
+        root_pos[:, 2] - lower_pos[:, 2],
+        wrestle_tilt(env, "robot"),
+        torch.linalg.vector_norm(
+            torch.nan_to_num(lower_ball.data.root_link_lin_vel_w[:, :2], nan=0.0),
+            dim=-1,
+        ),
+        ball_radius=ball_radius,
+    )
+    if require_unassisted:
+        stable &= _bb_state(env).hold <= 1e-6
+    return stable
+
+
+def double_balance_success(
+    env: ManagerBasedRlEnv,
+    stable_duration_s: float = 5.0,
+    tray_site_name: str = "double_balance_tray_frame",
+    ball_radius: float = 0.020,
+) -> torch.Tensor:
+    """True after five continuous unassisted seconds satisfying both layers."""
+    if stable_duration_s <= 0.0:
+        raise ValueError("stable_duration_s must be positive")
+    if not hasattr(env, "_double_balance_stable_time"):
+        env._double_balance_stable_time = torch.zeros(
+            env.num_envs, device=env.device
+        )
+    fresh = env.episode_length_buf <= 1
+    env._double_balance_stable_time[fresh] = 0.0
+    stable = double_balance_stable(
+        env,
+        tray_site_name=tray_site_name,
+        ball_radius=ball_radius,
+        require_unassisted=True,
+    )
+    env._double_balance_stable_time = torch.where(
+        stable,
+        env._double_balance_stable_time + env.step_dt,
+        torch.zeros_like(env._double_balance_stable_time),
+    )
+    return env._double_balance_stable_time >= stable_duration_s
+
+
+def double_balance_top_center_error_m(
+    env: ManagerBasedRlEnv,
+    tray_site_name: str = "double_balance_tray_frame",
+) -> torch.Tensor:
+    position, _, _ = _double_balance_top_ball_kinematics(
+        env, tray_site_name=tray_site_name
+    )
+    return torch.linalg.vector_norm(position[:, :2], dim=-1)
+
+
+def double_balance_top_relative_speed_m_s(
+    env: ManagerBasedRlEnv,
+    tray_site_name: str = "double_balance_tray_frame",
+) -> torch.Tensor:
+    _, velocity, _ = _double_balance_top_ball_kinematics(
+        env, tray_site_name=tray_site_name
+    )
+    return torch.linalg.vector_norm(velocity, dim=-1)
+
+
 # --- rewards --------------------------------------------------------------------
 
 

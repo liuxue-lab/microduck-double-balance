@@ -89,7 +89,7 @@ def test_original_basketball_cfg_and_ball_are_unchanged():
     assert original_ball.geom_conaffinity[geom_id] == 1
 
 
-def test_actor_observation_contract_is_not_extended(cfg):
+def test_actor_observation_contract_reuses_existing_six_value_slot(cfg):
     basketball = make_microduck_basketball_env_cfg(
         play=True, blind=True, history=1
     )
@@ -97,12 +97,17 @@ def test_actor_observation_contract_is_not_extended(cfg):
     derived_terms = cfg.observations["actor"].terms
     assert list(derived_terms) == list(original_terms)
     for name in original_terms:
+        if name == "body_command":
+            assert (
+                derived_terms[name].func
+                is microduck_mdp.double_balance_top_ball_actor_state
+            )
+            continue
         assert derived_terms[name].func is original_terms[name].func
         assert derived_terms[name].params == original_terms[name].params
         assert derived_terms[name].history_length == original_terms[name].history_length
-    # The manager integration smoke separately resolves this unchanged layout
-    # to 61; Stage 03 adds no top-ball term here.
-    assert all("top_ball" not in name for name in derived_terms)
+    # The manager integration test resolves this in-place replacement to 61.
+    assert "top_ball_state" not in derived_terms
 
 
 def test_nan_guard_covers_both_free_ball_entities(cfg):

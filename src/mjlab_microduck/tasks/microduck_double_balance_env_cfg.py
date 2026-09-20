@@ -1,14 +1,16 @@
-"""Stage-03 physics scene for Microduck double balance.
+"""Double-balance physics plus the frozen Stage-04 task definition.
 
-This task deliberately reuses the released basketball task's 61-D actor
-contract and reward stack.  Stage 03 only adds the physical apparatus:
+This task reuses the released basketball task's 61-D actor contract. Stage 03
+added the physical apparatus:
 
 * a rigid, rimless tray fixed to the final head link (``jaw_soft``),
 * a second, genuinely free ball, and
 * collision masks that let the top ball touch only the tray and the floor.
 
-No top-ball observation, reward, termination, constraint, or external wrench
-is introduced here.  Those policy-facing choices belong to Stage 04.
+Stage 04 maps a six-dimensional top-ball oracle state into the existing
+``body_command`` slot, adds a nine-dimensional privileged critic term, and
+freezes the dual-layer reward, termination, success, and evaluation contract.
+It does not migrate a checkpoint or train a policy.
 """
 from __future__ import annotations
 
@@ -21,6 +23,9 @@ from typing import Callable
 import mujoco
 from mjlab.entity import EntityCfg
 from mjlab.envs import ManagerBasedRlEnvCfg
+from mjlab.managers import ObservationTermCfg, RewardTermCfg, TerminationTermCfg
+from mjlab.managers.metrics_manager import MetricsTermCfg
+from mjlab.utils.noise import UniformNoiseCfg
 
 from mjlab_microduck.robot.basketball import basketball_robot_cfg
 from mjlab_microduck.robot.microduck_constants import get_standup_spec
@@ -82,6 +87,22 @@ TOP_BALL_RESET_CLEARANCE = 0.0005
 
 CONTROL_DT = 0.020
 DOUBLE_BALANCE_SIM_DT = float(os.getenv("MICRODUCK_DOUBLE_BALANCE_SIM_DT", "0.002"))
+
+# Stage-04 observation contract.  The actor stays 61-D: these six values replace
+# the released blind policy's zero-padded body-command slot in-place.
+TOP_BALL_ACTOR_POSITION_SCALE = (20.0, 25.0, 50.0)
+TOP_BALL_ACTOR_VELOCITY_SCALE = 2.0
+TOP_BALL_ACTOR_NORMALIZED_NOISE = 0.02
+TOP_BALL_CRITIC_ANGULAR_VELOCITY_SCALE = 0.2
+ACTOR_OBSERVATION_DIM = 61
+CRITIC_OBSERVATION_DIM = 85
+
+# Stage-04 task definition.  These are definitions to validate before training,
+# not claims that the weights are already tuned by PPO.
+DOUBLE_BALANCE_REWARD_WEIGHT = 4.0
+TOP_BALL_SPEED_WEIGHT = -0.10
+TRAY_TILT_WEIGHT = -0.50
+SUCCESS_STABLE_DURATION_S = 5.0
 
 
 def _remap_robot_collision_masks(spec: mujoco.MjSpec) -> None:
@@ -212,11 +233,21 @@ def make_microduck_double_balance_env_cfg(
     history: int | None = None,
     physics_dt: float | None = None,
 ) -> ManagerBasedRlEnvCfg:
-    """Build the Stage-03 scene without changing the basketball policy API."""
+    """Build the frozen Stage-04 task while preserving the 61-D actor API."""
+    if blind is False:
+        raise ValueError(
+            "Double-balance reserves body_command for top-ball state; "
+            "the lower basketball must remain actor-blind"
+        )
+    resolved_history = 1 if history is None else history
+    if resolved_history != 1:
+        raise ValueError(
+            "Double-balance uses the recurrent 61-D contract and requires history=1"
+        )
     cfg = make_microduck_basketball_env_cfg(
         play=play,
-        blind=blind,
-        history=history,
+        blind=True,
+        history=1,
     )
 
     robot_cfg = deepcopy(cfg.scene.entities["robot"])
@@ -259,6 +290,133 @@ def make_microduck_double_balance_env_cfg(
         }
     )
     cfg.events = {"reset_double_balance": original_spawn, **cfg.events}
+
+    # Actor: replace the six zero-padded body-command values in place, retaining
+    # the exact 61-D term order.  Noise is expressed in normalized coordinates:
+    # ±0.02 corresponds to about 1.0/0.8/0.4 mm position or 0.01 m/s velocity.
+    actor_top_ball = deepcopy(cfg.observations["actor"].terms["body_command"])
+    actor_top_ball.func = microduck_mdp.double_balance_top_ball_actor_state
+    actor_top_ball.params = {
+        "tray_site_name": TRAY_SITE_NAME,
+        "ball_radius": TOP_BALL_RADIUS,
+        "position_scale": TOP_BALL_ACTOR_POSITION_SCALE,
+        "velocity_scale": TOP_BALL_ACTOR_VELOCITY_SCALE,
+    }
+    actor_top_ball.noise = (
+        None
+        if play
+        else UniformNoiseCfg(
+            n_min=-TOP_BALL_ACTOR_NORMALIZED_NOISE,
+            n_max=TOP_BALL_ACTOR_NORMALIZED_NOISE,
+        )
+    )
+    cfg.observations["actor"].terms["body_command"] = actor_top_ball
+
+    # Critic retains the inherited 6-D lower-ball state in body_command and gets
+    # a separate 9-D top-ball term.  The final three angular-rate values are
+    # privileged and are never inserted into the actor vector.
+    cfg.observations["critic"].terms["top_ball_state"] = ObservationTermCfg(
+        func=microduck_mdp.double_balance_top_ball_critic_state,
+        params={
+            "tray_site_name": TRAY_SITE_NAME,
+            "ball_radius": TOP_BALL_RADIUS,
+            "position_scale": TOP_BALL_ACTOR_POSITION_SCALE,
+            "velocity_scale": TOP_BALL_ACTOR_VELOCITY_SCALE,
+            "angular_velocity_scale": TOP_BALL_CRITIC_ANGULAR_VELOCITY_SCALE,
+        },
+    )
+
+    cfg.rewards["double_balance"] = RewardTermCfg(
+        func=microduck_mdp.double_balance_task_reward,
+        weight=DOUBLE_BALANCE_REWARD_WEIGHT,
+        params={
+            "tray_site_name": TRAY_SITE_NAME,
+            "top_ball_radius": TOP_BALL_RADIUS,
+        },
+    )
+    cfg.rewards["top_ball_speed"] = RewardTermCfg(
+        func=microduck_mdp.double_balance_top_ball_speed_l2,
+        weight=TOP_BALL_SPEED_WEIGHT,
+        params={"tray_site_name": TRAY_SITE_NAME},
+    )
+    cfg.rewards["tray_tilt"] = RewardTermCfg(
+        func=microduck_mdp.double_balance_tray_tilt_l2,
+        weight=TRAY_TILT_WEIGHT,
+        params={"tray_site_name": TRAY_SITE_NAME},
+    )
+
+    cfg.terminations["top_ball_lost"] = TerminationTermCfg(
+        func=microduck_mdp.double_balance_top_ball_lost,
+        time_out=False,
+        params={
+            "tray_site_name": TRAY_SITE_NAME,
+            "tray_half_extents": (
+                TRAY_FULL_SIZE[0] / 2.0,
+                TRAY_FULL_SIZE[1] / 2.0,
+            ),
+            "ball_radius": TOP_BALL_RADIUS,
+        },
+    )
+
+    cfg.metrics["top_ball_center_error_m"] = MetricsTermCfg(
+        func=microduck_mdp.double_balance_top_center_error_m,
+        params={"tray_site_name": TRAY_SITE_NAME},
+        reduce="mean",
+    )
+    cfg.metrics["top_ball_relative_speed_m_s"] = MetricsTermCfg(
+        func=microduck_mdp.double_balance_top_relative_speed_m_s,
+        params={"tray_site_name": TRAY_SITE_NAME},
+        reduce="mean",
+    )
+    cfg.metrics["double_balance_stable_fraction"] = MetricsTermCfg(
+        func=microduck_mdp.double_balance_stable,
+        params={
+            "tray_site_name": TRAY_SITE_NAME,
+            "ball_radius": TOP_BALL_RADIUS,
+            "require_unassisted": True,
+        },
+        reduce="mean",
+    )
+    cfg.metrics["double_balance_success"] = MetricsTermCfg(
+        func=microduck_mdp.double_balance_success,
+        params={
+            "stable_duration_s": SUCCESS_STABLE_DURATION_S,
+            "tray_site_name": TRAY_SITE_NAME,
+            "ball_radius": TOP_BALL_RADIUS,
+        },
+        reduce="last",
+    )
+
+    if play:
+        # Official nominal evaluation is deterministic and unassisted.  Training
+        # curricula may still use the inherited lower-ball hold, pushes, and DR;
+        # their rollouts cannot satisfy the unassisted success metric.
+        cfg.actions["ball_hold"] = deepcopy(cfg.actions["ball_hold"])
+        cfg.actions["ball_hold"].levels = (0.0,)
+        twist = cfg.commands["twist"]
+        twist.ranges.lin_vel_x = (0.0, 0.0)
+        twist.ranges.lin_vel_y = (0.0, 0.0)
+        twist.ranges.ang_vel_z = (0.0, 0.0)
+        twist.rel_standing_envs = 1.0
+        if hasattr(twist, "rel_turn_in_place_envs"):
+            twist.rel_turn_in_place_envs = 0.0
+        cfg.curriculum = {}
+        keep_events = {
+            "reset_double_balance",
+            "reset_action_history",
+            "expand_bam_friction_fields",
+        }
+        cfg.events = {
+            name: term for name, term in cfg.events.items() if name in keep_events
+        }
+        cfg.events["reset_double_balance"].params.update(
+            xy_noise=0.0,
+            yaw_range=(0.0, 0.0),
+            tilt_noise_deg=0.0,
+            joint_noise=0.0,
+            ball_vel_noise=0.0,
+            top_ball_xy_noise=0.0,
+        )
     return cfg
 
 
