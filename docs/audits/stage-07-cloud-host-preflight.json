@@ -1,0 +1,118 @@
+{
+  "stage": 7,
+  "evidence_source": "user-pasted cloud terminal output in the Stage 07 conversation",
+  "provider": "AutoDL",
+  "instance_host_from_console": "Beijing B / 486",
+  "hostname": "autodl-container-3fb74697fe-31040fff",
+  "architecture": "x86_64",
+  "os": "Ubuntu 22.04.5 LTS",
+  "base_python_version": "3.12.3",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "gpu_memory_total_mib": 32607,
+  "driver_version": "595.80",
+  "free_reported_memory_gib": 754,
+  "container_memory_limit_bytes": null,
+  "container_cpu_quota": null,
+  "memory_note": "free may expose host memory; this is not evidence of the container allocation",
+  "system_disk": {
+    "path": "/",
+    "reported_size": "30G",
+    "reported_available": "30G"
+  },
+  "data_disk": {
+    "path": "/root/autodl-tmp",
+    "reported_size": "50G",
+    "reported_available": "50G"
+  },
+  "software_environment_status": "PENDING_LOCKED_INSTALL",
+  "cloud_4096_capacity_status": "NOT_MEASURED",
+  "formal_training_started": false,
+  "scheduled_shutdown_confirmed": false,
+  "active_instance_hourly_price_confirmed": null,
+  "stage06_smoke_rerun": false,
+  "instance_role": "superseded; original RTX 5090 evidence retained",
+  "replacement_target": {
+    "gpu_requested": "A800",
+    "ssh_host": "connect.bjb1.seetacloud.com",
+    "ssh_port": 52528,
+    "ssh_user": "root",
+    "source": "user reports cloning the instance to A800 because RTX 5090 capacity is unavailable",
+    "hardware_preflight": "GPU_IDENTIFIED; container CPU/memory limits not yet measured",
+    "hourly_price": null,
+    "restored_repository_and_environment": "PROJECT_DEPLOYED_BY_SETUP_SCRIPT",
+    "assistant_ssh_test": "DNS_RESOLUTION_FAILED",
+    "formal_training_started": false,
+    "preflight_time_as_reported": "2026-09-21T22:12:36+08:00",
+    "hostname": "autodl-container-u9r3rng84w-707a615e",
+    "gpu": "NVIDIA A800-SXM4-80GB",
+    "gpu_memory_total_mib": 81920,
+    "driver_version": "580.126.09",
+    "architecture": "x86_64",
+    "python_command_on_noninteractive_path": false,
+    "python_installation_status": "NOT_DETERMINED; command not found does not prove interpreter absence",
+    "repository_state": "MISSING_OR_INCOMPLETE",
+    "project_environment": "INSTALLED_AND_VALIDATED_BY_SETUP_SCRIPT; full environment.json pending readback",
+    "system_disk_available_as_reported": "30G",
+    "data_disk_available_as_reported": "50G",
+    "cloud_4096_capacity_status": "NOT_MEASURED; capacity entry and bounded launcher prepared",
+    "setup_script": "scripts/setup_stage07_autodl.sh",
+    "setup_script_execution": "PASS_USER_REPORTED",
+    "data_disk_used_at_initial_preflight_as_reported": "28K",
+    "latest_dependency_download_evidence": [
+      "Downloaded scipy",
+      "Downloaded nvidia-nvjitlink-cu12"
+    ],
+    "clone_review": {
+      "expected_project_path_present_at_initial_preflight": false,
+      "cloned_system_image_and_other_cache_locations": "NOT_FULLY_AUDITED",
+      "source_instance_environment_install_completed": "NOT_EVIDENCED_IN_CONVERSATION",
+      "provider_migration_documentation": "https://www.autodl.com/docs/migrate_instance/",
+      "provider_documented_distinction": "System disk and data disk migration are separate operations in the documented workflow.",
+      "conclusion": "The expected project and data-disk cache were absent on A800. This does not establish which clone operation the user selected."
+    },
+    "download_review": {
+      "uv_bootstrap_source_user_reported": "mirrors.aliyun.com",
+      "project_dependency_registry_from_uv_lock": "https://pypi.org/simple",
+      "project_wheel_host_from_uv_lock": "files.pythonhosted.org",
+      "uv_cache_directory": "/root/autodl-tmp/microduck-double-balance/cache/uv",
+      "measured_download_rate": {
+        "source": "user-pasted network interface receive-rate samples; includes other inbound traffic",
+        "unit": "MiB/s",
+        "samples": [
+          1.16,
+          1.22,
+          1.31,
+          1.29,
+          1.18,
+          1.17
+        ],
+        "mean": 1.2216666666666667,
+        "minutes_per_additional_gib_at_mean_rate": 13.969986357435198,
+        "remaining_download_bytes": null
+      },
+      "bottleneck": "NOT_YET_IDENTIFIED",
+      "installer_restart_or_cache_removal_performed_by_assistant": false,
+      "acceleration_status": "NOT_NEEDED; user reported setup completion before changing download source",
+      "base_environment_reuse_review": "Project .venv is isolated; preinstalled A800 package versions remain unknown."
+    },
+    "setup_pass_markers": [
+      "EnvironmentReport=/root/autodl-tmp/microduck-double-balance/artifacts/stage07-setup/environment.json",
+      "Stage07CloudSetup=PASS",
+      "Stage07CloudSetupEnd="
+    ],
+    "instance_role": "superseded by user-cloned A800 at SSH port 26497; setup PASS evidence retained"
+  },
+  "active_target": {
+    "source": "user reports cloning the fully installed A800 to another A800 with the same configuration",
+    "ssh_host": "connect.bjb1.seetacloud.com",
+    "ssh_port": 26497,
+    "ssh_user": "root",
+    "expected_gpu": "A800-SXM4-80GB",
+    "expected_gpu_memory_mib": 81920,
+    "hardware_on_new_instance": "PENDING_DIRECT_PREFLIGHT",
+    "cloned_project_and_environment": "PENDING_REUSE_CHECK; do not automatically reinstall",
+    "hourly_price": null,
+    "cloud_4096_capacity_status": "NOT_MEASURED",
+    "formal_training_started": false
+  }
+}
