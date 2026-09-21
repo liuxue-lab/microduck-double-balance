@@ -2,7 +2,7 @@
 
 日期：2026-09-21
 
-状态：代码与 CPU 预检已完成；用户本机 CUDA 验收结果待回收。本文不是 Stage 06 完成交接，当前不创建 `stage-06-complete` 标签。
+状态：用户本机 CUDA smoke、保存重载与完整回归均已通过。实际证据和最终交接见 `stage-06-cuda-acceptance.json`、`stage-06-local-pytest.txt` 及 `../handoffs/microduck-stage-06-runner-smoke-handoff.md`。本文件保留实现前的预检记录。
 
 ## 1. 已核验基线
 
