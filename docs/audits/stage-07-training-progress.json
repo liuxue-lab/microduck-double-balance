@@ -1,6 +1,6 @@
 {
   "stage": 7,
-  "status": "TRAINING_COMPLETE_ARCHIVE_VERIFIED_DIAGNOSTICS_PENDING",
+  "status": "READY_FOR_LOCAL_FINALIZATION_POLICY_OBJECTIVE_UNMET",
   "formal_training_started": true,
   "stage07_complete": false,
   "completed_updates_confirmed": 6000,
@@ -318,9 +318,7 @@
     }
   ],
   "pending": [
-    "Run bounded local MuJoCo inference for condition traces and video (no PPO); cloud can remain off",
-    "Review diagnostic results and video; finalize truthful handoff and archive",
-    "Import final bundle on laptop, create annotated stage tag and push via existing SSH protocol"
+    "Import final bundle, verify local archive, create annotated stage-07-complete tag and SSH-push on laptop; normal push output is sufficient"
   ],
   "latest_completed_evaluation_observed": {
     "run": "train-20260927T144559Z-1633",
@@ -363,5 +361,8 @@
         -0.0038135496506583877
       ]
     }
-  }
+  },
+  "technical_work_complete": true,
+  "policy_objective_passed": false,
+  "final_acceptance": "docs/audits/stage-07-final-acceptance.json"
 }

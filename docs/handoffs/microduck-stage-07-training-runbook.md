@@ -1,7 +1,7 @@
 # Microduck Stage 07 正式训练操作与恢复
 
-状态：2026-09-28 03:07 原始归档 124 个文件与两个检查点已校验通过；6000 次训练完成、finite_checks=PASS，全部 14 条名义评估严格成功率为 0%。跨段最佳候选是原段第 1000 次（稳定时间 90.18%），第 6000 次为 35.16%。已提醒用户可关机并保留云端实例/数据盘；后续本机诊断、视频和最终交接待完成，不自动追加训练。证据见 `docs/audits/stage-07-training-progress.json` 及 `docs/audits/stage-07-update-6000-review.md`。
-本文件是运行说明，不是 `stage-07-complete` 交接。
+状态：2026-09-28 03:20 本阶段训练、归档及本机诊断已完成。主要直接失败条件为下球速度超 0.15 m/s，严格策略目标仍未达标。最终证据与交接见 [正式交接文档](microduck-stage-07-cloud-assisted-training-handoff.md) 和 `docs/audits/stage-07-final-acceptance.json`；最后的本机导入、注释标签和 SSH 推送按交付流程执行。云端可保持关机，不追加训练。
+本文件保留运行与恢复说明，最终交接以上述正式文档为准。
 
 始终沿用 [本机提交与 SSH 推送规范](microduck-local-ssh-push-protocol.md)。
 本机仓库 `/home/lx/microduck-double-balance/workspace`，下载目录 `/home/lx/下载`，
@@ -135,7 +135,7 @@ bash scripts/deploy_stage07_training_local.sh 26497 \
 `Stage07Training=TRAINING_COMPLETE` 只表示本段目标更新完成；Stage 07 还需选择模型、
 回传归档、检查评估/视频、生成完整交接并提交。
 当前正式训练工具通过 19 项 CPU 定向测试与 shell/语法检查；云端 6000 次训练、断点恢复、
-最终名义评估与 finite_checks=PASS 已得到用户回传确认；原始证据与结果归档仍待验收。
+最终名义评估与 finite_checks=PASS 已得到用户回传确认；原始证据与结果归档已通过校验，详见最终验收文件。
 容量四档已实测通过；不将这两类证据混为一次正式训练验收。
 最终 `stage-07-complete` 注释标签和 SSH 推送在本机执行，正常推送成功后不重复完整核验。
 
@@ -188,4 +188,4 @@ cd /home/lx/microduck-double-balance/workspace
 连续稳定时间，以及“曾经成功”与正式终局成功，避免把这几种口径混用。
 本机 GPU/渲染环境可能产生不同轨迹；原云端评估保留为正式训练证据，本机结果标为诊断复放。
 
-已完成语法检查、3 项连续计时汇总测试及依赖源码接口核对；实际仿真和渲染验收等待本机执行。
+已完成语法检查、3 项连续计时汇总测试及依赖源码接口核对；两例实际本机仿真和渲染已通过，两份 32,000 行轨迹及两段视频于 03:20 回传并核验，不为封口重复运行。
