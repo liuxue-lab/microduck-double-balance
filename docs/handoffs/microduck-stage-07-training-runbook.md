@@ -1,6 +1,6 @@
 # Microduck Stage 07 正式训练操作与恢复
 
-状态：2026-09-28 02:56 用户回传 TRAINING_COMPLETE、6000/6000 和 finite_checks=PASS，末次评估也已 PASS。全部 14 条名义评估的严格成功率均为 0%；跨段最佳候选是原段第 1000 次（稳定时间 90.18%），第 6000 次为 35.16%。训练段已完成，原始证据回传、诊断/视频、检查点归档和阶段交接仍待完成，不自动追加训练。证据见 `docs/audits/stage-07-training-progress.json` 及 `docs/audits/stage-07-update-6000-review.md`。
+状态：2026-09-28 03:07 原始归档 124 个文件与两个检查点已校验通过；6000 次训练完成、finite_checks=PASS，全部 14 条名义评估严格成功率为 0%。跨段最佳候选是原段第 1000 次（稳定时间 90.18%），第 6000 次为 35.16%。已提醒用户可关机并保留云端实例/数据盘；后续本机诊断、视频和最终交接待完成，不自动追加训练。证据见 `docs/audits/stage-07-training-progress.json` 及 `docs/audits/stage-07-update-6000-review.md`。
 本文件是运行说明，不是 `stage-07-complete` 交接。
 
 始终沿用 [本机提交与 SSH 推送规范](microduck-local-ssh-push-protocol.md)。
@@ -163,4 +163,29 @@ python3 /home/lx/下载/collect_stage07_results.py --port 26497
 
 收集工具已通过 6 项标准库测试：跨段选择与回传校验、拒绝未完成训练、拒绝损坏检查点、
 拒绝缺失的最终评估、拒绝不安全归档路径以及拒绝内容传输校验不一致。
-这仅是工具验证；实际云端回传尚待用户执行。
+实际回传已于 2026-09-28 03:07 收到，124 个文件逐项校验通过，记录于 `stage-07-archive-review.json`。
+
+## 本机逐项诊断和视频（只推理）
+
+云主机可保持关机。将 `scripts/diagnose_stage07_local.py` 保存到 `/home/lx/下载`，
+使用本机现有项目环境运行：
+
+```bash
+cd /home/lx/microduck-double-balance/workspace
+.venv/bin/python /home/lx/下载/diagnose_stage07_local.py
+```
+
+这是本机 64 环境、每个检查点 10 秒模拟时间的 MuJoCo 推理，不执行训练或优化器更新。
+使用本机 GPU 仅加速仿真和录制，符合本机写代码/仿真、云 GPU 正式训练的约束。
+入口自动找到已校验的本机归档，分别运行第 1000 与 6000 次模型；每例设 900 秒执行上限，
+不触碰已完成训练的时间预算。日志和输出放在仓库外 `artifacts/double-balance-stage07/diagnostic-*`。
+最终报告与两段 env0 视频打包到固定下载目录，打印 `Stage07LocalDiagnostic=PASS` 和归档路径。
+
+诊断保留 Stage 04 play、64 个环境、10 秒 horizon、零辅助、种子和严格成功定义。
+只调整录制视角，使用观察钩子在原 MetricsManager.compute 返回后、下一次 forward/reset
+之前读取瞬时条件；不会重复调用有状态成功函数。每步核对拆分条件的合取与已缓存稳定指标一致，
+终局核对逐步稳定占比和连续计时与原指标一致。记录各条件违例/唯一违例比例、最长/末尾
+连续稳定时间，以及“曾经成功”与正式终局成功，避免把这几种口径混用。
+本机 GPU/渲染环境可能产生不同轨迹；原云端评估保留为正式训练证据，本机结果标为诊断复放。
+
+已完成语法检查、3 项连续计时汇总测试及依赖源码接口核对；实际仿真和渲染验收等待本机执行。

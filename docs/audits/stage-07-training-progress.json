@@ -1,6 +1,6 @@
 {
   "stage": 7,
-  "status": "TRAINING_COMPLETE_REVIEW_AND_ARCHIVE_PENDING",
+  "status": "TRAINING_COMPLETE_ARCHIVE_VERIFIED_DIAGNOSTICS_PENDING",
   "formal_training_started": true,
   "stage07_complete": false,
   "completed_updates_confirmed": 6000,
@@ -318,9 +318,9 @@
     }
   ],
   "pending": [
-    "Retrieve raw reports, training logs and candidate/final checkpoint bytes; validate receipt SHA-256 after transfer",
-    "Diagnose unmet strict success using per-condition evaluation and video before deciding whether to extend training",
-    "Complete checkpoint archive, honest stage handoff and commit; create annotated tag and SSH push on laptop only after stage closure work"
+    "Run bounded local MuJoCo inference for condition traces and video (no PPO); cloud can remain off",
+    "Review diagnostic results and video; finalize truthful handoff and archive",
+    "Import final bundle on laptop, create annotated stage tag and push via existing SSH protocol"
   ],
   "latest_completed_evaluation_observed": {
     "run": "train-20260927T144559Z-1633",
@@ -336,5 +336,32 @@
   "current_training_decision": "6000-update segment is complete. Select original update 1000 as the best nominal candidate across all received segments; retain update 6000 as the final resumable state. Retrieve raw evidence and diagnose before any additional training; do not change frozen definitions.",
   "best_candidate_completed_updates_among_received_evaluations": 1000,
   "finite_checks_user_reported": "PASS",
-  "latest_checkpoint_user_reported": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage07/train-20260927T144559Z-1633/checkpoints/update_006000.pt"
+  "latest_checkpoint_user_reported": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage07/train-20260927T144559Z-1633/checkpoints/update_006000.pt",
+  "archive_review": "docs/audits/stage-07-archive-review.json",
+  "selected_checkpoints_verified": {
+    "best_nominal": {
+      "path": "train-20260927T103517Z-3844/checkpoints/update_001000.pt",
+      "sha256": "c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7",
+      "completed_updates": 1000,
+      "evaluation": "train-20260927T103517Z-3844/evaluations/update_001000/evaluation.json",
+      "rank": [
+        0.0,
+        10.0,
+        0.9017500448971987,
+        -0.0035159966500941664
+      ]
+    },
+    "final_state": {
+      "path": "train-20260927T144559Z-1633/checkpoints/update_006000.pt",
+      "sha256": "a5ad0aedb500555b649c5d4b11aded833cbc0f932c1fff1a747e1492534c495c",
+      "completed_updates": 6000,
+      "evaluation": "train-20260927T144559Z-1633/evaluations/update_006000/evaluation.json",
+      "rank": [
+        0.0,
+        10.0,
+        0.35162501549348235,
+        -0.0038135496506583877
+      ]
+    }
+  }
 }

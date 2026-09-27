@@ -1,0 +1,509 @@
+{
+  "status": "ARCHIVE_AND_RAW_RECORDS_VERIFIED",
+  "stage07_complete": false,
+  "received_at": "2026-09-28T03:07:32+08:00",
+  "archive_name": "microduck-stage07-results-20260927T190458Z-77jlku82.tar.gz",
+  "archive_sha256": "d4ef897f3dee5df531c6f2b9fb18e7c17aaf73f02b2fd762274d6d115a57bdec",
+  "verified_file_count": 124,
+  "selected_checkpoints": {
+    "best_nominal": {
+      "path": "train-20260927T103517Z-3844/checkpoints/update_001000.pt",
+      "sha256": "c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7",
+      "completed_updates": 1000,
+      "evaluation": "train-20260927T103517Z-3844/evaluations/update_001000/evaluation.json",
+      "rank": [
+        0.0,
+        10.0,
+        0.9017500448971987,
+        -0.0035159966500941664
+      ]
+    },
+    "final_state": {
+      "path": "train-20260927T144559Z-1633/checkpoints/update_006000.pt",
+      "sha256": "a5ad0aedb500555b649c5d4b11aded833cbc0f932c1fff1a747e1492534c495c",
+      "completed_updates": 6000,
+      "evaluation": "train-20260927T144559Z-1633/evaluations/update_006000/evaluation.json",
+      "rank": [
+        0.0,
+        10.0,
+        0.35162501549348235,
+        -0.0038135496506583877
+      ]
+    }
+  },
+  "run_segments": [
+    {
+      "run": "train-20260927T103517Z-3844",
+      "status_in_raw_report": "RUNNING",
+      "start_completed_updates": 0,
+      "last_logged_completed_updates": 3087,
+      "iteration_row_count": 3087,
+      "source_hashes_match": true,
+      "recorded_iteration_seconds": 14088.30379730463,
+      "elapsed_seconds_in_report": 14675.624994464219,
+      "sampled_peak_training_gpu_used_mib": 23663,
+      "nan_state_log_max": 0.0,
+      "first_learning_rate": 1e-05,
+      "last_learning_rate": 5.0625000000000024e-05
+    },
+    {
+      "run": "train-20260927T144559Z-1633",
+      "status_in_raw_report": "TRAINING_COMPLETE",
+      "start_completed_updates": 3000,
+      "last_logged_completed_updates": 6000,
+      "iteration_row_count": 3000,
+      "source_hashes_match": true,
+      "recorded_iteration_seconds": 14234.685319826007,
+      "elapsed_seconds_in_report": 14866.82752238959,
+      "sampled_peak_training_gpu_used_mib": 23355,
+      "nan_state_log_max": 0.0,
+      "first_learning_rate": 1.0000000000000004e-05,
+      "last_learning_rate": 3.3750000000000014e-05
+    }
+  ],
+  "evaluations": [
+    {
+      "run": "train-20260927T103517Z-3844",
+      "completed_updates": 0,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 0.28,
+      "mean_stable_fraction": 0.07031250314321369,
+      "mean_top_center_error_m": 0.022786041838116944,
+      "stable_fraction_min": 0.0,
+      "stable_fraction_max": 0.0714285746216774,
+      "mean_top_relative_speed_m_s": 0.4239152055233717,
+      "mean_action_acc": 0.1973436470143497,
+      "termination_term_counts": {
+        "top_ball_lost": 64
+      }
+    },
+    {
+      "run": "train-20260927T103517Z-3844",
+      "completed_updates": 500,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 1.7121875,
+      "mean_stable_fraction": 0.5400688913650811,
+      "mean_top_center_error_m": 0.015306070403312333,
+      "stable_fraction_min": 0.3086419701576233,
+      "stable_fraction_max": 0.737704873085022,
+      "mean_top_relative_speed_m_s": 0.09775160998106003,
+      "mean_action_acc": 0.2975484754424542,
+      "termination_term_counts": {
+        "top_ball_lost": 62,
+        "fell": 6
+      }
+    },
+    {
+      "run": "train-20260927T103517Z-3844",
+      "completed_updates": 1000,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.9017500448971987,
+      "mean_top_center_error_m": 0.0035159966500941664,
+      "stable_fraction_min": 0.8480000495910645,
+      "stable_fraction_max": 0.9500000476837158,
+      "mean_top_relative_speed_m_s": 0.03206659125862643,
+      "mean_action_acc": 0.21166944690048695,
+      "termination_term_counts": {
+        "time_out": 64
+      }
+    },
+    {
+      "run": "train-20260927T103517Z-3844",
+      "completed_updates": 1500,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.8610625369474292,
+      "mean_top_center_error_m": 0.004349392380390782,
+      "stable_fraction_min": 0.7900000214576721,
+      "stable_fraction_max": 0.956000030040741,
+      "mean_top_relative_speed_m_s": 0.02851986899622716,
+      "mean_action_acc": 0.1404280662536621,
+      "termination_term_counts": {
+        "time_out": 64
+      }
+    },
+    {
+      "run": "train-20260927T103517Z-3844",
+      "completed_updates": 2000,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.835250043310225,
+      "mean_top_center_error_m": 0.003995541377662448,
+      "stable_fraction_min": 0.7500000596046448,
+      "stable_fraction_max": 0.906000018119812,
+      "mean_top_relative_speed_m_s": 0.029489391919923946,
+      "mean_action_acc": 0.12605739838909358,
+      "termination_term_counts": {
+        "time_out": 64
+      }
+    },
+    {
+      "run": "train-20260927T103517Z-3844",
+      "completed_updates": 2500,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.7281875340268016,
+      "mean_top_center_error_m": 0.00324527492193738,
+      "stable_fraction_min": 0.6520000100135803,
+      "stable_fraction_max": 0.8820000290870667,
+      "mean_top_relative_speed_m_s": 0.028635877883061767,
+      "mean_action_acc": 0.13068727543577552,
+      "termination_term_counts": {
+        "time_out": 64
+      }
+    },
+    {
+      "run": "train-20260927T103517Z-3844",
+      "completed_updates": 3000,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.6863437844440341,
+      "mean_top_center_error_m": 0.005272063273878302,
+      "stable_fraction_min": 0.5139999985694885,
+      "stable_fraction_max": 0.8500000238418579,
+      "mean_top_relative_speed_m_s": 0.029616449523018673,
+      "mean_action_acc": 0.15781219908967614,
+      "termination_term_counts": {
+        "time_out": 64
+      }
+    },
+    {
+      "run": "train-20260927T144559Z-1633",
+      "completed_updates": 3000,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.6890000342391431,
+      "mean_top_center_error_m": 0.005301474844600307,
+      "stable_fraction_min": 0.4820000231266022,
+      "stable_fraction_max": 0.8720000386238098,
+      "mean_top_relative_speed_m_s": 0.02947189682163298,
+      "mean_action_acc": 0.157651849091053,
+      "termination_term_counts": {
+        "time_out": 64
+      }
+    },
+    {
+      "run": "train-20260927T144559Z-1633",
+      "completed_updates": 3500,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 9.7765625,
+      "mean_stable_fraction": 0.4948668098077178,
+      "mean_top_center_error_m": 0.007046081627777312,
+      "stable_fraction_min": 0.2900000214576721,
+      "stable_fraction_max": 0.6740000247955322,
+      "mean_top_relative_speed_m_s": 0.04031289299018681,
+      "mean_action_acc": 0.17622254160232842,
+      "termination_term_counts": {
+        "top_ball_lost": 1,
+        "fell": 1,
+        "time_out": 62
+      }
+    },
+    {
+      "run": "train-20260927T144559Z-1633",
+      "completed_updates": 4000,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.4274375201202929,
+      "mean_top_center_error_m": 0.0060399774156394415,
+      "stable_fraction_min": 0.27400001883506775,
+      "stable_fraction_max": 0.734000027179718,
+      "mean_top_relative_speed_m_s": 0.03762378910323605,
+      "mean_action_acc": 0.16915052337571979,
+      "termination_term_counts": {
+        "time_out": 64
+      }
+    },
+    {
+      "run": "train-20260927T144559Z-1633",
+      "completed_updates": 4500,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.3123750139493495,
+      "mean_top_center_error_m": 0.004876009694271488,
+      "stable_fraction_min": 0.1900000125169754,
+      "stable_fraction_max": 0.47200003266334534,
+      "mean_top_relative_speed_m_s": 0.03480624072835781,
+      "mean_action_acc": 0.1737243898678571,
+      "termination_term_counts": {
+        "time_out": 64
+      }
+    },
+    {
+      "run": "train-20260927T144559Z-1633",
+      "completed_updates": 5000,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.3328750154469162,
+      "mean_top_center_error_m": 0.0037975037630531006,
+      "stable_fraction_min": 0.2240000069141388,
+      "stable_fraction_max": 0.4740000367164612,
+      "mean_top_relative_speed_m_s": 0.03379248778219335,
+      "mean_action_acc": 0.1830345841590315,
+      "termination_term_counts": {
+        "time_out": 64
+      }
+    },
+    {
+      "run": "train-20260927T144559Z-1633",
+      "completed_updates": 5500,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.33587501430884004,
+      "mean_top_center_error_m": 0.004005853814305738,
+      "stable_fraction_min": 0.1940000057220459,
+      "stable_fraction_max": 0.4360000193119049,
+      "mean_top_relative_speed_m_s": 0.03145187016343698,
+      "mean_action_acc": 0.18159752618521452,
+      "termination_term_counts": {
+        "time_out": 64
+      }
+    },
+    {
+      "run": "train-20260927T144559Z-1633",
+      "completed_updates": 6000,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.35162501549348235,
+      "mean_top_center_error_m": 0.0038135496506583877,
+      "stable_fraction_min": 0.24000000953674316,
+      "stable_fraction_max": 0.492000013589859,
+      "mean_top_relative_speed_m_s": 0.0312869866611436,
+      "mean_action_acc": 0.17766665387898684,
+      "termination_term_counts": {
+        "time_out": 64
+      }
+    }
+  ],
+  "training_windows": [
+    {
+      "run": "train-20260927T103517Z-3844",
+      "end_update": 500,
+      "window_updates": 100,
+      "means": {
+        "Episode_Reward/double_balance": 0.341369289457798,
+        "Episode_Reward/action_rate_l2": -0.27025443837046625,
+        "Episode_Metrics/double_balance_stable_fraction": 0.0,
+        "Episode_Metrics/double_balance_success": 0.0,
+        "Curriculum/action_rate_weight": -0.10000000894069672,
+        "Curriculum/standing_envs": 0.019999999552965164,
+        "Curriculum/basketball_hold": 2.709324924945831,
+        "unassisted_environment_fraction": 0.0,
+        "episode_return": 21.65761650136709,
+        "episode_seconds": 3.74524
+      }
+    },
+    {
+      "run": "train-20260927T103517Z-3844",
+      "end_update": 1000,
+      "window_updates": 100,
+      "means": {
+        "Episode_Reward/double_balance": 1.3849678659439086,
+        "Episode_Reward/action_rate_l2": -1.588851273059845,
+        "Episode_Metrics/double_balance_stable_fraction": 0.28773254692554473,
+        "Episode_Metrics/double_balance_success": 0.0,
+        "Curriculum/action_rate_weight": -0.40000003576278687,
+        "Curriculum/standing_envs": 0.10000000894069672,
+        "Curriculum/basketball_hold": 4.846166152954101,
+        "unassisted_environment_fraction": 0.91740478515625,
+        "episode_return": 45.636507274889944,
+        "episode_seconds": 8.29468
+      }
+    },
+    {
+      "run": "train-20260927T103517Z-3844",
+      "end_update": 1500,
+      "window_updates": 100,
+      "means": {
+        "Episode_Reward/double_balance": 1.9167610454559325,
+        "Episode_Reward/action_rate_l2": -1.816504989862442,
+        "Episode_Metrics/double_balance_stable_fraction": 0.40594654202461244,
+        "Episode_Metrics/double_balance_success": 0.0,
+        "Curriculum/action_rate_weight": -0.8000000715255737,
+        "Curriculum/standing_envs": 0.15000000596046448,
+        "Curriculum/basketball_hold": 4.902349810600281,
+        "unassisted_environment_fraction": 0.9241357421875,
+        "episode_return": 49.100338584202525,
+        "episode_seconds": 8.50353
+      }
+    },
+    {
+      "run": "train-20260927T103517Z-3844",
+      "end_update": 2000,
+      "window_updates": 100,
+      "means": {
+        "Episode_Reward/double_balance": 1.7482261860370636,
+        "Episode_Reward/action_rate_l2": -1.8175811779499054,
+        "Episode_Metrics/double_balance_stable_fraction": 0.358529104590416,
+        "Episode_Metrics/double_balance_success": 0.0,
+        "Curriculum/action_rate_weight": -1.0,
+        "Curriculum/standing_envs": 0.20000001788139343,
+        "Curriculum/basketball_hold": 4.830433330535889,
+        "unassisted_environment_fraction": 0.87653076171875,
+        "episode_return": 43.285777364435795,
+        "episode_seconds": 7.88413
+      }
+    },
+    {
+      "run": "train-20260927T103517Z-3844",
+      "end_update": 2500,
+      "window_updates": 100,
+      "means": {
+        "Episode_Reward/double_balance": 1.6973084557056426,
+        "Episode_Reward/action_rate_l2": -1.7953492748737334,
+        "Episode_Metrics/double_balance_stable_fraction": 0.3230996763706207,
+        "Episode_Metrics/double_balance_success": 0.0,
+        "Curriculum/action_rate_weight": -1.0,
+        "Curriculum/standing_envs": 0.25,
+        "Curriculum/basketball_hold": 4.811173357963562,
+        "unassisted_environment_fraction": 0.8559033203125,
+        "episode_return": 40.92003755021468,
+        "episode_seconds": 7.606234000000001
+      }
+    },
+    {
+      "run": "train-20260927T103517Z-3844",
+      "end_update": 3000,
+      "window_updates": 100,
+      "means": {
+        "Episode_Reward/double_balance": 1.4920097923278808,
+        "Episode_Reward/action_rate_l2": -1.8117427587509156,
+        "Episode_Metrics/double_balance_stable_fraction": 0.2472340726852417,
+        "Episode_Metrics/double_balance_success": 0.0,
+        "Curriculum/action_rate_weight": -1.0,
+        "Curriculum/standing_envs": 0.25,
+        "Curriculum/basketball_hold": 4.850723991394043,
+        "unassisted_environment_fraction": 0.89129150390625,
+        "episode_return": 38.57773478272408,
+        "episode_seconds": 7.724508
+      }
+    },
+    {
+      "run": "train-20260927T144559Z-1633",
+      "end_update": 3500,
+      "window_updates": 100,
+      "means": {
+        "Episode_Reward/double_balance": 0.901234763264656,
+        "Episode_Reward/action_rate_l2": -1.5662595677375792,
+        "Episode_Metrics/double_balance_stable_fraction": 0.10808218114078044,
+        "Episode_Metrics/double_balance_success": 0.0,
+        "Curriculum/action_rate_weight": -1.0,
+        "Curriculum/standing_envs": 0.25,
+        "Curriculum/basketball_hold": 4.6601568126678465,
+        "unassisted_environment_fraction": 0.77290283203125,
+        "episode_return": 26.418250756937265,
+        "episode_seconds": 6.392936
+      }
+    },
+    {
+      "run": "train-20260927T144559Z-1633",
+      "end_update": 4000,
+      "window_updates": 100,
+      "means": {
+        "Episode_Reward/double_balance": 0.89925976395607,
+        "Episode_Reward/action_rate_l2": -1.6097398018836975,
+        "Episode_Metrics/double_balance_stable_fraction": 0.13037021301686763,
+        "Episode_Metrics/double_balance_success": 0.0,
+        "Curriculum/action_rate_weight": -1.0,
+        "Curriculum/standing_envs": 0.25,
+        "Curriculum/basketball_hold": 4.710208487510681,
+        "unassisted_environment_fraction": 0.80907958984375,
+        "episode_return": 28.334978512381017,
+        "episode_seconds": 6.977932
+      }
+    },
+    {
+      "run": "train-20260927T144559Z-1633",
+      "end_update": 4500,
+      "window_updates": 100,
+      "means": {
+        "Episode_Reward/double_balance": 0.94964524269104,
+        "Episode_Reward/action_rate_l2": -1.5823231434822083,
+        "Episode_Metrics/double_balance_stable_fraction": 0.11638051480054855,
+        "Episode_Metrics/double_balance_success": 0.0,
+        "Curriculum/action_rate_weight": -1.0,
+        "Curriculum/standing_envs": 0.25,
+        "Curriculum/basketball_hold": 4.715681719779968,
+        "unassisted_environment_fraction": 0.80974609375,
+        "episode_return": 28.045862939336896,
+        "episode_seconds": 6.8131200000000005
+      }
+    },
+    {
+      "run": "train-20260927T144559Z-1633",
+      "end_update": 5000,
+      "window_updates": 100,
+      "means": {
+        "Episode_Reward/double_balance": 1.001578713655472,
+        "Episode_Reward/action_rate_l2": -1.6103894996643067,
+        "Episode_Metrics/double_balance_stable_fraction": 0.12000764161348343,
+        "Episode_Metrics/double_balance_success": 0.0,
+        "Curriculum/action_rate_weight": -1.0,
+        "Curriculum/standing_envs": 0.25,
+        "Curriculum/basketball_hold": 4.737058873176575,
+        "unassisted_environment_fraction": 0.82580078125,
+        "episode_return": 27.691539951383323,
+        "episode_seconds": 6.716708000000001
+      }
+    },
+    {
+      "run": "train-20260927T144559Z-1633",
+      "end_update": 5500,
+      "window_updates": 100,
+      "means": {
+        "Episode_Reward/double_balance": 1.1192429792881011,
+        "Episode_Reward/action_rate_l2": -1.6761670649051665,
+        "Episode_Metrics/double_balance_stable_fraction": 0.11709206059575081,
+        "Episode_Metrics/double_balance_success": 0.0,
+        "Curriculum/action_rate_weight": -1.0,
+        "Curriculum/standing_envs": 0.25,
+        "Curriculum/basketball_hold": 4.7677096128463745,
+        "unassisted_environment_fraction": 0.830302734375,
+        "episode_return": 29.059373459423334,
+        "episode_seconds": 6.961342
+      }
+    },
+    {
+      "run": "train-20260927T144559Z-1633",
+      "end_update": 6000,
+      "window_updates": 100,
+      "means": {
+        "Episode_Reward/double_balance": 1.5742262387275696,
+        "Episode_Reward/action_rate_l2": -1.8343303096294403,
+        "Episode_Metrics/double_balance_stable_fraction": 0.19015580624341966,
+        "Episode_Metrics/double_balance_success": 0.0,
+        "Curriculum/action_rate_weight": -1.0,
+        "Curriculum/standing_envs": 0.25,
+        "Curriculum/basketball_hold": 4.889744415283203,
+        "unassisted_environment_fraction": 0.9158544921875,
+        "episode_return": 38.41515246093944,
+        "episode_seconds": 8.084256
+      }
+    }
+  ],
+  "shutdown_reminder": {
+    "requested": true,
+    "reminded_in_conversation": true,
+    "guidance": "Cloud can be powered off after verified transfer. Retain instance and data disk; do not release/delete. Subsequent short diagnostic inference/video planned on laptop, no PPO."
+  },
+  "unpersisted_updates_before_power_loss": 87,
+  "retained_update_lineage": 6000,
+  "actual_logged_update_executions": 6087,
+  "retained_lineage_transitions": 589824000,
+  "actual_logged_transitions": 598376448
+}

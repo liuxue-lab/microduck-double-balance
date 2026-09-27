@@ -1,8 +1,8 @@
 {
   "stage": 7,
-  "status": "ALL_SCHEDULED_NOMINAL_SUMMARIES_RECEIVED_RAW_REPORTS_PENDING",
+  "status": "ALL_NOMINAL_SUMMARIES_VERIFIED_AGAINST_RAW_EPISODES",
   "received_at": "2026-09-28T02:56:57+08:00",
-  "source": "User-pasted read-only projections of cloud evaluation.json files; semantic archive, complete source files pending",
+  "source": "Uploaded archive passed manifest SHA-256 checks; all summary means recomputed from 64 raw episodes per evaluation",
   "protocol": "stage04-frozen-play-10s-first-episode-v1",
   "sampling_scope": "64 deterministic nominal initial-state copies; not independent randomized trials or a robustness estimate",
   "rows": [
@@ -143,7 +143,8 @@
       "higher mean_stable_fraction",
       "lower mean_top_center_error_m"
     ],
-    "receipt_and_file_readback": "PENDING"
+    "receipt_and_file_readback": "PASS",
+    "sha256": "c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7"
   },
   "derived": {
     "stable_fraction_drop_1000_to_original_3000_percentage_points": 21.540626045316458,
@@ -154,5 +155,6 @@
     "all_reported_success_fractions_zero": true
   },
   "interpretation": "All 14 scheduled nominal summaries including the repeated resume evaluation are PASS with zero strict success. Stable fraction peaks at update 1000 (90.175%), falls to 31.2375% at 4500, then reaches 35.1625% at 6000. Most evaluations survive the full 10-second horizon. Causes require full logs and per-condition/video diagnostics; existing aggregate metrics do not identify them.",
-  "decision": "6000-update segment is complete. Select original update 1000 as the best nominal candidate across all received segments; retain update 6000 as the final resumable state. Retrieve raw evidence and diagnose before any additional training; do not change frozen definitions."
+  "decision": "6000-update segment is complete. Select original update 1000 as the best nominal candidate across all received segments; retain update 6000 as the final resumable state. Retrieve raw evidence and diagnose before any additional training; do not change frozen definitions.",
+  "archive_review": "docs/audits/stage-07-archive-review.json"
 }
