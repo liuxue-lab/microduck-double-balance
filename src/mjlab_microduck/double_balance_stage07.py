@@ -118,7 +118,8 @@ def summarize_iterations(rows, warmup, num_envs):
 
 
 @contextmanager
-def monitor_updates(runner, env, output, updates):
+def monitor_updates(runner, env, output, updates, *, start_completed=0, on_update=None,
+                    prefix="Stage07CapacityUpdate"):
     """Checks used in capacity and intended for the formal training entry.
 
     There is one synchronization per environment step for the additional
@@ -142,7 +143,7 @@ def monitor_updates(runner, env, output, updates):
         flags.append(~raw.termination_manager.get_term("nan_state").any())
         require(bool(torch.stack(flags).all()), "non-finite rollout or nan_state termination")
         evidence["vector_steps"] += 1
-        require(evidence["vector_steps"] <= updates * STEPS_PER_ENV, "capacity step limit exceeded")
+        require(evidence["vector_steps"] <= updates * STEPS_PER_ENV, "session step limit exceeded")
         return result
 
     def returns(obs):
@@ -173,11 +174,12 @@ def monitor_updates(runner, env, output, updates):
         nonlocal last
         torch.cuda.synchronize()
         now = time.perf_counter()
-        completed = len(evidence["iterations"]) + 1
+        session_completed = len(evidence["iterations"]) + 1
+        completed = start_completed + session_completed
         expected = progress_after_updates(completed)
         require(kwargs["it"] == expected["last_completed_iteration"], "runner iteration mismatch")
         require(raw.common_step_counter == expected["common_step_counter"], "global progress mismatch")
-        require(completed <= updates, "capacity update limit exceeded")
+        require(session_completed <= updates, "session update limit exceeded")
         row = {
             "completed_updates": completed, "runner_iteration": kwargs["it"],
             "common_step_counter": raw.common_step_counter,
@@ -189,13 +191,31 @@ def monitor_updates(runner, env, output, updates):
             "hold_level_counts": torch.bincount(raw._basketball_state.level,
                                                 minlength=len(HOLD_LEVELS)).cpu().tolist(),
         }
-        last = now
+        if on_update is not None:
+            # Capture the native logger's episode summaries before it clears them.
+            episode = {}
+            for item in runner.logger.ep_extras:
+                for key, value in item.items():
+                    tensor = torch.as_tensor(value, device=raw.device).reshape(-1).float()
+                    require_finite(tensor, key)
+                    episode.setdefault(key, []).append(tensor)
+            row["episode"] = {k: float(torch.cat(v).mean()) for k, v in episode.items()}
+            row["mean_episode_return_last_100"] = (
+                statistics.mean(runner.logger.rewbuffer) if runner.logger.rewbuffer else None)
+            row["mean_episode_seconds_last_100"] = (
+                statistics.mean(runner.logger.lenbuffer) * raw.step_dt
+                if runner.logger.lenbuffer else None)
         evidence["iterations"].append(row)
         line = json.dumps(row, allow_nan=False)
         stream.write(line + "\n")
         stream.flush()
-        print("Stage07CapacityUpdate=" + line, flush=True)
-        return original_log(**kwargs)
+        print(prefix + "=" + line, flush=True)
+        result = original_log(**kwargs)
+        if on_update is not None:
+            on_update(row, evidence)
+        # Checkpoint/evaluation time is tracked by the formal job wall clock.
+        last = time.perf_counter()
+        return result
 
     env.step, alg.compute_returns, alg.update, runner.logger.log = step, returns, update, log
     hook = alg.optimizer.register_step_pre_hook(before_optimizer)
