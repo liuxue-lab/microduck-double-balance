@@ -1,0 +1,115 @@
+{
+  "stage": 7,
+  "status": "RESUME_INITIALIZATION_PASS_EVALUATION_PENDING",
+  "formal_training_started": true,
+  "stage07_complete": false,
+  "completed_updates_confirmed": 3000,
+  "target_updates": 6000,
+  "num_envs": 4096,
+  "ssh_host": "connect.bjb1.seetacloud.com",
+  "ssh_port": 26497,
+  "runtime_git_head_user_reported": "2d10af503945f26f1d7364f19e4152eb540fb4d2",
+  "stage05_initialization_sha256": "548758afc546e11d8f3f446a4bcc846283a669ff20f4048da7a3a7bb1332b98e",
+  "current_run_directory": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage07/train-20260927T144559Z-1633",
+  "evaluation_in_progress_at_last_observation": 3000,
+  "checkpoint_receipt": {
+    "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage07/train-20260927T144559Z-1633/checkpoints/update_003000.pt",
+    "sha256": "2f1115d039b1abd6e8131fa8b0a72953b8757a3d4433c2316213065dfe6cdb33",
+    "size_bytes": 10072796,
+    "completed_updates": 3000,
+    "created_utc": "2026-09-27T14:46:17.723931+00:00",
+    "git_head": "2d10af503945f26f1d7364f19e4152eb540fb4d2"
+  },
+  "observations": [
+    {
+      "evidence_source": {
+        "type": "user-provided monitor screenshot; transcribed visible values",
+        "filename": "image(10).png",
+        "sha256": "e77d1545548ba443136c098f378117af0a13357b0a6ff065aaa56f51b0b38ee9",
+        "received_at": "2026-09-27T18:58:35+08:00",
+        "displayed_cloud_time": "2026-09-27 18:58:21",
+        "displayed_cloud_timezone": "not independently verified",
+        "scope": "Runtime observation, not complete training.json or checkpoint readback"
+      },
+      "task_status": "RUNNING",
+      "completed_updates": 293,
+      "target_updates": 6000,
+      "num_envs": 4096,
+      "latest_iteration_seconds_displayed": 4.49,
+      "learning_rate": 3.375e-05,
+      "assistance_strengths": [
+        1.0,
+        0.5,
+        0.25,
+        0.1,
+        0.03,
+        0.0
+      ],
+      "hold_level_counts": [
+        9,
+        229,
+        3349,
+        509,
+        0,
+        0
+      ],
+      "gpu_sample": {
+        "name": "NVIDIA A800-SXM4-80GB",
+        "utilization_percent": 81,
+        "memory_used_mib": 23661,
+        "memory_total_mib": 81920,
+        "temperature_c": 44,
+        "power_draw_w": 169.7,
+        "scope": "single whole-GPU instantaneous sample; not a peak or time average"
+      },
+      "latest_completed_evaluation": {
+        "completed_updates": 0,
+        "status": "PASS",
+        "success_fraction_displayed": 0.0,
+        "mean_survival_seconds_displayed": 0.28,
+        "interpretation": "Unassisted pre-training nominal baseline; not an evaluation of update 293",
+        "sampling_scope": "Configured protocol uses 64 deterministic nominal copies, not independent randomized trials"
+      },
+      "kind": "historical_monitor_screenshot"
+    },
+    {
+      "received_at": "2026-09-27T22:43:20+08:00",
+      "event": "User reports automatic instance shutdown due to expired balance, then recharge and power-on",
+      "last_console_output": {
+        "iteration_seconds": 4.67,
+        "time_elapsed": "03:54:44",
+        "eta": "03:41:31"
+      },
+      "persisted_checkpoint_completed_updates": null,
+      "resume_status": "SUBSEQUENT_INITIALIZATION_PASS_AT_UPDATE_3000",
+      "resume_target_completed_updates": 6000,
+      "earlier_screenshot_fields": "Historical observation at update 293; not the progress at shutdown",
+      "kind": "user_reported_power_interruption"
+    },
+    {
+      "kind": "resume_initialization",
+      "evidence_source": "User-pasted cloud log; checkpoint bytes and complete reports not downloaded yet",
+      "received_at": "2026-09-27T22:46:42+08:00",
+      "checkpoint_receipt": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage07/train-20260927T144559Z-1633/checkpoints/update_003000.pt",
+        "sha256": "2f1115d039b1abd6e8131fa8b0a72953b8757a3d4433c2316213065dfe6cdb33",
+        "size_bytes": 10072796,
+        "completed_updates": 3000,
+        "created_utc": "2026-09-27T14:46:17.723931+00:00",
+        "git_head": "2d10af503945f26f1d7364f19e4152eb540fb4d2"
+      },
+      "markers": [
+        "Stage07Initialization=PASS",
+        "Stage07EvaluationStart=3000"
+      ],
+      "interpretation": "Strict resume initialization and validated save passed; evaluation and updates beyond 3000 not yet observed",
+      "onnx_warning": "PyTorch LSTM variable-batch export UserWarning; execution continued to checkpoint receipt and initialization PASS; ONNX runtime validation pending"
+    }
+  ],
+  "pending": [
+    "Confirm resumed evaluation result and first PPO update beyond 3000",
+    "Read back complete reports and checkpoint receipts from both run segments",
+    "Compare unassisted evaluation trends and retain both segments for global checkpoint selection",
+    "Complete training, ONNX/video evaluation, checkpoint archive, final handoff, local annotated tag and SSH push"
+  ]
+}
