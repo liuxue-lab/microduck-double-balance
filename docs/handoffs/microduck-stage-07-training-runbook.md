@@ -1,6 +1,6 @@
 # Microduck Stage 07 正式训练操作与恢复
 
-状态：正式训练已保存 3000/6000 次更新。欠费关机、续费开机后，第 3000 次检查点恢复初始化通过，恢复点评估及后续更新尚待确认。本阶段未完成，证据见 `docs/audits/stage-07-training-progress.json`。
+状态：欠费关机后已从第 3000 次检查点恢复，用户截图确认继续到 3049/6000 次更新；第 3000 次名义无辅助评估正常结束，平均存活 10.00 秒、严格成功率 0%。本阶段未完成，证据见 `docs/audits/stage-07-training-progress.json`。
 本文件是运行说明，不是 `stage-07-complete` 交接。
 
 始终沿用 [本机提交与 SSH 推送规范](microduck-local-ssh-push-protocol.md)。
@@ -134,6 +134,6 @@ bash scripts/deploy_stage07_training_local.sh 26497 \
 
 `Stage07Training=TRAINING_COMPLETE` 只表示本段目标更新完成；Stage 07 还需选择模型、
 回传归档、检查评估/视频、生成完整交接并提交。
-当前工具通过 19 项 CPU 定向测试与 shell/语法检查；云端正式入口已保存 3000 次更新，断点恢复初始化通过；恢复后的评估和 PPO 更新、完整训练结果仍待验收。
+当前工具通过 19 项 CPU 定向测试与 shell/语法检查；云端正式入口已保存 3000 次更新，断点恢复初始化、恢复点评估与后续 PPO 更新已得到用户日志/截图确认；完整训练与结果归档仍待验收。
 容量四档已实测通过；不将这两类证据混为一次正式训练验收。
 最终 `stage-07-complete` 注释标签和 SSH 推送在本机执行，正常推送成功后不重复完整核验。

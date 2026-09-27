@@ -1,9 +1,9 @@
 {
   "stage": 7,
-  "status": "RESUME_INITIALIZATION_PASS_EVALUATION_PENDING",
+  "status": "RESUMED_FORMAL_TRAINING_RUNNING_USER_OBSERVED",
   "formal_training_started": true,
   "stage07_complete": false,
-  "completed_updates_confirmed": 3000,
+  "completed_updates_confirmed": 3049,
   "target_updates": 6000,
   "num_envs": 4096,
   "ssh_host": "connect.bjb1.seetacloud.com",
@@ -11,7 +11,7 @@
   "runtime_git_head_user_reported": "2d10af503945f26f1d7364f19e4152eb540fb4d2",
   "stage05_initialization_sha256": "548758afc546e11d8f3f446a4bcc846283a669ff20f4048da7a3a7bb1332b98e",
   "current_run_directory": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage07/train-20260927T144559Z-1633",
-  "evaluation_in_progress_at_last_observation": 3000,
+  "evaluation_in_progress_at_last_observation": null,
   "checkpoint_receipt": {
     "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage07/train-20260927T144559Z-1633/checkpoints/update_003000.pt",
     "sha256": "2f1115d039b1abd6e8131fa8b0a72953b8757a3d4433c2316213065dfe6cdb33",
@@ -104,12 +104,78 @@
       ],
       "interpretation": "Strict resume initialization and validated save passed; evaluation and updates beyond 3000 not yet observed",
       "onnx_warning": "PyTorch LSTM variable-batch export UserWarning; execution continued to checkpoint receipt and initialization PASS; ONNX runtime validation pending"
+    },
+    {
+      "kind": "resumed_training_monitor_screenshot",
+      "evidence_source": {
+        "type": "user-provided screenshot; transcribed visible values",
+        "filename": "image(20260927-145109).png",
+        "sha256": "0d092c8061ddb4521a9fdd6371b6162fb4164de5ca73b10cbb4c3cd6bbc9e3e5",
+        "received_at": "2026-09-27T22:51:17+08:00",
+        "displayed_cloud_time": "2026-09-27 22:50:58",
+        "displayed_cloud_timezone": "not independently verified"
+      },
+      "task_status": "RUNNING",
+      "completed_updates": 3049,
+      "target_updates": 6000,
+      "num_envs": 4096,
+      "latest_iteration_seconds_displayed": 4.7,
+      "learning_rate": 1.5e-05,
+      "assistance_strengths": [
+        1.0,
+        0.5,
+        0.25,
+        0.1,
+        0.03,
+        0.0
+      ],
+      "hold_level_counts": [
+        4,
+        3,
+        41,
+        79,
+        434,
+        3535
+      ],
+      "gpu_sample": {
+        "name": "NVIDIA A800-SXM4-80GB",
+        "utilization_percent": 83,
+        "memory_used_mib": 23353,
+        "memory_total_mib": 81920,
+        "temperature_c": 42,
+        "power_draw_w": 106.45,
+        "scope": "single whole-GPU instantaneous sample; not a peak or time average"
+      },
+      "latest_completed_evaluation": {
+        "completed_updates": 3000,
+        "status": "PASS",
+        "success_fraction_displayed": 0.0,
+        "mean_survival_seconds_displayed": 10.0,
+        "mean_stable_fraction": null,
+        "mean_top_center_error_m": null,
+        "interpretation": "Nominal unassisted survival reaches displayed 10-second horizon, but strict final continuous 5-second success is not achieved; detailed metrics pending",
+        "sampling_scope": "64 deterministic nominal copies under the fixed protocol, not independent randomized trials"
+      }
     }
   ],
   "pending": [
-    "Confirm resumed evaluation result and first PPO update beyond 3000",
-    "Read back complete reports and checkpoint receipts from both run segments",
+    "Read complete existing evaluation/iteration logs; identify stability gap and curriculum correlations, then obtain per-condition rollout evidence if needed",
+    "Read back complete training reports and checkpoint receipts from both segments",
     "Compare unassisted evaluation trends and retain both segments for global checkpoint selection",
     "Complete training, ONNX/video evaluation, checkpoint archive, final handoff, local annotated tag and SSH push"
-  ]
+  ],
+  "latest_completed_evaluation_observed": {
+    "completed_updates": 3000,
+    "status": "PASS",
+    "success_fraction_displayed": 0.0,
+    "mean_survival_seconds_displayed": 10.0,
+    "mean_stable_fraction": 0.6890000342391431,
+    "mean_top_center_error_m": 0.005301474844600307,
+    "interpretation": "Nominal unassisted survival reaches displayed 10-second horizon, but strict final continuous 5-second success is not achieved; detailed metrics pending",
+    "sampling_scope": "64 deterministic nominal copies under the fixed protocol, not independent randomized trials"
+  },
+  "evaluation_summary_archive": "docs/audits/stage-07-nominal-evaluation-progress.json",
+  "current_quality_review": "Nominal survival improves to the horizon; strict success stays zero and stable-time fraction declines after update 1000. Decline is already present before the power interruption. Existing summary means cannot identify the failed instantaneous condition or prove a curriculum cause.",
+  "current_training_decision": "Retain all periodic checkpoints and the update-1000 candidate; continue the existing authorized segment while inspecting logs, review upcoming 3500/4000 evaluations, and do not automatically extend beyond 6000 based only on iteration count.",
+  "best_candidate_completed_updates_among_received_evaluations": 1000
 }

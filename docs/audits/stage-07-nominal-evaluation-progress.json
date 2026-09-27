@@ -1,0 +1,101 @@
+{
+  "stage": 7,
+  "status": "PARTIAL_TRAINING_EVIDENCE_NOT_FINAL_ACCEPTANCE",
+  "received_at": "2026-09-27T22:54:51+08:00",
+  "source": "User-pasted read-only projections of cloud evaluation.json files; semantic archive, complete source files pending",
+  "protocol": "stage04-frozen-play-10s-first-episode-v1",
+  "sampling_scope": "64 deterministic nominal initial-state copies; not independent randomized trials or a robustness estimate",
+  "rows": [
+    {
+      "run": "train-20260927T103517Z-3844",
+      "completed_updates": 0,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 0.28,
+      "mean_stable_fraction": 0.07031250314321369,
+      "mean_top_center_error_m": 0.022786041838116944
+    },
+    {
+      "run": "train-20260927T103517Z-3844",
+      "completed_updates": 500,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 1.7121875,
+      "mean_stable_fraction": 0.5400688913650811,
+      "mean_top_center_error_m": 0.015306070403312333
+    },
+    {
+      "run": "train-20260927T103517Z-3844",
+      "completed_updates": 1000,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.9017500448971987,
+      "mean_top_center_error_m": 0.0035159966500941664
+    },
+    {
+      "run": "train-20260927T103517Z-3844",
+      "completed_updates": 1500,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.8610625369474292,
+      "mean_top_center_error_m": 0.004349392380390782
+    },
+    {
+      "run": "train-20260927T103517Z-3844",
+      "completed_updates": 2000,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.835250043310225,
+      "mean_top_center_error_m": 0.003995541377662448
+    },
+    {
+      "run": "train-20260927T103517Z-3844",
+      "completed_updates": 2500,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.7281875340268016,
+      "mean_top_center_error_m": 0.00324527492193738
+    },
+    {
+      "run": "train-20260927T103517Z-3844",
+      "completed_updates": 3000,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.6863437844440341,
+      "mean_top_center_error_m": 0.005272063273878302
+    },
+    {
+      "run": "train-20260927T144559Z-1633",
+      "completed_updates": 3000,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.6890000342391431,
+      "mean_top_center_error_m": 0.005301474844600307
+    }
+  ],
+  "best_candidate_among_received_rows": {
+    "run": "train-20260927T103517Z-3844",
+    "completed_updates": 1000,
+    "expected_checkpoint": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage07/train-20260927T103517Z-3844/checkpoints/update_001000.pt",
+    "selection_order": [
+      "higher success_fraction",
+      "higher mean_survival_seconds",
+      "higher mean_stable_fraction",
+      "lower mean_top_center_error_m"
+    ],
+    "receipt_and_file_readback": "PENDING"
+  },
+  "derived": {
+    "stable_fraction_drop_1000_to_original_3000_percentage_points": 21.540626045316458,
+    "stable_fraction_drop_1000_to_resumed_3000_percentage_points": 21.275001065805554,
+    "resumed_minus_original_3000_stable_percentage_points": 0.26562497951090336
+  },
+  "interpretation": "Nominal survival improves to the horizon; strict success stays zero and stable-time fraction declines after update 1000. Decline is already present before the power interruption. Existing summary means cannot identify the failed instantaneous condition or prove a curriculum cause.",
+  "decision": "Retain all periodic checkpoints and the update-1000 candidate; continue the existing authorized segment while inspecting logs, review upcoming 3500/4000 evaluations, and do not automatically extend beyond 6000 based only on iteration count."
+}
