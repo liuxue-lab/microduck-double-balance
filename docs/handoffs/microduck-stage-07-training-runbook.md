@@ -1,6 +1,6 @@
 # Microduck Stage 07 正式训练操作与恢复
 
-状态：欠费关机后已从第 3000 次检查点恢复，用户截图确认继续到 3049/6000 次更新；第 3000 次名义无辅助评估正常结束，平均存活 10.00 秒、严格成功率 0%。本阶段未完成，证据见 `docs/audits/stage-07-training-progress.json`。
+状态：2026-09-28 02:56 用户回传 TRAINING_COMPLETE、6000/6000 和 finite_checks=PASS，末次评估也已 PASS。全部 14 条名义评估的严格成功率均为 0%；跨段最佳候选是原段第 1000 次（稳定时间 90.18%），第 6000 次为 35.16%。训练段已完成，原始证据回传、诊断/视频、检查点归档和阶段交接仍待完成，不自动追加训练。证据见 `docs/audits/stage-07-training-progress.json` 及 `docs/audits/stage-07-update-6000-review.md`。
 本文件是运行说明，不是 `stage-07-complete` 交接。
 
 始终沿用 [本机提交与 SSH 推送规范](microduck-local-ssh-push-protocol.md)。
@@ -134,6 +134,33 @@ bash scripts/deploy_stage07_training_local.sh 26497 \
 
 `Stage07Training=TRAINING_COMPLETE` 只表示本段目标更新完成；Stage 07 还需选择模型、
 回传归档、检查评估/视频、生成完整交接并提交。
-当前工具通过 19 项 CPU 定向测试与 shell/语法检查；云端正式入口已保存 3000 次更新，断点恢复初始化、恢复点评估与后续 PPO 更新已得到用户日志/截图确认；完整训练与结果归档仍待验收。
+当前正式训练工具通过 19 项 CPU 定向测试与 shell/语法检查；云端 6000 次训练、断点恢复、
+最终名义评估与 finite_checks=PASS 已得到用户回传确认；原始证据与结果归档仍待验收。
 容量四档已实测通过；不将这两类证据混为一次正式训练验收。
 最终 `stage-07-complete` 注释标签和 SSH 推送在本机执行，正常推送成功后不重复完整核验。
+
+## 训练结束后的只读回传
+
+将 `scripts/collect_stage07_results.py` 下载到固定目录 `/home/lx/下载`，在本机执行：
+
+```bash
+python3 /home/lx/下载/collect_stage07_results.py --port 26497
+```
+
+只需系统 Python 标准库和 SSH，不需要部署新 bundle 或重新安装项目环境。
+脚本将自身通过 SSH 标准输入送到云端运行，只读结果文件并输出归档；不会写入云端仓库、
+启动训练、加载模型执行推理或修改课程。先确认最新训练段为 6000 次完成状态、有限值检查
+和末次评估通过，再按现有排序跨全部训练段选择最佳名义模型，同时保留最终训练状态。
+云端检查模型文件、保存收据与对应评估记录的 SHA-256 一致后才传输。
+
+回传内容包括两个训练段的逐更新记录、配置、评估报告、日志、全部检查点收据及
+最佳/最终两个 `.pt`，不传其他周期模型和 TensorBoard 事件。所有云端原件均保留。
+下载包使用唯一名称 `microduck-stage07-results-<时间>-<随机后缀>.tar.gz`，放在固定下载目录；
+本机核对归档中全部文件的大小和 SHA-256 后，解包到仓库外的
+`/home/lx/microduck-double-balance/artifacts/double-balance-stage07/` 新目录。
+脚本打印 `Stage07ResultsDownload=PASS`、归档路径和校验值；失败时不报告成功。
+随后把该归档回传给审查端，以检查原始指标、课程和模型。这里的下载校验不替代视频或策略验收。
+
+收集工具已通过 6 项标准库测试：跨段选择与回传校验、拒绝未完成训练、拒绝损坏检查点、
+拒绝缺失的最终评估、拒绝不安全归档路径以及拒绝内容传输校验不一致。
+这仅是工具验证；实际云端回传尚待用户执行。

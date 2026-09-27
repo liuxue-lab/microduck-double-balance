@@ -1,0 +1,14 @@
+test_refuses_missing_final_evaluation (__main__.Stage07CollectionTests.test_refuses_missing_final_evaluation) ... ok
+test_refuses_unfinished_run (__main__.Stage07CollectionTests.test_refuses_unfinished_run) ... ok
+test_rejects_corrupt_checkpoint_on_cloud (__main__.Stage07CollectionTests.test_rejects_corrupt_checkpoint_on_cloud) ... ok
+test_rejects_transfer_content_mismatch (__main__.Stage07CollectionTests.test_rejects_transfer_content_mismatch) ... ok
+test_rejects_traversal_before_extraction (__main__.Stage07CollectionTests.test_rejects_traversal_before_extraction) ... ok
+test_selects_across_segments_and_verifies_download (__main__.Stage07CollectionTests.test_selects_across_segments_and_verifies_download) ... Stage07CloudCheckpointReceipts=PASS
+Selected[best_nominal]=train-first/checkpoints/update_001000.pt
+Selected[final_state]=train-last/checkpoints/update_006000.pt
+ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.018s
+
+OK

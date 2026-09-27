@@ -1,9 +1,9 @@
 {
   "stage": 7,
-  "status": "RESUMED_FORMAL_TRAINING_RUNNING_USER_OBSERVED",
+  "status": "TRAINING_COMPLETE_REVIEW_AND_ARCHIVE_PENDING",
   "formal_training_started": true,
   "stage07_complete": false,
-  "completed_updates_confirmed": 3049,
+  "completed_updates_confirmed": 6000,
   "target_updates": 6000,
   "num_envs": 4096,
   "ssh_host": "connect.bjb1.seetacloud.com",
@@ -156,26 +156,185 @@
         "interpretation": "Nominal unassisted survival reaches displayed 10-second horizon, but strict final continuous 5-second success is not achieved; detailed metrics pending",
         "sampling_scope": "64 deterministic nominal copies under the fixed protocol, not independent randomized trials"
       }
+    },
+    {
+      "kind": "last_visible_monitor_before_ssh_disconnect",
+      "evidence_source": {
+        "type": "user-provided screenshots; visible values transcribed",
+        "files": [
+          {
+            "filename": "image(20260927-170141).png",
+            "sha256": "4cb163dd5c6402774e89f4832e4e31d8d3ff5b1300cc8f350aebc9b6cc8de25c"
+          },
+          {
+            "filename": "image(20260927-170144).png",
+            "sha256": "8bfdbca4c5ca451381c10a8389f0b9d40d5990b1780bc391baf6cdea1f643c14"
+          }
+        ],
+        "received_at": "2026-09-28T01:01:47+08:00",
+        "displayed_cloud_time": "2026-09-28 00:53:02",
+        "displayed_cloud_timezone": "not independently verified"
+      },
+      "last_visible_task_status": "RUNNING",
+      "completed_updates": 4537,
+      "target_updates": 6000,
+      "num_envs": 4096,
+      "latest_iteration_seconds_displayed": 4.76,
+      "learning_rate": 3.375e-05,
+      "assistance_strengths": [
+        1.0,
+        0.5,
+        0.25,
+        0.1,
+        0.03,
+        0.0
+      ],
+      "hold_level_counts": [
+        0,
+        0,
+        22,
+        184,
+        466,
+        3424
+      ],
+      "gpu_sample": {
+        "utilization_percent": 85,
+        "memory_used_mib": 23355,
+        "memory_total_mib": 81920,
+        "temperature_c": 43,
+        "power_draw_w": 132.13
+      },
+      "latest_completed_evaluation": {
+        "completed_updates": 4500,
+        "status": "PASS",
+        "success_fraction_displayed": 0.0,
+        "mean_survival_seconds_displayed": 10.0,
+        "mean_stable_fraction": null,
+        "mean_top_center_error_m": null
+      },
+      "training_episode_metrics_from_companion_screenshot": {
+        "scope": "Training rollout summaries with commands/randomization/assistance; not nominal evaluation metrics. Exact update number absent from this screenshot.",
+        "Episode_Reward/action_rate_l2": -1.7311,
+        "Episode_Reward/double_balance": 1.0182,
+        "Episode_Metrics/top_ball_center_error_m": 0.0119,
+        "Episode_Metrics/top_ball_relative_speed_m_s": 0.0842,
+        "Episode_Metrics/double_balance_stable_fraction": 0.1236,
+        "Episode_Metrics/double_balance_success": 0.0,
+        "Curriculum/action_rate_weight": -1.0,
+        "Curriculum/standing_envs": 0.25,
+        "Curriculum/com_range": 0.015,
+        "Curriculum/head_com_range": 0.01,
+        "Curriculum/basketball_hold": 4.7788,
+        "Episode_Termination/nan_state": 0.0,
+        "iteration_seconds": 4.76,
+        "elapsed_text": "02:01:05",
+        "eta_text": "01:55:15"
+      },
+      "connection_evidence": "Both clients report connection closed by remote host; one reports Exit status -1",
+      "inference_limit": "SSH closure alone does not prove instance shutdown or training exit. Live tmux/process/report state and latest persisted checkpoint need rechecking.",
+      "planned_recovery": "Check tmux and training/evaluation processes first; keep a running job, otherwise validate the last Stage 07 checkpoint and resume toward cumulative 6000 updates."
+    },
+    {
+      "kind": "training_log_after_reconnect",
+      "evidence_source": {
+        "type": "user-provided screenshot; visible values transcribed",
+        "filename": "image(20260927-170846).png",
+        "sha256": "ae9bbadbb4199e8d777410403e355b802f352767ebd864a8a877a16497a63f95",
+        "received_at": "2026-09-28T01:08:49+08:00"
+      },
+      "completed_updates": null,
+      "iteration_seconds": 4.73,
+      "elapsed_text": "02:16:22",
+      "eta_text": "01:40:07",
+      "training_episode_metrics": {
+        "scope": "Training rollout summaries with commands/randomization/assistance; not nominal evaluation metrics",
+        "Episode_Reward/action_rate_l2": -1.7842,
+        "Episode_Reward/double_balance": 1.172,
+        "Episode_Metrics/top_ball_center_error_m": 0.0113,
+        "Episode_Metrics/top_ball_relative_speed_m_s": 0.0836,
+        "Episode_Metrics/double_balance_stable_fraction": 0.1347,
+        "Episode_Metrics/double_balance_success": 0.0,
+        "Curriculum/action_rate_weight": -1.0,
+        "Curriculum/standing_envs": 0.25,
+        "Curriculum/com_range": 0.015,
+        "Curriculum/head_com_range": 0.01,
+        "Curriculum/basketball_hold": 4.8342,
+        "Episode_Termination/nan_state": 0.0
+      },
+      "interpretation": "Visible elapsed time advances from 02:01:05 to 02:16:22 and ETA decreases. This supports continued training activity after the earlier SSH disconnect; no duplicate launch is needed while logs continue advancing.",
+      "inference_limit": "Screenshot omits the exact update number, run directory, GPU utilization and process list. It does not establish whether a new process was launched or prove uninterrupted execution. The latest exact update observation remains 4537."
+    },
+    {
+      "kind": "target_updates_reached_monitor_text",
+      "evidence_source": "User-pasted monitor output; complete reports and checkpoint readback pending",
+      "received_at": "2026-09-28T02:54:15+08:00",
+      "task_status": "RUNNING",
+      "completed_updates": 6000,
+      "target_updates": 6000,
+      "num_envs": 4096,
+      "latest_iteration_seconds_displayed": 4.59,
+      "learning_rate": 3.375e-05,
+      "assistance_strengths": [
+        1.0,
+        0.5,
+        0.25,
+        0.1,
+        0.03,
+        0.0
+      ],
+      "hold_level_counts": [
+        1,
+        0,
+        16,
+        68,
+        234,
+        3777
+      ],
+      "unassisted_environment_fraction": 0.922119140625,
+      "latest_completed_evaluation": {
+        "completed_updates": 5500,
+        "status": "PASS",
+        "success_fraction_displayed": 0.0,
+        "mean_survival_seconds_displayed": 10.0,
+        "mean_stable_fraction": null,
+        "mean_top_center_error_m": null
+      },
+      "interpretation": "Target PPO update count reached. RUNNING and last evaluation at 5500 are consistent with pending final save/evaluation/checks, but do not independently prove which finalization step is active. Await update-6000 evaluation and TRAINING_COMPLETE.",
+      "inference_limit": "Assistance-level counts measure curriculum state, not task success. No final checkpoint receipt, final evaluation or finite-check acceptance received yet."
+    },
+    {
+      "kind": "completed_segment_and_all_nominal_summaries",
+      "received_at": "2026-09-28T02:56:57+08:00",
+      "evidence_source": "User-pasted read-only training.json projection and 14 evaluation summaries; raw files pending",
+      "run": "train-20260927T144559Z-1633",
+      "task_status": "TRAINING_COMPLETE",
+      "completed_updates": 6000,
+      "target_updates": 6000,
+      "finite_checks": "PASS",
+      "latest_checkpoint": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage07/train-20260927T144559Z-1633/checkpoints/update_006000.pt",
+      "error": null,
+      "evaluation_summary_archive": "docs/audits/stage-07-nominal-evaluation-progress.json",
+      "stage07_complete": false
     }
   ],
   "pending": [
-    "Read complete existing evaluation/iteration logs; identify stability gap and curriculum correlations, then obtain per-condition rollout evidence if needed",
-    "Read back complete training reports and checkpoint receipts from both segments",
-    "Compare unassisted evaluation trends and retain both segments for global checkpoint selection",
-    "Complete training, ONNX/video evaluation, checkpoint archive, final handoff, local annotated tag and SSH push"
+    "Retrieve raw reports, training logs and candidate/final checkpoint bytes; validate receipt SHA-256 after transfer",
+    "Diagnose unmet strict success using per-condition evaluation and video before deciding whether to extend training",
+    "Complete checkpoint archive, honest stage handoff and commit; create annotated tag and SSH push on laptop only after stage closure work"
   ],
   "latest_completed_evaluation_observed": {
-    "completed_updates": 3000,
+    "run": "train-20260927T144559Z-1633",
+    "completed_updates": 6000,
     "status": "PASS",
-    "success_fraction_displayed": 0.0,
-    "mean_survival_seconds_displayed": 10.0,
-    "mean_stable_fraction": 0.6890000342391431,
-    "mean_top_center_error_m": 0.005301474844600307,
-    "interpretation": "Nominal unassisted survival reaches displayed 10-second horizon, but strict final continuous 5-second success is not achieved; detailed metrics pending",
-    "sampling_scope": "64 deterministic nominal copies under the fixed protocol, not independent randomized trials"
+    "success_fraction": 0.0,
+    "mean_survival_seconds": 10.0,
+    "mean_stable_fraction": 0.35162501549348235,
+    "mean_top_center_error_m": 0.0038135496506583877
   },
   "evaluation_summary_archive": "docs/audits/stage-07-nominal-evaluation-progress.json",
-  "current_quality_review": "Nominal survival improves to the horizon; strict success stays zero and stable-time fraction declines after update 1000. Decline is already present before the power interruption. Existing summary means cannot identify the failed instantaneous condition or prove a curriculum cause.",
-  "current_training_decision": "Retain all periodic checkpoints and the update-1000 candidate; continue the existing authorized segment while inspecting logs, review upcoming 3500/4000 evaluations, and do not automatically extend beyond 6000 based only on iteration count.",
-  "best_candidate_completed_updates_among_received_evaluations": 1000
+  "current_quality_review": "All 14 scheduled nominal summaries including the repeated resume evaluation are PASS with zero strict success. Stable fraction peaks at update 1000 (90.175%), falls to 31.2375% at 4500, then reaches 35.1625% at 6000. Most evaluations survive the full 10-second horizon. Causes require full logs and per-condition/video diagnostics; existing aggregate metrics do not identify them.",
+  "current_training_decision": "6000-update segment is complete. Select original update 1000 as the best nominal candidate across all received segments; retain update 6000 as the final resumable state. Retrieve raw evidence and diagnose before any additional training; do not change frozen definitions.",
+  "best_candidate_completed_updates_among_received_evaluations": 1000,
+  "finite_checks_user_reported": "PASS",
+  "latest_checkpoint_user_reported": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage07/train-20260927T144559Z-1633/checkpoints/update_006000.pt"
 }

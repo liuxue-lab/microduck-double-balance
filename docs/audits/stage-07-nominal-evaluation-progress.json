@@ -1,7 +1,7 @@
 {
   "stage": 7,
-  "status": "PARTIAL_TRAINING_EVIDENCE_NOT_FINAL_ACCEPTANCE",
-  "received_at": "2026-09-27T22:54:51+08:00",
+  "status": "ALL_SCHEDULED_NOMINAL_SUMMARIES_RECEIVED_RAW_REPORTS_PENDING",
+  "received_at": "2026-09-28T02:56:57+08:00",
   "source": "User-pasted read-only projections of cloud evaluation.json files; semantic archive, complete source files pending",
   "protocol": "stage04-frozen-play-10s-first-episode-v1",
   "sampling_scope": "64 deterministic nominal initial-state copies; not independent randomized trials or a robustness estimate",
@@ -77,6 +77,60 @@
       "mean_survival_seconds": 10.0,
       "mean_stable_fraction": 0.6890000342391431,
       "mean_top_center_error_m": 0.005301474844600307
+    },
+    {
+      "run": "train-20260927T144559Z-1633",
+      "completed_updates": 3500,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 9.7765625,
+      "mean_stable_fraction": 0.4948668098077178,
+      "mean_top_center_error_m": 0.007046081627777312
+    },
+    {
+      "run": "train-20260927T144559Z-1633",
+      "completed_updates": 4000,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.4274375201202929,
+      "mean_top_center_error_m": 0.0060399774156394415
+    },
+    {
+      "run": "train-20260927T144559Z-1633",
+      "completed_updates": 4500,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.3123750139493495,
+      "mean_top_center_error_m": 0.004876009694271488
+    },
+    {
+      "run": "train-20260927T144559Z-1633",
+      "completed_updates": 5000,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.3328750154469162,
+      "mean_top_center_error_m": 0.0037975037630531006
+    },
+    {
+      "run": "train-20260927T144559Z-1633",
+      "completed_updates": 5500,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.33587501430884004,
+      "mean_top_center_error_m": 0.004005853814305738
+    },
+    {
+      "run": "train-20260927T144559Z-1633",
+      "completed_updates": 6000,
+      "status": "PASS",
+      "success_fraction": 0.0,
+      "mean_survival_seconds": 10.0,
+      "mean_stable_fraction": 0.35162501549348235,
+      "mean_top_center_error_m": 0.0038135496506583877
     }
   ],
   "best_candidate_among_received_rows": {
@@ -94,8 +148,11 @@
   "derived": {
     "stable_fraction_drop_1000_to_original_3000_percentage_points": 21.540626045316458,
     "stable_fraction_drop_1000_to_resumed_3000_percentage_points": 21.275001065805554,
-    "resumed_minus_original_3000_stable_percentage_points": 0.26562497951090336
+    "resumed_minus_original_3000_stable_percentage_points": 0.26562497951090336,
+    "stable_fraction_drop_1000_to_6000_percentage_points": 55.01250294037163,
+    "evaluation_rows_received": 14,
+    "all_reported_success_fractions_zero": true
   },
-  "interpretation": "Nominal survival improves to the horizon; strict success stays zero and stable-time fraction declines after update 1000. Decline is already present before the power interruption. Existing summary means cannot identify the failed instantaneous condition or prove a curriculum cause.",
-  "decision": "Retain all periodic checkpoints and the update-1000 candidate; continue the existing authorized segment while inspecting logs, review upcoming 3500/4000 evaluations, and do not automatically extend beyond 6000 based only on iteration count."
+  "interpretation": "All 14 scheduled nominal summaries including the repeated resume evaluation are PASS with zero strict success. Stable fraction peaks at update 1000 (90.175%), falls to 31.2375% at 4500, then reaches 35.1625% at 6000. Most evaluations survive the full 10-second horizon. Causes require full logs and per-condition/video diagnostics; existing aggregate metrics do not identify them.",
+  "decision": "6000-update segment is complete. Select original update 1000 as the best nominal candidate across all received segments; retain update 6000 as the final resumable state. Retrieve raw evidence and diagnose before any additional training; do not change frozen definitions."
 }
