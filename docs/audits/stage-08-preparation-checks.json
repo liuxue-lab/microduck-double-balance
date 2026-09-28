@@ -1,0 +1,40 @@
+{
+  "stage": 8,
+  "status": "PREPARATION_ONLY",
+  "baseline_commit": "1fe5f54dc467205b846a807f2bd494c46f3e2c40",
+  "formal_training_started": false,
+  "ppo_updates": 0,
+  "cloud_connected": false,
+  "stage03_physics_modified": false,
+  "stage04_source_or_strict_evaluation_modified": false,
+  "stage06_smoke_rerun": false,
+  "completion_tag_created": false,
+  "pushed": false,
+  "verification": {
+    "command": "PYTHONPATH=src python3 -m unittest discover -s tests -p test_stage08_plan.py -v",
+    "passed": 9,
+    "failed": 0,
+    "scope": "stdlib configuration fixtures, progress counters and budget admission; no real task manager or CUDA"
+  },
+  "pending": [
+    "runtime restore and counter validation",
+    "real manager profile checks",
+    "live cumulative budget watchdog",
+    "batch evaluator and persisted initial states",
+    "5090 compatibility and capacity if selected",
+    "formal experiments",
+    "final evaluation and videos",
+    "artifact return and shutdown reminder",
+    "Stage 08 final acceptance and local annotated tag / SSH push"
+  ],
+  "budget_hours": {
+    "A800": 24,
+    "5090": 60
+  },
+  "finalization_reserve_hours": {
+    "A800": 4,
+    "5090": 8
+  },
+  "preferred_gpu": "5090",
+  "preference_basis": "larger time allowance, not measured performance superiority"
+}

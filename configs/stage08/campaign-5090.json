@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "stage": 8,
+  "status": "PREPARATION_ONLY_NOT_A_TRAINING_LAUNCHER",
+  "baseline_commit": "1fe5f54dc467205b846a807f2bd494c46f3e2c40",
+  "source_checkpoint_sha256": "c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7",
+  "num_envs": 4096,
+  "steps_per_env": 24,
+  "profiles": [
+    {
+      "name": "A",
+      "zero_command": false,
+      "fixed_action_rate": false,
+      "fixed_com": false,
+      "zero_assistance": false
+    },
+    {
+      "name": "B",
+      "zero_command": true,
+      "fixed_action_rate": false,
+      "fixed_com": false,
+      "zero_assistance": false
+    },
+    {
+      "name": "C",
+      "zero_command": true,
+      "fixed_action_rate": true,
+      "fixed_com": false,
+      "zero_assistance": false
+    },
+    {
+      "name": "D",
+      "zero_command": true,
+      "fixed_action_rate": true,
+      "fixed_com": true,
+      "zero_assistance": false
+    },
+    {
+      "name": "E",
+      "zero_command": true,
+      "fixed_action_rate": true,
+      "fixed_com": true,
+      "zero_assistance": true
+    }
+  ],
+  "screening": {
+    "seeds": [
+      20260928
+    ],
+    "updates_per_profile": 500,
+    "total_updates": 2500,
+    "save_every": 100,
+    "evaluate_at": [
+      0,
+      250,
+      500
+    ],
+    "extra_save_at": [
+      250
+    ]
+  },
+  "replication": {
+    "selected_profiles": 2,
+    "train_seeds": [
+      20260928,
+      20260929,
+      20260930
+    ],
+    "updates_per_lineage": 1500,
+    "incremental_updates_after_screening": 8000,
+    "gated_by_development_evidence": true
+  },
+  "conditional_extension": {
+    "available": true,
+    "selected_profiles": 1,
+    "train_seeds": [
+      20260928,
+      20260929,
+      20260930
+    ],
+    "updates_per_lineage": 4000,
+    "incremental_updates": 7500,
+    "gated_by": "multi-seed development improvement and remaining-time estimate"
+  },
+  "initial_state": {
+    "source_completed_updates": 1000,
+    "experiment_completed_updates": 0,
+    "lineage_completed_updates": 1000,
+    "last_completed_iteration": 999,
+    "next_iteration": 1000,
+    "common_step_counter": 24000,
+    "sim_step_counter": 240000,
+    "expected_adam_steps": 20000,
+    "experiment_transitions": 0,
+    "restore_actor_critic_normalizers": true,
+    "restore_adam_moments": true,
+    "learning_rate": 2.2500000000000008e-05,
+    "lr_schedule": "adaptive",
+    "desired_kl": 0.01,
+    "source_seed": 20260921,
+    "reset_episode_rng_rollout_hidden_state": true,
+    "assistance_A_to_D": "restore source per-env level/hold after episode reset",
+    "assistance_E": "set all level=5 and hold=0 after reset; assert all assistance wrenches zero",
+    "exact_trajectory_resume": false
+  },
+  "evaluation": {
+    "nominal": "unchanged Stage 04, 64 copies, 10 s, continuous final 5 s",
+    "development": {
+      "seeds": [
+        8101
+      ],
+      "episodes_per_seed": 128
+    },
+    "held_out": {
+      "seeds": [
+        8201,
+        8202,
+        8203
+      ],
+      "episodes_per_seed": 256,
+      "run_after_final_model_selection_only": true
+    },
+    "same_persisted_initial_states_across_models": true
+  },
+  "budget": {
+    "gpu": "5090",
+    "maximum_cloud_hours": 60,
+    "finalization_reserve_hours": 8,
+    "accounting": "cumulative powered-on cloud time including setup/eval/save/transfer",
+    "shutdown": "remind user after required artifacts have transferred and verified"
+  },
+  "capacity": {
+    "reuse_A800_evidence": false,
+    "new_5090_measurement_required": true,
+    "required_free_fraction": 0.15,
+    "automatically_reduce_environment_count": false
+  },
+  "formal_training_started": false
+}
