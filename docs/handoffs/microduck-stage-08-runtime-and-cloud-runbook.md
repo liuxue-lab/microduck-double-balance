@@ -72,6 +72,25 @@ bash scripts/deploy_stage08_local.sh connect.bjb2.seetacloud.com 45743 5090
 
 准备成功只说明源码、依赖与 CPU 检查通过。5090 的真实仿真/PPO 路径仍须下一步验证。A800 不重跑 Stage 06 smoke 或容量扫描。
 
+### 4.1 已传输实例的依赖下载恢复（2026-09-29）
+
+用户已提供 `Stage08Deployment=TRANSFERRED`、`FormalTrainingStarted=False` 和后续下载日志，不能再重传完整源码、两个检查点或重新部署实例。17:56（北京时间）的同一 Torch wheel 片段测试：学术代理配置 100614 B/s、HTTP 206、收到 1207296 字节；直连 1764635 B/s、HTTP 206、收到 8388608 字节。直连此次约快 17.54 倍；这是短时 curl 路径对照，不保证后续 uv 持续吞吐或精确剩余时间。
+
+安装脚本现在在加载 `/etc/network_turbo` 后，把 `pypi.org` 和 `files.pythonhosted.org` 加入两种大小写的代理绕过列表，保留已有绕过规则及 GitHub 代理。锁文件、依赖版本和实验定义不变。
+
+将更新后的同名增量 bundle 按第 3 节导入本机，再运行：
+
+```bash
+cd /home/lx/microduck-double-balance/workspace
+bash scripts/recover_stage08_setup_local.sh connect.bjb2.seetacloud.com 45743
+```
+
+该脚本只上传相对 `d78d1e6` 的小型代码增量。云端验证 SHA、干净分支、快进关系、无 GPU 计算作业及预算作业锁，再仅向匹配项目、bootstrap 环境、`uv sync` 和 setup worker 父进程的安装器发 SIGTERM；不批量杀 Python、不强杀 tmux、不清缓存。等待旧安装锁释放后导入提交，在 tmux 中重新运行 setup，复用原预算起点、已下载的完整缓存和检查点。未完成的下载可能需要重传。若已进入其他准备步骤，只等待其完成，超时退出供检查，不强行中断。
+
+日志中的 `Stage08PyPIDownload=DIRECT` 表示新配置已应用；只有随后 `Stage08Setup=PASS` 与本次 `status.txt` 的 `ExitCode=0` 才表示安装检查通过。恢复步骤不启动容量测试或正式 PPO。
+
+所有恢复 SSH/SCP 复用本机 `~/.ssh/microduck-stage08-%C`，保留 12h 空闲连接并启用心跳，不在脚本退出时主动关闭。网络断开后仍可能需要重新认证，不能把连接复用称为永久免密。需要恢复时使用 `ssh -M -S ~/.ssh/microduck-stage08-%C -o ControlPersist=12h -o ServerAliveInterval=30 -o ServerAliveCountMax=3 -p 45743 root@connect.bjb2.seetacloud.com`；云端 tmux 任务不依赖这个客户端连接。
+
 ## 5. 预算与云端容量
 
 预算文件固定为 `artifacts/double-balance-stage08/budget.json`。计时起点为自动保留的部署开始时间。新实验、进程重启和安装重试都重用它；起点后的空闲以及离线间隔也保守计入，不通过重建文件归零。

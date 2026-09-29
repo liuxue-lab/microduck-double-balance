@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "status": "LOCAL_FIX_VALIDATED_CLOUD_RECOVERY_PENDING",
+  "evidence_time": "2026-09-29T17:56:06+08:00",
+  "evidence_source": "User-provided cloud curl results, same locked Torch 2.9.1 CPython 3.12 Linux x86_64 wheel, requested first 8 MiB, 12-second per-probe limit",
+  "proxy_configuration": {
+    "http_status": 206,
+    "bytes_per_second": 100614,
+    "received_bytes": 1207296
+  },
+  "direct": {
+    "http_status": 206,
+    "bytes_per_second": 1764635,
+    "received_bytes": 8388608
+  },
+  "observed_speed_ratio": 17.53866261156499,
+  "limits": [
+    "Sequential short probes while uv was also downloading; curl is not uv.",
+    "No exact remaining installation time or sustained throughput is inferred.",
+    "Proxy configuration can include bypass rules; no proxy credentials were recorded."
+  ],
+  "change": [
+    "Add pypi.org and files.pythonhosted.org to both NO_PROXY and no_proxy after loading network_turbo.",
+    "Preserve existing bypass rules, GitHub proxy, lockfile, dependency versions and cache.",
+    "Recovery uploads only a Git delta after d78d1e6; keeps retained deployment budget and checkpoints.",
+    "Identify the setup uv sync and worker parent before SIGTERM; use PID namespace mapping and pidfd; never force-kill other jobs.",
+    "Persistent SSH socket reused for recovery; no tag or push."
+  ],
+  "validation": {
+    "recovery_process_tests": "3 passed in 0.26s",
+    "shell_syntax": "PASS including embedded remote script",
+    "python_syntax": "PASS",
+    "proxy_policy_preservation": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "formal_training_started": false,
+  "cloud_recovery_observed": false,
+  "cloud_setup_pass_observed": false
+}

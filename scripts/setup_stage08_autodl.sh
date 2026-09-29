@@ -76,6 +76,11 @@ if [ -r /etc/network_turbo ]; then
   source /etc/network_turbo >/dev/null
   set -u
 fi
+# Keep the academic proxy for GitHub, but fetch the locked PyPI wheels directly.
+# Set both spellings after network_turbo, preserving its existing bypass rules.
+stage08_no_proxy="${NO_PROXY:-},${no_proxy:-},pypi.org,files.pythonhosted.org"
+export NO_PROXY="$stage08_no_proxy" no_proxy="$stage08_no_proxy"
+printf 'Stage08PyPIDownload=DIRECT\n'
 "$stage08_uv" sync --locked --python 3.12.14 --no-progress
 .venv/bin/python scripts/preflight_stage08_cloud.py --gpu "$stage08_gpu" \
   --output "$stage08_artifacts/setup/preflight-$(date +%Y%m%dT%H%M%S).json"
@@ -87,5 +92,6 @@ print('Stage08Dependencies=PASS')
 print('Stage08CudaCapacity=PENDING_OR_REUSE_A800_EVIDENCE')
 PY
 .venv/bin/python -m pytest -q tests/test_stage08_plan.py tests/test_stage08_runtime.py \
-  tests/test_stage08_budget.py tests/test_stage08_evaluation.py tests/test_stage08_review.py tests/test_stage08_tools.py
+  tests/test_stage08_budget.py tests/test_stage08_evaluation.py tests/test_stage08_review.py tests/test_stage08_tools.py \
+  tests/test_stage08_setup_recovery.py
 printf 'Stage08Setup=PASS\nFormalTrainingStarted=False\n'
