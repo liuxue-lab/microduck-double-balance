@@ -17,6 +17,7 @@ from pathlib import Path
 import platform
 import shutil
 import subprocess
+import sys
 
 
 def command(argv, *, timeout=15):
@@ -62,6 +63,8 @@ def main():
     report = {"stage": 8, "purpose": "read-only metadata before deployment",
               "created_utc": datetime.now(timezone.utc).isoformat(),
               "expected_gpu": args.gpu, "platform": platform.machine(),
+              "bootstrap_python": sys.executable,
+              "bootstrap_python_version": platform.python_version(),
               "formal_training_started": False, "ppo_updates": 0,
               "capacity_measured": False, "cuda_compute_executed": False,
               "training_ready": False}

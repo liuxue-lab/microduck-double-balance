@@ -28,20 +28,20 @@ def atomic_json(path, value):
 
 
 def create_ledger(path, gpu, started_at, *, now=None):
-    """started_at is the actual cloud power-on time, including earlier setup."""
+    """started_at is the retained deployment start, not a claimed power-on time."""
     current = time.time() if now is None else now
     start = datetime.fromisoformat(started_at)
     if start.tzinfo is None:
-        raise ValueError("Power-on time must include a timezone")
+        raise ValueError("Budget start must include a timezone")
     epoch = start.timestamp()
     if not math.isfinite(epoch) or epoch > current + 1e-6:
-        raise ValueError("Power-on time cannot be in the future")
+        raise ValueError("Budget start cannot be in the future")
     epoch = min(epoch, current)  # ISO datetime rounds to microseconds.
     value = {"schema_version": 1, "campaign_id": str(uuid.uuid4()), **budget(gpu),
              "started_at": start.astimezone(timezone.utc).isoformat(),
              "started_epoch": epoch, "last_observed_epoch": current,
              "elapsed_seconds": current - epoch,
-             "accounting_note": "continuous wall time since power-on; idle/restart/offline gaps also count conservatively"}
+             "accounting_note": "continuous wall time since retained deployment start; subsequent idle/restart/offline gaps also count conservatively; earlier power-on time is unknown"}
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("x") as stream:

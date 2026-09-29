@@ -9,7 +9,7 @@
 
 ## 预算与实验
 
-优先 5090 60 小时；A800 24 小时为替代路线。预算按累计云机开机时间保守计算。
+优先 5090 60 小时；A800 24 小时为替代路线。按用户最新要求自动从部署开始累计，不再要求手填开机时间。
 5090 留最后 8 小时收尾，A800 留 4 小时；时长不随新进程或新实验清零。
 
 五组都从已归档的 Stage 07 第 1000 次检查点初始化，首轮各新增 500 次。
@@ -48,7 +48,10 @@ git merge --ff-only refs/remotes/stage08/double-balance
 ```bash
 cd /home/lx/microduck-double-balance/workspace
 mkdir -p /home/lx/microduck-double-balance/artifacts/double-balance-stage08
-ssh -p PORT root@HOST 'python3 - --gpu 5090' \
+stage08_python=$(ssh -p PORT root@HOST 'bash -s -- --resolve-python' \
+  < scripts/stage08_bootstrap.sh) &&
+[[ "$stage08_python" =~ ^/[A-Za-z0-9_./+-]+$ ]] &&
+ssh -p PORT root@HOST "'$stage08_python' - --gpu 5090" \
   < scripts/preflight_stage08_cloud.py \
   > /home/lx/microduck-double-balance/artifacts/double-balance-stage08/preflight-5090.json
 ```
@@ -67,6 +70,7 @@ A800 路线将 `--gpu 5090` 替换为 `--gpu A800`，并修改报告文件名。
    `budget_decision` 本身仍只负责准入计算，运行监管由预算台账和监督器完成。
 3. 已完成 43 项 CPU 定向检查，覆盖真实命令、动作、课程和指标管理器，以及 Adam/LR、
    计数、预算和归档；不代替云端 CUDA、渲染与真实训练验证。
+   新实例首轮 SSH 预检遇到 `python3` 不在命令路径，兼容修复另通过 11 项部署/预算回归（3 项新增），等待本机导入后实机重试。
 4. 复用目标机器已有环境和文件。旧 Stage 07 启动器限定 A800，安装脚本限定旧
    提交，不能直接套用或删除断言绕过。
 5. A800 沿用已测 4096 容量；5090 只做 4096 的有界新硬件验证，要求至少 15%

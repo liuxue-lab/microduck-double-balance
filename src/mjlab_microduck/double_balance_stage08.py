@@ -346,7 +346,7 @@ def main():
     sub = parser.add_subparsers(dest='mode',required=True)
     init = sub.add_parser('init-budget')
     init.add_argument('--gpu',choices=('A800','5090'),required=True)
-    init.add_argument('--started-at',required=True,help='Actual cloud power-on ISO timestamp including timezone')
+    init.add_argument('--started-at',required=True,help='Retained deployment budget start, ISO timestamp including timezone')
     init.add_argument('--ledger',type=Path,required=True)
     for mode in ('train','evaluate','capacity','capacity-worker'):
         p = sub.add_parser(mode)

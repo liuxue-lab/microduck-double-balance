@@ -3,7 +3,7 @@
 set -Eeuo pipefail
 stage08_gpu=${1:?GPU required}
 stage08_commit=${2:?Expected commit required}
-stage08_started=${3:?Actual power-on ISO timestamp with timezone required}
+stage08_started=${3:?Deployment budget start with timezone required}
 case "$stage08_gpu" in A800|5090) ;; *) exit 2;; esac
 [[ "$stage08_commit" =~ ^[0-9a-f]{40}$ ]]
 stage08_root=/root/autodl-tmp/microduck-double-balance
@@ -12,17 +12,18 @@ stage08_artifacts="$stage08_root/artifacts/double-balance-stage08"
 test -d /root/autodl-tmp
 test "$(uname -m)" = x86_64
 cd "$stage08_repo"
+source scripts/stage08_bootstrap.sh
+stage08_python=$(stage08_resolve_python)
 test "$(git rev-parse HEAD)" = "$stage08_commit"
 test -z "$(git status --porcelain)"
 mkdir -p "$stage08_artifacts/setup"
 
-# This stdlib-only command accounts from the supplied power-on time, even when
-# this installation starts later. Never create a new ledger on a setup retry.
+# Account from the automatically retained deployment start. Never reset on retry.
 if [ ! -f "$stage08_artifacts/budget.json" ]; then
-  PYTHONPATH=src python3 -m mjlab_microduck.double_balance_stage08 init-budget \
+  PYTHONPATH=src "$stage08_python" -m mjlab_microduck.double_balance_stage08 init-budget \
     --gpu "$stage08_gpu" --started-at "$stage08_started" --ledger "$stage08_artifacts/budget.json"
 else
-  PYTHONPATH=src python3 - "$stage08_artifacts/budget.json" "$stage08_gpu" <<'PY'
+  PYTHONPATH=src "$stage08_python" - "$stage08_artifacts/budget.json" "$stage08_gpu" <<'PY'
 import sys
 from mjlab_microduck.double_balance_stage08_budget import BudgetLedger
 ledger=BudgetLedger(sys.argv[1]); state=ledger.snapshot()

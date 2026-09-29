@@ -2,7 +2,7 @@
 
 更新：2026-09-29（北京时间）
 
-状态：运行入口已实现，CPU 定向测试通过；尚未连接 Stage 08 云机、执行 CUDA 容量验证或正式训练。本文件不是 Stage 08 最终交接，也不证明策略达到目标。
+状态：运行入口已实现，原 43 项 CPU 定向测试通过。用户已从本机连接新实例，但首轮只读预检因 `python3: command not found` 退出；尚未完成部署、执行 CUDA 容量验证或正式训练。兼容修复另通过 11 项部署/预算定向回归，其中 3 项为新增。实机修复效果待重试。本文件不是 Stage 08 最终交接。
 
 完整依据见 `docs/audits/stage-08-execution-plan.md`。固定下载与 SSH 推送规范继续沿用 `docs/handoffs/microduck-local-ssh-push-protocol.md`。
 
@@ -51,16 +51,18 @@ git merge --ff-only refs/remotes/stage08/double-balance
 
 ## 4. 选定云机后部署
 
-优先标准 RTX 5090 32GB，60 小时；A800 80GB，24 小时为另一条路线。实际 SSH 主机/端口和开机时间尚待用户提供，不能猜用 Stage 07 的旧地址。
+优先标准 RTX 5090 32GB，60 小时；A800 80GB，24 小时为另一条路线。用户已提供新实例 `connect.bjb2.seetacloud.com:45743`。实际 GPU 身份尚待预检确认，不沿用 Stage 07 的旧地址。
 
-本机执行以下命令，将占位值替换为实际值；时间必须是实例真正开始计费/开机的时刻，带时区，不能填写晚于实际开机的部署时间。
+用户已明确无需手动记录时间：本机执行下列命令即可，首次修复版部署自动生成时间起点并保存在仓库外。相同目标重试复用该起点，云端已有预算也不归零。部署前的真实开机时间未知，不把自动起点称为平台开机时间。
 
 ```bash
 cd /home/lx/microduck-double-balance/workspace
-bash scripts/deploy_stage08_local.sh HOST PORT 5090 'POWER_ON_ISO_WITH_TIMEZONE'
+bash scripts/deploy_stage08_local.sh connect.bjb2.seetacloud.com 45743 5090
 ```
 
 脚本先读取云机硬件和已有文件；拒绝型号不符、已有 GPU 计算进程、脏工作区、非快进或检查点哈希冲突。源码在隔离的 incoming 目录传送；已有 Stage 07 模型可在云盘复制复用，目标已存在且哈希正确时不重复上传。没有密码或私钥写入配置。
+
+预检之前先通过纯 Bash 查找 Python >=3.10，检查 PATH、系统和常见 Conda 路径，使用选中的绝对路径贯穿预检、模型处理及预算初始化，不依赖交互式 Conda 激活。查找不安装软件、不导入 CUDA；若所有候选均不可用，退出并输出 `Stage08Bootstrap=NO_USABLE_PYTHON`，此时先检查镜像实际环境，不绕过预检。正式项目仍按锁文件安装 Python 3.12.14。
 
 环境准备在 `microduck-stage08-setup` tmux 会话中运行，SSH 断开不会中断准备。日志位于：
 
@@ -72,7 +74,7 @@ bash scripts/deploy_stage08_local.sh HOST PORT 5090 'POWER_ON_ISO_WITH_TIMEZONE'
 
 ## 5. 预算与云端容量
 
-预算文件固定为 `artifacts/double-balance-stage08/budget.json`。新实验、进程重启和安装重试都重用它；空闲以及离线间隔也保守计入，不通过重建文件归零。
+预算文件固定为 `artifacts/double-balance-stage08/budget.json`。计时起点为自动保留的部署开始时间。新实验、进程重启和安装重试都重用它；起点后的空闲以及离线间隔也保守计入，不通过重建文件归零。
 
 父进程监督器与训练进程分别检查预算。A800 在累计 20h、5090 在累计 52h 停止训练工作，分别留 4h/8h 收尾。训练在更新边界保存；监督器会对挂住的进程先发 SIGTERM，再在宽限期后终止进程组，此时只能保留之前已验证的检查点。总额度前保留退出裕量，绝不保证被强杀的未完成更新能恢复。
 

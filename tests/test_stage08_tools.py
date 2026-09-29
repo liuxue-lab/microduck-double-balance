@@ -16,6 +16,42 @@ from datetime import datetime,timezone
 REPO=Path(__file__).resolve().parents[1]
 
 
+@pytest.mark.parametrize('broken_python3', [False, True])
+def test_bootstrap_with_python_only_path_preserves_stdin(tmp_path, broken_python3):
+    # Match non-interactive SSH: python is usable but python3 is absent/broken.
+    (tmp_path/'python').symlink_to(sys.executable)
+    if broken_python3:
+        broken=tmp_path/'python3'
+        broken.write_text('#!/bin/bash\nexit 1\n'); broken.chmod(0o755)
+    helper=REPO/'scripts/stage08_bootstrap.sh'
+    result=subprocess.run(['/bin/bash','-c',
+        'set -Eeuo pipefail; source "$1"; selected=$(stage08_resolve_python); "$selected" -',
+        'bootstrap',str(helper)],input='print("stdin-preserved")\n',
+        env={**os.environ,'PATH':str(tmp_path)},capture_output=True,text=True,timeout=10)
+    assert result.returncode==0, result.stderr
+    assert result.stdout.strip()=='stdin-preserved'
+    # The exact helper is also sent over SSH stdin before the Python script.
+    probe=subprocess.run(['/bin/bash','-s','--','--resolve-python'],
+        input=helper.read_text(),env={**os.environ,'PATH':str(tmp_path)},
+        capture_output=True,text=True,timeout=10)
+    assert probe.returncode==0, probe.stderr
+    assert Path(probe.stdout.strip()).samefile(sys.executable)
+
+
+def test_deployment_clock_automatic_and_reused_on_retry(tmp_path):
+    record=tmp_path/'start.txt'
+    result=subprocess.run(['/bin/bash','-c',
+        'set -Eeuo pipefail; source "$1"; stage08_deployment_start "$2"; '
+        'stage08_deployment_start "$2" "2099-01-01T00:00:00+00:00"',
+        'clock',str(REPO/'scripts/stage08_bootstrap.sh'),str(record)],
+        capture_output=True,text=True,timeout=10)
+    assert result.returncode==0, result.stderr
+    first,second=result.stdout.splitlines()
+    assert first==second==record.read_text().strip()
+    started=datetime.fromisoformat(first)
+    assert started.tzinfo is not None and abs(started.timestamp()-time.time())<10
+
+
 def script(name):
     spec=importlib.util.spec_from_file_location(name,REPO/'scripts'/f'{name}.py')
     module=importlib.util.module_from_spec(spec); spec.loader.exec_module(module); return module

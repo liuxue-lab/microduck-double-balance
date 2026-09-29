@@ -2,16 +2,17 @@
 # Run on the Ubuntu laptop. Transfers committed code and the two known models.
 # No GitHub push, Stage 06 smoke or formal training is performed.
 set -Eeuo pipefail
-stage08_host=${1:?Usage: deploy_stage08_local.sh HOST PORT GPU POWER_ON_ISO}
+stage08_host=${1:?Usage: deploy_stage08_local.sh HOST PORT GPU [BUDGET_START_ISO]}
 stage08_port=${2:?Port required}
 stage08_gpu=${3:?GPU required}
-stage08_started=${4:?Actual power-on time with timezone required}
+stage08_requested_start=${4:-}
 [[ "$stage08_host" =~ ^[A-Za-z0-9.-]+$ ]]
 [[ "$stage08_port" =~ ^[0-9]+$ ]] && ((stage08_port>=1 && stage08_port<=65535))
 case "$stage08_gpu" in A800|5090) ;; *) exit 2;; esac
 stage08_repo=/home/lx/microduck-double-balance/workspace
 stage08_root=/root/autodl-tmp/microduck-double-balance
 cd "$stage08_repo"
+source scripts/stage08_bootstrap.sh
 test "$(git branch --show-current)" = double-balance
 test -z "$(git status --porcelain)"
 git merge-base --is-ancestor 1fe5f54dc467205b846a807f2bd494c46f3e2c40 HEAD
@@ -28,16 +29,25 @@ stage08_cleanup() {
 trap stage08_cleanup EXIT
 stage08_local_artifacts=/home/lx/microduck-double-balance/artifacts/double-balance-stage08
 mkdir -p "$stage08_local_artifacts"
+stage08_started=$(stage08_deployment_start \
+  "$stage08_local_artifacts/deployment-start-$stage08_host-$stage08_port-$stage08_gpu.txt" \
+  "$stage08_requested_start")
+printf 'Stage08BudgetStart=%s\n' "$stage08_started"
 stage08_preflight="$stage08_local_artifacts/preflight-$(date +%Y%m%dT%H%M%S).json"
 printf 'PreflightReport=%s\n' "$stage08_preflight"
-ssh "${stage08_ssh[@]}" "$stage08_target" "python3 - --gpu '$stage08_gpu'" \
+stage08_python=$(ssh "${stage08_ssh[@]}" "$stage08_target" 'bash -s -- --resolve-python' \
+  < scripts/stage08_bootstrap.sh)
+[[ "$stage08_python" =~ ^/[A-Za-z0-9_./+-]+$ ]]
+printf 'Stage08BootstrapPython=%s\n' "$stage08_python"
+ssh "${stage08_ssh[@]}" "$stage08_target" "'$stage08_python' - --gpu '$stage08_gpu'" \
   < scripts/preflight_stage08_cloud.py > "$stage08_preflight"
 git bundle create "$stage08_temp/source.bundle" refs/heads/double-balance \
   refs/tags/stage-06-complete refs/tags/stage-07-complete
 ssh "${stage08_ssh[@]}" "$stage08_target" 'test -d /root/autodl-tmp && mkdir -p /root/autodl-tmp/microduck-double-balance/incoming/stage08'
 scp "${stage08_scp[@]}" "$stage08_temp/source.bundle" "$stage08_target:$stage08_root/incoming/stage08/source.bundle"
-ssh "${stage08_ssh[@]}" "$stage08_target" 'bash -s' <<'REMOTE'
+ssh "${stage08_ssh[@]}" "$stage08_target" "bash -s -- '$stage08_python'" <<'REMOTE'
 set -Eeuo pipefail
+stage08_python=$1
 stage08_root=/root/autodl-tmp/microduck-double-balance
 stage08_repo="$stage08_root/workspace"
 stage08_bundle="$stage08_root/incoming/stage08/source.bundle"
@@ -59,7 +69,7 @@ else
   git merge --ff-only refs/remotes/stage08/deploy
 fi
 mkdir -p "$stage08_root/artifacts/double-balance-stage08/references"
-python3 - <<'PY'
+"$stage08_python" - <<'PY'
 import hashlib,shutil
 from pathlib import Path
 root=Path('/root/autodl-tmp/microduck-double-balance/artifacts')
