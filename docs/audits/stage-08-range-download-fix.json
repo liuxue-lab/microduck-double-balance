@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "status": "LOCAL_VALIDATION_PASS_CLOUD_RANGE_RECOVERY_PENDING",
+  "evidence_time": "2026-09-29T18:19:29+08:00",
+  "source": "User-provided cloud outputs",
+  "previous_recovery_started": true,
+  "formal_training_started": false,
+  "uv_no_proxy_upper_and_lower_contain_pypi_hosts": true,
+  "cloud_rx_mib_per_second": {
+    "proc_net_dev": 0.07,
+    "sysfs": 0.07
+  },
+  "range_probe": {
+    "http": 206,
+    "bytes_per_second": 1634284,
+    "exit_code": 0,
+    "remote_ip": "151.101.128.223",
+    "range_bytes": 8388608
+  },
+  "full_get_probe": {
+    "http": 200,
+    "bytes_per_second": 74234,
+    "exit_code": 28,
+    "remote_ip": "151.101.128.223",
+    "time_limit_seconds": 10
+  },
+  "range_to_full_speed_ratio": 22.015302960907402,
+  "interpretation": "Short probes show different throughput by request form. No specific CDN/ISP/protocol cause is established; a printed configuration marker is not proof of actual routing or improved throughput.",
+  "implementation": {
+    "wheel_count": 8,
+    "total_mib": 3340.3380432128906,
+    "piece_bytes": 8388608,
+    "concurrent_connections": 4,
+    "per_piece_attempts": 3,
+    "attempt_limit_seconds": 1800,
+    "whole_wheel_lock_sha256_required": true,
+    "original_lockfile_sync_retained": true,
+    "dependency_versions_changed": false,
+    "private_uv_cache_modified": false
+  },
+  "validation": {
+    "tests": "9 passed in 3.18s",
+    "tested_uv_version": "0.12.18",
+    "cloud_uv_version": "0.12.15",
+    "cloud_same_integration_test_pending": true,
+    "shell_syntax": "PASS including remote recovery block",
+    "python_syntax": "PASS"
+  },
+  "cloud_range_started_observed": false,
+  "cloud_setup_pass_observed": false,
+  "next": "Import bundle locally, recover with --range-download, inspect byte progress and hash results, then require setup PASS/ExitCode=0 before capacity test."
+}

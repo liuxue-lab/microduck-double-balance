@@ -2,8 +2,10 @@
 # Laptop-only recovery for an already transferred Stage 08 deployment.
 # Send only the code delta; preserve checkpoints, cache and budget. Never run PPO.
 set -Eeuo pipefail
-stage08_host=${1:?Usage: recover_stage08_setup_local.sh HOST PORT}
+stage08_host=${1:?Usage: recover_stage08_setup_local.sh HOST PORT [--range-download]}
 stage08_port=${2:?Port required}
+stage08_mode=${3:-}
+case "$stage08_mode" in ''|--range-download) ;; *) exit 2;; esac
 [[ "$stage08_host" =~ ^[A-Za-z0-9.-]+$ ]]
 [[ "$stage08_port" =~ ^[0-9]+$ ]] && ((stage08_port>=1 && stage08_port<=65535))
 cd /home/lx/microduck-double-balance/workspace
@@ -28,11 +30,12 @@ ssh "${stage08_connection[@]}" -p "$stage08_port" "$stage08_target" \
 scp "${stage08_connection[@]}" -P "$stage08_port" "$stage08_temp/recovery.bundle" \
   "$stage08_target:$stage08_root/artifacts/double-balance-stage08/setup/recovery.bundle"
 ssh "${stage08_connection[@]}" -p "$stage08_port" "$stage08_target" \
-  "bash -s -- '$stage08_head' '$stage08_sha' '$stage08_base'" <<'REMOTE'
+  "bash -s -- '$stage08_head' '$stage08_sha' '$stage08_base' '$stage08_mode'" <<'REMOTE'
 set -Eeuo pipefail
 stage08_head=$1
 stage08_sha=$2
 stage08_base=$3
+stage08_mode=$4
 stage08_root=/root/autodl-tmp/microduck-double-balance
 stage08_repo="$stage08_root/workspace"
 stage08_artifacts="$stage08_root/artifacts/double-balance-stage08"
@@ -121,6 +124,9 @@ if tmux has-session -t '=microduck-stage08-setup' 2>/dev/null; then
 fi
 git merge --ff-only refs/remotes/stage08/recovery
 test -z "$(git status --porcelain)"
+if [ "$stage08_mode" = --range-download ]; then
+  printf 'range\n' > "$stage08_artifacts/setup/download-mode.txt"
+fi
 stage08_started=$(.venv/bin/python -c 'import json,sys; print(json.load(open(sys.argv[1]))["started_at"])' "$stage08_artifacts/budget.json")
 stage08_gpu=$(.venv/bin/python -c 'import json,sys; print(json.load(open(sys.argv[1]))["gpu"])' "$stage08_artifacts/budget.json")
 flock -u 9

@@ -91,6 +91,24 @@ bash scripts/recover_stage08_setup_local.sh connect.bjb2.seetacloud.com 45743
 
 所有恢复 SSH/SCP 复用本机 `~/.ssh/microduck-stage08-%C`，保留 12h 空闲连接并启用心跳，不在脚本退出时主动关闭。网络断开后仍可能需要重新认证，不能把连接复用称为永久免密。需要恢复时使用 `ssh -M -S ~/.ssh/microduck-stage08-%C -o ControlPersist=12h -o ServerAliveInterval=30 -o ServerAliveCountMax=3 -p 45743 root@connect.bjb2.seetacloud.com`；云端 tmux 任务不依赖这个客户端连接。
 
+### 4.2 分段下载恢复（后续证据，2026-09-29 18:19 北京时间）
+
+用户已确认上一轮 `Stage08Recovery=STARTED`，但正式安装接收速度只有 0.07 MiB/s；`/proc/net/dev` 与 `/sys/class/net/eth0` 两种读数一致，运行中 uv 的 `NO_PROXY`、`no_proxy` 都包含两个 PyPI 域名。相同 Torch URL、相同 IP `151.101.128.223` 下，8 MiB Range 请求 HTTP 206 为 1634284 B/s，而完整 GET 的 10 秒采样 HTTP 200 只有 74234 B/s（到时退出 28）。因此此前“直连配置已生效”标志不能当作实际吞吐改善或每个连接路由的证明；新证据直接支持比较请求形式，不把具体 CDN、运营商或协议机制写成已证实原因。
+
+剩余 8 包共 3340.338 MiB：Torch、cuBLAS、cuDNN、cuSPARSE、cuSOLVER、cuSPARSELt、NCCL、Warp。使用 `--range-download` 恢复：
+
+```bash
+bash scripts/recover_stage08_setup_local.sh connect.bjb2.seetacloud.com 45743 --range-download
+```
+
+恢复沿用前述进程识别、安装锁、Git 增量和原预算；只增加仓库外 `setup/download-mode.txt` 标记。`scripts/download_stage08_wheels.py` 从原 `uv.lock` 精确选择 CPython 3.12/Linux x86_64 的 8 个 wheel，原始 HTTPS URL 不变。每个文件使用 4 个并发连接、8 MiB Range 请求，逐一验证 HTTP 206、Content-Range 和片段长度。失败片段最多尝试 3 次；完整片段可续传，未完成片段最多重传 8 MiB/连接。单轮最多 30 分钟并受剩余累计预算限制，超时保留片段、退出供恢复，不开始 PPO。
+
+每个 wheel 拼接后必须满足锁文件大小和 SHA-256；任何失败均禁止进入安装。哈希通过的 wheel 保存在 `cache/stage08-wheels`。用 `uv pip install --no-deps --no-index --find-links ... --require-hashes` 按锁定名称与版本预装，随后仍执行原 `uv sync --locked --python 3.12.14` 及环境/测试检查。`pyproject.toml`、`uv.lock`、Stage 03/04 与训练实验定义不变。没有改写 uv 私有缓存，也没有关闭哈希校验。
+
+日志现在每约 5 秒输出 `Stage08Download=百分比`：统计完整片段和下载中的片段字节，不再只数已完成的大包；`SHA256通过 N/8` 单独表示完整文件验证。有效写入速度是进度增量，含重试时可能下降，不是 GPU 利用率。断点状态与 `range-progress.json` 都在仓库外。最终仍需 `Stage08Setup=PASS` 和本轮 `ExitCode=0` 后才进入容量验证。
+
+本地新增验收包括真实本地 HTTPS Range、完整片段续传、错误 HTTP/Content-Range 拒绝、损坏片段最终 SHA 拒绝，以及离线 `uv sync --locked` 接受按注册表名称预装且不改变锁文件。运行版本为 uv 0.12.18；云端 uv 0.12.15 的相同集成测试会在 setup 阶段执行，当前尚未声称云端通过。证据见 `docs/audits/stage-08-range-download-fix.json`。
+
 ## 5. 预算与云端容量
 
 预算文件固定为 `artifacts/double-balance-stage08/budget.json`。计时起点为自动保留的部署开始时间。新实验、进程重启和安装重试都重用它；起点后的空闲以及离线间隔也保守计入，不通过重建文件归零。
