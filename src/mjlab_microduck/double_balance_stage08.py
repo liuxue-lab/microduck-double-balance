@@ -131,7 +131,7 @@ def train_worker(args, *, capacity=False):
     from mjlab_microduck.double_balance_stage08_state import (
         ARTIFACTS, TASK_ID, build_training_config, check_loaded_runner, check_optimizer,
         environment_preflight, file_sha256, load_checked, require, restore, runtime_profile, save, utc_now,
-        check_training_step,
+        check_training_step, load_runner_checkpoint,
     )
     from mjlab_microduck.double_balance_stage08_review import validate_decision, deteriorated
     head = environment_preflight(args.gpu)
@@ -180,7 +180,7 @@ def train_worker(args, *, capacity=False):
         raw = ManagerBasedRlEnv(cfg=cfg,device='cuda:0')
         env = RslRlVecEnvWrapper(raw,clip_actions=agent['clip_actions'])
         runner = load_runner_cls(TASK_ID)(env,deepcopy(agent),str(output/'tensorboard'),'cuda:0')
-        runner.load(str(args.checkpoint),strict=True,map_location='cuda:0')
+        load_runner_checkpoint(runner,args.checkpoint,map_location='cuda:0')
         restore(runner,env,checkpoint,profile=args.profile,seed=args.seed,campaign_id=ledger.identity,resume=args.resume)
         registered_save = runner.save
         runner.save = lambda *a,**k:None  # completed-update schedule below owns every save
@@ -197,7 +197,7 @@ def train_worker(args, *, capacity=False):
         initial = persist(start)
         # Explicit reload into the registered runner, with tensor/Adam/LR comparisons.
         reloaded = torch.load(initial,map_location='cpu',weights_only=False)
-        runner.load(str(initial),strict=True,map_location='cuda:0')
+        load_runner_checkpoint(runner,initial,map_location='cuda:0')
         check_loaded_runner(runner,raw,reloaded)
         restore(runner,env,reloaded,profile=args.profile,seed=args.seed,campaign_id=ledger.identity,resume=True)
         report['save_reload_passed'] = True
@@ -276,7 +276,7 @@ def train_worker(args, *, capacity=False):
         report['status'] = 'CAPACITY_COMPLETE' if capacity else 'TRAINING_COMPLETE'
         if capacity:
             updated_checkpoint=torch.load(final_checkpoint,map_location='cpu',weights_only=False)
-            runner.load(str(final_checkpoint),strict=True,map_location='cuda:0')
+            load_runner_checkpoint(runner,final_checkpoint,map_location='cuda:0')
             check_loaded_runner(runner,raw,updated_checkpoint)
             check_optimizer(runner.alg.optimizer,(1000+args.target_updates)*20)
             measured_times = update_times[3:]

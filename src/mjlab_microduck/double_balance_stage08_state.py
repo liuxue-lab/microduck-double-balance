@@ -75,6 +75,26 @@ def profile_record(name):
     return {'schema_version': 1, **asdict(PROFILES[name])}
 
 
+def load_runner_checkpoint(runner, path, *, map_location):
+    """Strictly reload without retaining inference-only normalizer buffers.
+
+    rsl-rl 5.0.1 replaces EmpiricalNormalization._std with torch.sqrt(_var)
+    during rollout under inference_mode. The resulting inference tensor cannot
+    be an in-place load_state_dict destination after that context ends. Clone
+    only affected registered buffers outside inference mode; leave Parameters
+    and their optimizer identities untouched. Load Adam state in normal mode.
+    """
+    with torch.inference_mode(False), torch.no_grad():
+        for model in (runner.alg.actor, runner.alg.critic):
+            normalizer = getattr(model, 'obs_normalizer', None)
+            if normalizer is None:
+                continue
+            for name, buffer in normalizer.named_buffers(recurse=False):
+                if torch.is_inference(buffer):
+                    setattr(normalizer, name, buffer.clone())
+        return runner.load(str(path), strict=True, map_location=map_location)
+
+
 def validate_assistance(state):
     require(state['num_envs'] == NUM_ENVS, 'Cannot remap source assistance to another batch size')
     require(tuple(state['hold_levels']) == HOLD_LEVELS, 'Assistance table mismatch')

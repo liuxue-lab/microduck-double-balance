@@ -55,10 +55,18 @@ with ledger.job_lock():
 PY
 # Real Warp/MuJoCo kernels, checkpoint restore and memory headroom are checked
 # by the existing bounded D/E capacity path, not certified by metadata.
+stage08_capacity="$stage08_artifacts/capacity-5090"
+if [ -e "$stage08_capacity" ]; then
+  # Preserve all paths referenced by the previous failure report/checkpoints.
+  stage08_attempt=$(mktemp -d "$stage08_artifacts/capacity-retry-XXXXXX")
+  stage08_capacity="$stage08_attempt/run"
+fi
+printf 'CapacitySummary=%s/capacity-summary.json\n' "$stage08_capacity"
 timeout --signal=TERM --kill-after=30s 1950s .venv/bin/python -u \
   -m mjlab_microduck.double_balance_stage08 capacity --gpu 5090 \
   --ledger "$stage08_artifacts/budget.json" \
   --checkpoint "$stage08_artifacts/references/update_001000.pt" \
   --datasets "$stage08_artifacts/initial-states" \
-  --output "$stage08_artifacts/capacity-5090"
+  --output "$stage08_capacity"
+printf 'CapacitySummary=%s/capacity-summary.json\n' "$stage08_capacity"
 printf 'Stage08CloneValidation=PASS\nStage08Capacity=PASS\nFormalTrainingStarted=False\n'

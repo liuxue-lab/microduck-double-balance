@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "stage": 8,
-  "status": "OLD_SSH_REFUSED_OFFLINE_CLONE_ADOPTION_READY_CLOUD_PENDING",
+  "status": "CLONE_ADOPTED_CAPACITY_FAILED_INFERENCE_RELOAD_FIX_PENDING",
   "source": "User-provided read-only cloud preflight JSON",
   "evidence_created_utc": "2026-09-29T10:56:33.274087+00:00",
   "old_failed_setup": "connect.bjb2.seetacloud.com:45743",
@@ -69,7 +69,7 @@
     "tests": "10 passed in 0.57s",
     "scope": "6 clone migration tests plus 4 existing budget tests; CPU only",
     "shell_and_python_syntax": "PASS",
-    "cloud_adoption_executed": false,
+    "cloud_adoption_executed": true,
     "cloud_capacity_pass_observed": false
   },
   "old_host_follow_up": {
@@ -83,6 +83,7 @@
     "original_campaign_id_recovered": false,
     "replacement_identity": "created once and explicitly labelled reconstructed if old ledger unavailable",
     "elapsed_budget_reset": false,
-    "offline_adoption_executed": false
-  }
+    "offline_adoption_executed": true
+  },
+  "follow_up": "docs/audits/stage-08-inference-reload-fix.json"
 }

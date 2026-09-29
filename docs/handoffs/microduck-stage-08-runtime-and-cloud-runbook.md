@@ -149,6 +149,25 @@ ssh -S ~/.ssh/microduck-stage08-%C -p 41381 root@connect.bjb1.seetacloud.com \
 
 SSH/SCP 全程复用 `~/.ssh/microduck-stage08-%C`，保持连接 12 小时，不主动关闭已有主连接，不写入密码。旧、新主机是两条不同连接，首次连接或网络中断后仍可能要求认证。
 
+### 4.4 容量测试训练后重载修复（2026-09-29 19:26 北京时间）
+
+用户已确认克隆代码传输、预算接续和两份参考模型哈希验证完成，随后容量 worker 在 `runner.load(final_checkpoint)` 报错：`obs_normalizer._std` 为 inference tensor，不能在 InferenceMode 外原地复制。这是训练后保存重载检查的失败，不是显存不足证据；不能记容量 PASS。按该调用前的计数检查，失败 worker 已经过 15 次容量更新，正式 Stage 08 训练仍未启动。具体 D/E 组别、耗时、峰值显存待收集完整云端报告，不由局部栈追踪推定。
+
+锁定版本 rsl-rl 5.0.1 在 inference_mode rollout 中更新归一化统计，`EmpiricalNormalization.update` 用 `torch.sqrt(_var)` 替换 `_std`，由此生成 inference tensor。Stage 08 新增 `load_runner_checkpoint`：在关闭 inference_mode 的 no_grad 上下文中，只克隆 actor/critic 中带 inference 标记的归一化缓冲区，再调用原 mjlab 严格加载。值、dtype、device 保持，模型 Parameter 对象不替换；Adam 在普通张量模式加载。三个 Stage 08 训练加载点统一走此函数。Stage 03/04、Stage 07 实现、PPO 算法、奖励、依赖文件和实验定义不变。
+
+本地用真实 RNNModel、PPO.load、MjlabOnPolicyRunner.load 复现原异常，并检查修复后严格键校验、两套归一化统计、Adam 状态/步数、LR、计数、参数身份及后续合成 Adam 更新。未执行本地 PPO rollout。4 项新测试和 19 项原 Stage 08 恢复测试共 23 项通过；CUDA 重试结果待云端验证。
+
+导入修复 bundle 后，本机只执行：
+
+```bash
+bash scripts/adopt_stage08_clone_local.sh --retry-capacity \
+  connect.bjb1.seetacloud.com 41381
+```
+
+此入口仅传相对 `b8e991c` 的代码差量，不连接旧实例、不再创建或复制预算、不安装依赖。保留云端已有 `budget.json`、缓存、两份模型、初态数据和失败记录；拒绝脏工作区、非快进、占用中的预算/安装锁或活动 GPU 作业。新的 `validate_stage08_clone.sh` 若发现原 `capacity-5090` 已存在，会创建独立 `capacity-retry-XXXXXX/run`，不移动或覆盖旧目录，因此旧报告中的绝对路径继续有效。
+
+日志开头及成功结尾输出 `CapacitySummary=<实际新目录>/capacity-summary.json`。首轮训练必须使用这个通过的报告，不能误用旧失败报告；源码提交必须与报告一致。容量仍从第 1000 次源模型开始，D/E 各 15 次，结果弃用。仅有新日志的两项 PASS 与本次 ExitCode=0 后才进入正式筛选。
+
 ## 5. 预算与云端容量
 
 预算文件固定为 `artifacts/double-balance-stage08/budget.json`。计时起点为自动保留的部署开始时间。新实验、进程重启和安装重试都重用它；起点后的空闲以及离线间隔也保守计入，不通过重建文件归零。
@@ -173,6 +192,8 @@ stage08_artifacts=/root/autodl-tmp/microduck-double-balance/artifacts/double-bal
   --output "$stage08_artifacts/capacity-5090"
 stage08_capacity="$stage08_artifacts/capacity-5090/capacity-summary.json"
 ```
+
+若经过第 4.4 节重试，将 `stage08_capacity` 改为本轮成功日志打印的 `CapacitySummary` 路径；旧失败报告保留用于诊断。
 
 两个路径均须通过数值、保存重载和至少 15% 实测总显存余量检查。容量测试也覆盖训练环境仍驻留时的 N/R-dev 子进程，避免正式评估时额外占用显存才暴露 OOM。单个路径最多 15 分钟，加有限退出宽限；两个路径均从第 1000 次重新开始，优化结果弃用。
 
