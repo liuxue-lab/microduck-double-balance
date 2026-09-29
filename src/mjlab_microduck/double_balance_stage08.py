@@ -32,25 +32,46 @@ def gpu_sample():
 
 
 class GPUSampler:
+    interval_seconds = 2.
+    max_consecutive_timeouts = 3
+
     def __init__(self, output):
         self.path = Path(output)/'gpu-samples.jsonl'
         self.stop = threading.Event()
         self.peak, self.samples, self.error = 0, 0, None
         self.initial = gpu_sample()
+        self.timeouts, self.consecutive_timeouts = 0, 0
+        self.max_consecutive_timeouts_seen = 0
         self.thread = threading.Thread(target=self.run, daemon=True)
+
+    def record_sample(self, sample, stream, *, final=False):
+        if sample['uuid'] != self.initial['uuid'] or sample['total_mib'] != self.initial['total_mib']:
+            raise ValueError('GPU allocation changed')
+        self.peak = max(self.peak, sample['used_mib'])
+        self.samples += 1
+        self.consecutive_timeouts = 0
+        stream.write(json.dumps({'epoch':time.time(), 'event':'sample', 'final':final, **sample})+'\n')
+        stream.flush()
 
     def run(self):
         try:
             with self.path.open('x') as stream:
                 while not self.stop.is_set():
-                    sample = gpu_sample()
-                    if sample['uuid'] != self.initial['uuid'] or sample['total_mib'] != self.initial['total_mib']:
-                        raise ValueError('GPU allocation changed')
-                    self.peak = max(self.peak, sample['used_mib'])
-                    self.samples += 1
-                    stream.write(json.dumps({'epoch':time.time(), **sample})+'\n')
-                    stream.flush()
-                    self.stop.wait(.5)
+                    try:
+                        sample = gpu_sample()
+                    except subprocess.TimeoutExpired as exc:
+                        self.timeouts += 1
+                        self.consecutive_timeouts += 1
+                        self.max_consecutive_timeouts_seen = max(self.max_consecutive_timeouts_seen,
+                                                                 self.consecutive_timeouts)
+                        stream.write(json.dumps({'epoch':time.time(), 'event':'query_timeout',
+                            'consecutive_timeouts':self.consecutive_timeouts, 'error':str(exc)})+'\n')
+                        stream.flush()
+                        if self.consecutive_timeouts >= self.max_consecutive_timeouts:
+                            raise RuntimeError('GPU sampling timed out three consecutive times') from exc
+                    else:
+                        self.record_sample(sample, stream)
+                    self.stop.wait(self.interval_seconds)
         except BaseException as exc:
             self.error = str(exc)
 
@@ -59,8 +80,17 @@ class GPUSampler:
         self.thread.join(timeout=10)
         if self.thread.is_alive() or self.error or not self.samples:
             raise ValueError(f'GPU sampling failed: {self.error}')
+        # A final live query must succeed. Do not certify a stale last sample.
+        with self.path.open('a') as stream:
+            self.record_sample(gpu_sample(), stream, final=True)
         return {**self.initial, 'sampled_peak_gpu_used_mib':self.peak, 'samples':self.samples,
-                'eligible_with_15_percent_headroom':self.peak <= .85*self.initial['total_mib']}
+                'query_timeouts':self.timeouts,
+                'max_consecutive_timeouts':self.max_consecutive_timeouts_seen,
+                'sampling_interval_seconds':self.interval_seconds,
+                'sampling_status':'RECOVERED_WITH_GAPS' if self.timeouts else 'PASS',
+                # Gaps may be tolerated in an already admitted formal run, but
+                # must never be used to certify a new capacity measurement.
+                'eligible_with_15_percent_headroom':not self.timeouts and self.peak <= .85*self.initial['total_mib']}
 
 
 def measured_capacity(path, gpu, head):
@@ -229,6 +259,9 @@ def train_worker(args, *, capacity=False):
             report.update(experiment_completed_updates=completed,lineage_completed_updates=1000+completed,
                           latest_update=row,live_profile=runtime_profile(raw,args.profile),
                           optimizer_steps_this_segment=evidence['optimizer_steps'],budget=ledger.snapshot())
+            if sampler.error:
+                persist(completed)
+                raise RuntimeError('GPU monitor failed: '+sampler.error)
             if completed % 100 == 0 or completed % 250 == 0 or completed == args.target_updates:
                 persist(completed)
             remaining_updates = min(250-completed%250,args.target_updates-completed)

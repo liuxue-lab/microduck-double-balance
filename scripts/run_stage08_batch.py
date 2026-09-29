@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import subprocess
 import sys
+from datetime import datetime, timezone
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
 from mjlab_microduck.double_balance_stage08_budget import BudgetLedger,atomic_json
@@ -30,6 +31,30 @@ def prior_endpoint(previous,key,target):
     return report['latest_checkpoint']
 
 
+def resume_manifest(manifest, contract, *, capacity_summary, previous_capacity_summary=None):
+    """Renew only measured capacity; retain every old segment and contract hash."""
+    old = manifest['contract']
+    if old != contract:
+        if previous_capacity_summary is None or checksum(previous_capacity_summary) != old['capacity_sha256']:
+            raise ValueError('Batch contract changed without its original capacity evidence')
+        if {**old, 'capacity_sha256':contract['capacity_sha256']} != contract:
+            raise ValueError('Batch contract changed beyond capacity evidence')
+        from mjlab_microduck.double_balance_stage08 import measured_capacity
+        from mjlab_microduck.double_balance_stage08_state import environment_preflight
+        head = environment_preflight(contract['gpu'])
+        measured_capacity(capacity_summary, contract['gpu'], head)
+        manifest.setdefault('capacity_renewals', []).append({
+            'utc':datetime.now(timezone.utc).isoformat(), 'git_head':head,
+            'previous_contract':dict(old), 'replacement_contract':dict(contract),
+            'previous_summary':str(previous_capacity_summary), 'replacement_summary':str(capacity_summary),
+            'reason':'new committed runtime; bounded capacity remeasured on the same GPU'})
+        manifest['contract'] = contract
+    manifest.setdefault('resume_history', []).append({
+        'utc':datetime.now(timezone.utc).isoformat(), 'previous_status':manifest['status']})
+    manifest['status'] = 'RUNNING'
+    return manifest
+
+
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('phase',choices=('screening','replication','extension'))
@@ -42,10 +67,14 @@ def main():
     p.add_argument('--decision',type=Path)
     p.add_argument('--previous-batch',type=Path)
     p.add_argument('--resume-batch',action='store_true')
+    p.add_argument('--previous-capacity-summary',type=Path,
+                   help='On resume only: original capacity evidence, retained when a new measurement replaces it')
     args=p.parse_args()
-    for key in ('ledger','source','capacity_summary','datasets','output','decision','previous_batch'):
+    for key in ('ledger','source','capacity_summary','datasets','output','decision','previous_batch','previous_capacity_summary'):
         if getattr(args,key) is not None:
             setattr(args,key,getattr(args,key).resolve())
+    if args.previous_capacity_summary and not args.resume_batch:
+        raise ValueError('Capacity renewal requires --resume-batch')
     if checksum(args.source)!=SOURCE_SHA256:
         raise ValueError('Source must be the archived update 1000 checkpoint')
     ledger=BudgetLedger(args.ledger)
@@ -76,8 +105,8 @@ def main():
     manifest_path=args.output/'batch.json'
     if args.resume_batch:
         manifest=json.loads(manifest_path.read_text())
-        if manifest['contract']!=contract:
-            raise ValueError('Batch contract changed; do not reuse its output directory')
+        manifest=resume_manifest(manifest,contract,capacity_summary=args.capacity_summary,
+                                 previous_capacity_summary=args.previous_capacity_summary)
     else:
         args.output.mkdir(parents=True,exist_ok=False)
         manifest={'contract':contract,'status':'RUNNING','stage08_complete':False,'jobs':jobs_for(args.phase,profiles)}

@@ -2,7 +2,7 @@
 
 更新：2026-09-29（北京时间）
 
-状态：运行入口已实现，原 43 项 CPU 定向测试通过。旧 45743 实例已部署，但依赖直连/分段恢复未完成；用户改用 A800 克隆的新 41381 实例。2026-09-29 10:56:33 UTC 的只读预检确认标准 RTX 5090、原依赖元数据和两个检查点 SHA-256 匹配。下一步执行第 4.3 节克隆接续，保留 Python 3.12.3 与原环境，不再走重新下载路线。尚未确认云端 CUDA 容量或正式训练启动。本文件不是 Stage 08 最终交接。
+状态：用户回报新克隆 41381 的 CUDA、保存重载与 D/E 容量验证已通过（提交 c63fa4a，4096 环境，峰值 22837/32607 MiB）。首轮已启动，A 组完成新增 500 次与 0/250/500 的 N/R-dev 评估，但 GPU 监控单次 5 秒超时导致收尾 `FAIL`，批次停于 `NEEDS_REVIEW`。当前入口为第 6.1 节，先核验原始记录，再从 A 终点恢复，随后继续 B–E。监控修复已完成本地测试，云端恢复结果待回传。保留克隆的 Python 3.12.3 与原环境。本文件不是 Stage 08 最终交接。
 
 完整依据见 `docs/audits/stage-08-execution-plan.md`。固定下载与 SSH 推送规范继续沿用 `docs/handoffs/microduck-local-ssh-push-protocol.md`。
 
@@ -15,6 +15,7 @@
 | `scripts/adopt_stage08_clone_local.sh` | 回传旧安装证据、保留原预算、差量更新新克隆并启动容量验证 |
 | `python -m mjlab_microduck.double_balance_stage08 capacity` | 只针对新 5090 的 4096 环境验证，D/E 各 3 次预热＋12 次测量 |
 | `scripts/run_stage08_batch.py` | 串行执行首轮、三种子复核或条件扩训；遇到暂停/失败停止批次 |
+| `scripts/recover_stage08_screening_local.sh` | 差量部署监控修复、核验 A500、更新容量证据并自动恢复 B–E |
 | `python -m mjlab_microduck.double_balance_stage08_review` | 用开发评估生成带证据哈希的扩训决定 |
 | `scripts/freeze_stage08_selection.py` | 仅按 N/R-dev 固定每种子的候选，加入第 1000/6000 次参照 |
 | `scripts/evaluate_stage08_batch.py` | 固定模型表的 N、R-dev、三个 R-test 初态集批量评估与配对比较 |
@@ -52,7 +53,7 @@ git merge --ff-only refs/remotes/stage08/double-balance
 
 ## 4. 选定云机后部署
 
-以下第 4、4.1、4.2 节保留旧实例部署和故障处理经过，当前不要重跑。当前入口是第 4.3 节。预算仍为标准 RTX 5090 60 小时或 A800 24 小时二选一。
+以下第 4 至 5 节保留部署和容量验证经过，当前不重跑安装或克隆接续。当前故障恢复入口是第 6.1 节。预算仍为标准 RTX 5090 60 小时或 A800 24 小时二选一。
 
 用户已明确无需手动记录时间：本机执行下列命令即可，首次修复版部署自动生成时间起点并保存在仓库外。相同目标重试复用该起点，云端已有预算也不归零。部署前的真实开机时间未知，不把自动起点称为平台开机时间。
 
@@ -223,6 +224,28 @@ A–E 各新增 500 次，共 2500 次；种子为 20260928。每 100 次保存�
 暂停后用同一命令增加 `--resume-batch`，会从相应段最后已验证检查点继续；有异常先看日志处理原因，不自动循环重试。新段启动新的 episode/RNG/LSTM 状态，保留 Adam/LR、课程和辅助。
 
 选择采用固定排序：R-dev 成功率 → N 成功率 → 存活时间 → 末尾稳定时长中位数 → 最长稳定时长中位数 → 较低下球越界率 → 较早检查点。同训练量比较必须另看各组 500 次终点，不能用各自最佳点代替因果对照。
+
+### 6.1 A500 监控超时恢复（2026-09-29）
+
+具体证据、限制见 `docs/audits/stage-08-gpu-monitor-recovery.json`。旧实现遇到一次查询超时就退出采样线程，训练仍继续，最终 `sampler.close()` 把已完成的训练状态覆盖为 `FAIL`。这说明记录链故障，不证明训练发散、GPU 损坏或任何奖励因果关系。
+
+新实现每 2 秒采样，记录每次超时并重试；连续三次超时、命令非零退出、UUID/总显存变化仍为失败。持续采样失败会在下一个 PPO 更新边界保存后退出，收尾还必须有一次成功的实时查询。正常训练允许明确标记 `RECOVERED_WITH_GAPS`；有缺口的采样不能作为新容量认证依据，15% 余量规则没有放宽。
+
+本机导入新 bundle 后执行一次：
+
+```bash
+bash scripts/recover_stage08_screening_local.sh connect.bjb1.seetacloud.com 41381
+```
+
+该入口只传 Git 增量，不安装依赖，不连接旧 45743，不重建 budget。后台 tmux 名为 `microduck-stage08-recovery`，日志和状态链接分别为 artifacts 下 `screening-recovery-latest.log`、`screening-recovery-latest.json`。
+
+1. 检查旧批次确实只有 A 的一个失败段且 B–E 未开始；核验七个模型及回执、六份评估与对应模型哈希、watchdog 和 A500 全状态。
+2. 保留原失败段与 `batch-before.json`。源码提交改变后，按现有同提交容量门槛执行 D/E 各 15 次有界测试（优化结果弃用，约 4 分钟），不重跑 Stage 06 smoke。
+3. 新容量通过且剩余 2000 更新、13 次评估块与保存开销加 20% 余量满足原预算后，才替换批次合同中的容量哈希；保存前后合同及报告路径。其他合同字段必须完全一致。
+4. A 创建 segment-002，从自己的 update_000500.pt 严格恢复模型、归一化、Adam step=30000、实际 LR 和课程计数 36000。重新保存、重载并评估，新增 PPO 更新为 0。原 A 段的 `FAIL` 不改写。
+5. B、C、D、E 各从 Stage 07 第 1000 次源模型开始新增 500 次。恢复入口会把批次状态更新为 `RUNNING`，避免旧 `NEEDS_REVIEW` 残留。遇到失败停止，不无限自动重试。
+
+初始化验证失败、文件损坏、预算不足或新容量不通过时停止并保留证据。技术 PASS 不等于连续 5 秒严格无辅助成功；必须读取实际 success_fraction、失败分布和视频。
 
 ## 7. 复核与条件扩训
 
