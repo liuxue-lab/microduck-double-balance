@@ -3,8 +3,9 @@
 状态：**仅实施准备，Stage 08 尚未完成，正式训练尚未开始。**
 
 完整证据、实验矩阵、恢复规则与预算见
-`docs/audits/stage-08-execution-plan.md`。本包提供独立训练配置覆盖、预算准入计算、
-两条路线的实验清单、只读云端预检与 CPU 测试。它还不能启动正式训练。
+`docs/audits/stage-08-execution-plan.md`。2026-09-29 已继续实现训练恢复、独立预算监督、
+批量训练/评估、初态集、选模、部署、视频和归档入口。最新操作顺序与验证范围见
+`docs/handoffs/microduck-stage-08-runtime-and-cloud-runbook.md`；当前仍待目标云机验证，未开训。
 
 ## 预算与实验
 
@@ -55,17 +56,17 @@ ssh -p PORT root@HOST 'python3 - --gpu 5090' \
 A800 路线将 `--gpu 5090` 替换为 `--gpu A800`，并修改报告文件名。
 报告会读取 GPU 型号/显存/驱动、CPU 与内存限额、磁盘空间、已有仓库 HEAD、
 虚拟环境版本和第 1000/6000 次检查点哈希。它不安装依赖、不导入 Torch、
-不执行 CUDA 或 PPO；退出码 2 表示硬件身份需要检查。若还没有开机，先完成
-下面的训练入口接入再开机，避免准备期间占用额度。
+不执行 CUDA 或 PPO；退出码 2 表示硬件身份需要检查。运行入口现已接入，可在选定
+实例后按最新运行交接执行部署和验证。
 
-## 正式训练前仍需完成
+## 运行接入状态
 
-1. 接入训练分支的 Adam/LR/归一化器、计数与辅助状态恢复。A–D 在 reset 后恢复
+1. 已接入训练分支的 Adam/LR/归一化器、计数与辅助状态恢复。A–D 在 reset 后恢复
    源辅助；E 在 reset 后设 level=5、hold=0，并验证下球及鸭身辅助力/力矩全零。
-2. 接入实时累计预算台账、更新边界保存退出、批量评估及逐回合诊断。
-   `budget_decision` 是准入计算，不是运行中的超时监管器。
-3. 在实际 manager 上检查覆盖及课程边界，验证恢复与保存重载；当前九项测试使用
-   轻量配置替身，不能代替真实 manager 或 CUDA 验证。
+2. 已接入实时累计预算台账、更新边界保存退出、独立父进程监督、批量评估及逐回合诊断。
+   `budget_decision` 本身仍只负责准入计算，运行监管由预算台账和监督器完成。
+3. 已完成 43 项 CPU 定向检查，覆盖真实命令、动作、课程和指标管理器，以及 Adam/LR、
+   计数、预算和归档；不代替云端 CUDA、渲染与真实训练验证。
 4. 复用目标机器已有环境和文件。旧 Stage 07 启动器限定 A800，安装脚本限定旧
    提交，不能直接套用或删除断言绕过。
 5. A800 沿用已测 4096 容量；5090 只做 4096 的有界新硬件验证，要求至少 15%
@@ -77,7 +78,7 @@ A800 路线将 `--gpu 5090` 替换为 `--gpu A800`，并修改报告文件名。
 ## CPU 验证
 
 ```bash
-PYTHONPATH=src python3 -m unittest discover -s tests -p test_stage08_plan.py -v
+.venv/bin/python -m pytest -q tests/test_stage08_*.py
 ```
 
 清单生成命令仅写文件：
@@ -88,6 +89,7 @@ python3 scripts/prepare_stage08_campaign.py --gpu 5090 \
 ```
 
 生成器拒绝覆盖已有文件。预生成清单位于 `configs/stage08/`，技术检查记录位于
-`docs/audits/stage-08-preparation-checks.json`。这些记录不表示策略成功或正式训练已开始。
+`docs/audits/stage-08-runtime-checks.json`；原 preparation-checks 保留上轮历史记录。
+这些记录不表示策略成功或正式训练已开始。
 
 云端结束后，必要文件回传、清单/哈希核对与可读性检查完成，再明确提醒用户关机。

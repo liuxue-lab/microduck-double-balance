@@ -137,7 +137,7 @@ def budget_decision(gpu: str, *, spent_seconds: float, additional_updates: int,
 def campaign_manifest(gpu: str) -> dict:
     return {
         "schema_version": 1, "stage": 8,
-        "status": "PREPARATION_ONLY_NOT_A_TRAINING_LAUNCHER",
+        "status": "RUNTIME_IMPLEMENTED_CPU_VALIDATED_CUDA_PENDING",
         "baseline_commit": BASELINE_COMMIT,
         "source_checkpoint_sha256": SOURCE_SHA256,
         "num_envs": NUM_ENVS, "steps_per_env": ROLLOUT_STEPS,

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "stage": 8,
-  "status": "PREPARATION_ONLY_NOT_A_TRAINING_LAUNCHER",
+  "status": "RUNTIME_IMPLEMENTED_CPU_VALIDATED_CUDA_PENDING",
   "baseline_commit": "1fe5f54dc467205b846a807f2bd494c46f3e2c40",
   "source_checkpoint_sha256": "c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7",
   "num_envs": 4096,
