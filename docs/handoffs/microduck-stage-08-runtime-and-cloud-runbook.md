@@ -2,7 +2,7 @@
 
 更新：2026-09-29（北京时间）
 
-状态：运行入口已实现，原 43 项 CPU 定向测试通过。用户已从本机连接新实例，但首轮只读预检因 `python3: command not found` 退出；尚未完成部署、执行 CUDA 容量验证或正式训练。兼容修复另通过 11 项部署/预算定向回归，其中 3 项为新增。实机修复效果待重试。本文件不是 Stage 08 最终交接。
+状态：运行入口已实现，原 43 项 CPU 定向测试通过。旧 45743 实例已部署，但依赖直连/分段恢复未完成；用户改用 A800 克隆的新 41381 实例。2026-09-29 10:56:33 UTC 的只读预检确认标准 RTX 5090、原依赖元数据和两个检查点 SHA-256 匹配。下一步执行第 4.3 节克隆接续，保留 Python 3.12.3 与原环境，不再走重新下载路线。尚未确认云端 CUDA 容量或正式训练启动。本文件不是 Stage 08 最终交接。
 
 完整依据见 `docs/audits/stage-08-execution-plan.md`。固定下载与 SSH 推送规范继续沿用 `docs/handoffs/microduck-local-ssh-push-protocol.md`。
 
@@ -12,6 +12,7 @@
 |---|---|
 | `scripts/deploy_stage08_local.sh` | 本机只读预检、传送已提交源码及两个已知检查点、启动后台环境准备 |
 | `scripts/setup_stage08_autodl.sh` | 重用锁定依赖、建立或重用累计预算、运行 CPU 检查；不启动 PPO |
+| `scripts/adopt_stage08_clone_local.sh` | 回传旧安装证据、保留原预算、差量更新新克隆并启动容量验证 |
 | `python -m mjlab_microduck.double_balance_stage08 capacity` | 只针对新 5090 的 4096 环境验证，D/E 各 3 次预热＋12 次测量 |
 | `scripts/run_stage08_batch.py` | 串行执行首轮、三种子复核或条件扩训；遇到暂停/失败停止批次 |
 | `python -m mjlab_microduck.double_balance_stage08_review` | 用开发评估生成带证据哈希的扩训决定 |
@@ -47,11 +48,11 @@ git switch double-balance
 git merge --ff-only refs/remotes/stage08/double-balance
 ```
 
-现在不创建 `stage-08-complete` 标签。无需为部署先向 GitHub 推送，云端接收本机已提交代码的完整 bundle。
+现在不创建 `stage-08-complete` 标签。无需为部署先向 GitHub 推送；克隆接续只传相对其已有提交的代码增量。
 
 ## 4. 选定云机后部署
 
-优先标准 RTX 5090 32GB，60 小时；A800 80GB，24 小时为另一条路线。用户已提供新实例 `connect.bjb2.seetacloud.com:45743`。实际 GPU 身份尚待预检确认，不沿用 Stage 07 的旧地址。
+以下第 4、4.1、4.2 节保留旧实例部署和故障处理经过，当前不要重跑。当前入口是第 4.3 节。预算仍为标准 RTX 5090 60 小时或 A800 24 小时二选一。
 
 用户已明确无需手动记录时间：本机执行下列命令即可，首次修复版部署自动生成时间起点并保存在仓库外。相同目标重试复用该起点，云端已有预算也不归零。部署前的真实开机时间未知，不把自动起点称为平台开机时间。
 
@@ -62,7 +63,7 @@ bash scripts/deploy_stage08_local.sh connect.bjb2.seetacloud.com 45743 5090
 
 脚本先读取云机硬件和已有文件；拒绝型号不符、已有 GPU 计算进程、脏工作区、非快进或检查点哈希冲突。源码在隔离的 incoming 目录传送；已有 Stage 07 模型可在云盘复制复用，目标已存在且哈希正确时不重复上传。没有密码或私钥写入配置。
 
-预检之前先通过纯 Bash 查找 Python >=3.10，检查 PATH、系统和常见 Conda 路径，使用选中的绝对路径贯穿预检、模型处理及预算初始化，不依赖交互式 Conda 激活。查找不安装软件、不导入 CUDA；若所有候选均不可用，退出并输出 `Stage08Bootstrap=NO_USABLE_PYTHON`，此时先检查镜像实际环境，不绕过预检。正式项目仍按锁文件安装 Python 3.12.14。
+预检之前先通过纯 Bash 查找 Python >=3.10，检查 PATH、系统和常见 Conda 路径，使用选中的绝对路径贯穿预检、模型处理及预算初始化，不依赖交互式 Conda 激活。查找不安装软件、不导入 CUDA；若所有候选均不可用，退出并输出 `Stage08Bootstrap=NO_USABLE_PYTHON`，此时先检查镜像实际环境，不绕过预检。此旧新建实例路径安装 Python 3.12.14；克隆路径保留满足项目版本范围的 Python 3.12.3。
 
 环境准备在 `microduck-stage08-setup` tmux 会话中运行，SSH 断开不会中断准备。日志位于：
 
@@ -108,6 +109,34 @@ bash scripts/recover_stage08_setup_local.sh connect.bjb2.seetacloud.com 45743 --
 日志现在每约 5 秒输出 `Stage08Download=百分比`：统计完整片段和下载中的片段字节，不再只数已完成的大包；`SHA256通过 N/8` 单独表示完整文件验证。有效写入速度是进度增量，含重试时可能下降，不是 GPU 利用率。断点状态与 `range-progress.json` 都在仓库外。最终仍需 `Stage08Setup=PASS` 和本轮 `ExitCode=0` 后才进入容量验证。
 
 本地新增验收包括真实本地 HTTPS Range、完整片段续传、错误 HTTP/Content-Range 拒绝、损坏片段最终 SHA 拒绝，以及离线 `uv sync --locked` 接受按注册表名称预装且不改变锁文件。运行版本为 uv 0.12.18；云端 uv 0.12.15 的相同集成测试会在 setup 阶段执行，当前尚未声称云端通过。证据见 `docs/audits/stage-08-range-download-fix.json`。
+
+### 4.3 克隆接续（当前路线，2026-09-29）
+
+新目标 `connect.bjb1.seetacloud.com:41381` 为标准 RTX 5090，32607 MiB，驱动 595.71.05。原仓库干净，HEAD 为 `2d10af503945f26f1d7364f19e4152eb540fb4d2`；原环境为 Python 3.12.3、Torch 2.9.1、mjlab 1.3.0、MuJoCo 3.10.0、mujoco-warp 3.8.1、Warp 1.12.0、rsl-rl-lib 5.0.1。两个源模型与第 2 节哈希一致。CPU affinity 208 不等于可用 208 核：cgroup 配额为 25 核，内存配额 120 GiB，数据盘剩余约 33.54 GiB。
+
+这些是元数据证据，不能据此声称 CUDA、恢复路径、显存余量或训练通过。分段安装只给出了取消异常，首个片段失败原因未提供，不能断言根因。该路线停止继续尝试下载。
+
+本机导入最新 bundle 后执行：
+
+```bash
+bash scripts/adopt_stage08_clone_local.sh \
+  connect.bjb2.seetacloud.com 45743 connect.bjb1.seetacloud.com 41381
+```
+
+脚本先对旧实例取得预算作业锁与安装锁，要求没有 GPU 作业或额外 Stage 08 训练结果。只回传原 `budget.json`、安装日志及下载诊断，整包和每个文件验证后保留在 `/home/lx/下载` 与本机 artifacts。已验证后明确提醒可以关闭旧 45743 实例，不自动关机、不删除云盘。下载 wheel/缓存可重建，两个 Stage 07 模型已有本机归档且克隆哈希匹配，不再回传一遍。
+
+接着只上传从 `2d10af5` 到当前提交的 Git 增量与小型证据归档。云端验证干净工作区、快进、标签、包哈希和检查点哈希，保留原 `campaign_id`、`started_at`、累计计时；有冲突退出，不生成新预算。不会运行 `setup_stage08_autodl.sh`、apt、pip、uv sync，也不会替换 `.venv`。Python 3.12.3 满足项目 `>=3.12,<3.13`，无需为补丁版本重新下载依赖。
+
+`microduck-stage08-clone` tmux 会话运行 `validate_stage08_clone.sh`：先限时检查依赖导入、冻结源码、GPU 身份及一个 Torch CUDA 运算，再调用既有 4096 环境 D/E 容量入口。D/E 各 3 次预热＋12 次测量，每组上限 900 秒，检查真实 MuJoCo/Warp、源检查点恢复、保存重载、驻留开发评估与至少 15% 显存余量。容量优化结果不用于正式训练；失败即停，不重跑 Stage 06 smoke、不自动降环境数。
+
+```bash
+ssh -S ~/.ssh/microduck-stage08-%C -p 41381 root@connect.bjb1.seetacloud.com \
+  'tail -n 30 -F /root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/clone-validation/latest.log'
+```
+
+退出 tail 可按 Ctrl+C，不影响 tmux。仅当本轮 `Stage08CloneValidation=PASS`、`Stage08Capacity=PASS` 和 `clone-validation/status.txt` 的 `ExitCode=0` 齐全，才进入第 6 节正式五组筛选。按实际吞吐与剩余预算调整实验可容纳量，不能把 A800 吞吐直接当成 5090 实测。
+
+SSH/SCP 全程复用 `~/.ssh/microduck-stage08-%C`，保持连接 12 小时，不主动关闭已有主连接，不写入密码。旧、新主机是两条不同连接，首次连接或网络中断后仍可能要求认证。
 
 ## 5. 预算与云端容量
 

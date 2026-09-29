@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "LOCAL_VALIDATION_PASS_CLOUD_RANGE_RECOVERY_PENDING",
+  "status": "CLOUD_RANGE_FAILED_CLONE_ROUTE_SELECTED",
   "evidence_time": "2026-09-29T18:19:29+08:00",
   "source": "User-provided cloud outputs",
   "previous_recovery_started": true,
@@ -46,7 +46,9 @@
     "shell_syntax": "PASS including remote recovery block",
     "python_syntax": "PASS"
   },
-  "cloud_range_started_observed": false,
+  "cloud_range_started_observed": true,
   "cloud_setup_pass_observed": false,
-  "next": "Import bundle locally, recover with --range-download, inspect byte progress and hash results, then require setup PASS/ExitCode=0 before capacity test."
+  "next": "Use clone adoption in runbook section 4.3; retain failed setup evidence and original budget; do not resume range installation.",
+  "cloud_terminal_error": "RuntimeError: Download cancelled after another piece failed",
+  "first_piece_failure_cause": "Not provided; undetermined"
 }
