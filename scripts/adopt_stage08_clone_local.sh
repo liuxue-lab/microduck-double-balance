@@ -1,10 +1,19 @@
 #!/usr/bin/env bash
 # Laptop entry: archive failed setup, update clone by Git delta, reuse its venv.
 set -Eeuo pipefail
-stage08_old_host=${1:?Usage: adopt_stage08_clone_local.sh OLD_HOST OLD_PORT NEW_HOST NEW_PORT}
+if [ "${1:-}" = --clone-only ]; then
+  # The old address is only the key of the retained LAPTOP start record.
+  # This mode makes no SSH/SCP connection to the old instance.
+  stage08_clone_host=${2:?Clone host required}
+  stage08_clone_port=${3:?Clone port required}
+  set -- connect.bjb2.seetacloud.com 45743 "$stage08_clone_host" "$stage08_clone_port" --old-unavailable
+fi
+stage08_old_host=${1:?Usage: adopt_stage08_clone_local.sh OLD_HOST OLD_PORT NEW_HOST NEW_PORT [--old-unavailable]}
 stage08_old_port=${2:?Old port required}
 stage08_host=${3:?Clone host required}
 stage08_port=${4:?Clone port required}
+stage08_mode=${5:-}
+case "$stage08_mode" in ''|--old-unavailable) ;; *) exit 2;; esac
 for stage08_value in "$stage08_old_host" "$stage08_host"; do
   [[ "$stage08_value" =~ ^[A-Za-z0-9.-]+$ ]]
 done
@@ -31,19 +40,31 @@ stage08_old="root@$stage08_old_host"
 stage08_target="root@$stage08_host"
 stage08_remote="$stage08_root/incoming/$stage08_id"
 
-# Stdlib script runs through stdin; no dependency download and no new ledger.
-stage08_archive_sha=$(ssh "${stage08_common[@]}" -p "$stage08_old_port" "$stage08_old" \
-  "/usr/bin/python3 - pack --archive '$stage08_remote/setup-evidence.tar.gz'" \
-  < scripts/migrate_stage08_setup.py)
+if [ "$stage08_mode" = --old-unavailable ]; then
+  # Never contact the unavailable host. Persist one clearly labelled replacement
+  # identity, while charging from the original local deployment timestamp.
+  stage08_archive_sha=$(python3 scripts/migrate_stage08_setup.py offline-pack \
+    --root "$stage08_local/offline-recovery-$stage08_old_host-$stage08_old_port" \
+    --original-start "$stage08_local/deployment-start-$stage08_old_host-$stage08_old_port-5090.txt" \
+    --archive "$stage08_archive")
+else
+  stage08_archive_sha=$(ssh "${stage08_common[@]}" -p "$stage08_old_port" "$stage08_old" \
+    "/usr/bin/python3 - pack --archive '$stage08_remote/setup-evidence.tar.gz'" \
+    < scripts/migrate_stage08_setup.py)
+  scp "${stage08_common[@]}" -P "$stage08_old_port" \
+    "$stage08_old:$stage08_remote/setup-evidence.tar.gz" "$stage08_archive"
+fi
 [[ "$stage08_archive_sha" =~ ^[0-9a-f]{64}$ ]]
-scp "${stage08_common[@]}" -P "$stage08_old_port" \
-  "$stage08_old:$stage08_remote/setup-evidence.tar.gz" "$stage08_archive"
 printf '%s  %s\n' "$stage08_archive_sha" "$stage08_archive" | sha256sum -c -
 python3 scripts/migrate_stage08_setup.py verify --archive "$stage08_archive" \
   --sha256 "$stage08_archive_sha" --output "$stage08_evidence/verified-old-setup"
-printf 'OldInstanceEvidence=RETURNED_AND_VERIFIED\n'
-printf 'Reminder=旧实例 %s:%s 的必要安装证据已回传校验；没有其他任务时可以关机。请保留新实例 %s:%s。\n' \
-  "$stage08_old_host" "$stage08_old_port" "$stage08_host" "$stage08_port"
+if [ "$stage08_mode" = --old-unavailable ]; then
+  printf 'OldInstanceEvidence=UNAVAILABLE\nStage08BudgetClock=LOCAL_ORIGINAL_RETAINED\n'
+else
+  printf 'OldInstanceEvidence=RETURNED_AND_VERIFIED\n'
+  printf 'Reminder=旧实例 %s:%s 的必要安装证据已回传校验；没有其他任务时可以关机。请保留新实例 %s:%s。\n' \
+    "$stage08_old_host" "$stage08_old_port" "$stage08_host" "$stage08_port"
+fi
 
 git bundle create "$stage08_evidence/clone-delta.bundle" refs/heads/double-balance \
   refs/tags/stage-06-complete refs/tags/stage-07-complete "^$stage08_base"

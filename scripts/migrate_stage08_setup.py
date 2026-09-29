@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Carry a failed setup's evidence and original budget to an existing clone.
 
-Stdlib only; no package installation, CUDA computation, or budget creation.
+Stdlib only; no package installation or CUDA computation. Offline recovery
+retains the laptop's original deployment clock and labels unavailable evidence.
 """
 from __future__ import annotations
 
@@ -14,6 +15,7 @@ import json
 from pathlib import Path, PurePosixPath
 import shutil
 import subprocess
+import sys
 import tarfile
 
 ROOT = Path('/root/autodl-tmp/microduck-double-balance')
@@ -133,14 +135,62 @@ def carry_budget(source, destination):
             stream.write(source.read_bytes())
 
 
+def offline_pack(start_record, retained_root, archive):
+    """Retain elapsed time when the old host/UUID cannot be retrieved.
+
+    No original UUID is invented. A replacement identity is persisted locally once,
+    explicitly marked reconstructed, and never represents recovered cloud evidence.
+    This is only for the setup failure before any formal Stage 08 training.
+    """
+    from datetime import datetime
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
+    from mjlab_microduck.double_balance_stage08_budget import create_ledger
+    if not start_record.is_file():
+        raise ValueError(f'Original local deployment start is missing: {start_record}; do not reset it to now')
+    started = start_record.read_text().strip()
+    parsed = datetime.fromisoformat(started)
+    if parsed.tzinfo is None:
+        raise ValueError('Original deployment start must include a timezone')
+    stage = retained_root / 'artifacts/double-balance-stage08'
+    (stage / 'setup').mkdir(parents=True, exist_ok=True)
+    ledger = stage / 'budget.json'
+    if ledger.exists():
+        state = json.loads(ledger.read_text())
+        if state['started_epoch'] != parsed.timestamp() or state['gpu'] != '5090':
+            raise ValueError('Retained offline budget conflicts with the original local start')
+    else:
+        state = create_ledger(ledger, '5090', started)
+    evidence = {
+        'status': 'OLD_HOST_UNAVAILABLE', 'ssh_observation': 'Connection refused on old port 45743',
+        'old_cloud_logs_returned': False, 'old_cloud_ledger_returned': False,
+        'old_campaign_id': None, 'replacement_campaign_id': state['campaign_id'],
+        'campaign_identity': 'RECONSTRUCTED_ONCE_LOCALLY_NOT_RECOVERED',
+        'deployment_start_source': str(start_record), 'deployment_start_sha256': sha(start_record),
+        'started_at': state['started_at'], 'budget_reset_to_now': False,
+        'formal_training_started': False,
+        'formal_training_evidence': 'User-provided preflight says zero Stage 08 PPO updates; old setup failed during dependency download',
+        'old_disk_contents': 'UNKNOWN; no shutdown/data-loss inference from refused SSH',
+        'follow_up': 'Collect old setup logs/ledger later if accessible; missing evidence stays explicit',
+    }
+    (stage / 'setup/offline-recovery.json').write_text(json.dumps(evidence, indent=2) + '\n')
+    shutil.copyfile(start_record, stage / 'setup/original-deployment-start.txt')
+    return pack(retained_root, archive)
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('mode', choices=('pack', 'verify', 'adopt'))
+    p.add_argument('mode', choices=('pack', 'offline-pack', 'verify', 'adopt'))
     p.add_argument('--root', type=Path, default=ROOT)
     p.add_argument('--archive', type=Path, required=True)
     p.add_argument('--sha256')
     p.add_argument('--output', type=Path)
+    p.add_argument('--original-start', type=Path)
     args = p.parse_args()
+    if args.mode == 'offline-pack':
+        if args.original_start is None:
+            p.error('Offline recovery requires the retained --original-start file')
+        print(offline_pack(args.original_start, args.root, args.archive))
+        return
     if args.mode == 'pack':
         if subprocess.check_output(['nvidia-smi', '--query-compute-apps=pid',
                                     '--format=csv,noheader'], text=True).strip():
@@ -163,7 +213,11 @@ def main():
                         break
             if not destination.is_file() or sha(destination) != digest:
                 raise ValueError(f'Archived Stage 07 checkpoint differs: {destination.name}')
-        print('Stage08Budget=ORIGINAL_RETAINED')
+        if (evidence / 'setup/offline-recovery.json').exists():
+            print('Stage08Budget=ORIGINAL_START_RETAINED_IDENTITY_RECONSTRUCTED')
+            print('OldInstanceEvidence=UNAVAILABLE')
+        else:
+            print('Stage08Budget=ORIGINAL_RETAINED')
         print('Stage08References=SHA256_PASS')
     print('Stage08SetupEvidence=SHA256_PASS')
 

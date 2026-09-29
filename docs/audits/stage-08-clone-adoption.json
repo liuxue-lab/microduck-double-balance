@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "stage": 8,
-  "status": "CLONE_METADATA_MATCHED_ADOPTION_AND_CUDA_PENDING",
+  "status": "OLD_SSH_REFUSED_OFFLINE_CLONE_ADOPTION_READY_CLOUD_PENDING",
   "source": "User-provided read-only cloud preflight JSON",
   "evidence_created_utc": "2026-09-29T10:56:33.274087+00:00",
   "old_failed_setup": "connect.bjb2.seetacloud.com:45743",
@@ -49,12 +49,15 @@
     "install_dependencies": false,
     "transfer_git_delta_from_observed_head": true,
     "reuse_cloud_stage07_checkpoints_after_sha256": true,
-    "return_and_verify_old_setup_evidence": true,
-    "carry_original_budget_identity_start_and_elapsed": true,
-    "new_budget_created": false,
+    "return_and_verify_old_setup_evidence": "Online required; offline records unavailable without blocking validation.",
+    "carry_original_budget_identity_start_and_elapsed": "Online: retain original ledger. Offline: retain original local start and charge full elapsed time, explicitly reconstruct identity once.",
+    "new_budget_created": "Online: false. Offline: replacement ledger from original retained start; no new time allowance.",
     "physics_task_dependencies_experiment_definitions_changed": false,
     "stage06_smoke_rerun": false,
-    "capacity_profiles": ["D", "E"],
+    "capacity_profiles": [
+      "D",
+      "E"
+    ],
     "capacity_updates_each": 15,
     "capacity_num_envs": 4096,
     "capacity_model_used_for_formal_training": false,
@@ -63,10 +66,23 @@
     "shutdown_automatic": false
   },
   "local_validation": {
-    "tests": "8 passed in 0.55s",
-    "scope": "4 clone migration tests plus 4 existing budget tests; CPU only",
+    "tests": "10 passed in 0.57s",
+    "scope": "6 clone migration tests plus 4 existing budget tests; CPU only",
     "shell_and_python_syntax": "PASS",
     "cloud_adoption_executed": false,
     "cloud_capacity_pass_observed": false
+  },
+  "old_host_follow_up": {
+    "observed_local_time": "2026-09-29T19:11:03+08:00",
+    "ssh_error": "Connection refused",
+    "new_clone_latest_log": "No such file or directory",
+    "interpretation": "Previous adoption stopped before changing the new clone; old disk state unknown",
+    "offline_mode": "--old-unavailable",
+    "old_cloud_evidence_returned": false,
+    "retained_start_source": "local deployment-start-connect.bjb2.seetacloud.com-45743-5090.txt",
+    "original_campaign_id_recovered": false,
+    "replacement_identity": "created once and explicitly labelled reconstructed if old ledger unavailable",
+    "elapsed_budget_reset": false,
+    "offline_adoption_executed": false
   }
 }

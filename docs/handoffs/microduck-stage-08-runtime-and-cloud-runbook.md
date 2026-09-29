@@ -112,6 +112,17 @@ bash scripts/recover_stage08_setup_local.sh connect.bjb2.seetacloud.com 45743 --
 
 ### 4.3 克隆接续（当前路线，2026-09-29）
 
+19:11（北京时间）后续：旧 `45743` SSH 返回 `Connection refused`，上一版在回传步骤退出，未更新新实例或启动验证，因此新实例没有 `clone-validation/latest.log`。这不证明旧云盘已丢失。当前使用下面的离线路径，不要求为失败安装日志重新启动旧实例：
+
+```bash
+bash scripts/adopt_stage08_clone_local.sh --clone-only \
+  connect.bjb1.seetacloud.com 41381
+```
+
+此模式不连接旧主机，读取本机既存的 `artifacts/double-balance-stage08/deployment-start-connect.bjb2.seetacloud.com-45743-5090.txt`。按该原起点计入全部已用时间，原预算额度不变。旧云端 ledger/日志/UUID 未取回，明确记录为 `UNAVAILABLE`；仅在本机生成并持久保留一个标为 `RECONSTRUCTED` 的接续 UUID，不能称为原 UUID 已恢复。此处的重建只适用于尚未正式训练的安装失败，不可拿来续接其他 campaign 的训练检查点。原起点文件缺失或冲突时退出，不以当前时间代替。若后续能访问旧云盘，再补收原始证据。
+
+下文的默认命令仍适用于旧实例在线、有原始预算可完整回传的情况。
+
 新目标 `connect.bjb1.seetacloud.com:41381` 为标准 RTX 5090，32607 MiB，驱动 595.71.05。原仓库干净，HEAD 为 `2d10af503945f26f1d7364f19e4152eb540fb4d2`；原环境为 Python 3.12.3、Torch 2.9.1、mjlab 1.3.0、MuJoCo 3.10.0、mujoco-warp 3.8.1、Warp 1.12.0、rsl-rl-lib 5.0.1。两个源模型与第 2 节哈希一致。CPU affinity 208 不等于可用 208 核：cgroup 配额为 25 核，内存配额 120 GiB，数据盘剩余约 33.54 GiB。
 
 这些是元数据证据，不能据此声称 CUDA、恢复路径、显存余量或训练通过。分段安装只给出了取消异常，首个片段失败原因未提供，不能断言根因。该路线停止继续尝试下载。

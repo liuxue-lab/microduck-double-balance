@@ -81,3 +81,34 @@ def test_corruption_and_unsafe_members_fail_before_extraction(tmp_path):
         migration.verify(unsafe, hashlib.sha256(unsafe.read_bytes()).hexdigest(), tmp_path / 'invalid')
     assert not (tmp_path / 'invalid').exists()
     assert not (tmp_path / 'escaped').exists()
+
+
+def test_offline_recovery_keeps_original_clock_and_labels_missing_evidence(tmp_path):
+    start = tmp_path / 'deployment-start.txt'
+    started = datetime.fromtimestamp(time.time() - 14400, timezone.utc).isoformat()
+    start.write_text(started + '\n')
+    retained = tmp_path / 'retained'
+    archive = tmp_path / 'offline.tar.gz'
+    digest = migration.offline_pack(start, retained, archive)
+    output = migration.verify(archive, digest, tmp_path / 'verified')
+    ledger = json.loads((output / 'budget.json').read_text())
+    assert ledger['started_epoch'] == datetime.fromisoformat(started).timestamp()
+    assert ledger['elapsed_seconds'] >= 14400
+    report = json.loads((output / 'setup/offline-recovery.json').read_text())
+    assert report['old_cloud_logs_returned'] is False
+    assert report['old_cloud_ledger_returned'] is False
+    assert report['old_campaign_id'] is None
+    assert report['budget_reset_to_now'] is False
+    migration.offline_pack(start, retained, tmp_path / 'retry.tar.gz')
+    assert json.loads((retained / 'artifacts/double-balance-stage08/budget.json').read_text()) == ledger
+
+
+def test_offline_recovery_cannot_substitute_a_new_start(tmp_path):
+    start = tmp_path / 'missing.txt'
+    with pytest.raises(ValueError, match='Original local deployment start is missing'):
+        migration.offline_pack(start, tmp_path / 'retained', tmp_path / 'missing.tar.gz')
+    start.write_text(datetime.fromtimestamp(time.time() - 3600, timezone.utc).isoformat())
+    migration.offline_pack(start, tmp_path / 'retained', tmp_path / 'first.tar.gz')
+    start.write_text(datetime.now(timezone.utc).isoformat())
+    with pytest.raises(ValueError, match='conflicts'):
+        migration.offline_pack(start, tmp_path / 'retained', tmp_path / 'changed.tar.gz')
