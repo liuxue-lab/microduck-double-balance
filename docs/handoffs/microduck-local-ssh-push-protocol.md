@@ -6,6 +6,11 @@
 对话、桌面端任务和交接文档都必须沿用本规范，不再临时改用 HTTPS、网页登录或
 新的推送流程。
 
+2026-10-01 长期规则补充：后续所有阶段还必须遵循
+[云 GPU 关机提醒与文件传输规范](microduck-cloud-gpu-and-transfer-protocol.md)。
+该规范记录云端不用后主动提醒手动关机、Git SSH 文件传输、SHA256 校验、常见错误
+和快捷操作。每份新交接必须同时引用两份规范并填写本阶段实际状态。
+
 ## 1. 固定位置与远端
 
 ```text
@@ -16,7 +21,9 @@ OriginSSH=git@github.com:liuxue-lab/microduck-double-balance.git
 RemoteRepository=https://github.com/liuxue-lab/microduck-double-balance.git
 ```
 
-检查点等大文件固定放在仓库外的 artifacts 目录，不提交到 Git：
+检查点等大文件固定放在仓库外的 artifacts 目录，不提交到 `double-balance`
+代码分支。用户已批准的回传资料可按补充规范打包到独立临时传输分支；该分支不能
+合并进代码分支，也不代替阶段完成标签：
 
 ```text
 SourceCheckpoint=/home/lx/microduck-double-balance/artifacts/basketball-release-6d8f74b/checkpoint.pt
@@ -148,6 +155,8 @@ git status --short --branch
 1. 不因普通推送改用 HTTPS、网页登录、PAT 或网页端重建提交。
 2. 不对 `double-balance` 或阶段标签执行 force push。
 3. 不在 bundle 尚未导入时把 `Everything up-to-date` 当成阶段已上传。
-4. 不提交 `.pt` 检查点或其他大模型文件。
+4. 不把 `.pt` 检查点、模型归档或完整运行轨迹提交到 `double-balance` 代码分支；已批准的文件回传使用独立传输分支，遵循补充规范。
 5. 正常推送成功后不重复要求用户执行全套验收。
 6. 后续交接文档不得删除本规范的引用。
+7. 不因云端训练结束而遗漏手动关机提醒；不把“已提醒”或“GPU 空闲”写成“实例已关机”。
+8. 文件回传的常见错误、恢复命令和快捷操作必须随交接保留，后续按实际经历追加修正。

@@ -44,6 +44,38 @@ Never launch a long run without one.
   `docs/handoffs/microduck-local-ssh-push-protocol.md` and must not replace its
   conventions with a new ad-hoc upload procedure.
 
+## Cloud GPU reminders and file transfer (standing user instruction)
+
+- Read and retain `docs/handoffs/microduck-cloud-gpu-and-transfer-protocol.md`
+  in every subsequent stage handoff. This supplements the local SSH push
+  protocol; it does not replace it. Carry forward the applicable commands,
+  known errors, recovery shortcuts, and current evidence paths.
+- As soon as cloud computation and necessary cloud-side packaging/transfers
+  are complete and required returned files pass local SHA256 verification,
+  proactively remind the user to shut down the cloud GPU manually. Do not
+  wait for laptop video review, documentation, commits, or stage completion.
+  GPU utilization of zero alone does not establish that cloud work is done.
+- Record reminder time and actual shutdown confirmation separately. Without
+  user/platform evidence, power state remains UNCONFIRMED. No automatic
+  instance start/stop/shutdown, and never restart the failed shutdown daemon.
+- Laptop RTX 5060 is for development, MuJoCo inference/simulation and video;
+  formal PPO uses an explicitly budgeted cloud GPU. Do not rerun Stage 06 smoke.
+- Default future repository/artifact upload and retrieval scripts to the
+  established GitHub SSH identity. Keep code on `double-balance`; package
+  approved transferable artifacts on a separate stage-specific transfer branch.
+  Retrieve through an isolated Git SSH checkout/cache outside the canonical
+  source checkout; verify the pinned commit and per-file SHA256. Never merge
+  artifact branches or put model archives into the source branch.
+- The successful Stage 09 return used SSH upload and HTTPS download; retain
+  that fact in historical evidence. The latest instruction defaults future
+  retrieval scripts to Git SSH too. Do not redo completed transfers or quietly
+  switch to gh web/PAT authentication or slow direct SCP for large files.
+- Each new handoff must include: both protocol links; fixed local/download
+  paths; current branch/ref, checkpoint/file hashes and return state; remaining
+  cloud tasks; shutdown reminder/confirmation state; common errors and useful
+  commands; unresolved issues and the precise next command. Historical frozen
+  handoffs are records, not authorization to rerun completed work.
+
 ## Repo map
 
 - `src/mjlab_microduck/tasks/mdp.py` — ALL custom MDP functions (rewards, events,

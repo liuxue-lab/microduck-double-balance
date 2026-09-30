@@ -1,0 +1,242 @@
+{
+  "stage": 9,
+  "status": "NECESSARY_CHECKPOINTS_AND_REVIEW_EVIDENCE_RETURNED",
+  "checkpoint_receipt_sha256": "c5d6d326dfa0fe94b440d34d5c1de010265bb8e491415111f917e5fcf1e40111",
+  "checkpoint_receipt": {
+    "status": "PASS",
+    "campaign_id": "7850e189-9b30-4d41-8a37-8ca6f241b3b0",
+    "artifact_commit": "e7730090daaf6c65fc4d688417d39f9380f0c691",
+    "manifest_sha256": "9d95a48e015a8870727ca664fd667274b026ff7698a973ae6c9c16e14afcd347",
+    "pilot_zip_sha256": "5fe9295b66131be7a067d3380b8fbe05a8bac1cd025415bd9fbfaec4044bbe62",
+    "checkpoint_count": 13,
+    "checkpoints": [
+      {
+        "profile": "F0",
+        "updates": 0,
+        "path": "pilot/F0/segment-9af170aa/checkpoints/update_000000.pt",
+        "sha256": "d083468578932e6d45031a94391b9effb87e0a3a83e57752f65bde7bd0f57191",
+        "size_bytes": 10073628,
+        "receipt_sha256": "9aa7794034b53e4a586888d2d440facbdd65dac7e964c463baa60b8c3bcd7562",
+        "receipt_size_bytes": 280
+      },
+      {
+        "profile": "F0",
+        "updates": 250,
+        "path": "pilot/F0/segment-9af170aa/checkpoints/update_000250.pt",
+        "sha256": "b6c3885b2d0a92c4dfa4acfb46bb5f10080921f2ea3a00ca16787e94980e2e39",
+        "size_bytes": 10073628,
+        "receipt_sha256": "74591b414a69e93f8e536d286311d9539c5a0e788ac8462d334b20dbe953b34a",
+        "receipt_size_bytes": 282
+      },
+      {
+        "profile": "F0",
+        "updates": 500,
+        "path": "pilot/F0/segment-6710f534/checkpoints/update_000500.pt",
+        "sha256": "5d3eb0d03995013b402182569832b49c7b214f8b70daf459a2ea628077457667",
+        "size_bytes": 10073628,
+        "receipt_sha256": "37cc71c7c155b0c7b579898576aa291c44efe208ebe6e65daefa52628d2271ef",
+        "receipt_size_bytes": 282
+      },
+      {
+        "profile": "F1",
+        "updates": 0,
+        "path": "pilot/F1/segment-d3497852/checkpoints/update_000000.pt",
+        "sha256": "9a75d2a81866c00208189f06bd74a6e7343a4978725111b9e71bdc32593eff60",
+        "size_bytes": 10073692,
+        "receipt_sha256": "c0d2cfe89289231f810d835922f50d1e78983522fb5d0721c637614d6724a7d1",
+        "receipt_size_bytes": 280
+      },
+      {
+        "profile": "F1",
+        "updates": 250,
+        "path": "pilot/F1/segment-d3497852/checkpoints/update_000250.pt",
+        "sha256": "2e5841cc4bf3c7ce3e0cb9c0598fd59e02d84130bc23136b85e8ffcfbd18eb57",
+        "size_bytes": 10073692,
+        "receipt_sha256": "b4ceafe381e97eb51245f846a718b3f03d8a4e40cad6d484c64f3c2ba3093709",
+        "receipt_size_bytes": 282
+      },
+      {
+        "profile": "F1",
+        "updates": 500,
+        "path": "pilot/F1/segment-bf59d518/checkpoints/update_000500.pt",
+        "sha256": "62191ee139deb6af1cd932824a73d555d508617da2d33bb38efa187f134be5f8",
+        "size_bytes": 10073692,
+        "receipt_sha256": "d59c82f04d39d124610c65573f49de2a8183f45f7208561909676918e75bc426",
+        "receipt_size_bytes": 282
+      },
+      {
+        "profile": "F2",
+        "updates": 0,
+        "path": "pilot/F2/segment-773f5dc5/checkpoints/update_000000.pt",
+        "sha256": "382fb7767d6f444e1ed7a3f9f51da695c672c3da5692cc7d46e66ce2888ea293",
+        "size_bytes": 10073692,
+        "receipt_sha256": "dfe0f86d47becaade7a4d7117de672da0d4834440050bd3d20e005aebbf757d0",
+        "receipt_size_bytes": 280
+      },
+      {
+        "profile": "F2",
+        "updates": 150,
+        "path": "pilot/F2/segment-773f5dc5/checkpoints/update_000150.pt",
+        "sha256": "50f28d8644dad956ee8ec1d5580169daaf56a38e01d25e1333358066d13c0c93",
+        "size_bytes": 10073692,
+        "receipt_sha256": "629ece649f039772df1b36a56956072796ef7a21b7078812bd0032f9228c91dd",
+        "receipt_size_bytes": 282
+      },
+      {
+        "profile": "F2",
+        "updates": 250,
+        "path": "pilot/F2/segment-e992c4d9/checkpoints/update_000250.pt",
+        "sha256": "00bf7e9d91ee3d19a3d57e516387b85c4579e8974ba4c7c38367e83a235b65f7",
+        "size_bytes": 10073692,
+        "receipt_sha256": "4362d50ce19fea640f513e64df2a50eb6678aa5f0e0d4d5fca511f7e7496bd50",
+        "receipt_size_bytes": 282
+      },
+      {
+        "profile": "F2",
+        "updates": 500,
+        "path": "pilot/F2/segment-e3223953/checkpoints/update_000500.pt",
+        "sha256": "68170de33ccfeca28c15baa6741874eadc7a908ce830099c2bc38065058d37d1",
+        "size_bytes": 10073692,
+        "receipt_sha256": "c0869c41e5ca7241314cba04952b4f0c107ebeb8cc397a6d4f6e3ec682741477",
+        "receipt_size_bytes": 282
+      },
+      {
+        "profile": "F3",
+        "updates": 0,
+        "path": "pilot/F3/segment-28c668bd/checkpoints/update_000000.pt",
+        "sha256": "99f99e5e397b560bddd349657bb9aaa7376ff73c9aeed79b94e23125b8cf3bc8",
+        "size_bytes": 10073692,
+        "receipt_sha256": "ed003db23421a21a6f73c0983ac0aed2669e84c16d09b0319d97f698327a7cd4",
+        "receipt_size_bytes": 280
+      },
+      {
+        "profile": "F3",
+        "updates": 250,
+        "path": "pilot/F3/segment-28c668bd/checkpoints/update_000250.pt",
+        "sha256": "671845df94dbe85623dec44ec6e23d3fc2b880f430ca3de168933cd675a3e9ad",
+        "size_bytes": 10073692,
+        "receipt_sha256": "b2b312944cbe67fc8d782c5643cbbb94177415010135ec73ac1f196231b27fdc",
+        "receipt_size_bytes": 282
+      },
+      {
+        "profile": "F3",
+        "updates": 500,
+        "path": "pilot/F3/segment-0a96c3d6/checkpoints/update_000500.pt",
+        "sha256": "878e6b023df71d0de4b671dbf605eea5e58662fdc28634586650b2b9e8c63cf6",
+        "size_bytes": 10073692,
+        "receipt_sha256": "8d907fb3e760d83cdceb759bb6683cb29b0081f19fc709b52abc84732abbfc67",
+        "receipt_size_bytes": 282
+      }
+    ],
+    "extracted_directory": "/home/lx/microduck-double-balance/artifacts/double-balance-stage09/returned-pilot-20261001",
+    "package_directory": "/home/lx/下载/microduck-stage09-return/e7730090daaf6c65fc4d688417d39f9380f0c691",
+    "full_cloud_traces_returned": false,
+    "videos_returned": false,
+    "new_ppo_updates": 0,
+    "stage09_complete": false
+  },
+  "assistant_read_receipt_bytes": true,
+  "checkpoint_model_bytes_verified_by": "User laptop return script; final local installer must recheck all13 SHA256 and receipts. Assistant did not load model binaries.",
+  "video_archive_sha256": "8c342528ded3581441983eeff3caebdb69e496715caac38519f55a6c3e733369",
+  "video_files_verified": 10,
+  "review_archive_files_verified": 175,
+  "pilot_archive_files_verified": 341,
+  "full_cloud_traces_returned": false,
+  "raw_cloud_trace_inventory": {
+    "files": [
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F0-u000250/dev-2485a43d/head-trace.npz",
+        "sha256": "d5075cb3d8bbc364fe210472c5063d27e2eefd696d4b7edb4d59d346b4361e26",
+        "size_bytes": 48839061
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F0-u000250/nominal-088eb11e/head-trace.npz",
+        "sha256": "6145748ddcb715b49b385ab04ea756638cf12dad6cd5305e488a58d7e44d6ee6",
+        "size_bytes": 24368659
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F0-u000500/dev-b78118fb/head-trace.npz",
+        "sha256": "5cdd01d59fa011b60ade837344039b244db498e34035e482d42bb8f6cc512324",
+        "size_bytes": 49049034
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F0-u000500/nominal-11c4e67d/head-trace.npz",
+        "sha256": "e72edd91cbe8824d9a7b15185663027125ba30a94a8d800285bbd6fdcc9fc5c4",
+        "size_bytes": 24452229
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F1-u000250/dev-288dd8f8/head-trace.npz",
+        "sha256": "2c168ae21ce37853c5f51f6981d5235c43d0091ccfaa4827a962f5622465b4c5",
+        "size_bytes": 48822943
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F1-u000250/nominal-13971ddf/head-trace.npz",
+        "sha256": "fc2d2114c1531a1c33e411b460e25e50a9435106b243c0e78143a6ecf41b392e",
+        "size_bytes": 24372886
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F1-u000500/dev-e0a5f54d/head-trace.npz",
+        "sha256": "64f3cde00e27f0aa86d1dc04c97cd1219a275662c1c53e567e785911599b3180",
+        "size_bytes": 48787591
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F1-u000500/nominal-500d2324/head-trace.npz",
+        "sha256": "802456a58635e5e8b2bd5f570a543f0d872bb19648e12bd3b106471dcaad0f7f",
+        "size_bytes": 24343441
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F2-u000250/dev-89a791c2/head-trace.npz",
+        "sha256": "0597a3edd83c6717f8276f50247782fce6d5ec7ce06458399ad94116c97772fc",
+        "size_bytes": 49208495
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F2-u000250/nominal-4f7b3246/head-trace.npz",
+        "sha256": "f33d2cee2c171dcbc56804fbc42c71b37f07bcebe3fa0ac1d5dd08e910f3628f",
+        "size_bytes": 24557347
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F2-u000500/dev-41732ecb/head-trace.npz",
+        "sha256": "29656736677b47bb163a09c5a61caac50652f43dac212776141434f7a2fe3fda",
+        "size_bytes": 49594143
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F2-u000500/nominal-a78bba62/head-trace.npz",
+        "sha256": "f4eab39592d40e59d54d90bbd54a4112b7497992fb55ac8a4e69e17ac6ae29c7",
+        "size_bytes": 24710547
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F3-u000250/dev-2fb89735/head-trace.npz",
+        "sha256": "4a26efb05a65e0f8971fe8bc76398c39429bb27b47c01e0fccb0b3666c2b5794",
+        "size_bytes": 48829136
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F3-u000250/nominal-99e70c87/head-trace.npz",
+        "sha256": "ddbabc2442c5c6dda1d787770d0746756048b0735087841c832855f6eed52c1f",
+        "size_bytes": 24343194
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F3-u000500/dev-81822f72/head-trace.npz",
+        "sha256": "d64075fd9733fb319bdf01225653f9206bf00301843dd1783060dc354b84d79e",
+        "size_bytes": 49281097
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F3-u000500/nominal-b783761d/head-trace.npz",
+        "sha256": "c4d9f22ccfef2304df619d15b31e4c8d0c774613f8221514c01e7e6e4d339edd",
+        "size_bytes": 24541160
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/baseline/dev-19ffbfd7/head-trace.npz",
+        "sha256": "8a4bbeff09484acda66135850f8e0096c3f877ca728a45a27ad9679cef46dd2c",
+        "size_bytes": 48765852
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/baseline/nominal-c61be379/head-trace.npz",
+        "sha256": "c686f94003b57f85ee872af9ae1f8262719ec14f012aa4e32bed9d34f4c682ae",
+        "size_bytes": 24327178
+      }
+    ],
+    "retained_locally": true,
+    "full_traces_in_review_zip": false
+  },
+  "cloud_shutdown_confirmed": false
+}

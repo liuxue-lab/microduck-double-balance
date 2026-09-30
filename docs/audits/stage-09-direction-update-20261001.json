@@ -1,0 +1,77 @@
+{
+  "stage": 9,
+  "record_type": "user_scope_steering",
+  "user_message_local_time": "2026-10-01T04:44:55+08:00",
+  "user_instructions": [
+    "先别控制头面向前了 先完成基础的 能平衡住",
+    "而且做头转向问题也是头可以转向其他方向 但是最后平衡后可以转回来"
+  ],
+  "current_priority": "Improve unassisted double-ball balance before further head-posture correction.",
+  "head_work_status": "Further head-correction optimization paused; retain completed experiments and diagnostic evidence.",
+  "future_head_behavior_intent": "Allow head turning during balance acquisition and recovery; consider returning forward after balance has stabilized. Continuous forward heading is not the requested behavior.",
+  "future_head_behavior_implementation": "NOT_IMPLEMENTED; trigger, dwell time, transition, reward, and acceptance definitions remain to be proposed and confirmed.",
+  "unchanged_current_acceptance": "Original 10-second episode with at least 5 seconds of terminal continuous stability and zero assistance; all original gates retained.",
+  "baseline_retained": {
+    "stage": 8,
+    "checkpoint": "E/20260929/update_004000.pt",
+    "sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+    "historical_independent_strict_result": "652/768",
+    "result_scope": "Historical Stage 08 balance acceptance only; no claim of acceptable head posture."
+  },
+  "stage09_pilot_disposition": "PILOT_COMPLETE_NO_ELIGIBLE_CANDIDATE; preserve F0/F1/F2/F3, all 18 evaluations, and power-loss recovery evidence. No candidate promotion.",
+  "scope_of_next_work": [
+    "Finish already-running checkpoint upload/download and verify local hashes.",
+    "Perform local zero-PPO video review and analyze balance failures; retain head measurements as descriptive evidence.",
+    "Archive necessary checkpoints and record unresolved issues in the Stage 09 handoff.",
+    "Finalize stage documentation and commits/tags locally under the existing SSH push protocol."
+  ],
+  "pending_balance_questions": [
+    "Lower-ball speed violations remain a principal direct failure condition; reward causality is not established.",
+    "Unchanged-reward F0 also regressed; new head penalties alone cannot explain the shared regression.",
+    "F2 was interrupted and resumed after power loss; preserve this limitation when comparing arms."
+  ],
+  "new_training_authorized_by_this_message": false,
+  "runtime_reward_physics_or_acceptance_changes_made": false,
+  "local_gpu_usage": "Code, MuJoCo simulation, inference, and video only; no PPO on RTX 5060.",
+  "instance_power_operations_authorized": false,
+  "transfer_status_at_user_message": {
+    "packs_created": [
+      "F0",
+      "F1",
+      "F2",
+      "F3"
+    ],
+    "checkpoint_count_expected": 13,
+    "artifact_branch": "stage09-review-20261001",
+    "artifact_commit_abbrev": "e773009",
+    "upload_started": true,
+    "push_success_confirmed": false,
+    "local_download_and_hash_verification_confirmed": false
+  },
+  "stage09_complete": false,
+  "push_protocol": "docs/handoffs/microduck-local-ssh-push-protocol.md",
+  "record_delivery_status": "Prepared in assistant source copy; to be included in the final local Stage 09 documentation import.",
+  "subsequent_transfer_confirmation": {
+    "user_message_local_time": "2026-10-01T04:53:32+08:00",
+    "source": "User-provided terminal output from the supplied SHA-verifying return script",
+    "artifact_commit": "e7730090daaf6c65fc4d688417d39f9380f0c691",
+    "manifest_sha256": "9d95a48e015a8870727ca664fd667274b026ff7698a973ae6c9c16e14afcd347",
+    "push_success_confirmed": true,
+    "local_return_status": "PASS",
+    "verified_checkpoint_count": 13,
+    "local_return_receipt": "/home/lx/microduck-double-balance/artifacts/double-balance-stage09/returned-pilot-20261001/return-verified.json",
+    "assistant_has_read_receipt_bytes": true,
+    "video_review": "COMPLETE_WITH_LIMITATIONS"
+  },
+  "subsequent_user_inquiry": {
+    "time_local": "2026-10-01T05:17:51+08:00",
+    "question": "还有什么时候可以去掉板子 只用头部",
+    "physical_task_change_authorized": false,
+    "proposal": "After Stage09 closure, propose a zero-PPO head-surface contact audit before any tray-removal task implementation or training."
+  },
+  "operating_rules_install": {
+    "status": "PASS_USER_TERMINAL_EVIDENCE",
+    "receipt_path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage09/document-rule-backups/20260930T211738Z-ccb3aac3/install-receipt.json",
+    "frozen_runtime_files_unchanged": 101
+  }
+}

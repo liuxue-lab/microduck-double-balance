@@ -1,0 +1,128 @@
+{
+  "stage": 9,
+  "status": "TECHNICAL_REVIEW_COMPLETE_LOCAL_FINALIZATION_PENDING",
+  "technical_review_complete": true,
+  "stage09_complete": false,
+  "publication_state_at_delivery": "Local archive validation, commit, annotated tag and user SSH push pending",
+  "baseline_commit": "a76019399a4d6a2946ccb6a5713095ec7dbca717",
+  "training_runtime_git_heads": [
+    "e4d185564c9a4fb52d9f3834fd68fc9a9f900e90",
+    "66ff9c3055ec6b9caa99c308b5aa5170655c6f5c"
+  ],
+  "campaign_id": "7850e189-9b30-4d41-8a37-8ca6f241b3b0",
+  "policy_objective_status": "NO_ELIGIBLE_CANDIDATE; head correction paused by user; balance improvement unmet",
+  "all_evaluated_episodes_successful": false,
+  "overall_required_success_rate_specified": false,
+  "stage06_smoke_repeated": false,
+  "frozen_stage03_physics_and_stage04_task_changed": false,
+  "formal_training": {
+    "gpu": "RTX5090",
+    "profiles": [
+      "F0",
+      "F1",
+      "F2",
+      "F3"
+    ],
+    "retained_new_updates": 2000,
+    "logged_optimizer_update_rows": 2025,
+    "charged_attempts": 2025,
+    "lost_and_repeated_F2_updates": 25,
+    "local_new_ppo_updates": 0,
+    "budget": {
+      "schema_version": 1,
+      "campaign_id": "7850e189-9b30-4d41-8a37-8ca6f241b3b0",
+      "gpu": "5090",
+      "maximum_cloud_hours": 4.0,
+      "finalization_reserve_hours": 0.75,
+      "maximum_updates_per_profile": 500,
+      "maximum_total_updates": 2025,
+      "charged_updates": {
+        "F0": 500,
+        "F1": 500,
+        "F2": 525,
+        "F3": 500
+      },
+      "started_at": "2026-09-30T16:40:22.219633+00:00",
+      "started_epoch": 1790786422.219633,
+      "last_observed_epoch": 1790797131.0047975,
+      "elapsed_seconds": 10708.785164356232,
+      "accounting_note": "continuous wall time since retained deployment start; subsequent idle/restart/offline gaps also count conservatively; earlier power-on time is unknown",
+      "approved_recovery": {
+        "id": "stage09-f2-powerloss-20261001",
+        "authorization_utc": "2026-09-30T18:36:08+00:00",
+        "campaign_id": "7850e189-9b30-4d41-8a37-8ca6f241b3b0",
+        "charged_before": {
+          "F0": 500,
+          "F1": 500,
+          "F2": 175,
+          "F3": 0
+        },
+        "restored_checkpoint": "pilot/F2/segment-773f5dc5/checkpoints/update_000150.pt",
+        "restored_updates": 150,
+        "lost_updates": 25,
+        "original_started_epoch": 1790786422.219633,
+        "original_runtime_manifest_sha256": "3bb06abec7d30ad3028f20f436111b26ea4d50f87cc1e25e117f59c48ae8216c",
+        "checkpoint_sha256": "50f28d8644dad956ee8ec1d5580169daaf56a38e01d25e1333358066d13c0c93"
+      },
+      "maximum_updates_by_profile": {
+        "F0": 500,
+        "F1": 500,
+        "F2": 525,
+        "F3": 500
+      }
+    },
+    "training_evaluation_campaign_end_utc": "2026-09-30T19:38:51.004630+00:00",
+    "training_evaluation_within_4h": true,
+    "later_artifact_transfer_exceeded_planned_wall_deadline": true,
+    "actual_billable_instance_on_time": "UNKNOWN"
+  },
+  "evaluations": {
+    "cloud_reports": 18,
+    "new_heldout_evaluation_run": false,
+    "no_eligible_stop_rule_followed": true,
+    "selection_not_reopened_after_user_priority_change": true
+  },
+  "local_video_review": {
+    "report": "docs/audits/stage-09-video-review.json",
+    "videos": 10,
+    "status": "VIDEO_REVIEW_COMPLETE_WITH_LIMITATIONS",
+    "cloud_statistics_replaced": false
+  },
+  "archive_return": {
+    "report": "docs/audits/stage-09-return-verified.json",
+    "verified_checkpoints": 13,
+    "full_cloud_traces_returned": false
+  },
+  "shutdown": {
+    "reminder_sent_local": "2026-10-01T05:03:28+08:00",
+    "manual_shutdown_confirmed": false,
+    "power_state": "UNCONFIRMED",
+    "instance_power_operations_performed_by_assistant": false,
+    "old_auto_shutdown_daemon_reused": false
+  },
+  "open_findings": [
+    "No balance or head-correction replacement model",
+    "Lower-ball speed/reward causality unresolved",
+    "Slight head_roll limit penetration",
+    "Same-GPU and cross-GPU replay label variation",
+    "Frozen five-second timer boundary case retained",
+    "No new heldout benchmark or extra seeds",
+    "Some full raw traces retained only on cloud",
+    "Artifact transfer ran beyond planned wall reserve; actual shutdown/billing unconfirmed",
+    "Tray removal and head contact version not implemented or authorized"
+  ],
+  "local_publication_protocol": [
+    "docs/handoffs/microduck-local-ssh-push-protocol.md",
+    "docs/handoffs/microduck-cloud-gpu-and-transfer-protocol.md"
+  ],
+  "finalization_required_checks": [
+    "Canonical branch and expected source HEAD",
+    "All101 frozen runtime file hashes",
+    "All13 local checkpoint hashes and receipts",
+    "All18 cloud evaluation JSON hashes",
+    "All175 local review files and175-entry archive manifest",
+    "Pinned local video ZIP SHA256",
+    "Only explicitly listed stage09 finalization changes staged",
+    "Annotated local tag; no force update; no network operations"
+  ]
+}
