@@ -212,7 +212,7 @@ SHA256=5d998fc3223451029d627bf0e0100b17df1ee77b711fc0d423ea18e29281bbd7
 
 固定规范始终是 [microduck-local-ssh-push-protocol.md](microduck-local-ssh-push-protocol.md)。本机仓库 `/home/lx/microduck-double-balance/workspace`，下载目录 `/home/lx/下载`，origin 使用 `git@github.com:liuxue-lab/microduck-double-balance.git`。
 
-本次隔离工作区提交通过固定文件 `microduck-stage-08-from-stage-07.bundle` 交付。导入最新 bundle 后执行：
+本次隔离工作区提交通过固定文件 `microduck-stage-08-from-stage-07.bundle` 交付。以下是首次封口步骤，已在 `a760193` 完成；导入后续 CI 修复时不要再次运行封口脚本或重建标签（见第 12 节）：
 
 ```bash
 bash scripts/finalize_stage08_local.sh
@@ -225,3 +225,13 @@ git push origin stage-08-complete
 ## 11. 新对话接续
 
 若只继续本阶段发布，读取本交接与 `stage-08-final-acceptance.json`，完成本机导入/标签/SSH 推送回执；不要再训练。若进入下一阶段，首先核对用户希望优先解决残余低速违例、偏头外观，还是鲁棒性。旧评估结果和检查点已经完整封存；不得为让姿态更好看而修改旧任务定义或回写旧分数。
+
+## 12. 发布后的 CI 修复（2026-09-30）
+
+`a76019399a4d6a2946ccb6a5713095ec7dbca717` 的分支与标签推送触发了两次 CI，均在 `Run CPU tests` 失败。日志直接确认 `tests/test_stage08_range_download.py` 查询云端专用 `/root/autodl-tmp/.../uv` 时触发 `PermissionError`；两次都是 **1 failed、373 passed、1 skipped**。安装冻结依赖成功，后续构建、导出等步骤因该失败被跳过。此前四项归档校验测试的 PASS 不是完整 CI 的 PASS。
+
+修复仅让离线安装集成测试通过 `shutil.which('uv')` 查找调用者 PATH 中的工具，与 CI 的 `setup-uv` 一致；保留实际安装、离线锁文件和哈希断言。下载器、训练/评估代码、Stage 03/04 和归档检查点均未更改。云端手动执行该测试时，可把 bootstrap/bin 加入 PATH，无需测试去探测 `/root`。
+
+本次局部验证：原测试在受控注入相同 `PermissionError` 时复现失败；修复后相同注入下六项下载测试全部通过；正常环境下六项下载测试加四项归档测试共十项通过，相对链接检查通过。工作区禁止切换系统用户，因此权限复现采用故障注入，不冒充真实普通用户运行。未在本工作区重新安装完整仿真依赖或运行全仓库 CI，未进行 PPO、Stage 06 smoke 或云端操作。
+
+详细来源和验证边界见 [stage-08-ci-followup.json](../audits/stage-08-ci-followup.json)。修复以追加提交交付，用户在本机导入后只推送 `double-balance`，再查看该新提交的 CI。**已有 `stage-08-complete` 保持指向 `a760193`，不移动、不覆盖、不重新推送该标签。** 原标签的失败记录继续保留；修复提交在远端 CI 完成前不得标为完整 CI 通过。无需为本修复重新启动云实例。

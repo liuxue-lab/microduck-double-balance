@@ -114,8 +114,9 @@ def test_manifest_uses_exact_locked_x86_64_wheels():
 
 
 def test_registry_seed_is_accepted_by_offline_locked_sync(tmp_path):
-    cloud_uv = Path('/root/autodl-tmp/microduck-double-balance/tools/bootstrap/bin/uv')
-    uv = str(cloud_uv) if cloud_uv.is_file() else shutil.which('uv')
+    # Use the caller's installed uv (setup-uv in CI). Probing a cloud-only
+    # /root path raises PermissionError on ordinary, non-root runners.
+    uv = shutil.which('uv')
     if not uv:
         pytest.skip('uv executable is required for the offline installer integration')
     project = tmp_path/'project'
