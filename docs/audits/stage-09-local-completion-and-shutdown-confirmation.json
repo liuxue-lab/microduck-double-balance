@@ -1,0 +1,28 @@
+{
+  "stage": 9,
+  "status": "LOCAL_COMPLETE_MANUAL_SHUTDOWN_CONFIRMED_SSH_PUSH_PENDING",
+  "evidence_source": "User message with laptop finalizer output and statement: 5090已关机",
+  "user_confirmation_received_at": "2026-10-01T05:39:34+08:00",
+  "exact_shutdown_time": null,
+  "manual_shutdown_confirmed": true,
+  "power_state": "OFF_CONFIRMED_BY_USER",
+  "platform_power_independently_queried": false,
+  "instance_power_operations_performed_by_assistant": false,
+  "local_finalize_commit": "9c51a133b40e4342985bab696e54fc02cd45f615",
+  "annotated_tag": "stage-09-complete",
+  "annotated_tag_commit": "9c51a133b40e4342985bab696e54fc02cd45f615",
+  "tag_moved": false,
+  "local_checks": {
+    "frozen_runtime_files": 101,
+    "checkpoints": 13,
+    "cloud_evaluation_reports": 18,
+    "videos": 10,
+    "video_review_files": 175,
+    "retained_primary_sha256": "PASS"
+  },
+  "finalization_receipt": "/home/lx/microduck-double-balance/artifacts/double-balance-stage09/finalization/20260930T213916Z-9267efce/finalization-receipt.json",
+  "new_ppo_updates": 0,
+  "stage09_complete": false,
+  "ssh_push_confirmed": false,
+  "note": "This subsequent operational evidence supersedes UNCONFIRMED/PENDING fields in historical producer receipts. Technical completion tag remains at original local finalization commit. No platform query or automatic power action."
+}

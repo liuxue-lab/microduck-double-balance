@@ -1,9 +1,9 @@
 {
   "stage": 9,
-  "status": "TECHNICAL_REVIEW_COMPLETE_LOCAL_FINALIZATION_PENDING",
+  "status": "LOCAL_FINALIZATION_COMPLETE_MANUAL_SHUTDOWN_CONFIRMED_SSH_PUSH_PENDING",
   "technical_review_complete": true,
   "stage09_complete": false,
-  "publication_state_at_delivery": "Local archive validation, commit, annotated tag and user SSH push pending",
+  "publication_state_at_delivery": "Local archive validation, commit and annotated tag confirmed by user; SSH push pending",
   "baseline_commit": "a76019399a4d6a2946ccb6a5713095ec7dbca717",
   "training_runtime_git_heads": [
     "e4d185564c9a4fb52d9f3834fd68fc9a9f900e90",
@@ -95,10 +95,14 @@
   },
   "shutdown": {
     "reminder_sent_local": "2026-10-01T05:03:28+08:00",
-    "manual_shutdown_confirmed": false,
-    "power_state": "UNCONFIRMED",
+    "manual_shutdown_confirmed": true,
+    "power_state": "OFF_CONFIRMED_BY_USER",
     "instance_power_operations_performed_by_assistant": false,
-    "old_auto_shutdown_daemon_reused": false
+    "old_auto_shutdown_daemon_reused": false,
+    "confirmation_received_at": "2026-10-01T05:39:34+08:00",
+    "exact_shutdown_time": null,
+    "evidence_source": "User statement: 5090已关机",
+    "evidence": "docs/audits/stage-09-local-completion-and-shutdown-confirmation.json"
   },
   "open_findings": [
     "No balance or head-correction replacement model",
@@ -108,7 +112,7 @@
     "Frozen five-second timer boundary case retained",
     "No new heldout benchmark or extra seeds",
     "Some full raw traces retained only on cloud",
-    "Artifact transfer ran beyond planned wall reserve; actual shutdown/billing unconfirmed",
+    "Artifact transfer ran beyond planned wall reserve; actual billing duration unknown; shutdown subsequently confirmed by user",
     "Tray removal and head contact version not implemented or authorized"
   ],
   "local_publication_protocol": [
@@ -124,5 +128,11 @@
     "Pinned local video ZIP SHA256",
     "Only explicitly listed stage09 finalization changes staged",
     "Annotated local tag; no force update; no network operations"
-  ]
+  ],
+  "local_finalization": {
+    "commit": "9c51a133b40e4342985bab696e54fc02cd45f615",
+    "annotated_tag": "stage-09-complete",
+    "annotated_tag_commit": "9c51a133b40e4342985bab696e54fc02cd45f615",
+    "evidence": "docs/audits/stage-09-local-completion-and-shutdown-confirmation.json"
+  }
 }
