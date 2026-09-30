@@ -8784,3 +8784,47 @@ def basketball_body_pad(env: ManagerBasedRlEnv) -> torch.Tensor:
 def basketball_head_pad(env: ManagerBasedRlEnv) -> torch.Tensor:
     """Zero pad for the 4-D head_command slot (61-D contract, no head command here)."""
     return torch.zeros(env.num_envs, 4, device=env.device)
+
+
+# Stage 09 approved append-only reward terms. Stage 03/04 factories stay frozen.
+def stage09_head_yaw_cost(env: ManagerBasedRlEnv) -> torch.Tensor:
+    """Positive 1-cos(relative heading); use weight -0.25, no head-joint lock."""
+    from mjlab.utils.lab_api.math import quat_apply_inverse
+    robot = env.scene["robot"]
+    site = _double_balance_tray_site_id(env)
+    cache = env.__dict__.setdefault("_stage09_head_ids", {})
+    if "trunk" not in cache:
+        ids, _ = robot.find_bodies("^trunk_base$")
+        if len(ids) != 1:
+            raise ValueError("Expected one trunk_base")
+        cache["trunk"] = ids[0]
+    forward = torch.zeros(env.num_envs, 3, device=env.device)
+    forward[:, 0] = 1.
+    forward_w = _quat_rotate(robot.data.site_quat_w[:, site], forward)
+    forward_b = quat_apply_inverse(robot.data.body_link_quat_w[:, cache["trunk"]], forward_w)
+    norm = torch.linalg.vector_norm(forward_b[:, :2], dim=-1)
+    cosine = (forward_b[:, 0] / norm.clamp_min(1e-6)).clamp(-1., 1.)
+    return torch.where(norm > 1e-6, 1.-cosine, torch.full_like(norm, 2.))
+
+
+def stage09_head_margin_cost(env: ManagerBasedRlEnv, buffer_fraction: float = .05) -> torch.Tensor:
+    """Positive normalized joint-edge cost; actual qpos, not control targets."""
+    if not 0. < buffer_fraction < .5:
+        raise ValueError("Invalid head margin buffer")
+    robot = env.scene["robot"]
+    cache = env.__dict__.setdefault("_stage09_head_ids", {})
+    if "joints" not in cache:
+        indices = []
+        for name in ("neck_pitch", "head_pitch", "head_yaw", "head_roll"):
+            ids, _ = robot.find_joints("^"+name+"$")
+            if len(ids) != 1:
+                raise ValueError("Expected one head joint: "+name)
+            indices.append(ids[0])
+        cache["joints"] = indices
+    ids = cache["joints"]
+    q = robot.data.joint_pos[:, ids]
+    limits = robot.data.joint_pos_limits[:, ids]
+    width = limits[..., 1]-limits[..., 0]
+    margin = torch.minimum(q-limits[..., 0], limits[..., 1]-q)
+    buffer = buffer_fraction*width
+    return torch.clamp((buffer-margin)/buffer, min=0.).square().sum(dim=-1)

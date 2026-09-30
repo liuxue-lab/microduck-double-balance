@@ -1,0 +1,20 @@
+{
+  "files": [
+    "docs/audits/stage-09-approved-plan.json",
+    "docs/audits/stage-09-preparation-files.json",
+    "docs/audits/stage-09-runtime-hashes.json",
+    "docs/handoffs/microduck-stage-09-preparation.md",
+    "scripts/stage09_cloud_launch.py",
+    "scripts/stage09_export_cloud.py",
+    "scripts/stage09_local_preflight.py",
+    "src/mjlab_microduck/double_balance_stage09.py",
+    "src/mjlab_microduck/double_balance_stage09_budget.py",
+    "src/mjlab_microduck/double_balance_stage09_campaign.py",
+    "src/mjlab_microduck/double_balance_stage09_diagnostics.py",
+    "src/mjlab_microduck/double_balance_stage09_evaluation.py",
+    "src/mjlab_microduck/double_balance_stage09_plan.py",
+    "src/mjlab_microduck/double_balance_stage09_state.py",
+    "src/mjlab_microduck/tasks/mdp.py",
+    "tests/test_stage09_contract.py"
+  ]
+}
