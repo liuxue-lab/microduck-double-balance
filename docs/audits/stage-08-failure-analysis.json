@@ -1,0 +1,593 @@
+{
+  "status": "RECORDED_CLOUD_TRACE_ANALYSIS_REVIEWED",
+  "raw_analysis_sha256": "ae18cd07011c780f362e1e397dac259bdef2a46c7a860983c2d288294e895591",
+  "source_archive_sha256": "e84aca26ad2f1d0f17f84590710ed6291b317f166e24993a9111a48f517c04cd",
+  "strict_success_definition": "Original Stage04 terminal continuous 5 seconds; physical termination is failure. No thresholds changed.",
+  "models": [
+    {
+      "model": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260928/segment-001/checkpoints/update_002750.pt",
+        "sha256": "42e759a80626859aa6756bec81e3fd07e53845a4ec7ef1a56f5054fd3dfacd1f",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260928,
+        "experiment_completed_updates": 2750,
+        "rank": [
+          0.75,
+          0.734375,
+          10.0,
+          8.4,
+          8.42,
+          -0.018859375075408025,
+          -2750
+        ]
+      },
+      "held_out": {
+        "episodes": 768,
+        "successes": 577,
+        "success_fraction": 0.7513020833333334,
+        "wilson95": [
+          0.7195307995635748,
+          0.7805719036389379
+        ],
+        "scope": "one checkpoint, 768 randomized initial states"
+      },
+      "original_cloud_summary": {
+        "episodes": 768,
+        "successes": 577,
+        "mean_seconds": 10.0,
+        "mean_double_balance_stable_fraction": 0.9689687939050297,
+        "mean_lower_speed_violation_fraction": 0.019645833465195512,
+        "mean_terminated": 0,
+        "median_terminal_stable_seconds": 8.24,
+        "median_longest_stable_seconds": 8.39,
+        "failed_despite_any_5s_streak": 99,
+        "mean_violation_fractions": {
+          "top_center": 0.006148437553141169,
+          "top_height": 0.0,
+          "top_speed": 0.00826041676918976,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.019645833465195512,
+          "unassisted": 0.0
+        }
+      },
+      "failure_count": 191,
+      "physical_termination_count": 0,
+      "failed_despite_any_5s_streak": 99,
+      "last_instability_gate_counts_in_failed_episodes": {
+        "lower_ball_speed": 189,
+        "top_speed": 2
+      },
+      "median_last_instability_seconds_in_failed_episodes": 8.04
+    },
+    {
+      "model": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+        "sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260929,
+        "experiment_completed_updates": 4000,
+        "rank": [
+          0.8828125,
+          0.828125,
+          10.0,
+          9.030000000000001,
+          9.030000000000001,
+          -0.010875000114538125,
+          -4000
+        ]
+      },
+      "held_out": {
+        "episodes": 768,
+        "successes": 652,
+        "success_fraction": 0.8489583333333334,
+        "wilson95": [
+          0.8218994774213815,
+          0.8725436544867708
+        ],
+        "scope": "one checkpoint, 768 randomized initial states"
+      },
+      "original_cloud_summary": {
+        "episodes": 768,
+        "successes": 652,
+        "mean_seconds": 9.989296875,
+        "mean_double_balance_stable_fraction": 0.9784859673430523,
+        "mean_lower_speed_violation_fraction": 0.013617450992569502,
+        "mean_terminated": 0.0013020833333333333,
+        "median_terminal_stable_seconds": 8.91,
+        "median_longest_stable_seconds": 8.92,
+        "failed_despite_any_5s_streak": 70,
+        "mean_violation_fractions": {
+          "top_center": 0.0034956695165722826,
+          "top_height": 0.0,
+          "top_speed": 0.0064053722923442065,
+          "lower_offset": 0.0001463015020514528,
+          "lower_height_min": 2.9260299925226718e-05,
+          "lower_height_max": 0.0,
+          "robot_tilt": 8.778089735036095e-05,
+          "lower_ball_speed": 0.013617450992569502,
+          "unassisted": 0.0
+        }
+      },
+      "failure_count": 116,
+      "physical_termination_count": 1,
+      "failed_despite_any_5s_streak": 70,
+      "last_instability_gate_counts_in_failed_episodes": {
+        "lower_ball_speed": 115,
+        "top_center": 1,
+        "top_speed": 1,
+        "lower_offset": 1,
+        "lower_height_min": 1,
+        "robot_tilt": 1
+      },
+      "median_last_instability_seconds_in_failed_episodes": 7.58
+    },
+    {
+      "model": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260930/segment-001/checkpoints/update_003250.pt",
+        "sha256": "89c7cedb9567f144228deb4d98465a9b0aad08be9f7c3ad391aa6a12ade8431c",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260930,
+        "experiment_completed_updates": 3250,
+        "rank": [
+          0.796875,
+          0.640625,
+          10.0,
+          8.55,
+          8.55,
+          -0.019546875069863745,
+          -3250
+        ]
+      },
+      "held_out": {
+        "episodes": 768,
+        "successes": 586,
+        "success_fraction": 0.7630208333333334,
+        "wilson95": [
+          0.7316841919751783,
+          0.7917393626720112
+        ],
+        "scope": "one checkpoint, 768 randomized initial states"
+      },
+      "original_cloud_summary": {
+        "episodes": 768,
+        "successes": 586,
+        "mean_seconds": 10.0,
+        "mean_double_balance_stable_fraction": 0.9725000434555113,
+        "mean_lower_speed_violation_fraction": 0.01920052094192215,
+        "mean_terminated": 0,
+        "median_terminal_stable_seconds": 8.51,
+        "median_longest_stable_seconds": 8.540000000000001,
+        "failed_despite_any_5s_streak": 110,
+        "mean_violation_fractions": {
+          "top_center": 0.0034531250318347397,
+          "top_height": 0.0,
+          "top_speed": 0.006122395962241474,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.01920052094192215,
+          "unassisted": 0.0
+        }
+      },
+      "failure_count": 182,
+      "physical_termination_count": 0,
+      "failed_despite_any_5s_streak": 110,
+      "last_instability_gate_counts_in_failed_episodes": {
+        "lower_ball_speed": 182
+      },
+      "median_last_instability_seconds_in_failed_episodes": 8.07
+    },
+    {
+      "model": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/references/update_001000.pt",
+        "sha256": "c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7",
+        "role": "source-1000"
+      },
+      "held_out": {
+        "episodes": 768,
+        "successes": 0,
+        "success_fraction": 0.0,
+        "wilson95": [
+          4.336808689942018e-19,
+          0.004977005027125048
+        ],
+        "scope": "one checkpoint, 768 randomized initial states"
+      },
+      "original_cloud_summary": {
+        "episodes": 768,
+        "successes": 0,
+        "mean_seconds": 10.0,
+        "mean_double_balance_stable_fraction": 0.8614609784757098,
+        "mean_lower_speed_violation_fraction": 0.09897135448894308,
+        "mean_terminated": 0,
+        "median_terminal_stable_seconds": 0.14,
+        "median_longest_stable_seconds": 1.1,
+        "failed_despite_any_5s_streak": 0,
+        "mean_violation_fractions": {
+          "top_center": 0.0220651042376024,
+          "top_height": 0.0,
+          "top_speed": 0.04539062500164922,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.09897135448894308,
+          "unassisted": 0.0
+        }
+      },
+      "failure_count": 768,
+      "physical_termination_count": 0,
+      "failed_despite_any_5s_streak": 0,
+      "last_instability_gate_counts_in_failed_episodes": {
+        "top_speed": 321,
+        "lower_ball_speed": 639,
+        "top_center": 2
+      },
+      "median_last_instability_seconds_in_failed_episodes": 9.86
+    },
+    {
+      "model": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/references/update_006000.pt",
+        "sha256": "a5ad0aedb500555b649c5d4b11aded833cbc0f932c1fff1a747e1492534c495c",
+        "role": "reference-6000"
+      },
+      "held_out": {
+        "episodes": 768,
+        "successes": 0,
+        "success_fraction": 0.0,
+        "wilson95": [
+          4.336808689942018e-19,
+          0.004977005027125048
+        ],
+        "scope": "one checkpoint, 768 randomized initial states"
+      },
+      "original_cloud_summary": {
+        "episodes": 768,
+        "successes": 0,
+        "mean_seconds": 9.988958333333333,
+        "mean_double_balance_stable_fraction": 0.3516714800110397,
+        "mean_lower_speed_violation_fraction": 0.6220942988293245,
+        "mean_terminated": 0.0013020833333333333,
+        "median_terminal_stable_seconds": 0.0,
+        "median_longest_stable_seconds": 0.18,
+        "failed_despite_any_5s_streak": 0,
+        "mean_violation_fractions": {
+          "top_center": 0.028664747931240225,
+          "top_height": 0.0,
+          "top_speed": 0.04509388712904183,
+          "lower_offset": 0.00015419408252152303,
+          "lower_height_min": 5.139802427341541e-05,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.6220942988293245,
+          "unassisted": 0.0
+        }
+      },
+      "failure_count": 768,
+      "physical_termination_count": 1,
+      "failed_despite_any_5s_streak": 0,
+      "last_instability_gate_counts_in_failed_episodes": {
+        "lower_ball_speed": 767,
+        "top_speed": 11,
+        "top_center": 1,
+        "lower_offset": 1,
+        "lower_height_min": 1
+      },
+      "median_last_instability_seconds_in_failed_episodes": 10.0
+    }
+  ],
+  "physical_termination_episodes": [
+    {
+      "model": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+        "sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260929,
+        "experiment_completed_updates": 4000,
+        "rank": [
+          0.8828125,
+          0.828125,
+          10.0,
+          9.030000000000001,
+          9.030000000000001,
+          -0.010875000114538125,
+          -4000
+        ]
+      },
+      "protocol": "test-8202",
+      "episode": {
+        "env_id": 219,
+        "steps": 89,
+        "seconds": 1.78,
+        "terminated": true,
+        "success": false,
+        "termination_terms": [
+          "fell"
+        ],
+        "mean_action_acc": 0.33635228872299194,
+        "top_ball_center_error_m": 0.013126634992659092,
+        "top_ball_relative_speed_m_s": 0.11514299362897873,
+        "double_balance_stable_fraction": 0.24719101190567017,
+        "initial_state_id": "06439a1432fc484c4aa58cdd61249d6fa4e5930b4b1d0e8048ec4603cb120f24",
+        "terminal_stable_seconds": 0.0,
+        "longest_stable_seconds": 0.26,
+        "official_timer_seconds": 0.0,
+        "lower_ball_speed_quantiles_m_s": {
+          "p50": 0.13597089052200317,
+          "p95": 0.28705283999443054,
+          "p99": 0.302945613861084
+        },
+        "lower_ball_speed_max_m_s": 0.30342888832092285,
+        "lower_speed_violation_fraction": 0.43820226192474365,
+        "violation_fractions": {
+          "top_center": 0.4606741666793823,
+          "top_height": 0.0,
+          "top_speed": 0.5393258333206177,
+          "lower_offset": 0.11235955357551575,
+          "lower_height_min": 0.02247191034257412,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.06741572916507721,
+          "lower_ball_speed": 0.43820226192474365,
+          "unassisted": 0.0
+        },
+        "co_violation_counts": [
+          [
+            41,
+            0,
+            29,
+            10,
+            2,
+            0,
+            6,
+            22,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            29,
+            0,
+            48,
+            9,
+            1,
+            0,
+            5,
+            24,
+            0
+          ],
+          [
+            10,
+            0,
+            9,
+            10,
+            2,
+            0,
+            6,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            1,
+            2,
+            2,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            5,
+            6,
+            2,
+            0,
+            6,
+            1,
+            0
+          ],
+          [
+            22,
+            0,
+            24,
+            2,
+            0,
+            0,
+            1,
+            39,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "mean_action_delta_l2": 2.703636646270752
+      }
+    },
+    {
+      "model": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/references/update_006000.pt",
+        "sha256": "a5ad0aedb500555b649c5d4b11aded833cbc0f932c1fff1a747e1492534c495c",
+        "role": "reference-6000"
+      },
+      "protocol": "test-8203",
+      "episode": {
+        "env_id": 13,
+        "steps": 76,
+        "seconds": 1.52,
+        "terminated": true,
+        "success": false,
+        "termination_terms": [
+          "fell"
+        ],
+        "mean_action_acc": 0.24927528202533722,
+        "top_ball_center_error_m": 0.017051473259925842,
+        "top_ball_relative_speed_m_s": 0.1024780198931694,
+        "double_balance_stable_fraction": 0.22368420660495758,
+        "initial_state_id": "28bd39616755825f63817c6d0eff49694136533f8e65418bc7667979ba9943a4",
+        "terminal_stable_seconds": 0.0,
+        "longest_stable_seconds": 0.12,
+        "official_timer_seconds": 0.0,
+        "lower_ball_speed_quantiles_m_s": {
+          "p50": 0.23621590435504913,
+          "p95": 0.5617207884788513,
+          "p99": 0.5809916257858276
+        },
+        "lower_ball_speed_max_m_s": 0.6078792810440063,
+        "lower_speed_violation_fraction": 0.6184210777282715,
+        "violation_fractions": {
+          "top_center": 0.46052631735801697,
+          "top_height": 0.0,
+          "top_speed": 0.5921052694320679,
+          "lower_offset": 0.1184210553765297,
+          "lower_height_min": 0.03947368264198303,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.6184210777282715,
+          "unassisted": 0.0
+        },
+        "co_violation_counts": [
+          [
+            35,
+            0,
+            28,
+            9,
+            3,
+            0,
+            0,
+            31,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            28,
+            0,
+            45,
+            9,
+            3,
+            0,
+            0,
+            35,
+            0
+          ],
+          [
+            9,
+            0,
+            9,
+            9,
+            3,
+            0,
+            0,
+            9,
+            0
+          ],
+          [
+            3,
+            0,
+            3,
+            3,
+            3,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            31,
+            0,
+            35,
+            9,
+            3,
+            0,
+            0,
+            47,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "mean_action_delta_l2": 1.595119833946228
+      }
+    }
+  ],
+  "interpretation": "Last-instability gate counts are descriptive and may overlap. They are not reward-causality estimates. A long earlier streak does not satisfy terminal success."
+}

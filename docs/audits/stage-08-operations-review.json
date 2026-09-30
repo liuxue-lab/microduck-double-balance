@@ -1,0 +1,373 @@
+{
+  "status": "HISTORICAL_OPERATIONS_AND_INCIDENT_RECORD",
+  "training_runtime_git_head": "61060f0684aabb460727a0d226b8d17225ee7954",
+  "campaign_id": "08b6a999-c815-4afc-a99a-b6ac07fd587f",
+  "formal_update_accounting": {
+    "screening": 2500,
+    "replication": 8000,
+    "extension": 7500
+  },
+  "formal_updates_total": 18000,
+  "segments": [
+    {
+      "phase": "screening",
+      "profile": "A",
+      "seed": 20260928,
+      "start_updates": 0,
+      "completed_updates": 500,
+      "status": "FAIL",
+      "error": null,
+      "sampler_error": "GPU sampling failed: Command '['nvidia-smi', '--id=0', '--query-gpu=memory.total,memory.used,uuid', '--format=csv,noheader,nounits']' timed out after 5 seconds",
+      "training_report": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/screening/A-20260928/segment-001/training.json",
+        "sha256": "679360f1c5b32e1ab8090513715f67144b09a821038652f5656aff2ee06e5abf"
+      }
+    },
+    {
+      "phase": "screening",
+      "profile": "A",
+      "seed": 20260928,
+      "start_updates": 500,
+      "completed_updates": 500,
+      "status": "TRAINING_COMPLETE",
+      "error": null,
+      "sampler_error": null,
+      "training_report": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/screening/A-20260928/segment-002/training.json",
+        "sha256": "b7dc3eda516ab606f8a658acf5dd61c3c01807de46fb777163828ce604a602f2"
+      }
+    },
+    {
+      "phase": "screening",
+      "profile": "B",
+      "seed": 20260928,
+      "start_updates": 0,
+      "completed_updates": 500,
+      "status": "TRAINING_COMPLETE",
+      "error": null,
+      "sampler_error": null,
+      "training_report": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/screening/B-20260928/segment-001/training.json",
+        "sha256": "1fba8a6954e1b9c6240288dfb44e91e05b049c4801e9d2493070e8dfb22f878c"
+      }
+    },
+    {
+      "phase": "screening",
+      "profile": "C",
+      "seed": 20260928,
+      "start_updates": 0,
+      "completed_updates": 500,
+      "status": "TRAINING_COMPLETE",
+      "error": null,
+      "sampler_error": null,
+      "training_report": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/screening/C-20260928/segment-001/training.json",
+        "sha256": "616323f17fe89c8285307e302f52aec58ca841bb2b26a826def62b052a84ccb3"
+      }
+    },
+    {
+      "phase": "screening",
+      "profile": "D",
+      "seed": 20260928,
+      "start_updates": 0,
+      "completed_updates": 500,
+      "status": "TRAINING_COMPLETE",
+      "error": null,
+      "sampler_error": null,
+      "training_report": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/screening/D-20260928/segment-001/training.json",
+        "sha256": "0619adbdaf862ccbc0646d3ec73a2732b8e55af214ed7002335d4b9f5f82eac7"
+      }
+    },
+    {
+      "phase": "screening",
+      "profile": "E",
+      "seed": 20260928,
+      "start_updates": 0,
+      "completed_updates": 500,
+      "status": "TRAINING_COMPLETE",
+      "error": null,
+      "sampler_error": null,
+      "training_report": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/screening/E-20260928/segment-001/training.json",
+        "sha256": "01ac511bed45567221a712b485ea15388933bc2046e6dd47947bc6dffb73c9e7"
+      }
+    },
+    {
+      "phase": "replication",
+      "profile": "E",
+      "seed": 20260928,
+      "start_updates": 500,
+      "completed_updates": 1500,
+      "status": "TRAINING_COMPLETE",
+      "error": null,
+      "sampler_error": null,
+      "training_report": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/replication/E-20260928/segment-001/training.json",
+        "sha256": "c6f208e5296e58626857dffd1e6b1d232055137bd938278ca16735ddc19655c3"
+      }
+    },
+    {
+      "phase": "replication",
+      "profile": "E",
+      "seed": 20260929,
+      "start_updates": 0,
+      "completed_updates": 1500,
+      "status": "TRAINING_COMPLETE",
+      "error": null,
+      "sampler_error": null,
+      "training_report": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/replication/E-20260929/segment-001/training.json",
+        "sha256": "2dc95a48333872764082f4f747d4992254f75f7728cd7f71d2e9960e7ebcb271"
+      }
+    },
+    {
+      "phase": "replication",
+      "profile": "E",
+      "seed": 20260930,
+      "start_updates": 0,
+      "completed_updates": 1500,
+      "status": "TRAINING_COMPLETE",
+      "error": null,
+      "sampler_error": null,
+      "training_report": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/replication/E-20260930/segment-001/training.json",
+        "sha256": "5b60762c919f2eadcc8c7294d20b6b08ed4ad0c8e6add5c0995751467a05ee82"
+      }
+    },
+    {
+      "phase": "replication",
+      "profile": "D",
+      "seed": 20260928,
+      "start_updates": 500,
+      "completed_updates": 1500,
+      "status": "TRAINING_COMPLETE",
+      "error": null,
+      "sampler_error": null,
+      "training_report": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/replication/D-20260928/segment-001/training.json",
+        "sha256": "9940c8af36a439ccb1ea7553d9a5d84af2b8825c77a1e2e4d6c12145ca547401"
+      }
+    },
+    {
+      "phase": "replication",
+      "profile": "D",
+      "seed": 20260929,
+      "start_updates": 0,
+      "completed_updates": 1500,
+      "status": "TRAINING_COMPLETE",
+      "error": null,
+      "sampler_error": null,
+      "training_report": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/replication/D-20260929/segment-001/training.json",
+        "sha256": "292d838ff6527be8e4976162734cf15760ea773e5a139b9087d6e2a98cbc9bbb"
+      }
+    },
+    {
+      "phase": "replication",
+      "profile": "D",
+      "seed": 20260930,
+      "start_updates": 0,
+      "completed_updates": 1500,
+      "status": "TRAINING_COMPLETE",
+      "error": null,
+      "sampler_error": null,
+      "training_report": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/replication/D-20260930/segment-001/training.json",
+        "sha256": "c654a0471320a79ad5c466b4f460f8b56c91aab9092cedba729b30f50a458f54"
+      }
+    },
+    {
+      "phase": "extension",
+      "profile": "E",
+      "seed": 20260928,
+      "start_updates": 1500,
+      "completed_updates": 4000,
+      "status": "TRAINING_COMPLETE",
+      "error": null,
+      "sampler_error": null,
+      "training_report": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260928/segment-001/training.json",
+        "sha256": "90dc6ba5a8c29d18519bf6fcc5b39a2ba925a58070cb0dad1ffddb44555014a1"
+      }
+    },
+    {
+      "phase": "extension",
+      "profile": "E",
+      "seed": 20260929,
+      "start_updates": 1500,
+      "completed_updates": 4000,
+      "status": "TRAINING_COMPLETE",
+      "error": null,
+      "sampler_error": null,
+      "training_report": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260929/segment-001/training.json",
+        "sha256": "ca524d5522f59768befe5f4b3e17d03e9e5b94bfaa8cd01f67b082b9fa55c8c8"
+      }
+    },
+    {
+      "phase": "extension",
+      "profile": "E",
+      "seed": 20260930,
+      "start_updates": 1500,
+      "completed_updates": 4000,
+      "status": "TRAINING_COMPLETE",
+      "error": null,
+      "sampler_error": null,
+      "training_report": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260930/segment-001/training.json",
+        "sha256": "655467cc0892f941abcfeef152a7568b9ebde232ace8561b1c69404f84492aba"
+      }
+    }
+  ],
+  "budget_snapshot": {
+    "elapsed_hours": 23.738264331354035,
+    "maximum_cloud_hours": 60,
+    "remaining_total_hours": 36.26173566864596,
+    "ledger_modified": false,
+    "final_evaluation_models": 5,
+    "protocol_runs": 25,
+    "episodes_per_model": 960,
+    "held_out_episodes_per_model": 768,
+    "maximum_measured_two_protocol_block_seconds": 73.26123375212774,
+    "planning_seconds_per_protocol": 120.0,
+    "estimated_final_evaluation_hours_with_margin": 1.1,
+    "allowance_after_final_evaluation_hours": 2,
+    "budget_admission_projection": true
+  },
+  "automatic_shutdown": {
+    "status": "GUARD_EXITED_REPAIR_DECLINED_BY_USER",
+    "scope": "Current E extension: three seeds, own 1500-update endpoints to 4000 updates",
+    "script_name": "microduck-stage08-autoshutdown.sh",
+    "script_sha256": "f10b3dd0552361b23b46507e5a3696cf444aa2e19f75feea1b0622c8bd940267",
+    "guard_armed": false,
+    "normal_trigger": "Whole extension completed, matching evaluations and cloud checkpoint SHA256 verified",
+    "stall_trigger_seconds": 1800,
+    "save_grace_seconds": 120,
+    "maximum_hours_after_arming": 12,
+    "retains_existing_budget_limit": true,
+    "local_transfer_before_shutdown": false,
+    "final_held_out_evaluation_before_shutdown": false,
+    "instance_destroyed_or_reset": false,
+    "follow_up": "Proceed to completed-training review, candidate freeze, independent test, archive/transfer verification and final shutdown reminder; do not restart the shutdown guard.",
+    "limitation": "The original guard execution and GUARD_ERROR are supported by the user-returned state/log. The blocking process identity is unknown. The prepared repair has not been deployed or executed.",
+    "guard_started_observed": true,
+    "incident": {
+      "created_utc": "2026-09-29T23:43:42.021975+00:00",
+      "error_utc": "2026-09-30T06:01:48.521441+00:00",
+      "status": "GUARD_ERROR",
+      "shutdown_performed": false,
+      "batch_status": "BATCH_COMPLETE",
+      "error": "A different Stage 08 task is running; shutdown blocked",
+      "attempt": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/autoshutdown-20260929T234341Z-84426",
+      "source": "User returned state.json and guard.log",
+      "blocking_process_identity": "Not recorded by old guard; tmux command-text false positive is a hypothesis, reproduced locally but not yet confirmed on cloud"
+    },
+    "repair": {
+      "command_mode": "repair",
+      "requires_existing_completed_batch": true,
+      "additional_ppo_updates": 0,
+      "classifier": "actual-python-entry-point-v2",
+      "diagnostics": "process-check.json records ignored command-text containers and actual blockers",
+      "validation": "13 CPU-only mocked regression tests passed; no real cloud shutdown test",
+      "deployed": false,
+      "user_declined_execution": true
+    },
+    "further_execution_authorized": false
+  },
+  "shutdown_readiness": {
+    "checked_utc": "2026-09-30T09:43:02.561454+00:00",
+    "stage08_python_processes": [],
+    "gpu_compute_processes": [],
+    "gpu_query_ok": true,
+    "no_remaining_cloud_work": true,
+    "archive_sha256": "5d998fc3223451029d627bf0e0100b17df1ee77b711fc0d423ea18e29281bbd7",
+    "campaign_id": "08b6a999-c815-4afc-a99a-b6ac07fd587f",
+    "shutdown_performed": false,
+    "new_ppo_updates": 0
+  },
+  "actual_shutdown_confirmed_by_user": false,
+  "no_new_cloud_work_required": true,
+  "shutdown_reminder_enabled": false,
+  "ops_tools": {
+    "final_review_tool": {
+      "filename": "microduck-stage08-final-review.py",
+      "sha256": "66777be65aa8f35143ef1292da034bef7d073cf607a3d2224c7278a7b09179d5",
+      "status": "EXECUTED_ON_CLOUD_REVIEW_RETURNED_AND_ANALYZED",
+      "validation": "10 local CPU-only integrity/selection tests passed; no cloud evaluation or training executed",
+      "new_ppo_updates": 0,
+      "remote_mode": "read-only existing nominal/dev reports and SHA256; no held-out results read",
+      "selection_frozen": false
+    },
+    "final_evaluation_launch": {
+      "status": "PASS_REVIEWED_FROM_RETURNED_REPORT",
+      "filename": "microduck-stage08-final-evaluation.py",
+      "sha256": "1fe5ac34d119407885898352193cffbb2160f71df102285728f4338285bb82f3",
+      "candidate_updates": [
+        2750,
+        4000,
+        3250
+      ],
+      "models": 5,
+      "protocol_runs": 25,
+      "held_out_episodes_per_model": 768,
+      "estimated_hours_with_margin": 1.1,
+      "new_ppo_updates": 0,
+      "automatic_shutdown_enabled": false,
+      "validation": "9 CPU-only operations tests passed, including canonical selector integration, hash mismatch rejection, held-out selection binding and completed-run idempotency",
+      "report_library_file_id": "libfile_72fce8a3bec481918d7eb0874ab71e5e",
+      "report_sha256": "4d3ab6fd0ddd029fabb5bb1c7735f03d779788ba61a2e4dcf010fba5053d233a",
+      "completed_protocols": 25,
+      "finished_utc": "2026-09-30T08:11:58.951340+00:00",
+      "selection_sha256": "a921801927750f705075ebcb2048323b01413bd122b31d1472dc77f86e1eb031",
+      "batch_sha256": "59237398490517b63f5dee95a1e87ddf1dba19cfee8ee098fed2c6bc74288a4e",
+      "primary_demonstration_seed_selected_using_dev": 20260929
+    },
+    "archive_return_tool": {
+      "filename": "microduck-stage08-return.py",
+      "sha256": "b256babb5fb148539f3961af871b85e95f2725363e0506f1f1941b85e4581271",
+      "status": "EXECUTED_RETURN_AND_SHA256_VERIFIED",
+      "validation": "11 CPU-only tests passed, including interrupted transfer resume, corruption rejection, complete 25-report archive verification, safe extraction and fail-closed readiness",
+      "new_ppo_updates": 0,
+      "automatic_shutdown_enabled": false
+    },
+    "final_local_review_tool": {
+      "status": "EXECUTED_GPU_RENDER_AND_TRACE_ANALYSIS_RETURNED",
+      "created_utc": "2026-09-30T10:01:06.003215+00:00",
+      "script_sha256": "b8280df154863cab97f61e8bc53b0a79be0df7ad9b2c4a6cb7d7d7c3a0241508",
+      "new_ppo_updates": 0,
+      "new_cloud_evaluations": 0,
+      "scope": "Analyze immutable returned cloud traces and run local nominal video inference using canonical evaluator; no change to Stage03/04, models, selection or cloud instance",
+      "local_gpu": "RTX 5060",
+      "canonical_evaluator_git_head": "61060f0684aabb460727a0d226b8d17225ee7954",
+      "cpu_tests_passed": 12,
+      "real_gpu_render_executed_in_this_workspace": false,
+      "human_video_review": "SAMPLED_VISUAL_REVIEW_COMPLETE_WITH_OPEN_POSTURE_FINDING",
+      "receipt_sha256": "69fd4ffff732cf3cf35fa1d160b0233bf754b322172ed6a3c47132b243ea7240",
+      "review_sha256": "4d3ab6fd0ddd029fabb5bb1c7735f03d779788ba61a2e4dcf010fba5053d233a",
+      "output_root": "/home/lx/microduck-double-balance/artifacts/double-balance-stage08/local-final-review",
+      "cloud_shutdown_already_ready": true,
+      "actual_shutdown_confirmed_by_user": false,
+      "script_name": "microduck-stage08-final-local.py"
+    }
+  },
+  "source_refs": [
+    {
+      "path": "docs/audits/stage-08-extension-review.json",
+      "sha256": "261550bd5673bdb9184cf40009c4f618d32651ceda64a8a5617173b68055076f"
+    },
+    {
+      "path": "docs/audits/stage-08-final-evaluation-review.json",
+      "sha256": "4d3ab6fd0ddd029fabb5bb1c7735f03d779788ba61a2e4dcf010fba5053d233a"
+    },
+    {
+      "path": "docs/audits/stage-08-return-verified.json",
+      "sha256": "69fd4ffff732cf3cf35fa1d160b0233bf754b322172ed6a3c47132b243ea7240"
+    },
+    {
+      "path": "docs/audits/stage-08-local-render-report.json",
+      "sha256": "723d9ce041cd9fa4fdd055ca9c382db0c9c1365055c877595a44ac75f43bfeae"
+    }
+  ],
+  "local_review_tool_source_library_file_id": "libfile_b32d7b7a28c881918f955f3f104bf9b2"
+}

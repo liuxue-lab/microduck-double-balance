@@ -1,0 +1,9 @@
+test_changed_video_package_rejected (test_stage08_final_archive_verifier.FinalArchiveVerifierTests.test_changed_video_package_rejected) ... ok
+test_complete_evidence_passes_without_gpu_or_network (test_stage08_final_archive_verifier.FinalArchiveVerifierTests.test_complete_evidence_passes_without_gpu_or_network) ... ok
+test_corrupt_cloud_trace_stops_tag_prerequisite (test_stage08_final_archive_verifier.FinalArchiveVerifierTests.test_corrupt_cloud_trace_stops_tag_prerequisite) ... ok
+test_mismatched_report_model_rejected_even_with_updated_report_hash (test_stage08_final_archive_verifier.FinalArchiveVerifierTests.test_mismatched_report_model_rejected_even_with_updated_report_hash) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.074s
+
+OK
