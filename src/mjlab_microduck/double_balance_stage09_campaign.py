@@ -7,7 +7,7 @@ import sys
 import time
 import uuid
 
-from mjlab_microduck.double_balance_stage09_budget import BudgetLedger, atomic_json
+from mjlab_microduck.double_balance_stage09_budget import BudgetLedger, atomic_json, validate_local_runtime
 from mjlab_microduck.double_balance_stage09_plan import PROFILES, PRIMARY_SHA
 
 
@@ -24,7 +24,7 @@ def run_campaign(args):
     local=json.loads(args.local_report.read_text())
     require(local['status']=='ZERO_PPO_RUNTIME_CHECKS_COMPLETE_REVIEW_PENDING' and
             local['source_sha256']==PRIMARY_SHA and local['new_ppo_updates']==0 and
-            local['runtime_manifest_sha256']==file_sha256(repo/'docs/audits/stage-09-runtime-hashes.json'),
+            validate_local_runtime(repo,local['runtime_manifest_sha256']),
             'Matching successful laptop zero-PPO checks are required')
     args.output.mkdir(parents=True,exist_ok=True)
     path=args.output/'campaign.json'
@@ -38,6 +38,14 @@ def run_campaign(args):
                    runtime_manifest_sha256=local['runtime_manifest_sha256'],git_head=head,
                    started_utc=utc_now(),profiles={},evaluations={},stage09_complete=False)
         atomic_json(path,state)
+
+    # Original evidence/campaign identity stays frozen; record the active code separately.
+    state['active_git_head'] = head
+    state['active_runtime_manifest_sha256'] = file_sha256(repo/'docs/audits/stage-09-runtime-hashes.json')
+    recovery = ledger.snapshot().get('approved_recovery')
+    if recovery is not None:
+        state['approved_recovery'] = recovery
+    atomic_json(path,state)
 
     def job(argv, log_path, *, training):
         remaining=ledger.remaining(training=training)

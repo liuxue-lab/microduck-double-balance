@@ -4,6 +4,7 @@ from __future__ import annotations
 from contextlib import contextmanager
 from datetime import datetime, timezone
 import fcntl
+import hashlib
 import json
 import math
 import os
@@ -15,6 +16,61 @@ import uuid
 
 from mjlab_microduck.double_balance_stage09_plan import budget, budget_decision
 
+RECOVERY_ID = 'stage09-f2-powerloss-20261001'
+RECOVERY_AUTHORIZATION_UTC = '2026-09-30T18:36:08+00:00'
+RECOVERY_COUNTS = {'F0': 500, 'F1': 500, 'F2': 175, 'F3': 0}
+RECOVERY_CHECKPOINT = 'pilot/F2/segment-773f5dc5/checkpoints/update_000150.pt'
+ORIGINAL_RUNTIME_SHA = '3bb06abec7d30ad3028f20f436111b26ea4d50f87cc1e25e117f59c48ae8216c'
+
+
+def attempt_caps(state):
+    """The sole approved exception charges the 25 lost F2 updates permanently."""
+    caps = {name: 500 for name in RECOVERY_COUNTS}
+    record = state.get('approved_recovery')
+    if record is None:
+        return caps, 2000
+    expected = dict(id=RECOVERY_ID, authorization_utc=RECOVERY_AUTHORIZATION_UTC,
+                    campaign_id=state['campaign_id'], charged_before=RECOVERY_COUNTS,
+                    restored_checkpoint=RECOVERY_CHECKPOINT, restored_updates=150,
+                    lost_updates=25, original_started_epoch=state['started_epoch'],
+                    original_runtime_manifest_sha256=ORIGINAL_RUNTIME_SHA)
+    if set(record) != set(expected) | {'checkpoint_sha256'}:
+        raise ValueError('Unknown recovery record fields')
+    for key, value in expected.items():
+        if record[key] != value:
+            raise ValueError('Recovery authorization differs: '+key)
+    digest = record['checkpoint_sha256']
+    if not isinstance(digest, str) or len(digest) != 64 or any(c not in '0123456789abcdef' for c in digest):
+        raise ValueError('Invalid recovery checkpoint digest')
+    if any(state['charged_updates'].get(name, -1) < count for name, count in RECOVERY_COUNTS.items()):
+        raise ValueError('Pre-outage attempts cannot be rolled back')
+    caps['F2'] = 525
+    return caps, 2025
+
+
+def validate_local_runtime(repo, local_digest):
+    """Retain original zero-PPO evidence; admit only the audited recovery diff."""
+    repo = Path(repo)
+    current_path = repo/'docs/audits/stage-09-runtime-hashes.json'
+    if hashlib.sha256(current_path.read_bytes()).hexdigest() == local_digest:
+        return True
+    old_path = repo/'docs/audits/stage-09-runtime-before-powerloss.json'
+    if local_digest != ORIGINAL_RUNTIME_SHA or hashlib.sha256(old_path.read_bytes()).hexdigest() != local_digest:
+        raise ValueError('Original local evidence identity differs')
+    approval = json.loads((repo/'docs/audits/stage-09-recovery-20261001.json').read_text())
+    if approval['id'] != RECOVERY_ID or approval['authorization_utc'] != RECOVERY_AUTHORIZATION_UTC:
+        raise ValueError('Recovery source amendment was not approved')
+    before, after = json.loads(old_path.read_text()), json.loads(current_path.read_text())
+    if set(after) != set(before) | set(approval['added_runtime_files']):
+        raise ValueError('Unexpected runtime additions or removals')
+    changed = {name for name in before if before[name] != after[name]}
+    if changed != set(approval['changed_runtime_files']):
+        raise ValueError('Runtime changes exceed the approved recovery scope')
+    for name, pair in approval['changed_runtime_files'].items():
+        if before[name] != pair['before'] or after[name] != pair['after']:
+            raise ValueError('Recovery source hash differs: '+name)
+    return True
+
 
 def atomic_json(path, value):
     path = Path(path)
@@ -25,6 +81,36 @@ def atomic_json(path, value):
         stream.flush()
         os.fsync(stream.fileno())
     os.replace(temporary, path)
+
+
+def activate_powerloss_recovery(path, checkpoint_sha256):
+    """Apply the single approved allowance without changing counts or clocks."""
+    path = Path(path)
+    with path.with_suffix('.lock').open('a') as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        state = json.loads(path.read_text())
+        record = dict(id=RECOVERY_ID, authorization_utc=RECOVERY_AUTHORIZATION_UTC,
+                      campaign_id=state['campaign_id'], charged_before=RECOVERY_COUNTS,
+                      restored_checkpoint=RECOVERY_CHECKPOINT, restored_updates=150,
+                      lost_updates=25, original_started_epoch=state['started_epoch'],
+                      original_runtime_manifest_sha256=ORIGINAL_RUNTIME_SHA,
+                      checkpoint_sha256=checkpoint_sha256)
+        if state.get('approved_recovery') is not None:
+            if state['approved_recovery'] != record:
+                raise ValueError('Existing recovery cannot be replaced')
+            attempt_caps(state)
+            return False
+        if state['charged_updates'] != RECOVERY_COUNTS:
+            raise ValueError('Only the reviewed 175-attempt / 150-save incident is authorized')
+        for key, value in budget(state['gpu']).items():
+            if state[key] != value:
+                raise ValueError('Original budget differs: '+key)
+        state['approved_recovery'] = record
+        caps, total = attempt_caps(state)
+        state['maximum_total_updates'] = total
+        state['maximum_updates_by_profile'] = caps
+        atomic_json(path, state)
+        return True
 
 
 def create_ledger(path, gpu, started_at, *, now=None):
@@ -63,6 +149,10 @@ class BudgetLedger:
             fcntl.flock(lock, fcntl.LOCK_EX)
             state = json.loads(self.path.read_text())
             expected = budget(state["gpu"])
+            caps, total = attempt_caps(state)
+            expected['maximum_total_updates'] = total
+            if state.get('approved_recovery') is not None:
+                expected['maximum_updates_by_profile'] = caps
             for key, value in expected.items():
                 if state[key] != value:
                     raise ValueError(f"Budget contract changed: {key}")
@@ -105,11 +195,15 @@ class BudgetLedger:
             counts = state['charged_updates']
             if set(counts) != {'F0','F1','F2','F3'} or any(type(n) is not int or n < 0 for n in counts.values()):
                 raise ValueError('Invalid charged update ledger')
-            if profile not in counts or counts[profile] >= 500 or sum(counts.values()) >= 2000:
+            caps, total = attempt_caps(state)
+            if profile not in counts or counts[profile] >= caps[profile] or sum(counts.values()) >= total:
                 raise ValueError('Approved PPO update cap exhausted; no automatic extension')
             counts[profile] += 1
             atomic_json(self.path, state)
             return counts[profile]
+
+    def profile_limit(self, profile):
+        return attempt_caps(self.snapshot())[0][profile]
 
     @contextmanager
     def job_lock(self):

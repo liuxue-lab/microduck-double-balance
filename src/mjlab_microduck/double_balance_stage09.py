@@ -69,7 +69,7 @@ def train(args):
     require(args.target in (250,500) and start<args.target,'Invalid milestone or already complete')
     require(ledger.admit(args.target-start,3.1,180),'Insufficient time for this training segment')
     charged=ledger.snapshot()['charged_updates'][args.profile]
-    require(charged+(args.target-start)<=500,'Lost/repeated updates would exceed the approved branch cap')
+    require(charged+(args.target-start)<=ledger.profile_limit(args.profile),'Lost/repeated updates would exceed the approved branch cap')
     args.output.mkdir(parents=True,exist_ok=False)
     cfg,agent=build_config(args.profile,checkpoint)
     dump_yaml(args.output/'params/env.yaml',asdict(cfg));dump_yaml(args.output/'params/agent.yaml',agent)
