@@ -1,0 +1,178 @@
+{
+  "status": "OFFLINE_GEOMETRY_AUDIT_COMPLETE_DYNAMIC_CONTACT_UNVERIFIED",
+  "source_contact_inventory_sha256": "73632dc151c02342c118f71698d6b284a09f24e8b6a3f01bda60c4d5ecb64ca8",
+  "simulation_steps": 0,
+  "new_ppo_updates": 0,
+  "physics_modified": false,
+  "top_ball_mask_compatible_geom_ids": [
+    0,
+    62
+  ],
+  "collision_shell_geom_id_in_this_compilation": 49,
+  "visual_shell_geom_id_in_this_compilation": 48,
+  "mesh_vertices": 8062,
+  "mesh_triangles": 16120,
+  "offline_convex_hull_vertices": 3808,
+  "offline_convex_hull_faces": 7612,
+  "home_aabb_m": [
+    [
+      -0.047502610711639,
+      -0.04587965542266243,
+      0.10809729136862711
+    ],
+    [
+      0.07518741126086691,
+      0.045879802545841716,
+      0.154433431019383
+    ]
+  ],
+  "vertical_ray_samples": [
+    {
+      "xy_m": [
+        0.01384,
+        0
+      ],
+      "mesh_vertical_top_z_m": 0.15010452459266715,
+      "computed_hull_vertical_top_z_m": 0.1501045245926621,
+      "computed_hull_facet_slope_deg": 4.560674830255332
+    },
+    {
+      "xy_m": [
+        0.0018399999999999996,
+        0
+      ],
+      "mesh_vertical_top_z_m": 0.1489607761966211,
+      "computed_hull_vertical_top_z_m": 0.14896077619661802,
+      "computed_hull_facet_slope_deg": 6.152013783883755
+    },
+    {
+      "xy_m": [
+        0.025840000000000002,
+        0
+      ],
+      "mesh_vertical_top_z_m": 0.15102595466089772,
+      "computed_hull_vertical_top_z_m": 0.1510259546608938,
+      "computed_hull_facet_slope_deg": 4.560674830255332
+    },
+    {
+      "xy_m": [
+        0.01384,
+        -0.012
+      ],
+      "mesh_vertical_top_z_m": 0.14949586875441598,
+      "computed_hull_vertical_top_z_m": 0.149495868754416,
+      "computed_hull_facet_slope_deg": 8.007818617392667
+    },
+    {
+      "xy_m": [
+        0.01384,
+        0.012
+      ],
+      "mesh_vertical_top_z_m": 0.14949205302292012,
+      "computed_hull_vertical_top_z_m": 0.14949586920996707,
+      "computed_hull_facet_slope_deg": 8.007818533371076
+    },
+    {
+      "xy_m": [
+        0.01384,
+        -0.02
+      ],
+      "mesh_vertical_top_z_m": 0.1478615482919608,
+      "computed_hull_vertical_top_z_m": 0.14786154829196083,
+      "computed_hull_facet_slope_deg": 16.387048836651072
+    },
+    {
+      "xy_m": [
+        0.01384,
+        0.02
+      ],
+      "mesh_vertical_top_z_m": 0.14786124320191468,
+      "computed_hull_vertical_top_z_m": 0.1478615481614248,
+      "computed_hull_facet_slope_deg": 16.387073769262077
+    }
+  ],
+  "approximate_old_tray_top_face_z_from_source_home_comment_m": 0.15695,
+  "approximate_old_tray_top_to_shell_at_center_m": 0.006845475407332852,
+  "mass_audit": {
+    "scene_with_tray_kg": 1.38524318,
+    "scene_after_only_tray_body_removal_kg": 1.36724318,
+    "robot_with_tray_kg": 0.75524318,
+    "robot_after_only_tray_body_removal_kg": 0.73724318,
+    "robot_mass_reduction_percent": 2.3833383043591336,
+    "jaw_with_tray_kg": 0.20676599999999998,
+    "jaw_without_tray_kg": 0.188766,
+    "jaw_cluster_com_before_in_jaw_m": [
+      0.00797827082876295,
+      0.0010959631661878646,
+      -0.03163745718638461
+    ],
+    "jaw_cluster_com_after_in_jaw_m": [
+      0.00460523,
+      0.00120047,
+      -0.0324761
+    ],
+    "jaw_cluster_com_shift_on_removal_m": [
+      -0.0033730408287629497,
+      0.00010450683381213531,
+      -0.0008386428136153909
+    ],
+    "jaw_cluster_inertia_before_about_own_com_in_jaw_axes_kg_m2": [
+      [
+        0.00034696073343613154,
+        1.3207090621415078e-07,
+        4.377477929175584e-07
+      ],
+      [
+        1.320709062141509e-07,
+        0.0002953013142789775,
+        4.374670200022521e-06
+      ],
+      [
+        4.3774779291755924e-07,
+        4.37467020002252e-06,
+        0.0001841819235767206
+      ]
+    ],
+    "jaw_inertia_after_about_own_com_in_jaw_axes_kg_m2": [
+      [
+        0.00032081200005630535,
+        -6.322868601343579e-07,
+        6.5715394732933225e-06
+      ],
+      [
+        -6.322868601343578e-07,
+        0.0002541000107093008,
+        4.184627096389417e-06
+      ],
+      [
+        6.571539473293323e-06,
+        4.184627096389416e-06,
+        0.00014988198923439406
+      ]
+    ],
+    "removed_tray_inertia_about_jaw_origin_kg_m2": [
+      [
+        3.39921269690178e-05,
+        0.0,
+        1.7824643658423e-05
+      ],
+      [
+        0.0,
+        5.8226238811822796e-05,
+        0.0
+      ],
+      [
+        1.7824643658423e-05,
+        0.0,
+        4.3434111842805e-05
+      ]
+    ]
+  },
+  "limits": [
+    "HOME only; all dimensions refer to the exported HOME world frame.",
+    "SciPy hull is a geometric check, not the captured MuJoCo-Warp contact hull.",
+    "Vertical ray points are not finite-radius ball contact solutions, support areas, or friction validation.",
+    "AABB maximum is not the height at the old tray center.",
+    "Inertia subtraction is analytical bookkeeping for jaw plus fixed tray; no compiled model was changed."
+  ]
+}

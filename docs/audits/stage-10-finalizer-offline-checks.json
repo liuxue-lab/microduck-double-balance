@@ -1,0 +1,23 @@
+{
+  "status": "OFFLINE_FIXTURE_CHECKS_PASS",
+  "tests_passed": 14,
+  "environment": "Temporary Git repositories and synthetic evidence, not the user laptop",
+  "includes": [
+    "all delivered repository payload files pass Git staging and whitespace checks",
+    "verify-only writes no repository/evidence files",
+    "idempotent repeated execution preserves original receipt",
+    "resume after commit before tag without extra commit",
+    "resume exact partial writes/staging",
+    "corrupt/missing evidence stops before writes",
+    "unrelated tracked/index edits preserved",
+    "conflicting target/index/tag preserved",
+    "symlink target rejected",
+    "unexpected HEAD rejected"
+  ],
+  "new_ppo_updates": 0,
+  "simulation_calls": 0,
+  "cloud_contacted": false,
+  "canonical_laptop_accessed": false,
+  "actual_laptop_finalization": "PENDING_USER_EXECUTION",
+  "archive_normalization": "One trailing blank line removed in archived initialization worker; original raw source retained and AST compared equal."
+}

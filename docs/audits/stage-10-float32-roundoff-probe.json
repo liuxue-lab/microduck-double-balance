@@ -1,0 +1,124 @@
+{
+  "status": "OFFLINE_ARITHMETIC_PROBE",
+  "new_simulation_calls": 0,
+  "new_ppo_updates": 0,
+  "results": [
+    {
+      "phase": "sim.forward#1.after",
+      "cross_run_changed_components": 3,
+      "all_changed_observations_explainable_by_scalar_float32_order": true,
+      "components": [
+        {
+          "env": 74,
+          "body": 0,
+          "axis": 1,
+          "observed": [
+            7.443099021911621,
+            7.443099498748779,
+            7.443099498748779
+          ],
+          "candidate_values": [
+            7.443098068237305,
+            7.443099021911621,
+            7.443099498748779
+          ],
+          "each_observed_in_candidate_set": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "env": 74,
+          "body": 2,
+          "axis": 1,
+          "observed": [
+            7.49493932723999,
+            7.494940280914307,
+            7.494940280914307
+          ],
+          "candidate_values": [
+            7.494938850402832,
+            7.49493932723999,
+            7.494940280914307
+          ],
+          "each_observed_in_candidate_set": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "env": 74,
+          "body": 2,
+          "axis": 2,
+          "observed": [
+            0.3925572335720062,
+            0.392557293176651,
+            0.392557293176651
+          ],
+          "candidate_values": [
+            0.3925572335720062,
+            0.392557293176651
+          ],
+          "each_observed_in_candidate_set": [
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "sim.forward#2.after",
+      "cross_run_changed_components": 2,
+      "all_changed_observations_explainable_by_scalar_float32_order": true,
+      "components": [
+        {
+          "env": 42,
+          "body": 2,
+          "axis": 1,
+          "observed": [
+            10.006046295166016,
+            10.006047248840332,
+            10.006047248840332
+          ],
+          "candidate_values": [
+            10.006046295166016,
+            10.006047248840332
+          ],
+          "each_observed_in_candidate_set": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "env": 106,
+          "body": 2,
+          "axis": 1,
+          "observed": [
+            4.996550559997559,
+            4.996550559997559,
+            4.996551036834717
+          ],
+          "candidate_values": [
+            4.996550559997559,
+            4.996551036834717
+          ],
+          "each_observed_in_candidate_set": [
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    }
+  ],
+  "interpretation": "Membership demonstrates arithmetic compatibility with atomic sibling-addition ordering, not the actual GPU schedule or a causal proof.",
+  "limitations": [
+    "Only differing subtree_com scalar components at two recorded post-forward boundaries are considered.",
+    "Scalar orders are enumerated independently; this is not a reconstruction of one joint vector/kernel schedule.",
+    "The check does not isolate crb/solver, reproduce qacc, or explain 10-second labels."
+  ]
+}

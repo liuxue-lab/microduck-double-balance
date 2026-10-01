@@ -1,0 +1,18 @@
+{
+  "inputs": [
+    {
+      "filename": "review-20261001T144102Z-3cf83d-part01.zip",
+      "sha256": "0aee59d5d9c9e78f8379229705f41b75acd9fab1c1476fec0676d58d94959dbb"
+    },
+    {
+      "filename": "review-20261001T144102Z-3cf83d-part02.zip",
+      "sha256": "c30685597865d998849fd58342b74b3b94dfe26c16c9609eabdc08e99e710d24"
+    }
+  ],
+  "review_status": "REVIEWED_WITH_ORIGINAL_FIRST_RUN_POSTCHECK_GAP",
+  "source_physics_reward_acceptance_changed": false,
+  "new_ppo_updates": 0,
+  "stage10_complete": false,
+  "cloud_status": "OFF_CONFIRMED_BY_USER",
+  "cloud_data_must_be_preserved": true
+}

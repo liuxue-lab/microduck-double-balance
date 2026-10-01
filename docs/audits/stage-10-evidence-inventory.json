@@ -1,0 +1,518 @@
+{
+  "schema_version": 1,
+  "source_head": "00e34c2038771c5d4ad49fe45dff828c0232e60c",
+  "batches": [
+    {
+      "batch": "A",
+      "root": "/home/lx/microduck-double-balance/artifacts/double-balance-stage10/replay/20260930T221521Z-e410f3f1/review",
+      "manifest": "review-files.json",
+      "manifest_sha256": "f61c721638ae811caf9204056c18b172578c090694185d32262a43f057e47222",
+      "file_count": 117,
+      "archives": [
+        {
+          "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage10/replay/20260930T221521Z-e410f3f1/review-20261001T061125Z-75b299-part01.zip",
+          "sha256": "8c5ae3d437f22b685f8b4f528bcaf9939e85c94253ff2b16b54dc629336524f4"
+        }
+      ]
+    },
+    {
+      "batch": "B",
+      "root": "/home/lx/microduck-double-balance/artifacts/double-balance-stage10/substep/20261001T071355Z-6050d852",
+      "manifest": "review-files.json",
+      "manifest_sha256": "a6783f53534a0bbc33e640914bbebee52ec1b7d76eedcdcd2ddc3955482ee59b",
+      "file_count": 68,
+      "archives": [
+        {
+          "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage10/substep/20261001T071355Z-6050d852/review-20261001T092052Z-3bdc7f-part01.zip",
+          "sha256": "c907a3fe9088fe7ee57ad3bfa250fd5ae3870a6ccb55b60d9d7110165cb444d6"
+        },
+        {
+          "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage10/substep/20261001T071355Z-6050d852/review-20261001T092052Z-3bdc7f-part02.zip",
+          "sha256": "41ffad1e9af27e4cb8c613488d3dca3eb0f22541f7c6093ed5e6787e81e1c88a"
+        }
+      ]
+    },
+    {
+      "batch": "C",
+      "root": "/home/lx/microduck-double-balance/artifacts/double-balance-stage10/initialization/20261001T141949Z-37e84aba",
+      "manifest": "review-files.json",
+      "manifest_sha256": "d6868a526bd84633f7c28517b97ad5e5afa92fae64eb7cd1526d5c6787410dac",
+      "file_count": 84,
+      "archives": [
+        {
+          "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage10/initialization/20261001T141949Z-37e84aba/review-20261001T144102Z-3cf83d-part01.zip",
+          "sha256": "0aee59d5d9c9e78f8379229705f41b75acd9fab1c1476fec0676d58d94959dbb"
+        },
+        {
+          "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage10/initialization/20261001T141949Z-37e84aba/review-20261001T144102Z-3cf83d-part02.zip",
+          "sha256": "c30685597865d998849fd58342b74b3b94dfe26c16c9609eabdc08e99e710d24"
+        }
+      ]
+    },
+    {
+      "batch": "D",
+      "root": "/home/lx/microduck-double-balance/artifacts/double-balance-stage10/source-audit/20261001T150302Z-59a20649",
+      "manifest": "files.json",
+      "manifest_sha256": "1893c10f275cd07793e1883dfdfde86fbb464f5c148165cf17e8bbfc50c4385d",
+      "file_count": 142,
+      "archives": [
+        {
+          "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage10/source-audit/20261001T150302Z-59a20649-review.zip",
+          "sha256": "7e0400245a7c99433f8471fe4e9cb1a1d9bd6d4692aa282de559f4b91d4c4f01"
+        }
+      ]
+    }
+  ],
+  "replay_raw": [
+    {
+      "root": "/home/lx/microduck-double-balance/artifacts/double-balance-stage10/replay/20260930T221521Z-e410f3f1/01-headless-1/attempt-88c5b3bf",
+      "files": [
+        {
+          "path": "evaluation.json",
+          "sha256": "306d76507a6c5c10adfa3ceb37ab5a272d7d02015fe5be140b45f19d0d2df23a",
+          "size_bytes": 372725
+        },
+        {
+          "path": "head-diagnostic.json",
+          "sha256": "4e1581933411aef14d57653716b1858688b0becc53e1b357fd9bc22b649c6a3d",
+          "size_bytes": 631167
+        },
+        {
+          "path": "head-env-000.png",
+          "sha256": "631e42dd4623c88df0aab111c9d072ce12ef1dfa4e11f12865ef1c48550e72f9",
+          "size_bytes": 262229
+        },
+        {
+          "path": "head-env-006.png",
+          "sha256": "2191b354c1f3c3eb48a664f110320d0db62ab3b7770bf2b2f160d1821d861946",
+          "size_bytes": 289320
+        },
+        {
+          "path": "head-env-009.png",
+          "sha256": "09415ed991445971ba7ce0350bead2e9553b9bf948e3b26477634e7ab6ebc665",
+          "size_bytes": 287109
+        },
+        {
+          "path": "head-env-063.png",
+          "sha256": "c2d32a13d361316d98c8f792556c19d3842eb1a5db75733c8b7c54c8e617534a",
+          "size_bytes": 269173
+        },
+        {
+          "path": "head-initial.npz",
+          "sha256": "0fb2df42c58bd9a753d563dc46ee6ac192c04299cfe0f66e02178bcc8b9f9b00",
+          "size_bytes": 36683
+        },
+        {
+          "path": "head-trace.npz",
+          "sha256": "58aa0088c1cac0eb764ec59a8e2cafc6c6a9af45e644f5b1771d936dfdb63581",
+          "size_bytes": 48768061
+        },
+        {
+          "path": "params/env.yaml",
+          "sha256": "305196a185e1f6493b6857ce49638617dddf823567b58bafdd43aee738d3f48a",
+          "size_bytes": 36984
+        },
+        {
+          "path": "plot-selection.json",
+          "sha256": "5fb77e403f000be5c59647970aa600f5e6db9913a439cd951cf9b8506a7fc9b0",
+          "size_bytes": 182
+        },
+        {
+          "path": "posture-summary.json",
+          "sha256": "a19872a210efacc408b0c5a19bc4a9487a10da1e0c1b82a7aa72a20369bee676",
+          "size_bytes": 40736
+        },
+        {
+          "path": "speed-events.json",
+          "sha256": "3b592bfcaf902aab27df559e0f98d09e827ed463aedae714141fdca66c4fedce",
+          "size_bytes": 189179
+        },
+        {
+          "path": "trace.pt",
+          "sha256": "f7502493e5e8070a36cf7a387b811da6320398567ccaf1861c104b2d48fc6a54",
+          "size_bytes": 5442261
+        }
+      ]
+    },
+    {
+      "root": "/home/lx/microduck-double-balance/artifacts/double-balance-stage10/replay/20260930T221521Z-e410f3f1/02-video99-1/attempt-98672bb4",
+      "files": [
+        {
+          "path": "env-99.mp4",
+          "sha256": "f2b8691018a453a1e3dd6a09885c14c5bc12e187521d9049b7a438c1d0f0c402",
+          "size_bytes": 2775416
+        },
+        {
+          "path": "evaluation.json",
+          "sha256": "9953d625fc82a20063c825a6013e3020c35c01dbaabdbbf46c58e5bbfc780e77",
+          "size_bytes": 372431
+        },
+        {
+          "path": "head-diagnostic.json",
+          "sha256": "8e1cf7805aa2739d184509e7021d21345a4fdd4150f540ae30779a96dc04e83e",
+          "size_bytes": 631110
+        },
+        {
+          "path": "head-env-000.png",
+          "sha256": "86a7a411a64456a83c6084fbaafc7111b1c2a17a559a5380045ccb2983f152d8",
+          "size_bytes": 263108
+        },
+        {
+          "path": "head-env-006.png",
+          "sha256": "915d7af8eeddb826b68fba9e3e4f48b4d6a28be6db53fe9dd2cd274cfac36018",
+          "size_bytes": 292336
+        },
+        {
+          "path": "head-env-063.png",
+          "sha256": "5679c34f3d5733774dc4145a90cfdc179705be87ff0211fd38cb097ce627f6b2",
+          "size_bytes": 271329
+        },
+        {
+          "path": "head-initial.npz",
+          "sha256": "0fb2df42c58bd9a753d563dc46ee6ac192c04299cfe0f66e02178bcc8b9f9b00",
+          "size_bytes": 36683
+        },
+        {
+          "path": "head-trace.npz",
+          "sha256": "1325123cdb714ee57ab47fd76b897d3abc43c2b2c340bc9f4fc14fa65d50f60d",
+          "size_bytes": 48769963
+        },
+        {
+          "path": "params/env.yaml",
+          "sha256": "9aaadf63a7d261973eec56e978756dc03b3bd2a4e8032134caf836a91428c29d",
+          "size_bytes": 36986
+        },
+        {
+          "path": "plot-selection.json",
+          "sha256": "d6ddeb87b3ff5e9836f84e2d6acc5b4a154429a9d69e76e222638d525e9783b8",
+          "size_bytes": 175
+        },
+        {
+          "path": "posture-summary.json",
+          "sha256": "3a1d5d988fa1a05e005bd82b9ebaf59e3f6652b51056b3aab64270cdc7594d2d",
+          "size_bytes": 40727
+        },
+        {
+          "path": "speed-events.json",
+          "sha256": "8959ef30658e097339dd2ebfa4a03b2b780f3d6772f083d8cfcea5060e291d9b",
+          "size_bytes": 197840
+        },
+        {
+          "path": "trace.pt",
+          "sha256": "855e4f9987da19a013ec62e943cc421367be05884a223a2bfb5e356c2057761f",
+          "size_bytes": 5442261
+        }
+      ]
+    },
+    {
+      "root": "/home/lx/microduck-double-balance/artifacts/double-balance-stage10/replay/20260930T221521Z-e410f3f1/03-headless-2/attempt-0fa1550e",
+      "files": [
+        {
+          "path": "evaluation.json",
+          "sha256": "851da30607774511c78ded1650516573a60d071c0b28563792e34b295c80d2c2",
+          "size_bytes": 372432
+        },
+        {
+          "path": "head-diagnostic.json",
+          "sha256": "cc747bf5ed811234c50a99a21d43a7174d8999785c03392e3562a83b5d167e72",
+          "size_bytes": 631151
+        },
+        {
+          "path": "head-env-000.png",
+          "sha256": "c2e7250692daaa71561e3cf668f1a59f573613c72ee8db08031828ef08b1da7d",
+          "size_bytes": 262233
+        },
+        {
+          "path": "head-env-009.png",
+          "sha256": "44721872b9ba629bc0ad89cb2a1d2b7765ead2b790791a923ad0dddb45c25e3e",
+          "size_bytes": 284180
+        },
+        {
+          "path": "head-env-063.png",
+          "sha256": "8888d237f38154d10159e3ca0fb2a1185afd20d61de6df42f01b0e327368a327",
+          "size_bytes": 273118
+        },
+        {
+          "path": "head-env-126.png",
+          "sha256": "7482563eef19ed13613e0ef6557434c49145faf208518d110608a7e588efc67c",
+          "size_bytes": 277240
+        },
+        {
+          "path": "head-initial.npz",
+          "sha256": "0fb2df42c58bd9a753d563dc46ee6ac192c04299cfe0f66e02178bcc8b9f9b00",
+          "size_bytes": 36683
+        },
+        {
+          "path": "head-trace.npz",
+          "sha256": "b326acbf91fa7e303d8de189690a16ac7672cf066a1dc0985e4e4d3f3c8b4fae",
+          "size_bytes": 48768467
+        },
+        {
+          "path": "params/env.yaml",
+          "sha256": "305196a185e1f6493b6857ce49638617dddf823567b58bafdd43aee738d3f48a",
+          "size_bytes": 36984
+        },
+        {
+          "path": "plot-selection.json",
+          "sha256": "1923d8004bf01d08f23446f3c8d7847d0d2d738bb0c705a2a95255fc4dea54ff",
+          "size_bytes": 184
+        },
+        {
+          "path": "posture-summary.json",
+          "sha256": "6f4fafd92f1f664a4b02fa8e8cde33cce9e479b621ec769159318dcddc7c19b5",
+          "size_bytes": 40723
+        },
+        {
+          "path": "speed-events.json",
+          "sha256": "6cebb611e8c5ece0da1eebac07c8577d326aaf30bd90d73b77a83bac2491da5e",
+          "size_bytes": 192266
+        },
+        {
+          "path": "trace.pt",
+          "sha256": "7ded2be518a75482a6a96976a60f7060640771a5acfc866122d022f67273bedc",
+          "size_bytes": 5442261
+        }
+      ]
+    },
+    {
+      "root": "/home/lx/microduck-double-balance/artifacts/double-balance-stage10/replay/20260930T221521Z-e410f3f1/04-video99-2/attempt-5d9f9767",
+      "files": [
+        {
+          "path": "env-99.mp4",
+          "sha256": "e0fa9ee8ae8fe858d250428dda0c41089cdf5f55fc315a7e77bbe0ff060b696d",
+          "size_bytes": 2772259
+        },
+        {
+          "path": "evaluation.json",
+          "sha256": "731c62e3c59f74684c476a66f85327a9038ba65bc71c79143c069e0738bc161a",
+          "size_bytes": 372535
+        },
+        {
+          "path": "head-diagnostic.json",
+          "sha256": "b4fcb37049bbe2ca04423ca2f94a1d76e8509a028e443494eae6895704fecec5",
+          "size_bytes": 631051
+        },
+        {
+          "path": "head-env-000.png",
+          "sha256": "5b572579195a91d336ecf0d0b77569b1b9b00ec021367a414f6f84dd5feaefa0",
+          "size_bytes": 264053
+        },
+        {
+          "path": "head-env-006.png",
+          "sha256": "098e5bd87859092923122671b0d5b8409e52b784eec552b970d2a6a1676a3aec",
+          "size_bytes": 283950
+        },
+        {
+          "path": "head-env-063.png",
+          "sha256": "49868121b154ed227262ee0eb859540140ee90aae5ef3733cea398145b3075e0",
+          "size_bytes": 273472
+        },
+        {
+          "path": "head-env-126.png",
+          "sha256": "1f213834ae54906b52f93377c0e9ff20f8b0d226c51f050286003b46426997a8",
+          "size_bytes": 278570
+        },
+        {
+          "path": "head-initial.npz",
+          "sha256": "0fb2df42c58bd9a753d563dc46ee6ac192c04299cfe0f66e02178bcc8b9f9b00",
+          "size_bytes": 36683
+        },
+        {
+          "path": "head-trace.npz",
+          "sha256": "4a7010b131acdb0f86cc7f0b826a137f61bf75ac7e30bc3250ac7f3adf739471",
+          "size_bytes": 48767679
+        },
+        {
+          "path": "params/env.yaml",
+          "sha256": "9aaadf63a7d261973eec56e978756dc03b3bd2a4e8032134caf836a91428c29d",
+          "size_bytes": 36986
+        },
+        {
+          "path": "plot-selection.json",
+          "sha256": "53703ef7c7ef4faddfe02a0a6b5452530134245ba005ef29a714564ba670cd4d",
+          "size_bytes": 184
+        },
+        {
+          "path": "posture-summary.json",
+          "sha256": "33fbf36036fcd0a996f24b57ccbf4cefe6064ef7c6fae4a645dea4416d7e7047",
+          "size_bytes": 40735
+        },
+        {
+          "path": "speed-events.json",
+          "sha256": "69db04498d4d513342a934ac21dc68f624577eb1867721b077463e2ac84b735c",
+          "size_bytes": 197188
+        },
+        {
+          "path": "trace.pt",
+          "sha256": "81b71715d01d07499fd32239ae0b66e72390ded4934a0efd61af2dafed16e551",
+          "size_bytes": 5442261
+        }
+      ]
+    },
+    {
+      "root": "/home/lx/microduck-double-balance/artifacts/double-balance-stage10/replay/20260930T221521Z-e410f3f1/05-headless-3/attempt-171a53a9",
+      "files": [
+        {
+          "path": "evaluation.json",
+          "sha256": "b6730783332120ca0e6e79da9a1af835d7db446a48de6acdd5eb34f5e9a2efe3",
+          "size_bytes": 372520
+        },
+        {
+          "path": "head-diagnostic.json",
+          "sha256": "bf0356cba02a5b855a31c133f3e8932a441f50bbe1224c251a21b6eba2d6dc0f",
+          "size_bytes": 631113
+        },
+        {
+          "path": "head-env-000.png",
+          "sha256": "68b12b6f398d55e4b6ed20724d8a9c19fb617c7bccc029bc9a7f100cc2fef748",
+          "size_bytes": 263983
+        },
+        {
+          "path": "head-env-009.png",
+          "sha256": "4bd67d24db586d1f1c314748fac215b95435635687d53a8b3c6e8a60edd67c4d",
+          "size_bytes": 287719
+        },
+        {
+          "path": "head-env-063.png",
+          "sha256": "9de9a49e6abb75f9f1b92a097c5eb6a938ef5374f6f3e909b8bd3f835b01c07e",
+          "size_bytes": 274393
+        },
+        {
+          "path": "head-env-126.png",
+          "sha256": "e96eb44b7bd11063d05d9b959e954d25d302205996055a5c76c6a29d1d0e69f4",
+          "size_bytes": 279944
+        },
+        {
+          "path": "head-initial.npz",
+          "sha256": "0fb2df42c58bd9a753d563dc46ee6ac192c04299cfe0f66e02178bcc8b9f9b00",
+          "size_bytes": 36683
+        },
+        {
+          "path": "head-trace.npz",
+          "sha256": "1b1947c20e1f2aaab2ae906031d6b7b544f6ca75a0a2a3c67e7af4cdd8f91365",
+          "size_bytes": 48766838
+        },
+        {
+          "path": "params/env.yaml",
+          "sha256": "305196a185e1f6493b6857ce49638617dddf823567b58bafdd43aee738d3f48a",
+          "size_bytes": 36984
+        },
+        {
+          "path": "plot-selection.json",
+          "sha256": "1923d8004bf01d08f23446f3c8d7847d0d2d738bb0c705a2a95255fc4dea54ff",
+          "size_bytes": 184
+        },
+        {
+          "path": "posture-summary.json",
+          "sha256": "6c59a1b29fe3568d8f41d2278661572addd231f2adf5187ba361aa7fc570d880",
+          "size_bytes": 40720
+        },
+        {
+          "path": "speed-events.json",
+          "sha256": "26b71522dec5e3da1b2eaa3b783680e4baa3b612c7245676af9610eadff0cc6e",
+          "size_bytes": 195852
+        },
+        {
+          "path": "trace.pt",
+          "sha256": "1142940a5d4eac63243d10f12643b9533572760fa9e6360116cb517fb267930d",
+          "size_bytes": 5442261
+        }
+      ]
+    },
+    {
+      "root": "/home/lx/microduck-double-balance/artifacts/double-balance-stage10/replay/20260930T221521Z-e410f3f1/06-video99-3/attempt-5053a45c",
+      "files": [
+        {
+          "path": "env-99.mp4",
+          "sha256": "726dfbdf2365ac17de9093091d619b04cb0b9452d16d9d634ca8ad3fb44d1834",
+          "size_bytes": 2808307
+        },
+        {
+          "path": "evaluation.json",
+          "sha256": "3f5ff0e1246fcc6e49258f8c04dd17a9c450bd33f184d090d8765cbaa1435e28",
+          "size_bytes": 372430
+        },
+        {
+          "path": "head-diagnostic.json",
+          "sha256": "ed4332c15982472a178e810e68d14034316910610b5a3d141d247b6c1a6025a8",
+          "size_bytes": 631104
+        },
+        {
+          "path": "head-env-000.png",
+          "sha256": "d4ab21329a020c854cb3101e00b712f7551ffa74f048b451c59ecb3ca3522429",
+          "size_bytes": 261434
+        },
+        {
+          "path": "head-env-006.png",
+          "sha256": "186416654be59bacfff8ab7080d6ca59d92ebb081b22278185d560d328996120",
+          "size_bytes": 281674
+        },
+        {
+          "path": "head-env-063.png",
+          "sha256": "7e8cf811a78653cbcf9635126ea29ac2aaa10d2daa8d2cf53d8623cb13733818",
+          "size_bytes": 278015
+        },
+        {
+          "path": "head-env-126.png",
+          "sha256": "b88d36afa8278cf433986581cf869e5f3a917394ef227f71957f127cb52efd04",
+          "size_bytes": 289643
+        },
+        {
+          "path": "head-initial.npz",
+          "sha256": "0fb2df42c58bd9a753d563dc46ee6ac192c04299cfe0f66e02178bcc8b9f9b00",
+          "size_bytes": 36683
+        },
+        {
+          "path": "head-trace.npz",
+          "sha256": "f809dca8284408ac0287014db14d8a049c0150c72f299525da709eae1a0f7450",
+          "size_bytes": 48768156
+        },
+        {
+          "path": "params/env.yaml",
+          "sha256": "9aaadf63a7d261973eec56e978756dc03b3bd2a4e8032134caf836a91428c29d",
+          "size_bytes": 36986
+        },
+        {
+          "path": "plot-selection.json",
+          "sha256": "53703ef7c7ef4faddfe02a0a6b5452530134245ba005ef29a714564ba670cd4d",
+          "size_bytes": 184
+        },
+        {
+          "path": "posture-summary.json",
+          "sha256": "2168453c5cc408218922dec9d5b2cbc4581df02e797d5c197aec4743441a1495",
+          "size_bytes": 40730
+        },
+        {
+          "path": "speed-events.json",
+          "sha256": "7d797d4073920ff9afd4532aeda0ea4566702af769cd9ed1289f56bc010d3ab9",
+          "size_bytes": 194942
+        },
+        {
+          "path": "trace.pt",
+          "sha256": "96715dd775a706837e94e8c597655e68ef2456950982c19af214a5126025d803",
+          "size_bytes": 5442261
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage08/returned/5d998fc322345102/evidence-20260930T093645-8955/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+    "sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97"
+  },
+  "dataset": {
+    "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage09/video-review/20260930T210037Z-5a95cdc3/initial-states/dev.pt",
+    "sha256": "253123669696a953830caeaf587e1300e023c12293d608e38e655a38cdc00f58"
+  },
+  "dataset_receipt": {
+    "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage09/video-review/20260930T210037Z-5a95cdc3/initial-states/dev.json",
+    "sha256": "6878f43233fb5c064f4500251ba0b3353e5e0d8179e08bfd3d56aefe08edc4cc"
+  },
+  "runtime_manifest_sha256": "b61850afbd6fa0deccb3a23a098a910aae74bc0e9b01cca2ee0634c2d1f6ecfd",
+  "review_files": 411,
+  "review_archives": 6,
+  "archive_transfer_branch": null,
+  "checkpoint_copied_or_replaced": false,
+  "full_stage09_cloud_traces_returned": false,
+  "cloud_data_must_be_preserved": true,
+  "source_audit_zip_hash_origin": "Computed from uploaded bytes; no separate user console SHA was supplied"
+}

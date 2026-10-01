@@ -1,0 +1,91 @@
+{
+  "status": "THREE_RETURNED_VIDEOS_REVIEWED_WITH_LIMITS",
+  "method": "Decode full files; inspect 150 sampled frames and three terminal frames; cross-check complete 50 Hz metrics",
+  "videos": [
+    {
+      "job": "02-video99-1",
+      "video_sha256": "f2b8691018a453a1e3dd6a09885c14c5bc12e187521d9049b7a438c1d0f0c402",
+      "env_id": 99,
+      "codec_decode": "PASS_ALL_250_FRAMES",
+      "duration_s": 10.0,
+      "fps": 25,
+      "resolution": [
+        1280,
+        720
+      ],
+      "visual_inspection": "50 evenly spaced frames at simulation times 0.04+0.20*k seconds, plus full-resolution terminal frame",
+      "inspected_frame_count": 51,
+      "official_success": true,
+      "official_timer_seconds": 5.259995937347412,
+      "visible_findings": [
+        "Robot remains upright with both balls in the sampled frames",
+        "Blue tray remains visible and supports upper ball",
+        "Head rapidly turns approximately 90 degrees and remains turned",
+        "Small body/leg/head corrections continue; no visible gross collapse in inspected frames"
+      ],
+      "limits": [
+        "Visual sampling cannot exclude brief events between frames",
+        "Single view does not validate exact contact normals, force, slip or penetration",
+        "Env 99 succeeds in all three videos; failed episodes 66/93 and boundary episode 63 have no video in this batch"
+      ]
+    },
+    {
+      "job": "04-video99-2",
+      "video_sha256": "e0fa9ee8ae8fe858d250428dda0c41089cdf5f55fc315a7e77bbe0ff060b696d",
+      "env_id": 99,
+      "codec_decode": "PASS_ALL_250_FRAMES",
+      "duration_s": 10.0,
+      "fps": 25,
+      "resolution": [
+        1280,
+        720
+      ],
+      "visual_inspection": "50 evenly spaced frames at simulation times 0.04+0.20*k seconds, plus full-resolution terminal frame",
+      "inspected_frame_count": 51,
+      "official_success": true,
+      "official_timer_seconds": 5.059996128082275,
+      "visible_findings": [
+        "Robot remains upright with both balls in the sampled frames",
+        "Blue tray remains visible and supports upper ball",
+        "Head rapidly turns approximately 90 degrees and remains turned",
+        "Small body/leg/head corrections continue; no visible gross collapse in inspected frames"
+      ],
+      "limits": [
+        "Visual sampling cannot exclude brief events between frames",
+        "Single view does not validate exact contact normals, force, slip or penetration",
+        "Env 99 succeeds in all three videos; failed episodes 66/93 and boundary episode 63 have no video in this batch"
+      ]
+    },
+    {
+      "job": "06-video99-3",
+      "video_sha256": "726dfbdf2365ac17de9093091d619b04cb0b9452d16d9d634ca8ad3fb44d1834",
+      "env_id": 99,
+      "codec_decode": "PASS_ALL_250_FRAMES",
+      "duration_s": 10.0,
+      "fps": 25,
+      "resolution": [
+        1280,
+        720
+      ],
+      "visual_inspection": "50 evenly spaced frames at simulation times 0.04+0.20*k seconds, plus full-resolution terminal frame",
+      "inspected_frame_count": 51,
+      "official_success": true,
+      "official_timer_seconds": 5.259995937347412,
+      "visible_findings": [
+        "Robot remains upright with both balls in the sampled frames",
+        "Blue tray remains visible and supports upper ball",
+        "Head rapidly turns approximately 90 degrees and remains turned",
+        "Small body/leg/head corrections continue; no visible gross collapse in inspected frames"
+      ],
+      "limits": [
+        "Visual sampling cannot exclude brief events between frames",
+        "Single view does not validate exact contact normals, force, slip or penetration",
+        "Env 99 succeeds in all three videos; failed episodes 66/93 and boundary episode 63 have no video in this batch"
+      ]
+    }
+  ],
+  "posture_correction_paused": true,
+  "old_success_definition_changed": false,
+  "video_success_does_not_establish_general_policy_success": true,
+  "stage10_complete": false
+}

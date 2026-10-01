@@ -1,0 +1,67 @@
+{
+  "status": "REVIEWED_WITH_FIRST_RUN_POSTCHECK_GAP",
+  "stage10_complete": false,
+  "manifest_files_verified": 68,
+  "frozen_source_files_verified": 101,
+  "runs": [
+    {
+      "job": "01-substep",
+      "attempt": "attempt-1f54cd0b",
+      "original_status": "FAILED_REVIEW_REQUIRED",
+      "events": 561,
+      "unique_arrays_verified": 3170,
+      "all_numeric_finite": true,
+      "all_references_verified": true,
+      "external_wrenches_zero": true,
+      "contact_prefix_counts_and_world_ids_verified": true,
+      "terminal_time_s": 0.20000004768371582,
+      "backend_after_available": false
+    },
+    {
+      "job": "02-substep",
+      "attempt": "attempt-1f7e6b65",
+      "original_status": "SHORT_TRACE_COMPLETE_REVIEW_REQUIRED",
+      "events": 561,
+      "unique_arrays_verified": 3167,
+      "all_numeric_finite": true,
+      "all_references_verified": true,
+      "external_wrenches_zero": true,
+      "contact_prefix_counts_and_world_ids_verified": true,
+      "terminal_time_s": 0.20000004768371582,
+      "backend_after_available": true
+    },
+    {
+      "job": "03-substep",
+      "attempt": "attempt-fb88b06c",
+      "original_status": "SHORT_TRACE_COMPLETE_REVIEW_REQUIRED",
+      "events": 561,
+      "unique_arrays_verified": 3173,
+      "all_numeric_finite": true,
+      "all_references_verified": true,
+      "external_wrenches_zero": true,
+      "contact_prefix_counts_and_world_ids_verified": true,
+      "terminal_time_s": 0.20000004768371582,
+      "backend_after_available": true
+    }
+  ],
+  "unique_arrays_per_run_sum": 9510,
+  "aligned_event_total": 1683,
+  "interface_probe_passed_zero_physics": true,
+  "first_run_original_failure_preserved": true,
+  "first_run_original_files_verified_against_pinned_recovery": 10,
+  "first_run_missing_postchecks": [
+    "backend_after",
+    "final frozen-source recheck"
+  ],
+  "new_ppo_updates": 0,
+  "new_simulation_executed_by_this_audit": false,
+  "success_rate_assessed": false,
+  "cloud_gpu_hours": 0,
+  "limits": [
+    "First capture is after reset/forward/sensing/observation, so the generating call is not isolated.",
+    "Only captured state is compared; compiled model/internal device state is incomplete.",
+    "Synchronization from diagnostic readback can alter execution ordering.",
+    "Contact row permutation test is not full contact/solver equivalence.",
+    "No intervention or full 10-second rollout; no causal attribution of acceptance label changes."
+  ]
+}

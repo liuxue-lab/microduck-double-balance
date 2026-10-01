@@ -1,0 +1,23 @@
+{
+  "status": "REVIEWED_WITH_FIRST_RUN_POSTCHECK_GAP",
+  "source_parts": [
+    {
+      "path": "review-20261001T092052Z-3bdc7f-part01.zip",
+      "size_bytes": 40897029,
+      "sha256": "c907a3fe9088fe7ee57ad3bfa250fd5ae3870a6ccb55b60d9d7110165cb444d6"
+    },
+    {
+      "path": "review-20261001T092052Z-3bdc7f-part02.zip",
+      "size_bytes": 21914848,
+      "sha256": "41ffad1e9af27e4cb8c613488d3dca3eb0f22541f7c6093ed5e6787e81e1c88a"
+    }
+  ],
+  "review_manifest_entries": 68,
+  "raw_trace_arrays_embedded_in_this_review_package": false,
+  "new_ppo_updates": 0,
+  "stage10_complete": false,
+  "source_edited": false,
+  "cloud_status": "OFF_CONFIRMED_BY_USER",
+  "cloud_data_must_be_preserved": true,
+  "next_action": "Read-only initialization boundary audit proposed; not executed; no rerun of B required"
+}
