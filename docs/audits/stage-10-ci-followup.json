@@ -1,0 +1,76 @@
+{
+  "stage": 10,
+  "status": "CI_ARCHIVE_DEPENDENCY_FIX_VALIDATED_REMOTE_CI_PENDING",
+  "affected_commit": "1a11f30cc7264d00dec7bce8f11449ded9164169",
+  "evidence_source": "Read-only GitHub Actions job steps and full job logs",
+  "runs": [
+    {
+      "id": 36890169180,
+      "branch": "stage-10-complete",
+      "sha": "1a11f30cc7264d00dec7bce8f11449ded9164169",
+      "url": "https://github.com/liuxue-lab/microduck-double-balance/actions/runs/36890169180",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 36890165087,
+      "branch": "double-balance",
+      "sha": "1a11f30cc7264d00dec7bce8f11449ded9164169",
+      "url": "https://github.com/liuxue-lab/microduck-double-balance/actions/runs/36890165087",
+      "status": "completed",
+      "conclusion": "failure"
+    }
+  ],
+  "jobs": [
+    110463485222,
+    110463470818
+  ],
+  "failed_step": "Run CPU tests",
+  "root_cause": "Stage 10 finalizer archived recovery .py files but omitted JSON dependencies. Repository-wide pytest imports test_recovery.py; stage10_recovery_common reads missing recovery-reference.json at import time.",
+  "responsibility": "Stage 10 archive packaging integration omission; isolated finalizer tests did not cover root pytest discovery.",
+  "original_error": "FileNotFoundError: scripts/stage10_diagnostics/initialization_recovery/recovery-reference.json",
+  "original_summary": {
+    "branch": "1 error in 20.02s",
+    "tag": "1 error in 19.47s"
+  },
+  "fix": [
+    "Restore the four original recovery/reference JSON documents and original README from reviewed Batch C tool package.",
+    "Restore package manifest, changing only the worker entry to match the already archived EOF-normalized worker. No worker logic changes.",
+    "Keep test_recovery.py and its existing conditions unchanged; do not exclude or rename tests.",
+    "Add regression checking fresh-process archive import and complete source/metadata inventory without torch, mujoco or mjlab imports."
+  ],
+  "manifest_adjustment": [
+    {
+      "path": "stage10_initialization_worker.py",
+      "before": {
+        "path": "stage10_initialization_worker.py",
+        "size_bytes": 14412,
+        "sha256": "d3737ee4a1dba9441d1ae494a1aebb855e2c872210df2a5793c311706a1637d7"
+      },
+      "after_sha256": "d3108d070dfb344624bfadf760c9e9e3e4fd9f29e4e0b76d685bd0e5efbb41b5",
+      "after_size_bytes": 14411
+    }
+  ],
+  "validation": {
+    "before": "Same missing-reference collection failure reproduced; exit 2, no tests collected",
+    "portable_archive_tests": "28 passed, 5 skipped, 13 subtests passed in 5.83s",
+    "skip_reason": "Five existing checks require the historical returned-trace fixture absent on GitHub runners.",
+    "recovery_checks_with_real_returned_fixture": "10 tests passed, 0 skipped in 1.433s; temporary copies and mocked controller only",
+    "documentation_links_before_followup_docs": "PASS: 132 links",
+    "frozen_runtime_files": "101/101 unchanged",
+    "full_repository_ci": "NOT_RUN_HERE: complete simulation dependencies unavailable",
+    "remote_fix_ci": "PENDING_LOCAL_COMMIT_AND_USER_SSH_PUSH",
+    "later_original_ci_steps": "Skipped after collection failure; not certified by targeted checks",
+    "documentation_links_after_followup_docs": "PASS: 136 relative Markdown/HTML links resolve",
+    "local_installer": "8 isolated Git fixture tests passed; full 11-file patch plus self archived; idempotent; tag preserved; conflicting edits blocked"
+  },
+  "new_ppo_updates": 0,
+  "new_simulation_steps": 0,
+  "cloud_contacted": false,
+  "cloud_status": "OFF_CONFIRMED_BY_USER",
+  "cloud_data_must_be_preserved": true,
+  "models_physics_task_rewards_acceptance_changed": false,
+  "original_B1_C1_postcheck_gaps_preserved": true,
+  "stage10_tag_policy": "Retain stage-10-complete at 1a11f30cc7264d00dec7bce8f11449ded9164169; no force update/new completion tag",
+  "publication": "Supplementary local commit on double-balance; user git push origin double-balance; normal successful output suffices; new CI run must be checked for this incident."
+}

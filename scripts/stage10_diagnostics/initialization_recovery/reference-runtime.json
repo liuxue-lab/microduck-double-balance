@@ -1,0 +1,46 @@
+{
+  "status": "LOCAL_RUNTIME_PREFLIGHT_PASS",
+  "source_head": "00e34c2038771c5d4ad49fe45dff828c0232e60c",
+  "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+  "executable": "/home/lx/microduck-double-balance/workspace/.venv/bin/python",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "versions": {
+    "mjlab": "1.3.0",
+    "mujoco": "3.10.0",
+    "mujoco-warp": "3.8.1",
+    "warp-lang": "1.12.0",
+    "rsl-rl-lib": "5.0.1",
+    "torch": "2.9.1+cu128"
+  },
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "num_threads": 4,
+  "backend": {
+    "precision_api": "fp32_precision",
+    "deterministic_algorithms": false,
+    "cudnn_benchmark": true,
+    "cudnn_deterministic": false,
+    "global_fp32_precision": "none",
+    "matmul_fp32_precision": "tf32",
+    "cudnn_fp32_precision": "tf32",
+    "cudnn_conv_fp32_precision": "tf32",
+    "cudnn_rnn_fp32_precision": "tf32"
+  },
+  "environment": {
+    "MUJOCO_GL": "egl",
+    "PYTHONHASHSEED": null,
+    "CUBLAS_WORKSPACE_CONFIG": null,
+    "CUDA_LAUNCH_BLOCKING": null
+  },
+  "new_ppo_updates": 0,
+  "sources": {
+    "ManagerBasedRlEnv.step": "  def step(self, action: torch.Tensor) -> types.VecEnvStepReturn:\n    \"\"\"Run one environment step: apply actions, simulate, compute RL signals.\n\n    When ``auto_reset=True`` (default), environments that terminate or time out are\n    reset in place and the returned observation is the post-reset state. When\n    ``auto_reset=False``, the reset is skipped and the returned observation is the\n    terminal state; the caller must call ``reset(env_ids=...)`` for done envs before\n    the next ``step()``.\n\n    **Forward-call placement.** MuJoCo's ``mj_step`` runs forward kinematics *before*\n    integration, so after stepping, derived quantities (``xpos``, ``xquat``,\n    ``site_xpos``, ``cvel``, ``sensordata``) lag ``qpos``/``qvel`` by one physics\n    substep. Rather than calling ``sim.forward()`` twice (once after the decimation\n    loop and once after the reset block), this method calls it **once**, right\n    before observation computation. This single call refreshes derived quantities\n    for *all* envs: non-reset envs pick up post-decimation kinematics, reset envs\n    pick up post-reset kinematics.\n\n    The tradeoff is that termination and reward managers see derived quantities that\n    are stale by one physics substep (the last ``mj_step`` ran ``mj_forward`` from\n    *pre*-integration ``qpos``). In practice, the staleness is negligible for reward\n    shaping and termination checks. Critically, the staleness is *consistent*: every\n    env, every step, always sees the same lag, so the MDP is well-defined and the\n    value function can learn the correct mapping.\n\n    .. note::\n\n      Event and command authors do not need to call ``sim.forward()`` themselves.\n      This method handles it. The only constraint is: do not read derived quantities\n      (``root_link_pose_w``, ``body_link_vel_w``, etc.) in the same function that\n      writes state (``write_root_state_to_sim``, ``write_joint_state_to_sim``,\n      etc.). See :ref:`faq` for details.\n    \"\"\"\n    if not self.cfg.auto_reset and torch.any(self._manual_reset_pending):\n      pending_ids = self._manual_reset_pending.nonzero(as_tuple=False).squeeze(-1)\n      raise RuntimeError(\n        f\"Environments {pending_ids.cpu().tolist()} must be reset via \"\n        \"reset(env_ids=...) before calling step() again when auto_reset=False.\"\n      )\n\n    self.action_manager.process_action(action.to(self.device))\n\n    for _ in range(self.cfg.decimation):\n      self._sim_step_counter += 1\n      self.action_manager.apply_action()\n      self.scene.write_data_to_sim()\n      self.sim.step()\n      self.scene.update(dt=self.physics_dt)\n      self.metrics_manager.compute_substep()\n\n    # Update env counters.\n    self.episode_length_buf += 1\n    self.common_step_counter += 1\n\n    # Check terminations and compute rewards.\n    # NOTE: Derived quantities (xpos, xquat, ...) are stale by one physics\n    # substep here. See the docstring above for why this is acceptable.\n    self.reset_buf = self.termination_manager.compute()\n    self.reset_terminated = self.termination_manager.terminated\n    self.reset_time_outs = self.termination_manager.time_outs\n\n    self.reward_buf = self.reward_manager.compute(dt=self.step_dt)\n    self.metrics_manager.compute()\n\n    # Reset envs that terminated/timed-out and log the episode info.\n    reset_env_ids = self.reset_buf.nonzero(as_tuple=False).squeeze(-1)\n    if self.cfg.auto_reset and len(reset_env_ids) > 0:\n      self.recorder_manager.record_pre_reset(reset_env_ids)\n      self._reset_idx(reset_env_ids)\n      self.scene.write_data_to_sim()\n\n    # Single forward() call: recompute derived quantities from current\n    # qpos/qvel for every env. For non-reset envs this resolves the\n    # one-substep staleness left by mj_step; for reset envs it picks up\n    # the freshly written reset state.\n    self.sim.forward()\n\n    self.command_manager.compute(dt=self.step_dt)\n\n    if \"step\" in self.event_manager.available_modes:\n      self.event_manager.apply(mode=\"step\", dt=self.step_dt)\n    if \"interval\" in self.event_manager.available_modes:\n      self.event_manager.apply(mode=\"interval\", dt=self.step_dt)\n\n    self.sim.sense()\n    self.obs_buf = self.observation_manager.compute(update_history=True)\n\n    if self.cfg.auto_reset and len(reset_env_ids) > 0:\n      self.recorder_manager.record_post_reset(reset_env_ids)\n    elif len(reset_env_ids) > 0:\n      self._manual_reset_pending[reset_env_ids] = True\n\n    self.recorder_manager.record_post_step()\n\n    return (\n      self.obs_buf,\n      self.reward_buf,\n      self.reset_terminated,\n      self.reset_time_outs,\n      self.extras,\n    )\n",
+    "ManagerBasedRlEnv.reset": "  def reset(\n    self,\n    *,\n    seed: int | None = None,\n    env_ids: torch.Tensor | None = None,\n    options: dict[str, Any] | None = None,\n  ) -> tuple[types.VecEnvObs, dict]:\n    del options  # Unused.\n    if env_ids is None:\n      env_ids = torch.arange(self.num_envs, dtype=torch.int64, device=self.device)\n    if seed is not None:\n      self.seed(seed)\n    self._reset_idx(env_ids)\n    self.scene.write_data_to_sim()\n    self.sim.forward()\n    self.command_manager.compute(dt=0.0)\n    self.sim.sense()\n    self.obs_buf = self.observation_manager.compute(update_history=True)\n    self.recorder_manager.record_post_reset(env_ids)\n    return self.obs_buf, self.extras\n",
+    "Simulation.step": "  def step(self) -> None:\n    with wp.ScopedDevice(self.wp_device):\n      with self.nan_guard.watch(self.data):\n        if self.use_cuda_graph and self.step_graph is not None:\n          wp.capture_launch(self.step_graph)\n        else:\n          mjwarp.step(self.wp_model, self.wp_data)\n",
+    "Simulation.reset": "  def reset(self, env_ids: torch.Tensor | None = None) -> None:\n    with wp.ScopedDevice(self.wp_device):\n      if env_ids is None:\n        self._reset_mask.fill_(True)\n      else:\n        self._reset_mask.fill_(False)\n        self._reset_mask[env_ids] = True\n\n      if self.use_cuda_graph and self.reset_graph is not None:\n        wp.capture_launch(self.reset_graph)\n      else:\n        mjwarp.reset_data(self.wp_model, self.wp_data, reset=self._reset_mask_wp)\n",
+    "Simulation.forward": "  def forward(self) -> None:\n    with wp.ScopedDevice(self.wp_device):\n      if self.use_cuda_graph and self.forward_graph is not None:\n        wp.capture_launch(self.forward_graph)\n      else:\n        mjwarp.forward(self.wp_model, self.wp_data)\n",
+    "RslRlVecEnvWrapper.step": "  def step(\n    self, actions: torch.Tensor\n  ) -> tuple[TensorDict, torch.Tensor, torch.Tensor, dict]:\n    if self.clip_actions is not None:\n      actions = torch.clamp(actions, -self.clip_actions, self.clip_actions)\n    obs_dict, rew, terminated, truncated, extras = self.env.step(actions)\n    term_or_trunc = terminated | truncated\n    assert isinstance(rew, torch.Tensor)\n    assert isinstance(term_or_trunc, torch.Tensor)\n    dones = term_or_trunc.to(dtype=torch.long)\n    if not self.cfg.is_finite_horizon:\n      extras[\"time_outs\"] = truncated\n    return (\n      TensorDict(obs_dict, batch_size=[self.num_envs]),\n      rew,\n      dones,\n      extras,\n    )\n",
+    "RslRlVecEnvWrapper.reset": "  def reset(self) -> tuple[TensorDict, dict]:\n    obs_dict, extras = self.env.reset()\n    return TensorDict(obs_dict, batch_size=[self.num_envs]), extras\n",
+    "RslRlVecEnvWrapper.get_observations": "  def get_observations(self) -> TensorDict:\n    obs_dict = self.unwrapped.observation_manager.compute()\n    return TensorDict(obs_dict, batch_size=[self.num_envs])\n"
+  }
+}

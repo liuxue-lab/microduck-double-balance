@@ -1,0 +1,202 @@
+{
+  "version": "initialization-recovery-v1",
+  "batch_directory": "20261001T141949Z-37e84aba",
+  "approved_attempt": "01-initialization/attempt-772ee431",
+  "input_zip_sha256": "6d285fb6c6a627d27dcfc334f730892460bd18db86c11792fb8985576394fc4a",
+  "original_inventory": [
+    {
+      "path": "01-initialization/attempt-772ee431/bootstrap-calls.json",
+      "size_bytes": 565,
+      "sha256": "dd1117c67f7c4242864ad25459b35dd2f6563fef23a2aa2c7ee8d1badaba923a"
+    },
+    {
+      "path": "01-initialization/attempt-772ee431/boundary-counts.json",
+      "size_bytes": 322,
+      "sha256": "6392834e9112c5b907ed51bd8d31f28cfc189734e6fc4ccc29288f5e8b7a5775"
+    },
+    {
+      "path": "01-initialization/attempt-772ee431/capture-schema.json",
+      "size_bytes": 124766,
+      "sha256": "5693a119cb9e39dc124823124c3e4a4efbdfd1bd0437304f9384ba651050ffeb"
+    },
+    {
+      "path": "01-initialization/attempt-772ee431/construction-started.json",
+      "size_bytes": 82,
+      "sha256": "972810eb1743548936f4d9650cb5dfada72523b01b960d6f5ce4ffe157c58e03"
+    },
+    {
+      "path": "01-initialization/attempt-772ee431/dependency-sources.json",
+      "size_bytes": 409635,
+      "sha256": "3b51c54ef894b9e62e83e6f01f15d59a26d2a3790252310beae1bc86e817428a"
+    },
+    {
+      "path": "01-initialization/attempt-772ee431/head-initial.npz",
+      "size_bytes": 36683,
+      "sha256": "0fb2df42c58bd9a753d563dc46ee6ac192c04299cfe0f66e02178bcc8b9f9b00"
+    },
+    {
+      "path": "01-initialization/attempt-772ee431/initial-receipt.json",
+      "size_bytes": 9463,
+      "sha256": "ed44c815dd43442b1797b2ddcd3ead7a19437f1608b150b26a57f243b4508a69"
+    },
+    {
+      "path": "01-initialization/attempt-772ee431/params/env.yaml",
+      "size_bytes": 36984,
+      "sha256": "305196a185e1f6493b6857ce49638617dddf823567b58bafdd43aee738d3f48a"
+    },
+    {
+      "path": "01-initialization/attempt-772ee431/result.json",
+      "size_bytes": 7041,
+      "sha256": "c0864c3c6f26e1425da0791d545d2bf7782e4968a083b692cff5021b60ada475"
+    },
+    {
+      "path": "01-initialization/attempt-772ee431/runtime-check.json",
+      "size_bytes": 1936,
+      "sha256": "dcf74c33269f31fe34320aa8ba7685b074f9ff30b2a2e55385c738a1a62a9ee3"
+    },
+    {
+      "path": "01-initialization/attempt-772ee431/trace/arrays-001.zip",
+      "size_bytes": 7677839,
+      "sha256": "8486b43f637d4b2ea6f537656c990c7b5cedbefccf272682049ace30a6daee23"
+    },
+    {
+      "path": "01-initialization/attempt-772ee431/trace/arrays-002.zip",
+      "size_bytes": 3006807,
+      "sha256": "0e3145a3a3d7bf1c33a5e32c58540a3e38dc2a4d9034abc894cbc31303a4f25f"
+    },
+    {
+      "path": "01-initialization/attempt-772ee431/trace/arrays-003.zip",
+      "size_bytes": 3464548,
+      "sha256": "11585fd660ccf136e589456957011eec713b66b08ec02c476ed16032c02bb549"
+    },
+    {
+      "path": "01-initialization/attempt-772ee431/trace/arrays-004.zip",
+      "size_bytes": 1650501,
+      "sha256": "679ed67de611e763f20849700cf12f4f8d519de1faf5f73b47f99e21514ee0ae"
+    },
+    {
+      "path": "01-initialization/attempt-772ee431/trace/events.jsonl",
+      "size_bytes": 9150271,
+      "sha256": "7b815afc4ebc577760cac272b29aac22e08d6af0e13681963822738c60a6dd3c"
+    },
+    {
+      "path": "01-initialization/attempt-772ee431.log",
+      "size_bytes": 13612,
+      "sha256": "7154248d24c2d60973e129bd44ff6ec131c2b09d0ca09ce7d369dfa394aeb793"
+    },
+    {
+      "path": "initial-states/dev.json",
+      "size_bytes": 9436,
+      "sha256": "6878f43233fb5c064f4500251ba0b3353e5e0d8179e08bfd3d56aefe08edc4cc"
+    },
+    {
+      "path": "plan.json",
+      "size_bytes": 2577,
+      "sha256": "d71fb83db07bd976000ba05b485cfe1184cc12685290019478ca56748bb87806"
+    },
+    {
+      "path": "run.json",
+      "size_bytes": 981,
+      "sha256": "907363472d14dd4ece2123c57168b1fd25d9f210a5464e6c198d1e5ff16145cf"
+    },
+    {
+      "path": "tool/microduck-stage10-initialization.py",
+      "size_bytes": 21547,
+      "sha256": "ed72d0990a0cffd4c62b8f4b80cee8cf4f82fc529aab06f27d992fbda2379adc"
+    },
+    {
+      "path": "tool/reference-b.json",
+      "size_bytes": 1258,
+      "sha256": "20ec66a3b08ca8f3e0fcd67b6989d64c02e80ddd60ee6549f0a9ac8a9bf134f9"
+    },
+    {
+      "path": "tool/reference-runtime.json",
+      "size_bytes": 8827,
+      "sha256": "06ffe5398ce827c9b9e44442c5d393a30c9cfa9409d31a7a7b8ca24667d44ab1"
+    },
+    {
+      "path": "tool/stage10_capture.py",
+      "size_bytes": 15355,
+      "sha256": "67bc77de9ae1b75dab3f694bfad70b511101c2d0af120d56148d9799c20ba579"
+    },
+    {
+      "path": "tool/stage10_core.py",
+      "size_bytes": 7510,
+      "sha256": "6c017bb4152f3a52861108ee3ad4d9176489e205c7a5487ba62631275e8ce654"
+    },
+    {
+      "path": "tool/stage10_init_capture.py",
+      "size_bytes": 16148,
+      "sha256": "8c1edb0736c49727cd99ef51ac6ecf7319539f2868542124a9b68b0fc02e9e59"
+    },
+    {
+      "path": "tool/stage10_init_compare.py",
+      "size_bytes": 4946,
+      "sha256": "a01c59350839fd070dc096653a04ad11e54258664ebcaca44bd412636cb294e6"
+    },
+    {
+      "path": "tool/stage10_runtime.py",
+      "size_bytes": 4854,
+      "sha256": "9f50dabf6a997d788c99ce5d472ef071d961fe491e8d976955157e9b93fdadd7"
+    },
+    {
+      "path": "tool/stage10_trace.py",
+      "size_bytes": 7076,
+      "sha256": "217b405791ae666829973f5a051bb8abfebcbf1c3afa609a2550ed2d5a5c5d21"
+    }
+  ],
+  "original_plan": {
+    "schema_version": 1,
+    "batch": "stage10-initialization-C",
+    "created_utc": "2026-10-01T14:19:49.656394+00:00",
+    "source_head": "00e34c2038771c5d4ad49fe45dff828c0232e60c",
+    "tools": {
+      "microduck-stage10-initialization.py": "ed72d0990a0cffd4c62b8f4b80cee8cf4f82fc529aab06f27d992fbda2379adc",
+      "stage10_core.py": "6c017bb4152f3a52861108ee3ad4d9176489e205c7a5487ba62631275e8ce654",
+      "stage10_capture.py": "67bc77de9ae1b75dab3f694bfad70b511101c2d0af120d56148d9799c20ba579",
+      "stage10_trace.py": "217b405791ae666829973f5a051bb8abfebcbf1c3afa609a2550ed2d5a5c5d21",
+      "stage10_runtime.py": "9f50dabf6a997d788c99ce5d472ef071d961fe491e8d976955157e9b93fdadd7",
+      "stage10_init_capture.py": "8c1edb0736c49727cd99ef51ac6ecf7319539f2868542124a9b68b0fc02e9e59",
+      "stage10_init_compare.py": "a01c59350839fd070dc096653a04ad11e54258664ebcaca44bd412636cb294e6",
+      "reference-runtime.json": "06ffe5398ce827c9b9e44442c5d393a30c9cfa9409d31a7a7b8ca24667d44ab1",
+      "reference-b.json": "20ec66a3b08ca8f3e0fcd67b6989d64c02e80ddd60ee6549f0a9ac8a9bf134f9"
+    },
+    "jobs": [
+      "01-initialization",
+      "02-initialization",
+      "03-initialization"
+    ],
+    "scope": {
+      "fresh_processes": 3,
+      "environments": 128,
+      "seed": 8101,
+      "explicit_final_resets_per_process": 1,
+      "original_forward_calls_in_final_reset": 2,
+      "rollout_physics_steps": 0,
+      "policy_inference_calls_after_load": 0,
+      "new_ppo_updates": 0,
+      "assistance": 0,
+      "old_episode_seconds": 10,
+      "video": false,
+      "cloud_gpu_hours": 0,
+      "initialization_internal_calls_counted_separately": true
+    },
+    "checkpoint": "/home/lx/microduck-double-balance/artifacts/double-balance-stage08/returned/5d998fc322345102/evidence-20260930T093645-8955/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+    "checkpoint_sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+    "dataset_sha256": "253123669696a953830caeaf587e1300e023c12293d608e38e655a38cdc00f58",
+    "dataset_receipt_sha256": "6878f43233fb5c064f4500251ba0b3353e5e0d8179e08bfd3d56aefe08edc4cc",
+    "prior_batch_review": {
+      "batch": "/home/lx/microduck-double-balance/artifacts/double-balance-stage10/substep/20261001T071355Z-6050d852",
+      "verified_metadata_files": 6,
+      "first_run_gap_preserved": true,
+      "batch_b_replayed": false,
+      "reference_sha256": "20ec66a3b08ca8f3e0fcd67b6989d64c02e80ddd60ee6549f0a9ac8a9bf134f9"
+    },
+    "new_ppo_updates": 0,
+    "stage10_complete": false,
+    "cloud_status": "OFF_CONFIRMED_BY_USER",
+    "cloud_gpu_hours": 0,
+    "cloud_data_must_be_preserved": true
+  },
+  "original_result_sha256": "c0864c3c6f26e1425da0791d545d2bf7782e4968a083b692cff5021b60ada475"
+}

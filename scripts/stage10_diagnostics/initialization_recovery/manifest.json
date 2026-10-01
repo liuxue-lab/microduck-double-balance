@@ -1,0 +1,82 @@
+[
+  {
+    "path": "README.md",
+    "size_bytes": 3659,
+    "sha256": "20556ace964b0647ad7905b9171a026d131bdc59165f3c8eed082a2e5d8a37f9"
+  },
+  {
+    "path": "microduck-stage10-initialization-recovery.py",
+    "size_bytes": 7380,
+    "sha256": "3328f61780b4301686e0fbb983eddafd7d4220a65007f33f9f27c6d40da68183"
+  },
+  {
+    "path": "recovery-reference.json",
+    "size_bytes": 8132,
+    "sha256": "e1fc182510918a3441e7c0de52c0adea12252e00d81065574ed546a5332e11c5"
+  },
+  {
+    "path": "reference-b.json",
+    "size_bytes": 1258,
+    "sha256": "20ec66a3b08ca8f3e0fcd67b6989d64c02e80ddd60ee6549f0a9ac8a9bf134f9"
+  },
+  {
+    "path": "reference-runtime.json",
+    "size_bytes": 8827,
+    "sha256": "06ffe5398ce827c9b9e44442c5d393a30c9cfa9409d31a7a7b8ca24667d44ab1"
+  },
+  {
+    "path": "reviewed-first-trace.json",
+    "size_bytes": 14408,
+    "sha256": "ed40adf5d15b65dc6974779f545e32c694c27506d5d0a9c32268bbf4cf7b00d7"
+  },
+  {
+    "path": "stage10_capture.py",
+    "size_bytes": 15355,
+    "sha256": "67bc77de9ae1b75dab3f694bfad70b511101c2d0af120d56148d9799c20ba579"
+  },
+  {
+    "path": "stage10_core.py",
+    "size_bytes": 7510,
+    "sha256": "6c017bb4152f3a52861108ee3ad4d9176489e205c7a5487ba62631275e8ce654"
+  },
+  {
+    "path": "stage10_init_capture.py",
+    "size_bytes": 16148,
+    "sha256": "8c1edb0736c49727cd99ef51ac6ecf7319539f2868542124a9b68b0fc02e9e59"
+  },
+  {
+    "path": "stage10_init_compare.py",
+    "size_bytes": 5507,
+    "sha256": "dcd3e15eb82c19759cd720830c69ec52ee33ee570f77b30747bba1632bd7c3b8"
+  },
+  {
+    "path": "stage10_initialization_assistance.py",
+    "size_bytes": 1698,
+    "sha256": "d5b99191c45250de0549765447f45fcb851e11975e5bd7af433585db62259ad7"
+  },
+  {
+    "path": "stage10_initialization_worker.py",
+    "size_bytes": 14411,
+    "sha256": "d3108d070dfb344624bfadf760c9e9e3e4fd9f29e4e0b76d685bd0e5efbb41b5"
+  },
+  {
+    "path": "stage10_recovery_common.py",
+    "size_bytes": 2594,
+    "sha256": "a5edba9d44a667fd7807a4ccf57b90ad43a11570e45ba6e3b3cf5f2113d69779"
+  },
+  {
+    "path": "stage10_runtime.py",
+    "size_bytes": 4854,
+    "sha256": "9f50dabf6a997d788c99ce5d472ef071d961fe491e8d976955157e9b93fdadd7"
+  },
+  {
+    "path": "stage10_trace.py",
+    "size_bytes": 7076,
+    "sha256": "217b405791ae666829973f5a051bb8abfebcbf1c3afa609a2550ed2d5a5c5d21"
+  },
+  {
+    "path": "test_recovery.py",
+    "size_bytes": 10071,
+    "sha256": "a11f8c4e223805ec8445bc654ad9b0a37b9c8c75869843f525cb2faf45ec4349"
+  }
+]

@@ -1,5 +1,7 @@
 # Stage 10 当前入口
 
+补充状态：阶段收尾提交为 `1a11f30cc7264d00dec7bce8f11449ded9164169`；分支和 `stage-10-complete` 推送均触发了 GitHub Actions。两次 CI 因归档恢复工具缺少 JSON 依赖而在测试收集时失败。先读 [CI 补充交接](microduck-stage-10-ci-followup.md) 与 `docs/audits/stage-10-ci-followup.json`。修复已在审查环境验证，尚待本机补充提交、用户 SSH 推送及新 CI 结果；旧阶段标签不移动。以下收尾准备记录作为历史上下文保留，不要再次运行旧收尾脚本。
+
 先读 [完整交接](microduck-stage-10-replay-and-head-contact-handoff.md) 和 `docs/audits/stage-10-final-acceptance.json`。技术诊断与视频/源码审查已完成，策略目标未完成；本文件生成时本机提交/标签与用户 SSH 推送仍待执行。实际完成状态以本机 finalization receipt 和后续正常成功的 SSH 推送输出为准。
 
 当前源基线 double-balance@00e34c2038771c5d4ad49fe45dff828c0232e60c；Stage 09 注释标签仍指向 9c51a133b40e4342985bab696e54fc02cd45f615。收尾工具将新建 stage-10-complete，不移动旧标签。Stage 08 E/20260929/update_004000.pt 继续作为主模型，SHA256 `86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97`，历史独立 652/768（84.90%）。Stage 10 零 PPO、无云计算、未重跑 Stage 06 smoke。
