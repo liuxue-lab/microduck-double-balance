@@ -1,0 +1,40 @@
+继续 Microduck 双重平衡项目，本对话只处理 Stage 11。先审查交接，再给具体范围与执行方案。
+
+本机仓库：/home/lx/microduck-double-balance/workspace
+下载目录：/home/lx/下载
+若当前环境无法读取本机路径，请明确指出缺哪些文件，可从已连接 GitHub 仓库读取代码与文档；本机原始证据不可假装已读。
+
+先读 AGENTS.md，以及：
+- docs/handoffs/microduck-stage-10-current-handoff.md
+- docs/handoffs/microduck-stage-10-replay-and-head-contact-handoff.md
+- docs/handoffs/microduck-stage-10-ci-followup.md
+- docs/audits/stage-10-publication-confirmation.json（若本机尚未应用补记，先说明；CI 成功事实如下）
+- docs/audits/stage-10-final-acceptance.json
+- docs/audits/stage-10-final-evaluation-review.json
+- docs/audits/stage-10-source-mechanism-review.json
+- docs/audits/stage-10-failure-analysis.json
+- docs/audits/stage-10-video-review.json
+- docs/audits/stage-10-head-contact-migration-audit.json
+- docs/audits/stage-10-evidence-inventory.json
+- docs/audits/stage-10-local-finalization.json，以及存在时对应的本机 finalization receipt
+- docs/handoffs/microduck-local-ssh-push-protocol.md
+- docs/handoffs/microduck-cloud-gpu-and-transfer-protocol.md
+
+已确认状态：
+1. Stage 10 技术诊断/审查/归档已完成，零 PPO、无云计算、未改物理/正式任务。策略目标未完成。
+2. 已成功 SSH 推送修复提交 293900b9ca73ef90fd8152e215f3676cbc401db6。stage-10-complete 仍指向 1a11f30cc7264d00dec7bce8f11449ded9164169，不移动。若已应用交接补记，分支可能另有文档提交，以本机输出为准。
+3. CI run 36892445739 对应 293900b，已 completed/success；CPU 416 passed、6 skipped、3 warnings、17 subtests passed，其余工作流步骤也通过。旧 CI 收集失败已修复，不再重跑旧收尾/修复工具，不重复完整远端核验；绿色 CI 不等于平衡策略成功。
+4. 主模型仍为 Stage 08 E/20260929/update_004000.pt，SHA256 86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97；历史独立严格成功率 652/768（84.90%）。开发集重复不能并入该结果。
+5. 同一 RTX 5060 的重复标签差异已定位到首物理步及初始化派生字段。并行浮点累加顺序是有证据支持的机制解释，尚未证明完整根因。B1/C1 事后检查缺口保留，不倒填；不默认继续无明确判别目标的 GPU 重跑或改 TF32/求解器。
+
+Stage 11 优先范围：
+- 先提交具体的“真实头顶接触、去托盘”零 PPO 物理验证方案：明确修改哪些文件、碰撞对象、接触面/摩擦、18 g 托盘质量与完整惯量去除，以及验证项目和判据。
+- 当前上球只允许接触托盘/地面，不允许头壳，不能直接删板。方案需保留旧托盘任务/模型/结果，建立独立变体；不加隐藏平板、不偷偷提高摩擦，不永久锁死头颈。
+- 我确认后，再做本机隔离的接触点、法线、穿透、滑移、有效摩擦、总质量/质心/惯量验证。固定头材料测试只证明物理，不能算无辅助平衡成功。
+- 正式任务迁移另行审查上球观测、初态、奖励和验收参考系；相同观测维度不等于语义兼容。先解释 Rᵀ(v_ball-v_site)、旋转坐标导数和真实滑移的区别与选用理由。
+- 优先无辅助双球平衡，暂停头部纠偏；允许调整时转头、稳定后再回正。旧标准保持 10 秒回合终局连续稳定至少 5 秒、无辅助，下球速度不得超过 0.15 m/s。不得静默修补计时边界或放宽标准。
+- 当前未授权新增训练或正式物理/任务改动。需要修改 Stage 03、Stage 04、奖励、约束或验收时，先说明具体改动、理由和影响供我确认。未来训练须先确认 checkpoint/归一化、Adam、LR、iteration/common_step_counter/课程进度、辅助状态恢复或重置，以及组数/种子/每组新增 PPO、评估间隔、云 GPU 时长/费用预算与停止条件。
+
+长期规则：本机 RTX 5060 仅代码、MuJoCo 仿真、推理和视频；正式训练用获批预算的云 GPU，不重跑 Stage 06 smoke。RTX 5090 已由我确认手动关机；不自行启停实例，不运行旧失败关机守护。Stage 09 完整云原始轨迹未全回传，禁止删除云数据。以后云计算与必要回传 SHA256 完成后立即提醒我手动关机，提醒与实际确认分别记录。代码和模型归档分支分开、不合并，上传取文件默认 Git SSH。本机创建提交和注释标签，由我 SSH 推送，成功后不重复完整远端核验。每阶段完成评估/必要视频审查/归档/交接/提交，保留关机提醒、传输规范、固定路径、常见错误和快捷命令。
+
+先检查文件可读性，完成审查，再提出 Stage 11 最小验证方案；本条开场不构成对物理修改或训练的确认。

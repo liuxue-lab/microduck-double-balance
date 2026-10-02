@@ -1,5 +1,19 @@
 # Microduck Stage 10：重放差异诊断与头顶接触迁移审计交接
 
+## 2026-10-02 发布与 CI 最终补记（优先于下文旧快照）
+
+用户已通过既有 Git SSH 成功推送 `double-balance`：`1a11f30..293900b`。此前按用户明确要求完成的只读远端检查确认分支为 `293900b9ca73ef90fd8152e215f3676cbc401db6`；注释标签 `stage-10-complete` 保持指向 `1a11f30cc7264d00dec7bce8f11449ded9164169`，没有移动。此后不重复完整远端核验。
+
+本次仅补查该修复提交的 [CI 工作流](https://github.com/liuxue-lab/microduck-double-balance/actions/runs/36892445739)：run `36892445739`、job `110471132738` 均为 `completed / success`，工作流更新时间为北京时间 **2026-10-02 00:39:08**。CPU 测试日志为 **416 passed、6 skipped、3 warnings、17 subtests passed**；构建、CLI 发现、策略导出、ONNX rollout parity、现有结构生成检查和 136 项相对文档链接检查均通过。保留跳过和警告数，不写成全部测试无条件通过。
+
+原来的两次 CI 失败由恢复工具归档遗漏 JSON 依赖引起，已由 `293900b` 修复并获上述远端验证。旧失败日志和旧 PENDING 记录保留，作为历史快照；它们不覆盖本补记。详细证据见 [发布确认](../audits/stage-10-publication-confirmation.json) 和 [CI 补充交接](microduck-stage-10-ci-followup.md)。
+
+Stage 10 技术诊断、审查、归档、主收尾提交/标签、用户推送及 CI 修复已闭环；双球平衡策略目标仍未完成。零 PPO、无新模型、无正式拆板或训练授权，B1/C1 事后检查缺口及根因不确定性不变。上述绿色 CI 仅对应 `293900b`，不预先认证此后文档补记或其他提交。
+
+本补记由助手交付，本机是否应用、生成何种补充提交及是否推送，以随后本机输出为准；不得伪造新提交 SHA。应用本补记后，仅推送 `double-balance`，保留原阶段标签。不要重跑旧 finalize、ci-fix 或 A/B/C 诊断脚本。
+
+下一对话进入 Stage 11，先审查头顶接触物理验证方案；正式改物理、任务/验收、奖励或约束前仍须用户确认。完整开场见 [Stage 11 开场文本](microduck-stage-11-opening-prompt.txt)。下文原收尾命令仅为历史追溯，不再是下一步操作。
+
 审查日期：2026-10-01。证据基线：`double-balance@00e34c2038771c5d4ad49fe45dff828c0232e60c`。
 
 Stage 10 的技术审查已完成，允许以明确保留问题的方式收尾。本文件生成时，本机归档核验、提交、注释标签和 SSH 推送尚待执行；只有收尾工具实际输出的 receipt 才证明本机步骤完成，正常成功的用户 SSH 推送输出才证明发布完成。不得把这份准备文件当作已执行回执。
