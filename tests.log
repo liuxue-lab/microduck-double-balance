@@ -1,0 +1,19 @@
+test_all_other_model_arrays_and_options_preserved (test_head_contact_floor_stiffness.StiffnessGuards.test_all_other_model_arrays_and_options_preserved) ... ok
+test_archive_runtime_and_input_mismatch_stop_without_replay (test_head_contact_floor_stiffness.StiffnessGuards.test_archive_runtime_and_input_mismatch_stop_without_replay) ... ok
+test_complete_mock_horizon_reports_impulse_without_claiming_stage_pass (test_head_contact_floor_stiffness.StiffnessGuards.test_complete_mock_horizon_reports_impulse_without_claiming_stage_pass) ... ok
+test_declared_cases_reject_extra_parameter_search (test_head_contact_floor_stiffness.StiffnessGuards.test_declared_cases_reject_extra_parameter_search) ... ok
+test_engine_failure_records_attempt_and_no_completed_step (test_head_contact_floor_stiffness.StiffnessGuards.test_engine_failure_records_attempt_and_no_completed_step) ... ok
+test_expired_budget_prevents_first_step (test_head_contact_floor_stiffness.StiffnessGuards.test_expired_budget_prevents_first_step) ... ok
+test_matrix_only_continues_known_penetration_failure (test_head_contact_floor_stiffness.StiffnessGuards.test_matrix_only_continues_known_penetration_failure) ... ok
+test_nonhorizontal_floor_rejected_before_integration (test_head_contact_floor_stiffness.StiffnessGuards.test_nonhorizontal_floor_rejected_before_integration) ... ok
+test_original_precontact_gate_remains_active (test_head_contact_floor_stiffness.StiffnessGuards.test_original_precontact_gate_remains_active) ... ok
+test_post_collision_check_does_not_change_primary_data (test_head_contact_floor_stiffness.StiffnessGuards.test_post_collision_check_does_not_change_primary_data) ... ok
+test_post_state_rejects_unexpected_head_contact (test_head_contact_floor_stiffness.StiffnessGuards.test_post_state_rejects_unexpected_head_contact) ... ok
+test_saved_time_comparison_requires_aligned_clocks (test_head_contact_floor_stiffness.StiffnessGuards.test_saved_time_comparison_requires_aligned_clocks) ... ok
+test_terminal_post_overlap_stops_despite_valid_precontact (test_head_contact_floor_stiffness.StiffnessGuards.test_terminal_post_overlap_stops_despite_valid_precontact) ... ok
+test_warmstart_mismatch_prevents_integration (test_head_contact_floor_stiffness.StiffnessGuards.test_warmstart_mismatch_prevents_integration) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.162s
+
+OK

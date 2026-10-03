@@ -1,0 +1,19 @@
+{
+  "head": "056eaf2b0c78261f34e3fa581858c8573cab981e",
+  "versions": {
+    "mujoco": "3.10.0",
+    "mujoco-warp": "3.8.1",
+    "mjlab": "1.3.0",
+    "warp-lang": "1.12.0"
+  },
+  "expected_versions": {
+    "mujoco": "3.10.0",
+    "mujoco-warp": "3.8.1",
+    "mjlab": "1.3.0",
+    "warp-lang": "1.12.0"
+  },
+  "working_tree": "## double-balance...origin/double-balance\n?? docs/audits/stage-11-floor-impact-diagnostic-plan.json\n?? docs/audits/stage-11-floor-impact-review.json\n?? docs/audits/stage-11-floor-stiffness-plan.json\n?? docs/audits/stage-11-geometry-gate-v2-review.json\n?? docs/audits/stage-11-local-material-review.json\n?? docs/audits/stage-11-local-static-review.json\n?? docs/audits/stage-11-physics-plan.json\n?? docs/audits/stage-11-physics-review.json\n?? docs/handoffs/microduck-stage-11-head-contact-physics-handoff.md\n?? scripts/diagnose_head_contact_floor_impact.py\n?? scripts/diagnose_head_contact_floor_stiffness.py\n?? scripts/validate_head_contact_physics.py\n?? src/mjlab_microduck/robot/head_contact.py\n?? tests/test_head_contact_floor_impact.py\n?? tests/test_head_contact_floor_stiffness.py\n?? tests/test_head_contact_physics.py\n",
+  "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+  "new_ppo_updates": 0,
+  "network_used_by_validator": false
+}

@@ -1,0 +1,99 @@
+{
+  "original_material": {
+    "zip_sha256": "d2c6cb2c788ee3b7020f6557dac1e0646940bebd43b290dc4b3f5c6e8110278d",
+    "zip_bytes_verified_on_laptop": true,
+    "artifact_commit": "51df1774385fec998b8a8e7f7dcfcde5f5a10a27",
+    "source_directory": "/home/lx/microduck-double-balance/artifacts/double-balance-stage11/physics/20261003T094423Z",
+    "files": {
+      "run-summary.json": {
+        "sha256": "43bfe8d1464f0ede799e3fb5d8962b7d0fdc387d495dde4fa7c9cadbca7a48cb",
+        "bytes": 1211
+      },
+      "local-v2/physics-review.json": {
+        "sha256": "4d5172e2d73827fe5437c9af418761671b3b0ae52b77ff7cb11eed03b251807b",
+        "bytes": 4673
+      },
+      "local-v2/material-fixture.mjb": {
+        "sha256": "e6cd330bddc3a29abf9ce4eca4f308a2680e4910405725e5ce054cb0a19d2da0",
+        "bytes": 3469516
+      },
+      "local-v2/material-options.json": {
+        "sha256": "d954d5bb86a74df05232642698a740521d5ed29ce73e477a078b86dff25fe942",
+        "bytes": 821
+      },
+      "local-v2/material-scope.json": {
+        "sha256": "a4dac57951af473e4fc932c4c1f39412f15bc6d54a317b19d97c44aec6729198",
+        "bytes": 328
+      },
+      "local-v2/cpu/release-y-minus12/states.npz": {
+        "sha256": "3b09484c63730b8f59819ed1941556b0279cfd62056b704f8df7cf4f92451766",
+        "bytes": 16812
+      },
+      "local-v2/cpu/release-y-minus12/contacts.jsonl.gz": {
+        "sha256": "f95e63b00fbfe12e6b6e5750c479a6381aedfb7fc17b661fad5057b262b78494",
+        "bytes": 52469
+      },
+      "local-v2/cpu/release-y-minus12/raw-contacts.jsonl.gz": {
+        "sha256": "b1ce32231db80d7c38ad0c616fdaa0ea37c30954e67c3ada5a412d64405f1cb2",
+        "bytes": 16567
+      },
+      "local-v2/material-cpu-release-y-minus12-BLOCKED.mp4": {
+        "sha256": "c55a11f706dc097e3103d6529d8601f010603d98505a2257313e186bef4b9335",
+        "bytes": 26488
+      }
+    }
+  },
+  "archived_five_case": {
+    "artifact_commit": "fe2db584e9b8fc391f9014e0e3401b4ceef9f5e5",
+    "zip_sha256": "dd42f05c240f45127731c87d9ad96079ced3c204588b505d762be804467f4f52",
+    "files": {
+      "run-summary.json": {
+        "sha256": "3ce9264dcb345c6fc9d48b3695df068554fa22f5593a87fc8f38728798a926d5",
+        "bytes": 1653
+      },
+      "local-versions.json": {
+        "sha256": "72dc44cf50f8fba1840614d21d3563642db767fd7d518578b77b520ea2d1567c",
+        "bytes": 96
+      },
+      "diagnostic/diagnostic-review.json": {
+        "sha256": "07a0f04d031d5e072c24c941fb7e9847c363146bfa4fe6cc6b7d2b94b21697f8",
+        "bytes": 14939
+      },
+      "diagnostic/input-provenance.json": {
+        "sha256": "77701714a8acf4057be13c0f3d02794f7790f9298cb8d014752c61851e450eb9",
+        "bytes": 1743
+      },
+      "diagnostic/preflight.json": {
+        "sha256": "b76227c4ad9883686f721ff4d47d3cd11040f467dd3fa45590e167da96b1022a",
+        "bytes": 1100
+      },
+      "diagnostic/cases/A0/initialization.json": {
+        "sha256": "6c138fec3d91dddf42efb8014c200900b59a2ffb8cf9217dfb8352ff51f5998a",
+        "bytes": 706
+      },
+      "diagnostic/cases/A0/states.npz": {
+        "sha256": "548eaa22d71dc2017a22b0ac30b95a6e887b53c00a33edcc3f490b12ba9287cc",
+        "bytes": 1064
+      }
+    },
+    "archived_A0_reused_without_integration": true,
+    "baseline_reproduction": {
+      "pass": true,
+      "time_error_s": 0.0,
+      "distance_error_m": 0.0,
+      "force_component_absolute_error": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_tolerance": {
+        "rtol": 1e-05,
+        "atol": 1e-07
+      }
+    },
+    "runtime_and_original_inputs_match_A0": true
+  }
+}
