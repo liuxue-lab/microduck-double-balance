@@ -1,0 +1,36 @@
+test_candidate_timestep_solref_and_bad_floor_rejected (test_head_contact_friction.FrictionGuards.test_candidate_timestep_solref_and_bad_floor_rejected) ... ok
+test_clock_reset_and_nonfinite_state_stop (test_head_contact_friction.FrictionGuards.test_clock_reset_and_nonfinite_state_stop) ... 2026-10-03T18:38:12.524174+00:00 slide-x-plus ERROR_STOP_MATRIX completed=1
+2026-10-03T18:38:12.534687+00:00 slide-x-plus ERROR_STOP_MATRIX completed=1
+ok
+test_contact_intervals_preserve_loss_and_right_censoring (test_head_contact_friction.FrictionGuards.test_contact_intervals_preserve_loss_and_right_censoring) ... ok
+test_effective_material_and_unexpected_contacts_block (test_head_contact_friction.FrictionGuards.test_effective_material_and_unexpected_contacts_block) ... ok
+test_exact_original_six_initial_conditions_and_order (test_head_contact_friction.FrictionGuards.test_exact_original_six_initial_conditions_and_order) ... ok
+test_expired_budget_prevents_first_step (test_head_contact_friction.FrictionGuards.test_expired_budget_prevents_first_step) ... 2026-10-03T18:38:12.608572+00:00 slide-x-plus ERROR_STOP_MATRIX completed=0
+ok
+test_failed_engine_attempt_is_counted_without_completed_step (test_head_contact_friction.FrictionGuards.test_failed_engine_attempt_is_counted_without_completed_step) ... 2026-10-03T18:38:12.616848+00:00 slide-x-plus ERROR_STOP_MATRIX completed=0
+ok
+test_floor_at_limit_censored_above_limit_blocked (test_head_contact_friction.FrictionGuards.test_floor_at_limit_censored_above_limit_blocked) ... ok
+test_full_horizon_is_physics_evidence_only_with_exact_accounting (test_head_contact_friction.FrictionGuards.test_full_horizon_is_physics_evidence_only_with_exact_accounting) ... 2026-10-03T18:38:12.860314+00:00 slide-x-plus FULL_HORIZON_PHYSICAL_GATES_REVIEW_REQUIRED completed=1500
+ok
+test_head_error_takes_priority_over_floor_endpoint (test_head_contact_friction.FrictionGuards.test_head_error_takes_priority_over_floor_endpoint) ... ok
+test_head_gate_failure_stops_case_and_retains_log (test_head_contact_friction.FrictionGuards.test_head_gate_failure_stops_case_and_retains_log) ... 2026-10-03T18:38:12.885286+00:00 slide-x-plus ERROR_STOP_MATRIX completed=1
+ok
+test_no_head_over_full_horizon_is_error (test_head_contact_friction.FrictionGuards.test_no_head_over_full_horizon_is_error) ... 2026-10-03T18:38:13.002909+00:00 slide-x-plus ERROR_STOP_MATRIX completed=1500
+ok
+test_no_parameters_changed_by_copy (test_head_contact_friction.FrictionGuards.test_no_parameters_changed_by_copy) ... ok
+test_only_floor_endpoints_allow_advancing_and_error_stops_batch (test_head_contact_friction.FrictionGuards.test_only_floor_endpoints_allow_advancing_and_error_stops_batch) ... ok
+test_pinned_archive_binds_local_bytes_and_rejects_mutation (test_head_contact_friction.FrictionGuards.test_pinned_archive_binds_local_bytes_and_rejects_mutation) ... ok
+test_positive_power_is_retained_not_silently_pass_filtered (test_head_contact_friction.FrictionGuards.test_positive_power_is_retained_not_silently_pass_filtered) ... ok
+test_post_floor_overpenetration_preserved_as_blocked (test_head_contact_friction.FrictionGuards.test_post_floor_overpenetration_preserved_as_blocked) ... 2026-10-03T18:38:13.026280+00:00 slide-x-plus FLOOR_PENETRATION_BLOCKED completed=1
+ok
+test_post_geometry_preserves_live_state_and_warmstart (test_head_contact_friction.FrictionGuards.test_post_geometry_preserves_live_state_and_warmstart) ... ok
+test_post_head_penetration_remains_a_global_error (test_head_contact_friction.FrictionGuards.test_post_head_penetration_remains_a_global_error) ... ok
+test_terminal_post_floor_stops_after_one_step_without_next_force (test_head_contact_friction.FrictionGuards.test_terminal_post_floor_stops_after_one_step_without_next_force) ... 2026-10-03T18:38:13.036078+00:00 slide-x-plus FLOOR_EVENT_CENSORED completed=1
+ok
+test_video_selection_retains_worst_slide_spin_first_blocker (test_head_contact_friction.FrictionGuards.test_video_selection_retains_worst_slide_spin_first_blocker) ... ok
+test_wrong_matrix_and_global_step_budget_are_refused (test_head_contact_friction.FrictionGuards.test_wrong_matrix_and_global_step_budget_are_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.547s
+
+OK

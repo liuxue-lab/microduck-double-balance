@@ -1,0 +1,94 @@
+{
+  "original_material": {
+    "zip_sha256": "d2c6cb2c788ee3b7020f6557dac1e0646940bebd43b290dc4b3f5c6e8110278d",
+    "zip_bytes_verified_on_laptop": true,
+    "artifact_commit": "51df1774385fec998b8a8e7f7dcfcde5f5a10a27",
+    "source_directory": "/home/lx/microduck-double-balance/artifacts/double-balance-stage11/physics/20261003T094423Z",
+    "files": {
+      "run-summary.json": {
+        "sha256": "43bfe8d1464f0ede799e3fb5d8962b7d0fdc387d495dde4fa7c9cadbca7a48cb",
+        "bytes": 1211
+      },
+      "local-v2/physics-review.json": {
+        "sha256": "4d5172e2d73827fe5437c9af418761671b3b0ae52b77ff7cb11eed03b251807b",
+        "bytes": 4673
+      },
+      "local-v2/material-fixture.mjb": {
+        "sha256": "e6cd330bddc3a29abf9ce4eca4f308a2680e4910405725e5ce054cb0a19d2da0",
+        "bytes": 3469516
+      },
+      "local-v2/material-options.json": {
+        "sha256": "d954d5bb86a74df05232642698a740521d5ed29ce73e477a078b86dff25fe942",
+        "bytes": 821
+      },
+      "local-v2/material-scope.json": {
+        "sha256": "a4dac57951af473e4fc932c4c1f39412f15bc6d54a317b19d97c44aec6729198",
+        "bytes": 328
+      },
+      "local-v2/cpu/release-y-minus12/states.npz": {
+        "sha256": "3b09484c63730b8f59819ed1941556b0279cfd62056b704f8df7cf4f92451766",
+        "bytes": 16812
+      },
+      "local-v2/cpu/release-y-minus12/contacts.jsonl.gz": {
+        "sha256": "f95e63b00fbfe12e6b6e5750c479a6381aedfb7fc17b661fad5057b262b78494",
+        "bytes": 52469
+      },
+      "local-v2/cpu/release-y-minus12/raw-contacts.jsonl.gz": {
+        "sha256": "b1ce32231db80d7c38ad0c616fdaa0ea37c30954e67c3ada5a412d64405f1cb2",
+        "bytes": 16567
+      },
+      "local-v2/material-cpu-release-y-minus12-BLOCKED.mp4": {
+        "sha256": "c55a11f706dc097e3103d6529d8601f010603d98505a2257313e186bef4b9335",
+        "bytes": 26488
+      },
+      "local-v2/material-geometry.npz": {
+        "sha256": "b2b22ae8e2798b18b292bfc3c181475dde03e5f0030e93839f4447122fb1dcc5",
+        "bytes": 225030
+      },
+      "local-v2/cpu/release-center/initial.json": {
+        "sha256": "af0f68a4c0bba9172d1c8aa2d10fa0f816ffc096e94bb5946157ed3c2322b50c",
+        "bytes": 412
+      },
+      "local-v2/static-geometry.json": {
+        "sha256": "af40759baabbc89e76912570f6136598c70cd2e554d704eb94bac8061895d343",
+        "bytes": 53332
+      },
+      "local-v2/structure-inertia.json": {
+        "sha256": "dcc20358d3e45772a9ec483d1fbba4271412ff9b6596d698508a3c56796c828e",
+        "bytes": 5564
+      }
+    }
+  },
+  "refinement": {
+    "directory": "/home/lx/microduck-double-balance/artifacts/double-balance-stage11/floor-refinement/20261003T173938Z",
+    "artifact_commit": "234030e0f701e788f2d649c31b98ba76a5cd8934",
+    "zip_sha256": "5085c2ec989361d0523cbad27cbadb7927cb928f5f39175bb5f10ef8a81c394a",
+    "files": {
+      "run-summary.json": {
+        "sha256": "930dbb73751a9e9435ff1128d2b64996fa02b044fecf1732388a55f3d9d49720",
+        "bytes": 2594
+      },
+      "diagnostic/preflight.json": {
+        "sha256": "609a9cb95b1df7c245bf77ff773d86018d4c9d73d23a1e9e4c4543d7c784e24b",
+        "bytes": 1508
+      },
+      "diagnostic/diagnostic-review.json": {
+        "sha256": "b6b4b51581d3494894a9b3850ea45ed9164965c667c31209ff1a6a7379232e38",
+        "bytes": 10961
+      },
+      "diagnostic/input-provenance.json": {
+        "sha256": "62ac21909057c653910b38cd0e18bd857b94e978ab6da2366533f273d549846f",
+        "bytes": 5286
+      }
+    }
+  },
+  "frozen_sources": {
+    "src/mjlab_microduck/robot/head_contact.py": "8a2446aa27d8e420e6e26e5e9985ab24cb774036936f393de680857edfd0af64",
+    "scripts/validate_head_contact_physics.py": "d5f88ffc2a65c3d98a6714d8aa67b8bffe8144f81be6e1d1fd6d89dcb908067c",
+    "scripts/diagnose_head_contact_floor_impact.py": "130dee8548e9a1127380162254d6a2d70bf710e30622927bafc5bdefe7d620a7",
+    "scripts/diagnose_head_contact_floor_stiffness.py": "e2f52491480582fbdd754fc18a5e5a5b86e7a59b01afa97d6e34327c8163b54a",
+    "scripts/diagnose_head_contact_floor_refinement.py": "7e4005e965e2ff725b29534221689c719eab6299441874b298c28bbb9560abab"
+  },
+  "prior_canonical_steps": 6211,
+  "old_experiments_replayed": false
+}

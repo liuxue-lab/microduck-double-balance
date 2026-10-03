@@ -1,0 +1,2034 @@
+{
+  "status": "HEAD_FRICTION_FLOOR_ENDPOINTS_REVIEW_REQUIRED",
+  "cases": [
+    {
+      "name": "slide-x-plus",
+      "status": "FLOOR_PENETRATION_BLOCKED",
+      "steps": 320,
+      "attempted_steps": 320,
+      "horizon_completed": false,
+      "fixed_material_fixture": true,
+      "policy_success": null,
+      "new_ppo_updates": 0,
+      "full_robot_steps": 0,
+      "head_contact_steps": 230,
+      "floor_contact_steps": 0,
+      "max_head_slip_m_s": 0.04248939454127202,
+      "max_head_penetration_m": 8.687221783032495e-05,
+      "max_post_head_overlap_m": 8.687221783032495e-05,
+      "max_floor_penetration_m": 0.0023108818159979887,
+      "head_normal_impulse_Ns": 0.04640945802065169,
+      "head_tangential_world_impulse_Ns": [
+        0.0019098078872707284,
+        -2.0609409176388513e-11,
+        0.0005943035510691025
+      ],
+      "head_torsional_impulse_Nms": 2.3695777486227106e-13,
+      "head_tangential_work_J": -1.789551682892136e-05,
+      "head_torsional_work_J": -1.668484775970071e-21,
+      "max_positive_head_tangential_power_W": 1.432397997259554e-06,
+      "max_positive_head_torsional_power_W": 0.0,
+      "head_tangential_positive_power_samples": 6,
+      "head_torsional_positive_power_samples": 0,
+      "max_head_cone_utilization": 1.0,
+      "legacy_v1_failed_contact_count": 0,
+      "head_contact_intervals": [
+        {
+          "first_pre_step": 5,
+          "end_step_exclusive": 118,
+          "start_s": 0.01,
+          "end_s": 0.23600000000000002,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 119,
+          "end_step_exclusive": 176,
+          "start_s": 0.23800000000000002,
+          "end_s": 0.352,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 177,
+          "end_step_exclusive": 185,
+          "start_s": 0.354,
+          "end_s": 0.37,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 186,
+          "end_step_exclusive": 198,
+          "start_s": 0.372,
+          "end_s": 0.396,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 199,
+          "end_step_exclusive": 208,
+          "start_s": 0.398,
+          "end_s": 0.41600000000000004,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 209,
+          "end_step_exclusive": 215,
+          "start_s": 0.418,
+          "end_s": 0.43,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 216,
+          "end_step_exclusive": 222,
+          "start_s": 0.432,
+          "end_s": 0.444,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 223,
+          "end_step_exclusive": 226,
+          "start_s": 0.446,
+          "end_s": 0.452,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 227,
+          "end_step_exclusive": 229,
+          "start_s": 0.454,
+          "end_s": 0.458,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 230,
+          "end_step_exclusive": 234,
+          "start_s": 0.46,
+          "end_s": 0.468,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 235,
+          "end_step_exclusive": 238,
+          "start_s": 0.47000000000000003,
+          "end_s": 0.47600000000000003,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 239,
+          "end_step_exclusive": 240,
+          "start_s": 0.47800000000000004,
+          "end_s": 0.48,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 241,
+          "end_step_exclusive": 244,
+          "start_s": 0.482,
+          "end_s": 0.488,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 246,
+          "end_step_exclusive": 247,
+          "start_s": 0.492,
+          "end_s": 0.494,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 249,
+          "end_step_exclusive": 250,
+          "start_s": 0.498,
+          "end_s": 0.5,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 253,
+          "end_step_exclusive": 254,
+          "start_s": 0.506,
+          "end_s": 0.508,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        }
+      ],
+      "no_head_contact_intervals": [
+        {
+          "first_pre_step": 0,
+          "end_step_exclusive": 5,
+          "start_s": 0.0,
+          "end_s": 0.01,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 118,
+          "end_step_exclusive": 119,
+          "start_s": 0.23600000000000002,
+          "end_s": 0.23800000000000002,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 176,
+          "end_step_exclusive": 177,
+          "start_s": 0.352,
+          "end_s": 0.354,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 185,
+          "end_step_exclusive": 186,
+          "start_s": 0.37,
+          "end_s": 0.372,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 198,
+          "end_step_exclusive": 199,
+          "start_s": 0.396,
+          "end_s": 0.398,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 208,
+          "end_step_exclusive": 209,
+          "start_s": 0.41600000000000004,
+          "end_s": 0.418,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 215,
+          "end_step_exclusive": 216,
+          "start_s": 0.43,
+          "end_s": 0.432,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 222,
+          "end_step_exclusive": 223,
+          "start_s": 0.444,
+          "end_s": 0.446,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 226,
+          "end_step_exclusive": 227,
+          "start_s": 0.452,
+          "end_s": 0.454,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 229,
+          "end_step_exclusive": 230,
+          "start_s": 0.458,
+          "end_s": 0.46,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 234,
+          "end_step_exclusive": 235,
+          "start_s": 0.468,
+          "end_s": 0.47000000000000003,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 238,
+          "end_step_exclusive": 239,
+          "start_s": 0.47600000000000003,
+          "end_s": 0.47800000000000004,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 240,
+          "end_step_exclusive": 241,
+          "start_s": 0.48,
+          "end_s": 0.482,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 244,
+          "end_step_exclusive": 246,
+          "start_s": 0.488,
+          "end_s": 0.492,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 247,
+          "end_step_exclusive": 249,
+          "start_s": 0.494,
+          "end_s": 0.498,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 250,
+          "end_step_exclusive": 253,
+          "start_s": 0.5,
+          "end_s": 0.506,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 254,
+          "end_step_exclusive": 320,
+          "start_s": 0.508,
+          "end_s": 0.64,
+          "right_censored_at_record_end": true,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        }
+      ],
+      "critical_frame_steps": [
+        5,
+        118,
+        119,
+        176,
+        177,
+        185,
+        186,
+        198,
+        199,
+        208,
+        209,
+        215,
+        216,
+        222,
+        223,
+        226,
+        227,
+        229,
+        230,
+        234,
+        235,
+        238,
+        239,
+        240,
+        241,
+        244,
+        246,
+        247,
+        249,
+        250,
+        253,
+        254,
+        5,
+        5
+      ],
+      "physical_friction_calibration": false,
+      "max_head_slip_step": 5,
+      "max_head_penetration_step": 5,
+      "floor_endpoint": {
+        "step": 319,
+        "pre_time_s": 0.638,
+        "post_time_s": 0.6400000000000005,
+        "post": {
+          "phase": "post_integration_geometry_only_no_force_claim",
+          "time_s": 0.6400000000000005,
+          "contacts": [
+            {
+              "geom": [
+                0,
+                2
+              ],
+              "other": "floor",
+              "dist": -0.0023108818159979887,
+              "allowed": true,
+              "pos": [
+                -0.10144401919545579,
+                8.313991778772424e-10,
+                -0.001155440907998996
+              ],
+              "normal_toward_ball": [
+                0.0,
+                0.0,
+                1.0
+              ]
+            }
+          ],
+          "floor_gap_m": -0.0023108818159979887,
+          "floor_overlap_m": 0.0023108818159979887,
+          "original_head_surface_gap_m": 0.08527848041595942,
+          "head_overlap_m": 0.0
+        }
+      },
+      "model_unchanged": true,
+      "elapsed_simulation_s": 0.64,
+      "completed_step_count_exact": true,
+      "wall_seconds": 6.127800503999879,
+      "classified_pre_step_samples": 320,
+      "power_and_cone_metrics_are_observations_not_pass_thresholds": true
+    },
+    {
+      "name": "slide-x-minus",
+      "status": "FLOOR_EVENT_CENSORED",
+      "steps": 252,
+      "attempted_steps": 252,
+      "horizon_completed": false,
+      "fixed_material_fixture": true,
+      "policy_success": null,
+      "new_ppo_updates": 0,
+      "full_robot_steps": 0,
+      "head_contact_steps": 162,
+      "floor_contact_steps": 0,
+      "max_head_slip_m_s": 0.05751060545872744,
+      "max_head_penetration_m": 8.687197706460856e-05,
+      "max_post_head_overlap_m": 8.687197706460856e-05,
+      "max_floor_penetration_m": 0.0007269843545814926,
+      "head_normal_impulse_Ns": 0.03319970074956126,
+      "head_tangential_world_impulse_Ns": [
+        0.0018701545373526016,
+        -1.2817512374391212e-12,
+        0.0005608746195251244
+      ],
+      "head_torsional_impulse_Nms": 1.4961150564957172e-14,
+      "head_tangential_work_J": -2.5784182208788038e-05,
+      "head_torsional_work_J": -8.48239802786894e-24,
+      "max_positive_head_tangential_power_W": 1.6382060055202243e-06,
+      "max_positive_head_torsional_power_W": 0.0,
+      "head_tangential_positive_power_samples": 3,
+      "head_torsional_positive_power_samples": 0,
+      "max_head_cone_utilization": 1.0,
+      "legacy_v1_failed_contact_count": 0,
+      "head_contact_intervals": [
+        {
+          "first_pre_step": 5,
+          "end_step_exclusive": 50,
+          "start_s": 0.01,
+          "end_s": 0.1,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 51,
+          "end_step_exclusive": 108,
+          "start_s": 0.10200000000000001,
+          "end_s": 0.216,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 109,
+          "end_step_exclusive": 118,
+          "start_s": 0.218,
+          "end_s": 0.23600000000000002,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 119,
+          "end_step_exclusive": 131,
+          "start_s": 0.23800000000000002,
+          "end_s": 0.262,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 132,
+          "end_step_exclusive": 141,
+          "start_s": 0.264,
+          "end_s": 0.28200000000000003,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 142,
+          "end_step_exclusive": 147,
+          "start_s": 0.28400000000000003,
+          "end_s": 0.294,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 148,
+          "end_step_exclusive": 154,
+          "start_s": 0.296,
+          "end_s": 0.308,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 155,
+          "end_step_exclusive": 159,
+          "start_s": 0.31,
+          "end_s": 0.318,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 160,
+          "end_step_exclusive": 165,
+          "start_s": 0.32,
+          "end_s": 0.33,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 166,
+          "end_step_exclusive": 167,
+          "start_s": 0.332,
+          "end_s": 0.334,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 168,
+          "end_step_exclusive": 171,
+          "start_s": 0.336,
+          "end_s": 0.342,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 173,
+          "end_step_exclusive": 176,
+          "start_s": 0.34600000000000003,
+          "end_s": 0.352,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 179,
+          "end_step_exclusive": 180,
+          "start_s": 0.358,
+          "end_s": 0.36,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 184,
+          "end_step_exclusive": 186,
+          "start_s": 0.368,
+          "end_s": 0.372,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        }
+      ],
+      "no_head_contact_intervals": [
+        {
+          "first_pre_step": 0,
+          "end_step_exclusive": 5,
+          "start_s": 0.0,
+          "end_s": 0.01,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 50,
+          "end_step_exclusive": 51,
+          "start_s": 0.1,
+          "end_s": 0.10200000000000001,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 108,
+          "end_step_exclusive": 109,
+          "start_s": 0.216,
+          "end_s": 0.218,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 118,
+          "end_step_exclusive": 119,
+          "start_s": 0.23600000000000002,
+          "end_s": 0.23800000000000002,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 131,
+          "end_step_exclusive": 132,
+          "start_s": 0.262,
+          "end_s": 0.264,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 141,
+          "end_step_exclusive": 142,
+          "start_s": 0.28200000000000003,
+          "end_s": 0.28400000000000003,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 147,
+          "end_step_exclusive": 148,
+          "start_s": 0.294,
+          "end_s": 0.296,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 154,
+          "end_step_exclusive": 155,
+          "start_s": 0.308,
+          "end_s": 0.31,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 159,
+          "end_step_exclusive": 160,
+          "start_s": 0.318,
+          "end_s": 0.32,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 165,
+          "end_step_exclusive": 166,
+          "start_s": 0.33,
+          "end_s": 0.332,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 167,
+          "end_step_exclusive": 168,
+          "start_s": 0.334,
+          "end_s": 0.336,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 171,
+          "end_step_exclusive": 173,
+          "start_s": 0.342,
+          "end_s": 0.34600000000000003,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 176,
+          "end_step_exclusive": 179,
+          "start_s": 0.352,
+          "end_s": 0.358,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 180,
+          "end_step_exclusive": 184,
+          "start_s": 0.36,
+          "end_s": 0.368,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 186,
+          "end_step_exclusive": 252,
+          "start_s": 0.372,
+          "end_s": 0.504,
+          "right_censored_at_record_end": true,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        }
+      ],
+      "critical_frame_steps": [
+        5,
+        50,
+        51,
+        108,
+        109,
+        118,
+        119,
+        131,
+        132,
+        141,
+        142,
+        147,
+        148,
+        154,
+        155,
+        159,
+        160,
+        165,
+        166,
+        167,
+        168,
+        171,
+        173,
+        176,
+        179,
+        180,
+        184,
+        186,
+        5,
+        5
+      ],
+      "physical_friction_calibration": false,
+      "max_head_slip_step": 5,
+      "max_head_penetration_step": 5,
+      "floor_endpoint": {
+        "step": 251,
+        "pre_time_s": 0.502,
+        "post_time_s": 0.5040000000000003,
+        "post": {
+          "phase": "post_integration_geometry_only_no_force_claim",
+          "time_s": 0.5040000000000003,
+          "contacts": [
+            {
+              "geom": [
+                0,
+                2
+              ],
+              "other": "floor",
+              "dist": -0.0007269843545814926,
+              "allowed": true,
+              "pos": [
+                -0.10076178045159101,
+                5.6361026831922236e-11,
+                -0.00036349217729074457
+              ],
+              "normal_toward_ball": [
+                0.0,
+                0.0,
+                1.0
+              ]
+            }
+          ],
+          "floor_gap_m": -0.0007269843545814926,
+          "floor_overlap_m": 0.0007269843545814926,
+          "original_head_surface_gap_m": 0.0835689718780244,
+          "head_overlap_m": 0.0
+        }
+      },
+      "model_unchanged": true,
+      "elapsed_simulation_s": 0.504,
+      "completed_step_count_exact": true,
+      "wall_seconds": 4.46032439199962,
+      "classified_pre_step_samples": 252,
+      "power_and_cone_metrics_are_observations_not_pass_thresholds": true
+    },
+    {
+      "name": "slide-y-plus",
+      "status": "FLOOR_EVENT_CENSORED",
+      "steps": 247,
+      "attempted_steps": 247,
+      "horizon_completed": false,
+      "fixed_material_fixture": true,
+      "policy_success": null,
+      "new_ppo_updates": 0,
+      "full_robot_steps": 0,
+      "head_contact_steps": 159,
+      "floor_contact_steps": 0,
+      "max_head_slip_m_s": 0.05263354709247324,
+      "max_head_penetration_m": 8.072245141946266e-05,
+      "max_post_head_overlap_m": 8.072245141946266e-05,
+      "max_floor_penetration_m": 0.0008586851935442445,
+      "head_normal_impulse_Ns": 0.032196663039679246,
+      "head_tangential_world_impulse_Ns": [
+        0.0011663426396885457,
+        -0.001420011827615795,
+        0.0006574474552413314
+      ],
+      "head_torsional_impulse_Nms": 5.162150782070744e-06,
+      "head_tangential_work_J": -2.4092455323927636e-05,
+      "head_torsional_work_J": -1.723956674928201e-06,
+      "max_positive_head_tangential_power_W": 8.718820781648144e-08,
+      "max_positive_head_torsional_power_W": 0.0,
+      "head_tangential_positive_power_samples": 1,
+      "head_torsional_positive_power_samples": 0,
+      "max_head_cone_utilization": 1.0,
+      "legacy_v1_failed_contact_count": 0,
+      "head_contact_intervals": [
+        {
+          "first_pre_step": 5,
+          "end_step_exclusive": 83,
+          "start_s": 0.01,
+          "end_s": 0.166,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 84,
+          "end_step_exclusive": 105,
+          "start_s": 0.168,
+          "end_s": 0.21,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 106,
+          "end_step_exclusive": 121,
+          "start_s": 0.212,
+          "end_s": 0.242,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 122,
+          "end_step_exclusive": 134,
+          "start_s": 0.244,
+          "end_s": 0.268,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 135,
+          "end_step_exclusive": 143,
+          "start_s": 0.27,
+          "end_s": 0.28600000000000003,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 144,
+          "end_step_exclusive": 151,
+          "start_s": 0.28800000000000003,
+          "end_s": 0.302,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 152,
+          "end_step_exclusive": 157,
+          "start_s": 0.304,
+          "end_s": 0.314,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 158,
+          "end_step_exclusive": 163,
+          "start_s": 0.316,
+          "end_s": 0.326,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 165,
+          "end_step_exclusive": 169,
+          "start_s": 0.33,
+          "end_s": 0.338,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 171,
+          "end_step_exclusive": 173,
+          "start_s": 0.342,
+          "end_s": 0.34600000000000003,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 176,
+          "end_step_exclusive": 177,
+          "start_s": 0.352,
+          "end_s": 0.354,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 180,
+          "end_step_exclusive": 181,
+          "start_s": 0.36,
+          "end_s": 0.362,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        }
+      ],
+      "no_head_contact_intervals": [
+        {
+          "first_pre_step": 0,
+          "end_step_exclusive": 5,
+          "start_s": 0.0,
+          "end_s": 0.01,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 83,
+          "end_step_exclusive": 84,
+          "start_s": 0.166,
+          "end_s": 0.168,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 105,
+          "end_step_exclusive": 106,
+          "start_s": 0.21,
+          "end_s": 0.212,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 121,
+          "end_step_exclusive": 122,
+          "start_s": 0.242,
+          "end_s": 0.244,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 134,
+          "end_step_exclusive": 135,
+          "start_s": 0.268,
+          "end_s": 0.27,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 143,
+          "end_step_exclusive": 144,
+          "start_s": 0.28600000000000003,
+          "end_s": 0.28800000000000003,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 151,
+          "end_step_exclusive": 152,
+          "start_s": 0.302,
+          "end_s": 0.304,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 157,
+          "end_step_exclusive": 158,
+          "start_s": 0.314,
+          "end_s": 0.316,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 163,
+          "end_step_exclusive": 165,
+          "start_s": 0.326,
+          "end_s": 0.33,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 169,
+          "end_step_exclusive": 171,
+          "start_s": 0.338,
+          "end_s": 0.342,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 173,
+          "end_step_exclusive": 176,
+          "start_s": 0.34600000000000003,
+          "end_s": 0.352,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 177,
+          "end_step_exclusive": 180,
+          "start_s": 0.354,
+          "end_s": 0.36,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 181,
+          "end_step_exclusive": 247,
+          "start_s": 0.362,
+          "end_s": 0.494,
+          "right_censored_at_record_end": true,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        }
+      ],
+      "critical_frame_steps": [
+        5,
+        83,
+        84,
+        105,
+        106,
+        121,
+        122,
+        134,
+        135,
+        143,
+        144,
+        151,
+        152,
+        157,
+        158,
+        163,
+        165,
+        169,
+        171,
+        173,
+        176,
+        177,
+        180,
+        181,
+        5,
+        5
+      ],
+      "physical_friction_calibration": false,
+      "max_head_slip_step": 5,
+      "max_head_penetration_step": 5,
+      "floor_endpoint": {
+        "step": 246,
+        "pre_time_s": 0.492,
+        "post_time_s": 0.4940000000000004,
+        "post": {
+          "phase": "post_integration_geometry_only_no_force_claim",
+          "time_s": 0.4940000000000004,
+          "contacts": [
+            {
+              "geom": [
+                0,
+                2
+              ],
+              "other": "floor",
+              "dist": -0.0008586851935442445,
+              "allowed": true,
+              "pos": [
+                -0.05947638035501205,
+                0.07518782714279372,
+                -0.000429342596772124
+              ],
+              "normal_toward_ball": [
+                0.0,
+                0.0,
+                1.0
+              ]
+            }
+          ],
+          "floor_gap_m": -0.0008586851935442445,
+          "floor_overlap_m": 0.0008586851935442445,
+          "original_head_surface_gap_m": 0.08200764914333196,
+          "head_overlap_m": 0.0
+        }
+      },
+      "model_unchanged": true,
+      "elapsed_simulation_s": 0.494,
+      "completed_step_count_exact": true,
+      "wall_seconds": 4.344994368999778,
+      "classified_pre_step_samples": 247,
+      "power_and_cone_metrics_are_observations_not_pass_thresholds": true
+    },
+    {
+      "name": "slide-y-minus",
+      "status": "FLOOR_EVENT_CENSORED",
+      "steps": 247,
+      "attempted_steps": 247,
+      "horizon_completed": false,
+      "fixed_material_fixture": true,
+      "policy_success": null,
+      "new_ppo_updates": 0,
+      "full_robot_steps": 0,
+      "head_contact_steps": 159,
+      "floor_contact_steps": 0,
+      "max_head_slip_m_s": 0.05263354694652246,
+      "max_head_penetration_m": 8.072245152518018e-05,
+      "max_post_head_overlap_m": 8.072245152518018e-05,
+      "max_floor_penetration_m": 0.0008587132325146921,
+      "head_normal_impulse_Ns": 0.03219666060334836,
+      "head_tangential_world_impulse_Ns": [
+        0.0011663423506509927,
+        0.0014200123173493309,
+        0.0006574478570727242
+      ],
+      "head_torsional_impulse_Nms": -5.162152074377528e-06,
+      "head_tangential_work_J": -2.409246817232173e-05,
+      "head_torsional_work_J": -1.7239494506532682e-06,
+      "max_positive_head_tangential_power_W": 8.718714181443318e-08,
+      "max_positive_head_torsional_power_W": 0.0,
+      "head_tangential_positive_power_samples": 1,
+      "head_torsional_positive_power_samples": 0,
+      "max_head_cone_utilization": 1.0,
+      "legacy_v1_failed_contact_count": 0,
+      "head_contact_intervals": [
+        {
+          "first_pre_step": 5,
+          "end_step_exclusive": 83,
+          "start_s": 0.01,
+          "end_s": 0.166,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 84,
+          "end_step_exclusive": 105,
+          "start_s": 0.168,
+          "end_s": 0.21,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 106,
+          "end_step_exclusive": 121,
+          "start_s": 0.212,
+          "end_s": 0.242,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 122,
+          "end_step_exclusive": 134,
+          "start_s": 0.244,
+          "end_s": 0.268,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 135,
+          "end_step_exclusive": 143,
+          "start_s": 0.27,
+          "end_s": 0.28600000000000003,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 144,
+          "end_step_exclusive": 151,
+          "start_s": 0.28800000000000003,
+          "end_s": 0.302,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 152,
+          "end_step_exclusive": 157,
+          "start_s": 0.304,
+          "end_s": 0.314,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 158,
+          "end_step_exclusive": 163,
+          "start_s": 0.316,
+          "end_s": 0.326,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 165,
+          "end_step_exclusive": 169,
+          "start_s": 0.33,
+          "end_s": 0.338,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 171,
+          "end_step_exclusive": 173,
+          "start_s": 0.342,
+          "end_s": 0.34600000000000003,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 176,
+          "end_step_exclusive": 177,
+          "start_s": 0.352,
+          "end_s": 0.354,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 180,
+          "end_step_exclusive": 181,
+          "start_s": 0.36,
+          "end_s": 0.362,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        }
+      ],
+      "no_head_contact_intervals": [
+        {
+          "first_pre_step": 0,
+          "end_step_exclusive": 5,
+          "start_s": 0.0,
+          "end_s": 0.01,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 83,
+          "end_step_exclusive": 84,
+          "start_s": 0.166,
+          "end_s": 0.168,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 105,
+          "end_step_exclusive": 106,
+          "start_s": 0.21,
+          "end_s": 0.212,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 121,
+          "end_step_exclusive": 122,
+          "start_s": 0.242,
+          "end_s": 0.244,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 134,
+          "end_step_exclusive": 135,
+          "start_s": 0.268,
+          "end_s": 0.27,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 143,
+          "end_step_exclusive": 144,
+          "start_s": 0.28600000000000003,
+          "end_s": 0.28800000000000003,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 151,
+          "end_step_exclusive": 152,
+          "start_s": 0.302,
+          "end_s": 0.304,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 157,
+          "end_step_exclusive": 158,
+          "start_s": 0.314,
+          "end_s": 0.316,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 163,
+          "end_step_exclusive": 165,
+          "start_s": 0.326,
+          "end_s": 0.33,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 169,
+          "end_step_exclusive": 171,
+          "start_s": 0.338,
+          "end_s": 0.342,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 173,
+          "end_step_exclusive": 176,
+          "start_s": 0.34600000000000003,
+          "end_s": 0.352,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 177,
+          "end_step_exclusive": 180,
+          "start_s": 0.354,
+          "end_s": 0.36,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 181,
+          "end_step_exclusive": 247,
+          "start_s": 0.362,
+          "end_s": 0.494,
+          "right_censored_at_record_end": true,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        }
+      ],
+      "critical_frame_steps": [
+        5,
+        83,
+        84,
+        105,
+        106,
+        121,
+        122,
+        134,
+        135,
+        143,
+        144,
+        151,
+        152,
+        157,
+        158,
+        163,
+        165,
+        169,
+        171,
+        173,
+        176,
+        177,
+        180,
+        181,
+        5,
+        5
+      ],
+      "physical_friction_calibration": false,
+      "max_head_slip_step": 5,
+      "max_head_penetration_step": 5,
+      "floor_endpoint": {
+        "step": 246,
+        "pre_time_s": 0.492,
+        "post_time_s": 0.4940000000000004,
+        "post": {
+          "phase": "post_integration_geometry_only_no_force_claim",
+          "time_s": 0.4940000000000004,
+          "contacts": [
+            {
+              "geom": [
+                0,
+                2
+              ],
+              "other": "floor",
+              "dist": -0.0008587132325146921,
+              "allowed": true,
+              "pos": [
+                -0.059476351262139196,
+                -0.07518783170064763,
+                -0.00042935661625734603
+              ],
+              "normal_toward_ball": [
+                0.0,
+                0.0,
+                1.0
+              ]
+            }
+          ],
+          "floor_gap_m": -0.0008587132325146921,
+          "floor_overlap_m": 0.0008587132325146921,
+          "original_head_surface_gap_m": 0.08200766761447262,
+          "head_overlap_m": 0.0
+        }
+      },
+      "model_unchanged": true,
+      "elapsed_simulation_s": 0.494,
+      "completed_step_count_exact": true,
+      "wall_seconds": 4.383661716999995,
+      "classified_pre_step_samples": 247,
+      "power_and_cone_metrics_are_observations_not_pass_thresholds": true
+    },
+    {
+      "name": "initial-no-slip-roll",
+      "status": "FLOOR_PENETRATION_BLOCKED",
+      "steps": 336,
+      "attempted_steps": 336,
+      "horizon_completed": false,
+      "fixed_material_fixture": true,
+      "policy_success": null,
+      "new_ppo_updates": 0,
+      "full_robot_steps": 0,
+      "head_contact_steps": 247,
+      "floor_contact_steps": 0,
+      "max_head_slip_m_s": 0.0267306528790688,
+      "max_head_penetration_m": 8.687221783032495e-05,
+      "max_post_head_overlap_m": 8.687221783032495e-05,
+      "max_floor_penetration_m": 0.0033069639439716227,
+      "head_normal_impulse_Ns": 0.04947381497354108,
+      "head_tangential_world_impulse_Ns": [
+        0.002067723540847185,
+        -3.9923966393788634e-11,
+        0.0005638289820240499
+      ],
+      "head_torsional_impulse_Nms": 4.69604253300511e-13,
+      "head_tangential_work_J": -8.607749361693072e-06,
+      "head_torsional_work_J": -7.419707853960985e-21,
+      "max_positive_head_tangential_power_W": 6.251775971763189e-07,
+      "max_positive_head_torsional_power_W": 0.0,
+      "head_tangential_positive_power_samples": 5,
+      "head_torsional_positive_power_samples": 0,
+      "max_head_cone_utilization": 1.0,
+      "legacy_v1_failed_contact_count": 0,
+      "head_contact_intervals": [
+        {
+          "first_pre_step": 5,
+          "end_step_exclusive": 137,
+          "start_s": 0.01,
+          "end_s": 0.274,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 138,
+          "end_step_exclusive": 192,
+          "start_s": 0.276,
+          "end_s": 0.384,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 193,
+          "end_step_exclusive": 202,
+          "start_s": 0.386,
+          "end_s": 0.404,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 203,
+          "end_step_exclusive": 214,
+          "start_s": 0.406,
+          "end_s": 0.428,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 215,
+          "end_step_exclusive": 224,
+          "start_s": 0.43,
+          "end_s": 0.448,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 225,
+          "end_step_exclusive": 231,
+          "start_s": 0.45,
+          "end_s": 0.462,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 232,
+          "end_step_exclusive": 238,
+          "start_s": 0.464,
+          "end_s": 0.47600000000000003,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 239,
+          "end_step_exclusive": 243,
+          "start_s": 0.47800000000000004,
+          "end_s": 0.486,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 244,
+          "end_step_exclusive": 249,
+          "start_s": 0.488,
+          "end_s": 0.498,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 250,
+          "end_step_exclusive": 251,
+          "start_s": 0.5,
+          "end_s": 0.502,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 252,
+          "end_step_exclusive": 255,
+          "start_s": 0.504,
+          "end_s": 0.51,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 257,
+          "end_step_exclusive": 259,
+          "start_s": 0.514,
+          "end_s": 0.518,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 261,
+          "end_step_exclusive": 264,
+          "start_s": 0.522,
+          "end_s": 0.528,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 266,
+          "end_step_exclusive": 268,
+          "start_s": 0.532,
+          "end_s": 0.536,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        }
+      ],
+      "no_head_contact_intervals": [
+        {
+          "first_pre_step": 0,
+          "end_step_exclusive": 5,
+          "start_s": 0.0,
+          "end_s": 0.01,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 137,
+          "end_step_exclusive": 138,
+          "start_s": 0.274,
+          "end_s": 0.276,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 192,
+          "end_step_exclusive": 193,
+          "start_s": 0.384,
+          "end_s": 0.386,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 202,
+          "end_step_exclusive": 203,
+          "start_s": 0.404,
+          "end_s": 0.406,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 214,
+          "end_step_exclusive": 215,
+          "start_s": 0.428,
+          "end_s": 0.43,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 224,
+          "end_step_exclusive": 225,
+          "start_s": 0.448,
+          "end_s": 0.45,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 231,
+          "end_step_exclusive": 232,
+          "start_s": 0.462,
+          "end_s": 0.464,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 238,
+          "end_step_exclusive": 239,
+          "start_s": 0.47600000000000003,
+          "end_s": 0.47800000000000004,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 243,
+          "end_step_exclusive": 244,
+          "start_s": 0.486,
+          "end_s": 0.488,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 249,
+          "end_step_exclusive": 250,
+          "start_s": 0.498,
+          "end_s": 0.5,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 251,
+          "end_step_exclusive": 252,
+          "start_s": 0.502,
+          "end_s": 0.504,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 255,
+          "end_step_exclusive": 257,
+          "start_s": 0.51,
+          "end_s": 0.514,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 259,
+          "end_step_exclusive": 261,
+          "start_s": 0.518,
+          "end_s": 0.522,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 264,
+          "end_step_exclusive": 266,
+          "start_s": 0.528,
+          "end_s": 0.532,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 268,
+          "end_step_exclusive": 336,
+          "start_s": 0.536,
+          "end_s": 0.672,
+          "right_censored_at_record_end": true,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        }
+      ],
+      "critical_frame_steps": [
+        5,
+        137,
+        138,
+        192,
+        193,
+        202,
+        203,
+        214,
+        215,
+        224,
+        225,
+        231,
+        232,
+        238,
+        239,
+        243,
+        244,
+        249,
+        250,
+        251,
+        252,
+        255,
+        257,
+        259,
+        261,
+        264,
+        266,
+        268,
+        266,
+        5
+      ],
+      "physical_friction_calibration": false,
+      "max_head_slip_step": 266,
+      "max_head_penetration_step": 5,
+      "floor_endpoint": {
+        "step": 335,
+        "pre_time_s": 0.67,
+        "post_time_s": 0.6720000000000005,
+        "post": {
+          "phase": "post_integration_geometry_only_no_force_claim",
+          "time_s": 0.6720000000000005,
+          "contacts": [
+            {
+              "geom": [
+                0,
+                2
+              ],
+              "other": "floor",
+              "dist": -0.0033069639439716227,
+              "allowed": true,
+              "pos": [
+                -0.1012755228911368,
+                1.4720118150391946e-09,
+                -0.0016534819719858096
+              ],
+              "normal_toward_ball": [
+                0.0,
+                0.0,
+                1.0
+              ]
+            }
+          ],
+          "floor_gap_m": -0.0033069639439716227,
+          "floor_overlap_m": 0.0033069639439716227,
+          "original_head_surface_gap_m": 0.08604957229958773,
+          "head_overlap_m": 0.0
+        }
+      },
+      "model_unchanged": true,
+      "elapsed_simulation_s": 0.672,
+      "completed_step_count_exact": true,
+      "wall_seconds": 6.574792058999719,
+      "classified_pre_step_samples": 336,
+      "power_and_cone_metrics_are_observations_not_pass_thresholds": true
+    },
+    {
+      "name": "normal-spin",
+      "status": "FLOOR_EVENT_CENSORED",
+      "steps": 282,
+      "attempted_steps": 282,
+      "horizon_completed": false,
+      "fixed_material_fixture": true,
+      "policy_success": null,
+      "new_ppo_updates": 0,
+      "full_robot_steps": 0,
+      "head_contact_steps": 193,
+      "floor_contact_steps": 0,
+      "max_head_slip_m_s": 0.04998944699499468,
+      "max_head_penetration_m": 8.687209744746502e-05,
+      "max_post_head_overlap_m": 8.687209744746502e-05,
+      "max_floor_penetration_m": 0.0006203466094259619,
+      "head_normal_impulse_Ns": 0.03907626829392335,
+      "head_tangential_world_impulse_Ns": [
+        0.0018650006544556972,
+        5.604610809432526e-09,
+        0.0005628532827042222
+      ],
+      "head_torsional_impulse_Nms": -1.6000648417567303e-06,
+      "head_tangential_work_J": -1.6307321684095555e-05,
+      "head_torsional_work_J": -1.4142411030358812e-06,
+      "max_positive_head_tangential_power_W": 1.7941520544202849e-06,
+      "max_positive_head_torsional_power_W": 0.0,
+      "head_tangential_positive_power_samples": 2,
+      "head_torsional_positive_power_samples": 0,
+      "max_head_cone_utilization": 1.0,
+      "legacy_v1_failed_contact_count": 0,
+      "head_contact_intervals": [
+        {
+          "first_pre_step": 5,
+          "end_step_exclusive": 78,
+          "start_s": 0.01,
+          "end_s": 0.156,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 79,
+          "end_step_exclusive": 138,
+          "start_s": 0.158,
+          "end_s": 0.276,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 139,
+          "end_step_exclusive": 160,
+          "start_s": 0.278,
+          "end_s": 0.32,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 161,
+          "end_step_exclusive": 170,
+          "start_s": 0.322,
+          "end_s": 0.34,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 171,
+          "end_step_exclusive": 177,
+          "start_s": 0.342,
+          "end_s": 0.354,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 178,
+          "end_step_exclusive": 184,
+          "start_s": 0.356,
+          "end_s": 0.368,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 185,
+          "end_step_exclusive": 189,
+          "start_s": 0.37,
+          "end_s": 0.378,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 190,
+          "end_step_exclusive": 195,
+          "start_s": 0.38,
+          "end_s": 0.39,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 196,
+          "end_step_exclusive": 197,
+          "start_s": 0.392,
+          "end_s": 0.394,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 198,
+          "end_step_exclusive": 201,
+          "start_s": 0.396,
+          "end_s": 0.402,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 203,
+          "end_step_exclusive": 206,
+          "start_s": 0.406,
+          "end_s": 0.41200000000000003,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 209,
+          "end_step_exclusive": 210,
+          "start_s": 0.418,
+          "end_s": 0.42,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 214,
+          "end_step_exclusive": 216,
+          "start_s": 0.428,
+          "end_s": 0.432,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        }
+      ],
+      "no_head_contact_intervals": [
+        {
+          "first_pre_step": 0,
+          "end_step_exclusive": 5,
+          "start_s": 0.0,
+          "end_s": 0.01,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 78,
+          "end_step_exclusive": 79,
+          "start_s": 0.156,
+          "end_s": 0.158,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 138,
+          "end_step_exclusive": 139,
+          "start_s": 0.276,
+          "end_s": 0.278,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 160,
+          "end_step_exclusive": 161,
+          "start_s": 0.32,
+          "end_s": 0.322,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 170,
+          "end_step_exclusive": 171,
+          "start_s": 0.34,
+          "end_s": 0.342,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 177,
+          "end_step_exclusive": 178,
+          "start_s": 0.354,
+          "end_s": 0.356,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 184,
+          "end_step_exclusive": 185,
+          "start_s": 0.368,
+          "end_s": 0.37,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 189,
+          "end_step_exclusive": 190,
+          "start_s": 0.378,
+          "end_s": 0.38,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 195,
+          "end_step_exclusive": 196,
+          "start_s": 0.39,
+          "end_s": 0.392,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 197,
+          "end_step_exclusive": 198,
+          "start_s": 0.394,
+          "end_s": 0.396,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 201,
+          "end_step_exclusive": 203,
+          "start_s": 0.402,
+          "end_s": 0.406,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 206,
+          "end_step_exclusive": 209,
+          "start_s": 0.41200000000000003,
+          "end_s": 0.418,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 210,
+          "end_step_exclusive": 214,
+          "start_s": 0.42,
+          "end_s": 0.428,
+          "right_censored_at_record_end": false,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        },
+        {
+          "first_pre_step": 216,
+          "end_step_exclusive": 282,
+          "start_s": 0.432,
+          "end_s": 0.5640000000000001,
+          "right_censored_at_record_end": true,
+          "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+        }
+      ],
+      "critical_frame_steps": [
+        5,
+        78,
+        79,
+        138,
+        139,
+        160,
+        161,
+        170,
+        171,
+        177,
+        178,
+        184,
+        185,
+        189,
+        190,
+        195,
+        196,
+        197,
+        198,
+        201,
+        203,
+        206,
+        209,
+        210,
+        214,
+        216,
+        214,
+        5
+      ],
+      "physical_friction_calibration": false,
+      "max_head_slip_step": 214,
+      "max_head_penetration_step": 5,
+      "floor_endpoint": {
+        "step": 281,
+        "pre_time_s": 0.562,
+        "post_time_s": 0.5640000000000004,
+        "post": {
+          "phase": "post_integration_geometry_only_no_force_claim",
+          "time_s": 0.5640000000000004,
+          "contacts": [
+            {
+              "geom": [
+                0,
+                2
+              ],
+              "other": "floor",
+              "dist": -0.0006203466094259619,
+              "allowed": true,
+              "pos": [
+                -0.10064143788566707,
+                -2.0563563474136143e-07,
+                -0.00031017330471298094
+              ],
+              "normal_toward_ball": [
+                0.0,
+                0.0,
+                1.0
+              ]
+            }
+          ],
+          "floor_gap_m": -0.0006203466094259619,
+          "floor_overlap_m": 0.0006203466094259619,
+          "original_head_surface_gap_m": 0.08341564083589159,
+          "head_overlap_m": 0.0
+        }
+      },
+      "model_unchanged": true,
+      "elapsed_simulation_s": 0.5640000000000001,
+      "completed_step_count_exact": true,
+      "wall_seconds": 5.231554371000129,
+      "classified_pre_step_samples": 282,
+      "power_and_cone_metrics_are_observations_not_pass_thresholds": true
+    }
+  ],
+  "not_run_cases": [],
+  "stage11_status": "MATERIAL_BLOCKED_REVIEW_REQUIRED",
+  "stage11_complete": false,
+  "new_ppo_updates": 0,
+  "cloud_hours": 0,
+  "full_robot_steps": 0,
+  "prior_canonical_steps": 6211,
+  "formal_task_migration": false,
+  "old_floor_and_sensitivity_failures_retained": true,
+  "approval": {
+    "user_message": "批准并继续",
+    "time": "2026-10-04T01:59:56+08:00"
+  },
+  "head_neck_fixed_only_in_material_fixture": true,
+  "policy_success": null,
+  "no_automatic_retry_or_extra_cases": true,
+  "videos": "PENDING_SAVED_STATE_RENDER",
+  "diagnostic_completed_steps": 1684,
+  "diagnostic_attempted_steps": 1684,
+  "canonical_total_completed_steps": 7895,
+  "physics_wall_seconds": 32.59396010599994,
+  "diagnostic_source_sha256": "e787f4e68ae20880b2f619dd80b01d80363308bc356b6f434e29b0f4739a9794",
+  "original_material_unchanged": true,
+  "refinement_unchanged": true,
+  "frozen_sources_unchanged": true
+}
