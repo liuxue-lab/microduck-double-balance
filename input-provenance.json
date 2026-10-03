@@ -1,0 +1,124 @@
+{
+  "friction": {
+    "sha256": "f692ff89cfdd0b1036570a2eb5cc4a7f679eb49bc407af37e5e3410478dd343d",
+    "files": {
+      "run-summary.json": {
+        "sha256": "c428a5004cdaf2c4959a5d84b127343c5ca4b4f90f267c27fa784b061d5435a7",
+        "bytes": 2997
+      },
+      "diagnostic/material-geometry.npz": {
+        "sha256": "b2b22ae8e2798b18b292bfc3c181475dde03e5f0030e93839f4447122fb1dcc5",
+        "bytes": 225030
+      },
+      "diagnostic/cases/slide-x-plus/step-log.jsonl.gz": {
+        "sha256": "6bd6d92fe56ca2feaba0895449da3bdee70c19ecf4a028b26c9f8af56c1a3fe5",
+        "bytes": 167345
+      },
+      "diagnostic/cases/slide-x-plus/raw-contacts.jsonl.gz": {
+        "sha256": "a62c8113b5ff107af96e9ea4ef06242dc81606a3b247a8410ee3beb3a336769f",
+        "bytes": 39748
+      },
+      "diagnostic/cases/slide-x-plus/summary.json": {
+        "sha256": "24066cd3c2a6f1d2d24b073f18d1eef688056c6fd694b395e5122b532489c810",
+        "bytes": 11572
+      },
+      "diagnostic/cases/slide-x-plus/states.npz": {
+        "sha256": "28d78e36409d3e5186406a08afeda6feaec9e06a77bab035535021ee22a2bdfe",
+        "bytes": 30518
+      },
+      "diagnostic/cases/slide-x-minus/step-log.jsonl.gz": {
+        "sha256": "fcec7d03915ce6fd9654ca09c8053c449f3ab0a65de6d3d8fba83c8bd1ee7c7e",
+        "bytes": 124255
+      },
+      "diagnostic/cases/slide-x-minus/raw-contacts.jsonl.gz": {
+        "sha256": "0dcae86fdff4a03fd5f5e0affb67562ee7221f8fdbfe5c0940b914b60a88b3b4",
+        "bytes": 29049
+      },
+      "diagnostic/cases/slide-x-minus/summary.json": {
+        "sha256": "dc0b2e73aa3cf9a8a4fca703d0a8b198a67e7f0dd0514b22b08172624162e04d",
+        "bytes": 10474
+      },
+      "diagnostic/cases/slide-x-minus/states.npz": {
+        "sha256": "c59e0eb592710ff9221abfe89e8172df6234563cfecbd9cec63693f6af99703d",
+        "bytes": 23429
+      },
+      "diagnostic/cases/slide-y-plus/step-log.jsonl.gz": {
+        "sha256": "72056eafcd911289f086bf604d8b7c89b71870da466fe2a34eb9c59726bab73f",
+        "bytes": 123553
+      },
+      "diagnostic/cases/slide-y-plus/raw-contacts.jsonl.gz": {
+        "sha256": "56e8144488c469541d8de442eed6a5656609e9ec6c6a6e2e1fcebac9d39575a7",
+        "bytes": 28467
+      },
+      "diagnostic/cases/slide-y-plus/summary.json": {
+        "sha256": "8100dd5fbac921cf036af9d871220aff6adb2d16adf58dda475bc45eafa2f232",
+        "bytes": 9296
+      },
+      "diagnostic/cases/slide-y-plus/states.npz": {
+        "sha256": "62f4826dfc7610b5749c71b1454b3d43e02e389bf0d8d862650363fd52559ed5",
+        "bytes": 23210
+      },
+      "diagnostic/cases/slide-y-minus/step-log.jsonl.gz": {
+        "sha256": "53920e0be6fcaea2a125755d8d27a241048e1fdd539ad7022742cc9a5a80445b",
+        "bytes": 123510
+      },
+      "diagnostic/cases/slide-y-minus/raw-contacts.jsonl.gz": {
+        "sha256": "ea62b94ad5688fafaa2a39784c9ea401d5fc3f9985a6cc7ffe6d72a46feca5fd",
+        "bytes": 28397
+      },
+      "diagnostic/cases/slide-y-minus/summary.json": {
+        "sha256": "7038aaf531c9af62209d8150462d254f1c82ea99e67126e751912089bfc19a8d",
+        "bytes": 9301
+      },
+      "diagnostic/cases/slide-y-minus/states.npz": {
+        "sha256": "b42c39451139bddefa5a42f368cb95adc8631ac03907f7f438c6c9ff66afc1da",
+        "bytes": 23245
+      },
+      "diagnostic/cases/initial-no-slip-roll/step-log.jsonl.gz": {
+        "sha256": "efd8d500a2dc0058eed75b30cd4ae0a45a8fc87efd3f90133713045471cae452",
+        "bytes": 177518
+      },
+      "diagnostic/cases/initial-no-slip-roll/raw-contacts.jsonl.gz": {
+        "sha256": "13129ae8827f3b3cacf41e8ed05df50ee8580c7289e286727a8eba0b9e48e819",
+        "bytes": 42064
+      },
+      "diagnostic/cases/initial-no-slip-roll/summary.json": {
+        "sha256": "1cec9195331b362b171ac6e4bbac597aaf782e5b2a0a0fc2c289e006fc913b75",
+        "bytes": 10380
+      },
+      "diagnostic/cases/initial-no-slip-roll/states.npz": {
+        "sha256": "36608488a099dd8bbd8f4dba6e572f62c1ee77e39256a9d7ba66c00d98a271a1",
+        "bytes": 32380
+      },
+      "diagnostic/cases/normal-spin/step-log.jsonl.gz": {
+        "sha256": "1a985773da5a0e8fceace1751b05b35cd620145b0073aed24b7472f9010552c6",
+        "bytes": 147951
+      },
+      "diagnostic/cases/normal-spin/raw-contacts.jsonl.gz": {
+        "sha256": "e4b2179b8b22b4e2edefb71b0146bf941a2cc8949914422fa4bbd855aa0f3998",
+        "bytes": 34953
+      },
+      "diagnostic/cases/normal-spin/summary.json": {
+        "sha256": "4fae8c23f55478255f9bf3675bf21db211ef61295cd97423c5ecf8ed8099193f",
+        "bytes": 9820
+      },
+      "diagnostic/cases/normal-spin/states.npz": {
+        "sha256": "62d06e7be5104183ec1d00d2cd505ef1096979898fea360a55b8d887f77a3fd4",
+        "bytes": 27260
+      }
+    }
+  },
+  "prototype": {
+    "sha256": "c22ab08e67979c33f397ee099e68d816eb2877663d4d3cae2419176dfa017e4d",
+    "files": {
+      "run-summary.json": {
+        "sha256": "63a9a676f351b298f556081d4ac584039bfa64eeb5dd5e4906440a7c991125e1",
+        "bytes": 3956
+      },
+      "prototype/prototype-static-configurations.json": {
+        "sha256": "fa37d385832771e401443a9c2a72572e6efb3e870917cced76b99ad3362150a0",
+        "bytes": 13965
+      }
+    }
+  }
+}

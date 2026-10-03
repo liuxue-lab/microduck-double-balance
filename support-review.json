@@ -1,0 +1,211 @@
+{
+  "status": "SAVED_SUPPORT_REVIEW_REQUIRED",
+  "stage11_status": "MATERIAL_BLOCKED_REVIEW_REQUIRED",
+  "stage11_complete": false,
+  "new_integration_steps": 0,
+  "new_ppo_updates": 0,
+  "cloud_hours": 0,
+  "canonical_total_completed_steps": 7895,
+  "formal_task_migration": false,
+  "policy_success": null,
+  "analysis": {
+    "source_steps_read": 1684,
+    "new_integration_steps": 0,
+    "new_ppo_updates": 0,
+    "mesh_max_material_z_m": 1.926669593717539e-17,
+    "upper_height_slab_min_material_z_m": 0.014,
+    "cases": [
+      {
+        "case": "slide-x-plus",
+        "source_steps": 320,
+        "source_end_status": "FLOOR_PENETRATION_BLOCKED",
+        "counts": {
+          "pre_head_geometry": 230,
+          "pre_active_head_contact": 230,
+          "pre_active_upward_head_force": 230,
+          "upper_kinematic_only": 106,
+          "upper_kinematic_without_active_head": 4,
+          "upper_kinematic_with_active_head": 102,
+          "pre_post_head_geometry_disagreement": 32,
+          "post_floor_overlap": 1,
+          "head_contact_without_positive_force": 0
+        },
+        "kinematic_without_active_head_steps": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "normal_force_threshold_sensitivity": {
+          "0.0": 102,
+          "1e-08": 102,
+          "1e-06": 102
+        },
+        "maximum_slip_recompute_residual_m_s": 5.204170427930421e-18,
+        "max_abs_curved_gap_minus_tangent_height_when_kinematic_m": 2.7755575615628914e-17,
+        "fixed_head_material_not_policy": true,
+        "horizon_completed": false
+      },
+      {
+        "case": "slide-x-minus",
+        "source_steps": 252,
+        "source_end_status": "FLOOR_EVENT_CENSORED",
+        "counts": {
+          "pre_head_geometry": 162,
+          "pre_active_head_contact": 162,
+          "pre_active_upward_head_force": 162,
+          "upper_kinematic_only": 39,
+          "upper_kinematic_without_active_head": 3,
+          "upper_kinematic_with_active_head": 36,
+          "pre_post_head_geometry_disagreement": 28,
+          "post_floor_overlap": 1,
+          "head_contact_without_positive_force": 0
+        },
+        "kinematic_without_active_head_steps": [
+          0,
+          1,
+          2
+        ],
+        "normal_force_threshold_sensitivity": {
+          "0.0": 36,
+          "1e-08": 36,
+          "1e-06": 36
+        },
+        "maximum_slip_recompute_residual_m_s": 5.204170427930421e-18,
+        "max_abs_curved_gap_minus_tangent_height_when_kinematic_m": 2.7755575615628914e-17,
+        "fixed_head_material_not_policy": true,
+        "horizon_completed": false
+      },
+      {
+        "case": "slide-y-plus",
+        "source_steps": 247,
+        "source_end_status": "FLOOR_EVENT_CENSORED",
+        "counts": {
+          "pre_head_geometry": 159,
+          "pre_active_head_contact": 159,
+          "pre_active_upward_head_force": 159,
+          "upper_kinematic_only": 55,
+          "upper_kinematic_without_active_head": 4,
+          "upper_kinematic_with_active_head": 51,
+          "pre_post_head_geometry_disagreement": 24,
+          "post_floor_overlap": 1,
+          "head_contact_without_positive_force": 0
+        },
+        "kinematic_without_active_head_steps": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "normal_force_threshold_sensitivity": {
+          "0.0": 51,
+          "1e-08": 51,
+          "1e-06": 51
+        },
+        "maximum_slip_recompute_residual_m_s": 6.938893903907228e-18,
+        "max_abs_curved_gap_minus_tangent_height_when_kinematic_m": 0.0001050543253351792,
+        "fixed_head_material_not_policy": true,
+        "horizon_completed": false
+      },
+      {
+        "case": "slide-y-minus",
+        "source_steps": 247,
+        "source_end_status": "FLOOR_EVENT_CENSORED",
+        "counts": {
+          "pre_head_geometry": 159,
+          "pre_active_head_contact": 159,
+          "pre_active_upward_head_force": 159,
+          "upper_kinematic_only": 55,
+          "upper_kinematic_without_active_head": 4,
+          "upper_kinematic_with_active_head": 51,
+          "pre_post_head_geometry_disagreement": 24,
+          "post_floor_overlap": 1,
+          "head_contact_without_positive_force": 0
+        },
+        "kinematic_without_active_head_steps": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "normal_force_threshold_sensitivity": {
+          "0.0": 51,
+          "1e-08": 51,
+          "1e-06": 51
+        },
+        "maximum_slip_recompute_residual_m_s": 6.938893903907228e-18,
+        "max_abs_curved_gap_minus_tangent_height_when_kinematic_m": 0.00010510756551235581,
+        "fixed_head_material_not_policy": true,
+        "horizon_completed": false
+      },
+      {
+        "case": "initial-no-slip-roll",
+        "source_steps": 336,
+        "source_end_status": "FLOOR_PENETRATION_BLOCKED",
+        "counts": {
+          "pre_head_geometry": 247,
+          "pre_active_head_contact": 247,
+          "pre_active_upward_head_force": 247,
+          "upper_kinematic_only": 120,
+          "upper_kinematic_without_active_head": 4,
+          "upper_kinematic_with_active_head": 116,
+          "pre_post_head_geometry_disagreement": 28,
+          "post_floor_overlap": 1,
+          "head_contact_without_positive_force": 0
+        },
+        "kinematic_without_active_head_steps": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "normal_force_threshold_sensitivity": {
+          "0.0": 116,
+          "1e-08": 116,
+          "1e-06": 116
+        },
+        "maximum_slip_recompute_residual_m_s": 5.204170427930421e-18,
+        "max_abs_curved_gap_minus_tangent_height_when_kinematic_m": 2.7755575615628914e-17,
+        "fixed_head_material_not_policy": true,
+        "horizon_completed": false
+      },
+      {
+        "case": "normal-spin",
+        "source_steps": 282,
+        "source_end_status": "FLOOR_EVENT_CENSORED",
+        "counts": {
+          "pre_head_geometry": 193,
+          "pre_active_head_contact": 193,
+          "pre_active_upward_head_force": 193,
+          "upper_kinematic_only": 74,
+          "upper_kinematic_without_active_head": 5,
+          "upper_kinematic_with_active_head": 69,
+          "pre_post_head_geometry_disagreement": 26,
+          "post_floor_overlap": 1,
+          "head_contact_without_positive_force": 0
+        },
+        "kinematic_without_active_head_steps": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "normal_force_threshold_sensitivity": {
+          "0.0": 69,
+          "1e-08": 69,
+          "1e-06": 69
+        },
+        "maximum_slip_recompute_residual_m_s": 6.938893903907228e-18,
+        "max_abs_curved_gap_minus_tangent_height_when_kinematic_m": 2.7755575615628914e-17,
+        "fixed_head_material_not_policy": true,
+        "horizon_completed": false
+      }
+    ],
+    "phase_contract": "All forces, position, slip and descriptive kinematic gates use the SAME saved pre state; post geometry is reported separately.",
+    "formal_success_predicate": null,
+    "physical_crown_boundary": null,
+    "interpretation": "Kinematic-only samples are not evidence of head contact. Positive contact force is not equilibrium, load retention, lower-ball balance or 5-second terminal success."
+  },
+  "wall_seconds": 3.282983253000566
+}
