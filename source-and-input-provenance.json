@@ -1,0 +1,36 @@
+{
+  "archive_sha256": "73417e634580a91c6100f8b751a74b7890c58ff3764eb8e47b26ed396f374c0a",
+  "files": {
+    "run-summary.json": {
+      "sha256": "cc2c0432532c97cdfd85bd91f8ad76524148d633b9d35f817f2b57095b82eb15",
+      "bytes": 3334
+    },
+    "reference/reference-review.json": {
+      "sha256": "23f9d46b6eb0945737195b7fa5270353a5409c2df2b32f900f4bda3602358593",
+      "bytes": 1075
+    },
+    "reference/candidate-references.json": {
+      "sha256": "7d396087f948620dc5c5ca67e97fddd72a25e09dd120c90cbc826ffc939bc7cb",
+      "bytes": 9073
+    }
+  },
+  "mdp_prefix": {
+    "old_bytes": 368581,
+    "new_bytes": 373873,
+    "added_functions": [
+      "stage11_head_release_block",
+      "stage11_head_material_values",
+      "_stage11_head_kinematics",
+      "stage11_head_features_from_values",
+      "stage11_head_actor_state",
+      "stage11_head_critic_state",
+      "stage11_head_task_reward",
+      "stage11_head_speed_l2",
+      "stage11_head_normal_tilt_l2",
+      "stage11_head_center_error",
+      "stage11_head_relative_speed",
+      "reset_stage11_head_reference"
+    ],
+    "old_prefix_identical": true
+  }
+}

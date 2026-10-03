@@ -1,0 +1,51 @@
+{
+  "status": "STATIC_PROTOTYPE_REVIEW_REQUIRED",
+  "stage11_status": "MATERIAL_BLOCKED_REVIEW_REQUIRED",
+  "new_integration_steps": 0,
+  "new_ppo_updates": 0,
+  "full_robot_steps": 0,
+  "cloud_hours": 0,
+  "stage11_complete": false,
+  "canonical_total_completed_steps": 7895,
+  "reference_version": "head-material-tangent-v1-prototype",
+  "formal_task_migration": false,
+  "policy_success": null,
+  "old_task_regression": {
+    "selected": [
+      "actor_stays_61d_and_critic_privilege_is_separate",
+      "reward_signs_and_functions_follow_repository_convention",
+      "top_score_is_multiplicative_and_not_farmable_from_bad_states",
+      "top_ball_lost_uses_recoverable_geometry_envelope",
+      "success_requires_both_layers_and_low_motion",
+      "success_timer_is_continuous_not_a_one_step_jackpot",
+      "official_play_config_is_deterministic_and_unassisted"
+    ],
+    "count": 7,
+    "manager_step_test_excluded": true
+  },
+  "config": {
+    "actor_layout": "unchanged 61D slots, semantics incompatible",
+    "critic_layout": "unchanged 85D slots, semantics incompatible",
+    "full_manager_observation_execution": false,
+    "episode_seconds": 10,
+    "stable_duration_seconds": 5,
+    "lower_ball_speed_limit": 0.15,
+    "registered": false,
+    "runtime_release_block": true,
+    "formal_acceptance_implemented": false,
+    "old_timing_functions_byte_identical": true
+  },
+  "geometry": {
+    "poses": 7,
+    "reset_geometry_pass": true,
+    "reference_site_only": true,
+    "time_advanced": false
+  },
+  "tensor": {
+    "rows": 7,
+    "max_residual": 7.216449660063518e-16,
+    "reset_wrapper_checked": true
+  },
+  "forbidden_integration_call_attempts": [],
+  "wall_seconds": 7.67951907799943
+}

@@ -1,0 +1,205 @@
+{
+  "status": "PASS",
+  "checks": {
+    "same_generalized_dimensions": true,
+    "no_added_equalities": true,
+    "exactly_one_body_and_geom_removed": true,
+    "no_tray_names": true,
+    "no_tray_sites": true,
+    "unchanged_jnt_type": true,
+    "unchanged_jnt_axis": true,
+    "unchanged_jnt_range": true,
+    "unchanged_jnt_limited": true,
+    "unchanged_jnt_stiffness": true,
+    "unchanged_dof_damping": true,
+    "unchanged_dof_armature": true,
+    "unchanged_dof_frictionloss": true,
+    "unchanged_actuator_trntype": true,
+    "unchanged_actuator_gear": true,
+    "unchanged_actuator_gainprm": true,
+    "unchanged_actuator_biasprm": true,
+    "unchanged_actuator_ctrlrange": true,
+    "unchanged_actuator_forcerange": true,
+    "unchanged_joint_names": true,
+    "upper_ball_only_head_and_floor": true,
+    "no_explicit_contact_pairs": true,
+    "all_retained_geom_physics_unchanged": true,
+    "other_contact_matrix_unchanged": true,
+    "upper_ball_free_no_joint_impedance": true,
+    "robot_mass_removes_18g": true,
+    "robot_com_parallel_axis": true,
+    "robot_full_inertia_parallel_axis": true,
+    "robot_positive_inertia": true,
+    "jaw_cluster_mass_removes_18g": true,
+    "jaw_cluster_com_parallel_axis": true,
+    "jaw_cluster_full_inertia_parallel_axis": true,
+    "jaw_cluster_positive_inertia": true,
+    "robot_mass_matches_stage10": true
+  },
+  "clusters": {
+    "robot": {
+      "before": {
+        "mass_kg": 0.7552431799999999,
+        "com_m": [
+          0.0008772759782284335,
+          -1.3307178841831533e-05,
+          0.024947089470744862
+        ],
+        "inertia_com_kg_m2": [
+          [
+            0.005388202703903627,
+            -7.331861811624452e-06,
+            -0.00066330151812755
+          ],
+          [
+            -7.331861811624452e-06,
+            0.005292628057872094,
+            5.713987360942644e-07
+          ],
+          [
+            -0.00066330151812755,
+            5.713987360942644e-07,
+            0.0012775377957667607
+          ]
+        ]
+      },
+      "after": {
+        "mass_kg": 0.73724318,
+        "com_m": [
+          0.0005607874588461173,
+          -1.3632077363311198e-05,
+          0.021748616565407917
+        ],
+        "inertia_com_kg_m2": [
+          [
+            0.005062142821981412,
+            -7.328681052611803e-06,
+            -0.000631988443897092
+          ],
+          [
+            -7.328681052611796e-06,
+            0.004958069754187399,
+            6.035438879636184e-07
+          ],
+          [
+            -0.0006319884438970919,
+            6.035438879636184e-07,
+            0.0012498393674737205
+          ]
+        ]
+      },
+      "after_plus_removed_tray": {
+        "mass_kg": 0.75524318,
+        "com_m": [
+          0.0008772759782284334,
+          -1.3307178841831448e-05,
+          0.024947089470744855
+        ],
+        "inertia_com_kg_m2": [
+          [
+            0.005388202703903627,
+            -7.331861811624482e-06,
+            -0.0006633015181275501
+          ],
+          [
+            -7.331861811624476e-06,
+            0.005292628057872093,
+            5.713987360942332e-07
+          ],
+          [
+            -0.00066330151812755,
+            5.713987360942332e-07,
+            0.0012775377957667607
+          ]
+        ]
+      },
+      "coordinates": "HOME world axes; each tensor about its own COM"
+    },
+    "jaw_cluster": {
+      "before": {
+        "mass_kg": 0.20676599999999998,
+        "com_m": [
+          0.022634845523663617,
+          0.0010959631661878674,
+          0.12057691784808812
+        ],
+        "inertia_com_kg_m2": [
+          [
+            0.00018418192357672045,
+            -4.374670200022518e-06,
+            -4.3774779291754653e-07
+          ],
+          [
+            -4.374670200022518e-06,
+            0.0002953013142789772,
+            1.3207090621414994e-07
+          ],
+          [
+            -4.377477929175482e-07,
+            1.3207090621414972e-07,
+            0.0003469607334361313
+          ]
+        ]
+      },
+      "after": {
+        "mass_kg": 0.188766,
+        "com_m": [
+          0.023473488337279004,
+          0.001200470000000003,
+          0.11720387701932516
+        ],
+        "inertia_com_kg_m2": [
+          [
+            0.00014988198923439395,
+            -4.184627096389414e-06,
+            -6.571539473293307e-06
+          ],
+          [
+            -4.184627096389414e-06,
+            0.0002541000107093006,
+            -6.32286860134358e-07
+          ],
+          [
+            -6.571539473293309e-06,
+            -6.322868601343581e-07,
+            0.00032081200005630513
+          ]
+        ]
+      },
+      "after_plus_removed_tray": {
+        "mass_kg": 0.20676599999999998,
+        "com_m": [
+          0.022634845523663617,
+          0.0010959631661878674,
+          0.12057691784808812
+        ],
+        "inertia_com_kg_m2": [
+          [
+            0.00018418192357672045,
+            -4.374670200022518e-06,
+            -4.377477929175474e-07
+          ],
+          [
+            -4.374670200022518e-06,
+            0.0002953013142789772,
+            1.3207090621414994e-07
+          ],
+          [
+            -4.3774779291754907e-07,
+            1.3207090621414972e-07,
+            0.0003469607334361313
+          ]
+        ]
+      },
+      "coordinates": "HOME world axes; each tensor about its own COM"
+    }
+  },
+  "scene_mass_before_kg": 1.38524318,
+  "scene_mass_after_kg": 1.36724318,
+  "allowed_upper_contact_names": [
+    "terrain",
+    "robot/stage11_head_contact_surface"
+  ],
+  "head_neck_locked": false,
+  "full_robot_dynamics_steps": 0
+}

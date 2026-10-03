@@ -1,0 +1,15 @@
+test_axes_orthonormal_right_handed (test_head_task_prototype.PrototypeTests.test_axes_orthonormal_right_handed) ... ok
+test_extension_rejects_top_level_effect (test_head_task_prototype.PrototypeTests.test_extension_rejects_top_level_effect) ... ok
+test_fail_closed_function_raises_without_env (test_head_task_prototype.PrototypeTests.test_fail_closed_function_raises_without_env) ... ok
+test_guard_no_step_even_with_bad_arguments (test_head_task_prototype.PrototypeTests.test_guard_no_step_even_with_bad_arguments) ... ok
+test_matches_returned_material_center (test_head_task_prototype.PrototypeTests.test_matches_returned_material_center) ... ok
+test_no_integration_calls_in_audit (test_head_task_prototype.PrototypeTests.test_no_integration_calls_in_audit) ... ok
+test_old_five_second_counter_not_redefined (test_head_task_prototype.PrototypeTests.test_old_five_second_counter_not_redefined) ... ok
+test_prefix_guard_detects_changed_old_code (test_head_task_prototype.PrototypeTests.test_prefix_guard_detects_changed_old_code) ... ok
+test_reference_adds_site_without_physics (test_head_task_prototype.PrototypeTests.test_reference_adds_site_without_physics) ... ok
+test_reset_rejects_unreviewed_noise_before_writing (test_head_task_prototype.PrototypeTests.test_reset_rejects_unreviewed_noise_before_writing) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.118s
+
+OK
