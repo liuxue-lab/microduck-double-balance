@@ -1,0 +1,14 @@
+/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab/entity/entity.py:149: UserWarning: Actuator config matched 14 joint(s) but the same expressions also match 8 site(s): imu, left_foot, head_camera, tof, head_imu, mouth_tip, double_balance_tray_frame, right_foot. Add a separate config with transmission_type=TransmissionType.SITE if those should be actuated too.
+  self._add_actuators()
+/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab/entity/entity.py:149: UserWarning: Actuator config matched 14 joint(s) but the same expressions also match 7 site(s): imu, left_foot, head_camera, tof, head_imu, mouth_tip, right_foot. Add a separate config with transmission_type=TransmissionType.SITE if those should be actuated too.
+  self._add_actuators()
+[mdp] Patches 1-2 active: NaN-safe reward/advantage
+[mdp] Patch 4 active: ONNX export filters passive_* joints
+2026-10-03T19:59:58.414400+00:00 Stage11StaticPose=home; reference placements=7; integration=0
+2026-10-03T19:59:59.953269+00:00 Stage11StaticPose=yaw-minus90; reference placements=14; integration=0
+2026-10-03T20:00:01.492595+00:00 Stage11StaticPose=yaw-plus90; reference placements=21; integration=0
+2026-10-03T20:00:03.045165+00:00 Stage11StaticPose=pitch-minus10; reference placements=28; integration=0
+2026-10-03T20:00:04.600057+00:00 Stage11StaticPose=pitch-plus10; reference placements=35; integration=0
+2026-10-03T20:00:06.102248+00:00 Stage11StaticPose=roll-minus10; reference placements=42; integration=0
+2026-10-03T20:00:07.683576+00:00 Stage11StaticPose=roll-plus10; reference placements=49; integration=0
+2026-10-03T20:00:07.856572+00:00 Stage11ReferenceResult=STATIC_REFERENCE_REVIEW_REQUIRED; new integration=0; PPO=0

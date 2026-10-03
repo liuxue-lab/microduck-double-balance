@@ -1,0 +1,346 @@
+{
+  "inherited_seven_locations": [
+    {
+      "name": "center",
+      "center": [
+        0.013839998337279006,
+        3.469446951953614e-18,
+        0.17066487031196814
+      ],
+      "witness": [
+        0.015409487930888706,
+        -1.0378044583632393e-13,
+        0.15022503904026832
+      ],
+      "normal": [
+        -0.07656046798096033,
+        5.062630013818294e-12,
+        0.9970649400829098
+      ],
+      "face": 2303,
+      "center_in_jaw": [
+        0.05806622329264295,
+        0.0,
+        -0.02284260999999998
+      ],
+      "witness_in_jaw": [
+        0.037626392020943145,
+        -1.0378391528327583e-13,
+        -0.02441209959360968
+      ],
+      "normal_in_jaw": [
+        0.9970649400829094,
+        5.0626300138182914e-12,
+        0.0765604679809603
+      ],
+      "boundary": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.0597779233299782,
+          0.04587965542255865
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542255865,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      }
+    },
+    {
+      "name": "x-minus12",
+      "center": [
+        0.0018399983372790057,
+        3.469446951953614e-18,
+        0.16957659135084957
+      ],
+      "witness": [
+        0.00400990386373176,
+        -8.064989078794507e-14,
+        0.14919175605579538
+      ],
+      "normal": [
+        -0.1058490500708387,
+        3.934310255359813e-12,
+        0.9943822095145816
+      ],
+      "face": 4239,
+      "center_in_jaw": [
+        0.05697794433152438,
+        0.0,
+        -0.010842609999999983
+      ],
+      "witness_in_jaw": [
+        0.0365931090364702,
+        -8.065336023489698e-14,
+        -0.013012515526452738
+      ],
+      "normal_in_jaw": [
+        0.9943822095145811,
+        3.934310255359811e-12,
+        0.10584905007083865
+      ],
+      "boundary": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05151251457537076,
+          0.04587965542258178
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542258178,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      }
+    },
+    {
+      "name": "x-plus12",
+      "center": [
+        0.025839998337279006,
+        3.469446951953614e-18,
+        0.17158630038020167
+      ],
+      "witness": [
+        0.02740948793088889,
+        -8.033689938099277e-14,
+        0.15114646910849952
+      ],
+      "normal": [
+        -0.07656046798096057,
+        3.919042381850482e-12,
+        0.9970649400829098
+      ],
+      "face": 2303,
+      "center_in_jaw": [
+        0.05898765336087648,
+        0.0,
+        -0.034842609999999975
+      ],
+      "witness_in_jaw": [
+        0.038547822089174344,
+        -8.034036882794468e-14,
+        -0.03641209959360986
+      ],
+      "normal_in_jaw": [
+        0.9970649400829094,
+        3.9190423818504804e-12,
+        0.07656046798096054
+      ],
+      "boundary": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.04777792332997802,
+          0.04587965542258209
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542258209,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      }
+    },
+    {
+      "name": "y-minus12",
+      "center": [
+        0.013839998337279006,
+        -0.011999999999999997,
+        0.1701848732441874
+      ],
+      "witness": [
+        0.015369775542068002,
+        -0.010122320268397916,
+        0.14982844672749762
+      ],
+      "normal": [
+        -0.07462327828237653,
+        -0.0915941332488654,
+        0.9929964154481021
+      ],
+      "face": 4384,
+      "center_in_jaw": [
+        0.057586226224862216,
+        -0.011999999999999995,
+        -0.02284260999999998
+      ],
+      "witness_in_jaw": [
+        0.037229799708172445,
+        -0.010122320268397914,
+        -0.024372387204788976
+      ],
+      "normal_in_jaw": [
+        0.9929964154481017,
+        -0.09159413324886535,
+        0.0746232782823765
+      ],
+      "boundary": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.0598176357187989,
+          0.03575733515426452
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.03575733515426452,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      }
+    },
+    {
+      "name": "y-plus12",
+      "center": [
+        0.013839998337279006,
+        0.012000000000000004,
+        0.17018334270711755
+      ],
+      "witness": [
+        0.015343369267336652,
+        0.009875060043203392,
+        0.149849270167985
+      ],
+      "normal": [
+        -0.07333516731988188,
+        0.10365560764861055,
+        0.9919059775186165
+      ],
+      "face": 2471,
+      "center_in_jaw": [
+        0.057584695687792356,
+        0.011999999999999995,
+        -0.02284260999999998
+      ],
+      "witness_in_jaw": [
+        0.03725062314865982,
+        0.009875060043203383,
+        -0.024345980930057624
+      ],
+      "normal_in_jaw": [
+        0.9919059775186161,
+        0.10365560764861051,
+        0.07333516731988185
+      ],
+      "boundary": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05984404199353026,
+          0.036004742502638326
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.036004742502638326,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      }
+    },
+    {
+      "name": "y-minus20",
+      "center": [
+        0.013839998337279006,
+        -0.019999999999999997,
+        0.16904081906266016
+      ],
+      "witness": [
+        0.015497441593843777,
+        -0.015736909897886384,
+        0.149057602488928
+      ],
+      "normal": [
+        -0.08085089056412023,
+        -0.20795561473721103,
+        0.974791052376999
+      ],
+      "face": 4388,
+      "center_in_jaw": [
+        0.05644217204333497,
+        -0.01999999999999999,
+        -0.02284260999999998
+      ],
+      "witness_in_jaw": [
+        0.036458955469602816,
+        -0.01573690989788638,
+        -0.02450005325656475
+      ],
+      "normal_in_jaw": [
+        0.9747910523769986,
+        -0.20795561473721094,
+        0.08085089056412019
+      ],
+      "boundary": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05968996966702313,
+          0.030142745524776048
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.030142745524776048,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      }
+    },
+    {
+      "name": "y-plus20",
+      "center": [
+        0.013839998337279006,
+        0.020000000000000004,
+        0.1690405068072039
+      ],
+      "witness": [
+        0.01549980892402097,
+        0.015645336479727715,
+        0.1490772421833642
+      ],
+      "normal": [
+        -0.0809663700849642,
+        0.21242261074496444,
+        0.9738177865286493
+      ],
+      "face": 3159,
+      "center_in_jaw": [
+        0.056441859787878704,
+        0.01999999999999999,
+        -0.02284260999999998
+      ],
+      "witness_in_jaw": [
+        0.036478595164039035,
+        0.015645336479727705,
+        -0.02450242058674194
+      ],
+      "normal_in_jaw": [
+        0.9738177865286488,
+        0.21242261074496435,
+        0.08096637008496416
+      ],
+      "boundary": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05968760233684594,
+          0.030234466066114
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.030234466066114,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      }
+    }
+  ],
+  "highest_vertex_only": {
+    "center": [
+      0.07314676461269494,
+      -1.718887273197582e-07,
+      0.1749334310193832
+    ],
+    "witness": [
+      0.07314676461269494,
+      -1.718887273197582e-07,
+      0.154433431019383
+    ],
+    "normal": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "shift_xy_from_legacy_center_m": [
+      0.05930676627541594,
+      -1.7188872732322764e-07
+    ],
+    "boundary": {
+      "topological_open_edge_distance_m": null,
+      "home_xy_aabb_margin_m": [
+        0.0020406466481719676,
+        0.04587948353393511
+      ],
+      "minimum_home_xy_aabb_margin_m": 0.0020406466481719676,
+      "physical_rim_distance_m": null,
+      "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+    }
+  },
+  "selected_reference": null,
+  "selection_status": "DESIGN_REVIEW_REQUIRED",
+  "highest_point_warning": "Near positive-X mesh extent; no proof of useful crown region or passive stability."
+}

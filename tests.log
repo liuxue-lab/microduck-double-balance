@@ -1,0 +1,19 @@
+test_all_public_integration_paths_refused_and_restored (test_head_contact_reference.ReferenceTests.test_all_public_integration_paths_refused_and_restored) ... ok
+test_articulated_pose_and_jacobian_without_any_step (test_head_contact_reference.ReferenceTests.test_articulated_pose_and_jacobian_without_any_step) ... ok
+test_carried_and_world_vertical_placement_differ_on_tilt (test_head_contact_reference.ReferenceTests.test_carried_and_world_vertical_placement_differ_on_tilt) ... ok
+test_closed_mesh_has_no_open_rim_claim (test_head_contact_reference.ReferenceTests.test_closed_mesh_has_no_open_rim_claim) ... ok
+test_duplicate_vertex_seams_weld_before_counting (test_head_contact_reference.ReferenceTests.test_duplicate_vertex_seams_weld_before_counting) ... ok
+test_exception_restores_guard (test_head_contact_reference.ReferenceTests.test_exception_restores_guard) ... ok
+test_missing_archive_refused_before_model_construction (test_head_contact_reference.ReferenceTests.test_missing_archive_refused_before_model_construction) ... ok
+test_out_of_range_is_refused_not_clamped (test_head_contact_reference.ReferenceTests.test_out_of_range_is_refused_not_clamped) ... ok
+test_pose_scope_exactly_seven_existing_offsets (test_head_contact_reference.ReferenceTests.test_pose_scope_exactly_seven_existing_offsets) ... ok
+test_rotating_origin_term_and_sign (test_head_contact_reference.ReferenceTests.test_rotating_origin_term_and_sign) ... ok
+test_script_calls_no_integration_or_policy_api (test_head_contact_reference.ReferenceTests.test_script_calls_no_integration_or_policy_api) ... ok
+test_stationary_world_ball_rotating_frame_rate (test_head_contact_reference.ReferenceTests.test_stationary_world_ball_rotating_frame_rate) ... ok
+test_translation_rotation_covariance (test_head_contact_reference.ReferenceTests.test_translation_rotation_covariance) ... ok
+test_velocity_semantics_are_not_contact_slip (test_head_contact_reference.ReferenceTests.test_velocity_semantics_are_not_contact_slip) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.040s
+
+OK

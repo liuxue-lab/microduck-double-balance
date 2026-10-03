@@ -1,0 +1,5992 @@
+{
+  "complete": true,
+  "pose_count": 7,
+  "location_count": 7,
+  "primary_comparisons": 49,
+  "distance_measurements": 98,
+  "geometry_v2_pass_count": 98,
+  "all_measured_geometry_v2_pass": true,
+  "outside_projection_count": 0,
+  "rows": [
+    {
+      "pose": "home",
+      "point": "center",
+      "carried_center_world_m": [
+        0.013839998337278985,
+        3.469446951953614e-18,
+        0.1706648703119681
+      ],
+      "carried_witness_world_m": [
+        0.015409487930888685,
+        -1.0378044583632383e-13,
+        0.1502250390402683
+      ],
+      "carried_normal_world": [
+        -0.07656046798096028,
+        5.062630013818289e-12,
+        0.9970649400829089
+      ],
+      "normal_tilt_from_world_up_deg": 4.390888374169742,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.015409487930888682,
+          -1.0378044583632398e-13,
+          0.15022503904026832
+        ],
+        "expected_normal": [
+          -0.07656046798096038,
+          5.06263001381831e-12,
+          0.9970649400829098
+        ],
+        "original_face": 2303,
+        "original_sphere_gap_m": 0.0005000000000001149,
+        "engine_witness": [
+          0.01540948793088868,
+          -1.0378044583632397e-13,
+          0.1502250390402683
+        ],
+        "engine_normal": [
+          -0.07656046798096099,
+          5.062630013818439e-12,
+          0.9970649400829097
+        ],
+        "engine_distance_m": 0.0005000000000001219,
+        "witness_separation_m": 2.7809732887839817e-17,
+        "surface_distance_m": 2.7809732887839817e-17,
+        "sphere_gap_error_m": 6.938893903907228e-18,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.0597779233299782,
+          0.04587965542255865
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542255865,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.015409487930888685,
+          -1.0378044583632383e-13
+        ],
+        "center_world_m": [
+          0.015409487930888685,
+          -1.0378044583632383e-13,
+          0.17078538488724887
+        ],
+        "witness_world_m": [
+          0.016978977524498645,
+          -1.0071424565307786e-13,
+          0.15034555361554566
+        ],
+        "normal_world": [
+          -0.07656046798096033,
+          -1.4957074064611897e-13,
+          0.9970649400829098
+        ],
+        "face": 2303,
+        "delta_from_carried_center_m": [
+          0.0015694895936096999,
+          -1.0378391528327578e-13,
+          0.00012051457528078346
+        ],
+        "witness_shift_from_carried_m": 0.0015741096998952272,
+        "geometry": {
+          "mesh_witness": [
+            0.016978977524498645,
+            -1.0071424565307786e-13,
+            0.15034555361554566
+          ],
+          "expected_normal": [
+            -0.07656046798096033,
+            -1.4957074064611897e-13,
+            0.9970649400829098
+          ],
+          "original_face": 2303,
+          "original_sphere_gap_m": 0.000500000000003567,
+          "engine_witness": [
+            0.016978977524498645,
+            -1.0071424565307784e-13,
+            0.15034555361554564
+          ],
+          "engine_normal": [
+            -0.07656046798096247,
+            -1.4957074064611266e-13,
+            0.9970649400829096
+          ],
+          "engine_distance_m": 0.000500000000003567,
+          "witness_separation_m": 2.7755575615628914e-17,
+          "surface_distance_m": 2.7755575615628914e-17,
+          "sphere_gap_error_m": 0.0,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "home",
+      "point": "x-minus12",
+      "carried_center_world_m": [
+        0.0018399983372789953,
+        3.469446951953614e-18,
+        0.16957659135084951
+      ],
+      "carried_witness_world_m": [
+        0.00400990386373175,
+        -8.064989078794499e-14,
+        0.14919175605579535
+      ],
+      "carried_normal_world": [
+        -0.10584905007083861,
+        3.9343102553598094e-12,
+        0.9943822095145807
+      ],
+      "normal_tilt_from_world_up_deg": 6.07608616121678,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.0040099038637317445,
+          -8.064989078794497e-14,
+          0.14919175605579538
+        ],
+        "expected_normal": [
+          -0.10584905007083872,
+          3.934310255359818e-12,
+          0.9943822095145814
+        ],
+        "original_face": 2308,
+        "original_sphere_gap_m": 0.0005000000000052462,
+        "engine_witness": [
+          0.0040099038637317445,
+          -8.064989063613045e-14,
+          0.14919175605579538
+        ],
+        "engine_normal": [
+          -0.10584905007083663,
+          3.9343102479541955e-12,
+          0.9943822095145818
+        ],
+        "engine_distance_m": 0.0005000000000052393,
+        "witness_separation_m": 1.5181451416135603e-22,
+        "surface_distance_m": 1.5181451416135603e-22,
+        "sphere_gap_error_m": 6.938893903907228e-18,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05151251457537076,
+          0.04587965542258178
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542258178,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.00400990386373175,
+          -8.064989078794499e-14
+        ],
+        "center_world_m": [
+          0.00400990386373175,
+          -8.064989078794499e-14,
+          0.16980757138701244
+        ],
+        "witness_world_m": [
+          0.006179809390183966,
+          -9.49101602287589e-14,
+          0.14942273609196333
+        ],
+        "normal_world": [
+          -0.10584905007083883,
+          6.956228995518915e-13,
+          0.9943822095145814
+        ],
+        "face": 2308,
+        "delta_from_carried_center_m": [
+          0.0021699055264527544,
+          -8.065336023489694e-14,
+          0.0002309800361629255
+        ],
+        "witness_shift_from_carried_m": 0.0021821644692451648,
+        "geometry": {
+          "mesh_witness": [
+            0.006179809390183966,
+            -9.49101602287589e-14,
+            0.14942273609196333
+          ],
+          "expected_normal": [
+            -0.10584905007083883,
+            6.956228995518915e-13,
+            0.9943822095145814
+          ],
+          "original_face": 2308,
+          "original_sphere_gap_m": 0.0005000000000001947,
+          "engine_witness": [
+            0.0061798093901839655,
+            -9.491016013880379e-14,
+            0.1494227360919633
+          ],
+          "engine_normal": [
+            -0.10584905007083685,
+            6.956228951638306e-13,
+            0.9943822095145818
+          ],
+          "engine_distance_m": 0.0005000000000002017,
+          "witness_separation_m": 2.776912483582283e-17,
+          "surface_distance_m": 2.7877281524993114e-17,
+          "sphere_gap_error_m": 6.938893903907228e-18,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "home",
+      "point": "x-plus12",
+      "carried_center_world_m": [
+        0.02583999833727898,
+        3.469446951953614e-18,
+        0.17158630038020162
+      ],
+      "carried_witness_world_m": [
+        0.027409487930888862,
+        -8.033689938099269e-14,
+        0.1511464691084995
+      ],
+      "carried_normal_world": [
+        -0.07656046798096051,
+        3.919042381850479e-12,
+        0.9970649400829089
+      ],
+      "normal_tilt_from_world_up_deg": 4.390888374169742,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.027409487930888855,
+          -8.033689938099283e-14,
+          0.15114646910849952
+        ],
+        "expected_normal": [
+          -0.07656046798096043,
+          3.919042381850496e-12,
+          0.9970649400829098
+        ],
+        "original_face": 2303,
+        "original_sphere_gap_m": 0.0005000000000024533,
+        "engine_witness": [
+          0.02740948793088886,
+          -8.033689938099283e-14,
+          0.15114646910849952
+        ],
+        "engine_normal": [
+          -0.07656046798096375,
+          3.9190423818505895e-12,
+          0.9970649400829095
+        ],
+        "engine_distance_m": 0.0005000000000024603,
+        "witness_separation_m": 3.469446951953614e-18,
+        "surface_distance_m": 1.262177448353619e-29,
+        "sphere_gap_error_m": 6.938893903907228e-18,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.04777792332997802,
+          0.04587965542258209
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542258209,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.027409487930888862,
+          -8.033689938099269e-14
+        ],
+        "center_world_m": [
+          0.027409487930888862,
+          -8.033689938099269e-14,
+          0.17170681495547677
+        ],
+        "witness_world_m": [
+          0.028978977524498573,
+          -7.72706991977472e-14,
+          0.15126698368377683
+        ],
+        "normal_world": [
+          -0.07656046798096042,
+          -1.4957074064611952e-13,
+          0.9970649400829096
+        ],
+        "face": 2303,
+        "delta_from_carried_center_m": [
+          0.0015694895936098838,
+          -8.034036882794464e-14,
+          0.00012051457527514908
+        ],
+        "witness_shift_from_carried_m": 0.001574109699894976,
+        "geometry": {
+          "mesh_witness": [
+            0.028978977524498573,
+            -7.72706991977472e-14,
+            0.15126698368377683
+          ],
+          "expected_normal": [
+            -0.07656046798096042,
+            -1.4957074064611952e-13,
+            0.9970649400829096
+          ],
+          "original_face": 2303,
+          "original_sphere_gap_m": 0.0005000000000002849,
+          "engine_witness": [
+            0.028978977524498576,
+            -7.72706991977472e-14,
+            0.15126698368377686
+          ],
+          "engine_normal": [
+            -0.07656046798095893,
+            -1.4957074064611084e-13,
+            0.9970649400829099
+          ],
+          "engine_distance_m": 0.000500000000000278,
+          "witness_separation_m": 2.797157557069881e-17,
+          "surface_distance_m": 2.797157557069881e-17,
+          "sphere_gap_error_m": 6.938893903907228e-18,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "home",
+      "point": "y-minus12",
+      "carried_center_world_m": [
+        0.013839998337278985,
+        -0.011999999999999986,
+        0.17018487324418735
+      ],
+      "carried_witness_world_m": [
+        0.015369775542067983,
+        -0.010122320268397905,
+        0.1498284467274976
+      ],
+      "carried_normal_world": [
+        -0.07462327828237647,
+        -0.09159413324886531,
+        0.9929964154481012
+      ],
+      "normal_tilt_from_world_up_deg": 6.7850275053051154,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.015369775542067978,
+          -0.010122320268397909,
+          0.14982844672749762
+        ],
+        "expected_normal": [
+          -0.07462327828237655,
+          -0.09159413324886548,
+          0.9929964154481021
+        ],
+        "original_face": 4384,
+        "original_sphere_gap_m": 0.0005000000000036607,
+        "engine_witness": [
+          0.01536977554206798,
+          -0.010122320268397912,
+          0.14982844672749765
+        ],
+        "engine_normal": [
+          -0.07462327828237492,
+          -0.0915941332488673,
+          0.9929964154481022
+        ],
+        "engine_distance_m": 0.0005000000000036468,
+        "witness_separation_m": 2.8025315438821013e-17,
+        "surface_distance_m": 2.7863784897804254e-17,
+        "sphere_gap_error_m": 1.3877787807814457e-17,
+        "normal_error_deg": 8.537736462515939e-07,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.0598176357187989,
+          0.03575733515426452
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.03575733515426452,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.015369775542067983,
+          -0.010122320268397905
+        ],
+        "center_world_m": [
+          0.015369775542067983,
+          -0.010122320268397905,
+          0.17045209361690672
+        ],
+        "witness_world_m": [
+          0.016933632844680347,
+          -0.008567366846871012,
+          0.15007106149892563
+        ],
+        "normal_world": [
+          -0.07628572207863113,
+          -0.07585138641592533,
+          0.9941966886817336
+        ],
+        "face": 4383,
+        "delta_from_carried_center_m": [
+          0.0015297772047889978,
+          0.0018776797316020812,
+          0.0002672203727193678
+        ],
+        "witness_shift_from_carried_m": 0.0022186463741135694,
+        "geometry": {
+          "mesh_witness": [
+            0.016933632844680347,
+            -0.008567366846871012,
+            0.15007106149892563
+          ],
+          "expected_normal": [
+            -0.07628572207863113,
+            -0.07585138641592533,
+            0.9941966886817336
+          ],
+          "original_face": 4383,
+          "original_sphere_gap_m": 0.0005000000000055828,
+          "engine_witness": [
+            0.01693363284468035,
+            -0.008567366846871012,
+            0.15007106149892563
+          ],
+          "engine_normal": [
+            -0.07628572207862905,
+            -0.07585138641592395,
+            0.9941966886817338
+          ],
+          "engine_distance_m": 0.0005000000000056001,
+          "witness_separation_m": 3.469446951953614e-18,
+          "surface_distance_m": 1.734723475976807e-18,
+          "sphere_gap_error_m": 1.734723475976807e-17,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "home",
+      "point": "y-plus12",
+      "carried_center_world_m": [
+        0.013839998337278985,
+        0.011999999999999993,
+        0.1701833427071175
+      ],
+      "carried_witness_world_m": [
+        0.015343369267336631,
+        0.009875060043203382,
+        0.14984927016798497
+      ],
+      "carried_normal_world": [
+        -0.07333516731988182,
+        0.10365560764861047,
+        0.9919059775186156
+      ],
+      "normal_tilt_from_world_up_deg": 7.294796843328275,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.015343369267336628,
+          0.009875060043203394,
+          0.149849270167985
+        ],
+        "expected_normal": [
+          -0.0733351673198819,
+          0.10365560764861025,
+          0.9919059775186165
+        ],
+        "original_face": 2471,
+        "original_sphere_gap_m": 0.0005000000000008643,
+        "engine_witness": [
+          0.01536966141003831,
+          0.010122455153271759,
+          0.1498284261967506
+        ],
+        "engine_normal": [
+          -0.07462324500780805,
+          0.09159434623587379,
+          0.9929963983026966
+        ],
+        "engine_distance_m": 0.0004984796975689015,
+        "witness_separation_m": 0.00024965994550669166,
+        "surface_distance_m": 6.046206699752036e-06,
+        "sphere_gap_error_m": 1.5203024319628e-06,
+        "normal_error_deg": 0.6977958445360752,
+        "legacy_v1_pass": false,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05984404199353026,
+          0.036004742502638326
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.036004742502638326,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.015343369267336631,
+          0.009875060043203382
+        ],
+        "center_world_m": [
+          0.015343369267336631,
+          0.009875060043203382,
+          0.170468932188288
+        ],
+        "witness_world_m": [
+          0.01690722678425373,
+          0.008320110716290916,
+          0.15008789977436154
+        ],
+        "normal_world": [
+          -0.0762857325325409,
+          0.07585118667865641,
+          0.9941967031183585
+        ],
+        "face": 2739,
+        "delta_from_carried_center_m": [
+          0.0015033709300576459,
+          -0.0021249399567966117,
+          0.00028558948117052285
+        ],
+        "witness_shift_from_carried_m": 0.0022182114037041377,
+        "geometry": {
+          "mesh_witness": [
+            0.01690722678425373,
+            0.008320110716290916,
+            0.15008789977436154
+          ],
+          "expected_normal": [
+            -0.0762857325325409,
+            0.07585118667865641,
+            0.9941967031183585
+          ],
+          "original_face": 2739,
+          "original_sphere_gap_m": 0.0005000000000001219,
+          "engine_witness": [
+            0.01690722678425352,
+            0.008320110716291025,
+            0.15008789977436154
+          ],
+          "engine_normal": [
+            -0.07628573253252806,
+            0.07585118667865162,
+            0.9941967031183598
+          ],
+          "engine_distance_m": 0.0005000000000001045,
+          "witness_separation_m": 2.3511103476751525e-16,
+          "surface_distance_m": 1.4304896245381992e-17,
+          "sphere_gap_error_m": 1.734723475976807e-17,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "home",
+      "point": "y-minus20",
+      "carried_center_world_m": [
+        0.013839998337278985,
+        -0.019999999999999976,
+        0.1690408190626601
+      ],
+      "carried_witness_world_m": [
+        0.015497441593843756,
+        -0.01573690989788637,
+        0.14905760248892796
+      ],
+      "carried_normal_world": [
+        -0.08085089056412015,
+        -0.20795561473721086,
+        0.9747910523769981
+      ],
+      "normal_tilt_from_world_up_deg": 12.89233484015539,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.015497441593843753,
+          -0.015736909897886377,
+          0.149057602488928
+        ],
+        "expected_normal": [
+          -0.0808508905641203,
+          -0.20795561473721094,
+          0.9747910523769991
+        ],
+        "original_face": 4388,
+        "original_sphere_gap_m": 0.0005000000000037266,
+        "engine_witness": [
+          0.015497441593843756,
+          -0.015736909897886373,
+          0.14905760248892802
+        ],
+        "engine_normal": [
+          -0.08085089056411807,
+          -0.20795561473720664,
+          0.9747910523770003
+        ],
+        "engine_distance_m": 0.000500000000003737,
+        "witness_separation_m": 2.8185920280518337e-17,
+        "surface_distance_m": 2.8609792490763984e-17,
+        "sphere_gap_error_m": 1.0408340855860843e-17,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05968996966702313,
+          0.030142745524776048
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.030142745524776048,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.015497441593843756,
+          -0.01573690989788637
+        ],
+        "center_world_m": [
+          0.015497441593843756,
+          -0.01573690989788637,
+          0.16989004028115434
+        ],
+        "witness_world_m": [
+          0.017103082921228686,
+          -0.013062229589214517,
+          0.14962879646014796
+        ],
+        "normal_world": [
+          -0.07832396718950196,
+          -0.13047221017910343,
+          0.9883533571221771
+        ],
+        "face": 4385,
+        "delta_from_carried_center_m": [
+          0.001657443256564771,
+          0.004263090102113606,
+          0.0008492212184942338
+        ],
+        "witness_shift_from_carried_m": 0.003171476214408908,
+        "geometry": {
+          "mesh_witness": [
+            0.017103082921228686,
+            -0.013062229589214517,
+            0.14962879646014796
+          ],
+          "expected_normal": [
+            -0.07832396718950196,
+            -0.13047221017910343,
+            0.9883533571221771
+          ],
+          "original_face": 4385,
+          "original_sphere_gap_m": 0.0005000000000017768,
+          "engine_witness": [
+            0.01710308292122869,
+            -0.013062229589214516,
+            0.14962879646014796
+          ],
+          "engine_normal": [
+            -0.07832396718949752,
+            -0.13047221017910074,
+            0.9883533571221778
+          ],
+          "engine_distance_m": 0.0005000000000017699,
+          "witness_separation_m": 3.878959614448864e-18,
+          "surface_distance_m": 0.0,
+          "sphere_gap_error_m": 6.938893903907228e-18,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "home",
+      "point": "y-plus20",
+      "carried_center_world_m": [
+        0.013839998337278985,
+        0.019999999999999983,
+        0.16904050680720384
+      ],
+      "carried_witness_world_m": [
+        0.015499808924020947,
+        0.0156453364797277,
+        0.14907724218336418
+      ],
+      "carried_normal_world": [
+        -0.08096637008496411,
+        0.21242261074496427,
+        0.9738177865286484
+      ],
+      "normal_tilt_from_world_up_deg": 13.1399271482485,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.015499808924020943,
+          0.015645336479727705,
+          0.1490772421833642
+        ],
+        "expected_normal": [
+          -0.08096637008496417,
+          0.21242261074496452,
+          0.9738177865286493
+        ],
+        "original_face": 3159,
+        "original_sphere_gap_m": 0.0005000000000023805,
+        "engine_witness": [
+          0.015497418173444116,
+          0.015736968977761185,
+          0.14905758700336413
+        ],
+        "engine_normal": [
+          -0.08085094496851321,
+          0.20795581122980664,
+          0.9747910059461216
+        ],
+        "engine_distance_m": 0.0004996965318165639,
+        "witness_separation_m": 9.374730121455134e-05,
+        "surface_distance_m": 5.178209758263527e-07,
+        "sphere_gap_error_m": 3.034681858166133e-07,
+        "normal_error_deg": 0.26201663391694596,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05968760233684594,
+          0.030234466066114
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.030234466066114,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.015499808924020947,
+          0.0156453364797277
+        ],
+        "center_world_m": [
+          0.015499808924020947,
+          0.0156453364797277,
+          0.1699021060116908
+        ],
+        "witness_world_m": [
+          0.017103075879110977,
+          0.01306222888263063,
+          0.14962879621253153
+        ],
+        "normal_world": [
+          -0.07820814415071904,
+          0.1260052486388587,
+          0.9889419414222251
+        ],
+        "face": 2450,
+        "delta_from_carried_center_m": [
+          0.0016598105867419617,
+          -0.004354663520272282,
+          0.0008615992044869736
+        ],
+        "witness_shift_from_carried_m": 0.0030898416843836824,
+        "geometry": {
+          "mesh_witness": [
+            0.017103075879110977,
+            0.01306222888263063,
+            0.14962879621253153
+          ],
+          "expected_normal": [
+            -0.07820814415071904,
+            0.1260052486388587,
+            0.9889419414222251
+          ],
+          "original_face": 2450,
+          "original_sphere_gap_m": 0.0005000000000037093,
+          "engine_witness": [
+            0.01710307587911098,
+            0.013062228882630632,
+            0.14962879621253153
+          ],
+          "engine_normal": [
+            -0.07820814415071775,
+            0.12600524863885593,
+            0.9889419414222256
+          ],
+          "engine_distance_m": 0.0005000000000037162,
+          "witness_separation_m": 3.878959614448864e-18,
+          "surface_distance_m": 1.734723475976807e-18,
+          "sphere_gap_error_m": 6.938893903907228e-18,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "yaw-minus90",
+      "point": "center",
+      "carried_center_world_m": [
+        0.00889738833727901,
+        -0.004942609999999969,
+        0.1706648703119681
+      ],
+      "carried_witness_world_m": [
+        0.008897388337175226,
+        -0.006512099593609669,
+        0.1502250390402683
+      ],
+      "carried_normal_world": [
+        5.062621513898856e-12,
+        0.07656046798096026,
+        0.9970649400829088
+      ],
+      "normal_tilt_from_world_up_deg": 4.390888374169825,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.00889738833717523,
+          -0.006512099593609665,
+          0.15022503904026832
+        ],
+        "expected_normal": [
+          5.062430826844483e-12,
+          0.07656046798096038,
+          0.9970649400829098
+        ],
+        "original_face": 2303,
+        "original_sphere_gap_m": 0.0005000000000001149,
+        "engine_witness": [
+          0.00889738833717523,
+          -0.006512099593609665,
+          0.1502250390402683
+        ],
+        "engine_normal": [
+          5.0619231028990016e-12,
+          0.07656046798096193,
+          0.9970649400829096
+        ],
+        "engine_distance_m": 0.0005000000000001253,
+        "witness_separation_m": 2.7755575615628914e-17,
+        "surface_distance_m": 2.7755575615628914e-17,
+        "sphere_gap_error_m": 1.0408340855860843e-17,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.0597779233299782,
+          0.04587965542255865
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542255865,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.008897388337175226,
+          -0.006512099593609669
+        ],
+        "center_world_m": [
+          0.008897388337175226,
+          -0.006512099593609669,
+          0.17078538488724887
+        ],
+        "witness_world_m": [
+          0.008897388337178295,
+          -0.008081589187219629,
+          0.15034555361554566
+        ],
+        "normal_world": [
+          -1.4969394287816769e-13,
+          0.07656046798096033,
+          0.9970649400829098
+        ],
+        "face": 2303,
+        "delta_from_carried_center_m": [
+          -1.0378330139726444e-13,
+          -0.0015694895936096999,
+          0.00012051457528078346
+        ],
+        "witness_shift_from_carried_m": 0.0015741096998952272,
+        "geometry": {
+          "mesh_witness": [
+            0.008897388337178295,
+            -0.008081589187219629,
+            0.15034555361554566
+          ],
+          "expected_normal": [
+            -1.4969394287816769e-13,
+            0.07656046798096033,
+            0.9970649400829098
+          ],
+          "original_face": 2303,
+          "original_sphere_gap_m": 0.000500000000003567,
+          "engine_witness": [
+            0.008897388337178297,
+            -0.008081589187219632,
+            0.15034555361554566
+          ],
+          "engine_normal": [
+            -1.4918621893293655e-13,
+            0.07656046798096247,
+            0.9970649400829096
+          ],
+          "engine_distance_m": 0.0005000000000035774,
+          "witness_separation_m": 3.878959614448864e-18,
+          "surface_distance_m": 0.0,
+          "sphere_gap_error_m": 1.0408340855860843e-17,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "yaw-minus90",
+      "point": "x-minus12",
+      "carried_center_world_m": [
+        0.00889738833727901,
+        0.0070573900000000175,
+        0.16957659135084951
+      ],
+      "carried_witness_world_m": [
+        0.008897388337198355,
+        0.004887484473547265,
+        0.14919175605579535
+      ],
+      "carried_normal_world": [
+        3.934298503754556e-12,
+        0.1058490500708386,
+        0.9943822095145806
+      ],
+      "normal_tilt_from_world_up_deg": 6.07608616121684,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.00889738833719836,
+          0.004887484473547268,
+          0.14919175605579538
+        ],
+        "expected_normal": [
+          3.934098981542297e-12,
+          0.10584905007083872,
+          0.9943822095145814
+        ],
+        "original_face": 2308,
+        "original_sphere_gap_m": 0.0005000000000052462,
+        "engine_witness": [
+          0.008897388337198359,
+          0.004887484473547269,
+          0.14919175605579538
+        ],
+        "engine_normal": [
+          3.9343528434740815e-12,
+          0.10584905007083834,
+          0.9943822095145816
+        ],
+        "engine_distance_m": 0.0005000000000052393,
+        "witness_separation_m": 1.939479807224432e-18,
+        "surface_distance_m": 8.673617379884035e-19,
+        "sphere_gap_error_m": 6.938893903907228e-18,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05151251457537076,
+          0.04587965542258178
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542258178,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.008897388337198355,
+          0.004887484473547265
+        ],
+        "center_world_m": [
+          0.008897388337198355,
+          0.004887484473547265,
+          0.16980757138701244
+        ],
+        "witness_world_m": [
+          0.0088973883371841,
+          0.0027175789470950482,
+          0.14942273609196333
+        ],
+        "normal_world": [
+          6.954125622232813e-13,
+          0.10584905007083883,
+          0.9943822095145814
+        ],
+        "face": 2308,
+        "delta_from_carried_center_m": [
+          -8.065423329206567e-14,
+          -0.0021699055264527527,
+          0.0002309800361629255
+        ],
+        "witness_shift_from_carried_m": 0.0021821644692451648,
+        "geometry": {
+          "mesh_witness": [
+            0.0088973883371841,
+            0.0027175789470950482,
+            0.14942273609196333
+          ],
+          "expected_normal": [
+            6.954125622232813e-13,
+            0.10584905007083883,
+            0.9943822095145814
+          ],
+          "original_face": 2308,
+          "original_sphere_gap_m": 0.0005000000000001947,
+          "engine_witness": [
+            0.0088973883371841,
+            0.0027175789470950482,
+            0.14942273609196333
+          ],
+          "engine_normal": [
+            6.938893903904471e-13,
+            0.10584905007083754,
+            0.9943822095145817
+          ],
+          "engine_distance_m": 0.0005000000000002017,
+          "witness_separation_m": 0.0,
+          "surface_distance_m": 4.336808689942018e-19,
+          "sphere_gap_error_m": 6.938893903907228e-18,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "yaw-minus90",
+      "point": "x-plus12",
+      "carried_center_world_m": [
+        0.008897388337279011,
+        -0.01694260999999996,
+        0.17158630038020162
+      ],
+      "carried_witness_world_m": [
+        0.008897388337198671,
+        -0.018512099593609842,
+        0.1511464691084995
+      ],
+      "carried_normal_world": [
+        3.919033881931045e-12,
+        0.0765604679809605,
+        0.9970649400829088
+      ],
+      "normal_tilt_from_world_up_deg": 4.390888374169825,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.008897388337198673,
+          -0.018512099593609832,
+          0.15114646910849952
+        ],
+        "expected_normal": [
+          3.91895188387455e-12,
+          0.07656046798096026,
+          0.9970649400829098
+        ],
+        "original_face": 2303,
+        "original_sphere_gap_m": 0.0005000000000024533,
+        "engine_witness": [
+          0.008897388337198673,
+          -0.018512099593609832,
+          0.1511464691084995
+        ],
+        "engine_normal": [
+          3.920475055688227e-12,
+          0.07656046798095952,
+          0.9970649400829099
+        ],
+        "engine_distance_m": 0.0005000000000024568,
+        "witness_separation_m": 2.7755575615628914e-17,
+        "surface_distance_m": 2.7755575615628914e-17,
+        "sphere_gap_error_m": 3.469446951953614e-18,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.04777792332997802,
+          0.04587965542258209
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542258209,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.008897388337198671,
+          -0.018512099593609842
+        ],
+        "center_world_m": [
+          0.008897388337198671,
+          -0.018512099593609842,
+          0.17170681495547677
+        ],
+        "witness_world_m": [
+          0.00889738833720174,
+          -0.020081589187219553,
+          0.15126698368377683
+        ],
+        "normal_world": [
+          -1.4969394287819167e-13,
+          0.07656046798096042,
+          0.9970649400829096
+        ],
+        "face": 2303,
+        "delta_from_carried_center_m": [
+          -8.034024834291387e-14,
+          -0.0015694895936098838,
+          0.00012051457527514908
+        ],
+        "witness_shift_from_carried_m": 0.001574109699894976,
+        "geometry": {
+          "mesh_witness": [
+            0.00889738833720174,
+            -0.020081589187219553,
+            0.15126698368377683
+          ],
+          "expected_normal": [
+            -1.4969394287819167e-13,
+            0.07656046798096042,
+            0.9970649400829096
+          ],
+          "original_face": 2303,
+          "original_sphere_gap_m": 0.0005000000000002849,
+          "engine_witness": [
+            0.008897388337201738,
+            -0.02008158918721955,
+            0.15126698368377683
+          ],
+          "engine_normal": [
+            -1.4918621893391668e-13,
+            0.07656046798095893,
+            0.9970649400829099
+          ],
+          "engine_distance_m": 0.0005000000000002745,
+          "witness_separation_m": 3.878959614448864e-18,
+          "surface_distance_m": 0.0,
+          "sphere_gap_error_m": 1.0408340855860843e-17,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "yaw-minus90",
+      "point": "y-minus12",
+      "carried_center_world_m": [
+        -0.0031026116627209787,
+        -0.004942609999999972,
+        0.17018487324418735
+      ],
+      "carried_witness_world_m": [
+        -0.0012249319311188975,
+        -0.006472387204788967,
+        0.1498284467274976
+      ],
+      "carried_normal_world": [
+        -0.09159413324886531,
+        0.07462327828237644,
+        0.9929964154481011
+      ],
+      "normal_tilt_from_world_up_deg": 6.785027505305169,
+      "carried_geometry": {
+        "mesh_witness": [
+          -0.0012249319311189014,
+          -0.006472387204788961,
+          0.14982844672749762
+        ],
+        "expected_normal": [
+          -0.09159413324886548,
+          0.0746232782823764,
+          0.9929964154481024
+        ],
+        "original_face": 4384,
+        "original_sphere_gap_m": 0.0005000000000036572,
+        "engine_witness": [
+          -0.0012249319311189019,
+          -0.006472387204788959,
+          0.1498284467274976
+        ],
+        "engine_normal": [
+          -0.09159413324886556,
+          0.07462327828237665,
+          0.9929964154481022
+        ],
+        "engine_distance_m": 0.0005000000000036434,
+        "witness_separation_m": 2.788065466074572e-17,
+        "surface_distance_m": 2.801272940709145e-17,
+        "sphere_gap_error_m": 1.3877787807814457e-17,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.0598176357187989,
+          0.03575733515426452
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.03575733515426452,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          -0.0012249319311188975,
+          -0.006472387204788967
+        ],
+        "center_world_m": [
+          -0.0012249319311188975,
+          -0.006472387204788967,
+          0.17045209361690672
+        ],
+        "witness_world_m": [
+          0.0003300214904079948,
+          -0.00803624450740133,
+          0.15007106149892563
+        ],
+        "normal_world": [
+          -0.07585138641592531,
+          0.07628572207863113,
+          0.9941966886817336
+        ],
+        "face": 4383,
+        "delta_from_carried_center_m": [
+          0.0018776797316020812,
+          -0.0015297772047889943,
+          0.0002672203727193678
+        ],
+        "witness_shift_from_carried_m": 0.002218646374113569,
+        "geometry": {
+          "mesh_witness": [
+            0.0003300214904079948,
+            -0.00803624450740133,
+            0.15007106149892563
+          ],
+          "expected_normal": [
+            -0.07585138641592531,
+            0.07628572207863113,
+            0.9941966886817336
+          ],
+          "original_face": 4383,
+          "original_sphere_gap_m": 0.0005000000000055828,
+          "engine_witness": [
+            0.00033002149040799454,
+            -0.00803624450740133,
+            0.1500710614989256
+          ],
+          "engine_normal": [
+            -0.07585138641592547,
+            0.07628572207862983,
+            0.9941966886817337
+          ],
+          "engine_distance_m": 0.0005000000000056001,
+          "witness_separation_m": 2.7756899073056066e-17,
+          "surface_distance_m": 2.777468022149871e-17,
+          "sphere_gap_error_m": 1.734723475976807e-17,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "yaw-minus90",
+      "point": "y-plus12",
+      "carried_center_world_m": [
+        0.020897388337279,
+        -0.004942609999999969,
+        0.1701833427071175
+      ],
+      "carried_witness_world_m": [
+        0.01877244838048239,
+        -0.006445980930057615,
+        0.14984927016798497
+      ],
+      "carried_normal_world": [
+        0.10365560764861044,
+        0.07333516731988182,
+        0.9919059775186155
+      ],
+      "normal_tilt_from_world_up_deg": 7.2947968433283235,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.018772448380482403,
+          -0.006445980930057611,
+          0.149849270167985
+        ],
+        "expected_normal": [
+          0.10365560764861007,
+          0.0733351673198819,
+          0.9919059775186165
+        ],
+        "original_face": 2471,
+        "original_sphere_gap_m": 0.0005000000000008643,
+        "engine_witness": [
+          0.019019843490550768,
+          -0.0064722730727592975,
+          0.14982842619675063
+        ],
+        "engine_normal": [
+          0.09159434623587705,
+          0.0746232450078129,
+          0.9929963983026959
+        ],
+        "engine_distance_m": 0.0004984796975689085,
+        "witness_separation_m": 0.0002496599455066897,
+        "surface_distance_m": 6.04620669978026e-06,
+        "sphere_gap_error_m": 1.5203024319558611e-06,
+        "normal_error_deg": 0.6977958445360752,
+        "legacy_v1_pass": false,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05984404199353026,
+          0.036004742502638326
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.036004742502638326,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.01877244838048239,
+          -0.006445980930057615
+        ],
+        "center_world_m": [
+          0.01877244838048239,
+          -0.006445980930057615,
+          0.170468932188288
+        ],
+        "witness_world_m": [
+          0.01721749905357003,
+          -0.008009838446974326,
+          0.15008789977436152
+        ],
+        "normal_world": [
+          0.07585118667865119,
+          0.07628573253252205,
+          0.9941967031183602
+        ],
+        "face": 2739,
+        "delta_from_carried_center_m": [
+          -0.00212493995679661,
+          -0.0015033709300576459,
+          0.00028558948117052285
+        ],
+        "witness_shift_from_carried_m": 0.002218211403703787,
+        "geometry": {
+          "mesh_witness": [
+            0.01721749905357003,
+            -0.008009838446974326,
+            0.15008789977436152
+          ],
+          "expected_normal": [
+            0.07585118667865119,
+            0.07628573253252205,
+            0.9941967031183602
+          ],
+          "original_face": 2739,
+          "original_sphere_gap_m": 0.0005000000000001149,
+          "engine_witness": [
+            0.017217499053570035,
+            -0.008009838446974504,
+            0.15008789977436154
+          ],
+          "engine_normal": [
+            0.07585118667865162,
+            0.07628573253252806,
+            0.9941967031183598
+          ],
+          "engine_distance_m": 0.0005000000000001045,
+          "witness_separation_m": 1.808527222180077e-16,
+          "surface_distance_m": 1.8031113352670995e-16,
+          "sphere_gap_error_m": 1.0408340855860843e-17,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "yaw-minus90",
+      "point": "y-minus20",
+      "carried_center_world_m": [
+        -0.011102611662720968,
+        -0.004942609999999972,
+        0.1690408190626601
+      ],
+      "carried_witness_world_m": [
+        -0.006839521560607359,
+        -0.006600053256564743,
+        0.14905760248892796
+      ],
+      "carried_normal_world": [
+        -0.20795561473721083,
+        0.08085089056412012,
+        0.974791052376998
+      ],
+      "normal_tilt_from_world_up_deg": 12.892334840155419,
+      "carried_geometry": {
+        "mesh_witness": [
+          -0.006839521560607363,
+          -0.006600053256564736,
+          0.149057602488928
+        ],
+        "expected_normal": [
+          -0.20795561473721122,
+          0.08085089056412012,
+          0.9747910523769989
+        ],
+        "original_face": 4388,
+        "original_sphere_gap_m": 0.0005000000000037301,
+        "engine_witness": [
+          -0.006839521560607358,
+          -0.006600053256564736,
+          0.14905760248892796
+        ],
+        "engine_normal": [
+          -0.20795561473720664,
+          0.08085089056411807,
+          0.9747910523770003
+        ],
+        "engine_distance_m": 0.0005000000000037336,
+        "witness_separation_m": 2.823925224926892e-17,
+        "surface_distance_m": 2.809234570782673e-17,
+        "sphere_gap_error_m": 3.469446951953614e-18,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05968996966702313,
+          0.030142745524776048
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.030142745524776048,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          -0.006839521560607359,
+          -0.006600053256564743
+        ],
+        "center_world_m": [
+          -0.006839521560607359,
+          -0.006600053256564743,
+          0.16989004028115434
+        ],
+        "witness_world_m": [
+          -0.004164841251935509,
+          -0.008205694583949673,
+          0.14962879646014796
+        ],
+        "normal_world": [
+          -0.13047221017910332,
+          0.07832396718950196,
+          0.9883533571221771
+        ],
+        "face": 4385,
+        "delta_from_carried_center_m": [
+          0.00426309010211361,
+          -0.001657443256564771,
+          0.0008492212184942338
+        ],
+        "witness_shift_from_carried_m": 0.003171476214408906,
+        "geometry": {
+          "mesh_witness": [
+            -0.004164841251935509,
+            -0.008205694583949673,
+            0.14962879646014796
+          ],
+          "expected_normal": [
+            -0.13047221017910332,
+            0.07832396718950196,
+            0.9883533571221771
+          ],
+          "original_face": 4385,
+          "original_sphere_gap_m": 0.0005000000000017768,
+          "engine_witness": [
+            -0.004164841251935507,
+            -0.008205694583949673,
+            0.14962879646014796
+          ],
+          "engine_normal": [
+            -0.13047221017909902,
+            0.07832396718950099,
+            0.9883533571221778
+          ],
+          "engine_distance_m": 0.0005000000000017699,
+          "witness_separation_m": 1.734723475976807e-18,
+          "surface_distance_m": 0.0,
+          "sphere_gap_error_m": 6.938893903907228e-18,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "yaw-minus90",
+      "point": "y-plus20",
+      "carried_center_world_m": [
+        0.028897388337278992,
+        -0.004942609999999969,
+        0.16904050680720384
+      ],
+      "carried_witness_world_m": [
+        0.024542724817006707,
+        -0.0066024205867419306,
+        0.14907724218336418
+      ],
+      "carried_normal_world": [
+        0.21242261074496424,
+        0.08096637008496413,
+        0.9738177865286483
+      ],
+      "normal_tilt_from_world_up_deg": 13.139927148248526,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.024542724817006714,
+          -0.006602420586741927,
+          0.1490772421833642
+        ],
+        "expected_normal": [
+          0.21242261074496452,
+          0.08096637008496417,
+          0.9738177865286493
+        ],
+        "original_face": 3159,
+        "original_sphere_gap_m": 0.0005000000000023805,
+        "engine_witness": [
+          0.024634357315040212,
+          -0.006600029836165103,
+          0.14905758700336416
+        ],
+        "engine_normal": [
+          0.2079558112298113,
+          0.08085094496851425,
+          0.9747910059461204
+        ],
+        "engine_distance_m": 0.0004996965318165673,
+        "witness_separation_m": 9.37473012145624e-05,
+        "surface_distance_m": 5.178209758548556e-07,
+        "sphere_gap_error_m": 3.0346818581314383e-07,
+        "normal_error_deg": 0.26201663391694596,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05968760233684594,
+          0.030234466066114
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.030234466066114,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.024542724817006707,
+          -0.0066024205867419306
+        ],
+        "center_world_m": [
+          0.024542724817006707,
+          -0.0066024205867419306,
+          0.1699021060116908
+        ],
+        "witness_world_m": [
+          0.02195961721990964,
+          -0.008205687541831957,
+          0.14962879621253153
+        ],
+        "normal_world": [
+          0.12600524863885854,
+          0.07820814415071886,
+          0.9889419414222251
+        ],
+        "face": 2450,
+        "delta_from_carried_center_m": [
+          -0.004354663520272285,
+          -0.0016598105867419617,
+          0.0008615992044869736
+        ],
+        "witness_shift_from_carried_m": 0.003089841684383678,
+        "geometry": {
+          "mesh_witness": [
+            0.02195961721990964,
+            -0.008205687541831957,
+            0.14962879621253153
+          ],
+          "expected_normal": [
+            0.12600524863885854,
+            0.07820814415071886,
+            0.9889419414222251
+          ],
+          "original_face": 2450,
+          "original_sphere_gap_m": 0.0005000000000037093,
+          "engine_witness": [
+            0.02195961721990964,
+            -0.008205687541831961,
+            0.14962879621253153
+          ],
+          "engine_normal": [
+            0.12600524863885934,
+            0.07820814415071772,
+            0.9889419414222251
+          ],
+          "engine_distance_m": 0.0005000000000037128,
+          "witness_separation_m": 3.469446951953614e-18,
+          "surface_distance_m": 0.0,
+          "sphere_gap_error_m": 3.469446951953614e-18,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "yaw-plus90",
+      "point": "center",
+      "carried_center_world_m": [
+        0.00889738833727901,
+        0.004942609999999976,
+        0.1706648703119681
+      ],
+      "carried_witness_world_m": [
+        0.008897388337382794,
+        0.006512099593609676,
+        0.1502250390402683
+      ],
+      "carried_normal_world": [
+        -5.062638513737722e-12,
+        -0.07656046798096026,
+        0.9970649400829088
+      ],
+      "normal_tilt_from_world_up_deg": 4.390888374169825,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.008897388337382796,
+          0.006512099593609691,
+          0.15022503904026832
+        ],
+        "expected_normal": [
+          -5.062769309473941e-12,
+          -0.07656046798096129,
+          0.9970649400829096
+        ],
+        "original_face": 2303,
+        "original_sphere_gap_m": 0.0005000000000001184,
+        "engine_witness": [
+          0.008897388337382796,
+          0.006512099593609672,
+          0.1502250390402683
+        ],
+        "engine_normal": [
+          -5.0619231028990016e-12,
+          -0.07656046798096193,
+          0.9970649400829096
+        ],
+        "engine_distance_m": 0.0005000000000001253,
+        "witness_separation_m": 3.3682237275240583e-17,
+        "surface_distance_m": 2.7755575615628914e-17,
+        "sphere_gap_error_m": 6.938893903907228e-18,
+        "normal_error_deg": 8.537736462515939e-07,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.0597779233299782,
+          0.04587965542255865
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542255865,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.008897388337382794,
+          0.006512099593609676
+        ],
+        "center_world_m": [
+          0.008897388337382794,
+          0.006512099593609676,
+          0.17078538488724887
+        ],
+        "witness_world_m": [
+          0.00889738833737973,
+          0.008081589187219653,
+          0.15034555361554566
+        ],
+        "normal_world": [
+          1.4952470156343824e-13,
+          -0.07656046798096117,
+          0.9970649400829096
+        ],
+        "face": 2303,
+        "delta_from_carried_center_m": [
+          1.0378503612074041e-13,
+          0.0015694895936096999,
+          0.00012051457528078346
+        ],
+        "witness_shift_from_carried_m": 0.0015741096998952446,
+        "geometry": {
+          "mesh_witness": [
+            0.00889738833737973,
+            0.008081589187219653,
+            0.15034555361554566
+          ],
+          "expected_normal": [
+            1.4952470156343824e-13,
+            -0.07656046798096117,
+            0.9970649400829096
+          ],
+          "original_face": 2303,
+          "original_sphere_gap_m": 0.0005000000000035705,
+          "engine_witness": [
+            0.008897388337379731,
+            0.00808158918721964,
+            0.15034555361554566
+          ],
+          "engine_normal": [
+            1.4918621893293657e-13,
+            -0.07656046798095903,
+            0.9970649400829099
+          ],
+          "engine_distance_m": 0.0005000000000035705,
+          "witness_separation_m": 1.3985787785349405e-17,
+          "surface_distance_m": 1.734723475976807e-18,
+          "sphere_gap_error_m": 0.0,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "yaw-plus90",
+      "point": "x-minus12",
+      "carried_center_world_m": [
+        0.00889738833727901,
+        -0.007057390000000011,
+        0.16957659135084951
+      ],
+      "carried_witness_world_m": [
+        0.008897388337359662,
+        -0.004887484473547258,
+        0.14919175605579535
+      ],
+      "carried_normal_world": [
+        -3.934322006965061e-12,
+        -0.1058490500708386,
+        0.9943822095145806
+      ],
+      "normal_tilt_from_world_up_deg": 6.07608616121684,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.008897388337359664,
+          -0.00488748447354726,
+          0.14919175605579538
+        ],
+        "expected_normal": [
+          -3.934352843514391e-12,
+          -0.10584905007083881,
+          0.9943822095145814
+        ],
+        "original_face": 2308,
+        "original_sphere_gap_m": 0.0005000000000052462,
+        "engine_witness": [
+          0.008897388337359662,
+          -0.00488748447354726,
+          0.14919175605579538
+        ],
+        "engine_normal": [
+          -3.9343528434742996e-12,
+          -0.10584905007083902,
+          0.9943822095145814
+        ],
+        "engine_distance_m": 0.0005000000000052393,
+        "witness_separation_m": 1.734723475976807e-18,
+        "surface_distance_m": 2.4532694666933987e-18,
+        "sphere_gap_error_m": 6.938893903907228e-18,
+        "normal_error_deg": 8.537736462515939e-07,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05151251457537076,
+          0.04587965542258178
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542258178,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.008897388337359662,
+          -0.004887484473547258
+        ],
+        "center_world_m": [
+          0.008897388337359662,
+          -0.004887484473547258,
+          0.1698075713870125
+        ],
+        "witness_world_m": [
+          0.008897388337373925,
+          -0.002717578947095038,
+          0.14942273609196333
+        ],
+        "normal_world": [
+          -6.957510448527382e-13,
+          -0.10584905007083871,
+          0.9943822095145814
+        ],
+        "face": 2308,
+        "delta_from_carried_center_m": [
+          8.065249856858969e-14,
+          0.0021699055264527527,
+          0.00023098003616298102
+        ],
+        "witness_shift_from_carried_m": 0.0021821644692451682,
+        "geometry": {
+          "mesh_witness": [
+            0.008897388337373925,
+            -0.002717578947095038,
+            0.14942273609196333
+          ],
+          "expected_normal": [
+            -6.957510448527382e-13,
+            -0.10584905007083871,
+            0.9943822095145814
+          ],
+          "original_face": 2308,
+          "original_sphere_gap_m": 0.0005000000000002502,
+          "engine_witness": [
+            0.008897388337373923,
+            -0.002717578947095038,
+            0.14942273609196333
+          ],
+          "engine_normal": [
+            -6.973588373423604e-13,
+            -0.10584905007083771,
+            0.9943822095145817
+          ],
+          "engine_distance_m": 0.0005000000000002572,
+          "witness_separation_m": 1.734723475976807e-18,
+          "surface_distance_m": 1.788112030672749e-18,
+          "sphere_gap_error_m": 6.938893903907228e-18,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "yaw-plus90",
+      "point": "x-plus12",
+      "carried_center_world_m": [
+        0.008897388337279011,
+        0.016942609999999966,
+        0.17158630038020162
+      ],
+      "carried_witness_world_m": [
+        0.008897388337359351,
+        0.01851209959360985,
+        0.1511464691084995
+      ],
+      "carried_normal_world": [
+        -3.919050881769911e-12,
+        -0.0765604679809605,
+        0.9970649400829088
+      ],
+      "normal_tilt_from_world_up_deg": 4.390888374169825,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.008897388337359353,
+          0.01851209959360986,
+          0.15114646910849952
+        ],
+        "expected_normal": [
+          -3.919121125189279e-12,
+          -0.07656046798096128,
+          0.9970649400829098
+        ],
+        "original_face": 2303,
+        "original_sphere_gap_m": 0.0005000000000024533,
+        "engine_witness": [
+          0.008897388337359351,
+          0.018512099593609842,
+          0.1511464691084995
+        ],
+        "engine_normal": [
+          -3.920475055688227e-12,
+          -0.07656046798095952,
+          0.9970649400829099
+        ],
+        "engine_distance_m": 0.0005000000000024603,
+        "witness_separation_m": 3.2776634926476285e-17,
+        "surface_distance_m": 2.8025315438821013e-17,
+        "sphere_gap_error_m": 6.938893903907228e-18,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.04777792332997802,
+          0.04587965542258209
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542258209,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.008897388337359351,
+          0.01851209959360985
+        ],
+        "center_world_m": [
+          0.008897388337359351,
+          0.01851209959360985,
+          0.17170681495547682
+        ],
+        "witness_world_m": [
+          0.008897388337356286,
+          0.020081589187219577,
+          0.15126698368377686
+        ],
+        "normal_world": [
+          1.4952470156346202e-13,
+          -0.07656046798096115,
+          0.9970649400829097
+        ],
+        "face": 2303,
+        "delta_from_carried_center_m": [
+          8.034024834291387e-14,
+          0.0015694895936098838,
+          0.0001205145752752046
+        ],
+        "witness_shift_from_carried_m": 0.0015741096998949954,
+        "geometry": {
+          "mesh_witness": [
+            0.008897388337356286,
+            0.020081589187219577,
+            0.15126698368377686
+          ],
+          "expected_normal": [
+            1.4952470156346202e-13,
+            -0.07656046798096115,
+            0.9970649400829097
+          ],
+          "original_face": 2303,
+          "original_sphere_gap_m": 0.0005000000000003127,
+          "engine_witness": [
+            0.008897388337356286,
+            0.02008158918721956,
+            0.15126698368377683
+          ],
+          "engine_normal": [
+            1.4918621893390832e-13,
+            -0.07656046798096158,
+            0.9970649400829097
+          ],
+          "engine_distance_m": 0.0005000000000003231,
+          "witness_separation_m": 3.273069708340169e-17,
+          "surface_distance_m": 2.7755575615628914e-17,
+          "sphere_gap_error_m": 1.0408340855860843e-17,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "yaw-plus90",
+      "point": "y-minus12",
+      "carried_center_world_m": [
+        0.020897388337279,
+        0.004942609999999976,
+        0.17018487324418735
+      ],
+      "carried_witness_world_m": [
+        0.01901970860567692,
+        0.0064723872047889736,
+        0.1498284467274976
+      ],
+      "carried_normal_world": [
+        0.09159413324886528,
+        -0.07462327828237647,
+        0.9929964154481011
+      ],
+      "normal_tilt_from_world_up_deg": 6.785027505305169,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.01901970860567692,
+          0.006472387204788965,
+          0.14982844672749762
+        ],
+        "expected_normal": [
+          0.09159413324886549,
+          -0.0746232782823764,
+          0.9929964154481024
+        ],
+        "original_face": 4384,
+        "original_sphere_gap_m": 0.0005000000000036572,
+        "engine_witness": [
+          0.01901970860567693,
+          0.006472387204788964,
+          0.14982844672749768
+        ],
+        "engine_normal": [
+          0.09159413324886548,
+          -0.07462327828237734,
+          0.9929964154481022
+        ],
+        "engine_distance_m": 0.0005000000000036468,
+        "witness_separation_m": 5.594987467379873e-17,
+        "surface_distance_m": 5.67509157825399e-17,
+        "sphere_gap_error_m": 1.0408340855860843e-17,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.0598176357187989,
+          0.03575733515426452
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.03575733515426452,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.01901970860567692,
+          0.0064723872047889736
+        ],
+        "center_world_m": [
+          0.01901970860567692,
+          0.0064723872047889736,
+          0.17045209361690672
+        ],
+        "witness_world_m": [
+          0.017464755184150027,
+          0.008036244507401336,
+          0.15007106149892563
+        ],
+        "normal_world": [
+          0.07585138641592541,
+          -0.07628572207863105,
+          0.9941966886817336
+        ],
+        "face": 4383,
+        "delta_from_carried_center_m": [
+          -0.0018776797316020777,
+          0.0015297772047889978,
+          0.0002672203727193678
+        ],
+        "witness_shift_from_carried_m": 0.0022186463741135694,
+        "geometry": {
+          "mesh_witness": [
+            0.017464755184150027,
+            0.008036244507401336,
+            0.15007106149892563
+          ],
+          "expected_normal": [
+            0.07585138641592541,
+            -0.07628572207863105,
+            0.9941966886817336
+          ],
+          "original_face": 4383,
+          "original_sphere_gap_m": 0.0005000000000055828,
+          "engine_witness": [
+            0.01746475518415003,
+            0.008036244507401338,
+            0.15007106149892563
+          ],
+          "engine_normal": [
+            0.07585138641592472,
+            -0.07628572207862983,
+            0.9941966886817337
+          ],
+          "engine_distance_m": 0.0005000000000056036,
+          "witness_separation_m": 3.878959614448864e-18,
+          "surface_distance_m": 3.469446951953614e-18,
+          "sphere_gap_error_m": 2.0816681711721685e-17,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "yaw-plus90",
+      "point": "y-plus12",
+      "carried_center_world_m": [
+        -0.0031026116627209787,
+        0.004942609999999979,
+        0.1701833427071175
+      ],
+      "carried_witness_world_m": [
+        -0.000977671705924367,
+        0.006445980930057622,
+        0.14984927016798497
+      ],
+      "carried_normal_world": [
+        -0.10365560764861047,
+        -0.0733351673198818,
+        0.9919059775186155
+      ],
+      "normal_tilt_from_world_up_deg": 7.2947968433283235,
+      "carried_geometry": {
+        "mesh_witness": [
+          -0.0009776717059243809,
+          0.006445980930057622,
+          0.149849270167985
+        ],
+        "expected_normal": [
+          -0.10365560764861016,
+          -0.0733351673198819,
+          0.9919059775186165
+        ],
+        "original_face": 2471,
+        "original_sphere_gap_m": 0.0005000000000008643,
+        "engine_witness": [
+          -0.001225066815992745,
+          0.006472273072759309,
+          0.14982842619675069
+        ],
+        "engine_normal": [
+          -0.0915943462358804,
+          -0.07462324500781357,
+          0.9929963983026955
+        ],
+        "engine_distance_m": 0.0004984796975689119,
+        "witness_separation_m": 0.0002496599455066843,
+        "surface_distance_m": 6.046206699836218e-06,
+        "sphere_gap_error_m": 1.5203024319523917e-06,
+        "normal_error_deg": 0.6977958445360752,
+        "legacy_v1_pass": false,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05984404199353026,
+          0.036004742502638326
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.036004742502638326,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          -0.000977671705924367,
+          0.006445980930057622
+        ],
+        "center_world_m": [
+          -0.000977671705924367,
+          0.006445980930057622,
+          0.17046893218828807
+        ],
+        "witness_world_m": [
+          0.0005772776209881951,
+          0.008009838446974603,
+          0.15008789977436157
+        ],
+        "normal_world": [
+          -0.075851186678661,
+          -0.07628573253253512,
+          0.9941967031183585
+        ],
+        "face": 2739,
+        "delta_from_carried_center_m": [
+          0.0021249399567966117,
+          0.0015033709300576424,
+          0.00028558948117057836
+        ],
+        "witness_shift_from_carried_m": 0.0022182114037041264,
+        "geometry": {
+          "mesh_witness": [
+            0.0005772776209881951,
+            0.008009838446974603,
+            0.15008789977436157
+          ],
+          "expected_normal": [
+            -0.075851186678661,
+            -0.07628573253253512,
+            0.9941967031183585
+          ],
+          "original_face": 2739,
+          "original_sphere_gap_m": 0.0005000000000001496,
+          "engine_witness": [
+            0.0005772776209881737,
+            0.008009838446974494,
+            0.1500878997743616
+          ],
+          "engine_normal": [
+            -0.0758511866786613,
+            -0.07628573253253144,
+            0.9941967031183587
+          ],
+          "engine_distance_m": 0.0005000000000001462,
+          "witness_separation_m": 1.1476212136896252e-16,
+          "surface_distance_m": 1.1476212136896252e-16,
+          "sphere_gap_error_m": 3.469446951953614e-18,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "yaw-plus90",
+      "point": "y-minus20",
+      "carried_center_world_m": [
+        0.028897388337278992,
+        0.004942609999999976,
+        0.1690408190626601
+      ],
+      "carried_witness_world_m": [
+        0.02463429823516538,
+        0.006600053256564747,
+        0.14905760248892796
+      ],
+      "carried_normal_world": [
+        0.20795561473721083,
+        -0.08085089056412016,
+        0.974791052376998
+      ],
+      "normal_tilt_from_world_up_deg": 12.892334840155419,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.02463429823516539,
+          0.006600053256564736,
+          0.149057602488928
+        ],
+        "expected_normal": [
+          0.20795561473721108,
+          -0.08085089056411994,
+          0.9747910523769989
+        ],
+        "original_face": 4388,
+        "original_sphere_gap_m": 0.0005000000000037301,
+        "engine_witness": [
+          0.02463429823516538,
+          0.0066000532565647346,
+          0.14905760248892796
+        ],
+        "engine_normal": [
+          0.20795561473721128,
+          -0.08085089056411911,
+          0.9747910523769991
+        ],
+        "engine_distance_m": 0.0005000000000037301,
+        "witness_separation_m": 2.969368287472575e-17,
+        "surface_distance_m": 2.8025315438821013e-17,
+        "sphere_gap_error_m": 0.0,
+        "normal_error_deg": 8.537736462515939e-07,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05968996966702313,
+          0.030142745524776048
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.030142745524776048,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.02463429823516538,
+          0.006600053256564747
+        ],
+        "center_world_m": [
+          0.02463429823516538,
+          0.006600053256564747,
+          0.1698900402811544
+        ],
+        "witness_world_m": [
+          0.02195961792649354,
+          0.00820569458394968,
+          0.14962879646014796
+        ],
+        "normal_world": [
+          0.13047221017910252,
+          -0.07832396718950194,
+          0.9883533571221772
+        ],
+        "face": 4385,
+        "delta_from_carried_center_m": [
+          -0.004263090102113613,
+          0.001657443256564771,
+          0.0008492212184942893
+        ],
+        "witness_shift_from_carried_m": 0.0031714762144088994,
+        "geometry": {
+          "mesh_witness": [
+            0.02195961792649354,
+            0.00820569458394968,
+            0.14962879646014796
+          ],
+          "expected_normal": [
+            0.13047221017910252,
+            -0.07832396718950194,
+            0.9883533571221772
+          ],
+          "original_face": 4385,
+          "original_sphere_gap_m": 0.0005000000000018288,
+          "engine_witness": [
+            0.02195961792649354,
+            0.008205694583949683,
+            0.14962879646014796
+          ],
+          "engine_normal": [
+            0.13047221017910035,
+            -0.07832396718950006,
+            0.9883533571221778
+          ],
+          "engine_distance_m": 0.0005000000000018219,
+          "witness_separation_m": 3.469446951953614e-18,
+          "surface_distance_m": 0.0,
+          "sphere_gap_error_m": 6.938893903907228e-18,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "yaw-plus90",
+      "point": "y-plus20",
+      "carried_center_world_m": [
+        -0.011102611662720968,
+        0.004942609999999979,
+        0.16904050680720384
+      ],
+      "carried_witness_world_m": [
+        -0.006747948142448683,
+        0.006602420586741941,
+        0.14907724218336418
+      ],
+      "carried_normal_world": [
+        -0.21242261074496424,
+        -0.08096637008496409,
+        0.9738177865286483
+      ],
+      "normal_tilt_from_world_up_deg": 13.139927148248526,
+      "carried_geometry": {
+        "mesh_witness": [
+          -0.0067479481424486945,
+          0.0066024205867419375,
+          0.1490772421833642
+        ],
+        "expected_normal": [
+          -0.21242261074496435,
+          -0.08096637008496418,
+          0.9738177865286494
+        ],
+        "original_face": 3159,
+        "original_sphere_gap_m": 0.000500000000002377,
+        "engine_witness": [
+          -0.006839580640482169,
+          0.006600029836165107,
+          0.14905758700336413
+        ],
+        "engine_normal": [
+          -0.20795581122980825,
+          -0.08085094496851317,
+          0.9747910059461211
+        ],
+        "engine_distance_m": 0.0004996965318165569,
+        "witness_separation_m": 9.374730121454548e-05,
+        "surface_distance_m": 5.178209758260281e-07,
+        "sphere_gap_error_m": 3.034681858200827e-07,
+        "normal_error_deg": 0.26201663391694596,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05968760233684594,
+          0.030234466066114
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.030234466066114,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          -0.006747948142448683,
+          0.006602420586741941
+        ],
+        "center_world_m": [
+          -0.006747948142448683,
+          0.006602420586741941,
+          0.1699021060116908
+        ],
+        "witness_world_m": [
+          -0.0041648405453516175,
+          0.008205687541831947,
+          0.14962879621253156
+        ],
+        "normal_world": [
+          -0.12600524863885865,
+          -0.07820814415071797,
+          0.9889419414222252
+        ],
+        "face": 2450,
+        "delta_from_carried_center_m": [
+          0.004354663520272285,
+          0.0016598105867419617,
+          0.0008615992044869736
+        ],
+        "witness_shift_from_carried_m": 0.0030898416843836707,
+        "geometry": {
+          "mesh_witness": [
+            -0.0041648405453516175,
+            0.008205687541831947,
+            0.14962879621253156
+          ],
+          "expected_normal": [
+            -0.12600524863885865,
+            -0.07820814415071797,
+            0.9889419414222252
+          ],
+          "original_face": 2450,
+          "original_sphere_gap_m": 0.0005000000000036781,
+          "engine_witness": [
+            -0.0041648405453516175,
+            0.008205687541831947,
+            0.14962879621253153
+          ],
+          "engine_normal": [
+            -0.1260052486388561,
+            -0.07820814415071523,
+            0.9889419414222258
+          ],
+          "engine_distance_m": 0.000500000000003685,
+          "witness_separation_m": 2.7755575615628914e-17,
+          "surface_distance_m": 2.7769124835677133e-17,
+          "sphere_gap_error_m": 6.938893903907228e-18,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "pitch-minus10",
+      "point": "center",
+      "carried_center_world_m": [
+        -0.0020821061994900376,
+        5.204170427930421e-18,
+        0.17013671135198585
+      ],
+      "carried_witness_world_m": [
+        0.003012878772718979,
+        -1.0377871111284784e-13,
+        0.15027994605315204
+      ],
+      "carried_normal_world": [
+        -0.24853585230287678,
+        5.062630013818288e-12,
+        0.9686226975040801
+      ],
+      "normal_tilt_from_world_up_deg": 14.390888374169347,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.0030128787727189714,
+          -1.0377871195988095e-13,
+          0.15027994605315206
+        ],
+        "expected_normal": [
+          -0.24853585230287692,
+          5.0626300551369865e-12,
+          0.9686226975040811
+        ],
+        "original_face": 2303,
+        "original_sphere_gap_m": 0.0005000000000001288,
+        "engine_witness": [
+          0.00301287877271897,
+          -1.0377871195988095e-13,
+          0.15027994605315206
+        ],
+        "engine_normal": [
+          -0.24853585230288044,
+          5.062630055137088e-12,
+          0.9686226975040801
+        ],
+        "engine_distance_m": 0.0005000000000001184,
+        "witness_separation_m": 1.3010426069826053e-18,
+        "surface_distance_m": 2.168404344971009e-18,
+        "sphere_gap_error_m": 1.0408340855860843e-17,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.0597779233299782,
+          0.04587965542255865
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542255865,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.003012878772718979,
+          -1.0377871111284784e-13
+        ],
+        "center_world_m": [
+          0.003012878772718979,
+          -1.0377871111284784e-13,
+          0.17144401752580216
+        ],
+        "witness_world_m": [
+          0.008107863744929819,
+          -9.353272553862105e-14,
+          0.15158725222696123
+        ],
+        "normal_world": [
+          -0.24853585230287695,
+          -4.998041743523436e-13,
+          0.9686226975040811
+        ],
+        "face": 2303,
+        "delta_from_carried_center_m": [
+          0.005094984972209017,
+          -1.0378391528327577e-13,
+          0.0013073061738163028
+        ],
+        "witness_shift_from_carried_m": 0.005260030541654101,
+        "geometry": {
+          "mesh_witness": [
+            0.008107863744929819,
+            -9.353272553862105e-14,
+            0.15158725222696123
+          ],
+          "expected_normal": [
+            -0.24853585230287695,
+            -4.998041743523436e-13,
+            0.9686226975040811
+          ],
+          "original_face": 2303,
+          "original_sphere_gap_m": 0.0005000000000074944,
+          "engine_witness": [
+            0.008107863744929819,
+            -9.353272553862105e-14,
+            0.15158725222696123
+          ],
+          "engine_normal": [
+            -0.24853585230286923,
+            -4.998041743523205e-13,
+            0.968622697504083
+          ],
+          "engine_distance_m": 0.000500000000007484,
+          "witness_separation_m": 0.0,
+          "surface_distance_m": 1.734723475976807e-18,
+          "sphere_gap_error_m": 1.0408340855860843e-17,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "pitch-minus10",
+      "point": "x-minus12",
+      "carried_center_world_m": [
+        -0.013710821577245022,
+        5.204170427930421e-18,
+        0.16698118766163306
+      ],
+      "carried_witness_world_m": [
+        -0.008034092290463635,
+        -8.0648156064469e-14,
+        0.1472828439595647
+      ],
+      "carried_normal_world": [
+        -0.2769136237453619,
+        3.934310255359809e-12,
+        0.960894814734792
+      ],
+      "normal_tilt_from_world_up_deg": 16.07608616121652,
+      "carried_geometry": {
+        "mesh_witness": [
+          -0.008034092290463639,
+          -8.064815691150201e-14,
+          0.14728284395956476
+        ],
+        "expected_normal": [
+          -0.27691362374536244,
+          3.934310296678502e-12,
+          0.9608948147347929
+        ],
+        "original_face": 2308,
+        "original_sphere_gap_m": 0.0005000000000052497,
+        "engine_witness": [
+          -0.008034092290463639,
+          -8.064815675968751e-14,
+          0.14728284395956479
+        ],
+        "engine_normal": [
+          -0.27691362374536876,
+          3.934310289272975e-12,
+          0.9608948147347911
+        ],
+        "engine_distance_m": 0.0005000000000052462,
+        "witness_separation_m": 2.77555756160441e-17,
+        "surface_distance_m": 2.79715755711108e-17,
+        "sphere_gap_error_m": 3.469446951953614e-18,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05151251457537076,
+          0.04587965542258178
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542258178,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          -0.008034092290463635,
+          -8.0648156064469e-14
+        ],
+        "center_world_m": [
+          -0.008034092290463635,
+          -8.0648156064469e-14,
+          0.1686094400301949
+        ],
+        "witness_world_m": [
+          -0.0028880805124198994,
+          -1.1564534052599384e-13,
+          0.14876583746462152
+        ],
+        "normal_world": [
+          -0.2510249647825629,
+          1.7071797298300833e-12,
+          0.9679806129545742
+        ],
+        "face": 2302,
+        "delta_from_carried_center_m": [
+          0.005676729286781387,
+          -8.065336023489693e-14,
+          0.0016282523685618444
+        ],
+        "witness_shift_from_carried_m": 0.005355437139562517,
+        "geometry": {
+          "mesh_witness": [
+            -0.0028880805124198994,
+            -1.1564534052599384e-13,
+            0.14876583746462152
+          ],
+          "expected_normal": [
+            -0.2510249647825629,
+            1.7071797298300833e-12,
+            0.9679806129545742
+          ],
+          "original_face": 2302,
+          "original_sphere_gap_m": 0.000500000000004764,
+          "engine_witness": [
+            -0.0028880805124198994,
+            -1.156455082385174e-13,
+            0.14876583746462152
+          ],
+          "engine_normal": [
+            -0.25102496478257047,
+            1.7071879109288548e-12,
+            0.9679806129545722
+          ],
+          "engine_distance_m": 0.000500000000004764,
+          "witness_separation_m": 1.6771252355635147e-19,
+          "surface_distance_m": 0.0,
+          "sphere_gap_error_m": 0.0,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "pitch-minus10",
+      "point": "x-plus12",
+      "carried_center_world_m": [
+        0.009575582184460182,
+        5.204170427930421e-18,
+        0.17312792095904395
+      ],
+      "carried_witness_world_m": [
+        0.014670567156669784,
+        -8.03351646575167e-14,
+        0.15327115566020788
+      ],
+      "carried_normal_world": [
+        -0.248535852302877,
+        3.919042381850478e-12,
+        0.9686226975040801
+      ],
+      "normal_tilt_from_world_up_deg": 14.390888374169347,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.014670567156669766,
+          -8.03351655045498e-14,
+          0.15327115566020794
+        ],
+        "expected_normal": [
+          -0.2485358523028771,
+          3.919042423169182e-12,
+          0.968622697504081
+        ],
+        "original_face": 2303,
+        "original_sphere_gap_m": 0.0005000000000024256,
+        "engine_witness": [
+          0.014670567156669765,
+          -8.033516550454981e-14,
+          0.1532711556602079
+        ],
+        "engine_normal": [
+          -0.24853585230288114,
+          3.9190424231692805e-12,
+          0.96862269750408
+        ],
+        "engine_distance_m": 0.0005000000000024325,
+        "witness_separation_m": 2.7809732887839817e-17,
+        "surface_distance_m": 2.780999756854941e-17,
+        "sphere_gap_error_m": 6.938893903907228e-18,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.04777792332997802,
+          0.04587965542258209
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542258209,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.014670567156669784,
+          -8.03351646575167e-14
+        ],
+        "center_world_m": [
+          0.014670567156669784,
+          -8.03351646575167e-14,
+          0.17443522713285153
+        ],
+        "witness_world_m": [
+          0.019765552128879062,
+          -7.008917908329303e-14,
+          0.1545784618340167
+        ],
+        "normal_world": [
+          -0.24853585230287686,
+          -4.998041743523445e-13,
+          0.9686226975040811
+        ],
+        "face": 3604,
+        "delta_from_carried_center_m": [
+          0.005094984972209601,
+          -8.034036882794463e-14,
+          0.0013073061738075875
+        ],
+        "witness_shift_from_carried_m": 0.0052600305416524926,
+        "geometry": {
+          "mesh_witness": [
+            0.019765552128879062,
+            -7.008917908329303e-14,
+            0.1545784618340167
+          ],
+          "expected_normal": [
+            -0.24853585230287686,
+            -4.998041743523445e-13,
+            0.9686226975040811
+          ],
+          "original_face": 3604,
+          "original_sphere_gap_m": 0.0005000000000012182,
+          "engine_witness": [
+            0.019765552128879062,
+            -7.008917908329303e-14,
+            0.1545784618340167
+          ],
+          "engine_normal": [
+            -0.2485358523028796,
+            -4.998041743523604e-13,
+            0.9686226975040805
+          ],
+          "engine_distance_m": 0.0005000000000012148,
+          "witness_separation_m": 0.0,
+          "surface_distance_m": 1.262177448353619e-29,
+          "sphere_gap_error_m": 3.469446951953614e-18,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "pitch-minus10",
+      "point": "y-minus12",
+      "carried_center_world_m": [
+        -0.001998755583384443,
+        -0.011999999999999981,
+        0.16966400651821226
+      ],
+      "carried_witness_world_m": [
+        0.003042637236707061,
+        -0.010122320268397902,
+        0.1498824828848009
+      ],
+      "carried_normal_world": [
+        -0.24592160098002872,
+        -0.0915941332488653,
+        0.9649523723613547
+      ],
+      "normal_tilt_from_world_up_deg": 15.214006200936035,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.003042637236707032,
+          -0.010122320268397888,
+          0.14988248288480097
+        ],
+        "expected_normal": [
+          -0.24592160098002847,
+          -0.09159413324886641,
+          0.9649523723613559
+        ],
+        "original_face": 4384,
+        "original_sphere_gap_m": 0.0005000000000036225,
+        "engine_witness": [
+          0.003042637236707035,
+          -0.010122320268397886,
+          0.14988248288480094
+        ],
+        "engine_normal": [
+          -0.24592160098002322,
+          -0.09159413324886519,
+          0.9649523723613573
+        ],
+        "engine_distance_m": 0.000500000000003633,
+        "witness_separation_m": 2.7974937336899365e-17,
+        "surface_distance_m": 2.7974937336899365e-17,
+        "sphere_gap_error_m": 1.0408340855860843e-17,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.0598176357187989,
+          0.03575733515426452
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.03575733515426452,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.003042637236707061,
+          -0.010122320268397902
+        ],
+        "center_world_m": [
+          0.003042637236707061,
+          -0.010122320268397902,
+          0.17111150611322706
+        ],
+        "witness_world_m": [
+          0.008121865119182578,
+          -0.00856736684687117,
+          0.1513116686397801
+        ],
+        "normal_world": [
+          -0.2477672137792496,
+          -0.07585138641592468,
+          0.9658457304118758
+        ],
+        "face": 4383,
+        "delta_from_carried_center_m": [
+          0.005041392820091504,
+          0.0018776797316020794,
+          0.0014474995950148062
+        ],
+        "witness_shift_from_carried_m": 0.005500818843360491,
+        "geometry": {
+          "mesh_witness": [
+            0.008121865119182578,
+            -0.00856736684687117,
+            0.1513116686397801
+          ],
+          "expected_normal": [
+            -0.2477672137792496,
+            -0.07585138641592468,
+            0.9658457304118758
+          ],
+          "original_face": 4383,
+          "original_sphere_gap_m": 0.000500000000003633,
+          "engine_witness": [
+            0.008121865119182581,
+            -0.008567366846871172,
+            0.15131166863978007
+          ],
+          "engine_normal": [
+            -0.24776721377924277,
+            -0.07585138641592361,
+            0.9658457304118776
+          ],
+          "engine_distance_m": 0.0005000000000036434,
+          "witness_separation_m": 2.8025315438821013e-17,
+          "surface_distance_m": 2.829248368623626e-17,
+          "sphere_gap_error_m": 1.0408340855860843e-17,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "pitch-minus10",
+      "point": "y-plus12",
+      "carried_center_world_m": [
+        -0.00199848980841141,
+        0.011999999999999992,
+        0.16966249923343957
+      ],
+      "carried_witness_world_m": [
+        0.0030130161801300674,
+        0.009875060043203382,
+        0.14989840456895118
+      ],
+      "carried_normal_world": [
+        -0.24446370675810986,
+        0.10365560764861044,
+        0.9641021787554885
+      ],
+      "normal_tilt_from_world_up_deg": 15.39853827709524,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.00301301618013005,
+          0.009875060043203395,
+          0.14989840456895123
+        ],
+        "expected_normal": [
+          -0.24446370675811013,
+          0.10365560764861026,
+          0.9641021787554896
+        ],
+        "original_face": 2739,
+        "original_sphere_gap_m": 0.0005000000000008262,
+        "engine_witness": [
+          0.0030425284037261732,
+          0.010122455153271797,
+          0.14988244284714314
+        ],
+        "engine_normal": [
+          -0.24592156523371853,
+          0.0915943462358781,
+          0.9649523612544924
+        ],
+        "engine_distance_m": 0.0004984796975688911,
+        "witness_separation_m": 0.00024965994550672934,
+        "surface_distance_m": 6.046206699732183e-06,
+        "sphere_gap_error_m": 1.5203024319350444e-06,
+        "normal_error_deg": 0.6977958445350306,
+        "legacy_v1_pass": false,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05984404199353026,
+          0.036004742502638326
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.036004742502638326,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.0030130161801300674,
+          0.009875060043203382
+        ],
+        "center_world_m": [
+          0.0030130161801300674,
+          0.009875060043203382,
+          0.17112332599406374
+        ],
+        "witness_world_m": [
+          0.008092244325045952,
+          0.00832011071629065,
+          0.1513234882663754
+        ],
+        "normal_world": [
+          -0.24776722658121472,
+          0.07585118667865513,
+          0.9658457428138786
+        ],
+        "face": 2739,
+        "delta_from_carried_center_m": [
+          0.005011505988541477,
+          -0.00212493995679661,
+          0.0014608267606241732
+        ],
+        "witness_shift_from_carried_m": 0.005499753585574204,
+        "geometry": {
+          "mesh_witness": [
+            0.008092244325045952,
+            0.00832011071629065,
+            0.1513234882663754
+          ],
+          "expected_normal": [
+            -0.24776722658121472,
+            0.07585118667865513,
+            0.9658457428138786
+          ],
+          "original_face": 2739,
+          "original_sphere_gap_m": 0.000500000000003966,
+          "engine_witness": [
+            0.008092244325046148,
+            0.008320110716290631,
+            0.1513234882663755
+          ],
+          "engine_normal": [
+            -0.24776722658121855,
+            0.07585118667865574,
+            0.9658457428138776
+          ],
+          "engine_distance_m": 0.0005000000000039521,
+          "witness_separation_m": 2.260871169046403e-16,
+          "surface_distance_m": 5.685025231188364e-17,
+          "sphere_gap_error_m": 1.3877787807814457e-17,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "pitch-minus10",
+      "point": "y-minus20",
+      "carried_center_world_m": [
+        -0.0018000926596100052,
+        -0.01999999999999997,
+        0.1685373330903782
+      ],
+      "carried_witness_world_m": [
+        0.0033022194515849694,
+        -0.015736909897886363,
+        0.14914551847953353
+      ],
+      "carried_normal_world": [
+        -0.24889327371678205,
+        -0.2079556147372108,
+        0.9459421761385891
+      ],
+      "normal_tilt_from_world_up_deg": 18.925310386420183,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.0033022194515849677,
+          -0.01573690989788627,
+          0.14914551847953358
+        ],
+        "expected_normal": [
+          -0.24889327371678266,
+          -0.20795561473721583,
+          0.945942176138589
+        ],
+        "original_face": 4388,
+        "original_sphere_gap_m": 0.0005000000000037301,
+        "engine_witness": [
+          0.0033022194515849425,
+          -0.01573690989788625,
+          0.14914551847953347
+        ],
+        "engine_normal": [
+          -0.24889327371678266,
+          -0.20795561473721455,
+          0.9459421761385893
+        ],
+        "engine_distance_m": 0.0005000000000037266,
+        "witness_separation_m": 1.1572373983306979e-16,
+        "surface_distance_m": 1.147051055924706e-16,
+        "sphere_gap_error_m": 3.469446951953614e-18,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05968996966702313,
+          0.030142745524776048
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.030142745524776048,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.0033022194515849694,
+          -0.015736909897886363
+        ],
+        "center_world_m": [
+          0.0033022194515849694,
+          -0.015736909897886363,
+          0.17059865165140692
+        ],
+        "witness_world_m": [
+          0.008401410244318853,
+          -0.01319523268249451,
+          0.15090631481211242
+        ],
+        "normal_world": [
+          -0.24874101427964854,
+          -0.12398425440933221,
+          0.9606017970385511
+        ],
+        "face": 4385,
+        "delta_from_carried_center_m": [
+          0.005102312111194975,
+          0.004263090102113606,
+          0.00206131856102873
+        ],
+        "witness_shift_from_carried_m": 0.0059634112329075015,
+        "geometry": {
+          "mesh_witness": [
+            0.008401410244318853,
+            -0.01319523268249451,
+            0.15090631481211242
+          ],
+          "expected_normal": [
+            -0.24874101427964854,
+            -0.12398425440933221,
+            0.9606017970385511
+          ],
+          "original_face": 4385,
+          "original_sphere_gap_m": 0.0005000000000043754,
+          "engine_witness": [
+            0.008401410244318855,
+            -0.01319523268249451,
+            0.15090631481211242
+          ],
+          "engine_normal": [
+            -0.24874101427965484,
+            -0.12398425440933475,
+            0.9606017970385492
+          ],
+          "engine_distance_m": 0.0005000000000043824,
+          "witness_separation_m": 1.734723475976807e-18,
+          "surface_distance_m": 0.0,
+          "sphere_gap_error_m": 6.938893903907228e-18,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "pitch-minus10",
+      "point": "y-plus20",
+      "carried_center_world_m": [
+        -0.0018000384370190567,
+        0.019999999999999983,
+        0.16853702557878392
+      ],
+      "carried_witness_world_m": [
+        0.0033011404195486226,
+        0.015645336479727698,
+        0.1491652708854523
+      ],
+      "carried_normal_world": [
+        -0.24883799300327192,
+        0.2124226107449642,
+        0.9449636435770399
+      ],
+      "normal_tilt_from_world_up_deg": 19.09742036410059,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.0033011404195486134,
+          0.015645336479727805,
+          0.14916527088545234
+        ],
+        "expected_normal": [
+          -0.24883799300327247,
+          0.21242261074495994,
+          0.9449636435770418
+        ],
+        "original_face": 3159,
+        "original_sphere_gap_m": 0.0005000000000023493,
+        "engine_witness": [
+          0.0033021990760337657,
+          0.015736968977761286,
+          0.14914549916232056
+        ],
+        "engine_normal": [
+          -0.2488933192320133,
+          0.2079558112298009,
+          0.9459421209658795
+        ],
+        "engine_distance_m": 0.00049969653181655,
+        "witness_separation_m": 9.374730121453641e-05,
+        "surface_distance_m": 5.178209759116414e-07,
+        "sphere_gap_error_m": 3.0346818579926604e-07,
+        "normal_error_deg": 0.26201663391833696,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05968760233684594,
+          0.030234466066114
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.030234466066114,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.0033011404195486226,
+          0.015645336479727698
+        ],
+        "center_world_m": [
+          0.0033011404195486226,
+          0.015645336479727698,
+          0.1706099754205424
+        ],
+        "witness_world_m": [
+          0.008399938343535054,
+          0.013195178113479247,
+          0.1509059407141483
+        ],
+        "normal_world": [
+          -0.2487218499505196,
+          0.11951992030478421,
+          0.9611724247020038
+        ],
+        "face": 2450,
+        "delta_from_carried_center_m": [
+          0.005101178856567679,
+          -0.004354663520272285,
+          0.002072949841758487
+        ],
+        "witness_shift_from_carried_m": 0.005918694766743609,
+        "geometry": {
+          "mesh_witness": [
+            0.008399938343535054,
+            0.013195178113479247,
+            0.1509059407141483
+          ],
+          "expected_normal": [
+            -0.2487218499505196,
+            0.11951992030478421,
+            0.9611724247020038
+          ],
+          "original_face": 2450,
+          "original_sphere_gap_m": 0.0005000000000031334,
+          "engine_witness": [
+            0.008399938343535054,
+            0.013195178113479249,
+            0.1509059407141483
+          ],
+          "engine_normal": [
+            -0.2487218499505122,
+            0.11951992030477931,
+            0.9611724247020064
+          ],
+          "engine_distance_m": 0.0005000000000031438,
+          "witness_separation_m": 1.734723475976807e-18,
+          "surface_distance_m": 3.878959614448864e-18,
+          "sphere_gap_error_m": 1.0408340855860843e-17,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "pitch-plus10",
+      "point": "center",
+      "carried_center_world_m": [
+        0.029611924170279344,
+        5.204170427930421e-18,
+        0.16842016091314915
+      ],
+      "carried_witness_world_m": [
+        0.027608230238187946,
+        -1.0377871111284784e-13,
+        0.14801831759872028
+      ],
+      "carried_normal_world": [
+        0.09774116741909163,
+        5.062630013818288e-12,
+        0.9952118689965224
+      ],
+      "normal_tilt_from_world_up_deg": 5.609111625831418,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.02760823023818797,
+          -1.0377871153636445e-13,
+          0.1480183175987203
+        ],
+        "expected_normal": [
+          0.09774116741909084,
+          5.0626300344776475e-12,
+          0.9952118689965234
+        ],
+        "original_face": 2303,
+        "original_sphere_gap_m": 0.0005000000000001184,
+        "engine_witness": [
+          0.02760823023818797,
+          -1.0377871162289534e-13,
+          0.1480183175987203
+        ],
+        "engine_normal": [
+          0.09774116741908857,
+          5.062630038698677e-12,
+          0.9952118689965237
+        ],
+        "engine_distance_m": 0.0005000000000001115,
+        "witness_separation_m": 8.653088475661283e-23,
+        "surface_distance_m": 8.653088475661283e-23,
+        "sphere_gap_error_m": 6.938893903907228e-18,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.0597779233299782,
+          0.04587965542255865
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542255865,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.027608230238187946,
+          -1.0377871111284784e-13
+        ],
+        "center_world_m": [
+          0.027608230238187946,
+          -1.0377871111284784e-13,
+          0.1686169465325521
+        ],
+        "witness_world_m": [
+          0.025604536306096132,
+          -1.07700474549717e-13,
+          0.1482151032181188
+        ],
+        "normal_world": [
+          0.09774116741909092,
+          1.9130553350576989e-13,
+          0.9952118689965234
+        ],
+        "face": 2303,
+        "delta_from_carried_center_m": [
+          -0.002003693932091398,
+          -1.0378391528327577e-13,
+          0.00019678561940295047
+        ],
+        "witness_shift_from_carried_m": 0.0020133340392253867,
+        "geometry": {
+          "mesh_witness": [
+            0.025604536306096132,
+            -1.07700474549717e-13,
+            0.1482151032181188
+          ],
+          "expected_normal": [
+            0.09774116741909092,
+            1.9130553350576989e-13,
+            0.9952118689965234
+          ],
+          "original_face": 2303,
+          "original_sphere_gap_m": 0.0005000000000046079,
+          "engine_witness": [
+            0.025604536306096132,
+            -1.0770047460765099e-13,
+            0.14821510321811882
+          ],
+          "engine_normal": [
+            0.09774116741909056,
+            1.9130553633180998e-13,
+            0.9952118689965235
+          ],
+          "engine_distance_m": 0.0005000000000046009,
+          "witness_separation_m": 2.775557561568937e-17,
+          "surface_distance_m": 3.6205263881647944e-18,
+          "sphere_gap_error_m": 6.938893903907228e-18,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "pitch-plus10",
+      "point": "x-minus12",
+      "carried_center_world_m": [
+        0.017605253475741357,
+        5.204170427930421e-18,
+        0.16943219348680266
+      ],
+      "carried_witness_world_m": [
+        0.016202403760469386,
+        -8.0648156064469e-14,
+        0.1489802495039785
+      ],
+      "carried_normal_world": [
+        0.0684316934278834,
+        3.934310255359809e-12,
+        0.9976558040399455
+      ],
+      "normal_tilt_from_world_up_deg": 3.9239138387845545,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.016202403760469393,
+          -8.064815663979999e-14,
+          0.14898024950397856
+        ],
+        "expected_normal": [
+          0.06843169342788331,
+          3.934310283424753e-12,
+          0.9976558040399466
+        ],
+        "original_face": 2308,
+        "original_sphere_gap_m": 0.0005000000000052081,
+        "engine_witness": [
+          0.016202403760469393,
+          -8.064815663979999e-14,
+          0.14898024950397856
+        ],
+        "engine_normal": [
+          0.06843169342788205,
+          3.934310283424849e-12,
+          0.9976558040399467
+        ],
+        "engine_distance_m": 0.000500000000005222,
+        "witness_separation_m": 0.0,
+        "surface_distance_m": 1.262177448353619e-29,
+        "sphere_gap_error_m": 1.3877787807814457e-17,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05151251457537076,
+          0.04587965542258178
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542258178,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.016202403760469386,
+          -8.0648156064469e-14
+        ],
+        "center_world_m": [
+          0.016202403760469386,
+          -8.0648156064469e-14,
+          0.16952841843858493
+        ],
+        "witness_world_m": [
+          0.014799554045197548,
+          -7.145910559140337e-14,
+          0.14907647445576266
+        ],
+        "normal_world": [
+          0.06843169342788326,
+          -4.482463645397129e-13,
+          0.9976558040399465
+        ],
+        "face": 2308,
+        "delta_from_carried_center_m": [
+          -0.0014028497152719713,
+          -8.065336023489693e-14,
+          9.622495178226997e-05
+        ],
+        "witness_shift_from_carried_m": 0.0014061459970373415,
+        "geometry": {
+          "mesh_witness": [
+            0.014799554045197548,
+            -7.145910559140337e-14,
+            0.14907647445576266
+          ],
+          "expected_normal": [
+            0.06843169342788326,
+            -4.482463645397129e-13,
+            0.9976558040399465
+          ],
+          "original_face": 2308,
+          "original_sphere_gap_m": 0.0005000000000033727,
+          "engine_witness": [
+            0.014799554045197548,
+            -7.145910559140337e-14,
+            0.14907647445576266
+          ],
+          "engine_normal": [
+            0.068431693427887,
+            -4.482463645397238e-13,
+            0.9976558040399464
+          ],
+          "engine_distance_m": 0.0005000000000033797,
+          "witness_separation_m": 0.0,
+          "surface_distance_m": 0.0,
+          "sphere_gap_error_m": 6.938893903907228e-18,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "pitch-plus10",
+      "point": "x-plus12",
+      "carried_center_world_m": [
+        0.0415896218586221,
+        5.204170427930421e-18,
+        0.16724381425620094
+      ],
+      "carried_witness_world_m": [
+        0.03958592792653048,
+        -8.03351646575167e-14,
+        0.14684197094176973
+      ],
+      "carried_normal_world": [
+        0.09774116741909139,
+        3.919042381850478e-12,
+        0.9952118689965224
+      ],
+      "normal_tilt_from_world_up_deg": 5.609111625831418,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.0395859279265305,
+          -8.03351650810333e-14,
+          0.1468419709417698
+        ],
+        "expected_normal": [
+          0.0977411674190908,
+          3.919042402509839e-12,
+          0.9952118689965234
+        ],
+        "original_face": 2303,
+        "original_sphere_gap_m": 0.0005000000000024325,
+        "engine_witness": [
+          0.03958592792653049,
+          -8.033516533851101e-14,
+          0.1468419709417698
+        ],
+        "engine_normal": [
+          0.0977411674190871,
+          3.9190424150697234e-12,
+          0.9952118689965238
+        ],
+        "engine_distance_m": 0.000500000000002436,
+        "witness_separation_m": 6.93889390868427e-18,
+        "surface_distance_m": 2.5747769925027923e-22,
+        "sphere_gap_error_m": 3.469446951953614e-18,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.04777792332997802,
+          0.04587965542258209
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542258209,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.03958592792653048,
+          -8.03351646575167e-14
+        ],
+        "center_world_m": [
+          0.03958592792653048,
+          -8.03351646575167e-14,
+          0.16744059987559745
+        ],
+        "witness_world_m": [
+          0.037582233994439065,
+          -8.425692809438506e-14,
+          0.14703875656116824
+        ],
+        "normal_world": [
+          0.09774116741909097,
+          1.91305533505769e-13,
+          0.9952118689965235
+        ],
+        "face": 2303,
+        "delta_from_carried_center_m": [
+          -0.00200369393209162,
+          -8.034036882794463e-14,
+          0.00019678561939651118
+        ],
+        "witness_shift_from_carried_m": 0.002013334039224986,
+        "geometry": {
+          "mesh_witness": [
+            0.037582233994439065,
+            -8.425692809438506e-14,
+            0.14703875656116824
+          ],
+          "expected_normal": [
+            0.09774116741909097,
+            1.91305533505769e-13,
+            0.9952118689965235
+          ],
+          "original_face": 2303,
+          "original_sphere_gap_m": 0.0005000000000004792,
+          "engine_witness": [
+            0.037582233994439065,
+            -8.425692832326584e-14,
+            0.14703875656116822
+          ],
+          "engine_normal": [
+            0.09774116741908857,
+            1.9130554467068107e-13,
+            0.9952118689965237
+          ],
+          "engine_distance_m": 0.0005000000000004896,
+          "witness_separation_m": 2.775557561657262e-17,
+          "surface_distance_m": 7.007116488095162e-18,
+          "sphere_gap_error_m": 1.0408340855860843e-17,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "pitch-plus10",
+      "point": "y-minus12",
+      "carried_center_world_m": [
+        0.029528573554173744,
+        -0.011999999999999981,
+        0.16794745607937556
+      ],
+      "carried_witness_world_m": [
+        0.02750025363739734,
+        -0.010122320268397902,
+        0.14763464639826818
+      ],
+      "carried_normal_world": [
+        0.098942434964685,
+        -0.0915941332488653,
+        0.9908687649318884
+      ],
+      "normal_tilt_from_world_up_deg": 7.748781535553267,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.027500253637397342,
+          -0.010122320268397919,
+          0.14763464639826823
+        ],
+        "expected_normal": [
+          0.09894243496468505,
+          -0.0915941332488649,
+          0.9908687649318895
+        ],
+        "original_face": 4384,
+        "original_sphere_gap_m": 0.0005000000000036225,
+        "engine_witness": [
+          0.02750025363739733,
+          -0.010122320268397917,
+          0.1476346463982682
+        ],
+        "engine_normal": [
+          0.09894243496468273,
+          -0.09159413324886086,
+          0.9908687649318902
+        ],
+        "engine_distance_m": 0.0005000000000036191,
+        "witness_separation_m": 2.969368287472575e-17,
+        "surface_distance_m": 2.881939084222627e-17,
+        "sphere_gap_error_m": 3.469446951953614e-18,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.0598176357187989,
+          0.03575733515426452
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.03575733515426452,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.02750025363739734,
+          -0.010122320268397902
+        ],
+        "center_world_m": [
+          0.02750025363739734,
+          -0.010122320268397902,
+          0.1682968913091446
+        ],
+        "witness_world_m": [
+          0.025501223347356588,
+          -0.00856736684687131,
+          0.14795393189424072
+        ],
+        "normal_world": [
+          0.09751367268490954,
+          -0.07585138641592729,
+          0.9923394836537959
+        ],
+        "face": 4383,
+        "delta_from_carried_center_m": [
+          -0.0020283199167764054,
+          0.0018776797316020794,
+          0.0003494352297690462
+        ],
+        "witness_shift_from_carried_m": 0.002552635005549382,
+        "geometry": {
+          "mesh_witness": [
+            0.025501223347356588,
+            -0.00856736684687131,
+            0.14795393189424072
+          ],
+          "expected_normal": [
+            0.09751367268490954,
+            -0.07585138641592729,
+            0.9923394836537959
+          ],
+          "original_face": 4383,
+          "original_sphere_gap_m": 0.000500000000001076,
+          "engine_witness": [
+            0.02550122334735659,
+            -0.008567366846871316,
+            0.14795393189424072
+          ],
+          "engine_normal": [
+            0.0975136726849109,
+            -0.07585138641593009,
+            0.9923394836537954
+          ],
+          "engine_distance_m": 0.0005000000000010864,
+          "witness_separation_m": 6.2546344413855015e-18,
+          "surface_distance_m": 0.0,
+          "sphere_gap_error_m": 1.0408340855860843e-17,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "pitch-plus10",
+      "point": "y-plus12",
+      "carried_center_world_m": [
+        0.029528307779200715,
+        0.011999999999999992,
+        0.1679459487946029
+      ],
+      "carried_witness_world_m": [
+        0.02747786448580712,
+        0.009875060043203382,
+        0.14765973888539058
+      ],
+      "carried_normal_world": [
+        0.10002162406797564,
+        0.10365560764861044,
+        0.9895712150834824
+      ],
+      "normal_tilt_from_world_up_deg": 8.281950674028105,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.027477864485807142,
+          0.009875060043203394,
+          0.14765973888539063
+        ],
+        "expected_normal": [
+          0.10002162406797498,
+          0.1036556076486102,
+          0.9895712150834837
+        ],
+        "original_face": 2471,
+        "original_sphere_gap_m": 0.0005000000000008539,
+        "engine_witness": [
+          0.027500137674162876,
+          0.010122455153271795,
+          0.14763464599824833
+        ],
+        "engine_normal": [
+          0.09894246475646155,
+          0.09159434623587298,
+          0.9908687422688938
+        ],
+        "engine_distance_m": 0.0004984796975689015,
+        "witness_separation_m": 0.00024965994550672945,
+        "surface_distance_m": 6.046206699739569e-06,
+        "sphere_gap_error_m": 1.5203024319523917e-06,
+        "normal_error_deg": 0.697795844535553,
+        "legacy_v1_pass": false,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05984404199353026,
+          0.036004742502638326
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.036004742502638326,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.02747786448580712,
+          0.009875060043203382
+        ],
+        "center_world_m": [
+          0.02747786448580712,
+          0.009875060043203382,
+          0.16831799143553394
+        ],
+        "witness_world_m": [
+          0.025478834355423766,
+          0.008320110716290527,
+          0.1479750316919584
+        ],
+        "normal_world": [
+          0.09751366489672784,
+          0.07585118667865932,
+          0.9923394996863967
+        ],
+        "face": 2739,
+        "delta_from_carried_center_m": [
+          -0.002050443293393593,
+          -0.00212493995679661,
+          0.00037204264093104733
+        ],
+        "witness_shift_from_carried_m": 0.0025521360514911113,
+        "geometry": {
+          "mesh_witness": [
+            0.025478834355423766,
+            0.008320110716290527,
+            0.1479750316919584
+          ],
+          "expected_normal": [
+            0.09751366489672784,
+            0.07585118667865932,
+            0.9923394996863967
+          ],
+          "original_face": 2739,
+          "original_sphere_gap_m": 0.0005000000000044587,
+          "engine_witness": [
+            0.025478834355423897,
+            0.00832011071629057,
+            0.14797503169195836
+          ],
+          "engine_normal": [
+            0.09751366489671863,
+            0.07585118667865506,
+            0.9923394996863979
+          ],
+          "engine_distance_m": 0.0005000000000044448,
+          "witness_separation_m": 1.4153685275279142e-16,
+          "surface_distance_m": 1.449298915199114e-16,
+          "sphere_gap_error_m": 1.3877787807814457e-17,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "pitch-plus10",
+      "point": "y-minus20",
+      "carried_center_world_m": [
+        0.02932991063039931,
+        -0.01999999999999997,
+        0.1668207826515415
+      ],
+      "carried_witness_world_m": [
+        0.027492124457689907,
+        -0.015736909897886363,
+        0.1468533440385192
+      ],
+      "carried_normal_world": [
+        0.08964810598580786,
+        -0.2079556147372108,
+        0.974021395757005
+      ],
+      "normal_tilt_from_world_up_deg": 13.088511065716794,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.027492124457689913,
+          -0.0157369098978863,
+          0.14685334403851927
+        ],
+        "expected_normal": [
+          0.089648105985808,
+          -0.2079556147372145,
+          0.9740213957570052
+        ],
+        "original_face": 4388,
+        "original_sphere_gap_m": 0.0005000000000037093,
+        "engine_witness": [
+          0.02749212445768993,
+          -0.0157369098978863,
+          0.1468533440385193
+        ],
+        "engine_normal": [
+          0.0896481059858079,
+          -0.20795561473720992,
+          0.9740213957570062
+        ],
+        "engine_distance_m": 0.0005000000000037162,
+        "witness_separation_m": 3.273069708340169e-17,
+        "surface_distance_m": 2.943923360032078e-17,
+        "sphere_gap_error_m": 6.938893903907228e-18,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05968996966702313,
+          0.030142745524776048
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.030142745524776048,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.027492124457689907,
+          -0.015736909897886363
+        ],
+        "center_world_m": [
+          0.027492124457689907,
+          -0.015736909897886363,
+          0.1677152176837305
+        ],
+        "witness_world_m": [
+          0.025561376357449827,
+          -0.012932889874221016,
+          0.1474998848029566
+        ],
+        "normal_world": [
+          0.09418283415803079,
+          -0.13678146456900953,
+          0.9861137990619124
+        ],
+        "face": 4385,
+        "delta_from_carried_center_m": [
+          -0.0018377861727094033,
+          0.004263090102113606,
+          0.0008944350321890004
+        ],
+        "witness_shift_from_carried_m": 0.0034653039520042327,
+        "geometry": {
+          "mesh_witness": [
+            0.025561376357449827,
+            -0.012932889874221016,
+            0.1474998848029566
+          ],
+          "expected_normal": [
+            0.09418283415803079,
+            -0.13678146456900953,
+            0.9861137990619124
+          ],
+          "original_face": 4385,
+          "original_sphere_gap_m": 0.0005000000000047605,
+          "engine_witness": [
+            0.02556137635744983,
+            -0.012932889874221018,
+            0.1474998848029566
+          ],
+          "engine_normal": [
+            0.09418283415802921,
+            -0.136781464569007,
+            0.986113799061913
+          ],
+          "engine_distance_m": 0.0005000000000047709,
+          "witness_separation_m": 3.878959614448864e-18,
+          "surface_distance_m": 1.734723475976807e-18,
+          "sphere_gap_error_m": 1.0408340855860843e-17,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "pitch-plus10",
+      "point": "y-plus20",
+      "carried_center_world_m": [
+        0.029329856407808358,
+        0.019999999999999983,
+        0.16682047513994724
+      ],
+      "carried_witness_world_m": [
+        0.02749786621995113,
+        0.015645336479727698,
+        0.14687227427929558
+      ],
+      "carried_normal_world": [
+        0.08936537501741519,
+        0.2124226107449642,
+        0.9730829688121605
+      ],
+      "normal_tilt_from_world_up_deg": 13.323864647464422,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.027497866219951133,
+          0.015645336479727764,
+          0.1468722742792956
+        ],
+        "expected_normal": [
+          0.08936537501741526,
+          0.21242261074496172,
+          0.973082968812162
+        ],
+        "original_face": 3159,
+        "original_sphere_gap_m": 0.0005000000000023735,
+        "engine_witness": [
+          0.027492098704058825,
+          0.015736968977761303,
+          0.14685333285512564
+        ],
+        "engine_normal": [
+          0.08964804434530216,
+          0.20795581122980328,
+          0.9740213594787422
+        ],
+        "engine_distance_m": 0.0004996965318165569,
+        "witness_separation_m": 9.374730121460233e-05,
+        "surface_distance_m": 5.178209758924908e-07,
+        "sphere_gap_error_m": 3.034681858166133e-07,
+        "normal_error_deg": 0.26201663391694596,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05968760233684594,
+          0.030234466066114
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.030234466066114,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.02749786621995113,
+          0.015645336479727698
+        ],
+        "center_world_m": [
+          0.02749786621995113,
+          0.015645336479727698,
+          0.16772715994191262
+        ],
+        "witness_world_m": [
+          0.02556262302707713,
+          0.01293293405982874,
+          0.14749976003739734
+        ],
+        "normal_world": [
+          0.09440210696943836,
+          0.13231231316576766,
+          0.9867024343663364
+        ],
+        "face": 2450,
+        "delta_from_carried_center_m": [
+          -0.0018319901878572284,
+          -0.004354663520272285,
+          0.0009066848019653739
+        ],
+        "witness_shift_from_carried_m": 0.003390579814671736,
+        "geometry": {
+          "mesh_witness": [
+            0.02556262302707713,
+            0.01293293405982874,
+            0.14749976003739734
+          ],
+          "expected_normal": [
+            0.09440210696943836,
+            0.13231231316576766,
+            0.9867024343663364
+          ],
+          "original_face": 2450,
+          "original_sphere_gap_m": 0.0005000000000054509,
+          "engine_witness": [
+            0.02556262302707713,
+            0.01293293405982874,
+            0.14749976003739732
+          ],
+          "engine_normal": [
+            0.0944021069694382,
+            0.13231231316576716,
+            0.9867024343663365
+          ],
+          "engine_distance_m": 0.000500000000005444,
+          "witness_separation_m": 2.7755575615628914e-17,
+          "surface_distance_m": 2.7755575615628914e-17,
+          "sphere_gap_error_m": 6.938893903907228e-18,
+          "normal_error_deg": 8.537736462515939e-07,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "roll-minus10",
+      "point": "center",
+      "carried_center_world_m": [
+        0.013839998337278978,
+        -0.010083093858768502,
+        0.16978271390605798
+      ],
+      "carried_witness_world_m": [
+        0.015409487930888678,
+        -0.006533754406720505,
+        0.14965340959940862
+      ],
+      "carried_normal_world": [
+        -0.07656046798096026,
+        -0.17313850985599846,
+        0.9819172832511803
+      ],
+      "normal_tilt_from_world_up_deg": 10.912545958487032,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.015409487930888675,
+          -0.0065337544067205116,
+          0.14965340959940868
+        ],
+        "expected_normal": [
+          -0.07656046798096046,
+          -0.17313850985599877,
+          0.9819172832511812
+        ],
+        "original_face": 2303,
+        "original_sphere_gap_m": 0.0005000000000000906,
+        "engine_witness": [
+          0.015409487930888675,
+          -0.006533754406720512,
+          0.14965340959940868
+        ],
+        "engine_normal": [
+          -0.07656046798095889,
+          -0.17313850985599796,
+          0.9819172832511815
+        ],
+        "engine_distance_m": 0.0005000000000001045,
+        "witness_separation_m": 8.673617379884035e-19,
+        "surface_distance_m": 8.673617379884035e-19,
+        "sphere_gap_error_m": 1.3877787807814457e-17,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.0597779233299782,
+          0.04587965542255865
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542255865,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.015409487930888678,
+          -0.006533754406720505
+        ],
+        "center_world_m": [
+          0.015409487930888678,
+          -0.006533754406720505,
+          0.17045652601240563
+        ],
+        "witness_world_m": [
+          0.016978613509135994,
+          -0.0034200243811292608,
+          0.15025522580059916
+        ],
+        "normal_world": [
+          -0.07654271113400535,
+          -0.15188926954101634,
+          0.9854292786245762
+        ],
+        "face": 2303,
+        "delta_from_carried_center_m": [
+          0.0015694895936096999,
+          0.0035493394520479974,
+          0.0006738121063476488
+        ],
+        "witness_shift_from_carried_m": 0.0035383120965502514,
+        "geometry": {
+          "mesh_witness": [
+            0.016978613509135994,
+            -0.0034200243811292608,
+            0.15025522580059916
+          ],
+          "expected_normal": [
+            -0.07654271113400535,
+            -0.15188926954101634,
+            0.9854292786245762
+          ],
+          "original_face": 2303,
+          "original_sphere_gap_m": 0.0005000000000026927,
+          "engine_witness": [
+            0.01697861350913599,
+            -0.003420024381129259,
+            0.15025522580059916
+          ],
+          "engine_normal": [
+            -0.07654271113400227,
+            -0.15188926954101653,
+            0.9854292786245765
+          ],
+          "engine_distance_m": 0.0005000000000026789,
+          "witness_separation_m": 3.878959614448864e-18,
+          "surface_distance_m": 2.168404344971009e-18,
+          "sphere_gap_error_m": 1.3877787807814457e-17,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "roll-minus10",
+      "point": "x-minus12",
+      "carried_center_world_m": [
+        0.0018399983372789919,
+        -0.009894116200377001,
+        0.16871096834770832
+      ],
+      "carried_witness_world_m": [
+        0.004009903863731746,
+        -0.0063543266994297515,
+        0.1486358245052481
+      ],
+      "carried_normal_world": [
+        -0.1058490500708386,
+        -0.17267265858274808,
+        0.979275309388052
+      ],
+      "normal_tilt_from_world_up_deg": 11.685157648740997,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.004009903863731774,
+          -0.006354326699429761,
+          0.14863582450524815
+        ],
+        "expected_normal": [
+          -0.10584905007084057,
+          -0.17267265858274838,
+          0.9792753093880527
+        ],
+        "original_face": 2308,
+        "original_sphere_gap_m": 0.0005000000000052011,
+        "engine_witness": [
+          0.004009903863731774,
+          -0.006354326699429761,
+          0.14863582450524815
+        ],
+        "engine_normal": [
+          -0.10584905007084106,
+          -0.17267265858275022,
+          0.9792753093880523
+        ],
+        "engine_distance_m": 0.0005000000000052081,
+        "witness_separation_m": 0.0,
+        "surface_distance_m": 0.0,
+        "sphere_gap_error_m": 6.938893903907228e-18,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05151251457537076,
+          0.04587965542258178
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542258178,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.004009903863731746,
+          -0.0063543266994297515
+        ],
+        "center_world_m": [
+          0.004009903863731746,
+          -0.0063543266994297515,
+          0.16951027111180741
+        ],
+        "witness_world_m": [
+          0.006179501393220517,
+          -0.003155179638531225,
+          0.14937800088108572
+        ],
+        "normal_world": [
+          -0.10583402582871769,
+          -0.15605595419016782,
+          0.9820619624742027
+        ],
+        "face": 2308,
+        "delta_from_carried_center_m": [
+          0.0021699055264527544,
+          0.0035397895009472496,
+          0.0007993027640990913
+        ],
+        "witness_shift_from_carried_m": 0.003936054004973881,
+        "geometry": {
+          "mesh_witness": [
+            0.006179501393220517,
+            -0.003155179638531225,
+            0.14937800088108572
+          ],
+          "expected_normal": [
+            -0.10583402582871769,
+            -0.15605595419016782,
+            0.9820619624742027
+          ],
+          "original_face": 2308,
+          "original_sphere_gap_m": 0.0005000000000005521,
+          "engine_witness": [
+            0.006179501393220517,
+            -0.0031551796385312237,
+            0.14937800088108572
+          ],
+          "engine_normal": [
+            -0.10583402582871648,
+            -0.1560559541901657,
+            0.9820619624742033
+          ],
+          "engine_distance_m": 0.000500000000000566,
+          "witness_separation_m": 1.3010426069826053e-18,
+          "surface_distance_m": 3.496446946337351e-18,
+          "sphere_gap_error_m": 1.3877787807814457e-17,
+          "normal_error_deg": 8.537736462515939e-07,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "roll-minus10",
+      "point": "x-plus12",
+      "carried_center_world_m": [
+        0.02583999833727897,
+        -0.01024309851096477,
+        0.17069014538111293
+      ],
+      "carried_witness_world_m": [
+        0.02740948793088885,
+        -0.00669375905889328,
+        0.15056084107446532
+      ],
+      "carried_normal_world": [
+        -0.0765604679809605,
+        -0.17313850985712467,
+        0.9819172832509818
+      ],
+      "normal_tilt_from_world_up_deg": 10.912545958547112,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.02740948793088884,
+          -0.006693759058893288,
+          0.15056084107446538
+        ],
+        "expected_normal": [
+          -0.0765604679809601,
+          -0.1731385098571247,
+          0.9819172832509827
+        ],
+        "original_face": 2303,
+        "original_sphere_gap_m": 0.0005000000000024533,
+        "engine_witness": [
+          0.02740948793088885,
+          -0.006693759058893288,
+          0.1505608410744654
+        ],
+        "engine_normal": [
+          -0.07656046798095884,
+          -0.17313850985712392,
+          0.981917283250983
+        ],
+        "engine_distance_m": 0.0005000000000024395,
+        "witness_separation_m": 2.8609792490763984e-17,
+        "surface_distance_m": 2.7755575615628914e-17,
+        "sphere_gap_error_m": 1.3877787807814457e-17,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.04777792332997802,
+          0.04587965542258209
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542258209,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.02740948793088885,
+          -0.00669375905889328
+        ],
+        "center_world_m": [
+          0.02740948793088885,
+          -0.00669375905889328,
+          0.17136236745026312
+        ],
+        "witness_world_m": [
+          0.028956506314981714,
+          -0.0036603506055735728,
+          0.15114714627228334
+        ],
+        "normal_world": [
+          -0.07546431141916107,
+          -0.14797114406436984,
+          0.9861083501453142
+        ],
+        "face": 2738,
+        "delta_from_carried_center_m": [
+          0.0015694895936098768,
+          0.00354933945207149,
+          0.0006722220691501857
+        ],
+        "witness_shift_from_carried_m": 0.003455225970957788,
+        "geometry": {
+          "mesh_witness": [
+            0.028956506314981714,
+            -0.0036603506055735728,
+            0.15114714627228334
+          ],
+          "expected_normal": [
+            -0.07546431141916107,
+            -0.14797114406436984,
+            0.9861083501453142
+          ],
+          "original_face": 2738,
+          "original_sphere_gap_m": 0.000500000000000847,
+          "engine_witness": [
+            0.02895650631498172,
+            -0.003660350605573574,
+            0.15114714627228337
+          ],
+          "engine_normal": [
+            -0.07546431141915817,
+            -0.14797114406436712,
+            0.9861083501453148
+          ],
+          "engine_distance_m": 0.00050000000000084,
+          "witness_separation_m": 2.863935994797648e-17,
+          "surface_distance_m": 2.887480966432908e-17,
+          "sphere_gap_error_m": 6.938893903907228e-18,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "roll-minus10",
+      "point": "y-minus12",
+      "carried_center_world_m": [
+        0.013839998337278978,
+        -0.02181743627880939,
+        0.16722623094028122
+      ],
+      "carried_witness_world_m": [
+        0.015369775542067976,
+        -0.016433426353019826,
+        0.14750511994665666
+      ],
+      "carried_normal_world": [
+        -0.07462327828237647,
+        -0.2626346305262726,
+        0.962005414322974
+      ],
+      "normal_tilt_from_world_up_deg": 15.844671386697993,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.015369775542067943,
+          -0.016433426353019833,
+          0.14750511994665674
+        ],
+        "expected_normal": [
+          -0.07462327828237535,
+          -0.2626346305262735,
+          0.962005414322975
+        ],
+        "original_face": 4384,
+        "original_sphere_gap_m": 0.0005000000000036225,
+        "engine_witness": [
+          0.015369775542067957,
+          -0.016433426353019844,
+          0.1475051199466568
+        ],
+        "engine_normal": [
+          -0.07462327828237689,
+          -0.2626346305262738,
+          0.9620054143229749
+        ],
+        "engine_distance_m": 0.0005000000000036121,
+        "witness_separation_m": 5.815852873680767e-17,
+        "surface_distance_m": 5.647850449853784e-17,
+        "sphere_gap_error_m": 1.0408340855860843e-17,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.0598176357187989,
+          0.03575733515426452
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.03575733515426452,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.015369775542067976,
+          -0.016433426353019826
+        ],
+        "center_world_m": [
+          0.015369775542067976,
+          -0.016433426353019826,
+          0.1686404879250959
+        ],
+        "witness_world_m": [
+          0.016915050165795177,
+          -0.012462870033895875,
+          0.14858813622126538
+        ],
+        "normal_world": [
+          -0.07537924993789565,
+          -0.19368567410356471,
+          0.9781634977476147
+        ],
+        "face": 4382,
+        "delta_from_carried_center_m": [
+          0.0015297772047889978,
+          0.005384009925789565,
+          0.0014142569848146769
+        ],
+        "witness_shift_from_carried_m": 0.004396147790638723,
+        "geometry": {
+          "mesh_witness": [
+            0.016915050165795177,
+            -0.012462870033895875,
+            0.14858813622126538
+          ],
+          "expected_normal": [
+            -0.07537924993789565,
+            -0.19368567410356471,
+            0.9781634977476147
+          ],
+          "original_face": 4382,
+          "original_sphere_gap_m": 0.0005000000000045142,
+          "engine_witness": [
+            0.01693456932704684,
+            -0.012436733773816109,
+            0.14859992109523873
+          ],
+          "engine_normal": [
+            -0.07634989659255217,
+            -0.19500784580285407,
+            0.9778254616063323
+          ],
+          "engine_distance_m": 0.0004950347651362028,
+          "witness_separation_m": 3.4684074176680134e-05,
+          "surface_distance_m": 4.993974659652466e-06,
+          "sphere_gap_error_m": 4.9652348683114356e-06,
+          "normal_error_deg": 0.09595224856745611,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "roll-minus10",
+      "point": "y-plus12",
+      "carried_center_world_m": [
+        0.013839998337278978,
+        0.0018182155684566099,
+        0.17139227991951486
+      ],
+      "carried_witness_world_m": [
+        0.015343369267336624,
+        0.0032565328652854166,
+        0.15099813568151516
+      ],
+      "carried_normal_world": [
+        -0.07333516731988182,
+        -0.07016181935749964,
+        0.994836304292625
+      ],
+      "normal_tilt_from_world_up_deg": 5.825121773138168,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.015343369267336635,
+          0.0032565328652854175,
+          0.1509981356815152
+        ],
+        "expected_normal": [
+          -0.07333516731988272,
+          -0.07016181935749999,
+          0.9948363042926259
+        ],
+        "original_face": 2471,
+        "original_sphere_gap_m": 0.0005000000000008227,
+        "engine_witness": [
+          0.015369661410038324,
+          0.0035037890053582475,
+          0.15102056808706715
+        ],
+        "engine_normal": [
+          -0.07462324500781357,
+          -0.08222919268991308,
+          0.9938157430701473
+        ],
+        "engine_distance_m": 0.0004984796975688877,
+        "witness_separation_m": 0.0002496599455066987,
+        "surface_distance_m": 6.046206699802681e-06,
+        "sphere_gap_error_m": 1.5203024319350444e-06,
+        "normal_error_deg": 0.6977958445360752,
+        "legacy_v1_pass": false,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05984404199353026,
+          0.036004742502638326
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.036004742502638326,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.015343369267336624,
+          0.0032565328652854166
+        ],
+        "center_world_m": [
+          0.015343369267336624,
+          0.0032565328652854166,
+          0.1715866606822176
+        ],
+        "witness_world_m": [
+          0.016820413564457584,
+          0.004450052778465907,
+          0.15117480504973657
+        ],
+        "normal_world": [
+          -0.07205094132296826,
+          -0.05822048356977564,
+          0.9957002747550969
+        ],
+        "face": 2471,
+        "delta_from_carried_center_m": [
+          0.0015033709300576459,
+          0.0014383172968288067,
+          0.0001943807627027283
+        ],
+        "witness_shift_from_carried_m": 0.0019071868562056708,
+        "geometry": {
+          "mesh_witness": [
+            0.016820413564457584,
+            0.004450052778465907,
+            0.15117480504973657
+          ],
+          "expected_normal": [
+            -0.07205094132296826,
+            -0.05822048356977564,
+            0.9957002747550969
+          ],
+          "original_face": 2471,
+          "original_sphere_gap_m": 0.0005000000000015374,
+          "engine_witness": [
+            0.016939225163765215,
+            0.004449127575615214,
+            0.1512055090572725
+          ],
+          "engine_normal": [
+            -0.0779291562615902,
+            -0.05823702487550507,
+            0.9952564973603572
+          ],
+          "engine_distance_m": 0.00047829044974879303,
+          "witness_separation_m": 0.00012271832874154902,
+          "surface_distance_m": 2.206536692681796e-05,
+          "sphere_gap_error_m": 2.1709550252744375e-05,
+          "normal_error_deg": 0.33775715497945447,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "roll-minus10",
+      "point": "y-minus20",
+      "carried_center_world_m": [
+        0.013839998337278978,
+        -0.02949723537913261,
+        0.16471037209111172
+      ],
+      "carried_witness_world_m": [
+        0.01549744159384375,
+        -0.021828862052829336,
+        0.1457710233066402
+      ],
+      "carried_normal_world": [
+        -0.08085089056412015,
+        -0.37406699152691997,
+        0.9238706724130741
+      ],
+      "normal_tilt_from_world_up_deg": 22.501326506464792,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.015497441593843725,
+          -0.021828862052829284,
+          0.1457710233066403
+        ],
+        "expected_normal": [
+          -0.0808508905641194,
+          -0.3740669915269241,
+          0.9238706724130736
+        ],
+        "original_face": 4388,
+        "original_sphere_gap_m": 0.0005000000000036989,
+        "engine_witness": [
+          0.015497441593843753,
+          -0.0218288620528293,
+          0.14577102330664038
+        ],
+        "engine_normal": [
+          -0.08085089056412008,
+          -0.37406699152692696,
+          0.9238706724130725
+        ],
+        "engine_distance_m": 0.0005000000000037336,
+        "witness_separation_m": 8.946868911166325e-17,
+        "surface_distance_m": 9.159602786276758e-17,
+        "sphere_gap_error_m": 3.469446951953614e-17,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05968996966702313,
+          0.030142745524776048
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.030142745524776048,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.01549744159384375,
+          -0.021828862052829336
+        ],
+        "center_world_m": [
+          0.01549744159384375,
+          -0.021828862052829336,
+          0.1673516803854086
+        ],
+        "witness_world_m": [
+          0.017027218798632913,
+          -0.016444852127039077,
+          0.14763056939178154
+        ],
+        "normal_world": [
+          -0.0746232782823753,
+          -0.26263463052627334,
+          0.9620054143229751
+        ],
+        "face": 4384,
+        "delta_from_carried_center_m": [
+          0.001657443256564771,
+          0.007668373326303275,
+          0.0026413082942968735
+        ],
+        "witness_shift_from_carried_m": 0.005897939709768574,
+        "geometry": {
+          "mesh_witness": [
+            0.017027218798632913,
+            -0.016444852127039077,
+            0.14763056939178154
+          ],
+          "expected_normal": [
+            -0.0746232782823753,
+            -0.26263463052627334,
+            0.9620054143229751
+          ],
+          "original_face": 4384,
+          "original_sphere_gap_m": 0.0005000000000063044,
+          "engine_witness": [
+            0.017027218798632917,
+            -0.016444852127039077,
+            0.14763056939178157
+          ],
+          "engine_normal": [
+            -0.07462327828237462,
+            -0.26263463052627184,
+            0.9620054143229756
+          ],
+          "engine_distance_m": 0.0005000000000062836,
+          "witness_separation_m": 2.797157557069881e-17,
+          "surface_distance_m": 2.797157557069881e-17,
+          "sphere_gap_error_m": 2.0816681711721685e-17,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "roll-minus10",
+      "point": "y-plus20",
+      "carried_center_world_m": [
+        0.013839998337278978,
+        0.009895128963946617,
+        0.17165599168619466
+      ],
+      "carried_witness_world_m": [
+        0.01549980892402094,
+        0.009073207089635492,
+        0.15123983452455508
+      ],
+      "carried_normal_world": [
+        -0.08096637008496411,
+        0.04009374996639162,
+        0.9959101054457149
+      ],
+      "normal_tilt_from_world_up_deg": 5.183723344333973,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.015499808924020938,
+          0.009073207089635564,
+          0.15123983452455514
+        ],
+        "expected_normal": [
+          -0.08096637008496435,
+          0.040093749966388176,
+          0.995910105445716
+        ],
+        "original_face": 3159,
+        "original_sphere_gap_m": 0.0005000000000023562,
+        "engine_witness": [
+          0.015497418173444114,
+          0.009166860570315506,
+          0.15123638976720283
+        ],
+        "engine_normal": [
+          -0.08085094496851546,
+          0.03552581339439791,
+          0.9960928878776139
+        ],
+        "engine_distance_m": 0.0004996965318165535,
+        "witness_separation_m": 9.374730121451493e-05,
+        "surface_distance_m": 5.178209759065078e-07,
+        "sphere_gap_error_m": 3.034681858027355e-07,
+        "normal_error_deg": 0.26201663391694596,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05968760233684594,
+          0.030234466066114
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.030234466066114,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.01549980892402094,
+          0.009073207089635492
+        ],
+        "center_world_m": [
+          0.01549980892402094,
+          0.009073207089635492,
+          0.1718063454799738
+        ],
+        "witness_world_m": [
+          0.017136912717142405,
+          0.00910034808112123,
+          0.1513718365664423
+        ],
+        "normal_world": [
+          -0.07985872161567452,
+          -0.0013239508041822863,
+          0.9968053128551123
+        ],
+        "face": 3159,
+        "delta_from_carried_center_m": [
+          0.0016598105867419617,
+          -0.000821921874311125,
+          0.00015035379377914548
+        ],
+        "witness_shift_from_carried_m": 0.0016426411665162635,
+        "geometry": {
+          "mesh_witness": [
+            0.017136912717142405,
+            0.00910034808112123,
+            0.1513718365664423
+          ],
+          "expected_normal": [
+            -0.07985872161567452,
+            -0.0013239508041822863,
+            0.9968053128551123
+          ],
+          "original_face": 3159,
+          "original_sphere_gap_m": 0.0005000000000017213,
+          "engine_witness": [
+            0.0171369127171424,
+            0.00910034808112123,
+            0.1513718365664423
+          ],
+          "engine_normal": [
+            -0.0798587216156733,
+            -0.0013239508041817932,
+            0.9968053128551124
+          ],
+          "engine_distance_m": 0.0005000000000017144,
+          "witness_separation_m": 3.469446951953614e-18,
+          "surface_distance_m": 0.0,
+          "sphere_gap_error_m": 6.938893903907228e-18,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "roll-plus10",
+      "point": "center",
+      "carried_center_world_m": [
+        0.013839998337278978,
+        0.010083093858768509,
+        0.16978271390605798
+      ],
+      "carried_witness_world_m": [
+        0.015409487930888678,
+        0.006533754406516097,
+        0.14965340959944465
+      ],
+      "carried_normal_world": [
+        -0.07656046798096026,
+        0.1731385098659699,
+        0.9819172832494221
+      ],
+      "normal_tilt_from_world_up_deg": 10.912545959019178,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.01540948793088869,
+          0.006533754406516105,
+          0.14965340959944468
+        ],
+        "expected_normal": [
+          -0.07656046798096106,
+          0.1731385098659698,
+          0.981917283249423
+        ],
+        "original_face": 2303,
+        "original_sphere_gap_m": 0.0005000000000001358,
+        "engine_witness": [
+          0.01540948793088868,
+          0.006533754406516104,
+          0.14965340959944468
+        ],
+        "engine_normal": [
+          -0.07656046798095949,
+          0.17313850986596616,
+          0.981917283249424
+        ],
+        "engine_distance_m": 0.0005000000000001253,
+        "witness_separation_m": 1.0444418402013024e-17,
+        "surface_distance_m": 0.0,
+        "sphere_gap_error_m": 1.0408340855860843e-17,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.0597779233299782,
+          0.04587965542255865
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542255865,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.015409487930888678,
+          0.006533754406516097
+        ],
+        "center_world_m": [
+          0.015409487930888678,
+          0.006533754406516097,
+          0.17044955608304202
+        ],
+        "witness_world_m": [
+          0.016954762554615893,
+          0.0034065486762508606,
+          0.15024849891619926
+        ],
+        "normal_world": [
+          -0.07537924993789606,
+          0.152546620988514,
+          0.9854174227725969
+        ],
+        "face": 4382,
+        "delta_from_carried_center_m": [
+          0.0015694895936096999,
+          -0.003549339452252412,
+          0.0006668421769840394
+        ],
+        "witness_shift_from_carried_m": 0.0035385619447813104,
+        "geometry": {
+          "mesh_witness": [
+            0.016954762554615893,
+            0.0034065486762508606,
+            0.15024849891619926
+          ],
+          "expected_normal": [
+            -0.07537924993789606,
+            0.152546620988514,
+            0.9854174227725969
+          ],
+          "original_face": 4382,
+          "original_sphere_gap_m": 0.000500000000004587,
+          "engine_witness": [
+            0.016978087783712698,
+            0.0034210674644692875,
+            0.1502550242135381
+          ],
+          "engine_normal": [
+            -0.07654271114631159,
+            0.15188927696572485,
+            0.9854292774792119
+          ],
+          "engine_distance_m": 0.0004931316036831945,
+          "witness_separation_m": 2.823899837299631e-05,
+          "surface_distance_m": 6.886695496079332e-06,
+          "sphere_gap_error_m": 6.8683963213925225e-06,
+          "normal_error_deg": 0.07656834308552664,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "roll-plus10",
+      "point": "x-minus12",
+      "carried_center_world_m": [
+        0.0018399983372789919,
+        0.009894116200377008,
+        0.16871096834770832
+      ],
+      "carried_witness_world_m": [
+        0.004009903863731746,
+        0.006354326699270903,
+        0.1486358245052761
+      ],
+      "carried_normal_world": [
+        -0.1058490500708386,
+        0.17267265859049716,
+        0.9792753093866855
+      ],
+      "normal_tilt_from_world_up_deg": 11.685157649127564,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.004009903863731753,
+          0.0063543266992709116,
+          0.14863582450527613
+        ],
+        "expected_normal": [
+          -0.10584905007083939,
+          0.1726726585904972,
+          0.9792753093866865
+        ],
+        "original_face": 2308,
+        "original_sphere_gap_m": 0.0005000000000052324,
+        "engine_witness": [
+          0.004009903863731753,
+          0.006354326699270911,
+          0.14863582450527613
+        ],
+        "engine_normal": [
+          -0.10584905007083845,
+          0.17267265859049405,
+          0.9792753093866872
+        ],
+        "engine_distance_m": 0.0005000000000052358,
+        "witness_separation_m": 8.673617379884035e-19,
+        "surface_distance_m": 1.2266347333466993e-18,
+        "sphere_gap_error_m": 3.469446951953614e-18,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05151251457537076,
+          0.04587965542258178
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542258178,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.004009903863731746,
+          0.006354326699270903
+        ],
+        "center_world_m": [
+          0.004009903863731746,
+          0.006354326699270903,
+          0.16951014143384555
+        ],
+        "witness_world_m": [
+          0.006232027716727073,
+          0.0031072454377315474,
+          0.1493912789197007
+        ],
+        "normal_world": [
+          -0.10839628551194731,
+          0.15839420787993957,
+          0.9814079275190816
+        ],
+        "face": 4380,
+        "delta_from_carried_center_m": [
+          0.0021699055264527544,
+          -0.003539789501106105,
+          0.0007991730861372226
+        ],
+        "witness_shift_from_carried_m": 0.0040065050242529855,
+        "geometry": {
+          "mesh_witness": [
+            0.006232027716727073,
+            0.0031072454377315474,
+            0.1493912789197007
+          ],
+          "expected_normal": [
+            -0.10839628551194731,
+            0.15839420787993957,
+            0.9814079275190816
+          ],
+          "original_face": 4380,
+          "original_sphere_gap_m": 0.0005000000000037509,
+          "engine_witness": [
+            0.0061794878808418205,
+            0.003155197337567732,
+            0.14937799698048487
+          ],
+          "engine_normal": [
+            -0.1058340260254806,
+            0.1560560630310864,
+            0.982061945157471
+          ],
+          "engine_distance_m": 0.0004998722867044156,
+          "witness_separation_m": 7.236179214254891e-05,
+          "surface_distance_m": 8.807139777240019e-07,
+          "sphere_gap_error_m": 1.2771329933533582e-07,
+          "normal_error_deg": 0.20224555597869256,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "roll-plus10",
+      "point": "x-plus12",
+      "carried_center_world_m": [
+        0.02583999833727897,
+        0.010243098510964777,
+        0.17069014538111293
+      ],
+      "carried_witness_world_m": [
+        0.02740948793088885,
+        0.006693759058735048,
+        0.15056084107449325
+      ],
+      "carried_normal_world": [
+        -0.0765604679809605,
+        0.1731385098648437,
+        0.9819172832496207
+      ],
+      "normal_tilt_from_world_up_deg": 10.912545958959065,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.027409487930888862,
+          0.0066937590587350555,
+          0.15056084107449327
+        ],
+        "expected_normal": [
+          -0.07656046798096108,
+          0.17313850986484366,
+          0.9819172832496217
+        ],
+        "original_face": 2303,
+        "original_sphere_gap_m": 0.0005000000000024603,
+        "engine_witness": [
+          0.027409487930888855,
+          0.0066937590587350555,
+          0.15056084107449327
+        ],
+        "engine_normal": [
+          -0.07656046798095925,
+          0.1731385098648391,
+          0.9819172832496227
+        ],
+        "engine_distance_m": 0.0005000000000024533,
+        "witness_separation_m": 6.938893903907228e-18,
+        "surface_distance_m": 0.0,
+        "sphere_gap_error_m": 6.938893903907228e-18,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.04777792332997802,
+          0.04587965542258209
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.04587965542258209,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.02740948793088885,
+          0.006693759058735048
+        ],
+        "center_world_m": [
+          0.02740948793088885,
+          0.006693759058735048,
+          0.17135133583515022
+        ],
+        "witness_world_m": [
+          0.028978466755237308,
+          0.003660587626603668,
+          0.15113777166372797
+        ],
+        "normal_world": [
+          -0.07653555240722762,
+          0.14795958205516158,
+          0.9860275205569987
+        ],
+        "face": 3604,
+        "delta_from_carried_center_m": [
+          0.0015694895936098768,
+          -0.003549339452229729,
+          0.0006611904540372859
+        ],
+        "witness_shift_from_carried_m": 0.003463332555898512,
+        "geometry": {
+          "mesh_witness": [
+            0.028978466755237308,
+            0.003660587626603668,
+            0.15113777166372797
+          ],
+          "expected_normal": [
+            -0.07653555240722762,
+            0.14795958205516158,
+            0.9860275205569987
+          ],
+          "original_face": 3604,
+          "original_sphere_gap_m": 0.0005000000000038342,
+          "engine_witness": [
+            0.028955685119137504,
+            0.003661961107887503,
+            0.15114684177001936
+          ],
+          "engine_normal": [
+            -0.0754642983971864,
+            0.14797110419136758,
+            0.986108357125021
+          ],
+          "engine_distance_m": 0.0004891216255753436,
+          "witness_separation_m": 2.455923904273304e-05,
+          "surface_distance_m": 1.0890199238046582e-05,
+          "sphere_gap_error_m": 1.0878374428490573e-05,
+          "normal_error_deg": 0.06155637809124003,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "roll-plus10",
+      "point": "y-minus12",
+      "carried_center_world_m": [
+        0.013839998337278978,
+        -0.00181794979348357,
+        0.17139378720428755
+      ],
+      "carried_witness_world_m": [
+        0.015369775542067976,
+        -0.003503652604561916,
+        0.15102056488339333
+      ],
+      "carried_normal_world": [
+        -0.07462327828237647,
+        0.08222940541844101,
+        0.9938157229702689
+      ],
+      "normal_tilt_from_world_up_deg": 6.375381367458153,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.015369775542067967,
+          -0.0035036526045619165,
+          0.15102056488339338
+        ],
+        "expected_normal": [
+          -0.07462327828237642,
+          0.08222940541844127,
+          0.9938157229702701
+        ],
+        "original_face": 4384,
+        "original_sphere_gap_m": 0.0005000000000036538,
+        "engine_witness": [
+          0.015369775542067969,
+          -0.003503652604561915,
+          0.15102056488339333
+        ],
+        "engine_normal": [
+          -0.07462327828237875,
+          0.08222940541844158,
+          0.9938157229702699
+        ],
+        "engine_distance_m": 0.0005000000000036434,
+        "witness_separation_m": 5.555348673506341e-17,
+        "surface_distance_m": 5.642519773394817e-17,
+        "sphere_gap_error_m": 1.0408340855860843e-17,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.0598176357187989,
+          0.03575733515426452
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.03575733515426452,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.015369775542067976,
+          -0.003503652604561916
+        ],
+        "center_world_m": [
+          0.015369775542067976,
+          -0.003503652604561916,
+          0.17162500114314
+        ],
+        "witness_world_m": [
+          0.016967324435007217,
+          -0.004697512369031719,
+          0.15122224308454735
+        ],
+        "normal_world": [
+          -0.07792921428971733,
+          0.058237061681452526,
+          0.9952564906630341
+        ],
+        "face": 4385,
+        "delta_from_carried_center_m": [
+          0.0015297772047889978,
+          -0.001685702811078346,
+          0.00023121393885244812
+        ],
+        "witness_shift_from_carried_m": 0.0020045292962119583,
+        "geometry": {
+          "mesh_witness": [
+            0.016967324435007217,
+            -0.004697512369031719,
+            0.15122224308454735
+          ],
+          "expected_normal": [
+            -0.07792921428971733,
+            0.058237061681452526,
+            0.9952564906630341
+          ],
+          "original_face": 4385,
+          "original_sphere_gap_m": 0.0005000000000004549,
+          "engine_witness": [
+            0.01696732443500722,
+            -0.0046975123690317176,
+            0.1512222430845474
+          ],
+          "engine_normal": [
+            -0.07792921428971705,
+            0.05823706168145227,
+            0.9952564906630342
+          ],
+          "engine_distance_m": 0.0005000000000004341,
+          "witness_separation_m": 5.56465114693644e-17,
+          "surface_distance_m": 2.8025315438821013e-17,
+          "sphere_gap_error_m": 2.0816681711721685e-17,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "roll-plus10",
+      "point": "y-plus12",
+      "carried_center_world_m": [
+        0.013839998337278978,
+        0.021817170503836365,
+        0.16722472365550856
+      ],
+      "carried_witness_world_m": [
+        0.015343369267336624,
+        0.016193538518730104,
+        0.14756856331980758
+      ],
+      "carried_normal_world": [
+        -0.07333516731988182,
+        0.27432351146858586,
+        0.9588370895463459
+      ],
+      "normal_tilt_from_world_up_deg": 16.49649859624293,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.01534336926733662,
+          0.01619353851873012,
+          0.1475685633198076
+        ],
+        "expected_normal": [
+          -0.0733351673198819,
+          0.2743235114685857,
+          0.9588370895463472
+        ],
+        "original_face": 2471,
+        "original_sphere_gap_m": 0.0005000000000008643,
+        "engine_witness": [
+          0.015369661410038309,
+          0.01643355562356263,
+          0.14750507630530532
+        ],
+        "engine_normal": [
+          -0.07462324500781073,
+          0.2626348373002574,
+          0.9620053604532418
+        ],
+        "engine_distance_m": 0.0004984796975689085,
+        "witness_separation_m": 0.00024965994550676246,
+        "surface_distance_m": 6.04620669975156e-06,
+        "sphere_gap_error_m": 1.5203024319558611e-06,
+        "normal_error_deg": 0.6977958445360752,
+        "legacy_v1_pass": false,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05984404199353026,
+          0.036004742502638326
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.036004742502638326,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.015343369267336624,
+          0.016193538518730104
+        ],
+        "center_world_m": [
+          0.015343369267336624,
+          0.016193538518730104,
+          0.16869116694593173
+        ],
+        "witness_world_m": [
+          0.016912494845584086,
+          0.012210236053090486,
+          0.14864319581698449
+        ],
+        "normal_world": [
+          -0.07654271113400583,
+          0.19430743734823172,
+          0.977949811167945
+        ],
+        "face": 2303,
+        "delta_from_carried_center_m": [
+          0.0015033709300576459,
+          -0.005623631985106261,
+          0.0014664432904231695
+        ],
+        "witness_shift_from_carried_m": 0.004414033146349239,
+        "geometry": {
+          "mesh_witness": [
+            0.016912494845584086,
+            0.012210236053090486,
+            0.14864319581698449
+          ],
+          "expected_normal": [
+            -0.07654271113400583,
+            0.19430743734823172,
+            0.977949811167945
+          ],
+          "original_face": 2303,
+          "original_sphere_gap_m": 0.0005000000000044656,
+          "engine_witness": [
+            0.016912494845584086,
+            0.012210236053090484,
+            0.14864319581698449
+          ],
+          "engine_normal": [
+            -0.07654271113400957,
+            0.19430743734823486,
+            0.9779498111679441
+          ],
+          "engine_distance_m": 0.0005000000000044552,
+          "witness_separation_m": 1.734723475976807e-18,
+          "surface_distance_m": 1.734723475976807e-18,
+          "sphere_gap_error_m": 1.0408340855860843e-17,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "roll-plus10",
+      "point": "y-minus20",
+      "carried_center_world_m": [
+        0.013839998337278978,
+        -0.009895074741355663,
+        0.1716562991977889
+      ],
+      "carried_witness_world_m": [
+        0.01549744159384375,
+        -0.009166799698956762,
+        0.15123639475839348
+      ],
+      "carried_normal_world": [
+        -0.08085089056412015,
+        -0.03552561182433008,
+        0.9960928994825199
+      ],
+      "normal_tilt_from_world_up_deg": 5.066481095633099,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.015497441593843735,
+          -0.009166799698956674,
+          0.1512363947583935
+        ],
+        "expected_normal": [
+          -0.08085089056411976,
+          -0.03552561182433447,
+          0.9960928994825209
+        ],
+        "original_face": 4388,
+        "original_sphere_gap_m": 0.0005000000000037336,
+        "engine_witness": [
+          0.015497441593843734,
+          -0.009166799698956668,
+          0.15123639475839348
+        ],
+        "engine_normal": [
+          -0.0808508905641195,
+          -0.03552561182433468,
+          0.9960928994825209
+        ],
+        "engine_distance_m": 0.0005000000000037093,
+        "witness_separation_m": 2.829248368623626e-17,
+        "surface_distance_m": 2.829248368623626e-17,
+        "sphere_gap_error_m": 2.42861286636753e-17,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05968996966702313,
+          0.030142745524776048
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.030142745524776048,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.01549744159384375,
+          -0.009166799698956762
+        ],
+        "center_world_m": [
+          0.01549744159384375,
+          -0.009166799698956762,
+          0.17180606648631705
+        ],
+        "witness_world_m": [
+          0.017137185135689965,
+          -0.009100355512487666,
+          0.15137185922772325
+        ],
+        "normal_world": [
+          -0.0799874898461465,
+          -0.003241179827760356,
+          0.9967905979800555
+        ],
+        "face": 4387,
+        "delta_from_carried_center_m": [
+          0.001657443256564771,
+          0.0007282750423989008,
+          0.00014976728852814092
+        ],
+        "witness_shift_from_carried_m": 0.001646670682131892,
+        "geometry": {
+          "mesh_witness": [
+            0.017137185135689965,
+            -0.009100355512487666,
+            0.15137185922772325
+          ],
+          "expected_normal": [
+            -0.0799874898461465,
+            -0.003241179827760356,
+            0.9967905979800555
+          ],
+          "original_face": 4387,
+          "original_sphere_gap_m": 0.000500000000002665,
+          "engine_witness": [
+            0.01713718513568997,
+            -0.009100355512487666,
+            0.15137185922772328
+          ],
+          "engine_normal": [
+            -0.079987489846149,
+            -0.003241179827761672,
+            0.9967905979800554
+          ],
+          "engine_distance_m": 0.0005000000000026511,
+          "witness_separation_m": 2.797157557069881e-17,
+          "surface_distance_m": 2.7755575615628914e-17,
+          "sphere_gap_error_m": 1.3877787807814457e-17,
+          "normal_error_deg": 0.0,
+          "legacy_v1_pass": true,
+          "v2_pass": true
+        }
+      }
+    },
+    {
+      "pose": "roll-plus10",
+      "point": "y-plus20",
+      "carried_center_world_m": [
+        0.013839998337278978,
+        0.02949718115654167,
+        0.16471006457951745
+      ],
+      "carried_witness_world_m": [
+        0.01549980892402094,
+        0.021742090237805635,
+        0.14580626618717377
+      ],
+      "carried_normal_world": [
+        -0.08096637008496411,
+        0.3782971179870787,
+        0.9221365069434854
+      ],
+      "normal_tilt_from_world_up_deg": 22.759549310207806,
+      "carried_geometry": {
+        "mesh_witness": [
+          0.015499808924020938,
+          0.02174209023780553,
+          0.14580626618717385
+        ],
+        "expected_normal": [
+          -0.08096637008496431,
+          0.37829711798708504,
+          0.9221365069434838
+        ],
+        "original_face": 3159,
+        "original_sphere_gap_m": 0.0005000000000023666,
+        "engine_witness": [
+          0.015497418173444124,
+          0.021828917546108162,
+          0.1457709977972244
+        ],
+        "engine_normal": [
+          -0.08085094496851103,
+          0.3740671769717119,
+          0.9238705925670071
+        ],
+        "engine_distance_m": 0.0004996965318165604,
+        "witness_separation_m": 9.37473012146289e-05,
+        "surface_distance_m": 5.178209759531231e-07,
+        "sphere_gap_error_m": 3.0346818580620494e-07,
+        "normal_error_deg": 0.26201663391972796,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "boundary_in_HOME": {
+        "topological_open_edge_distance_m": null,
+        "home_xy_aabb_margin_m": [
+          0.05968760233684594,
+          0.030234466066114
+        ],
+        "minimum_home_xy_aabb_margin_m": 0.030234466066114,
+        "physical_rim_distance_m": null,
+        "physical_rim_status": "NOT_SEMANTICALLY_DEFINED; AABB margin is only an extent diagnostic"
+      },
+      "vertical_replacement": {
+        "status": "MEASURED",
+        "xy_definition": "World XY of the carried SURFACE witness, not the carried sphere center",
+        "requested_xy_m": [
+          0.01549980892402094,
+          0.021742090237805635
+        ],
+        "center_world_m": [
+          0.01549980892402094,
+          0.021742090237805635,
+          0.16737304501190237
+        ],
+        "witness_world_m": [
+          0.016996278455542083,
+          0.016056299460789826,
+          0.14773424764084447
+        ],
+        "normal_world": [
+          -0.07299851373271789,
+          0.2773556476592287,
+          0.9579901156610875
+        ],
+        "face": 2471,
+        "delta_from_carried_center_m": [
+          0.0016598105867419617,
+          -0.007755090918736034,
+          0.002662980432384915
+        ],
+        "witness_shift_from_carried_m": 0.006187467196233638,
+        "geometry": {
+          "mesh_witness": [
+            0.016996278455542083,
+            0.016056299460789826,
+            0.14773424764084447
+          ],
+          "expected_normal": [
+            -0.07299851373271789,
+            0.2773556476592287,
+            0.9579901156610875
+          ],
+          "original_face": 2471,
+          "original_sphere_gap_m": 0.000500000000005843,
+          "engine_witness": [
+            0.017029405342878907,
+            0.016358709944442985,
+            0.14765425693028772
+          ],
+          "engine_normal": [
+            -0.07462324500781013,
+            0.26263483730026144,
+            0.9620053604532407
+          ],
+          "engine_distance_m": 0.0004975864919550058,
+          "witness_separation_m": 0.0003145600182212266,
+          "surface_distance_m": 7.617941619688989e-06,
+          "sphere_gap_error_m": 2.413508050837232e-06,
+          "normal_error_deg": 0.8792033548610216,
+          "legacy_v1_pass": false,
+          "v2_pass": true
+        }
+      }
+    }
+  ],
+  "no_reference_selected": true,
+  "new_integration_steps": 0
+}

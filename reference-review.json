@@ -1,0 +1,31 @@
+{
+  "status": "STATIC_REFERENCE_REVIEW_REQUIRED",
+  "stage11_status": "MATERIAL_BLOCKED_REVIEW_REQUIRED",
+  "stage11_complete": false,
+  "new_ppo_updates": 0,
+  "new_integration_steps": 0,
+  "full_robot_steps": 0,
+  "cloud_hours": 0,
+  "canonical_total_completed_steps": 7895,
+  "formal_task_migration": false,
+  "selected_reference": null,
+  "head_neck_locked": false,
+  "policy_success": null,
+  "old_failures_retained": true,
+  "geometry": {
+    "complete": true,
+    "pose_count": 7,
+    "location_count": 7,
+    "primary_comparisons": 49,
+    "distance_measurements": 98,
+    "geometry_v2_pass_count": 98,
+    "all_measured_geometry_v2_pass": true,
+    "outside_projection_count": 0,
+    "no_reference_selected": true,
+    "new_integration_steps": 0
+  },
+  "forbidden_integration_call_attempts": [],
+  "wall_seconds": 19.40078621900011,
+  "audit_source_sha256": "02d3986d022fafa0340cf4ea29e4a694180198e68dc179ebd00455de90003a5f",
+  "scope": "Full free-joint Scene; only MjData poses and virtual kinematics. Not a controller, reset choice, equilibrium or policy test."
+}

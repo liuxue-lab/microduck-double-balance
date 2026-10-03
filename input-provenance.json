@@ -1,0 +1,44 @@
+{
+  "artifact_commit": "7c3157818500b357e733a22ae6df54ce3fbcf7b4",
+  "zip_sha256": "f692ff89cfdd0b1036570a2eb5cc4a7f679eb49bc407af37e5e3410478dd343d",
+  "files": {
+    "run-summary.json": {
+      "sha256": "c428a5004cdaf2c4959a5d84b127343c5ca4b4f90f267c27fa784b061d5435a7",
+      "bytes": 2997
+    },
+    "diagnostic/preflight.json": {
+      "sha256": "44dd05ca5781b9ab077404f864f362657f0cfee8ea109f3264251c6ddd8ac349",
+      "bytes": 1697
+    },
+    "diagnostic/diagnostic-review.json": {
+      "sha256": "3ef94cb9f087a109eac19800e5d6dbc654a1440c356e23166f0910bebbb0772f",
+      "bytes": 69879
+    },
+    "diagnostic/input-provenance.json": {
+      "sha256": "09190f63b0bc2419060e20f7edc816eeedd1815b7f59d43f1bfec5ab945926db",
+      "bytes": 4143
+    },
+    "diagnostic/material-fixture.mjb": {
+      "sha256": "e6cd330bddc3a29abf9ce4eca4f308a2680e4910405725e5ce054cb0a19d2da0",
+      "bytes": 3469516
+    },
+    "diagnostic/material-geometry.npz": {
+      "sha256": "b2b22ae8e2798b18b292bfc3c181475dde03e5f0030e93839f4447122fb1dcc5",
+      "bytes": 225030
+    },
+    "diagnostic/cases/normal-spin/initial.json": {
+      "sha256": "cb0d64c63dcfd4978deedffb6b45ca7a30e9ef16d810abda612abb3deb352e97",
+      "bytes": 904
+    }
+  },
+  "frozen_sources": {
+    "src/mjlab_microduck/robot/head_contact.py": "8a2446aa27d8e420e6e26e5e9985ab24cb774036936f393de680857edfd0af64",
+    "scripts/validate_head_contact_physics.py": "d5f88ffc2a65c3d98a6714d8aa67b8bffe8144f81be6e1d1fd6d89dcb908067c",
+    "scripts/diagnose_head_contact_floor_impact.py": "130dee8548e9a1127380162254d6a2d70bf710e30622927bafc5bdefe7d620a7",
+    "scripts/diagnose_head_contact_floor_stiffness.py": "e2f52491480582fbdd754fc18a5e5a5b86e7a59b01afa97d6e34327c8163b54a",
+    "scripts/diagnose_head_contact_floor_refinement.py": "7e4005e965e2ff725b29534221689c719eab6299441874b298c28bbb9560abab",
+    "scripts/diagnose_head_contact_friction.py": "e787f4e68ae20880b2f619dd80b01d80363308bc356b6f434e29b0f4739a9794"
+  },
+  "prior_canonical_steps": 7895,
+  "old_diagnostics_replayed": false
+}
