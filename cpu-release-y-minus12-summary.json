@@ -1,0 +1,22 @@
+{
+  "backend": "cpu",
+  "case": "release-y-minus12",
+  "status": "BLOCKED",
+  "steps": 197,
+  "geometry_gate_version": "v2",
+  "max_penetration_m": 0.0026671883758180547,
+  "head_contacts": 108,
+  "floor_contacts": 1,
+  "max_slip_m_s": 0.11565725514642046,
+  "max_positive_tangential_power_W": 1.4128033485217061e-06,
+  "max_cone_utilization": 1.0,
+  "max_surface_distance_m": 5.611345272210137e-09,
+  "max_sphere_gap_error_m": 5.611359502055713e-09,
+  "max_normal_error_deg": 0.00022552718121663978,
+  "legacy_v1_failed_contact_count": 0,
+  "new_ppo_updates": 0,
+  "material_fixture": true,
+  "policy_success": null,
+  "error": "Penetration exceeds approved 1 mm gate",
+  "wall_seconds": 1.0739057089995185
+}

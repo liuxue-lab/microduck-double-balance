@@ -1,0 +1,12 @@
+{
+  "fixed_head": true,
+  "gravity": [
+    0.0,
+    0.0,
+    -9.81
+  ],
+  "dt": 0.002,
+  "sphere_radius_m": 0.02,
+  "normal_compliance_note": "solref[0]=0.003; refsafe may clamp internal normal time constant to 2*dt; flags are recorded, not changed",
+  "friction_is_existing_simulation_assumption_not_measured_material": true
+}

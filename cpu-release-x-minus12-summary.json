@@ -1,0 +1,21 @@
+{
+  "backend": "cpu",
+  "case": "release-x-minus12",
+  "status": "PASS",
+  "steps": 1500,
+  "geometry_gate_version": "v2",
+  "max_penetration_m": 0.0005566545237203104,
+  "head_contacts": 152,
+  "floor_contacts": 1261,
+  "max_slip_m_s": 0.1353732629564482,
+  "max_positive_tangential_power_W": 1.5207246699660296e-31,
+  "max_cone_utilization": 1.0,
+  "max_surface_distance_m": 6.137512348458317e-09,
+  "max_sphere_gap_error_m": 6.044302773566823e-09,
+  "max_normal_error_deg": 0.0004634418305278711,
+  "legacy_v1_failed_contact_count": 0,
+  "new_ppo_updates": 0,
+  "material_fixture": true,
+  "policy_success": null,
+  "wall_seconds": 1.9306964869992953
+}

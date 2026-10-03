@@ -1,0 +1,29 @@
+{
+  "status": "MATERIAL_BLOCKED_REVIEW_REQUIRED",
+  "head": "056eaf2b0c78261f34e3fa581858c8573cab981e",
+  "evidence": "/home/lx/microduck-double-balance/artifacts/double-balance-stage11/physics/20261003T094423Z",
+  "new_ppo_updates": 0,
+  "physics_integration_steps": 4697,
+  "cloud_hours": 0,
+  "stage11_complete": false,
+  "old_stage10_tag": "1a11f30cc7264d00dec7bce8f11449ded9164169",
+  "source_files_added": [
+    "src/mjlab_microduck/robot/head_contact.py",
+    "scripts/validate_head_contact_physics.py",
+    "tests/test_head_contact_physics.py",
+    "docs/audits/stage-11-physics-plan.json",
+    "docs/audits/stage-11-physics-review.json",
+    "docs/handoffs/microduck-stage-11-head-contact-physics-handoff.md",
+    "docs/audits/stage-11-local-static-review.json",
+    "docs/audits/stage-11-geometry-gate-v2-review.json"
+  ],
+  "formal_task_migration": false,
+  "physics_step_count_status": "SUM_OF_SAVED_CASE_REPORTS",
+  "geometry_gate_version": "v2",
+  "local_physics_status": "BLOCKED",
+  "validator_exit_code": 2,
+  "head_after": "056eaf2b0c78261f34e3fa581858c8573cab981e",
+  "stage10_tag_after": "1a11f30cc7264d00dec7bce8f11449ded9164169",
+  "baseline_tracked_changes": "",
+  "staged_changes": ""
+}
