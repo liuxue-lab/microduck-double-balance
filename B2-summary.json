@@ -1,0 +1,115 @@
+{
+  "name": "B2",
+  "case": {
+    "name": "B2",
+    "dt": 0.0005,
+    "solref0": 0.004,
+    "max_steps": 100
+  },
+  "status": "PENETRATION_BLOCKED",
+  "steps": 4,
+  "attempted_steps": 4,
+  "max_penetration_m": 0.0012358001418520496,
+  "first_floor_contact": {
+    "geom": [
+      0,
+      2
+    ],
+    "dist": -0.00017915364763034652,
+    "pos": [
+      -0.024760556972010832,
+      -0.08662882254584245,
+      -8.957682381517326e-05
+    ],
+    "frame": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    "dim": 4,
+    "friction": [
+      0.6,
+      0.6,
+      0.005,
+      0.0001,
+      0.0001
+    ],
+    "solref": [
+      0.004,
+      1.0
+    ],
+    "solimp": [
+      0.95,
+      0.99,
+      0.001,
+      0.5,
+      2.0
+    ],
+    "force": [
+      8.416658803198992,
+      -0.20533101841674398,
+      0.025605817659442965,
+      0.0014907916547252863,
+      0.0,
+      0.0
+    ],
+    "efc_address": 0,
+    "backend": "cpu",
+    "step": 1,
+    "time_s": 0.3905,
+    "phase": "pre_integration_contacts_and_solver_force",
+    "other": "floor",
+    "allowed": true,
+    "normal_toward_ball": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "slip_world_m_s": [
+      0.01797488585663476,
+      0.1441391822731226,
+      0.0
+    ],
+    "slip_speed_m_s": 0.14525563805898728,
+    "tangential_power_W": -0.030056506739591246,
+    "ball_omega_world_rad_s": [
+      23.10174648079436,
+      -8.254089002042884,
+      -2.1327018972249516
+    ],
+    "ball_center_world_m": [
+      -0.024760556972010832,
+      -0.08662882254584245,
+      0.019820846352369654
+    ],
+    "normal_force_N": 8.416658803198992,
+    "tangent_force_N": 0.20692144650099925,
+    "torsional_torque_Nm": 0.0014907916547252863,
+    "active_torsional_relative_rate_rad_s": -2.1327018972249516,
+    "torsional_power_W": -0.003179414190399743,
+    "pyramidal_cone_utilization": 0.08115489456209017
+  },
+  "horizon_completed": false,
+  "new_ppo_updates": 0,
+  "full_robot_steps": 0,
+  "model_changes": {
+    "timestep": [
+      0.002,
+      0.0005
+    ],
+    "sphere_solref0": [
+      0.003,
+      0.004
+    ],
+    "all_other_model_arrays_and_options_unchanged": true
+  },
+  "effective_normal_timeconst_s": 0.004,
+  "completed_step_count_exact": true,
+  "elapsed_simulation_s": 0.002
+}

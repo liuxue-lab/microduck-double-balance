@@ -1,0 +1,44 @@
+{
+  "zip_sha256": "d2c6cb2c788ee3b7020f6557dac1e0646940bebd43b290dc4b3f5c6e8110278d",
+  "zip_bytes_verified_on_laptop": true,
+  "artifact_commit": "51df1774385fec998b8a8e7f7dcfcde5f5a10a27",
+  "source_directory": "/home/lx/microduck-double-balance/artifacts/double-balance-stage11/physics/20261003T094423Z",
+  "files": {
+    "run-summary.json": {
+      "sha256": "43bfe8d1464f0ede799e3fb5d8962b7d0fdc387d495dde4fa7c9cadbca7a48cb",
+      "bytes": 1211
+    },
+    "local-v2/physics-review.json": {
+      "sha256": "4d5172e2d73827fe5437c9af418761671b3b0ae52b77ff7cb11eed03b251807b",
+      "bytes": 4673
+    },
+    "local-v2/material-fixture.mjb": {
+      "sha256": "e6cd330bddc3a29abf9ce4eca4f308a2680e4910405725e5ce054cb0a19d2da0",
+      "bytes": 3469516
+    },
+    "local-v2/material-options.json": {
+      "sha256": "d954d5bb86a74df05232642698a740521d5ed29ce73e477a078b86dff25fe942",
+      "bytes": 821
+    },
+    "local-v2/material-scope.json": {
+      "sha256": "a4dac57951af473e4fc932c4c1f39412f15bc6d54a317b19d97c44aec6729198",
+      "bytes": 328
+    },
+    "local-v2/cpu/release-y-minus12/states.npz": {
+      "sha256": "3b09484c63730b8f59819ed1941556b0279cfd62056b704f8df7cf4f92451766",
+      "bytes": 16812
+    },
+    "local-v2/cpu/release-y-minus12/contacts.jsonl.gz": {
+      "sha256": "f95e63b00fbfe12e6b6e5750c479a6381aedfb7fc17b661fad5057b262b78494",
+      "bytes": 52469
+    },
+    "local-v2/cpu/release-y-minus12/raw-contacts.jsonl.gz": {
+      "sha256": "b1ce32231db80d7c38ad0c616fdaa0ea37c30954e67c3ada5a412d64405f1cb2",
+      "bytes": 16567
+    },
+    "local-v2/material-cpu-release-y-minus12-BLOCKED.mp4": {
+      "sha256": "c55a11f706dc097e3103d6529d8601f010603d98505a2257313e186bef4b9335",
+      "bytes": 26488
+    }
+  }
+}
