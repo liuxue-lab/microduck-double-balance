@@ -1,0 +1,8 @@
+/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab/entity/entity.py:149: UserWarning: Actuator config matched 14 joint(s) but the same expressions also match 8 site(s): imu, left_foot, head_camera, tof, head_imu, mouth_tip, double_balance_tray_frame, right_foot. Add a separate config with transmission_type=TransmissionType.SITE if those should be actuated too.
+  self._add_actuators()
+/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab/entity/entity.py:149: UserWarning: Actuator config matched 14 joint(s) but the same expressions also match 7 site(s): imu, left_foot, head_camera, tof, head_imu, mouth_tip, right_foot. Add a separate config with transmission_type=TransmissionType.SITE if those should be actuated too.
+  self._add_actuators()
+[mdp] Patches 1-2 active: NaN-safe reward/advantage
+[mdp] Patch 4 active: ONNX export filters passive_* joints
+2026-10-03T07:35:41.483226+00:00 Stage11Physics=BLOCKED
+2026-10-03T07:35:41.483306+00:00 Stage11Evidence=/home/lx/microduck-double-balance/artifacts/double-balance-stage11/physics/20261003T073525Z/local-static

@@ -1,0 +1,20 @@
+test_actual_frozen_scene_factory_and_mass (test_head_contact_physics.CompiledFactoryTests.test_actual_frozen_scene_factory_and_mass) ... /home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab/entity/entity.py:149: UserWarning: Actuator config matched 14 joint(s) but the same expressions also match 8 site(s): imu, left_foot, head_camera, tof, head_imu, mouth_tip, double_balance_tray_frame, right_foot. Add a separate config with transmission_type=TransmissionType.SITE if those should be actuated too.
+  self._add_actuators()
+/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab/entity/entity.py:149: UserWarning: Actuator config matched 14 joint(s) but the same expressions also match 7 site(s): imu, left_foot, head_camera, tof, head_imu, mouth_tip, right_foot. Add a separate config with transmission_type=TransmissionType.SITE if those should be actuated too.
+  self._add_actuators()
+ok
+test_closest_point_equivariance (test_head_contact_physics.GeometryTests.test_closest_point_equivariance) ... ok
+test_face_edge_vertex_and_degenerate_triangle (test_head_contact_physics.GeometryTests.test_face_edge_vertex_and_degenerate_triangle) ... ok
+test_finite_sphere_on_inclined_plane (test_head_contact_physics.GeometryTests.test_finite_sphere_on_inclined_plane) ... ok
+test_matrix_scope (test_head_contact_physics.GeometryTests.test_matrix_scope) ... ok
+test_parallel_axis_off_diagonal_and_com (test_head_contact_physics.GeometryTests.test_parallel_axis_off_diagonal_and_com) ... ok
+test_rotating_support_point_not_site_velocity (test_head_contact_physics.GeometryTests.test_rotating_support_point_not_site_velocity) ... ok
+test_true_no_slip_roll_has_nonzero_center_speed (test_head_contact_physics.GeometryTests.test_true_no_slip_roll_has_nonzero_center_speed) ... ok
+test_geometry_failure_is_saved_and_never_steps (test_head_contact_physics.StopGateTests.test_geometry_failure_is_saved_and_never_steps) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 6.868s
+
+OK
+[mdp] Patches 1-2 active: NaN-safe reward/advantage
+[mdp] Patch 4 active: ONNX export filters passive_* joints

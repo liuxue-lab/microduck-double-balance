@@ -1,0 +1,20 @@
+{
+  "status": "BLOCKED",
+  "new_ppo_updates": 0,
+  "cloud_gpu_hours": 0,
+  "policy_objective": "NOT_EVALUATED_PHYSICS_ONLY",
+  "formal_task_migration": false,
+  "fixed_head_only_in_material_fixture": true,
+  "full_robot_head_neck_locked": false,
+  "old_10s_terminal_5s_unassisted_015mps_contract_unchanged": true,
+  "B1_C1_gaps_preserved": true,
+  "old_stage10_tag_unchanged": true,
+  "cloud_status": "OFF_CONFIRMED_BY_USER",
+  "stage09_cloud_data_delete_allowed": false,
+  "cases": [],
+  "videos": [],
+  "gpu_physics": "NOT_RUN",
+  "error": "Original mesh / compiled collision geometry gate blocked",
+  "wall_seconds": 1.6819117940003707,
+  "stage11_complete": false
+}
