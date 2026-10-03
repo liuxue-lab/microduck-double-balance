@@ -1,0 +1,74 @@
+{
+  "C2_C3": {
+    "common_saved_samples": 201,
+    "last_common_time_s": 0.4399999999999945,
+    "max_common_time_position_difference_m": 0.001546940645663992,
+    "max_common_time_linear_velocity_difference_m_s": 0.2000853674833376,
+    "max_position_difference_time_s": 0.42499999999999616,
+    "max_velocity_difference_time_s": 0.43524999999999503
+  },
+  "C3_C4": {
+    "common_saved_samples": 401,
+    "last_common_time_s": 0.4399999999999945,
+    "max_common_time_position_difference_m": 0.00020363360406904445,
+    "max_common_time_linear_velocity_difference_m_s": 0.21102286004649637,
+    "max_position_difference_time_s": 0.43424999999999514,
+    "max_velocity_difference_time_s": 0.435374999999995
+  },
+  "on_C2_grid": {
+    "C2_C3": {
+      "common_saved_samples": 201,
+      "last_common_time_s": 0.4399999999999945,
+      "max_common_time_position_difference_m": 0.001546940645663992,
+      "max_common_time_linear_velocity_difference_m_s": 0.2000853674833376,
+      "max_position_difference_time_s": 0.42499999999999616,
+      "max_velocity_difference_time_s": 0.43524999999999503
+    },
+    "C3_C4": {
+      "common_saved_samples": 201,
+      "last_common_time_s": 0.4399999999999945,
+      "max_common_time_position_difference_m": 0.00020363360406904445,
+      "max_common_time_linear_velocity_difference_m_s": 0.2103487082787889,
+      "max_position_difference_time_s": 0.43424999999999514,
+      "max_velocity_difference_time_s": 0.39049999999999996
+    },
+    "C2_C4": {
+      "common_saved_samples": 201,
+      "last_common_time_s": 0.4399999999999945,
+      "max_common_time_position_difference_m": 0.0013860019915823113,
+      "max_common_time_linear_velocity_difference_m_s": 0.2103487082787889,
+      "max_position_difference_time_s": 0.42499999999999616,
+      "max_velocity_difference_time_s": 0.39049999999999996
+    }
+  },
+  "sensitivity": {
+    "all_four_pass": false,
+    "checks": {
+      "abs_difference_peak_sampled_overlap_m": {
+        "value": 7.4210876678804105e-06,
+        "limit": 0.0001,
+        "pass": true
+      },
+      "max_common_time_position_difference_m": {
+        "value": 0.00020363360406904445,
+        "limit": 0.0002,
+        "pass": false
+      },
+      "max_common_time_linear_velocity_difference_m_s": {
+        "value": 0.21102286004649637,
+        "limit": 0.05,
+        "pass": false
+      },
+      "abs_difference_peak_upward_velocity_m_s": {
+        "value": 0.0058072137863448,
+        "limit": 0.02,
+        "pass": true
+      }
+    },
+    "interpretation": "Approved event-level diagnostic error budgets; not a convergence theorem or formal task acceptance"
+  },
+  "full_physical_horizons_completed": true,
+  "new_integration_steps": 0,
+  "C2_replayed": false,
+  "limits": "Partial comparisons cannot qualify a candidate; equal final impulse does not establish transient convergence."
+}

@@ -1,0 +1,368 @@
+{
+  "status": "STEP_REFINEMENT_SENSITIVITY_BLOCKED_REVIEW_REQUIRED",
+  "cases": [
+    {
+      "name": "C3",
+      "case": {
+        "name": "C3",
+        "dt": 0.000125,
+        "solref0": 0.001,
+        "max_steps": 400
+      },
+      "status": "REFINEMENT_CASE_GATES_PASS_REVIEW_REQUIRED",
+      "steps": 400,
+      "attempted_steps": 400,
+      "horizon_completed": true,
+      "max_pre_step_penetration_m": 0.0005973365822704337,
+      "max_post_step_overlap_m": 0.0005973365822704337,
+      "normal_impulse_Ns": 0.021312971173332338,
+      "max_normal_force_N": 34.661011604659414,
+      "first_floor_contact": {
+        "geom": [
+          0,
+          2
+        ],
+        "dist": -0.0001782339601303501,
+        "pos": [
+          -0.024760556972010832,
+          -0.08662882254584248,
+          -8.911698006517504e-05
+        ],
+        "frame": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "dim": 4,
+        "friction": [
+          0.6,
+          0.6,
+          0.005,
+          0.0001,
+          0.0001
+        ],
+        "solref": [
+          0.001,
+          1.0
+        ],
+        "solimp": [
+          0.95,
+          0.99,
+          0.001,
+          0.5,
+          2.0
+        ],
+        "force": [
+          34.661011604659414,
+          -0.8213489617762576,
+          0.10244045278798915,
+          0.005962698251906984,
+          0.0,
+          0.0
+        ],
+        "efc_address": 0,
+        "backend": "cpu",
+        "step": 4,
+        "time_s": 0.3905,
+        "phase": "pre_integration_contacts_and_solver_force",
+        "other": "floor",
+        "allowed": true,
+        "normal_toward_ball": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "slip_world_m_s": [
+          0.017978681447874317,
+          0.14414980546685585,
+          0.0
+        ],
+        "slip_speed_m_s": 0.14526664931338,
+        "tangential_power_W": -0.12023903732850282,
+        "ball_omega_world_rad_s": [
+          23.10174648079436,
+          -8.254089002042885,
+          -2.13270189722495
+        ],
+        "ball_center_world_m": [
+          -0.024760556972010832,
+          -0.08662882254584248,
+          0.01982176603986965
+        ],
+        "normal_force_N": 34.661011604659414,
+        "tangent_force_N": 0.8277126091695985,
+        "torsional_torque_Nm": 0.005962698251906984,
+        "active_torsional_relative_rate_rad_s": -2.13270189722495,
+        "torsional_power_W": -0.012716657874421916,
+        "pyramidal_cone_utilization": 0.07882599347700107
+      },
+      "new_ppo_updates": 0,
+      "full_robot_steps": 0,
+      "model_changes": {
+        "timestep": [
+          0.002,
+          0.000125
+        ],
+        "sphere_solref0": [
+          0.003,
+          0.001
+        ],
+        "all_other_model_arrays_and_options_unchanged": true
+      },
+      "effective_normal_timeconst_s": 0.001,
+      "last_post_step_overlap_m": 9.552612128399529e-06,
+      "completed_step_count_exact": true,
+      "elapsed_simulation_s": 0.05,
+      "final_linear_velocity_m_s": [
+        -0.15173241314122418,
+        -0.35785044636238267,
+        0.006632298541425777
+      ],
+      "final_angular_velocity_joint_coordinates_rad_s": [
+        14.659282399406807,
+        -11.647792333750763,
+        -5.234942195367486
+      ],
+      "max_upward_velocity_m_s": 0.22171376609602542
+    },
+    {
+      "name": "C4",
+      "case": {
+        "name": "C4",
+        "dt": 6.25e-05,
+        "solref0": 0.001,
+        "max_steps": 800
+      },
+      "status": "REFINEMENT_CASE_GATES_PASS_REVIEW_REQUIRED",
+      "steps": 800,
+      "attempted_steps": 800,
+      "horizon_completed": true,
+      "max_pre_step_penetration_m": 0.0005899154946025532,
+      "max_post_step_overlap_m": 0.0005899154946025532,
+      "normal_impulse_Ns": 0.021277400400192558,
+      "max_normal_force_N": 33.645533003039795,
+      "first_floor_contact": {
+        "geom": [
+          0,
+          2
+        ],
+        "dist": -7.563881520586055e-05,
+        "pos": [
+          -0.0247514090020666,
+          -0.08660908339795065,
+          -3.781940760293201e-05
+        ],
+        "frame": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "dim": 4,
+        "friction": [
+          0.6,
+          0.6,
+          0.005,
+          0.0001,
+          0.0001
+        ],
+        "solref": [
+          0.001,
+          1.0
+        ],
+        "solimp": [
+          0.95,
+          0.99,
+          0.001,
+          0.5,
+          2.0
+        ],
+        "force": [
+          33.645533003039795,
+          -0.8244010710197057,
+          0.10438450114094112,
+          0.005925734356350754,
+          0.0,
+          0.0
+        ],
+        "efc_address": 0,
+        "backend": "cpu",
+        "step": 7,
+        "time_s": 0.3904375,
+        "phase": "pre_integration_contacts_and_solver_force",
+        "other": "floor",
+        "allowed": true,
+        "normal_toward_ball": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "slip_world_m_s": [
+          0.018402096176566435,
+          0.14533486898095888,
+          0.0
+        ],
+        "slip_speed_m_s": 0.14649526028306883,
+        "tangential_power_W": -0.12173511527374961,
+        "ball_omega_world_rad_s": [
+          23.10174648079436,
+          -8.254089002042885,
+          -2.1327018972249534
+        ],
+        "ball_center_world_m": [
+          -0.0247514090020666,
+          -0.08660908339795065,
+          0.01992436118479414
+        ],
+        "normal_force_N": 33.645533003039795,
+        "tangent_force_N": 0.8309833030674448,
+        "torsional_torque_Nm": 0.005925734356350754,
+        "active_torsional_relative_rate_rad_s": -2.1327018972249534,
+        "torsional_power_W": -0.012637824904240341,
+        "pyramidal_cone_utilization": 0.08123285859743395
+      },
+      "new_ppo_updates": 0,
+      "full_robot_steps": 0,
+      "model_changes": {
+        "timestep": [
+          0.002,
+          6.25e-05
+        ],
+        "sphere_solref0": [
+          0.003,
+          0.001
+        ],
+        "all_other_model_arrays_and_options_unchanged": true
+      },
+      "effective_normal_timeconst_s": 0.001,
+      "last_post_step_overlap_m": 4.3022050594219985e-06,
+      "completed_step_count_exact": true,
+      "elapsed_simulation_s": 0.05,
+      "final_linear_velocity_m_s": [
+        -0.1517381552736626,
+        -0.3578471746855557,
+        0.0030752212274507596
+      ],
+      "final_angular_velocity_joint_coordinates_rad_s": [
+        14.652654022722748,
+        -11.649489473681971,
+        -5.235487276507675
+      ],
+      "max_upward_velocity_m_s": 0.21590655230968062
+    }
+  ],
+  "stage11_status": "MATERIAL_BLOCKED_REVIEW_REQUIRED",
+  "stage11_complete": false,
+  "new_ppo_updates": 0,
+  "cloud_hours": 0,
+  "full_robot_steps": 0,
+  "formal_task_migration": false,
+  "prior_canonical_steps": 5011,
+  "replayed_A0_C1_C2_steps": 0,
+  "approval": {
+    "user_message": "批准",
+    "time": "2026-10-04T01:23:44+08:00"
+  },
+  "sampling_phase": "Original pre-integration contacts plus all saved post-integration geometric overlaps",
+  "approved_sensitivity_budgets": {
+    "abs_difference_peak_sampled_overlap_m": 0.0001,
+    "max_common_time_position_difference_m": 0.0002,
+    "max_common_time_linear_velocity_difference_m_s": 0.05,
+    "abs_difference_peak_upward_velocity_m_s": 0.02
+  },
+  "remaining_full_matrix_automatically_run": false,
+  "original_model_unchanged": true,
+  "comparison": {
+    "C2_C3": {
+      "common_saved_samples": 201,
+      "last_common_time_s": 0.4399999999999945,
+      "max_common_time_position_difference_m": 0.001546940645663992,
+      "max_common_time_linear_velocity_difference_m_s": 0.2000853674833376,
+      "max_position_difference_time_s": 0.42499999999999616,
+      "max_velocity_difference_time_s": 0.43524999999999503
+    },
+    "C3_C4": {
+      "common_saved_samples": 401,
+      "last_common_time_s": 0.4399999999999945,
+      "max_common_time_position_difference_m": 0.00020363360406904445,
+      "max_common_time_linear_velocity_difference_m_s": 0.21102286004649637,
+      "max_position_difference_time_s": 0.43424999999999514,
+      "max_velocity_difference_time_s": 0.435374999999995
+    },
+    "on_C2_grid": {
+      "C2_C3": {
+        "common_saved_samples": 201,
+        "last_common_time_s": 0.4399999999999945,
+        "max_common_time_position_difference_m": 0.001546940645663992,
+        "max_common_time_linear_velocity_difference_m_s": 0.2000853674833376,
+        "max_position_difference_time_s": 0.42499999999999616,
+        "max_velocity_difference_time_s": 0.43524999999999503
+      },
+      "C3_C4": {
+        "common_saved_samples": 201,
+        "last_common_time_s": 0.4399999999999945,
+        "max_common_time_position_difference_m": 0.00020363360406904445,
+        "max_common_time_linear_velocity_difference_m_s": 0.2103487082787889,
+        "max_position_difference_time_s": 0.43424999999999514,
+        "max_velocity_difference_time_s": 0.39049999999999996
+      },
+      "C2_C4": {
+        "common_saved_samples": 201,
+        "last_common_time_s": 0.4399999999999945,
+        "max_common_time_position_difference_m": 0.0013860019915823113,
+        "max_common_time_linear_velocity_difference_m_s": 0.2103487082787889,
+        "max_position_difference_time_s": 0.42499999999999616,
+        "max_velocity_difference_time_s": 0.39049999999999996
+      }
+    },
+    "sensitivity": {
+      "all_four_pass": false,
+      "checks": {
+        "abs_difference_peak_sampled_overlap_m": {
+          "value": 7.4210876678804105e-06,
+          "limit": 0.0001,
+          "pass": true
+        },
+        "max_common_time_position_difference_m": {
+          "value": 0.00020363360406904445,
+          "limit": 0.0002,
+          "pass": false
+        },
+        "max_common_time_linear_velocity_difference_m_s": {
+          "value": 0.21102286004649637,
+          "limit": 0.05,
+          "pass": false
+        },
+        "abs_difference_peak_upward_velocity_m_s": {
+          "value": 0.0058072137863448,
+          "limit": 0.02,
+          "pass": true
+        }
+      },
+      "interpretation": "Approved event-level diagnostic error budgets; not a convergence theorem or formal task acceptance"
+    },
+    "full_physical_horizons_completed": true,
+    "new_integration_steps": 0,
+    "C2_replayed": false,
+    "limits": "Partial comparisons cannot qualify a candidate; equal final impulse does not establish transient convergence."
+  },
+  "diagnostic_completed_steps": 1200,
+  "diagnostic_attempted_steps": 1200,
+  "canonical_total_completed_steps": 6211,
+  "wall_seconds": 1.0471619660020224,
+  "original_material_unchanged": true,
+  "archived_five_case_unchanged": true,
+  "archived_C1_C2_unchanged": true,
+  "diagnostic_source_sha256": "7e4005e965e2ff725b29534221689c719eab6299441874b298c28bbb9560abab"
+}
