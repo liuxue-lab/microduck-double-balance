@@ -1,0 +1,162 @@
+{
+  "execution-finished.json": {
+    "sha256": "34fe7242760175ed1fa8c3c08ad9f57b188e537fa9713a0914ad220218ce4472",
+    "bytes": 97
+  },
+  "execution-start.json": {
+    "sha256": "09b3afabaaba6d067d0ddd1e697130410e57aa93bc722368039f7baf1ef4ad8c",
+    "bytes": 660
+  },
+  "execution.log": {
+    "sha256": "9840268025c7195aa37a2224ca1736b8a6d1d5ae6e7c3a4915e27c0236e86ebe",
+    "bytes": 133
+  },
+  "git-after.json": {
+    "sha256": "371089bf77206415941069656fb096f760d47720d3e81ecfa0a1ea7ca32ab2f7",
+    "bytes": 299
+  },
+  "git-before.json": {
+    "sha256": "371089bf77206415941069656fb096f760d47720d3e81ecfa0a1ea7ca32ab2f7",
+    "bytes": 299
+  },
+  "installed-files.json": {
+    "sha256": "c21a6ddd516d0ad3c1e440bc6ea0fc2eea831448455a4b73458d875e0ef31eae",
+    "bytes": 396
+  },
+  "launcher.py": {
+    "sha256": "6bb890f1e8525cec5e9e53a36f1115a06dd76d337d91e9d85cdff026fc128783",
+    "bytes": 62773
+  },
+  "microduck-stage11-floor-integration-sources.bundle": {
+    "sha256": "3c32e8e30dcd8898371968111e8ed6097d8eaefb02706d14db74cf3dadaf58d4",
+    "bytes": 24997
+  },
+  "old-source-manifest.json": {
+    "sha256": "8c3747d0718c4d39ef6f9b5757b519619c929a143b9fe89fdf53950649a679f8",
+    "bytes": 30104
+  },
+  "package-manifest.json": {
+    "sha256": "f2812b6d0cfcdda62e3ea021af3197feeaefbb06260812337b23cb371ca43928",
+    "bytes": 1878
+  },
+  "run-summary.json": {
+    "sha256": "164d4db4e083a9f12e8f38b843bf2e1aa8fe10f9e225e197b2749e90ad140c3f",
+    "bytes": 915
+  },
+  "source/docs/audits/stage-11-floor-cuda-refinement-return-review.json": {
+    "sha256": "c03c21d9faee73e8eb9687cccef496ae04a198e38f5eaa9711c6de504f8b0979",
+    "bytes": 6513
+  },
+  "source/docs/audits/stage-11-floor-integration-sources-plan.json": {
+    "sha256": "2cd3a305d3ed14b346af73b926fb7be08be7a998b00e6edee61eda5878befff7",
+    "bytes": 3227
+  },
+  "source/docs/audits/stage-11-floor-macro-partition-review.json": {
+    "sha256": "89993ad32ab3b86baa765b683077c6dfcc4f35e8cb9020b2dce9ead7d6bb29da",
+    "bytes": 14800
+  },
+  "source/docs/handoffs/microduck-stage-11-floor-reference-closure-and-integration-handoff.md": {
+    "sha256": "223d9afc6a1c74c14a0475c9fd23080243085f9c23135ec82d959f94568c3933",
+    "bytes": 12590
+  },
+  "source/scripts/audit_head_contact_bam_integration_sources.py": {
+    "sha256": "c8ee6ee03b358c69db301cacd5b4d15c5f1971d63fece9c1c5a67a608fa8b9db",
+    "bytes": 6922
+  },
+  "source/tests/test_head_contact_bam_integration_sources.py": {
+    "sha256": "ea6be361d85527ead97efeca937473156af5fe1f23be51d617a1bfc93cd63cfe",
+    "bytes": 3894
+  },
+  "source-capture/source/installed/bam/actuator.py": {
+    "sha256": "6927d7b2341cbaca0e5d872fae4ddce6200056885310d9ee5acaba1f34e09c13",
+    "bytes": 16049
+  },
+  "source-capture/source/installed/bam/mjlab.py": {
+    "sha256": "af3de252939ca868712423979c2ab52e198d382d7aca613b5b33c77d74baa440",
+    "bytes": 45267
+  },
+  "source-capture/source/installed/bam/model.py": {
+    "sha256": "fed54ebf5ccdb1e15d1094e1a1b426a93c29a7dad5944e6861ff0cd023d900ed",
+    "bytes": 12544
+  },
+  "source-capture/source/installed/bam/params/xl330/m6.json": {
+    "sha256": "61c699362fb3fabdde93eeba5e1ad3bf4ef9ca2f71d03e316b1924ff005b20d3",
+    "bytes": 719
+  },
+  "source-capture/source/installed/mjlab/actuator/actuator.py": {
+    "sha256": "ed57149b527c529b37b6322f20cac3eeed89b7355847ad712c5d44b13549f1ab",
+    "bytes": 13443
+  },
+  "source-capture/source/installed/mjlab/entity/entity.py": {
+    "sha256": "817896ec3ce69c8ef18cb3d8e2519b85d1db25f70126af5e643c34a0b054e572",
+    "bytes": 44342
+  },
+  "source-capture/source/installed/mjlab/envs/manager_based_rl_env.py": {
+    "sha256": "a381027e336d6313cd338d541230b36864657edac89708a33e7e60c0c6fb74d2",
+    "bytes": 22061
+  },
+  "source-capture/source/installed/mjlab/scene/scene.py": {
+    "sha256": "f9ffeed16bb741a259fedfbb3b9cd6f3609a0b0cf98da3556dd16db51ec6e30c",
+    "bytes": 8719
+  },
+  "source-capture/source/installed/mjlab/sim/sim.py": {
+    "sha256": "2a8561e52d019b202cf105a6512abfdd8068701dafe321f43bbae96e346b2c68",
+    "bytes": 15218
+  },
+  "source-capture/source/installed/mjlab/sim/sim_data.py": {
+    "sha256": "bc73da4811fc44336f9016d826ef1b2044b8cb0830f2ad01a06b9b84ffa8b4c6",
+    "bytes": 7633
+  },
+  "source-capture/source/installed/mjlab/utils/buffers/circular_buffer.py": {
+    "sha256": "6a96cb79afbfb2d1234c3ee8e7531db371262673ddc509da7f3e66410ef2ae13",
+    "bytes": 8021
+  },
+  "source-capture/source/installed/mjlab/utils/buffers/delay_buffer.py": {
+    "sha256": "845e68da9e681adee1e93f90b4b1937c282a27f82a147f1fe3c19d83204049b5",
+    "bytes": 10201
+  },
+  "source-capture/source/project/src/mjlab_microduck/actuator/friction_dr_bam.py": {
+    "sha256": "75cb3e993cd8fdc9d90081129f793deb1eb22fc1ad921f75a97511fa98d38fb7",
+    "bytes": 7730
+  },
+  "source-capture/source/project/src/mjlab_microduck/robot/basketball.py": {
+    "sha256": "efe049adc8e1e9af0f3bcd4fb64445ac3ed6b4c543e39dc25aac854b83b4c821",
+    "bytes": 1521
+  },
+  "source-capture/source/project/src/mjlab_microduck/robot/head_contact.py": {
+    "sha256": "8a2446aa27d8e420e6e26e5e9985ab24cb774036936f393de680857edfd0af64",
+    "bytes": 10737
+  },
+  "source-capture/source/project/src/mjlab_microduck/robot/microduck_constants.py": {
+    "sha256": "dbbee3175c1eb3c48caf5ba10864ef7095076e471d566d1c8644904b56e0fcc8",
+    "bytes": 17425
+  },
+  "source-capture/source/project/src/mjlab_microduck/tasks/mdp.py": {
+    "sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76",
+    "bytes": 381890
+  },
+  "source-capture/source/project/src/mjlab_microduck/tasks/microduck_basketball_env_cfg.py": {
+    "sha256": "de7455ab48cf0484c045208906c25800a0e16f270be8a13f4c885e37cbfe5003",
+    "bytes": 13302
+  },
+  "source-capture/source/project/src/mjlab_microduck/tasks/microduck_double_balance_env_cfg.py": {
+    "sha256": "a46641f12b7a21f7c147cc4909d752b8a203b0090afc3a56c98f313cb1a1f5fb",
+    "bytes": 16315
+  },
+  "source-capture/source/project/src/mjlab_microduck/tasks/microduck_head_contact_env_cfg.py": {
+    "sha256": "e4b1b6e27680e4d2a7410bcff295a78988b0274fa21555bf1e4944dfe6b86a47",
+    "bytes": 2828
+  },
+  "source-capture/source/project/src/mjlab_microduck/tasks/microduck_velocity_env_cfg.py": {
+    "sha256": "75a0430b814ac7495eb237ab806fbd4dd10309b9fd3027ac3eee3c2e3c5a944a",
+    "bytes": 44971
+  },
+  "source-capture/source-review.json": {
+    "sha256": "e477ab493fa534ac96b99a71b88777ea343a225aef08c53c7957bb0c99e274bf",
+    "bytes": 11401
+  },
+  "tests.log": {
+    "sha256": "13a6ebed019cd4e969622258d22ad7c6081a9e07aed70e5fd8e15d669aeecd61",
+    "bytes": 103
+  }
+}
