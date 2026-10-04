@@ -1,0 +1,59 @@
+{
+  "completed_steps": 6,
+  "attempted_steps": 6,
+  "active_case": {
+    "name": "release-center",
+    "status": "CUDA_CENTER_ERROR_STOP_REVIEW_REQUIRED",
+    "steps": 6,
+    "attempted_steps": 6,
+    "horizon_completed": false,
+    "fixed_material_fixture": true,
+    "policy_success": null,
+    "new_ppo_updates": 0,
+    "full_robot_steps": 0,
+    "head_contact_steps": 0,
+    "floor_contact_steps": 0,
+    "max_head_slip_m_s": 0.0,
+    "max_head_penetration_m": 0.0,
+    "max_post_head_overlap_m": 8.686160380841357e-05,
+    "max_floor_penetration_m": 0.0,
+    "head_normal_impulse_Ns": 0.0,
+    "head_tangential_world_impulse_Ns": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "head_torsional_impulse_Nms": 0.0,
+    "head_tangential_work_J": 0.0,
+    "head_torsional_work_J": 0.0,
+    "max_positive_head_tangential_power_W": 0.0,
+    "max_positive_head_torsional_power_W": 0.0,
+    "head_tangential_positive_power_samples": 0,
+    "head_torsional_positive_power_samples": 0,
+    "max_head_cone_utilization": 0.0,
+    "legacy_v1_failed_contact_count": 0,
+    "head_contact_intervals": [],
+    "no_head_contact_intervals": [
+      {
+        "first_pre_step": 0,
+        "end_step_exclusive": 5,
+        "start_s": 0.0,
+        "end_s": 0.01,
+        "right_censored_at_record_end": true,
+        "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+      }
+    ],
+    "critical_frame_steps": [],
+    "physical_friction_calibration": false,
+    "backend": "RTX5060_MUJOCO_WARP",
+    "unexpected_setup_advance_possible": false,
+    "max_clock_quantization_error_s": 7.078051564995969e-10,
+    "error": "all the input arrays must have same number of dimensions, but the array at index 0 has 1 dimension(s) and the array at index 2 has 2 dimension(s)",
+    "capture_primary_state_verified": true,
+    "completed_step_count_exact": true,
+    "elapsed_simulation_s": 0.012,
+    "model_arrays_and_options_unchanged": true
+  },
+  "unexpected_setup_advance_possible": false,
+  "new_ppo_updates": 0
+}

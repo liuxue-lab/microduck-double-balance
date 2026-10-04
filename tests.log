@@ -1,0 +1,32 @@
+test_bad_clock_capacity_nonfinite_stop_after_one_return (test_head_contact_cuda_center.Guards.test_bad_clock_capacity_nonfinite_stop_after_one_return) ... ok
+test_capture_advance_stops_without_authorizing_launch (test_head_contact_cuda_center.Guards.test_capture_advance_stops_without_authorizing_launch) ... ok
+test_complete_mock_horizon_is_not_policy_success (test_head_contact_cuda_center.Guards.test_complete_mock_horizon_is_not_policy_success) ... CUDA center returned=1/1500
+CUDA center returned=101/1500
+CUDA center returned=201/1500
+CUDA center returned=301/1500
+CUDA center returned=401/1500
+CUDA center returned=501/1500
+CUDA center returned=601/1500
+CUDA center returned=701/1500
+CUDA center returned=801/1500
+CUDA center returned=901/1500
+CUDA center returned=1001/1500
+CUDA center returned=1101/1500
+CUDA center returned=1201/1500
+CUDA center returned=1301/1500
+CUDA center returned=1401/1500
+ok
+test_deadline_prevents_first_launch (test_head_contact_cuda_center.Guards.test_deadline_prevents_first_launch) ... ok
+test_descriptive_backend_comparison_is_not_a_pass_gate (test_head_contact_cuda_center.Guards.test_descriptive_backend_comparison_is_not_a_pass_gate) ... ok
+test_exact_single_case_budget (test_head_contact_cuda_center.Guards.test_exact_single_case_budget) ... ok
+test_float32_clock_is_counted_without_changing_nominal_timestep (test_head_contact_cuda_center.Guards.test_float32_clock_is_counted_without_changing_nominal_timestep) ... ok
+test_floor_arrival_censors_and_does_not_qualify_horizon (test_head_contact_cuda_center.Guards.test_floor_arrival_censors_and_does_not_qualify_horizon) ... ok
+test_floor_penetration_remains_blocked (test_head_contact_cuda_center.Guards.test_floor_penetration_remains_blocked) ... ok
+test_geometry_and_material_gates_unchanged (test_head_contact_cuda_center.Guards.test_geometry_and_material_gates_unchanged) ... ok
+test_launch_failure_preserves_attempt_uncertainty (test_head_contact_cuda_center.Guards.test_launch_failure_preserves_attempt_uncertainty) ... ok
+test_only_local_5060_allowed (test_head_contact_cuda_center.Guards.test_only_local_5060_allowed) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.305s
+
+OK
