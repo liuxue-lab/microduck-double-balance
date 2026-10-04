@@ -1,0 +1,118 @@
+{
+  "diagnostic/device-model-after.json": {
+    "sha256": "025118e00ecb6d4a9115b54b191dbf3f059a3c5c685e456df5826bac22ce2892",
+    "bytes": 58673
+  },
+  "diagnostic/device-model-before.json": {
+    "sha256": "025118e00ecb6d4a9115b54b191dbf3f059a3c5c685e456df5826bac22ce2892",
+    "bytes": 58673
+  },
+  "diagnostic/frozen-schedule.json": {
+    "sha256": "91b9217573edd8b563a57a7399b387817aab1d63c087e05b13f6bca1d5505820",
+    "bytes": 836803
+  },
+  "diagnostic/initialization.json": {
+    "sha256": "a67ef062c34db0558cb179a8b29ac39ac82952cc750aaf8682a67573915705a0",
+    "bytes": 1857
+  },
+  "diagnostic/last-observed-stages.json": {
+    "sha256": "5ea9facd1fa16e0e3e632425c8c4599d65261d924fdce23224b3a018e9096359",
+    "bytes": 8477
+  },
+  "diagnostic/last-primary-state.npz": {
+    "sha256": "0c90bbaef9cb48123f7954d47400cb2987cff23d351629869886109e0632dab0",
+    "bytes": 880
+  },
+  "diagnostic/progress.json": {
+    "sha256": "2dbbe2decbdb71a4b91bd14d2a856ffcf03be75dcfaaa4febb896601af2eb371",
+    "bytes": 185
+  },
+  "diagnostic/run-review.json": {
+    "sha256": "ce2df93c50da493d988c5027e1bba29192d893b489408f09fad92c0b8f9678a8",
+    "bytes": 1833
+  },
+  "diagnostic/stage-log.jsonl.gz": {
+    "sha256": "e1b8f2646effb8b31e2d7fe7045e9ae104b883158258d228cdf88027d60fd8bd",
+    "bytes": 2016121
+  },
+  "diagnostic/states.npz": {
+    "sha256": "b85ba4ee7d5a269c7951e379c77a8561f7bca2bbaeb56de6db082200ae4c424e",
+    "bytes": 129695
+  },
+  "diagnostic/states.partial.jsonl": {
+    "sha256": "b44aa30b4e8ad5dacc31a3921de8fbc6a7ebcc169b9efb80ed70997f94942a7b",
+    "bytes": 1363229
+  },
+  "execution-finished.json": {
+    "sha256": "34fe7242760175ed1fa8c3c08ad9f57b188e537fa9713a0914ad220218ce4472",
+    "bytes": 97
+  },
+  "execution-start.json": {
+    "sha256": "a615df6f2d1d79d624df8ee1879a84e758143eee6e5d2e0f4d1ba06ebf1d3785",
+    "bytes": 835
+  },
+  "execution.log": {
+    "sha256": "23ec3e8fd7b66299abff376cd003f3ab80c3f32d490664848f642690a02a4ff7",
+    "bytes": 2752
+  },
+  "git-after.json": {
+    "sha256": "371089bf77206415941069656fb096f760d47720d3e81ecfa0a1ea7ca32ab2f7",
+    "bytes": 299
+  },
+  "git-before.json": {
+    "sha256": "371089bf77206415941069656fb096f760d47720d3e81ecfa0a1ea7ca32ab2f7",
+    "bytes": 299
+  },
+  "input-hashes.json": {
+    "sha256": "381a118ab3246456ba222904608dd0dc38c1c98342928d6f2b9e38a53202345e",
+    "bytes": 1033
+  },
+  "installed-files.json": {
+    "sha256": "844b3323b03042cd18d27494ba52459bce05e11e2fdac165bb495039c2f92a8c",
+    "bytes": 305
+  },
+  "launcher.py": {
+    "sha256": "845365007d72ae8e4bbe6202614557fa756a25ccf88324f1a6b256cc32f7d72a",
+    "bytes": 64854
+  },
+  "microduck-stage11-floor-cuda-schedule.bundle": {
+    "sha256": "82c94872cd05550ac28a23b2ef7d349e7a4a3144c8d6b38747ceb60ced82cade",
+    "bytes": 27071
+  },
+  "old-source-manifest.json": {
+    "sha256": "29589372e5bf1d6dcca10ea249d814702294cfe738f19227e26c20eacd4e71ba",
+    "bytes": 26464
+  },
+  "package-manifest.json": {
+    "sha256": "982328c86d09967418a6e806bee05a09597aa991e59506abf609e9a395d91532",
+    "bytes": 1603
+  },
+  "run-summary.json": {
+    "sha256": "7b629a7e12f88c5bdd1442800f407f958b52f376044be39442167eb4608ab5a8",
+    "bytes": 938
+  },
+  "source/docs/audits/stage-11-floor-cuda-schedule-plan.json": {
+    "sha256": "a1cc773cbdf52081edf58b987db11f55b3e0bb835c8cb8fd53b536468703e881",
+    "bytes": 5182
+  },
+  "source/docs/audits/stage-11-floor-event-reference-return-review.json": {
+    "sha256": "1c6e54641052a98cf603255f802f67c69e2280426a7aef6c6e6e9a380d7bede0",
+    "bytes": 6058
+  },
+  "source/docs/handoffs/microduck-stage-11-floor-cuda-schedule-handoff.md": {
+    "sha256": "38a41d5523c03877e621a97be0f3bce37176cc7770aecf0a2a50314f4b80cc8a",
+    "bytes": 9430
+  },
+  "source/scripts/diagnose_head_contact_floor_cuda_schedule.py": {
+    "sha256": "f64aca1e18ed8b245c3dd11d51ca66ea620fcc1e56756540639cf947fe9b360f",
+    "bytes": 17801
+  },
+  "source/tests/test_head_contact_floor_cuda_schedule.py": {
+    "sha256": "e9bd2be826615fed8fd02943ee90cffa986f58c2838ba0b5ef2dbdb8759db5f0",
+    "bytes": 3436
+  },
+  "tests.log": {
+    "sha256": "9bfce362f12c4dec03e45cc68d78bb5700421ff122cbcd4c1843fe559947658b",
+    "bytes": 105
+  }
+}
