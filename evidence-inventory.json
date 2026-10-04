@@ -1,0 +1,154 @@
+{
+  "execution-finished.json": {
+    "sha256": "34fe7242760175ed1fa8c3c08ad9f57b188e537fa9713a0914ad220218ce4472",
+    "bytes": 97
+  },
+  "execution-start.json": {
+    "sha256": "1cb94722c99fdb36e44cc512de8f5d06e4f0dd38abffd312be2b4477342816fd",
+    "bytes": 613
+  },
+  "execution.log": {
+    "sha256": "96872fcb5900566ff81412e391e47f9d27c6dc6b6feedb10f321d9a2a0069c02",
+    "bytes": 8555
+  },
+  "git-after.json": {
+    "sha256": "371089bf77206415941069656fb096f760d47720d3e81ecfa0a1ea7ca32ab2f7",
+    "bytes": 299
+  },
+  "git-before.json": {
+    "sha256": "371089bf77206415941069656fb096f760d47720d3e81ecfa0a1ea7ca32ab2f7",
+    "bytes": 299
+  },
+  "installed-files.json": {
+    "sha256": "ed3cd74c912973b4c9bd608ea1aa45e42dadadbae0fc8678dce4930084c255c6",
+    "bytes": 345
+  },
+  "launcher.py": {
+    "sha256": "2439f4e2c9e6a1bdcfee76eceb7df77520b3943669a44212521a5fb4cb33377d",
+    "bytes": 73334
+  },
+  "microduck-stage11-bam-memory-boundary-r3.bundle": {
+    "sha256": "ac127bb96846e709181265b757a0b301ee4e269b179c654195019d0f16f2a571",
+    "bytes": 30510
+  },
+  "old-source-manifest.json": {
+    "sha256": "f776a1baa5ffbcdb61ea905b3e3b31a581648cb8ccb0434e3f69d09bd28c02f3",
+    "bytes": 34323
+  },
+  "package-manifest.json": {
+    "sha256": "e7964915044236ed03f78272f3dad32d9080daff0879f4c82e4ba2f86084e9f7",
+    "bytes": 1823
+  },
+  "probe/array-storage-inventory.json": {
+    "sha256": "7941bc2352fbb5dda37e541d7aff5772b53bb9e0c73f55eb76e359a46527cadb",
+    "bytes": 27759
+  },
+  "probe/command-data.npz": {
+    "sha256": "ba6ab622d05765debaca106cfb4599e61b7fa26d881fc01882020ee247c88c9e",
+    "bytes": 1059
+  },
+  "probe/command-ticks.json": {
+    "sha256": "037434feb6adfc91535ba849d18c283d7dbaac97f395e9efb212bfd47b8e8d6c",
+    "bytes": 1736
+  },
+  "probe/data-before-memory-fingerprint.json": {
+    "sha256": "ab365781eae30621db335acd9f6b44dbab0b6ec9976fd1991a031bc0392900ce",
+    "bytes": 19770
+  },
+  "probe/data-committed-fingerprint.json": {
+    "sha256": "c9688686e712985282f6e1d4a5e137a72ebfc0ee5537360e14ac461586fa76c8",
+    "bytes": 19770
+  },
+  "probe/data-layout-after.json": {
+    "sha256": "9ea4db8943c1904aeeac893473ef7c519e31c6b31835f4e7b079adbda84f7967",
+    "bytes": 33095
+  },
+  "probe/data-layout-before.json": {
+    "sha256": "9ea4db8943c1904aeeac893473ef7c519e31c6b31835f4e7b079adbda84f7967",
+    "bytes": 33095
+  },
+  "probe/data-restored-fingerprint.json": {
+    "sha256": "ab365781eae30621db335acd9f6b44dbab0b6ec9976fd1991a031bc0392900ce",
+    "bytes": 19770
+  },
+  "probe/external-state-after-memory.json": {
+    "sha256": "201b369ae80c365459feaab2d2a72c34647afa1668ae76a81a45064b3a36bdc6",
+    "bytes": 4889
+  },
+  "probe/external-state-before-memory.json": {
+    "sha256": "201b369ae80c365459feaab2d2a72c34647afa1668ae76a81a45064b3a36bdc6",
+    "bytes": 4889
+  },
+  "probe/frozen-state.npz": {
+    "sha256": "aed51540200f3dedfc9d7f8a9ec6ecc73b93d4335f1d341c4950c4c841bc0c12",
+    "bytes": 933
+  },
+  "probe/initialization-scope.json": {
+    "sha256": "3b9b1bbf3a5e4c31c014cd2c993ad328ddd1087362b40ac9c5e13ec1b5c97998",
+    "bytes": 2694
+  },
+  "probe/model-after-bam.json": {
+    "sha256": "1bae8e70f45e1024b1c3a184f32f6e0b1e84cafb117f36bbe816b0ffea48e536",
+    "bytes": 61540
+  },
+  "probe/model-before-bam.json": {
+    "sha256": "65ff150b5a6e676d07a030fea2d76e030b2c3d5879c0363fbe854d5ab4be2e2f",
+    "bytes": 61540
+  },
+  "probe/progress.json": {
+    "sha256": "02b7706ee00e549ccc49a7d7dc4282ee3f45120f9a7d387714aada5a430c60b2",
+    "bytes": 368
+  },
+  "probe/reader-ownership.json": {
+    "sha256": "f4558891d95e29bb06c621e867d3435043f41dd03ca3914d7b0767c068ea1ed4",
+    "bytes": 577
+  },
+  "probe/run-review.json": {
+    "sha256": "9f7ef1fc812df7eeab04ed1b01da8702c7b11bd6b22523bb728a6da25fa2f4c1",
+    "bytes": 4686
+  },
+  "probe/scene-contract.json": {
+    "sha256": "93d4a8856db504ebfc318dcde0d729117bb073cdfefc9106cd9e155ceefa3130",
+    "bytes": 805
+  },
+  "probe/source-hashes.json": {
+    "sha256": "216263cbc5f6aea706f28861c7e2dd1685cba2928147b8a7bbabe71409adda13",
+    "bytes": 7439
+  },
+  "probe/synthetic-memory-marker.npz": {
+    "sha256": "3ab88777c820e6395154ccd172ba21f6d96ad203813e8946a3b2bb1303a80670",
+    "bytes": 1118
+  },
+  "run-summary.json": {
+    "sha256": "1b1560ff98fd267b913dcf6c5230c7dfbba8066ae0746577fe23a4b749198a48",
+    "bytes": 1149
+  },
+  "source/docs/audits/stage-11-bam-memory-boundary-r2-return-review.json": {
+    "sha256": "eeaf964dc0ca302f18683925fe36b75677400a042b55bb7316838c422100d280",
+    "bytes": 4410
+  },
+  "source/docs/audits/stage-11-bam-memory-boundary-r3-plan.json": {
+    "sha256": "aa8b7bedebf4aaa4702f1e0249b64c9aca4c6e8ec29ec8ad6a595f7dd928702e",
+    "bytes": 6874
+  },
+  "source/docs/handoffs/microduck-stage-11-bam-memory-boundary-r3-handoff.md": {
+    "sha256": "91910a809ed9e9a8f73e668fa85a85617a03b84849223b4f2781833f942a6e79",
+    "bytes": 9946
+  },
+  "source/scripts/head_contact_data_commit_r3.py": {
+    "sha256": "567fc2e68b0aef475a006a451847a89a9e65bc8733b1d4611110406e243ab117",
+    "bytes": 4741
+  },
+  "source/scripts/probe_head_contact_bam_boundary_r3.py": {
+    "sha256": "2cb43c8729dc867b65478627bf9550e8e1d755de80834833ae9b1bc8e1b80b73",
+    "bytes": 23762
+  },
+  "source/tests/test_head_contact_bam_boundary_r3.py": {
+    "sha256": "fca0dd7adaac5a5fb442e80085118d91313df1d85be0cfcfd4a982e008a286c2",
+    "bytes": 6498
+  },
+  "tests.log": {
+    "sha256": "b986091cdd4d7aeb1185de9a51d74065913d71702d10fa5dada3e4c584a2ddd7",
+    "bytes": 112
+  }
+}
