@@ -1,0 +1,138 @@
+{
+  "execution-finished.json": {
+    "sha256": "77230becd7d8a610c7cd1e1f8e521b86fb166d88fc95825b186b10a9aca456f7",
+    "bytes": 97
+  },
+  "execution-start.json": {
+    "sha256": "d65df2f475ab32fc6f8a4fcb02a60d133aa10b11ee8d9d5eeef630657e943601",
+    "bytes": 599
+  },
+  "execution.log": {
+    "sha256": "4831279f47baa333f65cb46c08327356913dac804e42a63367ec61ef9bb50028",
+    "bytes": 8002
+  },
+  "git-after.json": {
+    "sha256": "371089bf77206415941069656fb096f760d47720d3e81ecfa0a1ea7ca32ab2f7",
+    "bytes": 299
+  },
+  "git-before.json": {
+    "sha256": "371089bf77206415941069656fb096f760d47720d3e81ecfa0a1ea7ca32ab2f7",
+    "bytes": 299
+  },
+  "installed-files.json": {
+    "sha256": "a43055d7745bdc9b82f7a22fb64be8e2e0502865f21df9e3b76ab48116d89928",
+    "bytes": 324
+  },
+  "launcher.py": {
+    "sha256": "60c9850bae2dcdc56de28dba719a03adb274d9b1540e1f9789f8697c0cf5afbb",
+    "bytes": 74923
+  },
+  "microduck-stage11-bam-macro-state.bundle": {
+    "sha256": "1718f43c959a2269acd7ce4e299703f2d57fad2b6a82d7d7f3a77731e5bcafff",
+    "bytes": 31145
+  },
+  "old-source-manifest.json": {
+    "sha256": "b30263864d9dcf3a6300bb1b032ef8c276146fd916f7be6958555c1f2dfa0a8f",
+    "bytes": 35808
+  },
+  "package-manifest.json": {
+    "sha256": "377b6db1a6193ec24fc1ec2bc496f2f3a0469467e4ab1e3643507e9702ff83ce",
+    "bytes": 1796
+  },
+  "probe/array-storage-inventory.json": {
+    "sha256": "7941bc2352fbb5dda37e541d7aff5772b53bb9e0c73f55eb76e359a46527cadb",
+    "bytes": 27759
+  },
+  "probe/data-layout-before.json": {
+    "sha256": "6785053d88974543781185da56d8a24a3b380002d036d592dac211c20d878510",
+    "bytes": 33095
+  },
+  "probe/error.txt": {
+    "sha256": "9b9adce967db273373e4289831dbd2fc6477e68bf1d235b6fc47b58d81432b60",
+    "bytes": 699
+  },
+  "probe/frozen-state.npz": {
+    "sha256": "aed51540200f3dedfc9d7f8a9ec6ecc73b93d4335f1d341c4950c4c841bc0c12",
+    "bytes": 933
+  },
+  "probe/initial-data.json": {
+    "sha256": "fc0388e0dac472bfcf75838c5355e43cf88c2a4d092c08a63e6a77de90b1a816",
+    "bytes": 19770
+  },
+  "probe/initial-external.json": {
+    "sha256": "b574f576c646421acfa7e29c009fede88c712a149448094026366e4119958ea7",
+    "bytes": 4354
+  },
+  "probe/initial-model.json": {
+    "sha256": "65ff150b5a6e676d07a030fea2d76e030b2c3d5879c0363fbe854d5ab4be2e2f",
+    "bytes": 61540
+  },
+  "probe/initial-torch-owners.json": {
+    "sha256": "74da221839fb9147992bf9dad17f2b117c94591a7e0e80545bfc1e6f9c00a344",
+    "bytes": 6149
+  },
+  "probe/initialization-scope.json": {
+    "sha256": "3b9b1bbf3a5e4c31c014cd2c993ad328ddd1087362b40ac9c5e13ec1b5c97998",
+    "bytes": 2694
+  },
+  "probe/pair-0-attempt-0.json": {
+    "sha256": "676ae08b3f3f160bf410f7f6fe77e76d278eafdbd20609e6933bd38935290b9e",
+    "bytes": 94214
+  },
+  "probe/pair-0-before.json": {
+    "sha256": "007b2edeb3f96d481f58aabe1e943ff4d46b906734eff6dd89948024c924a13a",
+    "bytes": 93635
+  },
+  "probe/pair-0-torch-owners-before.json": {
+    "sha256": "74da221839fb9147992bf9dad17f2b117c94591a7e0e80545bfc1e6f9c00a344",
+    "bytes": 6149
+  },
+  "probe/progress.json": {
+    "sha256": "6c1db8e01a4e34100a67bb24c7b742d385669625fdd86fa279ee7d528ff311c5",
+    "bytes": 490
+  },
+  "probe/run-review.json": {
+    "sha256": "c49ffa29722ae0f158ec8fbfab9749f96340a85d3e1d9aeaff36acee0df715bc",
+    "bytes": 4133
+  },
+  "probe/scene-contract.json": {
+    "sha256": "93d4a8856db504ebfc318dcde0d729117bb073cdfefc9106cd9e155ceefa3130",
+    "bytes": 805
+  },
+  "probe/source-hashes.json": {
+    "sha256": "216263cbc5f6aea706f28861c7e2dd1685cba2928147b8a7bbabe71409adda13",
+    "bytes": 7439
+  },
+  "run-summary.json": {
+    "sha256": "aabed2e4a44bd991959d90c6f0ea89860f137200f04b2d395402a334e0f42cd7",
+    "bytes": 1248
+  },
+  "source/docs/audits/stage-11-bam-macro-state-plan.json": {
+    "sha256": "f9ef480bb97cc0528ae57130a51e27519694c0b9e18c3ca2901c886748248386",
+    "bytes": 6645
+  },
+  "source/docs/audits/stage-11-bam-memory-boundary-r3-return-review.json": {
+    "sha256": "80be866c9d06505de0bcc76fa8cd35443ee9c3348009aba58319485ab6c13da7",
+    "bytes": 1670
+  },
+  "source/docs/handoffs/microduck-stage-11-bam-macro-state-handoff.md": {
+    "sha256": "f37cf716101f3aa505f66c6bfda95e70fb812b238047f4bb5ff10cf10f02b737",
+    "bytes": 10379
+  },
+  "source/scripts/head_contact_torch_state.py": {
+    "sha256": "c7931556489f788250a6e04bec1dfce400c3ddf5ebee95bfa9e7e7f8cb7ac493",
+    "bytes": 6457
+  },
+  "source/scripts/probe_head_contact_bam_macro_state.py": {
+    "sha256": "51e5aa1496c640ccd9ef19c0d86d2ab8fbf0a3469cf36d86ea15a23f2dfa9bb4",
+    "bytes": 25557
+  },
+  "source/tests/test_head_contact_torch_state.py": {
+    "sha256": "308e00e021da06389c358481a0df99b91989849a6d6d10adee72a6e638d8fa76",
+    "bytes": 5969
+  },
+  "tests.log": {
+    "sha256": "d5a4875b4579cd8d17f8638658e481f105ebc0103894fd6f33918fb7e91153a0",
+    "bytes": 105
+  }
+}
