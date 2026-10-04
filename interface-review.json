@@ -1,0 +1,33 @@
+{
+  "status": "STATIC_INTERFACE_REVIEW_REQUIRED",
+  "stage11_status": "MATERIAL_BLOCKED_REVIEW_REQUIRED",
+  "stage11_complete": false,
+  "new_integration_steps": 0,
+  "new_ppo_updates": 0,
+  "cloud_hours": 0,
+  "canonical_total_completed_steps": 7895,
+  "formal_task_migration": false,
+  "full_manager_execution": false,
+  "policy_success": null,
+  "dependency_source_count": 12,
+  "cpu_configurations": 4,
+  "cache_probe": {
+    "native_contact_sensor_cache_reproduced": true,
+    "replacement_source": "two independently forwarded CPU configurations, no integrated step",
+    "old_cache_retained_until_update": true,
+    "new_raw_contact_adapter_uses_sensor_cache": false,
+    "new_steps": 0,
+    "scope": "Demonstrates cache lifetime; not an executed Manager phase transition"
+  },
+  "warp": {
+    "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "worlds": 2,
+    "forward_calls": 4,
+    "configured_samples": 8,
+    "new_integration_steps": 0,
+    "kinematic_abs_tolerance": 2e-05,
+    "force_comparison": "within-backend raw solver forces; no CPU/GPU force-convergence claim"
+  },
+  "forbidden_integration_call_attempts": [],
+  "wall_seconds": 9.734874234999992
+}

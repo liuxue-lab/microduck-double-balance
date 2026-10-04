@@ -1,0 +1,8 @@
+{
+  "native_contact_sensor_cache_reproduced": true,
+  "replacement_source": "two independently forwarded CPU configurations, no integrated step",
+  "old_cache_retained_until_update": true,
+  "new_raw_contact_adapter_uses_sensor_cache": false,
+  "new_steps": 0,
+  "scope": "Demonstrates cache lifetime; not an executed Manager phase transition"
+}

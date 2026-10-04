@@ -1,0 +1,15 @@
+test_ball_spin_changes_slip_without_center_speed (test_head_contact_interface.ContactInterfaceTests.test_ball_spin_changes_slip_without_center_speed) ... ok
+test_co_rotating_head_and_ball_have_zero_material_rate (test_head_contact_interface.ContactInterfaceTests.test_co_rotating_head_and_ball_have_zero_material_rate) ... ok
+test_data_clock_not_relabelled_as_contact_time (test_head_contact_interface.ContactInterfaceTests.test_data_clock_not_relabelled_as_contact_time) ... ok
+test_geom_order_invariance_for_force_normal_and_torque (test_head_contact_interface.ContactInterfaceTests.test_geom_order_invariance_for_force_normal_and_torque) ... ok
+test_invalid_phase_and_nonfinite_state_rejected (test_head_contact_interface.ContactInterfaceTests.test_invalid_phase_and_nonfinite_state_rejected) ... ok
+test_no_slip_roll_is_not_zero_center_speed (test_head_contact_interface.ContactInterfaceTests.test_no_slip_roll_is_not_zero_center_speed) ... ok
+test_nonpositive_force_positive_gap_and_no_constraint_are_inactive (test_head_contact_interface.ContactInterfaceTests.test_nonpositive_force_positive_gap_and_no_constraint_are_inactive) ... ok
+test_saved_snapshot_owns_memory (test_head_contact_interface.ContactInterfaceTests.test_saved_snapshot_owns_memory) ... ok
+test_translated_com_reference_velocity (test_head_contact_interface.ContactInterfaceTests.test_translated_com_reference_velocity) ... ok
+test_world_and_pair_filter_prevent_cross_environment_contact (test_head_contact_interface.ContactInterfaceTests.test_world_and_pair_filter_prevent_cross_environment_contact) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.018s
+
+OK
