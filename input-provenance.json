@@ -1,0 +1,79 @@
+{
+  "source": "/home/lx/microduck-double-balance/artifacts/double-balance-stage11/cuda-normal/20261004T112308Z",
+  "zip_sha256": "3699710443bb05d5b5349fc26f05f46ab4162ac8c2226fe2b8b88e3e0bc5936c",
+  "files": {
+    "run-summary.json": {
+      "sha256": "d2f5056033703180c15574186c0be8ff957769003e41d8495425d48587bf5c27",
+      "bytes": 7576
+    },
+    "diagnostic/preflight.json": {
+      "sha256": "59f228eb9b90e4516c15f2a48e8b9a4476706700758f9b93fab32a2278437aac",
+      "bytes": 4509
+    },
+    "diagnostic/diagnostic-review.json": {
+      "sha256": "105187b912d0a1fc40537d6daa10dcac2017627884b386c1ba5d0b9d9987d7ce",
+      "bytes": 25128
+    },
+    "diagnostic/selected-states.json": {
+      "sha256": "1820336a5881020cba16e902b757f909e176767ad8e94f773526bbf6db97b494",
+      "bytes": 2240
+    },
+    "diagnostic/material-fixture.mjb": {
+      "sha256": "e6cd330bddc3a29abf9ce4eca4f308a2680e4910405725e5ce054cb0a19d2da0",
+      "bytes": 3469516
+    },
+    "diagnostic/material-geometry.npz": {
+      "sha256": "b2b22ae8e2798b18b292bfc3c181475dde03e5f0030e93839f4447122fb1dcc5",
+      "bytes": 225030
+    },
+    "diagnostic/cases/GPU49/collision/input.json": {
+      "sha256": "c8abf6814603e307feb8436f7220a96422ab6bb3cae42536e64d1ad170928d63",
+      "bytes": 2894
+    },
+    "diagnostic/cases/GPU49/collision/raw-result.json": {
+      "sha256": "6a696940c946e713fd2ab090aec665c95612020fd2651716af8dd102f42a35bc",
+      "bytes": 3840
+    },
+    "diagnostic/cases/GPU49/collision/result.json": {
+      "sha256": "9b9fd0f421f8988583edb9e3eb082b9f8ea3045ddcc37fb868517a79d345d257",
+      "bytes": 3300
+    },
+    "diagnostic/cases/GPU50/collision/input.json": {
+      "sha256": "edead75bf69d44e529f7d0e3e1b87923ab9a75a778c489350f3c591df7948bda",
+      "bytes": 2873
+    },
+    "diagnostic/cases/GPU50/collision/raw-result.json": {
+      "sha256": "d963e6289d6ab563d2f7938fbee6513bcecc9e9b1a39dbca98ea0b1d698b540f",
+      "bytes": 3690
+    },
+    "diagnostic/cases/GPU50/collision/result.json": {
+      "sha256": "667734d6eff0cd10935bddba7a0b63c40b94ed3892c031b6b3106a622414f8e9",
+      "bytes": 3082
+    },
+    "diagnostic/cases/GPU51/collision/input.json": {
+      "sha256": "e52ac2396b43cb8a24abd06783aa0f2a8b927970416dbbf97706f93b9e81a874",
+      "bytes": 2858
+    },
+    "diagnostic/cases/GPU51/collision/raw-result.json": {
+      "sha256": "a7fcee48a9be47daa9980b2861344c1ab3c0f1b800657475a924394fcea41cbb",
+      "bytes": 3838
+    },
+    "diagnostic/cases/GPU51/collision/result.json": {
+      "sha256": "bfa4d17a3ab079ba3cf7df6b45024704eed04401808f4f00652e7368e9daf38d",
+      "bytes": 3315
+    },
+    "diagnostic/cases/CPU50-rounded32/collision/input.json": {
+      "sha256": "feef22eda3898904fd2e24a895884d888c6ede6324abbf5118835db265edc155",
+      "bytes": 1960
+    },
+    "diagnostic/cases/CPU50-rounded32/collision/raw-result.json": {
+      "sha256": "2118081eb14eee2b0612b3a4a404ae1f6b4302e5d015cb6ace03e0f6265586f7",
+      "bytes": 2720
+    },
+    "diagnostic/cases/CPU50-rounded32/collision/result.json": {
+      "sha256": "c62380adc18174dd44e031cc62fc319a6ae16b43ba7b33c89dc1a627aa626dba",
+      "bytes": 375
+    }
+  },
+  "kinematics": "exact archived CUDA float32 geom_xpos/xmat; no recomputation or integration"
+}

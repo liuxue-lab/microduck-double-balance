@@ -1,0 +1,13 @@
+test_branch_disagreement_not_hidden (test_head_contact_cuda_witness.Tests.test_branch_disagreement_not_hidden) ... ok
+test_budget_and_scope_guard_before_launch (test_head_contact_cuda_witness.Tests.test_budget_and_scope_guard_before_launch) ... ok
+test_exactly_four_declared_queries_no_retries (test_head_contact_cuda_witness.Tests.test_exactly_four_declared_queries_no_retries) ... ok
+test_failed_query_preserves_attempt_and_stops (test_head_contact_cuda_witness.Tests.test_failed_query_preserves_attempt_and_stops) ... ok
+test_matching_synthetic_reference_supports_only_case_mechanism (test_head_contact_cuda_witness.Tests.test_matching_synthetic_reference_supports_only_case_mechanism) ... ok
+test_no_contact_is_control_not_failure_or_success (test_head_contact_cuda_witness.Tests.test_no_contact_is_control_not_failure_or_success) ... ok
+test_nonfinite_shape_and_zero_normal_rejected (test_head_contact_cuda_witness.Tests.test_nonfinite_shape_and_zero_normal_rejected) ... ok
+test_static_cpu_case_is_not_claimed_as_cuda_match (test_head_contact_cuda_witness.Tests.test_static_cpu_case_is_not_claimed_as_cuda_match) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.009s
+
+OK

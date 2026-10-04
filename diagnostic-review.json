@@ -1,0 +1,142 @@
+{
+  "status": "CUDA_WITNESS_STATIC_REVIEW_REQUIRED",
+  "query_attempts": 4,
+  "queries_completed": 4,
+  "results": [
+    {
+      "case": "GPU49",
+      "native_contact_match": {
+        "contact_presence": true,
+        "dist": true,
+        "midpoint": true,
+        "frame": true
+      },
+      "all_native_contact_fields_match": true,
+      "shallow_finite_branch": true,
+      "separate_shrink_inflate_matches_native_CCD_witnesses": true,
+      "physical_acceptance": false,
+      "normal_replacement_applied": false,
+      "policy_success": null,
+      "original_normal_error_deg": 0.02882004534679391,
+      "preinflate_direction_error_deg": 0.0,
+      "preinflate_candidate_toward_ball": [
+        -0.0860629454255104,
+        1.3211729310569353e-07,
+        0.9962896704673767
+      ],
+      "stored_inflated_witness_difference": [
+        5.3085386753082275e-08,
+        -8.161782474912574e-14,
+        -6.109476089477539e-07
+      ],
+      "stored_inflated_difference_norm_m": 6.132495733106617e-07,
+      "x_and_z_witness_differences_zero": false,
+      "supporting_case_mechanism": false,
+      "interpretation": "Read-only candidate uses pre-inflation sphere-center-to-head direction. It is neither written to contact data nor integrated. Matching the static saved contact does not prove every historical initialization difference or all convex contact branches."
+    },
+    {
+      "case": "GPU50",
+      "native_contact_match": {
+        "contact_presence": true,
+        "dist": true,
+        "midpoint": true,
+        "frame": true
+      },
+      "all_native_contact_fields_match": true,
+      "shallow_finite_branch": true,
+      "separate_shrink_inflate_matches_native_CCD_witnesses": true,
+      "physical_acceptance": false,
+      "normal_replacement_applied": false,
+      "policy_success": null,
+      "original_normal_error_deg": 89.99999212841968,
+      "preinflate_direction_error_deg": 0.0,
+      "preinflate_candidate_toward_ball": [
+        -0.094974584877491,
+        1.3737918891365553e-07,
+        0.9954796433448792
+      ],
+      "stored_inflated_witness_difference": [
+        0.0,
+        -2.228038111435672e-16,
+        0.0
+      ],
+      "stored_inflated_difference_norm_m": 2.228038111435672e-16,
+      "x_and_z_witness_differences_zero": true,
+      "supporting_case_mechanism": true,
+      "interpretation": "Read-only candidate uses pre-inflation sphere-center-to-head direction. It is neither written to contact data nor integrated. Matching the static saved contact does not prove every historical initialization difference or all convex contact branches."
+    },
+    {
+      "case": "GPU51",
+      "native_contact_match": {
+        "contact_presence": true,
+        "dist": true,
+        "midpoint": true,
+        "frame": true
+      },
+      "all_native_contact_fields_match": true,
+      "shallow_finite_branch": true,
+      "separate_shrink_inflate_matches_native_CCD_witnesses": true,
+      "physical_acceptance": false,
+      "normal_replacement_applied": false,
+      "policy_success": null,
+      "original_normal_error_deg": 0.0010398290064671572,
+      "preinflate_direction_error_deg": 0.0,
+      "preinflate_candidate_toward_ball": [
+        -0.10408040136098862,
+        0.0006104838103055954,
+        0.9945687055587769
+      ],
+      "stored_inflated_witness_difference": [
+        3.830529749393463e-06,
+        -2.2468757521210136e-08,
+        -3.6597251892089844e-05
+      ],
+      "stored_inflated_difference_norm_m": 3.6797178004014476e-05,
+      "x_and_z_witness_differences_zero": false,
+      "supporting_case_mechanism": false,
+      "interpretation": "Read-only candidate uses pre-inflation sphere-center-to-head direction. It is neither written to contact data nor integrated. Matching the static saved contact does not prove every historical initialization difference or all convex contact branches."
+    },
+    {
+      "case": "CPU50-rounded32",
+      "native_contact_match": {
+        "contact_presence": true,
+        "dist": null,
+        "midpoint": null,
+        "frame": null
+      },
+      "all_native_contact_fields_match": true,
+      "shallow_finite_branch": false,
+      "separate_shrink_inflate_matches_native_CCD_witnesses": false,
+      "physical_acceptance": false,
+      "normal_replacement_applied": false,
+      "policy_success": null,
+      "supporting_case_mechanism": false,
+      "interpretation": "Read-only candidate uses pre-inflation sphere-center-to-head direction. It is neither written to contact data nor integrated. Matching the static saved contact does not prove every historical initialization difference or all convex contact branches."
+    }
+  ],
+  "diagnostic_completed_steps": 0,
+  "diagnostic_attempted_steps": 0,
+  "canonical_total_known_completed_steps": 13354,
+  "stage11_status": "MATERIAL_BLOCKED_REVIEW_REQUIRED",
+  "stage11_complete": false,
+  "new_ppo_updates": 0,
+  "full_robot_steps": 0,
+  "cloud_hours": 0,
+  "formal_task_migration": false,
+  "formal_physical_parameter_adoption": false,
+  "policy_success": null,
+  "collision_normal_replacement": false,
+  "installed_dependency_patch": false,
+  "CPU_model_unchanged": true,
+  "GPU_model_unchanged": true,
+  "source_files_unchanged": true,
+  "not_completed_cases": [],
+  "wall_seconds": 10.42167768299987,
+  "diagnostic_source_sha256": "33a32909bbd91dd182896e140fdafcb5f0ec235a5110c8ee01443ad0af503215",
+  "limits": [
+    "Static instrumented original functions may compile differently: exact saved-contact matching is mandatory for native-case mechanism support",
+    "Separate shrink/inflate must match original CCD witnesses before attributing that branch",
+    "No restored direction is applied to a simulation contact",
+    "This does not clear original floor/sensitivity failures, missing material cases, Stage10causality gaps, task migration or policy objective"
+  ]
+}
