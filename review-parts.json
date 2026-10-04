@@ -1,0 +1,56 @@
+{
+  "format": "raw-byte-concatenation-in-order",
+  "archive": "review.zip",
+  "archive_bytes": 5685247,
+  "archive_sha256": "245c53d890f84d6a64e495c1bd3e7bec7dfdd984780641536d09f373e25fe8a3",
+  "parts": [
+    {
+      "name": "review.part-001.bin",
+      "offset": 0,
+      "bytes": 786432,
+      "sha256": "cd35fe025212892ae3a480beb8346668d5b8a0794a3f8a4ded84ed5220c64221"
+    },
+    {
+      "name": "review.part-002.bin",
+      "offset": 786432,
+      "bytes": 786432,
+      "sha256": "63b3a075d951a7815591b41df18b1bd6b35689f08eb35f3018571d0520956cf4"
+    },
+    {
+      "name": "review.part-003.bin",
+      "offset": 1572864,
+      "bytes": 786432,
+      "sha256": "f813002960b52b36ab752a0cb2c2d3003ef80c5b9e72cff6600e7593c6898b19"
+    },
+    {
+      "name": "review.part-004.bin",
+      "offset": 2359296,
+      "bytes": 786432,
+      "sha256": "68c991e24b883a96a776d8a8757f2f31c03cf0fd7a6b84cbe0b5bf44cec6d38c"
+    },
+    {
+      "name": "review.part-005.bin",
+      "offset": 3145728,
+      "bytes": 786432,
+      "sha256": "bffd9ac28236f7b3e0a68f1521f6475e38822bd8a22d8ee9d8ec11021cbbccbb"
+    },
+    {
+      "name": "review.part-006.bin",
+      "offset": 3932160,
+      "bytes": 786432,
+      "sha256": "394fe1ef066b72a23bdedd94211dc43d5d14f2003a43c1548410268644afa08f"
+    },
+    {
+      "name": "review.part-007.bin",
+      "offset": 4718592,
+      "bytes": 786432,
+      "sha256": "96f4a855526430e4db8082313537944e9f49c30e6e4cad59c9b800e2c77a4b03"
+    },
+    {
+      "name": "review.part-008.bin",
+      "offset": 5505024,
+      "bytes": 180223,
+      "sha256": "ba07b319388acb35ce141acfa0a8a388470cd4bf7fbee846aeb906ef08a532f0"
+    }
+  ]
+}

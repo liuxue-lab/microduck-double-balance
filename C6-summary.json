@@ -1,0 +1,130 @@
+{
+  "name": "C6",
+  "case": {
+    "name": "C6",
+    "dt": 1.5625e-05,
+    "solref0": 0.001,
+    "max_steps": 3200
+  },
+  "status": "FLOOR_REFERENCE_CASE_GATES_PASS_REVIEW_REQUIRED",
+  "steps": 3200,
+  "attempted_steps": 3200,
+  "horizon_completed": true,
+  "max_pre_step_penetration_m": 0.000603875078086645,
+  "max_post_step_overlap_m": 0.000603875078086645,
+  "normal_impulse_Ns": 0.021302773938416265,
+  "max_normal_force_N": 33.14356577993878,
+  "first_floor_contact": {
+    "geom": [
+      0,
+      2
+    ],
+    "dist": -2.4338847724084123e-05,
+    "pos": [
+      -0.024746835017094498,
+      -0.08659921382400476,
+      -1.2169423862042061e-05
+    ],
+    "frame": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    "dim": 4,
+    "friction": [
+      0.6,
+      0.6,
+      0.005,
+      0.0001,
+      0.0001
+    ],
+    "solref": [
+      0.001,
+      1.0
+    ],
+    "solimp": [
+      0.95,
+      0.99,
+      0.001,
+      0.5,
+      2.0
+    ],
+    "force": [
+      33.14356577993878,
+      -0.8261333492773703,
+      0.10537766748965857,
+      0.00591849063754689,
+      0.0,
+      0.0
+    ],
+    "efc_address": 0,
+    "backend": "cpu",
+    "step": 26,
+    "time_s": 0.39040625,
+    "phase": "pre_integration_contacts_and_solver_force",
+    "other": "floor",
+    "allowed": true,
+    "normal_toward_ball": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "slip_world_m_s": [
+      0.01861381342526469,
+      0.14592742840257733,
+      0.0
+    ],
+    "slip_speed_m_s": 0.14710978353059967,
+    "tangential_power_W": -0.12251699541949694,
+    "ball_omega_world_rad_s": [
+      23.10174648079436,
+      -8.254089002042887,
+      -2.132701897224946
+    ],
+    "ball_center_world_m": [
+      -0.024746835017094498,
+      -0.08659921382400476,
+      0.019975661152275916
+    ],
+    "normal_force_N": 33.14356577993878,
+    "tangent_force_N": 0.8328269709812516,
+    "torsional_torque_Nm": 0.00591849063754689,
+    "active_torsional_relative_rate_rad_s": -2.132701897224946,
+    "torsional_power_W": -0.012622376211404331,
+    "pyramidal_cone_utilization": 0.0825564909628385
+  },
+  "new_ppo_updates": 0,
+  "full_robot_steps": 0,
+  "model_changes": {
+    "timestep": [
+      0.002,
+      1.5625e-05
+    ],
+    "sphere_solref0": [
+      0.003,
+      0.001
+    ],
+    "all_other_model_arrays_and_options_unchanged": true
+  },
+  "effective_normal_timeconst_s": 0.001,
+  "last_post_step_overlap_m": 7.748619549077101e-06,
+  "completed_step_count_exact": true,
+  "elapsed_simulation_s": 0.05,
+  "final_linear_velocity_m_s": [
+    -0.15173231682506505,
+    -0.357834473974477,
+    0.005612575049819492
+  ],
+  "final_angular_velocity_joint_coordinates_rad_s": [
+    14.656223726259814,
+    -11.648945449189508,
+    -5.233779520188508
+  ],
+  "max_upward_velocity_m_s": 0.21928974105352333
+}

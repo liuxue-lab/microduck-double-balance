@@ -1,0 +1,102 @@
+{
+  "C4_C5": {
+    "common_saved_samples": 801,
+    "last_common_time_s": 0.4400000000000167,
+    "max_common_time_position_difference_m": 9.018419882880064e-05,
+    "max_common_time_linear_velocity_difference_m_s": 0.13824290405570486,
+    "max_position_difference_time_s": 0.4337500000000146,
+    "max_velocity_difference_time_s": 0.4342500000000148,
+    "sensitivity": {
+      "all_four_pass": false,
+      "checks": {
+        "abs_difference_peak_sampled_overlap_m": {
+          "value": 3.2540226541956374e-06,
+          "limit": 0.0001,
+          "pass": true
+        },
+        "max_common_time_position_difference_m": {
+          "value": 9.018419882880064e-05,
+          "limit": 0.0002,
+          "pass": true
+        },
+        "max_common_time_linear_velocity_difference_m_s": {
+          "value": 0.13824290405570486,
+          "limit": 0.05,
+          "pass": false
+        },
+        "abs_difference_peak_upward_velocity_m_s": {
+          "value": 0.0025162107030333447,
+          "limit": 0.02,
+          "pass": true
+        }
+      },
+      "interpretation": "Approved event-level diagnostic error budgets; not a convergence theorem or formal task acceptance"
+    }
+  },
+  "C5_C6": {
+    "common_saved_samples": 1601,
+    "last_common_time_s": 0.4399999999999723,
+    "max_common_time_position_difference_m": 0.00023617728568648647,
+    "max_common_time_linear_velocity_difference_m_s": 0.21009365660665988,
+    "max_position_difference_time_s": 0.43374999999997577,
+    "max_velocity_difference_time_s": 0.4349687499999751,
+    "sensitivity": {
+      "all_four_pass": false,
+      "checks": {
+        "abs_difference_peak_sampled_overlap_m": {
+          "value": 1.721360613828743e-05,
+          "limit": 0.0001,
+          "pass": true
+        },
+        "max_common_time_position_difference_m": {
+          "value": 0.00023617728568648647,
+          "limit": 0.0002,
+          "pass": false
+        },
+        "max_common_time_linear_velocity_difference_m_s": {
+          "value": 0.21009365660665988,
+          "limit": 0.05,
+          "pass": false
+        },
+        "abs_difference_peak_upward_velocity_m_s": {
+          "value": 0.0058993994468760635,
+          "limit": 0.02,
+          "pass": true
+        }
+      },
+      "interpretation": "Approved event-level diagnostic error budgets; not a convergence theorem or formal task acceptance"
+    }
+  },
+  "sensitivity": {
+    "all_four_pass": false,
+    "checks": {
+      "abs_difference_peak_sampled_overlap_m": {
+        "value": 1.721360613828743e-05,
+        "limit": 0.0001,
+        "pass": true
+      },
+      "max_common_time_position_difference_m": {
+        "value": 0.00023617728568648647,
+        "limit": 0.0002,
+        "pass": false
+      },
+      "max_common_time_linear_velocity_difference_m_s": {
+        "value": 0.21009365660665988,
+        "limit": 0.05,
+        "pass": false
+      },
+      "abs_difference_peak_upward_velocity_m_s": {
+        "value": 0.0058993994468760635,
+        "limit": 0.02,
+        "pass": true
+      }
+    },
+    "interpretation": "Approved event-level diagnostic error budgets; not a convergence theorem or formal task acceptance"
+  },
+  "full_physical_horizons_completed": true,
+  "new_integration_steps": 0,
+  "C4_replayed": false,
+  "historical_C3_C4_failure_retained": true,
+  "time_shift_applied_s": 0,
+  "limits": "Exact common times over complete 50ms horizons; no event shift, truncation or formal material/task release."
+}
