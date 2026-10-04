@@ -1,0 +1,10 @@
+{
+  "context_present": true,
+  "camera_sensors": 0,
+  "raycast_sensor_names": [
+    "foot_height_scan"
+  ],
+  "raycast_class": "mjlab.sensor.terrain_height_sensor.TerrainHeightSensor",
+  "raycast_BVH_resource_initialized": true,
+  "camera_render_or_sense_requested": false
+}

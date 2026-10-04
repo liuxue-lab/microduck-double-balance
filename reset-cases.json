@@ -1,0 +1,127 @@
+[
+  {
+    "selected": [
+      0,
+      1,
+      2
+    ],
+    "nonselected": [],
+    "nonselected_qpos_qvel_ctrl_time_wrench_exact": true,
+    "selected_velocities_exact_zero": true,
+    "root_and_ball_pose_residual_max": 5.960464477539063e-08,
+    "revision": 0,
+    "mesh_clearance": [
+      {
+        "world": 0,
+        "unsigned_mesh_distance_minus_radius_m": 0.000499972939762526,
+        "outside_shell_projection_margin_m": 0.020499969453005674
+      },
+      {
+        "world": 1,
+        "unsigned_mesh_distance_minus_radius_m": 0.0004999757523053358,
+        "outside_shell_projection_margin_m": 0.020499970442461584
+      },
+      {
+        "world": 2,
+        "unsigned_mesh_distance_minus_radius_m": 0.000499972939762526,
+        "outside_shell_projection_margin_m": 0.020499969453005674
+      }
+    ],
+    "head_count": [
+      0,
+      0,
+      0
+    ],
+    "floor_count": [
+      0,
+      0,
+      0
+    ],
+    "basketball_hold_bookkeeping": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "assistance_applied": false,
+    "full_manager_execution": false
+  },
+  {
+    "selected": [
+      2
+    ],
+    "nonselected": [
+      0,
+      1
+    ],
+    "nonselected_qpos_qvel_ctrl_time_wrench_exact": true,
+    "selected_velocities_exact_zero": true,
+    "root_and_ball_pose_residual_max": 5.960464477539063e-08,
+    "revision": 1,
+    "mesh_clearance": [
+      {
+        "world": 2,
+        "unsigned_mesh_distance_minus_radius_m": 0.000499972939762526,
+        "outside_shell_projection_margin_m": 0.020499969453005674
+      }
+    ],
+    "head_count": [
+      0,
+      0,
+      0
+    ],
+    "floor_count": [
+      0,
+      0,
+      0
+    ],
+    "basketball_hold_bookkeeping": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "assistance_applied": false,
+    "full_manager_execution": false
+  },
+  {
+    "selected": [
+      1,
+      0
+    ],
+    "nonselected": [
+      2
+    ],
+    "nonselected_qpos_qvel_ctrl_time_wrench_exact": true,
+    "selected_velocities_exact_zero": true,
+    "root_and_ball_pose_residual_max": 5.960464477539063e-08,
+    "revision": 2,
+    "mesh_clearance": [
+      {
+        "world": 1,
+        "unsigned_mesh_distance_minus_radius_m": 0.0004999757523053358,
+        "outside_shell_projection_margin_m": 0.020499970442461584
+      },
+      {
+        "world": 0,
+        "unsigned_mesh_distance_minus_radius_m": 0.000499972939762526,
+        "outside_shell_projection_margin_m": 0.020499969453005674
+      }
+    ],
+    "head_count": [
+      0,
+      0,
+      0
+    ],
+    "floor_count": [
+      0,
+      0,
+      0
+    ],
+    "basketball_hold_bookkeeping": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "assistance_applied": false,
+    "full_manager_execution": false
+  }
+]

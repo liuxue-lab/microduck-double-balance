@@ -1,0 +1,46 @@
+{
+  "status": "NATIVE_RESET_IO_REVIEW_REQUIRED",
+  "stage11_status": "MATERIAL_BLOCKED_REVIEW_REQUIRED",
+  "stage11_complete": false,
+  "new_integration_steps": 0,
+  "new_ppo_updates": 0,
+  "cloud_hours": 0,
+  "canonical_total_completed_steps": 7895,
+  "formal_task_migration": false,
+  "policy_success": null,
+  "prior_source_count": 12,
+  "stream_source_count": 3,
+  "reset_source_count": 5,
+  "reset": {
+    "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "worlds": 3,
+    "forward_calls": 9,
+    "reset_calls": 3,
+    "selected_reset_samples": 6,
+    "native_scene_entity_IO": true,
+    "sensor_context": {
+      "context_present": true,
+      "camera_sensors": 0,
+      "raycast_sensor_names": [
+        "foot_height_scan"
+      ],
+      "raycast_class": "mjlab.sensor.terrain_height_sensor.TerrainHeightSensor",
+      "raycast_BVH_resource_initialized": true,
+      "camera_render_or_sense_requested": false
+    },
+    "manager_startup_actions_or_step_executed": false,
+    "zero_external_wrench": true,
+    "device_model_array_count_unchanged": 328,
+    "startup_and_termination_release_guards_preserved": true,
+    "new_integration_steps": 0,
+    "limit": "Direct native reset-function IO only; no action manager, BAM startup event or full Manager lifecycle. hold bookkeeping may be one; no assistance was applied and this is not unassisted strategy evidence."
+  },
+  "execution_progress": {
+    "phase": "all_reset_IO_checks_completed",
+    "forward_calls": 9,
+    "reset_calls": 3,
+    "new_integration_steps": 0
+  },
+  "forbidden_integration_call_attempts": [],
+  "wall_seconds": 7.984828521999589
+}
