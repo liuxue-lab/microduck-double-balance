@@ -1,0 +1,51 @@
+{
+  "source": "/home/lx/microduck-double-balance/artifacts/double-balance-stage11/cuda-friction/20261004T104109Z",
+  "zip_sha256": "b253028776a653328f334a93b5f7d9b74bd0dfdaad812d3eef3f3ca556a91733",
+  "files": {
+    "run-summary.json": {
+      "sha256": "5b44bf14cc7e4c50fd0d40f5e9fab9e939f8ec574a4b8b8523a3756ab69f9188",
+      "bytes": 12376
+    },
+    "diagnostic/preflight.json": {
+      "sha256": "ad3835afc30852a0ec53cdd22659773838c0a1a54eb90be08d3fdde8be27b6f6",
+      "bytes": 4309
+    },
+    "diagnostic/diagnostic-review.json": {
+      "sha256": "22b1facff9c84547320b63ba546c76e738a4162887ca98b8659e28aefe143c66",
+      "bytes": 19885
+    },
+    "diagnostic/material-fixture.mjb": {
+      "sha256": "e6cd330bddc3a29abf9ce4eca4f308a2680e4910405725e5ce054cb0a19d2da0",
+      "bytes": 3469516
+    },
+    "diagnostic/material-geometry.npz": {
+      "sha256": "b2b22ae8e2798b18b292bfc3c181475dde03e5f0030e93839f4447122fb1dcc5",
+      "bytes": 225030
+    },
+    "diagnostic/model-signature-before.json": {
+      "sha256": "a9edadfbc2653671613e5de3fe0f004a9c5597a447bbd93820f63f790c0d1d5f",
+      "bytes": 83532
+    },
+    "diagnostic/cases/slide-x-minus/states.npz": {
+      "sha256": "6ef2535fcc236c526498b7b90c705e5067f8b924d8dc2c7473fcf96728e20021",
+      "bytes": 4081
+    },
+    "diagnostic/cases/slide-x-minus/raw-contacts.jsonl.gz": {
+      "sha256": "dedf478c2f945da6ac2784f6d3fc522d17765b41b025f55717dd73dbc40d441a",
+      "bytes": 8132
+    },
+    "diagnostic/cases/slide-x-minus/step-log.jsonl": {
+      "sha256": "143937c7f23ac81b2af3d83c04ecec1069c4c1eeb877fdc18958ae6c026801d8",
+      "bytes": 202427
+    },
+    "diagnostic/cases/slide-x-minus/summary.json": {
+      "sha256": "87eb823f7cdc2e24e53d7afa9e8232db8d9b926b33614d31b759e0b01ce1f621",
+      "bytes": 2277
+    },
+    "diagnostic/archived-CPU-friction/slide-x-minus/states.npz": {
+      "sha256": "c59e0eb592710ff9221abfe89e8172df6234563cfecbd9cec63693f6af99703d",
+      "bytes": 23429
+    }
+  },
+  "integration_replayed": false
+}

@@ -1,0 +1,32 @@
+Warp 1.12.0 initialized:
+   CUDA Toolkit 12.9, Driver 13.2
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 5060 Laptop GPU" (8 GiB, sm_120, mempool enabled)
+   Kernel cache:
+     /home/lx/.cache/warp/1.12.0
+Module mujoco_warp._src.smooth 95a0b8b load on device 'cuda:0' took 4.68 ms  (cached)
+Module mujoco_warp._src.collision_driver 88f7770 load on device 'cuda:0' took 0.36 ms  (cached)
+Module _nxn_broadphase__locals__kernel_c763f4cb c763f4c load on device 'cuda:0' took 0.34 ms  (cached)
+Module ccd_kernel_builder__locals__ccd_kernel_058fb1d0 058fb1d load on device 'cuda:0' took 2.40 ms  (cached)
+Module _primitive_narrowphase__locals__primitive_narrowphase_471b7dd9 471b7dd load on device 'cuda:0' took 0.50 ms  (cached)
+Module mujoco_warp._src.constraint 27c5750 load on device 'cuda:0' took 1.52 ms  (cached)
+Module _efc_contact_init__locals__kernel_703a08a4 703a08a load on device 'cuda:0' took 0.40 ms  (cached)
+Module _efc_contact_jac_dense__locals__kernel_11a6f18c 927acba load on device 'cuda:0' took 0.43 ms  (cached)
+Module _efc_contact_update__locals__kernel_c77ca81d c77ca81 load on device 'cuda:0' took 0.38 ms  (cached)
+Module mujoco_warp._src.passive 1a5e55c load on device 'cuda:0' took 0.68 ms  (cached)
+Module mujoco_warp._src.forward 8ebfcb1 load on device 'cuda:0' took 1.59 ms  (cached)
+Module mujoco_warp._src.support dd3f924 load on device 'cuda:0' took 0.37 ms  (cached)
+Module _tile_cholesky_factorize_solve__locals__cholesky_factorize_solve_98799697 3154237 load on device 'cuda:0' took 30.18 ms  (cached)
+Module mujoco_warp._src.solver b116efb load on device 'cuda:0' took 1.39 ms  (cached)
+Module solve_init_jaref__locals__kernel_e65703a4 e65703a load on device 'cuda:0' took 0.34 ms  (cached)
+Module mul_m_dense__locals___mul_m_dense_65f7935a 65f7935 load on device 'cuda:0' took 0.33 ms  (cached)
+Module update_constraint_efc__locals__kernel_81015163 8101516 load on device 'cuda:0' took 0.33 ms  (cached)
+Module update_constraint_gauss_cost__locals__kernel_b9861485 b986148 load on device 'cuda:0' took 0.32 ms  (cached)
+Module update_gradient_JTDAJ_dense_tiled__locals__kernel_f57d3998 abf76dd load on device 'cuda:0' took 0.50 ms  (cached)
+Module update_gradient_cholesky__locals__kernel_966fe354 7d92358 load on device 'cuda:0' took 30.93 ms  (cached)
+Module linesearch_jv_fused__locals__kernel_94dd8970 94dd897 load on device 'cuda:0' took 0.50 ms  (cached)
+Module linesearch_prepare_gauss__locals__kernel_334f7527 334f752 load on device 'cuda:0' took 0.31 ms  (cached)
+Module update_constraint_efc__locals__kernel_25737258 2573725 load on device 'cuda:0' took 0.33 ms  (cached)
+Module mujoco_warp._src.sensor 7fc0378 load on device 'cuda:0' took 1.76 ms  (cached)
+Stage11NormalProbeResult=CUDA_NORMAL_STATIC_PROBE_REVIEW_REQUIRED

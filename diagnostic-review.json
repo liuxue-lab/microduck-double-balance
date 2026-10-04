@@ -1,0 +1,818 @@
+{
+  "status": "CUDA_NORMAL_STATIC_PROBE_REVIEW_REQUIRED",
+  "query_attempts": 8,
+  "queries_completed": 8,
+  "results": [
+    {
+      "case": "GPU49",
+      "route": "collision",
+      "gate": {
+        "status": "ORIGINAL_HEAD_GATE_PASS",
+        "physical_acceptance": false
+      },
+      "contacts": [
+        {
+          "geom": [
+            2,
+            1
+          ],
+          "dist": -6.183981895446777e-07,
+          "pos": [
+            0.009335281327366829,
+            -4.080891237456287e-14,
+            0.14975830912590027
+          ],
+          "frame": [
+            0.0865640789270401,
+            -1.3309070823197544e-07,
+            -0.9962462186813354,
+            1.1520874920734059e-08,
+            1.0,
+            -1.325911114236078e-07,
+            0.9962462186813354,
+            -3.385599160504911e-16,
+            0.0865640789270401
+          ],
+          "dim": 4,
+          "friction": [
+            0.6000000238418579,
+            0.6000000238418579,
+            0.004999999888241291,
+            9.999999747378752e-05,
+            9.999999747378752e-05
+          ],
+          "solref": [
+            0.003000000026077032,
+            1.0
+          ],
+          "solimp": [
+            0.949999988079071,
+            0.9900000095367432,
+            0.0010000000474974513,
+            0.5,
+            2.0
+          ],
+          "efc_address": -1,
+          "force": null,
+          "backend": "warp",
+          "step": 49,
+          "time_s": 0.098,
+          "phase": "pre_integration_contacts_and_solver_force",
+          "other": "head",
+          "allowed": true,
+          "normal_toward_ball": [
+            -0.0865640789270401,
+            1.3309070823197544e-07,
+            0.9962462186813354
+          ],
+          "slip_world_m_s": [
+            -2.5404911775329055e-05,
+            7.430155760608172e-10,
+            -2.2074390315517285e-06
+          ],
+          "slip_speed_m_s": 2.550063391255878e-05,
+          "tangential_power_W": null,
+          "ball_omega_world_rad_s": [
+            -2.569373629313957e-06,
+            -4.412488460540733,
+            3.597126460491762e-07
+          ],
+          "ball_center_world_m": [
+            0.007614049594849348,
+            2.642264185226395e-09,
+            0.1696837991476059
+          ],
+          "geometry": {
+            "mesh_witness": [
+              0.009335255279486365,
+              -1.1564707524946982e-13,
+              0.14975862398973216
+            ],
+            "expected_normal": [
+              -0.08606295716496039,
+              1.3212309507848859e-07,
+              0.9962897005409646
+            ],
+            "original_face": 2302,
+            "original_sphere_gap_m": -6.211576263660812e-07,
+            "engine_witness": [
+              0.009335254319012165,
+              3.4261466276899744e-16,
+              0.14975862205028534
+            ],
+            "engine_normal": [
+              -0.08656408464038398,
+              1.3309071701613848e-07,
+              0.9962462844349056
+            ],
+            "engine_distance_m": -6.183981895446777e-07,
+            "witness_separation_m": 2.1642469108340317e-09,
+            "surface_distance_m": 1.8260841773884266e-09,
+            "sphere_gap_error_m": 2.7594368214034493e-09,
+            "normal_error_deg": 0.02882004534679391,
+            "legacy_v1_pass": true,
+            "v2_pass": true
+          },
+          "normal_force_N": null,
+          "tangent_force_N": null,
+          "torsional_torque_Nm": null,
+          "active_torsional_relative_rate_rad_s": -6.4833891994469645e-09,
+          "torsional_power_W": null,
+          "pyramidal_cone_utilization": null
+        }
+      ],
+      "primary_unchanged": true,
+      "integration_steps": 0,
+      "force_computed": false,
+      "warning_counter_limitation": "Native Warp Data has no MuJoCo CPU warning counter; Python warnings/capacity/finite checks retained."
+    },
+    {
+      "case": "GPU49",
+      "route": "forward",
+      "gate": {
+        "status": "ORIGINAL_HEAD_GATE_PASS",
+        "physical_acceptance": false
+      },
+      "contacts": [
+        {
+          "geom": [
+            2,
+            1
+          ],
+          "dist": -6.183981895446777e-07,
+          "pos": [
+            0.009335281327366829,
+            -4.080891237456287e-14,
+            0.14975830912590027
+          ],
+          "frame": [
+            0.0865640789270401,
+            -1.3309070823197544e-07,
+            -0.9962462186813354,
+            1.1520874920734059e-08,
+            1.0,
+            -1.325911114236078e-07,
+            0.9962462186813354,
+            -3.385599160504911e-16,
+            0.0865640789270401
+          ],
+          "dim": 4,
+          "friction": [
+            0.6000000238418579,
+            0.6000000238418579,
+            0.004999999888241291,
+            9.999999747378752e-05,
+            9.999999747378752e-05
+          ],
+          "solref": [
+            0.003000000026077032,
+            1.0
+          ],
+          "solimp": [
+            0.949999988079071,
+            0.9900000095367432,
+            0.0010000000474974513,
+            0.5,
+            2.0
+          ],
+          "efc_address": 0,
+          "force": [
+            0.09336130321025848,
+            4.470348535789981e-09,
+            -0.0024466172326356173,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "backend": "warp",
+          "step": 49,
+          "time_s": 0.098,
+          "phase": "pre_integration_contacts_and_solver_force",
+          "other": "head",
+          "allowed": true,
+          "normal_toward_ball": [
+            -0.0865640789270401,
+            1.3309070823197544e-07,
+            0.9962462186813354
+          ],
+          "slip_world_m_s": [
+            -2.5404911775329055e-05,
+            7.430155760608172e-10,
+            -2.2074390315517285e-06
+          ],
+          "slip_speed_m_s": 2.550063391255878e-05,
+          "tangential_power_W": -6.239029931244567e-08,
+          "ball_omega_world_rad_s": [
+            -2.569373629313957e-06,
+            -4.412488460540733,
+            3.597126460491762e-07
+          ],
+          "ball_center_world_m": [
+            0.007614049594849348,
+            2.642264185226395e-09,
+            0.1696837991476059
+          ],
+          "geometry": {
+            "mesh_witness": [
+              0.009335255279486365,
+              -1.1564707524946982e-13,
+              0.14975862398973216
+            ],
+            "expected_normal": [
+              -0.08606295716496039,
+              1.3212309507848859e-07,
+              0.9962897005409646
+            ],
+            "original_face": 2302,
+            "original_sphere_gap_m": -6.211576263660812e-07,
+            "engine_witness": [
+              0.009335254319012165,
+              3.4261466276899744e-16,
+              0.14975862205028534
+            ],
+            "engine_normal": [
+              -0.08656408464038398,
+              1.3309071701613848e-07,
+              0.9962462844349056
+            ],
+            "engine_distance_m": -6.183981895446777e-07,
+            "witness_separation_m": 2.1642469108340317e-09,
+            "surface_distance_m": 1.8260841773884266e-09,
+            "sphere_gap_error_m": 2.7594368214034493e-09,
+            "normal_error_deg": 0.02882004534679391,
+            "legacy_v1_pass": true,
+            "v2_pass": true
+          },
+          "normal_force_N": 0.09336130321025848,
+          "tangent_force_N": 0.0024466172326356173,
+          "torsional_torque_Nm": 0.0,
+          "active_torsional_relative_rate_rad_s": -6.4833891994469645e-09,
+          "torsional_power_W": -0.0,
+          "pyramidal_cone_utilization": 0.04367658355746212
+        }
+      ],
+      "primary_unchanged": true,
+      "integration_steps": 0,
+      "force_computed": true,
+      "warning_counter_limitation": "Native Warp Data has no MuJoCo CPU warning counter; Python warnings/capacity/finite checks retained."
+    },
+    {
+      "case": "GPU50",
+      "route": "collision",
+      "gate": {
+        "status": "ORIGINAL_HEAD_GATE_FAILED",
+        "error": "Head v2 geometry gate failed",
+        "physical_acceptance": false
+      },
+      "contacts": [
+        {
+          "geom": [
+            2,
+            1
+          ],
+          "dist": -1.862645149230957e-09,
+          "pos": [
+            0.00933525525033474,
+            -1.114019055717836e-16,
+            0.14975862205028534
+          ],
+          "frame": [
+            0.0,
+            -1.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "dim": 4,
+          "friction": [
+            0.6000000238418579,
+            0.6000000238418579,
+            0.004999999888241291,
+            9.999999747378752e-05,
+            9.999999747378752e-05
+          ],
+          "solref": [
+            0.003000000026077032,
+            1.0
+          ],
+          "solimp": [
+            0.949999988079071,
+            0.9900000095367432,
+            0.0010000000474974513,
+            0.5,
+            2.0
+          ],
+          "efc_address": -1,
+          "force": null,
+          "backend": "warp",
+          "step": 50,
+          "time_s": 0.1,
+          "phase": "pre_integration_contacts_and_solver_force",
+          "other": "head",
+          "allowed": true,
+          "normal_toward_ball": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "slip_world_m_s": [
+            -9.767355885491324e-05,
+            0.0,
+            0.0007012525115161171
+          ],
+          "slip_speed_m_s": 0.000708022039916164,
+          "tangential_power_W": null,
+          "ball_omega_world_rad_s": [
+            -2.661397055737373e-06,
+            -4.472478866577111,
+            3.599197698932103e-07
+          ],
+          "ball_center_world_m": [
+            0.007435763720422983,
+            2.747583494056016e-09,
+            0.16966821253299713
+          ],
+          "geometry": {
+            "mesh_witness": [
+              0.009335255279486365,
+              -1.1564707524946982e-13,
+              0.14975862398973216
+            ],
+            "expected_normal": [
+              -0.09497460357909329,
+              1.3738499412560396e-07,
+              0.9954796957622869
+            ],
+            "original_face": 2302,
+            "original_sphere_gap_m": -5.396374024718709e-09,
+            "engine_witness": [
+              0.00933525525033474,
+              9.313224635931761e-10,
+              0.14975862205028534
+            ],
+            "engine_normal": [
+              -0.0,
+              1.0,
+              -0.0
+            ],
+            "engine_distance_m": -1.862645149230957e-09,
+            "witness_separation_m": 2.151715771118598e-09,
+            "surface_distance_m": 1.8997058338588316e-09,
+            "sphere_gap_error_m": 3.5337288754877516e-09,
+            "normal_error_deg": 89.99999212841968,
+            "legacy_v1_pass": false,
+            "v2_pass": false
+          },
+          "normal_force_N": null,
+          "tangent_force_N": null,
+          "torsional_torque_Nm": null,
+          "active_torsional_relative_rate_rad_s": -4.472478866577111,
+          "torsional_power_W": null,
+          "pyramidal_cone_utilization": null
+        }
+      ],
+      "primary_unchanged": true,
+      "integration_steps": 0,
+      "force_computed": false,
+      "warning_counter_limitation": "Native Warp Data has no MuJoCo CPU warning counter; Python warnings/capacity/finite checks retained."
+    },
+    {
+      "case": "GPU50",
+      "route": "forward",
+      "gate": {
+        "status": "ORIGINAL_HEAD_GATE_FAILED",
+        "error": "Head v2 geometry gate failed",
+        "physical_acceptance": false
+      },
+      "contacts": [
+        {
+          "geom": [
+            2,
+            1
+          ],
+          "dist": -1.862645149230957e-09,
+          "pos": [
+            0.00933525525033474,
+            -1.114019055717836e-16,
+            0.14975862205028534
+          ],
+          "frame": [
+            0.0,
+            -1.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "dim": 4,
+          "friction": [
+            0.6000000238418579,
+            0.6000000238418579,
+            0.004999999888241291,
+            9.999999747378752e-05,
+            9.999999747378752e-05
+          ],
+          "solref": [
+            0.003000000026077032,
+            1.0
+          ],
+          "solimp": [
+            0.949999988079071,
+            0.9900000095367432,
+            0.0010000000474974513,
+            0.5,
+            2.0
+          ],
+          "efc_address": 0,
+          "force": [
+            0.03046092949807644,
+            0.0,
+            0.0,
+            0.00015230463759507984,
+            0.0,
+            0.0
+          ],
+          "backend": "warp",
+          "step": 50,
+          "time_s": 0.1,
+          "phase": "pre_integration_contacts_and_solver_force",
+          "other": "head",
+          "allowed": true,
+          "normal_toward_ball": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "slip_world_m_s": [
+            -9.767355885491324e-05,
+            0.0,
+            0.0007012525115161171
+          ],
+          "slip_speed_m_s": 0.000708022039916164,
+          "tangential_power_W": 0.0,
+          "ball_omega_world_rad_s": [
+            -2.661397055737373e-06,
+            -4.472478866577111,
+            3.599197698932103e-07
+          ],
+          "ball_center_world_m": [
+            0.007435763720422983,
+            2.747583494056016e-09,
+            0.16966821253299713
+          ],
+          "geometry": {
+            "mesh_witness": [
+              0.009335255279486365,
+              -1.1564707524946982e-13,
+              0.14975862398973216
+            ],
+            "expected_normal": [
+              -0.09497460357909329,
+              1.3738499412560396e-07,
+              0.9954796957622869
+            ],
+            "original_face": 2302,
+            "original_sphere_gap_m": -5.396374024718709e-09,
+            "engine_witness": [
+              0.00933525525033474,
+              9.313224635931761e-10,
+              0.14975862205028534
+            ],
+            "engine_normal": [
+              -0.0,
+              1.0,
+              -0.0
+            ],
+            "engine_distance_m": -1.862645149230957e-09,
+            "witness_separation_m": 2.151715771118598e-09,
+            "surface_distance_m": 1.8997058338588316e-09,
+            "sphere_gap_error_m": 3.5337288754877516e-09,
+            "normal_error_deg": 89.99999212841968,
+            "legacy_v1_pass": false,
+            "v2_pass": false
+          },
+          "normal_force_N": 0.03046092949807644,
+          "tangent_force_N": 0.0,
+          "torsional_torque_Nm": 0.00015230463759507984,
+          "active_torsional_relative_rate_rad_s": -4.472478866577111,
+          "torsional_power_W": -0.0006811792729256804,
+          "pyramidal_cone_utilization": 0.9999999388513358
+        }
+      ],
+      "primary_unchanged": true,
+      "integration_steps": 0,
+      "force_computed": true,
+      "warning_counter_limitation": "Native Warp Data has no MuJoCo CPU warning counter; Python warnings/capacity/finite checks retained."
+    },
+    {
+      "case": "GPU51",
+      "route": "collision",
+      "gate": {
+        "status": "ORIGINAL_HEAD_GATE_PASS",
+        "physical_acceptance": false
+      },
+      "contacts": [
+        {
+          "geom": [
+            2,
+            1
+          ],
+          "dist": -3.680400550365448e-05,
+          "pos": [
+            0.009337170049548149,
+            -1.1234378760605068e-08,
+            0.1497403234243393
+          ],
+          "frame": [
+            0.10409846901893616,
+            -0.0006106108776293695,
+            -0.9945668578147888,
+            6.356367521220818e-05,
+            0.9999998211860657,
+            -0.0006072934484109282,
+            0.9945670366287231,
+            -1.011887275359502e-11,
+            0.10409849137067795
+          ],
+          "dim": 4,
+          "friction": [
+            0.6000000238418579,
+            0.6000000238418579,
+            0.004999999888241291,
+            9.999999747378752e-05,
+            9.999999747378752e-05
+          ],
+          "solref": [
+            0.003000000026077032,
+            1.0
+          ],
+          "solimp": [
+            0.949999988079071,
+            0.9900000095367432,
+            0.0010000000474974513,
+            0.5,
+            2.0
+          ],
+          "efc_address": -1,
+          "force": null,
+          "backend": "warp",
+          "step": 51,
+          "time_s": 0.10200000000000001,
+          "phase": "pre_integration_contacts_and_solver_force",
+          "other": "head",
+          "allowed": true,
+          "normal_toward_ball": [
+            -0.10409846901893616,
+            0.0006106108776293695,
+            0.9945668578147888
+          ],
+          "slip_world_m_s": [
+            -0.005915660962819215,
+            0.021318945217426923,
+            -0.0006322640095765344
+          ],
+          "slip_speed_m_s": 0.022133509156671907,
+          "tangential_power_W": null,
+          "ball_omega_world_rad_s": [
+            0.7580772333509967,
+            -4.282096861624127,
+            0.0723254798234188
+          ],
+          "ball_center_world_m": [
+            0.007257477845996618,
+            1.2187207175884396e-05,
+            0.16961339116096497
+          ],
+          "geometry": {
+            "mesh_witness": [
+              0.009335255279486365,
+              -1.1564707524946982e-13,
+              0.14975862398973216
+            ],
+            "expected_normal": [
+              -0.10408041446731095,
+              0.0006104838591740769,
+              0.9945686977950645
+            ],
+            "original_face": 2302,
+            "original_sphere_gap_m": -3.6806692941017405e-05,
+            "engine_witness": [
+              0.009335254319012165,
+              2.084554751036194e-12,
+              0.14975862205028534
+            ],
+            "engine_normal": [
+              -0.10409846387848581,
+              0.0006106108474770058,
+              0.9945668087024282
+            ],
+            "engine_distance_m": -3.680400550365448e-05,
+            "witness_separation_m": 2.1642480261026272e-09,
+            "surface_distance_m": 1.8261460584737144e-09,
+            "sphere_gap_error_m": 2.6874373629248716e-09,
+            "normal_error_deg": 0.00103982970747587,
+            "legacy_v1_pass": true,
+            "v2_pass": true
+          },
+          "normal_force_N": null,
+          "tangent_force_N": null,
+          "torsional_torque_Nm": null,
+          "active_torsional_relative_rate_rad_s": -0.009596849104795305,
+          "torsional_power_W": null,
+          "pyramidal_cone_utilization": null
+        }
+      ],
+      "primary_unchanged": true,
+      "integration_steps": 0,
+      "force_computed": false,
+      "warning_counter_limitation": "Native Warp Data has no MuJoCo CPU warning counter; Python warnings/capacity/finite checks retained."
+    },
+    {
+      "case": "GPU51",
+      "route": "forward",
+      "gate": {
+        "status": "ORIGINAL_HEAD_GATE_PASS",
+        "physical_acceptance": false
+      },
+      "contacts": [
+        {
+          "geom": [
+            2,
+            1
+          ],
+          "dist": -3.680400550365448e-05,
+          "pos": [
+            0.009337170049548149,
+            -1.1234378760605068e-08,
+            0.1497403234243393
+          ],
+          "frame": [
+            0.10409846901893616,
+            -0.0006106108776293695,
+            -0.9945668578147888,
+            6.356367521220818e-05,
+            0.9999998211860657,
+            -0.0006072934484109282,
+            0.9945670366287231,
+            -1.011887275359502e-11,
+            0.10409849137067795
+          ],
+          "dim": 4,
+          "friction": [
+            0.6000000238418579,
+            0.6000000238418579,
+            0.004999999888241291,
+            9.999999747378752e-05,
+            9.999999747378752e-05
+          ],
+          "solref": [
+            0.003000000026077032,
+            1.0
+          ],
+          "solimp": [
+            0.949999988079071,
+            0.9900000095367432,
+            0.0010000000474974513,
+            0.5,
+            2.0
+          ],
+          "efc_address": 0,
+          "force": [
+            0.2089006006717682,
+            0.030203452333807945,
+            -0.011289897374808788,
+            6.65189691062551e-06,
+            0.0,
+            0.0
+          ],
+          "backend": "warp",
+          "step": 51,
+          "time_s": 0.10200000000000001,
+          "phase": "pre_integration_contacts_and_solver_force",
+          "other": "head",
+          "allowed": true,
+          "normal_toward_ball": [
+            -0.10409846901893616,
+            0.0006106108776293695,
+            0.9945668578147888
+          ],
+          "slip_world_m_s": [
+            -0.005915660962819215,
+            0.021318945217426923,
+            -0.0006322640095765344
+          ],
+          "slip_speed_m_s": 0.022133509156671907,
+          "tangential_power_W": -0.0007110732881248175,
+          "ball_omega_world_rad_s": [
+            0.7580772333509967,
+            -4.282096861624127,
+            0.0723254798234188
+          ],
+          "ball_center_world_m": [
+            0.007257477845996618,
+            1.2187207175884396e-05,
+            0.16961339116096497
+          ],
+          "geometry": {
+            "mesh_witness": [
+              0.009335255279486365,
+              -1.1564707524946982e-13,
+              0.14975862398973216
+            ],
+            "expected_normal": [
+              -0.10408041446731095,
+              0.0006104838591740769,
+              0.9945686977950645
+            ],
+            "original_face": 2302,
+            "original_sphere_gap_m": -3.6806692941017405e-05,
+            "engine_witness": [
+              0.009335254319012165,
+              2.084554751036194e-12,
+              0.14975862205028534
+            ],
+            "engine_normal": [
+              -0.10409846387848581,
+              0.0006106108474770058,
+              0.9945668087024282
+            ],
+            "engine_distance_m": -3.680400550365448e-05,
+            "witness_separation_m": 2.1642480261026272e-09,
+            "surface_distance_m": 1.8261460584737144e-09,
+            "sphere_gap_error_m": 2.6874373629248716e-09,
+            "normal_error_deg": 0.00103982970747587,
+            "legacy_v1_pass": true,
+            "v2_pass": true
+          },
+          "normal_force_N": 0.2089006006717682,
+          "tangent_force_N": 0.03224453702569008,
+          "torsional_torque_Nm": 6.65189691062551e-06,
+          "active_torsional_relative_rate_rad_s": -0.009596849104795305,
+          "torsional_power_W": -6.383725091192708e-08,
+          "pyramidal_cone_utilization": 0.33741389058142324
+        }
+      ],
+      "primary_unchanged": true,
+      "integration_steps": 0,
+      "force_computed": true,
+      "warning_counter_limitation": "Native Warp Data has no MuJoCo CPU warning counter; Python warnings/capacity/finite checks retained."
+    },
+    {
+      "case": "CPU50-rounded32",
+      "route": "collision",
+      "gate": {
+        "status": "NO_HEAD_CONTACT",
+        "physical_acceptance": false
+      },
+      "contacts": [],
+      "primary_unchanged": true,
+      "integration_steps": 0,
+      "force_computed": false,
+      "warning_counter_limitation": "Native Warp Data has no MuJoCo CPU warning counter; Python warnings/capacity/finite checks retained."
+    },
+    {
+      "case": "CPU50-rounded32",
+      "route": "forward",
+      "gate": {
+        "status": "NO_HEAD_CONTACT",
+        "physical_acceptance": false
+      },
+      "contacts": [],
+      "primary_unchanged": true,
+      "integration_steps": 0,
+      "force_computed": true,
+      "warning_counter_limitation": "Native Warp Data has no MuJoCo CPU warning counter; Python warnings/capacity/finite checks retained."
+    }
+  ],
+  "diagnostic_completed_steps": 0,
+  "diagnostic_attempted_steps": 0,
+  "canonical_total_known_completed_steps": 13354,
+  "stage11_status": "MATERIAL_BLOCKED_REVIEW_REQUIRED",
+  "stage11_complete": false,
+  "new_ppo_updates": 0,
+  "full_robot_steps": 0,
+  "cloud_hours": 0,
+  "formal_task_migration": false,
+  "formal_physical_parameter_adoption": false,
+  "policy_success": null,
+  "CPU_model_unchanged": true,
+  "GPU_model_unchanged": true,
+  "source_files_unchanged": true,
+  "wall_seconds": 4.088842044999183,
+  "not_completed_queries": [],
+  "known_geometry_failure_is_recorded_not_waived": true,
+  "limitations": [
+    "Fresh zero qacc_warmstart, not full historical solver-state replay",
+    "No native CCD witnesses captured; cannot prove full float32-cancellation causal chain",
+    "No graph capture; historical graph-specific effect remains possible if fresh calls differ",
+    "Original floor/sensitivity and matrix omissions retained; no physical acceptance or policy result"
+  ],
+  "diagnostic_source_sha256": "ab3e7f875be7917bf56d1fcfb9d6a70ffdecd0f7271667310d96417a5e2c7af6"
+}

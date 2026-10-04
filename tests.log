@@ -1,0 +1,14 @@
+test_bad_normal_stays_failure (test_head_contact_cuda_normal.Tests.test_bad_normal_stays_failure) ... ok
+test_capacity_and_zero_contact (test_head_contact_cuda_normal.Tests.test_capacity_and_zero_contact) ... ok
+test_good_normal_is_not_physical_acceptance (test_head_contact_cuda_normal.Tests.test_good_normal_is_not_physical_acceptance) ... ok
+test_integrator_entrypoints_blocked_and_restored (test_head_contact_cuda_normal.Tests.test_integrator_entrypoints_blocked_and_restored) ... ok
+test_material_change_stops_not_record_only (test_head_contact_cuda_normal.Tests.test_material_change_stops_not_record_only) ... ok
+test_nonfinite_and_unexpected_contact_stop (test_head_contact_cuda_normal.Tests.test_nonfinite_and_unexpected_contact_stop) ... ok
+test_primary_mutation_detected (test_head_contact_cuda_normal.Tests.test_primary_mutation_detected) ... ok
+test_real_native_matrix_frame_and_force (test_head_contact_cuda_normal.Tests.test_real_native_matrix_frame_and_force) ... ok
+test_saved_state_selection_rounding_and_order (test_head_contact_cuda_normal.Tests.test_saved_state_selection_rounding_and_order) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.008s
+
+OK
