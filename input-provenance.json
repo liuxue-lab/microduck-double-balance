@@ -1,0 +1,291 @@
+{
+  "original_material": {
+    "zip_sha256": "d2c6cb2c788ee3b7020f6557dac1e0646940bebd43b290dc4b3f5c6e8110278d",
+    "zip_bytes_verified_on_laptop": true,
+    "artifact_commit": "51df1774385fec998b8a8e7f7dcfcde5f5a10a27",
+    "source_directory": "/home/lx/microduck-double-balance/artifacts/double-balance-stage11/physics/20261003T094423Z",
+    "files": {
+      "run-summary.json": {
+        "sha256": "43bfe8d1464f0ede799e3fb5d8962b7d0fdc387d495dde4fa7c9cadbca7a48cb",
+        "bytes": 1211
+      },
+      "local-v2/physics-review.json": {
+        "sha256": "4d5172e2d73827fe5437c9af418761671b3b0ae52b77ff7cb11eed03b251807b",
+        "bytes": 4673
+      },
+      "local-v2/material-fixture.mjb": {
+        "sha256": "e6cd330bddc3a29abf9ce4eca4f308a2680e4910405725e5ce054cb0a19d2da0",
+        "bytes": 3469516
+      },
+      "local-v2/material-options.json": {
+        "sha256": "d954d5bb86a74df05232642698a740521d5ed29ce73e477a078b86dff25fe942",
+        "bytes": 821
+      },
+      "local-v2/material-scope.json": {
+        "sha256": "a4dac57951af473e4fc932c4c1f39412f15bc6d54a317b19d97c44aec6729198",
+        "bytes": 328
+      },
+      "local-v2/cpu/release-y-minus12/states.npz": {
+        "sha256": "3b09484c63730b8f59819ed1941556b0279cfd62056b704f8df7cf4f92451766",
+        "bytes": 16812
+      },
+      "local-v2/cpu/release-y-minus12/contacts.jsonl.gz": {
+        "sha256": "f95e63b00fbfe12e6b6e5750c479a6381aedfb7fc17b661fad5057b262b78494",
+        "bytes": 52469
+      },
+      "local-v2/cpu/release-y-minus12/raw-contacts.jsonl.gz": {
+        "sha256": "b1ce32231db80d7c38ad0c616fdaa0ea37c30954e67c3ada5a412d64405f1cb2",
+        "bytes": 16567
+      },
+      "local-v2/material-cpu-release-y-minus12-BLOCKED.mp4": {
+        "sha256": "c55a11f706dc097e3103d6529d8601f010603d98505a2257313e186bef4b9335",
+        "bytes": 26488
+      },
+      "local-v2/material-geometry.npz": {
+        "sha256": "b2b22ae8e2798b18b292bfc3c181475dde03e5f0030e93839f4447122fb1dcc5",
+        "bytes": 225030
+      },
+      "local-v2/cpu/release-center/initial.json": {
+        "sha256": "af0f68a4c0bba9172d1c8aa2d10fa0f816ffc096e94bb5946157ed3c2322b50c",
+        "bytes": 412
+      },
+      "local-v2/static-geometry.json": {
+        "sha256": "af40759baabbc89e76912570f6136598c70cd2e554d704eb94bac8061895d343",
+        "bytes": 53332
+      },
+      "local-v2/structure-inertia.json": {
+        "sha256": "dcc20358d3e45772a9ec483d1fbba4271412ff9b6596d698508a3c56796c828e",
+        "bytes": 5564
+      }
+    }
+  },
+  "CPU_friction": {
+    "directory": "/home/lx/microduck-double-balance/artifacts/double-balance-stage11/head-friction/20261003T183812Z",
+    "zip_sha256": "f692ff89cfdd0b1036570a2eb5cc4a7f679eb49bc407af37e5e3410478dd343d",
+    "files": {
+      "run-summary.json": {
+        "sha256": "c428a5004cdaf2c4959a5d84b127343c5ca4b4f90f267c27fa784b061d5435a7",
+        "bytes": 2997
+      },
+      "diagnostic/preflight.json": {
+        "sha256": "44dd05ca5781b9ab077404f864f362657f0cfee8ea109f3264251c6ddd8ac349",
+        "bytes": 1697
+      },
+      "diagnostic/diagnostic-review.json": {
+        "sha256": "3ef94cb9f087a109eac19800e5d6dbc654a1440c356e23166f0910bebbb0772f",
+        "bytes": 69879
+      },
+      "diagnostic/input-provenance.json": {
+        "sha256": "09190f63b0bc2419060e20f7edc816eeedd1815b7f59d43f1bfec5ab945926db",
+        "bytes": 4143
+      },
+      "diagnostic/cases/slide-x-plus/initial.json": {
+        "sha256": "7f1c06c433456123154e8c06570eb67e351c3737b27c6eeec7e717c5dce2e0e2",
+        "bytes": 905
+      },
+      "diagnostic/cases/slide-x-plus/summary.json": {
+        "sha256": "24066cd3c2a6f1d2d24b073f18d1eef688056c6fd694b395e5122b532489c810",
+        "bytes": 11572
+      },
+      "diagnostic/cases/slide-x-plus/states.npz": {
+        "sha256": "28d78e36409d3e5186406a08afeda6feaec9e06a77bab035535021ee22a2bdfe",
+        "bytes": 30518
+      },
+      "diagnostic/cases/slide-x-plus/contacts.jsonl.gz": {
+        "sha256": "80d384e9ad236f3cd0fdd6ea6369cf0d589375aa33bd4dee3542fbca30d7cd42",
+        "bytes": 112857
+      },
+      "diagnostic/cases/slide-x-plus/raw-contacts.jsonl.gz": {
+        "sha256": "a62c8113b5ff107af96e9ea4ef06242dc81606a3b247a8410ee3beb3a336769f",
+        "bytes": 39748
+      },
+      "diagnostic/cases/slide-x-minus/initial.json": {
+        "sha256": "92c52839f33e13de7ad8cd2efb14d37bacf540f5d513156287b0530c6f46036a",
+        "bytes": 912
+      },
+      "diagnostic/cases/slide-x-minus/summary.json": {
+        "sha256": "dc0b2e73aa3cf9a8a4fca703d0a8b198a67e7f0dd0514b22b08172624162e04d",
+        "bytes": 10474
+      },
+      "diagnostic/cases/slide-x-minus/states.npz": {
+        "sha256": "c59e0eb592710ff9221abfe89e8172df6234563cfecbd9cec63693f6af99703d",
+        "bytes": 23429
+      },
+      "diagnostic/cases/slide-x-minus/contacts.jsonl.gz": {
+        "sha256": "b09580c41ea893275f6204b3fdea7a23e80697877715e80aa0424738fb09ed0d",
+        "bytes": 81611
+      },
+      "diagnostic/cases/slide-x-minus/raw-contacts.jsonl.gz": {
+        "sha256": "0dcae86fdff4a03fd5f5e0affb67562ee7221f8fdbfe5c0940b914b60a88b3b4",
+        "bytes": 29049
+      },
+      "diagnostic/cases/slide-y-plus/initial.json": {
+        "sha256": "af69f0f681fef38487e79f5e6771a5d9c108b9aa24eb987504f4e0d6c94a28af",
+        "bytes": 915
+      },
+      "diagnostic/cases/slide-y-plus/summary.json": {
+        "sha256": "8100dd5fbac921cf036af9d871220aff6adb2d16adf58dda475bc45eafa2f232",
+        "bytes": 9296
+      },
+      "diagnostic/cases/slide-y-plus/states.npz": {
+        "sha256": "62f4826dfc7610b5749c71b1454b3d43e02e389bf0d8d862650363fd52559ed5",
+        "bytes": 23210
+      },
+      "diagnostic/cases/slide-y-plus/contacts.jsonl.gz": {
+        "sha256": "1403c1e83fd31a02a6d26033e30c910777593745fdf9a1cdb37ae4dc23fe8d87",
+        "bytes": 80472
+      },
+      "diagnostic/cases/slide-y-plus/raw-contacts.jsonl.gz": {
+        "sha256": "56e8144488c469541d8de442eed6a5656609e9ec6c6a6e2e1fcebac9d39575a7",
+        "bytes": 28467
+      },
+      "diagnostic/cases/slide-y-minus/initial.json": {
+        "sha256": "35305ac17ce093f126e6b205030d4ded747fb9724808683e719c748e421098d2",
+        "bytes": 914
+      },
+      "diagnostic/cases/slide-y-minus/summary.json": {
+        "sha256": "7038aaf531c9af62209d8150462d254f1c82ea99e67126e751912089bfc19a8d",
+        "bytes": 9301
+      },
+      "diagnostic/cases/slide-y-minus/states.npz": {
+        "sha256": "b42c39451139bddefa5a42f368cb95adc8631ac03907f7f438c6c9ff66afc1da",
+        "bytes": 23245
+      },
+      "diagnostic/cases/slide-y-minus/contacts.jsonl.gz": {
+        "sha256": "ac51c4f0cdd32883f7d0b6e670f167df2eefdcb4d9c774b38d581fff3580681e",
+        "bytes": 80835
+      },
+      "diagnostic/cases/slide-y-minus/raw-contacts.jsonl.gz": {
+        "sha256": "ea62b94ad5688fafaa2a39784c9ea401d5fc3f9985a6cc7ffe6d72a46feca5fd",
+        "bytes": 28397
+      },
+      "diagnostic/cases/initial-no-slip-roll/initial.json": {
+        "sha256": "63360fd30991b28ffe7b4c215ef32d4c6589911eeb5206a1cabadbffdebae49c",
+        "bytes": 1021
+      },
+      "diagnostic/cases/initial-no-slip-roll/summary.json": {
+        "sha256": "1cec9195331b362b171ac6e4bbac597aaf782e5b2a0a0fc2c289e006fc913b75",
+        "bytes": 10380
+      },
+      "diagnostic/cases/initial-no-slip-roll/states.npz": {
+        "sha256": "36608488a099dd8bbd8f4dba6e572f62c1ee77e39256a9d7ba66c00d98a271a1",
+        "bytes": 32380
+      },
+      "diagnostic/cases/initial-no-slip-roll/contacts.jsonl.gz": {
+        "sha256": "7e50ae74e7fa3a850feb17dd58f5a7da6b936346f5f99ba074edfc2651668700",
+        "bytes": 119994
+      },
+      "diagnostic/cases/initial-no-slip-roll/raw-contacts.jsonl.gz": {
+        "sha256": "13129ae8827f3b3cacf41e8ed05df50ee8580c7289e286727a8eba0b9e48e819",
+        "bytes": 42064
+      },
+      "diagnostic/cases/normal-spin/initial.json": {
+        "sha256": "cb0d64c63dcfd4978deedffb6b45ca7a30e9ef16d810abda612abb3deb352e97",
+        "bytes": 904
+      },
+      "diagnostic/cases/normal-spin/summary.json": {
+        "sha256": "4fae8c23f55478255f9bf3675bf21db211ef61295cd97423c5ecf8ed8099193f",
+        "bytes": 9820
+      },
+      "diagnostic/cases/normal-spin/states.npz": {
+        "sha256": "62d06e7be5104183ec1d00d2cd505ef1096979898fea360a55b8d887f77a3fd4",
+        "bytes": 27260
+      },
+      "diagnostic/cases/normal-spin/contacts.jsonl.gz": {
+        "sha256": "bfa858312d7f78bc2c5e7fc3a80c57f9e7eb8fa517c2d52ebd574c18f16b18d7",
+        "bytes": 98289
+      },
+      "diagnostic/cases/normal-spin/raw-contacts.jsonl.gz": {
+        "sha256": "e4b2179b8b22b4e2edefb71b0146bf941a2cc8949914422fa4bbd855aa0f3998",
+        "bytes": 34953
+      }
+    }
+  },
+  "latest_CUDA_center": {
+    "directory": "/home/lx/microduck-double-balance/artifacts/double-balance-stage11/cuda-center-v2/20261004T101459Z",
+    "zip_sha256": "3a040814b969e94eabe8533a11e45ea21835f34441e1b75978787018f3b218dc",
+    "files": {
+      "run-summary.json": {
+        "sha256": "00a3ddd90377a4dd26a529133fadd0a06ff9a94dbfaabf25b0e90df790069855",
+        "bytes": 18721
+      },
+      "diagnostic/preflight.json": {
+        "sha256": "d507d0e8b57c63f1850fb433f55179ceff582fc7b91d3c17c3ef68b729d1ea32",
+        "bytes": 4105
+      },
+      "diagnostic/diagnostic-review.json": {
+        "sha256": "760f5321ba9b302267a69f405ab9915ee03f1f4c5e32d3777bb64df529f50893",
+        "bytes": 13306
+      }
+    }
+  },
+  "CPU_replayed_steps": 0,
+  "latest_static_candidate": {
+    "directory": "/home/lx/microduck-double-balance/artifacts/double-balance-stage11/cuda-candidate/20261004T120651Z",
+    "zip_sha256": "beabbcf9b71be7c1569ac3b20997ad68734967bbfe0a224f89128e5d98461672",
+    "files": {
+      "run-summary.json": {
+        "sha256": "e5a4e02e83901aa4b56db9e92d6b1fa5c06152cfc1e54aea087ec6de6499d451",
+        "bytes": 8252
+      },
+      "diagnostic/preflight.json": {
+        "sha256": "e24707b6a031df7471e0d7b027adda39543bd9887c7bc4675cacefafc42ca151",
+        "bytes": 4997
+      },
+      "diagnostic/diagnostic-review.json": {
+        "sha256": "869240c9ad67be6e8c2f535d8fc25e45e6b16110c7538e03e7f086f5df97f157",
+        "bytes": 24601
+      }
+    }
+  },
+  "saved_native_CUDA": {
+    "directory": "/home/lx/microduck-double-balance/artifacts/double-balance-stage11/cuda-friction/20261004T104109Z",
+    "zip_sha256": "b253028776a653328f334a93b5f7d9b74bd0dfdaad812d3eef3f3ca556a91733",
+    "files": {
+      "run-summary.json": {
+        "sha256": "5b44bf14cc7e4c50fd0d40f5e9fab9e939f8ec574a4b8b8523a3756ab69f9188",
+        "bytes": 12376
+      },
+      "diagnostic/preflight.json": {
+        "sha256": "ad3835afc30852a0ec53cdd22659773838c0a1a54eb90be08d3fdde8be27b6f6",
+        "bytes": 4309
+      },
+      "diagnostic/diagnostic-review.json": {
+        "sha256": "22b1facff9c84547320b63ba546c76e738a4162887ca98b8659e28aefe143c66",
+        "bytes": 19885
+      },
+      "diagnostic/material-fixture.mjb": {
+        "sha256": "e6cd330bddc3a29abf9ce4eca4f308a2680e4910405725e5ce054cb0a19d2da0",
+        "bytes": 3469516
+      },
+      "diagnostic/material-geometry.npz": {
+        "sha256": "b2b22ae8e2798b18b292bfc3c181475dde03e5f0030e93839f4447122fb1dcc5",
+        "bytes": 225030
+      },
+      "diagnostic/model-signature-before.json": {
+        "sha256": "a9edadfbc2653671613e5de3fe0f004a9c5597a447bbd93820f63f790c0d1d5f",
+        "bytes": 83532
+      },
+      "diagnostic/cases/slide-x-minus/states.npz": {
+        "sha256": "6ef2535fcc236c526498b7b90c705e5067f8b924d8dc2c7473fcf96728e20021",
+        "bytes": 4081
+      },
+      "diagnostic/cases/slide-x-minus/raw-contacts.jsonl.gz": {
+        "sha256": "dedf478c2f945da6ac2784f6d3fc522d17765b41b025f55717dd73dbc40d441a",
+        "bytes": 8132
+      },
+      "diagnostic/cases/slide-x-minus/step-log.jsonl": {
+        "sha256": "143937c7f23ac81b2af3d83c04ecec1069c4c1eeb877fdc18958ae6c026801d8",
+        "bytes": 202427
+      },
+      "diagnostic/cases/slide-x-minus/summary.json": {
+        "sha256": "87eb823f7cdc2e24e53d7afa9e8232db8d9b926b33614d31b759e0b01ce1f621",
+        "bytes": 2277
+      },
+      "diagnostic/archived-CPU-friction/slide-x-minus/states.npz": {
+        "sha256": "c59e0eb592710ff9221abfe89e8172df6234563cfecbd9cec63693f6af99703d",
+        "bytes": 23429
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "completed_steps": 578,
+  "attempted_steps": 578,
+  "active_case": {
+    "name": "slide-y-plus",
+    "status": "CANDIDATE_RUNTIME_BLOCKED_REVIEW_REQUIRED",
+    "steps": 5,
+    "attempted_steps": 5,
+    "horizon_completed": false,
+    "fixed_material_fixture": true,
+    "policy_success": null,
+    "new_ppo_updates": 0,
+    "full_robot_steps": 0,
+    "head_contact_steps": 0,
+    "floor_contact_steps": 0,
+    "max_head_slip_m_s": 0.0,
+    "max_head_penetration_m": 0.0,
+    "max_post_head_overlap_m": 8.071195970024703e-05,
+    "max_floor_penetration_m": 0.0,
+    "head_normal_impulse_Ns": 0.0,
+    "head_tangential_world_impulse_Ns": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "head_torsional_impulse_Nms": 0.0,
+    "head_tangential_work_J": 0.0,
+    "head_torsional_work_J": 0.0,
+    "max_positive_head_tangential_power_W": 0.0,
+    "max_positive_head_torsional_power_W": 0.0,
+    "head_tangential_positive_power_samples": 0,
+    "head_torsional_positive_power_samples": 0,
+    "max_head_cone_utilization": 0.0,
+    "legacy_v1_failed_contact_count": 0,
+    "head_contact_intervals": [],
+    "no_head_contact_intervals": [
+      {
+        "first_pre_step": 0,
+        "end_step_exclusive": 5,
+        "start_s": 0.0,
+        "end_s": 0.01,
+        "right_censored_at_record_end": true,
+        "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+      }
+    ],
+    "critical_frame_steps": [],
+    "physical_friction_calibration": false,
+    "backend": "RTX5060_ISOLATED_CANDIDATE_NO_GRAPH",
+    "analyzed_steps": 5,
+    "forward_attempts": 6,
+    "forward_completed": 5,
+    "frame_replacements": 0,
+    "primary_upload_verified": true,
+    "unexpected_setup_advance_possible": false,
+    "error": "Candidate changed distance, witnesses or contact presence",
+    "completed_step_count_exact": true,
+    "elapsed_simulation_s": 0.01,
+    "model_arrays_and_options_unchanged": true
+  },
+  "new_ppo_updates": 0
+}
