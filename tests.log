@@ -1,0 +1,13 @@
+test_joint_reset_omission_detected (test_head_contact_reset.ResetAuditTests.test_joint_reset_omission_detected) ... ok
+test_residual_ball_angular_velocity_detected (test_head_contact_reset.ResetAuditTests.test_residual_ball_angular_velocity_detected) ... ok
+test_selected_order_and_nonselected_world (test_head_contact_reset.ResetAuditTests.test_selected_order_and_nonselected_world) ... ok
+test_stale_reference_placement_detected (test_head_contact_reset.ResetAuditTests.test_stale_reference_placement_detected) ... ok
+test_wrong_world_write_detected (test_head_contact_reset.ResetAuditTests.test_wrong_world_write_detected) ... ok
+test_fixed_gpu_and_forward_budget (test_head_contact_reset.ScopeTests.test_fixed_gpu_and_forward_budget) ... ok
+test_no_integrating_or_full_manager_constructor_calls (test_head_contact_reset.ScopeTests.test_no_integrating_or_full_manager_constructor_calls) ... ok
+test_runtime_and_task_files_frozen (test_head_contact_reset.ScopeTests.test_runtime_and_task_files_frozen) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.037s
+
+OK

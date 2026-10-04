@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/lx/microduck-double-balance/workspace/scripts/audit_head_contact_reset.py", line 188, in main
+    report['reset']=run(out,prior)
+                    ^^^^^^^^^^^^^^
+  File "/home/lx/microduck-double-balance/workspace/scripts/audit_head_contact_reset.py", line 85, in run
+    require(scene.sensor_context is None,'Unexpected renderer/raycast context')
+  File "/home/lx/microduck-double-balance/workspace/scripts/audit_head_contact_interface.py", line 30, in require
+    raise RuntimeError(message)
+RuntimeError: Unexpected renderer/raycast context

@@ -1,0 +1,17 @@
+{
+  "status": "NATIVE_RESET_EXECUTION_BLOCKED",
+  "stage11_status": "MATERIAL_BLOCKED_REVIEW_REQUIRED",
+  "stage11_complete": false,
+  "new_integration_steps": 0,
+  "new_ppo_updates": 0,
+  "cloud_hours": 0,
+  "canonical_total_completed_steps": 7895,
+  "formal_task_migration": false,
+  "policy_success": null,
+  "prior_source_count": 12,
+  "stream_source_count": 3,
+  "reset_source_count": 2,
+  "error": "Unexpected renderer/raycast context",
+  "forbidden_integration_call_attempts": [],
+  "wall_seconds": 7.0192501159999665
+}
