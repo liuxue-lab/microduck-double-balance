@@ -1,0 +1,22 @@
+{
+  "status": "RETURN_REVIEW_REQUIRED",
+  "stage11_status": "MATERIAL_BLOCKED_REVIEW_REQUIRED",
+  "stage11_complete": false,
+  "head": "056eaf2b0c78261f34e3fa581858c8573cab981e",
+  "old_stage10_tag": "1a11f30cc7264d00dec7bce8f11449ded9164169",
+  "completed_steps": 4800,
+  "attempted_steps": 4800,
+  "rk_stages_observed": 19200,
+  "step_count_exact": true,
+  "canonical_completed_lower_bound": 20429,
+  "canonical_attempted_upper_bound": 20429,
+  "PPO": 0,
+  "cloud_hours": 0,
+  "full_robot_steps": 0,
+  "timed_out": false,
+  "worker_exit_code": 0,
+  "source_and_inputs_unchanged": true,
+  "formal_physics_adoption": false,
+  "formal_task_migration": false,
+  "evidence": "/home/lx/microduck-double-balance/artifacts/double-balance-stage11/floor-rk-reference/20261004T152017Z"
+}
