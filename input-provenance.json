@@ -1,0 +1,96 @@
+{
+  "original_material": {
+    "zip_sha256": "d2c6cb2c788ee3b7020f6557dac1e0646940bebd43b290dc4b3f5c6e8110278d",
+    "zip_bytes_verified_on_laptop": true,
+    "artifact_commit": "51df1774385fec998b8a8e7f7dcfcde5f5a10a27",
+    "source_directory": "/home/lx/microduck-double-balance/artifacts/double-balance-stage11/physics/20261003T094423Z",
+    "files": {
+      "run-summary.json": {
+        "sha256": "43bfe8d1464f0ede799e3fb5d8962b7d0fdc387d495dde4fa7c9cadbca7a48cb",
+        "bytes": 1211
+      },
+      "local-v2/physics-review.json": {
+        "sha256": "4d5172e2d73827fe5437c9af418761671b3b0ae52b77ff7cb11eed03b251807b",
+        "bytes": 4673
+      },
+      "local-v2/material-fixture.mjb": {
+        "sha256": "e6cd330bddc3a29abf9ce4eca4f308a2680e4910405725e5ce054cb0a19d2da0",
+        "bytes": 3469516
+      },
+      "local-v2/material-options.json": {
+        "sha256": "d954d5bb86a74df05232642698a740521d5ed29ce73e477a078b86dff25fe942",
+        "bytes": 821
+      },
+      "local-v2/material-scope.json": {
+        "sha256": "a4dac57951af473e4fc932c4c1f39412f15bc6d54a317b19d97c44aec6729198",
+        "bytes": 328
+      },
+      "local-v2/cpu/release-y-minus12/states.npz": {
+        "sha256": "3b09484c63730b8f59819ed1941556b0279cfd62056b704f8df7cf4f92451766",
+        "bytes": 16812
+      },
+      "local-v2/cpu/release-y-minus12/contacts.jsonl.gz": {
+        "sha256": "f95e63b00fbfe12e6b6e5750c479a6381aedfb7fc17b661fad5057b262b78494",
+        "bytes": 52469
+      },
+      "local-v2/cpu/release-y-minus12/raw-contacts.jsonl.gz": {
+        "sha256": "b1ce32231db80d7c38ad0c616fdaa0ea37c30954e67c3ada5a412d64405f1cb2",
+        "bytes": 16567
+      },
+      "local-v2/material-cpu-release-y-minus12-BLOCKED.mp4": {
+        "sha256": "c55a11f706dc097e3103d6529d8601f010603d98505a2257313e186bef4b9335",
+        "bytes": 26488
+      }
+    }
+  },
+  "center_files": {
+    "local-v2/material-geometry.npz": {
+      "sha256": "b2b22ae8e2798b18b292bfc3c181475dde03e5f0030e93839f4447122fb1dcc5",
+      "bytes": 225030
+    },
+    "local-v2/cpu/release-center/initial.json": {
+      "sha256": "af0f68a4c0bba9172d1c8aa2d10fa0f816ffc096e94bb5946157ed3c2322b50c",
+      "bytes": 412
+    },
+    "local-v2/static-geometry.json": {
+      "sha256": "af40759baabbc89e76912570f6136598c70cd2e554d704eb94bac8061895d343",
+      "bytes": 53332
+    },
+    "local-v2/structure-inertia.json": {
+      "sha256": "dcc20358d3e45772a9ec483d1fbba4271412ff9b6596d698508a3c56796c828e",
+      "bytes": 5564
+    },
+    "local-v2/cpu/release-center/states.npz": {
+      "sha256": "c11ed01dc01e54684636280929cb8dd0dc123b26b02638938834097b9dd03ae4",
+      "bytes": 95785
+    },
+    "local-v2/cpu/release-center/summary.json": {
+      "sha256": "9bdd8829ef5cd4d18cc67569f461109c795e62ab1c3fd9538599b810591c2ae9",
+      "bytes": 651
+    },
+    "local-v2/cpu/release-center/contacts.jsonl.gz": {
+      "sha256": "433e91d7008fcf4b64c6e94ce1b87c0e94589e039d146bdcd49bb8a3fc851b4c",
+      "bytes": 236231
+    },
+    "local-v2/cpu/release-center/raw-contacts.jsonl.gz": {
+      "sha256": "e97ae5700e7246397e52bcb696bfac1cdf1ec76416af6f9e6448e55ee6415084",
+      "bytes": 68729
+    }
+  },
+  "CPU_replayed_steps": 0,
+  "historical_CPU_PASS_includes_floor_contacts": true,
+  "prior_cuda_checker_error_files": {
+    "diagnostic/preflight.json": {
+      "sha256": "d1eb0503988973940911eb7cacfddc5899215b078f53e13c009ca3bc0074dcfe",
+      "bytes": 3979
+    },
+    "diagnostic/diagnostic-review.json": {
+      "sha256": "34533ac4c1b9496fe95911ace280b2a9bd0ae2e5fd5b0695fbf9b5e0f71e7ed3",
+      "bytes": 4008
+    },
+    "run-summary.json": {
+      "sha256": "7ea085e56ac5241b33f93d06de875384c223d0bc2a12e3618da2fd37d68ebdc7",
+      "bytes": 9131
+    }
+  }
+}

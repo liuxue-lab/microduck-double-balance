@@ -1,0 +1,13 @@
+{
+  "status": "DESCRIPTIVE_BACKEND_COMPARISON_ONLY",
+  "common_nominal_step_samples": 283,
+  "recorded_prefix_s": 0.5640000000000001,
+  "max_position_difference_m": 6.782434730637941e-07,
+  "max_linear_velocity_difference_m_s": 6.168580101475586e-06,
+  "position_peak_step": 282,
+  "velocity_peak_step": 282,
+  "CPU_replayed_steps": 0,
+  "initial_position_upload_error_m": 6.3877144449904e-09,
+  "finest_floor_pair_gates_applied": false,
+  "limits": "Different backend/precision, no parity pass threshold adopted. Prefix may be floor-censored and cannot qualify a three-second case. Historical CPU full case included floor contacts."
+}
