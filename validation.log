@@ -1,0 +1,39 @@
+/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab/entity/entity.py:149: UserWarning: Actuator config matched 14 joint(s) but the same expressions also match 8 site(s): imu, left_foot, head_camera, tof, head_imu, mouth_tip, stage11_head_material_frame, right_foot. Add a separate config with transmission_type=TransmissionType.SITE if those should be actuated too.
+  self._add_actuators()
+[mdp] Patches 1-2 active: NaN-safe reward/advantage
+[mdp] Patch 4 active: ONNX export filters passive_* joints
+Warp 1.12.0 initialized:
+   CUDA Toolkit 12.9, Driver 13.2
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 5060 Laptop GPU" (8 GiB, sm_120, mempool enabled)
+   Kernel cache:
+     /home/lx/.cache/warp/1.12.0
+Module mujoco_warp._src.smooth 95a0b8b load on device 'cuda:0' took 4.19 ms  (cached)
+Module mujoco_warp._src.collision_driver 88f7770 load on device 'cuda:0' took 0.30 ms  (cached)
+Module _nxn_broadphase__locals__kernel_e73b1315 e73b131 load on device 'cuda:0' took 0.28 ms  (cached)
+Module ccd_kernel_builder__locals__ccd_kernel_c1d0c893 c1d0c89 load on device 'cuda:0' took 1.55 ms  (cached)
+Module ccd_kernel_builder__locals__ccd_kernel_079dfa94 079dfa9 load on device 'cuda:0' took 1.90 ms  (cached)
+Module _primitive_narrowphase__locals__primitive_narrowphase_02484c54 02484c5 load on device 'cuda:0' took 0.53 ms  (cached)
+Module mujoco_warp._src.constraint 27c5750 load on device 'cuda:0' took 1.22 ms  (cached)
+Module _efc_contact_init__locals__kernel_fda71e14 fda71e1 load on device 'cuda:0' took 0.34 ms  (cached)
+Module _efc_contact_jac_dense__locals__kernel_7974b597 cc0fc30 load on device 'cuda:0' took 0.34 ms  (cached)
+Module _efc_contact_update__locals__kernel_90315d53 90315d5 load on device 'cuda:0' took 0.35 ms  (cached)
+Module mujoco_warp._src.sensor 7fc0378 load on device 'cuda:0' took 2.27 ms  (cached)
+Module mujoco_warp._src.forward f60f76d load on device 'cuda:0' took 1.14 ms  (cached)
+Module mujoco_warp._src.passive 1a5e55c load on device 'cuda:0' took 0.66 ms  (cached)
+Module mujoco_warp._src.forward 8ebfcb1 load on device 'cuda:0' took 1.47 ms  (cached)
+Module mujoco_warp._src.support dd3f924 load on device 'cuda:0' took 0.32 ms  (cached)
+Module _tile_cholesky_factorize_solve__locals__cholesky_factorize_solve_37ca3f47 b319ac8 load on device 'cuda:0' took 26.32 ms  (cached)
+Module _tile_cholesky_factorize_solve__locals__cholesky_factorize_solve_b16bf393 b7e5d5f load on device 'cuda:0' took 25.57 ms  (cached)
+Module mujoco_warp._src.solver b116efb load on device 'cuda:0' took 1.27 ms  (cached)
+Module solve_init_jaref__locals__kernel_f7b9551f f7b9551 load on device 'cuda:0' took 0.33 ms  (cached)
+Module mul_m_dense__locals___mul_m_dense_09448261 0944826 load on device 'cuda:0' took 0.32 ms  (cached)
+Module update_constraint_efc__locals__kernel_32935e9d 32935e9 load on device 'cuda:0' took 0.32 ms  (cached)
+Module update_constraint_gauss_cost__locals__kernel_b303498c b303498 load on device 'cuda:0' took 0.34 ms  (cached)
+Module update_gradient_JTDAJ_dense_tiled__locals__kernel_d069c1b6 ac894ce load on device 'cuda:0' took 0.52 ms  (cached)
+Module update_gradient_cholesky__locals__kernel_5daa9511 fff2fc4 load on device 'cuda:0' took 27.13 ms  (cached)
+Module linesearch_iterative__locals__kernel_d27e7b14 78f565e load on device 'cuda:0' took 0.48 ms  (cached)
+Module update_constraint_efc__locals__kernel_3c1a9816 3c1a981 load on device 'cuda:0' took 0.33 ms  (cached)
+Module _contact_sort__locals__contact_sort_304c86df 6c97b35 load on device 'cuda:0' took 0.31 ms  (cached)
+Stage11TensorResult=STATIC_TENSOR_INTERFACE_REVIEW_REQUIRED

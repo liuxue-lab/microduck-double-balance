@@ -1,0 +1,30 @@
+{
+  "status": "STATIC_TENSOR_INTERFACE_REVIEW_REQUIRED",
+  "stage11_status": "MATERIAL_BLOCKED_REVIEW_REQUIRED",
+  "stage11_complete": false,
+  "new_integration_steps": 0,
+  "new_ppo_updates": 0,
+  "cloud_hours": 0,
+  "canonical_total_completed_steps": 7895,
+  "formal_task_migration": false,
+  "policy_success": null,
+  "prior_source_count": 12,
+  "stream_source_count": 3,
+  "tensor": {
+    "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "torch": "2.9.1+cu128",
+    "worlds": 2,
+    "forward_calls": 4,
+    "tensor_captures": 5,
+    "configured_samples": 8,
+    "retained_snapshots_unchanged": true,
+    "nondefault_torch_stream_tested": true,
+    "no_adapter_state_mutation": true,
+    "max_tensor_numpy_kinematic_error": 4.875211345733987e-12,
+    "full_manager_execution": false,
+    "native_sensor_cache_used": false,
+    "new_integration_steps": 0
+  },
+  "forbidden_integration_call_attempts": [],
+  "wall_seconds": 7.407564710000315
+}
