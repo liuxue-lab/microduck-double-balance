@@ -1,0 +1,90 @@
+{
+  "execution-finished.json": {
+    "sha256": "77230becd7d8a610c7cd1e1f8e521b86fb166d88fc95825b186b10a9aca456f7",
+    "bytes": 97
+  },
+  "execution-start.json": {
+    "sha256": "eed9b52ccb04757af29182f25004d78e69af7ae9ab09d7ab681810fd2296e488",
+    "bytes": 613
+  },
+  "execution.log": {
+    "sha256": "096e79c06a3d6111203679feba99b098d2d340f210a7350c759ed741f42809a5",
+    "bytes": 7837
+  },
+  "git-after.json": {
+    "sha256": "371089bf77206415941069656fb096f760d47720d3e81ecfa0a1ea7ca32ab2f7",
+    "bytes": 299
+  },
+  "git-before.json": {
+    "sha256": "371089bf77206415941069656fb096f760d47720d3e81ecfa0a1ea7ca32ab2f7",
+    "bytes": 299
+  },
+  "installed-files.json": {
+    "sha256": "03552044094b9e1f1258f4bb3ad281245dc57b851c899fc71936059adea4f335",
+    "bytes": 298
+  },
+  "launcher.py": {
+    "sha256": "fa743f0cff14e3d0a67c16f56338b964587144a965bbbe94c5b786c7b28643ae",
+    "bytes": 68934
+  },
+  "microduck-stage11-bam-memory-boundary-r2.bundle": {
+    "sha256": "fff017837d68bf0f4049e27aad5cb95d9a51b3a10910d0a87f125f1553177974",
+    "bytes": 27719
+  },
+  "old-source-manifest.json": {
+    "sha256": "54a8cebfc075f0bb052715559fe8df890de3f8ba1d3fe6e24ebc172973f4e8ec",
+    "bytes": 33062
+  },
+  "package-manifest.json": {
+    "sha256": "352a43e2acf078abcdbe85f0bc496ea6a81aee2516043864a45a549d0280744f",
+    "bytes": 1599
+  },
+  "probe/error.txt": {
+    "sha256": "c664637f31d5a7b5d29cd437e02f4e1330f94c711488aac7b3a25259c29068d6",
+    "bytes": 865
+  },
+  "probe/initialization-scope.json": {
+    "sha256": "3b9b1bbf3a5e4c31c014cd2c993ad328ddd1087362b40ac9c5e13ec1b5c97998",
+    "bytes": 2694
+  },
+  "probe/progress.json": {
+    "sha256": "d18054a16ec9fb5d407c828064c736656214e4282b919343d8a3ae3afac5ac0f",
+    "bytes": 366
+  },
+  "probe/run-review.json": {
+    "sha256": "3f4b851baf6eb520b236866ee7c92f1fbd0e43393b62e2d1c63be5a7546da460",
+    "bytes": 3968
+  },
+  "probe/source-hashes.json": {
+    "sha256": "216263cbc5f6aea706f28861c7e2dd1685cba2928147b8a7bbabe71409adda13",
+    "bytes": 7439
+  },
+  "run-summary.json": {
+    "sha256": "1e2c7fbd077fa860e9edf3c5345b9968096736c02c0464add039f3f76e724df7",
+    "bytes": 1152
+  },
+  "source/docs/audits/stage-11-bam-memory-boundary-r2-plan.json": {
+    "sha256": "7850ab44de35d89f1bbbbc9f73607965f0e827e47a83ea1efba48375f463defd",
+    "bytes": 6726
+  },
+  "source/docs/audits/stage-11-bam-memory-boundary-return-review.json": {
+    "sha256": "981135a27420a8f2349f5a6e9bc8aced122c07d7e895f1811f8dd1c07eff5717",
+    "bytes": 1409
+  },
+  "source/docs/handoffs/microduck-stage-11-bam-memory-boundary-r2-handoff.md": {
+    "sha256": "a84343fe7e7d3e335cb3f2b6d115496de0ba1c700ef7fd9e1e1c9c62c7ac1e79",
+    "bytes": 9033
+  },
+  "source/scripts/probe_head_contact_bam_boundary_r2.py": {
+    "sha256": "f447c8292ce5f6717f57861430fb57d1bb1538713177fe42f89c133fae4d3949",
+    "bytes": 23414
+  },
+  "source/tests/test_head_contact_bam_boundary_r2.py": {
+    "sha256": "d21e08d9a4c22619182313a964f6fc390fd911c21da8dfb4d5b2c195d3682e58",
+    "bytes": 6406
+  },
+  "tests.log": {
+    "sha256": "7d1461f08534b948438fb941919fd98874513233d01f311956b60134240b8417",
+    "bytes": 102
+  }
+}
