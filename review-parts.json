@@ -1,0 +1,68 @@
+{
+  "format": "raw-byte-concatenation-in-order",
+  "archive": "review.zip",
+  "archive_bytes": 7516164,
+  "archive_sha256": "90857d3ff1e234f9185c5a94586e2cd931f81ea15648d48f27be9f1a6fdeed47",
+  "parts": [
+    {
+      "name": "review.part-001.bin",
+      "offset": 0,
+      "bytes": 786432,
+      "sha256": "fa23efb6c4a5049b1b0fc47c677cb1298b4a27b4c495de3cb16f4332c078fe95"
+    },
+    {
+      "name": "review.part-002.bin",
+      "offset": 786432,
+      "bytes": 786432,
+      "sha256": "2dcf3788b722f0c6b5982d01f884274547298423d4e9630ee5ead9d41f5fa9ad"
+    },
+    {
+      "name": "review.part-003.bin",
+      "offset": 1572864,
+      "bytes": 786432,
+      "sha256": "9db0ed09b42d4ecf65d4d898857aaa98650ed2c3c9f6c5cb93e7fbe5672a4b64"
+    },
+    {
+      "name": "review.part-004.bin",
+      "offset": 2359296,
+      "bytes": 786432,
+      "sha256": "f032f52766f65bddc84e71d6ccc61fed2ed3799b3b9ac0e2e16fd17d18bc9e87"
+    },
+    {
+      "name": "review.part-005.bin",
+      "offset": 3145728,
+      "bytes": 786432,
+      "sha256": "a09ab63220b046f64847aa13719020d51e949d67a4d79195ecc38faf77de70ee"
+    },
+    {
+      "name": "review.part-006.bin",
+      "offset": 3932160,
+      "bytes": 786432,
+      "sha256": "3bd1099a8d1196927bc78562eefefdca658870067be45d2cb3783923a9a07f1f"
+    },
+    {
+      "name": "review.part-007.bin",
+      "offset": 4718592,
+      "bytes": 786432,
+      "sha256": "284a96ab16934e993f61f78b5bfb0171ade26da32e099a99488aee115530447f"
+    },
+    {
+      "name": "review.part-008.bin",
+      "offset": 5505024,
+      "bytes": 786432,
+      "sha256": "61b659cde3aba7c73bc7496aafe97109f1d27c0a9613f4256f554abab9463237"
+    },
+    {
+      "name": "review.part-009.bin",
+      "offset": 6291456,
+      "bytes": 786432,
+      "sha256": "9764055d5f6a84aec7028ac6eb4315ce896b6c75a3c01ba08b89c6cd450fe146"
+    },
+    {
+      "name": "review.part-010.bin",
+      "offset": 7077888,
+      "bytes": 438276,
+      "sha256": "f9c95f4e7975144ce136d0e82bc49ea0a2a9e7b4275d77628c98331dba37c017"
+    }
+  ]
+}

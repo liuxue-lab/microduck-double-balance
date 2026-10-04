@@ -1,0 +1,18 @@
+test_changed_distance_witness_and_bad_normal_refused (test_head_contact_native_witness_runtime_v2.Tests.test_changed_distance_witness_and_bad_normal_refused) ... ok
+test_contact_presence_and_order_refused (test_head_contact_native_witness_runtime_v2.Tests.test_contact_presence_and_order_refused) ... ok
+test_declared_case_wall_and_step_budgets (test_head_contact_native_witness_runtime_v2.Tests.test_declared_case_wall_and_step_budgets) ... ok
+test_five_forward_states_required (test_head_contact_native_witness_runtime_v2.Tests.test_five_forward_states_required) ... ok
+test_floor_endpoints_continue_but_other_errors_stop (test_head_contact_native_witness_runtime_v2.Tests.test_floor_endpoints_continue_but_other_errors_stop) ... ok
+test_inflight_attempt_stops_batch_and_preserves_count (test_head_contact_native_witness_runtime_v2.Tests.test_inflight_attempt_stops_batch_and_preserves_count) ... ok
+test_kernel_uses_one_native_ccd_no_recomputed_gjk (test_head_contact_native_witness_runtime_v2.Tests.test_kernel_uses_one_native_ccd_no_recomputed_gjk) ... ok
+test_live_native_mismatch_refused (test_head_contact_native_witness_runtime_v2.Tests.test_live_native_mismatch_refused) ... ok
+test_native_forward_source_sequence_identical_except_hook (test_head_contact_native_witness_runtime_v2.Tests.test_native_forward_source_sequence_identical_except_hook) ... ok
+test_no_contact_preserved (test_head_contact_native_witness_runtime_v2.Tests.test_no_contact_preserved) ... ok
+test_passthrough_force_change_not_ignored (test_head_contact_native_witness_runtime_v2.Tests.test_passthrough_force_change_not_ignored) ... ok
+test_saved_cuda_bad_normal_fixed_without_distance_change (test_head_contact_native_witness_runtime_v2.Tests.test_saved_cuda_bad_normal_fixed_without_distance_change) ... ok
+test_twelve_pair_scope_refused_if_incomplete (test_head_contact_native_witness_runtime_v2.Tests.test_twelve_pair_scope_refused_if_incomplete) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.669s
+
+OK
