@@ -1,0 +1,40 @@
+{
+  "status": "DESCRIPTIVE_BACKEND_COMPARISON_ONLY",
+  "cases": [
+    {
+      "case": "slide-x-plus",
+      "status": "DESCRIPTIVE_ONLY_NO_PARITY_PASS_GATE",
+      "common_nominal_step_samples": 321,
+      "common_prefix_s": 0.64,
+      "CPU_status": "FLOOR_PENETRATION_BLOCKED",
+      "GPU_status": "FLOOR_PENETRATION_BLOCKED",
+      "CPU_steps": 320,
+      "GPU_steps": 320,
+      "max_position_difference_m": 2.8655495944744965e-06,
+      "max_linear_velocity_difference_m_s": 1.384392817697919e-05,
+      "initial_upload_position_error_m": 6.3877144449904e-09,
+      "contact_presence_different_steps_in_common_prefix": [],
+      "CPU_replayed_steps": 0,
+      "floor_or_head_contact_intervals_are_sampled_not_continuous_retention": true
+    },
+    {
+      "case": "slide-x-minus",
+      "status": "DESCRIPTIVE_ONLY_NO_PARITY_PASS_GATE",
+      "common_nominal_step_samples": 52,
+      "common_prefix_s": 0.10200000000000001,
+      "CPU_status": "FLOOR_EVENT_CENSORED",
+      "GPU_status": "CUDA_FRICTION_ERROR_STOP_REVIEW_REQUIRED",
+      "CPU_steps": 252,
+      "GPU_steps": 51,
+      "max_position_difference_m": 1.218720710420818e-05,
+      "max_linear_velocity_difference_m_s": 0.006092229619983606,
+      "initial_upload_position_error_m": 6.3877144449904e-09,
+      "contact_presence_different_steps_in_common_prefix": [
+        50
+      ],
+      "CPU_replayed_steps": 0,
+      "floor_or_head_contact_intervals_are_sampled_not_continuous_retention": true
+    }
+  ],
+  "no_floor_convergence_or_policy_acceptance_claim": true
+}

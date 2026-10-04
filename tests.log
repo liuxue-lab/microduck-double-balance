@@ -1,0 +1,43 @@
+test_bad_clock_capacity_nonfinite_stop_after_one_return (test_head_contact_cuda_friction.Guards.test_bad_clock_capacity_nonfinite_stop_after_one_return) ... ok
+test_batch_global_deadline_blocks_next_case (test_head_contact_cuda_friction.Guards.test_batch_global_deadline_blocks_next_case) ... ok
+test_capture_advance_stops_without_authorizing_launch (test_head_contact_cuda_friction.Guards.test_capture_advance_stops_without_authorizing_launch) ... ok
+test_capture_constructor_failure_preserves_uncertainty (test_head_contact_cuda_friction.Guards.test_capture_constructor_failure_preserves_uncertainty) ... ok
+test_center_extra_or_reordered_case_rejected_before_any_launch (test_head_contact_cuda_friction.Guards.test_center_extra_or_reordered_case_rejected_before_any_launch) ... ok
+test_complete_mock_horizon_is_not_policy_success (test_head_contact_cuda_friction.Guards.test_complete_mock_horizon_is_not_policy_success) ... slide-x-plus CUDA returned=1/1500
+slide-x-plus CUDA returned=101/1500
+slide-x-plus CUDA returned=201/1500
+slide-x-plus CUDA returned=301/1500
+slide-x-plus CUDA returned=401/1500
+slide-x-plus CUDA returned=501/1500
+slide-x-plus CUDA returned=601/1500
+slide-x-plus CUDA returned=701/1500
+slide-x-plus CUDA returned=801/1500
+slide-x-plus CUDA returned=901/1500
+slide-x-plus CUDA returned=1001/1500
+slide-x-plus CUDA returned=1101/1500
+slide-x-plus CUDA returned=1201/1500
+slide-x-plus CUDA returned=1301/1500
+slide-x-plus CUDA returned=1401/1500
+ok
+test_deadline_prevents_first_launch (test_head_contact_cuda_friction.Guards.test_deadline_prevents_first_launch) ... ok
+test_descriptive_backend_comparison_truncates_to_shorter_record (test_head_contact_cuda_friction.Guards.test_descriptive_backend_comparison_truncates_to_shorter_record) ... ok
+test_exact_single_case_budget (test_head_contact_cuda_friction.Guards.test_exact_single_case_budget) ... ok
+test_flat_and_matrix_frames_have_identical_analysis (test_head_contact_cuda_friction.Guards.test_flat_and_matrix_frames_have_identical_analysis) ... ok
+test_float32_clock_is_counted_without_changing_nominal_timestep (test_head_contact_cuda_friction.Guards.test_float32_clock_is_counted_without_changing_nominal_timestep) ... ok
+test_floor_arrival_censors_and_does_not_qualify_horizon (test_head_contact_cuda_friction.Guards.test_floor_arrival_censors_and_does_not_qualify_horizon) ... ok
+test_floor_penetration_remains_blocked (test_head_contact_cuda_friction.Guards.test_floor_penetration_remains_blocked) ... ok
+test_geometry_and_material_gates_unchanged (test_head_contact_cuda_friction.Guards.test_geometry_and_material_gates_unchanged) ... ok
+test_head_or_unknown_error_stops_whole_batch (test_head_contact_cuda_friction.Guards.test_head_or_unknown_error_stops_whole_batch) ... ok
+test_launch_failure_preserves_attempt_uncertainty (test_head_contact_cuda_friction.Guards.test_launch_failure_preserves_attempt_uncertainty) ... ok
+test_nonfinite_any_axis_or_shape_is_rejected (test_head_contact_cuda_friction.Guards.test_nonfinite_any_axis_or_shape_is_rejected) ... ok
+test_only_local_5060_allowed (test_head_contact_cuda_friction.Guards.test_only_local_5060_allowed) ... ok
+test_real_first_contact_geometry_failure_still_stops (test_head_contact_cuda_friction.Guards.test_real_first_contact_geometry_failure_still_stops) ... ok
+test_real_matrix_frame_regression_and_unmocked_accumulation (test_head_contact_cuda_friction.Guards.test_real_matrix_frame_regression_and_unmocked_accumulation) ... ok
+test_six_floor_endpoints_may_advance_but_are_never_horizon_passes (test_head_contact_cuda_friction.Guards.test_six_floor_endpoints_may_advance_but_are_never_horizon_passes) ... ok
+test_total_budget_and_no_extra_cases (test_head_contact_cuda_friction.Guards.test_total_budget_and_no_extra_cases) ... ok
+test_video_selection_is_saved_and_bounded (test_head_contact_cuda_friction.Guards.test_video_selection_is_saved_and_bounded) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.435s
+
+OK

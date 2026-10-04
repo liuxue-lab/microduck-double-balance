@@ -1,0 +1,367 @@
+{
+  "src/mjlab_microduck/robot/head_contact.py": {
+    "sha256": "8a2446aa27d8e420e6e26e5e9985ab24cb774036936f393de680857edfd0af64",
+    "bytes": 10737,
+    "git_blob": "1b441b6257bed947feeba50d40f8f7b31ceaba82"
+  },
+  "scripts/validate_head_contact_physics.py": {
+    "sha256": "d5f88ffc2a65c3d98a6714d8aa67b8bffe8144f81be6e1d1fd6d89dcb908067c",
+    "bytes": 36710,
+    "git_blob": "73beb574e6d882dc49201da64e86f8d6343ddaf5"
+  },
+  "tests/test_head_contact_physics.py": {
+    "sha256": "629bbfc12941bee6fe3c3be966d7db5b62756590478f1eef1387bfbffb798f20",
+    "bytes": 8631,
+    "git_blob": "1c8af244f19ac4205d974c39ad4c343587968a68"
+  },
+  "docs/audits/stage-11-physics-plan.json": {
+    "sha256": "3c9524e77f0a9f1ab434b27f80cafa4a2f7fa980613ae54ab3e6341606944d25",
+    "bytes": 6805,
+    "git_blob": "9c2f3583cdae1455af0242374a312936ec921b05"
+  },
+  "docs/audits/stage-11-physics-review.json": {
+    "sha256": "00e92de5ec793b3ac9e4d5a6f6b7b16074810968138be77a71d6ae3014486836",
+    "bytes": 57293,
+    "git_blob": "69a42baabdcd61443d63d030da49a78fa277fc94"
+  },
+  "docs/handoffs/microduck-stage-11-head-contact-physics-handoff.md": {
+    "sha256": "3f5a648870b6a5013403a6281aacbae44d3bffd9d6691101fa691c65ceeb89f9",
+    "bytes": 100912,
+    "git_blob": "3e8eda9487cf7f811138cca43548d75e8518041d"
+  },
+  "docs/audits/stage-11-local-static-review.json": {
+    "sha256": "3e1c325a281d9940640c36b28cb73639b88f3955b588d88867495d16dbc4712c",
+    "bytes": 29799,
+    "git_blob": "c57433cd2db63e8da0ecda7519ceec32bf1109de"
+  },
+  "docs/audits/stage-11-geometry-gate-v2-review.json": {
+    "sha256": "cba358453cbb4c2c696d35667a4b8bc8f867e613cd855e5786b7c3acc305b583",
+    "bytes": 13727,
+    "git_blob": "4d1b37280784546531eb279b8234556a7b7237d2"
+  },
+  "scripts/diagnose_head_contact_floor_impact.py": {
+    "sha256": "130dee8548e9a1127380162254d6a2d70bf710e30622927bafc5bdefe7d620a7",
+    "bytes": 21259,
+    "git_blob": "7556a953e87191a8d995a78f17c8705fa21e7b6e"
+  },
+  "tests/test_head_contact_floor_impact.py": {
+    "sha256": "1b9db0b498d3493728a1927086acf4cd45694d9f64bf571a8c5ada6cc07e7d89",
+    "bytes": 8554,
+    "git_blob": "2012a5d1ca12a7ca3be151073ef20bdba965dee7"
+  },
+  "docs/audits/stage-11-floor-impact-diagnostic-plan.json": {
+    "sha256": "96127873cc78d3590ff0825f571665b95238713e4a9293ad9856d15b5dfc34ff",
+    "bytes": 5191,
+    "git_blob": "3d10c96e2f77e594446bfcd8651753dff195feb7"
+  },
+  "docs/audits/stage-11-local-material-review.json": {
+    "sha256": "6931a7e15e55c755626fbea9a7f0dd797017d0c13fc85b9a05da12af07d78a03",
+    "bytes": 8910,
+    "git_blob": "e46a2d9fcb5993a7823e5bab35b8d6fccd56b2bb"
+  },
+  "scripts/diagnose_head_contact_floor_stiffness.py": {
+    "sha256": "e2f52491480582fbdd754fc18a5e5a5b86e7a59b01afa97d6e34327c8163b54a",
+    "bytes": 20849,
+    "git_blob": "2f4e1685494315a119a3b0969ba66b650f5e62da"
+  },
+  "tests/test_head_contact_floor_stiffness.py": {
+    "sha256": "03de1fecaefab453645c6655f0eafef8e53209e0bffeb9d5867733ac92b4afeb",
+    "bytes": 11156,
+    "git_blob": "ac3aef3c0db3a41d3991ae851c0357987422b98b"
+  },
+  "docs/audits/stage-11-floor-stiffness-plan.json": {
+    "sha256": "7e5d8e2e2a9840b9deaf0a0ec9304003b705e68dc01da1a4fbcbd122b7fba836",
+    "bytes": 4654,
+    "git_blob": "6a1fd92a829307d3bd9ac985b5c5805dc1d4175c"
+  },
+  "docs/audits/stage-11-floor-impact-review.json": {
+    "sha256": "65208aa3d18a47d4f41bbad167e522251be9b2c9c40a3e18f2d29bc5fd0c3246",
+    "bytes": 11824,
+    "git_blob": "720a775a73ab28f7d1a857a0e9fd0f01f51723b9"
+  },
+  "scripts/diagnose_head_contact_floor_refinement.py": {
+    "sha256": "7e4005e965e2ff725b29534221689c719eab6299441874b298c28bbb9560abab",
+    "bytes": 22483,
+    "git_blob": "f22086c565a3444adb780ad7ef489188adb62242"
+  },
+  "tests/test_head_contact_floor_refinement.py": {
+    "sha256": "445209c4b66d30bf8620b1841e373f17f26d75874ca7c8f888970e59e0b1faec",
+    "bytes": 13913,
+    "git_blob": "f07bad1e947b19b155bc266b75561fd111dd1b2f"
+  },
+  "docs/audits/stage-11-floor-refinement-plan.json": {
+    "sha256": "21390af021423e5a81419d34948f61b34e40a0701fa7504a538fc50388ccd3b5",
+    "bytes": 5335,
+    "git_blob": "8a9a5efae24863575e67e219cd45458a083a9d08"
+  },
+  "docs/audits/stage-11-floor-stiffness-review.json": {
+    "sha256": "e43f912a44a145a952963283d681cbf8d97c69bb6e6065829a5f8b4d0ad5bfa8",
+    "bytes": 13579,
+    "git_blob": "7fb72f0a6dd7d63e84e2056beb1e856c34310b15"
+  },
+  "scripts/diagnose_head_contact_friction.py": {
+    "sha256": "e787f4e68ae20880b2f619dd80b01d80363308bc356b6f434e29b0f4739a9794",
+    "bytes": 31525,
+    "git_blob": "b8dc7aa7f3352191c8a1c97bd0ad8a7067bee620"
+  },
+  "tests/test_head_contact_friction.py": {
+    "sha256": "da00d546cecb68a95a9711202855419efa6dd85878187252e4a0ff5afa3c1ad3",
+    "bytes": 14038,
+    "git_blob": "6c52cf1c8b5ad12c75a53bde96f43d7c0a9fad5c"
+  },
+  "docs/audits/stage-11-floor-refinement-review.json": {
+    "sha256": "14a67e85f4019e64198b0e5e681536cfaf725bbbacaae55893cb30cd341c2480",
+    "bytes": 19599,
+    "git_blob": "46354fe4f84c6cc90b839e39f4d5eb7bd0c590e5"
+  },
+  "docs/audits/stage-11-head-friction-plan.json": {
+    "sha256": "e48e9194ab3fb4f38af9e61cd0774fec25c3a9a1eaf35f0adb8deb47e9c4806e",
+    "bytes": 8109,
+    "git_blob": "271491d84972fe8017ddaed15cf2ca117e44583e"
+  },
+  "scripts/audit_head_contact_reference.py": {
+    "sha256": "02d3986d022fafa0340cf4ea29e4a694180198e68dc179ebd00455de90003a5f",
+    "bytes": 17926,
+    "git_blob": "00c8c21c656eedec79e956c0969cc54b07bfdbfe"
+  },
+  "tests/test_head_contact_reference.py": {
+    "sha256": "7eadfaa20be701c5cb78a7491067941c77a71b4b1aa5b76f28e2878ed10a70bf",
+    "bytes": 6820,
+    "git_blob": "c3dfd7e5b71aa6b01d5982b064386712babe5a84"
+  },
+  "docs/audits/stage-11-head-friction-review.json": {
+    "sha256": "63ff72c800d99a2cf65c9719d3e4705a28ad9717e348c1816b0c769dc769402d",
+    "bytes": 58247,
+    "git_blob": "9f8d88bad11bad7ad455bf3a31e827ff78a82cad"
+  },
+  "docs/audits/stage-11-head-reference-design.json": {
+    "sha256": "7f90953889c6df1523b2b0cef9169d11faf259eab0749d1cde09317cb13838e1",
+    "bytes": 5159,
+    "git_blob": "dba8ced624ed106076ca1668fc32a40e5c251f57"
+  },
+  "src/mjlab_microduck/tasks/mdp.py": {
+    "sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76",
+    "bytes": 381890,
+    "git_blob": "9484851cf14061495189ae09516f7759c69ec6dd"
+  },
+  "src/mjlab_microduck/robot/head_reference.py": {
+    "sha256": "375250301733debee431dbd460f4dc197a9adfcb1b599c30465168ab9a070a4a",
+    "bytes": 1425,
+    "git_blob": "c66c97a202d8fc5c676f28b7a2960f46e6b9c587"
+  },
+  "src/mjlab_microduck/tasks/microduck_head_contact_env_cfg.py": {
+    "sha256": "e4b1b6e27680e4d2a7410bcff295a78988b0274fa21555bf1e4944dfe6b86a47",
+    "bytes": 2828,
+    "git_blob": "72030bedc6b752f248a664bbbe46609b83246e77"
+  },
+  "scripts/audit_head_task_prototype.py": {
+    "sha256": "945c6a04c07bcea8b95189c270772c272206e041163289e634fdb1871597b60d",
+    "bytes": 17050,
+    "git_blob": "7bdb1667cd0e216aa18e4649f792b49899b28524"
+  },
+  "tests/test_head_task_prototype.py": {
+    "sha256": "fc9f7c52366810a171e6090f33f6d1d74cc70546e3bb3096e39ca4689cead26a",
+    "bytes": 5059,
+    "git_blob": "923cb707a382bdafbe04a4f29dc74353abfea41b"
+  },
+  "docs/audits/stage-11-head-reference-review.json": {
+    "sha256": "82f3aeaec15fe0a13d4b21d7976c2c2f0ff628c7cf58192e53a74bd8a763c8ad",
+    "bytes": 5808,
+    "git_blob": "0114209a366565e758200f21c11c0d74f65cbd08"
+  },
+  "docs/audits/stage-11-head-task-prototype-contract.json": {
+    "sha256": "898c13f9d139f1e9484fa4e47c1e1f32f2de53705f262ca0a7d2df040badd52b",
+    "bytes": 6330,
+    "git_blob": "badade751f7fd2d042885ab3c074caa1b89a46a6"
+  },
+  "scripts/analyze_head_contact_support.py": {
+    "sha256": "acf8635a542f5148ed890f26a034ec0c2ef5c7a6ef4e942235f52184478217ca",
+    "bytes": 13997,
+    "git_blob": "520582191f0616d73fce95b52bcc3c0b063b85b7"
+  },
+  "tests/test_head_contact_support.py": {
+    "sha256": "e1966dad446e1de1becdd7b5081584356dd425c54961136ed55041ae7d00e4ff",
+    "bytes": 4428,
+    "git_blob": "6f4ee3962604f7c30fa121a6d900f0c4e4eac4bc"
+  },
+  "docs/audits/stage-11-head-prototype-review.json": {
+    "sha256": "981e82b0a3a99b1770d22d25c630cf60c0d51f0528143b02f69cb8fe1e1174c5",
+    "bytes": 2706,
+    "git_blob": "b29444bddc2bf1041450054762842bc7bcfdba94"
+  },
+  "docs/audits/stage-11-head-support-review.json": {
+    "sha256": "8f72c19771196c4c16607c74a5455dda73c39611139bcaaeeaba57a9925279c2",
+    "bytes": 9404,
+    "git_blob": "749a7b9f52949f664dfaf029fcad9d6b9e0090a2"
+  },
+  "scripts/audit_head_contact_interface.py": {
+    "sha256": "9722e5cbaa8fc261328d2e93fefd66aed8aace165b387958e30591d85173a525",
+    "bytes": 20107,
+    "git_blob": "4ebddae11d417d4d4fc56011d9005ef2f16f8000"
+  },
+  "tests/test_head_contact_interface.py": {
+    "sha256": "390ea9c7f9006331031fa632887466c1e1eabbf72a8bb8fc227ef7c8c0841ec9",
+    "bytes": 5115,
+    "git_blob": "29089aec8afdd714b9c8bee4eba58e564a14df0c"
+  },
+  "docs/audits/stage-11-head-interface-contract.json": {
+    "sha256": "a33013b71d014275a8ce6cf797e6e191da99c70088dde223ef4d250f2d21244c",
+    "bytes": 6993,
+    "git_blob": "82535f836cbd9d439bb419c2d5e171eaa25b01fd"
+  },
+  "docs/audits/stage-11-head-support-return-review.json": {
+    "sha256": "726d35fc32353f7c2fb7a23bed032be15d4707e2797970153453685af4f6656e",
+    "bytes": 1674,
+    "git_blob": "43f2bec9c9d8598b449b33b1663a61ad7b4d7e9e"
+  },
+  "scripts/audit_head_contact_tensor.py": {
+    "sha256": "0aec3435f4e4d8c901c2a33fbaf1de7882afcc9f25695aa1091f761310fde3ab",
+    "bytes": 11882,
+    "git_blob": "ed4ab79d29deaadfa1bcc6e6a009409585eb983d"
+  },
+  "tests/test_head_contact_tensor.py": {
+    "sha256": "dbd4467769979a6358d67779f5e4fbfd52ec45463eb6d27e97e76027e3a54cbd",
+    "bytes": 5729,
+    "git_blob": "6f448b62da618b32b72e02d56d2e984bf33332c1"
+  },
+  "docs/audits/stage-11-head-tensor-contract.json": {
+    "sha256": "d5d559938ed3338be8afe497f3f34204fe90fac9e3de15f946b487d9f5296b0d",
+    "bytes": 4573,
+    "git_blob": "0145e1f917a62193c28f2d2cce5cbee4a675a693"
+  },
+  "docs/audits/stage-11-head-interface-return-review.json": {
+    "sha256": "67ca5c421c454e01d05f9735d25ee45e5928171d9f0a94b5db1042a0e509b74c",
+    "bytes": 1248,
+    "git_blob": "f458f5ad6cdde6bcddaedb29196439820cefc43d"
+  },
+  "scripts/audit_head_contact_reset.py": {
+    "sha256": "e4575cb7c3be3b206296f7e9c70f151389c019df7666966039223453dd7340a4",
+    "bytes": 19129,
+    "git_blob": "8743ceff0b017e26edc2f261e52feabe77ab8065"
+  },
+  "tests/test_head_contact_reset.py": {
+    "sha256": "3b3d9f8c886fba826f54937940d2a0cc6013feae803795ea2faf4d985c64ac49",
+    "bytes": 5206,
+    "git_blob": "d2eebaedea1389f5b70525c65ff9f7e5b06e20ac"
+  },
+  "docs/audits/stage-11-head-reset-contract.json": {
+    "sha256": "a19571b6677b7f28ccbf28b3150c1e788b55429f0faec92da17ec18646600e4e",
+    "bytes": 6140,
+    "git_blob": "25e2a6410adececb043127d1ddf546d1047b6deb"
+  },
+  "docs/audits/stage-11-head-tensor-return-review.json": {
+    "sha256": "d280b42ea3cdfe15772d78236dfee2a33c6b46b6ee271d13ce867cb07049de8f",
+    "bytes": 2555,
+    "git_blob": "88ad4ccb9baf7f3555c14f4da2d2dbc0f771dbcf"
+  },
+  "docs/audits/stage-11-head-reset-return-review.json": {
+    "sha256": "bee1249c3c170593be0dab843f802284236b7b9ef068081c0b6d857102076b3b",
+    "bytes": 1944,
+    "git_blob": "58e45b9c580fb0bede7307db91b10f928ee349af"
+  },
+  "docs/audits/stage-11-crown-sections-review.json": {
+    "sha256": "c42cdb387124e365c2a099656c3943bede73df0cc461d2e75beff96428baa156",
+    "bytes": 7069,
+    "git_blob": "88380e9e7b1e5d250ea4826224ee7c731e8fa7a2"
+  },
+  "docs/audits/stage-11-floor-first-step-review.json": {
+    "sha256": "2daef2cfe2fb5092a61555a56add21654d089b090189f696afb280b7ab4b116f",
+    "bytes": 6187,
+    "git_blob": "f5ce70824fe6776cd860c24aeebbeb2bedaee9b5"
+  },
+  "docs/audits/stage-11-floor-reference-plan.json": {
+    "sha256": "671eccd5342a9935c8c5b323e9a10dcc3597544e88d1fb1eb64e5ce8f72cd973",
+    "bytes": 11607,
+    "git_blob": "edcb0a66bfba1e04684322824b2248e93ffeabe7"
+  },
+  "docs/audits/stage-11-head-reset-v2-return-review.json": {
+    "sha256": "22383100d93de348aea5bab666b9c38a2fc80a906b796eceffd2d8946bd1f42f",
+    "bytes": 3379,
+    "git_blob": "3a23174c30aaded89c099053b7c19de067841f6f"
+  },
+  "docs/audits/stage-11-head-support-wrench-review.json": {
+    "sha256": "7caf58e11e9ba2c722537c7ca41d1832a1291006f7672370118e58e928ddf8e3",
+    "bytes": 14310,
+    "git_blob": "70457049d68510ddda3b9f16f59dd53c7d1086ba"
+  },
+  "docs/audits/stage-11-next-floor-reference-scope.json": {
+    "sha256": "d4be13d3daa6566691a7135f9848a3ad5f2a333f59bb286a41dc51a574563a9f",
+    "bytes": 5012,
+    "git_blob": "bc27a720b4358a43e1d35e85f1297314801a222f"
+  },
+  "docs/handoffs/microduck-stage-11-crown-and-floor-first-step-handoff.md": {
+    "sha256": "1a88f9a521b4bcae9a09fd826284dd5de2b2a0f1a45f21c8904001caaffd1736",
+    "bytes": 7042,
+    "git_blob": "f8375473be5ef5623278c911aac39e7cd2aa8575"
+  },
+  "docs/handoffs/microduck-stage-11-reset-v2-and-mechanics-handoff.md": {
+    "sha256": "f2981961dcaae794c3c9e49f5c6ca30a6a676af6e7c018c56670ba814951407b",
+    "bytes": 8131,
+    "git_blob": "675c5e75bcdf7f30a4c5d71b78b2a040c7df0908"
+  },
+  "scripts/diagnose_head_contact_floor_reference.py": {
+    "sha256": "1bbf87ac3e1d25e27107e155406e94149ffa14b969e794b8965c44a9a3add703",
+    "bytes": 26118,
+    "git_blob": "447c88785c77946066ac4ef68534b76f37cd18f8"
+  },
+  "tests/test_head_contact_floor_reference.py": {
+    "sha256": "ca6458bfe5540b654c247b6d9746a4ea1d9135f16708348414866bd267ef18db",
+    "bytes": 17213,
+    "git_blob": "705585957bc530269c2c943d1d4dd2bb4cc7daaa"
+  },
+  "docs/audits/stage-11-cuda-center-plan.json": {
+    "sha256": "96e2835aa00eba3f53b49d37293ac4ce5a4f0d61e21ddfdcc58ceee55be24898",
+    "bytes": 12172,
+    "git_blob": "84c630057d5ba11310fbd354d7e6626ccce49934"
+  },
+  "docs/audits/stage-11-floor-reference-review.json": {
+    "sha256": "41d6e13838977be2d4b83f82471ee53e0c39d5ddbbc083962c686cf9de935220",
+    "bytes": 19580,
+    "git_blob": "9360b146898ae03a9f5046b7b02c7986570048b3"
+  },
+  "scripts/diagnose_head_contact_cuda_center.py": {
+    "sha256": "536baaa08c2c6c7ed67247049650c5f90ad19868ab3d2d5962d12db78f0e91bb",
+    "bytes": 17167,
+    "git_blob": "1c4dc8ec3615378162c13c555386524c99ce3eb3"
+  },
+  "tests/test_head_contact_cuda_center.py": {
+    "sha256": "cc96c85092433325cd131befc9dac268d97cf4165a036ac08474e29ec1a34c78",
+    "bytes": 8830,
+    "git_blob": "f3b339b1af07872168379b43d1a366ce39ef2907"
+  },
+  "docs/audits/stage-11-cuda-center-return-review.json": {
+    "sha256": "b1fc7c900f172006673c203853df5f7f1230425ce0592f780e088068cd89bf3d",
+    "bytes": 7448,
+    "git_blob": "b9b97367cd8aad8065836f62a6dda34c7ef9fd3c"
+  },
+  "docs/audits/stage-11-cuda-center-v2-plan.json": {
+    "sha256": "aab6d3841d8e8173dc76f81bca81fec1db5de8d84e44b09984d13cff821e4c0c",
+    "bytes": 11319,
+    "git_blob": "9d685ac6d1d29413f104e697e62dc1d814072809"
+  },
+  "tests/fixtures/stage11_cuda_center_first_contact.json": {
+    "sha256": "4cb2d69abb67e04e65dfc57a16fcaca39bafd1edcca2c044c83dedad0251583c",
+    "bytes": 5717,
+    "git_blob": "2ef49b5e6412e1fa79ad20554e0c014ea90f7a2b"
+  },
+  "docs/audits/stage-11-cuda-center-v2-return-review.json": {
+    "sha256": "9365f1be3dd3c81a53c815eb2217e0fbd59999d8efcf4b6334ca3b0d2aed4dc6",
+    "bytes": 5999,
+    "git_blob": "141f7402fdbaf3ead55b74361af17b8f49d8f99a"
+  },
+  "docs/audits/stage-11-cuda-friction-plan.json": {
+    "sha256": "aaf1363210eb50d243b9ff38b928b989f3b387e12d21520da677b74368d64a36",
+    "bytes": 15430,
+    "git_blob": "81b1ef0b8ff7ab44e87ec48fd37e7943c721c318"
+  },
+  "scripts/diagnose_head_contact_cuda_friction.py": {
+    "sha256": "1ee66039c3bd6ecc736c31307abd0fba5f8d88123a07df62cf6f13823e670778",
+    "bytes": 19077,
+    "git_blob": "3548a338968b6aea85fd2b3e3f8a86844ae0ed02"
+  },
+  "tests/test_head_contact_cuda_friction.py": {
+    "sha256": "dcb49c231eec50d23d883ecfead0cbd298801d0439b50abc29c6a36f9347624e",
+    "bytes": 12427,
+    "git_blob": "d884615490396a530616116d6f81d73452784b15"
+  }
+}

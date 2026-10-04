@@ -1,0 +1,77 @@
+{
+  "completed_steps": 371,
+  "attempted_steps": 371,
+  "active_case": {
+    "name": "slide-x-minus",
+    "status": "CUDA_FRICTION_ERROR_STOP_REVIEW_REQUIRED",
+    "steps": 51,
+    "attempted_steps": 51,
+    "horizon_completed": false,
+    "fixed_material_fixture": true,
+    "policy_success": null,
+    "new_ppo_updates": 0,
+    "full_robot_steps": 0,
+    "head_contact_steps": 45,
+    "floor_contact_steps": 0,
+    "max_head_slip_m_s": 0.05751009298135192,
+    "max_head_penetration_m": 8.686259388923645e-05,
+    "max_post_head_overlap_m": 8.686234172248716e-05,
+    "max_floor_penetration_m": 0.0,
+    "head_normal_impulse_Ns": 0.009770906850695609,
+    "head_tangential_world_impulse_Ns": [
+      0.0003558149605851213,
+      -4.47035117166173e-12,
+      2.7345737748873944e-05
+    ],
+    "head_torsional_impulse_Nms": 1.2479722082126001e-12,
+    "head_tangential_work_J": -9.635818442785626e-06,
+    "head_torsional_work_J": -4.973396496534606e-20,
+    "max_positive_head_tangential_power_W": 0.0,
+    "max_positive_head_torsional_power_W": 2.0159777776815918e-19,
+    "head_tangential_positive_power_samples": 0,
+    "head_torsional_positive_power_samples": 1,
+    "max_head_cone_utilization": 0.21829306681540236,
+    "legacy_v1_failed_contact_count": 0,
+    "head_contact_intervals": [
+      {
+        "first_pre_step": 5,
+        "end_step_exclusive": 50,
+        "start_s": 0.01,
+        "end_s": 0.1,
+        "right_censored_at_record_end": true,
+        "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+      }
+    ],
+    "no_head_contact_intervals": [
+      {
+        "first_pre_step": 0,
+        "end_step_exclusive": 5,
+        "start_s": 0.0,
+        "end_s": 0.01,
+        "right_censored_at_record_end": false,
+        "interpretation": "Sampled pre-step contact intervals, not continuous-time retention proof"
+      }
+    ],
+    "critical_frame_steps": [
+      5
+    ],
+    "physical_friction_calibration": false,
+    "backend": "RTX5060_MUJOCO_WARP",
+    "analyzed_steps": 50,
+    "unexpected_setup_advance_possible": false,
+    "max_clock_quantization_error_s": 5.8114528661556974e-08,
+    "max_head_slip_step": 5,
+    "max_head_penetration_step": 5,
+    "error": "Head v2 geometry gate failed",
+    "capture_primary_state_verified": true,
+    "first_unanalyzed_pre_step": 50,
+    "completed_step_count_exact": true,
+    "elapsed_simulation_s": 0.10200000000000001,
+    "model_arrays_and_options_unchanged": true
+  },
+  "completed_case_names": [
+    "slide-x-plus"
+  ],
+  "unexpected_setup_advance_possible": false,
+  "new_ppo_updates": 0
+}
