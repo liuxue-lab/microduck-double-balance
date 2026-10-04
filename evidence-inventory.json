@@ -1,0 +1,130 @@
+{
+  "diagnostic/device-model-after.json": {
+    "sha256": "f58769c7870329173452696ce61c2860be0bbfd19f1fd6e23beac2a50ec03b66",
+    "bytes": 58673
+  },
+  "diagnostic/device-model-before.json": {
+    "sha256": "f58769c7870329173452696ce61c2860be0bbfd19f1fd6e23beac2a50ec03b66",
+    "bytes": 58673
+  },
+  "diagnostic/initialization.json": {
+    "sha256": "48093dd6954eaefb1fc24f78b8ab6dbbe6100a49882accc743f063de1b942372",
+    "bytes": 1704
+  },
+  "diagnostic/last-accepted-full-data-fingerprint.json": {
+    "sha256": "5f3ecffe38aaeddfe98d5745e3fcf1e78137c03f58a306f0013d2f38cb48696b",
+    "bytes": 19714
+  },
+  "diagnostic/last-accepted-state.npz": {
+    "sha256": "bdfe94df7ef77a91bd857ab214860b857d069a07aada228772586c7b8647d48d",
+    "bytes": 878
+  },
+  "diagnostic/last-observed-stages.json": {
+    "sha256": "a675e8b2a036eadabfaeeb0f7f874f0d9af71b8c0b020c71a82c505c584e02b5",
+    "bytes": 9315
+  },
+  "diagnostic/last-trial-full-data-fingerprint.json": {
+    "sha256": "5f3ecffe38aaeddfe98d5745e3fcf1e78137c03f58a306f0013d2f38cb48696b",
+    "bytes": 19714
+  },
+  "diagnostic/last-trial-state.npz": {
+    "sha256": "bdfe94df7ef77a91bd857ab214860b857d069a07aada228772586c7b8647d48d",
+    "bytes": 878
+  },
+  "diagnostic/localized-switches.json": {
+    "sha256": "80218ad080f9b7427b06de748af0eb052d646bfd808dcf985bca7a47e20ab10b",
+    "bytes": 1832
+  },
+  "diagnostic/progress.json": {
+    "sha256": "c464b79c723214002d108572d5d673a644133fd82fdfc041e55853789145e537",
+    "bytes": 274
+  },
+  "diagnostic/run-review.json": {
+    "sha256": "6261f98d681b0c2c2fcd958115b6fc1462f60447ae777eae09a17f412ca6273c",
+    "bytes": 3615
+  },
+  "diagnostic/states.npz": {
+    "sha256": "529494927e575184d92abaaaf8144193ebbf59f27adc21e3e2931fb4d0742964",
+    "bytes": 67808
+  },
+  "diagnostic/states.partial.jsonl": {
+    "sha256": "c7cc3f9062ce493928ba40d59126753e422e27a18eb9a82330584d07e910c12d",
+    "bytes": 668124
+  },
+  "diagnostic/trial-log.jsonl.gz": {
+    "sha256": "5e2dc1b3be9e63290bd7c167ce7b63e6ac31dedba288e9096c7cc3cf1a6cf5bb",
+    "bytes": 1207035
+  },
+  "execution-finished.json": {
+    "sha256": "34fe7242760175ed1fa8c3c08ad9f57b188e537fa9713a0914ad220218ce4472",
+    "bytes": 97
+  },
+  "execution-start.json": {
+    "sha256": "73d5735d1e03a77763af61cfc5d602d9958c00dd5bf88c3e038ad10011e7d9a4",
+    "bytes": 1105
+  },
+  "execution.log": {
+    "sha256": "4464fdebb43f2dd7afb03360e9800606c8a02c07598b136aa067a358b689832b",
+    "bytes": 2750
+  },
+  "git-after.json": {
+    "sha256": "371089bf77206415941069656fb096f760d47720d3e81ecfa0a1ea7ca32ab2f7",
+    "bytes": 299
+  },
+  "git-before.json": {
+    "sha256": "371089bf77206415941069656fb096f760d47720d3e81ecfa0a1ea7ca32ab2f7",
+    "bytes": 299
+  },
+  "input-hashes.json": {
+    "sha256": "0c42c92baebddbe2faeca47f8ec748c618113525e271b5d828755f4dab5b2334",
+    "bytes": 1018
+  },
+  "installed-files.json": {
+    "sha256": "09920c8045076d5c0447b7d586f68052288323437e8178cb0d712570e3d50b99",
+    "bytes": 295
+  },
+  "launcher.py": {
+    "sha256": "a227dfb3c27718e41650adf717fbc50637ddd9b0df68300af86cccf9d4e44235",
+    "bytes": 68094
+  },
+  "microduck-stage11-floor-cuda-events.bundle": {
+    "sha256": "c7c21aa974151cfd6114a02b70abcd9c631302c034a3351ef67843777bcd12eb",
+    "bytes": 28704
+  },
+  "old-source-manifest.json": {
+    "sha256": "9cf60aa92b76fa96e011e09eedf62bc780fbc228c01c0551082f3888487ba266",
+    "bytes": 27732
+  },
+  "package-manifest.json": {
+    "sha256": "e21f644cd5b087d73e696a16542a7e9c1d43dec6f32eebea08d3bbb29c50f355",
+    "bytes": 1592
+  },
+  "run-summary.json": {
+    "sha256": "23f07cfe985a3d7838e37156c790ddcd017805e4085ca8e4e9d4db2c524056ca",
+    "bytes": 1031
+  },
+  "source/docs/audits/stage-11-floor-cuda-events-plan.json": {
+    "sha256": "e5e0b5eccd1e39454eecee0e723853d531cefa51db0f5f0fea6474849033705a",
+    "bytes": 5583
+  },
+  "source/docs/audits/stage-11-floor-cuda-schedule-return-review.json": {
+    "sha256": "aae99f57f33d1fe90f59ba5b703d62298c4f7ba2f1ed76d7d223448a1cbc0afa",
+    "bytes": 3581
+  },
+  "source/docs/handoffs/microduck-stage-11-floor-cuda-events-handoff.md": {
+    "sha256": "843cedbdecc155811d2bf1f355dee647f1bf03fa829e0df5fa3102eae07ba2fe",
+    "bytes": 11052
+  },
+  "source/scripts/diagnose_head_contact_floor_cuda_events.py": {
+    "sha256": "0446aae6532b323567cb8cd4767aa4893a13d135fbd232b72b951c89e485a200",
+    "bytes": 17969
+  },
+  "source/tests/test_head_contact_floor_cuda_events.py": {
+    "sha256": "a9a0a690af2a23e873700d2722cb9537b22724f971781becbd6628a948100840",
+    "bytes": 5952
+  },
+  "tests.log": {
+    "sha256": "15f6dc6580ba907260e8900ada5bd0cb38044dfc7c956968f3af599fcf0ebd12",
+    "bytes": 107
+  }
+}

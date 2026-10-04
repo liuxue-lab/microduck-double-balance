@@ -1,0 +1,20 @@
+{
+  "format": "raw-byte-concatenation-in-order",
+  "archive": "review.zip",
+  "archive_bytes": 1572350,
+  "archive_sha256": "3e02d624bd94b49f2005a221768cc8fe2c544be1fc815b6041c4fca32988c38b",
+  "parts": [
+    {
+      "name": "review.part-001.bin",
+      "offset": 0,
+      "bytes": 786432,
+      "sha256": "723f5a7ebdbca004ead95690dbc26395bd9750f46ea87db634a72f307779c1a9"
+    },
+    {
+      "name": "review.part-002.bin",
+      "offset": 786432,
+      "bytes": 785918,
+      "sha256": "a045402a63ce31cd825ff724c8a31c6dd5feb16150feb2705a2a45cfcb6e6a22"
+    }
+  ]
+}
