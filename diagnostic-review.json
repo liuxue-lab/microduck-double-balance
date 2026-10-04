@@ -1,0 +1,842 @@
+{
+  "status": "CUDA_NORMAL_CANDIDATE_STATIC_REVIEW_REQUIRED",
+  "query_attempts": 11,
+  "queries_completed": 11,
+  "results": [
+    {
+      "name": "GPU49",
+      "kind": "saved_native_control",
+      "preserved": {
+        "distance": true,
+        "contact_count": true,
+        "witness1": true,
+        "witness2": true,
+        "midpoint": true,
+        "contact_presence": true
+      },
+      "original_fields_match_saved_CUDA": true,
+      "candidate_branch_used": true,
+      "original_contact_present": true,
+      "candidate_contact_present": true,
+      "formal_physics_adoption": false,
+      "policy_success": null,
+      "material_acceptance": false,
+      "candidate_geometry": {
+        "mesh_witness": [
+          0.009335255279486365,
+          -1.1564707524946982e-13,
+          0.14975862398973216
+        ],
+        "expected_normal": [
+          -0.08606295716496039,
+          1.3212309507848859e-07,
+          0.9962897005409646
+        ],
+        "original_face": 2302,
+        "original_sphere_gap_m": -6.211576263660812e-07,
+        "engine_witness": [
+          0.009335254319012165,
+          4.163675155523239e-17,
+          0.14975862205028534
+        ],
+        "engine_normal": [
+          -0.08606294809108107,
+          1.3211729719767505e-07,
+          0.9962897013247975
+        ],
+        "engine_distance_m": -6.183981895446777e-07,
+        "witness_separation_m": 2.1642469108179223e-09,
+        "surface_distance_m": 1.8260841494254429e-09,
+        "sphere_gap_error_m": 2.7594368214034493e-09,
+        "normal_error_deg": 8.537736462515939e-07,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "original_geometry": {
+        "mesh_witness": [
+          0.009335255279486365,
+          -1.1564707524946982e-13,
+          0.14975862398973216
+        ],
+        "expected_normal": [
+          -0.08606295716496039,
+          1.3212309507848859e-07,
+          0.9962897005409646
+        ],
+        "original_face": 2302,
+        "original_sphere_gap_m": -6.211576263660812e-07,
+        "engine_witness": [
+          0.009335254319012165,
+          3.4261466276899744e-16,
+          0.14975862205028534
+        ],
+        "engine_normal": [
+          -0.08656408464038398,
+          1.3309071701613848e-07,
+          0.9962462844349056
+        ],
+        "engine_distance_m": -6.183981895446777e-07,
+        "witness_separation_m": 2.1642469108340317e-09,
+        "surface_distance_m": 1.8260841773884266e-09,
+        "sphere_gap_error_m": 2.7594368214034493e-09,
+        "normal_error_deg": 0.02882004534679391,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "candidate_frame": [
+        [
+          0.0860629454255104,
+          -1.3211729310569353e-07,
+          -0.9962896704673767
+        ],
+        [
+          1.1370403285582142e-08,
+          1.0,
+          -1.3162708967229264e-07
+        ],
+        [
+          0.9962896704673767,
+          -5.318274236255048e-16,
+          0.0860629454255104
+        ]
+      ],
+      "original_frame": [
+        [
+          0.0865640789270401,
+          -1.3309070823197544e-07,
+          -0.9962462186813354
+        ],
+        [
+          1.1520874920734059e-08,
+          1.0,
+          -1.325911114236078e-07
+        ],
+        [
+          0.9962462186813354,
+          -3.385599160504911e-16,
+          0.0865640789270401
+        ]
+      ],
+      "candidate_original_geometry_gate": true,
+      "original_geometry_gate": true,
+      "status": "CANDIDATE_STATIC_CONTACT_GATE_PASS_REVIEW_REQUIRED"
+    },
+    {
+      "name": "GPU50",
+      "kind": "saved_native_control",
+      "preserved": {
+        "distance": true,
+        "contact_count": true,
+        "witness1": true,
+        "witness2": true,
+        "midpoint": true,
+        "contact_presence": true
+      },
+      "original_fields_match_saved_CUDA": true,
+      "candidate_branch_used": true,
+      "original_contact_present": true,
+      "candidate_contact_present": true,
+      "formal_physics_adoption": false,
+      "policy_success": null,
+      "material_acceptance": false,
+      "candidate_geometry": {
+        "mesh_witness": [
+          0.009335255279486365,
+          -1.1564707524946982e-13,
+          0.14975862398973216
+        ],
+        "expected_normal": [
+          -0.09497460357909329,
+          1.3738499412560396e-07,
+          0.9954796957622869
+        ],
+        "original_face": 2302,
+        "original_sphere_gap_m": -5.396374024718709e-09,
+        "engine_witness": [
+          0.00933525525033474,
+          1.6542434345868278e-17,
+          0.14975862205028534
+        ],
+        "engine_normal": [
+          -0.09497459000200098,
+          1.3737919632617568e-07,
+          0.9954796970576211
+        ],
+        "engine_distance_m": -1.862645149230957e-09,
+        "witness_separation_m": 1.9396659039775403e-09,
+        "surface_distance_m": 1.9246203091185984e-09,
+        "sphere_gap_error_m": 3.5337288754877516e-09,
+        "normal_error_deg": 0.0,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "original_geometry": {
+        "mesh_witness": [
+          0.009335255279486365,
+          -1.1564707524946982e-13,
+          0.14975862398973216
+        ],
+        "expected_normal": [
+          -0.09497460357909329,
+          1.3738499412560396e-07,
+          0.9954796957622869
+        ],
+        "original_face": 2302,
+        "original_sphere_gap_m": -5.396374024718709e-09,
+        "engine_witness": [
+          0.00933525525033474,
+          9.313224635931761e-10,
+          0.14975862205028534
+        ],
+        "engine_normal": [
+          -0.0,
+          1.0,
+          -0.0
+        ],
+        "engine_distance_m": -1.862645149230957e-09,
+        "witness_separation_m": 2.151715771118598e-09,
+        "surface_distance_m": 1.8997058338588316e-09,
+        "sphere_gap_error_m": 3.5337288754877516e-09,
+        "normal_error_deg": 89.99999212841968,
+        "legacy_v1_pass": false,
+        "v2_pass": false
+      },
+      "candidate_frame": [
+        [
+          0.094974584877491,
+          -1.3737918891365553e-07,
+          -0.9954796433448792
+        ],
+        [
+          1.3047531055576655e-08,
+          1.0,
+          -1.367581887734559e-07
+        ],
+        [
+          0.9954796433448792,
+          8.940582047826094e-16,
+          0.094974584877491
+        ]
+      ],
+      "original_frame": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "candidate_original_geometry_gate": true,
+      "original_geometry_gate": false,
+      "status": "CANDIDATE_STATIC_CONTACT_GATE_PASS_REVIEW_REQUIRED"
+    },
+    {
+      "name": "GPU51",
+      "kind": "saved_native_control",
+      "preserved": {
+        "distance": true,
+        "contact_count": true,
+        "witness1": true,
+        "witness2": true,
+        "midpoint": true,
+        "contact_presence": true
+      },
+      "original_fields_match_saved_CUDA": true,
+      "candidate_branch_used": true,
+      "original_contact_present": true,
+      "candidate_contact_present": true,
+      "formal_physics_adoption": false,
+      "policy_success": null,
+      "material_acceptance": false,
+      "candidate_geometry": {
+        "mesh_witness": [
+          0.009335255279486365,
+          -1.1564707524946982e-13,
+          0.14975862398973216
+        ],
+        "expected_normal": [
+          -0.10408041446731095,
+          0.0006104838591740769,
+          0.9945686977950645
+        ],
+        "original_face": 2302,
+        "original_sphere_gap_m": -3.6806692941017405e-05,
+        "engine_witness": [
+          0.009335254319012165,
+          -2.540190280342358e-13,
+          0.14975862205028534
+        ],
+        "engine_normal": [
+          -0.10408040069930746,
+          0.0006104838064245032,
+          0.9945686992359019
+        ],
+        "engine_distance_m": -3.680400550365448e-05,
+        "witness_separation_m": 2.1642469121493138e-09,
+        "surface_distance_m": 1.8260766099117967e-09,
+        "sphere_gap_error_m": 2.6874373629248716e-09,
+        "normal_error_deg": 8.537736462515939e-07,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "original_geometry": {
+        "mesh_witness": [
+          0.009335255279486365,
+          -1.1564707524946982e-13,
+          0.14975862398973216
+        ],
+        "expected_normal": [
+          -0.10408041446731095,
+          0.0006104838591740769,
+          0.9945686977950645
+        ],
+        "original_face": 2302,
+        "original_sphere_gap_m": -3.6806692941017405e-05,
+        "engine_witness": [
+          0.009335254319012165,
+          2.084554751036194e-12,
+          0.14975862205028534
+        ],
+        "engine_normal": [
+          -0.10409846387848581,
+          0.0006106108474770058,
+          0.9945668087024282
+        ],
+        "engine_distance_m": -3.680400550365448e-05,
+        "witness_separation_m": 2.1642480261026272e-09,
+        "surface_distance_m": 1.8261460584737144e-09,
+        "sphere_gap_error_m": 2.6874373629248716e-09,
+        "normal_error_deg": 0.00103982970747587,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "candidate_frame": [
+        [
+          0.10408040136098862,
+          -0.0006104838103055954,
+          -0.9945687055587769
+        ],
+        [
+          6.35394171695225e-05,
+          0.9999998211860657,
+          -0.0006071681855246425
+        ],
+        [
+          0.9945688843727112,
+          -4.662326948123852e-12,
+          0.10408042371273041
+        ]
+      ],
+      "original_frame": [
+        [
+          0.10409846901893616,
+          -0.0006106108776293695,
+          -0.9945668578147888
+        ],
+        [
+          6.356367521220818e-05,
+          0.9999998211860657,
+          -0.0006072934484109282
+        ],
+        [
+          0.9945670366287231,
+          -1.011887275359502e-11,
+          0.10409849137067795
+        ]
+      ],
+      "candidate_original_geometry_gate": true,
+      "original_geometry_gate": true,
+      "status": "CANDIDATE_STATIC_CONTACT_GATE_PASS_REVIEW_REQUIRED"
+    },
+    {
+      "name": "CPU50-rounded32",
+      "kind": "saved_native_control",
+      "preserved": {
+        "distance": true,
+        "contact_count": true,
+        "witness1": true,
+        "witness2": true,
+        "midpoint": true,
+        "contact_presence": true
+      },
+      "original_fields_match_saved_CUDA": true,
+      "candidate_branch_used": false,
+      "original_contact_present": false,
+      "candidate_contact_present": false,
+      "formal_physics_adoption": false,
+      "policy_success": null,
+      "material_acceptance": false,
+      "status": "NO_CONTACT_CONTROL_PRESERVED"
+    },
+    {
+      "name": "z-ulp-minus",
+      "kind": "static_pair_z_offset",
+      "preserved": {
+        "distance": true,
+        "contact_count": true,
+        "witness1": true,
+        "witness2": true,
+        "midpoint": true,
+        "contact_presence": true
+      },
+      "original_fields_match_saved_CUDA": null,
+      "candidate_branch_used": true,
+      "original_contact_present": true,
+      "candidate_contact_present": true,
+      "formal_physics_adoption": false,
+      "policy_success": null,
+      "material_acceptance": false,
+      "candidate_geometry": {
+        "mesh_witness": [
+          0.009335255279486365,
+          -1.1564707524946982e-13,
+          0.14975862398973216
+        ],
+        "expected_normal": [
+          -0.09497467402089423,
+          1.373850960228064e-07,
+          0.9954796890417232
+        ],
+        "original_face": 2302,
+        "original_sphere_gap_m": -2.0230177383978587e-08,
+        "engine_witness": [
+          0.00933525525033474,
+          3.117420059074727e-17,
+          0.14975862205028534
+        ],
+        "engine_normal": [
+          -0.0949746655837879,
+          1.37379300792259e-07,
+          0.9954796898466732
+        ],
+        "engine_distance_m": -1.862645149230957e-08,
+        "witness_separation_m": 1.939665903978413e-09,
+        "surface_distance_m": 1.9246203091187646e-09,
+        "sphere_gap_error_m": 1.6037258916690167e-09,
+        "normal_error_deg": 8.537736462515939e-07,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "original_geometry": {
+        "mesh_witness": [
+          0.009335255279486365,
+          -1.1564707524946982e-13,
+          0.14975862398973216
+        ],
+        "expected_normal": [
+          -0.09497467402089423,
+          1.373850960228064e-07,
+          0.9954796890417232
+        ],
+        "original_face": 2302,
+        "original_sphere_gap_m": -2.0230177383978587e-08,
+        "engine_witness": [
+          0.00933525525033474,
+          3.0001832876364433e-16,
+          0.14975862205028534
+        ],
+        "engine_normal": [
+          -0.12403473458920675,
+          1.662462265910018e-07,
+          0.992277876713654
+        ],
+        "engine_distance_m": -1.862645149230957e-08,
+        "witness_separation_m": 1.939665903994465e-09,
+        "surface_distance_m": 1.9246203093095088e-09,
+        "sphere_gap_error_m": 1.6037258916690167e-09,
+        "normal_error_deg": 1.6751541990487369,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "candidate_frame": [
+        [
+          0.09497466683387756,
+          -1.3737930260049325e-07,
+          -0.9954797029495239
+        ],
+        [
+          1.3047553260037148e-08,
+          1.0,
+          -1.3675830246029363e-07
+        ],
+        [
+          0.9954797029495239,
+          -6.714429114093655e-16,
+          0.09497466683387756
+        ]
+      ],
+      "original_frame": [
+        [
+          0.12403473258018494,
+          -1.6624622389826982e-07,
+          -0.9922778606414795
+        ],
+        [
+          2.0620305463125987e-08,
+          1.0,
+          -1.649624437050079e-07
+        ],
+        [
+          0.9922778606414795,
+          2.4531768218379046e-16,
+          0.12403473258018494
+        ]
+      ],
+      "candidate_original_geometry_gate": true,
+      "original_geometry_gate": true,
+      "status": "CANDIDATE_STATIC_CONTACT_GATE_PASS_REVIEW_REQUIRED"
+    },
+    {
+      "name": "z-ulp-plus",
+      "kind": "static_pair_z_offset",
+      "preserved": {
+        "distance": true,
+        "contact_count": true,
+        "witness1": true,
+        "witness2": true,
+        "midpoint": true,
+        "contact_presence": true
+      },
+      "original_fields_match_saved_CUDA": null,
+      "candidate_branch_used": false,
+      "original_contact_present": false,
+      "candidate_contact_present": false,
+      "formal_physics_adoption": false,
+      "policy_success": null,
+      "material_acceptance": false,
+      "status": "NO_CONTACT_CONTROL_PRESERVED"
+    },
+    {
+      "name": "z-1um-minus",
+      "kind": "static_pair_z_offset",
+      "preserved": {
+        "distance": true,
+        "contact_count": true,
+        "witness1": true,
+        "witness2": true,
+        "midpoint": true,
+        "contact_presence": true
+      },
+      "original_fields_match_saved_CUDA": null,
+      "candidate_branch_used": true,
+      "original_contact_present": true,
+      "candidate_contact_present": true,
+      "formal_physics_adoption": false,
+      "policy_success": null,
+      "material_acceptance": false,
+      "candidate_geometry": {
+        "mesh_witness": [
+          0.009335255279486365,
+          -1.1564707524946982e-13,
+          0.14975862398973216
+        ],
+        "expected_normal": [
+          -0.0949793234097483,
+          1.373918215708617e-07,
+          0.9954792454514597
+        ],
+        "original_face": 2302,
+        "original_sphere_gap_m": -9.992609778276818e-07,
+        "engine_witness": [
+          0.00933525525033474,
+          -1.1987210269542858e-17,
+          0.14975862205028534
+        ],
+        "engine_normal": [
+          -0.09497931050819008,
+          1.3738602717364342e-07,
+          0.9954792466824056
+        ],
+        "engine_distance_m": -9.96515154838562e-07,
+        "witness_separation_m": 1.939665903975839e-09,
+        "surface_distance_m": 1.9246203091176037e-09,
+        "sphere_gap_error_m": 2.7458229891197394e-09,
+        "normal_error_deg": 8.537736462515939e-07,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "original_geometry": {
+        "mesh_witness": [
+          0.009335255279486365,
+          -1.1564707524946982e-13,
+          0.14975862398973216
+        ],
+        "expected_normal": [
+          -0.0949793234097483,
+          1.373918215708617e-07,
+          0.9954792454514597
+        ],
+        "original_face": 2302,
+        "original_sphere_gap_m": -9.992609778276818e-07,
+        "engine_witness": [
+          0.00933525525033474,
+          -4.349886878647624e-16,
+          0.14975862205028534
+        ],
+        "engine_normal": [
+          -0.094721441439363,
+          1.3653705004262426e-07,
+          0.995503816432479
+        ],
+        "engine_distance_m": -9.96515154838562e-07,
+        "witness_separation_m": 1.939665903950668e-09,
+        "surface_distance_m": 1.9246202813354963e-09,
+        "sphere_gap_error_m": 2.7458229891197394e-09,
+        "normal_error_deg": 0.014842465214865713,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "candidate_frame": [
+        [
+          0.09497930854558945,
+          -1.3738602433477354e-07,
+          -0.9954792261123657
+        ],
+        [
+          1.3048829572426257e-08,
+          1.0,
+          -1.3676493892944563e-07
+        ],
+        [
+          0.9954792261123657,
+          6.618939913576125e-16,
+          0.09497930854558945
+        ]
+      ],
+      "original_frame": [
+        [
+          0.09472144395112991,
+          -1.3653705366323265e-07,
+          -0.995503842830658
+        ],
+        [
+          1.2932987125680029e-08,
+          1.0,
+          -1.3592315895039064e-07
+        ],
+        [
+          0.995503842830658,
+          -2.983516326212439e-16,
+          0.09472144395112991
+        ]
+      ],
+      "candidate_original_geometry_gate": true,
+      "original_geometry_gate": true,
+      "status": "CANDIDATE_STATIC_CONTACT_GATE_PASS_REVIEW_REQUIRED"
+    },
+    {
+      "name": "z-1um-plus",
+      "kind": "static_pair_z_offset",
+      "preserved": {
+        "distance": true,
+        "contact_count": true,
+        "witness1": true,
+        "witness2": true,
+        "midpoint": true,
+        "contact_presence": true
+      },
+      "original_fields_match_saved_CUDA": null,
+      "candidate_branch_used": false,
+      "original_contact_present": false,
+      "candidate_contact_present": false,
+      "formal_physics_adoption": false,
+      "policy_success": null,
+      "material_acceptance": false,
+      "status": "NO_CONTACT_CONTROL_PRESERVED"
+    },
+    {
+      "name": "z-100um-minus",
+      "kind": "static_pair_z_offset",
+      "preserved": {
+        "distance": true,
+        "contact_count": true,
+        "witness1": true,
+        "witness2": true,
+        "midpoint": true,
+        "contact_presence": true
+      },
+      "original_fields_match_saved_CUDA": null,
+      "candidate_branch_used": true,
+      "original_contact_present": true,
+      "candidate_contact_present": true,
+      "formal_physics_adoption": false,
+      "policy_success": null,
+      "material_acceptance": false,
+      "candidate_geometry": {
+        "mesh_witness": [
+          0.009335255279486365,
+          -1.1564707524946982e-13,
+          0.14975862398973216
+        ],
+        "expected_normal": [
+          -0.09544969208531216,
+          1.3807223080968936e-07,
+          0.9954342551272786
+        ],
+        "original_face": 2302,
+        "original_sphere_gap_m": -9.955278466868347e-05,
+        "engine_witness": [
+          0.009335256181657314,
+          -1.8648277366750676e-17,
+          0.14975862205028534
+        ],
+        "engine_normal": [
+          -0.09544968334211501,
+          1.3806640771931624e-07,
+          0.9954342559656418
+        ],
+        "engine_distance_m": -9.955093264579773e-05,
+        "witness_separation_m": 2.139010617808049e-09,
+        "surface_distance_m": 2.002176210598285e-09,
+        "sphere_gap_error_m": 1.8520228857454857e-09,
+        "normal_error_deg": 8.537736462515939e-07,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "original_geometry": {
+        "mesh_witness": [
+          0.009335255279486365,
+          -1.1564707524946982e-13,
+          0.14975862398973216
+        ],
+        "expected_normal": [
+          -0.09544969208531216,
+          1.3807223080968936e-07,
+          0.9954342551272786
+        ],
+        "original_face": 2302,
+        "original_sphere_gap_m": -9.955278466868347e-05,
+        "engine_witness": [
+          0.00933525525033474,
+          2.5240226575462543e-16,
+          0.14975862205028534
+        ],
+        "engine_normal": [
+          -0.09545498341060953,
+          1.3807185439040876e-07,
+          0.9954337477411851
+        ],
+        "engine_distance_m": -9.955093264579773e-05,
+        "witness_separation_m": 1.9396659039916193e-09,
+        "surface_distance_m": 1.924620309308062e-09,
+        "sphere_gap_error_m": 1.8520228857454857e-09,
+        "normal_error_deg": 0.000304561535614956,
+        "legacy_v1_pass": true,
+        "v2_pass": true
+      },
+      "candidate_frame": [
+        [
+          0.09544968605041504,
+          -1.3806641163682798e-07,
+          -0.9954342842102051
+        ],
+        [
+          1.3178395263935272e-08,
+          1.0,
+          -1.3743604654337105e-07
+        ],
+        [
+          0.9954342842102051,
+          9.36654962304436e-16,
+          0.09544968605041504
+        ]
+      ],
+      "original_frame": [
+        [
+          0.09545498341321945,
+          -1.380718543941839e-07,
+          -0.9954337477684021
+        ],
+        [
+          1.317964670732863e-08,
+          1.0,
+          -1.3744138982474396e-07
+        ],
+        [
+          0.9954337477684021,
+          3.978269701885521e-16,
+          0.09545498341321945
+        ]
+      ],
+      "candidate_original_geometry_gate": true,
+      "original_geometry_gate": true,
+      "status": "CANDIDATE_STATIC_CONTACT_GATE_PASS_REVIEW_REQUIRED"
+    },
+    {
+      "name": "z-100um-plus",
+      "kind": "static_pair_z_offset",
+      "preserved": {
+        "distance": true,
+        "contact_count": true,
+        "witness1": true,
+        "witness2": true,
+        "midpoint": true,
+        "contact_presence": true
+      },
+      "original_fields_match_saved_CUDA": null,
+      "candidate_branch_used": false,
+      "original_contact_present": false,
+      "candidate_contact_present": false,
+      "formal_physics_adoption": false,
+      "policy_success": null,
+      "material_acceptance": false,
+      "status": "NO_CONTACT_CONTROL_PRESERVED"
+    },
+    {
+      "name": "deep-fallback-control",
+      "kind": "deep_branch_parity_only",
+      "preserved": {
+        "distance": true,
+        "contact_count": true,
+        "witness1": true,
+        "witness2": true,
+        "midpoint": true,
+        "contact_presence": true
+      },
+      "original_fields_match_saved_CUDA": null,
+      "candidate_branch_used": false,
+      "original_contact_present": true,
+      "candidate_contact_present": true,
+      "formal_physics_adoption": false,
+      "policy_success": null,
+      "material_acceptance": false,
+      "status": "DEEP_BRANCH_PARITY_ONLY_NOT_PHYSICAL_PASS",
+      "deep_penetration_m": 0.040420569479465485
+    }
+  ],
+  "diagnostic_completed_steps": 0,
+  "diagnostic_attempted_steps": 0,
+  "canonical_total_known_completed_steps": 13354,
+  "stage11_status": "MATERIAL_BLOCKED_REVIEW_REQUIRED",
+  "stage11_complete": false,
+  "new_ppo_updates": 0,
+  "full_robot_steps": 0,
+  "cloud_hours": 0,
+  "formal_task_migration": false,
+  "formal_physical_parameter_adoption": false,
+  "policy_success": null,
+  "installed_dependency_patch": false,
+  "candidate_used_by_integrator_or_solver": false,
+  "CPU_model_unchanged": true,
+  "GPU_model_unchanged": true,
+  "source_files_unchanged": true,
+  "not_completed_cases": [],
+  "wall_seconds": 23.934469145999174,
+  "diagnostic_source_sha256": "b089d0f0347bee302fca0a634f5fd93266342335dff8ba90e2cd119f75def3d5",
+  "limits": [
+    "Only zero-margin ordered sphere-mesh pair in a standalone diagnostic kernel",
+    "No solver/integration, full-robot or policy evidence",
+    "Deep state only checks unchanged native fallback; not a physical penetration pass",
+    "Native baseline mismatch remains inconclusive",
+    "Floor2ms and sensitivity failures/missing cases/formal task migration remain blocked"
+  ]
+}

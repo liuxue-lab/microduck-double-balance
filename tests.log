@@ -1,0 +1,14 @@
+test_budget_and_order_prevent_queries (test_head_contact_cuda_candidate.Tests.test_budget_and_order_prevent_queries) ... ok
+test_cpu_output_not_claimed_exact_cuda (test_head_contact_cuda_candidate.Tests.test_cpu_output_not_claimed_exact_cuda) ... ok
+test_deep_fallback_is_not_a_physical_pass (test_head_contact_cuda_candidate.Tests.test_deep_fallback_is_not_a_physical_pass) ... ok
+test_distance_and_witness_mutations_refused (test_head_contact_cuda_candidate.Tests.test_distance_and_witness_mutations_refused) ... ok
+test_eleven_queries_bounded (test_head_contact_cuda_candidate.Tests.test_eleven_queries_bounded) ... ok
+test_no_contact_preserved (test_head_contact_cuda_candidate.Tests.test_no_contact_preserved) ... ok
+test_nonfinite_shape_and_normal_failures (test_head_contact_cuda_candidate.Tests.test_nonfinite_shape_and_normal_failures) ... ok
+test_query_error_stops_and_keeps_attempt (test_head_contact_cuda_candidate.Tests.test_query_error_stops_and_keeps_attempt) ... ok
+test_real_saved_bad_normal_candidate_good_original_gates (test_head_contact_cuda_candidate.Tests.test_real_saved_bad_normal_candidate_good_original_gates) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.018s
+
+OK
