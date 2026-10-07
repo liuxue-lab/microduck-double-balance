@@ -1,0 +1,234 @@
+{
+  "execution-finished.json": {
+    "sha256": "34fe7242760175ed1fa8c3c08ad9f57b188e537fa9713a0914ad220218ce4472",
+    "bytes": 97
+  },
+  "execution-start.json": {
+    "sha256": "93330124c601e705601e7b6b42c0b80a21e1f1d7e7e8e4d6f0d81700de4bc755",
+    "bytes": 662
+  },
+  "execution.log": {
+    "sha256": "5e7a00e4f0bf5bdb75f960025cb841c1e59c02bac8e118f6a68bd82b289e0210",
+    "bytes": 9606
+  },
+  "git-after.json": {
+    "sha256": "371089bf77206415941069656fb096f760d47720d3e81ecfa0a1ea7ca32ab2f7",
+    "bytes": 299
+  },
+  "git-before.json": {
+    "sha256": "371089bf77206415941069656fb096f760d47720d3e81ecfa0a1ea7ca32ab2f7",
+    "bytes": 299
+  },
+  "installed-files.json": {
+    "sha256": "d372611a87b713c5923f984d9e19dbf7c0c73d088938147623da2095d11f876f",
+    "bytes": 316
+  },
+  "launcher.py": {
+    "sha256": "847fd17847cc4e7348ec9bc81d4374f51d9cbb848c59b2617265eef7f1478a09",
+    "bytes": 88324
+  },
+  "microduck-stage11-contact-macro.bundle": {
+    "sha256": "1b4e24a9ad7e4b8de9601784b50dd04dd56da1c931895e7cc07ccd1028a002e8",
+    "bytes": 37856
+  },
+  "old-source-manifest.json": {
+    "sha256": "ed46ce4244b951fb5e70fd8276f3e72e94189bdee424ceec532e9bb77307a429",
+    "bytes": 41449
+  },
+  "package-manifest.json": {
+    "sha256": "887be671f708b16beb079c60061b085ec148638c31b1fb1fae0355b92d60cb00",
+    "bytes": 1786
+  },
+  "prerequisite-dynamic-macro-r2-review.zip": {
+    "sha256": "158caa925d82f89aacb6c6306e26a97c30398e554098903e90557bd356f2a5e0",
+    "bytes": 1356950
+  },
+  "prerequisite-transfer-receipt.json": {
+    "sha256": "0cf87a7ba1601af74066ede15690f8a427ed9c0aa1fee995a809d1b90c895588",
+    "bytes": 571
+  },
+  "probe/array-storage-inventory.json": {
+    "sha256": "7941bc2352fbb5dda37e541d7aff5772b53bb9e0c73f55eb76e359a46527cadb",
+    "bytes": 27759
+  },
+  "probe/command-retries.npz": {
+    "sha256": "7d622d85cbcd6db38034d33f9d5692fd3558fbc300a1aa915dad6f8dbb9cf87a",
+    "bytes": 2459
+  },
+  "probe/contact-RK-observation-hashes-0.json": {
+    "sha256": "d6e60493c9431cd82861302f62c2b10bd5d5c9466bac1386aa6ff5a5d7795a77",
+    "bytes": 17923
+  },
+  "probe/contact-RK-observation-hashes-1.json": {
+    "sha256": "d6e60493c9431cd82861302f62c2b10bd5d5c9466bac1386aa6ff5a5d7795a77",
+    "bytes": 17923
+  },
+  "probe/contact-attempt-0.json": {
+    "sha256": "e93791c19b1f07e2b5bcd0ff7767580626da37cda7dd81a649e4c9d340ccc629",
+    "bytes": 94214
+  },
+  "probe/contact-attempt-1.json": {
+    "sha256": "e93791c19b1f07e2b5bcd0ff7767580626da37cda7dd81a649e4c9d340ccc629",
+    "bytes": 94214
+  },
+  "probe/contact-before.json": {
+    "sha256": "c4654e0faf745b644c91794f2bf51ab1cff368cfe19b584d2f26942c070b5dc1",
+    "bytes": 94214
+  },
+  "probe/contact-checkpoint.jsonl": {
+    "sha256": "5efee05a569d1719a7dcd44ed9bacd9532e0784c1c3cdb9d22e3f6ab6c9437a8",
+    "bytes": 3520
+  },
+  "probe/contact-pair-review.json": {
+    "sha256": "8ac3104b55ec8ddf092f26604d1b3ba961ce7270879bdc7070ec35b1f5150602",
+    "bytes": 437
+  },
+  "probe/contact-restored.json": {
+    "sha256": "c4654e0faf745b644c91794f2bf51ab1cff368cfe19b584d2f26942c070b5dc1",
+    "bytes": 94214
+  },
+  "probe/contact-torch-owners-before.json": {
+    "sha256": "3922b2c86ba45744f88877e4ee75c62137d025e99a124cdacd18d641f2d7bd56",
+    "bytes": 7157
+  },
+  "probe/contact-torch-owners-restored.json": {
+    "sha256": "3922b2c86ba45744f88877e4ee75c62137d025e99a124cdacd18d641f2d7bd56",
+    "bytes": 7157
+  },
+  "probe/data-layout-after.json": {
+    "sha256": "33530285244ad59dd3eface717ce5d32e28a2de312eba941aaa8a7ff6ce34210",
+    "bytes": 33095
+  },
+  "probe/data-layout-before.json": {
+    "sha256": "33530285244ad59dd3eface717ce5d32e28a2de312eba941aaa8a7ff6ce34210",
+    "bytes": 33095
+  },
+  "probe/diagnostic-integration-contract.json": {
+    "sha256": "edf071110163261ece36fd376a9e95929550250150599ee245396e25f7277cae",
+    "bytes": 861
+  },
+  "probe/final-restored-state.json": {
+    "sha256": "7a805b8f9f4b44bfc7bea26d30997dad05bd1233de70855448653734534e7ef6",
+    "bytes": 93635
+  },
+  "probe/final-torch-owners.json": {
+    "sha256": "4d1bcb5b674794ac1ca46f75082ea0ef2d4098d26d2968f804734fdc1766a45b",
+    "bytes": 6149
+  },
+  "probe/frozen-state.npz": {
+    "sha256": "eb45eff57de7155a13d42e23e266cb11a101e61029ed70f8e002bdd76ccacf03",
+    "bytes": 922
+  },
+  "probe/initial-data.json": {
+    "sha256": "9b805b199b0893ca9dd273658b140ef1dab837553cafa7e1bc015d5259aebc7d",
+    "bytes": 19770
+  },
+  "probe/initial-external.json": {
+    "sha256": "b574f576c646421acfa7e29c009fede88c712a149448094026366e4119958ea7",
+    "bytes": 4354
+  },
+  "probe/initial-model.json": {
+    "sha256": "65ff150b5a6e676d07a030fea2d76e030b2c3d5879c0363fbe854d5ab4be2e2f",
+    "bytes": 61540
+  },
+  "probe/initial-torch-owners.json": {
+    "sha256": "4d1bcb5b674794ac1ca46f75082ea0ef2d4098d26d2968f804734fdc1766a45b",
+    "bytes": 6149
+  },
+  "probe/initialization-scope.json": {
+    "sha256": "3b9b1bbf3a5e4c31c014cd2c993ad328ddd1087362b40ac9c5e13ec1b5c97998",
+    "bytes": 2694
+  },
+  "probe/latest-model-restore-preflight.json": {
+    "sha256": "10cc9eaefef4a8dfac771a88ea1c04219105844345541c03783c1cde020e4e2f",
+    "bytes": 1489
+  },
+  "probe/macro-command-log.jsonl": {
+    "sha256": "41d703a28d4755c4b0e1dc0088a50e592340feab23a2d1a5689c4920d9cef306",
+    "bytes": 10106
+  },
+  "probe/macro-endpoints.jsonl": {
+    "sha256": "03ab0f4474223c5fe40996a62837d098ffb5ed7039ef8b5a7b810ec664ccf376",
+    "bytes": 29628
+  },
+  "probe/microstep-log.jsonl": {
+    "sha256": "185779098f2a12a6b628dede3df003a48d7a89fba4d9b8abe4e4e030fecd92b9",
+    "bytes": 990977
+  },
+  "probe/model-layout-live-after.json": {
+    "sha256": "5ec1218ec77b69c4661ae3f929fa4b691ea41b01ee8dbc1271bc51490ce115f5",
+    "bytes": 732
+  },
+  "probe/model-layout-live-before.json": {
+    "sha256": "24a191aec9907a12059112592067ca87c77eb7cd8130254e9e85e9616dc045d7",
+    "bytes": 909
+  },
+  "probe/model-layout-snapshot-cold.json": {
+    "sha256": "96c2cbf725083eee278b5e3986b94715c9e766c97bef26ccf0dd353df96249ae",
+    "bytes": 732
+  },
+  "probe/nominal-CPU-initialization.json": {
+    "sha256": "bd35217b6b8d7ae8efe408e0b3dceca8910dc9a8b57bb5a1991e90c2af9845d5",
+    "bytes": 2946
+  },
+  "probe/nominal-CUDA-contacts.json": {
+    "sha256": "a986cf1f7ba9f39d7f1449d0f17debe36e7fc610169b81b6aaa2f7341d66c9ce",
+    "bytes": 31
+  },
+  "probe/nominal-CUDA-initialization.json": {
+    "sha256": "042678647854e1fbc8b7729e57f2ec800a2ce49fa2db9dd559ee1c731617e46c",
+    "bytes": 1680
+  },
+  "probe/progress.json": {
+    "sha256": "6d833e8b3dfd13e455a35fc46011dd377a1ef8065f02bd83a6b314fba0280a42",
+    "bytes": 914
+  },
+  "probe/run-review.json": {
+    "sha256": "68c7cc927ddcba3a97c4a8443a5f0aaa2c815029143cf7230ee0dd1090963987",
+    "bytes": 5737
+  },
+  "probe/scene-contract.json": {
+    "sha256": "391c884fb0fc199a91aef2bf90a1b8344d64378a12869cc8309f4a48317916e3",
+    "bytes": 998
+  },
+  "probe/source-hashes.json": {
+    "sha256": "fbfcd6526a8e46416db322d48e31cf9669c442a0bda39d7be7316e94f75dd97f",
+    "bytes": 7779
+  },
+  "probe/stage-log.jsonl": {
+    "sha256": "2ee197d98c414259eb264fc63568c683fe53eb224d67f736fc0bedfda85fdeef",
+    "bytes": 7743502
+  },
+  "run-summary.json": {
+    "sha256": "f129ecb28f7321c57b4116dead1ff21dbe32fa939ca6a6e3cd7f387875bd6651",
+    "bytes": 1739
+  },
+  "source/docs/audits/stage-11-contact-macro-plan.json": {
+    "sha256": "5dd848cd6fe3c49aa3f993296382124aaa3556ec03ca88745b2bcf0fb05f2d96",
+    "bytes": 9467
+  },
+  "source/docs/audits/stage-11-dynamic-macro-r2-return-review.json": {
+    "sha256": "37a4c11b4db4f9c08f3e3f09632a640de47ad63b67f681978cfb345812b9727c",
+    "bytes": 2757
+  },
+  "source/docs/handoffs/microduck-stage-11-contact-macro-handoff.md": {
+    "sha256": "6ce7c89bcb70ab22b4aced07bc5317956c4c77e0e9a998886c308632b094779b",
+    "bytes": 11834
+  },
+  "source/scripts/head_contact_contact_macro.py": {
+    "sha256": "88192eaaac436e1f48f856d45fc4e901935c2e917c5cd4c620ed6ace351844cb",
+    "bytes": 8408
+  },
+  "source/scripts/probe_head_contact_contact_macro.py": {
+    "sha256": "ceefc938620e5dd0251450affff9208d4c6417ab7d76e5e04fbd8aab8ad7930e",
+    "bytes": 43651
+  },
+  "source/tests/test_head_contact_contact_macro.py": {
+    "sha256": "6ff2e18af358e20e240fbe18b31c64cfaa9629edc24d025cce17ad7c998cbcaf",
+    "bytes": 4855
+  },
+  "tests.log": {
+    "sha256": "3de1ba2633885119dcd49218c0b8397886ecf968c1f4dca975d77f1834bad20b",
+    "bytes": 1329
+  }
+}
