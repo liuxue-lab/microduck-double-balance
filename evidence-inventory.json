@@ -1,0 +1,246 @@
+{
+  "execution-finished.json": {
+    "sha256": "34fe7242760175ed1fa8c3c08ad9f57b188e537fa9713a0914ad220218ce4472",
+    "bytes": 97
+  },
+  "execution-start.json": {
+    "sha256": "68da22d9e8e9b26aa77e25e9405297727cd93e9982ab12389ff241a46b999120",
+    "bytes": 670
+  },
+  "execution.log": {
+    "sha256": "602063053d20f8490ec543a803729abb3e626525e73b82efc5664e1cba92a52b",
+    "bytes": 9364
+  },
+  "git-after.json": {
+    "sha256": "371089bf77206415941069656fb096f760d47720d3e81ecfa0a1ea7ca32ab2f7",
+    "bytes": 299
+  },
+  "git-before.json": {
+    "sha256": "371089bf77206415941069656fb096f760d47720d3e81ecfa0a1ea7ca32ab2f7",
+    "bytes": 299
+  },
+  "installed-files.json": {
+    "sha256": "797b0138343c8ee7023069141ee4089ba2ceba049c3d76f19acf6ef3286e6321",
+    "bytes": 334
+  },
+  "launcher.py": {
+    "sha256": "c84922f0b7d64d4f28d71e8c6577c0a2c841af6c0a18eb5cb48b45145c56a1d9",
+    "bytes": 86296
+  },
+  "microduck-stage11-dynamic-macro-r2.bundle": {
+    "sha256": "cefde94495534b73eeb404f1f8abe67c43be014818f52cb196aa880f5c2e2174",
+    "bytes": 36911
+  },
+  "old-source-manifest.json": {
+    "sha256": "a0b3d287b5728ed9ec8976bca8dac79159519436692cc556a8297324e049e5e2",
+    "bytes": 40042
+  },
+  "package-manifest.json": {
+    "sha256": "a2dbe2c6b2d929504aaf146703eed6ee1ea77d9c84df17c886f0eda7729925c5",
+    "bytes": 1807
+  },
+  "prerequisite-dynamic-macro-v1-review.zip": {
+    "sha256": "16440aa4ceddac1d35db28f66d6774aacef3418fcd7d75c47036b852b0df100c",
+    "bytes": 450676
+  },
+  "prerequisite-transfer-receipt.json": {
+    "sha256": "17a20c4b960add1da4e10522efa4378da34e453edf7efbaaca099c4e193f3178",
+    "bytes": 559
+  },
+  "probe/array-storage-inventory.json": {
+    "sha256": "7941bc2352fbb5dda37e541d7aff5772b53bb9e0c73f55eb76e359a46527cadb",
+    "bytes": 27759
+  },
+  "probe/command-retries.npz": {
+    "sha256": "1950a64e4e481e331d88480af448411da954c3c04ad06fff7c336ac214231898",
+    "bytes": 2721
+  },
+  "probe/data-layout-after.json": {
+    "sha256": "fd564ef490fbb39cd0d5132379310c3355ad4901ba22b16c0c76267b5ad37d77",
+    "bytes": 33095
+  },
+  "probe/data-layout-before.json": {
+    "sha256": "fd564ef490fbb39cd0d5132379310c3355ad4901ba22b16c0c76267b5ad37d77",
+    "bytes": 33095
+  },
+  "probe/diagnostic-integration-contract.json": {
+    "sha256": "4d4682b1740d970fcb7d259544a2e6171817f6304dffc1ac5e656fb982f2acf1",
+    "bytes": 714
+  },
+  "probe/final-restored-state.json": {
+    "sha256": "7a805b8f9f4b44bfc7bea26d30997dad05bd1233de70855448653734534e7ef6",
+    "bytes": 93635
+  },
+  "probe/final-torch-owners.json": {
+    "sha256": "9d5e6b8a7a754092e3b7eabbe844d8e761364df8f2146dc4d09e99a374043e70",
+    "bytes": 6149
+  },
+  "probe/frozen-state.npz": {
+    "sha256": "eb45eff57de7155a13d42e23e266cb11a101e61029ed70f8e002bdd76ccacf03",
+    "bytes": 922
+  },
+  "probe/initial-data.json": {
+    "sha256": "9b805b199b0893ca9dd273658b140ef1dab837553cafa7e1bc015d5259aebc7d",
+    "bytes": 19770
+  },
+  "probe/initial-external.json": {
+    "sha256": "b574f576c646421acfa7e29c009fede88c712a149448094026366e4119958ea7",
+    "bytes": 4354
+  },
+  "probe/initial-model.json": {
+    "sha256": "65ff150b5a6e676d07a030fea2d76e030b2c3d5879c0363fbe854d5ab4be2e2f",
+    "bytes": 61540
+  },
+  "probe/initial-torch-owners.json": {
+    "sha256": "9d5e6b8a7a754092e3b7eabbe844d8e761364df8f2146dc4d09e99a374043e70",
+    "bytes": 6149
+  },
+  "probe/initialization-scope.json": {
+    "sha256": "3b9b1bbf3a5e4c31c014cd2c993ad328ddd1087362b40ac9c5e13ec1b5c97998",
+    "bytes": 2694
+  },
+  "probe/latest-model-restore-preflight.json": {
+    "sha256": "b2d83a4b22c0b3783771abb6521b025b6eb294f1affad2203eb6dd3cfa0480f6",
+    "bytes": 1489
+  },
+  "probe/macro-endpoints.jsonl": {
+    "sha256": "67533e39a3ff359100a6ab2afb92164dd31ddb933372699edeabf42a3bd100ac",
+    "bytes": 8324
+  },
+  "probe/microstep-log.jsonl": {
+    "sha256": "d8c71b1a0bfee23b55a5969c4b0092002e9ce962df6b03d7b5edca3fb1ecc31e",
+    "bytes": 370908
+  },
+  "probe/model-layout-live-after.json": {
+    "sha256": "bff12e9d0be3664a76c177ce53b29d5f2482ae9a6109d09d8cfeaf560d5abc8d",
+    "bytes": 732
+  },
+  "probe/model-layout-live-before.json": {
+    "sha256": "828a3c9b03800acb532f412cf88ec541416ecd51fb276387ba050634c75afb30",
+    "bytes": 909
+  },
+  "probe/model-layout-snapshot-cold.json": {
+    "sha256": "097b8b77541ea176a13cc4c88c8b6175eb3e2678b3cf0a02b7e1422c1c85877f",
+    "bytes": 732
+  },
+  "probe/model-layout-snapshot-warm.json": {
+    "sha256": "2ac648c8e24334159d63c546e37cc7144a9ec1b2b898dc2b3d31761940cd93d1",
+    "bytes": 732
+  },
+  "probe/nominal-CPU-initialization.json": {
+    "sha256": "bd35217b6b8d7ae8efe408e0b3dceca8910dc9a8b57bb5a1991e90c2af9845d5",
+    "bytes": 2946
+  },
+  "probe/nominal-CUDA-contacts.json": {
+    "sha256": "a986cf1f7ba9f39d7f1449d0f17debe36e7fc610169b81b6aaa2f7341d66c9ce",
+    "bytes": 31
+  },
+  "probe/nominal-CUDA-initialization.json": {
+    "sha256": "042678647854e1fbc8b7729e57f2ec800a2ce49fa2db9dd559ee1c731617e46c",
+    "bytes": 1680
+  },
+  "probe/pair-0-attempt-0.json": {
+    "sha256": "8d144dccf0f09c4bf9498d68a34a555b8d416981f4be081b5b0d0cbcecf08b5b",
+    "bytes": 94214
+  },
+  "probe/pair-0-attempt-1.json": {
+    "sha256": "8d144dccf0f09c4bf9498d68a34a555b8d416981f4be081b5b0d0cbcecf08b5b",
+    "bytes": 94214
+  },
+  "probe/pair-0-before.json": {
+    "sha256": "7a805b8f9f4b44bfc7bea26d30997dad05bd1233de70855448653734534e7ef6",
+    "bytes": 93635
+  },
+  "probe/pair-0-restored.json": {
+    "sha256": "7a805b8f9f4b44bfc7bea26d30997dad05bd1233de70855448653734534e7ef6",
+    "bytes": 93635
+  },
+  "probe/pair-0-torch-owners-before.json": {
+    "sha256": "9d5e6b8a7a754092e3b7eabbe844d8e761364df8f2146dc4d09e99a374043e70",
+    "bytes": 6149
+  },
+  "probe/pair-0-torch-owners-restored.json": {
+    "sha256": "9d5e6b8a7a754092e3b7eabbe844d8e761364df8f2146dc4d09e99a374043e70",
+    "bytes": 6149
+  },
+  "probe/pair-1-attempt-0.json": {
+    "sha256": "569eb62934c58a976c21cd65fc0314e0e7a354b08af39858e2c0214f75065d92",
+    "bytes": 94214
+  },
+  "probe/pair-1-attempt-1.json": {
+    "sha256": "569eb62934c58a976c21cd65fc0314e0e7a354b08af39858e2c0214f75065d92",
+    "bytes": 94214
+  },
+  "probe/pair-1-before.json": {
+    "sha256": "8d144dccf0f09c4bf9498d68a34a555b8d416981f4be081b5b0d0cbcecf08b5b",
+    "bytes": 94214
+  },
+  "probe/pair-1-restored.json": {
+    "sha256": "8d144dccf0f09c4bf9498d68a34a555b8d416981f4be081b5b0d0cbcecf08b5b",
+    "bytes": 94214
+  },
+  "probe/pair-1-torch-owners-before.json": {
+    "sha256": "3911c3686223bcc716f123b296d009e96e1167eb432eec948d2e40bd88c33367",
+    "bytes": 7157
+  },
+  "probe/pair-1-torch-owners-restored.json": {
+    "sha256": "3911c3686223bcc716f123b296d009e96e1167eb432eec948d2e40bd88c33367",
+    "bytes": 7157
+  },
+  "probe/pair-review.json": {
+    "sha256": "8a47a025b76235464c6be084be3ce70cba74ce722ba5fd5b0ed58ae795eee5fe",
+    "bytes": 767
+  },
+  "probe/progress.json": {
+    "sha256": "7edb8d517f8a6911bba298ac8ab6574b9649c0739886668b9b54181b05651f88",
+    "bytes": 876
+  },
+  "probe/run-review.json": {
+    "sha256": "ba5b15a8ada575fc07750564781c57bac216356c5c2287938571918c341e94c8",
+    "bytes": 5495
+  },
+  "probe/scene-contract.json": {
+    "sha256": "37aeeecc7560f43501df73cb3b241621107b1687d502378f2fe9f013f461ea7d",
+    "bytes": 998
+  },
+  "probe/source-hashes.json": {
+    "sha256": "fbfcd6526a8e46416db322d48e31cf9669c442a0bda39d7be7316e94f75dd97f",
+    "bytes": 7779
+  },
+  "probe/stage-log.jsonl": {
+    "sha256": "93f67ecf6d48a9541973bc865d235f59610c8eb6740e9d784aab85c21057cc27",
+    "bytes": 2209118
+  },
+  "run-summary.json": {
+    "sha256": "cc87a2790ff1b9143159de019cd1409ca6a1b1670f562182a1bfb7fd8fc94b43",
+    "bytes": 1693
+  },
+  "source/docs/audits/stage-11-dynamic-macro-r2-plan.json": {
+    "sha256": "dd33961dcb48b4a93f8b2c77305243f4dee6b0225ff385cf5a8ba457f2067822",
+    "bytes": 8712
+  },
+  "source/docs/audits/stage-11-dynamic-macro-return-review.json": {
+    "sha256": "9ec3728efad9c24f21daec6faa8fde1f86c0ab7c3956f685841ef1fe5d20e369",
+    "bytes": 2492
+  },
+  "source/docs/handoffs/microduck-stage-11-dynamic-macro-r2-handoff.md": {
+    "sha256": "6c0e30fe21522065f6469a24a7b8f2a1415b93694f1bb39a2423f78c3c994972",
+    "bytes": 10752
+  },
+  "source/scripts/head_contact_nominal_macro_state.py": {
+    "sha256": "c9b7c96e75088c1c9050954158cc65ebbe48537e1a3df37cbbd8ae3ead03ef89",
+    "bytes": 7129
+  },
+  "source/scripts/probe_head_contact_dynamic_macro_r2.py": {
+    "sha256": "700c8bd5270f2d6f42094b195b9aff8105e383867ff81dfa69b464f79fd148bb",
+    "bytes": 41173
+  },
+  "source/tests/test_head_contact_nominal_macro_state.py": {
+    "sha256": "20b8d68e890e158d61dd6bf0d4f901eda71911f7700edd5252d88af3773e3f40",
+    "bytes": 5534
+  },
+  "tests.log": {
+    "sha256": "cc1692ed77c6803bded27f15983d55c695062c4f04cfb63067b4f2d0e1e62e92",
+    "bytes": 1126
+  }
+}
