@@ -1,0 +1,25 @@
+{
+  "format": "microduck-return-parts-v1",
+  "file": "sensor-dynamic-macro-return.zip",
+  "bytes": 877566,
+  "sha256": "639af0c728ea834cc0b0a76b74ae3b08c3e37ab102266d2877cb3e52d28f3255",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "sensor-dynamic-macro-return.zip.part000",
+      "index": 0,
+      "offset": 0,
+      "bytes": 524288,
+      "sha256": "64ca3e3bda4926836d4060797f7a70736e04e3995323f0586862376021d648b9"
+    },
+    {
+      "file": "sensor-dynamic-macro-return.zip.part001",
+      "index": 1,
+      "offset": 524288,
+      "bytes": 353278,
+      "sha256": "f8c10f104907422eae80d17f58378c9e05980fa5fe072c4e7d9f4563fb013a2c"
+    }
+  ],
+  "branch": "stage11-sensor-dynamic-macro-transfer-20261007t210638z-922a69",
+  "scope": "bounded dynamic sensor macro evidence; never merge"
+}
