@@ -1,0 +1,46 @@
+{
+  "format": "microduck-return-parts-v1",
+  "file": "sensor-contact-macro-return.zip",
+  "bytes": 2364941,
+  "sha256": "1b99cabf931a9c16c688000d0ec50a2bfa09a4354a0aa7b564dceebdeb323661",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "sensor-contact-macro-return.zip.part000",
+      "index": 0,
+      "offset": 0,
+      "bytes": 524288,
+      "sha256": "28e4f707ee9d4e296906f72a8694686cda4754afaad77e00e2bd1c4b66265b71"
+    },
+    {
+      "file": "sensor-contact-macro-return.zip.part001",
+      "index": 1,
+      "offset": 524288,
+      "bytes": 524288,
+      "sha256": "1a058badb8debae1c971378c5b7046be974c26ef5784ab13163f59597d27e812"
+    },
+    {
+      "file": "sensor-contact-macro-return.zip.part002",
+      "index": 2,
+      "offset": 1048576,
+      "bytes": 524288,
+      "sha256": "d7505c68280aefae91e3d64d5116991427bf862f92033337240f590bb8206769"
+    },
+    {
+      "file": "sensor-contact-macro-return.zip.part003",
+      "index": 3,
+      "offset": 1572864,
+      "bytes": 524288,
+      "sha256": "dd2dcb4059487d1ba289c725c4bd64bcacc29a6c2d6672c60927553f10ebfcf0"
+    },
+    {
+      "file": "sensor-contact-macro-return.zip.part004",
+      "index": 4,
+      "offset": 2097152,
+      "bytes": 267789,
+      "sha256": "9316e9551bde5de9e55ea232a78be76b007946e61333f2af2c6282714aee95c3"
+    }
+  ],
+  "branch": "stage11-sensor-contact-macro-transfer-20261007t211617z-025624",
+  "scope": "bounded dynamic sensor macro evidence; never merge"
+}
