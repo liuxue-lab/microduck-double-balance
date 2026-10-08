@@ -1,0 +1,81 @@
+{
+  "format": "microduck-return-ascii-parts-v2",
+  "file": "adaptive-events-return.zip",
+  "bytes": 3276924,
+  "sha256": "d2d16c1fb328f26b6f3395d03f10661a81749fb0fe893accdc4395c5f4f80916",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "adaptive-events-return.zip.part000.base64.txt",
+      "index": 0,
+      "offset": 0,
+      "bytes": 524288,
+      "sha256": "2a00c820b5fc8f5c6014091de72bd58a26f1c468bd2713d0c6d451b716a7abc9",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "b9017a87fbbb44b483c73286aa7be3a9bf21b9d7a39502065630651ce593b48b"
+    },
+    {
+      "file": "adaptive-events-return.zip.part001.base64.txt",
+      "index": 1,
+      "offset": 524288,
+      "bytes": 524288,
+      "sha256": "89ce4dea09dbd94fb8df06b32d56c33d14828b5d7908d9730ec6f4bb70d1619a",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "b00b50ad01ff9497a8000ad9759a038a9b93927ae5a8239bf8bbfdf52b38026b"
+    },
+    {
+      "file": "adaptive-events-return.zip.part002.base64.txt",
+      "index": 2,
+      "offset": 1048576,
+      "bytes": 524288,
+      "sha256": "c7ef858ab0179bdac9b4c421b73147d22468eb06b514e849dda0ec130c36e6ef",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "2b1390135cdfd51ca224e26f7eb40e36745edbaae04cbf6d511fe138eed9abbd"
+    },
+    {
+      "file": "adaptive-events-return.zip.part003.base64.txt",
+      "index": 3,
+      "offset": 1572864,
+      "bytes": 524288,
+      "sha256": "8b64594c075b7ada5d2b74e6490fed50b8c641b7ce54646503e43fd2fe73ca82",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "a3f406efddc98b7c36e6a83d5545523307253d5066f292360646835b1ac92dbc"
+    },
+    {
+      "file": "adaptive-events-return.zip.part004.base64.txt",
+      "index": 4,
+      "offset": 2097152,
+      "bytes": 524288,
+      "sha256": "eb9e14ad31b591b8463a426cd5207d3043ba9c08cb6c5b90a64d39d28b8cce12",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "b33aa82c0038ff8befc662f7d5203cbf432fbe575c4ec556cacc2fa779d37992"
+    },
+    {
+      "file": "adaptive-events-return.zip.part005.base64.txt",
+      "index": 5,
+      "offset": 2621440,
+      "bytes": 524288,
+      "sha256": "5357f11dba4449db65ff7e931c660e3d9d8a5acea57abae45783ff9cbddc6731",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "886513dc1ba292e20dc3f19db8fe9ca9b6039de68d911530e8d96fcc3c3a3f92"
+    },
+    {
+      "file": "adaptive-events-return.zip.part006.base64.txt",
+      "index": 6,
+      "offset": 3145728,
+      "bytes": 131196,
+      "sha256": "85cb7dbe16e9d5c043541f73beae484691df9714ad3354fad77276e9d48ce620",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 177230,
+      "text_sha256": "8dba9539ed95668ad69472430c6cd888bb4f09cb9a02838cc59588b22724f0c0"
+    }
+  ],
+  "branch": "stage11-adaptive-events-transfer-20261008t192308z-025120",
+  "scope": "G07 contact transitions; original ZIP bytes preserved, independent archive branch, never merge"
+}
