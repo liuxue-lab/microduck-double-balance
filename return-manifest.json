@@ -1,0 +1,111 @@
+{
+  "format": "microduck-return-ascii-parts-v2",
+  "file": "contact-precision-return.zip",
+  "bytes": 4896630,
+  "sha256": "2b802fa44f7fdae4352d87ff19f74172312bb5bc3808de611728036c799c88fe",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "contact-precision-return.zip.part000.base64.txt",
+      "index": 0,
+      "offset": 0,
+      "bytes": 524288,
+      "sha256": "6e495fac8f4e90d8b7fa1231dbfedf01cd28866ab5e00e323d36a77389a9414d",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "5a2992053100be4487466fff34b6813ae20cb31cc8eae3948bbe576c8b40a75a"
+    },
+    {
+      "file": "contact-precision-return.zip.part001.base64.txt",
+      "index": 1,
+      "offset": 524288,
+      "bytes": 524288,
+      "sha256": "f7854049ddbc4c78c9c9e2142919ef9f4d3b33498f1e23578e969e7519875400",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "bef78d1a808dff9fa0f586e14bb1621903d5c942508a7709aea5eacc5915c6cd"
+    },
+    {
+      "file": "contact-precision-return.zip.part002.base64.txt",
+      "index": 2,
+      "offset": 1048576,
+      "bytes": 524288,
+      "sha256": "9ecb867da66052fa2eec01dd83744e2eb48ec8289ce4d1b16d9d674d7a8af9e1",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "3a6cc461cf0b6b0922a1a56bf3311367726f1cd602a1bd8d4ea37f6ee27fcf25"
+    },
+    {
+      "file": "contact-precision-return.zip.part003.base64.txt",
+      "index": 3,
+      "offset": 1572864,
+      "bytes": 524288,
+      "sha256": "3884c9d840b131a7aefcefe0f7de35db17fffc85f1d76c813c2b0ab148564548",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "4e4184bdd5db4797bdb4fc9a27647feee80172c895a0a43811c91b207e196e2a"
+    },
+    {
+      "file": "contact-precision-return.zip.part004.base64.txt",
+      "index": 4,
+      "offset": 2097152,
+      "bytes": 524288,
+      "sha256": "5932f82b58e86e4b2474a4502d4109ee02ca54e8a419733fd3b4892d4de3faf0",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "b684424f3e76654eb12472727d4533be5112e5ff3c610109c08e8e718d0abb48"
+    },
+    {
+      "file": "contact-precision-return.zip.part005.base64.txt",
+      "index": 5,
+      "offset": 2621440,
+      "bytes": 524288,
+      "sha256": "2b57535a85230a09e0123eaebe829fdaf7650106de154a956f2ca24014a5b476",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "e894738c71b125487ff3dad044948eabc1a36a6be12d4e710a52ce07f031fa57"
+    },
+    {
+      "file": "contact-precision-return.zip.part006.base64.txt",
+      "index": 6,
+      "offset": 3145728,
+      "bytes": 524288,
+      "sha256": "dd96fd1ae48ec4ef4f4ae22046861196a381c0eee60df9ea6c29dac1cec7d7e9",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "2f22fbce5a70ee5bf1fac3f3ce5dd0e3cb5e44323f5069747a3d76cea0a75cc2"
+    },
+    {
+      "file": "contact-precision-return.zip.part007.base64.txt",
+      "index": 7,
+      "offset": 3670016,
+      "bytes": 524288,
+      "sha256": "b0e29342af467ca0e6b6fa5759a29acc2a4beaa87d373ba87a022089718ff8ee",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "f9b46204f0d68e53773afdda1af4297eee7532b4fd4dbf6775e6607bfc3dc039"
+    },
+    {
+      "file": "contact-precision-return.zip.part008.base64.txt",
+      "index": 8,
+      "offset": 4194304,
+      "bytes": 524288,
+      "sha256": "d921ccf8cf080bdc979bdc5a61a713ebed5ad981dd141843ea08acc52128aed5",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "5e57212f4aa0c15fca6d4a37cf418f0f4adfb91b278fdef9b6e7a87426fab903"
+    },
+    {
+      "file": "contact-precision-return.zip.part009.base64.txt",
+      "index": 9,
+      "offset": 4718592,
+      "bytes": 178038,
+      "sha256": "37339d74f312b9a80a1f8adb74333998b5ef9b8a003d1f0ec56c407fe9792762",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 240508,
+      "text_sha256": "5b9d33494ed6e17d1035b1ba61ca4471620d93b587292acea61434650038a832"
+    }
+  ],
+  "branch": "stage11-contact-precision-transfer-20261008t213756z-143c62",
+  "scope": "G08 contact collision and solver precision isolation; original ZIP bytes preserved, independent archive branch, never merge"
+}
