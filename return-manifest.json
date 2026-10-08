@@ -1,0 +1,18 @@
+{
+  "format": "microduck-return-parts-v1",
+  "file": "manager-cohort-cpu-return.zip",
+  "bytes": 255338,
+  "sha256": "c523b2d7d154307dbad58bc8284b7603e5233368cea395719749477cb59615db",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "manager-cohort-cpu-return.zip.part000",
+      "index": 0,
+      "offset": 0,
+      "bytes": 255338,
+      "sha256": "c523b2d7d154307dbad58bc8284b7603e5233368cea395719749477cb59615db"
+    }
+  ],
+  "branch": "stage11-manager-cohort-cpu-transfer-20261008t083447z-96bd1e",
+  "scope": "bounded CPU EventManager reset evidence; never merge"
+}
