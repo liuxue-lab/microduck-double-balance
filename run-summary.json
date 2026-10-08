@@ -1,0 +1,23 @@
+{
+  "worker_status": "MANAGER_DEPENDENCY_SOURCES_CAPTURED_REVIEW_REQUIRED",
+  "git_state_unchanged": true,
+  "selected_sources_unchanged": true,
+  "timed_out": false,
+  "interrupted": false,
+  "status": "RETURN_REVIEW_REQUIRED",
+  "counts": {
+    "integrations_attempted": 0,
+    "integrations_completed": 0,
+    "CPU_forward": 0,
+    "GPU_forward": 0,
+    "GPU": 0,
+    "Scene": 0,
+    "Manager_instantiation": 0,
+    "PPO": 0
+  },
+  "canonical_completed": 35375,
+  "canonical_attempted": 35376,
+  "PPO": 0,
+  "cloud_hours": 0,
+  "stage11_complete": false
+}

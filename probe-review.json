@@ -1,0 +1,36 @@
+{
+  "status": "MANAGER_DEPENDENCY_SOURCES_CAPTURED_REVIEW_REQUIRED",
+  "canonical_completed": 35375,
+  "canonical_attempted": 35376,
+  "counts": {
+    "integrations_attempted": 0,
+    "integrations_completed": 0,
+    "CPU_forward": 0,
+    "GPU_forward": 0,
+    "GPU": 0,
+    "Scene": 0,
+    "Manager_instantiation": 0,
+    "PPO": 0
+  },
+  "PPO": 0,
+  "stage11_complete": false,
+  "formal_physics_adoption": false,
+  "formal_task_migration": false,
+  "full_manager_lifecycle_validated": false,
+  "full_dynamic_macro_rollback_validated": false,
+  "scope": "Read-only source supplement; no runtime probe or installed-source modification",
+  "installation": {
+    "mjlab_version": "1.3.0",
+    "source_root": "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab",
+    "vcs_commit": null
+  },
+  "captured_files": 20,
+  "root_files_captured": 12,
+  "helper_files_selected": 8,
+  "reused_source_count": 15,
+  "capture_errors": [],
+  "deferred_helpers": [],
+  "bounded_local_source_graph_closed": true,
+  "simulator_imports": [],
+  "elapsed_s": 0.1445414649997474
+}

@@ -1,0 +1,18 @@
+{
+  "format": "microduck-return-parts-v1",
+  "file": "manager-dependency-sources-return.zip",
+  "bytes": 169371,
+  "sha256": "5cff336619da90ec03b69dca21e9349b0f8989f915c526b8ff6123170618fe4e",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "manager-dependency-sources-return.zip.part000",
+      "index": 0,
+      "offset": 0,
+      "bytes": 169371,
+      "sha256": "5cff336619da90ec03b69dca21e9349b0f8989f915c526b8ff6123170618fe4e"
+    }
+  ],
+  "branch": "stage11-manager-dependency-sources-transfer-20261008t073127z-e07f45",
+  "scope": "read-only remaining manager dependency source evidence; never merge"
+}
