@@ -1,0 +1,28 @@
+{
+  "G06_independent_full_archive_review_pending": true,
+  "GPU": 0,
+  "PPO": 0,
+  "canonical_attempted": 151472,
+  "canonical_completed": 151471,
+  "format": "microduck-ascii-shard-repair-v1",
+  "integrations": 0,
+  "original_archive_bytes": 102028697,
+  "original_archive_sha256": "e9df86a376e7c8e03730e0117308a8175bade263e85f0b14685c35cf977ade5f",
+  "original_branch": "stage11-support-material-transfer-20261008t165752z-6c9453",
+  "original_git_blob_sha1": "f6066d92dc69369ac033548beb09b8fbd931256b",
+  "original_manifest_sha256": "359d7b323cd7102f25557e42670a1cec23c250aa716db1ab8ebb6ed51b314876",
+  "original_return_commit": "060e41d395721996430e9b410fc3d227e36e58a7",
+  "original_run": "/home/lx/microduck-double-balance/artifacts/double-balance-stage11/support-material/20261008T165752Z-6c9453",
+  "part": {
+    "bytes": 524288,
+    "file": "support-material-return.zip.part047",
+    "index": 47,
+    "offset": 24641536,
+    "sha256": "2c0c648c4a7aece35dfa36bda89d4aa3c2decbd2dd11c58bbae54b765e35a040"
+  },
+  "repair_scope": "One existing shard; original evidence untouched; no simulation rerun",
+  "text_bytes": 708251,
+  "text_encoding": "base64-ascii-lines",
+  "text_file": "support-material-part047.base64.txt",
+  "text_sha256": "615cbab5bb57ab71407929885266a6080bddd03766a9aca40887ff78d9091528"
+}
