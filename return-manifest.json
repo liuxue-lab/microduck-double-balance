@@ -1,0 +1,18 @@
+{
+  "format": "microduck-return-parts-v1",
+  "file": "manager-transaction-return.zip",
+  "bytes": 298360,
+  "sha256": "fed3ba40c704b00c51a6317e2e04d4a0a99a99be25ee1f6f78a1e4bb3ef9ea47",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "manager-transaction-return.zip.part000",
+      "index": 0,
+      "offset": 0,
+      "bytes": 298360,
+      "sha256": "fed3ba40c704b00c51a6317e2e04d4a0a99a99be25ee1f6f78a1e4bb3ef9ea47"
+    }
+  ],
+  "branch": "stage11-manager-transaction-transfer-20261008t071210z-9f4b9d",
+  "scope": "bounded Action/Observation manager transaction evidence; never merge"
+}
