@@ -1,0 +1,102 @@
+{
+  "format": "microduck-return-parts-v1",
+  "file": "manager-scene-physical-return.zip",
+  "bytes": 6769849,
+  "sha256": "744fd77b7ebcd751485fb7a91cafb346d066f3c3bd1735d4d13101c7ae668d58",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "manager-scene-physical-return.zip.part000",
+      "index": 0,
+      "offset": 0,
+      "bytes": 524288,
+      "sha256": "ec268af105d7f42166df55cd10543ee712d674203ee84014d9549bb8a81f3725"
+    },
+    {
+      "file": "manager-scene-physical-return.zip.part001",
+      "index": 1,
+      "offset": 524288,
+      "bytes": 524288,
+      "sha256": "7394a1ee8cc1e277dceac563bac2b9dec130a53cbbe54e1c3cb028ee93b37098"
+    },
+    {
+      "file": "manager-scene-physical-return.zip.part002",
+      "index": 2,
+      "offset": 1048576,
+      "bytes": 524288,
+      "sha256": "b5c69218d2c45715759e0f1cc00a8f71991af462e23a67676240c50a1e63fb49"
+    },
+    {
+      "file": "manager-scene-physical-return.zip.part003",
+      "index": 3,
+      "offset": 1572864,
+      "bytes": 524288,
+      "sha256": "c29eacd9fb0948c390f79d95a3424945303a7660890e47f801c0dda2278c4737"
+    },
+    {
+      "file": "manager-scene-physical-return.zip.part004",
+      "index": 4,
+      "offset": 2097152,
+      "bytes": 524288,
+      "sha256": "b34e604996542f139689951e4931c40ad497f1a5c8c8b2585fae7c6edcbfbf4d"
+    },
+    {
+      "file": "manager-scene-physical-return.zip.part005",
+      "index": 5,
+      "offset": 2621440,
+      "bytes": 524288,
+      "sha256": "73827649f21af0fef9b1a1d67a2dc784cc767a9f0988dc2c4d06bd8e05d818e5"
+    },
+    {
+      "file": "manager-scene-physical-return.zip.part006",
+      "index": 6,
+      "offset": 3145728,
+      "bytes": 524288,
+      "sha256": "4534fd93ed709a873e1102138763cd77a3c7293e6e3191dea3b5e89d49bbdf8e"
+    },
+    {
+      "file": "manager-scene-physical-return.zip.part007",
+      "index": 7,
+      "offset": 3670016,
+      "bytes": 524288,
+      "sha256": "8ed036b87f769cc23ec72a689928d983d11b6db1121bc3f5b958d4ea49f9cc69"
+    },
+    {
+      "file": "manager-scene-physical-return.zip.part008",
+      "index": 8,
+      "offset": 4194304,
+      "bytes": 524288,
+      "sha256": "a4e7386fb1f5dbed99d264fb7f6f7cce38e2201c325d52834beb3ef3a2fc78f9"
+    },
+    {
+      "file": "manager-scene-physical-return.zip.part009",
+      "index": 9,
+      "offset": 4718592,
+      "bytes": 524288,
+      "sha256": "81b9c283a9bc270fbf5cfa258e7104246b2ae9d27aeecd91bd24c3fc10c14309"
+    },
+    {
+      "file": "manager-scene-physical-return.zip.part010",
+      "index": 10,
+      "offset": 5242880,
+      "bytes": 524288,
+      "sha256": "be02fc8f49da91dc6e61fb2afffd089d7273179815949eee51072c90adb4d834"
+    },
+    {
+      "file": "manager-scene-physical-return.zip.part011",
+      "index": 11,
+      "offset": 5767168,
+      "bytes": 524288,
+      "sha256": "7ad2f2fc96ee5763db3e03a5db3d5644e71292936cbcbc024ca4bebf395a6965"
+    },
+    {
+      "file": "manager-scene-physical-return.zip.part012",
+      "index": 12,
+      "offset": 6291456,
+      "bytes": 478393,
+      "sha256": "1ca0ab43cf7f948d8db14247d6ddcdad1897d62600341866e2de7945a203c793"
+    }
+  ],
+  "branch": "stage11-manager-scene-physical-transfer-20261008t100740z-114c12",
+  "scope": "bounded dynamic sensor macro evidence; never merge"
+}
