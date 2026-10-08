@@ -1,0 +1,18 @@
+{
+  "format": "microduck-return-parts-v1",
+  "file": "manager-boundary-cpu-return.zip",
+  "bytes": 468307,
+  "sha256": "e7d2c2fcc68d2e0590858890b47f33df45651d57e43cb73072098a5f2db36a04",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "manager-boundary-cpu-return.zip.part000",
+      "index": 0,
+      "offset": 0,
+      "bytes": 468307,
+      "sha256": "e7d2c2fcc68d2e0590858890b47f33df45651d57e43cb73072098a5f2db36a04"
+    }
+  ],
+  "branch": "stage11-manager-boundary-cpu-transfer-20261008t091927z-c07b18",
+  "scope": "native nine-manager control boundary CPU evidence; never merge"
+}
