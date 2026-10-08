@@ -1,0 +1,42 @@
+{
+  "status": "BOUNDED_CONTACT_MATERIAL_AUDIT_PASS_REVIEW_REQUIRED",
+  "counts": {
+    "integrations_attempted": 0,
+    "integrations_completed": 0,
+    "GPU": 0,
+    "PPO": 0,
+    "CPU_forward_attempted": 0,
+    "CPU_forward_completed": 0,
+    "model_compile_attempted": 1,
+    "model_compile_completed": 1,
+    "CPU_kinematics_attempted": 117,
+    "CPU_kinematics_completed": 117,
+    "CPU_collision_attempted": 117,
+    "CPU_collision_completed": 117,
+    "CPU_geom_distance_attempted": 585,
+    "CPU_geom_distance_completed": 585
+  },
+  "canonical_completed": 90671,
+  "canonical_attempted": 90672,
+  "PPO": 0,
+  "formal_clock_adopted": false,
+  "material_convergence_accepted": false,
+  "stage11_complete": false,
+  "samples": 107,
+  "exact_static_replays": 10,
+  "matched_gpu_distance_queries_including_replays": 283,
+  "max_cpu_gpu_gap_difference_m": {
+    "(84, 49)": 5.5928207835787e-08,
+    "(0, 82)": 2.682209010451686e-09,
+    "(82, 29)": 5.8696739191343994e-08,
+    "(82, 79)": 6.01528910293414e-08,
+    "(0, 84)": 4.470348362317633e-10
+  },
+  "max_contact_parameter_error": 0.0,
+  "original_clock_report_recovered_as_separate_evidence": true,
+  "original_worker_exit_code": 1,
+  "model_arrays_unchanged": true,
+  "GPU_execution": false,
+  "head_rim_or_loss_criterion_adopted": false,
+  "elapsed_s": 12.12332881600014
+}

@@ -1,0 +1,31 @@
+{
+  "worker_status": "BOUNDED_CONTACT_MATERIAL_AUDIT_PASS_REVIEW_REQUIRED",
+  "git_state_unchanged": true,
+  "selected_sources_unchanged": true,
+  "timed_out": false,
+  "interrupted": false,
+  "status": "RETURN_REVIEW_REQUIRED",
+  "counts": {
+    "integrations_attempted": 0,
+    "integrations_completed": 0,
+    "GPU": 0,
+    "PPO": 0,
+    "CPU_forward_attempted": 0,
+    "CPU_forward_completed": 0,
+    "model_compile_attempted": 1,
+    "model_compile_completed": 1,
+    "CPU_kinematics_attempted": 117,
+    "CPU_kinematics_completed": 117,
+    "CPU_collision_attempted": 117,
+    "CPU_collision_completed": 117,
+    "CPU_geom_distance_attempted": 585,
+    "CPU_geom_distance_completed": 585
+  },
+  "canonical_completed": 90671,
+  "canonical_attempted": 90672,
+  "PPO": 0,
+  "cloud_hours": 0,
+  "stage11_complete": false,
+  "reviewed_stage11_progress_estimate_percent": 91,
+  "new_result_pending_independent_review": true
+}

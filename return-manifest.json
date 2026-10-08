@@ -1,0 +1,53 @@
+{
+  "format": "microduck-return-parts-v1",
+  "file": "contact-material-audit-return.zip",
+  "bytes": 2777480,
+  "sha256": "cfea8ee424d2f55d95d928e0a8a7c12755ffbc08418c965574b5260ae5bd57f2",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "contact-material-audit-return.zip.part000",
+      "index": 0,
+      "offset": 0,
+      "bytes": 524288,
+      "sha256": "d5cec3db4edd675680db8bdf8ed0dd08a9cf8239781cfab7591ea831aed2f2a2"
+    },
+    {
+      "file": "contact-material-audit-return.zip.part001",
+      "index": 1,
+      "offset": 524288,
+      "bytes": 524288,
+      "sha256": "497edc4e4d130ceee36f1dc42747eacc453fc983ceeaf81e7b5ac43156148426"
+    },
+    {
+      "file": "contact-material-audit-return.zip.part002",
+      "index": 2,
+      "offset": 1048576,
+      "bytes": 524288,
+      "sha256": "31c487214dabbc632135eeb209ba80aa04b46a474a9bfd0fd5876352060b2eae"
+    },
+    {
+      "file": "contact-material-audit-return.zip.part003",
+      "index": 3,
+      "offset": 1572864,
+      "bytes": 524288,
+      "sha256": "b5433cc6eda4bf11d5b132134814c6c7894bac7b0e62d0fef59da3319c69eb09"
+    },
+    {
+      "file": "contact-material-audit-return.zip.part004",
+      "index": 4,
+      "offset": 2097152,
+      "bytes": 524288,
+      "sha256": "1b9a6d02e4722e9ec458f8f702bfcbf874cf3eec8486131a172cb0fad18f73e1"
+    },
+    {
+      "file": "contact-material-audit-return.zip.part005",
+      "index": 5,
+      "offset": 2621440,
+      "bytes": 156040,
+      "sha256": "ce0b6be26dacd3e09bb5011fe1fdaeb89cfb15239c67cc4119194eebbfb3d96a"
+    }
+  ],
+  "branch": "stage11-contact-material-audit-transfer-20261008t155554z-4e59a4",
+  "scope": "zero-integration clock report recovery and frozen contact material audit; never merge"
+}
