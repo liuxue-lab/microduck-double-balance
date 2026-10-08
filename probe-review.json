@@ -1,0 +1,3849 @@
+{
+  "status": "BOUNDED_SOLVER_TOLERANCE_MEASURED_REVIEW_REQUIRED",
+  "counts": {
+    "integrations_attempted": 28416,
+    "integrations_completed": 28416,
+    "PPO": 0,
+    "CPU_kinematics_attempted": 2,
+    "CPU_kinematics_completed": 2,
+    "CPU_geom_distance_attempted": 1,
+    "CPU_geom_distance_completed": 1,
+    "sensor_data_reads": 308,
+    "sensor_reference_computes": 0,
+    "model_compile_completed": 1,
+    "CPU_forward_attempted": 2,
+    "CPU_forward_completed": 2,
+    "CPU_kinematics_initialization_attempted": 1,
+    "CPU_kinematics_native_attempted": 3,
+    "CPU_kinematics_native_completed": 3,
+    "CPU_kinematics_initialization_completed": 1,
+    "graph_setup_suppressed": 3,
+    "Scene_initialize_attempted": 1,
+    "context_create_attempted": 1,
+    "context_create_completed": 1,
+    "Scene_initialize_completed": 1,
+    "Scene_reset_attempted": 2,
+    "Scene_reset_completed": 2,
+    "CPU_kinematics_nominal_native_attempted": 2,
+    "CPU_kinematics_nominal_native_completed": 2,
+    "CPU_geom_distance_native_attempted": 1,
+    "CPU_geom_distance_native_completed": 1,
+    "GPU_forward_attempted": 113711,
+    "GPU_forward_completed": 113711,
+    "Scene_update_attempted": 41,
+    "Scene_update_completed": 41,
+    "sense_attempted": 11,
+    "BVH_refit_attempted": 11,
+    "BVH_refit_completed": 11,
+    "ray_batch_attempted": 11,
+    "ray_batch_completed": 11,
+    "sense_completed": 11,
+    "post_sense_cache_invalidations": 154,
+    "EventManager_attempted": 1,
+    "EventManager_completed": 1,
+    "CommandManager_attempted": 1,
+    "CommandManager_completed": 1,
+    "ActionManager_attempted": 1,
+    "ActionManager_completed": 1,
+    "ObservationManager_attempted": 1,
+    "ObservationManager_completed": 1,
+    "TerminationManager_attempted": 1,
+    "TerminationManager_completed": 1,
+    "RewardManager_attempted": 1,
+    "RewardManager_completed": 1,
+    "CurriculumManager_attempted": 1,
+    "CurriculumManager_completed": 1,
+    "MetricsManager_attempted": 1,
+    "MetricsManager_completed": 1,
+    "RecorderManager_attempted": 1,
+    "RecorderManager_completed": 1,
+    "Material_assignments_attempted": 5,
+    "Material_assignments_completed": 5,
+    "Env_reset_attempted": 1,
+    "Curriculum_compute_attempted": 1,
+    "Curriculum_compute_completed": 1,
+    "Simulation_reset_attempted": 1,
+    "Native_simulation_reset_attempted": 1,
+    "GPU_reset_data_attempted": 1,
+    "GPU_reset_data_completed": 1,
+    "Native_simulation_reset_completed": 1,
+    "Simulation_reset_completed": 1,
+    "Event_apply_attempted": 9,
+    "Event_apply_completed": 9,
+    "Observation_reset_attempted": 1,
+    "Observation_reset_completed": 1,
+    "Action_reset_attempted": 1,
+    "Action_reset_completed": 1,
+    "Reward_reset_attempted": 1,
+    "Reward_reset_completed": 1,
+    "Metrics_reset_attempted": 1,
+    "Metrics_reset_completed": 1,
+    "Curriculum_reset_attempted": 1,
+    "Curriculum_reset_completed": 1,
+    "Command_reset_attempted": 1,
+    "Command_reset_completed": 1,
+    "Event_reset_attempted": 1,
+    "Event_reset_completed": 1,
+    "Termination_reset_attempted": 1,
+    "Termination_reset_completed": 1,
+    "Scene_write_data_to_sim_attempted": 41,
+    "delay_apply_attempted": 41,
+    "delay_apply_completed": 41,
+    "BAM_compute_attempted": 41,
+    "BAM_compute_completed": 41,
+    "Scene_write_data_to_sim_completed": 41,
+    "Simulation_forward_attempted": 5,
+    "endpoint_forward_attempted": 46,
+    "endpoint_forward_completed": 46,
+    "Simulation_forward_completed": 5,
+    "Command_compute_attempted": 5,
+    "Command_compute_completed": 5,
+    "command_timer_oracles": 5,
+    "Simulation_sense_attempted": 5,
+    "Simulation_sense_completed": 5,
+    "Observation_compute_attempted": 5,
+    "Observation_compute_completed": 5,
+    "Recorder_record_post_reset_attempted": 1,
+    "Recorder_record_post_reset_completed": 1,
+    "Env_reset_completed": 1,
+    "Observation_cache_attempted": 10,
+    "Observation_cache_completed": 10,
+    "Env_step_attempted": 4,
+    "Action_process_action_attempted": 4,
+    "Action_process_action_completed": 4,
+    "Action_apply_action_attempted": 40,
+    "Action_apply_action_completed": 40,
+    "Simulation_step_attempted": 40,
+    "Clock_assignments_attempted": 80,
+    "Clock_assignments_completed": 80,
+    "integrations_n64_attempted": 256,
+    "rk_stages_observed": 113664,
+    "RK4_integrator_attempted": 28416,
+    "RK4_integrator_completed": 28416,
+    "integrations_n64_completed": 256,
+    "Contact_force_attempted": 40,
+    "Contact_force_completed": 40,
+    "Simulation_step_completed": 40,
+    "air_time_oracle_updates": 40,
+    "Metrics_compute_substep_attempted": 40,
+    "Metrics_compute_substep_completed": 40,
+    "Precision_options_attempted": 16,
+    "Precision_options_completed": 16,
+    "integrations_n2048_attempted": 8192,
+    "integrations_n2048_completed": 8192,
+    "Position_compensation_attempted": 28160,
+    "Position_compensation_completed": 28160,
+    "integrations_n128_attempted": 3584,
+    "integrations_n128_completed": 3584,
+    "Termination_compute_attempted": 4,
+    "Termination_compute_completed": 4,
+    "Reward_compute_attempted": 4,
+    "Reward_compute_completed": 4,
+    "Metrics_compute_attempted": 4,
+    "Metrics_compute_completed": 4,
+    "interval_timer_oracles": 4,
+    "Recorder_record_post_step_attempted": 4,
+    "Recorder_record_post_step_completed": 4,
+    "Env_step_completed": 4,
+    "Data_restore_attempted": 4,
+    "Data_restore_completed": 4,
+    "Model_restore_attempted": 4,
+    "Model_restore_completed": 4,
+    "Owner_restore_attempted": 8,
+    "Owner_restore_completed": 8,
+    "RNG_restore_attempted": 4,
+    "RNG_restore_completed": 4,
+    "integrations_n4096_attempted": 16384,
+    "integrations_n4096_completed": 16384,
+    "Recorder_close_attempted": 1,
+    "Recorder_close_completed": 1
+  },
+  "canonical_completed": 360751,
+  "canonical_attempted": 360752,
+  "PPO": 0,
+  "formal_physics_adoption": false,
+  "formal_task_migration": false,
+  "full_scene_sensor_lifecycle_validated": false,
+  "full_dynamic_macro_rollback_validated": false,
+  "stage11_complete": false,
+  "snapshot_restore_exercised": true,
+  "scope": "Four20ms common64-prefix solver stopping tolerance1e-8/1e-10 at cap80; n2048/n4096 only2--6ms; native stop telemetry",
+  "full_manager_lifecycle_validated": false,
+  "formal_event_fix_adopted": false,
+  "bounded_solver_tolerance_matrix_measured": true,
+  "reference_selection": {
+    "passed": false,
+    "status": "G08_SOLVER_TOLERANCE_MEASURED_PENDING_REVIEW",
+    "measurement_complete": true,
+    "G08_closed": false,
+    "position_compensation_calls": 28160,
+    "trial_counts": {
+      "64": 4,
+      "128": 28,
+      "2048": 4,
+      "4096": 4
+    },
+    "integrator_candidate": "unchanged native RK plus reviewed additive position compensation",
+    "formal_integrator_adoption": false,
+    "scope": "Four20ms paths: n2048/n4096 times solver tolerance1e-8/1e-10 at cap80 only2--6ms; original CCD50/1e-6 unchanged; archived GPU solver1e-6 baselines reused. Free-flight projection is diagnostic, not200ms acceptance."
+  },
+  "event_results": {
+    "head-exit": {
+      "tol8n2048": {
+        "passed": true,
+        "checks": [
+          {
+            "metric": "head_enter",
+            "passed": true
+          },
+          {
+            "metric": "head_leave",
+            "passed": true
+          },
+          {
+            "metric": "head_loaded_observed",
+            "passed": true
+          },
+          {
+            "metric": "overlap_upper_head",
+            "value": 5.835294723510742e-05,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_lower_floor",
+            "value": 0.0001399889588356018,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_lower_left_foot",
+            "value": 0.0,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_lower_right_foot",
+            "value": 0.0,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_upper_floor",
+            "value": 0.0,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_left_foot_floor",
+            "value": 0.0,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_right_foot_floor",
+            "value": 0.0,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "positive_load_upper_head",
+            "normal_impulse_Ns": 0.0026333422826122165,
+            "loaded_time_s": 0.001755696697974448,
+            "peak_overlap_m": 5.835294723510742e-05,
+            "passed": true
+          },
+          {
+            "metric": "positive_load_lower_floor",
+            "normal_impulse_Ns": 0.1329651404720623,
+            "loaded_time_s": 0.005721354438416407,
+            "peak_overlap_m": 0.0001399889588356018,
+            "passed": true
+          }
+        ],
+        "failed_metrics": [],
+        "head_enter_ticks": [
+          2
+        ],
+        "head_leave_ticks": [
+          3
+        ],
+        "required_event_ticks": {
+          "head_enter": 2,
+          "head_leave": 3
+        },
+        "scope": "20ms contact-window diagnostics only; head-loss/200ms gate not evaluated"
+      },
+      "tol8n4096": {
+        "passed": true,
+        "checks": [
+          {
+            "metric": "head_enter",
+            "passed": true
+          },
+          {
+            "metric": "head_leave",
+            "passed": true
+          },
+          {
+            "metric": "head_loaded_observed",
+            "passed": true
+          },
+          {
+            "metric": "overlap_upper_head",
+            "value": 5.8278441429138184e-05,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_lower_floor",
+            "value": 0.00014001131057739258,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_lower_left_foot",
+            "value": 0.0,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_lower_right_foot",
+            "value": 0.0,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_upper_floor",
+            "value": 0.0,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_left_foot_floor",
+            "value": 0.0,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_right_foot_floor",
+            "value": 0.0,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "positive_load_upper_head",
+            "normal_impulse_Ns": 0.002631167208559476,
+            "loaded_time_s": 0.001753580812457282,
+            "peak_overlap_m": 5.8278441429138184e-05,
+            "passed": true
+          },
+          {
+            "metric": "positive_load_lower_floor",
+            "normal_impulse_Ns": 0.13296884889566432,
+            "loaded_time_s": 0.005721354438416407,
+            "peak_overlap_m": 0.00014001131057739258,
+            "passed": true
+          }
+        ],
+        "failed_metrics": [],
+        "head_enter_ticks": [
+          2
+        ],
+        "head_leave_ticks": [
+          3
+        ],
+        "required_event_ticks": {
+          "head_enter": 2,
+          "head_leave": 3
+        },
+        "scope": "20ms contact-window diagnostics only; head-loss/200ms gate not evaluated"
+      },
+      "tol10n2048": {
+        "passed": true,
+        "checks": [
+          {
+            "metric": "head_enter",
+            "passed": true
+          },
+          {
+            "metric": "head_leave",
+            "passed": true
+          },
+          {
+            "metric": "head_loaded_observed",
+            "passed": true
+          },
+          {
+            "metric": "overlap_upper_head",
+            "value": 5.835294723510742e-05,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_lower_floor",
+            "value": 0.0001399889588356018,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_lower_left_foot",
+            "value": 0.0,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_lower_right_foot",
+            "value": 0.0,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_upper_floor",
+            "value": 0.0,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_left_foot_floor",
+            "value": 0.0,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_right_foot_floor",
+            "value": 0.0,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "positive_load_upper_head",
+            "normal_impulse_Ns": 0.0026333422826122165,
+            "loaded_time_s": 0.001755696697974448,
+            "peak_overlap_m": 5.835294723510742e-05,
+            "passed": true
+          },
+          {
+            "metric": "positive_load_lower_floor",
+            "normal_impulse_Ns": 0.1329651404720623,
+            "loaded_time_s": 0.005721354438416407,
+            "peak_overlap_m": 0.0001399889588356018,
+            "passed": true
+          }
+        ],
+        "failed_metrics": [],
+        "head_enter_ticks": [
+          2
+        ],
+        "head_leave_ticks": [
+          3
+        ],
+        "required_event_ticks": {
+          "head_enter": 2,
+          "head_leave": 3
+        },
+        "scope": "20ms contact-window diagnostics only; head-loss/200ms gate not evaluated"
+      },
+      "tol10n4096": {
+        "passed": true,
+        "checks": [
+          {
+            "metric": "head_enter",
+            "passed": true
+          },
+          {
+            "metric": "head_leave",
+            "passed": true
+          },
+          {
+            "metric": "head_loaded_observed",
+            "passed": true
+          },
+          {
+            "metric": "overlap_upper_head",
+            "value": 5.8278441429138184e-05,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_lower_floor",
+            "value": 0.00014001131057739258,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_lower_left_foot",
+            "value": 0.0,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_lower_right_foot",
+            "value": 0.0,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_upper_floor",
+            "value": 0.0,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_left_foot_floor",
+            "value": 0.0,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "overlap_right_foot_floor",
+            "value": 0.0,
+            "limit": 0.001,
+            "passed": true
+          },
+          {
+            "metric": "positive_load_upper_head",
+            "normal_impulse_Ns": 0.002631167208559476,
+            "loaded_time_s": 0.001753580812457282,
+            "peak_overlap_m": 5.8278441429138184e-05,
+            "passed": true
+          },
+          {
+            "metric": "positive_load_lower_floor",
+            "normal_impulse_Ns": 0.13296884889566432,
+            "loaded_time_s": 0.005721354438416407,
+            "peak_overlap_m": 0.00014001131057739258,
+            "passed": true
+          }
+        ],
+        "failed_metrics": [],
+        "head_enter_ticks": [
+          2
+        ],
+        "head_leave_ticks": [
+          3
+        ],
+        "required_event_ticks": {
+          "head_enter": 2,
+          "head_leave": 3
+        },
+        "scope": "20ms contact-window diagnostics only; head-loss/200ms gate not evaluated"
+      }
+    }
+  },
+  "event_agreements": {
+    "tol8-grid": {
+      "passed": true,
+      "checks": [
+        {
+          "metric": "head_enter",
+          "coarse_tick": 2,
+          "fine_tick": 2,
+          "difference_ticks": 0,
+          "limit_ticks": 1,
+          "passed": true
+        },
+        {
+          "metric": "head_leave",
+          "coarse_tick": 3,
+          "fine_tick": 3,
+          "difference_ticks": 0,
+          "limit_ticks": 1,
+          "passed": true
+        }
+      ],
+      "failed_metrics": []
+    },
+    "tol10-grid": {
+      "passed": true,
+      "checks": [
+        {
+          "metric": "head_enter",
+          "coarse_tick": 2,
+          "fine_tick": 2,
+          "difference_ticks": 0,
+          "limit_ticks": 1,
+          "passed": true
+        },
+        {
+          "metric": "head_leave",
+          "coarse_tick": 3,
+          "fine_tick": 3,
+          "difference_ticks": 0,
+          "limit_ticks": 1,
+          "passed": true
+        }
+      ],
+      "failed_metrics": []
+    },
+    "tolerance2048": {
+      "passed": true,
+      "checks": [
+        {
+          "metric": "head_enter",
+          "coarse_tick": 2,
+          "fine_tick": 2,
+          "difference_ticks": 0,
+          "limit_ticks": 1,
+          "passed": true
+        },
+        {
+          "metric": "head_leave",
+          "coarse_tick": 3,
+          "fine_tick": 3,
+          "difference_ticks": 0,
+          "limit_ticks": 1,
+          "passed": true
+        }
+      ],
+      "failed_metrics": []
+    },
+    "tolerance4096": {
+      "passed": true,
+      "checks": [
+        {
+          "metric": "head_enter",
+          "coarse_tick": 2,
+          "fine_tick": 2,
+          "difference_ticks": 0,
+          "limit_ticks": 1,
+          "passed": true
+        },
+        {
+          "metric": "head_leave",
+          "coarse_tick": 3,
+          "fine_tick": 3,
+          "difference_ticks": 0,
+          "limit_ticks": 1,
+          "passed": true
+        }
+      ],
+      "failed_metrics": []
+    }
+  },
+  "comparisons": {
+    "baseline-tol8n2048": {
+      "passed": true,
+      "checks": [
+        {
+          "metric": "free_translation_m",
+          "value": 1.6370944738670344e-10,
+          "tick": 10,
+          "component": "robot",
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "free_rotation_rad",
+          "value": 5.704396920072313e-09,
+          "tick": 10,
+          "component": "robot",
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "hinge_position_rad",
+          "value": 7.815970093361102e-13,
+          "tick": 5,
+          "component": "qpos:7",
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "free_linear_velocity_m_s",
+          "value": 2.415625499457545e-08,
+          "tick": 3,
+          "component": "robot",
+          "limit": 0.005,
+          "passed": true
+        },
+        {
+          "metric": "angular_velocity_rad_s",
+          "value": 2.1811574697494507e-06,
+          "tick": 3,
+          "component": "qvel:12",
+          "limit": 0.05,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "upper_head",
+          "coarse": 5.835294723510742e-05,
+          "fine": 5.835294723510742e-05,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "upper_head",
+          "coarse": 0.0026333426148809624,
+          "fine": 0.0026333422826122165,
+          "value": 3.322687459374196e-10,
+          "limit": 0.00012633342282612216,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "upper_head",
+          "coarse": 0.001755696697974448,
+          "fine": 0.001755696697974448,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_floor",
+          "coarse": 0.0001399889588356018,
+          "fine": 0.0001399889588356018,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_floor",
+          "coarse": 0.1329651404720623,
+          "fine": 0.1329651404720623,
+          "value": 0.0,
+          "limit": 0.001429651404720623,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_floor",
+          "coarse": 0.005721354438416407,
+          "fine": 0.005721354438416407,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        }
+      ],
+      "failed_metrics": [],
+      "compared_endpoints": 10,
+      "interpretation": "Bounded numerical agreement only; no material calibration or RK order claim",
+      "terminal_projection": {
+        "start_time_s": 0.006,
+        "horizon_time_s": 0.2,
+        "orientation_at6ms_rad": 9.700180354151319e-13,
+        "upper_angular_velocity_difference_rad_s": 1.2491939229143608e-09,
+        "conditional_free_flight_orientation_at200ms_rad": 1.1887099675163512e-10,
+        "unchanged_orientation_limit_rad": 0.001,
+        "exceeds_orientation_limit": false,
+        "full_200ms_acceptance": false,
+        "assumption": "Upper ball remains torque-free with constant body angular velocity after6ms; not a new200ms simulation"
+      }
+    },
+    "baseline-tol8n4096": {
+      "passed": true,
+      "checks": [
+        {
+          "metric": "free_translation_m",
+          "value": 3.637994419569496e-12,
+          "tick": 10,
+          "component": "robot",
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "free_rotation_rad",
+          "value": 5.884907123592006e-08,
+          "tick": 10,
+          "component": "upper",
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "hinge_position_rad",
+          "value": 7.105427357601002e-14,
+          "tick": 10,
+          "component": "qpos:7",
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "free_linear_velocity_m_s",
+          "value": 1.4901165324457885e-08,
+          "tick": 10,
+          "component": "upper",
+          "limit": 0.005,
+          "passed": true
+        },
+        {
+          "metric": "angular_velocity_rad_s",
+          "value": 3.814697359562391e-06,
+          "tick": 10,
+          "component": "upper",
+          "limit": 0.05,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "upper_head",
+          "coarse": 5.8278441429138184e-05,
+          "fine": 5.8278441429138184e-05,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "upper_head",
+          "coarse": 0.0026311692339193947,
+          "fine": 0.002631167208559476,
+          "value": 2.025359918840508e-09,
+          "limit": 0.00012631167208559477,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "upper_head",
+          "coarse": 0.001753580812457282,
+          "fine": 0.001753580812457282,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_floor",
+          "coarse": 0.00014001131057739258,
+          "fine": 0.00014001131057739258,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_floor",
+          "coarse": 0.13296884889566432,
+          "fine": 0.13296884889566432,
+          "value": 0.0,
+          "limit": 0.0014296884889566433,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_floor",
+          "coarse": 0.005721354438416407,
+          "fine": 0.005721354438416407,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        }
+      ],
+      "failed_metrics": [],
+      "compared_endpoints": 10,
+      "interpretation": "Bounded numerical agreement only; no material calibration or RK order claim",
+      "terminal_projection": {
+        "start_time_s": 0.006,
+        "horizon_time_s": 0.2,
+        "orientation_at6ms_rad": 1.1173324849855697e-08,
+        "upper_angular_velocity_difference_rad_s": 3.814697359562391e-06,
+        "conditional_free_flight_orientation_at200ms_rad": 7.512245981747651e-07,
+        "unchanged_orientation_limit_rad": 0.001,
+        "exceeds_orientation_limit": false,
+        "full_200ms_acceptance": false,
+        "assumption": "Upper ball remains torque-free with constant body angular velocity after6ms; not a new200ms simulation"
+      }
+    },
+    "baseline-tol10n2048": {
+      "passed": true,
+      "checks": [
+        {
+          "metric": "free_translation_m",
+          "value": 1.637094395611921e-10,
+          "tick": 10,
+          "component": "robot",
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "free_rotation_rad",
+          "value": 5.704396933353958e-09,
+          "tick": 10,
+          "component": "robot",
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "hinge_position_rad",
+          "value": 7.815970093361102e-13,
+          "tick": 5,
+          "component": "qpos:7",
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "free_linear_velocity_m_s",
+          "value": 2.4156254426357054e-08,
+          "tick": 3,
+          "component": "robot",
+          "limit": 0.005,
+          "passed": true
+        },
+        {
+          "metric": "angular_velocity_rad_s",
+          "value": 2.1811574697494507e-06,
+          "tick": 3,
+          "component": "qvel:12",
+          "limit": 0.05,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "upper_head",
+          "coarse": 5.835294723510742e-05,
+          "fine": 5.835294723510742e-05,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "upper_head",
+          "coarse": 0.0026333426148809624,
+          "fine": 0.0026333422826122165,
+          "value": 3.322687459374196e-10,
+          "limit": 0.00012633342282612216,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "upper_head",
+          "coarse": 0.001755696697974448,
+          "fine": 0.001755696697974448,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_floor",
+          "coarse": 0.0001399889588356018,
+          "fine": 0.0001399889588356018,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_floor",
+          "coarse": 0.1329651404720623,
+          "fine": 0.1329651404720623,
+          "value": 0.0,
+          "limit": 0.001429651404720623,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_floor",
+          "coarse": 0.005721354438416407,
+          "fine": 0.005721354438416407,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        }
+      ],
+      "failed_metrics": [],
+      "compared_endpoints": 10,
+      "interpretation": "Bounded numerical agreement only; no material calibration or RK order claim",
+      "terminal_projection": {
+        "start_time_s": 0.006,
+        "horizon_time_s": 0.2,
+        "orientation_at6ms_rad": 9.700180354151319e-13,
+        "upper_angular_velocity_difference_rad_s": 1.2491939229143608e-09,
+        "conditional_free_flight_orientation_at200ms_rad": 1.1887099675163512e-10,
+        "unchanged_orientation_limit_rad": 0.001,
+        "exceeds_orientation_limit": false,
+        "full_200ms_acceptance": false,
+        "assumption": "Upper ball remains torque-free with constant body angular velocity after6ms; not a new200ms simulation"
+      }
+    },
+    "baseline-tol10n4096": {
+      "passed": true,
+      "checks": [
+        {
+          "metric": "free_translation_m",
+          "value": 1.8190449138500806e-12,
+          "tick": 10,
+          "component": "robot",
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "free_rotation_rad",
+          "value": 5.884907123592006e-08,
+          "tick": 10,
+          "component": "upper",
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "hinge_position_rad",
+          "value": 7.105427357601002e-14,
+          "tick": 10,
+          "component": "qpos:7",
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "free_linear_velocity_m_s",
+          "value": 1.4901165324457885e-08,
+          "tick": 10,
+          "component": "upper",
+          "limit": 0.005,
+          "passed": true
+        },
+        {
+          "metric": "angular_velocity_rad_s",
+          "value": 3.814697359562391e-06,
+          "tick": 10,
+          "component": "upper",
+          "limit": 0.05,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "upper_head",
+          "coarse": 5.8278441429138184e-05,
+          "fine": 5.8278441429138184e-05,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "upper_head",
+          "coarse": 0.0026311692339193947,
+          "fine": 0.002631167208559476,
+          "value": 2.025359918840508e-09,
+          "limit": 0.00012631167208559477,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "upper_head",
+          "coarse": 0.001753580812457282,
+          "fine": 0.001753580812457282,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_floor",
+          "coarse": 0.00014001131057739258,
+          "fine": 0.00014001131057739258,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_floor",
+          "coarse": 0.13296884889566432,
+          "fine": 0.13296884889566432,
+          "value": 0.0,
+          "limit": 0.0014296884889566433,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_floor",
+          "coarse": 0.005721354438416407,
+          "fine": 0.005721354438416407,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        }
+      ],
+      "failed_metrics": [],
+      "compared_endpoints": 10,
+      "interpretation": "Bounded numerical agreement only; no material calibration or RK order claim",
+      "terminal_projection": {
+        "start_time_s": 0.006,
+        "horizon_time_s": 0.2,
+        "orientation_at6ms_rad": 1.1173324849855697e-08,
+        "upper_angular_velocity_difference_rad_s": 3.814697359562391e-06,
+        "conditional_free_flight_orientation_at200ms_rad": 7.512245981747651e-07,
+        "unchanged_orientation_limit_rad": 0.001,
+        "exceeds_orientation_limit": false,
+        "full_200ms_acceptance": false,
+        "assumption": "Upper ball remains torque-free with constant body angular velocity after6ms; not a new200ms simulation"
+      }
+    },
+    "tol8-grid": {
+      "passed": true,
+      "checks": [
+        {
+          "metric": "free_translation_m",
+          "value": 1.778150173277131e-06,
+          "tick": 10,
+          "component": "upper",
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "free_rotation_rad",
+          "value": 0.00019036752924988983,
+          "tick": 10,
+          "component": "upper",
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "hinge_position_rad",
+          "value": 5.960464477539063e-08,
+          "tick": 10,
+          "component": "qpos:13",
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "free_linear_velocity_m_s",
+          "value": 0.00012507467352697825,
+          "tick": 10,
+          "component": "upper",
+          "limit": 0.005,
+          "passed": true
+        },
+        {
+          "metric": "angular_velocity_rad_s",
+          "value": 0.012544631958209696,
+          "tick": 10,
+          "component": "upper",
+          "limit": 0.05,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "upper_head",
+          "coarse": 5.835294723510742e-05,
+          "fine": 5.8278441429138184e-05,
+          "value": 7.450580596923828e-08,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "upper_head",
+          "coarse": 0.0026333422826122165,
+          "fine": 0.002631167208559476,
+          "value": 2.1750740527405957e-06,
+          "limit": 0.00012631167208559477,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "upper_head",
+          "coarse": 0.001755696697974448,
+          "fine": 0.001753580812457282,
+          "value": 2.1158855171659035e-06,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_floor",
+          "coarse": 0.0001399889588356018,
+          "fine": 0.00014001131057739258,
+          "value": 2.2351741790771484e-08,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_floor",
+          "coarse": 0.1329651404720623,
+          "fine": 0.13296884889566432,
+          "value": 3.708423602033495e-06,
+          "limit": 0.0014296884889566433,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_floor",
+          "coarse": 0.005721354438416407,
+          "fine": 0.005721354438416407,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        }
+      ],
+      "failed_metrics": [],
+      "compared_endpoints": 10,
+      "interpretation": "Bounded numerical agreement only; no material calibration or RK order claim",
+      "terminal_projection": {
+        "start_time_s": 0.006,
+        "horizon_time_s": 0.2,
+        "orientation_at6ms_rad": 1.468683708576948e-05,
+        "upper_angular_velocity_difference_rad_s": 0.012544631958007812,
+        "conditional_free_flight_orientation_at200ms_rad": 0.0024483454369470066,
+        "unchanged_orientation_limit_rad": 0.001,
+        "exceeds_orientation_limit": true,
+        "full_200ms_acceptance": false,
+        "assumption": "Upper ball remains torque-free with constant body angular velocity after6ms; not a new200ms simulation"
+      }
+    },
+    "tol10-grid": {
+      "passed": true,
+      "checks": [
+        {
+          "metric": "free_translation_m",
+          "value": 1.778150173277131e-06,
+          "tick": 10,
+          "component": "upper",
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "free_rotation_rad",
+          "value": 0.00019036752924988983,
+          "tick": 10,
+          "component": "upper",
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "hinge_position_rad",
+          "value": 5.960464477539063e-08,
+          "tick": 10,
+          "component": "qpos:13",
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "free_linear_velocity_m_s",
+          "value": 0.00012507467352697825,
+          "tick": 10,
+          "component": "upper",
+          "limit": 0.005,
+          "passed": true
+        },
+        {
+          "metric": "angular_velocity_rad_s",
+          "value": 0.012544631958209696,
+          "tick": 10,
+          "component": "upper",
+          "limit": 0.05,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "upper_head",
+          "coarse": 5.835294723510742e-05,
+          "fine": 5.8278441429138184e-05,
+          "value": 7.450580596923828e-08,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "upper_head",
+          "coarse": 0.0026333422826122165,
+          "fine": 0.002631167208559476,
+          "value": 2.1750740527405957e-06,
+          "limit": 0.00012631167208559477,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "upper_head",
+          "coarse": 0.001755696697974448,
+          "fine": 0.001753580812457282,
+          "value": 2.1158855171659035e-06,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_floor",
+          "coarse": 0.0001399889588356018,
+          "fine": 0.00014001131057739258,
+          "value": 2.2351741790771484e-08,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_floor",
+          "coarse": 0.1329651404720623,
+          "fine": 0.13296884889566432,
+          "value": 3.708423602033495e-06,
+          "limit": 0.0014296884889566433,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_floor",
+          "coarse": 0.005721354438416407,
+          "fine": 0.005721354438416407,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        }
+      ],
+      "failed_metrics": [],
+      "compared_endpoints": 10,
+      "interpretation": "Bounded numerical agreement only; no material calibration or RK order claim",
+      "terminal_projection": {
+        "start_time_s": 0.006,
+        "horizon_time_s": 0.2,
+        "orientation_at6ms_rad": 1.468683708576948e-05,
+        "upper_angular_velocity_difference_rad_s": 0.012544631958007812,
+        "conditional_free_flight_orientation_at200ms_rad": 0.0024483454369470066,
+        "unchanged_orientation_limit_rad": 0.001,
+        "exceeds_orientation_limit": true,
+        "full_200ms_acceptance": false,
+        "assumption": "Upper ball remains torque-free with constant body angular velocity after6ms; not a new200ms simulation"
+      }
+    },
+    "tolerance2048": {
+      "passed": true,
+      "checks": [
+        {
+          "metric": "free_translation_m",
+          "value": 3.552713678800501e-15,
+          "tick": 10,
+          "component": "robot",
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "free_rotation_rad",
+          "value": 5.329070571140311e-15,
+          "tick": 10,
+          "component": "robot",
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "hinge_position_rad",
+          "value": 0.0,
+          "tick": 10,
+          "component": "qpos:20",
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "free_linear_velocity_m_s",
+          "value": 2.2737367544323206e-13,
+          "tick": 10,
+          "component": "robot",
+          "limit": 0.005,
+          "passed": true
+        },
+        {
+          "metric": "angular_velocity_rad_s",
+          "value": 1.4551915228366852e-11,
+          "tick": 3,
+          "component": "qvel:9",
+          "limit": 0.05,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "upper_head",
+          "coarse": 5.835294723510742e-05,
+          "fine": 5.835294723510742e-05,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "upper_head",
+          "coarse": 0.0026333422826122165,
+          "fine": 0.0026333422826122165,
+          "value": 0.0,
+          "limit": 0.00012633342282612216,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "upper_head",
+          "coarse": 0.001755696697974448,
+          "fine": 0.001755696697974448,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_floor",
+          "coarse": 0.0001399889588356018,
+          "fine": 0.0001399889588356018,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_floor",
+          "coarse": 0.1329651404720623,
+          "fine": 0.1329651404720623,
+          "value": 0.0,
+          "limit": 0.001429651404720623,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_floor",
+          "coarse": 0.005721354438416407,
+          "fine": 0.005721354438416407,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        }
+      ],
+      "failed_metrics": [],
+      "compared_endpoints": 10,
+      "interpretation": "Bounded numerical agreement only; no material calibration or RK order claim",
+      "terminal_projection": {
+        "start_time_s": 0.006,
+        "horizon_time_s": 0.2,
+        "orientation_at6ms_rad": 0.0,
+        "upper_angular_velocity_difference_rad_s": 0.0,
+        "conditional_free_flight_orientation_at200ms_rad": 0.0,
+        "unchanged_orientation_limit_rad": 0.001,
+        "exceeds_orientation_limit": false,
+        "full_200ms_acceptance": false,
+        "assumption": "Upper ball remains torque-free with constant body angular velocity after6ms; not a new200ms simulation"
+      }
+    },
+    "tolerance4096": {
+      "passed": true,
+      "checks": [
+        {
+          "metric": "free_translation_m",
+          "value": 1.8189928729894997e-12,
+          "tick": 10,
+          "component": "robot",
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "free_rotation_rad",
+          "value": 1.4551953636178364e-11,
+          "tick": 4,
+          "component": "robot",
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "hinge_position_rad",
+          "value": 5.329070518200751e-15,
+          "tick": 10,
+          "component": "qpos:15",
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "free_linear_velocity_m_s",
+          "value": 1.746235748583448e-10,
+          "tick": 4,
+          "component": "robot",
+          "limit": 0.005,
+          "passed": true
+        },
+        {
+          "metric": "angular_velocity_rad_s",
+          "value": 5.587935447692871e-09,
+          "tick": 3,
+          "component": "qvel:12",
+          "limit": 0.05,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "upper_head",
+          "coarse": 5.8278441429138184e-05,
+          "fine": 5.8278441429138184e-05,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "upper_head",
+          "coarse": 0.002631167208559476,
+          "fine": 0.002631167208559476,
+          "value": 0.0,
+          "limit": 0.00012631167208559477,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "upper_head",
+          "coarse": 0.001753580812457282,
+          "fine": 0.001753580812457282,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_floor",
+          "coarse": 0.00014001131057739258,
+          "fine": 0.00014001131057739258,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_floor",
+          "coarse": 0.13296884889566432,
+          "fine": 0.13296884889566432,
+          "value": 0.0,
+          "limit": 0.0014296884889566433,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_floor",
+          "coarse": 0.005721354438416407,
+          "fine": 0.005721354438416407,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_left_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "lower_right_foot",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "upper_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "left_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        },
+        {
+          "metric": "peak_overlap_m",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 1e-05,
+          "passed": true
+        },
+        {
+          "metric": "normal_impulse_Ns",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.0001,
+          "passed": true
+        },
+        {
+          "metric": "loaded_time_s",
+          "pair": "right_foot_floor",
+          "coarse": 0.0,
+          "fine": 0.0,
+          "value": 0.0,
+          "limit": 0.001,
+          "passed": true
+        }
+      ],
+      "failed_metrics": [],
+      "compared_endpoints": 10,
+      "interpretation": "Bounded numerical agreement only; no material calibration or RK order claim",
+      "terminal_projection": {
+        "start_time_s": 0.006,
+        "horizon_time_s": 0.2,
+        "orientation_at6ms_rad": 0.0,
+        "upper_angular_velocity_difference_rad_s": 0.0,
+        "conditional_free_flight_orientation_at200ms_rad": 0.0,
+        "unchanged_orientation_limit_rad": 0.001,
+        "exceeds_orientation_limit": false,
+        "full_200ms_acceptance": false,
+        "assumption": "Upper ball remains torque-free with constant body angular velocity after6ms; not a new200ms simulation"
+      }
+    }
+  },
+  "manager_types": 9,
+  "manager_instances": 9,
+  "actual_native_simulation_resets": 1,
+  "physical_control_calls": 4,
+  "initial_and_seed_restore_exact": true,
+  "resolutions": [
+    64,
+    128,
+    2048,
+    4096
+  ],
+  "paths": {
+    "head-exit": {
+      "tol8n2048": {
+        "control_calls": 1,
+        "endpoint": {
+          "qpos": [
+            1.6331727238139138e-05,
+            3.1230449337726895e-08,
+            0.36598411202430725,
+            0.9999998807907104,
+            7.263404881996394e-07,
+            0.0004664441803470254,
+            -1.3091823625188681e-08,
+            2.141425454738055e-07,
+            -0.08729977160692215,
+            -0.4579053223133087,
+            -0.00489877350628376,
+            0.45299994945526123,
+            0.3490762412548065,
+            0.34922951459884644,
+            1.792609616302343e-08,
+            -1.23740546698059e-08,
+            -1.7320256517905364e-07,
+            0.08729979395866394,
+            0.4579053223133087,
+            0.0048988074995577335,
+            -0.45299994945526123,
+            -8.358510959110069e-14,
+            8.358510959110069e-14,
+            0.11990140378475189,
+            1.0,
+            -1.9177216238619454e-12,
+            -1.9177216238619454e-12,
+            -2.0615436170223073e-13,
+            0.04311871528625488,
+            -8.655245964384051e-10,
+            0.5400068163871765,
+            0.9873085618019104,
+            2.557914768885894e-09,
+            0.1588142365217209,
+            -3.232584688817042e-08
+          ],
+          "qvel": [
+            0.0010891020065173507,
+            1.6754740954638692e-06,
+            -0.1995556354522705,
+            7.988481229403988e-05,
+            0.05986927077174187,
+            -8.840258487907704e-06,
+            5.144411261426285e-06,
+            4.809142865269678e-06,
+            -3.928098522010259e-05,
+            1.3304510503076017e-05,
+            2.441680180709227e-06,
+            -0.00018753907352220267,
+            0.0010798564180731773,
+            2.9860500490030972e-06,
+            2.9292252747836756e-06,
+            1.1572286666705622e-06,
+            1.1381803233234677e-06,
+            4.5151871745474637e-05,
+            -6.875145572848851e-06,
+            4.31112312071491e-06,
+            -3.280466176480701e-11,
+            3.280466176480701e-11,
+            0.01825612038373947,
+            -3.006473681121946e-10,
+            -3.006473681121946e-10,
+            -7.726381340278365e-11,
+            1.031027913093567,
+            5.886088061402006e-08,
+            -0.013615802861750126,
+            3.4991631991942995e-07,
+            19.733734130859375,
+            -4.147659637965262e-06
+          ],
+          "native_time_s": 0.019999999552965164,
+          "qacc": [
+            0.002388900378718972,
+            -8.974212505563628e-06,
+            -9.810606956481934,
+            -0.0003185442474205047,
+            0.06548378616571426,
+            -0.00025058287428691983,
+            -0.00026541471015661955,
+            -0.0002707549137994647,
+            0.008407248184084892,
+            -0.0018332585459575057,
+            0.0002761644427664578,
+            0.03765719011425972,
+            -0.21381202340126038,
+            9.877872798824683e-05,
+            0.00014887585712131113,
+            0.0004658394609577954,
+            0.0004610602045431733,
+            -0.008168919011950493,
+            0.0020511047914624214,
+            -6.251822196645662e-05,
+            -3.2511024983250536e-08,
+            3.2511024983250536e-08,
+            -0.7868560552597046,
+            -3.1239909503710805e-07,
+            -3.1239909503710805e-07,
+            2.6161593780216208e-08,
+            -2.3283067918100642e-08,
+            -3.552713949851044e-13,
+            -9.80999755859375,
+            -4.16089905586059e-12,
+            6.250700607779436e-06,
+            2.461026001043809e-11
+          ],
+          "solver_stop": {
+            "native_solve_index": 20236,
+            "cost": 28.488454818725586,
+            "prev_cost": 28.488454818725586,
+            "grad_dot": 1.2050865860757654e-10,
+            "meaninertia": 0.12987370789051056,
+            "nv": 32,
+            "tolerance": 9.999999974752427e-07,
+            "iterations": 1,
+            "iteration_cap": 10,
+            "done": true,
+            "normalized_improvement": 0.0,
+            "normalized_gradient": 2.641422724991571e-06,
+            "improvement_below_tolerance": true,
+            "gradient_below_tolerance": false,
+            "cap_reached": false,
+            "nonpositive_cost_improvement": true
+          },
+          "solver_niter": 1,
+          "precision_options": {
+            "solver": 2,
+            "iterations": 10,
+            "ccd_iterations": 50,
+            "tolerance": 9.999999974752427e-07,
+            "ccd_tolerance": 9.999999974752427e-07
+          },
+          "contact_frame": [
+            [
+              [
+                0.0,
+                0.0,
+                1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "contact_pos": [
+            [
+              -8.358510959110069e-14,
+              8.358510959110069e-14,
+              -4.929304122924805e-05
+            ]
+          ],
+          "nacon": 1,
+          "nefc": 20,
+          "contact_geom": [
+            [
+              0,
+              82
+            ]
+          ],
+          "contact_dist": [
+            -9.859353303909302e-05
+          ],
+          "contact_type": [
+            1
+          ],
+          "contact_dim": [
+            4
+          ],
+          "qfrc_constraint": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.00014734511205460876,
+            -0.0001414379512425512,
+            -0.00010986736742779613,
+            -0.00015520944725722075,
+            -0.00013779208529740572,
+            -3.089713572990149e-05,
+            -0.00043306435691192746,
+            -0.0001408562675351277,
+            -0.00014171979273669422,
+            -0.00013455950829666108,
+            -0.00014094432117417455,
+            -0.0001721900189295411,
+            -0.0001267197949346155,
+            -0.0001441438216716051,
+            -3.223902922400157e-09,
+            3.223902922400157e-09,
+            5.594338893890381,
+            1.7821797371198045e-09,
+            1.7821797371198045e-09,
+            3.5741698489744067e-10,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "upper_floor_separation_m": 0.5200068163871765,
+          "lower_floor_active": true,
+          "contact_force_rows": [
+            {
+              "contact_index": 0,
+              "geoms": [
+                0,
+                82
+              ],
+              "distance_m": -9.859353303909302e-05,
+              "constraint_addresses": [
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ],
+              "raw_solver_forces": [
+                0.9323898553848267,
+                0.9323898553848267,
+                0.9323898553848267,
+                0.9323898553848267,
+                0.9323898553848267,
+                0.9323898553848267
+              ],
+              "lower_floor_pair": true,
+              "active_lower_floor": true
+            }
+          ],
+          "upper_floor_active": false,
+          "upper_head_active": false
+        },
+        "integral": {
+          "stages": 20224,
+          "quadrature_duration_s": 0.020000000949949026,
+          "pairs": {
+            "upper_head": {
+              "normal_impulse_Ns": 0.0026333422826122165,
+              "loaded_time_s": 0.001755696697974448,
+              "peak_overlap_m": 5.835294723510742e-05
+            },
+            "lower_floor": {
+              "normal_impulse_Ns": 0.1329651404720623,
+              "loaded_time_s": 0.005721354438416407,
+              "peak_overlap_m": 0.0001399889588356018
+            },
+            "lower_left_foot": {
+              "normal_impulse_Ns": 0.0,
+              "loaded_time_s": 0.0,
+              "peak_overlap_m": 0.0
+            },
+            "lower_right_foot": {
+              "normal_impulse_Ns": 0.0,
+              "loaded_time_s": 0.0,
+              "peak_overlap_m": 0.0
+            },
+            "upper_floor": {
+              "normal_impulse_Ns": 0.0,
+              "loaded_time_s": 0.0,
+              "peak_overlap_m": 0.0
+            },
+            "left_foot_floor": {
+              "normal_impulse_Ns": 0.0,
+              "loaded_time_s": 0.0,
+              "peak_overlap_m": 0.0
+            },
+            "right_foot_floor": {
+              "normal_impulse_Ns": 0.0,
+              "loaded_time_s": 0.0,
+              "peak_overlap_m": 0.0
+            }
+          }
+        }
+      },
+      "tol8n4096": {
+        "control_calls": 1,
+        "endpoint": {
+          "qpos": [
+            1.6321026123478077e-05,
+            3.1215495965852824e-08,
+            0.36598411202430725,
+            0.9999998807907104,
+            7.259678795890068e-07,
+            0.00046621006913483143,
+            -1.3069894500006285e-08,
+            2.1404984806849825e-07,
+            -0.08729977160692215,
+            -0.4579053223133087,
+            -0.004898775368928909,
+            0.45299994945526123,
+            0.3490762412548065,
+            0.34922945499420166,
+            1.7927114015492407e-08,
+            -1.236087676659281e-08,
+            -1.731097967194728e-07,
+            0.08729979395866394,
+            0.4579053223133087,
+            0.00489880982786417,
+            -0.45299994945526123,
+            1.5645389714671887e-13,
+            -1.5645389714671887e-13,
+            0.1199013888835907,
+            1.0,
+            -7.195923002432936e-14,
+            -7.195923002432936e-14,
+            -1.225679985023681e-13,
+            0.04312034323811531,
+            -9.609588680348224e-10,
+            0.5400061011314392,
+            0.9873236417770386,
+            2.066217863472275e-09,
+            0.1587202548980713,
+            -3.267168580123325e-08
+          ],
+          "qvel": [
+            0.001088369288481772,
+            1.6745384527894203e-06,
+            -0.19955481588840485,
+            7.983831164892763e-05,
+            0.05983678996562958,
+            -8.835251719574444e-06,
+            5.143197085999418e-06,
+            4.80831295135431e-06,
+            -3.928582009393722e-05,
+            1.3287365618452895e-05,
+            2.442240429445519e-06,
+            -0.00018742389511317015,
+            0.0010793424444273114,
+            2.9860650556656765e-06,
+            2.9293646548467223e-06,
+            1.1584484127524775e-06,
+            1.1390225154173095e-06,
+            4.51565210823901e-05,
+            -6.857973403384676e-06,
+            4.3105615077365655e-06,
+            1.3283420370602261e-11,
+            -1.3283420370602261e-11,
+            0.01825968734920025,
+            -9.252670678250308e-12,
+            -9.252670678250308e-12,
+            -3.666391495960042e-11,
+            1.0311367511749268,
+            5.318835505363495e-08,
+            -0.013677430339157581,
+            2.907117391259817e-07,
+            19.721189498901367,
+            -4.187155354884453e-06
+          ],
+          "native_time_s": 0.019999999552965164,
+          "qacc": [
+            0.0023877290077507496,
+            -8.988283298094757e-06,
+            -9.810606956481934,
+            -0.0003191891883034259,
+            0.0654497966170311,
+            -0.00025086544337682426,
+            -0.00026518767117522657,
+            -0.00027058704290539026,
+            0.008408249355852604,
+            -0.00182987074367702,
+            0.0002760614443104714,
+            0.03763445094227791,
+            -0.21370990574359894,
+            9.877582488115877e-05,
+            0.00014884572010487318,
+            0.0004656110249925405,
+            0.0004609039460774511,
+            -0.008169895969331264,
+            0.0020477224607020617,
+            -6.241478695301339e-05,
+            -3.7001449015861e-08,
+            3.7001449015861e-08,
+            -0.7874003052711487,
+            -5.544276859836827e-07,
+            -5.544276859836827e-07,
+            8.024913711324189e-08,
+            -2.3283067918100642e-08,
+            -2.2931416142797058e-26,
+            -9.810002326965332,
+            -5.40603672938289e-12,
+            1.977806277864147e-06,
+            -2.6915530568216717e-11
+          ],
+          "solver_stop": {
+            "native_solve_index": 56855,
+            "cost": 28.485008239746094,
+            "prev_cost": 28.48500633239746,
+            "grad_dot": 7.389652778577727e-11,
+            "meaninertia": 0.12987370789051056,
+            "nv": 32,
+            "tolerance": 9.999999974752427e-07,
+            "iterations": 1,
+            "iteration_cap": 10,
+            "done": true,
+            "normalized_improvement": -4.5894313416283694e-07,
+            "normalized_gradient": 2.0684299215645296e-06,
+            "improvement_below_tolerance": true,
+            "gradient_below_tolerance": false,
+            "cap_reached": false,
+            "nonpositive_cost_improvement": true
+          },
+          "solver_niter": 1,
+          "precision_options": {
+            "solver": 2,
+            "iterations": 10,
+            "ccd_iterations": 50,
+            "tolerance": 9.999999974752427e-07,
+            "ccd_tolerance": 9.999999974752427e-07
+          },
+          "contact_frame": [
+            [
+              [
+                0.0,
+                0.0,
+                1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "contact_pos": [
+            [
+              1.5645389714671887e-13,
+              -1.5645389714671887e-13,
+              -4.9307942390441895e-05
+            ]
+          ],
+          "nacon": 1,
+          "nefc": 20,
+          "contact_geom": [
+            [
+              0,
+              82
+            ]
+          ],
+          "contact_dist": [
+            -9.860843420028687e-05
+          ],
+          "contact_type": [
+            1
+          ],
+          "contact_dim": [
+            4
+          ],
+          "qfrc_constraint": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.0001473420561524108,
+            -0.00014143832959234715,
+            -0.00010987429413944483,
+            -0.00015520164743065834,
+            -0.00013779372966382653,
+            -3.096085856668651e-05,
+            -0.0004329279181547463,
+            -0.00014085631119087338,
+            -0.00014171935617923737,
+            -0.00013456250599119812,
+            -0.0001409468095516786,
+            -0.00017218085122294724,
+            -0.00012672963202930987,
+            -0.00014414222096093,
+            -2.7068423946730036e-08,
+            2.7068423946730036e-08,
+            5.594003677368164,
+            -5.813626913209191e-09,
+            -5.813626913209191e-09,
+            -2.758948625114499e-10,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "upper_floor_separation_m": 0.5200061011314392,
+          "lower_floor_active": true,
+          "contact_force_rows": [
+            {
+              "contact_index": 0,
+              "geoms": [
+                0,
+                82
+              ],
+              "distance_m": -9.860843420028687e-05,
+              "constraint_addresses": [
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ],
+              "raw_solver_forces": [
+                0.9323340058326721,
+                0.9323340058326721,
+                0.9323340058326721,
+                0.9323340058326721,
+                0.9323339462280273,
+                0.9323339462280273
+              ],
+              "lower_floor_pair": true,
+              "active_lower_floor": true
+            }
+          ],
+          "upper_floor_active": false,
+          "upper_head_active": false
+        },
+        "integral": {
+          "stages": 36608,
+          "quadrature_duration_s": 0.020000000949949026,
+          "pairs": {
+            "upper_head": {
+              "normal_impulse_Ns": 0.002631167208559476,
+              "loaded_time_s": 0.001753580812457282,
+              "peak_overlap_m": 5.8278441429138184e-05
+            },
+            "lower_floor": {
+              "normal_impulse_Ns": 0.13296884889566432,
+              "loaded_time_s": 0.005721354438416407,
+              "peak_overlap_m": 0.00014001131057739258
+            },
+            "lower_left_foot": {
+              "normal_impulse_Ns": 0.0,
+              "loaded_time_s": 0.0,
+              "peak_overlap_m": 0.0
+            },
+            "lower_right_foot": {
+              "normal_impulse_Ns": 0.0,
+              "loaded_time_s": 0.0,
+              "peak_overlap_m": 0.0
+            },
+            "upper_floor": {
+              "normal_impulse_Ns": 0.0,
+              "loaded_time_s": 0.0,
+              "peak_overlap_m": 0.0
+            },
+            "left_foot_floor": {
+              "normal_impulse_Ns": 0.0,
+              "loaded_time_s": 0.0,
+              "peak_overlap_m": 0.0
+            },
+            "right_foot_floor": {
+              "normal_impulse_Ns": 0.0,
+              "loaded_time_s": 0.0,
+              "peak_overlap_m": 0.0
+            }
+          }
+        }
+      },
+      "tol10n2048": {
+        "control_calls": 1,
+        "endpoint": {
+          "qpos": [
+            1.6331727238139138e-05,
+            3.1230452890440574e-08,
+            0.36598411202430725,
+            0.9999998807907104,
+            7.263404881996394e-07,
+            0.0004664441803470254,
+            -1.309182628972394e-08,
+            2.141425454738055e-07,
+            -0.08729977160692215,
+            -0.4579053223133087,
+            -0.00489877350628376,
+            0.45299994945526123,
+            0.3490762412548065,
+            0.34922951459884644,
+            1.792609616302343e-08,
+            -1.23740546698059e-08,
+            -1.7320256517905364e-07,
+            0.08729979395866394,
+            0.4579053223133087,
+            0.0048988074995577335,
+            -0.45299994945526123,
+            -8.358510959110069e-14,
+            8.358510959110069e-14,
+            0.11990140378475189,
+            1.0,
+            -1.9177216238619454e-12,
+            -1.9177216238619454e-12,
+            -2.0615436170223073e-13,
+            0.04311871528625488,
+            -8.655245964384051e-10,
+            0.5400068163871765,
+            0.9873085618019104,
+            2.557914768885894e-09,
+            0.1588142365217209,
+            -3.232584688817042e-08
+          ],
+          "qvel": [
+            0.0010891020065173507,
+            1.6754743228375446e-06,
+            -0.1995556354522705,
+            7.988481956999749e-05,
+            0.05986927077174187,
+            -8.840259397402406e-06,
+            5.144411261426285e-06,
+            4.809142865269678e-06,
+            -3.928098522010259e-05,
+            1.3304513231560122e-05,
+            2.441680180709227e-06,
+            -0.00018753907352220267,
+            0.0010798564180731773,
+            2.9860502763767727e-06,
+            2.9292252747836756e-06,
+            1.1572286666705622e-06,
+            1.13818020963663e-06,
+            4.5151871745474637e-05,
+            -6.875145572848851e-06,
+            4.3111226659675594e-06,
+            -3.280466176480701e-11,
+            3.280466176480701e-11,
+            0.01825612038373947,
+            -3.006473681121946e-10,
+            -3.006473681121946e-10,
+            -7.726381340278365e-11,
+            1.031027913093567,
+            5.886088061402006e-08,
+            -0.013615802861750126,
+            3.4991631991942995e-07,
+            19.733734130859375,
+            -4.147659637965262e-06
+          ],
+          "native_time_s": 0.019999999552965164,
+          "qacc": [
+            0.002388901077210903,
+            -8.97422887646826e-06,
+            -9.810606956481934,
+            -0.00031854500412009656,
+            0.06548375636339188,
+            -0.0002505832235328853,
+            -0.0002654146810527891,
+            -0.0002707549137994647,
+            0.008407248184084892,
+            -0.001833259011618793,
+            0.0002761644427664578,
+            0.03765719011425972,
+            -0.21381202340126038,
+            9.877864067675546e-05,
+            0.00014887587167322636,
+            0.00046583949006162584,
+            0.0004610602627508342,
+            -0.008168919011950493,
+            0.0020511047914624214,
+            -6.251808372326195e-05,
+            -3.2511024983250536e-08,
+            3.2511024983250536e-08,
+            -0.7868560552597046,
+            -3.1239909503710805e-07,
+            -3.1239909503710805e-07,
+            2.6161593780216208e-08,
+            -2.3283067918100642e-08,
+            -3.552713949851044e-13,
+            -9.80999755859375,
+            -4.16089905586059e-12,
+            6.250700607779436e-06,
+            2.461026001043809e-11
+          ],
+          "solver_stop": {
+            "native_solve_index": 77090,
+            "cost": 28.488454818725586,
+            "prev_cost": 28.488454818725586,
+            "grad_dot": 1.2050865860757654e-10,
+            "meaninertia": 0.12987370789051056,
+            "nv": 32,
+            "tolerance": 9.999999974752427e-07,
+            "iterations": 1,
+            "iteration_cap": 10,
+            "done": true,
+            "normalized_improvement": 0.0,
+            "normalized_gradient": 2.641422724991571e-06,
+            "improvement_below_tolerance": true,
+            "gradient_below_tolerance": false,
+            "cap_reached": false,
+            "nonpositive_cost_improvement": true
+          },
+          "solver_niter": 1,
+          "precision_options": {
+            "solver": 2,
+            "iterations": 10,
+            "ccd_iterations": 50,
+            "tolerance": 9.999999974752427e-07,
+            "ccd_tolerance": 9.999999974752427e-07
+          },
+          "contact_frame": [
+            [
+              [
+                0.0,
+                0.0,
+                1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "contact_pos": [
+            [
+              -8.358510959110069e-14,
+              8.358510959110069e-14,
+              -4.929304122924805e-05
+            ]
+          ],
+          "nacon": 1,
+          "nefc": 20,
+          "contact_geom": [
+            [
+              0,
+              82
+            ]
+          ],
+          "contact_dist": [
+            -9.859353303909302e-05
+          ],
+          "contact_type": [
+            1
+          ],
+          "contact_dim": [
+            4
+          ],
+          "qfrc_constraint": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.000147345126606524,
+            -0.0001414379512425512,
+            -0.00010986736742779613,
+            -0.00015520944725722075,
+            -0.00013779208529740572,
+            -3.089713572990149e-05,
+            -0.00043306435691192746,
+            -0.0001408562675351277,
+            -0.00014171979273669422,
+            -0.00013455950829666108,
+            -0.00014094432117417455,
+            -0.0001721900189295411,
+            -0.0001267197949346155,
+            -0.0001441438216716051,
+            -3.223902922400157e-09,
+            3.223902922400157e-09,
+            5.594338893890381,
+            1.7821797371198045e-09,
+            1.7821797371198045e-09,
+            3.5741698489744067e-10,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "upper_floor_separation_m": 0.5200068163871765,
+          "lower_floor_active": true,
+          "contact_force_rows": [
+            {
+              "contact_index": 0,
+              "geoms": [
+                0,
+                82
+              ],
+              "distance_m": -9.859353303909302e-05,
+              "constraint_addresses": [
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ],
+              "raw_solver_forces": [
+                0.9323898553848267,
+                0.9323898553848267,
+                0.9323898553848267,
+                0.9323898553848267,
+                0.9323898553848267,
+                0.9323898553848267
+              ],
+              "lower_floor_pair": true,
+              "active_lower_floor": true
+            }
+          ],
+          "upper_floor_active": false,
+          "upper_head_active": false
+        },
+        "integral": {
+          "stages": 20224,
+          "quadrature_duration_s": 0.020000000949949026,
+          "pairs": {
+            "upper_head": {
+              "normal_impulse_Ns": 0.0026333422826122165,
+              "loaded_time_s": 0.001755696697974448,
+              "peak_overlap_m": 5.835294723510742e-05
+            },
+            "lower_floor": {
+              "normal_impulse_Ns": 0.1329651404720623,
+              "loaded_time_s": 0.005721354438416407,
+              "peak_overlap_m": 0.0001399889588356018
+            },
+            "lower_left_foot": {
+              "normal_impulse_Ns": 0.0,
+              "loaded_time_s": 0.0,
+              "peak_overlap_m": 0.0
+            },
+            "lower_right_foot": {
+              "normal_impulse_Ns": 0.0,
+              "loaded_time_s": 0.0,
+              "peak_overlap_m": 0.0
+            },
+            "upper_floor": {
+              "normal_impulse_Ns": 0.0,
+              "loaded_time_s": 0.0,
+              "peak_overlap_m": 0.0
+            },
+            "left_foot_floor": {
+              "normal_impulse_Ns": 0.0,
+              "loaded_time_s": 0.0,
+              "peak_overlap_m": 0.0
+            },
+            "right_foot_floor": {
+              "normal_impulse_Ns": 0.0,
+              "loaded_time_s": 0.0,
+              "peak_overlap_m": 0.0
+            }
+          }
+        }
+      },
+      "tol10n4096": {
+        "control_calls": 1,
+        "endpoint": {
+          "qpos": [
+            1.6321024304488674e-05,
+            3.12154995185665e-08,
+            0.36598411202430725,
+            0.9999998807907104,
+            7.25967765902169e-07,
+            0.00046621006913483143,
+            -1.3069837656587424e-08,
+            2.1404984806849825e-07,
+            -0.08729977160692215,
+            -0.4579053223133087,
+            -0.004898775368928909,
+            0.45299994945526123,
+            0.3490762412548065,
+            0.34922945499420166,
+            1.7927114015492407e-08,
+            -1.2360882095663328e-08,
+            -1.731097967194728e-07,
+            0.08729979395866394,
+            0.4579053223133087,
+            0.00489880982786417,
+            -0.45299994945526123,
+            1.5645389714671887e-13,
+            -1.5645389714671887e-13,
+            0.1199013888835907,
+            1.0,
+            -7.195923002432936e-14,
+            -7.195923002432936e-14,
+            -1.225679985023681e-13,
+            0.04312034323811531,
+            -9.609588680348224e-10,
+            0.5400061011314392,
+            0.9873236417770386,
+            2.066217863472275e-09,
+            0.1587202548980713,
+            -3.267168580123325e-08
+          ],
+          "qvel": [
+            0.0010883691720664501,
+            1.6745383391025825e-06,
+            -0.19955481588840485,
+            7.98382970970124e-05,
+            0.059836793690919876,
+            -8.835241715132724e-06,
+            5.143197085999418e-06,
+            4.808313860849012e-06,
+            -3.9285812817979604e-05,
+            1.3287365618452895e-05,
+            2.442240429445519e-06,
+            -0.00018742393876891583,
+            0.0010793429100885987,
+            2.986065283039352e-06,
+            2.9293646548467223e-06,
+            1.1584480716919643e-06,
+            1.1390219469831209e-06,
+            4.51565210823901e-05,
+            -6.8579724938899744e-06,
+            4.310561052989215e-06,
+            1.3283420370602261e-11,
+            -1.3283420370602261e-11,
+            0.01825968734920025,
+            -9.252670678250308e-12,
+            -9.252670678250308e-12,
+            -3.666391495960042e-11,
+            1.0311367511749268,
+            5.318835505363495e-08,
+            -0.013677430339157581,
+            2.907117391259817e-07,
+            19.721189498901367,
+            -4.187155354884453e-06
+          ],
+          "native_time_s": 0.019999999552965164,
+          "qacc": [
+            0.002387730171903968,
+            -8.988294212031178e-06,
+            -9.810606956481934,
+            -0.0003191896539647132,
+            0.06544981151819229,
+            -0.0002508615143597126,
+            -0.00026518767117522657,
+            -0.000270587217528373,
+            0.008408249355852604,
+            -0.00182987074367702,
+            0.00027606156072579324,
+            0.0376344695687294,
+            -0.2137099951505661,
+            9.877581760520115e-05,
+            0.00014884574920870364,
+            0.0004656111414078623,
+            0.0004609040333889425,
+            -0.008169896900653839,
+            0.002047722227871418,
+            -6.241469964152202e-05,
+            -3.7001449015861e-08,
+            3.7001449015861e-08,
+            -0.7874003052711487,
+            -5.544276859836827e-07,
+            -5.544276859836827e-07,
+            8.024913711324189e-08,
+            -2.3283067918100642e-08,
+            -2.2931416142797058e-26,
+            -9.810002326965332,
+            -5.40603672938289e-12,
+            1.977806277864147e-06,
+            -2.6915530568216717e-11
+          ],
+          "solver_stop": {
+            "native_solve_index": 113709,
+            "cost": 28.485008239746094,
+            "prev_cost": 28.48500633239746,
+            "grad_dot": 7.389653472467117e-11,
+            "meaninertia": 0.12987370789051056,
+            "nv": 32,
+            "tolerance": 9.999999974752427e-07,
+            "iterations": 1,
+            "iteration_cap": 10,
+            "done": true,
+            "normalized_improvement": -4.5894313416283694e-07,
+            "normalized_gradient": 2.0684299215645296e-06,
+            "improvement_below_tolerance": true,
+            "gradient_below_tolerance": false,
+            "cap_reached": false,
+            "nonpositive_cost_improvement": true
+          },
+          "solver_niter": 1,
+          "precision_options": {
+            "solver": 2,
+            "iterations": 10,
+            "ccd_iterations": 50,
+            "tolerance": 9.999999974752427e-07,
+            "ccd_tolerance": 9.999999974752427e-07
+          },
+          "contact_frame": [
+            [
+              [
+                0.0,
+                0.0,
+                1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "contact_pos": [
+            [
+              1.5645389714671887e-13,
+              -1.5645389714671887e-13,
+              -4.9307942390441895e-05
+            ]
+          ],
+          "nacon": 1,
+          "nefc": 20,
+          "contact_geom": [
+            [
+              0,
+              82
+            ]
+          ],
+          "contact_dist": [
+            -9.860843420028687e-05
+          ],
+          "contact_type": [
+            1
+          ],
+          "contact_dim": [
+            4
+          ],
+          "qfrc_constraint": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.00014734207070432603,
+            -0.00014143832959234715,
+            -0.00010987446148646995,
+            -0.00015520164743065834,
+            -0.00013779374421574175,
+            -3.096226282650605e-05,
+            -0.0004329279181547463,
+            -0.00014085631119087338,
+            -0.0001417193707311526,
+            -0.00013456250599119812,
+            -0.0001409468095516786,
+            -0.0001721806765999645,
+            -0.00012672963202930987,
+            -0.00014414222096093,
+            -2.7068423946730036e-08,
+            2.7068423946730036e-08,
+            5.594003677368164,
+            -5.813626913209191e-09,
+            -5.813626913209191e-09,
+            -2.758948625114499e-10,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "upper_floor_separation_m": 0.5200061011314392,
+          "lower_floor_active": true,
+          "contact_force_rows": [
+            {
+              "contact_index": 0,
+              "geoms": [
+                0,
+                82
+              ],
+              "distance_m": -9.860843420028687e-05,
+              "constraint_addresses": [
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ],
+              "raw_solver_forces": [
+                0.9323340058326721,
+                0.9323340058326721,
+                0.9323340058326721,
+                0.9323340058326721,
+                0.9323339462280273,
+                0.9323339462280273
+              ],
+              "lower_floor_pair": true,
+              "active_lower_floor": true
+            }
+          ],
+          "upper_floor_active": false,
+          "upper_head_active": false
+        },
+        "integral": {
+          "stages": 36608,
+          "quadrature_duration_s": 0.020000000949949026,
+          "pairs": {
+            "upper_head": {
+              "normal_impulse_Ns": 0.002631167208559476,
+              "loaded_time_s": 0.001753580812457282,
+              "peak_overlap_m": 5.8278441429138184e-05
+            },
+            "lower_floor": {
+              "normal_impulse_Ns": 0.13296884889566432,
+              "loaded_time_s": 0.005721354438416407,
+              "peak_overlap_m": 0.00014001131057739258
+            },
+            "lower_left_foot": {
+              "normal_impulse_Ns": 0.0,
+              "loaded_time_s": 0.0,
+              "peak_overlap_m": 0.0
+            },
+            "lower_right_foot": {
+              "normal_impulse_Ns": 0.0,
+              "loaded_time_s": 0.0,
+              "peak_overlap_m": 0.0
+            },
+            "upper_floor": {
+              "normal_impulse_Ns": 0.0,
+              "loaded_time_s": 0.0,
+              "peak_overlap_m": 0.0
+            },
+            "left_foot_floor": {
+              "normal_impulse_Ns": 0.0,
+              "loaded_time_s": 0.0,
+              "peak_overlap_m": 0.0
+            },
+            "right_foot_floor": {
+              "normal_impulse_Ns": 0.0,
+              "loaded_time_s": 0.0,
+              "peak_overlap_m": 0.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "target_endpoint_summary": {
+    "head-exit-tol8n2048-c0": {
+      "endpoints": 10,
+      "active_target_endpoints": 1,
+      "max_target_normal_force_N": 1.429044827786852,
+      "max_target_overlap_m": 5.77438622713089e-05,
+      "max_target_slip_m_s": 0.8396122192353366
+    },
+    "head-exit-tol8n4096-c0": {
+      "endpoints": 10,
+      "active_target_endpoints": 1,
+      "max_target_normal_force_N": 1.430046430990229,
+      "max_target_overlap_m": 5.762279033660889e-05,
+      "max_target_slip_m_s": 0.8396146145248139
+    },
+    "head-exit-tol10n2048-c0": {
+      "endpoints": 10,
+      "active_target_endpoints": 1,
+      "max_target_normal_force_N": 1.429044827786852,
+      "max_target_overlap_m": 5.77438622713089e-05,
+      "max_target_slip_m_s": 0.8396122192353366
+    },
+    "head-exit-tol10n4096-c0": {
+      "endpoints": 10,
+      "active_target_endpoints": 1,
+      "max_target_normal_force_N": 1.430046430990229,
+      "max_target_overlap_m": 5.762279033660889e-05,
+      "max_target_slip_m_s": 0.8396146145248139
+    }
+  },
+  "max_uninterrupted_nominal_time_s": 0.02,
+  "total_nominal_diagnostic_time_s": 0.08,
+  "final_native_time_s": 0.0,
+  "peaks": {
+    "max_abs_qvel": 19.73555564880371,
+    "max_abs_qacc": 28373.990234375,
+    "max_RK_velocity_residual": 9.533746887641081e-07,
+    "max_macro_clock_error_s": 5.587935447692871e-08,
+    "max_clock_rounding_bound_s": 1.664317608174315e-07,
+    "max_all_contact_overlap_m": 0.00014001131057739258
+  },
+  "observed_contact_pairs": [
+    [
+      0,
+      82
+    ],
+    [
+      84,
+      49
+    ]
+  ],
+  "loaded_lower_floor_samples": 5872,
+  "native_contact_force_reads": 40,
+  "native_force_decode_oracle_checked": true,
+  "effective_material_parameters_checked": true,
+  "original_material_restored": true,
+  "trace_format": "lossless-npz-chunks-v1",
+  "air_time_oracle_updates": 40,
+  "command_timer_oracles": 5,
+  "interval_timer_oracles": 4,
+  "clock_guard_relaxed": false,
+  "retained_macro_clock_guard_s": 1e-07,
+  "formal_clock_adopted": false,
+  "full_RL_environment_instantiated": false,
+  "bounded_adaptive_trial_rollback_measured": false,
+  "formal_adaptive_event_algorithm_adopted": false,
+  "batch_or_graph_validated": false,
+  "material_convergence_accepted": false,
+  "upper_ball_head_or_floor_contact_accepted": false,
+  "head_rim_or_loss_criterion_adopted": false,
+  "cleanup": "Initial selected transaction including original material restored; BVH refitted; worker exits",
+  "whole_path_snapshot_restore_exercised": true,
+  "trial_snapshot_restore_exercised": false,
+  "integrated_dynamics_exercised": true,
+  "native_handle_snapshot_closed": false,
+  "elapsed_s": 647.5327481610002
+}
