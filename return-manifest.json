@@ -1,0 +1,18 @@
+{
+  "format": "microduck-return-parts-v1",
+  "file": "manager-sources-return.zip",
+  "bytes": 304484,
+  "sha256": "7548c9a385a2f70eb1e7492daa467dea0a632e199dee1e1b5704ac8487c7afbb",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "manager-sources-return.zip.part000",
+      "index": 0,
+      "offset": 0,
+      "bytes": 304484,
+      "sha256": "7548c9a385a2f70eb1e7492daa467dea0a632e199dee1e1b5704ac8487c7afbb"
+    }
+  ],
+  "branch": "stage11-manager-sources-transfer-20261008t063306z-2f655e",
+  "scope": "read-only Manager sources; zero physics; never merge"
+}

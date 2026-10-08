@@ -1,0 +1,44 @@
+{
+  "status": "MANAGER_SOURCES_CAPTURED_REVIEW_REQUIRED",
+  "counts": {
+    "integrations_attempted": 0,
+    "integrations_completed": 0,
+    "CPU_forward": 0,
+    "GPU_forward": 0,
+    "GPU": 0,
+    "Manager_instantiation": 0,
+    "PPO": 0
+  },
+  "canonical_completed": 35375,
+  "canonical_attempted": 35376,
+  "PPO": 0,
+  "stage11_complete": false,
+  "formal_physics_adoption": false,
+  "formal_task_migration": false,
+  "full_dynamic_macro_rollback_validated": false,
+  "scope": "Read-only source capture and AST candidates; runtime execution unvalidated",
+  "installation": {
+    "mjlab_version": "1.3.0",
+    "source_root": "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab",
+    "vcs_commit": null
+  },
+  "captured_files": 42,
+  "helper_files_selected": 20,
+  "deferred_helpers": [
+    "mjlab.envs.mdp.dr._core",
+    "mjlab.envs.mdp.dr.camera",
+    "mjlab.envs.mdp.dr.geom",
+    "mjlab.envs.mdp.dr.joint",
+    "mjlab.envs.mdp.dr.light",
+    "mjlab.envs.mdp.dr.material",
+    "mjlab.envs.mdp.dr.pair",
+    "mjlab.envs.mdp.dr.site",
+    "mjlab.envs.mdp.dr.tendon",
+    "mjlab.tasks.velocity.mdp.curriculums",
+    "mjlab.tasks.velocity.mdp.rewards",
+    "mjlab.tasks.velocity.mdp.terminations"
+  ],
+  "capture_errors": [],
+  "simulator_imports": [],
+  "elapsed_s": 0.28475422100001424
+}
