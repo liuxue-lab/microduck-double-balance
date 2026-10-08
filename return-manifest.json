@@ -1,0 +1,18 @@
+{
+  "format": "microduck-return-parts-v1",
+  "file": "event-reset-runtime-return.zip",
+  "bytes": 139416,
+  "sha256": "a9d33d4dc7aac8d15ff24bc286273b4a3b81cc2cf0b0a8f6cdbadc35dcfffc2c",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "event-reset-runtime-return.zip.part000",
+      "index": 0,
+      "offset": 0,
+      "bytes": 139416,
+      "sha256": "a9d33d4dc7aac8d15ff24bc286273b4a3b81cc2cf0b0a8f6cdbadc35dcfffc2c"
+    }
+  ],
+  "branch": "stage11-event-reset-runtime-transfer-20261008t075806z-ce684c",
+  "scope": "bounded CPU EventManager reset evidence; never merge"
+}

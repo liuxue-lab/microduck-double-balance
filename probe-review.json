@@ -1,0 +1,24 @@
+{
+  "status": "EVENT_RESET_RUNTIME_STOPPED_REVIEW_REQUIRED",
+  "counts": {
+    "integrations_attempted": 0,
+    "integrations_completed": 0,
+    "CPU_forward": 0,
+    "GPU_forward": 0,
+    "GPU": 0,
+    "PPO": 0
+  },
+  "canonical_completed": 35375,
+  "canonical_attempted": 35376,
+  "formal_event_fix_adopted": false,
+  "formal_physics_adoption": false,
+  "formal_task_migration": false,
+  "full_manager_lifecycle_validated": false,
+  "stage11_complete": false,
+  "PPO": 0,
+  "scope": "Three CPU tensor rows, native EventManager and diagnostic subclass; no physical scene",
+  "error": "Project runtime import outside this library-core diagnostic",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/lx/microduck-double-balance/artifacts/double-balance-stage11/event-reset-runtime/20261008T075806Z-ce684c/program/event_reset_probe.py\", line 68, in run\n    require(not any(n.startswith('mjlab_microduck') for n in sys.modules),'Project runtime import outside this library-core diagnostic')\n  File \"/home/lx/microduck-double-balance/artifacts/double-balance-stage11/event-reset-runtime/20261008T075806Z-ce684c/program/lifecycle_support.py\", line 13, in require\n    raise RuntimeError(message)\nRuntimeError: Project runtime import outside this library-core diagnostic\n",
+  "elapsed_s": 5.451478445999783,
+  "cleanup": "Private CPU worker exits; failures preserved, no automatic retry"
+}
