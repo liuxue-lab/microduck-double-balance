@@ -1,0 +1,41 @@
+{
+  "format": "microduck-return-ascii-parts-v2",
+  "file": "batch-physics-sources-return.zip",
+  "bytes": 1184478,
+  "sha256": "9059f60a23706022e4914116ae030641f83241d3b101a3c1058cf8d71d32dfa0",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "batch-physics-sources-return.zip.part000.base64.txt",
+      "index": 0,
+      "offset": 0,
+      "bytes": 524288,
+      "sha256": "99b0da49b2701ffe6e27e61f09906082a1801a90f7bb382b4fbeaaf989e46f29",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "d6902721b6a8031e8e446a36b8eb2a37572bbe15521d7b8e6fc6c45f5d9b41bc"
+    },
+    {
+      "file": "batch-physics-sources-return.zip.part001.base64.txt",
+      "index": 1,
+      "offset": 524288,
+      "bytes": 524288,
+      "sha256": "a90a43f6257d77e602fb44ed14cf43779604ff50c77e3743bc1151535d0d43c6",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "d4c27016f1540e3fa1823e9ecef8d63dcdff98581007dbea64d3a66d5d1e7a5c"
+    },
+    {
+      "file": "batch-physics-sources-return.zip.part002.base64.txt",
+      "index": 2,
+      "offset": 1048576,
+      "bytes": 135902,
+      "sha256": "39e6db6a813cc5349c04dbcf71487e1386faa77479d57bc8a012a894bdab6755",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 183589,
+      "text_sha256": "6e70f3fdb8011e1d789f2f94a794a07785fcc67de569e24545a9ba5d34cdaf1d"
+    }
+  ],
+  "branch": "stage11-batch-physics-sources-transfer-20261013t121844z-d2508a",
+  "scope": "G09 initialized two-world Scene BAM delay and sensor selective reset; zero integration; original ZIP bytes preserved; independent archive branch; never merge"
+}
