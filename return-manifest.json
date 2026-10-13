@@ -1,0 +1,21 @@
+{
+  "format": "microduck-return-ascii-parts-v2",
+  "file": "batch-reset-preflight-return.zip",
+  "bytes": 332048,
+  "sha256": "281d0c35d312030696c272ff29cc8be467c6fdefbfcf6534f2e7a67a28aa81bd",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "batch-reset-preflight-return.zip.part000.base64.txt",
+      "index": 0,
+      "offset": 0,
+      "bytes": 332048,
+      "sha256": "281d0c35d312030696c272ff29cc8be467c6fdefbfcf6534f2e7a67a28aa81bd",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 448558,
+      "text_sha256": "336e59004366201c28716a2dce45df70d3538888d267774ac5629cd0ed912f70"
+    }
+  ],
+  "branch": "stage11-batch-reset-preflight-transfer-20261013t031718z-8753b0",
+  "scope": "G08 contact collision and solver precision isolation; original ZIP bytes preserved, independent archive branch, never merge"
+}

@@ -1,0 +1,32 @@
+{
+  "status": "BOUNDED_BATCH_RESET_PREFLIGHT_FAILED_REVIEW_REQUIRED",
+  "counts": {
+    "integrations_attempted": 0,
+    "integrations_completed": 0,
+    "PPO": 0,
+    "cloud": 0,
+    "CPU_forward_attempted": 1,
+    "CPU_forward_completed": 1,
+    "CPU_kinematics_attempted": 1,
+    "CPU_kinematics_completed": 1,
+    "graph_setup_suppressed": 1,
+    "Data_snapshots_attempted": 1,
+    "Data_snapshots_completed": 1,
+    "GPU_forward_attempted": 1,
+    "GPU_forward_completed": 1
+  },
+  "canonical_completed": 647567,
+  "canonical_attempted": 647568,
+  "G08": "CLOSED_SCOPED",
+  "G09": "OPEN",
+  "stage11_complete": false,
+  "scope": "Eager two-world native reset preflight only: global contact storage versus per-world primary fields. No rollout, sensor/manager/BAM lifecycle, graph or full G09 acceptance.",
+  "physical_rollout": false,
+  "full_manager_sensor_BAM_lifecycle_validated": false,
+  "opaque_native_handles_validated": false,
+  "CUDA_graphs_validated": false,
+  "error": "RuntimeError('Both reviewed geometries must produce active contacts')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/lx/microduck-double-balance/artifacts/double-balance-stage11/batch-reset-preflight/20261013T031718Z-8753b0/program/batch_reset_probe.py\", line 174, in run\n    require(all(n > 0 for n in contact_counts), 'Both reviewed geometries must produce active contacts')\n  File \"/home/lx/microduck-double-balance/artifacts/double-balance-stage11/batch-reset-preflight/20261013T031718Z-8753b0/program/lifecycle_support.py\", line 13, in require\n    raise RuntimeError(message)\nRuntimeError: Both reviewed geometries must produce active contacts\n",
+  "retry_forbidden": true,
+  "elapsed_s": 7.675282980999327
+}
