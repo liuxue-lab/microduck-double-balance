@@ -1,0 +1,41 @@
+{
+  "format": "microduck-return-ascii-parts-v2",
+  "file": "batch-reset-preflight-r2-return.zip",
+  "bytes": 1162820,
+  "sha256": "c773f0b6c9c5abf0d8ba7a0d9c33a0939a07fbbe702683b765b8cf90e3158194",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "batch-reset-preflight-r2-return.zip.part000.base64.txt",
+      "index": 0,
+      "offset": 0,
+      "bytes": 524288,
+      "sha256": "ea3747c0f3d97f84445a2cffd16a11e227027e8900027cbd9acc58a67c04fc6b",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "8f933fa67c6e83bb4304843363e9cbecc505488551e65c6244b3243b6c89135a"
+    },
+    {
+      "file": "batch-reset-preflight-r2-return.zip.part001.base64.txt",
+      "index": 1,
+      "offset": 524288,
+      "bytes": 524288,
+      "sha256": "8e5d650f6181eeb1989dd9e058aae8c167021040293a96cddd0b14fa88ac08f2",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "ff51d10de84bc6dc1ece7fb74f2b4971e0b539ed1365f9ac3b166f87708ecb9d"
+    },
+    {
+      "file": "batch-reset-preflight-r2-return.zip.part002.base64.txt",
+      "index": 2,
+      "offset": 1048576,
+      "bytes": 114244,
+      "sha256": "cc409f9bcd8e284c4a9867dfb5744f59ab6cc27243042a5e54188dafec5be8d5",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 154333,
+      "text_sha256": "275d7d523ae9e588d24296c06c17c208f6a2646ea34daaed33b485ce11f8157d"
+    }
+  ],
+  "branch": "stage11-batch-reset-preflight-r2-transfer-20261013t041607z-419076",
+  "scope": "G09 two-world contact-witnessed native reset preflight r2; zero integration; original ZIP bytes preserved; independent archive branch; never merge"
+}

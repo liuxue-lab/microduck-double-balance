@@ -1,0 +1,3078 @@
+{
+  "status": "BOUNDED_BATCH_RESET_PREFLIGHT_MEASURED_REVIEW_REQUIRED",
+  "counts": {
+    "integrations_attempted": 0,
+    "integrations_completed": 0,
+    "PPO": 0,
+    "cloud": 0,
+    "CPU_forward_attempted": 1,
+    "CPU_forward_completed": 1,
+    "CPU_kinematics_attempted": 1,
+    "CPU_kinematics_completed": 1,
+    "graph_setup_suppressed": 1,
+    "Data_snapshots_attempted": 2,
+    "Data_snapshots_completed": 2,
+    "GPU_forward_attempted": 11,
+    "GPU_forward_completed": 11,
+    "Data_restore_attempted": 11,
+    "Data_restore_completed": 11,
+    "Simulation_reset_attempted": 5,
+    "GPU_reset_data_attempted": 5,
+    "GPU_reset_data_completed": 5,
+    "Simulation_reset_completed": 5
+  },
+  "canonical_completed": 647567,
+  "canonical_attempted": 647568,
+  "G08": "CLOSED_SCOPED",
+  "G09": "OPEN",
+  "stage11_complete": false,
+  "scope": "Eager two-world native reset with contact-witnessed head4ms/ground16ms seeds; same five masks and hard caps. No integration, manager/sensor/BAM/graph or full G09 acceptance.",
+  "physical_rollout": false,
+  "full_manager_sensor_BAM_lifecycle_validated": false,
+  "opaque_native_handles_validated": false,
+  "CUDA_graphs_validated": false,
+  "cases": [
+    {
+      "index": 0,
+      "mask": [
+        1
+      ],
+      "immediate": {
+        "mask": [
+          1
+        ],
+        "selected": [
+          1
+        ],
+        "unselected": [
+          0
+        ],
+        "batched_fields_checked": [
+          "Data.solver_niter",
+          "Data.ne",
+          "Data.nf",
+          "Data.nl",
+          "Data.nefc",
+          "Data.nisland",
+          "Data.time",
+          "Data.energy",
+          "Data.qpos",
+          "Data.qvel",
+          "Data.act",
+          "Data.qacc_warmstart",
+          "Data.ctrl",
+          "Data.qfrc_applied",
+          "Data.xfrc_applied",
+          "Data.eq_active",
+          "Data.mocap_pos",
+          "Data.mocap_quat",
+          "Data.qacc",
+          "Data.act_dot",
+          "Data.sensordata",
+          "Data.xpos",
+          "Data.xquat",
+          "Data.xmat",
+          "Data.xipos",
+          "Data.ximat",
+          "Data.xanchor",
+          "Data.xaxis",
+          "Data.geom_xpos",
+          "Data.geom_xmat",
+          "Data.site_xpos",
+          "Data.site_xmat",
+          "Data.cam_xpos",
+          "Data.cam_xmat",
+          "Data.light_xpos",
+          "Data.light_xdir",
+          "Data.subtree_com",
+          "Data.cdof",
+          "Data.cinert",
+          "Data.flexvert_xpos",
+          "Data.flexedge_J",
+          "Data.flexedge_length",
+          "Data.ten_wrapadr",
+          "Data.ten_wrapnum",
+          "Data.ten_J",
+          "Data.ten_length",
+          "Data.wrap_obj",
+          "Data.wrap_xpos",
+          "Data.actuator_length",
+          "Data.moment_rownnz",
+          "Data.moment_rowadr",
+          "Data.moment_colind",
+          "Data.actuator_moment",
+          "Data.crb",
+          "Data.qM",
+          "Data.qLD",
+          "Data.qLDiagInv",
+          "Data.flexedge_velocity",
+          "Data.ten_velocity",
+          "Data.actuator_velocity",
+          "Data.cvel",
+          "Data.cdof_dot",
+          "Data.qfrc_bias",
+          "Data.qfrc_spring",
+          "Data.qfrc_damper",
+          "Data.qfrc_gravcomp",
+          "Data.qfrc_fluid",
+          "Data.qfrc_passive",
+          "Data.subtree_linvel",
+          "Data.subtree_angmom",
+          "Data.actuator_force",
+          "Data.qfrc_actuator",
+          "Data.qfrc_smooth",
+          "Data.qacc_smooth",
+          "Data.qfrc_constraint",
+          "Data.qfrc_inverse",
+          "Data.cacc",
+          "Data.cfrc_int",
+          "Data.cfrc_ext",
+          "Data.efc.type",
+          "Data.efc.id",
+          "Data.efc.J_rownnz",
+          "Data.efc.J_rowadr",
+          "Data.efc.J_colind",
+          "Data.efc.J",
+          "Data.efc.pos",
+          "Data.efc.margin",
+          "Data.efc.D",
+          "Data.efc.vel",
+          "Data.efc.aref",
+          "Data.efc.frictionloss",
+          "Data.efc.force",
+          "Data.efc.state",
+          "Data.efc.Ma",
+          "Data.efc.Jqvel",
+          "Data.tree_island"
+        ],
+        "pre_nacon": 2,
+        "immediate_nacon": 2,
+        "selected_contact_rows": 1,
+        "unselected_contact_rows": 1,
+        "immediate_contact_set_is_not_a_forward_result": true
+      },
+      "post_forward": {
+        "unselected_contact_counts": {
+          "0": 1
+        },
+        "primary_exact": true,
+        "canonical_contact_geometry_exact": true,
+        "derived_field_observations": {
+          "Data.solver_niter": {
+            "exact": true,
+            "elements": 1,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.ne": {
+            "exact": true,
+            "elements": 1,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.nf": {
+            "exact": true,
+            "elements": 1,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.nl": {
+            "exact": true,
+            "elements": 1,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.nefc": {
+            "exact": true,
+            "elements": 1,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.nisland": {
+            "exact": true,
+            "elements": 1,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.time": {
+            "exact": true,
+            "elements": 1,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.energy": {
+            "exact": true,
+            "elements": 2,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qpos": {
+            "exact": true,
+            "elements": 35,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qvel": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.act": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qacc_warmstart": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.ctrl": {
+            "exact": true,
+            "elements": 14,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_applied": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.xfrc_applied": {
+            "exact": true,
+            "elements": 114,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.eq_active": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.mocap_pos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.mocap_quat": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qacc": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.act_dot": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.sensordata": {
+            "exact": true,
+            "elements": 28,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.xpos": {
+            "exact": true,
+            "elements": 57,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.xquat": {
+            "exact": true,
+            "elements": 76,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.xmat": {
+            "exact": true,
+            "elements": 171,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.xipos": {
+            "exact": true,
+            "elements": 57,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.ximat": {
+            "exact": true,
+            "elements": 171,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.xanchor": {
+            "exact": true,
+            "elements": 51,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.xaxis": {
+            "exact": true,
+            "elements": 51,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.geom_xpos": {
+            "exact": true,
+            "elements": 255,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.geom_xmat": {
+            "exact": true,
+            "elements": 765,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.site_xpos": {
+            "exact": true,
+            "elements": 33,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.site_xmat": {
+            "exact": true,
+            "elements": 99,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cam_xpos": {
+            "exact": true,
+            "elements": 3,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cam_xmat": {
+            "exact": true,
+            "elements": 9,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.light_xpos": {
+            "exact": true,
+            "elements": 3,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.light_xdir": {
+            "exact": true,
+            "elements": 3,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.subtree_com": {
+            "exact": true,
+            "elements": 57,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cdof": {
+            "exact": true,
+            "elements": 192,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cinert": {
+            "exact": true,
+            "elements": 190,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.flexvert_xpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.flexedge_J": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.flexedge_length": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_wrapadr": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_wrapnum": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_J": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_length": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.wrap_obj": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.wrap_xpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.actuator_length": {
+            "exact": true,
+            "elements": 14,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.moment_rownnz": {
+            "exact": true,
+            "elements": 14,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.moment_rowadr": {
+            "exact": true,
+            "elements": 14,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.moment_colind": {
+            "exact": true,
+            "elements": 14,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.actuator_moment": {
+            "exact": true,
+            "elements": 14,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.crb": {
+            "exact": true,
+            "elements": 190,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qM": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qLD": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qLDiagInv": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.flexedge_velocity": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_velocity": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.actuator_velocity": {
+            "exact": true,
+            "elements": 14,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cvel": {
+            "exact": true,
+            "elements": 114,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cdof_dot": {
+            "exact": true,
+            "elements": 192,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_bias": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_spring": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_damper": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_gravcomp": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_fluid": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_passive": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.subtree_linvel": {
+            "exact": true,
+            "elements": 57,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.subtree_angmom": {
+            "exact": true,
+            "elements": 57,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.actuator_force": {
+            "exact": true,
+            "elements": 14,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_actuator": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_smooth": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qacc_smooth": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_constraint": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_inverse": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cacc": {
+            "exact": true,
+            "elements": 114,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cfrc_int": {
+            "exact": true,
+            "elements": 114,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cfrc_ext": {
+            "exact": true,
+            "elements": 114,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.type": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.id": {
+            "exact": false,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 10.0
+          },
+          "Data.efc.J_rownnz": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.J_rowadr": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.J_colind": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.J": {
+            "exact": true,
+            "elements": 32768,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.pos": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.margin": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.D": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.vel": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.aref": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.frictionloss": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.force": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.state": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.Ma": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.Jqvel": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.tree_island": {
+            "exact": true,
+            "elements": 3,
+            "finite": true,
+            "max_abs_difference": 0.0
+          }
+        },
+        "derived_solver_acceptance": false,
+        "G09": "OPEN"
+      }
+    },
+    {
+      "index": 1,
+      "mask": [
+        0
+      ],
+      "immediate": {
+        "mask": [
+          0
+        ],
+        "selected": [
+          0
+        ],
+        "unselected": [
+          1
+        ],
+        "batched_fields_checked": [
+          "Data.solver_niter",
+          "Data.ne",
+          "Data.nf",
+          "Data.nl",
+          "Data.nefc",
+          "Data.nisland",
+          "Data.time",
+          "Data.energy",
+          "Data.qpos",
+          "Data.qvel",
+          "Data.act",
+          "Data.qacc_warmstart",
+          "Data.ctrl",
+          "Data.qfrc_applied",
+          "Data.xfrc_applied",
+          "Data.eq_active",
+          "Data.mocap_pos",
+          "Data.mocap_quat",
+          "Data.qacc",
+          "Data.act_dot",
+          "Data.sensordata",
+          "Data.xpos",
+          "Data.xquat",
+          "Data.xmat",
+          "Data.xipos",
+          "Data.ximat",
+          "Data.xanchor",
+          "Data.xaxis",
+          "Data.geom_xpos",
+          "Data.geom_xmat",
+          "Data.site_xpos",
+          "Data.site_xmat",
+          "Data.cam_xpos",
+          "Data.cam_xmat",
+          "Data.light_xpos",
+          "Data.light_xdir",
+          "Data.subtree_com",
+          "Data.cdof",
+          "Data.cinert",
+          "Data.flexvert_xpos",
+          "Data.flexedge_J",
+          "Data.flexedge_length",
+          "Data.ten_wrapadr",
+          "Data.ten_wrapnum",
+          "Data.ten_J",
+          "Data.ten_length",
+          "Data.wrap_obj",
+          "Data.wrap_xpos",
+          "Data.actuator_length",
+          "Data.moment_rownnz",
+          "Data.moment_rowadr",
+          "Data.moment_colind",
+          "Data.actuator_moment",
+          "Data.crb",
+          "Data.qM",
+          "Data.qLD",
+          "Data.qLDiagInv",
+          "Data.flexedge_velocity",
+          "Data.ten_velocity",
+          "Data.actuator_velocity",
+          "Data.cvel",
+          "Data.cdof_dot",
+          "Data.qfrc_bias",
+          "Data.qfrc_spring",
+          "Data.qfrc_damper",
+          "Data.qfrc_gravcomp",
+          "Data.qfrc_fluid",
+          "Data.qfrc_passive",
+          "Data.subtree_linvel",
+          "Data.subtree_angmom",
+          "Data.actuator_force",
+          "Data.qfrc_actuator",
+          "Data.qfrc_smooth",
+          "Data.qacc_smooth",
+          "Data.qfrc_constraint",
+          "Data.qfrc_inverse",
+          "Data.cacc",
+          "Data.cfrc_int",
+          "Data.cfrc_ext",
+          "Data.efc.type",
+          "Data.efc.id",
+          "Data.efc.J_rownnz",
+          "Data.efc.J_rowadr",
+          "Data.efc.J_colind",
+          "Data.efc.J",
+          "Data.efc.pos",
+          "Data.efc.margin",
+          "Data.efc.D",
+          "Data.efc.vel",
+          "Data.efc.aref",
+          "Data.efc.frictionloss",
+          "Data.efc.force",
+          "Data.efc.state",
+          "Data.efc.Ma",
+          "Data.efc.Jqvel",
+          "Data.tree_island"
+        ],
+        "pre_nacon": 2,
+        "immediate_nacon": 0,
+        "selected_contact_rows": 1,
+        "unselected_contact_rows": 1,
+        "immediate_contact_set_is_not_a_forward_result": true
+      },
+      "post_forward": {
+        "unselected_contact_counts": {
+          "1": 1
+        },
+        "primary_exact": true,
+        "canonical_contact_geometry_exact": true,
+        "derived_field_observations": {
+          "Data.solver_niter": {
+            "exact": true,
+            "elements": 1,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.ne": {
+            "exact": true,
+            "elements": 1,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.nf": {
+            "exact": true,
+            "elements": 1,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.nl": {
+            "exact": true,
+            "elements": 1,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.nefc": {
+            "exact": true,
+            "elements": 1,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.nisland": {
+            "exact": true,
+            "elements": 1,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.time": {
+            "exact": true,
+            "elements": 1,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.energy": {
+            "exact": true,
+            "elements": 2,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qpos": {
+            "exact": true,
+            "elements": 35,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qvel": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.act": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qacc_warmstart": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.ctrl": {
+            "exact": true,
+            "elements": 14,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_applied": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.xfrc_applied": {
+            "exact": true,
+            "elements": 114,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.eq_active": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.mocap_pos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.mocap_quat": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qacc": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.act_dot": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.sensordata": {
+            "exact": true,
+            "elements": 28,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.xpos": {
+            "exact": true,
+            "elements": 57,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.xquat": {
+            "exact": true,
+            "elements": 76,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.xmat": {
+            "exact": true,
+            "elements": 171,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.xipos": {
+            "exact": true,
+            "elements": 57,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.ximat": {
+            "exact": true,
+            "elements": 171,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.xanchor": {
+            "exact": true,
+            "elements": 51,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.xaxis": {
+            "exact": true,
+            "elements": 51,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.geom_xpos": {
+            "exact": true,
+            "elements": 255,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.geom_xmat": {
+            "exact": true,
+            "elements": 765,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.site_xpos": {
+            "exact": true,
+            "elements": 33,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.site_xmat": {
+            "exact": true,
+            "elements": 99,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cam_xpos": {
+            "exact": true,
+            "elements": 3,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cam_xmat": {
+            "exact": true,
+            "elements": 9,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.light_xpos": {
+            "exact": true,
+            "elements": 3,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.light_xdir": {
+            "exact": true,
+            "elements": 3,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.subtree_com": {
+            "exact": true,
+            "elements": 57,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cdof": {
+            "exact": true,
+            "elements": 192,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cinert": {
+            "exact": true,
+            "elements": 190,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.flexvert_xpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.flexedge_J": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.flexedge_length": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_wrapadr": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_wrapnum": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_J": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_length": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.wrap_obj": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.wrap_xpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.actuator_length": {
+            "exact": true,
+            "elements": 14,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.moment_rownnz": {
+            "exact": true,
+            "elements": 14,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.moment_rowadr": {
+            "exact": true,
+            "elements": 14,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.moment_colind": {
+            "exact": true,
+            "elements": 14,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.actuator_moment": {
+            "exact": true,
+            "elements": 14,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.crb": {
+            "exact": true,
+            "elements": 190,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qM": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qLD": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qLDiagInv": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.flexedge_velocity": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_velocity": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.actuator_velocity": {
+            "exact": true,
+            "elements": 14,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cvel": {
+            "exact": true,
+            "elements": 114,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cdof_dot": {
+            "exact": true,
+            "elements": 192,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_bias": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_spring": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_damper": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_gravcomp": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_fluid": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_passive": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.subtree_linvel": {
+            "exact": true,
+            "elements": 57,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.subtree_angmom": {
+            "exact": true,
+            "elements": 57,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.actuator_force": {
+            "exact": true,
+            "elements": 14,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_actuator": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_smooth": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qacc_smooth": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_constraint": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_inverse": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cacc": {
+            "exact": true,
+            "elements": 114,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cfrc_int": {
+            "exact": true,
+            "elements": 114,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cfrc_ext": {
+            "exact": true,
+            "elements": 114,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.type": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.id": {
+            "exact": false,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 9.0
+          },
+          "Data.efc.J_rownnz": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.J_rowadr": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.J_colind": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.J": {
+            "exact": true,
+            "elements": 32768,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.pos": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.margin": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.D": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.vel": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.aref": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.frictionloss": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.force": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.state": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.Ma": {
+            "exact": true,
+            "elements": 32,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.Jqvel": {
+            "exact": true,
+            "elements": 1024,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.tree_island": {
+            "exact": true,
+            "elements": 3,
+            "finite": true,
+            "max_abs_difference": 0.0
+          }
+        },
+        "derived_solver_acceptance": false,
+        "G09": "OPEN"
+      }
+    },
+    {
+      "index": 2,
+      "mask": [],
+      "immediate": {
+        "mask": [],
+        "selected": [],
+        "unselected": [
+          0,
+          1
+        ],
+        "batched_fields_checked": [
+          "Data.solver_niter",
+          "Data.ne",
+          "Data.nf",
+          "Data.nl",
+          "Data.nefc",
+          "Data.nisland",
+          "Data.time",
+          "Data.energy",
+          "Data.qpos",
+          "Data.qvel",
+          "Data.act",
+          "Data.qacc_warmstart",
+          "Data.ctrl",
+          "Data.qfrc_applied",
+          "Data.xfrc_applied",
+          "Data.eq_active",
+          "Data.mocap_pos",
+          "Data.mocap_quat",
+          "Data.qacc",
+          "Data.act_dot",
+          "Data.sensordata",
+          "Data.xpos",
+          "Data.xquat",
+          "Data.xmat",
+          "Data.xipos",
+          "Data.ximat",
+          "Data.xanchor",
+          "Data.xaxis",
+          "Data.geom_xpos",
+          "Data.geom_xmat",
+          "Data.site_xpos",
+          "Data.site_xmat",
+          "Data.cam_xpos",
+          "Data.cam_xmat",
+          "Data.light_xpos",
+          "Data.light_xdir",
+          "Data.subtree_com",
+          "Data.cdof",
+          "Data.cinert",
+          "Data.flexvert_xpos",
+          "Data.flexedge_J",
+          "Data.flexedge_length",
+          "Data.ten_wrapadr",
+          "Data.ten_wrapnum",
+          "Data.ten_J",
+          "Data.ten_length",
+          "Data.wrap_obj",
+          "Data.wrap_xpos",
+          "Data.actuator_length",
+          "Data.moment_rownnz",
+          "Data.moment_rowadr",
+          "Data.moment_colind",
+          "Data.actuator_moment",
+          "Data.crb",
+          "Data.qM",
+          "Data.qLD",
+          "Data.qLDiagInv",
+          "Data.flexedge_velocity",
+          "Data.ten_velocity",
+          "Data.actuator_velocity",
+          "Data.cvel",
+          "Data.cdof_dot",
+          "Data.qfrc_bias",
+          "Data.qfrc_spring",
+          "Data.qfrc_damper",
+          "Data.qfrc_gravcomp",
+          "Data.qfrc_fluid",
+          "Data.qfrc_passive",
+          "Data.subtree_linvel",
+          "Data.subtree_angmom",
+          "Data.actuator_force",
+          "Data.qfrc_actuator",
+          "Data.qfrc_smooth",
+          "Data.qacc_smooth",
+          "Data.qfrc_constraint",
+          "Data.qfrc_inverse",
+          "Data.cacc",
+          "Data.cfrc_int",
+          "Data.cfrc_ext",
+          "Data.efc.type",
+          "Data.efc.id",
+          "Data.efc.J_rownnz",
+          "Data.efc.J_rowadr",
+          "Data.efc.J_colind",
+          "Data.efc.J",
+          "Data.efc.pos",
+          "Data.efc.margin",
+          "Data.efc.D",
+          "Data.efc.vel",
+          "Data.efc.aref",
+          "Data.efc.frictionloss",
+          "Data.efc.force",
+          "Data.efc.state",
+          "Data.efc.Ma",
+          "Data.efc.Jqvel",
+          "Data.tree_island"
+        ],
+        "pre_nacon": 2,
+        "immediate_nacon": 2,
+        "selected_contact_rows": 0,
+        "unselected_contact_rows": 2,
+        "immediate_contact_set_is_not_a_forward_result": true
+      },
+      "post_forward": {
+        "unselected_contact_counts": {
+          "0": 1,
+          "1": 1
+        },
+        "primary_exact": true,
+        "canonical_contact_geometry_exact": true,
+        "derived_field_observations": {
+          "Data.solver_niter": {
+            "exact": true,
+            "elements": 2,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.ne": {
+            "exact": true,
+            "elements": 2,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.nf": {
+            "exact": true,
+            "elements": 2,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.nl": {
+            "exact": true,
+            "elements": 2,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.nefc": {
+            "exact": true,
+            "elements": 2,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.nisland": {
+            "exact": true,
+            "elements": 2,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.time": {
+            "exact": true,
+            "elements": 2,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.energy": {
+            "exact": true,
+            "elements": 4,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qpos": {
+            "exact": true,
+            "elements": 70,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qvel": {
+            "exact": true,
+            "elements": 64,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.act": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qacc_warmstart": {
+            "exact": true,
+            "elements": 64,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.ctrl": {
+            "exact": true,
+            "elements": 28,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_applied": {
+            "exact": true,
+            "elements": 64,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.xfrc_applied": {
+            "exact": true,
+            "elements": 228,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.eq_active": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.mocap_pos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.mocap_quat": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qacc": {
+            "exact": true,
+            "elements": 64,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.act_dot": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.sensordata": {
+            "exact": true,
+            "elements": 56,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.xpos": {
+            "exact": true,
+            "elements": 114,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.xquat": {
+            "exact": true,
+            "elements": 152,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.xmat": {
+            "exact": true,
+            "elements": 342,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.xipos": {
+            "exact": true,
+            "elements": 114,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.ximat": {
+            "exact": true,
+            "elements": 342,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.xanchor": {
+            "exact": true,
+            "elements": 102,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.xaxis": {
+            "exact": true,
+            "elements": 102,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.geom_xpos": {
+            "exact": true,
+            "elements": 510,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.geom_xmat": {
+            "exact": true,
+            "elements": 1530,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.site_xpos": {
+            "exact": true,
+            "elements": 66,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.site_xmat": {
+            "exact": true,
+            "elements": 198,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cam_xpos": {
+            "exact": true,
+            "elements": 6,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cam_xmat": {
+            "exact": true,
+            "elements": 18,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.light_xpos": {
+            "exact": true,
+            "elements": 6,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.light_xdir": {
+            "exact": true,
+            "elements": 6,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.subtree_com": {
+            "exact": true,
+            "elements": 114,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cdof": {
+            "exact": true,
+            "elements": 384,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cinert": {
+            "exact": true,
+            "elements": 380,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.flexvert_xpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.flexedge_J": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.flexedge_length": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_wrapadr": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_wrapnum": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_J": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_length": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.wrap_obj": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.wrap_xpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.actuator_length": {
+            "exact": true,
+            "elements": 28,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.moment_rownnz": {
+            "exact": true,
+            "elements": 28,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.moment_rowadr": {
+            "exact": true,
+            "elements": 28,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.moment_colind": {
+            "exact": true,
+            "elements": 28,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.actuator_moment": {
+            "exact": true,
+            "elements": 28,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.crb": {
+            "exact": true,
+            "elements": 380,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qM": {
+            "exact": true,
+            "elements": 2048,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qLD": {
+            "exact": true,
+            "elements": 2048,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qLDiagInv": {
+            "exact": true,
+            "elements": 64,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.flexedge_velocity": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_velocity": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.actuator_velocity": {
+            "exact": true,
+            "elements": 28,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cvel": {
+            "exact": true,
+            "elements": 228,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cdof_dot": {
+            "exact": true,
+            "elements": 384,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_bias": {
+            "exact": true,
+            "elements": 64,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_spring": {
+            "exact": true,
+            "elements": 64,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_damper": {
+            "exact": true,
+            "elements": 64,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_gravcomp": {
+            "exact": true,
+            "elements": 64,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_fluid": {
+            "exact": true,
+            "elements": 64,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_passive": {
+            "exact": true,
+            "elements": 64,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.subtree_linvel": {
+            "exact": true,
+            "elements": 114,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.subtree_angmom": {
+            "exact": true,
+            "elements": 114,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.actuator_force": {
+            "exact": true,
+            "elements": 28,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_actuator": {
+            "exact": true,
+            "elements": 64,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_smooth": {
+            "exact": true,
+            "elements": 64,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qacc_smooth": {
+            "exact": true,
+            "elements": 64,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_constraint": {
+            "exact": true,
+            "elements": 64,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.qfrc_inverse": {
+            "exact": true,
+            "elements": 64,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cacc": {
+            "exact": true,
+            "elements": 228,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cfrc_int": {
+            "exact": true,
+            "elements": 228,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.cfrc_ext": {
+            "exact": true,
+            "elements": 228,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.type": {
+            "exact": true,
+            "elements": 2048,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.id": {
+            "exact": true,
+            "elements": 2048,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.J_rownnz": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.J_rowadr": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.J_colind": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.J": {
+            "exact": true,
+            "elements": 65536,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.pos": {
+            "exact": true,
+            "elements": 2048,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.margin": {
+            "exact": true,
+            "elements": 2048,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.D": {
+            "exact": true,
+            "elements": 2048,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.vel": {
+            "exact": true,
+            "elements": 2048,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.aref": {
+            "exact": true,
+            "elements": 2048,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.frictionloss": {
+            "exact": true,
+            "elements": 2048,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.force": {
+            "exact": true,
+            "elements": 2048,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.state": {
+            "exact": true,
+            "elements": 2048,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.Ma": {
+            "exact": true,
+            "elements": 64,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.efc.Jqvel": {
+            "exact": true,
+            "elements": 2048,
+            "finite": true,
+            "max_abs_difference": 0.0
+          },
+          "Data.tree_island": {
+            "exact": true,
+            "elements": 6,
+            "finite": true,
+            "max_abs_difference": 0.0
+          }
+        },
+        "derived_solver_acceptance": false,
+        "G09": "OPEN"
+      }
+    },
+    {
+      "index": 3,
+      "mask": [
+        0,
+        1
+      ],
+      "immediate": {
+        "mask": [
+          0,
+          1
+        ],
+        "selected": [
+          0,
+          1
+        ],
+        "unselected": [],
+        "batched_fields_checked": [
+          "Data.solver_niter",
+          "Data.ne",
+          "Data.nf",
+          "Data.nl",
+          "Data.nefc",
+          "Data.nisland",
+          "Data.time",
+          "Data.energy",
+          "Data.qpos",
+          "Data.qvel",
+          "Data.act",
+          "Data.qacc_warmstart",
+          "Data.ctrl",
+          "Data.qfrc_applied",
+          "Data.xfrc_applied",
+          "Data.eq_active",
+          "Data.mocap_pos",
+          "Data.mocap_quat",
+          "Data.qacc",
+          "Data.act_dot",
+          "Data.sensordata",
+          "Data.xpos",
+          "Data.xquat",
+          "Data.xmat",
+          "Data.xipos",
+          "Data.ximat",
+          "Data.xanchor",
+          "Data.xaxis",
+          "Data.geom_xpos",
+          "Data.geom_xmat",
+          "Data.site_xpos",
+          "Data.site_xmat",
+          "Data.cam_xpos",
+          "Data.cam_xmat",
+          "Data.light_xpos",
+          "Data.light_xdir",
+          "Data.subtree_com",
+          "Data.cdof",
+          "Data.cinert",
+          "Data.flexvert_xpos",
+          "Data.flexedge_J",
+          "Data.flexedge_length",
+          "Data.ten_wrapadr",
+          "Data.ten_wrapnum",
+          "Data.ten_J",
+          "Data.ten_length",
+          "Data.wrap_obj",
+          "Data.wrap_xpos",
+          "Data.actuator_length",
+          "Data.moment_rownnz",
+          "Data.moment_rowadr",
+          "Data.moment_colind",
+          "Data.actuator_moment",
+          "Data.crb",
+          "Data.qM",
+          "Data.qLD",
+          "Data.qLDiagInv",
+          "Data.flexedge_velocity",
+          "Data.ten_velocity",
+          "Data.actuator_velocity",
+          "Data.cvel",
+          "Data.cdof_dot",
+          "Data.qfrc_bias",
+          "Data.qfrc_spring",
+          "Data.qfrc_damper",
+          "Data.qfrc_gravcomp",
+          "Data.qfrc_fluid",
+          "Data.qfrc_passive",
+          "Data.subtree_linvel",
+          "Data.subtree_angmom",
+          "Data.actuator_force",
+          "Data.qfrc_actuator",
+          "Data.qfrc_smooth",
+          "Data.qacc_smooth",
+          "Data.qfrc_constraint",
+          "Data.qfrc_inverse",
+          "Data.cacc",
+          "Data.cfrc_int",
+          "Data.cfrc_ext",
+          "Data.efc.type",
+          "Data.efc.id",
+          "Data.efc.J_rownnz",
+          "Data.efc.J_rowadr",
+          "Data.efc.J_colind",
+          "Data.efc.J",
+          "Data.efc.pos",
+          "Data.efc.margin",
+          "Data.efc.D",
+          "Data.efc.vel",
+          "Data.efc.aref",
+          "Data.efc.frictionloss",
+          "Data.efc.force",
+          "Data.efc.state",
+          "Data.efc.Ma",
+          "Data.efc.Jqvel",
+          "Data.tree_island"
+        ],
+        "pre_nacon": 2,
+        "immediate_nacon": 0,
+        "selected_contact_rows": 2,
+        "unselected_contact_rows": 0,
+        "immediate_contact_set_is_not_a_forward_result": true
+      },
+      "post_forward": {
+        "unselected_contact_counts": {},
+        "primary_exact": true,
+        "canonical_contact_geometry_exact": true,
+        "derived_field_observations": {
+          "Data.solver_niter": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ne": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.nf": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.nl": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.nefc": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.nisland": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.time": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.energy": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qvel": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.act": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qacc_warmstart": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ctrl": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_applied": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.xfrc_applied": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.eq_active": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.mocap_pos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.mocap_quat": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qacc": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.act_dot": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.sensordata": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.xpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.xquat": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.xmat": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.xipos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ximat": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.xanchor": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.xaxis": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.geom_xpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.geom_xmat": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.site_xpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.site_xmat": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.cam_xpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.cam_xmat": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.light_xpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.light_xdir": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.subtree_com": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.cdof": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.cinert": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.flexvert_xpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.flexedge_J": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.flexedge_length": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_wrapadr": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_wrapnum": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_J": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_length": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.wrap_obj": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.wrap_xpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.actuator_length": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.moment_rownnz": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.moment_rowadr": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.moment_colind": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.actuator_moment": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.crb": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qM": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qLD": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qLDiagInv": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.flexedge_velocity": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_velocity": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.actuator_velocity": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.cvel": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.cdof_dot": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_bias": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_spring": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_damper": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_gravcomp": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_fluid": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_passive": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.subtree_linvel": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.subtree_angmom": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.actuator_force": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_actuator": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_smooth": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qacc_smooth": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_constraint": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_inverse": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.cacc": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.cfrc_int": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.cfrc_ext": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.type": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.id": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.J_rownnz": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.J_rowadr": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.J_colind": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.J": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.pos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.margin": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.D": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.vel": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.aref": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.frictionloss": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.force": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.state": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.Ma": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.Jqvel": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.tree_island": {
+            "exact": true,
+            "elements": 0
+          }
+        },
+        "derived_solver_acceptance": false,
+        "G09": "OPEN"
+      }
+    },
+    {
+      "index": 4,
+      "mask": null,
+      "immediate": {
+        "mask": null,
+        "selected": [
+          0,
+          1
+        ],
+        "unselected": [],
+        "batched_fields_checked": [
+          "Data.solver_niter",
+          "Data.ne",
+          "Data.nf",
+          "Data.nl",
+          "Data.nefc",
+          "Data.nisland",
+          "Data.time",
+          "Data.energy",
+          "Data.qpos",
+          "Data.qvel",
+          "Data.act",
+          "Data.qacc_warmstart",
+          "Data.ctrl",
+          "Data.qfrc_applied",
+          "Data.xfrc_applied",
+          "Data.eq_active",
+          "Data.mocap_pos",
+          "Data.mocap_quat",
+          "Data.qacc",
+          "Data.act_dot",
+          "Data.sensordata",
+          "Data.xpos",
+          "Data.xquat",
+          "Data.xmat",
+          "Data.xipos",
+          "Data.ximat",
+          "Data.xanchor",
+          "Data.xaxis",
+          "Data.geom_xpos",
+          "Data.geom_xmat",
+          "Data.site_xpos",
+          "Data.site_xmat",
+          "Data.cam_xpos",
+          "Data.cam_xmat",
+          "Data.light_xpos",
+          "Data.light_xdir",
+          "Data.subtree_com",
+          "Data.cdof",
+          "Data.cinert",
+          "Data.flexvert_xpos",
+          "Data.flexedge_J",
+          "Data.flexedge_length",
+          "Data.ten_wrapadr",
+          "Data.ten_wrapnum",
+          "Data.ten_J",
+          "Data.ten_length",
+          "Data.wrap_obj",
+          "Data.wrap_xpos",
+          "Data.actuator_length",
+          "Data.moment_rownnz",
+          "Data.moment_rowadr",
+          "Data.moment_colind",
+          "Data.actuator_moment",
+          "Data.crb",
+          "Data.qM",
+          "Data.qLD",
+          "Data.qLDiagInv",
+          "Data.flexedge_velocity",
+          "Data.ten_velocity",
+          "Data.actuator_velocity",
+          "Data.cvel",
+          "Data.cdof_dot",
+          "Data.qfrc_bias",
+          "Data.qfrc_spring",
+          "Data.qfrc_damper",
+          "Data.qfrc_gravcomp",
+          "Data.qfrc_fluid",
+          "Data.qfrc_passive",
+          "Data.subtree_linvel",
+          "Data.subtree_angmom",
+          "Data.actuator_force",
+          "Data.qfrc_actuator",
+          "Data.qfrc_smooth",
+          "Data.qacc_smooth",
+          "Data.qfrc_constraint",
+          "Data.qfrc_inverse",
+          "Data.cacc",
+          "Data.cfrc_int",
+          "Data.cfrc_ext",
+          "Data.efc.type",
+          "Data.efc.id",
+          "Data.efc.J_rownnz",
+          "Data.efc.J_rowadr",
+          "Data.efc.J_colind",
+          "Data.efc.J",
+          "Data.efc.pos",
+          "Data.efc.margin",
+          "Data.efc.D",
+          "Data.efc.vel",
+          "Data.efc.aref",
+          "Data.efc.frictionloss",
+          "Data.efc.force",
+          "Data.efc.state",
+          "Data.efc.Ma",
+          "Data.efc.Jqvel",
+          "Data.tree_island"
+        ],
+        "pre_nacon": 2,
+        "immediate_nacon": 0,
+        "selected_contact_rows": 2,
+        "unselected_contact_rows": 0,
+        "immediate_contact_set_is_not_a_forward_result": true
+      },
+      "post_forward": {
+        "unselected_contact_counts": {},
+        "primary_exact": true,
+        "canonical_contact_geometry_exact": true,
+        "derived_field_observations": {
+          "Data.solver_niter": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ne": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.nf": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.nl": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.nefc": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.nisland": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.time": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.energy": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qvel": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.act": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qacc_warmstart": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ctrl": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_applied": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.xfrc_applied": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.eq_active": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.mocap_pos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.mocap_quat": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qacc": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.act_dot": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.sensordata": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.xpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.xquat": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.xmat": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.xipos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ximat": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.xanchor": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.xaxis": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.geom_xpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.geom_xmat": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.site_xpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.site_xmat": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.cam_xpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.cam_xmat": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.light_xpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.light_xdir": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.subtree_com": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.cdof": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.cinert": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.flexvert_xpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.flexedge_J": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.flexedge_length": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_wrapadr": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_wrapnum": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_J": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_length": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.wrap_obj": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.wrap_xpos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.actuator_length": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.moment_rownnz": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.moment_rowadr": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.moment_colind": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.actuator_moment": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.crb": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qM": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qLD": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qLDiagInv": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.flexedge_velocity": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.ten_velocity": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.actuator_velocity": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.cvel": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.cdof_dot": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_bias": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_spring": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_damper": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_gravcomp": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_fluid": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_passive": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.subtree_linvel": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.subtree_angmom": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.actuator_force": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_actuator": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_smooth": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qacc_smooth": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_constraint": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.qfrc_inverse": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.cacc": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.cfrc_int": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.cfrc_ext": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.type": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.id": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.J_rownnz": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.J_rowadr": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.J_colind": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.J": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.pos": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.margin": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.D": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.vel": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.aref": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.frictionloss": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.force": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.state": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.Ma": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.efc.Jqvel": {
+            "exact": true,
+            "elements": 0
+          },
+          "Data.tree_island": {
+            "exact": true,
+            "elements": 0
+          }
+        },
+        "derived_solver_acceptance": false,
+        "G09": "OPEN"
+      }
+    }
+  ],
+  "original_Data_restored": true,
+  "reset_mask_restored": true,
+  "numeric_Model_and_owners_unchanged": true,
+  "native_opaque_state_validated": false,
+  "RNG_unchanged_in_this_native_only_probe": true,
+  "needs_independent_raw_review": true,
+  "elapsed_s": 7.518938395998703,
+  "revision": "contact-witnessed-r2",
+  "prior_preflight_counts_retained": {
+    "GPU_forward_attempted": 1,
+    "GPU_forward_completed": 1,
+    "CPU_forward_completed": 1,
+    "CPU_kinematics_completed": 1,
+    "integrations_completed": 0
+  },
+  "preflight_GPU_forward_cumulative_attempted": 12,
+  "preflight_GPU_forward_cumulative_completed": 12
+}
