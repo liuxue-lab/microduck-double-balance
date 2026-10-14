@@ -1,0 +1,21 @@
+{
+  "format": "microduck-return-ascii-parts-v2",
+  "file": "post-reset-physical-continuation-return.zip",
+  "bytes": 379188,
+  "sha256": "3899ad67ac3feea50a910df3786ee85deeedf77fae4371c6d693ac9b1d2f95e4",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "post-reset-physical-continuation-return.zip.part000.base64.txt",
+      "index": 0,
+      "offset": 0,
+      "bytes": 379188,
+      "sha256": "3899ad67ac3feea50a910df3786ee85deeedf77fae4371c6d693ac9b1d2f95e4",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 512237,
+      "text_sha256": "cf46f2c3ae72f68a96a617e6b01c4709babd790fa56af36c4463fd14f4a6de94"
+    }
+  ],
+  "branch": "stage11-post-reset-physical-continuation-transfer-20261014t071309z-ee969d",
+  "scope": "Stage11 post-reset physical continuations and live Contact sorting subgraph; actual physics/graph counts retained; independent archive branch; never merge"
+}
