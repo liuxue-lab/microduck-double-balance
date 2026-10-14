@@ -1,0 +1,31 @@
+{
+  "format": "microduck-return-ascii-parts-v2",
+  "file": "graph-source-preflight-return.zip",
+  "bytes": 546952,
+  "sha256": "14d001fcab7dbacc7039a11e479f799b469deb6cc80c08b4939cb67e2dad2fa9",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "graph-source-preflight-return.zip.part000.base64.txt",
+      "index": 0,
+      "offset": 0,
+      "bytes": 524288,
+      "sha256": "694a25a28290efe5f4f992ff0299ad9cf58e948ceac27880c9f9f7b20a8e098e",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "44f5d7e2f32d354828516effa7dc02e5e25c0099835f0fa9d39a42d36bd35cb8"
+    },
+    {
+      "file": "graph-source-preflight-return.zip.part001.base64.txt",
+      "index": 1,
+      "offset": 524288,
+      "bytes": 22664,
+      "sha256": "c5d712d1e2d8988c755371fd4d9dd119197d5098b8ebd116171d0c931cefe534",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 30618,
+      "text_sha256": "be87f94f2dc86347833a397b5ed6d95b899cdaf22075b135c394d7163e388311"
+    }
+  ],
+  "branch": "stage11-graph-source-preflight-transfer-20261014t050538z-ac75c4",
+  "scope": "Stage11 graph source preflight; zero native calls; static source evidence only; independent archive branch; never merge"
+}
