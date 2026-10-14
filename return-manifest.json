@@ -1,0 +1,21 @@
+{
+  "format": "microduck-return-ascii-parts-v2",
+  "file": "graph-contact-order-primitive-return.zip",
+  "bytes": 205426,
+  "sha256": "aad41d01747634867989697c0b5fac453f40c0d67b26bb86e54d0e1dce9d624f",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "graph-contact-order-primitive-return.zip.part000.base64.txt",
+      "index": 0,
+      "offset": 0,
+      "bytes": 205426,
+      "sha256": "aad41d01747634867989697c0b5fac453f40c0d67b26bb86e54d0e1dce9d624f",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 277508,
+      "text_sha256": "ee7b2ee865762ea13489f93106068f0284a4c75cadd771515bcbbeb3c46dc201"
+    }
+  ],
+  "branch": "stage11-graph-contact-order-primitive-transfer-20261014t055604z-90e5c4",
+  "scope": "Stage11 isolated graph Contact word permutation primitive; no physics; actual GPU lifecycle counters retained; independent archive branch; never merge"
+}
