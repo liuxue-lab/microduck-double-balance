@@ -1,0 +1,981 @@
+{
+  "format": "microduck-return-ascii-parts-v2",
+  "file": "post-reset-cap-repair-return.zip",
+  "bytes": 50425589,
+  "sha256": "6fea4d64fa07be7b11b4e4e336bea9a59221d427521127b13b77c52255098819",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "post-reset-cap-repair-return.zip.part000.base64.txt",
+      "index": 0,
+      "offset": 0,
+      "bytes": 524288,
+      "sha256": "2d9ccda1f6b828b8a37999d9a6b327f2b042409d827223f8c99f3b5185bf943f",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "b415c556d0d3dc6025cf2d20336393100e378a31568e5657f1f73e0155d8b715"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part001.base64.txt",
+      "index": 1,
+      "offset": 524288,
+      "bytes": 524288,
+      "sha256": "4257b36aa433b7383c9f1fc82e8462959d5e42b9111ac88c69ac8b965297f67d",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "8d7764809dc73f2e6d4b687f6d6c404623513792d4ba59534f742e2d9d613a61"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part002.base64.txt",
+      "index": 2,
+      "offset": 1048576,
+      "bytes": 524288,
+      "sha256": "b4b053b83b8d745bfee81cf22664d61a3c4f2f62ea5a0536334d3ccf96b1b105",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "bab883f84b553b930858ec297c92b626616c769253311a5b5ca9332805581f28"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part003.base64.txt",
+      "index": 3,
+      "offset": 1572864,
+      "bytes": 524288,
+      "sha256": "386b3d4912e44c02075be3622b7bf3902eeec8dfeaef1cdfb1e935076f337748",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "5a7a4fcab8fe15d98e52020207b2dab208d71eee586ac2bd65762e6a04c4060c"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part004.base64.txt",
+      "index": 4,
+      "offset": 2097152,
+      "bytes": 524288,
+      "sha256": "bd9211157053d284a593103a2aab2040538d6b6b8aa67904fd0e033347843854",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "a40762bcb28b5e2eddafbe3645a1fb221f23541d8625dc7808e9c11d313578b9"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part005.base64.txt",
+      "index": 5,
+      "offset": 2621440,
+      "bytes": 524288,
+      "sha256": "6bae882fff4f6f89b7b5fe103bcdcef15af7b1efef047811797d4383c66534d1",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "1f0715ec3a04bd26d766ba41c30bfc8c3e19df14a37a3b5325c7882f86018803"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part006.base64.txt",
+      "index": 6,
+      "offset": 3145728,
+      "bytes": 524288,
+      "sha256": "d3bc5885d1e9cf8a1ec8b17559bb16e30d5d87f134e533838d72e228191b0dc0",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "ddf5158df80abb561f942ced6fcfe2cb5bcd8e37239d101d914f087376d67d5d"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part007.base64.txt",
+      "index": 7,
+      "offset": 3670016,
+      "bytes": 524288,
+      "sha256": "25f9cdea729eb21336bf0de0506c61bc011321494c648a16a4a3ca60ce6ba681",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "5842da413a2ece1dc7610d1f847865bfed6b77ab1c99adae89b0e79470ce537f"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part008.base64.txt",
+      "index": 8,
+      "offset": 4194304,
+      "bytes": 524288,
+      "sha256": "75eb50ee002cd59655070e21ad4582918887055ba12d6b79d721249112523bae",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "b882dd9e09836fdbb25f5216673fac45298826f8a8ac43fa2d38ccb8bcf7d86a"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part009.base64.txt",
+      "index": 9,
+      "offset": 4718592,
+      "bytes": 524288,
+      "sha256": "ab2b6356becddf6173d419f2c539297099fd3bcd7925ae5a756b436d2a7241da",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "63971dd3a77783ac822b5dcf421ea550f123d38ff18ebbc87fcb2a8246cdfaf5"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part010.base64.txt",
+      "index": 10,
+      "offset": 5242880,
+      "bytes": 524288,
+      "sha256": "b3babe42f1a88e109fe89688f4f87fc2a8172ad24c1f813043d656d9b4d0bc59",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "e2e738346b3b58e14632f9cbdd5f0a1a4f78a4bc36ebd4d74c2749bd61d7b5a1"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part011.base64.txt",
+      "index": 11,
+      "offset": 5767168,
+      "bytes": 524288,
+      "sha256": "6f1efc6f0bc61fdeea86c3b941e440336d09f4eec2c0b433b77febe9eb96bfae",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "b42ab44a60411279e55fbc107bceb4c444ef9d10fa37e6a7d5c29199d458e3d7"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part012.base64.txt",
+      "index": 12,
+      "offset": 6291456,
+      "bytes": 524288,
+      "sha256": "287014dc58ef1b69958d016ffe44d0b35cd54b324553ae585869e0401bb94ed4",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "f4b24a514cc81127d3adfa230bde4623631fcaf813c4158006306b26a8ff4214"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part013.base64.txt",
+      "index": 13,
+      "offset": 6815744,
+      "bytes": 524288,
+      "sha256": "1220fbac15bfa52fbbb8fe0c172b3b37b160e9eb8a6aa4edc3ab46770d2326be",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "6069a509a2a8ab098964dd3747cdf9ee9b3441092b9fe7d37b63c718d514559b"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part014.base64.txt",
+      "index": 14,
+      "offset": 7340032,
+      "bytes": 524288,
+      "sha256": "3cdb2f702625807d290bb58ed16d149bf4bc2c7f2aa8c032cf1748c2cab83133",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "f6df62398eb987d1c06ff3d079362ef76134362564779f34dedcd59a4809c80a"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part015.base64.txt",
+      "index": 15,
+      "offset": 7864320,
+      "bytes": 524288,
+      "sha256": "4cb5749bbe39a09511a76584ef7c3183c2cf3d29182910723948eeb7dec13827",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "24ffd155ada416f6bf72b67100b6b44f2e6d00eb348a6fa6045e21c4d3ddb1a7"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part016.base64.txt",
+      "index": 16,
+      "offset": 8388608,
+      "bytes": 524288,
+      "sha256": "d6e32641192dba23577631a93dd2eddda98e20f873d88bb63ddcf5d8a6f0c39f",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "9a68c518b8237673a1840d4afe8e4607024840a612ef7ac69b13aa2e694d0d38"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part017.base64.txt",
+      "index": 17,
+      "offset": 8912896,
+      "bytes": 524288,
+      "sha256": "fbebb45e24ea3f0bbcfb5a3923b27d572b5e813bdae1bd9428b95bec3e0b173a",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "f639228cd72d4461b3c0327ca0211ecc42cc718ece5e76fd3e82170e1ba0f0df"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part018.base64.txt",
+      "index": 18,
+      "offset": 9437184,
+      "bytes": 524288,
+      "sha256": "465f3593280b78b38c5664aedd5ddb8af2d62f075c461ccd28f31c762d75e169",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "05b45d4e2434e7c991cb2034bd858d70bce2618acbe029e9f423f33097d72da8"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part019.base64.txt",
+      "index": 19,
+      "offset": 9961472,
+      "bytes": 524288,
+      "sha256": "fa86447678833e2b5ed5377b71dfe9f3e9e76e52cb10009bd7e5775b9da127db",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "2a4670c013dbd062f95377de8f391b3afc0c457697d8708758e82a79e8cc3e4d"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part020.base64.txt",
+      "index": 20,
+      "offset": 10485760,
+      "bytes": 524288,
+      "sha256": "4c1dbdcd19a852c2dba00b7542460ba4560eb296f19fe8f173a316beebabb7fd",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "781325a13dd80c984dc0fa1da57e71c0edb92be3f68f7912824902026d2e379c"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part021.base64.txt",
+      "index": 21,
+      "offset": 11010048,
+      "bytes": 524288,
+      "sha256": "a0b26bf4a30034f8e138395f58d973e2ab62774ed574689ea02e3140c68674e3",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "9e5b4a6d2d838bc15b64c40027fabf433556d140d54207d5b8e6d4724c322431"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part022.base64.txt",
+      "index": 22,
+      "offset": 11534336,
+      "bytes": 524288,
+      "sha256": "c38bed900adec59cc93896c688169317b733bf890c4067a59a70b7e35663b1e5",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "1d79a364a77f3ccfcaa948374cb49d1495c818b30a284775fdf13d5daaee3ee0"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part023.base64.txt",
+      "index": 23,
+      "offset": 12058624,
+      "bytes": 524288,
+      "sha256": "5059c16fce51045be513c77c5034f0b90803e2df05b9b389d10b5ae9812cc490",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "237ffa0dee7feb3623aa1f44bd327bb17bc5c75a2d359eb9ddafe0f7602e3097"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part024.base64.txt",
+      "index": 24,
+      "offset": 12582912,
+      "bytes": 524288,
+      "sha256": "c12557548d7ef9ca9e7b4d2f8e8ee00e5075bdd085b5db8a57714ffdfb4493f8",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "33697910d2305c77028cfc0bc8f87f3394c9bb949b377ac97e8b404ab8c5cf4a"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part025.base64.txt",
+      "index": 25,
+      "offset": 13107200,
+      "bytes": 524288,
+      "sha256": "b104be104176b735c79bec39047b32777ef69438b01319783e79160ad8f9b68d",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "0c1c1abdf93d6caeba7c594a67cf0da071e2c6c9e34276b72434de0b50738412"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part026.base64.txt",
+      "index": 26,
+      "offset": 13631488,
+      "bytes": 524288,
+      "sha256": "fe5175e0a162f4290100dfa661cb67d94b216f42a670c0dc5331ed97b36175e7",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "365afb492bf14c422e723c679fa6e9b2eae0fd81537354ecef804e5832e58c9a"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part027.base64.txt",
+      "index": 27,
+      "offset": 14155776,
+      "bytes": 524288,
+      "sha256": "3a30971b62243b25239b31a22fa21f5129b3ff6eee1aa883f10906d3e4c94358",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "32e26ad97d9a82b10897676f646f213fa1cf7722c0bb979c01c13f8d5a4e4268"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part028.base64.txt",
+      "index": 28,
+      "offset": 14680064,
+      "bytes": 524288,
+      "sha256": "2ec59c24e540a7f3720a3ba80243fd2b0bf83c7a89fcd1fa51c2b0f9d617d36b",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "f541c6481e5e57e277028f1e231a62cc54270534a4798c114144027c6e54fcb4"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part029.base64.txt",
+      "index": 29,
+      "offset": 15204352,
+      "bytes": 524288,
+      "sha256": "7248ec6bebcb209e7ce9e5245e6ecef65699b143a049abb31b4bd9264466fbb0",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "0c09a1c6e89b3e10b43c3694b34f314ace3599ec2b72f0030e4a0ac33434ccb3"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part030.base64.txt",
+      "index": 30,
+      "offset": 15728640,
+      "bytes": 524288,
+      "sha256": "3cdb8f8a43caa0704f68141a24ba42b4c68ad472618da378a81ff1fb5deb74d8",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "aaba59a58277b6b1c988a2db4861145c8b974279a2aff3f0763111f8705c8c36"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part031.base64.txt",
+      "index": 31,
+      "offset": 16252928,
+      "bytes": 524288,
+      "sha256": "5037c4109e79a7e57a33d0724c5de53d5aca5cb610451a87673aef1b47f72bcb",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "8215e280bf2cf91647056ef6143916304a9fc9083800a76e307ce41119a32e10"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part032.base64.txt",
+      "index": 32,
+      "offset": 16777216,
+      "bytes": 524288,
+      "sha256": "005a2f0f0d2519808d2420adf3e3b4fbcfdf72481ec19a087500f8012358f6ad",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "0c913d6757d44e5ee6a359fe559651f51b7e604522d24df71fb3ae569cab9fa6"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part033.base64.txt",
+      "index": 33,
+      "offset": 17301504,
+      "bytes": 524288,
+      "sha256": "2b6d988b9f457c85ff98fbe5abf46579e87deab1d7c5259dbfebbfd1f69afa0c",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "e1616cbea8f806b17dfc0883ce7fdbd79abc18e4a86c7b701a0d7438f1943ee3"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part034.base64.txt",
+      "index": 34,
+      "offset": 17825792,
+      "bytes": 524288,
+      "sha256": "17805bd2283f07e9d8cffd165295ffc7b04b161b9bba10789382c5f6a23bee32",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "34403c5660861ec74c1b55e84fffbc9465990a5f565288313d051c3342082448"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part035.base64.txt",
+      "index": 35,
+      "offset": 18350080,
+      "bytes": 524288,
+      "sha256": "bf81b54bb7403ccc5a34bc5d4da85566415a4c8df219ef0f985e4dd3b3120234",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "d84eebf41f87809e6e7c60e38d6032aa81568558578999aa2c8e81807e80405f"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part036.base64.txt",
+      "index": 36,
+      "offset": 18874368,
+      "bytes": 524288,
+      "sha256": "c79d4652fe6365efbb3a3c344620da1151144dfb38df05c6d973c53a7c121a69",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "4198e0a1bcae00256aea9b05ac38d73d40111d7f3534e2c9269ae4df1516dffb"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part037.base64.txt",
+      "index": 37,
+      "offset": 19398656,
+      "bytes": 524288,
+      "sha256": "05941366de6c9fa015cbe3630920e70d0f8f75aa5b0017637998c843e1f0f5b4",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "04a1d8bce2153b0052608dfadace078fc5fa267a9793aae130a88dc81e6026b1"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part038.base64.txt",
+      "index": 38,
+      "offset": 19922944,
+      "bytes": 524288,
+      "sha256": "351b830ea2bad2451c9440e20634deadfe83e10ebd5ed798d1e620446bcd27fb",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "ed6adedda97c86cc4a6233e81d1b3b7ccd7bc26fdcc7e909ea9474d2d49c5294"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part039.base64.txt",
+      "index": 39,
+      "offset": 20447232,
+      "bytes": 524288,
+      "sha256": "06bd4b98103a230fc3955f2e325db4942e970ea6ded9ae93cdb506526fb8fb69",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "826087668ab6dbea4d6f8e21ff3d7de967db92375410219a41a4a5fddd84a54f"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part040.base64.txt",
+      "index": 40,
+      "offset": 20971520,
+      "bytes": 524288,
+      "sha256": "8a6d36f7f7d41d14942b1feb0bb2b8828179a03d5abafa54d7d9ee667388222f",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "7404fe23200139ac00210e401f7be7cc48744e82c5fdcd3c0bbb1881e8999cd3"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part041.base64.txt",
+      "index": 41,
+      "offset": 21495808,
+      "bytes": 524288,
+      "sha256": "379cf91005e10d8f5c6dc10ed411212c6ad86d942d780cec5a2c7f96010fff00",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "2811b37778b85474b1708e66203852a44e3825a207bedaca0e4bd8008f56ad07"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part042.base64.txt",
+      "index": 42,
+      "offset": 22020096,
+      "bytes": 524288,
+      "sha256": "96f639ef7609d752c127ba01c916a49ffce17649e62e6b71aa78604be284e9ca",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "c76105f1fb7620c7b73a00128b7cb8a192d52d072eb07ae23c4481903792dfd8"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part043.base64.txt",
+      "index": 43,
+      "offset": 22544384,
+      "bytes": 524288,
+      "sha256": "6d5f3eff12ea213b6f8052834066a0d53d0c6a0a37236a6146e926f21ed495b7",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "c742d38104888131ecffa7da29833d4d63b5b3a3d24cdb157e3ff9b57cf5ca4e"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part044.base64.txt",
+      "index": 44,
+      "offset": 23068672,
+      "bytes": 524288,
+      "sha256": "4aa35612825406caeaf29b44399614f339be2c1a884c2119cb2f748603420347",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "94eb2e0340387d053d834519f0b65890fb3d1e168d7c0aad3f595c466585a2b1"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part045.base64.txt",
+      "index": 45,
+      "offset": 23592960,
+      "bytes": 524288,
+      "sha256": "c97aaae4fdd49bcc8fd0f1b93398f9fff39055a92cecd91b1e2ac295afafa268",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "7698f22880a4f233301e7d89e1ebd118173e0edbfcd7c4de51cbb280588bb510"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part046.base64.txt",
+      "index": 46,
+      "offset": 24117248,
+      "bytes": 524288,
+      "sha256": "3a903cd7c7ff8431600ebc4be16ab61dfb117c0a894b59b608e0cece3fa5ecaa",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "c459fdbb201e71ffda63dd0952f398532531b9af0471ad532fd1b381bcfa934a"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part047.base64.txt",
+      "index": 47,
+      "offset": 24641536,
+      "bytes": 524288,
+      "sha256": "ffe6e28683ba8473d537d3b743827e81e6ba850780069946bcdd6de9cac5dd41",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "4868bd6aa05343b4405ef8cf2d4b2809ea301877b503e6d39b7feb7a45df5fd4"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part048.base64.txt",
+      "index": 48,
+      "offset": 25165824,
+      "bytes": 524288,
+      "sha256": "e37cdfc1e75a577a967fd3043913f3549ab1d5dfafbbf16e4dc66488f18d4896",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "fa4c96b6aa5c2867154015acfc844506c2d703cb07bc1325514ab9e6042f0934"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part049.base64.txt",
+      "index": 49,
+      "offset": 25690112,
+      "bytes": 524288,
+      "sha256": "bcd45f85192df6d65bc05bd8a40cb0784db91369bc746576880465550762c356",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "5778ca3ee1335e1940ed77891f9af4e665949c0edee9bdd7843d173f13f88040"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part050.base64.txt",
+      "index": 50,
+      "offset": 26214400,
+      "bytes": 524288,
+      "sha256": "707f32eb657a25f96ad5e57b35c95d16fba81f869bc719619572f7dfc1460362",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "2034c85711b7f956bf42ec05fca5547872f13231956d96dac024e83cf120d26a"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part051.base64.txt",
+      "index": 51,
+      "offset": 26738688,
+      "bytes": 524288,
+      "sha256": "1264edef67281ee593cfa093066dce6550124c4d2c76de0ffc7ffb3c02e18690",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "17cfdbacd82703f994803a37e9c09c3ed38cd2f6455d6cb9caf5dbe8b3f24293"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part052.base64.txt",
+      "index": 52,
+      "offset": 27262976,
+      "bytes": 524288,
+      "sha256": "cf302e2e3813c7cdcc82f3a07d588ac1260fe5e2cbf4a3adc899d564d71f7045",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "175508946fff65050299ee417f00d36864440423021807bd4a5217c190199cb2"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part053.base64.txt",
+      "index": 53,
+      "offset": 27787264,
+      "bytes": 524288,
+      "sha256": "af2396cf4c0edfed27c14c58cf4b323ee49600fea7cd82ecce2ff3f07d0b513e",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "20c9595957a194c2ad9870ebca892fb3592670a1902a252a0b63ed623e0b724e"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part054.base64.txt",
+      "index": 54,
+      "offset": 28311552,
+      "bytes": 524288,
+      "sha256": "91a8519551107e3b2b3822e30dd0425df5fbaebcf6e06e6c904f6e81931da774",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "2eb9a61ed54439e525eabb3b65507f6c3d8f43c4b0c892b6f25a933fb45ecb3a"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part055.base64.txt",
+      "index": 55,
+      "offset": 28835840,
+      "bytes": 524288,
+      "sha256": "9501c647eeb59bda40c16e74dfbc0119a70703f0d380fb9aa5a0aea1a39775ca",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "5b27a0b345a7c6be186afc2f7fa19c14ee6f7c97788d181b60df02fd3cf36bf7"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part056.base64.txt",
+      "index": 56,
+      "offset": 29360128,
+      "bytes": 524288,
+      "sha256": "6f35acb274220a7d1dfff6f3edfc6eb130c18a761a587165804c4e1e77f99b43",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "add519de5cccc56ff6c45201a88b7ac5e292b8f565a88df58338309bff871c81"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part057.base64.txt",
+      "index": 57,
+      "offset": 29884416,
+      "bytes": 524288,
+      "sha256": "7e5de51b111aa55c93214dc84b6a4dd0878e0502217ec450eefeae195e90f59f",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "b87766781d36d2b2dfa2646e873a5c1d523b2d7193a7bd26c050c12989785ba6"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part058.base64.txt",
+      "index": 58,
+      "offset": 30408704,
+      "bytes": 524288,
+      "sha256": "715a6b2a98a96cb6de2001721357dd62e03eb204cc6f4e8f86d3850ee592b3f2",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "d4c4f4a1b9bdfa778ab503ee014d920fa098199e4a28ffb5266d5689047133b4"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part059.base64.txt",
+      "index": 59,
+      "offset": 30932992,
+      "bytes": 524288,
+      "sha256": "1e07ed47fccd3b6e740e6b24112107015b25a3b4a86dec6028ff6cab0148b7cd",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "56cae6e6441b033f8a333038916f47b7c88c5d22911bab51c4daa8a1d6777084"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part060.base64.txt",
+      "index": 60,
+      "offset": 31457280,
+      "bytes": 524288,
+      "sha256": "8c2d42de67219cbf6622c4a496fb2f3fff6cda67a1e69fff636e8f15d742a7ab",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "3ccbbafd037c10c9da822124f5a002c07d637e7d43c537e697fb017b2c0a9a63"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part061.base64.txt",
+      "index": 61,
+      "offset": 31981568,
+      "bytes": 524288,
+      "sha256": "9c1173abd4bcd8b26e1698e8214b5785c7eaffc42284028156bc3fe79404dbba",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "1478adc0cc659d5bf9955cf74185c6488fd009b95081b1bddff3b3e1de15af77"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part062.base64.txt",
+      "index": 62,
+      "offset": 32505856,
+      "bytes": 524288,
+      "sha256": "40c186c52f8c5877ed60cc9907a8fce65238b89d590a5a1783b7ea0e98e5e823",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "b0486f399e3174517ab1d15a0f7a1b687087a5ad731032c575e1f4761b7d7fdd"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part063.base64.txt",
+      "index": 63,
+      "offset": 33030144,
+      "bytes": 524288,
+      "sha256": "62d186b93e033b92c75b21e815d69f0aafd53821fa6a2fd75d67f78f3647eec0",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "4093bac945d962c4126614427525da077fb772831fdeaa0c0c3ed6008aebcfdb"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part064.base64.txt",
+      "index": 64,
+      "offset": 33554432,
+      "bytes": 524288,
+      "sha256": "c86158caa87ba08b3279aa996bd811d55a8b73bedf7ddb51437e6629733a10d0",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "ac5005268dfbd61e3fb9def2f4907d4d6c97a7b9c9cee26b79da9693c614c4a4"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part065.base64.txt",
+      "index": 65,
+      "offset": 34078720,
+      "bytes": 524288,
+      "sha256": "7fc05402fb831063bda120c09a3ae433dcce1c5c801214730789675d55a0223e",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "06a5f231380ed14f99358907cf886d37b6991962510e483e799fc39d9a78384a"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part066.base64.txt",
+      "index": 66,
+      "offset": 34603008,
+      "bytes": 524288,
+      "sha256": "9f82171c24774a87246be9628c38313b4142cc304de7d15310ed26fbad411871",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "f5fd6e319b8918b95d3fd9c664c5ecb3f7f05e4bf2ddfce3c7fadb1a49161da7"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part067.base64.txt",
+      "index": 67,
+      "offset": 35127296,
+      "bytes": 524288,
+      "sha256": "6bff48ffc5984d82029ec80ffb4b43e0079ca6305c6858ed18060644cab800e4",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "c9b3e986599968dd008ec5c8408346c89bc064d36e32f1e0ed42ed3192612116"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part068.base64.txt",
+      "index": 68,
+      "offset": 35651584,
+      "bytes": 524288,
+      "sha256": "e83716350116950564185bc3d22ac4189197ae60426bb10ff3574f5cf582a66a",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "4e9e9ddb4b4b782ea7b74bc9bd08847ad2ccc98828ef5193a57fb65c06df8596"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part069.base64.txt",
+      "index": 69,
+      "offset": 36175872,
+      "bytes": 524288,
+      "sha256": "683887f6fe79ed2be544f233293c5f664e8ea1bd958962b2bd72ec9e1f245b5a",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "150be1dd783a7700003f73fbee757307f441ad83a19c47cf33a042050cdfcb01"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part070.base64.txt",
+      "index": 70,
+      "offset": 36700160,
+      "bytes": 524288,
+      "sha256": "3d74f8a94f0c0aad99fe2e0a656cce51e4a68af40aba3126afdc5d22b652d553",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "6d185c53138b4c09ef3600ee2b41cbf2737509474945fd53fa7d3f5713811d8a"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part071.base64.txt",
+      "index": 71,
+      "offset": 37224448,
+      "bytes": 524288,
+      "sha256": "8a8de15a113c18c5765d5fbe7b349eada8f7b6601de28ba4b73b7c840cb838bf",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "f5ba013a15277c69d5390e515648b1cfa58037317e8f6ff6f2a974cc59839dca"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part072.base64.txt",
+      "index": 72,
+      "offset": 37748736,
+      "bytes": 524288,
+      "sha256": "fba378cdcbb237d2877de54cc2fa83d8b4b9699d4680631a8b114d96f00f93f1",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "20c9df7a6ac961a75e603840b5e1b181be1427abc3d31bee85aa4b4b156a69ca"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part073.base64.txt",
+      "index": 73,
+      "offset": 38273024,
+      "bytes": 524288,
+      "sha256": "48a7e1279a5ca27e3b3528b3bd04bba08b8de4a728bd4ce24ecd5747acf67c5a",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "1051e2b3d7e53d7b2164c6757f8c6455b7ed9bd7f8b9140cce6cff4af41ff326"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part074.base64.txt",
+      "index": 74,
+      "offset": 38797312,
+      "bytes": 524288,
+      "sha256": "12bea157c50367db3f684cd128f3f6e640009efd78e2061304e74366de8fb8d8",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "1631bf0af1f7f846ced25b5869d4fabfc7743c644ffd94ceb513987fd5e37124"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part075.base64.txt",
+      "index": 75,
+      "offset": 39321600,
+      "bytes": 524288,
+      "sha256": "a35a04b756f7a017f4c7c9296bb7c5d6893ea33bc76bc2a390d62ae056ab2428",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "0597b51910963a42390b1b17c358095568596e14e310861402ac76afa105b494"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part076.base64.txt",
+      "index": 76,
+      "offset": 39845888,
+      "bytes": 524288,
+      "sha256": "df9c2d2bbcd49b27f64d2ffb2d800952ad1844646a09c5540f17aa93620124e2",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "4112dc8b8be27b9fb097e4468563a7daee9132850c1d17d718f96bf188470a75"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part077.base64.txt",
+      "index": 77,
+      "offset": 40370176,
+      "bytes": 524288,
+      "sha256": "101f1c5a667e50c76d49592c77c21cc0df727e7cad05e941da0303cf968ab4b3",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "c14f209e3e06328c39a51317b46b7f98e3b97f081caa9002a58f026936c4c68a"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part078.base64.txt",
+      "index": 78,
+      "offset": 40894464,
+      "bytes": 524288,
+      "sha256": "3363278ded780640aa5ae33063b987639a03dcfaf47dd720b933c9fa268999f3",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "3c11c47b10d2a70cc9569e0becf152285e6b5d7992631efdaa84207b086f42b2"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part079.base64.txt",
+      "index": 79,
+      "offset": 41418752,
+      "bytes": 524288,
+      "sha256": "f1485fa19fae178904ca0d446f135d2a9608468de34d2ddab05d9175501978c7",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "1103aa4ade3e0f92e3f01101899d24b9feb54c91c94345a7374e01f59117fb3b"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part080.base64.txt",
+      "index": 80,
+      "offset": 41943040,
+      "bytes": 524288,
+      "sha256": "1f96a64f4ddaac2b7bc0d9f02ad1a6a364eb673e14bd1c9c9a70013a1f4f9e54",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "69183e61d891d1de201f500a9698e70a9adbd1b697852895172f20116b8cb59b"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part081.base64.txt",
+      "index": 81,
+      "offset": 42467328,
+      "bytes": 524288,
+      "sha256": "c1e64623905ca79b9c61f596f7b79d2c9cdb1d62dcd0c2fc4c4509738e457886",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "9218dd4f1f3ad4eaf527a9ef0b2f282e19e1329797c7646459712cb562dd2946"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part082.base64.txt",
+      "index": 82,
+      "offset": 42991616,
+      "bytes": 524288,
+      "sha256": "a8e8580f7b32bd351b3e0e0c0a2619bce12c0e790e163f79605a178c6ad6572a",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "edd4f786eb4a9f011bfdb21f6d8bc6c64d2bbf2811197f28d9092c2e58c295f1"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part083.base64.txt",
+      "index": 83,
+      "offset": 43515904,
+      "bytes": 524288,
+      "sha256": "37738a8ddc3f6dc3e139150eae6519991ec0763272c5136bebd7aa05e46ee863",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "1cecb5f93c0bb16c442ec1219d91331fac79a159e2e7995ac61aa422790bbc45"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part084.base64.txt",
+      "index": 84,
+      "offset": 44040192,
+      "bytes": 524288,
+      "sha256": "48ccf34df175aa44c0a98b5efdbcc998d9ff9fcc8bbc422ee7299e6eeda2ffa6",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "db4c4c1f40d46d5bce405650d06f3d4a12a3700161a80bb7abdd079fd4522beb"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part085.base64.txt",
+      "index": 85,
+      "offset": 44564480,
+      "bytes": 524288,
+      "sha256": "eec2bac73ebf49fd98fd1ed17c9bbfa8d6fe2f2c78c3bbb363ef067a927d3917",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "858be579b2deb04be3d2ac471788d6c799cc01feabf91cdeea574a048962816c"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part086.base64.txt",
+      "index": 86,
+      "offset": 45088768,
+      "bytes": 524288,
+      "sha256": "237a742ab34e69a7f569f7555d518b61cd3d70109fe68acd4a97828c2b859e72",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "7dc9aff8fe87d65e5fad02243e33c55f68facdc606695c15cc16c47e3494804f"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part087.base64.txt",
+      "index": 87,
+      "offset": 45613056,
+      "bytes": 524288,
+      "sha256": "ec9b6af89b6e90e06af60c616cf641c9fc37094dbb5299bceebf71cbafc3b11e",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "a8b84761be19123e065644581e129656a4b95360caaac98b643e154199cc8d7f"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part088.base64.txt",
+      "index": 88,
+      "offset": 46137344,
+      "bytes": 524288,
+      "sha256": "ee053bfe656b598b40c0d6db3f4d949b747256df6144942698b6a2e47f4b1ebd",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "cd0f6ff7cfbb1127adf0397ad6bdaef237017f142976c3c806d8e370969630fa"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part089.base64.txt",
+      "index": 89,
+      "offset": 46661632,
+      "bytes": 524288,
+      "sha256": "b580e45b53a4e3ac52e7c6aed0cfab38eaddc41d2d15a894289a5fe3a704bcbe",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "f9e1f38d48dfc0eac4ba8db7b5911e17b31fa99d56f28404c2a9c15d49d100f5"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part090.base64.txt",
+      "index": 90,
+      "offset": 47185920,
+      "bytes": 524288,
+      "sha256": "7f0d0d9d45623030864dcab2101c907594f803ece005e784c8f1d53828ff48f9",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "c01d2bd0e8321b4a85a5a41875315d1cbb9d0bd89ba37bdb239752b78f8ec444"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part091.base64.txt",
+      "index": 91,
+      "offset": 47710208,
+      "bytes": 524288,
+      "sha256": "1800ca5f5bffe7ad9e201042e85e4d0e73566862995a044b8362fbe7d0a20654",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "09ddf6c49a0f1d6883bd30f7af1740a3775f2f69a1ea0f80d13d25ce2d82e450"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part092.base64.txt",
+      "index": 92,
+      "offset": 48234496,
+      "bytes": 524288,
+      "sha256": "6bc65c4887e1464a8bd8ccd7b2d42a8a296ff3ba2d333cd637c9b6c2dc30224b",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "ed3cf796d31e5bd4e630b94d6f95c75c1f4a455ee4e76b18b902e0c870f5d9df"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part093.base64.txt",
+      "index": 93,
+      "offset": 48758784,
+      "bytes": 524288,
+      "sha256": "788b791e9ea5bce4bcf9ba4ee100f41d00a51c03339000be4df659bf5fe89ecf",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "fc52875595cb4fc44ddb4077d73f0ae2a0fd7c70374bb2b94109e2b9ade1824c"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part094.base64.txt",
+      "index": 94,
+      "offset": 49283072,
+      "bytes": 524288,
+      "sha256": "1d97d51568d278aa1cac28e95d08ebfb2f53c37db18e65e78f8bc4b1bf186325",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "8985d2bb665bf856d546b899023759395c7be733b8eab739e65f448920c8d9b1"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part095.base64.txt",
+      "index": 95,
+      "offset": 49807360,
+      "bytes": 524288,
+      "sha256": "2b845fae2f4b87ec7baeba0e46aaa8f1f9f9f3fcc5b8ad6e498b665398568246",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "da2685328a1b581466cb39b193838bdbf4c275e396e208a252bbdacf10882bce"
+    },
+    {
+      "file": "post-reset-cap-repair-return.zip.part096.base64.txt",
+      "index": 96,
+      "offset": 50331648,
+      "bytes": 93941,
+      "sha256": "45ed32c553976356ac913382062e5b9491dce14e84916419a7bdce25c2f2273f",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 126905,
+      "text_sha256": "c5e5086bb7f637e6750aa200d20b93f3c149577ebdfcdb36c8e2d7af9df948dd"
+    }
+  ],
+  "branch": "stage11-post-reset-cap-repair-transfer-20261014t072848z-57f3a5",
+  "scope": "Stage11 post-reset physical continuations and live Contact sorting subgraph; actual physics/graph counts retained; independent archive branch; never merge"
+}
