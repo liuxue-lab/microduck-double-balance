@@ -1,0 +1,91 @@
+{
+  "format": "microduck-return-ascii-parts-v2",
+  "file": "post-reset-solver-replay-return.zip",
+  "bytes": 4044547,
+  "sha256": "df5437ee40da2a49856793a8e39654d1800fb5d38e767dba791b3a840cda9a3d",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "post-reset-solver-replay-return.zip.part000.base64.txt",
+      "index": 0,
+      "offset": 0,
+      "bytes": 524288,
+      "sha256": "6eab7eeac5655df44a4cc24b874cbb2aa83c255b7b70d574a4c6a8a3d6efae81",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "dea058cea548ad884bce72e6f500359af94e0fe6eeefe4b2173654edeb4aa7db"
+    },
+    {
+      "file": "post-reset-solver-replay-return.zip.part001.base64.txt",
+      "index": 1,
+      "offset": 524288,
+      "bytes": 524288,
+      "sha256": "e56a7c8c1e9b47ae9236159716912d9f02c8483f280702bea74aa7fe4ebeab49",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "5bf3a00525265da14850b81a91cde4d02a3646cf3a7d055f23e82be0ade9d43d"
+    },
+    {
+      "file": "post-reset-solver-replay-return.zip.part002.base64.txt",
+      "index": 2,
+      "offset": 1048576,
+      "bytes": 524288,
+      "sha256": "87a5f5c0d098760979bffbdf845e37c64814b3b0535e4cce50fab88a5dc4dc79",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "da18a8d931f81ca4efe5567b92c333c6ceaba95de7ba2a87c77cd43d224d09ea"
+    },
+    {
+      "file": "post-reset-solver-replay-return.zip.part003.base64.txt",
+      "index": 3,
+      "offset": 1572864,
+      "bytes": 524288,
+      "sha256": "e4549ee40471eed34829da9c496ce58e0c6ec2df797eabb4987c1207f0f30686",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "b11d6866b4108a234585e93bdfcdf829465bcab4b563ba5d0ae22266d217da1e"
+    },
+    {
+      "file": "post-reset-solver-replay-return.zip.part004.base64.txt",
+      "index": 4,
+      "offset": 2097152,
+      "bytes": 524288,
+      "sha256": "083fbdcdfe31160e1673193ceca52dfc0a49490397e4d0467a2d52153130b1bf",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "0a86d400f5f178dbf3db4e1c673b6913da72a25a00ac47af4b7aed6f3360e084"
+    },
+    {
+      "file": "post-reset-solver-replay-return.zip.part005.base64.txt",
+      "index": 5,
+      "offset": 2621440,
+      "bytes": 524288,
+      "sha256": "fed9cbcba5764764be430dceb8047b1f8ac11db297168215458c1c8125d2ddc4",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "1ff5818eace463693c1b0778d1914839a03b5f1d5db979ea849f25fdcea57be2"
+    },
+    {
+      "file": "post-reset-solver-replay-return.zip.part006.base64.txt",
+      "index": 6,
+      "offset": 3145728,
+      "bytes": 524288,
+      "sha256": "696c5ee1ed42589af174fc4cd58b4110f20e8fc6ee1595b057beb495c70f2612",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "6db1c30976ed99c212ab5888bac0550da85106ce38270d348e9b2aa010b06223"
+    },
+    {
+      "file": "post-reset-solver-replay-return.zip.part007.base64.txt",
+      "index": 7,
+      "offset": 3670016,
+      "bytes": 374531,
+      "sha256": "7d1731945675a9e130286b4b6279df340c1d278e485ba8af629ee0e30f168d91",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 505947,
+      "text_sha256": "bfb246e0f7f1fe97e8954b4b59e026e58dcdde3cb06f63306241eb21dfa0419c"
+    }
+  ],
+  "branch": "stage11-post-reset-solver-replay-transfer-20261014t080501z-b0ea35",
+  "scope": "Stage11 post-reset solver-only numeric fixture replay; actual physics/graph counts retained; independent archive branch; never merge"
+}
