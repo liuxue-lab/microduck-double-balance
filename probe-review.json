@@ -1,0 +1,282 @@
+{
+  "status": "G10_RESUME_RAW_HOST_REVIEW_PASS",
+  "reused_prior_review": {
+    "status": "G10_WORLD0_PRODUCER_RAW_REVIEW_PASS",
+    "pair": {
+      "world": 0,
+      "left": "world0-producer/eager",
+      "right": "world0-producer/graph",
+      "endpoint": {
+        "passed": true,
+        "fields": 636,
+        "missing": [],
+        "different": [],
+        "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+      },
+      "schema_exact": true,
+      "trajectory": {
+        "passed": true,
+        "microsteps": 352,
+        "solved_stages": 1408,
+        "raw_snapshots": 26,
+        "differences": [],
+        "difference_count": 0,
+        "numeric_fields_exempted": []
+      },
+      "passed": true
+    },
+    "segment": {
+      "captures": 9891,
+      "launches": 16473,
+      "releases": 9891,
+      "stale_rejections": 1
+    },
+    "resources": [
+      {
+        "process": "world0-producer",
+        "targets": 42
+      },
+      {
+        "process": "world0-consumer",
+        "targets": 42
+      }
+    ],
+    "auxiliary": [
+      {
+        "full_contact_records": 2828,
+        "solver_active_index_records": 3138,
+        "blob_hashes": 1360,
+        "passed": true,
+        "solver_boundary_note": "Active index bytes verified; full constraint before/after arrays are not archived for every iteration"
+      },
+      {
+        "full_contact_records": 2,
+        "solver_active_index_records": 2,
+        "blob_hashes": 14,
+        "passed": true,
+        "solver_boundary_note": "Active index bytes verified; full constraint before/after arrays are not archived for every iteration"
+      }
+    ],
+    "consumer_status": "FAILED_AFTER_EXACT_LOAD_BEFORE_ANY_INTEGRATION",
+    "comparisons_passed": 1,
+    "comparisons_total": 6,
+    "canonical_completed": 666200,
+    "canonical_attempted": 666201,
+    "native_integrations": 0,
+    "G10": "OPEN",
+    "G11": "OPEN"
+  },
+  "pairs": [
+    {
+      "world": 0,
+      "left": "world0-producer/eager",
+      "right": "world0-producer/graph",
+      "endpoint": {
+        "passed": true,
+        "fields": 636,
+        "missing": [],
+        "different": [],
+        "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+      },
+      "schema_exact": true,
+      "trajectory": {
+        "passed": true,
+        "microsteps": 352,
+        "solved_stages": 1408,
+        "raw_snapshots": 26,
+        "differences": [],
+        "difference_count": 0,
+        "numeric_fields_exempted": []
+      },
+      "passed": true
+    },
+    {
+      "world": 0,
+      "left": "world0-producer/eager",
+      "right": "world0-consumer/restored-graph",
+      "endpoint": {
+        "passed": true,
+        "fields": 636,
+        "missing": [],
+        "different": [],
+        "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+      },
+      "schema_exact": true,
+      "trajectory": {
+        "passed": true,
+        "microsteps": 352,
+        "solved_stages": 1408,
+        "raw_snapshots": 26,
+        "differences": [],
+        "difference_count": 0,
+        "numeric_fields_exempted": []
+      },
+      "passed": true
+    },
+    {
+      "world": 0,
+      "left": "world0-producer/graph",
+      "right": "world0-consumer/restored-graph",
+      "endpoint": {
+        "passed": true,
+        "fields": 636,
+        "missing": [],
+        "different": [],
+        "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+      },
+      "schema_exact": true,
+      "trajectory": {
+        "passed": true,
+        "microsteps": 352,
+        "solved_stages": 1408,
+        "raw_snapshots": 26,
+        "differences": [],
+        "difference_count": 0,
+        "numeric_fields_exempted": []
+      },
+      "passed": true
+    },
+    {
+      "world": 1,
+      "left": "world1-producer/eager",
+      "right": "world1-producer/graph",
+      "endpoint": {
+        "passed": true,
+        "fields": 636,
+        "missing": [],
+        "different": [],
+        "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+      },
+      "schema_exact": true,
+      "trajectory": {
+        "passed": true,
+        "microsteps": 352,
+        "solved_stages": 1408,
+        "raw_snapshots": 26,
+        "differences": [],
+        "difference_count": 0,
+        "numeric_fields_exempted": []
+      },
+      "passed": true
+    },
+    {
+      "world": 1,
+      "left": "world1-producer/eager",
+      "right": "world1-consumer/restored-graph",
+      "endpoint": {
+        "passed": true,
+        "fields": 636,
+        "missing": [],
+        "different": [],
+        "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+      },
+      "schema_exact": true,
+      "trajectory": {
+        "passed": true,
+        "microsteps": 352,
+        "solved_stages": 1408,
+        "raw_snapshots": 26,
+        "differences": [],
+        "difference_count": 0,
+        "numeric_fields_exempted": []
+      },
+      "passed": true
+    },
+    {
+      "world": 1,
+      "left": "world1-producer/graph",
+      "right": "world1-consumer/restored-graph",
+      "endpoint": {
+        "passed": true,
+        "fields": 636,
+        "missing": [],
+        "different": [],
+        "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+      },
+      "schema_exact": true,
+      "trajectory": {
+        "passed": true,
+        "microsteps": 352,
+        "solved_stages": 1408,
+        "raw_snapshots": 26,
+        "differences": [],
+        "difference_count": 0,
+        "numeric_fields_exempted": []
+      },
+      "passed": true
+    }
+  ],
+  "processes": [
+    {
+      "process": "world0-consumer",
+      "passed": true,
+      "segments": {
+        "captures": 9891,
+        "launches": 16473,
+        "releases": 9891,
+        "stale_rejections": 1
+      },
+      "resource_targets": 42,
+      "auxiliary": {
+        "full_contact_records": 1415,
+        "solver_active_index_records": 1570,
+        "blob_hashes": 1360,
+        "passed": true,
+        "solver_boundary_note": "Active index bytes verified; full constraint before/after arrays are not archived for every iteration"
+      }
+    },
+    {
+      "process": "world1-producer",
+      "passed": true,
+      "segments": {
+        "captures": 9891,
+        "launches": 21471,
+        "releases": 9891,
+        "stale_rejections": 1
+      },
+      "resource_targets": 42,
+      "auxiliary": {
+        "full_contact_records": 2828,
+        "solver_active_index_records": 4806,
+        "blob_hashes": 2378,
+        "passed": true,
+        "solver_boundary_note": "Active index bytes verified; full constraint before/after arrays are not archived for every iteration"
+      }
+    },
+    {
+      "process": "world1-consumer",
+      "passed": true,
+      "segments": {
+        "captures": 9891,
+        "launches": 21471,
+        "releases": 9891,
+        "stale_rejections": 1
+      },
+      "resource_targets": 42,
+      "auxiliary": {
+        "full_contact_records": 1415,
+        "solver_active_index_records": 2405,
+        "blob_hashes": 2378,
+        "passed": true,
+        "solver_boundary_note": "Active index bytes verified; full constraint before/after arrays are not archived for every iteration"
+      }
+    }
+  ],
+  "issues": [],
+  "comparisons_passed": 6,
+  "comparisons_total": 6,
+  "new_integrations_completed": 1408,
+  "new_integrations_attempted": 1408,
+  "canonical_completed": 667608,
+  "canonical_attempted": 667609,
+  "G09": "CLOSED_SCOPED",
+  "G10": "OPEN",
+  "G11": "OPEN",
+  "Stage11_gate_percent": 81.81818181818181,
+  "full_native_RK4_graph": false,
+  "arbitrary_mid_rollout_checkpoint": false,
+  "formal_environment": false,
+  "auditor_native_calls": 0,
+  "PPO": 0,
+  "cloud_training": 0
+}
