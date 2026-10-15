@@ -1,0 +1,367 @@
+{
+  "status": "G10_BLOCKS_RECOVERY_RAW_HOST_REVIEW_PASS",
+  "processes": [
+    {
+      "process": "world0-producer",
+      "passed": true,
+      "graph": {
+        "captures": 64556,
+        "launches": 99590,
+        "releases": 64556,
+        "stale_rejections": 1,
+        "native_blocks": 20,
+        "labels": 30,
+        "logical_device_operations": {
+          "launch": 301768,
+          "copy": 10285,
+          "zero_": 28115,
+          "launch_tiled": 13666,
+          "fill_": 11562
+        }
+      },
+      "resource_targets": 42,
+      "auxiliary": {
+        "full_contact_records": 2443,
+        "solver_active_index_records": 2642,
+        "blob_hashes": 2145,
+        "passed": true,
+        "solver_boundary_note": "Active index bytes verified; full constraint before/after arrays are not archived for every iteration"
+      },
+      "nested_Model_fields": 19
+    },
+    {
+      "process": "world0-consumer",
+      "passed": true,
+      "graph": {
+        "captures": 17238,
+        "launches": 26236,
+        "releases": 17238,
+        "stale_rejections": 1,
+        "native_blocks": 20,
+        "labels": 30,
+        "logical_device_operations": {
+          "launch": 79912,
+          "copy": 2718,
+          "zero_": 7474,
+          "launch_tiled": 3620,
+          "fill_": 3084
+        }
+      },
+      "resource_targets": 42,
+      "auxiliary": {
+        "full_contact_records": 516,
+        "solver_active_index_records": 538,
+        "blob_hashes": 804,
+        "passed": true,
+        "solver_boundary_note": "Active index bytes verified; full constraint before/after arrays are not archived for every iteration"
+      },
+      "nested_Model_fields": 19
+    },
+    {
+      "process": "world1-producer",
+      "passed": true,
+      "graph": {
+        "captures": 64556,
+        "launches": 112850,
+        "releases": 64556,
+        "stale_rejections": 1,
+        "native_blocks": 20,
+        "labels": 30,
+        "logical_device_operations": {
+          "launch": 325228,
+          "copy": 11305,
+          "zero_": 29135,
+          "launch_tiled": 14686,
+          "fill_": 11562
+        }
+      },
+      "resource_targets": 42,
+      "auxiliary": {
+        "full_contact_records": 2443,
+        "solver_active_index_records": 3851,
+        "blob_hashes": 4312,
+        "passed": true,
+        "solver_boundary_note": "Active index bytes verified; full constraint before/after arrays are not archived for every iteration"
+      },
+      "nested_Model_fields": 19
+    },
+    {
+      "process": "world1-consumer",
+      "passed": true,
+      "graph": {
+        "captures": 17238,
+        "launches": 28667,
+        "releases": 17238,
+        "stale_rejections": 1,
+        "native_blocks": 20,
+        "labels": 30,
+        "logical_device_operations": {
+          "launch": 84213,
+          "copy": 2905,
+          "zero_": 7661,
+          "launch_tiled": 3807,
+          "fill_": 3084
+        }
+      },
+      "resource_targets": 42,
+      "auxiliary": {
+        "full_contact_records": 516,
+        "solver_active_index_records": 727,
+        "blob_hashes": 1983,
+        "passed": true,
+        "solver_boundary_note": "Active index bytes verified; full constraint before/after arrays are not archived for every iteration"
+      },
+      "nested_Model_fields": 19
+    }
+  ],
+  "pairs": [
+    {
+      "world": 0,
+      "left": "world0-producer/eager",
+      "right": "world0-producer/adaptive-graph",
+      "endpoint": {
+        "passed": true,
+        "fields": 636,
+        "missing": [],
+        "different": [],
+        "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+      },
+      "schema_exact": true,
+      "trajectory": {
+        "passed": true,
+        "microsteps": 352,
+        "solved_stages": 1408,
+        "raw_snapshots": 26,
+        "differences": [],
+        "difference_count": 0,
+        "numeric_fields_exempted": []
+      },
+      "passed": true
+    },
+    {
+      "world": 0,
+      "left": "world0-producer/graph",
+      "right": "world0-producer/adaptive-graph",
+      "endpoint": {
+        "passed": true,
+        "fields": 636,
+        "missing": [],
+        "different": [],
+        "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+      },
+      "schema_exact": true,
+      "trajectory": {
+        "passed": true,
+        "microsteps": 352,
+        "solved_stages": 1408,
+        "raw_snapshots": 26,
+        "differences": [],
+        "difference_count": 0,
+        "numeric_fields_exempted": []
+      },
+      "passed": true
+    },
+    {
+      "world": 0,
+      "left": "world0-producer/fixed-eager",
+      "right": "world0-producer/fixed-graph",
+      "endpoint": {
+        "passed": true,
+        "fields": 636,
+        "missing": [],
+        "different": [],
+        "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+      },
+      "schema_exact": true,
+      "trajectory": {
+        "passed": true,
+        "microsteps": 128,
+        "solved_stages": 512,
+        "raw_snapshots": 8,
+        "differences": [],
+        "difference_count": 0,
+        "numeric_fields_exempted": []
+      },
+      "passed": true
+    },
+    {
+      "world": 0,
+      "left": "world0-producer/fixed-eager",
+      "right": "world0-consumer/restored-fixed-graph",
+      "endpoint": {
+        "passed": true,
+        "fields": 636,
+        "missing": [],
+        "different": [],
+        "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+      },
+      "schema_exact": true,
+      "trajectory": {
+        "passed": true,
+        "microsteps": 128,
+        "solved_stages": 512,
+        "raw_snapshots": 8,
+        "differences": [],
+        "difference_count": 0,
+        "numeric_fields_exempted": []
+      },
+      "passed": true
+    },
+    {
+      "world": 0,
+      "left": "world0-producer/fixed-graph",
+      "right": "world0-consumer/restored-fixed-graph",
+      "endpoint": {
+        "passed": true,
+        "fields": 636,
+        "missing": [],
+        "different": [],
+        "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+      },
+      "schema_exact": true,
+      "trajectory": {
+        "passed": true,
+        "microsteps": 128,
+        "solved_stages": 512,
+        "raw_snapshots": 8,
+        "differences": [],
+        "difference_count": 0,
+        "numeric_fields_exempted": []
+      },
+      "passed": true
+    },
+    {
+      "world": 1,
+      "left": "world1-producer/eager",
+      "right": "world1-producer/adaptive-graph",
+      "endpoint": {
+        "passed": true,
+        "fields": 636,
+        "missing": [],
+        "different": [],
+        "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+      },
+      "schema_exact": true,
+      "trajectory": {
+        "passed": true,
+        "microsteps": 352,
+        "solved_stages": 1408,
+        "raw_snapshots": 26,
+        "differences": [],
+        "difference_count": 0,
+        "numeric_fields_exempted": []
+      },
+      "passed": true
+    },
+    {
+      "world": 1,
+      "left": "world1-producer/graph",
+      "right": "world1-producer/adaptive-graph",
+      "endpoint": {
+        "passed": true,
+        "fields": 636,
+        "missing": [],
+        "different": [],
+        "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+      },
+      "schema_exact": true,
+      "trajectory": {
+        "passed": true,
+        "microsteps": 352,
+        "solved_stages": 1408,
+        "raw_snapshots": 26,
+        "differences": [],
+        "difference_count": 0,
+        "numeric_fields_exempted": []
+      },
+      "passed": true
+    },
+    {
+      "world": 1,
+      "left": "world1-producer/fixed-eager",
+      "right": "world1-producer/fixed-graph",
+      "endpoint": {
+        "passed": true,
+        "fields": 636,
+        "missing": [],
+        "different": [],
+        "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+      },
+      "schema_exact": true,
+      "trajectory": {
+        "passed": true,
+        "microsteps": 128,
+        "solved_stages": 512,
+        "raw_snapshots": 8,
+        "differences": [],
+        "difference_count": 0,
+        "numeric_fields_exempted": []
+      },
+      "passed": true
+    },
+    {
+      "world": 1,
+      "left": "world1-producer/fixed-eager",
+      "right": "world1-consumer/restored-fixed-graph",
+      "endpoint": {
+        "passed": true,
+        "fields": 636,
+        "missing": [],
+        "different": [],
+        "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+      },
+      "schema_exact": true,
+      "trajectory": {
+        "passed": true,
+        "microsteps": 128,
+        "solved_stages": 512,
+        "raw_snapshots": 8,
+        "differences": [],
+        "difference_count": 0,
+        "numeric_fields_exempted": []
+      },
+      "passed": true
+    },
+    {
+      "world": 1,
+      "left": "world1-producer/fixed-graph",
+      "right": "world1-consumer/restored-fixed-graph",
+      "endpoint": {
+        "passed": true,
+        "fields": 636,
+        "missing": [],
+        "different": [],
+        "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+      },
+      "schema_exact": true,
+      "trajectory": {
+        "passed": true,
+        "microsteps": 128,
+        "solved_stages": 512,
+        "raw_snapshots": 8,
+        "differences": [],
+        "difference_count": 0,
+        "numeric_fields_exempted": []
+      },
+      "passed": true
+    }
+  ],
+  "issues": [],
+  "comparisons_passed": 10,
+  "comparisons_total": 10,
+  "reused_previous_comparisons": 6,
+  "new_integrations_completed": 1472,
+  "new_integrations_attempted": 1472,
+  "canonical_completed": 669080,
+  "canonical_attempted": 669081,
+  "G09": "CLOSED_SCOPED",
+  "G10": "OPEN",
+  "G11": "OPEN",
+  "Stage11_gate_percent": 81.81818181818181,
+  "full_native_RK4_graph": false,
+  "arbitrary_mid_rollout_checkpoint": false,
+  "formal_environment": false,
+  "auditor_native_calls": 0,
+  "PPO": 0,
+  "cloud_training": 0
+}
