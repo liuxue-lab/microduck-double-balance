@@ -1,0 +1,31 @@
+{
+  "format": "microduck-return-ascii-parts-v2",
+  "file": "g11-formal-environment-return-20261015T134827Z-0442dc.zip",
+  "bytes": 570139,
+  "sha256": "23b388333f6410dbd52b41fa1e12d9683a5f890da69cda0409f8a2fbc46e706c",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "g11-formal-environment-return-20261015T134827Z-0442dc.zip.part000.base64.txt",
+      "index": 0,
+      "offset": 0,
+      "bytes": 524288,
+      "sha256": "2662e23dd7d3646b87d9f5af626679613a2ce535ae7b867067b145e89da7c78c",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "939e1a10ed5882940ef00d268972c1cdc536def45839777ec977e5b384dc64e6"
+    },
+    {
+      "file": "g11-formal-environment-return-20261015T134827Z-0442dc.zip.part001.base64.txt",
+      "index": 1,
+      "offset": 524288,
+      "bytes": 45851,
+      "sha256": "742390882d58d02269b34cd5280f327d0da8da7134d09d51f441b8c7fd8036f1",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 61941,
+      "text_sha256": "523cb5995a9e835627b5baecdd6dbbb98abfb87268f1b3445c281eb04f322e76"
+    }
+  ],
+  "branch": "stage11-g11-formal-environment-v1-transfer-20261015t134827z-0442dc",
+  "scope": "Stage11 G11 real ManagerBasedRlEnv nominal interface matrix; G01-G10 evidence reused; inner raw reduced with live oracle checks retained; review required; independent archive branch; never merge"
+}
