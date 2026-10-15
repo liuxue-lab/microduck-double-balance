@@ -14,3 +14,13 @@ review_return_v3.py --help 展示输入参数。使用已安装NumPy的Python，
 
 v2的完整步后owner快照缺失仍属真实限制；v3不宣称恢复该快照。
 旧checkpoint已检查94张量，但TASK_AND_TIMING_DIFFER，禁止直接resume。
+
+2026-10-15 CI 文档链接补充：
+payload/ 原149份已执行文件全部保持原字节，payload-inventory.json 保持原样。
+额外补入3份仅用于文档导航的历史依赖，与仓库 docs/ 对应原件逐字节相同：
+  audits/stage-10-publication-confirmation.json
+  provenance/microduck-stage-10-ci-followup.md
+  provenance/microduck-stage-11-opening-prompt.txt
+这3份文档不是已执行程序的新增成员，不纳入原149份执行清单，不重新制作旧回传包。
+历史文档中的运行命令只供追溯；当前没有待运行的G11物理脚本。
+补记见 docs/handoffs/microduck-stage-11-ci-followup.txt（仓库根目录下）。

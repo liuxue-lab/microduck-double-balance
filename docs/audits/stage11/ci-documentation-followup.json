@@ -1,0 +1,272 @@
+{
+  "remote_failure_evidence": {
+    "base_commit": "6ba0dc2de381321576f32310e1995a8e2e11e566",
+    "runs": [
+      {
+        "run_id": 38760966434,
+        "job_id": 116511837594,
+        "jobs": [
+          {
+            "id": 116511837594,
+            "name": "verify",
+            "status": "completed",
+            "conclusion": "failure",
+            "run_id": 38760966434,
+            "logs_url": null,
+            "steps": [
+              {
+                "name": "Set up job",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 1
+              },
+              {
+                "name": "Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 2
+              },
+              {
+                "name": "Run astral-sh/setup-uv@v6",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 3
+              },
+              {
+                "name": "Install frozen environment",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 4
+              },
+              {
+                "name": "Run CPU tests",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 5
+              },
+              {
+                "name": "Build wheel and source distribution",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 6
+              },
+              {
+                "name": "Check task-specific CLI discovery",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 7
+              },
+              {
+                "name": "Export swing policy with its deployment contract",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 8
+              },
+              {
+                "name": "Check checkpoint-to-ONNX rollout parity",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 9
+              },
+              {
+                "name": "Smoke-test stilt generation",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 10
+              },
+              {
+                "name": "Generate and verify the retained swing seat",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 11
+              },
+              {
+                "name": "Check relative documentation links",
+                "status": "completed",
+                "conclusion": "failure",
+                "number": 12
+              },
+              {
+                "name": "Post Run astral-sh/setup-uv@v6",
+                "status": "completed",
+                "conclusion": "skipped",
+                "number": 23
+              },
+              {
+                "name": "Post Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 24
+              },
+              {
+                "name": "Complete job",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 25
+              }
+            ]
+          }
+        ],
+        "log_excerpt": [
+          "2026-10-15T15:33:18.2469167Z 416 passed, 6 skipped, 3 warnings, 17 subtests passed in 98.25s (0:01:38)",
+          "2026-10-15T15:36:51.8283392Z All swing-seat generation and clearance checks passed.",
+          "2026-10-15T15:36:52.1139037Z Missing relative links:",
+          "2026-10-15T15:36:52.1139887Z experiments/stage11/g11-formal-v3/payload/provenance/microduck-stage-10-replay-and-head-contact-handoff.md: ../audits/stage-10-publication-confirmation.json",
+          "2026-10-15T15:36:52.1141102Z experiments/stage11/g11-formal-v3/payload/provenance/microduck-stage-10-replay-and-head-contact-handoff.md: microduck-stage-10-ci-followup.md",
+          "2026-10-15T15:36:52.1142143Z experiments/stage11/g11-formal-v3/payload/provenance/microduck-stage-10-replay-and-head-contact-handoff.md: microduck-stage-11-opening-prompt.txt",
+          "2026-10-15T15:36:52.1206206Z ##[error]Process completed with exit code 1."
+        ]
+      },
+      {
+        "run_id": 38760986531,
+        "job_id": 116511874717,
+        "jobs": [
+          {
+            "id": 116511874717,
+            "name": "verify",
+            "status": "completed",
+            "conclusion": "failure",
+            "run_id": 38760986531,
+            "logs_url": null,
+            "steps": [
+              {
+                "name": "Set up job",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 1
+              },
+              {
+                "name": "Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 2
+              },
+              {
+                "name": "Run astral-sh/setup-uv@v6",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 3
+              },
+              {
+                "name": "Install frozen environment",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 4
+              },
+              {
+                "name": "Run CPU tests",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 5
+              },
+              {
+                "name": "Build wheel and source distribution",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 6
+              },
+              {
+                "name": "Check task-specific CLI discovery",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 7
+              },
+              {
+                "name": "Export swing policy with its deployment contract",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 8
+              },
+              {
+                "name": "Check checkpoint-to-ONNX rollout parity",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 9
+              },
+              {
+                "name": "Smoke-test stilt generation",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 10
+              },
+              {
+                "name": "Generate and verify the retained swing seat",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 11
+              },
+              {
+                "name": "Check relative documentation links",
+                "status": "completed",
+                "conclusion": "failure",
+                "number": 12
+              },
+              {
+                "name": "Post Run astral-sh/setup-uv@v6",
+                "status": "completed",
+                "conclusion": "skipped",
+                "number": 23
+              },
+              {
+                "name": "Post Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 24
+              },
+              {
+                "name": "Complete job",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 25
+              }
+            ]
+          }
+        ],
+        "log_excerpt": [
+          "2026-10-15T15:33:21.7756926Z 416 passed, 6 skipped, 3 warnings, 17 subtests passed in 99.40s (0:01:39)",
+          "2026-10-15T15:37:09.0175941Z All swing-seat generation and clearance checks passed.",
+          "2026-10-15T15:37:09.2983375Z Missing relative links:",
+          "2026-10-15T15:37:09.2984223Z experiments/stage11/g11-formal-v3/payload/provenance/microduck-stage-10-replay-and-head-contact-handoff.md: ../audits/stage-10-publication-confirmation.json",
+          "2026-10-15T15:37:09.2985134Z experiments/stage11/g11-formal-v3/payload/provenance/microduck-stage-10-replay-and-head-contact-handoff.md: microduck-stage-10-ci-followup.md",
+          "2026-10-15T15:37:09.2986025Z experiments/stage11/g11-formal-v3/payload/provenance/microduck-stage-10-replay-and-head-contact-handoff.md: microduck-stage-11-opening-prompt.txt",
+          "2026-10-15T15:37:09.3046260Z ##[error]Process completed with exit code 1."
+        ]
+      }
+    ]
+  },
+  "local_fix_validation": {
+    "result": "PASS",
+    "base_commit": "6ba0dc2de381321576f32310e1995a8e2e11e566",
+    "original_payload_members_unchanged": 149,
+    "added_document_dependencies": [
+      {
+        "added": "experiments/stage11/g11-formal-v3/payload/audits/stage-10-publication-confirmation.json",
+        "canonical": "docs/audits/stage-10-publication-confirmation.json",
+        "bytes": 5024,
+        "sha256": "88e1646eebed7d22ba930b7823afaeb99440a0867b5a531ff671f082684cd3b4"
+      },
+      {
+        "added": "experiments/stage11/g11-formal-v3/payload/provenance/microduck-stage-10-ci-followup.md",
+        "canonical": "docs/handoffs/microduck-stage-10-ci-followup.md",
+        "bytes": 7677,
+        "sha256": "3bb30943a2ccd9edaeefe438566639804154c85f004427f751e3401e01526aaf"
+      },
+      {
+        "added": "experiments/stage11/g11-formal-v3/payload/provenance/microduck-stage-11-opening-prompt.txt",
+        "canonical": "docs/handoffs/microduck-stage-11-opening-prompt.txt",
+        "bytes": 4911,
+        "sha256": "cadb3a8b82446505e94e34de54db9ac9236160ba3503a4e799958dab2139c952"
+      }
+    ],
+    "all_markdown_files": 69,
+    "all_relative_links_checked_against_git_tree": 159,
+    "local_affected_subtree_check": "PASS: 14 relative Markdown/HTML links resolve",
+    "validation_boundary": "Full repository link targets verified against tracked Git tree; unchanged CI checker also run on fully materialized experiments/stage11. No simulator, training, or full test-suite rerun. Remote fix CI pending user push.",
+    "stage11_ledger": {
+      "completed": 674456,
+      "attempted": 674457
+    },
+    "ppo_increment": 0,
+    "cloud_training_increment": 0
+  }
+}
