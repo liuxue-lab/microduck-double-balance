@@ -1,0 +1,11 @@
+--- a/mjlab/managers/event_manager.py
++++ b/mjlab/managers/event_manager.py
+@@ -222,7 +222,7 @@
+     else:
+       num_envs = len(env_ids)
+     if "interval" in self._mode_term_cfgs:
+-      for index, term_cfg in enumerate(self._mode_class_term_cfgs["interval"]):
++      for index, term_cfg in enumerate(self._mode_term_cfgs["interval"]):
+         if not term_cfg.is_global_time:
+           assert term_cfg.interval_range_s is not None
+           lower, upper = term_cfg.interval_range_s

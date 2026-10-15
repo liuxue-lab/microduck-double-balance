@@ -1,0 +1,30 @@
+{
+  "arrays": {
+    "actor": {
+      "shape": [
+        1,
+        61
+      ],
+      "dtype": "float32",
+      "bytes": 244,
+      "sha256": "0ba17da1538600732f0491768d124be391ba538e17959ce044d77e08569ecd18"
+    },
+    "critic": {
+      "shape": [
+        1,
+        85
+      ],
+      "dtype": "float32",
+      "bytes": 340,
+      "sha256": "84a431b11a02ec9049ce233475c7bd702332b9e8f58c183c9100a9c1ca8951f6"
+    },
+    "reward": {
+      "shape": [
+        1
+      ],
+      "dtype": "float32",
+      "bytes": 4,
+      "sha256": "ccb2dd2467f816704637d23bc6d15219d8cbc8794e9c2f8b016ef4987794c138"
+    }
+  }
+}

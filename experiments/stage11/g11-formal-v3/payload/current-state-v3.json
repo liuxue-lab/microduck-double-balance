@@ -1,0 +1,82 @@
+{
+  "as_of": "2026-10-15",
+  "timezone": "Asia/Shanghai",
+  "project": "liuxue-lab/microduck-double-balance",
+  "stage": "Stage11",
+  "gates": {
+    "G01_to_G10": "CLOSED_SCOPED",
+    "G11": "OPEN",
+    "closed": 10,
+    "total": 11,
+    "percent": 90.9090909090909
+  },
+  "canonical_ledger": {
+    "completed": 670872,
+    "attempted": 670873,
+    "historical_failed_attempts": 1,
+    "unit": "native integration API calls; forward and graph operations are separate"
+  },
+  "latest_return": {
+    "commit": "731ea8022f350f4468518e12aef5ad479124da6b",
+    "archive_sha256": "8021857bc9b0375f1ea66398f4cc602106c4d1ad3ecc49b17ba4c34657599152",
+    "added_completed": 1792,
+    "added_attempted": 1792,
+    "normal_macros": 10,
+    "normal_poststep_full_owner_boundary": false,
+    "normal_case_reexecuted": false,
+    "reset_matrix_reexecuted": false
+  },
+  "authoritative_report": "reports/microduck-stage11-g10-closure-review.json",
+  "next_action": "Execute v3 remaining two cases once, then combined evidence review",
+  "pending_formal_G11_physical_launcher": "microduck-stage11-g11-formal-environment-v3.py",
+  "G11_host": {
+    "checks_passed": 29,
+    "checks_total": 29,
+    "real_environment_executed": true,
+    "actual_checkpoint_loaded": true,
+    "user_reported_run": "20261015T104453Z-kxmk8oup",
+    "user_return_zip_received": false,
+    "source": "g11-candidate/regression-review.json"
+  },
+  "rules": {
+    "PPO": 0,
+    "cloud_training": 0,
+    "automatic_push": false,
+    "create_PR": false,
+    "merge_evidence_branch": false,
+    "physical_retry": false,
+    "wall_clock_deadline": null,
+    "keep_original_thresholds": true,
+    "keep_started_and_archives": true
+  },
+  "user_environment": {
+    "repo": "/home/lx/microduck-double-balance/workspace",
+    "python": "/home/lx/microduck-double-balance/workspace/.venv/bin/python",
+    "downloads": "/home/lx/下载",
+    "artifacts": "/home/lx/microduck-double-balance/artifacts/double-balance-stage11",
+    "branch": "double-balance",
+    "head": "056eaf2b0c78261f34e3fa581858c8573cab981e",
+    "origin": "git@github.com:liuxue-lab/microduck-double-balance.git",
+    "tracked_diff_sha256": "b90daa0274c14d95cec9511ec4ac93568bd604e93ce3c60df1bb1c4155005d7e",
+    "gpu": "RTX5060 Laptop 8GiB sm120",
+    "versions": {
+      "torch_core": "2.9.1",
+      "mujoco": "3.10.0",
+      "mujoco_warp": "3.8.1",
+      "warp": "1.12.0",
+      "mjlab": "1.3.0",
+      "better_actuator_models": "1.0.1"
+    },
+    "physics_dt": 0.002,
+    "decimation": 10,
+    "step_dt": 0.02
+  },
+  "bundle": {
+    "pinned_source_bodies": 219,
+    "g11_candidate_files": 13,
+    "current_G10_program_members": 92,
+    "contains_large_physical_return_archives": false
+  },
+  "precedence": "Historical producer and G11 host reports retain their original OPEN flags and prior cumulative counts. Current gate and ledger are established by the separately saved G10 closure review.",
+  "current_request": "Continue G11; v2 normal evidence reused; PPO/cloud=0; no automatic push/merge"
+}

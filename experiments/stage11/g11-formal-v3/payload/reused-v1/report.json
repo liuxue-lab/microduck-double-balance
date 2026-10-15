@@ -1,0 +1,70 @@
+{
+  "G11": "OPEN",
+  "PPO": 0,
+  "canonical_before": {
+    "attempted": 669081,
+    "completed": 669080
+  },
+  "checkpoint": {
+    "all_tensors_finite": true,
+    "bytes": 10073500,
+    "direct_resume": "BLOCKED_TASK_AND_TIMING_DIFFER",
+    "expected_sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+    "future_transfer_requires": "Explicit feature/normalizer/recurrent/optimizer/counter policy; no automatic warm start",
+    "inherited_performance_is_new_task_performance": false,
+    "key_mapping": {
+      "actual_checkpoint_read": true,
+      "changes": [],
+      "checkpoint_loaded": false,
+      "semantic_compatibility": "UNVERIFIED",
+      "status": "KEY_MAPPING_ONLY"
+    },
+    "observed_sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+    "optimizer_loaded": false,
+    "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage08/returned/5d998fc322345102/evidence-20260930T093645-8955/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+    "provenance": "Fixed 056eaf2 handoff, immutable copy included",
+    "runner_loaded": false,
+    "saved_or_converted": false,
+    "source_task": "Stage08 E retained tray double-balance policy",
+    "status": "PINNED_CHECKPOINT_INSPECTED_DIRECT_RESUME_REJECTED",
+    "tensors": 94
+  },
+  "cloud_training": 0,
+  "counts": {
+    "PPO": 0,
+    "cloud": 0,
+    "integrations_attempted": 0,
+    "integrations_completed": 0
+  },
+  "cumulative_attempted": 669081,
+  "cumulative_completed": 669080,
+  "elapsed_s": 6.828425271000015,
+  "errors": [
+    {
+      "error": "RuntimeError('Nominal play must not corrupt observations')",
+      "stage": "worker",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/lx/microduck-double-balance/artifacts/double-balance-stage11/g11-formal-environment-v1/20261015T134827Z-0442dc/program/worker_g11.py\", line 125, in run\n    cfg = make_cfg()\n          ^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/artifacts/double-balance-stage11/g11-formal-environment-v1/20261015T134827Z-0442dc/program/formal_task.py\", line 226, in make_cfg\n    require(not group.enable_corruption, 'Nominal play must not corrupt observations')\n  File \"/home/lx/microduck-double-balance/artifacts/double-balance-stage11/g11-formal-environment-v1/20261015T134827Z-0442dc/program/runtime_accounting.py\", line 16, in require\n    raise RuntimeError(message)\nRuntimeError: Nominal play must not corrupt observations\n"
+    }
+  ],
+  "full_matrix_completed": false,
+  "gate_completed": 10,
+  "gate_total": 11,
+  "macro_completed": 0,
+  "manager_counter_scope": "Public real reset/step/close after construction; constructor shape probes/startup precede this manager trace; native CPU/GPU entry points counted before environment construction",
+  "native_ledger": {
+    "attempts": {},
+    "completed": {},
+    "exact": true,
+    "incomplete_tail": false,
+    "integration_attempted_lower": 0,
+    "integration_attempted_upper": 0,
+    "integration_completed_lower": 0,
+    "integration_completed_upper": 0,
+    "pending": {},
+    "rows": 0
+  },
+  "no_automatic_gate_closure": true,
+  "no_automatic_retry": true,
+  "real_environment_constructed": false,
+  "status": "G11_STOPPED_PRESERVE_NO_RETRY"
+}

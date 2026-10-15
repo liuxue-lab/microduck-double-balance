@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "checks": [
+    "embedded_inventory_hashes_and_crc",
+    "isolated_stdlib_describe_no_GPU",
+    "single_file_compile",
+    "return_ZIP_full_member_SHA_and_local_bytes",
+    "nested_evidence_inventory_retained",
+    "ASCII_shards_exact_roundtrip",
+    "isolated_local_Git_commit_no_network",
+    "package_only_idempotent_same_commit",
+    "started_marker_blocks_before_venv_or_physics",
+    "concrete_transfer_SSH_command"
+  ],
+  "checks_passed": 10,
+  "native_integrations": 0,
+  "GPU_calls": 0,
+  "PPO": 0,
+  "cloud_training": 0,
+  "network_pushes": 0,
+  "launcher_sha256": "2ed6a8cc3eb1cb9f71c9038706bc00342894eb86260b3d76b088d2861f3c5d4f",
+  "payload_sha256": "2c7dd4fe23eb5f62deb5006d59d95b41daee5c473c3173d4a2c742d8265d164c"
+}

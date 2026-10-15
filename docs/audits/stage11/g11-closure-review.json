@@ -1,0 +1,197 @@
+{
+  "protocol": "stage11-g11-independent-scoped-closure-v1",
+  "review_date": "2026-10-15",
+  "status": "G11_ORIGINAL_SCOPE_CLOSURE_REVIEW_PASS",
+  "decision": "CLOSED_SCOPED",
+  "stage11": {
+    "G01_to_G11": "CLOSED_SCOPED",
+    "gates_closed": 11,
+    "gates_total": 11,
+    "gate_percent": 100,
+    "scope_complete": true,
+    "progress_scope": "Stage11 fixed gates only; not whole-project or training success"
+  },
+  "ledger": {
+    "canonical_before_G11": {
+      "completed": 669080,
+      "attempted": 669081
+    },
+    "v1": {
+      "completed": 0,
+      "attempted": 0
+    },
+    "v2": {
+      "completed": 1792,
+      "attempted": 1792
+    },
+    "v3": {
+      "completed": 3584,
+      "attempted": 3584
+    },
+    "cumulative": {
+      "completed": 674456,
+      "attempted": 674457
+    },
+    "historical_failed_native_attempts": 1,
+    "unit": "native integration API calls"
+  },
+  "sources": {
+    "G09_commit": "085388e8f92255b3f885c8faf2ab7486ffe79589",
+    "G10_commit": "65d20e39f4681202829906091e07da70674f2eb5",
+    "v1_commit": "5f01cdacd565c0be9c93ccbf592821b1224f47b3",
+    "v2_commit": "731ea8022f350f4468518e12aef5ad479124da6b",
+    "v3_commit": "4fc857853b988ebac7d87742925ffcb919748003",
+    "v3_tree": "bb2ab4db70f99c5a962a6c64969b82cc2aa833cc",
+    "v3_archive_sha256": "8b7bfce5389308ea02e1260a161f550df34a06dde0110ce405f99eff4229de06",
+    "v3_independent_audit_sha256": "875338d8232af4e659d540028c7ba7b5c6fff1aabace71ffc274e4551cf23720",
+    "original_handoff_sha256": "6fc6e2855f3075bb7520072f8040df6da0d9545b3fdc0fbc3579f98c0da73be1"
+  },
+  "original_criteria": [
+    {
+      "id": "G11.1",
+      "decision": "PASS_SCOPED",
+      "requirement": "真实头部任务、名义 reset 与终止定义",
+      "evidence": [
+        "actual-head-surface.json/.npz",
+        "formal-task-startup.json",
+        "resolved-target-semantics.json",
+        "configuration-preflight.json"
+      ],
+      "scope": "真实 16120 个头部三角面；自由球、hold=0、无辅助；投影曲面支持与丢球定义；名义摆放；未注册为随机训练任务"
+    },
+    {
+      "id": "G11.2",
+      "decision": "PASS_SCOPED",
+      "requirement": "真实 ManagerBasedRlEnv 与状态所有权接入",
+      "evidence": [
+        "formal_runtime.py",
+        "formal_owners.py",
+        "tuple-cache-preflight.json",
+        "macro-00..19/raw",
+        "initial-reset/step-*/final-reset owners"
+      ],
+      "scope": "0.002s × decimation10 = 0.020s；真实九管理器；每子步唯一动作/BAM/Scene/指标推进；回滚及接受端点恢复；非任意 RL 中途恢复"
+    },
+    {
+      "id": "G11.3",
+      "decision": "PASS_COMBINED_SCOPED",
+      "requirement": "奖励/终止/历史/延迟/记录器/事件及 reset 回归",
+      "evidence": [
+        "v2 independent audit and normal step/reset checks",
+        "v3 formal-step-0.json",
+        "v3 formal-step-1.json",
+        "v3 six raw boundaries"
+      ],
+      "scope": "复用 v2 正常步与 full/selective/empty/invalid reset；v3 自动 timeout/reset、注入失败的手动 pending/refusal/reset；step/local/global interval 到期一次提交；stock 无 pre_step hook，不虚构该回调"
+    },
+    {
+      "id": "G11.4",
+      "decision": "PASS_HANDLING_PLAN",
+      "requirement": "实际 checkpoint 与语义迁移处置",
+      "evidence": [
+        "v1 actual checkpoint tensor/schema inspection",
+        "v2/v3 checkpoint hash verification",
+        "checkpoint-review.json",
+        "checkpoint_semantics.py"
+      ],
+      "scope": "实际 94 个有限张量；只确认键映射候选；任务/派生状态/时序不等价，明确禁止直接 resume；没有加载策略/优化器或转换原文件"
+    },
+    {
+      "id": "G11.5",
+      "decision": "PASS_SCOPED",
+      "requirement": "可观测性、持久账本与审计开销",
+      "evidence": [
+        "native-ledger.jsonl",
+        "accounting-review.json",
+        "operation-profile.json",
+        "live-contact-graph.json"
+      ],
+      "scope": "7352 durable WAL 记录配对；3584/3584；5秒进度；无墙钟截止；单接触排序图复用；内核计数正常退出精确，硬崩溃按上界，不虚构完成"
+    },
+    {
+      "id": "G11.6",
+      "decision": "PASS",
+      "requirement": "独立最终验收与旧证据保护",
+      "evidence": [
+        "v3 transport-verification.json",
+        "v3 audit.py/audit.json",
+        "v1/v2 immutable audit",
+        "G10 closure"
+      ],
+      "scope": "1033 ZIP 成员、149 程序、219 源码身份；20宏步原阈值重算与原始重放；19326数组哈希；42资源释放；原报告不回写"
+    }
+  ],
+  "checkpoint": {
+    "all_tensors_finite": true,
+    "bytes": 10073500,
+    "direct_resume": "BLOCKED_TASK_AND_TIMING_DIFFER",
+    "inherited_performance_is_new_task_performance": false,
+    "key_mapping": {
+      "actual_checkpoint_read": true,
+      "changes": [],
+      "checkpoint_loaded": false,
+      "semantic_compatibility": "UNVERIFIED",
+      "status": "KEY_MAPPING_ONLY"
+    },
+    "observed_sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+    "optimizer_loaded": false,
+    "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage08/returned/5d998fc322345102/evidence-20260930T093645-8955/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+    "runner_loaded": false,
+    "saved_or_converted": false,
+    "source_commit": "5f01cdacd565c0be9c93ccbf592821b1224f47b3",
+    "source_schema_sha256": "e740e6ca4ad74c53a0eaaa9c95dcae9b69fd5b0edf122593743cd015dcb388a7",
+    "status": "REUSED_VERIFIED_V1_CHECKPOINT_INSPECTION",
+    "tensor_inspection_repeated": false,
+    "tensors": 94,
+    "torch_load_calls_this_batch": 0
+  },
+  "performance": {
+    "v3_elapsed_s": 388.9766125870083,
+    "WAL_seconds": 17.254216241984977,
+    "WAL_fraction": 0.04435797856130866,
+    "observations": "WAL is 4.44% of this run wall time; total audit overhead not fully isolated; no cross-run speedup claim",
+    "contact_graph_captures": 1,
+    "contact_graph_launches": 14425,
+    "contact_raw_samples": 21,
+    "solver_raw_samples": 21
+  },
+  "limitations": [
+    "单个 native nworld=1、固定版本/几何/名义工况；G09/G10 双独立所有者证据范围不扩大。",
+    "v2 正常步已执行并严格重放，但缺完整步后 owner 快照；v3 是新隔离 reset 的两工况，不声称补回 v2 丢失快照或连续三步运行。",
+    "v3 手动失败由测试标志注入，不能算自然摔落恢复或策略失败率。",
+    "v3 接触/约束逐调用现场字节核验保留摘要，各有21份原始样本；没有保留每次内部求解的全部原始数组，复用G10既有全量范围。",
+    "pending 拒绝与默认 RNG 一致性由固定 worker 断言和计数支持，未另存每个拒绝后的完整独立快照或每步默认 RNG 原始值。",
+    "不代表5秒平衡成功、PPO收敛、批量扩展、完整单图RK4、训练吞吐、显存泄漏全局验收、任意中断恢复或实机部署。",
+    "正式任务候选在隔离程序中已测；当前注册任务阻断与既有工作区修改保留，训练发布/随机曲面reset/runner接线在后续明确范围中处理。"
+  ],
+  "repo": {
+    "base": "056eaf2b0c78261f34e3fa581858c8573cab981e",
+    "branch": "double-balance",
+    "tracked_diff_sha256": "b90daa0274c14d95cec9511ec4ac93568bd604e93ce3c60df1bb1c4155005d7e",
+    "preserve_existing_dirty_mdp_and_untracked": true,
+    "source_publication": "PENDING_USER_BUNDLE_IMPORT_AND_SSH_PUSH"
+  },
+  "remaining_stage11_physical_tasks": [],
+  "next_physical_script": null,
+  "next_project_work": [
+    "固定候选的训练发布与依赖环境整理",
+    "单独声明多环境规模/吞吐测试预算",
+    "另行批准云PPO预算",
+    "新任务独立固定协议评估、扰动与失败分析",
+    "ONNX导出及复现材料"
+  ],
+  "PPO": 0,
+  "cloud_training": 0,
+  "reviewer_native_calls": 0,
+  "automatic_push": false,
+  "automatic_PR": false,
+  "automatic_merge": false,
+  "cloud": {
+    "new_cloud_work": false,
+    "remaining_cloud_tasks_this_stage": [],
+    "last_user_confirmed_power": "5090 OFF on 2026-10-01",
+    "live_platform_power_checked": false,
+    "historical_reminder": "2026-10-01 05:03:28 Asia/Shanghai",
+    "old_stage09_full_traces": "not all returned; preserve historical limitation; no new retrieval required"
+  }
+}

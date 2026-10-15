@@ -1,0 +1,277 @@
+{
+  "status": "V2_COMPLETED_WORK_ACCEPTED_SCOPED_G11_OPEN",
+  "commit": "731ea8022f350f4468518e12aef5ad479124da6b",
+  "tree": "d41a97210bc7d40dea64fa14e1a2c6a6a7ee5cf6",
+  "archive_sha256": "8021857bc9b0375f1ea66398f4cc602106c4d1ad3ecc49b17ba4c34657599152",
+  "archive_bytes": 4900903,
+  "members": 615,
+  "checks": [
+    "615 ZIP members CRC, SHA256, extracted bytes",
+    "135 delivered program members exact, including 92 accepted helpers",
+    "219 pinned sources unchanged, HEAD/branch/SSH/status/diff unchanged",
+    "3682 WAL records paired; 1792 completed/attempted integrations; all native counters paired",
+    "10 macros: original decisions recomputed, full endpoint records and replay raw microtrajectories exact",
+    "All 20 macro boundary Data/owner NPZ archives match per-array metadata",
+    "Normal public manager trace and outputs verified; post-step full owner boundary explicitly missing",
+    "Only expected cache audit error; native cleanup complete; no PPO/cloud"
+  ],
+  "per_array_hashes_checked": 8289,
+  "canonical_before": {
+    "completed": 669080,
+    "attempted": 669081
+  },
+  "added": {
+    "completed": 1792,
+    "attempted": 1792
+  },
+  "canonical_after": {
+    "completed": 670872,
+    "attempted": 670873,
+    "historical_failed_native_attempts": 1
+  },
+  "normal_step_completed_scoped": true,
+  "normal_poststep_full_owner_boundary_available": false,
+  "macro_results": [
+    {
+      "index": 0,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 18.803591450006934
+    },
+    {
+      "index": 1,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 17.025074606004637
+    },
+    {
+      "index": 2,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 16.55551709300198
+    },
+    {
+      "index": 3,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 15.881508446997032
+    },
+    {
+      "index": 4,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 16.343834015991888
+    },
+    {
+      "index": 5,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 15.81057222999516
+    },
+    {
+      "index": 6,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 15.883538758003851
+    },
+    {
+      "index": 7,
+      "resolution": 128,
+      "integrations": 352,
+      "elapsed_s": 33.83344378598849
+    },
+    {
+      "index": 8,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 16.000463301999844
+    },
+    {
+      "index": 9,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 15.974123876003432
+    }
+  ],
+  "reset_checks": {
+    "empty_exact": true,
+    "full": true,
+    "global_phase_preserved": true,
+    "invalid_before_mutation": 4,
+    "selective": true
+  },
+  "configuration_preflight": {
+    "checks": [
+      {
+        "detail": true,
+        "name": "world_cadence",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "seed_manual_reset",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "unassisted_actions",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "null_curriculum",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "command_roster",
+        "passed": true
+      },
+      {
+        "detail": {
+          "final_standing_command_zero": true,
+          "forward": 0.2,
+          "forward_bucket_retained": true,
+          "heading": 0.0,
+          "heading_range": [
+            -3.141592653589793,
+            3.141592653589793
+          ],
+          "init_velocity": 0.0,
+          "resampling_s": [
+            3.0,
+            8.0
+          ],
+          "standing": 1.0,
+          "world": 0.0
+        },
+        "name": "inherited_command",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "event_roster",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "interval_timers",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "observation_groups",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "actor/concatenation_history",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "actor/noise_roster",
+        "passed": true
+      },
+      {
+        "detail": {
+          "n_max": 0.03,
+          "n_min": -0.03,
+          "operation": "add",
+          "term": "base_ang_vel",
+          "width": 3
+        },
+        "name": "actor/base_ang_vel/noise",
+        "passed": true
+      },
+      {
+        "detail": {
+          "n_max": 0.01,
+          "n_min": -0.01,
+          "operation": "add",
+          "term": "projected_gravity",
+          "width": 3
+        },
+        "name": "actor/projected_gravity/noise",
+        "passed": true
+      },
+      {
+        "detail": {
+          "n_max": 0.001,
+          "n_min": -0.001,
+          "operation": "add",
+          "term": "joint_pos",
+          "width": 14
+        },
+        "name": "actor/joint_pos/noise",
+        "passed": true
+      },
+      {
+        "detail": {
+          "n_max": 0.25,
+          "n_min": -0.25,
+          "operation": "add",
+          "term": "joint_vel",
+          "width": 14
+        },
+        "name": "actor/joint_vel/noise",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "actor/base_ang_vel/delay",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "actor/projected_gravity/delay",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "actor/joint_vel/delay",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "critic/concatenation_history",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "critic/noise_roster",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "deterministic_spawn",
+        "passed": true
+      }
+    ],
+    "config_mutations": 0,
+    "constructor_IMU_bias": "Native once-only lazy draw during shape probe; retained and snapshotted after constructor",
+    "inherited_noise_preserved": true,
+    "passed": 21,
+    "physical_integrations": 0,
+    "private_RNG_boundary": "After constructor and real mixed-event reset probe, before public reset/step",
+    "status": "PASS",
+    "total": 21
+  },
+  "elapsed_s": 239.65113693200692,
+  "WAL_seconds": 8.814902861937298,
+  "cross_run_speedup_claimed": false,
+  "error": "RuntimeError('Unclassified G11 state owner env._double_balance_tray_site_ids: dict')",
+  "remaining": [
+    "tuple-key owner snapshot/restore/export",
+    "automatic timeout/reset",
+    "manual failure/pending reset",
+    "combined G11 final evidence review"
+  ],
+  "G11": "OPEN",
+  "gate_completed": 10,
+  "gate_total": 11,
+  "PPO": 0,
+  "cloud_training": 0,
+  "auditor_native_calls": 0,
+  "reuse_rule": "Do not rerun normal case or its 10 macros. New isolated reset for two remaining cases; not recovery of missing post-step owner state."
+}

@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "scope": "G08 adaptive vs fixed-128, both 200ms paths and all seven contact pairs",
+  "gate_rule": "All whole-path limits unchanged; every case and local adaptive/event/rollback/coverage check must pass.",
+  "rationale": "Predeclared engineering numerical bounds: 0.1mm free translation, 1mrad orientation/joints, 5mm/s linear and 0.05rad/s angular velocity; 10um pair peak overlap, 0.1mNs plus 1% impulse, 1ms loaded time. These are resolution agreement tolerances, not physical correctness or admissible penetration limits.",
+  "state_limits": {
+    "free_translation_m": 0.0001,
+    "free_rotation_rad": 0.001,
+    "hinge_position_rad": 0.001,
+    "free_linear_velocity_m_s": 0.005,
+    "angular_velocity_rad_s": 0.05
+  },
+  "contact_limits": {
+    "peak_overlap_m": 1e-05,
+    "normal_impulse_Ns": {
+      "absolute": 0.0001,
+      "relative": 0.01
+    },
+    "loaded_time_s": 0.001
+  },
+  "physical_material_acceptance": false,
+  "thresholds_may_change_after_results": false
+}
