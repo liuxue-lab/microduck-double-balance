@@ -1,0 +1,48 @@
+{
+  "archive_bytes": 15609870,
+  "archive_sha256": "e75d087027812cdb217018d5001f9b08412b949f9bc496d61c2941faf7183e04",
+  "automatic_PR": false,
+  "automatic_merge": false,
+  "automatic_push": false,
+  "budget": {
+    "PPO": 0,
+    "cloud_training": 0,
+    "environment_constructions": 0,
+    "native_forward": 0,
+    "native_integrations": 0,
+    "optimizer_constructions": 0,
+    "policy_constructions": 0,
+    "torch_load": 0
+  },
+  "canonical": {
+    "attempted": 674457,
+    "completed": 674456
+  },
+  "package_manifest_sha256": "ee6eb6ac9b9d1dadb411b78a978800d72291375b1e953cc1cad95fe961138cdf",
+  "prior_stage12_v1_return_sha256": "97aa588fdad86a012179ec726a1a320bbee5accce1916c2c845afb202d486cab",
+  "prior_stage12_v2_return_sha256": "0e1713f616b0a7ad702e0d50f4290e93a60e7dedc5074ba03fa0d125784fc012",
+  "prior_stage12_v2_transfer_commit": "f6fb64e3ff1b90c7c9d65d1fb29c47df5b76b671",
+  "prior_stage12_v3_return_sha256": "bdae9ed59caea5faa09c1172c5b5ae1efb8bec4e89798330867893e31e4c6a2b",
+  "prior_stage12_v3_transfer_commit": "8f54003ac1e511ee3a2fe8b0c3b32c99a74744a9",
+  "prior_stage12_v4_return_sha256": "d214636aae7d694579fb920b8efbc9386cb4abfd4d3f97e01185934d9bcc9d93",
+  "prior_stage12_v4_transfer_commit": "f69097d83fa415057b8186c255c23585e93f46d7",
+  "prior_stage12_v5_return_sha256": "b5d238d62703f6b605f83547860639ed0225682c5aaca503184e1f0acc3e8f29",
+  "prior_stage12_v5_transfer_commit": "28c52232a220c5538054cd97e17409f22f66fa59",
+  "prior_stage12_v6_return_sha256": "14beea62219a418883df0e49ed7df83d2a3edae6e69d17505064d29ac914071a",
+  "prior_stage12_v6_transfer_commit": "353227e8c073f8547a7f017c4876c33f99c550a4",
+  "prior_stage12_v7_return_sha256": "12a51c7d1000c67583e888bf55be0075b0dd1de569c39603850e8ddc3344d5ae",
+  "prior_stage12_v7_transfer_commit": "472a23f2f83dd43d59b6964bd6233b0745e234dc",
+  "protocol": "microduck-stage12-integration-v1",
+  "run": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/integration-v1/20261015T184102Z-6225fa",
+  "source_refs": {
+    "branch": "double-balance",
+    "head": "73ee01930a031d76a9d57419afdfd4464a547ab3",
+    "tag_commit": "6ba0dc2de381321576f32310e1995a8e2e11e566",
+    "tag_object": "bd1b219be55c813811d4f7cfa25d245b37166688"
+  },
+  "source_return": "incremental; completed v2/v3 sources verified in place, no recapture",
+  "stage11": "11/11 CLOSED_SCOPED",
+  "status": "STAGE12_INTEGRATION_BLOCKED",
+  "training_ready": false,
+  "v7_cpu_readiness": "CLOSED_PASS_REUSED_NO_RERUN"
+}
