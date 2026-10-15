@@ -1,0 +1,43 @@
+{
+  "archive_bytes": 948489,
+  "archive_sha256": "14beea62219a418883df0e49ed7df83d2a3edae6e69d17505064d29ac914071a",
+  "automatic_PR": false,
+  "automatic_merge": false,
+  "automatic_push": false,
+  "budget": {
+    "PPO": 0,
+    "cloud_training": 0,
+    "environment_constructions": 0,
+    "native_forward": 0,
+    "native_integrations": 0,
+    "optimizer_constructions": 0,
+    "policy_constructions": 0,
+    "torch_load": 0
+  },
+  "canonical": {
+    "attempted": 674457,
+    "completed": 674456
+  },
+  "package_manifest_sha256": "b838470c628031d183ab7064e11c3f30ef061abf3abd17747cde646b3f9e31ce",
+  "prior_stage12_v1_return_sha256": "97aa588fdad86a012179ec726a1a320bbee5accce1916c2c845afb202d486cab",
+  "prior_stage12_v2_return_sha256": "0e1713f616b0a7ad702e0d50f4290e93a60e7dedc5074ba03fa0d125784fc012",
+  "prior_stage12_v2_transfer_commit": "f6fb64e3ff1b90c7c9d65d1fb29c47df5b76b671",
+  "prior_stage12_v3_return_sha256": "bdae9ed59caea5faa09c1172c5b5ae1efb8bec4e89798330867893e31e4c6a2b",
+  "prior_stage12_v3_transfer_commit": "8f54003ac1e511ee3a2fe8b0c3b32c99a74744a9",
+  "prior_stage12_v4_return_sha256": "d214636aae7d694579fb920b8efbc9386cb4abfd4d3f97e01185934d9bcc9d93",
+  "prior_stage12_v4_transfer_commit": "f69097d83fa415057b8186c255c23585e93f46d7",
+  "prior_stage12_v5_return_sha256": "b5d238d62703f6b605f83547860639ed0225682c5aaca503184e1f0acc3e8f29",
+  "prior_stage12_v5_transfer_commit": "28c52232a220c5538054cd97e17409f22f66fa59",
+  "protocol": "microduck-stage12-readiness-v6",
+  "run": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/readiness-v6/20261015T175051Z-dbbbab",
+  "source_refs": {
+    "branch": "double-balance",
+    "head": "73ee01930a031d76a9d57419afdfd4464a547ab3",
+    "tag_commit": "6ba0dc2de381321576f32310e1995a8e2e11e566",
+    "tag_object": "bd1b219be55c813811d4f7cfa25d245b37166688"
+  },
+  "source_return": "incremental; completed v2/v3 sources verified in place, no recapture",
+  "stage11": "11/11 CLOSED_SCOPED",
+  "status": "STAGE12_PREPARATION_BLOCKED",
+  "training_ready": false
+}

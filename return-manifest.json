@@ -1,0 +1,31 @@
+{
+  "branch": "stage12-readiness-v6-transfer-20261015t175051z-dbbbab",
+  "bytes": 948489,
+  "file": "stage12-readiness-return-20261015T175051Z-dbbbab.zip",
+  "format": "microduck-return-ascii-parts-v2",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "stage12-readiness-return-20261015T175051Z-dbbbab.zip.part000.base64.txt",
+      "index": 0,
+      "offset": 0,
+      "sha256": "8a68d96793bcc896a80d6b2744ba569a256c55371b334846a337bd5d06b9468d",
+      "text_bytes": 708251,
+      "text_sha256": "7b83e1bfffb261e756a44dc9842c42a21ebf154204178254dfc1108138f4ade7"
+    },
+    {
+      "bytes": 424201,
+      "encoding": "base64-ascii-lines",
+      "file": "stage12-readiness-return-20261015T175051Z-dbbbab.zip.part001.base64.txt",
+      "index": 1,
+      "offset": 524288,
+      "sha256": "a3a8b75abe4331f2220fbc8fdce7e8c62134e011ee3650f98e1a1bd1a4b750e1",
+      "text_bytes": 573047,
+      "text_sha256": "c2e96cb93453f45e4fdbeee766285d2d57308473f190c900e04f00ff3cfed2a5"
+    }
+  ],
+  "scope": "Stage12 v6 CPU preparation evidence; independent archive branch; never merge; PPO=0 cloud=0",
+  "sha256": "14beea62219a418883df0e49ed7df83d2a3edae6e69d17505064d29ac914071a"
+}
