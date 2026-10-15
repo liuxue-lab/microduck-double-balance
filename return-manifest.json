@@ -1,0 +1,41 @@
+{
+  "format": "microduck-return-ascii-parts-v2",
+  "file": "integration-contract-preflight-return.zip",
+  "bytes": 1313970,
+  "sha256": "58101ee60c608e3eed013f2b5766cfdbc6c7c285852ad5b30926a0ce78612797",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "file": "integration-contract-preflight-return.zip.part000.base64.txt",
+      "index": 0,
+      "offset": 0,
+      "bytes": 524288,
+      "sha256": "aa122732778f893d540961283595de2e89e89622a43d4748444ab80a037b6443",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "b7004d64aa3c76ba79016c100af118f6a0e9456968be5f283c43ce62272e0612"
+    },
+    {
+      "file": "integration-contract-preflight-return.zip.part001.base64.txt",
+      "index": 1,
+      "offset": 524288,
+      "bytes": 524288,
+      "sha256": "114fd8ce9bf7e03945319a2d21585addabd25f1a63d08d683d3cfc05dad2fd1f",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 708251,
+      "text_sha256": "37eb9163fe4a7313287968db8e1f03ca2e32bbb0f70799dfa06bd2f8ff2eee51"
+    },
+    {
+      "file": "integration-contract-preflight-return.zip.part002.base64.txt",
+      "index": 2,
+      "offset": 1048576,
+      "bytes": 265394,
+      "sha256": "de7e1217957993a1e1b8abd9e88228ab1c64d17071b01d21b3463cdf5d0147e6",
+      "encoding": "base64-ascii-lines",
+      "text_bytes": 358517,
+      "text_sha256": "30b3fd4d67f50f505451f8df70dd0310f4b01afd4f031a704ff815d470be6014"
+    }
+  ],
+  "branch": "stage11-integration-contract-preflight-transfer-20261015t030941z-1cf0b0",
+  "scope": "Stage11 post-reset physical continuations and live Contact sorting subgraph; actual physics/graph counts retained; independent archive branch; never merge"
+}
