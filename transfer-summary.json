@@ -1,0 +1,145 @@
+{
+  "N1_reused": true,
+  "N2_passed": true,
+  "PPO": 0,
+  "accounting": {
+    "all_operation_ledgers_clean": true,
+    "baseline_added_once": true,
+    "canonical_after": {
+      "attempted": 704665,
+      "completed": 704664
+    },
+    "historical_failure_retained": true,
+    "native_added": {
+      "attempted_lower": 11136,
+      "attempted_upper": 11136,
+      "completed_lower": 11136,
+      "completed_upper": 11136
+    },
+    "owners": [
+      {
+        "ledger": {
+          "attempts": {
+            "CPU_forward": 3,
+            "GPU_forward": 21634,
+            "integrations": 5376
+          },
+          "completed": {
+            "CPU_forward": 3,
+            "GPU_forward": 21634,
+            "integrations": 5376
+          },
+          "exact": true,
+          "incomplete_tail": false,
+          "integration_attempted_lower": 5376,
+          "integration_attempted_upper": 5376,
+          "integration_completed_lower": 5376,
+          "integration_completed_upper": 5376,
+          "pending": {},
+          "rows": 11018
+        },
+        "owner": 0
+      },
+      {
+        "ledger": {
+          "attempts": {
+            "CPU_forward": 3,
+            "GPU_forward": 23169,
+            "integrations": 5760
+          },
+          "completed": {
+            "CPU_forward": 3,
+            "GPU_forward": 23169,
+            "integrations": 5760
+          },
+          "exact": true,
+          "incomplete_tail": false,
+          "integration_attempted_lower": 5760,
+          "integration_attempted_upper": 5760,
+          "integration_completed_lower": 5760,
+          "integration_completed_upper": 5760,
+          "pending": {},
+          "rows": 11784
+        },
+        "owner": 1
+      }
+    ]
+  },
+  "archive_bytes": 4057446,
+  "archive_sha256": "6f6c9d26a37f2e75c7de43c2d0bf9b216f395122f74fa9ce6a9992e767e65c35",
+  "automatic_PR": false,
+  "automatic_merge": false,
+  "automatic_push": false,
+  "budget": {
+    "CPU_forward": 80,
+    "GPU_forward": 361668,
+    "PPO": 0,
+    "cloud_training": 0,
+    "environment_constructions": 2,
+    "evidence_reservation_bytes": 6710886400,
+    "max_macros": 60,
+    "native_integrations": 90240,
+    "optimizer_constructions": 0,
+    "plan_sha256": "4f8164c95250a30a4cc6e6330f5f3bbd1d7c49f9626934fed003011da1bbb312",
+    "policy_constructions": 0,
+    "public_steps": 6,
+    "reset_attempts": 10,
+    "tiers": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "torch_load": 0,
+    "wall_seconds": 14400
+  },
+  "canonical_after": {
+    "attempted": 704665,
+    "completed": 704664
+  },
+  "cloud_training": 0,
+  "package_manifest_sha256": "f0b889f446d8d105779e46fd3c3889967dbf9a3711c71b457c86995c0620e29d",
+  "prior_commit": "3c8037a7a94787aa34eb74eb247296801e2bd1a7",
+  "protocol": "stage12-n2-completion-v7",
+  "raw_archives": [
+    {
+      "bytes": 5072597,
+      "expanded_bytes": 25116395,
+      "file": "raw-evidence-000.zip",
+      "members": 482,
+      "sha256": "410bbada69526ec855add8738955ce69715b04ae4ca8e052bf16a6a321783bc1"
+    },
+    {
+      "bytes": 5325366,
+      "expanded_bytes": 25021994,
+      "file": "raw-evidence-001.zip",
+      "members": 420,
+      "sha256": "d6f602e69b38a0ede8b0a4b194bebf4f851b0a57da2e68a2a3fc1d2d9c134b07"
+    },
+    {
+      "bytes": 5069389,
+      "expanded_bytes": 25120027,
+      "file": "raw-evidence-002.zip",
+      "members": 696,
+      "sha256": "2fbfcf2f2d904cf7f530a69f7119460be7ae34b0d387411978558fed1a911b3d"
+    },
+    {
+      "bytes": 5406265,
+      "expanded_bytes": 25142517,
+      "file": "raw-evidence-003.zip",
+      "members": 418,
+      "sha256": "d32915f5d439e5bb0208ba5bfe017a4c0f0bf79df7734c6415ef1b8de785679e"
+    },
+    {
+      "bytes": 582714,
+      "expanded_bytes": 3102406,
+      "file": "raw-evidence-004.zip",
+      "members": 231,
+      "sha256": "1ea4e6e04e281caec84a50eb8e155e29e1e14e6ab24e0731c32b3f918e52cb48"
+    }
+  ],
+  "run": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/n2-completion-v7/20261016T031624Z-9d19a4",
+  "status": "N2_NATIVE_PASS_CLOUD_BUDGET_PENDING",
+  "training_ready": false
+}

@@ -1,0 +1,111 @@
+{
+  "branch": "stage12-n2-completion-v7-transfer-20261016t031624z-9d19a4",
+  "bytes": 5069389,
+  "file": "raw-evidence-002.zip",
+  "format": "microduck-return-ascii-parts-v2",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-002.zip.part000.base64.txt",
+      "index": 0,
+      "offset": 0,
+      "sha256": "80120b8bf70b2ad6306134a5b7c6fdaa6ba2dac0652a1d601f3e38d10a381f38",
+      "text_bytes": 708251,
+      "text_sha256": "d341b15c716b44cd78aba5b52e2a2998626865df68e1e5b93652f332bd49a9f4"
+    },
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-002.zip.part001.base64.txt",
+      "index": 1,
+      "offset": 524288,
+      "sha256": "4540e9383f2c7ce5cbbae20f1edad4f39d2637340778da4e1316c764a19cb0bd",
+      "text_bytes": 708251,
+      "text_sha256": "66e662f27c05dd3b875ab88204f221a286d26a18673023cc353c4518dc2ca9e4"
+    },
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-002.zip.part002.base64.txt",
+      "index": 2,
+      "offset": 1048576,
+      "sha256": "20ba61c0046827582744032b265cbe03b4223209bf06b6a04f47e88d82e430f3",
+      "text_bytes": 708251,
+      "text_sha256": "f912ed99d55c1af79b3ed8550b9eb6221faf921b66b8a8956e9cb7adffcfa488"
+    },
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-002.zip.part003.base64.txt",
+      "index": 3,
+      "offset": 1572864,
+      "sha256": "818c4ac1548fdb9d4a96c36de318d2daf3a210fd9098d8b009a16c6cc5a9b4cc",
+      "text_bytes": 708251,
+      "text_sha256": "fac225bc9c032883d7df3132cc13f50214f43ba50982dc403c85cb277a88d4f6"
+    },
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-002.zip.part004.base64.txt",
+      "index": 4,
+      "offset": 2097152,
+      "sha256": "ad6249f59b0fe8e1523d6fd4beb0f4703a1487a84933325a045f2c1baf217090",
+      "text_bytes": 708251,
+      "text_sha256": "e91e82217275daab326047320db01917c86e28c043f6017b7bece3605d6c8087"
+    },
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-002.zip.part005.base64.txt",
+      "index": 5,
+      "offset": 2621440,
+      "sha256": "3bf24b48ed8901042d24f93702bf7c92d0a01055e47bc96f4b220d27638b4b3b",
+      "text_bytes": 708251,
+      "text_sha256": "e3d89de6e504568e4d732e5bff1f8d7a161dc23644c3451ddf342200ad8f849f"
+    },
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-002.zip.part006.base64.txt",
+      "index": 6,
+      "offset": 3145728,
+      "sha256": "499eb31a8f459e181f138b4d8ce0fcc5987df4facebe3586907019633661725d",
+      "text_bytes": 708251,
+      "text_sha256": "394bacce8d178d0ea6ea657f9083c4376cf7784bce42b9d1e326bd2e7deb469c"
+    },
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-002.zip.part007.base64.txt",
+      "index": 7,
+      "offset": 3670016,
+      "sha256": "0a0481185ff0668d1e194928677dbeba5b02ea3eeb37033f4ff0f405c13ea695",
+      "text_bytes": 708251,
+      "text_sha256": "0e0f76f782722bdc9a9dc6e29334df3f8cb0eff2cb17adf9b4215fb1fe2bdb90"
+    },
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-002.zip.part008.base64.txt",
+      "index": 8,
+      "offset": 4194304,
+      "sha256": "cc2c58eab30f7e1e3a3114dc5b53633790c422c5a4e6c5675a0b181e46ac0099",
+      "text_bytes": 708251,
+      "text_sha256": "35ec61b0c94b433e7a47e5716322ce5798a55312734583f01f453cd222a941ed"
+    },
+    {
+      "bytes": 350797,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-002.zip.part009.base64.txt",
+      "index": 9,
+      "offset": 4718592,
+      "sha256": "e1ba5be7ffb5fa98753ffa5fa7f5e6dcad32e85417cf1306d34cf62b47d40ac5",
+      "text_bytes": 473887,
+      "text_sha256": "d8a08d31d9e7ca5a7f79bdc4fbc6b260261b11d700ff829de80be7ef703e9019"
+    }
+  ],
+  "scope": "v7 raw N2 evidence; counted native work; PPO=0 cloud=0",
+  "sha256": "2fbfcf2f2d904cf7f530a69f7119460be7ae34b0d387411978558fed1a911b3d"
+}

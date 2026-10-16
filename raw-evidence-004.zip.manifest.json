@@ -1,0 +1,31 @@
+{
+  "branch": "stage12-n2-completion-v7-transfer-20261016t031624z-9d19a4",
+  "bytes": 582714,
+  "file": "raw-evidence-004.zip",
+  "format": "microduck-return-ascii-parts-v2",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-004.zip.part000.base64.txt",
+      "index": 0,
+      "offset": 0,
+      "sha256": "5985141ea7c937adb39b4d99406d2b1cb6b897a2de478c7de8ef3dbea1f60f06",
+      "text_bytes": 708251,
+      "text_sha256": "17582c61a422224015b45896f26ff9c5725bb8b50c033f59cb0445e107694fab"
+    },
+    {
+      "bytes": 58426,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-004.zip.part001.base64.txt",
+      "index": 1,
+      "offset": 524288,
+      "sha256": "4a24a65b4307d1f2ea32f0937228bc8046c5975c5468a84740caacc75ad8ab75",
+      "text_bytes": 78930,
+      "text_sha256": "389aad43042ee940099f43cfb39a2af58cfbb2193b28e3834329457eeb8078e0"
+    }
+  ],
+  "scope": "v7 raw N2 evidence; counted native work; PPO=0 cloud=0",
+  "sha256": "1ea4e6e04e281caec84a50eb8e155e29e1e14e6ab24e0731c32b3f918e52cb48"
+}
