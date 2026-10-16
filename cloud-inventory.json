@@ -1,0 +1,392 @@
+{
+  "PPO": 0,
+  "automatic_push": false,
+  "budget_hours": 24,
+  "budget_hours_upper": 24,
+  "cloud_training": 0,
+  "cpu_count": 208,
+  "disk": [
+    {
+      "free_bytes": 31560310784,
+      "path": "/",
+      "total_bytes": 32212254720,
+      "used_bytes": 651943936
+    },
+    {
+      "free_bytes": 21006852096,
+      "path": "/root/autodl-tmp",
+      "total_bytes": 53687091200,
+      "used_bytes": 32680239104
+    },
+    {
+      "free_bytes": 31560310784,
+      "path": "/tmp",
+      "total_bytes": 32212254720,
+      "used_bytes": 651943936
+    }
+  ],
+  "existing_projects": [
+    {
+      "git_head": {
+        "returncode": 128,
+        "stderr": "fatal: not a git repository (or any parent up to mount point /root)\nStopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).\n",
+        "stdout": "",
+        "truncated": false
+      },
+      "git_status": {
+        "returncode": 128,
+        "stderr": "fatal: not a git repository (or any parent up to mount point /root)\nStopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).\n",
+        "stdout": "",
+        "truncated": false
+      },
+      "path": "/root/autodl-tmp/microduck-double-balance"
+    },
+    {
+      "git_head": {
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "61060f0684aabb460727a0d226b8d17225ee7954\n",
+        "truncated": false
+      },
+      "git_status": {
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "",
+        "truncated": false
+      },
+      "path": "/root/autodl-tmp/microduck-double-balance/workspace",
+      "pyproject.toml": {
+        "bytes": 4636,
+        "sha256": "5965e21013e1670884f79fbed14068e63864973a2bcd503821eada88b413783d"
+      },
+      "uv.lock": {
+        "bytes": 241077,
+        "sha256": "8724e8857e85b14b3bdf570a61fcba73549e1702589d56b9242fa02c5cfd7087"
+      }
+    }
+  ],
+  "git_version": {
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "git version 2.34.1\n",
+    "truncated": false
+  },
+  "github_ssh_default": {
+    "returncode": 128,
+    "stderr": "No ED25519 host key is known for github.com and you have requested strict checking.\nHost key verification failed.\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.\n",
+    "stdout": "",
+    "truncated": false
+  },
+  "github_ssh_existing_stage09_identity": {
+    "returncode": 128,
+    "stderr": "No ED25519 host key is known for github.com and you have requested strict checking.\nHost key verification failed.\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.\n",
+    "stdout": "",
+    "truncated": false
+  },
+  "gpu": {
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "0, NVIDIA GeForce RTX 5090, GPU-f231d519-f45e-6111-fc31-33dbb8b98f8f, 32607, 0, 580.105.08, 100\n",
+    "truncated": false
+  },
+  "gpu_processes": {
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "",
+    "truncated": false
+  },
+  "historical_key_present": true,
+  "hostname": "autodl-container-61354a8bc1-8480a381",
+  "installs": 0,
+  "interpretation": [
+    "This inventory is not a cloud environment or native acceptance PASS.",
+    "Image labels are not actual venv versions; use the metadata rows.",
+    "PPO and cloud training remain zero; no old checkpoint was loaded.",
+    "No existing project, environment, archive or started marker was changed.",
+    "No GPU provisioning, push, PR, merge, installation, rollout or native forward."
+  ],
+  "local_identity_unchanged": true,
+  "machine": "x86_64",
+  "memory": [
+    "MemTotal:       791166844 kB",
+    "MemAvailable:   644919568 kB",
+    "SwapTotal:             0 kB"
+  ],
+  "native_forward": 0,
+  "native_integrations": 0,
+  "platform": "Linux-5.15.0-119-generic-x86_64-with-glibc2.35",
+  "power_actions": 0,
+  "python_environments": [
+    {
+      "metadata": {
+        "CUDA_imported": false,
+        "executable": "/usr/bin/python3",
+        "packages": [
+          {
+            "location": null,
+            "matches": false,
+            "name": "torch",
+            "observed": null,
+            "reference": "2.9.1"
+          },
+          {
+            "location": null,
+            "matches": false,
+            "name": "numpy",
+            "observed": null,
+            "reference": "2.4.1"
+          },
+          {
+            "location": null,
+            "matches": false,
+            "name": "mujoco",
+            "observed": null,
+            "reference": "3.10.0"
+          },
+          {
+            "location": null,
+            "matches": false,
+            "name": "mujoco-warp",
+            "observed": null,
+            "reference": "3.8.1"
+          },
+          {
+            "location": null,
+            "matches": false,
+            "name": "warp-lang",
+            "observed": null,
+            "reference": "1.12.0"
+          },
+          {
+            "location": null,
+            "matches": false,
+            "name": "mjlab",
+            "observed": null,
+            "reference": "1.3.0"
+          },
+          {
+            "location": null,
+            "matches": false,
+            "name": "mjlab-microduck",
+            "observed": null,
+            "reference": "0.1.0"
+          },
+          {
+            "location": null,
+            "matches": false,
+            "name": "rsl-rl-lib",
+            "observed": null,
+            "reference": "5.0.1"
+          },
+          {
+            "location": null,
+            "matches": false,
+            "name": "tensordict",
+            "observed": null,
+            "reference": "0.10.0"
+          },
+          {
+            "location": null,
+            "matches": false,
+            "name": "better-actuator-models",
+            "observed": null,
+            "reference": "1.0.1"
+          }
+        ],
+        "prefix": "/usr",
+        "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]"
+      },
+      "requested_interpreter": "/usr/bin/python3",
+      "result": {
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "{\"python\": \"3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]\", \"executable\": \"/usr/bin/python3\", \"prefix\": \"/usr\", \"packages\": [{\"name\": \"torch\", \"observed\": null, \"reference\": \"2.9.1\", \"matches\": false, \"location\": null}, {\"name\": \"numpy\", \"observed\": null, \"reference\": \"2.4.1\", \"matches\": false, \"location\": null}, {\"name\": \"mujoco\", \"observed\": null, \"reference\": \"3.10.0\", \"matches\": false, \"location\": null}, {\"name\": \"mujoco-warp\", \"observed\": null, \"reference\": \"3.8.1\", \"matches\": false, \"location\": null}, {\"name\": \"warp-lang\", \"observed\": null, \"reference\": \"1.12.0\", \"matches\": false, \"location\": null}, {\"name\": \"mjlab\", \"observed\": null, \"reference\": \"1.3.0\", \"matches\": false, \"location\": null}, {\"name\": \"mjlab-microduck\", \"observed\": null, \"reference\": \"0.1.0\", \"matches\": false, \"location\": null}, {\"name\": \"rsl-rl-lib\", \"observed\": null, \"reference\": \"5.0.1\", \"matches\": false, \"location\": null}, {\"name\": \"tensordict\", \"observed\": null, \"reference\": \"0.10.0\", \"matches\": false, \"location\": null}, {\"name\": \"better-actuator-models\", \"observed\": null, \"reference\": \"1.0.1\", \"matches\": false, \"location\": null}], \"CUDA_imported\": false}\n",
+        "truncated": false
+      }
+    },
+    {
+      "metadata": {
+        "CUDA_imported": false,
+        "executable": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/bin/python",
+        "packages": [
+          {
+            "location": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages",
+            "matches": true,
+            "name": "torch",
+            "observed": "2.9.1",
+            "reference": "2.9.1"
+          },
+          {
+            "location": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages",
+            "matches": true,
+            "name": "numpy",
+            "observed": "2.4.1",
+            "reference": "2.4.1"
+          },
+          {
+            "location": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages",
+            "matches": true,
+            "name": "mujoco",
+            "observed": "3.10.0",
+            "reference": "3.10.0"
+          },
+          {
+            "location": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages",
+            "matches": true,
+            "name": "mujoco-warp",
+            "observed": "3.8.1",
+            "reference": "3.8.1"
+          },
+          {
+            "location": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages",
+            "matches": true,
+            "name": "warp-lang",
+            "observed": "1.12.0",
+            "reference": "1.12.0"
+          },
+          {
+            "location": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages",
+            "matches": true,
+            "name": "mjlab",
+            "observed": "1.3.0",
+            "reference": "1.3.0"
+          },
+          {
+            "location": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages",
+            "matches": true,
+            "name": "mjlab-microduck",
+            "observed": "0.1.0",
+            "reference": "0.1.0"
+          },
+          {
+            "location": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages",
+            "matches": true,
+            "name": "rsl-rl-lib",
+            "observed": "5.0.1",
+            "reference": "5.0.1"
+          },
+          {
+            "location": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages",
+            "matches": true,
+            "name": "tensordict",
+            "observed": "0.10.0",
+            "reference": "0.10.0"
+          },
+          {
+            "location": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages",
+            "matches": true,
+            "name": "better-actuator-models",
+            "observed": "1.0.1",
+            "reference": "1.0.1"
+          }
+        ],
+        "prefix": "/root/autodl-tmp/microduck-double-balance/workspace/.venv",
+        "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]"
+      },
+      "requested_interpreter": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/bin/python",
+      "result": {
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "{\"python\": \"3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]\", \"executable\": \"/root/autodl-tmp/microduck-double-balance/workspace/.venv/bin/python\", \"prefix\": \"/root/autodl-tmp/microduck-double-balance/workspace/.venv\", \"packages\": [{\"name\": \"torch\", \"observed\": \"2.9.1\", \"reference\": \"2.9.1\", \"matches\": true, \"location\": \"/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages\"}, {\"name\": \"numpy\", \"observed\": \"2.4.1\", \"reference\": \"2.4.1\", \"matches\": true, \"location\": \"/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages\"}, {\"name\": \"mujoco\", \"observed\": \"3.10.0\", \"reference\": \"3.10.0\", \"matches\": true, \"location\": \"/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages\"}, {\"name\": \"mujoco-warp\", \"observed\": \"3.8.1\", \"reference\": \"3.8.1\", \"matches\": true, \"location\": \"/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages\"}, {\"name\": \"warp-lang\", \"observed\": \"1.12.0\", \"reference\": \"1.12.0\", \"matches\": true, \"location\": \"/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages\"}, {\"name\": \"mjlab\", \"observed\": \"1.3.0\", \"reference\": \"1.3.0\", \"matches\": true, \"location\": \"/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages\"}, {\"name\": \"mjlab-microduck\", \"observed\": \"0.1.0\", \"reference\": \"0.1.0\", \"matches\": true, \"location\": \"/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages\"}, {\"name\": \"rsl-rl-lib\", \"observed\": \"5.0.1\", \"reference\": \"5.0.1\", \"matches\": true, \"location\": \"/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages\"}, {\"name\": \"tensordict\", \"observed\": \"0.10.0\", \"reference\": \"0.10.0\", \"matches\": true, \"location\": \"/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages\"}, {\"name\": \"better-actuator-models\", \"observed\": \"1.0.1\", \"reference\": \"1.0.1\", \"matches\": true, \"location\": \"/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages\"}], \"CUDA_imported\": false}\n",
+        "truncated": false
+      }
+    },
+    {
+      "metadata": {
+        "CUDA_imported": false,
+        "executable": "/root/miniconda3/bin/python",
+        "packages": [
+          {
+            "location": "/root/miniconda3/lib/python3.12/site-packages",
+            "matches": false,
+            "name": "torch",
+            "observed": "2.8.0+cu128",
+            "reference": "2.9.1"
+          },
+          {
+            "location": "/root/miniconda3/lib/python3.12/site-packages",
+            "matches": false,
+            "name": "numpy",
+            "observed": "2.3.2",
+            "reference": "2.4.1"
+          },
+          {
+            "location": null,
+            "matches": false,
+            "name": "mujoco",
+            "observed": null,
+            "reference": "3.10.0"
+          },
+          {
+            "location": null,
+            "matches": false,
+            "name": "mujoco-warp",
+            "observed": null,
+            "reference": "3.8.1"
+          },
+          {
+            "location": null,
+            "matches": false,
+            "name": "warp-lang",
+            "observed": null,
+            "reference": "1.12.0"
+          },
+          {
+            "location": null,
+            "matches": false,
+            "name": "mjlab",
+            "observed": null,
+            "reference": "1.3.0"
+          },
+          {
+            "location": null,
+            "matches": false,
+            "name": "mjlab-microduck",
+            "observed": null,
+            "reference": "0.1.0"
+          },
+          {
+            "location": null,
+            "matches": false,
+            "name": "rsl-rl-lib",
+            "observed": null,
+            "reference": "5.0.1"
+          },
+          {
+            "location": null,
+            "matches": false,
+            "name": "tensordict",
+            "observed": null,
+            "reference": "0.10.0"
+          },
+          {
+            "location": null,
+            "matches": false,
+            "name": "better-actuator-models",
+            "observed": null,
+            "reference": "1.0.1"
+          }
+        ],
+        "prefix": "/root/miniconda3",
+        "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]"
+      },
+      "requested_interpreter": "/root/miniconda3/bin/python",
+      "result": {
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "{\"python\": \"3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]\", \"executable\": \"/root/miniconda3/bin/python\", \"prefix\": \"/root/miniconda3\", \"packages\": [{\"name\": \"torch\", \"observed\": \"2.8.0+cu128\", \"reference\": \"2.9.1\", \"matches\": false, \"location\": \"/root/miniconda3/lib/python3.12/site-packages\"}, {\"name\": \"numpy\", \"observed\": \"2.3.2\", \"reference\": \"2.4.1\", \"matches\": false, \"location\": \"/root/miniconda3/lib/python3.12/site-packages\"}, {\"name\": \"mujoco\", \"observed\": null, \"reference\": \"3.10.0\", \"matches\": false, \"location\": null}, {\"name\": \"mujoco-warp\", \"observed\": null, \"reference\": \"3.8.1\", \"matches\": false, \"location\": null}, {\"name\": \"warp-lang\", \"observed\": null, \"reference\": \"1.12.0\", \"matches\": false, \"location\": null}, {\"name\": \"mjlab\", \"observed\": null, \"reference\": \"1.3.0\", \"matches\": false, \"location\": null}, {\"name\": \"mjlab-microduck\", \"observed\": null, \"reference\": \"0.1.0\", \"matches\": false, \"location\": null}, {\"name\": \"rsl-rl-lib\", \"observed\": null, \"reference\": \"5.0.1\", \"matches\": false, \"location\": null}, {\"name\": \"tensordict\", \"observed\": null, \"reference\": \"0.10.0\", \"matches\": false, \"location\": null}, {\"name\": \"better-actuator-models\", \"observed\": null, \"reference\": \"1.0.1\", \"matches\": false, \"location\": null}], \"CUDA_imported\": false}\n",
+        "truncated": false
+      }
+    }
+  ],
+  "status": "CLOUD_READONLY_INVENTORY_ONLY",
+  "torch_load": 0,
+  "training_ready": false,
+  "utc": "2026-10-16T04:11:26.846737+00:00",
+  "uv": {
+    "returncode": null,
+    "stderr": "[Errno 2] No such file or directory: 'uv'",
+    "stdout": "",
+    "truncated": false
+  }
+}
