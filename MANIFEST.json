@@ -1,0 +1,34 @@
+{
+  "archive_bytes": 150803,
+  "archive_sha256": "28f929bcd9b405b4ccb9f0f37b264f0482a01fbd834cc79de85e6c7600c1f283",
+  "branch": "stage12-static-collision-v1-return-20261016t095149z-a2486aa7ed",
+  "evidence_index_sha256": "a2486aa7edee917b7529657b6181a2404e6169eec76cde914f6341a27a1a1347",
+  "format": "stage12-static-git-return-v1",
+  "old_return_branch_replaced": false,
+  "parts": [
+    {
+      "bytes": 201073,
+      "name": "evidence.part-0000.b64",
+      "sha256": "0ab44f938dbbe5d4fb9b5acd424484daf756e14cc323ce29885d3a1f4935f6d5"
+    }
+  ],
+  "result": {
+    "PPO": 0,
+    "automatic_power_actions": 0,
+    "automatic_push": false,
+    "cloud_training": 0,
+    "dynamic_repair_validated": false,
+    "forced_timeout": false,
+    "native_points_accepted": 2,
+    "native_points_total": 5,
+    "no_automatic_retry": true,
+    "observation_count_is_final": true,
+    "observation_percent": 0.0,
+    "observations": 0,
+    "percentage_scope": "Static records only; final status and ledger reconciliation are required for completion",
+    "returncode": 1,
+    "status": "STATIC_DIAGNOSTIC_STOPPED_PRESERVE",
+    "training_ready": false
+  },
+  "source_return_commit": "c609aa67f7fb510c7e543239d29659322cf5f6cd"
+}
