@@ -1,0 +1,102 @@
+{
+  "accounting": {
+    "all_operation_ledgers_clean": true,
+    "baseline_added_once": true,
+    "cumulative_attempted": [
+      674457,
+      674457
+    ],
+    "cumulative_completed": [
+      674456,
+      674456
+    ],
+    "historical_failure_retained": true,
+    "integration_counts_exact": true,
+    "native_added": {
+      "attempted_lower": 0,
+      "attempted_upper": 0,
+      "completed_lower": 0,
+      "completed_upper": 0
+    },
+    "owners": [
+      {
+        "ledger": {
+          "attempts": {},
+          "completed": {},
+          "exact": true,
+          "incomplete_tail": false,
+          "integration_attempted_lower": 0,
+          "integration_attempted_upper": 0,
+          "integration_completed_lower": 0,
+          "integration_completed_upper": 0,
+          "pending": {},
+          "rows": 0
+        },
+        "owner": 0,
+        "point": "single_owner_lifecycle"
+      },
+      {
+        "ledger": {
+          "exact": true,
+          "integration_attempted_lower": 0,
+          "integration_attempted_upper": 0,
+          "integration_completed_lower": 0,
+          "integration_completed_upper": 0,
+          "ledger_not_created": true
+        },
+        "owner": 0,
+        "point": "two_process_short_pilot"
+      },
+      {
+        "ledger": {
+          "exact": true,
+          "integration_attempted_lower": 0,
+          "integration_attempted_upper": 0,
+          "integration_completed_lower": 0,
+          "integration_completed_upper": 0,
+          "ledger_not_created": true
+        },
+        "owner": 1,
+        "point": "two_process_short_pilot"
+      }
+    ]
+  },
+  "archive_bytes": 15822501,
+  "archive_sha256": "4ffc3eaac132fb01be567a722f294948284a0dfab50736c41bf32137933ede8a",
+  "automatic_PR": false,
+  "automatic_merge": false,
+  "automatic_push": false,
+  "budget": {
+    "PPO": 0,
+    "cloud_training": 0,
+    "environment_constructions": 3,
+    "evidence_reservation_bytes": 12213813248,
+    "native_CPU_forward": 144,
+    "native_GPU_forward": 155902,
+    "native_integrations": 38720,
+    "optimizer_constructions": 0,
+    "plan_sha256": "12ef65c6f34c555f923ecf7b11c555402418612e17eeec28a59ff4dbfcbecd77",
+    "policy_constructions": 0,
+    "reset_attempts": 18,
+    "torch_load": 0,
+    "wall_seconds": 43200
+  },
+  "canonical_before": {
+    "attempted": 674457,
+    "completed": 674456
+  },
+  "package_manifest_sha256": "12dbfbdda82598b47a8fd89fc28f928dcd1b16381d2ff5e461d2a82bb59ddcab",
+  "prior_integration_commit": "eb5fe0c2371393fe599ed1ba92e078dfe8390f3c",
+  "prior_local_commit": "623484cd5dbb8182205dc035dd13fc95d831b821",
+  "protocol": "microduck-stage12-local-completion-v2",
+  "run": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/local-completion-v2/20261016T003054Z-3be226",
+  "source_refs": {
+    "branch": "double-balance",
+    "head": "73ee01930a031d76a9d57419afdfd4464a547ab3",
+    "tag_commit": "6ba0dc2de381321576f32310e1995a8e2e11e566",
+    "tag_object": "bd1b219be55c813811d4f7cfa25d245b37166688"
+  },
+  "stage11": "11/11 CLOSED_SCOPED",
+  "status": "LOCAL_COMPLETION_STOPPED_PRESERVE",
+  "training_ready": false
+}
