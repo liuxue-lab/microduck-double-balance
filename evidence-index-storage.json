@@ -1,0 +1,22 @@
+{
+  "archive_count": 7,
+  "file_count": 5882,
+  "format": "stage12-evidence-index-gzip-parts-v1",
+  "gzip_bytes": 556303,
+  "gzip_sha256": "7b174f8d2d70a0852070f53718afac1d9ff559cabf20db84fafaef3f460cecca",
+  "json_bytes": 2457679,
+  "json_sha256": "fbfce88c7a63bbc6f6266e339640c8121de4bf811aac1eca5ccba510eb73e478",
+  "parts": [
+    {
+      "bytes": 524288,
+      "path": "index/part-0000.b64",
+      "sha256": "a2fb304d2abd19ea7712eb892297def5241340309e78ad50c4ac8e981834e5ff"
+    },
+    {
+      "bytes": 217452,
+      "path": "index/part-0001.b64",
+      "sha256": "09260072aa9e58886046e38ba2c8f9080e8d4857ee203f9c6356fa9717246d38"
+    }
+  ],
+  "raw_bytes": 291134972
+}

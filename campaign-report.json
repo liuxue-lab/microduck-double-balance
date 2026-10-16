@@ -1,0 +1,241 @@
+{
+  "PPO": 0,
+  "automatic_power_actions": 0,
+  "automatic_push": false,
+  "campaign_elapsed_seconds": 7276.7205765247345,
+  "canonical_before": {
+    "attempted": 704665,
+    "completed": 704664
+  },
+  "cloud_training": 0,
+  "completed_native_points": 2,
+  "cumulative_attempted": [
+    734009,
+    734009
+  ],
+  "cumulative_completed": [
+    734008,
+    734008
+  ],
+  "deadline": 1792209194.0,
+  "error": {
+    "error": "RuntimeError('Command failed; inspect /root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-execution-v1/20261016T050751Z-900769/work/logs/n1-rollout.log; returncode=1')",
+    "traceback": "Traceback (most recent call last):\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-execution-v1/20261016T050751Z-900769/input/cloud_run.py\", line 376, in main\n    try:result=execute(work,runtime,retry_setup=a.action=='resume')\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-execution-v1/20261016T050751Z-900769/input/cloud_run.py\", line 182, in execute\n    run_once(work/'phases',name,native_action)\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-execution-v1/20261016T050751Z-900769/input/common.py\", line 157, in run_once\n    result=action()\n           ^^^^^^^^\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-execution-v1/20261016T050751Z-900769/input/cloud_run.py\", line 176, in native_action\n    logged([setup_result['python'],'-I','-B',ROOT/'native_stage.py','--repo',setup_result['project'],\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-execution-v1/20261016T050751Z-900769/input/cloud_run.py\", line 75, in logged\n    require(p.returncode==0,'Command failed; inspect '+str(logfile)+'; returncode='+str(p.returncode))\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-execution-v1/20261016T050751Z-900769/input/common.py\", line 31, in require\n    raise RuntimeError(message)\nRuntimeError: Command failed; inspect /root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-execution-v1/20261016T050751Z-900769/work/logs/n1-rollout.log; returncode=1\n"
+  },
+  "execution": null,
+  "finished_epoch": 1792136517.22906,
+  "full_10s_episode_proven": false,
+  "instance_power_state": "UNCONFIRMED_AFTER_INVENTORY",
+  "native_added": {
+    "attempted_lower": 29344,
+    "attempted_upper": 29344,
+    "completed_lower": 29344,
+    "completed_upper": 29344
+  },
+  "old_checkpoint": "PRESERVED_NO_LOAD",
+  "old_local_batches_rerun": 0,
+  "outstanding": [
+    "Bounded actual PPO/checkpoint save and restore need explicit update budget",
+    "Formal training remains unreleased",
+    "N>2 and native batched nworld>1 unreleased"
+  ],
+  "planned_native_points": 5,
+  "points": [
+    {
+      "PPO": 0,
+      "accounting": {
+        "all_ledgers_exact": true,
+        "native_added": {
+          "attempted_lower": 5376,
+          "attempted_upper": 5376,
+          "completed_lower": 5376,
+          "completed_upper": 5376
+        },
+        "owners": [
+          {
+            "ledger": {
+              "attempts": {
+                "CPU_forward": 3,
+                "GPU_forward": 21634,
+                "integrations": 5376
+              },
+              "completed": {
+                "CPU_forward": 3,
+                "GPU_forward": 21634,
+                "integrations": 5376
+              },
+              "exact": true,
+              "incomplete_tail": false,
+              "integration_attempted_lower": 5376,
+              "integration_attempted_upper": 5376,
+              "integration_completed_lower": 5376,
+              "integration_completed_upper": 5376,
+              "pending": {},
+              "rows": 11018
+            },
+            "owner": 0
+          }
+        ]
+      },
+      "cloud_training": 0,
+      "errors": [],
+      "evidence_bytes": 51404269,
+      "full_10s_episode_proven": false,
+      "integrations_per_second": 6.928069732048376,
+      "maximum_step_seconds": 287.332421656698,
+      "native_nworld_per_owner": 1,
+      "owners": 1,
+      "physical_stability_with_policy_proven": false,
+      "point": "n1-pilot",
+      "production_training_throughput_proven": false,
+      "public_steps_per_owner": 3,
+      "public_transitions_per_second": 0.003866110341544853,
+      "requested_public_steps_per_owner": 3,
+      "startup_seconds": 101.75019841641188,
+      "status": "NATIVE_POINT_PASS",
+      "step_median_seconds": 258.6579046268016,
+      "step_p95_seconds": 287.332421656698,
+      "sustained_sample": false,
+      "timed_steps_per_owner": 2,
+      "timed_wall_seconds": 517.3158092536032,
+      "total_seconds": 877.1328099370003,
+      "training_ready": false
+    },
+    {
+      "PPO": 0,
+      "accounting": {
+        "all_ledgers_exact": true,
+        "native_added": {
+          "attempted_lower": 11136,
+          "attempted_upper": 11136,
+          "completed_lower": 11136,
+          "completed_upper": 11136
+        },
+        "owners": [
+          {
+            "ledger": {
+              "attempts": {
+                "CPU_forward": 3,
+                "GPU_forward": 21634,
+                "integrations": 5376
+              },
+              "completed": {
+                "CPU_forward": 3,
+                "GPU_forward": 21634,
+                "integrations": 5376
+              },
+              "exact": true,
+              "incomplete_tail": false,
+              "integration_attempted_lower": 5376,
+              "integration_attempted_upper": 5376,
+              "integration_completed_lower": 5376,
+              "integration_completed_upper": 5376,
+              "pending": {},
+              "rows": 11018
+            },
+            "owner": 0
+          },
+          {
+            "ledger": {
+              "attempts": {
+                "CPU_forward": 3,
+                "GPU_forward": 23169,
+                "integrations": 5760
+              },
+              "completed": {
+                "CPU_forward": 3,
+                "GPU_forward": 23169,
+                "integrations": 5760
+              },
+              "exact": true,
+              "incomplete_tail": false,
+              "integration_attempted_lower": 5760,
+              "integration_attempted_upper": 5760,
+              "integration_completed_lower": 5760,
+              "integration_completed_upper": 5760,
+              "pending": {},
+              "rows": 11784
+            },
+            "owner": 1
+          }
+        ]
+      },
+      "cloud_training": 0,
+      "errors": [],
+      "evidence_bytes": 103300994,
+      "full_10s_episode_proven": false,
+      "integrations_per_second": 12.874508689125872,
+      "maximum_step_seconds": 349.4286321364343,
+      "native_nworld_per_owner": 1,
+      "owners": 2,
+      "physical_stability_with_policy_proven": false,
+      "point": "n2-pilot",
+      "production_training_throughput_proven": false,
+      "public_steps_per_owner": 3,
+      "public_transitions_per_second": 0.00681912536500311,
+      "requested_public_steps_per_owner": 3,
+      "startup_seconds": 101.10928048565984,
+      "status": "NATIVE_POINT_PASS",
+      "step_median_seconds": 293.292745469138,
+      "step_p95_seconds": 349.4286321364343,
+      "sustained_sample": false,
+      "timed_steps_per_owner": 2,
+      "timed_wall_seconds": 586.585490938276,
+      "total_seconds": 952.591869559139,
+      "training_ready": false
+    },
+    {
+      "PPO": 0,
+      "accounting": {
+        "all_ledgers_exact": true,
+        "native_added": {
+          "attempted_lower": 12832,
+          "attempted_upper": 12832,
+          "completed_lower": 12832,
+          "completed_upper": 12832
+        },
+        "owners": [
+          {
+            "ledger": {
+              "attempts": {
+                "CPU_forward": 3,
+                "GPU_forward": 51618,
+                "integrations": 12832
+              },
+              "completed": {
+                "CPU_forward": 3,
+                "GPU_forward": 51618,
+                "integrations": 12832
+              },
+              "exact": true,
+              "incomplete_tail": false,
+              "integration_attempted_lower": 12832,
+              "integration_attempted_upper": 12832,
+              "integration_completed_lower": 12832,
+              "integration_completed_upper": 12832,
+              "pending": {},
+              "rows": 26250
+            },
+            "owner": 0
+          }
+        ]
+      },
+      "cloud_training": 0,
+      "errors": [
+        {
+          "error": "RuntimeError(\"Owner failed: RuntimeError('Maximum declared tier512 failed; initial cohort restored; no extra tier or retry')\")",
+          "traceback": "Traceback (most recent call last):\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-execution-v1/20261016T050751Z-900769/input/native_stage.py\", line 168, in main\n    report.update(measure(a.repo,folder,point,a.deadline))\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-execution-v1/20261016T050751Z-900769/input/native_stage.py\", line 110, in measure\n    obs,reward,done,extras=env.step(action)\n                           ^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-execution-v1/20261016T050751Z-900769/input/candidate/integration/process_vector.py\", line 17, in call\n    return method(self, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-execution-v1/20261016T050751Z-900769/input/candidate/integration/process_vector.py\", line 195, in step\n    rows = self.transport.exchange(\"step\", [tensor_wire(actions[i:i+1]) for i in range(self.num_envs)])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-execution-v1/20261016T050751Z-900769/input/candidate/integration/process_vector.py\", line 57, in exchange\n    require(row[\"ok\"] is True, \"Owner failed: \" + str(row.get(\"error\")))\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-execution-v1/20261016T050751Z-900769/input/candidate/integration/durable.py\", line 11, in require\n    raise RuntimeError(message)\nRuntimeError: Owner failed: RuntimeError('Maximum declared tier512 failed; initial cohort restored; no extra tier or retry')\nOwner cleanup: RuntimeError('Owner shutdown incomplete; inspect WAL and closeout; never retry')\n"
+        }
+      ],
+      "evidence_bytes": 118867741,
+      "point": "n1-rollout",
+      "status": "NATIVE_STOPPED_PRESERVE",
+      "training_ready": false
+    }
+  ],
+  "source_commit": "ff5e4c519d034952469835264c0408cf66c27d52",
+  "source_preservation": true,
+  "status": "CLOUD_READINESS_INCOMPLETE_PRESERVE",
+  "torch_load": 0,
+  "training_ready": false
+}

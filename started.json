@@ -1,0 +1,27 @@
+{
+  "PPO": 0,
+  "canonical_before": {
+    "attempted": 704665,
+    "completed": 704664
+  },
+  "cloud_training": 0,
+  "config": {
+    "branch": "stage12-cloud-execution-v1-input-20261016t050751z-900769",
+    "cloud_base": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-execution-v1/20261016T050751Z-900769",
+    "commit": "ff5e4c519d034952469835264c0408cf66c27d52",
+    "github_ssh_command": "ssh -F /dev/null -o BatchMode=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-execution-v1/20261016T050751Z-900769/github-known-hosts -o GlobalKnownHostsFile=/dev/null -o HostKeyAlgorithms=ssh-ed25519 -o ConnectTimeout=15 -o IdentitiesOnly=yes -i /root/.ssh/id_ed25519_microduck_stage09",
+    "identity": {
+      "email": "296450086+liuxue-lab@users.noreply.github.com",
+      "name": "liuxue-lab"
+    },
+    "origin": "git@github.com:liuxue-lab/microduck-double-balance.git",
+    "package_sha256": "9fdfc173a364520cfbc48d4cc3f6268cf41a009a52b72ced4c48933439040280",
+    "run_id": "20261016T050751Z-900769",
+    "runtime": "/root/md12-runtime-20261016t050751z-900769",
+    "work": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-execution-v1/20261016T050751Z-900769/work"
+  },
+  "deadline": 1792209194.0,
+  "max_integrations": 8738240,
+  "no_retry": true,
+  "started_epoch": 1792129240.5084841
+}
