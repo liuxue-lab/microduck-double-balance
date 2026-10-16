@@ -1,0 +1,63 @@
+Stage12LocalPhase=single_owner_lifecycle; PPO=0 cloud_training=0
+/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab/entity/entity.py:149: UserWarning: Actuator config matched 14 joint(s) but the same expressions also match 8 site(s): imu, left_foot, head_camera, tof, head_imu, mouth_tip, stage11_head_material_frame, right_foot. Add a separate config with transmission_type=TransmissionType.SITE if those should be actuated too.
+  self._add_actuators()
+Warp NVRTC compilation error 6: NVRTC_ERROR_COMPILATION (/builds/omniverse/warp/warp/native/warp.cu:3943)
+Catastrophic error: name of directory for temporary files is too long ("/home/lx/microduck-double-balance/artifacts/double-balance-stage12/local-completion-v3/20261016T004935Z-c472d2/single_owner_lifecycle/owner-0-bootstrap/runtime-scratch")
+
+1 catastrophic error detected in the compilation of "wp_mujoco_warp._src.render_util_94fd13e.cu".
+Compilation terminated.
+Process SpawnProcess-1:
+Traceback (most recent call last):
+  File "/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/lx/下载/microduck-stage12-local-completion-v3/integration/process_owners.py", line 29, in native_child
+    with owner_session(repo, out, plan, authorization) as session:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/lx/下载/microduck-stage12-local-completion-v3/integration/native_factory.py", line 155, in owner_session
+    envmod.ManagerBasedRlEnv.__init__(env, cfg, device='cuda:0', render_mode=None)
+  File "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab/envs/manager_based_rl_env.py", line 204, in __init__
+    self.scene.initialize(
+  File "/home/lx/下载/microduck-stage12-local-completion-v3/baseline/g11/runtime_accounting.py", line 151, in call
+    value = native(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab/scene/scene.py", line 170, in initialize
+    self._sensor_context = SensorContext(
+                           ^^^^^^^^^^^^^^
+  File "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab/sensor/sensor_context.py", line 80, in __init__
+    self._create_context(mj_model)
+  File "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab/sensor/sensor_context.py", line 316, in _create_context
+    self._ctx = mjwarp.create_render_context(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lx/下载/microduck-stage12-local-completion-v3/baseline/g11/runtime_accounting.py", line 151, in call
+    value = native(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mujoco_warp/_src/io.py", line 2885, in create_render_context
+    textures_registry.append(render_util.create_warp_texture(mjm, i))
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mujoco_warp/_src/render_util.py", line 57, in create_warp_texture
+    wp.launch(
+  File "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/warp/_src/context.py", line 7457, in launch
+    module_exec = kernel.module.load(device, block_dim)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/warp/_src/context.py", line 3012, in load
+    raise e
+  File "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/warp/_src/context.py", line 3009, in load
+    compiled = self._compile(device, module_dir, output_name, output_arch)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/warp/_src/context.py", line 2878, in _compile
+    raise (e)
+  File "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/warp/_src/context.py", line 2855, in _compile
+    warp._src.build.build_cuda(
+  File "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/warp/_src/build.py", line 106, in build_cuda
+    raise Exception(f"CUDA kernel build failed with error code {err}")
+Exception: CUDA kernel build failed with error code 6
+[mdp] Patches 1-2 active: NaN-safe reward/advantage
+[mdp] Patch 4 active: ONNX export filters passive_* joints
+Setting seed: 1111003
+[BamActuator] model='m6' joints=14 kt=0.3660 R=2.8114 vin=range=(6.5, 8.2) drop_gain_range=(0.0, 0.2) force_limit=±1.07Nm friction_base=0.0048 friction_viscous=0.0054 envs=1 device=cuda:0
+Stage12LocalCompletion=LOCAL_COMPLETION_STOPPED_PRESERVE

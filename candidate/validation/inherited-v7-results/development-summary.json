@@ -1,0 +1,25 @@
+{
+  "PPO": 0,
+  "cloud_training": 0,
+  "fix": "Use explicit mapping keys instead of TensorDict batch iteration",
+  "host_configuration_tested": false,
+  "limitation": "Assistant lacks Torch/MuJoCo/Warp/mjlab. Host actual TensorDict dict-cache and TensorDict-cache adapter verification remains pending v7 receipt.",
+  "native_integrations": 0,
+  "regression_scope": "Exact upstream TensorDictBase.__iter__ body on a minimal fixture; full TensorDict/Torch NOT imported in developer runtime",
+  "reused_from_v6": [
+    "git-import-upstream.json",
+    "git-import-release.json",
+    "git-import-source-manifest.json"
+  ],
+  "status": "PASS_DEVELOPMENT_ONLY",
+  "tests": {
+    "font_boundary": 6,
+    "git_boundary": 7,
+    "headless_and_runner_calculations": 14,
+    "preparation_and_observations": 15,
+    "publication_and_transfer": 12,
+    "source_identity_and_reuse": 12
+  },
+  "unit_test_count": 66,
+  "v6_error_reproduced": "Batch iteration yields unhashable TensorDict-like subcontainers; fixture class is TD"
+}

@@ -1,0 +1,9 @@
+test_corrupt_ledger_is_bounded_unknown_not_zero (__main__.AccountingTests.test_corrupt_ledger_is_bounded_unknown_not_zero) ... ok
+test_pending_attempt_never_inferred_completed (__main__.AccountingTests.test_pending_attempt_never_inferred_completed) ... ok
+test_started_without_ledger_is_not_clean_acceptance (__main__.AccountingTests.test_started_without_ledger_is_not_clean_acceptance) ... ok
+test_three_owners_add_baseline_once (__main__.AccountingTests.test_three_owners_add_baseline_once) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.008s
+
+OK

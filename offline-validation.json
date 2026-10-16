@@ -1,0 +1,17 @@
+{
+  "PPO": 0,
+  "cloud_execution_performed_by_assistant": false,
+  "cloud_training": 0,
+  "errors": 0,
+  "evidence_index_gzip_shards_verified": true,
+  "failures": 0,
+  "initial_test_harness_issue": "First fixture expected Torch in assistant runtime; replaced with explicit test-only transport tensors. Production Torch code unchanged.",
+  "large_wal_roundtrip_bytes": 57671680,
+  "numeric_thresholds_byte_identical": true,
+  "physical_integrations": 0,
+  "python_files_ast_checked": 186,
+  "receiver_index_grouping": "linear grouping plus segment sorting",
+  "scope": "stdlib, temporary local Git, source manifest, archive reconstruction, explicit fake vector lifecycle. No installed cloud environment or native physics acceptance claimed.",
+  "status": "OFFLINE_VALIDATION_PASS",
+  "tests": 21
+}

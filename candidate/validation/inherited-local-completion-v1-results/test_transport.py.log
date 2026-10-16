@@ -1,0 +1,45 @@
+test_extra_change_wrong_blob_or_wrong_parent_rejected (__main__.PublicationTests.test_extra_change_wrong_blob_or_wrong_parent_rejected) ... ok
+test_failed_identity_retains_raw_local_refs (__main__.PublicationTests.test_failed_identity_retains_raw_local_refs) ... ok
+test_frozen_base_and_exact_reviewed_followup_accepted (__main__.PublicationTests.test_frozen_base_and_exact_reviewed_followup_accepted) ... ok
+test_other_head_tag_branch_or_origin_rejected (__main__.PublicationTests.test_other_head_tag_branch_or_origin_rejected) ... ok
+test_archive_identity_and_network_commands_fail_closed (__main__.TransferTests.test_archive_identity_and_network_commands_fail_closed) ... ok
+test_blocked_new_run_still_prepares_manual_transfer_and_can_recover_packaging_only (__main__.TransferTests.test_blocked_new_run_still_prepares_manual_transfer_and_can_recover_packaging_only) ... Stage12Run=/tmp/tmpm_2pm3fa/integration-v1/20261015T191850Z-779af6
+Stage12Budget={"PPO": 0, "cloud_training": 0, "environment_constructions": 3, "evidence_reservation_bytes": 12213813248, "native_CPU_forward": 144, "native_GPU_forward": 155902, "native_integrations": 38720, "optimizer_constructions": 0, "plan_sha256": "12ef65c6f34c555f923ecf7b11c555402418612e17eeec28a59ff4dbfcbecd77", "policy_constructions": 0, "reset_attempts": 18, "torch_load": 0, "wall_seconds": 43200}
+Stage12Transfer=LOCAL_TRANSFER_COMMIT_READY_MANUAL_PUSH_PENDING
+Stage12TransferDir=/tmp/tmpm_2pm3fa/integration-v1/transfer
+Stage12TransferBranch=stage12-local-completion-v1-transfer-20261015t191850z-779af6
+Stage12TransferCommit=64e9e1d698e755107b16576ca215ada659d273a0
+Stage12UploadCommand=git -C /tmp/tmpm_2pm3fa/integration-v1/transfer push origin HEAD
+Stage12LocalCompletion=LOCAL_COMPLETION_STOPPED_PRESERVE
+Stage12Accounting={"all_operation_ledgers_clean": true, "baseline_added_once": true, "cumulative_attempted": [674457, 674457], "cumulative_completed": [674456, 674456], "historical_failure_retained": true, "integration_counts_exact": true, "native_added": {"attempted_lower": 0, "attempted_upper": 0, "completed_lower": 0, "completed_upper": 0}, "owners": [{"ledger": {"exact": true, "integration_attempted_lower": 0, "integration_attempted_upper": 0, "integration_completed_lower": 0, "integration_completed_upper": 0, "ledger_not_created": true}, "owner": 0, "point": "single_owner_lifecycle"}, {"ledger": {"exact": true, "integration_attempted_lower": 0, "integration_attempted_upper": 0, "integration_completed_lower": 0, "integration_completed_upper": 0, "ledger_not_created": true}, "owner": 0, "point": "two_process_short_pilot"}, {"ledger": {"exact": true, "integration_attempted_lower": 0, "integration_attempted_upper": 0, "integration_completed_lower": 0, "integration_completed_upper": 0, "ledger_not_created": true}, "owner": 1, "point": "two_process_short_pilot"}]}
+Stage12TrainingReady=False; PPO=0; cloud_training=0
+通过后下一步才是明确云GPU时长/费用和PPO验收预算。当前不启动云电脑或训练。
+手动执行 Stage12UploadCommand；push失败只重试push，保留started，不重跑--run。
+Stage12Transfer=LOCAL_TRANSFER_COMMIT_READY_MANUAL_PUSH_PENDING
+Stage12TransferDir=/tmp/tmpm_2pm3fa/integration-v1/transfer
+Stage12TransferBranch=stage12-local-completion-v1-transfer-20261015t191850z-779af6
+Stage12TransferCommit=64e9e1d698e755107b16576ca215ada659d273a0
+Stage12UploadCommand=git -C /tmp/tmpm_2pm3fa/integration-v1/transfer push origin HEAD
+Stage12Run=/tmp/tmpm_2pm3fa/integration-v1/20261015T191850Z-779af6
+Stage12LocalCompletion=LOCAL_COMPLETION_STOPPED_PRESERVE
+Stage12Transfer=LOCAL_TRANSFER_COMMIT_READY_MANUAL_PUSH_PENDING
+Stage12TransferDir=/tmp/tmpm_2pm3fa/integration-v1/transfer
+Stage12TransferBranch=stage12-local-completion-v1-transfer-20261015t191850z-779af6
+Stage12TransferCommit=64e9e1d698e755107b16576ca215ada659d273a0
+Stage12UploadCommand=git -C /tmp/tmpm_2pm3fa/integration-v1/transfer push origin HEAD
+ok
+test_existing_changed_part_is_not_overwritten (__main__.TransferTests.test_existing_changed_part_is_not_overwritten) ... ok
+test_existing_started_marker_never_launches_child (__main__.TransferTests.test_existing_started_marker_never_launches_child) ... ok
+test_interrupted_commit_can_finish_without_recreating_payload (__main__.TransferTests.test_interrupted_commit_can_finish_without_recreating_payload) ... ok
+test_real_git_commit_roundtrip_and_idempotence (__main__.TransferTests.test_real_git_commit_roundtrip_and_idempotence) ... ok
+test_unknown_existing_file_is_preserved (__main__.TransferTests.test_unknown_existing_file_is_preserved) ... ok
+test_zip_manifest_corruption_is_rejected (__main__.TransferTests.test_zip_manifest_corruption_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.515s
+
+OK
+Stage12NoRerun=all started markers retained
+Stage12Run=/tmp/tmpypwl1my6/run-base/old-run
+Stage12LocalCompletion=STARTED_NO_FINAL_RECEIPT; inspect existing process/log; never rerun
+Stage12NoRerun=all started markers retained

@@ -1,0 +1,46 @@
+{
+  "automatic_PR": false,
+  "automatic_merge": false,
+  "automatic_push": false,
+  "blockers": [
+    "Long-lived native nworld=1 runtime/lifecycle is not implemented or accepted; G11 runtime remains bounded.",
+    "Prepared config removes diagnostic events/recorder and enables auto_reset: new physical acceptance is pending.",
+    "Dedicated environment factory must own adaptive step, event reset, RNG, contact sorting, solver and cleanup before wrapper reset.",
+    "Multiple independent owners and native nworld>1 are distinct capabilities; neither has a Stage12 training release.",
+    "RSL runner observation/normalizer/RNN/timeout handling must be checked against captured installed source.",
+    "Measurement and cloud PPO budgets have not been authorized."
+  ],
+  "budget": {
+    "PPO": 0,
+    "cloud_training": 0,
+    "environment_constructions": 0,
+    "native_forward": 0,
+    "native_integrations": 0,
+    "optimizer_constructions": 0,
+    "policy_constructions": 0,
+    "torch_load": 0
+  },
+  "canonical_after": {
+    "attempted": 674457,
+    "completed": 674456
+  },
+  "canonical_before": {
+    "attempted": 674457,
+    "completed": 674456
+  },
+  "canonical_repo_git_mutations": 0,
+  "error": "RuntimeError('Host probe failed; read host-report.json/configuration-probe.json/log in the return ZIP')",
+  "isolated_transfer_commit": "PREPARED_AFTER_RETURN_ZIP; see transfer-receipt.json",
+  "preservation": "PASS",
+  "runtime_release": false,
+  "source_refs": {
+    "branch": "double-balance",
+    "head": "73ee01930a031d76a9d57419afdfd4464a547ab3",
+    "tag_commit": "6ba0dc2de381321576f32310e1995a8e2e11e566",
+    "tag_object": "bd1b219be55c813811d4f7cfa25d245b37166688"
+  },
+  "stage11": "11/11 CLOSED_SCOPED",
+  "status": "STAGE12_PREPARATION_BLOCKED",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/lx/下载/microduck-stage12-readiness-v3/microduck-stage12-readiness.py\", line 315, in run\n    require(code == 0, \"Host probe failed; read host-report.json/configuration-probe.json/log in the return ZIP\")\n  File \"/home/lx/下载/microduck-stage12-readiness-v3/stage12/contracts.py\", line 32, in require\n    raise RuntimeError(message)\nRuntimeError: Host probe failed; read host-report.json/configuration-probe.json/log in the return ZIP\n",
+  "training_ready": false
+}

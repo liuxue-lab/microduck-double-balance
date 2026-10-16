@@ -1,0 +1,98 @@
+{
+  "accounting": {
+    "all_operation_ledgers_clean": false,
+    "baseline_added_once": true,
+    "cumulative_attempted": [
+      674457,
+      674457
+    ],
+    "cumulative_completed": [
+      674456,
+      674456
+    ],
+    "historical_failure_retained": true,
+    "integration_counts_exact": true,
+    "native_added": {
+      "attempted_lower": 0,
+      "attempted_upper": 0,
+      "completed_lower": 0,
+      "completed_upper": 0
+    },
+    "owners": [
+      {
+        "ledger": {
+          "exact": false,
+          "integration_attempted_lower": 0,
+          "integration_attempted_upper": 0,
+          "integration_completed_lower": 0,
+          "integration_completed_upper": 0,
+          "ledger_not_created": true
+        },
+        "owner": 0,
+        "point": "single_owner_lifecycle"
+      },
+      {
+        "ledger": {
+          "exact": true,
+          "integration_attempted_lower": 0,
+          "integration_attempted_upper": 0,
+          "integration_completed_lower": 0,
+          "integration_completed_upper": 0,
+          "ledger_not_created": true
+        },
+        "owner": 0,
+        "point": "two_process_short_pilot"
+      },
+      {
+        "ledger": {
+          "exact": true,
+          "integration_attempted_lower": 0,
+          "integration_attempted_upper": 0,
+          "integration_completed_lower": 0,
+          "integration_completed_upper": 0,
+          "ledger_not_created": true
+        },
+        "owner": 1,
+        "point": "two_process_short_pilot"
+      }
+    ]
+  },
+  "automatic_PR": false,
+  "automatic_merge": false,
+  "automatic_push": false,
+  "budget": {
+    "PPO": 0,
+    "cloud_training": 0,
+    "environment_constructions": 3,
+    "evidence_reservation_bytes": 12213813248,
+    "native_CPU_forward": 144,
+    "native_GPU_forward": 155902,
+    "native_integrations": 38720,
+    "optimizer_constructions": 0,
+    "plan_sha256": "12ef65c6f34c555f923ecf7b11c555402418612e17eeec28a59ff4dbfcbecd77",
+    "policy_constructions": 0,
+    "reset_attempts": 18,
+    "torch_load": 0,
+    "wall_seconds": 43200
+  },
+  "canonical_after": {
+    "attempted": 674457,
+    "completed": 674456
+  },
+  "canonical_before": {
+    "attempted": 674457,
+    "completed": 674456
+  },
+  "error": "RuntimeError('Campaign stopped; full diagnostics retained; no restart')",
+  "preservation": "PASS",
+  "source_refs": {
+    "branch": "double-balance",
+    "head": "73ee01930a031d76a9d57419afdfd4464a547ab3",
+    "tag_commit": "6ba0dc2de381321576f32310e1995a8e2e11e566",
+    "tag_object": "bd1b219be55c813811d4f7cfa25d245b37166688"
+  },
+  "stage11": "11/11 CLOSED_SCOPED",
+  "status": "LOCAL_COMPLETION_STOPPED_PRESERVE",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/lx/下载/microduck-stage12-local-completion-v1/microduck-stage12-local.py\", line 399, in run\n    require(code == 0 and host['status'] == 'LOCAL_NATIVE_PILOT_PASS_CLOUD_BUDGET_PENDING',\n  File \"/home/lx/下载/microduck-stage12-local-completion-v1/stage12/contracts.py\", line 32, in require\n    raise RuntimeError(message)\nRuntimeError: Campaign stopped; full diagnostics retained; no restart\n",
+  "training_ready": false
+}

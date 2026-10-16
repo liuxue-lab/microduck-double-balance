@@ -1,0 +1,9 @@
+{
+  "distribution": "tensordict",
+  "version": "0.10.0",
+  "source_url": "https://github.com/pytorch/tensordict/blob/v0.10.0/tensordict/base.py",
+  "git_blob_sha1": "d66aff39e4707e57206550864f4a46c012abe99e",
+  "source_start_line": 523,
+  "iteration_source": "def __iter__(self) -> Generator:\n    \"\"\"Iterates over the first shape-dimension of the tensordict.\"\"\"\n    if not self.batch_dims:\n        raise StopIteration\n    yield from self.unbind(0)\n\n",
+  "note": "Review and development regression fixture only; not a new host import gate. TensorDict iteration traverses batch dimension; keys() returns observation group names."
+}

@@ -1,0 +1,28 @@
+test_extra_change_wrong_blob_or_wrong_parent_rejected (validation.test_transport.PublicationTests.test_extra_change_wrong_blob_or_wrong_parent_rejected) ... ok
+test_failed_identity_retains_raw_local_refs (validation.test_transport.PublicationTests.test_failed_identity_retains_raw_local_refs) ... ok
+test_frozen_base_and_exact_reviewed_followup_accepted (validation.test_transport.PublicationTests.test_frozen_base_and_exact_reviewed_followup_accepted) ... ok
+test_other_head_tag_branch_or_origin_rejected (validation.test_transport.PublicationTests.test_other_head_tag_branch_or_origin_rejected) ... ok
+test_archive_identity_and_network_commands_fail_closed (validation.test_transport.TransferTests.test_archive_identity_and_network_commands_fail_closed) ... ok
+test_blocked_new_run_still_prepares_manual_transfer_and_can_recover_packaging_only (validation.test_transport.TransferTests.test_blocked_new_run_still_prepares_manual_transfer_and_can_recover_packaging_only) ... ok
+test_existing_changed_part_is_not_overwritten (validation.test_transport.TransferTests.test_existing_changed_part_is_not_overwritten) ... ok
+test_existing_started_marker_never_launches_child (validation.test_transport.TransferTests.test_existing_started_marker_never_launches_child) ... ok
+test_interrupted_commit_can_finish_without_recreating_payload (validation.test_transport.TransferTests.test_interrupted_commit_can_finish_without_recreating_payload) ... ok
+test_real_git_commit_roundtrip_and_idempotence (validation.test_transport.TransferTests.test_real_git_commit_roundtrip_and_idempotence) ... ok
+test_unknown_existing_file_is_preserved (validation.test_transport.TransferTests.test_unknown_existing_file_is_preserved) ... ok
+test_zip_manifest_corruption_is_rejected (validation.test_transport.TransferTests.test_zip_manifest_corruption_is_rejected) ... ok
+test_corrupt_ledger_is_bounded_unknown_not_zero (validation.integration.test_local_accounting.AccountingTests.test_corrupt_ledger_is_bounded_unknown_not_zero) ... ok
+test_pending_attempt_never_inferred_completed (validation.integration.test_local_accounting.AccountingTests.test_pending_attempt_never_inferred_completed) ... ok
+test_started_without_ledger_is_not_clean_acceptance (validation.integration.test_local_accounting.AccountingTests.test_started_without_ledger_is_not_clean_acceptance) ... ok
+test_three_owners_add_baseline_once (validation.integration.test_local_accounting.AccountingTests.test_three_owners_add_baseline_once) ... ok
+test_boundary_accepts_null_device_but_keeps_network_process_and_file_denials (validation.test_git_import.GitImportTests.test_boundary_accepts_null_device_but_keeps_network_process_and_file_denials) ... ok
+test_caller_cwd_and_environment_are_required (validation.test_git_import.GitImportTests.test_caller_cwd_and_environment_are_required) ... ok
+test_failed_import_closes_the_window (validation.test_git_import.GitImportTests.test_failed_import_closes_the_window) ... ok
+test_inactive_window_and_wrong_command_never_allow_a_process (validation.test_git_import.GitImportTests.test_inactive_window_and_wrong_command_never_allow_a_process) ... ok
+test_null_device_requires_literal_path_character_mode_and_device_number (validation.test_git_import.GitImportTests.test_null_device_requires_literal_path_character_mode_and_device_number) ... ok
+test_third_query_and_changed_source_are_rejected (validation.test_git_import.GitImportTests.test_third_query_and_changed_source_are_rejected) ... ok
+test_version_and_installed_source_must_match (validation.test_git_import.GitImportTests.test_version_and_installed_source_must_match) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.617s
+
+OK

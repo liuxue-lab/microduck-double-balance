@@ -1,0 +1,67 @@
+{
+  "actor": "new random LSTM(61->256, one layer) + MLP(512,256,128)->14, not constructed",
+  "counters": "new run identity; iteration, common_step_counter and per-env episode counters start at zero",
+  "critic": "new random MLP(85->512->256->128->1), not constructed",
+  "distribution": "fresh configured action distribution; no old std copied",
+  "executed": false,
+  "future_same_task_resume": [
+    "exact task/config/source/dependency identity",
+    "model and optimizer schema",
+    "normalizers and counters",
+    "RNG and RNN/reset policy",
+    "consumed/remaining budget ledger",
+    "new explicit training authorization"
+  ],
+  "future_save_protocol_draft": {
+    "boundary": "completed optimizer update with durable consumed-budget ledger",
+    "continuation": "explicit update-boundary reset and RNG/RNN policy; no bitwise or mid-rollout equivalence claim",
+    "counter_fields": [
+      "last_completed_index",
+      "completed_updates",
+      "next_iteration",
+      "public_transitions",
+      "native_completed",
+      "native_attempted",
+      "remaining_authorized_budget"
+    ],
+    "identity": [
+      "task/config/source/dependency hashes",
+      "checkpoint bytes/SHA256",
+      "run id",
+      "seed/reset policy"
+    ],
+    "interrupted_update": "retain attempted counts and started marker; no automatic retry or budget refund",
+    "publication": "unique temp file; flush/fsync; atomic rename; SHA256 receipt committed last; retain partial files on failure",
+    "status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_AUTHORIZED"
+  },
+  "installed_runner_audit": {
+    "approved_resume_now": false,
+    "checkpoint_contains": "actor, critic, optimizer, normalizer buffers and iter; mjlab adds common_step_counter in infos",
+    "not_saved_by_default": [
+      "native physics state",
+      "environment RNG streams",
+      "live RNN hidden/cell",
+      "in-flight rollout",
+      "authoritative consumed/remaining budget ledger"
+    ],
+    "saved_iter": "last completed zero-based iteration index; completed_updates=iter+1 only with a committed ledger",
+    "source_review": "runner-integration-review.json",
+    "stock_resume_repeats_index": true
+  },
+  "key_mapping_is_semantic_compatibility": false,
+  "normalizers": "fresh actor/critic statistics; do not copy Stage08 statistics",
+  "old_checkpoint": {
+    "bytes": 10073500,
+    "direct_resume": "BLOCKED_TASK_AND_TIMING_DIFFER",
+    "disposition": "PRESERVE_READ_ONLY",
+    "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage08/returned/5d998fc322345102/evidence-20260930T093645-8955/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+    "schema_sha256": "e740e6ca4ad74c53a0eaaa9c95dcae9b69fd5b0edf122593743cd015dcb388a7",
+    "sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97"
+  },
+  "optimizer": "fresh; no Adam moments or LR schedule copied",
+  "random_episode_length_initialization": false,
+  "recurrent_state": "fresh zero state per episode; reset on terminated OR truncated; no mid-rollout resume claim",
+  "status": "FRESH_INITIALIZATION_PLAN_ONLY",
+  "torch_load_calls": 0,
+  "warm_start": "separate optional study; explicit feature-column/LSTM/normalizer policy and paired fresh baseline required"
+}

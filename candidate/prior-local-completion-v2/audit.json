@@ -1,0 +1,52 @@
+{
+  "base": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/local-completion-v2",
+  "run": "20261016T003054Z-3be226",
+  "transfer_branch": "stage12-local-completion-v2-transfer-20261016t003054z-3be226",
+  "transfer_commit": "5b312822fddee5b293ab34ffbcfe525d91ef7187",
+  "archive_filename": "stage12-local-return-20261016T003054Z-3be226.zip",
+  "archive_bytes": 15822501,
+  "archive_sha256": "4ffc3eaac132fb01be567a722f294948284a0dfab50736c41bf32137933ede8a",
+  "package_manifest_sha256": "12dbfbdda82598b47a8fd89fc28f928dcd1b16381d2ff5e461d2a82bb59ddcab",
+  "canonical_after": {
+    "completed": 674456,
+    "attempted": 674457
+  },
+  "retained_reports": [
+    "campaign.log",
+    "cloud-inputs.json",
+    "cpu-regression-reuse.json",
+    "environment.json",
+    "existing-tracked.patch",
+    "host-report.json",
+    "identity-after.json",
+    "identity-before.json",
+    "identity-observed-after.json",
+    "identity-observed-before.json",
+    "native-evidence-index.json",
+    "native-evidence-index.jsonl.gz",
+    "single_owner_lifecycle/owner-0/accounting-review.json",
+    "single_owner_lifecycle/owner-0/counter-checkpoint.json",
+    "single_owner_lifecycle/owner-0/native-ledger.jsonl",
+    "single_owner_lifecycle/owner-0/native-report.json",
+    "single_owner_lifecycle/owner-0/progress.json",
+    "single_owner_lifecycle/owner-0/source-pins-after.json",
+    "single_owner_lifecycle/owner-0/source-pins-before.json",
+    "single_owner_lifecycle/owner-0/started-v1.json",
+    "single_owner_lifecycle/owner-0-bootstrap/bootstrap-report.json",
+    "single_owner_lifecycle/owner-closeout.json",
+    "single_owner_lifecycle/started-v1.json",
+    "source-reuse-after.json",
+    "source-reuse-before.json",
+    "stage12-report.json"
+  ],
+  "source_bundle": {
+    "filename": "cloud-inputs.zip",
+    "bytes": 16181045,
+    "sha256": "24701df9e56face7980a1a2e0544dfebc41a4cf1b84ec4912be795d1a35a43b2"
+  },
+  "native_added_completed": 0,
+  "native_added_attempted": 0,
+  "physical_acceptance": false,
+  "verified_return_members": 413,
+  "verified_shards": 31
+}

@@ -1,0 +1,55 @@
+Stage12LocalPhase=single_owner_lifecycle; PPO=0 cloud_training=0
+Process SpawnProcess-1:
+Traceback (most recent call last):
+  File "/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/lx/下载/microduck-stage12-local-completion-v2/integration/process_owners.py", line 29, in native_child
+    with owner_session(repo, out, plan, authorization) as session:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/lx/下载/microduck-stage12-local-completion-v2/integration/native_factory.py", line 93, in owner_session
+    device = wp.get_device('cuda:0')
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/warp/_src/context.py", line 5857, in get_device
+    init()
+  File "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/warp/_src/context.py", line 9750, in init
+    runtime = Runtime()
+              ^^^^^^^^^
+  File "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/warp/_src/context.py", line 5226, in __init__
+    cpu_name = platform.processor()
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/platform.py", line 1036, in processor
+    return uname().processor
+           ^^^^^^^^^^^^^^^^^
+  File "/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/functools.py", line 998, in __get__
+    val = self.func(instance)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/platform.py", line 860, in processor
+    return _unknown_as_blank(_Processor.get())
+                             ^^^^^^^^^^^^^^^^
+  File "/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/platform.py", line 800, in get
+    return func() or ''
+           ^^^^^^
+  File "/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/platform.py", line 828, in from_subprocess
+    return subprocess.check_output(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py", line 1823, in _execute_child
+    sys.audit("subprocess.Popen", executable, args, cwd, env)
+  File "/home/lx/下载/microduck-stage12-local-completion-v2/integration/child_bootstrap.py", line 50, in boundary
+    raise RuntimeError('Native child forbids network/unreviewed subprocess: '+event)
+RuntimeError: Native child forbids network/unreviewed subprocess: subprocess.Popen
+[mdp] Patches 1-2 active: NaN-safe reward/advantage
+[mdp] Patch 4 active: ONNX export filters passive_* joints
+Stage12LocalCompletion=LOCAL_COMPLETION_STOPPED_PRESERVE

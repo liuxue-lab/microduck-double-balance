@@ -1,0 +1,43 @@
+{
+  "status": "G09_CLOSED_SCOPED",
+  "date_utc": "2026-10-15",
+  "fixed_commit": "085388e8f92255b3f885c8faf2ab7486ffe79589",
+  "fixed_tree": "40d0ea6cd637b440c519792b028a84807610721f",
+  "archive_sha256": "90cfa8c975934045344aa208b30644a007c2527aefcd82078afc44f2e3c97ffa",
+  "scope": "Two logical worlds mapped to two independently owned native nworld=1 simulators; reviewed finite diagnostic windows, original physical thresholds, selective reset, atomic joint publication/cancellation and bidirectional isolation.",
+  "checks": {
+    "owner_comparisons": "60/60",
+    "joint_pairs": "5/5",
+    "exact_replays": "12/12",
+    "joint_publications": 4,
+    "complete_state_consumers": 8,
+    "held_owner_checks": 10,
+    "trial_rollbacks": 28
+  },
+  "reused_world1_matrix": {
+    "branches": "9/9",
+    "comparisons": "41/41"
+  },
+  "global_phase_once_verified": true,
+  "new_global_event_expiry_test": false,
+  "original_failure_preserved": true,
+  "old_evidence_and_sources_preserved": true,
+  "native_calls_in_audit": 0,
+  "Stage11": {
+    "closed": 9,
+    "total": 11,
+    "percent": 81.81818181818181,
+    "unit": "fixed acceptance items, not time or code-work"
+  },
+  "G09": "CLOSED_SCOPED",
+  "G10": "OPEN",
+  "G11": "OPEN",
+  "PPO": 0,
+  "cloud_training": 0,
+  "exclusions": [
+    "Native nworld=2 batched Data path is not newly accepted by this joint return",
+    "Full Simulation graph and accepted adaptive RK4 graph equivalence belong to G10",
+    "Opaque checkpoint reconstruction and formal environment migration remain unaccepted",
+    "No unlimited-duration or arbitrary-world-count physical claim"
+  ]
+}

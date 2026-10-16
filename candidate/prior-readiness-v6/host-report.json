@@ -1,0 +1,31 @@
+{
+  "budget": {
+    "PPO": 0,
+    "cloud_training": 0,
+    "environment_constructions": 0,
+    "native_forward": 0,
+    "native_integrations": 0,
+    "optimizer_constructions": 0,
+    "policy_constructions": 0,
+    "torch_load": 0
+  },
+  "error": "TypeError(\"unhashable type: 'TensorDict'\")",
+  "source_preservation": "PASS",
+  "source_reuse": {
+    "assets_verified": 158,
+    "cloud_reproduction_bundle_complete": false,
+    "current_source_identities": 249,
+    "retained_source_bytes": 3591016,
+    "retained_source_files": 248,
+    "source_files_copied": 0,
+    "source_manifest_sha256": "411c1e3bb72350ac17e780c2a6acf887c74f7405ff9ef9586c27df32a879d9b6",
+    "status": "VERIFIED_IN_PLACE_NO_RECAPTURE",
+    "transfer_commits": [
+      "f6fb64e3ff1b90c7c9d65d1fb29c47df5b76b671",
+      "8f54003ac1e511ee3a2fe8b0c3b32c99a74744a9"
+    ]
+  },
+  "status": "HOST_READINESS_BLOCKED",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/lx/下载/microduck-stage12-readiness-v6/stage12/host_probe.py\", line 222, in main\n    config_probe(out, font_fallback, git_probe)\n  File \"/home/lx/下载/microduck-stage12-readiness-v6/stage12/host_probe.py\", line 118, in config_probe\n    report[\"wrapper_contract\"] = test_wrapper(torch, RslRlVecEnvWrapper, TensorDict, make_wrapper_class)\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/下载/microduck-stage12-readiness-v6/stage12/host_probe.py\", line 163, in test_wrapper\n    obs, rew, dones, extras = wrapper.step(torch.zeros(2, 14))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/下载/microduck-stage12-readiness-v6/stage12/vec_adapter.py\", line 32, in step\n    return snapshot_observations(obs, self.num_envs, tensor_dict), rewards, dones, extras\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/下载/microduck-stage12-readiness-v6/stage12/vec_adapter.py\", line 11, in snapshot_observations\n    require(set(obs) == {\"actor\", \"critic\"}, \"Unexpected observation groups\")\n            ^^^^^^^^\nTypeError: unhashable type: 'TensorDict'\n",
+  "training_ready": false
+}

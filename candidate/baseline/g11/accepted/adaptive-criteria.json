@@ -1,0 +1,29 @@
+{
+  "version": 3,
+  "scope": "G08 unchanged error criteria; trial-local additive-position float64 accumulator after native first2ms",
+  "local_state_limits": {
+    "free_translation_m": 2.5e-05,
+    "free_rotation_rad": 0.00025,
+    "hinge_position_rad": 0.00025,
+    "free_linear_velocity_m_s": 0.00125,
+    "angular_velocity_rad_s": 0.0125
+  },
+  "rationale": "Unscaled coarse/fine endpoint differences, no assumed RK order across contact discontinuities. Local bounds are one quarter of previously declared whole-path state bounds. Whole-path limits and 1mm pair overlap budget remain unchanged.",
+  "accepted_event_bracket_width_s": 2.5e-05,
+  "local_event_agreement_s": 6.25e-05,
+  "events": "Seven scoped pairs, constraint occupancy sampled at each microstep stage 0 and the endpoint forward. Brackets bound sampled occupancy transitions; no claim of finding unsampled double crossings or an exact continuous root.",
+  "max_grid_failure": "Restore starting numeric Data, emit failure and stop; no acceptance or public time advancement.",
+  "replay": "Replay first successful rejected-candidate refinement once per adaptive path at its actually accepted resolution; all numeric Data and solved-stage hashes must match exactly.",
+  "closure_requires": "Both 200ms pairs complete; every accepted adaptive step satisfies local tests; actual rejection and exact replay in each case; full Data rollback, unchanged external owners/Model/RNG/cadence; global state/contact and required-event agreement; original selected state restored; source/budget/transport independently reviewed.",
+  "physical_worlds": 1,
+  "macro_dt_s": 0.002,
+  "macro_count_per_path": 100,
+  "thresholds_may_change_after_results": false,
+  "automatic_retuning_or_rerun": false,
+  "formal_adoption": false,
+  "event_state_agreement": "Both initial and final occupancy maps must match as well as ordered transition directions and times.",
+  "algorithm_change": "Keep all native RK force/velocity stages. Sum original RK weighted velocities in float64 for23 additive coordinates; round once to float32 per microstep. Do not alter quaternions or velocities. Apply identically to adaptive and fixed128 comparison paths after first2ms. No finer tiers added.",
+  "correction_bound": "Per changed component:2 positional float32 ULPs +8*eps32*dt*max(abs(stage velocities)). Stop if exceeded.",
+  "counterfactual_guard": "First head-exit adaptive macro2 numeric Data hashes must equal reviewed r2 failure-window start before any compensated trial.",
+  "interpretation": "A diagnostic numerical candidate, not unchanged native integration or formal adoption. Thresholds, forces, contact material and clocks are unchanged."
+}

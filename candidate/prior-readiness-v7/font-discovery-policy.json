@@ -1,0 +1,30 @@
+{
+  "actual": {
+    "bytes": 57651,
+    "git_blob_sha1": "a44d5bd76b9ae875053c6a26a16cdf3300d2693c",
+    "sha256": "119f931d556373a707f7a0709645c98e7866b385331e6246b09bba79a6acc576"
+  },
+  "expected": {
+    "bytes": 57651,
+    "git_blob_sha1": "a44d5bd76b9ae875053c6a26a16cdf3300d2693c",
+    "sha256": "119f931d556373a707f7a0709645c98e7866b385331e6246b09bba79a6acc576"
+  },
+  "external_processes_allowed": 0,
+  "graphics_backend": "Agg",
+  "graphics_contexts_created": false,
+  "installed_files_modified": false,
+  "optional_fontconfig_denials": [
+    {
+      "argv": [
+        "fc-list",
+        "--help"
+      ],
+      "exception": "FileNotFoundError",
+      "handling": "reviewed upstream except OSError -> []",
+      "spawned": false
+    }
+  ],
+  "source": "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/matplotlib/font_manager.py",
+  "status": "OPTIONAL_FONTCONFIG_UNAVAILABLE_NATIVE_FONT_SCAN_FALLBACK",
+  "version": "3.10.9"
+}

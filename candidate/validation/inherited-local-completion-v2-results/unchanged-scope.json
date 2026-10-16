@@ -1,0 +1,18 @@
+{
+  "baseline_unchanged": 156,
+  "unchanged_runtime_and_checkpoint_files": [
+    "integration/native_factory.py",
+    "integration/native_runtime.py",
+    "integration/native_accounting.py",
+    "integration/planning.py",
+    "integration/transitions.py",
+    "integration/process_vector.py",
+    "integration/runner.py",
+    "integration/durable.py"
+  ],
+  "numerical_threshold_changes": 0,
+  "plan_sha256": "12ef65c6f34c555f923ecf7b11c555402418612e17eeec28a59ff4dbfcbecd77",
+  "PPO": 0,
+  "cloud_training": 0,
+  "actual_native_integrations": 0
+}

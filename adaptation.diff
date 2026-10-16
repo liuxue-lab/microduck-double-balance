@@ -1,0 +1,66 @@
+--- accepted-v7/integration/native_accounting.py
++++ cloud-candidate/integration/native_accounting.py
+@@ -10,6 +10,8 @@
+         super().__init__(out, counts, caps)
+ 
+     def progress(self, force=False):
++        from integration.cloud_limits import check_boundary
++        check_boundary(self.out, force=force)
+         now = time.monotonic()
+         if force or now - self.last_progress >= 5:
+             if not force and not getattr(self, 'disk_limit_seen', False) and shutil.disk_usage(self.out).free < 2 * 1024**3:
+@@ -25,7 +27,7 @@
+                 stage11='11/11 CLOSED_SCOPED', PPO=0, cloud_training=0,
+                 native_added_completed=self.counts.get('integrations_completed', 0),
+                 native_added_attempted=self.counts.get('integrations_attempted', 0),
+-                canonical_base={'completed':693528,'attempted':693529},
++                canonical_base={'completed':704664,'attempted':704665},
+                 canonical_must_be_aggregated_once_across_owners=True,
+-                wall_deadline=None))
++                wall_deadline=__import__("os").environ.get("MD12_NATIVE_DEADLINE")))
+             self.last_progress = now
+--- accepted-v7/integration/native_factory.py
++++ cloud-candidate/integration/native_factory.py
+@@ -23,11 +23,12 @@
+ 
+ def admission(plan, authorization):
+     validate_owner(plan)
++    require(authorization.get('scope') == 'STAGE12_CLOUD_5090_EXECUTION_V1', 'Cloud scope token missing')
+     require(authorization.get('authorization') == 'USER_AUTHORIZED_NATIVE_MEASUREMENT' and
+             authorization.get('owner_plan_sha256') == fingerprint(plan) and
+             authorization.get('PPO') == 0 and authorization.get('cloud_training') == 0,
+             'Native budget remains zero until the complete owner plan is explicitly authorized')
+-    require(authorization.get('canonical_before') == {'completed': 693528, 'attempted': 693529},
++    require(authorization.get('canonical_before') == {'completed': 704664, 'attempted': 704665},
+             'Fresh ledger reconciliation is required before a later native batch')
+ 
+ 
+@@ -49,7 +50,7 @@
+     counts = dict(integrations_attempted=0, integrations_completed=0, PPO=0, cloud=0)
+     journal = SessionJournal(out, counts, caps, plan)
+     report = dict(status='STAGE12_NATIVE_CANDIDATE_STARTED', training_ready=False,
+-                  canonical_before={'completed': 693528, 'attempted': 693529},
++                  canonical_before={'completed': 704664, 'attempted': 704665},
+                   PPO=0, cloud_training=0, physical_acceptance=False)
+     gate = env = contact = reductions = resources = runtime = None
+     env_initialized = False
+@@ -97,7 +98,7 @@
+         wp.config.kernel_cache_dir = paths['warp_cache']
+         report['runtime_paths'] = paths
+         device = wp.get_device('cuda:0')
+-        require(device.is_cuda and '5060' in device.name, 'Only the proposed local RTX5060 measurement scope is supported')
++        require(device.is_cuda and '5090' in device.name, 'Only the inventoried RTX5090 cloud candidate is supported')
+         require(mujoco.get_mjcb_control() is None, 'CPU control callback present')
+         wp.set_device(device)
+         def sync():
+--- accepted-v7/integration/native_runtime.py
++++ cloud-candidate/integration/native_runtime.py
+@@ -173,6 +173,8 @@
+         self.last_endpoint = None
+ 
+     def advance(self, env):
++        from integration.cloud_limits import check_boundary
++        check_boundary(self.out)
+         from integration.owner_roster import roots_for
+         from integration.refined_state import RefinedStateBridge as GroundPairStateBridge
+         from native_rk4_bridge import NativeRK4Bridge

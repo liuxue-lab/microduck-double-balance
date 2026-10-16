@@ -1,0 +1,16 @@
+{
+  "reproduced": true,
+  "error": "Git import must run inside the new output directory",
+  "real_bootstrap_dependencies": true,
+  "native_integrations": 0,
+  "messages": [
+    {
+      "sequence": 0,
+      "owner": 0,
+      "ok": false,
+      "error": "RuntimeError('Git import must run inside the new output directory')"
+    }
+  ],
+  "PPO": 0,
+  "cloud_training": 0
+}

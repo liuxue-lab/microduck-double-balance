@@ -1,0 +1,39 @@
+test_existing_output_not_overwritten (validation.integration.test_contracts.LedgerTests.test_existing_output_not_overwritten) ... ok
+test_identity_mismatch_blocks (validation.integration.test_contracts.LedgerTests.test_identity_mismatch_blocks) ... ok
+test_ledger_tamper_rejected (validation.integration.test_contracts.LedgerTests.test_ledger_tamper_rejected) ... ok
+test_old_checkpoint_cannot_be_latest (validation.integration.test_contracts.LedgerTests.test_old_checkpoint_cannot_be_latest) ... ok
+test_partial_tail_is_not_clean (validation.integration.test_contracts.LedgerTests.test_partial_tail_is_not_clean) ... ok
+test_payload_corruption_blocks_before_deserialization (validation.integration.test_contracts.LedgerTests.test_payload_corruption_blocks_before_deserialization) ... ok
+test_pending_rollout_blocks_previous_resume (validation.integration.test_contracts.LedgerTests.test_pending_rollout_blocks_previous_resume) ... ok
+test_symlink_refused (validation.integration.test_contracts.LedgerTests.test_symlink_refused) ... ok
+test_two_updates_have_no_duplicate_iteration (validation.integration.test_contracts.LedgerTests.test_two_updates_have_no_duplicate_iteration) ... ok
+test_writer_failure_retains_started_and_pending (validation.integration.test_contracts.LedgerTests.test_writer_failure_retains_started_and_pending) ... ok
+test_caps_cover_worst_case_and_cleanup (validation.integration.test_contracts.PlanningTests.test_caps_cover_worst_case_and_cleanup) ... ok
+test_complete_proposal_is_unapproved (validation.integration.test_contracts.PlanningTests.test_complete_proposal_is_unapproved) ... ok
+test_edited_cap_cannot_pass (validation.integration.test_contracts.PlanningTests.test_edited_cap_cannot_pass) ... ok
+test_lr_scalar_restored (validation.integration.test_contracts.PlanningTests.test_lr_scalar_restored) ... ok
+test_native_denied_before_creation (validation.integration.test_contracts.PlanningTests.test_native_denied_before_creation) ... ok
+test_old_tier_and_capacity_unchanged (validation.integration.test_contracts.PlanningTests.test_old_tier_and_capacity_unchanged) ... ok
+test_recurrent_N1_and_N2 (validation.integration.test_contracts.PlanningTests.test_recurrent_N1_and_N2) ... ok
+test_throughput_counts_transitions_not_microsteps (validation.integration.test_contracts.PlanningTests.test_throughput_counts_transitions_not_microsteps) ... ok
+test_training_denied_before_models (validation.integration.test_contracts.PlanningTests.test_training_denied_before_models) ... ok
+test_failed_fake_update_is_pending_and_not_checkpointed (validation.integration.test_contracts.RunnerLoopTests.test_failed_fake_update_is_pending_and_not_checkpointed) ... ok
+test_two_fake_updates_have_48_transitions_and_unique_checkpoints (validation.integration.test_contracts.RunnerLoopTests.test_two_fake_updates_have_48_transitions_and_unique_checkpoints) ... ok
+test_bundle_path_and_duplicates_rejected (validation.integration.test_contracts.SourceTests.test_bundle_path_and_duplicates_rejected) ... ok
+test_bundle_roundtrip_and_identity (validation.integration.test_contracts.SourceTests.test_bundle_roundtrip_and_identity) ... ok
+test_episode_clock_crosses_20_without_changing_algorithm (validation.integration.test_contracts.SourceTests.test_episode_clock_crosses_20_without_changing_algorithm) ... ok
+test_native_factory_compiles_without_importing_native (validation.integration.test_contracts.SourceTests.test_native_factory_compiles_without_importing_native) ... ok
+test_no_push_or_stock_train_in_new_modules (validation.integration.test_contracts.SourceTests.test_no_push_or_stock_train_in_new_modules) ... ok
+test_numerical_helpers_ast_unchanged (validation.integration.test_contracts.SourceTests.test_numerical_helpers_ast_unchanged) ... ok
+test_rng_owner_roster_identical (validation.integration.test_contracts.SourceTests.test_rng_owner_roster_identical) ... ok
+test_runtime_30_macros_reset_tick_and_nonzero_global_counter (validation.integration.test_contracts.SourceTests.test_runtime_30_macros_reset_tick_and_nonzero_global_counter) ... ok
+test_child_failure_no_retry (validation.integration.test_contracts.TransportTests.test_child_failure_no_retry) ... ok
+test_ordered_fanout (validation.integration.test_contracts.TransportTests.test_ordered_fanout) ... ok
+test_stale_sequence_rejected (validation.integration.test_contracts.TransportTests.test_stale_sequence_rejected) ... ok
+test_timeout_no_resend (validation.integration.test_contracts.TransportTests.test_timeout_no_resend) ... ok
+test_wrong_owner_poisoned (validation.integration.test_contracts.TransportTests.test_wrong_owner_poisoned) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 0.409s
+
+OK

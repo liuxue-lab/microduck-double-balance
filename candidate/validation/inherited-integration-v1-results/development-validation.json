@@ -1,0 +1,63 @@
+{
+  "PPO": 0,
+  "cloud_training": 0,
+  "compiled_files": [
+    "microduck-stage12-readiness.py",
+    "stage12/__init__.py",
+    "stage12/contracts.py",
+    "stage12/headless.py",
+    "stage12/host_probe.py",
+    "stage12/host_sources.py",
+    "stage12/optional_imports.py",
+    "stage12/publication.py",
+    "stage12/runner_contract.py",
+    "stage12/source_capture.py",
+    "stage12/source_reuse.py",
+    "stage12/task_candidate.py",
+    "stage12/transfer.py",
+    "stage12/vec_adapter.py",
+    "validation/test_optional_imports.py",
+    "validation/test_preparation.py",
+    "validation/test_source_capture.py",
+    "validation/test_transport.py",
+    "validation/test_v4.py"
+  ],
+  "compiled_new_python_files": 19,
+  "frozen_g11_files_identical": 149,
+  "gpu_runtime_tested": false,
+  "limitations": [
+    "No Torch/MuJoCo/Warp/mjlab installed in assistant runtime; no real environment or host config acceptance claimed.",
+    "Upstream discovery branch tests use mocked CDLL; installed native import must still be verified by the v4 host receipt.",
+    "Complete source reuse host test uses a temporary 249-source/158-asset fixture; no physical batch was run.",
+    "Return remains incremental source evidence referencing fixed v2/v3 archives, not a complete cloud reproduction bundle.",
+    "Matplotlib exact-source fallback and real Python audit event tested; installed Matplotlib import on the user host remains pending."
+  ],
+  "native_forward": 0,
+  "native_integrations": 0,
+  "real_mjlab_config_probe": "PENDING_USER_HOST_RUN",
+  "real_python_audit_experiment": {
+    "fontconfig_denials": 1,
+    "installed_matplotlib_imported": false,
+    "optional_processes_spawned": 0,
+    "reviewed_font_function": "exact-source AST with fixture path",
+    "status": "PASS",
+    "unknown_process_blocked": true
+  },
+  "release_paths": "V5_SEPARATE_FROM_V1_V2_V3_V4",
+  "status": "DEVELOPMENT_VALIDATION_PASS",
+  "tests": {
+    "optional_font_discovery": 6,
+    "preparation_contracts": 12,
+    "publication_and_transport": 12,
+    "source_identity_and_reuse": 12,
+    "total": 56,
+    "v4_headless_reuse_runner": 14
+  },
+  "validation_commands": [
+    "python3 -I -B validation/test_preparation.py",
+    "python3 -I -B validation/test_transport.py",
+    "python3 -I -B validation/test_source_capture.py",
+    "python3 -I -B validation/test_v4.py",
+    "python3 -I -B validation/test_optional_imports.py"
+  ]
+}

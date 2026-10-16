@@ -1,0 +1,81 @@
+{
+  "automatic_PR": false,
+  "automatic_merge": false,
+  "automatic_push": false,
+  "canonical": {
+    "attempted": 674457,
+    "completed": 674456
+  },
+  "current_next_command": "microduck-stage12-integration.py --run",
+  "current_run_scope": "aggregate CPU new contracts and source/asset input bundle only",
+  "execution_budget": {
+    "PPO": 0,
+    "cloud_training": 0,
+    "environment_constructions": 0,
+    "native_forward": 0,
+    "native_integrations": 0,
+    "optimizer_constructions": 0,
+    "policy_constructions": 0,
+    "torch_load": 0
+  },
+  "modules": [
+    {
+      "acceptance": "CPU_ACCEPTED",
+      "area": "configuration/registry/cached observations",
+      "files": [
+        "prior-readiness-v7/configuration-probe.json"
+      ],
+      "implementation": "v7 actual-host PASS reused"
+    },
+    {
+      "acceptance": "NATIVE_PENDING",
+      "area": "bounded continuing runtime and global/episode counters",
+      "implementation": "native_runtime.py candidate; source helpers unchanged; reset/cross-20 protocol verified"
+    },
+    {
+      "acceptance": "NATIVE_PENDING",
+      "area": "factory/lifecycle/RNG",
+      "implementation": "native_factory.py/rng_policy.py/native_accounting.py; exact empty interval roster, explicit per-session caps, cleanup"
+    },
+    {
+      "acceptance": "DEVELOPMENT_PROTOCOL_PASS_HOST_CPU_PENDING",
+      "area": "terminal observation and timeout bootstrap",
+      "implementation": "transitions.py; clone before manual reset; terminated dominates timeout; one V(terminal) correction"
+    },
+    {
+      "acceptance": "FILESYSTEM_PROTOCOL_PASS_REAL_MODEL_UPDATE_PENDING",
+      "area": "checkpoint and runner",
+      "implementation": "durable.py/runner.py; unique publication, commit ledger, next_iteration, LR scalar; no old checkpoint load"
+    },
+    {
+      "acceptance": "PROTOCOL_PASS_NATIVE_PROCESS_PENDING",
+      "area": "multi-environment",
+      "implementation": "process_owners.py/process_vector.py; spawn, one owner per process, ordered IPC, no retries"
+    },
+    {
+      "acceptance": "STATIC_ONLY_NO_MEASUREMENT",
+      "area": "scale/cost/throughput",
+      "implementation": "planning.py; complete conservative operation ceilings and synchronized throughput units"
+    },
+    {
+      "acceptance": "BUILDER_TESTED_TARGET_CLOUD_ENVIRONMENT_PENDING",
+      "area": "cloud inputs",
+      "implementation": "source_bundle.py; next CPU run packages 248 source files and 158 assets; excludes old checkpoints"
+    }
+  ],
+  "no_promised_number_of_remaining_runs": true,
+  "old_batches_rerun": false,
+  "old_started_deleted": false,
+  "old_thresholds_changed": false,
+  "predecessor": "v7 CPU preparation PASS, reused without rerun",
+  "predecessor_commit": "472a23f2f83dd43d59b6964bd6233b0745e234dc",
+  "protocol": "stage12-integration-v1",
+  "release_conditions": [
+    "New candidate physical lifecycle/terminal/reset validation with a separately authorized complete measurement budget",
+    "Measure actual public transitions/sec, native costs and memory before estimating cloud update cost",
+    "Reproduce and verify dependencies/assets/runtime on the chosen cloud GPU",
+    "Explicit cloud PPO update/time/spend budget plus small end-to-end model/checkpoint acceptance"
+  ],
+  "runtime_release": false,
+  "training_ready": false
+}

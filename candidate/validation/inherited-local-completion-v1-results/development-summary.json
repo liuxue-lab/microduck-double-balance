@@ -1,0 +1,59 @@
+{
+  "PPO": 0,
+  "actual_cpu_tensor_spawn_scenarios": 13,
+  "actual_tensordict": "0.10.0",
+  "actual_torch": "2.9.1+cpu",
+  "artifact_roundtrip_checks": 7,
+  "baseline_unchanged_files": 156,
+  "cloud_training": 0,
+  "native_integrations": 0,
+  "optimizer_constructions": 0,
+  "policy_constructions": 0,
+  "real_environments": 0,
+  "scope": "CPU tensors and actual spawn; fake environments and fake algorithms. Artifact roundtrip uses labelled synthetic acceptance receipts, not native acceptance.",
+  "status": "PASS",
+  "total_cases": 117,
+  "unit_tests": 104,
+  "unittest_suites": [
+    {
+      "passed": true,
+      "suite": "integration-test_contracts.py",
+      "tests": 34
+    },
+    {
+      "passed": true,
+      "suite": "test_git_import.py",
+      "tests": 7
+    },
+    {
+      "passed": true,
+      "suite": "test_local_accounting.py",
+      "tests": 4
+    },
+    {
+      "passed": true,
+      "suite": "test_optional_imports.py",
+      "tests": 6
+    },
+    {
+      "passed": true,
+      "suite": "test_preparation.py",
+      "tests": 15
+    },
+    {
+      "passed": true,
+      "suite": "test_source_capture.py",
+      "tests": 12
+    },
+    {
+      "passed": true,
+      "suite": "test_transport.py",
+      "tests": 12
+    },
+    {
+      "passed": true,
+      "suite": "test_v4.py",
+      "tests": 14
+    }
+  ]
+}

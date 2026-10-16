@@ -1,0 +1,19 @@
+{
+  "authorization": "PENDING_USER_BUDGET",
+  "gpu_model": null,
+  "gpu_hours": null,
+  "spend_limit": null,
+  "currency": null,
+  "num_envs": null,
+  "num_mini_batches": null,
+  "PPO_updates": 0,
+  "policy_constructions": 0,
+  "optimizer_constructions": 0,
+  "checkpoint_deserializations": 0,
+  "cloud_training": 0,
+  "cloud_native_acceptance_budget": null,
+  "rollout_steps_per_env": 24,
+  "checkpoint_mode": "fresh; preserve Stage08 read-only",
+  "restart_policy": "no automatic retry or refund; new authorization after incomplete attempt",
+  "scope": "Environment installation/inventory, native acceptance, model/update/checkpoint validation and formal training require explicit separate limits. This file authorizes none of them."
+}

@@ -1,0 +1,39 @@
+{
+  "changed_inherited_files": {
+    "integration/native_accounting.py": {
+      "before": {
+        "bytes": 1661,
+        "sha256": "221170cfd6375d604f7aef0b0f07e0633fa01892187e08b65ba03cb1bc60cf17"
+      },
+      "after": {
+        "bytes": 1815,
+        "sha256": "7bded819b2e954003c835517a88de1141e42513e94adc90e129fc1999ca9c923"
+      }
+    },
+    "integration/native_factory.py": {
+      "before": {
+        "bytes": 19188,
+        "sha256": "7b2f2fc2357000a9dd9623acc8a7c5759e56fbe504b2ec5a0ec88c6d4fa844f3"
+      },
+      "after": {
+        "bytes": 19289,
+        "sha256": "468d72d21411f5fde9b6007fb5f1d631d4ad9fff7c0720a73b54f764d6cc6338"
+      }
+    },
+    "integration/native_runtime.py": {
+      "before": {
+        "bytes": 14875,
+        "sha256": "291c664941c7b30f581192c20263058a9e3141b45c06e1d04a3eb2b928f16d05"
+      },
+      "after": {
+        "bytes": 14968,
+        "sha256": "1145ebb1ceacbaaa386f721005cc555ffd23824d59df843b2243e262206bd041"
+      }
+    }
+  },
+  "new_native_guard": "candidate/integration/cloud_limits.py",
+  "frozen_accepted_files_byte_identical": 92,
+  "host_candidate_files_byte_identical": 13,
+  "source_bundle_reused": true,
+  "old_archive_files_modified": 0
+}

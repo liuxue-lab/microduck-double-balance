@@ -1,0 +1,37 @@
+{
+  "base": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/local-completion-v1",
+  "run": "20261016T001141Z-fd8844",
+  "transfer_branch": "stage12-local-completion-v1-transfer-20261016t001141z-fd8844",
+  "transfer_commit": "623484cd5dbb8182205dc035dd13fc95d831b821",
+  "archive_filename": "stage12-local-return-20261016T001141Z-fd8844.zip",
+  "archive_bytes": 15735288,
+  "archive_sha256": "01c50a20a5c2db411050db848ef6c16780ea350963a286381357a90ac958e12f",
+  "package_manifest_sha256": "7a65d7ee18fc4a172f9b1b6ea134061e662a72bfca3d71b7e2f550d57ffe51b2",
+  "retained_reports": [
+    "stage12-report.json",
+    "host-report.json",
+    "cloud-inputs.json",
+    "cpu-regression/real-cpu-report.json",
+    "identity-before.json",
+    "identity-after.json",
+    "single_owner_lifecycle/owner-closeout.json",
+    "single_owner_lifecycle/started-v1.json",
+    "campaign.log"
+  ],
+  "source_bundle": {
+    "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/local-completion-v1/20261016T001141Z-fd8844/cloud-inputs.zip",
+    "bytes": 16181045,
+    "sha256": "24701df9e56face7980a1a2e0544dfebc41a4cf1b84ec4912be795d1a35a43b2",
+    "members": 410
+  },
+  "cpu_report_sha256": "f45e54fe2cd15b36f24ca0ec9dad99eb6d4baefae497b7d4e48a58ed848148f3",
+  "native_added_completed": 0,
+  "native_added_attempted": 0,
+  "canonical_after": {
+    "completed": 674456,
+    "attempted": 674457
+  },
+  "reason": "Child cwd differs from its new scratch; stopped before native owner_session and before WAL creation",
+  "PPO": 0,
+  "cloud_training": 0
+}

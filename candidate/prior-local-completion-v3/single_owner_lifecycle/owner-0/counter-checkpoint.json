@@ -1,0 +1,18 @@
+{
+  "counts": {
+    "CPU_forward_attempted": 2,
+    "CPU_forward_completed": 2,
+    "CPU_kinematics_attempted": 1,
+    "CPU_kinematics_completed": 1,
+    "PPO": 0,
+    "Scene_initialize_attempted": 1,
+    "cloud": 0,
+    "context_create_attempted": 1,
+    "graph_setup_suppressed": 1,
+    "integrations_attempted": 0,
+    "integrations_completed": 0
+  },
+  "pending": {},
+  "phase": "worker-finished",
+  "wal_sequence": 4
+}

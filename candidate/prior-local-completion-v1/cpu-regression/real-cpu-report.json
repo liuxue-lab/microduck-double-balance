@@ -1,0 +1,230 @@
+{
+  "PPO": 0,
+  "backend": "actual CPU tensors and spawn; simulated environments",
+  "cases": [
+    {
+      "name": "transition/dict/0/0",
+      "passed": true,
+      "result": {
+        "cache": "dict",
+        "passed": true,
+        "real_PPO": false,
+        "real_environment": false,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "name": "transition/dict/1/0",
+      "passed": true,
+      "result": {
+        "cache": "dict",
+        "passed": true,
+        "real_PPO": false,
+        "real_environment": false,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "name": "transition/dict/0/1",
+      "passed": true,
+      "result": {
+        "cache": "dict",
+        "passed": true,
+        "real_PPO": false,
+        "real_environment": false,
+        "terminated": false,
+        "truncated": true
+      }
+    },
+    {
+      "name": "transition/dict/1/1",
+      "passed": true,
+      "result": {
+        "cache": "dict",
+        "passed": true,
+        "real_PPO": false,
+        "real_environment": false,
+        "terminated": true,
+        "truncated": true
+      }
+    },
+    {
+      "name": "transition/TensorDict/0/0",
+      "passed": true,
+      "result": {
+        "cache": "TensorDict",
+        "passed": true,
+        "real_PPO": false,
+        "real_environment": false,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "name": "transition/TensorDict/1/0",
+      "passed": true,
+      "result": {
+        "cache": "TensorDict",
+        "passed": true,
+        "real_PPO": false,
+        "real_environment": false,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "name": "transition/TensorDict/0/1",
+      "passed": true,
+      "result": {
+        "cache": "TensorDict",
+        "passed": true,
+        "real_PPO": false,
+        "real_environment": false,
+        "terminated": false,
+        "truncated": true
+      }
+    },
+    {
+      "name": "transition/TensorDict/1/1",
+      "passed": true,
+      "result": {
+        "cache": "TensorDict",
+        "passed": true,
+        "real_PPO": false,
+        "real_environment": false,
+        "terminated": true,
+        "truncated": true
+      }
+    },
+    {
+      "name": "two-owner-protocol",
+      "passed": true,
+      "result": {
+        "native_nworld_tested": false,
+        "owners": 2,
+        "passed": true,
+        "transport": "in-memory-protocol-only"
+      }
+    },
+    {
+      "name": "wire-real-tensors-and-malformed-inputs",
+      "passed": true,
+      "result": {
+        "actual_TensorDict_ambiguity_tested": true,
+        "detached_snapshot": true,
+        "dtypes": 5,
+        "malformed_cases": 9,
+        "scalar_and_empty_shapes": true
+      }
+    },
+    {
+      "name": "spawn-normal",
+      "passed": true,
+      "result": {
+        "actual_Torch_TensorDict": true,
+        "actual_spawn": true,
+        "native_worlds": 0,
+        "owners": [
+          {
+            "PPO": 0,
+            "attempted_steps": 2,
+            "calls": {
+              "compute": 0,
+              "reset": 4,
+              "step": 2
+            },
+            "closed": true,
+            "cloud_training": 0,
+            "completed_steps": 2,
+            "cuda_initialized": false,
+            "expected_failure": false,
+            "native": 0,
+            "owner": 0
+          },
+          {
+            "PPO": 0,
+            "attempted_steps": 2,
+            "calls": {
+              "compute": 0,
+              "reset": 3,
+              "step": 2
+            },
+            "closed": true,
+            "cloud_training": 0,
+            "completed_steps": 2,
+            "cuda_initialized": false,
+            "expected_failure": false,
+            "native": 0,
+            "owner": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "spawn-failure",
+      "passed": true,
+      "result": {
+        "actual_Torch_TensorDict": true,
+        "actual_spawn": true,
+        "native_worlds": 0,
+        "owners": [
+          {
+            "PPO": 0,
+            "attempted_steps": 2,
+            "calls": {
+              "compute": 0,
+              "reset": 3,
+              "step": 2
+            },
+            "closed": true,
+            "cloud_training": 0,
+            "completed_steps": 2,
+            "cuda_initialized": false,
+            "expected_failure": false,
+            "native": 0,
+            "owner": 0
+          },
+          {
+            "PPO": 0,
+            "attempted_steps": 2,
+            "calls": {
+              "compute": 0,
+              "reset": 2,
+              "step": 1
+            },
+            "cloud_training": 0,
+            "completed_steps": 1,
+            "cuda_initialized": false,
+            "error": "RuntimeError('injected CPU owner failure; do not retry')",
+            "expected_failure": true,
+            "native": 0,
+            "owner": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "production-supervisor-and-campaign-CPU-fixture",
+      "passed": true,
+      "result": {
+        "actual_native_integrations": 0,
+        "actual_spawn": true,
+        "actual_supervisor_and_campaign": true,
+        "native_factory": "FAKE_CPU_FIXTURE",
+        "synthetic_counters_are_not_native_evidence": true
+      }
+    }
+  ],
+  "cloud_training": 0,
+  "cuda_initialized": false,
+  "model_constructions": 0,
+  "native_integrations": 0,
+  "optimizer_constructions": 0,
+  "passed": true,
+  "real_environments": 0,
+  "tensordict_version": "0.10.0",
+  "torch_load": 0,
+  "torch_version": "2.9.1+cu128"
+}

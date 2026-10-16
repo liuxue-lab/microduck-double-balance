@@ -1,0 +1,10 @@
+{"kind":"attempt","label":"CPU_forward","number":1,"seq":1}
+{"kind":"complete","label":"CPU_forward","number":1,"seq":2}
+{"kind":"attempt","label":"CPU_forward","number":2,"seq":3}
+{"kind":"complete","label":"CPU_forward","number":2,"seq":4}
+{"kind":"attempt","label":"CPU_forward","number":3,"seq":5}
+{"kind":"complete","label":"CPU_forward","number":3,"seq":6}
+{"kind":"attempt","label":"GPU_forward","number":1,"seq":7}
+{"kind":"complete","label":"GPU_forward","number":1,"seq":8}
+{"kind":"attempt","label":"GPU_forward","number":2,"seq":9}
+{"kind":"complete","label":"GPU_forward","number":2,"seq":10}

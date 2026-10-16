@@ -1,0 +1,71 @@
+{
+  "GPU_execution": false,
+  "active_physics_and_accounting_files_unchanged": [
+    "native_accounting.py",
+    "planning.py",
+    "transitions.py",
+    "process_vector.py",
+    "process_owners.py",
+    "runner.py",
+    "durable.py",
+    "local_campaign.py"
+  ],
+  "all_numeric_helper_classes_AST_unchanged": true,
+  "baseline_files_unchanged": 156,
+  "native_factory_changes": [
+    "single shared owner roster import",
+    "independent CPU manager interfaces before GPU construction",
+    "owner metadata inventory before snapshot"
+  ],
+  "native_integrations": 0,
+  "native_runtime_changes": [
+    "single shared owner roster import",
+    "failure-only metadata inventory; no physics"
+  ],
+  "owner_roster_AST_only_change": "enumerate(manager._terms) -> enumerate(recorder_terms(manager))",
+  "passed": true,
+  "physical_acceptance": false,
+  "private_RNG_method_AST_unchanged": true,
+  "reviewed_installed_sources": {
+    "mjlab/envs/manager_based_rl_env.py": {
+      "matches_host_source_pin": true,
+      "sha256": "a381027e336d6313cd338d541230b36864657edac89708a33e7e60c0c6fb74d2"
+    },
+    "mjlab/managers/action_manager.py": {
+      "matches_host_source_pin": true,
+      "sha256": "fec79f933fd9437dc9fcb784e4f214b9bae4aad2252c2d2d1387b11b605a5332"
+    },
+    "mjlab/managers/command_manager.py": {
+      "matches_host_source_pin": true,
+      "sha256": "2d4c81aa5f62172cb0dacf6b534341f4b09b017180ddd7c1987cb0730dd21fd0"
+    },
+    "mjlab/managers/curriculum_manager.py": {
+      "matches_host_source_pin": true,
+      "sha256": "e26e168f87a33c04018b02a2ef80a1b7c84d8ae5821feecde94117b6a2d8e875"
+    },
+    "mjlab/managers/event_manager.py": {
+      "matches_host_source_pin": true,
+      "sha256": "81baff0a6c12a1532d7bb26d9b125266ac0e9dc42f75d25a32aa373f77fa95b0"
+    },
+    "mjlab/managers/metrics_manager.py": {
+      "matches_host_source_pin": true,
+      "sha256": "c78b9a58d6e5457f841847ee9e48592d2634d294d583585adeedbb030c879d85"
+    },
+    "mjlab/managers/observation_manager.py": {
+      "matches_host_source_pin": true,
+      "sha256": "db9feb383786b4b144efc8cc71c9a9804b6611b3d148b6ceed283cd66eef53a8"
+    },
+    "mjlab/managers/recorder_manager.py": {
+      "matches_host_source_pin": true,
+      "sha256": "29ed529ffa77d8a70108d44ae9235ba8f2fd20ea309e0c522e52f76a8523d2b6"
+    },
+    "mjlab/managers/reward_manager.py": {
+      "matches_host_source_pin": true,
+      "sha256": "8d1679cc4b0581dc0000493e0a661f3976c5f9c54f800bd825aee340a685f2a7"
+    },
+    "mjlab/managers/termination_manager.py": {
+      "matches_host_source_pin": true,
+      "sha256": "05a8bff570cb9eafb5e5a733e54c18a9cd0750165446132e6ffa5138225dae66"
+    }
+  }
+}

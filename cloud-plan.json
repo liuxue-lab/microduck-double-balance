@@ -1,0 +1,1953 @@
+{
+  "format": "microduck-stage12-cloud-execution-v1",
+  "canonical_before": {
+    "completed": 704664,
+    "attempted": 704665
+  },
+  "inventory_commit": "530adc361e93d013c04d5a80176819f03150d1d9",
+  "local_N2_commit": "d506be014253a2bb0439ec03b3282497a33f2e2b",
+  "deadline_UTC": "2026-10-17T03:53:14Z",
+  "deadline_epoch": 1792209194.0,
+  "native_cutoff_UTC": "2026-10-17T03:23:14Z",
+  "budget_scope": "Total campaign, including install/wait/interrupt; no reset on resume; not a claim about unknown earlier instance billing",
+  "points": [
+    {
+      "name": "n1-pilot",
+      "owners": [
+        {
+          "format": "stage12-owner-plan-v1",
+          "logical_world": 0,
+          "native_nworld": 1,
+          "public_steps": 3,
+          "max_macros": 30,
+          "max_resets": 6,
+          "max_episode_ticks": 5000,
+          "caps": {
+            "physical_worlds": 1,
+            "integrations": 45120,
+            "PPO": 0,
+            "cloud": 0,
+            "CUDA_graphs": 1,
+            "full_RL_environment": 1,
+            "GPU_forward": 180842,
+            "CPU_forward": 48,
+            "CPU_kinematics": 48,
+            "GPU_reset_data": 6,
+            "Simulation_reset": 6,
+            "Data_restore": 30,
+            "Data_snapshots": 18,
+            "snapshot_bytes_each": 67108864,
+            "sense": 233,
+            "BAM_compute": 36,
+            "inner_wall_seconds": null,
+            "outer_wall_seconds": null,
+            "archive_MiB": 3072,
+            "Model_runtime_assignments": 0,
+            "Scene_initialize": 1,
+            "Scene_reset": 6,
+            "Scene_update": 30,
+            "BVH_refit": 233,
+            "ray_batch": 233,
+            "context_create": 3,
+            "BAM_apply_delay": 36,
+            "Owner_snapshots": 18,
+            "Owner_restore": 30,
+            "RNG_restore": 0,
+            "Model_expansion": 2,
+            "Sensor_context_set": 1,
+            "sensor_data_reads": 1512,
+            "observation_action_reads": 24,
+            "observation_height_reads": 24,
+            "Observation_noise": 36,
+            "Observation_delay": 36,
+            "Scene_write": 36,
+            "Action_apply_action": 0,
+            "Metrics_compute_substep": 0,
+            "Recorder_close": 1,
+            "Env__reset_idx": 0,
+            "ActionManager": 6,
+            "ObservationManager": 6,
+            "EventManager": 6,
+            "RewardManager": 6,
+            "TerminationManager": 6,
+            "MetricsManager": 6,
+            "CommandManager": 6,
+            "CurriculumManager": 6,
+            "RecorderManager": 6,
+            "Action_reset": 6,
+            "Observation_reset": 6,
+            "Event_reset": 6,
+            "Reward_reset": 6,
+            "Termination_reset": 6,
+            "Metrics_reset": 6,
+            "Command_reset": 6,
+            "Curriculum_reset": 6,
+            "Action_process_action": 3,
+            "Observation_compute": 9,
+            "Event_apply": 42,
+            "Reward_compute": 3,
+            "Termination_compute": 3,
+            "Metrics_compute": 3,
+            "Command_compute": 9,
+            "Curriculum_compute": 6,
+            "Recorder_record_pre_reset": 6,
+            "Recorder_record_post_reset": 6,
+            "Recorder_record_post_step": 0,
+            "RNG_sample": 3072,
+            "RK4_integrator": 45120,
+            "CPU_forward_simulation": 6,
+            "CPU_forward_context": 6,
+            "External_Model_restore": 30,
+            "Model_material_setup": 1,
+            "Action_apply": 30,
+            "Metrics_substep": 30,
+            "Env_substep_counter": 30,
+            "state_snapshot": 30,
+            "state_restore": 210,
+            "position_write": 45120,
+            "public_clock_write": 30,
+            "private_clock_write": 180,
+            "model_option_write": 360,
+            "endpoint_sensor_read": 210,
+            "GPU_solver": 180842,
+            "SolverContext_create": 180842,
+            "Solverinit_context": 180842,
+            "Solver_update_constraint": 1989262,
+            "Solver_update_gradient": 180842,
+            "Solver_update_gradient_incremental": 1808420,
+            "Solver_linesearch": 1808420,
+            "Solver_solver_iteration": 1808420,
+            "Reduction_module_load": 1,
+            "Reduction_allocation": 2,
+            "Reduction_device_bytes": 4100,
+            "Cost_rows_kernel": 1989262,
+            "Cost_reduce_kernel": 1989262,
+            "Cost_override_copy": 1989262,
+            "Norm_kernel": 3797682,
+            "Rigid_module_load": 1,
+            "Rigid_metadata_kernel": 180842,
+            "SolverOrder_module_load": 1,
+            "SolverOrder_kernel": 1808420,
+            "Startup_BAM_parameter_write": 12,
+            "Recorder_pre_reset": 6,
+            "Recorder_post_reset": 6,
+            "Recorder_post_step": 3
+          },
+          "graph_limits": {
+            "module_load": 1,
+            "allocation": 18,
+            "device_bytes": 65536,
+            "capture_begin": 1,
+            "capture_end": 1,
+            "launch": 180842,
+            "kernel_api": 33,
+            "copy_api": 16,
+            "graph_destroy": 1,
+            "exec_destroy": 1,
+            "cleanup_sync": 1
+          },
+          "solver_order_evidence": {
+            "records": 1808420,
+            "index_bytes": 402653184,
+            "blob_bytes": 402653184,
+            "blob_files": 196608,
+            "target_trace_records": 512,
+            "target_trace_bytes": 67108864
+          },
+          "contact_layout": {
+            "dim": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            },
+            "dist": {
+              "dtype": "float32",
+              "shape": [
+                256
+              ]
+            },
+            "efc_address": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                6
+              ]
+            },
+            "flex": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "frame": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                3,
+                3
+              ]
+            },
+            "friction": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                5
+              ]
+            },
+            "geom": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "geomcollisionid": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            },
+            "includemargin": {
+              "dtype": "float32",
+              "shape": [
+                256
+              ]
+            },
+            "pos": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                3
+              ]
+            },
+            "solimp": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                5
+              ]
+            },
+            "solref": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "solreffriction": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "type": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            },
+            "vert": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "worldid": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            }
+          },
+          "original_solref_sha256": "d3098dbc5e1ebceff9114b90ac905b28a9f86b48e0ca4efc6c04b2e9c9d29648",
+          "external_forward_reservation": 152,
+          "evidence_bytes_reservation": 3623878656,
+          "estimated_cost": false,
+          "tiers": [
+            32,
+            64,
+            128,
+            256,
+            512
+          ],
+          "exact_replay": true,
+          "numerical_thresholds_changed": false,
+          "model_constructions": 0,
+          "optimizer_constructions": 0,
+          "PPO": 0,
+          "cloud_training": 0
+        }
+      ],
+      "full_episode": false,
+      "public_steps_per_owner": 3,
+      "max_integrations": 45120,
+      "max_GPU_forward": 180842,
+      "max_CPU_forward": 48,
+      "evidence_policy": "Retain all inherited boundary/microstep/WAL evidence; live 8 GiB return reserve; no full-space reservation claim"
+    },
+    {
+      "name": "n2-pilot",
+      "owners": [
+        {
+          "format": "stage12-owner-plan-v1",
+          "logical_world": 0,
+          "native_nworld": 1,
+          "public_steps": 3,
+          "max_macros": 30,
+          "max_resets": 6,
+          "max_episode_ticks": 5000,
+          "caps": {
+            "physical_worlds": 1,
+            "integrations": 45120,
+            "PPO": 0,
+            "cloud": 0,
+            "CUDA_graphs": 1,
+            "full_RL_environment": 1,
+            "GPU_forward": 180842,
+            "CPU_forward": 48,
+            "CPU_kinematics": 48,
+            "GPU_reset_data": 6,
+            "Simulation_reset": 6,
+            "Data_restore": 30,
+            "Data_snapshots": 18,
+            "snapshot_bytes_each": 67108864,
+            "sense": 233,
+            "BAM_compute": 36,
+            "inner_wall_seconds": null,
+            "outer_wall_seconds": null,
+            "archive_MiB": 3072,
+            "Model_runtime_assignments": 0,
+            "Scene_initialize": 1,
+            "Scene_reset": 6,
+            "Scene_update": 30,
+            "BVH_refit": 233,
+            "ray_batch": 233,
+            "context_create": 3,
+            "BAM_apply_delay": 36,
+            "Owner_snapshots": 18,
+            "Owner_restore": 30,
+            "RNG_restore": 0,
+            "Model_expansion": 2,
+            "Sensor_context_set": 1,
+            "sensor_data_reads": 1512,
+            "observation_action_reads": 24,
+            "observation_height_reads": 24,
+            "Observation_noise": 36,
+            "Observation_delay": 36,
+            "Scene_write": 36,
+            "Action_apply_action": 0,
+            "Metrics_compute_substep": 0,
+            "Recorder_close": 1,
+            "Env__reset_idx": 0,
+            "ActionManager": 6,
+            "ObservationManager": 6,
+            "EventManager": 6,
+            "RewardManager": 6,
+            "TerminationManager": 6,
+            "MetricsManager": 6,
+            "CommandManager": 6,
+            "CurriculumManager": 6,
+            "RecorderManager": 6,
+            "Action_reset": 6,
+            "Observation_reset": 6,
+            "Event_reset": 6,
+            "Reward_reset": 6,
+            "Termination_reset": 6,
+            "Metrics_reset": 6,
+            "Command_reset": 6,
+            "Curriculum_reset": 6,
+            "Action_process_action": 3,
+            "Observation_compute": 9,
+            "Event_apply": 42,
+            "Reward_compute": 3,
+            "Termination_compute": 3,
+            "Metrics_compute": 3,
+            "Command_compute": 9,
+            "Curriculum_compute": 6,
+            "Recorder_record_pre_reset": 6,
+            "Recorder_record_post_reset": 6,
+            "Recorder_record_post_step": 0,
+            "RNG_sample": 3072,
+            "RK4_integrator": 45120,
+            "CPU_forward_simulation": 6,
+            "CPU_forward_context": 6,
+            "External_Model_restore": 30,
+            "Model_material_setup": 1,
+            "Action_apply": 30,
+            "Metrics_substep": 30,
+            "Env_substep_counter": 30,
+            "state_snapshot": 30,
+            "state_restore": 210,
+            "position_write": 45120,
+            "public_clock_write": 30,
+            "private_clock_write": 180,
+            "model_option_write": 360,
+            "endpoint_sensor_read": 210,
+            "GPU_solver": 180842,
+            "SolverContext_create": 180842,
+            "Solverinit_context": 180842,
+            "Solver_update_constraint": 1989262,
+            "Solver_update_gradient": 180842,
+            "Solver_update_gradient_incremental": 1808420,
+            "Solver_linesearch": 1808420,
+            "Solver_solver_iteration": 1808420,
+            "Reduction_module_load": 1,
+            "Reduction_allocation": 2,
+            "Reduction_device_bytes": 4100,
+            "Cost_rows_kernel": 1989262,
+            "Cost_reduce_kernel": 1989262,
+            "Cost_override_copy": 1989262,
+            "Norm_kernel": 3797682,
+            "Rigid_module_load": 1,
+            "Rigid_metadata_kernel": 180842,
+            "SolverOrder_module_load": 1,
+            "SolverOrder_kernel": 1808420,
+            "Startup_BAM_parameter_write": 12,
+            "Recorder_pre_reset": 6,
+            "Recorder_post_reset": 6,
+            "Recorder_post_step": 3
+          },
+          "graph_limits": {
+            "module_load": 1,
+            "allocation": 18,
+            "device_bytes": 65536,
+            "capture_begin": 1,
+            "capture_end": 1,
+            "launch": 180842,
+            "kernel_api": 33,
+            "copy_api": 16,
+            "graph_destroy": 1,
+            "exec_destroy": 1,
+            "cleanup_sync": 1
+          },
+          "solver_order_evidence": {
+            "records": 1808420,
+            "index_bytes": 402653184,
+            "blob_bytes": 402653184,
+            "blob_files": 196608,
+            "target_trace_records": 512,
+            "target_trace_bytes": 67108864
+          },
+          "contact_layout": {
+            "dim": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            },
+            "dist": {
+              "dtype": "float32",
+              "shape": [
+                256
+              ]
+            },
+            "efc_address": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                6
+              ]
+            },
+            "flex": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "frame": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                3,
+                3
+              ]
+            },
+            "friction": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                5
+              ]
+            },
+            "geom": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "geomcollisionid": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            },
+            "includemargin": {
+              "dtype": "float32",
+              "shape": [
+                256
+              ]
+            },
+            "pos": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                3
+              ]
+            },
+            "solimp": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                5
+              ]
+            },
+            "solref": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "solreffriction": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "type": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            },
+            "vert": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "worldid": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            }
+          },
+          "original_solref_sha256": "d3098dbc5e1ebceff9114b90ac905b28a9f86b48e0ca4efc6c04b2e9c9d29648",
+          "external_forward_reservation": 152,
+          "evidence_bytes_reservation": 3623878656,
+          "estimated_cost": false,
+          "tiers": [
+            32,
+            64,
+            128,
+            256,
+            512
+          ],
+          "exact_replay": true,
+          "numerical_thresholds_changed": false,
+          "model_constructions": 0,
+          "optimizer_constructions": 0,
+          "PPO": 0,
+          "cloud_training": 0
+        },
+        {
+          "format": "stage12-owner-plan-v1",
+          "logical_world": 1,
+          "native_nworld": 1,
+          "public_steps": 3,
+          "max_macros": 30,
+          "max_resets": 6,
+          "max_episode_ticks": 5000,
+          "caps": {
+            "physical_worlds": 1,
+            "integrations": 45120,
+            "PPO": 0,
+            "cloud": 0,
+            "CUDA_graphs": 1,
+            "full_RL_environment": 1,
+            "GPU_forward": 180842,
+            "CPU_forward": 48,
+            "CPU_kinematics": 48,
+            "GPU_reset_data": 6,
+            "Simulation_reset": 6,
+            "Data_restore": 30,
+            "Data_snapshots": 18,
+            "snapshot_bytes_each": 67108864,
+            "sense": 233,
+            "BAM_compute": 36,
+            "inner_wall_seconds": null,
+            "outer_wall_seconds": null,
+            "archive_MiB": 3072,
+            "Model_runtime_assignments": 0,
+            "Scene_initialize": 1,
+            "Scene_reset": 6,
+            "Scene_update": 30,
+            "BVH_refit": 233,
+            "ray_batch": 233,
+            "context_create": 3,
+            "BAM_apply_delay": 36,
+            "Owner_snapshots": 18,
+            "Owner_restore": 30,
+            "RNG_restore": 0,
+            "Model_expansion": 2,
+            "Sensor_context_set": 1,
+            "sensor_data_reads": 1512,
+            "observation_action_reads": 24,
+            "observation_height_reads": 24,
+            "Observation_noise": 36,
+            "Observation_delay": 36,
+            "Scene_write": 36,
+            "Action_apply_action": 0,
+            "Metrics_compute_substep": 0,
+            "Recorder_close": 1,
+            "Env__reset_idx": 0,
+            "ActionManager": 6,
+            "ObservationManager": 6,
+            "EventManager": 6,
+            "RewardManager": 6,
+            "TerminationManager": 6,
+            "MetricsManager": 6,
+            "CommandManager": 6,
+            "CurriculumManager": 6,
+            "RecorderManager": 6,
+            "Action_reset": 6,
+            "Observation_reset": 6,
+            "Event_reset": 6,
+            "Reward_reset": 6,
+            "Termination_reset": 6,
+            "Metrics_reset": 6,
+            "Command_reset": 6,
+            "Curriculum_reset": 6,
+            "Action_process_action": 3,
+            "Observation_compute": 9,
+            "Event_apply": 42,
+            "Reward_compute": 3,
+            "Termination_compute": 3,
+            "Metrics_compute": 3,
+            "Command_compute": 9,
+            "Curriculum_compute": 6,
+            "Recorder_record_pre_reset": 6,
+            "Recorder_record_post_reset": 6,
+            "Recorder_record_post_step": 0,
+            "RNG_sample": 3072,
+            "RK4_integrator": 45120,
+            "CPU_forward_simulation": 6,
+            "CPU_forward_context": 6,
+            "External_Model_restore": 30,
+            "Model_material_setup": 1,
+            "Action_apply": 30,
+            "Metrics_substep": 30,
+            "Env_substep_counter": 30,
+            "state_snapshot": 30,
+            "state_restore": 210,
+            "position_write": 45120,
+            "public_clock_write": 30,
+            "private_clock_write": 180,
+            "model_option_write": 360,
+            "endpoint_sensor_read": 210,
+            "GPU_solver": 180842,
+            "SolverContext_create": 180842,
+            "Solverinit_context": 180842,
+            "Solver_update_constraint": 1989262,
+            "Solver_update_gradient": 180842,
+            "Solver_update_gradient_incremental": 1808420,
+            "Solver_linesearch": 1808420,
+            "Solver_solver_iteration": 1808420,
+            "Reduction_module_load": 1,
+            "Reduction_allocation": 2,
+            "Reduction_device_bytes": 4100,
+            "Cost_rows_kernel": 1989262,
+            "Cost_reduce_kernel": 1989262,
+            "Cost_override_copy": 1989262,
+            "Norm_kernel": 3797682,
+            "Rigid_module_load": 1,
+            "Rigid_metadata_kernel": 180842,
+            "SolverOrder_module_load": 1,
+            "SolverOrder_kernel": 1808420,
+            "Startup_BAM_parameter_write": 12,
+            "Recorder_pre_reset": 6,
+            "Recorder_post_reset": 6,
+            "Recorder_post_step": 3
+          },
+          "graph_limits": {
+            "module_load": 1,
+            "allocation": 18,
+            "device_bytes": 65536,
+            "capture_begin": 1,
+            "capture_end": 1,
+            "launch": 180842,
+            "kernel_api": 33,
+            "copy_api": 16,
+            "graph_destroy": 1,
+            "exec_destroy": 1,
+            "cleanup_sync": 1
+          },
+          "solver_order_evidence": {
+            "records": 1808420,
+            "index_bytes": 402653184,
+            "blob_bytes": 402653184,
+            "blob_files": 196608,
+            "target_trace_records": 512,
+            "target_trace_bytes": 67108864
+          },
+          "contact_layout": {
+            "dim": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            },
+            "dist": {
+              "dtype": "float32",
+              "shape": [
+                256
+              ]
+            },
+            "efc_address": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                6
+              ]
+            },
+            "flex": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "frame": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                3,
+                3
+              ]
+            },
+            "friction": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                5
+              ]
+            },
+            "geom": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "geomcollisionid": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            },
+            "includemargin": {
+              "dtype": "float32",
+              "shape": [
+                256
+              ]
+            },
+            "pos": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                3
+              ]
+            },
+            "solimp": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                5
+              ]
+            },
+            "solref": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "solreffriction": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "type": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            },
+            "vert": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "worldid": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            }
+          },
+          "original_solref_sha256": "d3098dbc5e1ebceff9114b90ac905b28a9f86b48e0ca4efc6c04b2e9c9d29648",
+          "external_forward_reservation": 152,
+          "evidence_bytes_reservation": 3623878656,
+          "estimated_cost": false,
+          "tiers": [
+            32,
+            64,
+            128,
+            256,
+            512
+          ],
+          "exact_replay": true,
+          "numerical_thresholds_changed": false,
+          "model_constructions": 0,
+          "optimizer_constructions": 0,
+          "PPO": 0,
+          "cloud_training": 0
+        }
+      ],
+      "full_episode": false,
+      "public_steps_per_owner": 3,
+      "max_integrations": 90240,
+      "max_GPU_forward": 361684,
+      "max_CPU_forward": 96,
+      "evidence_policy": "Retain all inherited boundary/microstep/WAL evidence; live 8 GiB return reserve; no full-space reservation claim"
+    },
+    {
+      "name": "n1-rollout",
+      "owners": [
+        {
+          "format": "stage12-owner-plan-v1",
+          "logical_world": 0,
+          "native_nworld": 1,
+          "public_steps": 24,
+          "max_macros": 240,
+          "max_resets": 27,
+          "max_episode_ticks": 5000,
+          "caps": {
+            "physical_worlds": 1,
+            "integrations": 360960,
+            "PPO": 0,
+            "cloud": 0,
+            "CUDA_graphs": 1,
+            "full_RL_environment": 1,
+            "GPU_forward": 1446008,
+            "CPU_forward": 216,
+            "CPU_kinematics": 216,
+            "GPU_reset_data": 27,
+            "Simulation_reset": 27,
+            "Data_restore": 135,
+            "Data_snapshots": 81,
+            "snapshot_bytes_each": 67108864,
+            "sense": 1766,
+            "BAM_compute": 267,
+            "inner_wall_seconds": null,
+            "outer_wall_seconds": null,
+            "archive_MiB": 13824,
+            "Model_runtime_assignments": 0,
+            "Scene_initialize": 1,
+            "Scene_reset": 27,
+            "Scene_update": 240,
+            "BVH_refit": 1766,
+            "ray_batch": 1766,
+            "context_create": 3,
+            "BAM_apply_delay": 267,
+            "Owner_snapshots": 81,
+            "Owner_restore": 135,
+            "RNG_restore": 0,
+            "Model_expansion": 2,
+            "Sensor_context_set": 1,
+            "sensor_data_reads": 6804,
+            "observation_action_reads": 108,
+            "observation_height_reads": 108,
+            "Observation_noise": 204,
+            "Observation_delay": 162,
+            "Scene_write": 267,
+            "Action_apply_action": 0,
+            "Metrics_compute_substep": 0,
+            "Recorder_close": 1,
+            "Env__reset_idx": 0,
+            "ActionManager": 27,
+            "ObservationManager": 27,
+            "EventManager": 27,
+            "RewardManager": 27,
+            "TerminationManager": 27,
+            "MetricsManager": 27,
+            "CommandManager": 27,
+            "CurriculumManager": 27,
+            "RecorderManager": 27,
+            "Action_reset": 27,
+            "Observation_reset": 27,
+            "Event_reset": 27,
+            "Reward_reset": 27,
+            "Termination_reset": 27,
+            "Metrics_reset": 27,
+            "Command_reset": 27,
+            "Curriculum_reset": 27,
+            "Action_process_action": 24,
+            "Observation_compute": 51,
+            "Event_apply": 189,
+            "Reward_compute": 24,
+            "Termination_compute": 24,
+            "Metrics_compute": 24,
+            "Command_compute": 51,
+            "Curriculum_compute": 27,
+            "Recorder_record_pre_reset": 27,
+            "Recorder_record_post_reset": 27,
+            "Recorder_record_post_step": 0,
+            "RNG_sample": 13824,
+            "RK4_integrator": 360960,
+            "CPU_forward_simulation": 27,
+            "CPU_forward_context": 27,
+            "External_Model_restore": 135,
+            "Model_material_setup": 1,
+            "Action_apply": 240,
+            "Metrics_substep": 240,
+            "Env_substep_counter": 240,
+            "state_snapshot": 240,
+            "state_restore": 1680,
+            "position_write": 360960,
+            "public_clock_write": 240,
+            "private_clock_write": 1440,
+            "model_option_write": 2880,
+            "endpoint_sensor_read": 1680,
+            "GPU_solver": 1446008,
+            "SolverContext_create": 1446008,
+            "Solverinit_context": 1446008,
+            "Solver_update_constraint": 15906088,
+            "Solver_update_gradient": 1446008,
+            "Solver_update_gradient_incremental": 14460080,
+            "Solver_linesearch": 14460080,
+            "Solver_solver_iteration": 14460080,
+            "Reduction_module_load": 1,
+            "Reduction_allocation": 2,
+            "Reduction_device_bytes": 4100,
+            "Cost_rows_kernel": 15906088,
+            "Cost_reduce_kernel": 15906088,
+            "Cost_override_copy": 15906088,
+            "Norm_kernel": 30366168,
+            "Rigid_module_load": 1,
+            "Rigid_metadata_kernel": 1446008,
+            "SolverOrder_module_load": 1,
+            "SolverOrder_kernel": 14460080,
+            "Startup_BAM_parameter_write": 54,
+            "Recorder_pre_reset": 27,
+            "Recorder_post_reset": 27,
+            "Recorder_post_step": 24
+          },
+          "graph_limits": {
+            "module_load": 1,
+            "allocation": 18,
+            "device_bytes": 65536,
+            "capture_begin": 1,
+            "capture_end": 1,
+            "launch": 1446008,
+            "kernel_api": 33,
+            "copy_api": 16,
+            "graph_destroy": 1,
+            "exec_destroy": 1,
+            "cleanup_sync": 1
+          },
+          "solver_order_evidence": {
+            "records": 14460080,
+            "index_bytes": 1811939328,
+            "blob_bytes": 1811939328,
+            "blob_files": 884736,
+            "target_trace_records": 512,
+            "target_trace_bytes": 67108864
+          },
+          "contact_layout": {
+            "dim": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            },
+            "dist": {
+              "dtype": "float32",
+              "shape": [
+                256
+              ]
+            },
+            "efc_address": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                6
+              ]
+            },
+            "flex": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "frame": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                3,
+                3
+              ]
+            },
+            "friction": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                5
+              ]
+            },
+            "geom": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "geomcollisionid": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            },
+            "includemargin": {
+              "dtype": "float32",
+              "shape": [
+                256
+              ]
+            },
+            "pos": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                3
+              ]
+            },
+            "solimp": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                5
+              ]
+            },
+            "solref": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "solreffriction": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "type": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            },
+            "vert": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "worldid": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            }
+          },
+          "original_solref_sha256": "d3098dbc5e1ebceff9114b90ac905b28a9f86b48e0ca4efc6c04b2e9c9d29648",
+          "external_forward_reservation": 488,
+          "evidence_bytes_reservation": 23353884672,
+          "estimated_cost": false,
+          "tiers": [
+            32,
+            64,
+            128,
+            256,
+            512
+          ],
+          "exact_replay": true,
+          "numerical_thresholds_changed": false,
+          "model_constructions": 0,
+          "optimizer_constructions": 0,
+          "PPO": 0,
+          "cloud_training": 0
+        }
+      ],
+      "full_episode": false,
+      "public_steps_per_owner": 24,
+      "max_integrations": 360960,
+      "max_GPU_forward": 1446008,
+      "max_CPU_forward": 216,
+      "evidence_policy": "Retain all inherited boundary/microstep/WAL evidence; live 8 GiB return reserve; no full-space reservation claim"
+    },
+    {
+      "name": "n2-rollout",
+      "owners": [
+        {
+          "format": "stage12-owner-plan-v1",
+          "logical_world": 0,
+          "native_nworld": 1,
+          "public_steps": 24,
+          "max_macros": 240,
+          "max_resets": 27,
+          "max_episode_ticks": 5000,
+          "caps": {
+            "physical_worlds": 1,
+            "integrations": 360960,
+            "PPO": 0,
+            "cloud": 0,
+            "CUDA_graphs": 1,
+            "full_RL_environment": 1,
+            "GPU_forward": 1446008,
+            "CPU_forward": 216,
+            "CPU_kinematics": 216,
+            "GPU_reset_data": 27,
+            "Simulation_reset": 27,
+            "Data_restore": 135,
+            "Data_snapshots": 81,
+            "snapshot_bytes_each": 67108864,
+            "sense": 1766,
+            "BAM_compute": 267,
+            "inner_wall_seconds": null,
+            "outer_wall_seconds": null,
+            "archive_MiB": 13824,
+            "Model_runtime_assignments": 0,
+            "Scene_initialize": 1,
+            "Scene_reset": 27,
+            "Scene_update": 240,
+            "BVH_refit": 1766,
+            "ray_batch": 1766,
+            "context_create": 3,
+            "BAM_apply_delay": 267,
+            "Owner_snapshots": 81,
+            "Owner_restore": 135,
+            "RNG_restore": 0,
+            "Model_expansion": 2,
+            "Sensor_context_set": 1,
+            "sensor_data_reads": 6804,
+            "observation_action_reads": 108,
+            "observation_height_reads": 108,
+            "Observation_noise": 204,
+            "Observation_delay": 162,
+            "Scene_write": 267,
+            "Action_apply_action": 0,
+            "Metrics_compute_substep": 0,
+            "Recorder_close": 1,
+            "Env__reset_idx": 0,
+            "ActionManager": 27,
+            "ObservationManager": 27,
+            "EventManager": 27,
+            "RewardManager": 27,
+            "TerminationManager": 27,
+            "MetricsManager": 27,
+            "CommandManager": 27,
+            "CurriculumManager": 27,
+            "RecorderManager": 27,
+            "Action_reset": 27,
+            "Observation_reset": 27,
+            "Event_reset": 27,
+            "Reward_reset": 27,
+            "Termination_reset": 27,
+            "Metrics_reset": 27,
+            "Command_reset": 27,
+            "Curriculum_reset": 27,
+            "Action_process_action": 24,
+            "Observation_compute": 51,
+            "Event_apply": 189,
+            "Reward_compute": 24,
+            "Termination_compute": 24,
+            "Metrics_compute": 24,
+            "Command_compute": 51,
+            "Curriculum_compute": 27,
+            "Recorder_record_pre_reset": 27,
+            "Recorder_record_post_reset": 27,
+            "Recorder_record_post_step": 0,
+            "RNG_sample": 13824,
+            "RK4_integrator": 360960,
+            "CPU_forward_simulation": 27,
+            "CPU_forward_context": 27,
+            "External_Model_restore": 135,
+            "Model_material_setup": 1,
+            "Action_apply": 240,
+            "Metrics_substep": 240,
+            "Env_substep_counter": 240,
+            "state_snapshot": 240,
+            "state_restore": 1680,
+            "position_write": 360960,
+            "public_clock_write": 240,
+            "private_clock_write": 1440,
+            "model_option_write": 2880,
+            "endpoint_sensor_read": 1680,
+            "GPU_solver": 1446008,
+            "SolverContext_create": 1446008,
+            "Solverinit_context": 1446008,
+            "Solver_update_constraint": 15906088,
+            "Solver_update_gradient": 1446008,
+            "Solver_update_gradient_incremental": 14460080,
+            "Solver_linesearch": 14460080,
+            "Solver_solver_iteration": 14460080,
+            "Reduction_module_load": 1,
+            "Reduction_allocation": 2,
+            "Reduction_device_bytes": 4100,
+            "Cost_rows_kernel": 15906088,
+            "Cost_reduce_kernel": 15906088,
+            "Cost_override_copy": 15906088,
+            "Norm_kernel": 30366168,
+            "Rigid_module_load": 1,
+            "Rigid_metadata_kernel": 1446008,
+            "SolverOrder_module_load": 1,
+            "SolverOrder_kernel": 14460080,
+            "Startup_BAM_parameter_write": 54,
+            "Recorder_pre_reset": 27,
+            "Recorder_post_reset": 27,
+            "Recorder_post_step": 24
+          },
+          "graph_limits": {
+            "module_load": 1,
+            "allocation": 18,
+            "device_bytes": 65536,
+            "capture_begin": 1,
+            "capture_end": 1,
+            "launch": 1446008,
+            "kernel_api": 33,
+            "copy_api": 16,
+            "graph_destroy": 1,
+            "exec_destroy": 1,
+            "cleanup_sync": 1
+          },
+          "solver_order_evidence": {
+            "records": 14460080,
+            "index_bytes": 1811939328,
+            "blob_bytes": 1811939328,
+            "blob_files": 884736,
+            "target_trace_records": 512,
+            "target_trace_bytes": 67108864
+          },
+          "contact_layout": {
+            "dim": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            },
+            "dist": {
+              "dtype": "float32",
+              "shape": [
+                256
+              ]
+            },
+            "efc_address": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                6
+              ]
+            },
+            "flex": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "frame": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                3,
+                3
+              ]
+            },
+            "friction": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                5
+              ]
+            },
+            "geom": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "geomcollisionid": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            },
+            "includemargin": {
+              "dtype": "float32",
+              "shape": [
+                256
+              ]
+            },
+            "pos": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                3
+              ]
+            },
+            "solimp": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                5
+              ]
+            },
+            "solref": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "solreffriction": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "type": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            },
+            "vert": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "worldid": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            }
+          },
+          "original_solref_sha256": "d3098dbc5e1ebceff9114b90ac905b28a9f86b48e0ca4efc6c04b2e9c9d29648",
+          "external_forward_reservation": 488,
+          "evidence_bytes_reservation": 23353884672,
+          "estimated_cost": false,
+          "tiers": [
+            32,
+            64,
+            128,
+            256,
+            512
+          ],
+          "exact_replay": true,
+          "numerical_thresholds_changed": false,
+          "model_constructions": 0,
+          "optimizer_constructions": 0,
+          "PPO": 0,
+          "cloud_training": 0
+        },
+        {
+          "format": "stage12-owner-plan-v1",
+          "logical_world": 1,
+          "native_nworld": 1,
+          "public_steps": 24,
+          "max_macros": 240,
+          "max_resets": 27,
+          "max_episode_ticks": 5000,
+          "caps": {
+            "physical_worlds": 1,
+            "integrations": 360960,
+            "PPO": 0,
+            "cloud": 0,
+            "CUDA_graphs": 1,
+            "full_RL_environment": 1,
+            "GPU_forward": 1446008,
+            "CPU_forward": 216,
+            "CPU_kinematics": 216,
+            "GPU_reset_data": 27,
+            "Simulation_reset": 27,
+            "Data_restore": 135,
+            "Data_snapshots": 81,
+            "snapshot_bytes_each": 67108864,
+            "sense": 1766,
+            "BAM_compute": 267,
+            "inner_wall_seconds": null,
+            "outer_wall_seconds": null,
+            "archive_MiB": 13824,
+            "Model_runtime_assignments": 0,
+            "Scene_initialize": 1,
+            "Scene_reset": 27,
+            "Scene_update": 240,
+            "BVH_refit": 1766,
+            "ray_batch": 1766,
+            "context_create": 3,
+            "BAM_apply_delay": 267,
+            "Owner_snapshots": 81,
+            "Owner_restore": 135,
+            "RNG_restore": 0,
+            "Model_expansion": 2,
+            "Sensor_context_set": 1,
+            "sensor_data_reads": 6804,
+            "observation_action_reads": 108,
+            "observation_height_reads": 108,
+            "Observation_noise": 204,
+            "Observation_delay": 162,
+            "Scene_write": 267,
+            "Action_apply_action": 0,
+            "Metrics_compute_substep": 0,
+            "Recorder_close": 1,
+            "Env__reset_idx": 0,
+            "ActionManager": 27,
+            "ObservationManager": 27,
+            "EventManager": 27,
+            "RewardManager": 27,
+            "TerminationManager": 27,
+            "MetricsManager": 27,
+            "CommandManager": 27,
+            "CurriculumManager": 27,
+            "RecorderManager": 27,
+            "Action_reset": 27,
+            "Observation_reset": 27,
+            "Event_reset": 27,
+            "Reward_reset": 27,
+            "Termination_reset": 27,
+            "Metrics_reset": 27,
+            "Command_reset": 27,
+            "Curriculum_reset": 27,
+            "Action_process_action": 24,
+            "Observation_compute": 51,
+            "Event_apply": 189,
+            "Reward_compute": 24,
+            "Termination_compute": 24,
+            "Metrics_compute": 24,
+            "Command_compute": 51,
+            "Curriculum_compute": 27,
+            "Recorder_record_pre_reset": 27,
+            "Recorder_record_post_reset": 27,
+            "Recorder_record_post_step": 0,
+            "RNG_sample": 13824,
+            "RK4_integrator": 360960,
+            "CPU_forward_simulation": 27,
+            "CPU_forward_context": 27,
+            "External_Model_restore": 135,
+            "Model_material_setup": 1,
+            "Action_apply": 240,
+            "Metrics_substep": 240,
+            "Env_substep_counter": 240,
+            "state_snapshot": 240,
+            "state_restore": 1680,
+            "position_write": 360960,
+            "public_clock_write": 240,
+            "private_clock_write": 1440,
+            "model_option_write": 2880,
+            "endpoint_sensor_read": 1680,
+            "GPU_solver": 1446008,
+            "SolverContext_create": 1446008,
+            "Solverinit_context": 1446008,
+            "Solver_update_constraint": 15906088,
+            "Solver_update_gradient": 1446008,
+            "Solver_update_gradient_incremental": 14460080,
+            "Solver_linesearch": 14460080,
+            "Solver_solver_iteration": 14460080,
+            "Reduction_module_load": 1,
+            "Reduction_allocation": 2,
+            "Reduction_device_bytes": 4100,
+            "Cost_rows_kernel": 15906088,
+            "Cost_reduce_kernel": 15906088,
+            "Cost_override_copy": 15906088,
+            "Norm_kernel": 30366168,
+            "Rigid_module_load": 1,
+            "Rigid_metadata_kernel": 1446008,
+            "SolverOrder_module_load": 1,
+            "SolverOrder_kernel": 14460080,
+            "Startup_BAM_parameter_write": 54,
+            "Recorder_pre_reset": 27,
+            "Recorder_post_reset": 27,
+            "Recorder_post_step": 24
+          },
+          "graph_limits": {
+            "module_load": 1,
+            "allocation": 18,
+            "device_bytes": 65536,
+            "capture_begin": 1,
+            "capture_end": 1,
+            "launch": 1446008,
+            "kernel_api": 33,
+            "copy_api": 16,
+            "graph_destroy": 1,
+            "exec_destroy": 1,
+            "cleanup_sync": 1
+          },
+          "solver_order_evidence": {
+            "records": 14460080,
+            "index_bytes": 1811939328,
+            "blob_bytes": 1811939328,
+            "blob_files": 884736,
+            "target_trace_records": 512,
+            "target_trace_bytes": 67108864
+          },
+          "contact_layout": {
+            "dim": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            },
+            "dist": {
+              "dtype": "float32",
+              "shape": [
+                256
+              ]
+            },
+            "efc_address": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                6
+              ]
+            },
+            "flex": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "frame": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                3,
+                3
+              ]
+            },
+            "friction": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                5
+              ]
+            },
+            "geom": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "geomcollisionid": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            },
+            "includemargin": {
+              "dtype": "float32",
+              "shape": [
+                256
+              ]
+            },
+            "pos": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                3
+              ]
+            },
+            "solimp": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                5
+              ]
+            },
+            "solref": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "solreffriction": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "type": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            },
+            "vert": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "worldid": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            }
+          },
+          "original_solref_sha256": "d3098dbc5e1ebceff9114b90ac905b28a9f86b48e0ca4efc6c04b2e9c9d29648",
+          "external_forward_reservation": 488,
+          "evidence_bytes_reservation": 23353884672,
+          "estimated_cost": false,
+          "tiers": [
+            32,
+            64,
+            128,
+            256,
+            512
+          ],
+          "exact_replay": true,
+          "numerical_thresholds_changed": false,
+          "model_constructions": 0,
+          "optimizer_constructions": 0,
+          "PPO": 0,
+          "cloud_training": 0
+        }
+      ],
+      "full_episode": false,
+      "public_steps_per_owner": 24,
+      "max_integrations": 721920,
+      "max_GPU_forward": 2892016,
+      "max_CPU_forward": 432,
+      "evidence_policy": "Retain all inherited boundary/microstep/WAL evidence; live 8 GiB return reserve; no full-space reservation claim"
+    },
+    {
+      "name": "n1-full-episode",
+      "owners": [
+        {
+          "format": "stage12-owner-plan-v1",
+          "logical_world": 0,
+          "native_nworld": 1,
+          "public_steps": 500,
+          "max_macros": 5000,
+          "max_resets": 503,
+          "max_episode_ticks": 5000,
+          "caps": {
+            "physical_worlds": 1,
+            "integrations": 7520000,
+            "PPO": 0,
+            "cloud": 0,
+            "CUDA_graphs": 1,
+            "full_RL_environment": 1,
+            "GPU_forward": 30123104,
+            "CPU_forward": 4024,
+            "CPU_kinematics": 4024,
+            "GPU_reset_data": 503,
+            "Simulation_reset": 503,
+            "Data_restore": 2515,
+            "Data_snapshots": 1509,
+            "snapshot_bytes_each": 67108864,
+            "sense": 36514,
+            "BAM_compute": 5503,
+            "inner_wall_seconds": null,
+            "outer_wall_seconds": null,
+            "archive_MiB": 257536,
+            "Model_runtime_assignments": 0,
+            "Scene_initialize": 1,
+            "Scene_reset": 503,
+            "Scene_update": 5000,
+            "BVH_refit": 36514,
+            "ray_batch": 36514,
+            "context_create": 3,
+            "BAM_apply_delay": 5503,
+            "Owner_snapshots": 1509,
+            "Owner_restore": 2515,
+            "RNG_restore": 0,
+            "Model_expansion": 2,
+            "Sensor_context_set": 1,
+            "sensor_data_reads": 126756,
+            "observation_action_reads": 2012,
+            "observation_height_reads": 2012,
+            "Observation_noise": 4012,
+            "Observation_delay": 3018,
+            "Scene_write": 5503,
+            "Action_apply_action": 0,
+            "Metrics_compute_substep": 0,
+            "Recorder_close": 1,
+            "Env__reset_idx": 0,
+            "ActionManager": 503,
+            "ObservationManager": 503,
+            "EventManager": 503,
+            "RewardManager": 503,
+            "TerminationManager": 503,
+            "MetricsManager": 503,
+            "CommandManager": 503,
+            "CurriculumManager": 503,
+            "RecorderManager": 503,
+            "Action_reset": 503,
+            "Observation_reset": 503,
+            "Event_reset": 503,
+            "Reward_reset": 503,
+            "Termination_reset": 503,
+            "Metrics_reset": 503,
+            "Command_reset": 503,
+            "Curriculum_reset": 503,
+            "Action_process_action": 500,
+            "Observation_compute": 1003,
+            "Event_apply": 3521,
+            "Reward_compute": 500,
+            "Termination_compute": 500,
+            "Metrics_compute": 500,
+            "Command_compute": 1003,
+            "Curriculum_compute": 503,
+            "Recorder_record_pre_reset": 503,
+            "Recorder_record_post_reset": 503,
+            "Recorder_record_post_step": 0,
+            "RNG_sample": 257536,
+            "RK4_integrator": 7520000,
+            "CPU_forward_simulation": 503,
+            "CPU_forward_context": 503,
+            "External_Model_restore": 2515,
+            "Model_material_setup": 1,
+            "Action_apply": 5000,
+            "Metrics_substep": 5000,
+            "Env_substep_counter": 5000,
+            "state_snapshot": 5000,
+            "state_restore": 35000,
+            "position_write": 7520000,
+            "public_clock_write": 5000,
+            "private_clock_write": 30000,
+            "model_option_write": 60000,
+            "endpoint_sensor_read": 35000,
+            "GPU_solver": 30123104,
+            "SolverContext_create": 30123104,
+            "Solverinit_context": 30123104,
+            "Solver_update_constraint": 331354144,
+            "Solver_update_gradient": 30123104,
+            "Solver_update_gradient_incremental": 301231040,
+            "Solver_linesearch": 301231040,
+            "Solver_solver_iteration": 301231040,
+            "Reduction_module_load": 1,
+            "Reduction_allocation": 2,
+            "Reduction_device_bytes": 4100,
+            "Cost_rows_kernel": 331354144,
+            "Cost_reduce_kernel": 331354144,
+            "Cost_override_copy": 331354144,
+            "Norm_kernel": 632585184,
+            "Rigid_module_load": 1,
+            "Rigid_metadata_kernel": 30123104,
+            "SolverOrder_module_load": 1,
+            "SolverOrder_kernel": 301231040,
+            "Startup_BAM_parameter_write": 1006,
+            "Recorder_pre_reset": 503,
+            "Recorder_post_reset": 503,
+            "Recorder_post_step": 500
+          },
+          "graph_limits": {
+            "module_load": 1,
+            "allocation": 18,
+            "device_bytes": 65536,
+            "capture_begin": 1,
+            "capture_end": 1,
+            "launch": 30123104,
+            "kernel_api": 33,
+            "copy_api": 16,
+            "graph_destroy": 1,
+            "exec_destroy": 1,
+            "cleanup_sync": 1
+          },
+          "solver_order_evidence": {
+            "records": 301231040,
+            "index_bytes": 33755758592,
+            "blob_bytes": 33755758592,
+            "blob_files": 16482304,
+            "target_trace_records": 512,
+            "target_trace_bytes": 67108864
+          },
+          "contact_layout": {
+            "dim": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            },
+            "dist": {
+              "dtype": "float32",
+              "shape": [
+                256
+              ]
+            },
+            "efc_address": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                6
+              ]
+            },
+            "flex": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "frame": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                3,
+                3
+              ]
+            },
+            "friction": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                5
+              ]
+            },
+            "geom": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "geomcollisionid": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            },
+            "includemargin": {
+              "dtype": "float32",
+              "shape": [
+                256
+              ]
+            },
+            "pos": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                3
+              ]
+            },
+            "solimp": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                5
+              ]
+            },
+            "solref": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "solreffriction": {
+              "dtype": "float32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "type": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            },
+            "vert": {
+              "dtype": "int32",
+              "shape": [
+                256,
+                2
+              ]
+            },
+            "worldid": {
+              "dtype": "int32",
+              "shape": [
+                256
+              ]
+            }
+          },
+          "original_solref_sha256": "d3098dbc5e1ebceff9114b90ac905b28a9f86b48e0ca4efc6c04b2e9c9d29648",
+          "external_forward_reservation": 8104,
+          "evidence_bytes_reservation": 470567354368,
+          "estimated_cost": false,
+          "tiers": [
+            32,
+            64,
+            128,
+            256,
+            512
+          ],
+          "exact_replay": true,
+          "numerical_thresholds_changed": false,
+          "model_constructions": 0,
+          "optimizer_constructions": 0,
+          "PPO": 0,
+          "cloud_training": 0
+        }
+      ],
+      "full_episode": true,
+      "public_steps_per_owner": 500,
+      "max_integrations": 7520000,
+      "max_GPU_forward": 30123104,
+      "max_CPU_forward": 4024,
+      "evidence_policy": "Retain all inherited boundary/microstep/WAL evidence; live 8 GiB return reserve; no full-space reservation claim"
+    }
+  ],
+  "max_integrations": 8738240,
+  "max_GPU_forward": 35003654,
+  "max_CPU_forward": 4816,
+  "PPO": 0,
+  "cloud_training": 0,
+  "checkpoint_loads": 0,
+  "training_ready": false,
+  "old_local_batches_rerun": 0,
+  "native_candidate_not_yet_cloud_accepted": true,
+  "source_archive_sha256": "24701df9e56face7980a1a2e0544dfebc41a4cf1b84ec4912be795d1a35a43b2",
+  "python": "3.12.14",
+  "uv_tool": "0.13.1",
+  "locked_sync": true,
+  "source_and_numeric_threshold_changes": false
+}

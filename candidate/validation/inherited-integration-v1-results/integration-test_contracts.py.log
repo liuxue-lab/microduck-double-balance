@@ -1,0 +1,150 @@
+test_existing_output_not_overwritten (__main__.LedgerTests.test_existing_output_not_overwritten) ... ok
+test_identity_mismatch_blocks (__main__.LedgerTests.test_identity_mismatch_blocks) ... ok
+test_ledger_tamper_rejected (__main__.LedgerTests.test_ledger_tamper_rejected) ... ok
+test_old_checkpoint_cannot_be_latest (__main__.LedgerTests.test_old_checkpoint_cannot_be_latest) ... ok
+test_partial_tail_is_not_clean (__main__.LedgerTests.test_partial_tail_is_not_clean) ... ok
+test_payload_corruption_blocks_before_deserialization (__main__.LedgerTests.test_payload_corruption_blocks_before_deserialization) ... ok
+test_pending_rollout_blocks_previous_resume (__main__.LedgerTests.test_pending_rollout_blocks_previous_resume) ... ok
+test_symlink_refused (__main__.LedgerTests.test_symlink_refused) ... ok
+test_two_updates_have_no_duplicate_iteration (__main__.LedgerTests.test_two_updates_have_no_duplicate_iteration) ... ok
+test_writer_failure_retains_started_and_pending (__main__.LedgerTests.test_writer_failure_retains_started_and_pending) ... ok
+test_caps_cover_worst_case_and_cleanup (__main__.PlanningTests.test_caps_cover_worst_case_and_cleanup) ... ok
+test_complete_proposal_is_unapproved (__main__.PlanningTests.test_complete_proposal_is_unapproved) ... ok
+test_edited_cap_cannot_pass (__main__.PlanningTests.test_edited_cap_cannot_pass) ... ok
+test_lr_scalar_restored (__main__.PlanningTests.test_lr_scalar_restored) ... ok
+test_native_denied_before_creation (__main__.PlanningTests.test_native_denied_before_creation) ... ok
+test_old_tier_and_capacity_unchanged (__main__.PlanningTests.test_old_tier_and_capacity_unchanged) ... ok
+test_recurrent_N1_and_N2 (__main__.PlanningTests.test_recurrent_N1_and_N2) ... ok
+test_throughput_counts_transitions_not_microsteps (__main__.PlanningTests.test_throughput_counts_transitions_not_microsteps) ... ok
+test_training_denied_before_models (__main__.PlanningTests.test_training_denied_before_models) ... ok
+test_failed_fake_update_is_pending_and_not_checkpointed (__main__.RunnerLoopTests.test_failed_fake_update_is_pending_and_not_checkpointed) ... ok
+test_two_fake_updates_have_48_transitions_and_unique_checkpoints (__main__.RunnerLoopTests.test_two_fake_updates_have_48_transitions_and_unique_checkpoints) ... ok
+test_bundle_path_and_duplicates_rejected (__main__.SourceTests.test_bundle_path_and_duplicates_rejected) ... ok
+test_bundle_roundtrip_and_identity (__main__.SourceTests.test_bundle_roundtrip_and_identity) ... ok
+test_episode_clock_crosses_20_without_changing_algorithm (__main__.SourceTests.test_episode_clock_crosses_20_without_changing_algorithm) ... ok
+test_native_factory_compiles_without_importing_native (__main__.SourceTests.test_native_factory_compiles_without_importing_native) ... ok
+test_no_push_or_stock_train_in_new_modules (__main__.SourceTests.test_no_push_or_stock_train_in_new_modules) ... ok
+test_numerical_helpers_ast_unchanged (__main__.SourceTests.test_numerical_helpers_ast_unchanged) ... ok
+test_rng_owner_roster_identical (__main__.SourceTests.test_rng_owner_roster_identical) ... ok
+test_runtime_30_macros_reset_tick_and_nonzero_global_counter (__main__.SourceTests.test_runtime_30_macros_reset_tick_and_nonzero_global_counter) ... ok
+test_child_failure_no_retry (__main__.TransportTests.test_child_failure_no_retry) ... ok
+test_ordered_fanout (__main__.TransportTests.test_ordered_fanout) ... ok
+test_stale_sequence_rejected (__main__.TransportTests.test_stale_sequence_rejected) ... ok
+test_timeout_no_resend (__main__.TransportTests.test_timeout_no_resend) ... ok
+test_wrong_owner_poisoned (__main__.TransportTests.test_wrong_owner_poisoned) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 0.140s
+
+OK
+{
+  "scope": "NUMPY_PROTOCOL_DOUBLES_NOT_REAL_TORCH",
+  "cases": [
+    {
+      "name": "transition/dict/0/0",
+      "passed": true,
+      "result": {
+        "cache": "dict",
+        "terminated": false,
+        "truncated": false,
+        "passed": true,
+        "real_environment": false,
+        "real_PPO": false
+      }
+    },
+    {
+      "name": "transition/dict/1/0",
+      "passed": true,
+      "result": {
+        "cache": "dict",
+        "terminated": true,
+        "truncated": false,
+        "passed": true,
+        "real_environment": false,
+        "real_PPO": false
+      }
+    },
+    {
+      "name": "transition/dict/0/1",
+      "passed": true,
+      "result": {
+        "cache": "dict",
+        "terminated": false,
+        "truncated": true,
+        "passed": true,
+        "real_environment": false,
+        "real_PPO": false
+      }
+    },
+    {
+      "name": "transition/dict/1/1",
+      "passed": true,
+      "result": {
+        "cache": "dict",
+        "terminated": true,
+        "truncated": true,
+        "passed": true,
+        "real_environment": false,
+        "real_PPO": false
+      }
+    },
+    {
+      "name": "transition/TensorDict/0/0",
+      "passed": true,
+      "result": {
+        "cache": "TensorDict",
+        "terminated": false,
+        "truncated": false,
+        "passed": true,
+        "real_environment": false,
+        "real_PPO": false
+      }
+    },
+    {
+      "name": "transition/TensorDict/1/0",
+      "passed": true,
+      "result": {
+        "cache": "TensorDict",
+        "terminated": true,
+        "truncated": false,
+        "passed": true,
+        "real_environment": false,
+        "real_PPO": false
+      }
+    },
+    {
+      "name": "transition/TensorDict/0/1",
+      "passed": true,
+      "result": {
+        "cache": "TensorDict",
+        "terminated": false,
+        "truncated": true,
+        "passed": true,
+        "real_environment": false,
+        "real_PPO": false
+      }
+    },
+    {
+      "name": "transition/TensorDict/1/1",
+      "passed": true,
+      "result": {
+        "cache": "TensorDict",
+        "terminated": true,
+        "truncated": true,
+        "passed": true,
+        "real_environment": false,
+        "real_PPO": false
+      }
+    },
+    {
+      "name": "two-owner-protocol",
+      "passed": true,
+      "result": {
+        "passed": true,
+        "owners": 2,
+        "native_nworld_tested": false,
+        "transport": "in-memory-protocol-only"
+      }
+    }
+  ]
+}

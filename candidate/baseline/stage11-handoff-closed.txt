@@ -1,0 +1,185 @@
+Microduck Double Balance · Stage11 完整关闭交接
+日期：2026-10-15。新状态覆盖旧进度摘要；旧证据原件不改写。
+
+一、当前结论和剩余工作
+
+G01–G11 均为 CLOSED_SCOPED，Stage11 固定门计数为 11/11＝100%。
+这只是本阶段约定范围完成，不是项目整体完成、5秒平衡成功或训练成功。
+累计原生积分API：674456 completed / 674457 attempted，保留1次历史失败尝试。
+G11增量：v1为0/0；v2为1792/1792；v3为3584/3584；合计5376/5376。
+独立CPU审计及本收尾程序新增原生积分=0；PPO=0；cloud_training=0。
+没有待执行的G11物理脚本。不要重跑v1/v2/v3或G01–G10，不删除started、失败记录、旧ZIP。
+本阶段仅剩发布手续：本地核验收尾包，手动导入增量bundle、fast-forward代码分支、SSH推送分支和注释标签。
+本端已生成阶段代码提交和注释标签；用户本地导入/推送尚未收到完成回执。
+没有自动push、PR、合并或训练。GitHub的“Create a pull request”是提示，不表示已创建PR；证据分支不能合并。
+
+二、固定位置、代码身份和长期规范
+
+代码仓库：/home/lx/microduck-double-balance/workspace
+项目解释器：/home/lx/microduck-double-balance/workspace/.venv/bin/python（保留此路径，不resolve成系统Python）
+下载目录：/home/lx/下载
+Stage11产物：/home/lx/microduck-double-balance/artifacts/double-balance-stage11
+代码分支：double-balance
+SSH origin：git@github.com:liuxue-lab/microduck-double-balance.git
+导入前HEAD：056eaf2b0c78261f34e3fa581858c8573cab981e
+导入后HEAD：6ba0dc2de381321576f32310e1995a8e2e11e566
+注释标签：stage-11-complete；tag object：bd1b219be55c813811d4f7cfa25d245b37166688
+增量bundle：microduck-stage-11-from-stage-10.bundle
+bundle SHA256：d274c927c199f9e59b802024cbe5e914a5be373365abfac7d1d3685716efb6bf
+旧tracked diff SHA256：b90daa0274c14d95cec9511ec4ac93568bd604e93ce3c60df1bb1c4155005d7e
+既有mdp.py修改和大量未跟踪诊断文件全部保留。本bundle只新增专用目录/文档，不覆盖它们。
+
+必须继续遵循：
+docs/handoffs/microduck-local-ssh-push-protocol.md
+docs/handoffs/microduck-cloud-gpu-and-transfer-protocol.md
+本包保留两份原规范全文。后续交接继续带上它们、准确路径、ref、哈希、错误恢复和关机状态。
+
+三、G11 v3固定原始证据和独立审计
+
+branch：stage11-g11-formal-environment-v3-transfer-20261015t144753z-9d3a47
+commit：4fc857853b988ebac7d87742925ffcb919748003
+tree：bb2ab4db70f99c5a962a6c64969b82cc2aa833cc
+固定入口：https://github.com/liuxue-lab/microduck-double-balance/tree/4fc857853b988ebac7d87742925ffcb919748003
+ZIP：g11-formal-environment-return-20261015T144753Z-9d3a47.zip
+字节：9405967
+SHA256：8b7bfce5389308ea02e1260a161f550df34a06dde0110ce405f99eff4229de06
+18个文本分片、21个Git blob及tree身份核验通过；1033个ZIP成员、CRC和完整清单通过。
+149份程序文件与交付版本一致；219项固定源身份、Git状态和tracked diff前后未变。
+运行目录：/home/lx/microduck-double-balance/artifacts/double-balance-stage11/g11-formal-environment-v3/20261015T144753Z-9d3a47
+原始标记：/home/lx/microduck-double-balance/artifacts/double-balance-stage11/g11-formal-environment-v3/started-v1.json
+启动器SHA256：2ed6a8cc3eb1cb9f71c9038706bc00342894eb86260b3d76b088d2861f3c5d4f
+内嵌payload SHA256：2c7dd4fe23eb5f62deb5006d59d95b41daee5c473c3173d4a2c742d8265d164c
+标记在ZIP外；本端不冒称远程读取了用户此刻标记字节。新的--verify-local会在用户机器只读核验并记录实际哈希。
+
+生产者状态：G11_REMAINING_MATRIX_MEASURED_REVIEW_REQUIRED；exit_code=0；errors=[]。
+20宏步、3584/3584积分：18个宏步接受64层、2个接受128层。公共tick在自动reset后从0重新推进。
+GPU forward14425/14425；CPU forward3/3；CPU kinematics1/1，和积分API分别计数。
+7352个WAL记录逐条配对，无悬挂attempt、无截断尾行；全部原生尝试/完成计数配对。
+20个宏步按原float32误差规则重算接受决定；候选/强制重放完整端点、阶段哈希和原始微轨迹完全一致。
+40份宏步边界和6份公共边界Data/owner数组，合计19326个数组哈希核验通过。
+元组键cache已在第一次积分前挑战：原字典/原key对象恢复，改值、新增key和换绑均覆盖。
+真实自动timeout后episode/time/tick归零、动作清零；历史/BAM按reset重建；全局/局部step/interval事件只按公共步提交。
+真实手动失败使用测试标志注入，pending=true时再次step在动作及计数变化前拒绝；显式reset清除pending。
+两公开步输出actor61D、critic85D，奖励有限；Reward/Termination读取第10个已接受宏步端点。
+Recorder原始数组保留终止时动作和旧观测，pre_reset端点、post_reset端点、post_step端点分别一致。
+21份完整Contact原始样本和21份改变约束原始样本独立复核；逐调用现场核验摘要覆盖所有14425次forward。
+1个接触排序graph捕获并执行14425次，graph/exec均释放；1 BVH+39 Mesh+2 Texture2D实际句柄全部释放。
+
+独立结论：V3_REMAINING_MATRIX_INDEPENDENT_AUDIT_PASS。
+最终关闭：G11_ORIGINAL_SCOPE_CLOSURE_REVIEW_PASS / CLOSED_SCOPED。
+原生产者报告里G11=OPEN、gate_completed=10、full_matrix_completed=false原样保留。
+full_matrix_completed=false指v3只跑剩余两工况；关闭依据是v1/v2/v3及G09/G10的组合证据，不伪造成一次连续三工况运行。
+
+四、复用的前置证据和限制
+
+v1 commit：5f01cdacd565c0be9c93ccbf592821b1224f47b3
+ZIP SHA256：23b388333f6410dbd52b41fa1e12d9683a5f890da69cda0409f8a2fbc46e706c
+实际checkpoint已读94个有限张量；随后环境构造noise断言失败；没有发生原生积分。
+v2 commit：731ea8022f350f4468518e12aef5ad479124da6b
+ZIP SHA256：8021857bc9b0375f1ea66398f4cc602106c4d1ad3ecc49b17ba4c34657599152
+10个正常步宏步1792/1792已执行、原阈值通过、原始重放一致；full/selective/empty/invalid reset和global phase保持已验收。
+v2正常步完整步后owner快照因源生tuple-key cache被旧容器拒绝而缺失。这个缺失仍保留，不声称v3恢复了丢失快照。
+v3只做新隔离reset的剩余auto-timeout/manual-failure两工况，没有重跑v2正常步或reset矩阵。
+旧29/29主机契约结果复用；用户那次host return ZIP仍未单独回传，不冒称已远程逐字节审计它，也不要求重跑。
+
+G09 commit：085388e8f92255b3f885c8faf2ab7486ffe79589
+ZIP SHA256：90cfa8c975934045344aa208b30644a007c2527aefcd82078afc44f2e3c97ffa
+60/60原始比较、5/5联合工况；范围是两个独立native nworld=1所有者。
+G10最新commit：65d20e39f4681202829906091e07da70674f2eb5
+ZIP SHA256：5fbdf069378fb9bddfd5a849af54768cde701f828b682583c7d362258ab3e6bf
+383766428字节大归档不重复塞入本包；固定源和审计源码/结论完整保留，必要时按固定commit恢复。
+G10原A1/A2/A3、10/10严格比较已关闭；不增加“整个RK4必须单图捕获”门槛。
+G10的恢复是接受宏步端点，非任意RL/私有试算中断；不扩大为任意世界数。
+
+五、实际checkpoint及后续训练边界
+
+实际文件：/home/lx/microduck-double-balance/artifacts/double-balance-stage08/returned/5d998fc322345102/evidence-20260930T093645-8955/extension/E-20260929/segment-001/checkpoints/update_004000.pt
+字节：10073500；张量：94；SHA256：86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97
+schema SHA256：e740e6ca4ad74c53a0eaaa9c95dcae9b69fd5b0edf122593743cd015dcb388a7
+处置：BLOCKED_TASK_AND_TIMING_DIFFER。键映射候选通过不等于语义兼容。
+旧托盘任务和真实头部、接受端点派生状态以及时间语义不同；原Stage08完整训练配置也未完全重建。
+v3只复查文件SHA，torch.load=0；没有加载runner/optimizer，没有转换/保存模型。
+不能用旧训练成功率证明新任务。任何暖启动、normalizer/optimizer迁移要另行明确并审计。
+
+已验收任务：真实头部16120三角面、名义放球、hold=0、native nworld=1、0.002s×10=0.020s。
+原容差、32/64/128自适应、接触排序、回滚/拒绝/精确重放规则全部保留。
+配置仍限定名义reset；随机姿态/位置曲面投影尚未开放。代码注册任务的阻断保持；隔离正式候选位于experiments/stage11/g11-formal-v3。
+本阶段不代表训练生产任务已经安装，也不代表5秒平衡、自然失败率、长期恢复、批量扩展或实机可用。
+下一阶段应先明确训练发布与依赖打包，再声明多环境规模/吞吐的测量预算；之后才考虑单独批准的云PPO与固定评估协议。
+滚筒/自动爬球/摔倒恢复/实机不自动加入当前验收。
+
+六、耗时与审计优化的实际边界
+
+v3总耗时388.976612587秒，约6分29秒。WAL写入/fsync共17.254216242秒，占本批墙钟4.44%。
+这些是本批实际剖析；不能把不同物理工况与旧G10的88分钟直接相除宣称加速倍数。
+每次积分attempt/complete仍持久化，失败不推断完成。内部kernel计数在内存更新并周期checkpoint，正常退出精确；硬崩溃用最后checkpoint+明确上界。
+只捕获一次接触排序图；未删原生同步/必要字节检查；不设墙钟截止，5秒心跳不是执行超时。
+G11内部全量原始Contact/solver blob未全部落盘，各21份样本+现场全调用核验摘要；该限制明确保留，复用G10已核验原始范围。
+收尾程序只读小归档、219源和标记，不重新读取383MB G10大归档、不运行仿真、不重测旧29项。
+
+七、现在可直接运行的完整命令
+
+下载microduck-stage11-closeout-20261015.zip到/home/lx/下载，保持文件名一致。
+以下解压使用-n，保留同名已有文件；如果旧同名收尾文件导致SHA不符，停止并指出真实文件名，不覆盖旧证据。
+
+unzip -n /home/lx/下载/microduck-stage11-closeout-20261015.zip -d /home/lx/下载
+python3 -I -S /home/lx/下载/microduck-stage11-closeout.py --verify-local
+
+通过输出Stage11CloseoutPackage=PASS、Stage11CloseoutReceipt=真实路径及下一步命令。
+回执写到/home/lx/microduck-double-balance/artifacts/double-balance-stage11/stage11-closeout/local-verification-<实际UTC>.json；文件名由运行打印，不猜时间。
+上面的检查不导入、不合并、不推送。成功后由你手动执行下面这些命令（&&保证前一项成功才继续）：
+
+cd /home/lx/microduck-double-balance/workspace &&
+git bundle verify /home/lx/下载/microduck-stage-11-from-stage-10.bundle &&
+git fetch /home/lx/下载/microduck-stage-11-from-stage-10.bundle refs/heads/double-balance:refs/remotes/stage11/double-balance refs/tags/stage-11-complete:refs/tags/stage-11-complete &&
+git merge --ff-only refs/remotes/stage11/double-balance &&
+git push origin double-balance &&
+git push origin stage-11-complete
+
+这里的fast-forward仅导入本阶段代码bundle；不是合并任何证据分支。不使用force，不运行git reset/clean，不自动stash。
+push使用上面明确的既有SSH origin。仅需贴正常分支与标签push成功输出；成功后不再要求全套远端核验。
+如果只想在其他机器检查交付包：python3 -I -S /实际解压目录/microduck-stage11-closeout.py --verify-package
+这不替代用户固定机器的只读检查；没有NumPy/Torch/MuJoCo依赖。
+
+八、常见错误与保留现场
+
+1. 文件名出现(1)：使用本次真实文件，勿把旧版本当新版本；确保命令与下载路径一致。
+2. SHA或源身份不符：停止导入，保留所有文件/started/账本，回传报错；不改期望SHA，不重跑物理批次。
+3. 新增路径与用户文件冲突：不覆盖、不clean，先比较冲突文件。bundle只新增专用目录/文档。
+4. HEAD不同、non-fast-forward或tag冲突：停止；不force、不覆盖标签。按SSH固定规范只做必要分歧审计。
+5. src refspec stage-11-complete不存在：先导入bundle标签，不能重新随意造标签。
+6. HTTPS用户名/PAT提示：检查origin，应为git@github.com:liuxue-lab/microduck-double-balance.git；复用既有SSH。
+7. Permission denied(publickey)：按既有SSH agent/key配置处理，不索取私钥或另建一套；已完成传输不重做。
+8. Everything up-to-date：检查是否已经导入6ba0dc2de381321576f32310e1995a8e2e11e566；未导入时不能当阶段已发布。
+9. started已存在：是旧批次已经启动的保护标记，不能删除/重建/绕过。当前本来就没有要跑的物理批次。
+10. v1 noise配置断言已在v2修复，v2元组键快照失败已由v3修复；旧错误记录保留，不重复修旧批次。
+
+九、云端状态
+
+本阶段没有云训练/云计算任务，也没有新云端传输待办。RTX5060仅本地开发/仿真。
+上次5090关机提醒：2026-10-01 05:03:28 Asia/Shanghai；后续用户已在2026-10-01确认关机。
+这里沿用最后已确认状态，不宣称实时查询了平台电源。不得沿用旧SSH端口当新实例地址。
+旧Stage09部分完整head-trace仍未全部回传，这是历史留存限制；不写“云端全部文件已备份”，不重启旧关机daemon。
+以后新云工作结束且必要回传校验完成时，立即提醒手动关机，并分别记录提醒与实际确认。
+
+十、包内结构与复核
+
+microduck-stage-11-from-stage-10.bundle：新代码/文档/注释标签的增量包；不含.pt及完整运行轨迹。
+microduck-stage11-closeout.py：标准库只读校验及命令打印器，无物理入口。
+stage11-closeout-data/PACKAGE.json：每文件大小/SHA、bundle引用和新增仓库文件清单。
+stage11-closeout-data/closure-review.json：当前权威G11独立关闭结论。
+stage11-closeout-data/g11-v1-return、g11-v2-return、g11-v3-return：三次不可变ZIP、独立审计、传输身份/报告。
+stage11-closeout-data/g11-v3-build/payload：149份原执行程序；不授权重跑。
+stage11-closeout-data/historical-handoff：上一份完整357成员交接，包括219固定源、G09/G10引用、审计代码、29项候选。
+stage11-closeout-data/historical-g11-handoff.txt：原TXT原字节，不将其旧10/11进度误当当前状态。
+大型G10及更早原始归档通过固定commit查回，避免再次塞入本包。模型原件不包含在本包，路径/SHA已固定。
+内层v3审计可在临时目录解压ZIP到g11-v3-return/extracted后运行其audit.py；需要NumPy，只写新audit.json，不导入模拟器、不改账本。
+
+十一、新对话开场文字
+
+继续microduck-double-balance。先完整阅读本TXT并解压配套Stage11 closeout ZIP，读取closure-review.json。
+G01–G11均按既定范围CLOSED_SCOPED，Stage11=11/11；累计674456 completed /674457 attempted，历史失败1次保留。
+v3返回commit 4fc857853b988ebac7d87742925ffcb919748003已经完成原始独立审计，不重跑任何旧批次。
+先依据我最后的分支/标签push输出确认发布手续是否完成，再推进下一阶段范围与可运行准备。
+保留v2缺失完整步后owner快照这一事实，保留全部阈值/started/旧归档；PPO=0、云训练=0，不自动push/PR/合并。
+下一阶段训练发布、规模/吞吐、云训练与新任务评估须明确边界和预算；不要把Stage11 100%当整个项目完成。

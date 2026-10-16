@@ -1,0 +1,1579 @@
+{
+  "auto_reset": true,
+  "events": {
+    "expand_bam_friction_fields": {
+      "func": {
+        "callable": "mjlab_microduck.tasks.mdp.expand_bam_friction_fields",
+        "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+      },
+      "interval_range_s": null,
+      "is_global_time": false,
+      "min_step_count_between_reset": 0,
+      "mode": "startup",
+      "params": {},
+      "type": "mjlab.managers.event_manager.EventTermCfg"
+    },
+    "reset_action_history": {
+      "func": {
+        "callable": "mjlab_microduck.tasks.mdp.reset_action_history",
+        "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+      },
+      "interval_range_s": null,
+      "is_global_time": false,
+      "min_step_count_between_reset": 0,
+      "mode": "reset",
+      "params": {},
+      "type": "mjlab.managers.event_manager.EventTermCfg"
+    },
+    "reset_stage11_head_reference": {
+      "func": {
+        "callable": "formal_task.reset_nominal",
+        "source_sha256": "2a7916bacdddf5289a1a96c56e08f44005fc28a0a9af32fa8b78da3deb381561"
+      },
+      "interval_range_s": null,
+      "is_global_time": false,
+      "min_step_count_between_reset": 0,
+      "mode": "reset",
+      "params": {
+        "ball_radius": 0.12,
+        "ball_vel_noise": 0.0,
+        "joint_noise": 0.0,
+        "root_height": 0.125,
+        "tilt_noise_deg": 0.0,
+        "xy_noise": 0.0,
+        "yaw_range": [
+          0.0,
+          0.0
+        ]
+      },
+      "type": "mjlab.managers.event_manager.EventTermCfg"
+    },
+    "stage11_release_block": {
+      "func": {
+        "callable": "formal_task.startup",
+        "source_sha256": "2a7916bacdddf5289a1a96c56e08f44005fc28a0a9af32fa8b78da3deb381561"
+      },
+      "interval_range_s": null,
+      "is_global_time": false,
+      "min_step_count_between_reset": 0,
+      "mode": "startup",
+      "params": {},
+      "type": "mjlab.managers.event_manager.EventTermCfg"
+    },
+    "stage12_release_block": {
+      "func": {
+        "callable": "stage12.contracts.deny_training",
+        "source_sha256": "8f3ba4a271d8ea186dd6dfd5931b60f6613c2776fd78975fa710cd7a073f385a"
+      },
+      "interval_range_s": null,
+      "is_global_time": false,
+      "min_step_count_between_reset": 0,
+      "mode": "startup",
+      "params": {},
+      "type": "mjlab.managers.event_manager.EventTermCfg"
+    }
+  },
+  "manifest": {
+    "actions": {
+      "ball_hold": {
+        "clip": null,
+        "duck_kd": 4.0,
+        "duck_kd_rot": 0.08,
+        "duck_kp": 40.0,
+        "duck_kp_rot": 3.0,
+        "duck_name": "robot",
+        "entity_name": "ball",
+        "kd": 20.0,
+        "kd_rot": 0.2,
+        "kp": 400.0,
+        "levels": [
+          0.0
+        ],
+        "type": "mjlab_microduck.tasks.mdp.BallHoldActionCfg"
+      },
+      "joint_pos": {
+        "actuator_names": [
+          ".*"
+        ],
+        "clip": null,
+        "entity_name": "robot",
+        "offset": 0.0,
+        "preserve_order": false,
+        "scale": 1.0,
+        "transmission_type": {
+          "enum": "TransmissionType",
+          "value": "joint"
+        },
+        "type": "mjlab.envs.mdp.actions.actions.JointPositionActionCfg",
+        "use_default_offset": true
+      }
+    },
+    "actor_observations": {
+      "concatenate_dim": -1,
+      "concatenate_terms": true,
+      "enable_corruption": true,
+      "flatten_history_dim": true,
+      "history_length": null,
+      "nan_check_per_term": true,
+      "nan_policy": "disabled",
+      "terms": {
+        "actions": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 0,
+          "delay_min_lag": 0,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 0,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab.envs.mdp.observations.last_action",
+            "source_sha256": "493aab813b211cd25e173ef7072637b9a7e988eaed7ce4ec31130ee4497ff09f"
+          },
+          "history_length": 0,
+          "noise": null,
+          "params": {},
+          "scale": null,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        },
+        "base_ang_vel": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 1,
+          "delay_min_lag": 0,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 64,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab_microduck.tasks.mdp.base_ang_vel_imu_misaligned",
+            "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+          },
+          "history_length": 0,
+          "noise": {
+            "_tensor_cache": {},
+            "n_max": 0.03,
+            "n_min": -0.03,
+            "operation": "add",
+            "type": "mjlab.utils.noise.noise_cfg.UniformNoiseCfg"
+          },
+          "params": {
+            "max_angle_deg": 6.0
+          },
+          "scale": null,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        },
+        "body_command": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 0,
+          "delay_min_lag": 0,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 0,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab_microduck.tasks.mdp.stage11_head_actor_state",
+            "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+          },
+          "history_length": 0,
+          "noise": null,
+          "params": {},
+          "scale": null,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        },
+        "command": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 0,
+          "delay_min_lag": 0,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 0,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab.envs.mdp.observations.generated_commands",
+            "source_sha256": "493aab813b211cd25e173ef7072637b9a7e988eaed7ce4ec31130ee4497ff09f"
+          },
+          "history_length": 0,
+          "noise": null,
+          "params": {
+            "command_name": "twist"
+          },
+          "scale": null,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        },
+        "head_command": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 0,
+          "delay_min_lag": 0,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 0,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab_microduck.tasks.mdp.basketball_head_pad",
+            "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+          },
+          "history_length": 0,
+          "noise": null,
+          "params": {},
+          "scale": null,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        },
+        "joint_pos": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 0,
+          "delay_min_lag": 0,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 0,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab.envs.mdp.observations.joint_pos_rel",
+            "source_sha256": "493aab813b211cd25e173ef7072637b9a7e988eaed7ce4ec31130ee4497ff09f"
+          },
+          "history_length": 0,
+          "noise": {
+            "_tensor_cache": {},
+            "n_max": 0.001,
+            "n_min": -0.001,
+            "operation": "add",
+            "type": "mjlab.utils.noise.noise_cfg.UniformNoiseCfg"
+          },
+          "params": {
+            "asset_cfg": {
+              "actuator_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "actuator_names": null,
+              "body_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "body_names": null,
+              "camera_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "camera_names": null,
+              "geom_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "geom_names": null,
+              "joint_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "joint_names": [
+                "^(?!passive_).*"
+              ],
+              "light_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "light_names": null,
+              "material_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "material_names": null,
+              "name": "robot",
+              "pair_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "pair_names": null,
+              "preserve_order": false,
+              "site_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "site_names": null,
+              "tendon_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "tendon_names": null,
+              "type": "mjlab.managers.scene_entity_config.SceneEntityCfg"
+            },
+            "biased": true
+          },
+          "scale": null,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        },
+        "joint_vel": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 1,
+          "delay_min_lag": 1,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 0,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab.envs.mdp.observations.joint_vel_rel",
+            "source_sha256": "493aab813b211cd25e173ef7072637b9a7e988eaed7ce4ec31130ee4497ff09f"
+          },
+          "history_length": 0,
+          "noise": {
+            "_tensor_cache": {},
+            "n_max": 0.25,
+            "n_min": -0.25,
+            "operation": "add",
+            "type": "mjlab.utils.noise.noise_cfg.UniformNoiseCfg"
+          },
+          "params": {
+            "asset_cfg": {
+              "actuator_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "actuator_names": null,
+              "body_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "body_names": null,
+              "camera_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "camera_names": null,
+              "geom_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "geom_names": null,
+              "joint_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "joint_names": [
+                "^(?!passive_).*"
+              ],
+              "light_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "light_names": null,
+              "material_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "material_names": null,
+              "name": "robot",
+              "pair_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "pair_names": null,
+              "preserve_order": false,
+              "site_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "site_names": null,
+              "tendon_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "tendon_names": null,
+              "type": "mjlab.managers.scene_entity_config.SceneEntityCfg"
+            }
+          },
+          "scale": null,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        },
+        "projected_gravity": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 1,
+          "delay_min_lag": 0,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 64,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab_microduck.tasks.mdp.projected_gravity_imu_misaligned",
+            "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+          },
+          "history_length": 0,
+          "noise": {
+            "_tensor_cache": {},
+            "n_max": 0.01,
+            "n_min": -0.01,
+            "operation": "add",
+            "type": "mjlab.utils.noise.noise_cfg.UniformNoiseCfg"
+          },
+          "params": {
+            "max_angle_deg": 6.0
+          },
+          "scale": null,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        }
+      },
+      "type": "mjlab.managers.observation_manager.ObservationGroupCfg"
+    },
+    "critic_observations": {
+      "concatenate_dim": -1,
+      "concatenate_terms": true,
+      "enable_corruption": false,
+      "flatten_history_dim": true,
+      "history_length": null,
+      "nan_check_per_term": true,
+      "nan_policy": "disabled",
+      "terms": {
+        "actions": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 0,
+          "delay_min_lag": 0,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 0,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab.envs.mdp.observations.last_action",
+            "source_sha256": "493aab813b211cd25e173ef7072637b9a7e988eaed7ce4ec31130ee4497ff09f"
+          },
+          "history_length": 0,
+          "noise": null,
+          "params": {},
+          "scale": null,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        },
+        "base_ang_vel": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 0,
+          "delay_min_lag": 0,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 0,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab.envs.mdp.observations.builtin_sensor",
+            "source_sha256": "493aab813b211cd25e173ef7072637b9a7e988eaed7ce4ec31130ee4497ff09f"
+          },
+          "history_length": 0,
+          "noise": {
+            "_tensor_cache": {},
+            "n_max": 0.2,
+            "n_min": -0.2,
+            "operation": "add",
+            "type": "mjlab.utils.noise.noise_cfg.UniformNoiseCfg"
+          },
+          "params": {
+            "sensor_name": "robot/imu_ang_vel"
+          },
+          "scale": null,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        },
+        "base_lin_vel": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 0,
+          "delay_min_lag": 0,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 0,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab.envs.mdp.observations.base_lin_vel",
+            "source_sha256": "493aab813b211cd25e173ef7072637b9a7e988eaed7ce4ec31130ee4497ff09f"
+          },
+          "history_length": 0,
+          "noise": null,
+          "params": {},
+          "scale": 1.0,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        },
+        "body_command": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 0,
+          "delay_min_lag": 0,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 0,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab_microduck.tasks.mdp.basketball_state",
+            "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+          },
+          "history_length": 0,
+          "noise": null,
+          "params": {
+            "pos_scale": 3.0,
+            "vel_scale": 1.0
+          },
+          "scale": null,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        },
+        "command": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 0,
+          "delay_min_lag": 0,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 0,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab.envs.mdp.observations.generated_commands",
+            "source_sha256": "493aab813b211cd25e173ef7072637b9a7e988eaed7ce4ec31130ee4497ff09f"
+          },
+          "history_length": 0,
+          "noise": null,
+          "params": {
+            "command_name": "twist"
+          },
+          "scale": null,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        },
+        "foot_air_time": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 0,
+          "delay_min_lag": 0,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 0,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab_microduck.tasks.mdp.foot_air_time_safe",
+            "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+          },
+          "history_length": 0,
+          "noise": null,
+          "params": {
+            "sensor_name": "feet_ground_contact"
+          },
+          "scale": null,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        },
+        "foot_contact": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 0,
+          "delay_min_lag": 0,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 0,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab.tasks.velocity.mdp.observations.foot_contact",
+            "source_sha256": "4e56cefa6481c42e641902cc124cfdd02c3c92b45d8b294253aad0fc87ec9134"
+          },
+          "history_length": 0,
+          "noise": null,
+          "params": {
+            "sensor_name": "feet_ground_contact"
+          },
+          "scale": null,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        },
+        "foot_contact_forces": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 0,
+          "delay_min_lag": 0,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 0,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab_microduck.tasks.mdp.foot_contact_forces_safe",
+            "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+          },
+          "history_length": 0,
+          "noise": null,
+          "params": {
+            "sensor_name": "feet_ground_contact"
+          },
+          "scale": null,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        },
+        "foot_height": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 0,
+          "delay_min_lag": 0,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 0,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab_microduck.tasks.mdp.foot_height_safe",
+            "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+          },
+          "history_length": 0,
+          "noise": null,
+          "params": {
+            "sensor_name": "foot_height_scan"
+          },
+          "scale": null,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        },
+        "head_command": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 0,
+          "delay_min_lag": 0,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 0,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab_microduck.tasks.mdp.basketball_head_pad",
+            "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+          },
+          "history_length": 0,
+          "noise": null,
+          "params": {},
+          "scale": null,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        },
+        "joint_pos": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 0,
+          "delay_min_lag": 0,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 0,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab.envs.mdp.observations.joint_pos_rel",
+            "source_sha256": "493aab813b211cd25e173ef7072637b9a7e988eaed7ce4ec31130ee4497ff09f"
+          },
+          "history_length": 0,
+          "noise": {
+            "_tensor_cache": {},
+            "n_max": 0.001,
+            "n_min": -0.001,
+            "operation": "add",
+            "type": "mjlab.utils.noise.noise_cfg.UniformNoiseCfg"
+          },
+          "params": {
+            "asset_cfg": {
+              "actuator_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "actuator_names": null,
+              "body_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "body_names": null,
+              "camera_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "camera_names": null,
+              "geom_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "geom_names": null,
+              "joint_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "joint_names": [
+                "^(?!passive_).*"
+              ],
+              "light_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "light_names": null,
+              "material_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "material_names": null,
+              "name": "robot",
+              "pair_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "pair_names": null,
+              "preserve_order": false,
+              "site_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "site_names": null,
+              "tendon_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "tendon_names": null,
+              "type": "mjlab.managers.scene_entity_config.SceneEntityCfg"
+            },
+            "biased": false
+          },
+          "scale": null,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        },
+        "joint_vel": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 0,
+          "delay_min_lag": 0,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 0,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab.envs.mdp.observations.joint_vel_rel",
+            "source_sha256": "493aab813b211cd25e173ef7072637b9a7e988eaed7ce4ec31130ee4497ff09f"
+          },
+          "history_length": 0,
+          "noise": {
+            "_tensor_cache": {},
+            "n_max": 0.25,
+            "n_min": -0.25,
+            "operation": "add",
+            "type": "mjlab.utils.noise.noise_cfg.UniformNoiseCfg"
+          },
+          "params": {
+            "asset_cfg": {
+              "actuator_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "actuator_names": null,
+              "body_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "body_names": null,
+              "camera_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "camera_names": null,
+              "geom_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "geom_names": null,
+              "joint_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "joint_names": [
+                "^(?!passive_).*"
+              ],
+              "light_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "light_names": null,
+              "material_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "material_names": null,
+              "name": "robot",
+              "pair_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "pair_names": null,
+              "preserve_order": false,
+              "site_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "site_names": null,
+              "tendon_ids": {
+                "slice": [
+                  null,
+                  null,
+                  null
+                ]
+              },
+              "tendon_names": null,
+              "type": "mjlab.managers.scene_entity_config.SceneEntityCfg"
+            }
+          },
+          "scale": null,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        },
+        "projected_gravity": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 0,
+          "delay_min_lag": 0,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 0,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab.envs.mdp.observations.projected_gravity",
+            "source_sha256": "493aab813b211cd25e173ef7072637b9a7e988eaed7ce4ec31130ee4497ff09f"
+          },
+          "history_length": 0,
+          "noise": {
+            "_tensor_cache": {},
+            "n_max": 0.05,
+            "n_min": -0.05,
+            "operation": "add",
+            "type": "mjlab.utils.noise.noise_cfg.UniformNoiseCfg"
+          },
+          "params": {},
+          "scale": null,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        },
+        "top_ball_state": {
+          "clip": null,
+          "delay_hold_prob": 0.0,
+          "delay_max_lag": 0,
+          "delay_min_lag": 0,
+          "delay_per_env": true,
+          "delay_per_env_phase": true,
+          "delay_update_period": 0,
+          "flatten_history_dim": true,
+          "func": {
+            "callable": "mjlab_microduck.tasks.mdp.stage11_head_critic_state",
+            "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+          },
+          "history_length": 0,
+          "noise": null,
+          "params": {},
+          "scale": null,
+          "type": "mjlab.managers.observation_manager.ObservationTermCfg"
+        }
+      },
+      "type": "mjlab.managers.observation_manager.ObservationGroupCfg"
+    },
+    "decimation": 10,
+    "observation_term_order": {
+      "actor": [
+        "base_ang_vel",
+        "projected_gravity",
+        "joint_pos",
+        "joint_vel",
+        "actions",
+        "command",
+        "head_command",
+        "body_command"
+      ],
+      "critic": [
+        "base_lin_vel",
+        "base_ang_vel",
+        "projected_gravity",
+        "joint_pos",
+        "joint_vel",
+        "actions",
+        "command",
+        "foot_height",
+        "foot_air_time",
+        "foot_contact",
+        "foot_contact_forces",
+        "head_command",
+        "body_command",
+        "top_ball_state"
+      ]
+    },
+    "physics_dt_s": 0.002,
+    "rewards": {
+      "action_rate_l2": {
+        "func": {
+          "callable": "mjlab.envs.mdp.rewards.action_rate_l2",
+          "source_sha256": "02e42a1e15dc1a27a0cce4e3d2863a165094914118789a1ec4cfbf6ed97a9c60"
+        },
+        "params": {},
+        "type": "mjlab.managers.reward_manager.RewardTermCfg",
+        "weight": -0.05
+      },
+      "angular_momentum": {
+        "func": {
+          "callable": "mjlab.tasks.velocity.mdp.rewards.angular_momentum_penalty",
+          "source_sha256": "5149776c24c8499c05c1f4941a295647779867efd645f78be02408fd85c96dfb"
+        },
+        "params": {
+          "sensor_name": "robot/root_angmom"
+        },
+        "type": "mjlab.managers.reward_manager.RewardTermCfg",
+        "weight": -0.02
+      },
+      "ball_speed": {
+        "func": {
+          "callable": "mjlab_microduck.tasks.mdp.basketball_ball_speed_l2",
+          "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+        },
+        "params": {},
+        "type": "mjlab.managers.reward_manager.RewardTermCfg",
+        "weight": -0.05
+      },
+      "body_ang_vel": {
+        "func": {
+          "callable": "mjlab.tasks.velocity.mdp.rewards.body_angular_velocity_penalty",
+          "source_sha256": "5149776c24c8499c05c1f4941a295647779867efd645f78be02408fd85c96dfb"
+        },
+        "params": {
+          "asset_cfg": {
+            "actuator_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "actuator_names": null,
+            "body_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "body_names": [
+              "trunk_base"
+            ],
+            "camera_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "camera_names": null,
+            "geom_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "geom_names": null,
+            "joint_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "joint_names": null,
+            "light_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "light_names": null,
+            "material_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "material_names": null,
+            "name": "robot",
+            "pair_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "pair_names": null,
+            "preserve_order": false,
+            "site_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "site_names": null,
+            "tendon_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "tendon_names": null,
+            "type": "mjlab.managers.scene_entity_config.SceneEntityCfg"
+          }
+        },
+        "type": "mjlab.managers.reward_manager.RewardTermCfg",
+        "weight": -0.05
+      },
+      "centered": {
+        "func": {
+          "callable": "mjlab_microduck.tasks.mdp.basketball_centered",
+          "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+        },
+        "params": {
+          "std": 0.04
+        },
+        "type": "mjlab.managers.reward_manager.RewardTermCfg",
+        "weight": 2.0
+      },
+      "dof_pos_limits": {
+        "func": {
+          "callable": "mjlab.envs.mdp.rewards.joint_pos_limits",
+          "source_sha256": "02e42a1e15dc1a27a0cce4e3d2863a165094914118789a1ec4cfbf6ed97a9c60"
+        },
+        "params": {},
+        "type": "mjlab.managers.reward_manager.RewardTermCfg",
+        "weight": -1.0
+      },
+      "double_balance": {
+        "func": {
+          "callable": "mjlab_microduck.tasks.mdp.stage11_head_task_reward",
+          "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+        },
+        "params": {},
+        "type": "mjlab.managers.reward_manager.RewardTermCfg",
+        "weight": 4.0
+      },
+      "feet_on_ball": {
+        "func": {
+          "callable": "mjlab_microduck.tasks.mdp.basketball_feet_on_ball",
+          "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+        },
+        "params": {
+          "asset_cfg": {
+            "actuator_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "actuator_names": null,
+            "body_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "body_names": null,
+            "camera_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "camera_names": null,
+            "geom_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "geom_names": null,
+            "joint_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "joint_names": null,
+            "light_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "light_names": null,
+            "material_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "material_names": null,
+            "name": "robot",
+            "pair_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "pair_names": null,
+            "preserve_order": false,
+            "site_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "site_names": [
+              "left_foot",
+              "right_foot"
+            ],
+            "tendon_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "tendon_names": null,
+            "type": "mjlab.managers.scene_entity_config.SceneEntityCfg"
+          },
+          "ball_radius": 0.12,
+          "sole_gap": 0.012,
+          "std": 0.02
+        },
+        "type": "mjlab.managers.reward_manager.RewardTermCfg",
+        "weight": 1.0
+      },
+      "head_surface_normal_tilt": {
+        "func": {
+          "callable": "mjlab_microduck.tasks.mdp.stage11_head_normal_tilt_l2",
+          "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+        },
+        "params": {},
+        "type": "mjlab.managers.reward_manager.RewardTermCfg",
+        "weight": -0.5
+      },
+      "height": {
+        "func": {
+          "callable": "mjlab_microduck.tasks.mdp.basketball_height",
+          "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+        },
+        "params": {
+          "ball_radius": 0.12,
+          "root_height": 0.125,
+          "std": 0.03
+        },
+        "type": "mjlab.managers.reward_manager.RewardTermCfg",
+        "weight": 1.0
+      },
+      "pose": {
+        "func": {
+          "callable": "mjlab.tasks.velocity.mdp.rewards.variable_posture",
+          "source_sha256": "5149776c24c8499c05c1f4941a295647779867efd645f78be02408fd85c96dfb"
+        },
+        "params": {
+          "asset_cfg": {
+            "actuator_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "actuator_names": null,
+            "body_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "body_names": null,
+            "camera_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "camera_names": null,
+            "geom_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "geom_names": null,
+            "joint_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "joint_names": [
+              "^(?!passive_|.*neck.*|.*head.*).*"
+            ],
+            "light_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "light_names": null,
+            "material_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "material_names": null,
+            "name": "robot",
+            "pair_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "pair_names": null,
+            "preserve_order": false,
+            "site_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "site_names": null,
+            "tendon_ids": {
+              "slice": [
+                null,
+                null,
+                null
+              ]
+            },
+            "tendon_names": null,
+            "type": "mjlab.managers.scene_entity_config.SceneEntityCfg"
+          },
+          "command_name": "twist",
+          "running_threshold": 1.5,
+          "std_running": {
+            ".*ankle.*": 0.25,
+            ".*hip_pitch.*": 0.4,
+            ".*hip_roll.*": 0.05,
+            ".*hip_yaw.*": 0.3,
+            ".*knee.*": 0.4
+          },
+          "std_standing": {
+            ".*ankle.*": 0.1,
+            ".*hip_pitch.*": 0.15,
+            ".*hip_roll.*": 0.05,
+            ".*hip_yaw.*": 0.1,
+            ".*knee.*": 0.15
+          },
+          "std_walking": {
+            ".*ankle.*": 0.25,
+            ".*hip_pitch.*": 0.4,
+            ".*hip_roll.*": 0.05,
+            ".*hip_yaw.*": 0.3,
+            ".*knee.*": 0.4
+          },
+          "walking_threshold": 0.01
+        },
+        "type": "mjlab.managers.reward_manager.RewardTermCfg",
+        "weight": 1.0
+      },
+      "self_collisions": {
+        "func": {
+          "callable": "mjlab.tasks.velocity.mdp.rewards.self_collision_cost",
+          "source_sha256": "5149776c24c8499c05c1f4941a295647779867efd645f78be02408fd85c96dfb"
+        },
+        "params": {
+          "sensor_name": "self_collision"
+        },
+        "type": "mjlab.managers.reward_manager.RewardTermCfg",
+        "weight": -1.0
+      },
+      "top_ball_speed": {
+        "func": {
+          "callable": "mjlab_microduck.tasks.mdp.stage11_head_speed_l2",
+          "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+        },
+        "params": {},
+        "type": "mjlab.managers.reward_manager.RewardTermCfg",
+        "weight": -0.1
+      },
+      "track_angular_velocity": {
+        "func": {
+          "callable": "mjlab.tasks.velocity.mdp.rewards.track_angular_velocity",
+          "source_sha256": "5149776c24c8499c05c1f4941a295647779867efd645f78be02408fd85c96dfb"
+        },
+        "params": {
+          "command_name": "twist",
+          "std": 0.7071067811865476
+        },
+        "type": "mjlab.managers.reward_manager.RewardTermCfg",
+        "weight": 0.5
+      },
+      "track_linear_velocity": {
+        "func": {
+          "callable": "mjlab.tasks.velocity.mdp.rewards.track_linear_velocity",
+          "source_sha256": "5149776c24c8499c05c1f4941a295647779867efd645f78be02408fd85c96dfb"
+        },
+        "params": {
+          "command_name": "twist",
+          "std": 0.31622776601683794
+        },
+        "type": "mjlab.managers.reward_manager.RewardTermCfg",
+        "weight": 1.0
+      },
+      "upright": {
+        "func": {
+          "callable": "mjlab_microduck.tasks.mdp.wrestle_upright",
+          "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+        },
+        "params": {
+          "std": 0.3
+        },
+        "type": "mjlab.managers.reward_manager.RewardTermCfg",
+        "weight": 1.0
+      }
+    },
+    "step_dt_s": 0.02,
+    "terminations": {
+      "fell": {
+        "func": {
+          "callable": "mjlab_microduck.tasks.mdp.basketball_fell",
+          "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+        },
+        "params": {
+          "ball_radius": 0.12,
+          "fall_tilt_deg": 55.0,
+          "max_offset": 0.16,
+          "min_height": 0.05
+        },
+        "time_out": false,
+        "type": "mjlab.managers.termination_manager.TerminationTermCfg"
+      },
+      "nan_state": {
+        "func": {
+          "callable": "mjlab_microduck.tasks.mdp.robot_state_is_nan",
+          "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+        },
+        "params": {
+          "extra_entity_names": [
+            "ball",
+            "top_ball"
+          ],
+          "sensor_names": [
+            "feet_ground_contact"
+          ]
+        },
+        "time_out": false,
+        "type": "mjlab.managers.termination_manager.TerminationTermCfg"
+      },
+      "out_of_terrain_bounds": {
+        "func": {
+          "callable": "mjlab.tasks.velocity.mdp.terminations.out_of_terrain_bounds",
+          "source_sha256": "755e0b92d19faad7c3514e87bed45a07648a143c601bf51b025939eabedab825"
+        },
+        "params": {},
+        "time_out": true,
+        "type": "mjlab.managers.termination_manager.TerminationTermCfg"
+      },
+      "time_out": {
+        "func": {
+          "callable": "mjlab.envs.mdp.terminations.time_out",
+          "source_sha256": "9078759b36a6dd39ba6fece317bbe8068b209f85bdccf4be20e068c05353a65d"
+        },
+        "params": {},
+        "time_out": true,
+        "type": "mjlab.managers.termination_manager.TerminationTermCfg"
+      },
+      "top_ball_lost": {
+        "func": {
+          "callable": "formal_task.top_lost",
+          "source_sha256": "2a7916bacdddf5289a1a96c56e08f44005fc28a0a9af32fa8b78da3deb381561"
+        },
+        "params": {},
+        "time_out": false,
+        "type": "mjlab.managers.termination_manager.TerminationTermCfg"
+      }
+    }
+  },
+  "metrics": {
+    "double_balance_stable_fraction": {
+      "func": {
+        "callable": "formal_task.stable",
+        "source_sha256": "2a7916bacdddf5289a1a96c56e08f44005fc28a0a9af32fa8b78da3deb381561"
+      },
+      "params": {},
+      "per_substep": false,
+      "reduce": "mean",
+      "type": "mjlab.managers.metrics_manager.MetricsTermCfg"
+    },
+    "double_balance_success": {
+      "func": {
+        "callable": "formal_task.success",
+        "source_sha256": "2a7916bacdddf5289a1a96c56e08f44005fc28a0a9af32fa8b78da3deb381561"
+      },
+      "params": {},
+      "per_substep": false,
+      "reduce": "last",
+      "type": "mjlab.managers.metrics_manager.MetricsTermCfg"
+    },
+    "mean_action_acc": {
+      "func": {
+        "callable": "mjlab.envs.mdp.metrics.mean_action_acc",
+        "source_sha256": "5a0d5582aa7fe8c2d530dc5afdf151eace17d529429176a2fbff003d7d60e1ba"
+      },
+      "params": {},
+      "per_substep": false,
+      "reduce": "mean",
+      "type": "mjlab.managers.metrics_manager.MetricsTermCfg"
+    },
+    "top_ball_center_error_m": {
+      "func": {
+        "callable": "mjlab_microduck.tasks.mdp.stage11_head_center_error",
+        "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+      },
+      "params": {},
+      "per_substep": false,
+      "reduce": "mean",
+      "type": "mjlab.managers.metrics_manager.MetricsTermCfg"
+    },
+    "top_ball_relative_speed_m_s": {
+      "func": {
+        "callable": "mjlab_microduck.tasks.mdp.stage11_head_relative_speed",
+        "source_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+      },
+      "params": {},
+      "per_substep": false,
+      "reduce": "mean",
+      "type": "mjlab.managers.metrics_manager.MetricsTermCfg"
+    }
+  },
+  "note": "Config-only candidate; physical runtime not released",
+  "recorders": {},
+  "seed": 1111003
+}

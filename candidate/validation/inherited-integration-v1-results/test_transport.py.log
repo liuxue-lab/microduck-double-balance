@@ -1,0 +1,49 @@
+test_extra_change_wrong_blob_or_wrong_parent_rejected (__main__.PublicationTests.test_extra_change_wrong_blob_or_wrong_parent_rejected) ... ok
+test_failed_identity_retains_raw_local_refs (__main__.PublicationTests.test_failed_identity_retains_raw_local_refs) ... ok
+test_frozen_base_and_exact_reviewed_followup_accepted (__main__.PublicationTests.test_frozen_base_and_exact_reviewed_followup_accepted) ... ok
+test_other_head_tag_branch_or_origin_rejected (__main__.PublicationTests.test_other_head_tag_branch_or_origin_rejected) ... ok
+test_archive_identity_and_network_commands_fail_closed (__main__.TransferTests.test_archive_identity_and_network_commands_fail_closed) ... ok
+test_blocked_new_run_still_prepares_manual_transfer_and_can_recover_packaging_only (__main__.TransferTests.test_blocked_new_run_still_prepares_manual_transfer_and_can_recover_packaging_only) ... Stage12Run=/tmp/tmpyohefxda/integration-v1/20261015T183854Z-fa1a4b
+Stage12Phase=local-identity-and-preservation
+Stage12Return=/tmp/tmpyohefxda/integration-v1/stage12-integration-return-20261015T183854Z-fa1a4b.zip
+Stage12ReturnSHA256=0cdc459b4c325d76bc7cd03d91e47e1e21e3642c6ac322fe8cb6cc4aa686be77
+Stage12Transfer=LOCAL_TRANSFER_COMMIT_READY_MANUAL_PUSH_PENDING
+Stage12TransferDir=/tmp/tmpyohefxda/integration-v1/transfer
+Stage12TransferBranch=stage12-integration-v1-transfer-20261015t183854z-fa1a4b
+Stage12TransferCommit=9962534da8e7a332e3fbc33a9362667b3b77d6c2
+Stage12UploadCommand=git -C /tmp/tmpyohefxda/integration-v1/transfer push origin HEAD
+Stage12Readiness=STAGE12_INTEGRATION_BLOCKED
+Stage12NativeAdded=0; Cumulative=674456 completed / 674457 attempted; PPO=0; cloud_training=0
+Stage12TrainingReady=False; no physical throughput measured; no push/PR/merge
+传输提交准备成功后，请手动执行 Stage12UploadCommand，并粘贴 push 结果和 Stage12TransferCommit；无需上传ZIP。
+保留所有 started 和旧包；push 失败只重试 push，不重跑 --run。
+Stage12Transfer=LOCAL_TRANSFER_COMMIT_READY_MANUAL_PUSH_PENDING
+Stage12TransferDir=/tmp/tmpyohefxda/integration-v1/transfer
+Stage12TransferBranch=stage12-integration-v1-transfer-20261015t183854z-fa1a4b
+Stage12TransferCommit=9962534da8e7a332e3fbc33a9362667b3b77d6c2
+Stage12UploadCommand=git -C /tmp/tmpyohefxda/integration-v1/transfer push origin HEAD
+Stage12Run=/tmp/tmpyohefxda/integration-v1/20261015T183854Z-fa1a4b
+Stage12Readiness=STAGE12_INTEGRATION_BLOCKED
+Stage12Return=/tmp/tmpyohefxda/integration-v1/stage12-integration-return-20261015T183854Z-fa1a4b.zip
+Stage12ReturnSHA256=0cdc459b4c325d76bc7cd03d91e47e1e21e3642c6ac322fe8cb6cc4aa686be77
+Stage12Transfer=LOCAL_TRANSFER_COMMIT_READY_MANUAL_PUSH_PENDING
+Stage12TransferDir=/tmp/tmpyohefxda/integration-v1/transfer
+Stage12TransferBranch=stage12-integration-v1-transfer-20261015t183854z-fa1a4b
+Stage12TransferCommit=9962534da8e7a332e3fbc33a9362667b3b77d6c2
+Stage12UploadCommand=git -C /tmp/tmpyohefxda/integration-v1/transfer push origin HEAD
+ok
+test_existing_changed_part_is_not_overwritten (__main__.TransferTests.test_existing_changed_part_is_not_overwritten) ... ok
+test_existing_started_marker_never_launches_child (__main__.TransferTests.test_existing_started_marker_never_launches_child) ... ok
+test_interrupted_commit_can_finish_without_recreating_payload (__main__.TransferTests.test_interrupted_commit_can_finish_without_recreating_payload) ... ok
+test_real_git_commit_roundtrip_and_idempotence (__main__.TransferTests.test_real_git_commit_roundtrip_and_idempotence) ... ok
+test_unknown_existing_file_is_preserved (__main__.TransferTests.test_unknown_existing_file_is_preserved) ... ok
+test_zip_manifest_corruption_is_rejected (__main__.TransferTests.test_zip_manifest_corruption_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.474s
+
+OK
+Stage12NoRerun=existing started marker preserved
+Stage12Run=/tmp/tmpuraaf61n/run-base/old-run
+Stage12Readiness=STARTED_NO_FINAL_RECEIPT; inspect existing log/process; no retry
+Stage12NoRerun=existing started marker preserved

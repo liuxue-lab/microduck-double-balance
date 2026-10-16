@@ -1,0 +1,51 @@
+{
+  "base": "6ba0dc2de381321576f32310e1995a8e2e11e566",
+  "reviewed_head": "73ee01930a031d76a9d57419afdfd4464a547ab3",
+  "parent": "6ba0dc2de381321576f32310e1995a8e2e11e566",
+  "status": "ahead",
+  "ahead_by": 1,
+  "behind_by": 0,
+  "files": [
+    {
+      "path": "docs/audits/stage11/ci-documentation-followup.json",
+      "status": "added",
+      "git_blob_sha1": "e8bd54667854a47b1ba2ba4f19016e7caf3e8c80"
+    },
+    {
+      "path": "docs/handoffs/microduck-stage-11-ci-followup.txt",
+      "status": "added",
+      "git_blob_sha1": "d2c1368e8ddbce2b03db2f03c4145cd015a52bf8"
+    },
+    {
+      "path": "experiments/stage11/g11-formal-v3/README.txt",
+      "status": "modified",
+      "git_blob_sha1": "e8f311ecfab204a4b238ca97ff37938e97d0308a"
+    },
+    {
+      "path": "experiments/stage11/g11-formal-v3/payload/audits/stage-10-publication-confirmation.json",
+      "status": "added",
+      "git_blob_sha1": "5294f78aa7f5bb9e56f831fbaf7467403b8958cb"
+    },
+    {
+      "path": "experiments/stage11/g11-formal-v3/payload/provenance/microduck-stage-10-ci-followup.md",
+      "status": "added",
+      "git_blob_sha1": "abd396bf8363bf78410907993db9172089f1b38a"
+    },
+    {
+      "path": "experiments/stage11/g11-formal-v3/payload/provenance/microduck-stage-11-opening-prompt.txt",
+      "status": "added",
+      "git_blob_sha1": "fecb81bd4d015d9796bca3e6db185446acb345ef"
+    }
+  ],
+  "tag_object": "bd1b219be55c813811d4f7cfa25d245b37166688",
+  "tag_target": "6ba0dc2de381321576f32310e1995a8e2e11e566",
+  "review": "One documentation-only followup, 5 additions and 1 documentation modification; no original executed payload or physics code changed.",
+  "raw_compare_source": "https://api.github.com/repos/liuxue-lab/microduck-double-balance/compare/6ba0dc2de381321576f32310e1995a8e2e11e566...73ee01930a031d76a9d57419afdfd4464a547ab3",
+  "prior_return": {
+    "filename": "stage12-readiness-return-20261015T160405Z-4f877e.zip",
+    "sha256": "97aa588fdad86a012179ec726a1a320bbee5accce1916c2c845afb202d486cab",
+    "manifest_members": 171,
+    "status": "STAGE12_PREPARATION_BLOCKED",
+    "cause": "v1 required HEAD to equal the Stage11 tag target; no actual local ref values were retained by v1; reviewed remote followup now explicitly allowed."
+  }
+}

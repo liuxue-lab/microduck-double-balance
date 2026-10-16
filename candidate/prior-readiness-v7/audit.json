@@ -1,0 +1,32 @@
+{
+  "PPO": 0,
+  "archive_bytes": 994066,
+  "archive_filename": "stage12-readiness-return-20261015T180254Z-1138c6.zip",
+  "archive_sha256": "12a51c7d1000c67583e888bf55be0075b0dd1de569c39603850e8ddc3344d5ae",
+  "base": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/readiness-v7",
+  "cloud_training": 0,
+  "manifest_members": 292,
+  "native_integrations_added": 0,
+  "package_manifest_sha256": "a752dae13c3a35bc6c04d2307dea3c6dc9a44bdc152caca66faa21eafc48761a",
+  "retained_reports": [
+    "stage12-report.json",
+    "host-report.json",
+    "configuration-probe.json",
+    "headless-setup.json",
+    "font-discovery-policy.json",
+    "git-import-probe.json",
+    "source-reuse-before.json",
+    "source-reuse-after.json",
+    "environment.json",
+    "identity-before.json",
+    "identity-after.json",
+    "prepared-env-config.json",
+    "prepared-agent-config.json",
+    "runner-contract-plan.json"
+  ],
+  "run": "20261015T180254Z-1138c6",
+  "source_identity_and_preservation": "PASS",
+  "status": "STAGE12_PREPARATION_PASS_TRAINING_BLOCKED",
+  "transfer_branch": "stage12-readiness-v7-transfer-20261015t180254z-1138c6",
+  "transfer_commit": "472a23f2f83dd43d59b6964bd6233b0745e234dc"
+}

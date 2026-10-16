@@ -1,0 +1,62 @@
+{
+  "PPO": 0,
+  "actual_cpu_transition_cases_passed": 8,
+  "archive_bytes": 15609870,
+  "archive_filename": "stage12-integration-return-20261015T184102Z-6225fa.zip",
+  "archive_sha256": "e75d087027812cdb217018d5001f9b08412b949f9bc496d61c2941faf7183e04",
+  "base": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/integration-v1",
+  "cloud_training": 0,
+  "native_added": 0,
+  "package_manifest_sha256": "ee6eb6ac9b9d1dadb411b78a978800d72291375b1e953cc1cad95fe961138cdf",
+  "pure_contracts_passed": 34,
+  "retained_reports": [
+    "cloud-source-inputs.json",
+    "stage12-report.json",
+    "source-reuse-after.json",
+    "identity-observed-before.json",
+    "integration-contracts.log",
+    "identity-observed-after.json",
+    "gpu-inventory-reuse.json",
+    "source-reuse-before.json",
+    "host-probe.log",
+    "environment.json",
+    "measurement-budget-proposal.json",
+    "identity-after.json",
+    "existing-tracked.patch",
+    "host-report.json",
+    "identity-before.json"
+  ],
+  "run": "20261015T184102Z-6225fa",
+  "source_bundle": {
+    "assets": 158,
+    "bytes": 16172847,
+    "checkpoints": 0,
+    "cloud_environment_complete": false,
+    "cloud_training": 0,
+    "expanded_bytes": 49766213,
+    "format": "stage12-source-inputs-v1",
+    "identity_only_historical_files": [
+      {
+        "bytes": 9710625,
+        "disposition": "REVIEWED_HISTORICAL_IDENTITY_ONLY",
+        "relative": "project/scripts/stage10_finalize.py",
+        "sha256": "abe6e51ef913fb61324e5cc5ebe4ebbfa89118a3c3219ee5f35a717aea28663a"
+      }
+    ],
+    "integration_code": "This delivery's verified program directory is a separate input",
+    "members": 406,
+    "omitted": [
+      "dependency wheels",
+      "installed virtualenv",
+      "GPU driver/runtime",
+      "Stage08 checkpoint",
+      "historical Stage10 embedded archive"
+    ],
+    "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/integration-v1/20261015T184102Z-6225fa/cloud-source-inputs.zip",
+    "sha256": "5d2c4ef1fc8693d328f1f6ac730d7fa35f14b3b032ba9ec28bb44637d5256873",
+    "sources": 248
+  },
+  "status": "STAGE12_INTEGRATION_BLOCKED_ONE_IPC_TYPE_CLASSIFICATION_ERROR",
+  "transfer_branch": "stage12-integration-v1-transfer-20261015t184102z-6225fa",
+  "transfer_commit": "eb5fe0c2371393fe599ed1ba92e078dfe8390f3c"
+}

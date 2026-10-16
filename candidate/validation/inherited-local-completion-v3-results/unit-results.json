@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "tests": 23,
+  "failures": 0,
+  "errors": 0,
+  "modules": [
+    "validation.test_transport",
+    "validation.integration.test_local_accounting",
+    "validation.test_git_import"
+  ],
+  "native_integrations": 0,
+  "PPO": 0,
+  "cloud_training": 0
+}

@@ -1,0 +1,37 @@
+{
+  "PPO": 0,
+  "archive_bytes": 844605,
+  "archive_filename": "stage12-readiness-return-20261015T172533Z-c13ab0.zip",
+  "archive_sha256": "b5d238d62703f6b605f83547860639ed0225682c5aaca503184e1f0acc3e8f29",
+  "base": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/readiness-v5",
+  "cloud_training": 0,
+  "configuration_probe": "BLOCKED_GITPYTHON_IMPORT_DEV_NULL_AND_VERSION_DISCOVERY",
+  "headless_GLFW_fix": "PASSED_INSTALLED_NATIVE_IMPORT",
+  "manifest_members": 238,
+  "matplotlib_fontconfig_fix": "PASS_NATIVE_FALLBACK_NO_FC_LIST_PROCESS",
+  "native_integrations_added": 0,
+  "package_manifest_sha256": "7309db97a2e2bbbdfe83f842bafcc9e5e6407cc70df407768b234018777ebbc4",
+  "retained_reports": [
+    "stage12-report.json",
+    "host-report.json",
+    "configuration-probe.json",
+    "headless-setup.json",
+    "font-discovery-policy.json",
+    "source-reuse-before.json",
+    "source-reuse-after.json",
+    "environment.json",
+    "identity-before.json",
+    "identity-after.json"
+  ],
+  "run": "20261015T172533Z-c13ab0",
+  "source_identity_and_preservation": "PASS",
+  "source_reuse": {
+    "assets": 158,
+    "copied": 0,
+    "retained": 248,
+    "sources": 249
+  },
+  "status": "STAGE12_PREPARATION_BLOCKED",
+  "transfer_branch": "stage12-readiness-v5-transfer-20261015t172533z-c13ab0",
+  "transfer_commit": "28c52232a220c5538054cd97e17409f22f66fa59"
+}

@@ -1,0 +1,2202 @@
+{
+  "identity": {
+    "pid": 6734,
+    "scope": "final environment context only"
+  },
+  "targets": [
+    {
+      "label": "scene_bvh",
+      "type": "Bvh",
+      "api": "wp_bvh_destroy_device",
+      "handle": 13102786560,
+      "owner": 133052791423728,
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.0",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13020450304,
+      "owner": 133052791328496,
+      "geometry": {
+        "points": {
+          "shape": [
+            10441,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "dd1170216cee5a15129b415089ecc02dc9d00ad574ad37bfaf0965425ad148d1"
+        },
+        "indices": {
+          "shape": [
+            62910
+          ],
+          "dtype": "int32",
+          "sha256": "d3f8d401cef47d03c212b7bc715315cff0332ff6e11cf1f1f28210763bfcfb21"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.1",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13020450816,
+      "owner": 133052791328784,
+      "geometry": {
+        "points": {
+          "shape": [
+            7896,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "6f3f491e6d4023f81832af68dd071ca8e057f5e611f7fef56564c1ce5315db0e"
+        },
+        "indices": {
+          "shape": [
+            47364
+          ],
+          "dtype": "int32",
+          "sha256": "22d2fdb035abd44c18ddc3deb40bef111539ed886e1224ee7b1597138d986869"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.2",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13020452352,
+      "owner": 133052791329072,
+      "geometry": {
+        "points": {
+          "shape": [
+            6186,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "7481c3d860a17e31931cc19f765b03067fdb80b1281aaadd6bb85dd0b43f4dcf"
+        },
+        "indices": {
+          "shape": [
+            37212
+          ],
+          "dtype": "int32",
+          "sha256": "0870bffc689300774c882f5b9264c593ac169b342bdda53dcdaabfba70ffe575"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.3",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13020452864,
+      "owner": 133052791329360,
+      "geometry": {
+        "points": {
+          "shape": [
+            7946,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "d71d3903b1e865c9579d05c5fb04adc4c959ec63a6d5df52e401235240668a26"
+        },
+        "indices": {
+          "shape": [
+            47664
+          ],
+          "dtype": "int32",
+          "sha256": "5e057589de2f3609b5a3cdf2fd73ea5bfcc58ddaabf8bcce173e5c2dac8f0f21"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.4",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13020454400,
+      "owner": 133052791329648,
+      "geometry": {
+        "points": {
+          "shape": [
+            7374,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "bd030945114c6166ab9461eed26e655f626e6dbd1cb309ea15bd36e59e02f900"
+        },
+        "indices": {
+          "shape": [
+            44328
+          ],
+          "dtype": "int32",
+          "sha256": "3ac0a20ed83e648e7672e23626bdf15144d9211b416ed37596fb3abcf114a68a"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.5",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13020454912,
+      "owner": 133052791329888,
+      "geometry": {
+        "points": {
+          "shape": [
+            2057,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "3304e539515389e728cc80a9c2ce4a88441f647067fb0b055035fdb110c2cdba"
+        },
+        "indices": {
+          "shape": [
+            12378
+          ],
+          "dtype": "int32",
+          "sha256": "efae83f470bfd03f8f75a03635f772ca0d730ca9cf0e64a47fa0735e6df0edc7"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.6",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13031092736,
+      "owner": 133052791330176,
+      "geometry": {
+        "points": {
+          "shape": [
+            492,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "9ded336e09a53eb06c1cf60c1cdd84de3cf347a145050f9f427657bb7642c4b2"
+        },
+        "indices": {
+          "shape": [
+            2952
+          ],
+          "dtype": "int32",
+          "sha256": "aae7b279fc060270c07fa80c83263242f65c93d41545cd95f99f84b2b14225bc"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.7",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13032058368,
+      "owner": 133052791330416,
+      "geometry": {
+        "points": {
+          "shape": [
+            10399,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "badfca2c261fc467a9e8675584079e9f67c25d67c2531150157f8f430a3a650a"
+        },
+        "indices": {
+          "shape": [
+            62910
+          ],
+          "dtype": "int32",
+          "sha256": "8e18ec54a12805ed4c14f7c3d8f6dcc80a441d366d4dbdae4f055b4bbdc67e02"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.8",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13034120704,
+      "owner": 133052791330656,
+      "geometry": {
+        "points": {
+          "shape": [
+            3532,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "44857b766f4fd5dc6f1446a3eb89a01efd26496aa5ef470262775e3e7d940113"
+        },
+        "indices": {
+          "shape": [
+            21360
+          ],
+          "dtype": "int32",
+          "sha256": "12e89f95acb3dac12134a73641be79cefee22efad61857c97ce614cbfed6634f"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.9",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13035557376,
+      "owner": 133052791330944,
+      "geometry": {
+        "points": {
+          "shape": [
+            9939,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "e0bd4db2e2004813264a8a7bd28654d484de0aa48ad175881fe8c9fe66b98be5"
+        },
+        "indices": {
+          "shape": [
+            59766
+          ],
+          "dtype": "int32",
+          "sha256": "c95849a15d4f1865c686d13384d0419ae2f92d50d0567b53111727e106ba0d01"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.10",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13037443584,
+      "owner": 133052791331184,
+      "geometry": {
+        "points": {
+          "shape": [
+            2477,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "1acc88bacfc125796828f2930c65f91ff9623d3d3046c77dff9caf891d37acbe"
+        },
+        "indices": {
+          "shape": [
+            14934
+          ],
+          "dtype": "int32",
+          "sha256": "404f3facfe54054ac26c6b3fd413f4f347d60c1619c6f376048be3da36140c30"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.11",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13038109184,
+      "owner": 133052791331472,
+      "geometry": {
+        "points": {
+          "shape": [
+            2887,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "ffe23731efa53ad25c7481076c7149c2a3e3516afa6978163db1752dce20de31"
+        },
+        "indices": {
+          "shape": [
+            17442
+          ],
+          "dtype": "int32",
+          "sha256": "d274016e35450b5518b0f71e886d936ae53a0571c1fe46ab70031ab0f2fe9d74"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.12",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13039481344,
+      "owner": 133052791331712,
+      "geometry": {
+        "points": {
+          "shape": [
+            10475,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "ab5d44b2f7ee9f021a7e854d7f5780633f18cf44f3a338ec96694bb7bd9df235"
+        },
+        "indices": {
+          "shape": [
+            62910
+          ],
+          "dtype": "int32",
+          "sha256": "4eb28f0ab42b0359efea228a0180514d3e9772b5275eb022be794d820d3c8492"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.13",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13041707008,
+      "owner": 133052791332000,
+      "geometry": {
+        "points": {
+          "shape": [
+            5490,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "34e3584bfe1a3be388449dd6b20e25f11accb5f0f7028ee04f57c80c55b47a1e"
+        },
+        "indices": {
+          "shape": [
+            32976
+          ],
+          "dtype": "int32",
+          "sha256": "cff211537dfda43f841d2938ae5f0e688da419c8585bb06548c42a5c51e661de"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.14",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13042914816,
+      "owner": 133052791332288,
+      "geometry": {
+        "points": {
+          "shape": [
+            3365,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "3f3ab658bcb6baf07e215272a1836db3ec7e5050cbb074671a3568d96d5450e3"
+        },
+        "indices": {
+          "shape": [
+            20178
+          ],
+          "dtype": "int32",
+          "sha256": "df8163d7d1884af38e3013851399bcf1f3ca59ac177fbd5b0ef3b6bc60deb7ec"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.15",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13044273664,
+      "owner": 133052791332576,
+      "geometry": {
+        "points": {
+          "shape": [
+            9308,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "de5d27066142316daacb697cb34ed71f197ae8751f9ae2927bf3fa62c8f51a5f"
+        },
+        "indices": {
+          "shape": [
+            56568
+          ],
+          "dtype": "int32",
+          "sha256": "11c17d17ab2a3aec9e2da2e18f8ae23cef6af3873fe814acf808675f04c0979f"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.16",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13046537216,
+      "owner": 133052791332864,
+      "geometry": {
+        "points": {
+          "shape": [
+            8062,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "e6db86bf47045c28812064f17ec371cb8978021a51e8b25cd4c2beb07ad5e06b"
+        },
+        "indices": {
+          "shape": [
+            48360
+          ],
+          "dtype": "int32",
+          "sha256": "ca448f38f744fd07dd687a3b1c203f23febb0e3de26d7d7dbebb08a43444a022"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.17",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13047971840,
+      "owner": 133052791333056,
+      "geometry": {
+        "points": {
+          "shape": [
+            938,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "265ff9f76f58268eba8d52461f22fcb2351420662a491e1a05c0e1f41c4a35a1"
+        },
+        "indices": {
+          "shape": [
+            5616
+          ],
+          "dtype": "int32",
+          "sha256": "a8be96f81ce4f6eb884a8caebf13f406914a88c17a53e05671a18551d08c46aa"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.18",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13049012736,
+      "owner": 133052791333296,
+      "geometry": {
+        "points": {
+          "shape": [
+            10477,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "c6db9dbf1ef55efb764488debc64e7cd9eb54310383027d6326c3bef428188d1"
+        },
+        "indices": {
+          "shape": [
+            62910
+          ],
+          "dtype": "int32",
+          "sha256": "e21b5441c7ccdb57c78dc6b0e5576e3586b19c1ba825490706199796ddd18688"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.19",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13050928640,
+      "owner": 133052791333536,
+      "geometry": {
+        "points": {
+          "shape": [
+            1800,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "1f54e0695b8428a627a826c34907170074f6c831ade73e0df5df341a7715a15a"
+        },
+        "indices": {
+          "shape": [
+            10848
+          ],
+          "dtype": "int32",
+          "sha256": "0c7609527d322a1544c140d42c43f57f4fdac1dd74dd9ae6bf82aff2c44f165a"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.20",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13051297280,
+      "owner": 133052791333728,
+      "geometry": {
+        "points": {
+          "shape": [
+            728,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "1df355705fdd2009e48143d051b6e342d75fd5cf79ec43a89b11d0d51f5a45e0"
+        },
+        "indices": {
+          "shape": [
+            4404
+          ],
+          "dtype": "int32",
+          "sha256": "f534ad1bae992272966aa64ff4045c126a9593880a6b4c5899e0dad5cdbab174"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.21",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13052303872,
+      "owner": 133052791334016,
+      "geometry": {
+        "points": {
+          "shape": [
+            10487,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "71b98b58b29e4bee1d94089ed83420dc086e14690d60563c3eed1e77e48c6ecd"
+        },
+        "indices": {
+          "shape": [
+            62910
+          ],
+          "dtype": "int32",
+          "sha256": "55f9fc39fed1b0a51c1c52f852f4971a34d1942e510450eadb8903e04fb9a56e"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.22",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13054219264,
+      "owner": 133052791334256,
+      "geometry": {
+        "points": {
+          "shape": [
+            1784,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "78aadf0e66fcf74779d3f4bf22e75e56bb1719c9d6c66f151e406d9da9c2ae86"
+        },
+        "indices": {
+          "shape": [
+            10800
+          ],
+          "dtype": "int32",
+          "sha256": "38bcb69e4cdb38ef97f092ca1df0d6f350cb8fdf4c326cc8e1ff11d1a2f5537e"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.23",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13055405056,
+      "owner": 133052791334496,
+      "geometry": {
+        "points": {
+          "shape": [
+            10441,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "8516ce04566e7e8ea4e5ea75da1eacbe81fbe946e1bda960f0893406561568b0"
+        },
+        "indices": {
+          "shape": [
+            62910
+          ],
+          "dtype": "int32",
+          "sha256": "2e1454e36ed6cf51ab2be70494bf0d8942b54145d82bddfa166175c59f25ddff"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.24",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13057500160,
+      "owner": 133052791334784,
+      "geometry": {
+        "points": {
+          "shape": [
+            3937,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "56b7ab12ea7d5fcd3c8acfb50b1ab92f3391bb58d9f6b26b3996f6b4259c14a4"
+        },
+        "indices": {
+          "shape": [
+            23610
+          ],
+          "dtype": "int32",
+          "sha256": "b893c1fb53d50b973c044d4aa86bb81be1d8f41d19e220f0042b1dc95018a775"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.25",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13058318848,
+      "owner": 133052791335024,
+      "geometry": {
+        "points": {
+          "shape": [
+            1837,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "29f9e6c78b0f55b7711cb2dec1a47a708fc7023d404c31f2df22cc153b7f0a1e"
+        },
+        "indices": {
+          "shape": [
+            11094
+          ],
+          "dtype": "int32",
+          "sha256": "fecf4db587e4b8b576fc7420fe35a76ca11a05568fdf2ad994c7ce33f49c4836"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.26",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13059513344,
+      "owner": 133052791335264,
+      "geometry": {
+        "points": {
+          "shape": [
+            10471,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "c361fe1173d737e4a5dfad36f82bd6ca12d34e1036284bb1a37357130827d497"
+        },
+        "indices": {
+          "shape": [
+            62910
+          ],
+          "dtype": "int32",
+          "sha256": "ced4f54cd8887152f7164bee5fcfa47066ae22dafa2f7d4704c676db4fb9de71"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.27",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13061379072,
+      "owner": 133052791335552,
+      "geometry": {
+        "points": {
+          "shape": [
+            1202,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "2df424cb59eca64c5f433bbcb0c78420bae8b442869fe93be3b885ce4df10209"
+        },
+        "indices": {
+          "shape": [
+            7260
+          ],
+          "dtype": "int32",
+          "sha256": "db971739fd430beb0da2d3e1cb15c7097b53ed880803a71ace9713b2b87bd509"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.28",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13061643776,
+      "owner": 133052791335792,
+      "geometry": {
+        "points": {
+          "shape": [
+            692,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "0ade11433572115f1947fd747e77ead147c2b91064ee4f1246ff5a8a3b026df2"
+        },
+        "indices": {
+          "shape": [
+            4164
+          ],
+          "dtype": "int32",
+          "sha256": "927a46e3e415ed6dff18bff0ae43f25d8cdf7ad348983b58027e694a22c9393d"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.29",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13061764096,
+      "owner": 133052791336080,
+      "geometry": {
+        "points": {
+          "shape": [
+            8,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "ae5ab4bab91e2e8a9de895ba0c7dcf01a386d8aeede6739c06202cd48e3259ce"
+        },
+        "indices": {
+          "shape": [
+            36
+          ],
+          "dtype": "int32",
+          "sha256": "dacc12248d1953d7092b87717106137375fe4283d590ad9703ceaf791152d22c"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.30",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13061977600,
+      "owner": 133052791336320,
+      "geometry": {
+        "points": {
+          "shape": [
+            2476,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "60c42bfe034046d1da521e0ff9900f02ce3a300581da8c91eee787cb83a375a9"
+        },
+        "indices": {
+          "shape": [
+            14928
+          ],
+          "dtype": "int32",
+          "sha256": "63d961b9703547895a5a24b6024764770788311306c8c41669c88b323d78c45f"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.31",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13062913024,
+      "owner": 133052791336560,
+      "geometry": {
+        "points": {
+          "shape": [
+            6123,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "f6aff5d24529a56fcdb7b9113a8bbc7b4ff5d3ff964eace934f58e2b41f5a7ce"
+        },
+        "indices": {
+          "shape": [
+            36750
+          ],
+          "dtype": "int32",
+          "sha256": "6fffc74aa6634cc2abba0544b17bb388319bccecfab722b1b4252d3ef71f1cb5"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.32",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13064825856,
+      "owner": 133052791336800,
+      "geometry": {
+        "points": {
+          "shape": [
+            10475,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "d721e0a92a90d13fee4a5550e66a84493c8225201574422ada52aa11a9774747"
+        },
+        "indices": {
+          "shape": [
+            62910
+          ],
+          "dtype": "int32",
+          "sha256": "7782e97fea54b496bdfcc4f5602a3412f7f72e2f597173850707f4d85990eb30"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.33",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13067069440,
+      "owner": 133052791337040,
+      "geometry": {
+        "points": {
+          "shape": [
+            5698,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "ea9f42e54aece1236c25807d8eaed95afc124d2208e674c903a1577abbf9a137"
+        },
+        "indices": {
+          "shape": [
+            34236
+          ],
+          "dtype": "int32",
+          "sha256": "6489b38b1b8da74e41b7df6f507896fd7047fada74541ac5c54a3178288e4d8c"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.34",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13068867584,
+      "owner": 133052791337232,
+      "geometry": {
+        "points": {
+          "shape": [
+            9935,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "7a91b1276d4332000e014e2905c0702a7382281d7e8ed1dc3c1d58f99a979e95"
+        },
+        "indices": {
+          "shape": [
+            59742
+          ],
+          "dtype": "int32",
+          "sha256": "cb104513bc9d6acca3b8f86a464100b23f86e0122d66f7fef306d9c9eadfcf87"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.35",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13071081984,
+      "owner": 133052791337472,
+      "geometry": {
+        "points": {
+          "shape": [
+            6384,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "63df2fb37ddf50c4e248a00762c1cff4a0a3db1f650369a5246ea9a4380e48ac"
+        },
+        "indices": {
+          "shape": [
+            38496
+          ],
+          "dtype": "int32",
+          "sha256": "0168ac33862dee01a6af75927a9a30f862b6ce11021f00b3d09e74ce82e2c677"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.36",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13072677888,
+      "owner": 133052791337760,
+      "geometry": {
+        "points": {
+          "shape": [
+            6123,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "640da34f80bcd99d8ad2dfd2b8f6f034ebdb5a70077b72ee075afbe030e5953a"
+        },
+        "indices": {
+          "shape": [
+            36750
+          ],
+          "dtype": "int32",
+          "sha256": "b6a6b79a89f4eb1e39020842a7af4f37d0487e8beb4be33c5e198c42410acadd"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.37",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13074126336,
+      "owner": 133052791337952,
+      "geometry": {
+        "points": {
+          "shape": [
+            4949,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "7aefd389a8d37d8420e9995f3a9df74fc5cba19cf398fe24d2e1ff34d843d5f7"
+        },
+        "indices": {
+          "shape": [
+            29754
+          ],
+          "dtype": "int32",
+          "sha256": "c3228df27bd1b1d6d3d9706285fcfd84aafa7f8a8af0c025fd06699cff8bfdee"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "mesh_registry.38",
+      "type": "Mesh",
+      "api": "wp_mesh_destroy_device",
+      "handle": 13081660928,
+      "owner": 133052791338192,
+      "geometry": {
+        "points": {
+          "shape": [
+            80601,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "3319b59317bc65d11c11b84a2eff5e8ca529d2c46d7faa22b2544858fa8b5939"
+        },
+        "indices": {
+          "shape": [
+            477600
+          ],
+          "dtype": "int32",
+          "sha256": "9fa8bff84d4b4683e0c5f3efcce76e0652012d43569043411816848a9c4ed63d"
+        }
+      },
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "textures.0",
+      "type": "Texture2D",
+      "api": "wp_texture2d_destroy_device",
+      "handle": 2,
+      "owner": 133053172344272,
+      "array_handle": 1456884576,
+      "surface_handle": 0,
+      "ndim": 2,
+      "weakref_dead": true,
+      "released": true
+    },
+    {
+      "label": "textures.1",
+      "type": "Texture2D",
+      "api": "wp_texture2d_destroy_device",
+      "handle": 4,
+      "owner": 133053172266432,
+      "array_handle": 1455262992,
+      "surface_handle": 0,
+      "ndim": 2,
+      "weakref_dead": true,
+      "released": true
+    }
+  ],
+  "releases": [
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13020450304
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13020450816
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13020452352
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13020452864
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13020454400
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13020454912
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13031092736
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13032058368
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13034120704
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13035557376
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13037443584
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13038109184
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13039481344
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13041707008
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13042914816
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13044273664
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13046537216
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13047971840
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13049012736
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13050928640
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13051297280
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13052303872
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13054219264
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13055405056
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13057500160
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13058318848
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13059513344
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13061379072
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13061643776
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13061764096
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13061977600
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13062913024
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13064825856
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13067069440
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13068867584
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13071081984
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13072677888
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13074126336
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_mesh_destroy_device",
+      "args": [
+        13081660928
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_texture2d_destroy_device",
+      "args": [
+        1108729072,
+        4,
+        1455262992
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_texture2d_destroy_device",
+      "args": [
+        1108729072,
+        2,
+        1456884576
+      ],
+      "capturing": false,
+      "returned_normally": true
+    },
+    {
+      "api": "wp_bvh_destroy_device",
+      "args": [
+        13102786560
+      ],
+      "capturing": false,
+      "returned_normally": true
+    }
+  ],
+  "logical": {
+    "mesh_registry": [
+      {
+        "index": 0,
+        "geometry": {
+          "points": {
+            "shape": [
+              10441,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "dd1170216cee5a15129b415089ecc02dc9d00ad574ad37bfaf0965425ad148d1"
+          },
+          "indices": {
+            "shape": [
+              62910
+            ],
+            "dtype": "int32",
+            "sha256": "d3f8d401cef47d03c212b7bc715315cff0332ff6e11cf1f1f28210763bfcfb21"
+          }
+        }
+      },
+      {
+        "index": 1,
+        "geometry": {
+          "points": {
+            "shape": [
+              7896,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "6f3f491e6d4023f81832af68dd071ca8e057f5e611f7fef56564c1ce5315db0e"
+          },
+          "indices": {
+            "shape": [
+              47364
+            ],
+            "dtype": "int32",
+            "sha256": "22d2fdb035abd44c18ddc3deb40bef111539ed886e1224ee7b1597138d986869"
+          }
+        }
+      },
+      {
+        "index": 2,
+        "geometry": {
+          "points": {
+            "shape": [
+              6186,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "7481c3d860a17e31931cc19f765b03067fdb80b1281aaadd6bb85dd0b43f4dcf"
+          },
+          "indices": {
+            "shape": [
+              37212
+            ],
+            "dtype": "int32",
+            "sha256": "0870bffc689300774c882f5b9264c593ac169b342bdda53dcdaabfba70ffe575"
+          }
+        }
+      },
+      {
+        "index": 3,
+        "geometry": {
+          "points": {
+            "shape": [
+              7946,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "d71d3903b1e865c9579d05c5fb04adc4c959ec63a6d5df52e401235240668a26"
+          },
+          "indices": {
+            "shape": [
+              47664
+            ],
+            "dtype": "int32",
+            "sha256": "5e057589de2f3609b5a3cdf2fd73ea5bfcc58ddaabf8bcce173e5c2dac8f0f21"
+          }
+        }
+      },
+      {
+        "index": 4,
+        "geometry": {
+          "points": {
+            "shape": [
+              7374,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "bd030945114c6166ab9461eed26e655f626e6dbd1cb309ea15bd36e59e02f900"
+          },
+          "indices": {
+            "shape": [
+              44328
+            ],
+            "dtype": "int32",
+            "sha256": "3ac0a20ed83e648e7672e23626bdf15144d9211b416ed37596fb3abcf114a68a"
+          }
+        }
+      },
+      {
+        "index": 5,
+        "geometry": {
+          "points": {
+            "shape": [
+              2057,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "3304e539515389e728cc80a9c2ce4a88441f647067fb0b055035fdb110c2cdba"
+          },
+          "indices": {
+            "shape": [
+              12378
+            ],
+            "dtype": "int32",
+            "sha256": "efae83f470bfd03f8f75a03635f772ca0d730ca9cf0e64a47fa0735e6df0edc7"
+          }
+        }
+      },
+      {
+        "index": 6,
+        "geometry": {
+          "points": {
+            "shape": [
+              492,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "9ded336e09a53eb06c1cf60c1cdd84de3cf347a145050f9f427657bb7642c4b2"
+          },
+          "indices": {
+            "shape": [
+              2952
+            ],
+            "dtype": "int32",
+            "sha256": "aae7b279fc060270c07fa80c83263242f65c93d41545cd95f99f84b2b14225bc"
+          }
+        }
+      },
+      {
+        "index": 7,
+        "geometry": {
+          "points": {
+            "shape": [
+              10399,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "badfca2c261fc467a9e8675584079e9f67c25d67c2531150157f8f430a3a650a"
+          },
+          "indices": {
+            "shape": [
+              62910
+            ],
+            "dtype": "int32",
+            "sha256": "8e18ec54a12805ed4c14f7c3d8f6dcc80a441d366d4dbdae4f055b4bbdc67e02"
+          }
+        }
+      },
+      {
+        "index": 8,
+        "geometry": {
+          "points": {
+            "shape": [
+              3532,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "44857b766f4fd5dc6f1446a3eb89a01efd26496aa5ef470262775e3e7d940113"
+          },
+          "indices": {
+            "shape": [
+              21360
+            ],
+            "dtype": "int32",
+            "sha256": "12e89f95acb3dac12134a73641be79cefee22efad61857c97ce614cbfed6634f"
+          }
+        }
+      },
+      {
+        "index": 9,
+        "geometry": {
+          "points": {
+            "shape": [
+              9939,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "e0bd4db2e2004813264a8a7bd28654d484de0aa48ad175881fe8c9fe66b98be5"
+          },
+          "indices": {
+            "shape": [
+              59766
+            ],
+            "dtype": "int32",
+            "sha256": "c95849a15d4f1865c686d13384d0419ae2f92d50d0567b53111727e106ba0d01"
+          }
+        }
+      },
+      {
+        "index": 10,
+        "geometry": {
+          "points": {
+            "shape": [
+              2477,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "1acc88bacfc125796828f2930c65f91ff9623d3d3046c77dff9caf891d37acbe"
+          },
+          "indices": {
+            "shape": [
+              14934
+            ],
+            "dtype": "int32",
+            "sha256": "404f3facfe54054ac26c6b3fd413f4f347d60c1619c6f376048be3da36140c30"
+          }
+        }
+      },
+      {
+        "index": 11,
+        "geometry": {
+          "points": {
+            "shape": [
+              2887,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "ffe23731efa53ad25c7481076c7149c2a3e3516afa6978163db1752dce20de31"
+          },
+          "indices": {
+            "shape": [
+              17442
+            ],
+            "dtype": "int32",
+            "sha256": "d274016e35450b5518b0f71e886d936ae53a0571c1fe46ab70031ab0f2fe9d74"
+          }
+        }
+      },
+      {
+        "index": 12,
+        "geometry": {
+          "points": {
+            "shape": [
+              10475,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "ab5d44b2f7ee9f021a7e854d7f5780633f18cf44f3a338ec96694bb7bd9df235"
+          },
+          "indices": {
+            "shape": [
+              62910
+            ],
+            "dtype": "int32",
+            "sha256": "4eb28f0ab42b0359efea228a0180514d3e9772b5275eb022be794d820d3c8492"
+          }
+        }
+      },
+      {
+        "index": 13,
+        "geometry": {
+          "points": {
+            "shape": [
+              5490,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "34e3584bfe1a3be388449dd6b20e25f11accb5f0f7028ee04f57c80c55b47a1e"
+          },
+          "indices": {
+            "shape": [
+              32976
+            ],
+            "dtype": "int32",
+            "sha256": "cff211537dfda43f841d2938ae5f0e688da419c8585bb06548c42a5c51e661de"
+          }
+        }
+      },
+      {
+        "index": 14,
+        "geometry": {
+          "points": {
+            "shape": [
+              3365,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "3f3ab658bcb6baf07e215272a1836db3ec7e5050cbb074671a3568d96d5450e3"
+          },
+          "indices": {
+            "shape": [
+              20178
+            ],
+            "dtype": "int32",
+            "sha256": "df8163d7d1884af38e3013851399bcf1f3ca59ac177fbd5b0ef3b6bc60deb7ec"
+          }
+        }
+      },
+      {
+        "index": 15,
+        "geometry": {
+          "points": {
+            "shape": [
+              9308,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "de5d27066142316daacb697cb34ed71f197ae8751f9ae2927bf3fa62c8f51a5f"
+          },
+          "indices": {
+            "shape": [
+              56568
+            ],
+            "dtype": "int32",
+            "sha256": "11c17d17ab2a3aec9e2da2e18f8ae23cef6af3873fe814acf808675f04c0979f"
+          }
+        }
+      },
+      {
+        "index": 16,
+        "geometry": {
+          "points": {
+            "shape": [
+              8062,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "e6db86bf47045c28812064f17ec371cb8978021a51e8b25cd4c2beb07ad5e06b"
+          },
+          "indices": {
+            "shape": [
+              48360
+            ],
+            "dtype": "int32",
+            "sha256": "ca448f38f744fd07dd687a3b1c203f23febb0e3de26d7d7dbebb08a43444a022"
+          }
+        }
+      },
+      {
+        "index": 17,
+        "geometry": {
+          "points": {
+            "shape": [
+              938,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "265ff9f76f58268eba8d52461f22fcb2351420662a491e1a05c0e1f41c4a35a1"
+          },
+          "indices": {
+            "shape": [
+              5616
+            ],
+            "dtype": "int32",
+            "sha256": "a8be96f81ce4f6eb884a8caebf13f406914a88c17a53e05671a18551d08c46aa"
+          }
+        }
+      },
+      {
+        "index": 18,
+        "geometry": {
+          "points": {
+            "shape": [
+              10477,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "c6db9dbf1ef55efb764488debc64e7cd9eb54310383027d6326c3bef428188d1"
+          },
+          "indices": {
+            "shape": [
+              62910
+            ],
+            "dtype": "int32",
+            "sha256": "e21b5441c7ccdb57c78dc6b0e5576e3586b19c1ba825490706199796ddd18688"
+          }
+        }
+      },
+      {
+        "index": 19,
+        "geometry": {
+          "points": {
+            "shape": [
+              1800,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "1f54e0695b8428a627a826c34907170074f6c831ade73e0df5df341a7715a15a"
+          },
+          "indices": {
+            "shape": [
+              10848
+            ],
+            "dtype": "int32",
+            "sha256": "0c7609527d322a1544c140d42c43f57f4fdac1dd74dd9ae6bf82aff2c44f165a"
+          }
+        }
+      },
+      {
+        "index": 20,
+        "geometry": {
+          "points": {
+            "shape": [
+              728,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "1df355705fdd2009e48143d051b6e342d75fd5cf79ec43a89b11d0d51f5a45e0"
+          },
+          "indices": {
+            "shape": [
+              4404
+            ],
+            "dtype": "int32",
+            "sha256": "f534ad1bae992272966aa64ff4045c126a9593880a6b4c5899e0dad5cdbab174"
+          }
+        }
+      },
+      {
+        "index": 21,
+        "geometry": {
+          "points": {
+            "shape": [
+              10487,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "71b98b58b29e4bee1d94089ed83420dc086e14690d60563c3eed1e77e48c6ecd"
+          },
+          "indices": {
+            "shape": [
+              62910
+            ],
+            "dtype": "int32",
+            "sha256": "55f9fc39fed1b0a51c1c52f852f4971a34d1942e510450eadb8903e04fb9a56e"
+          }
+        }
+      },
+      {
+        "index": 22,
+        "geometry": {
+          "points": {
+            "shape": [
+              1784,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "78aadf0e66fcf74779d3f4bf22e75e56bb1719c9d6c66f151e406d9da9c2ae86"
+          },
+          "indices": {
+            "shape": [
+              10800
+            ],
+            "dtype": "int32",
+            "sha256": "38bcb69e4cdb38ef97f092ca1df0d6f350cb8fdf4c326cc8e1ff11d1a2f5537e"
+          }
+        }
+      },
+      {
+        "index": 23,
+        "geometry": {
+          "points": {
+            "shape": [
+              10441,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "8516ce04566e7e8ea4e5ea75da1eacbe81fbe946e1bda960f0893406561568b0"
+          },
+          "indices": {
+            "shape": [
+              62910
+            ],
+            "dtype": "int32",
+            "sha256": "2e1454e36ed6cf51ab2be70494bf0d8942b54145d82bddfa166175c59f25ddff"
+          }
+        }
+      },
+      {
+        "index": 24,
+        "geometry": {
+          "points": {
+            "shape": [
+              3937,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "56b7ab12ea7d5fcd3c8acfb50b1ab92f3391bb58d9f6b26b3996f6b4259c14a4"
+          },
+          "indices": {
+            "shape": [
+              23610
+            ],
+            "dtype": "int32",
+            "sha256": "b893c1fb53d50b973c044d4aa86bb81be1d8f41d19e220f0042b1dc95018a775"
+          }
+        }
+      },
+      {
+        "index": 25,
+        "geometry": {
+          "points": {
+            "shape": [
+              1837,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "29f9e6c78b0f55b7711cb2dec1a47a708fc7023d404c31f2df22cc153b7f0a1e"
+          },
+          "indices": {
+            "shape": [
+              11094
+            ],
+            "dtype": "int32",
+            "sha256": "fecf4db587e4b8b576fc7420fe35a76ca11a05568fdf2ad994c7ce33f49c4836"
+          }
+        }
+      },
+      {
+        "index": 26,
+        "geometry": {
+          "points": {
+            "shape": [
+              10471,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "c361fe1173d737e4a5dfad36f82bd6ca12d34e1036284bb1a37357130827d497"
+          },
+          "indices": {
+            "shape": [
+              62910
+            ],
+            "dtype": "int32",
+            "sha256": "ced4f54cd8887152f7164bee5fcfa47066ae22dafa2f7d4704c676db4fb9de71"
+          }
+        }
+      },
+      {
+        "index": 27,
+        "geometry": {
+          "points": {
+            "shape": [
+              1202,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "2df424cb59eca64c5f433bbcb0c78420bae8b442869fe93be3b885ce4df10209"
+          },
+          "indices": {
+            "shape": [
+              7260
+            ],
+            "dtype": "int32",
+            "sha256": "db971739fd430beb0da2d3e1cb15c7097b53ed880803a71ace9713b2b87bd509"
+          }
+        }
+      },
+      {
+        "index": 28,
+        "geometry": {
+          "points": {
+            "shape": [
+              692,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "0ade11433572115f1947fd747e77ead147c2b91064ee4f1246ff5a8a3b026df2"
+          },
+          "indices": {
+            "shape": [
+              4164
+            ],
+            "dtype": "int32",
+            "sha256": "927a46e3e415ed6dff18bff0ae43f25d8cdf7ad348983b58027e694a22c9393d"
+          }
+        }
+      },
+      {
+        "index": 29,
+        "geometry": {
+          "points": {
+            "shape": [
+              8,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "ae5ab4bab91e2e8a9de895ba0c7dcf01a386d8aeede6739c06202cd48e3259ce"
+          },
+          "indices": {
+            "shape": [
+              36
+            ],
+            "dtype": "int32",
+            "sha256": "dacc12248d1953d7092b87717106137375fe4283d590ad9703ceaf791152d22c"
+          }
+        }
+      },
+      {
+        "index": 30,
+        "geometry": {
+          "points": {
+            "shape": [
+              2476,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "60c42bfe034046d1da521e0ff9900f02ce3a300581da8c91eee787cb83a375a9"
+          },
+          "indices": {
+            "shape": [
+              14928
+            ],
+            "dtype": "int32",
+            "sha256": "63d961b9703547895a5a24b6024764770788311306c8c41669c88b323d78c45f"
+          }
+        }
+      },
+      {
+        "index": 31,
+        "geometry": {
+          "points": {
+            "shape": [
+              6123,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "f6aff5d24529a56fcdb7b9113a8bbc7b4ff5d3ff964eace934f58e2b41f5a7ce"
+          },
+          "indices": {
+            "shape": [
+              36750
+            ],
+            "dtype": "int32",
+            "sha256": "6fffc74aa6634cc2abba0544b17bb388319bccecfab722b1b4252d3ef71f1cb5"
+          }
+        }
+      },
+      {
+        "index": 32,
+        "geometry": {
+          "points": {
+            "shape": [
+              10475,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "d721e0a92a90d13fee4a5550e66a84493c8225201574422ada52aa11a9774747"
+          },
+          "indices": {
+            "shape": [
+              62910
+            ],
+            "dtype": "int32",
+            "sha256": "7782e97fea54b496bdfcc4f5602a3412f7f72e2f597173850707f4d85990eb30"
+          }
+        }
+      },
+      {
+        "index": 33,
+        "geometry": {
+          "points": {
+            "shape": [
+              5698,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "ea9f42e54aece1236c25807d8eaed95afc124d2208e674c903a1577abbf9a137"
+          },
+          "indices": {
+            "shape": [
+              34236
+            ],
+            "dtype": "int32",
+            "sha256": "6489b38b1b8da74e41b7df6f507896fd7047fada74541ac5c54a3178288e4d8c"
+          }
+        }
+      },
+      {
+        "index": 34,
+        "geometry": {
+          "points": {
+            "shape": [
+              9935,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "7a91b1276d4332000e014e2905c0702a7382281d7e8ed1dc3c1d58f99a979e95"
+          },
+          "indices": {
+            "shape": [
+              59742
+            ],
+            "dtype": "int32",
+            "sha256": "cb104513bc9d6acca3b8f86a464100b23f86e0122d66f7fef306d9c9eadfcf87"
+          }
+        }
+      },
+      {
+        "index": 35,
+        "geometry": {
+          "points": {
+            "shape": [
+              6384,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "63df2fb37ddf50c4e248a00762c1cff4a0a3db1f650369a5246ea9a4380e48ac"
+          },
+          "indices": {
+            "shape": [
+              38496
+            ],
+            "dtype": "int32",
+            "sha256": "0168ac33862dee01a6af75927a9a30f862b6ce11021f00b3d09e74ce82e2c677"
+          }
+        }
+      },
+      {
+        "index": 36,
+        "geometry": {
+          "points": {
+            "shape": [
+              6123,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "640da34f80bcd99d8ad2dfd2b8f6f034ebdb5a70077b72ee075afbe030e5953a"
+          },
+          "indices": {
+            "shape": [
+              36750
+            ],
+            "dtype": "int32",
+            "sha256": "b6a6b79a89f4eb1e39020842a7af4f37d0487e8beb4be33c5e198c42410acadd"
+          }
+        }
+      },
+      {
+        "index": 37,
+        "geometry": {
+          "points": {
+            "shape": [
+              4949,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "7aefd389a8d37d8420e9995f3a9df74fc5cba19cf398fe24d2e1ff34d843d5f7"
+          },
+          "indices": {
+            "shape": [
+              29754
+            ],
+            "dtype": "int32",
+            "sha256": "c3228df27bd1b1d6d3d9706285fcfd84aafa7f8a8af0c025fd06699cff8bfdee"
+          }
+        }
+      },
+      {
+        "index": 38,
+        "geometry": {
+          "points": {
+            "shape": [
+              80601,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "3319b59317bc65d11c11b84a2eff5e8ca529d2c46d7faa22b2544858fa8b5939"
+          },
+          "indices": {
+            "shape": [
+              477600
+            ],
+            "dtype": "int32",
+            "sha256": "9fa8bff84d4b4683e0c5f3efcce76e0652012d43569043411816848a9c4ed63d"
+          }
+        }
+      }
+    ],
+    "hfield_registry": [],
+    "flex_mesh_registry": [],
+    "textures": [
+      {
+        "index": 0,
+        "ndim": 2
+      },
+      {
+        "index": 1,
+        "ndim": 2
+      }
+    ],
+    "scene_bvh_present": true,
+    "cameras_active": false,
+    "native_registry_lengths": {
+      "mesh_registry": 39,
+      "hfield_registry": 0,
+      "flex_mesh_registry": 0,
+      "textures_registry": 2
+    }
+  },
+  "closed": true
+}

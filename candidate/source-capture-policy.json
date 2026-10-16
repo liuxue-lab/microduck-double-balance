@@ -1,0 +1,25 @@
+{
+  "captured_and_reused_total_cap_bytes": 41943040,
+  "cloud_reproduction_bundle_complete": false,
+  "copy_prior_verified_sources_again": false,
+  "identity_only_sources": {
+    "project/scripts/stage10_finalize.py": {
+      "bytes": 9710625,
+      "git_blob_sha1": "90ec480d5cfd783c4d680d7765a1d0c83e111746",
+      "reason": "Reviewed closed Stage10 finalization utility; outside Stage12 runtime/runner source scope; record streamed SHA256 and exact Git blob identity, do not execute or repack.",
+      "repository_path": "scripts/stage10_finalize.py",
+      "source_commit": "73ee01930a031d76a9d57419afdfd4464a547ab3"
+    }
+  },
+  "prior_verified_sources": "prior-readiness-v2/source-index.json",
+  "priority": [
+    "installed rsl_rl Python sources",
+    "installed mjlab/scripts and mjlab/rl Python sources",
+    "project metadata and src",
+    "remaining project/scripts identities"
+  ],
+  "protocol": "microduck-stage12-source-capture-v3",
+  "reuse_requires_current_source_and_prior_file_sha_match": true,
+  "source_file_cap_bytes": 8388608,
+  "unknown_oversized_source": "BLOCK_WITH_EXACT_PATH_SIZE_AND_PARTIAL_MANIFEST"
+}

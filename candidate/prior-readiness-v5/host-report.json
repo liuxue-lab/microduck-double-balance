@@ -1,0 +1,31 @@
+{
+  "budget": {
+    "PPO": 0,
+    "cloud_training": 0,
+    "environment_constructions": 0,
+    "native_forward": 0,
+    "native_integrations": 0,
+    "optimizer_constructions": 0,
+    "policy_constructions": 0,
+    "torch_load": 0
+  },
+  "error": "ImportError('Failed to initialize: Write outside new Stage12 run refused: /dev/null')",
+  "source_preservation": "PASS",
+  "source_reuse": {
+    "assets_verified": 158,
+    "cloud_reproduction_bundle_complete": false,
+    "current_source_identities": 249,
+    "retained_source_bytes": 3591016,
+    "retained_source_files": 248,
+    "source_files_copied": 0,
+    "source_manifest_sha256": "411c1e3bb72350ac17e780c2a6acf887c74f7405ff9ef9586c27df32a879d9b6",
+    "status": "VERIFIED_IN_PLACE_NO_RECAPTURE",
+    "transfer_commits": [
+      "f6fb64e3ff1b90c7c9d65d1fb29c47df5b76b671",
+      "8f54003ac1e511ee3a2fe8b0c3b32c99a74744a9"
+    ]
+  },
+  "status": "HOST_READINESS_BLOCKED",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/git/__init__.py\", line 296, in <module>\n    refresh()\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/git/__init__.py\", line 287, in refresh\n    if not Git.refresh(path=path):\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/git/cmd.py\", line 788, in refresh\n    cls().version()\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/git/cmd.py\", line 1003, in <lambda>\n    return lambda *args, **kwargs: self._call_process(name, *args, **kwargs)\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/git/cmd.py\", line 1616, in _call_process\n    return self.execute(call, **exec_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/git/cmd.py\", line 1279, in execute\n    proc = safer_popen(\n           ^^^^^^^^^^^^\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py\", line 992, in __init__\n    errread, errwrite) = self._get_handles(stdin, stdout, stderr)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py\", line 1705, in _get_handles\n    p2cread = self._get_devnull()\n              ^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py\", line 1137, in _get_devnull\n    self._devnull = os.open(os.devnull, os.O_RDWR)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/下载/microduck-stage12-readiness-v5/stage12/host_probe.py\", line 187, in hook\n    require(Path(path).resolve().is_relative_to(allowed), \"Write outside new Stage12 run refused: \" + str(path))\n  File \"/home/lx/下载/microduck-stage12-readiness-v5/stage12/contracts.py\", line 33, in require\n    raise RuntimeError(message)\nRuntimeError: Write outside new Stage12 run refused: /dev/null\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/lx/下载/microduck-stage12-readiness-v5/stage12/host_probe.py\", line 210, in main\n    config_probe(out, font_fallback)\n  File \"/home/lx/下载/microduck-stage12-readiness-v5/stage12/host_probe.py\", line 90, in config_probe\n    from rsl_rl.runners import OnPolicyRunner\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/rsl_rl/runners/__init__.py\", line 8, in <module>\n    from .on_policy_runner import OnPolicyRunner  # noqa: I001\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/rsl_rl/runners/on_policy_runner.py\", line 17, in <module>\n    from rsl_rl.utils.logger import Logger\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/rsl_rl/utils/logger.py\", line 9, in <module>\n    import git\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/git/__init__.py\", line 298, in <module>\n    raise ImportError(\"Failed to initialize: {0}\".format(_exc)) from _exc\nImportError: Failed to initialize: Write outside new Stage12 run refused: /dev/null\n",
+  "training_ready": false
+}

@@ -1,0 +1,179 @@
+{
+  "PPO": 0,
+  "assistant_direct_access": {
+    "cloud_host_fault_inferred": false,
+    "fallback": "User-local SSH collection and Git transfer",
+    "status": "DNS_UNAVAILABLE"
+  },
+  "authorization": {
+    "PPO_updates": 0,
+    "PR": false,
+    "automatic_git_push": false,
+    "automatic_instance_start": false,
+    "automatic_instance_stop": false,
+    "cloud_readiness_time_confirmed": true,
+    "cloud_training_updates": 0,
+    "merge": false,
+    "native_operation_caps": "TO_BE_FIXED_IN_EXECUTION_PLAN_BEFORE_NATIVE_START"
+  },
+  "canonical_baseline": {
+    "attempted": 704665,
+    "completed": 704664
+  },
+  "cloud_started": true,
+  "cloud_started_evidence": "User screenshot shows existing instance running; no assistant power action",
+  "cloud_training": 0,
+  "execution_order": [
+    "Read-only current host/runtime/disk inventory",
+    "Prepare separate Stage12 directory/environment with pinned dependencies and source hashes",
+    "Cloud-specific numerical/full-episode candidate with fixed operation and total-time caps",
+    "Measure sustained N1/N2 throughput and resource cost within remaining total budget",
+    "Return complete evidence via existing Git SSH transfer workflow; user manually shuts down when verified"
+  ],
+  "format": "microduck-stage12-cloud-budget-v1",
+  "instance": {
+    "current_SSH": "ssh -p 46171 root@connect.bjb2.seetacloud.com",
+    "current_VRAM_and_driver": {
+      "VRAM_GB": 32,
+      "driver": "READ_ON_HOST"
+    },
+    "gpu_model": "RTX 5090",
+    "power_state": "RUNNING_OBSERVED_USER_SCREENSHOT_20261016T115457+0800",
+    "retained_confirmed_by_user": true,
+    "reuse_existing": true,
+    "screenshot": {
+      "CPU": "Intel Xeon Platinum 8470Q",
+      "GPU": "RTX5090 x1",
+      "RAM_GB": 90,
+      "data_disk_GB": 50,
+      "data_disk_used_percent": 48.37,
+      "image_label": "PyTorch 2.8.0; Python3.12; Ubuntu22.04; CUDA12.8",
+      "image_label_is_actual_venv_identity": false,
+      "insufficient_balance_for_24_hours": true,
+      "price_CNY_per_hour": 2.88,
+      "system_disk_GB": 30,
+      "vCPU": 25
+    }
+  },
+  "local_N2": "PASS_60_OF_60_INDEPENDENTLY_VERIFIED_NO_RERUN",
+  "local_N2_fixed_commit": "d506be014253a2bb0439ec03b3282497a33f2e2b",
+  "local_followup_native_budget": 0,
+  "new_native_integrations": 0,
+  "next_user_input": "Run the prepared read-only collection on local host; manual Git SSH push as printed. No further SSH/address clarification needed.",
+  "not_released": [
+    "Existing v7 native factory remains local RTX5060-only",
+    "Native full 10-second episode not passed",
+    "Sustained cloud throughput not measured",
+    "PPO/update/checkpoint recovery acceptance not authorized or completed",
+    "Formal training not released"
+  ],
+  "prior_cloud_plan": {
+    "PPO_budget": 0,
+    "accepted_local_commit": "d506be014253a2bb0439ec03b3282497a33f2e2b",
+    "canonical_baseline": {
+      "attempted": 704665,
+      "completed": 704664
+    },
+    "checkpoint": {
+      "direct_resume": false,
+      "new_policy": "fresh actor LSTM61->256 + MLP512/256/128->14; critic85->512/256/128->1; fresh normalizers and Adam",
+      "old_disposition": "PRESERVE_READ_ONLY_NO_LOAD",
+      "old_sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+      "pending_attempt": "retain consumed counts; no automatic retry or budget refund",
+      "resume_boundary": "last committed update only; fresh environment/RNN boundary; never claim bitwise mid-rollout recovery",
+      "save_boundary": "completed update plus durable attempted/committed budget ledger and SHA receipt"
+    },
+    "cloud_SSH": null,
+    "cloud_budget_approval_required_by": "User explicit instruction: PPO=0; cloud training=0; budget separately defined",
+    "cloud_environment_complete": false,
+    "cloud_native_integration_budget": 0,
+    "cloud_power_state": "UNCONFIRMED",
+    "cloud_training_budget": 0,
+    "current_v7_factory_scope": "local RTX5060 only; cloud candidate release required",
+    "local_N1": "Historical short lifecycle PASS, reused; high-tier path not certified by N1",
+    "local_N2": "PASS: v7 60/60 macros independently reviewed; 64/128/256 exercised; 512 unexercised",
+    "local_followup_native_budget": 0,
+    "maximum_integrations_worksheet_only": {
+      "24_step_rollout_N1": 360960,
+      "24_step_rollout_N2": 721920,
+      "500_step_episode_N1": 7520000,
+      "500_step_episode_N2": 15040000,
+      "macro_with_replay": 1504,
+      "public_step_per_owner": 15040
+    },
+    "next_budget_fields": [
+      "GPU model",
+      "maximum wall hours",
+      "maximum cost",
+      "native integration cap",
+      "PPO update cap",
+      "checkpoint/save/return scope"
+    ],
+    "next_information_once": [
+      "GPU model and VRAM",
+      "current SSH user@host and port; no secrets",
+      "maximum wall time and cost/currency",
+      "bounded native scope and separately explicit PPO update cap; default 0"
+    ],
+    "no_more_local_gpu_roundtrip_required": true,
+    "order": [
+      "Pin and verify approved source/assets/runtime/GPU; do not reuse a historical SSH port",
+      "Native numerical acceptance for the new finite-refinement candidate and full 10-second episode",
+      "Profile end-to-end synchronized N=1 and N=2 independent owners including audit/IPC/reset; measure memory",
+      "Approve a separate performance implementation if the audit runtime is too slow; preserve acceptance criteria",
+      "Fresh actor/critic/normalizers/Adam, 24-step rollout, bounded PPO update and update-boundary checkpoint recovery acceptance",
+      "Only after those gates pass: explicitly budget a formal training run"
+    ],
+    "requires_local_result": "N2_NATIVE_PASS_CLOUD_BUDGET_PENDING",
+    "requires_local_result_satisfied": true,
+    "scaling": {
+      "N4096_or_B4_released": false,
+      "implemented_independent_owners": [
+        1,
+        2
+      ],
+      "native_nworld_per_owner": 1,
+      "recurrent_minibatches_N1": [
+        1
+      ],
+      "recurrent_minibatches_N2": [
+        1,
+        2
+      ],
+      "rollout_steps": 24
+    },
+    "shutdown": "After necessary cloud work and verified returns, remind user to shut down manually; confirmation is separate; never start or stop the instance automatically.",
+    "status": "NOT_AUTHORIZED_NOT_STARTED",
+    "training_ready": false
+  },
+  "reuse": {
+    "archives_and_started": "PRESERVE",
+    "cloud_inputs_bytes": 16181045,
+    "cloud_inputs_files": 410,
+    "cloud_inputs_sha256": "24701df9e56face7980a1a2e0544dfebc41a4cf1b84ec4912be795d1a35a43b2",
+    "old_checkpoint": "PRESERVE_READ_ONLY_NO_LOAD",
+    "source_cloud_image_installed_and_verified": false,
+    "source_recapture_required": false
+  },
+  "shutdown_reminder": "Remind promptly after necessary cloud work and verified return; never infer or automate actual shutdown",
+  "time_allocation_rule": "Stop early on a failed acceptance or exhausted operation/time/disk bound; reserve time for cleanup and return. No automatic retry, no reset of consumed time or attempts.",
+  "time_budget": {
+    "calculated_GPU_charge_CNY_at_screenshot_rate_for_24h": 69.12,
+    "deadline": null,
+    "execution_started": false,
+    "instance_billing_clock_is_separate_from_script_clock": true,
+    "instance_power_on_time": "UNKNOWN; deduct any already billed time from agreed total",
+    "instance_running_already": true,
+    "maximum_hours": 24,
+    "maximum_seconds": 86400,
+    "scope": "This cloud readiness campaign total; not per process, per attempt, or per restart",
+    "started": false,
+    "unused_time_need_not_be_consumed": true
+  },
+  "training_ready": false,
+  "user_confirmation": {
+    "at": "2026-10-16T11:53:14+08:00",
+    "context": "Old RTX5090 instance retained; reply to question asking allowed hours this round",
+    "text": "保留 24小时"
+  }
+}

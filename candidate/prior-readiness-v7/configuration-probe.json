@@ -1,0 +1,174 @@
+{
+  "PPO": 0,
+  "budget": {
+    "PPO": 0,
+    "cloud_training": 0,
+    "environment_constructions": 0,
+    "native_forward": 0,
+    "native_integrations": 0,
+    "optimizer_constructions": 0,
+    "policy_constructions": 0,
+    "torch_load": 0
+  },
+  "cloud_training": 0,
+  "config_semantics_reproduced": true,
+  "cuda_initialized": false,
+  "guard_attempts": {},
+  "guards_installed": [
+    "torch.load",
+    "torch.save",
+    "torch.jit.load",
+    "torch.cuda._lazy_init",
+    "mujoco.mj_step",
+    "mujoco.mj_step1",
+    "mujoco.mj_step2",
+    "mujoco.mj_Euler",
+    "mujoco.mj_RungeKutta",
+    "mujoco.mj_implicit",
+    "mujoco.mj_forward",
+    "mujoco.mj_kinematics",
+    "mujoco.mj_resetData",
+    "MjModel.from_xml_path",
+    "MjModel.from_xml_string",
+    "MjModel.from_binary_path",
+    "MjSpec.compile",
+    "Renderer.__init__",
+    "glfw.init",
+    "glfw.create_window",
+    "glfw.make_context_current",
+    "mujoco.viewer.launch",
+    "mujoco.viewer.launch_passive",
+    "mujoco.viewer.launch_from_path",
+    "mujoco_warp.step",
+    "mujoco_warp.step1",
+    "mujoco_warp.step2",
+    "mujoco_warp.euler",
+    "mujoco_warp.implicit",
+    "mujoco_warp.rungekutta4",
+    "mujoco_warp.forward",
+    "mujoco_warp._src.forward.step",
+    "mujoco_warp._src.forward.step1",
+    "mujoco_warp._src.forward.step2",
+    "mujoco_warp._src.forward.euler",
+    "mujoco_warp._src.forward.implicit",
+    "mujoco_warp._src.forward.rungekutta4",
+    "mujoco_warp._src.forward.forward",
+    "warp.init",
+    "warp.launch",
+    "warp.capture_begin",
+    "warp.capture_end",
+    "warp.capture_launch",
+    "warp.get_device",
+    "ManagerBasedRlEnv.__init__",
+    "Simulation.__init__",
+    "Scene.__init__",
+    "PPO.__init__",
+    "OnPolicyRunner.__init__"
+  ],
+  "headless_discovery": {
+    "MUJOCO_GL": "disable",
+    "PYGLFW_LIBRARY": "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/glfw/x11/libglfw.so",
+    "graphics_contexts": 0,
+    "library_identity": {
+      "bytes": 378696,
+      "git_blob_sha1": "1b372f088da239ebea080a856907fe78e3e207cd",
+      "sha256": "9f283bef3d8c70a2e3a85fcb6ab5dfc23509d1983d0b14ad5f90d51cbd6d74c5"
+    },
+    "library_loaded_by_this_function": false,
+    "native_library_binding_expected": true,
+    "note": "Installed GLFW may bind its bundled DLL for mujoco.viewer imports; init/window/context/physics remain blocked.",
+    "reviewed_sources": [
+      {
+        "actual": {
+          "bytes": 1849,
+          "git_blob_sha1": "61b861ecea45dc9d3d2d44ab2e9b898ed4f2fa2a",
+          "sha256": "a3cac3b6d582c149a93e95e4742c7fd4ad2083d31a329ee5b675e59e5377ff75"
+        },
+        "expected": {
+          "bytes": 1849,
+          "git_blob_sha1": "61b861ecea45dc9d3d2d44ab2e9b898ed4f2fa2a",
+          "sha256": "a3cac3b6d582c149a93e95e4742c7fd4ad2083d31a329ee5b675e59e5377ff75"
+        },
+        "path": "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mujoco/rendering/classic/gl_context.py"
+      },
+      {
+        "actual": {
+          "bytes": 9044,
+          "git_blob_sha1": "ee8b3064cc348e51ca7a80454ed0d62f5bd41283",
+          "sha256": "7aa425039fa57015c6674b0973385f178009e11efbc93a91bbc1df42fc8e9204"
+        },
+        "expected": {
+          "bytes": 9044,
+          "git_blob_sha1": "ee8b3064cc348e51ca7a80454ed0d62f5bd41283",
+          "sha256": "7aa425039fa57015c6674b0973385f178009e11efbc93a91bbc1df42fc8e9204"
+        },
+        "path": "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/glfw/library.py"
+      }
+    ],
+    "status": "HEADLESS_DISCOVERY_CONFIGURED",
+    "subprocess_probes": 0
+  },
+  "media_binary_probe_suppressed_config_only": true,
+  "model_constructed": false,
+  "native_forward": 0,
+  "native_integrations": 0,
+  "prepared_configuration_matches_v6": true,
+  "public_physics_step_called": false,
+  "real_environment_constructed": false,
+  "registry": {
+    "env_factory": "stage12.contracts.create_environment (blocked)",
+    "in_process_registration": true,
+    "max_iterations": 0,
+    "persistent_installation": false,
+    "registry_has_env_cls_slot": false,
+    "resume": false,
+    "stock_train_entrypoint_released": false,
+    "task_id": "Mjlab-DoubleBalance-Head-Nominal-MicroDuck-Stage12-Prepared-v0"
+  },
+  "status": "CPU_CONFIGURATION_AND_ADAPTER_PASS",
+  "training_ready": false,
+  "wrapper_contract": {
+    "cases": {
+      "TensorDict": {
+        "cache_kind": "TensorDict",
+        "native_env_tested": false,
+        "native_integrations": 0,
+        "observation_recomputations": 0,
+        "status": "PASS_FAKE_CPU_ENV_ONLY",
+        "tests": [
+          "one wrapper reset",
+          "cached repeated reads",
+          "TensorDict type/batch/keys",
+          "clone isolation",
+          "fresh post-step cache",
+          "terminated OR truncated",
+          "timeout bootstrap flag",
+          "previous transition survives in-place buffer reuse",
+          "reset snapshots and single delegation"
+        ]
+      },
+      "dict": {
+        "cache_kind": "dict",
+        "native_env_tested": false,
+        "native_integrations": 0,
+        "observation_recomputations": 0,
+        "status": "PASS_FAKE_CPU_ENV_ONLY",
+        "tests": [
+          "one wrapper reset",
+          "cached repeated reads",
+          "TensorDict type/batch/keys",
+          "clone isolation",
+          "fresh post-step cache",
+          "terminated OR truncated",
+          "timeout bootstrap flag",
+          "previous transition survives in-place buffer reuse",
+          "reset snapshots and single delegation"
+        ]
+      }
+    },
+    "native_env_tested": false,
+    "native_integrations": 0,
+    "observation_recomputations": 0,
+    "status": "PASS_FAKE_CPU_ENV_ONLY"
+  }
+}

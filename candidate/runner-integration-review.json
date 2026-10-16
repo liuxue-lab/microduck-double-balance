@@ -1,0 +1,159 @@
+{
+  "PPO": 0,
+  "actual_runner_constructed": false,
+  "cloud_training": 0,
+  "findings": [
+    {
+      "action": "Dedicated accepted physical factory must precede wrapper reset; dedicated learn call must explicitly use False.",
+      "fact": "Stock entry directly constructs ManagerBasedRlEnv and RslRlVecEnvWrapper, then calls learn(init_at_random_ep_len=True).",
+      "id": "entry",
+      "sources": [
+        "mjlab/scripts/train.py:110-177"
+      ],
+      "state": "BLOCKED_RUNTIME_FACTORY_NOT_IMPLEMENTED"
+    },
+    {
+      "action": "Keep constructor guards; snapshot serializable config and deepcopy before any future runner construction.",
+      "fact": "Runner construction allocates model, optimizer, rollout storage and logger before learn. max_iterations=0 does not make construction a dry run. Config dict is mutated by pop().",
+      "id": "zero_iterations",
+      "sources": [
+        "rsl_rl/runners/on_policy_runner.py:26-54",
+        "rsl_rl/algorithms/ppo.py:473-506"
+      ],
+      "state": "GUARDED_NO_CONSTRUCTION"
+    },
+    {
+      "action": "v4 snapshots cached get/reset/step observations to avoid repeated noise/history and buffer aliasing; delegate step/reset once.",
+      "fact": "PPO.act retains the TensorDict reference until process_env_step copies the transition to storage; stock get_observations calls observation_manager.compute again.",
+      "id": "observation_lifetime",
+      "sources": [
+        "rsl_rl/algorithms/ppo.py:139-150",
+        "rsl_rl/storage/rollout_storage.py:170-202",
+        "mjlab/rl/vecenv_wrapper.py:47-81"
+      ],
+      "state": "PURE_FAKE_TEST_PASS_REAL_CPU_ADAPTER_CHECK_PENDING"
+    },
+    {
+      "action": "Fresh statistics; no update on repeated cached reads; retain current update cadence and verify it in future runner acceptance.",
+      "fact": "Normalization forward does not update statistics. process_env_step updates actor and critic statistics using next observations; after auto reset these are reset observations. Count increases by batch size.",
+      "id": "normalization",
+      "sources": [
+        "rsl_rl/algorithms/ppo.py:152-160",
+        "rsl_rl/models/mlp_model.py:110-119,171-178",
+        "rsl_rl/modules/normalization.py:18-71"
+      ],
+      "state": "SOURCE_REVIEWED_EXECUTION_PENDING"
+    },
+    {
+      "action": "Before PPO release, implement and accept explicit terminal-observation/value capture before reset, no duplicate observation RNG/history update, termination-vs-timeout precedence, and exactly one bootstrap correction. Current v4 adapter preserves existing flags and does not change rewards.",
+      "fact": "Stock auto reset returns post-reset observations. Stock RSL adds gamma*V(s_t)*time_outs to rewards, then cuts GAE recurrence on dones; it does not use the actual terminal next-state value.",
+      "id": "timeout",
+      "sources": [
+        "rsl_rl/algorithms/ppo.py:152-209",
+        "mjlab/rl/vecenv_wrapper.py:60-81",
+        "mjlab/envs/manager_based_rl_env.py:375-472"
+      ],
+      "state": "UNRELEASED_SEMANTIC_DECISION_AND_IMPLEMENTATION_REQUIRED"
+    },
+    {
+      "action": "Test selective reset isolation and both LSTM tensors with real runner later; no real model constructed here.",
+      "fact": "After recording a transition, actor/critic reset receives terminated OR truncated dones. LSTM h and c are zeroed for those indices.",
+      "id": "recurrent_reset",
+      "sources": [
+        "rsl_rl/algorithms/ppo.py:181-185",
+        "rsl_rl/modules/rnn.py:54-71"
+      ],
+      "state": "SOURCE_REVIEWED_EXECUTION_PENDING"
+    },
+    {
+      "action": "Require 1<=B<=N and N%B==0 before model construction. Inherited B=4 is not valid for prepared N=1. v4 does not modify inherited PPO hyperparameters; N1/B1, N2/B1 and N2/B2 remain draft alternatives.",
+      "fact": "Recurrent generator partitions environments by integer num_envs//num_mini_batches. B>N produces empty slices; non-divisibility drops remainder environments.",
+      "id": "minibatches",
+      "sources": [
+        "rsl_rl/storage/rollout_storage.py:258-326"
+      ],
+      "state": "PURE_PARTITION_VALIDATOR_IMPLEMENTED"
+    },
+    {
+      "action": "Old Stage08 direct resume remains blocked. Future same-task continuation needs a durable completed-update/next-index/remaining-budget ledger, explicit LR synchronization and reset/RNG policy, and save/readback acceptance at an update boundary. Do not claim exact mid-rollout continuation.",
+      "fact": "Saved iter is the last zero-based update index; load resumes the same label. Saved actor/critic state includes normalizer buffers; optimizer state and mjlab common_step_counter are included. Physics, environment/global RNG, live RNN hidden/cell and in-flight rollout are not persisted by this save path. PPO.learning_rate scalar is not explicitly restored by PPO.load even when optimizer param-group LR is loaded.",
+      "id": "checkpoint",
+      "sources": [
+        "rsl_rl/algorithms/ppo.py:432-466",
+        "rsl_rl/runners/on_policy_runner.py:75-161",
+        "mjlab/rl/runner.py:67-141"
+      ],
+      "state": "POLICY_PREPARED_SAVE_RESUME_NOT_IMPLEMENTED"
+    }
+  ],
+  "native_integrations": 0,
+  "source_identities": {
+    "mjlab/envs/manager_based_rl_env.py": {
+      "bytes": 22061,
+      "provenance": "Stage11 frozen source; among 219 host source pins",
+      "sha256": "a381027e336d6313cd338d541230b36864657edac89708a33e7e60c0c6fb74d2"
+    },
+    "mjlab/rl/runner.py": {
+      "archive_member": "evidence/captured-source/mjlab/rl/runner.py",
+      "bytes": 5156,
+      "sha256": "61e9200bf304e3df71096cd69f28f4d5973157e61cdc549fc21b6f156326f77e",
+      "transfer_commit": "8f54003ac1e511ee3a2fe8b0c3b32c99a74744a9"
+    },
+    "mjlab/rl/vecenv_wrapper.py": {
+      "archive_member": "evidence/captured-source/mjlab/rl/vecenv_wrapper.py",
+      "bytes": 3053,
+      "sha256": "d458aa421d72c979d0269a24e51a4b49a02e4ec8cb5a9d10e47290aa5d86a3e2",
+      "transfer_commit": "8f54003ac1e511ee3a2fe8b0c3b32c99a74744a9"
+    },
+    "mjlab/scripts/train.py": {
+      "archive_member": "evidence/captured-source/mjlab/scripts/train.py",
+      "bytes": 8694,
+      "sha256": "4d6f27a4b0c6ea9303d85e015462a2849110d21d8eea7bdfc984ccb5086ca021",
+      "transfer_commit": "8f54003ac1e511ee3a2fe8b0c3b32c99a74744a9"
+    },
+    "rsl_rl/algorithms/ppo.py": {
+      "archive_member": "evidence/captured-source/rsl_rl/algorithms/ppo.py",
+      "bytes": 24729,
+      "sha256": "a2d35e7ad7b884c80b7434e7d2ce785a6da1e18d93c96f1179fbd3a208669f8c",
+      "transfer_commit": "8f54003ac1e511ee3a2fe8b0c3b32c99a74744a9"
+    },
+    "rsl_rl/models/mlp_model.py": {
+      "archive_member": "evidence/captured-source/rsl_rl/models/mlp_model.py",
+      "bytes": 10334,
+      "sha256": "6219ebb3ed4df036dae7ff1c30d0fbb169eaaa659e44a659dd757a292124476b",
+      "transfer_commit": "8f54003ac1e511ee3a2fe8b0c3b32c99a74744a9"
+    },
+    "rsl_rl/models/rnn_model.py": {
+      "archive_member": "evidence/captured-source/rsl_rl/models/rnn_model.py",
+      "bytes": 9807,
+      "sha256": "80c1d6452ef021e4d7b174231ed7abac1ed0db8de9604561f8060148d4333ccc",
+      "transfer_commit": "8f54003ac1e511ee3a2fe8b0c3b32c99a74744a9"
+    },
+    "rsl_rl/modules/normalization.py": {
+      "archive_member": "evidence/captured-source/rsl_rl/modules/normalization.py",
+      "bytes": 4673,
+      "sha256": "539e1193cebcc472585cd3df100946fb8d788c4aa0f9f5cbcb3387a64d312926",
+      "transfer_commit": "8f54003ac1e511ee3a2fe8b0c3b32c99a74744a9"
+    },
+    "rsl_rl/modules/rnn.py": {
+      "archive_member": "evidence/captured-source/rsl_rl/modules/rnn.py",
+      "bytes": 3879,
+      "sha256": "07f0eec06c7f2638edbdbc3ba25f56122a7941cb0543138f4a6b04675b2a97e6",
+      "transfer_commit": "8f54003ac1e511ee3a2fe8b0c3b32c99a74744a9"
+    },
+    "rsl_rl/runners/on_policy_runner.py": {
+      "archive_member": "evidence/captured-source/rsl_rl/runners/on_policy_runner.py",
+      "bytes": 10316,
+      "sha256": "39358a0a60219fdb360df7acddf80f6a382837aa58e2ec0ccf875df4afee4825",
+      "transfer_commit": "8f54003ac1e511ee3a2fe8b0c3b32c99a74744a9"
+    },
+    "rsl_rl/storage/rollout_storage.py": {
+      "archive_member": "evidence/captured-source/rsl_rl/storage/rollout_storage.py",
+      "bytes": 16640,
+      "sha256": "ececf28e7412d24867066829cc443acae811f034f8e63975b90343947779918d",
+      "transfer_commit": "8f54003ac1e511ee3a2fe8b0c3b32c99a74744a9"
+    }
+  },
+  "source_review_is_runtime_acceptance": false,
+  "status": "PINNED_SOURCE_REVIEW_COMPLETE_RUNTIME_ACCEPTANCE_PENDING"
+}

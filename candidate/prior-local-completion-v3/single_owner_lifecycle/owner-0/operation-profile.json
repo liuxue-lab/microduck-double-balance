@@ -1,0 +1,21 @@
+{
+  "inclusive_nested": true,
+  "timings": {
+    "CPU_forward": {
+      "calls": 2,
+      "inclusive_s": 0.00502709300008064
+    },
+    "CPU_kinematics": {
+      "calls": 1,
+      "inclusive_s": 7.598799993502325e-05
+    },
+    "Scene_initialize": {
+      "calls": 1,
+      "inclusive_s": 0.32469393099972876
+    },
+    "context_create": {
+      "calls": 1,
+      "inclusive_s": 0.20169162699994558
+    }
+  }
+}

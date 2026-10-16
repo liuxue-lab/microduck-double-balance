@@ -1,0 +1,91 @@
+{
+  "PPO_update_budget": 0,
+  "adaptive_tiers": [
+    32,
+    64,
+    128
+  ],
+  "admission_checks": [
+    "source/config identity",
+    "single owner long-run and reset acceptance",
+    "selective reset isolation",
+    "per-owner RNG/cache/resource ownership",
+    "immutable old criteria",
+    "peak memory measured with headroom",
+    "bound all setup/reset/forward/sense/graph/ledger calls before execution"
+  ],
+  "authorized_budget": {
+    "PPO": 0,
+    "cloud_training": 0,
+    "environment_constructions": 0,
+    "native_forward": 0,
+    "native_integrations": 0,
+    "optimizer_constructions": 0,
+    "policy_constructions": 0,
+    "torch_load": 0
+  },
+  "cloud_gpu_budget_hours": null,
+  "decimation": 10,
+  "draft_integrations_total_max": 31680,
+  "draft_local_pilot": [
+    {
+      "expected_measured_transitions": 2,
+      "full_native_budget_released": false,
+      "independent_owners": 1,
+      "integrations_worst_case": 10560,
+      "macro_advances": 30,
+      "macro_forward_reservation": 42390,
+      "measured_public_steps": 2,
+      "native_nworld_per_owner": 1,
+      "nominal_integrations_if_all_accept64": 4800,
+      "repeats": 1,
+      "setup_reset_forward_budget": null,
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "warmup_public_steps": 1
+    },
+    {
+      "expected_measured_transitions": 4,
+      "full_native_budget_released": false,
+      "independent_owners": 2,
+      "integrations_worst_case": 21120,
+      "macro_advances": 60,
+      "macro_forward_reservation": 84780,
+      "measured_public_steps": 2,
+      "native_nworld_per_owner": 1,
+      "nominal_integrations_if_all_accept64": 9600,
+      "repeats": 1,
+      "setup_reset_forward_budget": null,
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "warmup_public_steps": 1
+    }
+  ],
+  "executed": false,
+  "failure": "stop that new run, retain started and attempted counts; no automatic retry/scale-up/finer tiers",
+  "later_ladder": {
+    "independent_owners": [
+      4,
+      8
+    ],
+    "native_batch_nworld": "UNRELEASED; separate implementation/acceptance"
+  },
+  "mandatory_exact_replay": true,
+  "metrics": {
+    "aggregate_sim_seconds_per_second": "successful measured public transitions * 0.020 / measured wall seconds",
+    "env_transitions_per_second": "successful measured public transitions / synchronized measured wall seconds",
+    "latency": "public-step median/p95, include cross-process orchestration, sync before timing boundaries",
+    "memory": "CUDA peak allocated/reserved, driver used/free, host RSS and number of contexts",
+    "native_integrations_per_second": "measured completed native integrations / measured wall seconds; separate from transitions",
+    "numerics": "accepted tier histogram, rejections, replay failures, failed API attempts; no tolerance changes",
+    "overhead": "startup/JIT, warmup, measured stepping, durable WAL, artifact writing reported separately",
+    "per_env_realtime_factor": "measured public steps per owner * 0.020 / measured wall seconds (equal step counts only)"
+  },
+  "per_macro_integrations_accept128": 352,
+  "per_macro_integrations_accept64": 160,
+  "per_public_step_integrations_max": 3520,
+  "physics_dt_s": 0.002,
+  "public_step_dt_s": 0.02,
+  "scope": "One short pilot at N=1 then N=2 only after backend release and a complete budget; not a stable throughput estimate",
+  "status": "STATIC_WORKSHEET_ONLY",
+  "throughput_measured": null,
+  "wall_clock": "no invented runtime deadline; operation budget first; 5-second heartbeat is not timeout"
+}

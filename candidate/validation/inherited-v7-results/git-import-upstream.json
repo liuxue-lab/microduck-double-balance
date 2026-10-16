@@ -1,0 +1,106 @@
+{
+  "PPO": 0,
+  "cloud_training": 0,
+  "denied_after_import": [
+    [
+      "/usr/bin/git",
+      "version"
+    ],
+    [
+      "/usr/bin/git",
+      "status"
+    ],
+    [
+      "/usr/bin/git",
+      "push"
+    ],
+    [
+      "/bin/true"
+    ],
+    [
+      "/bin/sh",
+      "-c",
+      "git version"
+    ]
+  ],
+  "fixture_files_verified": 59,
+  "fixture_manifest_sha256": "b039b98543ced759055c1f7379c92d14112bdf4ead4547475eeeccc865f30b76",
+  "git_import": {
+    "binary_identity": {
+      "bytes": 4066232,
+      "git_blob_sha1": "e2ed5fef03835e6cab732749e0e4e4f18f6d7944",
+      "sha256": "2a8c18fbf43da9f692d75474c72bea9dfd796c260b0f3dfe456376abc3bbd668"
+    },
+    "command": [
+      "/usr/bin/git",
+      "version"
+    ],
+    "completed_queries": 2,
+    "cwd": "/workspace/scratch/f586bf229d7a/stage12-v6-validation/git-import-upstream",
+    "git_environment": {
+      "GIT_CONFIG_GLOBAL": "/dev/null",
+      "GIT_CONFIG_NOSYSTEM": "1",
+      "GIT_CONFIG_SYSTEM": "/dev/null",
+      "GIT_OPTIONAL_LOCKS": "0",
+      "GIT_PYTHON_GIT_EXECUTABLE": "/usr/bin/git",
+      "GIT_TERMINAL_PROMPT": "0"
+    },
+    "git_ok": true,
+    "installed_files_modified": false,
+    "maximum_queries": 2,
+    "network_commands": 0,
+    "null_device_write_opens": 7,
+    "permitted_queries": [
+      {
+        "argv": [
+          "/usr/bin/git",
+          "version"
+        ],
+        "audit_event": "subprocess.Popen",
+        "cwd": "/workspace/scratch/f586bf229d7a/stage12-v6-validation/git-import-upstream"
+      },
+      {
+        "argv": [
+          "/usr/bin/git",
+          "version"
+        ],
+        "audit_event": "subprocess.Popen",
+        "cwd": "/workspace/scratch/f586bf229d7a/stage12-v6-validation/git-import-upstream"
+      }
+    ],
+    "repository_commands": 0,
+    "reviewed_sources": [
+      {
+        "identity": {
+          "bytes": 8896,
+          "git_blob_sha1": "1b2360e3a52a15be0a53886f6c5af55052529987",
+          "sha256": "1ab3ce6835813415246835ecefe0d5beb76e03628914116e6b15a2e22cf51ed1"
+        },
+        "path": "/workspace/scratch/f586bf229d7a/stage12-v6-import-fixture/git/__init__.py"
+      },
+      {
+        "identity": {
+          "bytes": 67472,
+          "git_blob_sha1": "15d7820df5dbbc0b4693b7367883ebb9eb7af23e",
+          "sha256": "cb4d7237c3f6245b853f9746cc7216f6f77eb814233f32bcc9f64c6486596f7e"
+        },
+        "path": "/workspace/scratch/f586bf229d7a/stage12-v6-import-fixture/git/cmd.py"
+      },
+      {
+        "identity": {
+          "bytes": 46786,
+          "git_blob_sha1": "20e42b4126ed23ca3962679388637ecb1e8222b9",
+          "sha256": "a589fd740973f90c2f34c5970f5339ee930f422b6d84e33ceaa4d12bf7294ea5"
+        },
+        "path": "/workspace/scratch/f586bf229d7a/stage12-v6-import-fixture/git/remote.py"
+      }
+    ],
+    "source_form": "upstream_tag",
+    "status": "READ_ONLY_GITPYTHON_IMPORT_PASS",
+    "version": "3.1.46"
+  },
+  "host_installed_stack_tested": false,
+  "native_integrations": 0,
+  "source_form": "upstream",
+  "status": "PASS_REAL_UPSTREAM_GITPYTHON_IMPORT"
+}

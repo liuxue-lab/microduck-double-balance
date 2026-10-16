@@ -1,0 +1,76 @@
+{
+  "continuation": "Update-boundary reset continuation only after explicit RNG/RNN/ledger policy; no exact mid-rollout claim",
+  "draft_small_scale": [
+    {
+      "authorized_PPO_updates": 0,
+      "full_execution_budget_released": false,
+      "macro_advances": 240,
+      "macro_forward_reservation": 339120,
+      "max_rollout_native_integrations": 84480,
+      "num_envs": 1,
+      "num_mini_batches": 1,
+      "public_steps_per_env": 24,
+      "recurrent_environment_slices": [
+        [
+          0,
+          1
+        ]
+      ],
+      "setup_reset_sense_forward_budget": null,
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "transitions_per_rollout": 24
+    },
+    {
+      "authorized_PPO_updates": 0,
+      "full_execution_budget_released": false,
+      "macro_advances": 480,
+      "macro_forward_reservation": 678240,
+      "max_rollout_native_integrations": 168960,
+      "num_envs": 2,
+      "num_mini_batches": 1,
+      "public_steps_per_env": 24,
+      "recurrent_environment_slices": [
+        [
+          0,
+          2
+        ]
+      ],
+      "setup_reset_sense_forward_budget": null,
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "transitions_per_rollout": 48
+    },
+    {
+      "authorized_PPO_updates": 0,
+      "full_execution_budget_released": false,
+      "macro_advances": 480,
+      "macro_forward_reservation": 678240,
+      "max_rollout_native_integrations": 168960,
+      "num_envs": 2,
+      "num_mini_batches": 2,
+      "public_steps_per_env": 24,
+      "recurrent_environment_slices": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "setup_reset_sense_forward_budget": null,
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "transitions_per_rollout": 48
+    }
+  ],
+  "executed": false,
+  "inherited_minibatches": 4,
+  "inherited_minibatches_valid_for_prepared_N1": false,
+  "init_at_random_ep_len": false,
+  "minibatches_changed_in_candidate": false,
+  "status": "STATIC_RUNNER_REVIEW_ONLY",
+  "stock_train_allowed": false,
+  "timeout_resolution": "UNRELEASED: select and test terminal-observation bootstrap; current RSL uses V(s_t)",
+  "training_ready": false,
+  "zero_iteration_constructor_is_dry_run": false
+}

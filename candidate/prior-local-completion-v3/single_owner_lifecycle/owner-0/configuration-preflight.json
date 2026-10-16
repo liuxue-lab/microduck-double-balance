@@ -1,0 +1,157 @@
+{
+  "checks": [
+    {
+      "detail": true,
+      "name": "world_cadence",
+      "passed": true
+    },
+    {
+      "detail": true,
+      "name": "seed_manual_reset",
+      "passed": true
+    },
+    {
+      "detail": true,
+      "name": "unassisted_actions",
+      "passed": true
+    },
+    {
+      "detail": true,
+      "name": "null_curriculum",
+      "passed": true
+    },
+    {
+      "detail": true,
+      "name": "command_roster",
+      "passed": true
+    },
+    {
+      "detail": {
+        "final_standing_command_zero": true,
+        "forward": 0.2,
+        "forward_bucket_retained": true,
+        "heading": 0.0,
+        "heading_range": [
+          -3.141592653589793,
+          3.141592653589793
+        ],
+        "init_velocity": 0.0,
+        "resampling_s": [
+          3.0,
+          8.0
+        ],
+        "standing": 1.0,
+        "world": 0.0
+      },
+      "name": "inherited_command",
+      "passed": true
+    },
+    {
+      "detail": true,
+      "name": "event_roster",
+      "passed": true
+    },
+    {
+      "detail": true,
+      "name": "interval_timers",
+      "passed": true
+    },
+    {
+      "detail": true,
+      "name": "observation_groups",
+      "passed": true
+    },
+    {
+      "detail": true,
+      "name": "actor/concatenation_history",
+      "passed": true
+    },
+    {
+      "detail": true,
+      "name": "actor/noise_roster",
+      "passed": true
+    },
+    {
+      "detail": {
+        "n_max": 0.03,
+        "n_min": -0.03,
+        "operation": "add",
+        "term": "base_ang_vel",
+        "width": 3
+      },
+      "name": "actor/base_ang_vel/noise",
+      "passed": true
+    },
+    {
+      "detail": {
+        "n_max": 0.01,
+        "n_min": -0.01,
+        "operation": "add",
+        "term": "projected_gravity",
+        "width": 3
+      },
+      "name": "actor/projected_gravity/noise",
+      "passed": true
+    },
+    {
+      "detail": {
+        "n_max": 0.001,
+        "n_min": -0.001,
+        "operation": "add",
+        "term": "joint_pos",
+        "width": 14
+      },
+      "name": "actor/joint_pos/noise",
+      "passed": true
+    },
+    {
+      "detail": {
+        "n_max": 0.25,
+        "n_min": -0.25,
+        "operation": "add",
+        "term": "joint_vel",
+        "width": 14
+      },
+      "name": "actor/joint_vel/noise",
+      "passed": true
+    },
+    {
+      "detail": true,
+      "name": "actor/base_ang_vel/delay",
+      "passed": true
+    },
+    {
+      "detail": true,
+      "name": "actor/projected_gravity/delay",
+      "passed": true
+    },
+    {
+      "detail": true,
+      "name": "actor/joint_vel/delay",
+      "passed": true
+    },
+    {
+      "detail": true,
+      "name": "critic/concatenation_history",
+      "passed": true
+    },
+    {
+      "detail": true,
+      "name": "critic/noise_roster",
+      "passed": true
+    },
+    {
+      "detail": true,
+      "name": "deterministic_spawn",
+      "passed": true
+    }
+  ],
+  "config_mutations": 0,
+  "constructor_IMU_bias": "Native once-only lazy draw during shape probe; retained and snapshotted after constructor",
+  "inherited_noise_preserved": true,
+  "passed": 21,
+  "physical_integrations": 0,
+  "private_RNG_boundary": "After constructor and real mixed-event reset probe, before public reset/step",
+  "status": "PASS",
+  "total": 21
+}

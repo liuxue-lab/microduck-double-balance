@@ -1,0 +1,112 @@
+{
+  "PPO": 0,
+  "budget": {
+    "PPO": 0,
+    "cloud_training": 0,
+    "environment_constructions": 0,
+    "native_forward": 0,
+    "native_integrations": 0,
+    "optimizer_constructions": 0,
+    "policy_constructions": 0,
+    "torch_load": 0
+  },
+  "cloud_training": 0,
+  "error": "RuntimeError('Preflight forbids network/process side effects: subprocess.Popen')",
+  "guard_attempts": {},
+  "guards_installed": [
+    "torch.load",
+    "torch.save",
+    "torch.jit.load",
+    "torch.cuda._lazy_init",
+    "mujoco.mj_step",
+    "mujoco.mj_step1",
+    "mujoco.mj_step2",
+    "mujoco.mj_Euler",
+    "mujoco.mj_RungeKutta",
+    "mujoco.mj_implicit",
+    "mujoco.mj_forward",
+    "mujoco.mj_kinematics",
+    "mujoco.mj_resetData",
+    "MjModel.from_xml_path",
+    "MjModel.from_xml_string",
+    "MjModel.from_binary_path",
+    "MjSpec.compile",
+    "Renderer.__init__",
+    "glfw.init",
+    "glfw.create_window",
+    "glfw.make_context_current",
+    "mujoco.viewer.launch",
+    "mujoco.viewer.launch_passive",
+    "mujoco.viewer.launch_from_path",
+    "mujoco_warp.step",
+    "mujoco_warp.step1",
+    "mujoco_warp.step2",
+    "mujoco_warp.euler",
+    "mujoco_warp.implicit",
+    "mujoco_warp.rungekutta4",
+    "mujoco_warp.forward",
+    "mujoco_warp._src.forward.step",
+    "mujoco_warp._src.forward.step1",
+    "mujoco_warp._src.forward.step2",
+    "mujoco_warp._src.forward.euler",
+    "mujoco_warp._src.forward.implicit",
+    "mujoco_warp._src.forward.rungekutta4",
+    "mujoco_warp._src.forward.forward",
+    "warp.init",
+    "warp.launch",
+    "warp.capture_begin",
+    "warp.capture_end",
+    "warp.capture_launch",
+    "warp.get_device"
+  ],
+  "headless_discovery": {
+    "MUJOCO_GL": "disable",
+    "PYGLFW_LIBRARY": "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/glfw/x11/libglfw.so",
+    "graphics_contexts": 0,
+    "library_identity": {
+      "bytes": 378696,
+      "git_blob_sha1": "1b372f088da239ebea080a856907fe78e3e207cd",
+      "sha256": "9f283bef3d8c70a2e3a85fcb6ab5dfc23509d1983d0b14ad5f90d51cbd6d74c5"
+    },
+    "library_loaded_by_this_function": false,
+    "native_library_binding_expected": true,
+    "note": "Installed GLFW may bind its bundled DLL for mujoco.viewer imports; init/window/context/physics remain blocked.",
+    "reviewed_sources": [
+      {
+        "actual": {
+          "bytes": 1849,
+          "git_blob_sha1": "61b861ecea45dc9d3d2d44ab2e9b898ed4f2fa2a",
+          "sha256": "a3cac3b6d582c149a93e95e4742c7fd4ad2083d31a329ee5b675e59e5377ff75"
+        },
+        "expected": {
+          "bytes": 1849,
+          "git_blob_sha1": "61b861ecea45dc9d3d2d44ab2e9b898ed4f2fa2a",
+          "sha256": "a3cac3b6d582c149a93e95e4742c7fd4ad2083d31a329ee5b675e59e5377ff75"
+        },
+        "path": "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mujoco/rendering/classic/gl_context.py"
+      },
+      {
+        "actual": {
+          "bytes": 9044,
+          "git_blob_sha1": "ee8b3064cc348e51ca7a80454ed0d62f5bd41283",
+          "sha256": "7aa425039fa57015c6674b0973385f178009e11efbc93a91bbc1df42fc8e9204"
+        },
+        "expected": {
+          "bytes": 9044,
+          "git_blob_sha1": "ee8b3064cc348e51ca7a80454ed0d62f5bd41283",
+          "sha256": "7aa425039fa57015c6674b0973385f178009e11efbc93a91bbc1df42fc8e9204"
+        },
+        "path": "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/glfw/library.py"
+      }
+    ],
+    "status": "HEADLESS_DISCOVERY_CONFIGURED",
+    "subprocess_probes": 0
+  },
+  "media_binary_probe_suppressed_config_only": true,
+  "model_constructed": false,
+  "native_forward": 0,
+  "native_integrations": 0,
+  "real_environment_constructed": false,
+  "status": "CPU_CONFIGURATION_BLOCKED",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/lx/下载/microduck-stage12-readiness-v4/stage12/host_probe.py\", line 78, in config_probe\n    from mjlab.envs import ManagerBasedRlEnv\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab/__init__.py\", line 58, in <module>\n    _configure_mediapy()\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab/__init__.py\", line 52, in _configure_mediapy\n    import mediapy\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mediapy/__init__.py\", line 133, in <module>\n    import matplotlib.pyplot\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/matplotlib/pyplot.py\", line 57, in <module>\n    import matplotlib.image\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/matplotlib/image.py\", line 25, in <module>\n    from matplotlib.backend_bases import FigureCanvasBase\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/matplotlib/backend_bases.py\", line 49, in <module>\n    from matplotlib import (\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/matplotlib/text.py\", line 16, in <module>\n    from .font_manager import FontProperties\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/matplotlib/font_manager.py\", line 1643, in <module>\n    fontManager = _load_fontmanager()\n                  ^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/matplotlib/font_manager.py\", line 1637, in _load_fontmanager\n    fm = FontManager()\n         ^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/matplotlib/font_manager.py\", line 1101, in __init__\n    *findSystemFonts(fontext=fontext)]:\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/matplotlib/font_manager.py\", line 291, in findSystemFonts\n    installed_fonts = _get_fontconfig_fonts()\n                      ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/matplotlib/font_manager.py\", line 254, in _get_fontconfig_fonts\n    if b'--format' not in subprocess.check_output(['fc-list', '--help']):\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py\", line 466, in check_output\n    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py\", line 548, in run\n    with Popen(*popenargs, **kwargs) as process:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py\", line 1026, in __init__\n    self._execute_child(args, executable, preexec_fn, close_fds,\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py\", line 1823, in _execute_child\n    sys.audit(\"subprocess.Popen\", executable, args, cwd, env)\n  File \"/home/lx/下载/microduck-stage12-readiness-v4/stage12/host_probe.py\", line 170, in hook\n    raise RuntimeError(\"Preflight forbids network/process side effects: \" + event)\nRuntimeError: Preflight forbids network/process side effects: subprocess.Popen\n"
+}

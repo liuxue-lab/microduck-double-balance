@@ -1,0 +1,18 @@
+{
+  "runtime_base_sha256": "ce18f848d4e4251fc3d74bbcddfd0f66ce9db090e78502ea938be8be71baa246",
+  "rng_base_sha256": "71d1f3018db0b7ee72bab34be7390a650aae67fa2dafb11c2c6ab0faa915f2d7",
+  "runtime_replacements": [
+    "class Runtime:",
+    "def __init__(self, env, torch, wp, fw, mw, bank, gate, budget, out, contact, reductions, raw_step, raw_rk):",
+    "self.macros = 0; self.stopped = False; self.results = []",
+    "require(env is self.env and not self.stopped and self.macros < 20, 'Formal runtime is single-use/bounded')",
+    "driver = FormalAdaptive(bridge, engine, (env._g11_tick,), evidence)",
+    "require(env._sim_step_counter == index+1, 'Duplicated public substep counter')",
+    "self.results.append(result)"
+  ],
+  "rng_replacements": [
+    "require(len(em._mode_term_cfgs['interval']) == 3 and\n            [c.is_global_time for c in em._mode_term_cfgs['interval']] == [False, False, True],\n            'Mixed interval roster changed')"
+  ],
+  "numeric_methods_changed": false,
+  "physical_execution": false
+}

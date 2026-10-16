@@ -1,0 +1,42 @@
+{
+  "PPO": 0,
+  "archive_bytes": 948489,
+  "archive_filename": "stage12-readiness-return-20261015T175051Z-dbbbab.zip",
+  "archive_sha256": "14beea62219a418883df0e49ed7df83d2a3edae6e69d17505064d29ac914071a",
+  "base": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/readiness-v6",
+  "cloud_training": 0,
+  "configuration_probe": "CONFIG_SEMANTICS_AND_REGISTRY_PASS_WRAPPER_BLOCKED_TENSORDICT_ITERATION",
+  "gitpython_import_fix": "PASS_EXACTLY_TWO_READ_ONLY_VERSION_QUERIES",
+  "headless_GLFW_fix": "PASS",
+  "manifest_members": 275,
+  "matplotlib_fontconfig_fix": "PASS_NATIVE_FALLBACK_NO_FC_LIST_PROCESS",
+  "native_integrations_added": 0,
+  "package_manifest_sha256": "b838470c628031d183ab7064e11c3f30ef061abf3abd17747cde646b3f9e31ce",
+  "retained_reports": [
+    "stage12-report.json",
+    "host-report.json",
+    "configuration-probe.json",
+    "headless-setup.json",
+    "font-discovery-policy.json",
+    "git-import-probe.json",
+    "source-reuse-before.json",
+    "source-reuse-after.json",
+    "environment.json",
+    "identity-before.json",
+    "identity-after.json",
+    "prepared-env-config.json",
+    "prepared-agent-config.json",
+    "runner-contract-plan.json"
+  ],
+  "run": "20261015T175051Z-dbbbab",
+  "source_identity_and_preservation": "PASS",
+  "source_reuse": {
+    "assets": 158,
+    "copied": 0,
+    "retained": 248,
+    "sources": 249
+  },
+  "status": "STAGE12_PREPARATION_BLOCKED",
+  "transfer_branch": "stage12-readiness-v6-transfer-20261015t175051z-dbbbab",
+  "transfer_commit": "353227e8c073f8547a7f017c4876c33f99c550a4"
+}

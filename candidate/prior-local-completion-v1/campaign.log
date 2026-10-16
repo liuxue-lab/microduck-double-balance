@@ -1,0 +1,16 @@
+{"PPO": 0, "backend": "actual CPU tensors and spawn; simulated environments", "cloud_training": 0, "cuda_initialized": false, "model_constructions": 0, "native_integrations": 0, "optimizer_constructions": 0, "passed": true, "real_environments": 0, "tensordict_version": "0.10.0", "torch_load": 0, "torch_version": "2.9.1+cu128"}
+Stage12LocalPhase=single_owner_lifecycle; PPO=0 cloud_training=0
+Process SpawnProcess-8:
+Traceback (most recent call last):
+  File "/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/lx/下载/microduck-stage12-local-completion-v1/integration/process_owners.py", line 40, in native_child
+    git.configure(root, scratch)
+  File "/home/lx/下载/microduck-stage12-local-completion-v1/stage12/git_import.py", line 82, in configure
+    require(Path.cwd().resolve() == out.resolve(), "Git import must run inside the new output directory")
+  File "/home/lx/下载/microduck-stage12-local-completion-v1/stage12/contracts.py", line 32, in require
+    raise RuntimeError(message)
+RuntimeError: Git import must run inside the new output directory
+Stage12LocalCompletion=LOCAL_COMPLETION_STOPPED_PRESERVE

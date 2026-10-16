@@ -1,0 +1,42 @@
+{
+  "GPU_execution": false,
+  "active_physics_and_accounting_files_unchanged": [
+    "native_runtime.py",
+    "native_accounting.py",
+    "planning.py",
+    "transitions.py",
+    "process_vector.py",
+    "process_owners.py",
+    "runner.py",
+    "durable.py",
+    "rng_policy.py",
+    "local_campaign.py"
+  ],
+  "baseline_files_unchanged": 156,
+  "native_factory_changes": [
+    "owned short cache mapping",
+    "constructor-complete flag",
+    "partial-safe close dispatch"
+  ],
+  "native_integrations": 0,
+  "passed": true,
+  "physical_acceptance": false,
+  "reviewed_installed_sources": {
+    "mjlab/envs/manager_based_rl_env.py": {
+      "matches_host_source_pin": true,
+      "sha256": "a381027e336d6313cd338d541230b36864657edac89708a33e7e60c0c6fb74d2"
+    },
+    "mujoco_warp/_src/ray.py": {
+      "matches_host_source_pin": true,
+      "sha256": "6815ed1057217fc2e3655b3e6add04c32e88ff8b0b3a536824d503fb6d44ccfa"
+    },
+    "mujoco_warp/_src/render_util.py": {
+      "matches_host_source_pin": true,
+      "sha256": "84725d11a10c6213f7cd3bd972c0c72f1530d8732d9a155e5d3326fdf667c927"
+    },
+    "warp/_src/context.py": {
+      "matches_host_source_pin": true,
+      "sha256": "eb099d908c50effc3cacbf7ecc408be4187ca9a6a6f72e1e85c70676961524ee"
+    }
+  }
+}

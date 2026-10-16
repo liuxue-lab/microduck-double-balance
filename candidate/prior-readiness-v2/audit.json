@@ -1,0 +1,20 @@
+{
+  "PPO": 0,
+  "archive_bytes": 1807634,
+  "archive_filename": "stage12-readiness-return-20261015T162416Z-6f2b0e.zip",
+  "archive_sha256": "0e1713f616b0a7ad702e0d50f4290e93a60e7dedc5074ba03fa0d125784fc012",
+  "base": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/readiness-v2",
+  "cloud_training": 0,
+  "configuration_probe_started": false,
+  "manifest_members": 373,
+  "native_integrations_added": 0,
+  "package_manifest_sha256": "72b1b509f2e09580a9500ba417868bb87c0c09a81b1ef212b2eff6f7684ae9bf",
+  "run": "20261015T162416Z-6f2b0e",
+  "source_identity_and_preservation": "PASS",
+  "source_index_sha256": "9a1cc09c83bdd59ba6b1ca5ecb4c9143b21e03971dddff6b01b2bd5ab65f7730",
+  "status": "STAGE12_PREPARATION_BLOCKED",
+  "transfer_branch": "stage12-readiness-v2-transfer-20261015t162416z-6f2b0e",
+  "transfer_commit": "f6fb64e3ff1b90c7c9d65d1fb29c47df5b76b671",
+  "verified_source_bytes": 3196291,
+  "verified_source_files": 188
+}

@@ -1,0 +1,9 @@
+Warp CUDA warning: Could not find or load the NVIDIA CUDA driver. GPU execution will not be available.
+Warp NVRTC compilation error 6: NVRTC_ERROR_COMPILATION (/builds/omniverse/warp/warp/native/warp.cu:3943)
+Catastrophic error: name of directory for temporary files is too long ("/workspace/scratch/f586bf229d7a/stage12-runtime-long-evidence-directory-reproduction-20261016-check02/artifacts/double-balance-stage12/local-completion-v3/20261016T004935Z-c472d2/single_owner_lifecycle/owner-0-bootstrap/runtime-scratch")
+
+1 catastrophic error detected in the compilation of "wp_mujoco_warp._src.render_util_94fd13e.cu".
+Compilation terminated.
+[mdp] Patches 1-2 active: NaN-safe reward/advantage
+[mdp] Patch 4 active: ONNX export filters passive_* joints
+{"native_integrations": 0, "CPU_forward": 0, "GPU_forward": 0, "environment_constructions": 0, "PPO": 0, "cloud_training": 0, "GPU_execution": false, "compiled_modules": [], "long_evidence_path": "/workspace/scratch/f586bf229d7a/stage12-runtime-long-evidence-directory-reproduction-20261016-check02/artifacts/double-balance-stage12/local-completion-v3/20261016T004935Z-c472d2/single_owner_lifecycle/owner-0", "imports": {"production_import_statements": 30, "real_modules": true, "config_preflight": true, "real_Warp_runtime": true, "Warp_CPU_device_label": "CPU", "native_integrations": 0, "CPU_forward": 0, "GPU_forward": 0, "environment_constructions": 0, "CUDA_initialized": false}, "temporary_directory": "/workspace/scratch/f586bf229d7a/stage12-runtime-long-evidence-directory-reproduction-20261016-check02/artifacts/double-balance-stage12/local-completion-v3/20261016T004935Z-c472d2/single_owner_lifecycle/owner-0-bootstrap/runtime-scratch", "temporary_directory_bytes": 235, "status": "V3_LONG_TMPDIR_DEFECT_REPRODUCED", "error": "Exception('CUDA kernel build failed with error code 6')"}

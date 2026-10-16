@@ -1,0 +1,112 @@
+{
+  "PPO": 0,
+  "budget": {
+    "PPO": 0,
+    "cloud_training": 0,
+    "environment_constructions": 0,
+    "native_forward": 0,
+    "native_integrations": 0,
+    "optimizer_constructions": 0,
+    "policy_constructions": 0,
+    "torch_load": 0
+  },
+  "cloud_training": 0,
+  "error": "ImportError('Failed to initialize: Write outside new Stage12 run refused: /dev/null')",
+  "guard_attempts": {},
+  "guards_installed": [
+    "torch.load",
+    "torch.save",
+    "torch.jit.load",
+    "torch.cuda._lazy_init",
+    "mujoco.mj_step",
+    "mujoco.mj_step1",
+    "mujoco.mj_step2",
+    "mujoco.mj_Euler",
+    "mujoco.mj_RungeKutta",
+    "mujoco.mj_implicit",
+    "mujoco.mj_forward",
+    "mujoco.mj_kinematics",
+    "mujoco.mj_resetData",
+    "MjModel.from_xml_path",
+    "MjModel.from_xml_string",
+    "MjModel.from_binary_path",
+    "MjSpec.compile",
+    "Renderer.__init__",
+    "glfw.init",
+    "glfw.create_window",
+    "glfw.make_context_current",
+    "mujoco.viewer.launch",
+    "mujoco.viewer.launch_passive",
+    "mujoco.viewer.launch_from_path",
+    "mujoco_warp.step",
+    "mujoco_warp.step1",
+    "mujoco_warp.step2",
+    "mujoco_warp.euler",
+    "mujoco_warp.implicit",
+    "mujoco_warp.rungekutta4",
+    "mujoco_warp.forward",
+    "mujoco_warp._src.forward.step",
+    "mujoco_warp._src.forward.step1",
+    "mujoco_warp._src.forward.step2",
+    "mujoco_warp._src.forward.euler",
+    "mujoco_warp._src.forward.implicit",
+    "mujoco_warp._src.forward.rungekutta4",
+    "mujoco_warp._src.forward.forward",
+    "warp.init",
+    "warp.launch",
+    "warp.capture_begin",
+    "warp.capture_end",
+    "warp.capture_launch",
+    "warp.get_device"
+  ],
+  "headless_discovery": {
+    "MUJOCO_GL": "disable",
+    "PYGLFW_LIBRARY": "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/glfw/x11/libglfw.so",
+    "graphics_contexts": 0,
+    "library_identity": {
+      "bytes": 378696,
+      "git_blob_sha1": "1b372f088da239ebea080a856907fe78e3e207cd",
+      "sha256": "9f283bef3d8c70a2e3a85fcb6ab5dfc23509d1983d0b14ad5f90d51cbd6d74c5"
+    },
+    "library_loaded_by_this_function": false,
+    "native_library_binding_expected": true,
+    "note": "Installed GLFW may bind its bundled DLL for mujoco.viewer imports; init/window/context/physics remain blocked.",
+    "reviewed_sources": [
+      {
+        "actual": {
+          "bytes": 1849,
+          "git_blob_sha1": "61b861ecea45dc9d3d2d44ab2e9b898ed4f2fa2a",
+          "sha256": "a3cac3b6d582c149a93e95e4742c7fd4ad2083d31a329ee5b675e59e5377ff75"
+        },
+        "expected": {
+          "bytes": 1849,
+          "git_blob_sha1": "61b861ecea45dc9d3d2d44ab2e9b898ed4f2fa2a",
+          "sha256": "a3cac3b6d582c149a93e95e4742c7fd4ad2083d31a329ee5b675e59e5377ff75"
+        },
+        "path": "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mujoco/rendering/classic/gl_context.py"
+      },
+      {
+        "actual": {
+          "bytes": 9044,
+          "git_blob_sha1": "ee8b3064cc348e51ca7a80454ed0d62f5bd41283",
+          "sha256": "7aa425039fa57015c6674b0973385f178009e11efbc93a91bbc1df42fc8e9204"
+        },
+        "expected": {
+          "bytes": 9044,
+          "git_blob_sha1": "ee8b3064cc348e51ca7a80454ed0d62f5bd41283",
+          "sha256": "7aa425039fa57015c6674b0973385f178009e11efbc93a91bbc1df42fc8e9204"
+        },
+        "path": "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/glfw/library.py"
+      }
+    ],
+    "status": "HEADLESS_DISCOVERY_CONFIGURED",
+    "subprocess_probes": 0
+  },
+  "media_binary_probe_suppressed_config_only": true,
+  "model_constructed": false,
+  "native_forward": 0,
+  "native_integrations": 0,
+  "real_environment_constructed": false,
+  "status": "CPU_CONFIGURATION_BLOCKED",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/git/__init__.py\", line 296, in <module>\n    refresh()\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/git/__init__.py\", line 287, in refresh\n    if not Git.refresh(path=path):\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/git/cmd.py\", line 788, in refresh\n    cls().version()\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/git/cmd.py\", line 1003, in <lambda>\n    return lambda *args, **kwargs: self._call_process(name, *args, **kwargs)\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/git/cmd.py\", line 1616, in _call_process\n    return self.execute(call, **exec_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/git/cmd.py\", line 1279, in execute\n    proc = safer_popen(\n           ^^^^^^^^^^^^\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py\", line 992, in __init__\n    errread, errwrite) = self._get_handles(stdin, stdout, stderr)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py\", line 1705, in _get_handles\n    p2cread = self._get_devnull()\n              ^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py\", line 1137, in _get_devnull\n    self._devnull = os.open(os.devnull, os.O_RDWR)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/下载/microduck-stage12-readiness-v5/stage12/host_probe.py\", line 187, in hook\n    require(Path(path).resolve().is_relative_to(allowed), \"Write outside new Stage12 run refused: \" + str(path))\n  File \"/home/lx/下载/microduck-stage12-readiness-v5/stage12/contracts.py\", line 33, in require\n    raise RuntimeError(message)\nRuntimeError: Write outside new Stage12 run refused: /dev/null\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/lx/下载/microduck-stage12-readiness-v5/stage12/host_probe.py\", line 90, in config_probe\n    from rsl_rl.runners import OnPolicyRunner\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/rsl_rl/runners/__init__.py\", line 8, in <module>\n    from .on_policy_runner import OnPolicyRunner  # noqa: I001\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/rsl_rl/runners/on_policy_runner.py\", line 17, in <module>\n    from rsl_rl.utils.logger import Logger\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/rsl_rl/utils/logger.py\", line 9, in <module>\n    import git\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/git/__init__.py\", line 298, in <module>\n    raise ImportError(\"Failed to initialize: {0}\".format(_exc)) from _exc\nImportError: Failed to initialize: Write outside new Stage12 run refused: /dev/null\n"
+}

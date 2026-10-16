@@ -1,0 +1,31 @@
+{
+  "budget": {
+    "PPO": 0,
+    "cloud_training": 0,
+    "environment_constructions": 0,
+    "native_forward": 0,
+    "native_integrations": 0,
+    "optimizer_constructions": 0,
+    "policy_constructions": 0,
+    "torch_load": 0
+  },
+  "error": "RuntimeError('Preflight forbids network/process side effects: subprocess.Popen')",
+  "source_preservation": "PASS",
+  "source_reuse": {
+    "assets_verified": 158,
+    "cloud_reproduction_bundle_complete": false,
+    "current_source_identities": 249,
+    "retained_source_bytes": 3591016,
+    "retained_source_files": 248,
+    "source_files_copied": 0,
+    "source_manifest_sha256": "411c1e3bb72350ac17e780c2a6acf887c74f7405ff9ef9586c27df32a879d9b6",
+    "status": "VERIFIED_IN_PLACE_NO_RECAPTURE",
+    "transfer_commits": [
+      "f6fb64e3ff1b90c7c9d65d1fb29c47df5b76b671",
+      "8f54003ac1e511ee3a2fe8b0c3b32c99a74744a9"
+    ]
+  },
+  "status": "HOST_READINESS_BLOCKED",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/lx/下载/microduck-stage12-readiness-v4/stage12/host_probe.py\", line 197, in main\n    config_probe(out)\n  File \"/home/lx/下载/microduck-stage12-readiness-v4/stage12/host_probe.py\", line 78, in config_probe\n    from mjlab.envs import ManagerBasedRlEnv\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab/__init__.py\", line 58, in <module>\n    _configure_mediapy()\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab/__init__.py\", line 52, in _configure_mediapy\n    import mediapy\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mediapy/__init__.py\", line 133, in <module>\n    import matplotlib.pyplot\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/matplotlib/pyplot.py\", line 57, in <module>\n    import matplotlib.image\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/matplotlib/image.py\", line 25, in <module>\n    from matplotlib.backend_bases import FigureCanvasBase\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/matplotlib/backend_bases.py\", line 49, in <module>\n    from matplotlib import (\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/matplotlib/text.py\", line 16, in <module>\n    from .font_manager import FontProperties\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/matplotlib/font_manager.py\", line 1643, in <module>\n    fontManager = _load_fontmanager()\n                  ^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/matplotlib/font_manager.py\", line 1637, in _load_fontmanager\n    fm = FontManager()\n         ^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/matplotlib/font_manager.py\", line 1101, in __init__\n    *findSystemFonts(fontext=fontext)]:\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/matplotlib/font_manager.py\", line 291, in findSystemFonts\n    installed_fonts = _get_fontconfig_fonts()\n                      ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/matplotlib/font_manager.py\", line 254, in _get_fontconfig_fonts\n    if b'--format' not in subprocess.check_output(['fc-list', '--help']):\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py\", line 466, in check_output\n    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py\", line 548, in run\n    with Popen(*popenargs, **kwargs) as process:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py\", line 1026, in __init__\n    self._execute_child(args, executable, preexec_fn, close_fds,\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py\", line 1823, in _execute_child\n    sys.audit(\"subprocess.Popen\", executable, args, cwd, env)\n  File \"/home/lx/下载/microduck-stage12-readiness-v4/stage12/host_probe.py\", line 170, in hook\n    raise RuntimeError(\"Preflight forbids network/process side effects: \" + event)\nRuntimeError: Preflight forbids network/process side effects: subprocess.Popen\n",
+  "training_ready": false
+}

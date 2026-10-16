@@ -1,0 +1,28 @@
+{
+  "PPO": 0,
+  "budget": {
+    "PPO": 0,
+    "cloud_training": 0,
+    "environment_constructions": 0,
+    "native_forward": 0,
+    "native_integrations": 0,
+    "optimizer_constructions": 0,
+    "policy_constructions": 0,
+    "torch_load": 0
+  },
+  "cloud_training": 0,
+  "error": "RuntimeError('Preflight forbids network/process side effects: subprocess.Popen')",
+  "guard_attempts": {},
+  "guards_installed": [
+    "torch.load",
+    "torch.save",
+    "torch.jit.load",
+    "torch.cuda._lazy_init"
+  ],
+  "model_constructed": false,
+  "native_forward": 0,
+  "native_integrations": 0,
+  "real_environment_constructed": false,
+  "status": "CPU_CONFIGURATION_BLOCKED",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/lx/下载/microduck-stage12-readiness-v3/stage12/host_probe.py\", line 118, in config_probe\n    import mujoco\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mujoco/__init__.py\", line 71, in <module>\n    from mujoco.rendering.classic.renderer import Renderer  # pytype: disable=import-error\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mujoco/rendering/classic/renderer.py\", line 20, in <module>\n    from mujoco.rendering.classic import gl_context\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mujoco/rendering/classic/gl_context.py\", line 47, in <module>\n    from mujoco.glfw import GLContext as _GLContext\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mujoco/glfw/__init__.py\", line 17, in <module>\n    import glfw\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/glfw/__init__.py\", line 40, in <module>\n    from .library import glfw as _glfw\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/glfw/library.py\", line 258, in <module>\n    glfw = _load_library(['glfw', 'glfw3'], ['.so', '.dylib'],\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/glfw/library.py\", line 61, in _load_library\n    version = version_check_callback(filename)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/glfw/library.py\", line 148, in _glfw_get_version\n    process = subprocess.Popen(args, universal_newlines=True,\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py\", line 1026, in __init__\n    self._execute_child(args, executable, preexec_fn, close_fds,\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py\", line 1823, in _execute_child\n    sys.audit(\"subprocess.Popen\", executable, args, cwd, env)\n  File \"/home/lx/下载/microduck-stage12-readiness-v3/stage12/host_probe.py\", line 223, in hook\n    raise RuntimeError(\"Preflight forbids network/process side effects: \" + event)\nRuntimeError: Preflight forbids network/process side effects: subprocess.Popen\n"
+}

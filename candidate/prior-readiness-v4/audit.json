@@ -1,0 +1,35 @@
+{
+  "PPO": 0,
+  "archive_bytes": 786755,
+  "archive_filename": "stage12-readiness-return-20261015T171249Z-53a731.zip",
+  "archive_sha256": "d214636aae7d694579fb920b8efbc9386cb4abfd4d3f97e01185934d9bcc9d93",
+  "base": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/readiness-v4",
+  "cloud_training": 0,
+  "configuration_probe": "BLOCKED_MATPLOTLIB_OPTIONAL_FONTCONFIG_CHILD_DISCOVERY",
+  "headless_GLFW_fix": "PASSED_INSTALLED_NATIVE_IMPORT",
+  "manifest_members": 221,
+  "native_integrations_added": 0,
+  "package_manifest_sha256": "618bdd9587b45b5863b2efd32102bd4edb11252835fc2ad46b4f0bea10fe33ef",
+  "retained_reports": [
+    "stage12-report.json",
+    "host-report.json",
+    "configuration-probe.json",
+    "headless-setup.json",
+    "source-reuse-before.json",
+    "source-reuse-after.json",
+    "environment.json",
+    "identity-before.json",
+    "identity-after.json"
+  ],
+  "run": "20261015T171249Z-53a731",
+  "source_identity_and_preservation": "PASS",
+  "source_reuse": {
+    "assets": 158,
+    "copied": 0,
+    "retained": 248,
+    "sources": 249
+  },
+  "status": "STAGE12_PREPARATION_BLOCKED",
+  "transfer_branch": "stage12-readiness-v4-transfer-20261015t171249z-53a731",
+  "transfer_commit": "f69097d83fa415057b8186c255c23585e93f46d7"
+}

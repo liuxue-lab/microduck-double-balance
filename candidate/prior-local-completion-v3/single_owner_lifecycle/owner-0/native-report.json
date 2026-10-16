@@ -1,0 +1,219 @@
+{
+  "PPO": 0,
+  "aggregate_canonical_not_recomputed_per_owner": true,
+  "canonical_before": {
+    "attempted": 674457,
+    "completed": 674456
+  },
+  "checkpoint": {
+    "mode": "fresh-proposal-only",
+    "old_checkpoint_loads": 0
+  },
+  "cloud_training": 0,
+  "configuration_preflight": {
+    "checks": [
+      {
+        "detail": true,
+        "name": "world_cadence",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "seed_manual_reset",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "unassisted_actions",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "null_curriculum",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "command_roster",
+        "passed": true
+      },
+      {
+        "detail": {
+          "final_standing_command_zero": true,
+          "forward": 0.2,
+          "forward_bucket_retained": true,
+          "heading": 0.0,
+          "heading_range": [
+            -3.141592653589793,
+            3.141592653589793
+          ],
+          "init_velocity": 0.0,
+          "resampling_s": [
+            3.0,
+            8.0
+          ],
+          "standing": 1.0,
+          "world": 0.0
+        },
+        "name": "inherited_command",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "event_roster",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "interval_timers",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "observation_groups",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "actor/concatenation_history",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "actor/noise_roster",
+        "passed": true
+      },
+      {
+        "detail": {
+          "n_max": 0.03,
+          "n_min": -0.03,
+          "operation": "add",
+          "term": "base_ang_vel",
+          "width": 3
+        },
+        "name": "actor/base_ang_vel/noise",
+        "passed": true
+      },
+      {
+        "detail": {
+          "n_max": 0.01,
+          "n_min": -0.01,
+          "operation": "add",
+          "term": "projected_gravity",
+          "width": 3
+        },
+        "name": "actor/projected_gravity/noise",
+        "passed": true
+      },
+      {
+        "detail": {
+          "n_max": 0.001,
+          "n_min": -0.001,
+          "operation": "add",
+          "term": "joint_pos",
+          "width": 14
+        },
+        "name": "actor/joint_pos/noise",
+        "passed": true
+      },
+      {
+        "detail": {
+          "n_max": 0.25,
+          "n_min": -0.25,
+          "operation": "add",
+          "term": "joint_vel",
+          "width": 14
+        },
+        "name": "actor/joint_vel/noise",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "actor/base_ang_vel/delay",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "actor/projected_gravity/delay",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "actor/joint_vel/delay",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "critic/concatenation_history",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "critic/noise_roster",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "deterministic_spawn",
+        "passed": true
+      }
+    ],
+    "config_mutations": 0,
+    "constructor_IMU_bias": "Native once-only lazy draw during shape probe; retained and snapshotted after constructor",
+    "inherited_noise_preserved": true,
+    "passed": 21,
+    "physical_integrations": 0,
+    "private_RNG_boundary": "After constructor and real mixed-event reset probe, before public reset/step",
+    "status": "PASS",
+    "total": 21
+  },
+  "counts": {
+    "CPU_forward_attempted": 2,
+    "CPU_forward_completed": 2,
+    "CPU_kinematics_attempted": 1,
+    "CPU_kinematics_completed": 1,
+    "PPO": 0,
+    "Scene_initialize_attempted": 1,
+    "cloud": 0,
+    "context_create_attempted": 1,
+    "graph_setup_suppressed": 1,
+    "integrations_attempted": 0,
+    "integrations_completed": 0
+  },
+  "elapsed_s": 7.593346847999783,
+  "errors": [
+    {
+      "error": "Exception('CUDA kernel build failed with error code 6')",
+      "stage": "session",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/lx/下载/microduck-stage12-local-completion-v3/integration/native_factory.py\", line 155, in owner_session\n    envmod.ManagerBasedRlEnv.__init__(env, cfg, device='cuda:0', render_mode=None)\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab/envs/manager_based_rl_env.py\", line 204, in __init__\n    self.scene.initialize(\n  File \"/home/lx/下载/microduck-stage12-local-completion-v3/baseline/g11/runtime_accounting.py\", line 151, in call\n    value = native(*args, **kwargs)\n            ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab/scene/scene.py\", line 170, in initialize\n    self._sensor_context = SensorContext(\n                           ^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab/sensor/sensor_context.py\", line 80, in __init__\n    self._create_context(mj_model)\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab/sensor/sensor_context.py\", line 316, in _create_context\n    self._ctx = mjwarp.create_render_context(\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/下载/microduck-stage12-local-completion-v3/baseline/g11/runtime_accounting.py\", line 151, in call\n    value = native(*args, **kwargs)\n            ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mujoco_warp/_src/io.py\", line 2885, in create_render_context\n    textures_registry.append(render_util.create_warp_texture(mjm, i))\n                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mujoco_warp/_src/render_util.py\", line 57, in create_warp_texture\n    wp.launch(\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/warp/_src/context.py\", line 7457, in launch\n    module_exec = kernel.module.load(device, block_dim)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/warp/_src/context.py\", line 3012, in load\n    raise e\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/warp/_src/context.py\", line 3009, in load\n    compiled = self._compile(device, module_dir, output_name, output_arch)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/warp/_src/context.py\", line 2878, in _compile\n    raise (e)\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/warp/_src/context.py\", line 2855, in _compile\n    warp._src.build.build_cuda(\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/warp/_src/build.py\", line 106, in build_cuda\n    raise Exception(f\"CUDA kernel build failed with error code {err}\")\nException: CUDA kernel build failed with error code 6\n"
+    },
+    {
+      "error": "AttributeError(\"'ManagerBasedRlEnv' object has no attribute '_offline_renderer'\")",
+      "stage": "env_close"
+    }
+  ],
+  "macro_completed": 0,
+  "native_added_attempted": 0,
+  "native_added_completed": 0,
+  "native_ledger": {
+    "attempts": {
+      "CPU_forward": 2
+    },
+    "completed": {
+      "CPU_forward": 2
+    },
+    "exact": true,
+    "incomplete_tail": false,
+    "integration_attempted_lower": 0,
+    "integration_attempted_upper": 0,
+    "integration_completed_lower": 0,
+    "integration_completed_upper": 0,
+    "pending": {},
+    "rows": 4
+  },
+  "no_automatic_retry": true,
+  "physical_acceptance": false,
+  "public_steps_completed": 0,
+  "status": "STAGE12_NATIVE_CANDIDATE_STOPPED_PRESERVE",
+  "training_ready": false
+}

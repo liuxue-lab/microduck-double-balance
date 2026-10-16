@@ -1,0 +1,45 @@
+{
+  "automatic_PR": false,
+  "automatic_merge": false,
+  "automatic_push": false,
+  "blockers": [
+    "Native runtime/factory/reset/terminal candidates are implemented but not physically accepted; CPU tests are not native evidence.",
+    "Process-isolated N=1/2 transport is implemented; native lifecycle, selective reset and measured throughput are pending.",
+    "Update-boundary checkpoint/runner controllers are implemented; actual policy/optimizer/update acceptance has zero current budget.",
+    "Source/asset input bundle is prepared; dependency wheels, target GPU runtime and cloud environment are not yet reproduced.",
+    "No local native measurement or cloud PPO training budget has been authorized for these new candidates."
+  ],
+  "budget": {
+    "PPO": 0,
+    "cloud_training": 0,
+    "environment_constructions": 0,
+    "native_forward": 0,
+    "native_integrations": 0,
+    "optimizer_constructions": 0,
+    "policy_constructions": 0,
+    "torch_load": 0
+  },
+  "canonical_after": {
+    "attempted": 674457,
+    "completed": 674456
+  },
+  "canonical_before": {
+    "attempted": 674457,
+    "completed": 674456
+  },
+  "canonical_repo_git_mutations": 0,
+  "error": "RuntimeError('Aggregate integration report contains all independent failures; preserve started and evidence')",
+  "isolated_transfer_commit": "PREPARED_AFTER_RETURN_ZIP; see transfer-receipt.json",
+  "preservation": "PASS",
+  "runtime_release": false,
+  "source_refs": {
+    "branch": "double-balance",
+    "head": "73ee01930a031d76a9d57419afdfd4464a547ab3",
+    "tag_commit": "6ba0dc2de381321576f32310e1995a8e2e11e566",
+    "tag_object": "bd1b219be55c813811d4f7cfa25d245b37166688"
+  },
+  "stage11": "11/11 CLOSED_SCOPED",
+  "status": "STAGE12_INTEGRATION_BLOCKED",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/lx/下载/microduck-stage12-integration-v1/microduck-stage12-integration.py\", line 353, in run\n    require(code == 0, \"Aggregate integration report contains all independent failures; preserve started and evidence\")\n  File \"/home/lx/下载/microduck-stage12-integration-v1/stage12/contracts.py\", line 32, in require\n    raise RuntimeError(message)\nRuntimeError: Aggregate integration report contains all independent failures; preserve started and evidence\n",
+  "training_ready": false
+}

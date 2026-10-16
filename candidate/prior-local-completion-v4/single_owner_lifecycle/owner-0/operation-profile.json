@@ -1,0 +1,213 @@
+{
+  "inclusive_nested": true,
+  "timings": {
+    "Action_reset": {
+      "calls": 1,
+      "inclusive_s": 7.836299937480362e-05
+    },
+    "BAM_apply_delay": {
+      "calls": 1,
+      "inclusive_s": 0.01307226900007663
+    },
+    "BAM_compute": {
+      "calls": 1,
+      "inclusive_s": 0.0012953530003869673
+    },
+    "BVH_refit": {
+      "calls": 1,
+      "inclusive_s": 0.0016420480005763238
+    },
+    "CPU_forward": {
+      "calls": 3,
+      "inclusive_s": 0.006973065001147916
+    },
+    "CPU_kinematics": {
+      "calls": 1,
+      "inclusive_s": 7.005099996604258e-05
+    },
+    "Command_compute": {
+      "calls": 1,
+      "inclusive_s": 0.012232842999765126
+    },
+    "Command_reset": {
+      "calls": 1,
+      "inclusive_s": 0.03187092899952404
+    },
+    "Contact_order_apply": {
+      "calls": 2,
+      "inclusive_s": 0.008135440000842209
+    },
+    "Cost_override_copy": {
+      "calls": 5,
+      "inclusive_s": 0.00012822899952880107
+    },
+    "Cost_reduce_kernel": {
+      "calls": 5,
+      "inclusive_s": 0.00020421699900907697
+    },
+    "Cost_rows_kernel": {
+      "calls": 5,
+      "inclusive_s": 0.0003360069995324011
+    },
+    "Curriculum_compute": {
+      "calls": 1,
+      "inclusive_s": 2.6120999791601207e-05
+    },
+    "Curriculum_reset": {
+      "calls": 1,
+      "inclusive_s": 2.0184999812045135e-05
+    },
+    "Event_apply": {
+      "calls": 1,
+      "inclusive_s": 42.44887781899979
+    },
+    "Event_reset": {
+      "calls": 1,
+      "inclusive_s": 6.648900034633698e-05
+    },
+    "GPU_forward": {
+      "calls": 2,
+      "inclusive_s": 42.451836592999825
+    },
+    "GPU_reset_data": {
+      "calls": 1,
+      "inclusive_s": 0.5743107479993341
+    },
+    "GPU_solver": {
+      "calls": 2,
+      "inclusive_s": 4.827454955000576
+    },
+    "Metrics_reset": {
+      "calls": 1,
+      "inclusive_s": 0.00027783000041381456
+    },
+    "Model_expansion": {
+      "calls": 1,
+      "inclusive_s": 0.1959059460004937
+    },
+    "Model_material_setup": {
+      "calls": 1,
+      "inclusive_s": 0.00017928300076164305
+    },
+    "Norm_kernel": {
+      "calls": 8,
+      "inclusive_s": 0.00030513600177073386
+    },
+    "Observation_compute": {
+      "calls": 1,
+      "inclusive_s": 0.02126351200058707
+    },
+    "Observation_noise": {
+      "calls": 4,
+      "inclusive_s": 0.014774869999200746
+    },
+    "Observation_reset": {
+      "calls": 1,
+      "inclusive_s": 0.006456585999330855
+    },
+    "RNG_sample": {
+      "calls": 18,
+      "inclusive_s": 0.05279487600273569
+    },
+    "Recorder_close": {
+      "calls": 1,
+      "inclusive_s": 2.374600080656819e-05
+    },
+    "Recorder_post_reset": {
+      "calls": 1,
+      "inclusive_s": 1.3060999663139228e-05
+    },
+    "Reduction_allocation": {
+      "calls": 2,
+      "inclusive_s": 8.42990002638544e-05
+    },
+    "Reduction_module_load": {
+      "calls": 1,
+      "inclusive_s": 0.24220030200012843
+    },
+    "Reward_reset": {
+      "calls": 1,
+      "inclusive_s": 0.004904772999907436
+    },
+    "Rigid_metadata_kernel": {
+      "calls": 2,
+      "inclusive_s": 0.0002540829991630744
+    },
+    "Rigid_module_load": {
+      "calls": 1,
+      "inclusive_s": 0.07347304100039764
+    },
+    "Scene_initialize": {
+      "calls": 1,
+      "inclusive_s": 1.432036846000301
+    },
+    "Scene_reset": {
+      "calls": 1,
+      "inclusive_s": 0.0005829689998790855
+    },
+    "Scene_write": {
+      "calls": 1,
+      "inclusive_s": 0.014542158000040217
+    },
+    "Sensor_context_set": {
+      "calls": 1,
+      "inclusive_s": 1.306100057263393e-05
+    },
+    "Simulation_reset": {
+      "calls": 1,
+      "inclusive_s": 0.5746479440003895
+    },
+    "SolverContext_create": {
+      "calls": 2,
+      "inclusive_s": 0.0004179320003458997
+    },
+    "SolverOrder_kernel": {
+      "calls": 3,
+      "inclusive_s": 0.00013772700003755745
+    },
+    "SolverOrder_module_load": {
+      "calls": 1,
+      "inclusive_s": 0.08206796900049085
+    },
+    "Solver_linesearch": {
+      "calls": 3,
+      "inclusive_s": 0.33089107900013914
+    },
+    "Solver_solver_iteration": {
+      "calls": 3,
+      "inclusive_s": 0.46612079800070205
+    },
+    "Solver_update_constraint": {
+      "calls": 5,
+      "inclusive_s": 0.4501467469999625
+    },
+    "Solver_update_gradient": {
+      "calls": 2,
+      "inclusive_s": 2.6105547749994003
+    },
+    "Solver_update_gradient_incremental": {
+      "calls": 3,
+      "inclusive_s": 0.0004096219981875038
+    },
+    "Solverinit_context": {
+      "calls": 2,
+      "inclusive_s": 4.359946192999814
+    },
+    "Termination_reset": {
+      "calls": 1,
+      "inclusive_s": 0.0002374619998590788
+    },
+    "context_create": {
+      "calls": 2,
+      "inclusive_s": 1.5190713269994376
+    },
+    "ray_batch": {
+      "calls": 1,
+      "inclusive_s": 1.5777350660000593
+    },
+    "sense": {
+      "calls": 1,
+      "inclusive_s": 1.585175930999867
+    }
+  }
+}

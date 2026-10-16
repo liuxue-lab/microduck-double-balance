@@ -1,0 +1,20 @@
+test_batch_iterable_missing_extra_and_nested_groups_are_rejected (__main__.PreparationTests.test_batch_iterable_missing_extra_and_nested_groups_are_rejected) ... ok
+test_budget_uses_mandatory_replay_and_all_owners (__main__.PreparationTests.test_budget_uses_mandatory_replay_and_all_owners) ... ok
+test_current_committed_cache_is_read_after_replacement (__main__.PreparationTests.test_current_committed_cache_is_read_after_replacement) ... ok
+test_fresh_plan_does_not_load_or_initialize (__main__.PreparationTests.test_fresh_plan_does_not_load_or_initialize) ... ok
+test_manual_reset_task_rejected (__main__.PreparationTests.test_manual_reset_task_rejected) ... ok
+test_mjlab_registry_has_no_environment_class_slot (__main__.PreparationTests.test_mjlab_registry_has_no_environment_class_slot) ... ok
+test_new_code_has_no_training_or_deserializer_call (__main__.PreparationTests.test_new_code_has_no_training_or_deserializer_call) ... ok
+test_old_checkpoint_cannot_resume_or_warm_start (__main__.PreparationTests.test_old_checkpoint_cannot_resume_or_warm_start) ... ok
+test_preparation_guard_refuses_before_any_callback (__main__.PreparationTests.test_preparation_guard_refuses_before_any_callback) ... ok
+test_repeated_observation_reads_never_recompute_and_clone (__main__.PreparationTests.test_repeated_observation_reads_never_recompute_and_clone) ... ok
+test_step_reset_delegate_once_and_snapshot_reused_buffers (__main__.PreparationTests.test_step_reset_delegate_once_and_snapshot_reused_buffers) ... ok
+test_tensordict_cache_and_shapes_across_small_batch_sizes (__main__.PreparationTests.test_tensordict_cache_and_shapes_across_small_batch_sizes) ... ok
+test_upstream_batch_iteration_reproduces_v6_error_but_key_access_succeeds (__main__.PreparationTests.test_upstream_batch_iteration_reproduces_v6_error_but_key_access_succeeds) ... ok
+test_vendored_g11_files_identical (__main__.PreparationTests.test_vendored_g11_files_identical) ... ok
+test_wrong_actor_shape_and_missing_group_rejected (__main__.PreparationTests.test_wrong_actor_shape_and_missing_group_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.031s
+
+OK

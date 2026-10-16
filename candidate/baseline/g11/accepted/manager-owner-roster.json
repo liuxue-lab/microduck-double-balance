@@ -1,0 +1,118 @@
+{
+  "scope": "Pinned static roots; dynamic entity/sensor roots must also be supplied",
+  "required": {
+    "RNGService": [
+      "states",
+      "seeds",
+      "draw_counts"
+    ],
+    "EventClass": [
+      "resets",
+      "fires"
+    ],
+    "env": [
+      "extras",
+      "obs_buf",
+      "reward_buf",
+      "reset_buf",
+      "reset_terminated",
+      "reset_time_outs",
+      "episode_length_buf",
+      "common_step_counter",
+      "_sim_step_counter",
+      "_manual_reset_pending",
+      "trace",
+      "events",
+      "level",
+      "observation_calls",
+      "fail",
+      "timeout",
+      "features"
+    ],
+    "ActionManager": [
+      "_action",
+      "_prev_action",
+      "_prev_prev_action"
+    ],
+    "JointPositionAction": [
+      "_raw_actions",
+      "_processed_actions",
+      "_scale",
+      "_offset",
+      "_target_ids"
+    ],
+    "ObservationManager": [
+      "_obs_buffer",
+      "_group_obs_term_delay_buffer",
+      "_group_obs_term_history_buffer"
+    ],
+    "UniformNoiseCfg": [
+      "_tensor_cache"
+    ],
+    "EventManager": [
+      "_interval_term_time_left",
+      "_reset_term_last_triggered_step_id",
+      "_reset_term_last_triggered_once"
+    ],
+    "RewardManager": [
+      "_reward_buf",
+      "_step_reward",
+      "_episode_sums"
+    ],
+    "TerminationManager": [
+      "_term_dones",
+      "_truncated_buf",
+      "_terminated_buf"
+    ],
+    "MetricsManager": [
+      "_episode_sums",
+      "_substep_accum",
+      "_substep_episode_sums",
+      "_substep_count",
+      "_step_count",
+      "_step_values"
+    ],
+    "Command": [
+      "metrics",
+      "time_left",
+      "command_counter",
+      "_command",
+      "updates"
+    ],
+    "CommandManager": [
+      "_commands"
+    ],
+    "CurriculumManager": [
+      "_curriculum_state"
+    ],
+    "Recorder": [
+      "entries",
+      "closed"
+    ],
+    "BAM": [
+      "_prev_motor_torque",
+      "_dt",
+      "_base_kp",
+      "_friction_fields_checked",
+      "_delay_buffer",
+      "vin_tensor",
+      "vin_drop_gain",
+      "kp_scale",
+      "kd_scale",
+      "default_kp_scale",
+      "default_kd_scale",
+      "friction_scale",
+      "default_friction_scale",
+      "diagnostics_enabled",
+      "last_diagnostics"
+    ],
+    "firmware": [
+      "kp",
+      "vin"
+    ]
+  },
+  "sources": {
+    "batch-isolation-return/program/batch_managers.py": "e3404636cd8178426cc4db758a522d38edf17e0c4540ea264a73e3ff96b309c9",
+    "batch-isolation-return/program/batch_isolation_probe.py": "dd7ea24c8a5fbc6ad58aea2c932595f0e9cb72740ff69e33a7eb918a679a5513"
+  }
+}

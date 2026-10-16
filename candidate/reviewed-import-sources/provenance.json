@@ -1,0 +1,25 @@
+{
+  "purpose": "Review-only exact upstream sources; never imported as replacements for installed packages",
+  "sources": [
+    {
+      "bytes": 1849,
+      "display_url": "https://github.com/google-deepmind/mujoco/blob/3.10.0/python/mujoco/rendering/classic/gl_context.py",
+      "distribution": "mujoco",
+      "installed": "mujoco/rendering/classic/gl_context.py",
+      "reviewed": "mujoco-gl_context.py",
+      "sha": "61b861ecea45dc9d3d2d44ab2e9b898ed4f2fa2a",
+      "sha256": "a3cac3b6d582c149a93e95e4742c7fd4ad2083d31a329ee5b675e59e5377ff75",
+      "version": "3.10.0"
+    },
+    {
+      "bytes": 9044,
+      "display_url": "https://github.com/FlorianRhiem/pyGLFW/blob/v2.10.0/glfw/library.py",
+      "distribution": "glfw",
+      "installed": "glfw/library.py",
+      "reviewed": "glfw-library.py",
+      "sha": "ee8b3064cc348e51ca7a80454ed0d62f5bd41283",
+      "sha256": "7aa425039fa57015c6674b0973385f178009e11efbc93a91bbc1df42fc8e9204",
+      "version": "2.10.0"
+    }
+  ]
+}

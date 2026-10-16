@@ -1,0 +1,19 @@
+test_changed_installed_discovery_source_is_rejected_and_reported (__main__.HeadlessTests.test_changed_installed_discovery_source_is_rejected_and_reported) ... ok
+test_exact_upstream_disabled_context_imports_no_graphics_backend (__main__.HeadlessTests.test_exact_upstream_disabled_context_imports_no_graphics_backend) ... ok
+test_exact_upstream_glfw_env_branch_never_probes_processes (__main__.HeadlessTests.test_exact_upstream_glfw_env_branch_never_probes_processes) ... ok
+test_missing_or_ambiguous_member_is_rejected (__main__.HeadlessTests.test_missing_or_ambiguous_member_is_rejected) ... ok
+test_preparation_sets_exact_wheel_member_without_loading (__main__.HeadlessTests.test_preparation_sets_exact_wheel_member_without_loading) ... ok
+test_symlinked_library_is_rejected (__main__.HeadlessTests.test_symlinked_library_is_rejected) ... ok
+test_no_empty_or_omitted_recurrent_environment_slices (__main__.RunnerContractTests.test_no_empty_or_omitted_recurrent_environment_slices) ... ok
+test_pinned_iteration_convention_requires_committed_update_count (__main__.RunnerContractTests.test_pinned_iteration_convention_requires_committed_update_count) ... ok
+test_rollout_cost_does_not_authorize_incomplete_native_budget (__main__.RunnerContractTests.test_rollout_cost_does_not_authorize_incomplete_native_budget) ... ok
+test_added_source_and_added_asset_are_rejected (__main__.SourceReuseTests.test_added_source_and_added_asset_are_rejected) ... ok
+test_asset_change_is_rejected (__main__.SourceReuseTests.test_asset_change_is_rejected) ... ok
+test_current_source_mutation_is_rejected (__main__.SourceReuseTests.test_current_source_mutation_is_rejected) ... ok
+test_retained_source_mutation_is_rejected (__main__.SourceReuseTests.test_retained_source_mutation_is_rejected) ... ok
+test_verifies_both_prior_generations_without_copy_or_mutation (__main__.SourceReuseTests.test_verifies_both_prior_generations_without_copy_or_mutation) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.022s
+
+OK

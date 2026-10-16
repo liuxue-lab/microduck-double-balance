@@ -1,0 +1,11 @@
+test_changed_source_is_rejected_before_special_handling (__main__.FontFallbackTests.test_changed_source_is_rejected_before_special_handling) ... ok
+test_exact_upstream_fallback_handles_denial_without_a_child (__main__.FontFallbackTests.test_exact_upstream_fallback_handles_denial_without_a_child) ... ok
+test_other_caller_gets_no_special_handling (__main__.FontFallbackTests.test_other_caller_gets_no_special_handling) ... ok
+test_other_process_network_and_writes_still_blocked_by_host_hook (__main__.FontFallbackTests.test_other_process_network_and_writes_still_blocked_by_host_hook) ... ok
+test_repeated_uncached_optional_probe_is_rejected (__main__.FontFallbackTests.test_repeated_uncached_optional_probe_is_rejected) ... ok
+test_same_function_name_in_wrong_source_or_module_is_not_accepted (__main__.FontFallbackTests.test_same_function_name_in_wrong_source_or_module_is_not_accepted) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.036s
+
+OK

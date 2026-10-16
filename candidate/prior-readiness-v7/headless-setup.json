@@ -1,0 +1,43 @@
+{
+  "MUJOCO_GL": "disable",
+  "PYGLFW_LIBRARY": "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/glfw/x11/libglfw.so",
+  "graphics_contexts": 0,
+  "library_identity": {
+    "bytes": 378696,
+    "git_blob_sha1": "1b372f088da239ebea080a856907fe78e3e207cd",
+    "sha256": "9f283bef3d8c70a2e3a85fcb6ab5dfc23509d1983d0b14ad5f90d51cbd6d74c5"
+  },
+  "library_loaded_by_this_function": false,
+  "native_library_binding_expected": true,
+  "note": "Installed GLFW may bind its bundled DLL for mujoco.viewer imports; init/window/context/physics remain blocked.",
+  "reviewed_sources": [
+    {
+      "actual": {
+        "bytes": 1849,
+        "git_blob_sha1": "61b861ecea45dc9d3d2d44ab2e9b898ed4f2fa2a",
+        "sha256": "a3cac3b6d582c149a93e95e4742c7fd4ad2083d31a329ee5b675e59e5377ff75"
+      },
+      "expected": {
+        "bytes": 1849,
+        "git_blob_sha1": "61b861ecea45dc9d3d2d44ab2e9b898ed4f2fa2a",
+        "sha256": "a3cac3b6d582c149a93e95e4742c7fd4ad2083d31a329ee5b675e59e5377ff75"
+      },
+      "path": "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mujoco/rendering/classic/gl_context.py"
+    },
+    {
+      "actual": {
+        "bytes": 9044,
+        "git_blob_sha1": "ee8b3064cc348e51ca7a80454ed0d62f5bd41283",
+        "sha256": "7aa425039fa57015c6674b0973385f178009e11efbc93a91bbc1df42fc8e9204"
+      },
+      "expected": {
+        "bytes": 9044,
+        "git_blob_sha1": "ee8b3064cc348e51ca7a80454ed0d62f5bd41283",
+        "sha256": "7aa425039fa57015c6674b0973385f178009e11efbc93a91bbc1df42fc8e9204"
+      },
+      "path": "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/glfw/library.py"
+    }
+  ],
+  "status": "HEADLESS_DISCOVERY_CONFIGURED",
+  "subprocess_probes": 0
+}

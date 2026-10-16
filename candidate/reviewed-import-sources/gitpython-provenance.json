@@ -1,0 +1,49 @@
+{
+  "distribution": "GitPython",
+  "import_probe_count": 2,
+  "read_only_import_command": [
+    "/usr/bin/git",
+    "version"
+  ],
+  "release_version_stamp": {
+    "identity": {
+      "bytes": 8899,
+      "git_blob_sha1": "486010e17af37a8eefe18551cf88fb2ea51d72ca",
+      "sha256": "20509d015671fc8b903a1fc105db5291d22b647b0e49dd1c8f43b9d2df68aeca"
+    },
+    "release_line": "__version__ = '3.1.46'",
+    "reviewed": "gitpython-init-release.py",
+    "source": "gitpython-setup.py",
+    "source_git_blob_sha1": "a7b1eab00ea5ee33e70a711cd914ee09ee59cb59",
+    "source_url": "https://github.com/gitpython-developers/GitPython/blob/3.1.46/setup.py",
+    "upstream_line": "__version__ = \"git\"",
+    "version": "3.1.46"
+  },
+  "sources": [
+    {
+      "bytes": 8896,
+      "git_blob_sha1": "1b2360e3a52a15be0a53886f6c5af55052529987",
+      "installed": "git/__init__.py",
+      "reviewed": "gitpython-init.py",
+      "sha256": "1ab3ce6835813415246835ecefe0d5beb76e03628914116e6b15a2e22cf51ed1",
+      "source_url": "https://github.com/gitpython-developers/GitPython/blob/3.1.46/git/__init__.py"
+    },
+    {
+      "bytes": 67472,
+      "git_blob_sha1": "15d7820df5dbbc0b4693b7367883ebb9eb7af23e",
+      "installed": "git/cmd.py",
+      "reviewed": "gitpython-cmd.py",
+      "sha256": "cb4d7237c3f6245b853f9746cc7216f6f77eb814233f32bcc9f64c6486596f7e",
+      "source_url": "https://github.com/gitpython-developers/GitPython/blob/3.1.46/git/cmd.py"
+    },
+    {
+      "bytes": 46786,
+      "git_blob_sha1": "20e42b4126ed23ca3962679388637ecb1e8222b9",
+      "installed": "git/remote.py",
+      "reviewed": "gitpython-remote.py",
+      "sha256": "a589fd740973f90c2f34c5970f5339ee930f422b6d84e33ceaa4d12bf7294ea5",
+      "source_url": "https://github.com/gitpython-developers/GitPython/blob/3.1.46/git/remote.py"
+    }
+  ],
+  "version": "3.1.46"
+}

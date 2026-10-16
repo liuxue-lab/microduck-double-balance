@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "baseline_files_unchanged": 156,
+  "active_physics_and_accounting_files_unchanged": [
+    "native_factory.py",
+    "native_runtime.py",
+    "native_accounting.py",
+    "planning.py",
+    "transitions.py",
+    "process_vector.py",
+    "process_owners.py",
+    "runner.py",
+    "durable.py",
+    "rng_policy.py",
+    "local_campaign.py"
+  ],
+  "reviewed_installed_sources": {
+    "stage12-bootstrap-deps/warp/_src/context.py": {
+      "sha256": "eb099d908c50effc3cacbf7ecc408be4187ca9a6a6f72e1e85c70676961524ee",
+      "reviewed": true
+    },
+    "stage12-bootstrap-deps/mjlab/envs/manager_based_rl_env.py": {
+      "sha256": "a381027e336d6313cd338d541230b36864657edac89708a33e7e60c0c6fb74d2",
+      "reviewed": true
+    },
+    "stage12-bootstrap-deps/mjlab/sim/sim.py": {
+      "sha256": "2a8561e52d019b202cf105a6512abfdd8068701dafe321f43bbae96e346b2c68",
+      "reviewed": true
+    }
+  },
+  "review_scope": [
+    "constructor reset/step API and operation caps",
+    "private RNG/reset ownership",
+    "terminal observation snapshot before reset",
+    "native WAL before/after accounting",
+    "resource close and no owner respawn",
+    "checkpoint/load/PPO construction gates",
+    "cloud extraction identity and exact Python version"
+  ],
+  "GPU_execution": false,
+  "native_integrations": 0,
+  "physical_acceptance": false
+}

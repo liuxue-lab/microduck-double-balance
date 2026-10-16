@@ -1,0 +1,12 @@
+{
+  "WAL_fsyncs": 10,
+  "WAL_records": 10,
+  "WAL_seconds": 0.02866875799918489,
+  "WAL_sha256": "a3f9110643f5a9dab032a2a2430ef0cc1cb86856476c29b2f12f2a16c36fa380",
+  "durable_integrations": true,
+  "full_per_kernel_persistence": false,
+  "hard_crash_rule": "Unpaired integration attempt has completed interval [n-1,n]; never infer completion or retry.",
+  "native_sync_checks_removed": 0,
+  "nested_counter_rule": "Exact on orderly exit; after hard loss use last checkpoint plus explicit per-integration upper bounds.",
+  "pending": {}
+}

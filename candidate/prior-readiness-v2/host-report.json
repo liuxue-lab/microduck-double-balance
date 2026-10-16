@@ -1,0 +1,16 @@
+{
+  "budget": {
+    "PPO": 0,
+    "cloud_training": 0,
+    "environment_constructions": 0,
+    "native_forward": 0,
+    "native_integrations": 0,
+    "optimizer_constructions": 0,
+    "policy_constructions": 0,
+    "torch_load": 0
+  },
+  "error": "RuntimeError('Source file too large')",
+  "status": "HOST_READINESS_BLOCKED",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/lx/下载/microduck-stage12-readiness-v2/stage12/host_probe.py\", line 239, in main\n    report[\"capture\"] = capture(out)\n                        ^^^^^^^^^^^^\n  File \"/home/lx/下载/microduck-stage12-readiness-v2/stage12/host_probe.py\", line 56, in capture\n    copy_source(p, \"project/\" + str(p.relative_to(repo)))\n  File \"/home/lx/下载/microduck-stage12-readiness-v2/stage12/host_probe.py\", line 40, in copy_source\n    require(len(raw) <= 8 * 1024 * 1024, \"Source file too large\")\n  File \"/home/lx/下载/microduck-stage12-readiness-v2/stage12/contracts.py\", line 32, in require\n    raise RuntimeError(message)\nRuntimeError: Source file too large\n",
+  "training_ready": false
+}

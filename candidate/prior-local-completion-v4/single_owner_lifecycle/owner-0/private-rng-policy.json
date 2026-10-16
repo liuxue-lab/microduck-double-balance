@@ -1,0 +1,72 @@
+{
+  "command_policy": {
+    "final_standing_command_zero": true,
+    "forward": 0.2,
+    "forward_bucket_retained": true,
+    "heading": 0.0,
+    "heading_range": [
+      -3.141592653589793,
+      3.141592653589793
+    ],
+    "init_velocity": 0.0,
+    "resampling_s": [
+      3.0,
+      8.0
+    ],
+    "standing": 1.0,
+    "world": 0.0
+  },
+  "command_sampling": "Pinned native base method with private uniform draws; turn-in-place extension is natively a no-op at p=0",
+  "delay_buffers": 4,
+  "interval_policy": "No interval terms; reset_event handles empty roster; unused stream seeds retained",
+  "observation_noise": {
+    "amplitudes_changed": false,
+    "default_RNG_used": false,
+    "group_flags_changed": false,
+    "original_formula_order": true,
+    "stream": "obs_noise/0",
+    "terms": [
+      {
+        "n_max": 0.03,
+        "n_min": -0.03,
+        "operation": "add",
+        "term": "base_ang_vel",
+        "width": 3
+      },
+      {
+        "n_max": 0.01,
+        "n_min": -0.01,
+        "operation": "add",
+        "term": "projected_gravity",
+        "width": 3
+      },
+      {
+        "n_max": 0.001,
+        "n_min": -0.001,
+        "operation": "add",
+        "term": "joint_pos",
+        "width": 14
+      },
+      {
+        "n_max": 0.25,
+        "n_min": -0.25,
+        "operation": "add",
+        "term": "joint_vel",
+        "width": 14
+      }
+    ]
+  },
+  "random_training_not_released": true,
+  "spawn_reset_rng_draws": 0,
+  "streams": [
+    "bam_lag/0",
+    "command_time/0",
+    "command_value/0",
+    "event_global_2/0",
+    "event_local_0/0",
+    "event_local_1/0",
+    "obs_lag/0",
+    "obs_noise/0",
+    "obs_phase/0"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "cloud_training": 0,
+  "real_PPO": 0,
+  "real_Torch_available": false,
+  "real_native_runs": 0,
+  "status": "DEVELOPMENT_CONTRACT_PASS_NOT_PHYSICAL_ACCEPTANCE",
+  "suites": [
+    {
+      "passed": true,
+      "sha256": "d093d968de78faac0364a92ca20d3fa78e9838bc8011bf3562763c354f7f35ce",
+      "suite": "integration-test_contracts.py.log",
+      "tests": 34
+    },
+    {
+      "passed": true,
+      "sha256": "840d1141d057b75fc98b57d3d19f42573872762e7e57c4da9f740cc84d621d20",
+      "suite": "test_git_import.py.log",
+      "tests": 7
+    },
+    {
+      "passed": true,
+      "sha256": "2a6ddebc2af387b13fa428d9b1d249d4d1f32e457ae69b6905141ef52e621d1a",
+      "suite": "test_optional_imports.py.log",
+      "tests": 6
+    },
+    {
+      "passed": true,
+      "sha256": "ef1081980c4344cb3fb501f0ca3dbab50bf1e7352a801489d12419a3b523d117",
+      "suite": "test_preparation.py.log",
+      "tests": 15
+    },
+    {
+      "passed": true,
+      "sha256": "bdb3f3d22e0c4802ff901bc58797fcb5bb9a7ab6e64b4ea6f266eb9b2cc9953d",
+      "suite": "test_source_capture.py.log",
+      "tests": 12
+    },
+    {
+      "passed": true,
+      "sha256": "885e792f38a81810625aefe7229cb4294a869e663cb036b52f58f556acbd5855",
+      "suite": "test_transport.py.log",
+      "tests": 12
+    },
+    {
+      "passed": true,
+      "sha256": "ab29fb919b559f47290757ad6bf079996386560a9a402e0606e1ec2a1f2ec430",
+      "suite": "test_v4.py.log",
+      "tests": 14
+    }
+  ],
+  "tensor_protocol_cases": 9,
+  "total": 109,
+  "unittest_total": 100,
+  "user_host_run_executed": false
+}

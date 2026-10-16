@@ -1,0 +1,53 @@
+{
+  "evidence_scope": "Static review of user supplied pinned source; host runtime verification pending",
+  "findings": [
+    {
+      "file": "baseline/registry.py",
+      "finding": "Only runner_cls is supported; no env_cls factory slot. Merely registering cfg cannot install the audited adaptive environment.",
+      "id": "registry",
+      "symbol": "register_mjlab_task"
+    },
+    {
+      "file": "baseline/vecenv_wrapper.py",
+      "finding": "Calls observation_manager.compute(). Candidate adapter returns cloned committed obs_buf. Actual RSL runner consuming it remains to be reviewed.",
+      "id": "wrapper",
+      "symbol": "RslRlVecEnvWrapper.get_observations"
+    },
+    {
+      "file": "baseline/vecenv_wrapper.py",
+      "finding": "Calls env.reset(). Physical hooks and RNG owners must already be installed before wrapper construction.",
+      "id": "reset",
+      "symbol": "RslRlVecEnvWrapper.__init__"
+    },
+    {
+      "file": "baseline/g11/formal_runtime.py",
+      "finding": "Lifetime self.macros < 20 and ticks < 20. Cannot run a 24-step rollout or a 10-second episode. Do not raise guards without a new lifetime design and budget.",
+      "id": "runtime",
+      "symbol": "Runtime.advance / FormalAdaptive.__init__"
+    },
+    {
+      "file": "baseline/g11/formal_task.py",
+      "finding": "num_envs == 1 and reset ids [0]. Multi-owner or native nworld>1 requires additional ownership design, not changing cfg.scene.num_envs.",
+      "id": "worlds",
+      "symbol": "startup / reset_nominal"
+    },
+    {
+      "file": "baseline/g11/formal_command.py",
+      "finding": "Private RNG draws require count == 1. Owner-specific streams must be extended and audited before scaling.",
+      "id": "command",
+      "symbol": "PrivateTorch.empty"
+    },
+    {
+      "file": "baseline/g11/reused-v1/checkpoint-schema.json",
+      "finding": "94 finite tensors inspected historically. Actor is one-layer 256 LSTM, input61/action14; critic85. Shape agreement does not establish semantic compatibility.",
+      "id": "checkpoint",
+      "symbol": "actor/critic/normalizer/optimizer"
+    },
+    {
+      "file": "baseline/source-pins.json",
+      "finding": "Pinned installed sources plus dirty mdp are essential. A fresh stock pip/uv environment is not yet a reproducible training release.",
+      "id": "dependency",
+      "symbol": "219 fixed paths"
+    }
+  ]
+}

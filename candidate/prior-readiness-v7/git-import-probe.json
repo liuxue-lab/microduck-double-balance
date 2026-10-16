@@ -1,0 +1,74 @@
+{
+  "binary_identity": {
+    "bytes": 3710360,
+    "git_blob_sha1": "f6e43a237694d1f8967d0fed53615a7335b45faf",
+    "sha256": "587ef21868c948b883993e23209b86a72a6ddc06aab1545c697ffc31075acd4a"
+  },
+  "command": [
+    "/usr/bin/git",
+    "version"
+  ],
+  "completed_queries": 2,
+  "cwd": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/readiness-v7/20261015T180254Z-1138c6",
+  "git_environment": {
+    "GIT_CONFIG_GLOBAL": "/dev/null",
+    "GIT_CONFIG_NOSYSTEM": "1",
+    "GIT_CONFIG_SYSTEM": "/dev/null",
+    "GIT_OPTIONAL_LOCKS": "0",
+    "GIT_PYTHON_GIT_EXECUTABLE": "/usr/bin/git",
+    "GIT_TERMINAL_PROMPT": "0"
+  },
+  "git_ok": true,
+  "installed_files_modified": false,
+  "maximum_queries": 2,
+  "network_commands": 0,
+  "null_device_write_opens": 2,
+  "permitted_queries": [
+    {
+      "argv": [
+        "/usr/bin/git",
+        "version"
+      ],
+      "audit_event": "subprocess.Popen",
+      "cwd": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/readiness-v7/20261015T180254Z-1138c6"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "version"
+      ],
+      "audit_event": "subprocess.Popen",
+      "cwd": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/readiness-v7/20261015T180254Z-1138c6"
+    }
+  ],
+  "repository_commands": 0,
+  "reviewed_sources": [
+    {
+      "identity": {
+        "bytes": 8899,
+        "git_blob_sha1": "486010e17af37a8eefe18551cf88fb2ea51d72ca",
+        "sha256": "20509d015671fc8b903a1fc105db5291d22b647b0e49dd1c8f43b9d2df68aeca"
+      },
+      "path": "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/git/__init__.py"
+    },
+    {
+      "identity": {
+        "bytes": 67472,
+        "git_blob_sha1": "15d7820df5dbbc0b4693b7367883ebb9eb7af23e",
+        "sha256": "cb4d7237c3f6245b853f9746cc7216f6f77eb814233f32bcc9f64c6486596f7e"
+      },
+      "path": "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/git/cmd.py"
+    },
+    {
+      "identity": {
+        "bytes": 46786,
+        "git_blob_sha1": "20e42b4126ed23ca3962679388637ecb1e8222b9",
+        "sha256": "a589fd740973f90c2f34c5970f5339ee930f422b6d84e33ceaa4d12bf7294ea5"
+      },
+      "path": "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/git/remote.py"
+    }
+  ],
+  "source_form": "release_version_stamp",
+  "status": "READ_ONLY_GITPYTHON_IMPORT_PASS",
+  "version": "3.1.46"
+}

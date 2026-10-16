@@ -1,0 +1,12 @@
+test_boundary_accepts_null_device_but_keeps_network_process_and_file_denials (__main__.GitImportTests.test_boundary_accepts_null_device_but_keeps_network_process_and_file_denials) ... ok
+test_caller_cwd_and_environment_are_required (__main__.GitImportTests.test_caller_cwd_and_environment_are_required) ... ok
+test_failed_import_closes_the_window (__main__.GitImportTests.test_failed_import_closes_the_window) ... ok
+test_inactive_window_and_wrong_command_never_allow_a_process (__main__.GitImportTests.test_inactive_window_and_wrong_command_never_allow_a_process) ... ok
+test_null_device_requires_literal_path_character_mode_and_device_number (__main__.GitImportTests.test_null_device_requires_literal_path_character_mode_and_device_number) ... ok
+test_third_query_and_changed_source_are_rejected (__main__.GitImportTests.test_third_query_and_changed_source_are_rejected) ... ok
+test_version_and_installed_source_must_match (__main__.GitImportTests.test_version_and_installed_source_must_match) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.058s
+
+OK

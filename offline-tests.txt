@@ -1,0 +1,26 @@
+test_budget_not_refreshed (__main__.Core.test_budget_not_refreshed) ... ok
+test_caps_and_zero_training (__main__.Core.test_caps_and_zero_training) ... ok
+test_completed_not_run_again (__main__.Core.test_completed_not_run_again) ... ok
+test_environment_clears_git (__main__.Core.test_environment_clears_git) ... ok
+test_failed_attempt_not_retried (__main__.Core.test_failed_attempt_not_retried) ... ok
+test_feasibility_time_and_disk (__main__.Core.test_feasibility_time_and_disk) ... ok
+test_fixed_deadline (__main__.Core.test_fixed_deadline) ... ok
+test_host_key_fingerprint (__main__.Core.test_host_key_fingerprint) ... ok
+test_native_guard_and_cleanup (__main__.Core.test_native_guard_and_cleanup) ... ok
+test_path_traversal (__main__.Core.test_path_traversal) ... ok
+test_setup_explicit_resume_keeps_failed_marker (__main__.Core.test_setup_explicit_resume_keeps_failed_marker) ... ok
+test_source_archive_410 (__main__.Core.test_source_archive_410) ... ok
+test_write_exclusive_and_tamper (__main__.Core.test_write_exclusive_and_tamper) ... ok
+test_complete_large_wal_git_return_and_second_receive (__main__.Transfer.test_complete_large_wal_git_return_and_second_receive) ... ok
+test_empty_and_partial_wal_reconcile (__main__.Transfer.test_empty_and_partial_wal_reconcile) ... ok
+test_local_prepare_repeat_reuses_commit (__main__.Transfer.test_local_prepare_repeat_reuses_commit) ... ok
+test_early_termination_never_claims_full_pass (__main__.VectorFlow.test_early_termination_never_claims_full_pass) ... ok
+test_full_episode_unforced_timeout (__main__.VectorFlow.test_full_episode_unforced_timeout) ... ok
+test_n1_flow (__main__.VectorFlow.test_n1_flow) ... ok
+test_n2_flow (__main__.VectorFlow.test_n2_flow) ... ok
+test_rollout_flow (__main__.VectorFlow.test_rollout_flow) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 1.450s
+
+OK

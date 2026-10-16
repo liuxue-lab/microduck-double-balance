@@ -1,0 +1,43 @@
+{
+  "PPO": 0,
+  "aggregate_canonical_not_recomputed_per_owner": true,
+  "canonical_before": {
+    "attempted": 674457,
+    "completed": 674456
+  },
+  "cloud_training": 0,
+  "counts": {
+    "PPO": 0,
+    "cloud": 0,
+    "integrations_attempted": 0,
+    "integrations_completed": 0
+  },
+  "elapsed_s": 7.678418539000177,
+  "errors": [
+    {
+      "error": "RuntimeError('Native child forbids network/unreviewed subprocess: subprocess.Popen')",
+      "stage": "session",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/lx/下载/microduck-stage12-local-completion-v2/integration/native_factory.py\", line 93, in owner_session\n    device = wp.get_device('cuda:0')\n             ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/warp/_src/context.py\", line 5857, in get_device\n    init()\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/warp/_src/context.py\", line 9750, in init\n    runtime = Runtime()\n              ^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/warp/_src/context.py\", line 5226, in __init__\n    cpu_name = platform.processor()\n               ^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/platform.py\", line 1036, in processor\n    return uname().processor\n           ^^^^^^^^^^^^^^^^^\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/functools.py\", line 998, in __get__\n    val = self.func(instance)\n          ^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/platform.py\", line 860, in processor\n    return _unknown_as_blank(_Processor.get())\n                             ^^^^^^^^^^^^^^^^\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/platform.py\", line 800, in get\n    return func() or ''\n           ^^^^^^\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/platform.py\", line 828, in from_subprocess\n    return subprocess.check_output(\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py\", line 466, in check_output\n    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py\", line 548, in run\n    with Popen(*popenargs, **kwargs) as process:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py\", line 1026, in __init__\n    self._execute_child(args, executable, preexec_fn, close_fds,\n  File \"/home/lx/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py\", line 1823, in _execute_child\n    sys.audit(\"subprocess.Popen\", executable, args, cwd, env)\n  File \"/home/lx/下载/microduck-stage12-local-completion-v2/integration/child_bootstrap.py\", line 50, in boundary\n    raise RuntimeError('Native child forbids network/unreviewed subprocess: '+event)\nRuntimeError: Native child forbids network/unreviewed subprocess: subprocess.Popen\n"
+    }
+  ],
+  "macro_completed": 0,
+  "native_added_attempted": 0,
+  "native_added_completed": 0,
+  "native_ledger": {
+    "attempts": {},
+    "completed": {},
+    "exact": true,
+    "incomplete_tail": false,
+    "integration_attempted_lower": 0,
+    "integration_attempted_upper": 0,
+    "integration_completed_lower": 0,
+    "integration_completed_upper": 0,
+    "pending": {},
+    "rows": 0
+  },
+  "no_automatic_retry": true,
+  "physical_acceptance": false,
+  "public_steps_completed": 0,
+  "status": "STAGE12_NATIVE_CANDIDATE_STOPPED_PRESERVE",
+  "training_ready": false
+}

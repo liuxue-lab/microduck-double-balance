@@ -1,0 +1,108 @@
+{
+  "torch": "2.9.1+cpu",
+  "tensordict": "0.10.0",
+  "cases": [
+    {
+      "name": "transition/dict/0/0",
+      "passed": true,
+      "result": {
+        "cache": "dict",
+        "terminated": false,
+        "truncated": false,
+        "passed": true,
+        "real_environment": false,
+        "real_PPO": false
+      }
+    },
+    {
+      "name": "transition/dict/1/0",
+      "passed": true,
+      "result": {
+        "cache": "dict",
+        "terminated": true,
+        "truncated": false,
+        "passed": true,
+        "real_environment": false,
+        "real_PPO": false
+      }
+    },
+    {
+      "name": "transition/dict/0/1",
+      "passed": true,
+      "result": {
+        "cache": "dict",
+        "terminated": false,
+        "truncated": true,
+        "passed": true,
+        "real_environment": false,
+        "real_PPO": false
+      }
+    },
+    {
+      "name": "transition/dict/1/1",
+      "passed": true,
+      "result": {
+        "cache": "dict",
+        "terminated": true,
+        "truncated": true,
+        "passed": true,
+        "real_environment": false,
+        "real_PPO": false
+      }
+    },
+    {
+      "name": "transition/TensorDict/0/0",
+      "passed": true,
+      "result": {
+        "cache": "TensorDict",
+        "terminated": false,
+        "truncated": false,
+        "passed": true,
+        "real_environment": false,
+        "real_PPO": false
+      }
+    },
+    {
+      "name": "transition/TensorDict/1/0",
+      "passed": true,
+      "result": {
+        "cache": "TensorDict",
+        "terminated": true,
+        "truncated": false,
+        "passed": true,
+        "real_environment": false,
+        "real_PPO": false
+      }
+    },
+    {
+      "name": "transition/TensorDict/0/1",
+      "passed": true,
+      "result": {
+        "cache": "TensorDict",
+        "terminated": false,
+        "truncated": true,
+        "passed": true,
+        "real_environment": false,
+        "real_PPO": false
+      }
+    },
+    {
+      "name": "transition/TensorDict/1/1",
+      "passed": true,
+      "result": {
+        "cache": "TensorDict",
+        "terminated": true,
+        "truncated": true,
+        "passed": true,
+        "real_environment": false,
+        "real_PPO": false
+      }
+    },
+    {
+      "name": "two-owner-protocol",
+      "passed": false,
+      "error": "TypeError('must be real number, not dict')",
+      "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/f586bf229d7a/stage12-build/microduck-stage12-integration-v1/validation/integration/cpu_cases.py\", line 144, in all_cases\n    rows.append(dict(name=name, passed=True, result=operation()))\n                                                    ^^^^^^^^^^^\n  File \"/workspace/scratch/f586bf229d7a/stage12-build/microduck-stage12-integration-v1/validation/integration/cpu_cases.py\", line 140, in <lambda>\n    cases.append((\"two-owner-protocol\", lambda: vector_case(torch, td)))\n                                                ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/f586bf229d7a/stage12-build/microduck-stage12-integration-v1/validation/integration/cpu_cases.py\", line 113, in vector_case\n    before = v.get_observations()\n             ^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/f586bf229d7a/stage12-build/microduck-stage12-integration-v1/integration/process_vector.py\", line 16, in call\n    return method(self, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/f586bf229d7a/stage12-build/microduck-stage12-integration-v1/integration/process_vector.py\", line 101, in get_observations\n    self.obs_buf = self.batch_observations([wire_tensor(v, self.torch, self.device) for v in rows])\n                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/f586bf229d7a/stage12-build/microduck-stage12-integration-v1/integration/process_vector.py\", line 72, in wire_tensor\n    t = torch.tensor(value[\"values\"], dtype=getattr(torch, value[\"dtype\"]), device=device)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: must be real number, not dict\n"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "PPO": 0,
+  "checks": [
+    {
+      "name": "real-source-reuse-plus-four-pinned-build-files",
+      "passed": true
+    },
+    {
+      "actual_native_integrations": 0,
+      "fixture_native_acceptance": true,
+      "name": "real-Git-parted-return-and-cloud-extraction-roundtrip",
+      "passed": true
+    },
+    {
+      "name": "ref-mismatch-before-extraction",
+      "passed": true
+    },
+    {
+      "name": "existing-cloud-output-preserved",
+      "passed": true
+    },
+    {
+      "name": "edited-worktree-part-blocked",
+      "passed": true
+    },
+    {
+      "name": "cloud-budget-missing-before-marker",
+      "passed": true
+    },
+    {
+      "name": "changed-old-source-package-blocked",
+      "passed": true
+    }
+  ],
+  "cloud_training": 0,
+  "fixture_receipts_are_not_physical_acceptance": true,
+  "native_integrations": 0,
+  "passed": true
+}

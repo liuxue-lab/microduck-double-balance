@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "v2-zero-WAL-and-native-started-retained",
+      "passed": true
+    },
+    {
+      "name": "v3-two-CPU-forwards-kinematics-and-failed-construction-retained",
+      "passed": true
+    },
+    {
+      "name": "v4-completed-construction-three-CPU-two-GPU-forwards-and-cleanup-retained",
+      "passed": true
+    },
+    {
+      "name": "cleared-v4-WAL-requires-reconciliation",
+      "passed": true
+    },
+    {
+      "name": "added-v4-WAL-requires-reconciliation",
+      "passed": true
+    },
+    {
+      "name": "unexpected-v4-N2-blocks-new-run",
+      "passed": true
+    },
+    {
+      "name": "cleared-v3-WAL-requires-reconciliation",
+      "passed": true
+    },
+    {
+      "name": "added-v3-WAL-requires-reconciliation",
+      "passed": true
+    },
+    {
+      "name": "unexpected-v3-N2-blocks-new-run",
+      "passed": true
+    },
+    {
+      "name": "changed-v2-WAL-requires-reconciliation",
+      "passed": true
+    },
+    {
+      "name": "unexpected-v2-N2-blocks-new-run",
+      "passed": true
+    },
+    {
+      "name": "reuse-13-completed-CPU-cases-and-410-inputs-no-recapture",
+      "passed": true
+    },
+    {
+      "name": "existing-output-preserved",
+      "passed": true
+    },
+    {
+      "name": "changed-started-marker-rejected",
+      "passed": true
+    },
+    {
+      "name": "unexpected-old-native-owner-blocks-new-run",
+      "passed": true
+    },
+    {
+      "name": "changed-completed-CPU-report-rejected",
+      "passed": true
+    },
+    {
+      "name": "changed-completed-portable-input-rejected",
+      "passed": true
+    },
+    {
+      "name": "existing-v5-started-only-status-no-execution",
+      "passed": true
+    }
+  ],
+  "native_integrations": 0,
+  "PPO": 0,
+  "cloud_training": 0,
+  "fixtures_only": true
+}

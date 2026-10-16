@@ -1,0 +1,9 @@
+{
+  "distribution": "matplotlib",
+  "version": "3.10.9",
+  "installed": "matplotlib/font_manager.py",
+  "reviewed": "matplotlib-font_manager.py",
+  "git_blob_sha1": "a44d5bd76b9ae875053c6a26a16cdf3300d2693c",
+  "source_url": "https://github.com/matplotlib/matplotlib/blob/v3.10.9/lib/matplotlib/font_manager.py",
+  "policy": "Only for the verified _get_fontconfig_fonts optional helper: deny subprocess with FileNotFoundError so upstream OSError fallback scans fonts directly. No process allowed."
+}
