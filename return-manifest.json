@@ -1,0 +1,129 @@
+{
+  "attachments": [
+    {
+      "bytes": 5068834,
+      "file": "raw-evidence-000.zip",
+      "manifest": "raw-evidence-000.zip.manifest.json",
+      "manifest_sha256": "7f4fae34dc927b99f4acfb45c4352a39c3c35ac496e8bd88919becefe9e4d87d",
+      "sha256": "6ba36b49d4adde5a5904d39106cb46548657090a49c27e2a346290bac579a849"
+    },
+    {
+      "bytes": 5378603,
+      "file": "raw-evidence-001.zip",
+      "manifest": "raw-evidence-001.zip.manifest.json",
+      "manifest_sha256": "b5298f44d5f8a76d9c209fc9451297c418254e1ada6624e48b53906d6efe83b5",
+      "sha256": "a46af90efee2462ff15abfc73c1922d4c493ceed4152d48bcd88bd8ec8e6bd2f"
+    },
+    {
+      "bytes": 5192306,
+      "file": "raw-evidence-002.zip",
+      "manifest": "raw-evidence-002.zip.manifest.json",
+      "manifest_sha256": "09f7c802404b1f34cd7238b9d30ad54bd2a0e417192d9cd7174fa3f27d363675",
+      "sha256": "ed99ade3e27854cf6c65b892a79282707a93e9c50dad138faeeb4f7563447f26"
+    },
+    {
+      "bytes": 5253481,
+      "file": "raw-evidence-003.zip",
+      "manifest": "raw-evidence-003.zip.manifest.json",
+      "manifest_sha256": "07ad8f6b17e8687b17666dcb85cc76bad83f0c25eaeea567cafd34b40a914436",
+      "sha256": "01343cfa5ba3608cbd3336be8dcb18266a3ff994464d39aa5572c3511de71d51"
+    },
+    {
+      "bytes": 5281942,
+      "file": "raw-evidence-004.zip",
+      "manifest": "raw-evidence-004.zip.manifest.json",
+      "manifest_sha256": "480f98267f44ad99ca71a7a1451e21c9c434430d179c49f5fea7047bc4fbcf12",
+      "sha256": "fbb536d26b9cf6355c3080a283be112dd34d5c3b0330740a36219774f3329a11"
+    },
+    {
+      "bytes": 5209444,
+      "file": "raw-evidence-005.zip",
+      "manifest": "raw-evidence-005.zip.manifest.json",
+      "manifest_sha256": "c8d5645f33aa642aba59e771b618037ae94d38c9d79ffd7ac3ba31dcda5cf2ab",
+      "sha256": "4e09f5de44b391677105e991626786064b5547c5e902d69c3f3efa0cbc92d44e"
+    },
+    {
+      "bytes": 5260018,
+      "file": "raw-evidence-006.zip",
+      "manifest": "raw-evidence-006.zip.manifest.json",
+      "manifest_sha256": "4c007b48a1567fbf21b11660aa53c98d202ddc2b4ad9d6908f87b939d45fcc59",
+      "sha256": "eac02543d4a60494c4ea857eaf553269e508bccf948de8a5bad700ddc1197c31"
+    },
+    {
+      "bytes": 724494,
+      "file": "raw-evidence-007.zip",
+      "manifest": "raw-evidence-007.zip.manifest.json",
+      "manifest_sha256": "7d7abcb6101cba581c548758707d152ce11f24131188e6c2431be16d603245aa",
+      "sha256": "53a0585c2006295ac4e87f38f8d140054673a1954885e6ff7cf9f9c8bec3706a"
+    }
+  ],
+  "branch": "stage12-local-recovery-v6-transfer-20261016t023449z-986a6d",
+  "bytes": 3074208,
+  "file": "stage12-recovery-return-20261016T023449Z-986a6d.zip",
+  "format": "microduck-return-ascii-parts-v2",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "stage12-recovery-return-20261016T023449Z-986a6d.zip.part000.base64.txt",
+      "index": 0,
+      "offset": 0,
+      "sha256": "05940ac1669065d82ad1de772ab8a8bb338ae9d7dba2cc051951d9bf88241297",
+      "text_bytes": 708251,
+      "text_sha256": "081cf702ecf4a748d62615f57774fc6fb7c6f4d975d2013ac8230795ea342954"
+    },
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "stage12-recovery-return-20261016T023449Z-986a6d.zip.part001.base64.txt",
+      "index": 1,
+      "offset": 524288,
+      "sha256": "c38f9a031490cdc62cd80f7d63b5c62f488056e34a66c1aded25ae9176376232",
+      "text_bytes": 708251,
+      "text_sha256": "3ca9b161694a5a5ba5b81914027b22fb4fa65555459cdf33392752ec751b91d7"
+    },
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "stage12-recovery-return-20261016T023449Z-986a6d.zip.part002.base64.txt",
+      "index": 2,
+      "offset": 1048576,
+      "sha256": "f1f77d66c716d2e6c40ae2aef5302d53d18da3ca908d31bf733a8278b86e98c8",
+      "text_bytes": 708251,
+      "text_sha256": "2c3c431bf82568c8e10fccf8363004557c23d3c7548c64861adb5501c863022f"
+    },
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "stage12-recovery-return-20261016T023449Z-986a6d.zip.part003.base64.txt",
+      "index": 3,
+      "offset": 1572864,
+      "sha256": "1318e016861b53aa0c0f380792a1a2b77c07010754ddfea19e4fc489b9672935",
+      "text_bytes": 708251,
+      "text_sha256": "9c61c3c9c5f327de29c1f8d96fcef48e70844ce8390afe2f6e60663b2422942e"
+    },
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "stage12-recovery-return-20261016T023449Z-986a6d.zip.part004.base64.txt",
+      "index": 4,
+      "offset": 2097152,
+      "sha256": "89a6df2cd9c4986eb9ddae5510016a3d80177666be6bfec3ce8ee0d5ead6c4c9",
+      "text_bytes": 708251,
+      "text_sha256": "695d380dc0298caa081d48760c0857b687483d6badabf3b9dd82663ba0d2df8c"
+    },
+    {
+      "bytes": 452768,
+      "encoding": "base64-ascii-lines",
+      "file": "stage12-recovery-return-20261016T023449Z-986a6d.zip.part005.base64.txt",
+      "index": 5,
+      "offset": 2621440,
+      "sha256": "a5fea50b36b32d9d54db9db979ea42f62f08388dcc2887892dc8185dbf331a0f",
+      "text_bytes": 611636,
+      "text_sha256": "e12d507c63ca8d5625ce39ccc4393ad4bbcc9d3a1ee8f1fcd07f10f92e727b7b"
+    }
+  ],
+  "scope": "Stage12 read-only recovery evidence; zero new integrations; independent archive branch; never merge; PPO=0 cloud=0",
+  "sha256": "366c6e71b299204882596229aad1568a42a4f878380f8f917a1002267ffe1a70"
+}

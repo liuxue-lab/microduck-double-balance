@@ -1,0 +1,87 @@
+{
+  "N1_reused": true,
+  "N2_passed": false,
+  "archive_bytes": 3074208,
+  "archive_sha256": "366c6e71b299204882596229aad1568a42a4f878380f8f917a1002267ffe1a70",
+  "automatic_PR": false,
+  "automatic_merge": false,
+  "automatic_push": false,
+  "canonical_after": {
+    "attempted": 693529,
+    "completed": 693528
+  },
+  "execution_budget": {
+    "CPU_forward": 0,
+    "GPU_forward": 0,
+    "PPO": 0,
+    "cloud_training": 0,
+    "environment_constructions": 0,
+    "native_integrations": 0,
+    "torch_load": 0
+  },
+  "native_added": 0,
+  "package_manifest_sha256": "56cc7e1d6101257563825bc903b4e7c94727a89ead0768b99def1faafb8ce14a",
+  "prior_commit": "10b112e2128309390dbf8d4a3c32b5e2b92039c5",
+  "protocol": "stage12-local-recovery-v6",
+  "raw_archives": [
+    {
+      "bytes": 5068834,
+      "expanded_bytes": 25140625,
+      "file": "raw-evidence-000.zip",
+      "members": 494,
+      "sha256": "6ba36b49d4adde5a5904d39106cb46548657090a49c27e2a346290bac579a849"
+    },
+    {
+      "bytes": 5378603,
+      "expanded_bytes": 25139665,
+      "file": "raw-evidence-001.zip",
+      "members": 409,
+      "sha256": "a46af90efee2462ff15abfc73c1922d4c493ceed4152d48bcd88bd8ec8e6bd2f"
+    },
+    {
+      "bytes": 5192306,
+      "expanded_bytes": 25067749,
+      "file": "raw-evidence-002.zip",
+      "members": 409,
+      "sha256": "ed99ade3e27854cf6c65b892a79282707a93e9c50dad138faeeb4f7563447f26"
+    },
+    {
+      "bytes": 5253481,
+      "expanded_bytes": 24973646,
+      "file": "raw-evidence-003.zip",
+      "members": 781,
+      "sha256": "01343cfa5ba3608cbd3336be8dcb18266a3ff994464d39aa5572c3511de71d51"
+    },
+    {
+      "bytes": 5281942,
+      "expanded_bytes": 25030692,
+      "file": "raw-evidence-004.zip",
+      "members": 408,
+      "sha256": "fbb536d26b9cf6355c3080a283be112dd34d5c3b0330740a36219774f3329a11"
+    },
+    {
+      "bytes": 5209444,
+      "expanded_bytes": 25047538,
+      "file": "raw-evidence-005.zip",
+      "members": 643,
+      "sha256": "4e09f5de44b391677105e991626786064b5547c5e902d69c3f3efa0cbc92d44e"
+    },
+    {
+      "bytes": 5260018,
+      "expanded_bytes": 24956076,
+      "file": "raw-evidence-006.zip",
+      "members": 407,
+      "sha256": "eac02543d4a60494c4ea857eaf553269e508bccf948de8a5bad700ddc1197c31"
+    },
+    {
+      "bytes": 724494,
+      "expanded_bytes": 3022791,
+      "file": "raw-evidence-007.zip",
+      "members": 218,
+      "sha256": "53a0585c2006295ac4e87f38f8d140054673a1954885e6ff7cf9f9c8bec3706a"
+    }
+  ],
+  "run": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/local-recovery-v6/20261016T023449Z-986a6d",
+  "status": "OFFLINE_REVIEW_COMPLETE_NATIVE_REPAIR_PENDING",
+  "training_ready": false
+}

@@ -1,0 +1,111 @@
+{
+  "branch": "stage12-local-recovery-v6-transfer-20261016t023449z-986a6d",
+  "bytes": 5192306,
+  "file": "raw-evidence-002.zip",
+  "format": "microduck-return-ascii-parts-v2",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-002.zip.part000.base64.txt",
+      "index": 0,
+      "offset": 0,
+      "sha256": "98b7e6efa556bec2feffeb0a4ad577105d8689b37be8bf5aa21a2a6b422c7b8f",
+      "text_bytes": 708251,
+      "text_sha256": "350b8cf310b6df56ee12255743494c96e0ca5b5c1c79d0c87c40023e2da3b401"
+    },
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-002.zip.part001.base64.txt",
+      "index": 1,
+      "offset": 524288,
+      "sha256": "0eaffa3b15f03c6602a618e53f2ac6bc97287384001109db563e7e825cb581c7",
+      "text_bytes": 708251,
+      "text_sha256": "7b8d04b8ae1db59d2b9f25db1f73e4e96533b752fc170626aba18fefab3fb6d2"
+    },
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-002.zip.part002.base64.txt",
+      "index": 2,
+      "offset": 1048576,
+      "sha256": "88ee16f20243b875cb2164e25028d2c07c9b7e92ca79ec74e5097d3dceac26ac",
+      "text_bytes": 708251,
+      "text_sha256": "d42d0470b3465dded8ada4f5df4f75850cbd287ef0011088cf8ff0305acc8a43"
+    },
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-002.zip.part003.base64.txt",
+      "index": 3,
+      "offset": 1572864,
+      "sha256": "fc109d6bf92b1a0c9bbf52fafeae07fae49f39dc158361969bdaae77460be1bb",
+      "text_bytes": 708251,
+      "text_sha256": "48d524226ec2fa810ad712c827d6c221988180bb1678e9603b23a3af398b7a1f"
+    },
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-002.zip.part004.base64.txt",
+      "index": 4,
+      "offset": 2097152,
+      "sha256": "a14516897dafa42e18b380101022c58421da8e33f947a501fb3dcfb390bea777",
+      "text_bytes": 708251,
+      "text_sha256": "750b4a50ab9ea8e4dcef88750cd7acb22d82223a87523d5f51771334cc08c396"
+    },
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-002.zip.part005.base64.txt",
+      "index": 5,
+      "offset": 2621440,
+      "sha256": "fd0efe40118cc1591c7dcc6a8eb8ab75784d0df6d53af0a359db556032b948b1",
+      "text_bytes": 708251,
+      "text_sha256": "a683587d93c4c73001e87de184966934fc7a0115a95c883d97987ca5fd26a833"
+    },
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-002.zip.part006.base64.txt",
+      "index": 6,
+      "offset": 3145728,
+      "sha256": "7ceb2a19ac5ccdc2f0bb520e47646ba8bd25038d1cb16b2e46d9a0d1f52e0f9c",
+      "text_bytes": 708251,
+      "text_sha256": "10d595fe4598802951ab582196e11c69ab0c3d2b67add09efea9beba5ee6d3ef"
+    },
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-002.zip.part007.base64.txt",
+      "index": 7,
+      "offset": 3670016,
+      "sha256": "f72a76bdc79b36e557869e0b68ae878ef88c34bc1250712a7f09f3298aee56fb",
+      "text_bytes": 708251,
+      "text_sha256": "b566b0e4c49319c861f571d31e62aec508e626690f4e212e153212b4ce64a053"
+    },
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-002.zip.part008.base64.txt",
+      "index": 8,
+      "offset": 4194304,
+      "sha256": "2bb910519cecdbf7b1419dcd48b08a0e52b0efcfd16acfbb29fcbb9028070adf",
+      "text_bytes": 708251,
+      "text_sha256": "e7cecafb9331a0041cec08176b6be13c734773a966250078a4f7aaf1b6a6392d"
+    },
+    {
+      "bytes": 473714,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-002.zip.part009.base64.txt",
+      "index": 9,
+      "offset": 4718592,
+      "sha256": "0372f7fb61506015d2e16e01e1e2c74a4e3d946e043447e0c4f09106ac2ba4a2",
+      "text_bytes": 639931,
+      "text_sha256": "3b2494cd4f3ddb83b478e9de97801b32e60a59a9df5094b9725ae65621b97941"
+    }
+  ],
+  "scope": "Pinned retained v5 raw evidence; zero native execution",
+  "sha256": "ed99ade3e27854cf6c65b892a79282707a93e9c50dad138faeeb4f7563447f26"
+}

@@ -1,0 +1,31 @@
+{
+  "branch": "stage12-local-recovery-v6-transfer-20261016t023449z-986a6d",
+  "bytes": 724494,
+  "file": "raw-evidence-007.zip",
+  "format": "microduck-return-ascii-parts-v2",
+  "part_bytes_max": 524288,
+  "parts": [
+    {
+      "bytes": 524288,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-007.zip.part000.base64.txt",
+      "index": 0,
+      "offset": 0,
+      "sha256": "d32431cddfc69d05f927af4ac854d7de89c6055ac2546bd09c3d62c66fc73f00",
+      "text_bytes": 708251,
+      "text_sha256": "2224b222b1d2dcedbc4e85c59e3cd8bd4e8232b1277c1df24d785b8718939a8b"
+    },
+    {
+      "bytes": 200206,
+      "encoding": "base64-ascii-lines",
+      "file": "raw-evidence-007.zip.part001.base64.txt",
+      "index": 1,
+      "offset": 524288,
+      "sha256": "793947e2640d7362b448d389b7541bb1859b2e8f22fb0ad19428d10f99e40bf8",
+      "text_bytes": 270457,
+      "text_sha256": "4c7f30b0a9645db1c78c5ede6853653041caa9d22e1deb3863d568b8c2594432"
+    }
+  ],
+  "scope": "Pinned retained v5 raw evidence; zero native execution",
+  "sha256": "53a0585c2006295ac4e87f38f8d140054673a1954885e6ff7cf9f9c8bec3706a"
+}
