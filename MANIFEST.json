@@ -1,0 +1,24 @@
+{
+  "archive_bytes": 863714,
+  "archive_limit_bytes": 51380224,
+  "archive_sha256": "bb346ae69c763f887a80526dd0fb2b99eb927862a7d05caee82de265b036cbcd",
+  "format": "stage12-full-path-segment-volume-v1",
+  "number": 47,
+  "parts": [
+    {
+      "bytes": 524289,
+      "name": "part-0000.b64",
+      "sha256": "600485d3d1475addf0122e820e71b2af919fc098e263c43c61bc3a3d8f13b6ff"
+    },
+    {
+      "bytes": 524289,
+      "name": "part-0001.b64",
+      "sha256": "d299aab4f0c9f54e46b89f04bc4d6895ecaf3d939eada9fbe2d0e557c4cf7538"
+    },
+    {
+      "bytes": 103045,
+      "name": "part-0002.b64",
+      "sha256": "106f2906e6a9cfea89154cc87dc480d921b46ff26724c484da818fa709e187a3"
+    }
+  ]
+}
