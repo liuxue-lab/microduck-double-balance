@@ -1,0 +1,1499 @@
+{
+  "archive_limit_bytes": 51380224,
+  "archives": [
+    {
+      "archive_bytes": 10636840,
+      "archive_sha256": "bcea50228a2499c590fb48801d01860441b53cec9bdfadb1b304361dbd414a93",
+      "members": [
+        "evidence/child-launch.json",
+        "evidence/child.json",
+        "evidence/console.log",
+        "evidence/native-bootstrap/bootstrap-report.json",
+        "evidence/native-bootstrap/runtime-paths.json",
+        "evidence/native/accounting-review.json",
+        "evidence/native/configuration-preflight.json",
+        "evidence/native/contact-sample-000.json",
+        "evidence/native/contact-sample-000.npz",
+        "evidence/native/contact-sample-001.json",
+        "evidence/native/contact-sample-001.npz",
+        "evidence/native/contact-sample-002.json",
+        "evidence/native/contact-sample-002.npz",
+        "evidence/native/contact-sample-003.json",
+        "evidence/native/contact-sample-003.npz",
+        "evidence/native/counter-checkpoint.json",
+        "evidence/native/geometry-witness.jsonl.gz",
+        "evidence/native/ivp-result.json",
+        "evidence/native/kinematic-model.npz",
+        "evidence/native/kinematic-trials.json",
+        "evidence/native/live-contact-graph.json",
+        "evidence/native/material.json",
+        "evidence/native/material.npz",
+        "evidence/native/model-array-hashes.json",
+        "evidence/native/model-reconstruction.json",
+        "evidence/native/native-ledger.jsonl",
+        "evidence/native/native-report.json",
+        "evidence/native/operation-profile.json",
+        "evidence/native/owner-roster.json",
+        "evidence/native/progress.json",
+        "evidence/native/raw/evidence-inventory.json",
+        "evidence/native/raw/record-00001-data.npz",
+        "evidence/native/raw/record-00001-owners.npz",
+        "evidence/native/raw/record-00001-snapshot.json",
+        "evidence/native/raw/record-00001.json",
+        "evidence/native/raw/record-00002.json",
+        "evidence/native/raw/record-00035-data.npz",
+        "evidence/native/raw/record-00035-owners.npz",
+        "evidence/native/raw/record-00035-snapshot.json",
+        "evidence/native/raw/record-00035.json",
+        "evidence/native/raw/record-00036-data.npz",
+        "evidence/native/raw/record-00036-owners.npz",
+        "evidence/native/raw/record-00036-snapshot.json",
+        "evidence/native/raw/record-00036.json",
+        "evidence/native/raw/record-00037-data.npz",
+        "evidence/native/raw/record-00037-owners.npz",
+        "evidence/native/raw/record-00037-snapshot.json",
+        "evidence/native/raw/record-00037.json",
+        "evidence/native/raw/record-00038.json",
+        "evidence/native/raw/record-00103-data.npz",
+        "evidence/native/raw/record-00103-owners.npz",
+        "evidence/native/raw/record-00103-snapshot.json",
+        "evidence/native/raw/record-00103.json",
+        "evidence/native/raw/record-00104-data.npz",
+        "evidence/native/raw/record-00104-owners.npz",
+        "evidence/native/raw/record-00104-snapshot.json",
+        "evidence/native/raw/record-00104.json",
+        "evidence/native/raw/record-00105.json",
+        "evidence/native/raw/record-00106-data.npz",
+        "evidence/native/raw/record-00106-owners.npz",
+        "evidence/native/raw/record-00106-snapshot.json",
+        "evidence/native/raw/record-00106.json",
+        "evidence/native/raw/record-00107.json",
+        "evidence/native/raw/record-00236-data.npz",
+        "evidence/native/raw/record-00236-owners.npz",
+        "evidence/native/raw/record-00236-snapshot.json",
+        "evidence/native/raw/record-00236.json",
+        "evidence/native/raw/record-00237-data.npz",
+        "evidence/native/raw/record-00237-owners.npz",
+        "evidence/native/raw/record-00237-snapshot.json",
+        "evidence/native/raw/record-00237.json",
+        "evidence/native/raw/record-00238.json",
+        "evidence/native/raw/record-00239-data.npz",
+        "evidence/native/raw/record-00239-owners.npz",
+        "evidence/native/raw/record-00239-snapshot.json",
+        "evidence/native/raw/record-00239.json",
+        "evidence/native/raw/record-00240.json",
+        "evidence/native/raw/record-00369-data.npz",
+        "evidence/native/raw/record-00369-owners.npz",
+        "evidence/native/raw/record-00369-snapshot.json",
+        "evidence/native/raw/record-00369.json",
+        "evidence/native/raw/record-00370-data.npz",
+        "evidence/native/raw/record-00370-owners.npz",
+        "evidence/native/raw/record-00370-snapshot.json",
+        "evidence/native/raw/record-00370.json",
+        "evidence/native/raw/record-00371.json",
+        "evidence/native/raw/record-00372.json",
+        "evidence/native/raw/record-00373-data.npz",
+        "evidence/native/raw/record-00373-owners.npz",
+        "evidence/native/raw/record-00373-snapshot.json",
+        "evidence/native/raw/record-00373.json",
+        "evidence/native/resource-lifetime.json",
+        "evidence/native/restoration-scope.json",
+        "evidence/native/restored-model-fields.json",
+        "evidence/native/restored-model-fields.npz",
+        "evidence/native/rk-stages.jsonl.gz",
+        "evidence/native/rk-stream-index.json",
+        "evidence/native/solver-order/sample-000.json",
+        "evidence/native/solver-order/sample-000.npz",
+        "evidence/native/source-pins-after.json",
+        "evidence/native/source-pins-before.json",
+        "evidence/native/started.json",
+        "evidence/prepared.json",
+        "evidence/result.json",
+        "evidence/started.json",
+        "evidence/evidence-index.json",
+        "diagnostic-package/CURRENT-STATE.json",
+        "diagnostic-package/LICENSE-mujoco-warp.txt",
+        "diagnostic-package/LICENSE-warp.txt",
+        "diagnostic-package/MANIFEST.json",
+        "diagnostic-package/README.txt",
+        "diagnostic-package/candidate-pins.json",
+        "diagnostic-package/check_offline.py",
+        "diagnostic-package/decode_git_return.py",
+        "diagnostic-package/docs/handoffs/microduck-cloud-gpu-and-transfer-protocol.md",
+        "diagnostic-package/docs/handoffs/microduck-local-ssh-push-protocol.md",
+        "diagnostic-package/dynamic_accounting.py",
+        "diagnostic-package/dynamic_boundary.py",
+        "diagnostic-package/dynamic_driver.py",
+        "diagnostic-package/dynamic_evidence.py",
+        "diagnostic-package/dynamic_graph.py",
+        "diagnostic-package/dynamic_worker.py",
+        "diagnostic-package/frozen-inputs-manifest.json",
+        "diagnostic-package/frozen_inputs.py",
+        "diagnostic-package/geometry-contract.json",
+        "diagnostic-package/history/dynamic-v1-independent-review.json",
+        "diagnostic-package/history/dynamic-v1-return-manifest.json",
+        "diagnostic-package/history/dynamic-v1-started.json",
+        "diagnostic-package/kernel-provenance.json",
+        "diagnostic-package/kernel_layout.py",
+        "diagnostic-package/kinematic_precision.py",
+        "diagnostic-package/local.py",
+        "diagnostic-package/offline_kinematics.py",
+        "diagnostic-package/operation_contract.py",
+        "diagnostic-package/origin/CURRENT-STATE.json",
+        "diagnostic-package/origin/complete-handoff.txt",
+        "diagnostic-package/origin/contact-git-MANIFEST.json",
+        "diagnostic-package/origin/macro-68/macro-failure.json",
+        "diagnostic-package/origin/macro-68/owner-inventory-failure.json",
+        "diagnostic-package/origin/macro-68/owner-roster.json",
+        "diagnostic-package/origin/macro-68/partial-evidence.json",
+        "diagnostic-package/origin/macro-68/raw/evidence-inventory.json",
+        "diagnostic-package/origin/macro-68/raw/inner-scope.json",
+        "diagnostic-package/origin/macro-68/raw/microsteps.npz",
+        "diagnostic-package/origin/macro-68/raw/record-00001-data.npz",
+        "diagnostic-package/origin/macro-68/raw/record-00001-owners.npz",
+        "diagnostic-package/origin/macro-68/raw/record-00001-snapshot.json",
+        "diagnostic-package/origin/macro-68/raw/record-00001.json",
+        "diagnostic-package/origin/macro-68/raw/record-00002.json",
+        "diagnostic-package/origin/macro-68/raw/record-00035.json",
+        "diagnostic-package/origin/macro-68/raw/record-00036.json",
+        "diagnostic-package/origin/macro-68/raw/record-00037.json",
+        "diagnostic-package/origin/macro-68/raw/record-00038.json",
+        "diagnostic-package/origin/macro-68/raw/record-00103.json",
+        "diagnostic-package/origin/macro-68/raw/record-00104.json",
+        "diagnostic-package/origin/macro-68/raw/record-00105.json",
+        "diagnostic-package/origin/macro-68/raw/record-00106.json",
+        "diagnostic-package/origin/macro-68/raw/record-00107.json",
+        "diagnostic-package/origin/macro-68/raw/record-00236.json",
+        "diagnostic-package/origin/macro-68/raw/record-00237.json",
+        "diagnostic-package/origin/macro-68/raw/record-00238.json",
+        "diagnostic-package/origin/macro-68/raw/record-00239.json",
+        "diagnostic-package/origin/macro-68/raw/record-00240.json",
+        "diagnostic-package/origin/macro-68/raw/record-00497.json",
+        "diagnostic-package/origin/macro-68/raw/record-00498.json",
+        "diagnostic-package/origin/macro-68/raw/record-00499.json",
+        "diagnostic-package/origin/macro-68/raw/record-00500.json",
+        "diagnostic-package/origin/macro-68/raw/record-00501.json",
+        "diagnostic-package/origin/macro-68/raw/record-01014.json",
+        "diagnostic-package/origin/macro-68/raw/record-01015.json",
+        "diagnostic-package/origin/macro-68/raw/record-01016.json",
+        "diagnostic-package/origin/macro-68/raw/record-01017.json",
+        "diagnostic-package/origin/review.json",
+        "diagnostic-package/origin/support-provenance.json",
+        "diagnostic-package/plan.json",
+        "diagnostic-package/precise_contact_kernel.py",
+        "diagnostic-package/precise_pose_kernel.py",
+        "diagnostic-package/preflight_runtime.py",
+        "diagnostic-package/prepare.py",
+        "diagnostic-package/prepare_git_return.py",
+        "diagnostic-package/previous-model-array-hashes.json",
+        "diagnostic-package/reconstruct_kinematics.py",
+        "diagnostic-package/reconstruct_model.py",
+        "diagnostic-package/review_kinematics.py",
+        "diagnostic-package/review_return.py",
+        "diagnostic-package/run_dynamic.py",
+        "diagnostic-package/source-reference/bam-mjlab.py",
+        "diagnostic-package/source-reference/bam-xl330-m6.json",
+        "diagnostic-package/source-reference/compiled-geom-pose.npz",
+        "diagnostic-package/source-reference/head-geometry.npz",
+        "diagnostic-package/source-reference/kinematic-source-provenance.json",
+        "diagnostic-package/source-reference/kinematics-reference.npz",
+        "diagnostic-package/source-reference/mujoco-warp-math.py",
+        "diagnostic-package/source-reference/mujoco-warp-smooth.py",
+        "diagnostic-package/source-reference/previous-poses-provenance.json",
+        "diagnostic-package/source-reference/previous-poses.npz",
+        "diagnostic-package/source-reference/reconstructed-model-fields.npz",
+        "diagnostic-package/static_common.py",
+        "diagnostic-package/test_offline.py",
+        "diagnostic-package/validation/cap-closure.json",
+        "diagnostic-package/validation/kinematic-model-reconstruction.json",
+        "diagnostic-package/validation/offline-tests.txt",
+        "diagnostic-package/validation/prior-trajectory-kinematics.json"
+      ],
+      "name": "return-000.zip",
+      "parts": [
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0000.b64",
+          "sha256": "26a86903f9a984f9e0b192bc1736416fbcab0ff2a326eda259f489a1e6e9048c"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0001.b64",
+          "sha256": "69b4f36447aebcf69aeb39164e7bbc58b5f1c7142dbb03d99bee19bbe93210b2"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0002.b64",
+          "sha256": "dbae5b38c961bd433af808cbd146ad0b9acc76b7a82ebc0aa7ccfbe35aa2b4b4"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0003.b64",
+          "sha256": "9eb98e90bd440bf1c8f488b7363b72e37f579e54e6deae22269bc9ad85bce891"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0004.b64",
+          "sha256": "9bd48b74ab0410b80fe5692220c60e2187e67368a099f7914b4ffaf084d26d1f"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0005.b64",
+          "sha256": "da9e2759b0f10daaa302ec3d70746fc7c7edbc2f62c4416a66eddfb5b28bd9a6"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0006.b64",
+          "sha256": "e38365d1d6f6d1d73443d7aa5041c30b323cac07f80d6bf17b588dec58368917"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0007.b64",
+          "sha256": "a4f306a137045f0b579379a3fd5a9a6434a4515aa967cc26d5b15dfb208a4dcc"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0008.b64",
+          "sha256": "49f6958654d7edb7130e2c74dedbbeac51cd5acc43368a71dd167b1765bbdb5b"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0009.b64",
+          "sha256": "987e06b0bd0949d36d56605f44367f309f5532d5fa84f3ce0cc8177db8343bf5"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0010.b64",
+          "sha256": "6cf13546814d189bb639d4c1647d47edbc54756c93396a83100b474ffcea0da6"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0011.b64",
+          "sha256": "e6ddff9369b2bed9ce4cc60dafa7c8a2d64de940f059148a532939c694d8b3c4"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0012.b64",
+          "sha256": "98b573e5d083ba9ad95ff054e1d1c389d9d393d84cc9a51f6132cfdb2475aa89"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0013.b64",
+          "sha256": "5d3fc99594c1751df2e7f67b170b5949a5e0a0e247b17bccae830989149c6b20"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0014.b64",
+          "sha256": "45fc6508571154406e8908ad27b815c3ca07ca6c22cad8af01ccf1e6f10ecf5e"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0015.b64",
+          "sha256": "ccd6a791971d1c98ef2acd4516b009420213dec31302fedb9462cb4d9f5614a8"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0016.b64",
+          "sha256": "d2eb836c10daac99a5af10f8b18d6150adb7d1ddc1f8a145297245e01e18b50a"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0017.b64",
+          "sha256": "7ea200bea019018b4435b2104b187f6e116f0e852b23e12977c2199bbb76a58b"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0018.b64",
+          "sha256": "2279d5c48f39cc8f30061901e454e0fd0f94213af51d714d30696663cf35749a"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0019.b64",
+          "sha256": "943cf402c534b09537cd6c3e84d743685b22ab7cc94a6a624759691c59abf0cc"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0020.b64",
+          "sha256": "e713875b80152d4747a158b29a2d0f6d80237700ffeb07fb1eee2559a03597b5"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0021.b64",
+          "sha256": "fd3c3e1417adb0528a492e10b8b0d8bc7160c256bb705a8c0f9a9158843d19fe"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0022.b64",
+          "sha256": "be5f5f6225cd0ca3e7ad9dc13c467a24c0736bcd1d6870b0a4b709d8fa7de79f"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0023.b64",
+          "sha256": "dbf57a7e16fe9773b51188c00163855d51526bbb93614b1ee7cc471ddcf8ee84"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0024.b64",
+          "sha256": "e1ba60daadc4f4d66dcda165574e4b4dbd609d9fb037aff0f35ac5091b1d08b2"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0025.b64",
+          "sha256": "9e9a68832feb770ded18522aa0cbef56f8857d35462f837a1a6eee332e16fee7"
+        },
+        {
+          "bytes": 524289,
+          "name": "archive-000.part-0026.b64",
+          "sha256": "7304584db44b81c2148e84202c00b1a2da1006afd6d5d2d3cd1ab8f4740bf788"
+        },
+        {
+          "bytes": 26681,
+          "name": "archive-000.part-0027.b64",
+          "sha256": "c65c425f18384a5414935fd53e1fd4bd27b5cd36f98a6dcf5193da1843e71572"
+        }
+      ]
+    }
+  ],
+  "branch": "stage12-dynamic-ivp-v2-return-20261018t045031z-f78c68a928",
+  "diagnostic_package_omitted_files": {
+    "frozen-inputs.zip": {
+      "reason": "Frozen payload already delivered; full pin manifest included",
+      "sha256": "24175c55097179d63491e59f56c1a859d29017a3d5e344ca95324afa6532033f"
+    }
+  },
+  "evidence_index_sha256": "f78c68a9283941b1463ae512a4c314683947f313efb178627299d3e096fc8e2b",
+  "format": "stage12-dynamic-ivp-git-return-v1",
+  "latest_verified_commit": "dc20e0586f42ecdc0a5a6256db505982eb5c43f6",
+  "old_branch_replaced": false,
+  "original_evidence_unchanged": true,
+  "result": {
+    "PPO": 0,
+    "automatic_PR": false,
+    "automatic_merge": false,
+    "automatic_power_actions": 0,
+    "automatic_push": false,
+    "canonical_after_interval": {
+      "attempted_lower": 735353,
+      "attempted_upper": 735353,
+      "completed_lower": 735352,
+      "completed_upper": 735352
+    },
+    "canonical_before": {
+      "attempted": 735001,
+      "completed": 735000
+    },
+    "cloud_training": 0,
+    "counts": {
+      "BVH_refit_attempted": 6,
+      "BVH_refit_completed": 6,
+      "CPU_forward_attempted": 3,
+      "CPU_forward_completed": 3,
+      "CPU_kinematics_attempted": 1,
+      "CPU_kinematics_completed": 1,
+      "ContactGraph_allocation_attempted": 18,
+      "ContactGraph_allocation_completed": 18,
+      "ContactGraph_capture_begin_attempted": 1,
+      "ContactGraph_capture_begin_completed": 1,
+      "ContactGraph_capture_end_attempted": 1,
+      "ContactGraph_capture_end_completed": 1,
+      "ContactGraph_cleanup_sync_attempted": 1,
+      "ContactGraph_cleanup_sync_completed": 1,
+      "ContactGraph_copy_api_attempted": 16,
+      "ContactGraph_copy_api_completed": 16,
+      "ContactGraph_exec_destroy_attempted": 1,
+      "ContactGraph_exec_destroy_completed": 1,
+      "ContactGraph_graph_destroy_attempted": 1,
+      "ContactGraph_graph_destroy_completed": 1,
+      "ContactGraph_kernel_api_attempted": 33,
+      "ContactGraph_kernel_api_completed": 33,
+      "ContactGraph_launch_attempted": 1413,
+      "ContactGraph_launch_completed": 1413,
+      "ContactGraph_module_load_attempted": 1,
+      "ContactGraph_module_load_completed": 1,
+      "Contact_order_apply_attempted": 1413,
+      "Contact_order_apply_completed": 1413,
+      "Cost_override_copy_attempted": 3351,
+      "Cost_override_copy_completed": 3351,
+      "Cost_reduce_kernel_attempted": 3351,
+      "Cost_reduce_kernel_completed": 3351,
+      "Cost_rows_kernel_attempted": 3351,
+      "Cost_rows_kernel_completed": 3351,
+      "Data_boundary_restore_attempted": 2,
+      "Data_boundary_restore_completed": 2,
+      "GPU_forward_attempted": 1413,
+      "GPU_forward_completed": 1413,
+      "GPU_solver_attempted": 1413,
+      "GPU_solver_completed": 1413,
+      "Kinematic_allocation_attempted": 2,
+      "Kinematic_allocation_completed": 2,
+      "Kinematic_model_capture_attempted": 1,
+      "Kinematic_model_capture_completed": 1,
+      "Kinematic_module_load_attempted": 1,
+      "Kinematic_module_load_completed": 1,
+      "Kinematic_pose_compute_attempted": 1413,
+      "Kinematic_pose_compute_completed": 1413,
+      "Kinematic_pose_upload_attempted": 1413,
+      "Kinematic_pose_upload_completed": 1413,
+      "Model_boundary_restore_attempted": 1,
+      "Model_boundary_restore_completed": 1,
+      "Model_expansion_attempted": 1,
+      "Model_expansion_completed": 1,
+      "Model_material_setup_attempted": 1,
+      "Model_material_setup_completed": 1,
+      "Norm_kernel_attempted": 5289,
+      "Norm_kernel_completed": 5289,
+      "PPO": 0,
+      "Precise_allocation_attempted": 4,
+      "Precise_allocation_completed": 4,
+      "Precise_contact_kernel_attempted": 1413,
+      "Precise_contact_kernel_completed": 1413,
+      "Precise_geometry_kernel_attempted": 1413,
+      "Precise_geometry_kernel_completed": 1413,
+      "Precise_module_load_attempted": 1,
+      "Precise_module_load_completed": 1,
+      "RK4_integrator_attempted": 352,
+      "RK4_integrator_completed": 352,
+      "RNG_bank_initialize_attempted": 1,
+      "RNG_bank_initialize_completed": 1,
+      "Reduction_allocation_attempted": 2,
+      "Reduction_allocation_completed": 2,
+      "Reduction_module_load_attempted": 1,
+      "Reduction_module_load_completed": 1,
+      "Rigid_metadata_kernel_attempted": 1413,
+      "Rigid_metadata_kernel_completed": 1413,
+      "Rigid_module_load_attempted": 1,
+      "Rigid_module_load_completed": 1,
+      "Scene_initialize_attempted": 1,
+      "Scene_initialize_completed": 1,
+      "Sensor_context_set_attempted": 1,
+      "Sensor_context_set_completed": 1,
+      "SolverContext_create_attempted": 1413,
+      "SolverContext_create_completed": 1413,
+      "SolverOrder_kernel_attempted": 1938,
+      "SolverOrder_kernel_completed": 1938,
+      "SolverOrder_module_load_attempted": 1,
+      "SolverOrder_module_load_completed": 1,
+      "Solver_linesearch_attempted": 1938,
+      "Solver_linesearch_completed": 1938,
+      "Solver_solver_iteration_attempted": 1938,
+      "Solver_solver_iteration_completed": 1938,
+      "Solver_update_constraint_attempted": 3351,
+      "Solver_update_constraint_completed": 3351,
+      "Solver_update_gradient_attempted": 1413,
+      "Solver_update_gradient_completed": 1413,
+      "Solver_update_gradient_incremental_attempted": 1938,
+      "Solver_update_gradient_incremental_completed": 1938,
+      "Solverinit_context_attempted": 1413,
+      "Solverinit_context_completed": 1413,
+      "cloud_training": 0,
+      "context_create_attempted": 2,
+      "context_create_completed": 2,
+      "endpoint_sensor_read_attempted": 6,
+      "endpoint_sensor_read_completed": 6,
+      "full_RL_environment_attempted": 1,
+      "full_RL_environment_completed": 1,
+      "full_RL_environment_constructed": 1,
+      "graph_setup_suppressed": 3,
+      "integrations_attempted": 352,
+      "integrations_completed": 352,
+      "model_option_write_attempted": 8,
+      "model_option_write_completed": 8,
+      "position_write_attempted": 352,
+      "position_write_completed": 352,
+      "private_clock_write_attempted": 4,
+      "private_clock_write_completed": 4,
+      "public_clock_write_attempted": 1,
+      "public_clock_write_completed": 1,
+      "ray_batch_attempted": 6,
+      "ray_batch_completed": 6,
+      "sense_attempted": 6,
+      "sense_completed": 6,
+      "state_restore_attempted": 3,
+      "state_restore_completed": 3,
+      "state_snapshot_attempted": 1,
+      "state_snapshot_completed": 1
+    },
+    "counts_final": true,
+    "dynamic_IVP_independent_review_pending": true,
+    "error": null,
+    "forced_timeout": false,
+    "full_dynamic_rollout_validated": false,
+    "ivp_result": {
+      "accepted_integrals": [
+        {
+          "pairs": {
+            "left_foot_floor": {
+              "loaded_time_s": 0.0,
+              "normal_impulse_Ns": 0.0,
+              "peak_overlap_m": 0.0
+            },
+            "lower_floor": {
+              "loaded_time_s": 0.0020000000949949026,
+              "normal_impulse_Ns": 0.026970210046955052,
+              "peak_overlap_m": 1.7754733562469482e-05
+            },
+            "lower_left_foot": {
+              "loaded_time_s": 0.0020000000949949026,
+              "normal_impulse_Ns": 0.007230558274011241,
+              "peak_overlap_m": 2.2351741790771484e-05
+            },
+            "lower_right_foot": {
+              "loaded_time_s": 0.0020000000949949026,
+              "normal_impulse_Ns": 0.007268269192829451,
+              "peak_overlap_m": 2.2463500499725342e-05
+            },
+            "right_foot_floor": {
+              "loaded_time_s": 0.0,
+              "normal_impulse_Ns": 0.0,
+              "peak_overlap_m": 0.0
+            },
+            "upper_floor": {
+              "loaded_time_s": 0.0,
+              "normal_impulse_Ns": 0.0,
+              "peak_overlap_m": 0.0
+            },
+            "upper_head": {
+              "loaded_time_s": 0.0018750000890577212,
+              "normal_impulse_Ns": 0.0001769567997872021,
+              "peak_overlap_m": 8.381425686820876e-07
+            }
+          },
+          "quadrature_duration_s": 0.0020000000949949026,
+          "stages": 512
+        }
+      ],
+      "accepted_resolution": 128,
+      "accepted_stage_sha256": "698ecfd211a54aefde33d5b885800b1ab92916c8ab234e3f2f0dda6e76a38c76",
+      "actual_integrations": 352,
+      "actual_native_evidence_required": true,
+      "actual_trial_count": 4,
+      "committed_endpoint_sha256": "ec6bf4d7c30304f9b18e1c4605d950fb6d46f05b853dbd8bd579ce8b85a6f048",
+      "decision": {
+        "accepted": true,
+        "action": "commit_whole_cohort",
+        "rejected_worlds": [],
+        "row_splicing_permitted": false,
+        "simulator_publication_implemented": false,
+        "worlds": [
+          {
+            "accepted": true,
+            "floor_only_rejection": false,
+            "numerical_accepted": true,
+            "original": {
+              "accepted": true,
+              "event_agreement": {
+                "checks": [
+                  {
+                    "coarse_events": 2,
+                    "fine_events": 2,
+                    "limit_s": 6.25e-05,
+                    "max_midpoint_difference_s": 7.812500000000007e-06,
+                    "ordered_directions_equal": true,
+                    "pair": "upper_head",
+                    "passed": true
+                  },
+                  {
+                    "coarse_events": 0,
+                    "fine_events": 0,
+                    "limit_s": 6.25e-05,
+                    "max_midpoint_difference_s": 0.0,
+                    "ordered_directions_equal": true,
+                    "pair": "lower_floor",
+                    "passed": true
+                  },
+                  {
+                    "coarse_events": 0,
+                    "fine_events": 0,
+                    "limit_s": 6.25e-05,
+                    "max_midpoint_difference_s": 0.0,
+                    "ordered_directions_equal": true,
+                    "pair": "lower_left_foot",
+                    "passed": true
+                  },
+                  {
+                    "coarse_events": 0,
+                    "fine_events": 0,
+                    "limit_s": 6.25e-05,
+                    "max_midpoint_difference_s": 0.0,
+                    "ordered_directions_equal": true,
+                    "pair": "lower_right_foot",
+                    "passed": true
+                  },
+                  {
+                    "coarse_events": 0,
+                    "fine_events": 0,
+                    "limit_s": 6.25e-05,
+                    "max_midpoint_difference_s": 0.0,
+                    "ordered_directions_equal": true,
+                    "pair": "upper_floor",
+                    "passed": true
+                  },
+                  {
+                    "coarse_events": 0,
+                    "fine_events": 0,
+                    "limit_s": 6.25e-05,
+                    "max_midpoint_difference_s": 0.0,
+                    "ordered_directions_equal": true,
+                    "pair": "left_foot_floor",
+                    "passed": true
+                  },
+                  {
+                    "coarse_events": 0,
+                    "fine_events": 0,
+                    "limit_s": 6.25e-05,
+                    "max_midpoint_difference_s": 0.0,
+                    "ordered_directions_equal": true,
+                    "pair": "right_foot_floor",
+                    "passed": true
+                  }
+                ],
+                "passed": true
+              },
+              "initial_and_final_occupancy_equal": true,
+              "max_bracket_width_s": 1.5625e-05,
+              "reasons": [],
+              "state_contact_comparison": {
+                "checks": [
+                  {
+                    "component": "lower",
+                    "limit": 0.0001,
+                    "metric": "free_translation_m",
+                    "passed": true,
+                    "tick": 1,
+                    "value": 1.1461437653259138e-10
+                  },
+                  {
+                    "component": "upper",
+                    "limit": 0.001,
+                    "metric": "free_rotation_rad",
+                    "passed": true,
+                    "tick": 1,
+                    "value": 5.985871836072256e-08
+                  },
+                  {
+                    "component": "qpos:8",
+                    "limit": 0.001,
+                    "metric": "hinge_position_rad",
+                    "passed": true,
+                    "tick": 1,
+                    "value": 7.450580596923828e-09
+                  },
+                  {
+                    "component": "upper",
+                    "limit": 0.005,
+                    "metric": "free_linear_velocity_m_s",
+                    "passed": true,
+                    "tick": 1,
+                    "value": 7.91584979804321e-07
+                  },
+                  {
+                    "component": "upper",
+                    "limit": 0.05,
+                    "metric": "angular_velocity_rad_s",
+                    "passed": true,
+                    "tick": 1,
+                    "value": 2.2296612692292437e-05
+                  },
+                  {
+                    "coarse": 8.381425686820876e-07,
+                    "fine": 8.381425686820876e-07,
+                    "limit": 1e-05,
+                    "metric": "peak_overlap_m",
+                    "pair": "upper_head",
+                    "passed": true,
+                    "value": 0.0
+                  },
+                  {
+                    "coarse": 0.00017792338284307674,
+                    "fine": 0.0001769567997872021,
+                    "limit": 0.00010176956799787202,
+                    "metric": "normal_impulse_Ns",
+                    "pair": "upper_head",
+                    "passed": true,
+                    "value": 9.665830558746355e-07
+                  },
+                  {
+                    "coarse": 0.0018750000890577212,
+                    "fine": 0.0018750000890577212,
+                    "limit": 0.001,
+                    "metric": "loaded_time_s",
+                    "pair": "upper_head",
+                    "passed": true,
+                    "value": 0.0
+                  },
+                  {
+                    "coarse": 1.7754733562469482e-05,
+                    "fine": 1.7754733562469482e-05,
+                    "limit": 1e-05,
+                    "metric": "peak_overlap_m",
+                    "pair": "lower_floor",
+                    "passed": true,
+                    "value": 0.0
+                  },
+                  {
+                    "coarse": 0.02697000887195617,
+                    "fine": 0.026970210046955052,
+                    "limit": 0.0003697021004695505,
+                    "metric": "normal_impulse_Ns",
+                    "pair": "lower_floor",
+                    "passed": true,
+                    "value": 2.0117499888172574e-07
+                  },
+                  {
+                    "coarse": 0.0020000000949949026,
+                    "fine": 0.0020000000949949026,
+                    "limit": 0.001,
+                    "metric": "loaded_time_s",
+                    "pair": "lower_floor",
+                    "passed": true,
+                    "value": 0.0
+                  },
+                  {
+                    "coarse": 2.234429121017456e-05,
+                    "fine": 2.2351741790771484e-05,
+                    "limit": 1e-05,
+                    "metric": "peak_overlap_m",
+                    "pair": "lower_left_foot",
+                    "passed": true,
+                    "value": 7.450580596923828e-09
+                  },
+                  {
+                    "coarse": 0.007227842595539945,
+                    "fine": 0.007230558274011241,
+                    "limit": 0.00017230558274011242,
+                    "metric": "normal_impulse_Ns",
+                    "pair": "lower_left_foot",
+                    "passed": true,
+                    "value": 2.7156784712959944e-06
+                  },
+                  {
+                    "coarse": 0.0020000000949949026,
+                    "fine": 0.0020000000949949026,
+                    "limit": 0.001,
+                    "metric": "loaded_time_s",
+                    "pair": "lower_left_foot",
+                    "passed": true,
+                    "value": 0.0
+                  },
+                  {
+                    "coarse": 2.2463500499725342e-05,
+                    "fine": 2.2463500499725342e-05,
+                    "limit": 1e-05,
+                    "metric": "peak_overlap_m",
+                    "pair": "lower_right_foot",
+                    "passed": true,
+                    "value": 0.0
+                  },
+                  {
+                    "coarse": 0.007265609896629503,
+                    "fine": 0.007268269192829451,
+                    "limit": 0.0001726826919282945,
+                    "metric": "normal_impulse_Ns",
+                    "pair": "lower_right_foot",
+                    "passed": true,
+                    "value": 2.6592961999477235e-06
+                  },
+                  {
+                    "coarse": 0.0020000000949949026,
+                    "fine": 0.0020000000949949026,
+                    "limit": 0.001,
+                    "metric": "loaded_time_s",
+                    "pair": "lower_right_foot",
+                    "passed": true,
+                    "value": 0.0
+                  },
+                  {
+                    "coarse": 0.0,
+                    "fine": 0.0,
+                    "limit": 1e-05,
+                    "metric": "peak_overlap_m",
+                    "pair": "upper_floor",
+                    "passed": true,
+                    "value": 0.0
+                  },
+                  {
+                    "coarse": 0.0,
+                    "fine": 0.0,
+                    "limit": 0.0001,
+                    "metric": "normal_impulse_Ns",
+                    "pair": "upper_floor",
+                    "passed": true,
+                    "value": 0.0
+                  },
+                  {
+                    "coarse": 0.0,
+                    "fine": 0.0,
+                    "limit": 0.001,
+                    "metric": "loaded_time_s",
+                    "pair": "upper_floor",
+                    "passed": true,
+                    "value": 0.0
+                  },
+                  {
+                    "coarse": 0.0,
+                    "fine": 0.0,
+                    "limit": 1e-05,
+                    "metric": "peak_overlap_m",
+                    "pair": "left_foot_floor",
+                    "passed": true,
+                    "value": 0.0
+                  },
+                  {
+                    "coarse": 0.0,
+                    "fine": 0.0,
+                    "limit": 0.0001,
+                    "metric": "normal_impulse_Ns",
+                    "pair": "left_foot_floor",
+                    "passed": true,
+                    "value": 0.0
+                  },
+                  {
+                    "coarse": 0.0,
+                    "fine": 0.0,
+                    "limit": 0.001,
+                    "metric": "loaded_time_s",
+                    "pair": "left_foot_floor",
+                    "passed": true,
+                    "value": 0.0
+                  },
+                  {
+                    "coarse": 0.0,
+                    "fine": 0.0,
+                    "limit": 1e-05,
+                    "metric": "peak_overlap_m",
+                    "pair": "right_foot_floor",
+                    "passed": true,
+                    "value": 0.0
+                  },
+                  {
+                    "coarse": 0.0,
+                    "fine": 0.0,
+                    "limit": 0.0001,
+                    "metric": "normal_impulse_Ns",
+                    "pair": "right_foot_floor",
+                    "passed": true,
+                    "value": 0.0
+                  },
+                  {
+                    "coarse": 0.0,
+                    "fine": 0.0,
+                    "limit": 0.001,
+                    "metric": "loaded_time_s",
+                    "pair": "right_foot_floor",
+                    "passed": true,
+                    "value": 0.0
+                  }
+                ],
+                "compared_endpoints": 1,
+                "failed_metrics": [],
+                "interpretation": "Bounded numerical agreement only; no material calibration or RK order claim",
+                "passed": true
+              },
+              "state_error": {
+                "checks": [
+                  {
+                    "limit": 2.5e-05,
+                    "metric": "free_translation_m",
+                    "passed": true,
+                    "value": 1.1461437354753912e-10
+                  },
+                  {
+                    "limit": 0.00025,
+                    "metric": "free_rotation_rad",
+                    "passed": true,
+                    "value": 5.985871836072256e-08
+                  },
+                  {
+                    "limit": 0.00025,
+                    "metric": "hinge_position_rad",
+                    "passed": true,
+                    "value": 7.450580596923828e-09
+                  },
+                  {
+                    "limit": 0.00125,
+                    "metric": "free_linear_velocity_m_s",
+                    "passed": true,
+                    "value": 7.915849664641428e-07
+                  },
+                  {
+                    "limit": 0.0125,
+                    "metric": "angular_velocity_rad_s",
+                    "passed": true,
+                    "value": 2.229661367891822e-05
+                  }
+                ],
+                "passed": true
+              }
+            },
+            "resolution_floor": 0,
+            "resolution_floor_satisfied": true,
+            "world": 0
+          }
+        ]
+      },
+      "independent_corrected_IVP": true,
+      "mandatory_exact_replay": true,
+      "original_campaign_acceptance_credit": false,
+      "public_ticks": [
+        69
+      ],
+      "publication": [
+        {
+          "half_ulp_bound_s": 7.450580596923828e-09,
+          "nominal_nanoseconds": 138000000,
+          "published_time_s": 0.1379999965429306,
+          "rounding_error_s": -3.4570694085189757e-09,
+          "tick": 69
+        }
+      ],
+      "rejections": [
+        {
+          "accepted": false,
+          "action": "rollback_whole_cohort",
+          "rejected_worlds": [
+            0
+          ],
+          "row_splicing_permitted": false,
+          "simulator_publication_implemented": false,
+          "worlds": [
+            {
+              "accepted": false,
+              "floor_only_rejection": false,
+              "numerical_accepted": false,
+              "original": {
+                "accepted": false,
+                "event_agreement": {
+                  "checks": [
+                    {
+                      "coarse_events": 2,
+                      "fine_events": 2,
+                      "limit_s": 6.25e-05,
+                      "max_midpoint_difference_s": 1.5625000000000014e-05,
+                      "ordered_directions_equal": true,
+                      "pair": "upper_head",
+                      "passed": true
+                    },
+                    {
+                      "coarse_events": 0,
+                      "fine_events": 0,
+                      "limit_s": 6.25e-05,
+                      "max_midpoint_difference_s": 0.0,
+                      "ordered_directions_equal": true,
+                      "pair": "lower_floor",
+                      "passed": true
+                    },
+                    {
+                      "coarse_events": 0,
+                      "fine_events": 0,
+                      "limit_s": 6.25e-05,
+                      "max_midpoint_difference_s": 0.0,
+                      "ordered_directions_equal": true,
+                      "pair": "lower_left_foot",
+                      "passed": true
+                    },
+                    {
+                      "coarse_events": 0,
+                      "fine_events": 0,
+                      "limit_s": 6.25e-05,
+                      "max_midpoint_difference_s": 0.0,
+                      "ordered_directions_equal": true,
+                      "pair": "lower_right_foot",
+                      "passed": true
+                    },
+                    {
+                      "coarse_events": 0,
+                      "fine_events": 0,
+                      "limit_s": 6.25e-05,
+                      "max_midpoint_difference_s": 0.0,
+                      "ordered_directions_equal": true,
+                      "pair": "upper_floor",
+                      "passed": true
+                    },
+                    {
+                      "coarse_events": 0,
+                      "fine_events": 0,
+                      "limit_s": 6.25e-05,
+                      "max_midpoint_difference_s": 0.0,
+                      "ordered_directions_equal": true,
+                      "pair": "left_foot_floor",
+                      "passed": true
+                    },
+                    {
+                      "coarse_events": 0,
+                      "fine_events": 0,
+                      "limit_s": 6.25e-05,
+                      "max_midpoint_difference_s": 0.0,
+                      "ordered_directions_equal": true,
+                      "pair": "right_foot_floor",
+                      "passed": true
+                    }
+                  ],
+                  "passed": true
+                },
+                "initial_and_final_occupancy_equal": true,
+                "max_bracket_width_s": 3.125e-05,
+                "reasons": [
+                  "event_bracket_width"
+                ],
+                "state_contact_comparison": {
+                  "checks": [
+                    {
+                      "component": "robot",
+                      "limit": 0.0001,
+                      "metric": "free_translation_m",
+                      "passed": true,
+                      "tick": 1,
+                      "value": 6.390454353310332e-11
+                    },
+                    {
+                      "component": "upper",
+                      "limit": 0.001,
+                      "metric": "free_rotation_rad",
+                      "passed": true,
+                      "tick": 1,
+                      "value": 1.060987531693673e-07
+                    },
+                    {
+                      "component": "qpos:10",
+                      "limit": 0.001,
+                      "metric": "hinge_position_rad",
+                      "passed": true,
+                      "tick": 1,
+                      "value": 7.450580596923828e-09
+                    },
+                    {
+                      "component": "upper",
+                      "limit": 0.005,
+                      "metric": "free_linear_velocity_m_s",
+                      "passed": true,
+                      "tick": 1,
+                      "value": 4.228921339088623e-06
+                    },
+                    {
+                      "component": "upper",
+                      "limit": 0.05,
+                      "metric": "angular_velocity_rad_s",
+                      "passed": true,
+                      "tick": 1,
+                      "value": 9.46133449543526e-06
+                    },
+                    {
+                      "coarse": 8.381425686820876e-07,
+                      "fine": 8.381425686820876e-07,
+                      "limit": 1e-05,
+                      "metric": "peak_overlap_m",
+                      "pair": "upper_head",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.00017810621042743598,
+                      "fine": 0.00017792338284307674,
+                      "limit": 0.00010177923382843077,
+                      "metric": "normal_impulse_Ns",
+                      "pair": "upper_head",
+                      "passed": true,
+                      "value": 1.8282758435924306e-07
+                    },
+                    {
+                      "coarse": 0.0018750000890577212,
+                      "fine": 0.0018750000890577212,
+                      "limit": 0.001,
+                      "metric": "loaded_time_s",
+                      "pair": "upper_head",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 1.7754733562469482e-05,
+                      "fine": 1.7754733562469482e-05,
+                      "limit": 1e-05,
+                      "metric": "peak_overlap_m",
+                      "pair": "lower_floor",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.026970099396514707,
+                      "fine": 0.02697000887195617,
+                      "limit": 0.0003697000887195617,
+                      "metric": "normal_impulse_Ns",
+                      "pair": "lower_floor",
+                      "passed": true,
+                      "value": 9.052455853669761e-08
+                    },
+                    {
+                      "coarse": 0.0020000000949949026,
+                      "fine": 0.0020000000949949026,
+                      "limit": 0.001,
+                      "metric": "loaded_time_s",
+                      "pair": "lower_floor",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 2.2336840629577637e-05,
+                      "fine": 2.234429121017456e-05,
+                      "limit": 1e-05,
+                      "metric": "peak_overlap_m",
+                      "pair": "lower_left_foot",
+                      "passed": true,
+                      "value": 7.450580596923828e-09
+                    },
+                    {
+                      "coarse": 0.007229309738950289,
+                      "fine": 0.007227842595539945,
+                      "limit": 0.00017227842595539947,
+                      "metric": "normal_impulse_Ns",
+                      "pair": "lower_left_foot",
+                      "passed": true,
+                      "value": 1.4671434103432843e-06
+                    },
+                    {
+                      "coarse": 0.0020000000949949026,
+                      "fine": 0.0020000000949949026,
+                      "limit": 0.001,
+                      "metric": "loaded_time_s",
+                      "pair": "lower_left_foot",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 2.244114875793457e-05,
+                      "fine": 2.2463500499725342e-05,
+                      "limit": 1e-05,
+                      "metric": "peak_overlap_m",
+                      "pair": "lower_right_foot",
+                      "passed": true,
+                      "value": 2.2351741790771484e-08
+                    },
+                    {
+                      "coarse": 0.007267695604810298,
+                      "fine": 0.007265609896629503,
+                      "limit": 0.00017265609896629505,
+                      "metric": "normal_impulse_Ns",
+                      "pair": "lower_right_foot",
+                      "passed": true,
+                      "value": 2.0857081807950165e-06
+                    },
+                    {
+                      "coarse": 0.0020000000949949026,
+                      "fine": 0.0020000000949949026,
+                      "limit": 0.001,
+                      "metric": "loaded_time_s",
+                      "pair": "lower_right_foot",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.0,
+                      "fine": 0.0,
+                      "limit": 1e-05,
+                      "metric": "peak_overlap_m",
+                      "pair": "upper_floor",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.0,
+                      "fine": 0.0,
+                      "limit": 0.0001,
+                      "metric": "normal_impulse_Ns",
+                      "pair": "upper_floor",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.0,
+                      "fine": 0.0,
+                      "limit": 0.001,
+                      "metric": "loaded_time_s",
+                      "pair": "upper_floor",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.0,
+                      "fine": 0.0,
+                      "limit": 1e-05,
+                      "metric": "peak_overlap_m",
+                      "pair": "left_foot_floor",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.0,
+                      "fine": 0.0,
+                      "limit": 0.0001,
+                      "metric": "normal_impulse_Ns",
+                      "pair": "left_foot_floor",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.0,
+                      "fine": 0.0,
+                      "limit": 0.001,
+                      "metric": "loaded_time_s",
+                      "pair": "left_foot_floor",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.0,
+                      "fine": 0.0,
+                      "limit": 1e-05,
+                      "metric": "peak_overlap_m",
+                      "pair": "right_foot_floor",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.0,
+                      "fine": 0.0,
+                      "limit": 0.0001,
+                      "metric": "normal_impulse_Ns",
+                      "pair": "right_foot_floor",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.0,
+                      "fine": 0.0,
+                      "limit": 0.001,
+                      "metric": "loaded_time_s",
+                      "pair": "right_foot_floor",
+                      "passed": true,
+                      "value": 0.0
+                    }
+                  ],
+                  "compared_endpoints": 1,
+                  "failed_metrics": [],
+                  "interpretation": "Bounded numerical agreement only; no material calibration or RK order claim",
+                  "passed": true
+                },
+                "state_error": {
+                  "checks": [
+                    {
+                      "limit": 2.5e-05,
+                      "metric": "free_translation_m",
+                      "passed": true,
+                      "value": 6.390454138083257e-11
+                    },
+                    {
+                      "limit": 0.00025,
+                      "metric": "free_rotation_rad",
+                      "passed": true,
+                      "value": 1.060987531693673e-07
+                    },
+                    {
+                      "limit": 0.00025,
+                      "metric": "hinge_position_rad",
+                      "passed": true,
+                      "value": 7.450580596923828e-09
+                    },
+                    {
+                      "limit": 0.00125,
+                      "metric": "free_linear_velocity_m_s",
+                      "passed": true,
+                      "value": 4.2289211705792695e-06
+                    },
+                    {
+                      "limit": 0.0125,
+                      "metric": "angular_velocity_rad_s",
+                      "passed": true,
+                      "value": 9.461334229854401e-06
+                    }
+                  ],
+                  "passed": true
+                }
+              },
+              "resolution_floor": 0,
+              "resolution_floor_satisfied": true,
+              "world": 0
+            }
+          ]
+        }
+      ],
+      "replayed": true
+    },
+    "ledger": {
+      "attempts": {
+        "BVH_refit": 6,
+        "CPU_forward": 3,
+        "CPU_kinematics": 1,
+        "ContactGraph_allocation": 18,
+        "ContactGraph_capture_begin": 1,
+        "ContactGraph_capture_end": 1,
+        "ContactGraph_cleanup_sync": 1,
+        "ContactGraph_copy_api": 16,
+        "ContactGraph_exec_destroy": 1,
+        "ContactGraph_graph_destroy": 1,
+        "ContactGraph_kernel_api": 33,
+        "ContactGraph_launch": 1413,
+        "ContactGraph_module_load": 1,
+        "Contact_order_apply": 1413,
+        "Cost_override_copy": 3351,
+        "Cost_reduce_kernel": 3351,
+        "Cost_rows_kernel": 3351,
+        "Data_boundary_restore": 2,
+        "GPU_forward": 1413,
+        "GPU_solver": 1413,
+        "Kinematic_allocation": 2,
+        "Kinematic_model_capture": 1,
+        "Kinematic_module_load": 1,
+        "Kinematic_pose_compute": 1413,
+        "Kinematic_pose_upload": 1413,
+        "Model_boundary_restore": 1,
+        "Model_expansion": 1,
+        "Model_material_setup": 1,
+        "Norm_kernel": 5289,
+        "Precise_allocation": 4,
+        "Precise_contact_kernel": 1413,
+        "Precise_geometry_kernel": 1413,
+        "Precise_module_load": 1,
+        "RK4_integrator": 352,
+        "RNG_bank_initialize": 1,
+        "Reduction_allocation": 2,
+        "Reduction_module_load": 1,
+        "Rigid_metadata_kernel": 1413,
+        "Rigid_module_load": 1,
+        "Scene_initialize": 1,
+        "Sensor_context_set": 1,
+        "SolverContext_create": 1413,
+        "SolverOrder_kernel": 1938,
+        "SolverOrder_module_load": 1,
+        "Solver_linesearch": 1938,
+        "Solver_solver_iteration": 1938,
+        "Solver_update_constraint": 3351,
+        "Solver_update_gradient": 1413,
+        "Solver_update_gradient_incremental": 1938,
+        "Solverinit_context": 1413,
+        "context_create": 2,
+        "endpoint_sensor_read": 6,
+        "full_RL_environment": 1,
+        "integrations": 352,
+        "model_option_write": 8,
+        "position_write": 352,
+        "private_clock_write": 4,
+        "public_clock_write": 1,
+        "ray_batch": 6,
+        "sense": 6,
+        "state_restore": 3,
+        "state_snapshot": 1
+      },
+      "completed": {
+        "BVH_refit": 6,
+        "CPU_forward": 3,
+        "CPU_kinematics": 1,
+        "ContactGraph_allocation": 18,
+        "ContactGraph_capture_begin": 1,
+        "ContactGraph_capture_end": 1,
+        "ContactGraph_cleanup_sync": 1,
+        "ContactGraph_copy_api": 16,
+        "ContactGraph_exec_destroy": 1,
+        "ContactGraph_graph_destroy": 1,
+        "ContactGraph_kernel_api": 33,
+        "ContactGraph_launch": 1413,
+        "ContactGraph_module_load": 1,
+        "Contact_order_apply": 1413,
+        "Cost_override_copy": 3351,
+        "Cost_reduce_kernel": 3351,
+        "Cost_rows_kernel": 3351,
+        "Data_boundary_restore": 2,
+        "GPU_forward": 1413,
+        "GPU_solver": 1413,
+        "Kinematic_allocation": 2,
+        "Kinematic_model_capture": 1,
+        "Kinematic_module_load": 1,
+        "Kinematic_pose_compute": 1413,
+        "Kinematic_pose_upload": 1413,
+        "Model_boundary_restore": 1,
+        "Model_expansion": 1,
+        "Model_material_setup": 1,
+        "Norm_kernel": 5289,
+        "Precise_allocation": 4,
+        "Precise_contact_kernel": 1413,
+        "Precise_geometry_kernel": 1413,
+        "Precise_module_load": 1,
+        "RK4_integrator": 352,
+        "RNG_bank_initialize": 1,
+        "Reduction_allocation": 2,
+        "Reduction_module_load": 1,
+        "Rigid_metadata_kernel": 1413,
+        "Rigid_module_load": 1,
+        "Scene_initialize": 1,
+        "Sensor_context_set": 1,
+        "SolverContext_create": 1413,
+        "SolverOrder_kernel": 1938,
+        "SolverOrder_module_load": 1,
+        "Solver_linesearch": 1938,
+        "Solver_solver_iteration": 1938,
+        "Solver_update_constraint": 3351,
+        "Solver_update_gradient": 1413,
+        "Solver_update_gradient_incremental": 1938,
+        "Solverinit_context": 1413,
+        "context_create": 2,
+        "endpoint_sensor_read": 6,
+        "full_RL_environment": 1,
+        "integrations": 352,
+        "model_option_write": 8,
+        "position_write": 352,
+        "private_clock_write": 4,
+        "public_clock_write": 1,
+        "ray_batch": 6,
+        "sense": 6,
+        "state_restore": 3,
+        "state_snapshot": 1
+      },
+      "exact": true,
+      "incomplete_tail": false,
+      "integration_attempted_lower": 352,
+      "integration_attempted_upper": 352,
+      "integration_completed_lower": 352,
+      "integration_completed_upper": 352,
+      "pending": {},
+      "rows": 89200
+    },
+    "native_points_accepted": 2,
+    "native_points_total": 5,
+    "new_window": {
+      "PPO": 0,
+      "cleanup_reserve_seconds": 300,
+      "cloud_training": 0,
+      "deadline_reset": false,
+      "explicit_cli_scope": "LOCAL_RTX5060_DYNAMIC_IVP_V2",
+      "native_stop_utc": 1792305622.0719302,
+      "new_native_seconds": 6900,
+      "new_total_seconds": 7200,
+      "old_campaign_resume": false,
+      "old_windows_reused": false,
+      "original_deadlines": {
+        "native": "2026-10-17T11:23:14+08:00",
+        "total": "2026-10-17T11:53:14+08:00"
+      },
+      "parent_pid": 15182,
+      "plan_sha256": "a3cf04a38a0159d91001055a870e5b4f964b2ed7aa4fccaa2e370e3510777891",
+      "runtime_preflight": {
+        "native_calls": 0,
+        "native_dependencies_imported": false,
+        "source_files": 219,
+        "status": "PINNED_RUNTIME_SOURCE_PREFLIGHT_PASS"
+      },
+      "separately_authorized": true,
+      "started_utc": 1792298722.0719302,
+      "stop_utc": 1792305922.0719302
+    },
+    "no_automatic_retry": true,
+    "old_campaign_resume": false,
+    "original_deadline_reset": false,
+    "original_deadlines": {
+      "native": "2026-10-17T11:23:14+08:00",
+      "total": "2026-10-17T11:53:14+08:00"
+    },
+    "returncode": 0,
+    "status": "DYNAMIC_IVP_COMPLETE_REVIEW_REQUIRED",
+    "training_ready": false
+  },
+  "source_return_commit": "c609aa67f7fb510c7e543239d29659322cf5f6cd"
+}
