@@ -1,0 +1,26 @@
+{
+  "PPO": 0,
+  "checks": {
+    "learner": {
+      "files": 29,
+      "native_imports": 0,
+      "rsl_version": "5.0.1",
+      "status": "LEARNER_SOURCE_PINS_PASS"
+    },
+    "physical": {
+      "native_calls": 0,
+      "native_dependencies_imported": false,
+      "source_files": 219,
+      "status": "PINNED_RUNTIME_SOURCE_PREFLIGHT_PASS"
+    }
+  },
+  "cloud_connections": 0,
+  "cloud_training": 0,
+  "full_episode_and_reset_accepted": false,
+  "native_calls": 0,
+  "new_simulation": 0,
+  "package_manifest_sha256": "4ff32121cb84d23473771e4a14366372003ec1705359dd94a2dfda75189580e5",
+  "source_identity_sha256": "bc9bc7df4a867e302fc2aadb11c871e8f474a45c205c202ad65959636e0a7bfb",
+  "status": "FINITE_TRIAL_LOCAL_PREPARED_CLOUD_OFF",
+  "training_authorized": false
+}
