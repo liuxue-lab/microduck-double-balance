@@ -1,0 +1,1264 @@
+{
+  "archive_limit_bytes": 51380224,
+  "archives": [
+    {
+      "archive_bytes": 17204419,
+      "archive_limit_bytes": 51380224,
+      "archive_sha256": "644890a004ff90dd825f48ddc6d09c3688635a1684126b882a7124d4170fc9c0",
+      "branch": "stage12-cloud-full-path-v1-return-20261018t090134z-559fee327d-vol000",
+      "commit": "e2102f60f21cdea8cdcc34ad02599f3b7d4b7c8a",
+      "directory": "volume-000",
+      "format": "stage12-full-path-segment-volume-v1",
+      "manifest_sha256": "4b2bcde59713a6e7a4d0eee7a1eacfb2c29dec651bf2e422647b68c5f02c3cd1",
+      "number": 0,
+      "parts": [
+        {
+          "bytes": 524289,
+          "name": "part-0000.b64",
+          "sha256": "22fb8af53811672dc29b63cc156b45242fc2773936a929ebaf521a0ad513f9f4"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0001.b64",
+          "sha256": "bee12a8e092d0af6c102cde8c845d1e32c0cf929cdddfa8f752cca38f377ff8b"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0002.b64",
+          "sha256": "d4debbcade91dcfba2bc37e88d449d188b14cef36bc05457b43c547dcbf6ecf7"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0003.b64",
+          "sha256": "1c868e65fffbafd59c98eee3244f59a887d6f00e3aa2b6ad9cca9b380c3e239b"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0004.b64",
+          "sha256": "2dde4d215f403e4e3a70b8aabaac9073f0077c1e99515b95c41f892dd8585362"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0005.b64",
+          "sha256": "11232a9cf64134e4f671bf5621bbbc11658398aea41aaa55cf6388826424cf03"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0006.b64",
+          "sha256": "83fd2cbabd6a62637180b71904f965d296bc9d7bc896a68c4bc9e3a4ce51d366"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0007.b64",
+          "sha256": "45e1a0c192d46ca94d7764763bf563794f1212f6f77c1e0e0326eea753807b64"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0008.b64",
+          "sha256": "b8f7e0941d1e8dac964ee435ed3d7ff579a483af17ad64dc63cb056fd9b11aa9"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0009.b64",
+          "sha256": "19dc6e9e81b4db74a3e13b86c80e65ee17c1547cb28b0499816d16b6bc8a0b55"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0010.b64",
+          "sha256": "d3579fd8dbfd3c62f515ad16c9565b3d385afa8ec430eec8a1e242fc237a67c9"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0011.b64",
+          "sha256": "7c4dc195c88f06a66620a157f872c65296804e999904b48a83b848afbb44afb6"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0012.b64",
+          "sha256": "3ab2014e202fdfe9452f65b92ff537467c184f20031350c871ac238ff62d820d"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0013.b64",
+          "sha256": "bdac3d61fa3ed8ff357e88b1de8a17865367f0816ef236922b87eeab78b42880"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0014.b64",
+          "sha256": "9ad0cbfc8d64fd414e323169befddf7645ad494501efafd89368521a95ad2eb3"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0015.b64",
+          "sha256": "9d6b10ee0fcd95b92b1db4e5f499f6eb26dad9552a6049c53e25852e44d2c7ba"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0016.b64",
+          "sha256": "ce1f383740542c85eb1bae8a72e772b34e34dd268561e17412d923f6ea0a10d8"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0017.b64",
+          "sha256": "b347122a4ef86b53f4bdcb6765f88e3513ac0e9a37c2f7e4dd6161a88a75cf5d"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0018.b64",
+          "sha256": "261fd39110f315e10e2d37ac5d0dc004a0fbbb94a4d13512a2ec17d0509d2d91"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0019.b64",
+          "sha256": "da8b88a85a6ac087ca930c1dd77457c019669f9cbf3fb12ec69288a64aee3738"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0020.b64",
+          "sha256": "93773f574802195f3f988eee9192161465f554033c0b33cd5a6fa2f23db384b5"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0021.b64",
+          "sha256": "71920a15c3bded227097292c3e335c719a77d890c38fd4e1273c28830d2aefe3"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0022.b64",
+          "sha256": "5737b2c9558649bd1b20e6242bc2559a355ec3d7bd7449e0801317ec518327c0"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0023.b64",
+          "sha256": "b987ab31fe92540fdf5d8ffd5f7877f68cedcc68c0fc1ec00a460ddec359a51c"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0024.b64",
+          "sha256": "fcb4f42f0e9281151d44306d457a7b735505a33c9f2b37d32f70174f13c9dd50"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0025.b64",
+          "sha256": "b369af2fa1ac8dec0b6fa1792eb818d006dde70bff9cc156c24b50d6c68e7295"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0026.b64",
+          "sha256": "a8f0b293e49da8d0fc8667eb2fdac1ca349339b2e7fa535c9d7f0744c040da27"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0027.b64",
+          "sha256": "a71585f3f832ab939a813905ecd56ce0ce74a4ee88a4620e3aed43f3fdd6155d"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0028.b64",
+          "sha256": "18e9072067b5d4b5f6ea561ae7ea7e23b8cf49a0ec5df0c4abb3f7fe9e789bc5"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0029.b64",
+          "sha256": "b9385aa387359771c5218efda3ab26e4c7dd35653c0c44fe3deb732115d0f702"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0030.b64",
+          "sha256": "4ba5e3d01920096e1089283a4fc603ba99533a18ec1ab7809ec8dc9ad6d93cf7"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0031.b64",
+          "sha256": "ec83eb3f674177026d05bc0a1d2d3a37be0f87064092aa6df7c63a947ae92b20"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0032.b64",
+          "sha256": "19e4418d60235e4fe9b56039f4a73a874eefe618899b495c98e85011beda9e69"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0033.b64",
+          "sha256": "1649b7d9d06b050f4f96b4e1ffa078755baf4da12b551ec76d5c21a7d28bef6a"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0034.b64",
+          "sha256": "193410a61213616bdb29207b19d2afa9ec824cf047dfd7f4949c19c920931223"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0035.b64",
+          "sha256": "8df6b19e912fe6f6a9adc712371fcfb6439faf7a647a3ca2ae64f37b25473cfd"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0036.b64",
+          "sha256": "71bf78fc0cf3dc32baf89f9120531821eed359a6edea9829904b9566c48b5f9d"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0037.b64",
+          "sha256": "c619390ce6e8106517161f4aa6643d43cda9d847a7bdee4beb6962d9be569ceb"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0038.b64",
+          "sha256": "47beb2ea2215f73fe4dd81fe3f8090ac6698b98c5032686e88405e49eec679a3"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0039.b64",
+          "sha256": "a7bca67d38333309ac54c6a4aa04337456c373710416d728fa384892b12d60d0"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0040.b64",
+          "sha256": "ba4671401ac520d5e596ee8ff4049206ccc5530f9af6c055614a4892ab23f33b"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0041.b64",
+          "sha256": "b370bdddf83efb374856822063e72735a85a8d1d7cf60c877e363ff55f948a84"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0042.b64",
+          "sha256": "6a089acbdb95d133594c76625d996bb0b64e93ed260530ccd8ff39bc1511151a"
+        },
+        {
+          "bytes": 394845,
+          "name": "part-0043.b64",
+          "sha256": "75264c9a3013650d1614803a5c3e7844ab61b4c638932ffe4b3a8031be9b13bb"
+        }
+      ]
+    },
+    {
+      "archive_bytes": 11115824,
+      "archive_limit_bytes": 51380224,
+      "archive_sha256": "f5f44f61ee75c0302bfa0e7e5344f0adbe8b4c0841f90cbf055c5024da616b11",
+      "branch": "stage12-cloud-full-path-v1-return-20261018t090134z-559fee327d-vol001",
+      "commit": "f4be43e52f10d8f8ad10a14e9c6b4ca9ced38b60",
+      "directory": "volume-001",
+      "format": "stage12-full-path-segment-volume-v1",
+      "manifest_sha256": "f95ca69b57598a8585ffa8393b2449d2f634b8708685a37daca8c885889f5cdb",
+      "number": 1,
+      "parts": [
+        {
+          "bytes": 524289,
+          "name": "part-0000.b64",
+          "sha256": "a2637171c16bbd9fb994a368bed76523ea7d7740baf258eb45556bcd596ac032"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0001.b64",
+          "sha256": "feb89c07938ed5a43bc6075a915fa2f01ba9d515bfd1e275bb93ce56db883a04"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0002.b64",
+          "sha256": "373f76eb99c93b7b06d27fb7778e962e307fb37f57d2524d11d36bdea37e2e62"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0003.b64",
+          "sha256": "a9d35881712b73183d5051bfb3d244ab29415247021e7e7d5547f247834842f0"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0004.b64",
+          "sha256": "be4c7a960d990f78e2cfcb42df939c74e15ceb20376877b0b8c328ff6f592cdc"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0005.b64",
+          "sha256": "600d6bd9b502810062e551e2aac3d3a21858bd3ea32809ddad97621889fbb04d"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0006.b64",
+          "sha256": "c6d42b6d5dd9ae3f4eb6bffceaa97229dec47f5d0f588843f5f1ea4e08960c6c"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0007.b64",
+          "sha256": "e2a4b698c949b7f8dd9979b321a051d19602b7ce6ffead6a11ae58ad0c150e65"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0008.b64",
+          "sha256": "ab576bacbc0c1bfde4846ab3d32f308a11d27490eef8e38b0c56d746f92b5709"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0009.b64",
+          "sha256": "f369ae647ef80041e04bce1519453709f3c7ca45f5bc2fb94c2c696ae8d40327"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0010.b64",
+          "sha256": "2fcafa4ef68034467805c8e9f622dfcf8ee715cfde4d315deafd7e910ab1107a"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0011.b64",
+          "sha256": "aeb7d337bca8a84089d6a31b7fdc1c483c17d52589c660efaf35c581d91fbfef"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0012.b64",
+          "sha256": "b150f71bf36f5abdd9647012f98cdf291e4968fe1a55dc83f12839b57bd5ddc7"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0013.b64",
+          "sha256": "7c5d3284065db6de12c6315b5c15e1dce80160fba53650947b61fc0d52f285b9"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0014.b64",
+          "sha256": "2a3e95af2dd6c04808c8349404ac1a66342e6493a9d0805e74dbfb0eb9093912"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0015.b64",
+          "sha256": "6e830e011d6b05de205098173ca50561e4458e18d6e151b08b51cf8cff48a8da"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0016.b64",
+          "sha256": "0539dac66af203e6f77ce9921cf289f22d4510062672235f805638cb53fd6a47"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0017.b64",
+          "sha256": "3981128039a45acc8936cc412e7918a516c218b82b22cd89e4981d81bf49d0a8"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0018.b64",
+          "sha256": "e1746ae53c895e6b5b8cd36ed45f745da6c43e2e42e28339eb8f5d8e2ff4c1e9"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0019.b64",
+          "sha256": "7958052a207686e370cb14877115f06e75d3ee834cc984d239ae0b71e071d9c0"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0020.b64",
+          "sha256": "4b3535a9c4bbeff91c44b370dc99232444b0d9a0785f2ab2e3f4addb01b29549"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0021.b64",
+          "sha256": "71da18eebb2d099ed7617e929eac0d7e67d8311eb16ed3248b94aa67cd6730b5"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0022.b64",
+          "sha256": "c0d5ef9f58be7278ea711eeb8563dea11c0183aa5642c685b5ae20e1e69b3fd9"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0023.b64",
+          "sha256": "b449a6e8e718a175616c829b58d44b310b914a6832c35411398d9471a4f59c96"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0024.b64",
+          "sha256": "7691cdf9940b3f4a701980aeaee99948eb736e5289736dfc9d7fb8bedc5454c9"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0025.b64",
+          "sha256": "4326fe76786e337e7caf29989fca0d619a0cd952781a85508737214117b1f970"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0026.b64",
+          "sha256": "db1283324d23246e8a105437070c998af625be70a564616772b59c0b56fe0b5d"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0027.b64",
+          "sha256": "cc5b8c8fd0b7eaf73a000a873a55a43a9be5af9866e9f9d1b931f9cd1df3d93e"
+        },
+        {
+          "bytes": 141037,
+          "name": "part-0028.b64",
+          "sha256": "7b4ae6293e1964b875503c0721aa95b7e211d1f08daa34babf722c3525ae8bab"
+        }
+      ]
+    },
+    {
+      "archive_bytes": 13136919,
+      "archive_limit_bytes": 51380224,
+      "archive_sha256": "a59b4636b064814dc660ad68b804f1cdc3b757a75796156b95f1d8e7d32de25f",
+      "branch": "stage12-cloud-full-path-v1-return-20261018t090134z-559fee327d-vol002",
+      "commit": "989d8acb1394b1bcdb8b3b9408a1c6348e70c220",
+      "directory": "volume-002",
+      "format": "stage12-full-path-segment-volume-v1",
+      "manifest_sha256": "8fac6a6e2541f520949b6509362d3d074ede1219098e886de0ae3d923d4f3658",
+      "number": 2,
+      "parts": [
+        {
+          "bytes": 524289,
+          "name": "part-0000.b64",
+          "sha256": "ac5b97d5e545468cf0d56e203c3b8fa7e852369de9fd9a45e2018ce4cd9594f8"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0001.b64",
+          "sha256": "b2c88dc29cada872cb72200fd9ce9a806725dd0f6a5b999c35e9d1e231b3fca3"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0002.b64",
+          "sha256": "b547cff2a39278326cd69e44cc8748f3a92876a3347023cca06066050c04d770"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0003.b64",
+          "sha256": "62cec0a2c22022f3fe20f609462a44591a5e04f81eabd1bea5ff4bc20b971f8e"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0004.b64",
+          "sha256": "bcec46dc7a3beb57fbf03492c7e3ca26f28b1c6cbfa1fa9d6d54487e91ff6bc4"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0005.b64",
+          "sha256": "38f0c835349d998617487ccf491b955298af1900063736718f64aa248aeccd37"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0006.b64",
+          "sha256": "0ea9fd7b1eb02d721f8c9d4e7f682a6919496f47267e0343edf14fc506fc9bcd"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0007.b64",
+          "sha256": "cc0a2c37e474196af071998eb0a73ae2dbdc3a8ec7bc057064d44547f308a34b"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0008.b64",
+          "sha256": "bd8e8f66273fb5dd088b434b613c800ce39f817f8deb04cbeb096954e5534515"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0009.b64",
+          "sha256": "622131fa915b5196faa12196de5996da2a811db4cecf1ed3e8e7f04b9e422083"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0010.b64",
+          "sha256": "a4ab2747f0292cadad3bc40cfdac649b0f13ad501ca8d2dccc4863abf7a31318"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0011.b64",
+          "sha256": "135526bfa2b1093b78b3c4fa0e94e2d03d94ca096f3faf5cb57019c8994c6f16"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0012.b64",
+          "sha256": "39803b4f40ade69dc1766e0fead49a3f69fa89882d4731660c0658ae4bef3964"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0013.b64",
+          "sha256": "9133dbabd63a4d8a0d1658fd36466f30e5eda5260aac30c7d41038bf1829db0f"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0014.b64",
+          "sha256": "4d422dd812a07d7a8072b5e9271f28467269cc9c9b791d21e9e44e4195dab831"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0015.b64",
+          "sha256": "2fa570405cb7093578c1d7f43b8b77041f949aa61f995946dd7e60f7c80463c0"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0016.b64",
+          "sha256": "fc96dfc37fc98b7983510d49f24e4b0b7e6669563ccd9f0b5bf959adb07f80df"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0017.b64",
+          "sha256": "d058e94a9d6943e1dbb7d327bc6a912e76787b1c97d487c6bffa5c552f5c6fac"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0018.b64",
+          "sha256": "929d089c42b2448fd093974ed18f58366ed1119a895d4973e17f218f40991590"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0019.b64",
+          "sha256": "b1adb52ad2f496c6aa5135fe30dfd0ba64f9d9156d069669efe0f709b4032a25"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0020.b64",
+          "sha256": "732d7e6c63545d2e426a14dab40a9b733f01bbe9b2d6730ce2a61c40eeea7ebd"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0021.b64",
+          "sha256": "48b219f7a900ffb8bfe319c8b3ca459d18c3781dcfff00dbc0f9972f7f873895"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0022.b64",
+          "sha256": "8562335bc8558616cb8690b9192e2679f47aebf40bae17e6bbbb77fcbf94b0f0"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0023.b64",
+          "sha256": "a9bb67e8b1a1b19ba0aa8bddafb56aac7937b79c5912a9f76f9394a1b9447a56"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0024.b64",
+          "sha256": "1964093273bd020568df7633ace82a7a31da3be0dffcfc09ef496aec1031e210"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0025.b64",
+          "sha256": "290fa461980c47257698ff51985c876cc0bd9f6405b6a712f53dff615778aa41"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0026.b64",
+          "sha256": "2463763b842e93486297ec53b3130af1be7cf7e92c191856b06c7bb8bda29587"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0027.b64",
+          "sha256": "1ff638e5db17e1cc98ad9735202bf26f44ae8344798718699e0bfb1310486fa0"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0028.b64",
+          "sha256": "0320a106359f85532858dc2e3c1d7efe2245e6fb39c417fdada71952af655b70"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0029.b64",
+          "sha256": "1e275d4d994a5855cd7d6da84d30df6ce939702839254f12aeee143ead45061a"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0030.b64",
+          "sha256": "cf60dde81476386dc5187bd9a0bb218254b4fce2b50f7a7714f029a50e9463d9"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0031.b64",
+          "sha256": "a898a962d7f8142ff1bf88be6f62dd8c8e8e6d0a23f654e50954f5f1d293f632"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0032.b64",
+          "sha256": "0e9935fd926ad6565d769e5840d3bd6c79b23d12ddf826dd50ca94d0098c6c96"
+        },
+        {
+          "bytes": 214389,
+          "name": "part-0033.b64",
+          "sha256": "84887f0ca3805898963eb2567cd674883d38051a7a7a74636a7b4f8f1b3e092f"
+        }
+      ]
+    }
+  ],
+  "automatic_push": false,
+  "branch": "stage12-cloud-full-path-v1-return-20261018t090134z-559fee327d",
+  "evidence_index_sha256": "559fee327d54a164596aee1088c92d7fd677548e21e637831b683365ac4bdd9e",
+  "format": "stage12-full-path-segmented-git-return-v1",
+  "omitted_frozen_inputs": {
+    "reason": "Already delivered; unchanged 951-file frozen payload",
+    "sha256": "24175c55097179d63491e59f56c1a859d29017a3d5e344ca95324afa6532033f"
+  },
+  "original_evidence_unchanged": true,
+  "package_manifest_sha256": "6133a4b207590aaedf05af929d91dca57da24cdb1757c3009de34f13ea66d701",
+  "result": {
+    "PPO": 0,
+    "automatic_PR": false,
+    "automatic_merge": false,
+    "automatic_power_actions": 0,
+    "automatic_push": false,
+    "canonical_after_interval": {
+      "attempted_lower": 740074,
+      "attempted_upper": 740074,
+      "completed_lower": 740072,
+      "completed_upper": 740073
+    },
+    "canonical_before": {
+      "attempted_lower": 738602,
+      "attempted_upper": 738602,
+      "completed_lower": 738600,
+      "completed_upper": 738601
+    },
+    "cloud_training": 0,
+    "counts": {
+      "Action_apply_attempted": 8,
+      "Action_apply_completed": 8,
+      "Action_process_action_attempted": 1,
+      "Action_process_action_completed": 1,
+      "Action_reset_attempted": 1,
+      "Action_reset_completed": 1,
+      "BAM_apply_delay_attempted": 9,
+      "BAM_apply_delay_completed": 9,
+      "BAM_compute_attempted": 9,
+      "BAM_compute_completed": 9,
+      "BVH_refit_attempted": 34,
+      "BVH_refit_completed": 34,
+      "CPU_forward_attempted": 3,
+      "CPU_forward_completed": 3,
+      "CPU_kinematics_attempted": 1,
+      "CPU_kinematics_completed": 1,
+      "Command_compute_attempted": 1,
+      "Command_compute_completed": 1,
+      "Command_reset_attempted": 1,
+      "Command_reset_completed": 1,
+      "ContactGraph_allocation_attempted": 18,
+      "ContactGraph_allocation_completed": 18,
+      "ContactGraph_capture_begin_attempted": 1,
+      "ContactGraph_capture_begin_completed": 1,
+      "ContactGraph_capture_end_attempted": 1,
+      "ContactGraph_capture_end_completed": 1,
+      "ContactGraph_cleanup_sync_attempted": 1,
+      "ContactGraph_cleanup_sync_completed": 1,
+      "ContactGraph_copy_api_attempted": 16,
+      "ContactGraph_copy_api_completed": 16,
+      "ContactGraph_exec_destroy_attempted": 1,
+      "ContactGraph_exec_destroy_completed": 1,
+      "ContactGraph_graph_destroy_attempted": 1,
+      "ContactGraph_graph_destroy_completed": 1,
+      "ContactGraph_kernel_api_attempted": 33,
+      "ContactGraph_kernel_api_completed": 33,
+      "ContactGraph_launch_attempted": 5923,
+      "ContactGraph_launch_completed": 5923,
+      "ContactGraph_module_load_attempted": 1,
+      "ContactGraph_module_load_completed": 1,
+      "Contact_order_apply_attempted": 5923,
+      "Contact_order_apply_completed": 5923,
+      "Cost_override_copy_attempted": 12513,
+      "Cost_override_copy_completed": 12513,
+      "Cost_reduce_kernel_attempted": 12513,
+      "Cost_reduce_kernel_completed": 12513,
+      "Cost_rows_kernel_attempted": 12513,
+      "Cost_rows_kernel_completed": 12513,
+      "Curriculum_compute_attempted": 1,
+      "Curriculum_compute_completed": 1,
+      "Curriculum_reset_attempted": 1,
+      "Curriculum_reset_completed": 1,
+      "Env_substep_counter_attempted": 8,
+      "Env_substep_counter_completed": 8,
+      "Event_apply_attempted": 1,
+      "Event_apply_completed": 1,
+      "Event_reset_attempted": 1,
+      "Event_reset_completed": 1,
+      "GPU_forward_attempted": 5923,
+      "GPU_forward_completed": 5923,
+      "GPU_reset_data_attempted": 1,
+      "GPU_reset_data_completed": 1,
+      "GPU_solver_attempted": 5923,
+      "GPU_solver_completed": 5923,
+      "Hull_allocation_attempted": 2,
+      "Hull_allocation_completed": 2,
+      "Hull_fixture_query_attempted": 98,
+      "Hull_fixture_query_completed": 98,
+      "Hull_fixture_upload_attempted": 98,
+      "Hull_fixture_upload_completed": 98,
+      "Hull_module_load_attempted": 1,
+      "Hull_module_load_completed": 1,
+      "Hull_vertex_pin_attempted": 1,
+      "Hull_vertex_pin_completed": 1,
+      "Kinematic_allocation_attempted": 2,
+      "Kinematic_allocation_completed": 2,
+      "Kinematic_model_capture_attempted": 1,
+      "Kinematic_model_capture_completed": 1,
+      "Kinematic_module_load_attempted": 1,
+      "Kinematic_module_load_completed": 1,
+      "Kinematic_pose_compute_attempted": 5923,
+      "Kinematic_pose_compute_completed": 5923,
+      "Kinematic_pose_upload_attempted": 5923,
+      "Kinematic_pose_upload_completed": 5923,
+      "Metrics_reset_attempted": 1,
+      "Metrics_reset_completed": 1,
+      "Metrics_substep_attempted": 8,
+      "Metrics_substep_completed": 8,
+      "Model_expansion_attempted": 1,
+      "Model_expansion_completed": 1,
+      "Model_material_setup_attempted": 1,
+      "Model_material_setup_completed": 1,
+      "Norm_kernel_attempted": 19103,
+      "Norm_kernel_completed": 19103,
+      "Observation_compute_attempted": 1,
+      "Observation_compute_completed": 1,
+      "Observation_noise_attempted": 4,
+      "Observation_noise_completed": 4,
+      "Observation_reset_attempted": 1,
+      "Observation_reset_completed": 1,
+      "PPO": 0,
+      "Precise_allocation_attempted": 4,
+      "Precise_allocation_completed": 4,
+      "Precise_contact_kernel_attempted": 5923,
+      "Precise_contact_kernel_completed": 5923,
+      "Precise_geometry_kernel_attempted": 5923,
+      "Precise_geometry_kernel_completed": 5923,
+      "Precise_module_load_attempted": 1,
+      "Precise_module_load_completed": 1,
+      "RK4_integrator_attempted": 1472,
+      "RK4_integrator_completed": 1472,
+      "RNG_bank_initialize_attempted": 1,
+      "RNG_bank_initialize_completed": 1,
+      "RNG_sample_attempted": 26,
+      "RNG_sample_completed": 26,
+      "Recorder_close_attempted": 1,
+      "Recorder_close_completed": 1,
+      "Recorder_post_reset_attempted": 1,
+      "Recorder_post_reset_completed": 1,
+      "Reduction_allocation_attempted": 2,
+      "Reduction_allocation_completed": 2,
+      "Reduction_module_load_attempted": 1,
+      "Reduction_module_load_completed": 1,
+      "Reward_reset_attempted": 1,
+      "Reward_reset_completed": 1,
+      "Rigid_metadata_kernel_attempted": 5923,
+      "Rigid_metadata_kernel_completed": 5923,
+      "Rigid_module_load_attempted": 1,
+      "Rigid_module_load_completed": 1,
+      "Scene_initialize_attempted": 1,
+      "Scene_initialize_completed": 1,
+      "Scene_reset_attempted": 1,
+      "Scene_reset_completed": 1,
+      "Scene_update_attempted": 8,
+      "Scene_update_completed": 8,
+      "Scene_write_attempted": 9,
+      "Scene_write_completed": 9,
+      "Sensor_context_set_attempted": 1,
+      "Sensor_context_set_completed": 1,
+      "Simulation_reset_attempted": 1,
+      "Simulation_reset_completed": 1,
+      "SolverContext_create_attempted": 5923,
+      "SolverContext_create_completed": 5923,
+      "SolverOrder_kernel_attempted": 6590,
+      "SolverOrder_kernel_completed": 6590,
+      "SolverOrder_module_load_attempted": 1,
+      "SolverOrder_module_load_completed": 1,
+      "Solver_linesearch_attempted": 6590,
+      "Solver_linesearch_completed": 6590,
+      "Solver_solver_iteration_attempted": 6590,
+      "Solver_solver_iteration_completed": 6590,
+      "Solver_update_constraint_attempted": 12513,
+      "Solver_update_constraint_completed": 12513,
+      "Solver_update_gradient_attempted": 5923,
+      "Solver_update_gradient_completed": 5923,
+      "Solver_update_gradient_incremental_attempted": 6590,
+      "Solver_update_gradient_incremental_completed": 6590,
+      "Solverinit_context_attempted": 5923,
+      "Solverinit_context_completed": 5923,
+      "Termination_reset_attempted": 1,
+      "Termination_reset_completed": 1,
+      "cloud": 0,
+      "context_create_attempted": 2,
+      "context_create_completed": 2,
+      "endpoint_sensor_read_attempted": 33,
+      "endpoint_sensor_read_completed": 33,
+      "full_RL_environment_attempted": 1,
+      "full_RL_environment_completed": 1,
+      "full_RL_environment_constructed": 1,
+      "graph_setup_suppressed": 3,
+      "integrations_attempted": 1472,
+      "integrations_completed": 1472,
+      "model_option_write_attempted": 50,
+      "model_option_write_completed": 50,
+      "position_write_attempted": 1472,
+      "position_write_completed": 1472,
+      "private_clock_write_attempted": 25,
+      "private_clock_write_completed": 25,
+      "public_clock_write_attempted": 8,
+      "public_clock_write_completed": 8,
+      "ray_batch_attempted": 34,
+      "ray_batch_completed": 34,
+      "sense_attempted": 34,
+      "sense_completed": 34,
+      "state_restore_attempted": 17,
+      "state_restore_completed": 17,
+      "state_snapshot_attempted": 8,
+      "state_snapshot_completed": 8
+    },
+    "counts_final": true,
+    "error": null,
+    "forced_timeout": false,
+    "full_dynamic_rollout_validated": false,
+    "full_path_independent_review_pending": true,
+    "full_path_result": {
+      "PPO": 0,
+      "canonical_after_interval": {
+        "attempted_lower": 740074,
+        "attempted_upper": 740074,
+        "completed_lower": 740072,
+        "completed_upper": 740073
+      },
+      "canonical_before": {
+        "attempted_lower": 738602,
+        "attempted_upper": 738602,
+        "completed_lower": 738600,
+        "completed_upper": 738601
+      },
+      "cloud_training": 0,
+      "completed_public_steps": 0,
+      "elapsed_s": 858.3858769610524,
+      "errors": [
+        {
+          "error": "RuntimeError(\"Owner failed: RuntimeError('User requested stop at a macro boundary; archive this partial batch without retry')\")",
+          "traceback": "Traceback (most recent call last):\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-full-path-v1/microduck-stage12-cloud-full-path-v1-20261018/full_worker.py\", line 43, in execute\n    t=time.monotonic();obs,reward,done,extras=env.step(action);witness=env.inspect()[0]\n                                              ^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-full-path-v1/cloud-20261018-v1/inputs/candidate/integration/process_vector.py\", line 17, in call\n    return method(self, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-full-path-v1/cloud-20261018-v1/inputs/candidate/integration/process_vector.py\", line 195, in step\n    rows = self.transport.exchange(\"step\", [tensor_wire(actions[i:i+1]) for i in range(self.num_envs)])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-full-path-v1/cloud-20261018-v1/inputs/candidate/integration/process_vector.py\", line 57, in exchange\n    require(row[\"ok\"] is True, \"Owner failed: \" + str(row.get(\"error\")))\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/cloud-full-path-v1/cloud-20261018-v1/inputs/candidate/integration/durable.py\", line 11, in require\n    raise RuntimeError(message)\nRuntimeError: Owner failed: RuntimeError('User requested stop at a macro boundary; archive this partial batch without retry')\nOwner cleanup: RuntimeError('Owner shutdown incomplete; inspect WAL and closeout; never retry')\n"
+        }
+      ],
+      "ledger": {
+        "attempts": {
+          "Action_apply": 8,
+          "Action_process_action": 1,
+          "Action_reset": 1,
+          "BAM_apply_delay": 9,
+          "BAM_compute": 9,
+          "BVH_refit": 34,
+          "CPU_forward": 3,
+          "CPU_kinematics": 1,
+          "Command_compute": 1,
+          "Command_reset": 1,
+          "ContactGraph_allocation": 18,
+          "ContactGraph_capture_begin": 1,
+          "ContactGraph_capture_end": 1,
+          "ContactGraph_cleanup_sync": 1,
+          "ContactGraph_copy_api": 16,
+          "ContactGraph_exec_destroy": 1,
+          "ContactGraph_graph_destroy": 1,
+          "ContactGraph_kernel_api": 33,
+          "ContactGraph_launch": 5923,
+          "ContactGraph_module_load": 1,
+          "Contact_order_apply": 5923,
+          "Cost_override_copy": 12513,
+          "Cost_reduce_kernel": 12513,
+          "Cost_rows_kernel": 12513,
+          "Curriculum_compute": 1,
+          "Curriculum_reset": 1,
+          "Env_substep_counter": 8,
+          "Event_apply": 1,
+          "Event_reset": 1,
+          "GPU_forward": 5923,
+          "GPU_reset_data": 1,
+          "GPU_solver": 5923,
+          "Hull_allocation": 2,
+          "Hull_fixture_query": 98,
+          "Hull_fixture_upload": 98,
+          "Hull_module_load": 1,
+          "Hull_vertex_pin": 1,
+          "Kinematic_allocation": 2,
+          "Kinematic_model_capture": 1,
+          "Kinematic_module_load": 1,
+          "Kinematic_pose_compute": 5923,
+          "Kinematic_pose_upload": 5923,
+          "Metrics_reset": 1,
+          "Metrics_substep": 8,
+          "Model_expansion": 1,
+          "Model_material_setup": 1,
+          "Norm_kernel": 19103,
+          "Observation_compute": 1,
+          "Observation_noise": 4,
+          "Observation_reset": 1,
+          "Precise_allocation": 4,
+          "Precise_contact_kernel": 5923,
+          "Precise_geometry_kernel": 5923,
+          "Precise_module_load": 1,
+          "RK4_integrator": 1472,
+          "RNG_bank_initialize": 1,
+          "RNG_sample": 26,
+          "Recorder_close": 1,
+          "Recorder_post_reset": 1,
+          "Reduction_allocation": 2,
+          "Reduction_module_load": 1,
+          "Reward_reset": 1,
+          "Rigid_metadata_kernel": 5923,
+          "Rigid_module_load": 1,
+          "Scene_initialize": 1,
+          "Scene_reset": 1,
+          "Scene_update": 8,
+          "Scene_write": 9,
+          "Sensor_context_set": 1,
+          "Simulation_reset": 1,
+          "SolverContext_create": 5923,
+          "SolverOrder_kernel": 6590,
+          "SolverOrder_module_load": 1,
+          "Solver_linesearch": 6590,
+          "Solver_solver_iteration": 6590,
+          "Solver_update_constraint": 12513,
+          "Solver_update_gradient": 5923,
+          "Solver_update_gradient_incremental": 6590,
+          "Solverinit_context": 5923,
+          "Termination_reset": 1,
+          "context_create": 2,
+          "endpoint_sensor_read": 33,
+          "full_RL_environment": 1,
+          "integrations": 1472,
+          "model_option_write": 50,
+          "position_write": 1472,
+          "private_clock_write": 25,
+          "public_clock_write": 8,
+          "ray_batch": 34,
+          "sense": 34,
+          "state_restore": 17,
+          "state_snapshot": 8
+        },
+        "completed": {
+          "Action_apply": 8,
+          "Action_process_action": 1,
+          "Action_reset": 1,
+          "BAM_apply_delay": 9,
+          "BAM_compute": 9,
+          "BVH_refit": 34,
+          "CPU_forward": 3,
+          "CPU_kinematics": 1,
+          "Command_compute": 1,
+          "Command_reset": 1,
+          "ContactGraph_allocation": 18,
+          "ContactGraph_capture_begin": 1,
+          "ContactGraph_capture_end": 1,
+          "ContactGraph_cleanup_sync": 1,
+          "ContactGraph_copy_api": 16,
+          "ContactGraph_exec_destroy": 1,
+          "ContactGraph_graph_destroy": 1,
+          "ContactGraph_kernel_api": 33,
+          "ContactGraph_launch": 5923,
+          "ContactGraph_module_load": 1,
+          "Contact_order_apply": 5923,
+          "Cost_override_copy": 12513,
+          "Cost_reduce_kernel": 12513,
+          "Cost_rows_kernel": 12513,
+          "Curriculum_compute": 1,
+          "Curriculum_reset": 1,
+          "Env_substep_counter": 8,
+          "Event_apply": 1,
+          "Event_reset": 1,
+          "GPU_forward": 5923,
+          "GPU_reset_data": 1,
+          "GPU_solver": 5923,
+          "Hull_allocation": 2,
+          "Hull_fixture_query": 98,
+          "Hull_fixture_upload": 98,
+          "Hull_module_load": 1,
+          "Hull_vertex_pin": 1,
+          "Kinematic_allocation": 2,
+          "Kinematic_model_capture": 1,
+          "Kinematic_module_load": 1,
+          "Kinematic_pose_compute": 5923,
+          "Kinematic_pose_upload": 5923,
+          "Metrics_reset": 1,
+          "Metrics_substep": 8,
+          "Model_expansion": 1,
+          "Model_material_setup": 1,
+          "Norm_kernel": 19103,
+          "Observation_compute": 1,
+          "Observation_noise": 4,
+          "Observation_reset": 1,
+          "Precise_allocation": 4,
+          "Precise_contact_kernel": 5923,
+          "Precise_geometry_kernel": 5923,
+          "Precise_module_load": 1,
+          "RK4_integrator": 1472,
+          "RNG_bank_initialize": 1,
+          "RNG_sample": 26,
+          "Recorder_close": 1,
+          "Recorder_post_reset": 1,
+          "Reduction_allocation": 2,
+          "Reduction_module_load": 1,
+          "Reward_reset": 1,
+          "Rigid_metadata_kernel": 5923,
+          "Rigid_module_load": 1,
+          "Scene_initialize": 1,
+          "Scene_reset": 1,
+          "Scene_update": 8,
+          "Scene_write": 9,
+          "Sensor_context_set": 1,
+          "Simulation_reset": 1,
+          "SolverContext_create": 5923,
+          "SolverOrder_kernel": 6590,
+          "SolverOrder_module_load": 1,
+          "Solver_linesearch": 6590,
+          "Solver_solver_iteration": 6590,
+          "Solver_update_constraint": 12513,
+          "Solver_update_gradient": 5923,
+          "Solver_update_gradient_incremental": 6590,
+          "Solverinit_context": 5923,
+          "Termination_reset": 1,
+          "context_create": 2,
+          "endpoint_sensor_read": 33,
+          "full_RL_environment": 1,
+          "integrations": 1472,
+          "model_option_write": 50,
+          "position_write": 1472,
+          "private_clock_write": 25,
+          "public_clock_write": 8,
+          "ray_batch": 34,
+          "sense": 34,
+          "state_restore": 17,
+          "state_snapshot": 8
+        },
+        "exact": true,
+        "incomplete_tail": false,
+        "integration_attempted_lower": 1472,
+        "integration_attempted_upper": 1472,
+        "integration_completed_lower": 1472,
+        "integration_completed_upper": 1472,
+        "pending": {},
+        "rows": 343312
+      },
+      "status": "FULL_PATH_STOPPED_PRESERVE"
+    },
+    "ledger": {
+      "attempts": {
+        "Action_apply": 8,
+        "Action_process_action": 1,
+        "Action_reset": 1,
+        "BAM_apply_delay": 9,
+        "BAM_compute": 9,
+        "BVH_refit": 34,
+        "CPU_forward": 3,
+        "CPU_kinematics": 1,
+        "Command_compute": 1,
+        "Command_reset": 1,
+        "ContactGraph_allocation": 18,
+        "ContactGraph_capture_begin": 1,
+        "ContactGraph_capture_end": 1,
+        "ContactGraph_cleanup_sync": 1,
+        "ContactGraph_copy_api": 16,
+        "ContactGraph_exec_destroy": 1,
+        "ContactGraph_graph_destroy": 1,
+        "ContactGraph_kernel_api": 33,
+        "ContactGraph_launch": 5923,
+        "ContactGraph_module_load": 1,
+        "Contact_order_apply": 5923,
+        "Cost_override_copy": 12513,
+        "Cost_reduce_kernel": 12513,
+        "Cost_rows_kernel": 12513,
+        "Curriculum_compute": 1,
+        "Curriculum_reset": 1,
+        "Env_substep_counter": 8,
+        "Event_apply": 1,
+        "Event_reset": 1,
+        "GPU_forward": 5923,
+        "GPU_reset_data": 1,
+        "GPU_solver": 5923,
+        "Hull_allocation": 2,
+        "Hull_fixture_query": 98,
+        "Hull_fixture_upload": 98,
+        "Hull_module_load": 1,
+        "Hull_vertex_pin": 1,
+        "Kinematic_allocation": 2,
+        "Kinematic_model_capture": 1,
+        "Kinematic_module_load": 1,
+        "Kinematic_pose_compute": 5923,
+        "Kinematic_pose_upload": 5923,
+        "Metrics_reset": 1,
+        "Metrics_substep": 8,
+        "Model_expansion": 1,
+        "Model_material_setup": 1,
+        "Norm_kernel": 19103,
+        "Observation_compute": 1,
+        "Observation_noise": 4,
+        "Observation_reset": 1,
+        "Precise_allocation": 4,
+        "Precise_contact_kernel": 5923,
+        "Precise_geometry_kernel": 5923,
+        "Precise_module_load": 1,
+        "RK4_integrator": 1472,
+        "RNG_bank_initialize": 1,
+        "RNG_sample": 26,
+        "Recorder_close": 1,
+        "Recorder_post_reset": 1,
+        "Reduction_allocation": 2,
+        "Reduction_module_load": 1,
+        "Reward_reset": 1,
+        "Rigid_metadata_kernel": 5923,
+        "Rigid_module_load": 1,
+        "Scene_initialize": 1,
+        "Scene_reset": 1,
+        "Scene_update": 8,
+        "Scene_write": 9,
+        "Sensor_context_set": 1,
+        "Simulation_reset": 1,
+        "SolverContext_create": 5923,
+        "SolverOrder_kernel": 6590,
+        "SolverOrder_module_load": 1,
+        "Solver_linesearch": 6590,
+        "Solver_solver_iteration": 6590,
+        "Solver_update_constraint": 12513,
+        "Solver_update_gradient": 5923,
+        "Solver_update_gradient_incremental": 6590,
+        "Solverinit_context": 5923,
+        "Termination_reset": 1,
+        "context_create": 2,
+        "endpoint_sensor_read": 33,
+        "full_RL_environment": 1,
+        "integrations": 1472,
+        "model_option_write": 50,
+        "position_write": 1472,
+        "private_clock_write": 25,
+        "public_clock_write": 8,
+        "ray_batch": 34,
+        "sense": 34,
+        "state_restore": 17,
+        "state_snapshot": 8
+      },
+      "completed": {
+        "Action_apply": 8,
+        "Action_process_action": 1,
+        "Action_reset": 1,
+        "BAM_apply_delay": 9,
+        "BAM_compute": 9,
+        "BVH_refit": 34,
+        "CPU_forward": 3,
+        "CPU_kinematics": 1,
+        "Command_compute": 1,
+        "Command_reset": 1,
+        "ContactGraph_allocation": 18,
+        "ContactGraph_capture_begin": 1,
+        "ContactGraph_capture_end": 1,
+        "ContactGraph_cleanup_sync": 1,
+        "ContactGraph_copy_api": 16,
+        "ContactGraph_exec_destroy": 1,
+        "ContactGraph_graph_destroy": 1,
+        "ContactGraph_kernel_api": 33,
+        "ContactGraph_launch": 5923,
+        "ContactGraph_module_load": 1,
+        "Contact_order_apply": 5923,
+        "Cost_override_copy": 12513,
+        "Cost_reduce_kernel": 12513,
+        "Cost_rows_kernel": 12513,
+        "Curriculum_compute": 1,
+        "Curriculum_reset": 1,
+        "Env_substep_counter": 8,
+        "Event_apply": 1,
+        "Event_reset": 1,
+        "GPU_forward": 5923,
+        "GPU_reset_data": 1,
+        "GPU_solver": 5923,
+        "Hull_allocation": 2,
+        "Hull_fixture_query": 98,
+        "Hull_fixture_upload": 98,
+        "Hull_module_load": 1,
+        "Hull_vertex_pin": 1,
+        "Kinematic_allocation": 2,
+        "Kinematic_model_capture": 1,
+        "Kinematic_module_load": 1,
+        "Kinematic_pose_compute": 5923,
+        "Kinematic_pose_upload": 5923,
+        "Metrics_reset": 1,
+        "Metrics_substep": 8,
+        "Model_expansion": 1,
+        "Model_material_setup": 1,
+        "Norm_kernel": 19103,
+        "Observation_compute": 1,
+        "Observation_noise": 4,
+        "Observation_reset": 1,
+        "Precise_allocation": 4,
+        "Precise_contact_kernel": 5923,
+        "Precise_geometry_kernel": 5923,
+        "Precise_module_load": 1,
+        "RK4_integrator": 1472,
+        "RNG_bank_initialize": 1,
+        "RNG_sample": 26,
+        "Recorder_close": 1,
+        "Recorder_post_reset": 1,
+        "Reduction_allocation": 2,
+        "Reduction_module_load": 1,
+        "Reward_reset": 1,
+        "Rigid_metadata_kernel": 5923,
+        "Rigid_module_load": 1,
+        "Scene_initialize": 1,
+        "Scene_reset": 1,
+        "Scene_update": 8,
+        "Scene_write": 9,
+        "Sensor_context_set": 1,
+        "Simulation_reset": 1,
+        "SolverContext_create": 5923,
+        "SolverOrder_kernel": 6590,
+        "SolverOrder_module_load": 1,
+        "Solver_linesearch": 6590,
+        "Solver_solver_iteration": 6590,
+        "Solver_update_constraint": 12513,
+        "Solver_update_gradient": 5923,
+        "Solver_update_gradient_incremental": 6590,
+        "Solverinit_context": 5923,
+        "Termination_reset": 1,
+        "context_create": 2,
+        "endpoint_sensor_read": 33,
+        "full_RL_environment": 1,
+        "integrations": 1472,
+        "model_option_write": 50,
+        "position_write": 1472,
+        "private_clock_write": 25,
+        "public_clock_write": 8,
+        "ray_batch": 34,
+        "sense": 34,
+        "state_restore": 17,
+        "state_snapshot": 8
+      },
+      "exact": true,
+      "incomplete_tail": false,
+      "integration_attempted_lower": 1472,
+      "integration_attempted_upper": 1472,
+      "integration_completed_lower": 1472,
+      "integration_completed_upper": 1472,
+      "pending": {},
+      "rows": 343312
+    },
+    "native_points_accepted": 2,
+    "native_points_total": 5,
+    "new_window": {
+      "PPO": 0,
+      "cleanup_reserve_seconds": 900,
+      "cloud_training": 0,
+      "deadline_reset": false,
+      "explicit_cli_scope": "CLOUD_RTX5090_FULL_PATH_V1",
+      "native_stop_utc": 1792398726.5793002,
+      "new_native_seconds": 85500,
+      "new_total_seconds": 86400,
+      "old_campaign_resume": false,
+      "old_windows_reused": false,
+      "original_deadlines": {
+        "native": "2026-10-17T11:23:14+08:00",
+        "total": "2026-10-17T11:53:14+08:00"
+      },
+      "parent_pid": 1533,
+      "plan_sha256": "2a49a48dd9bc3b2686c20fa03a3f2a9d9b9fe32f6f90bec9ac65e45a529965c9",
+      "runtime_preflight": {
+        "native_calls": 0,
+        "native_dependencies_imported": false,
+        "source_files": 219,
+        "status": "PINNED_RUNTIME_SOURCE_PREFLIGHT_PASS"
+      },
+      "separately_authorized": true,
+      "started_utc": 1792313226.5793002,
+      "stop_utc": 1792399626.5793002
+    },
+    "no_automatic_retry": true,
+    "old_campaign_resume": false,
+    "original_deadline_reset": false,
+    "original_deadlines": {
+      "native": "2026-10-17T11:23:14+08:00",
+      "total": "2026-10-17T11:53:14+08:00"
+    },
+    "returncode": 2,
+    "status": "FULL_PATH_STOPPED_PRESERVE",
+    "training_ready": false
+  }
+}
