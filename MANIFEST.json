@@ -1,0 +1,39 @@
+{
+  "archive_bytes": 2226103,
+  "archive_limit_bytes": 51380224,
+  "archive_sha256": "c28debba1d962df16a8250e70c57f8b11579beb4a33026287dded3d3a0ff2bd2",
+  "format": "stage12-full-path-segment-volume-v1",
+  "number": 4,
+  "parts": [
+    {
+      "bytes": 524289,
+      "name": "part-0000.b64",
+      "sha256": "c5e3859f62cc98661690a425559d13a9620bf3c01a10cb80fa0debb7a4fdacb4"
+    },
+    {
+      "bytes": 524289,
+      "name": "part-0001.b64",
+      "sha256": "75e023295e4091b7611a4b256af02a5b13f1c884f9d08a2ca33b77e80af71153"
+    },
+    {
+      "bytes": 524289,
+      "name": "part-0002.b64",
+      "sha256": "cba1fa74e227c9b0e632104fa2749f861bdb05e28103449a02969f287fd8645c"
+    },
+    {
+      "bytes": 524289,
+      "name": "part-0003.b64",
+      "sha256": "763a1caa4cdcf22068285cf344e491161172ddc44f3c5fd706ea473d5fbca2eb"
+    },
+    {
+      "bytes": 524289,
+      "name": "part-0004.b64",
+      "sha256": "e66743f590bc2aa46b541d27f51a5878f9cf86ed2dbe565d7e5da4cd6268766e"
+    },
+    {
+      "bytes": 346701,
+      "name": "part-0005.b64",
+      "sha256": "3263e10473b734b04bd36845080dedc8c3602b3307e4bacc0ef9c515028dd045"
+    }
+  ]
+}
