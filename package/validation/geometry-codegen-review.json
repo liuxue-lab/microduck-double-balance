@@ -1,0 +1,12 @@
+{
+  "status": "WARP_1_12_CODEGEN_PASS",
+  "warp_version": "1.12.0",
+  "kernel_definitions": 10,
+  "cuda_source_bytes": 106513,
+  "cuda_source_sha256": "2cbb8391add74d1cc5c60d717a00bfd2a7371a3d3e7c943dbf661f040ae99e61",
+  "source_sha256": "1ead2ec62a594e82cf872ae1f3e03e09fb539589b974d8805e6cad8b5ffc64fd",
+  "runtime_initialized": false,
+  "GPU_calls": 0,
+  "physics_integrations": 0,
+  "CUDA_hardware_parity_tested": false
+}

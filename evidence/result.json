@@ -1,0 +1,55 @@
+{
+  "PPO": 0,
+  "benchmark": {
+    "query_and_readback_seconds": {
+      "median": {
+        "candidate": 0.00015849949977564393,
+        "original": 0.06414079849992049
+      },
+      "speedup": 404.6750847208465
+    },
+    "total_seconds": {
+      "median": {
+        "candidate": 0.00019471149971650448,
+        "original": 0.06417582299991409
+      },
+      "speedup": 329.5944158067327
+    }
+  },
+  "bitwise_equal": true,
+  "candidate_for_integration_review": true,
+  "candidate_queries_completed": 12090,
+  "candidate_queries_reserved": 12090,
+  "cloud_gpu_allowed": false,
+  "cloud_training": 0,
+  "device_alias": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "elapsed_seconds": 11.496253953999258,
+  "explicit_query_kernel_launches_reserved": 5274,
+  "fixed_cases": 6021,
+  "full_simulation_speedup_claimed": false,
+  "independent_fixtures": 98,
+  "installed_sources_modified": false,
+  "numerical_tolerances_changed": false,
+  "nvidia_smi_identity": [
+    "NVIDIA GeForce RTX 5060 Laptop GPU, GPU-0545f0f9-f35d-63b9-c533-05e39586b738"
+  ],
+  "original_queries_completed": 162,
+  "original_queries_reserved": 162,
+  "physics_integrations": 0,
+  "private_cache": "/tmp/md12-geometry-t8s5r7yd",
+  "production_integration_authorized": false,
+  "repeated_passes": 2,
+  "scope": "LOCAL_RTX5060_GEOMETRY_PARALLEL_V1",
+  "simulator_forwards": 0,
+  "status": "GEOMETRY_PARITY_PASS_BENCHMARK_COMPLETE",
+  "timing_scope": "One pose per query; host launch + synchronous result copy; excludes WAL and full simulation",
+  "unimported_modules": [
+    "torch",
+    "mujoco",
+    "mujoco_warp",
+    "mjlab",
+    "rsl_rl"
+  ],
+  "warp_version": "1.12.0"
+}

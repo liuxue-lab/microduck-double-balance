@@ -1,0 +1,183 @@
+{
+  "PPO": 0,
+  "automatic_push": false,
+  "branch": "stage12-geometry-parallel-v1-return-20261018t093233z-1f922445f7",
+  "cloud_gpu_allowed": false,
+  "cloud_training": 0,
+  "files": {
+    "evidence/benchmark-timings.json": {
+      "bytes": 16010,
+      "sha256": "503c2918e0e8707feaaa2aab0c12c177e4f177c5387195f0011212b67b0af001"
+    },
+    "evidence/finished.json": {
+      "bytes": 313,
+      "sha256": "2ab70b54d83259351a53abd8c1ffbbce15892c7fd77db14d08ca009a95a9c655"
+    },
+    "evidence/original-values.npz": {
+      "bytes": 7249,
+      "sha256": "cecffad8ca13e02ca2fb981b375dbb932c30246b39a43c35ae896a82f4d8aa2f"
+    },
+    "evidence/parallel-values-1.npz": {
+      "bytes": 332948,
+      "sha256": "92b40f6d0e9043f0bd73f309722bc410f9895a00b6a6a4a4bd148926d37e89eb"
+    },
+    "evidence/parallel-values-2.npz": {
+      "bytes": 332948,
+      "sha256": "92b40f6d0e9043f0bd73f309722bc410f9895a00b6a6a4a4bd148926d37e89eb"
+    },
+    "evidence/progress.json": {
+      "bytes": 601,
+      "sha256": "38ccf589045937d52cf7768031bc18b3abcb89f590925079c5170f6be6040689"
+    },
+    "evidence/result.json": {
+      "bytes": 1668,
+      "sha256": "7b636f78a779d6cd84541ea1cf22b654efdad58069934baf744d0c119025991e"
+    },
+    "evidence/started.json": {
+      "bytes": 411,
+      "sha256": "cd4bb63d23fc6311d027956a70a2885e8eacbed20ef193eafdb0a442fe122f50"
+    },
+    "evidence/warp-pins-after.json": {
+      "bytes": 648,
+      "sha256": "2b6b9dc8d4b9faf57056ab2914bcaf4334cde4234a7a2463444357342f94c1e0"
+    },
+    "evidence/warp-pins-before.json": {
+      "bytes": 648,
+      "sha256": "2b6b9dc8d4b9faf57056ab2914bcaf4334cde4234a7a2463444357342f94c1e0"
+    },
+    "evidence/worker.log": {
+      "bytes": 1900,
+      "sha256": "fd12d7cfbbce1d396adb01d3d5e09b0c39245df5e8f8e8a339e3e4a527623234"
+    },
+    "package/LICENSE-warp.txt": {
+      "bytes": 10173,
+      "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+    },
+    "package/MANIFEST.json": {
+      "bytes": 1918,
+      "sha256": "dfe0201b5573fb999c9b15536d2309f21174c2ec1b50a2737f97065c37f9efcc"
+    },
+    "package/README.txt": {
+      "bytes": 4165,
+      "sha256": "0b40bbf74f18e3eb32b8577c8be3c0defa5c18afa8aaa72f237632c518e93481"
+    },
+    "package/cases.npz": {
+      "bytes": 833241,
+      "sha256": "11366fd14e17bc45785da7d2137c7a0f2fdbc3e762ec3eb4df3fd823412e20f3"
+    },
+    "package/cloud-partial-review.json": {
+      "bytes": 10086,
+      "sha256": "94119c8b99aad8a7428e37fde9753f80e59100efed20376929a81b1b80d97804"
+    },
+    "package/convex_pose_kernel.py": {
+      "bytes": 3956,
+      "sha256": "d6d09bd217278e949ae389e31d7f437d08f5ccfac6e311a2060e19d3a442f33f"
+    },
+    "package/parallel_hull.py": {
+      "bytes": 14221,
+      "sha256": "1ead2ec62a594e82cf872ae1f3e03e09fb539589b974d8805e6cad8b5ffc64fd"
+    },
+    "package/precise_pose_kernel.py": {
+      "bytes": 1847,
+      "sha256": "3e869e7350234a29a541d781f8bc245e89a95710c9986532f307b8a301076829"
+    },
+    "package/probe-plan.json": {
+      "bytes": 1915,
+      "sha256": "aa526fd0a53aead8c5d25e58e1f747679b685da82c7983c16d257587e4ab59a4"
+    },
+    "package/runner.py": {
+      "bytes": 14523,
+      "sha256": "6d1a01b11bab6c1bac6ccb909cb93d04cba9fdd7afbd4ff1958a2a8b230625e4"
+    },
+    "package/validation/geometry-codegen-review.json": {
+      "bytes": 426,
+      "sha256": "cf9523b7cf710bf112f7272689d4e8d635e45aae1d81c20d0ea14ec6233420ee"
+    },
+    "package/validation/geometry-delivery-review.json": {
+      "bytes": 320,
+      "sha256": "bc30e91adf5ace7ef404e0e06def2a1919ef2fe2d55ccc6c9e1f0f61c226aef7"
+    },
+    "package/validation/parallel-semantic-review.json": {
+      "bytes": 498,
+      "sha256": "1e69856063528d06ba767888f65dc7c6641135dfe3839c0caabb21c8f2c9980a"
+    },
+    "package/worker.py": {
+      "bytes": 15250,
+      "sha256": "fbaf16eb704fbc255bd173e6a9c46644bfd459aa1682ae944ca6c6025a6f6d33"
+    }
+  },
+  "finished": {
+    "PPO": 0,
+    "automatic_push": false,
+    "child_exit_code": 0,
+    "child_reaped": true,
+    "cloud_gpu_allowed": false,
+    "cloud_training": 0,
+    "elapsed_seconds": 12.012105118000363,
+    "physics_integrations": 0,
+    "production_integration_authorized": false,
+    "reason": "worker-exit",
+    "simulator_forwards": 0
+  },
+  "format": "stage12-geometry-probe-return-v1",
+  "package_manifest_sha256": "dfe0201b5573fb999c9b15536d2309f21174c2ec1b50a2737f97065c37f9efcc",
+  "physics_integrations": 0,
+  "production_integration_authorized": false,
+  "result": {
+    "PPO": 0,
+    "benchmark": {
+      "query_and_readback_seconds": {
+        "median": {
+          "candidate": 0.00015849949977564393,
+          "original": 0.06414079849992049
+        },
+        "speedup": 404.6750847208465
+      },
+      "total_seconds": {
+        "median": {
+          "candidate": 0.00019471149971650448,
+          "original": 0.06417582299991409
+        },
+        "speedup": 329.5944158067327
+      }
+    },
+    "bitwise_equal": true,
+    "candidate_for_integration_review": true,
+    "candidate_queries_completed": 12090,
+    "candidate_queries_reserved": 12090,
+    "cloud_gpu_allowed": false,
+    "cloud_training": 0,
+    "device_alias": "cuda:0",
+    "device_name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "elapsed_seconds": 11.496253953999258,
+    "explicit_query_kernel_launches_reserved": 5274,
+    "fixed_cases": 6021,
+    "full_simulation_speedup_claimed": false,
+    "independent_fixtures": 98,
+    "installed_sources_modified": false,
+    "numerical_tolerances_changed": false,
+    "nvidia_smi_identity": [
+      "NVIDIA GeForce RTX 5060 Laptop GPU, GPU-0545f0f9-f35d-63b9-c533-05e39586b738"
+    ],
+    "original_queries_completed": 162,
+    "original_queries_reserved": 162,
+    "physics_integrations": 0,
+    "private_cache": "/tmp/md12-geometry-t8s5r7yd",
+    "production_integration_authorized": false,
+    "repeated_passes": 2,
+    "scope": "LOCAL_RTX5060_GEOMETRY_PARALLEL_V1",
+    "simulator_forwards": 0,
+    "status": "GEOMETRY_PARITY_PASS_BENCHMARK_COMPLETE",
+    "timing_scope": "One pose per query; host launch + synchronous result copy; excludes WAL and full simulation",
+    "unimported_modules": [
+      "torch",
+      "mujoco",
+      "mujoco_warp",
+      "mjlab",
+      "rsl_rl"
+    ],
+    "warp_version": "1.12.0"
+  },
+  "simulator_forwards": 0,
+  "source_return_commit": "2d0823e34e48b559003e4c6f0510f4e548171203"
+}

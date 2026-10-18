@@ -1,0 +1,31 @@
+{
+  "status": "ACTUAL_KERNEL_AST_SCALAR_PARITY_PASS",
+  "pose_cases": [
+    0,
+    6,
+    67,
+    69,
+    70,
+    84,
+    85,
+    86,
+    95,
+    96,
+    97,
+    98,
+    944,
+    1790,
+    2636,
+    3482,
+    4328,
+    5174,
+    6020
+  ],
+  "fixture_classes": 6,
+  "block_boundary_and_signed_zero_cases": 8,
+  "elapsed_seconds": 11.25998353700561,
+  "scope": "NumPy scalar execution of actual source ASTs; CUDA hardware parity remains untested",
+  "GPU_calls": 0,
+  "integrations": 0,
+  "PPO": 0
+}

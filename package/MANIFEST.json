@@ -1,0 +1,57 @@
+{
+  "files": {
+    "LICENSE-warp.txt": {
+      "bytes": 10173,
+      "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+    },
+    "README.txt": {
+      "bytes": 4165,
+      "sha256": "0b40bbf74f18e3eb32b8577c8be3c0defa5c18afa8aaa72f237632c518e93481"
+    },
+    "cases.npz": {
+      "bytes": 833241,
+      "sha256": "11366fd14e17bc45785da7d2137c7a0f2fdbc3e762ec3eb4df3fd823412e20f3"
+    },
+    "cloud-partial-review.json": {
+      "bytes": 10086,
+      "sha256": "94119c8b99aad8a7428e37fde9753f80e59100efed20376929a81b1b80d97804"
+    },
+    "convex_pose_kernel.py": {
+      "bytes": 3956,
+      "sha256": "d6d09bd217278e949ae389e31d7f437d08f5ccfac6e311a2060e19d3a442f33f"
+    },
+    "parallel_hull.py": {
+      "bytes": 14221,
+      "sha256": "1ead2ec62a594e82cf872ae1f3e03e09fb539589b974d8805e6cad8b5ffc64fd"
+    },
+    "precise_pose_kernel.py": {
+      "bytes": 1847,
+      "sha256": "3e869e7350234a29a541d781f8bc245e89a95710c9986532f307b8a301076829"
+    },
+    "probe-plan.json": {
+      "bytes": 1915,
+      "sha256": "aa526fd0a53aead8c5d25e58e1f747679b685da82c7983c16d257587e4ab59a4"
+    },
+    "runner.py": {
+      "bytes": 14523,
+      "sha256": "6d1a01b11bab6c1bac6ccb909cb93d04cba9fdd7afbd4ff1958a2a8b230625e4"
+    },
+    "validation/geometry-codegen-review.json": {
+      "bytes": 426,
+      "sha256": "cf9523b7cf710bf112f7272689d4e8d635e45aae1d81c20d0ea14ec6233420ee"
+    },
+    "validation/geometry-delivery-review.json": {
+      "bytes": 320,
+      "sha256": "bc30e91adf5ace7ef404e0e06def2a1919ef2fe2d55ccc6c9e1f0f61c226aef7"
+    },
+    "validation/parallel-semantic-review.json": {
+      "bytes": 498,
+      "sha256": "1e69856063528d06ba767888f65dc7c6641135dfe3839c0caabb21c8f2c9980a"
+    },
+    "worker.py": {
+      "bytes": 15250,
+      "sha256": "fbaf16eb704fbc255bd173e6a9c46644bfd459aa1682ae944ca6c6025a6f6d33"
+    }
+  },
+  "format": "stage12-geometry-parallel-probe-v1"
+}
