@@ -1,0 +1,2058 @@
+{
+  "archive_limit_bytes": 51380224,
+  "archives": [
+    {
+      "archive_bytes": 12918218,
+      "archive_limit_bytes": 51380224,
+      "archive_sha256": "e9e0dfb59f85d39d60b4b1eeacd15ad8e5ab4029849ef17102e66a2f33675c4a",
+      "branch": "stage12-overhead-v1-return-20261018t122606z-ce5ae68b3c-vol000",
+      "commit": "5db86fc3bb6256453b026e288f3c167a75e87238",
+      "directory": "volume-000",
+      "format": "stage12-full-path-segment-volume-v1",
+      "manifest_sha256": "e56ffee8f5df75d1289424e4517f4988b872323af78871fb290404975a6e4252",
+      "number": 0,
+      "parts": [
+        {
+          "bytes": 524289,
+          "name": "part-0000.b64",
+          "sha256": "ea2707be24a6c11219cb63a05f3a643c8553083eb986445f0fc1418d79d37356"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0001.b64",
+          "sha256": "c1fb1015eade2ed8dc5e6704d67d4efcb77bea4c608069085e10d05b7d8acf13"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0002.b64",
+          "sha256": "4d687f5b78fa1b09094eb7d0a199f60243b55fc875cf2afaf53db7204905eafc"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0003.b64",
+          "sha256": "2470995442ffc9077b4138162fb933793b235fe3722deecbb5ebb6bdaeaf87f3"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0004.b64",
+          "sha256": "11886a0664cdb59580faf165003b4be6bcc61dcc7a5d486daf053fbba977f915"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0005.b64",
+          "sha256": "36496d82f7bc8a606f276f91ee45dfe1524b1c210cf4693e9691a63722c1a4ff"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0006.b64",
+          "sha256": "fa470de95ee85dcdbc2296f0eb437d3e8d2daaef1dafa86840642c0d111aed03"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0007.b64",
+          "sha256": "4d3024073d3e4289a728b194bd3b5c5f8d03491d39d9e8f09cccded5ba77e7ea"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0008.b64",
+          "sha256": "5baa70b3feaa97f99af59a5595963c46e67d78fccee49cb216d4fd8d4bd6c35c"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0009.b64",
+          "sha256": "85e6ddb6b3e4ed4b8900f627c58945eb7ca8c5fa74547776acafa4d571bfb939"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0010.b64",
+          "sha256": "56086eca9bafde8ca2f25ab12f5f96a261b4c3e61d845356421bb4c9310c3683"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0011.b64",
+          "sha256": "cbd7fb6090e442997a2d61c2c315afb437cfa24de676191d1e50369b42526bc9"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0012.b64",
+          "sha256": "c8f6139f5feeeeb5f719352b06cf8907cf9066b378c1aff2adfd0bc783d47a58"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0013.b64",
+          "sha256": "9ebf429b664bbcc3181d66f44ec87e6a4d3a3448619d0c10486643274977c61c"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0014.b64",
+          "sha256": "c51b72bf329433fc2c32ec58314acf1294c0561f580816862c89075aa660fb44"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0015.b64",
+          "sha256": "dec257385c2c2305d9a4add2ab351ddd33ebc22a9cd43bc9931660bc4c2225b0"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0016.b64",
+          "sha256": "0d0bcd06e1c3ddab1439ae56ccead00715c5d5259a90046485b134d617e721f5"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0017.b64",
+          "sha256": "4ad7fbbe1974a0deaf2527ac84550de18732109be87f9fde89d6291bce5ed22f"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0018.b64",
+          "sha256": "26dc1989772400c2da221a0333589d8acced67923568e3182fdbbc131096a13f"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0019.b64",
+          "sha256": "c88abe50a1ecb83fb5d5acb55b1be8d1eb378d99d7da9d611cfd6370d8ae8e44"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0020.b64",
+          "sha256": "ce1486577c51632d6cf70ae8768aa79333c9819bd16323b094582d7b9361f45b"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0021.b64",
+          "sha256": "495b7c6dbc5d77b8806bba1b3f6c344c08f77300efe29b95a876e3b9a1bfb4d1"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0022.b64",
+          "sha256": "6ba4f3ea3ee392fbd6ce1babe2264e91f3266100dca3c63b84143d3b862c9fd3"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0023.b64",
+          "sha256": "62ab5cd22a991fd5599c29386e40074f323f4809d1882fd6fa5f60658f402209"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0024.b64",
+          "sha256": "12bac7f1940e742a7244cf064a529b2ed0780bc186951e148fd327a05eca5626"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0025.b64",
+          "sha256": "acd853d3db4cc5cfca7d141a335791704db7b7b25ac13bd1b290d0268c3408f3"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0026.b64",
+          "sha256": "d3557c4eafb8023c015e77ce31a78ec21fcb0a3c92116824bee547393fe00bb2"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0027.b64",
+          "sha256": "2b99fab2a5ee7f32c43e0539276b11cfda0bc99add8cdde964fa6c5ef6dee2e4"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0028.b64",
+          "sha256": "a152405151db8552a22531a4fa173b1636644836696c2922c6a26c59427383f2"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0029.b64",
+          "sha256": "96c1a76d28f0e845fdbd9ab95d92e36f9fbf7f36424ddc0151c92822ef8a7c1e"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0030.b64",
+          "sha256": "d5f28c0f37df43026755370b9a52503dc8928b7cdef8ec8454fa53677a7126fa"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0031.b64",
+          "sha256": "230080a90d1126bc7077ed18b693c403a42284a51fa7d56bff96394255bf38e2"
+        },
+        {
+          "bytes": 447077,
+          "name": "part-0032.b64",
+          "sha256": "c3e1fe4a25b968707d91b82e0bc173dd6117aed7d7f336a86ac3d87c7d1078bc"
+        }
+      ]
+    }
+  ],
+  "automatic_push": false,
+  "branch": "stage12-overhead-v1-return-20261018t122606z-ce5ae68b3c",
+  "evidence_index_sha256": "ce5ae68b3c21d23a75ffe9d48f9ebfaa6f731ecf940e09fec8cfca68568df989",
+  "format": "stage12-full-path-segmented-git-return-v1",
+  "omitted_frozen_inputs": {
+    "reason": "Already delivered; unchanged 951-file frozen payload",
+    "sha256": "24175c55097179d63491e59f56c1a859d29017a3d5e344ca95324afa6532033f"
+  },
+  "original_evidence_unchanged": true,
+  "package_manifest_sha256": "cf694138dcd03a0b5d1346b684965b716f5179c1e7114b4c8cda393fb6636797",
+  "result": {
+    "PPO": 0,
+    "automatic_PR": false,
+    "automatic_merge": false,
+    "automatic_power_actions": 0,
+    "automatic_push": false,
+    "canonical_after_interval": {
+      "attempted_lower": 746730,
+      "attempted_upper": 746730,
+      "completed_lower": 746728,
+      "completed_upper": 746729
+    },
+    "canonical_before": {
+      "attempted_lower": 746730,
+      "attempted_upper": 746730,
+      "completed_lower": 746728,
+      "completed_upper": 746729
+    },
+    "cloud_training": 0,
+    "counts": {
+      "PPO": 0,
+      "cloud": 0,
+      "integrations_attempted": 0,
+      "integrations_completed": 0
+    },
+    "counts_final": true,
+    "error": null,
+    "forced_timeout": false,
+    "full_dynamic_rollout_validated": false,
+    "full_path_independent_review_pending": true,
+    "full_path_result": {
+      "PPO": 0,
+      "canonical_after_interval": {
+        "attempted_lower": 746730,
+        "attempted_upper": 746730,
+        "completed_lower": 746728,
+        "completed_upper": 746729
+      },
+      "canonical_before": {
+        "attempted_lower": 746730,
+        "attempted_upper": 746730,
+        "completed_lower": 746728,
+        "completed_upper": 746729
+      },
+      "cloud_training": 0,
+      "completed_public_steps": 0,
+      "elapsed_s": 5.30874816999858,
+      "errors": [
+        {
+          "error": "RuntimeError('Owner initialization failed: {\\'sequence\\': 0, \\'owner\\': 0, \\'ok\\': False, \\'error\\': \"RuntimeError(\\'Cache owner or write mode differs\\')\"}')",
+          "traceback": "Traceback (most recent call last):\n  File \"/home/lx/microduck-double-balance/artifacts/double-balance-stage12/overhead-v1/package/full_worker.py\", line 28, in execute\n    with OwnerProcesses(repo,out,[owner],[auth],torch,TensorDict,\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/artifacts/double-balance-stage12/overhead-v1/package/full_processes.py\", line 67, in __init__\n    require(r.get(\"sequence\") == 0 and r.get(\"owner\") == i and r.get(\"ok\") is True and r.get(\"ready\") is True,\n  File \"/home/lx/microduck-double-balance/artifacts/double-balance-stage12/overhead-v1/local-20261018-v1/inputs/candidate/integration/durable.py\", line 11, in require\n    raise RuntimeError(message)\nRuntimeError: Owner initialization failed: {'sequence': 0, 'owner': 0, 'ok': False, 'error': \"RuntimeError('Cache owner or write mode differs')\"}\nOwner initialization cleanup: RuntimeError('Owner shutdown incomplete; inspect WAL and closeout; never retry')\n"
+        }
+      ],
+      "ledger": {
+        "attempts": {},
+        "checkpoint_sequence": 0,
+        "completed": {},
+        "counter_intervals": {
+          "ActionManager": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Action_apply": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Action_apply_action": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Action_process_action": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Action_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "BAM_apply_delay": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "BAM_compute": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "BVH_refit": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "CPU_forward": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "CPU_forward_context": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "CPU_forward_simulation": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "CPU_kinematics": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "CUDA_graphs": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "CommandManager": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Command_compute": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Command_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "ContactGraph_allocation": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "ContactGraph_capture_begin": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "ContactGraph_capture_end": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "ContactGraph_cleanup_sync": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "ContactGraph_copy_api": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "ContactGraph_exec_destroy": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "ContactGraph_graph_destroy": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "ContactGraph_kernel_api": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "ContactGraph_launch": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "ContactGraph_module_load": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Contact_order_apply": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Cost_override_copy": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Cost_reduce_kernel": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Cost_rows_kernel": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "CurriculumManager": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Curriculum_compute": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Curriculum_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Data_boundary_restore": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Data_restore": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Data_snapshots": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Env__reset_idx": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Env_substep_counter": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "EventManager": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Event_apply": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Event_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "External_Model_restore": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "GPU_forward": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "GPU_reset_data": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "GPU_solver": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Hull_allocation": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Hull_fixture_query": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Hull_fixture_upload": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Hull_module_load": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Hull_vertex_pin": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Kinematic_allocation": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Kinematic_model_capture": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Kinematic_module_load": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Kinematic_pose_compute": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Kinematic_pose_upload": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "MetricsManager": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Metrics_compute": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Metrics_compute_substep": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Metrics_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Metrics_substep": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Model_boundary_restore": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Model_expansion": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Model_material_setup": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Model_runtime_assignments": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Norm_kernel": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "ObservationManager": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Observation_compute": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Observation_delay": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Observation_noise": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Observation_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Owner_restore": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Owner_snapshots": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "PPO": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Parallel_hull_allocation": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Parallel_hull_kernel": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Precise_allocation": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Precise_contact_kernel": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Precise_geometry_kernel": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Precise_module_load": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "RK4_integrator": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "RK_readback_barrier": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "RK_readback_close": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "RK_readback_copy_enqueue": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "RK_readback_host_allocate": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "RK_readback_reference": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "RK_stage_readback": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "RNG_bank_initialize": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "RNG_restore": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "RNG_sample": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "RecorderManager": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Recorder_close": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Recorder_post_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Recorder_post_step": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Recorder_pre_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Recorder_record_post_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Recorder_record_post_step": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Recorder_record_pre_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Reduction_allocation": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Reduction_device_bytes": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Reduction_module_load": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "RewardManager": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Reward_compute": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Reward_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Rigid_metadata_kernel": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Rigid_module_load": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Scene_initialize": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Scene_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Scene_update": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Scene_write": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Sensor_context_set": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Simulation_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "SolverContext_create": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "SolverOrder_kernel": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "SolverOrder_module_load": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Solver_linesearch": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Solver_solver_iteration": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Solver_update_constraint": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Solver_update_gradient": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Solver_update_gradient_incremental": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Solverinit_context": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Startup_BAM_parameter_write": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "TerminationManager": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Termination_compute": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Termination_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "archive_MiB": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "cloud": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "context_create": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "endpoint_sensor_read": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "full_RL_environment": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "integrations": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "model_option_write": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "observation_action_reads": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "observation_height_reads": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "physical_worlds": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "position_write": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "private_clock_write": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "public_clock_write": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "ray_batch": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "sense": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "sensor_data_reads": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "snapshot_bytes_each": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "state_restore": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "state_snapshot": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          }
+        },
+        "counters_exact": true,
+        "counts": {
+          "PPO": 0,
+          "cloud": 0,
+          "integrations_attempted": 0,
+          "integrations_completed": 0
+        },
+        "exact": true,
+        "format": "stage12-hierarchical-accounting-v1",
+        "incomplete_tail": false,
+        "integration_attempted_lower": 0,
+        "integration_attempted_upper": 0,
+        "integration_completed_lower": 0,
+        "integration_completed_upper": 0,
+        "nested_upper_bound_scope": "Whole-owner reserved caps; deliberately conservative after unsealed exit",
+        "pending": {},
+        "pending_nested": {},
+        "rows": 0,
+        "wal_exact": true
+      },
+      "status": "OVERHEAD_STOPPED_PRESERVE"
+    },
+    "ledger": {
+      "attempts": {},
+      "checkpoint_sequence": 0,
+      "completed": {},
+      "counter_intervals": {
+        "ActionManager": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Action_apply": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Action_apply_action": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Action_process_action": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Action_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "BAM_apply_delay": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "BAM_compute": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "BVH_refit": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "CPU_forward": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "CPU_forward_context": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "CPU_forward_simulation": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "CPU_kinematics": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "CUDA_graphs": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "CommandManager": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Command_compute": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Command_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "ContactGraph_allocation": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "ContactGraph_capture_begin": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "ContactGraph_capture_end": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "ContactGraph_cleanup_sync": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "ContactGraph_copy_api": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "ContactGraph_exec_destroy": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "ContactGraph_graph_destroy": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "ContactGraph_kernel_api": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "ContactGraph_launch": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "ContactGraph_module_load": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Contact_order_apply": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Cost_override_copy": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Cost_reduce_kernel": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Cost_rows_kernel": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "CurriculumManager": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Curriculum_compute": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Curriculum_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Data_boundary_restore": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Data_restore": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Data_snapshots": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Env__reset_idx": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Env_substep_counter": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "EventManager": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Event_apply": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Event_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "External_Model_restore": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "GPU_forward": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "GPU_reset_data": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "GPU_solver": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Hull_allocation": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Hull_fixture_query": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Hull_fixture_upload": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Hull_module_load": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Hull_vertex_pin": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Kinematic_allocation": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Kinematic_model_capture": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Kinematic_module_load": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Kinematic_pose_compute": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Kinematic_pose_upload": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "MetricsManager": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Metrics_compute": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Metrics_compute_substep": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Metrics_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Metrics_substep": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Model_boundary_restore": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Model_expansion": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Model_material_setup": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Model_runtime_assignments": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Norm_kernel": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "ObservationManager": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Observation_compute": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Observation_delay": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Observation_noise": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Observation_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Owner_restore": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Owner_snapshots": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "PPO": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Parallel_hull_allocation": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Parallel_hull_kernel": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Precise_allocation": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Precise_contact_kernel": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Precise_geometry_kernel": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Precise_module_load": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "RK4_integrator": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "RK_readback_barrier": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "RK_readback_close": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "RK_readback_copy_enqueue": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "RK_readback_host_allocate": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "RK_readback_reference": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "RK_stage_readback": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "RNG_bank_initialize": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "RNG_restore": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "RNG_sample": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "RecorderManager": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Recorder_close": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Recorder_post_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Recorder_post_step": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Recorder_pre_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Recorder_record_post_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Recorder_record_post_step": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Recorder_record_pre_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Reduction_allocation": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Reduction_device_bytes": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Reduction_module_load": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "RewardManager": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Reward_compute": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Reward_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Rigid_metadata_kernel": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Rigid_module_load": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Scene_initialize": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Scene_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Scene_update": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Scene_write": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Sensor_context_set": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Simulation_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "SolverContext_create": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "SolverOrder_kernel": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "SolverOrder_module_load": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Solver_linesearch": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Solver_solver_iteration": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Solver_update_constraint": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Solver_update_gradient": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Solver_update_gradient_incremental": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Solverinit_context": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Startup_BAM_parameter_write": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "TerminationManager": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Termination_compute": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Termination_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "archive_MiB": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "cloud": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "context_create": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "endpoint_sensor_read": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "full_RL_environment": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "integrations": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "model_option_write": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "observation_action_reads": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "observation_height_reads": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "physical_worlds": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "position_write": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "private_clock_write": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "public_clock_write": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "ray_batch": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "sense": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "sensor_data_reads": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "snapshot_bytes_each": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "state_restore": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "state_snapshot": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        }
+      },
+      "counters_exact": true,
+      "counts": {
+        "PPO": 0,
+        "cloud": 0,
+        "integrations_attempted": 0,
+        "integrations_completed": 0
+      },
+      "exact": true,
+      "format": "stage12-hierarchical-accounting-v1",
+      "incomplete_tail": false,
+      "integration_attempted_lower": 0,
+      "integration_attempted_upper": 0,
+      "integration_completed_lower": 0,
+      "integration_completed_upper": 0,
+      "nested_upper_bound_scope": "Whole-owner reserved caps; deliberately conservative after unsealed exit",
+      "pending": {},
+      "pending_nested": {},
+      "rows": 0,
+      "wal_exact": true
+    },
+    "native_points_accepted": 2,
+    "native_points_total": 5,
+    "new_window": {
+      "PPO": 0,
+      "cleanup_reserve_seconds": 120,
+      "cloud_training": 0,
+      "deadline_reset": false,
+      "explicit_cli_scope": "LOCAL_RTX5060_OVERHEAD_V1",
+      "native_stop_utc": 1792326958.6617787,
+      "new_native_seconds": 600,
+      "new_total_seconds": 720,
+      "old_campaign_resume": false,
+      "old_windows_reused": false,
+      "original_deadlines": {
+        "native": "2026-10-17T11:23:14+08:00",
+        "total": "2026-10-17T11:53:14+08:00"
+      },
+      "parent_pid": 9809,
+      "plan_sha256": "32599dbf0a6198f9784107ed385dd76cea4f1f4d9122c4a6ff5245997c23f78e",
+      "runtime_preflight": {
+        "native_calls": 0,
+        "native_dependencies_imported": false,
+        "source_files": 219,
+        "status": "PINNED_RUNTIME_SOURCE_PREFLIGHT_PASS"
+      },
+      "separately_authorized": true,
+      "started_utc": 1792326358.6617787,
+      "stop_utc": 1792327078.6617787
+    },
+    "no_automatic_retry": true,
+    "old_campaign_resume": false,
+    "original_deadline_reset": false,
+    "original_deadlines": {
+      "native": "2026-10-17T11:23:14+08:00",
+      "total": "2026-10-17T11:53:14+08:00"
+    },
+    "performance_gate": null,
+    "returncode": 2,
+    "short_scope_only": true,
+    "status": "OVERHEAD_STOPPED_PRESERVE",
+    "training_ready": false
+  }
+}
