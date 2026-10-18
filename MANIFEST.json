@@ -1,0 +1,275 @@
+{
+  "archive_bytes": 7909230,
+  "archive_sha256": "f04b8f65e36565a8fab0a820f2b046661b1b1c04a713c106c659542358dcd77a",
+  "branch": "stage12-pair-precision-v1-return-20261018t022133z-0920f62b50",
+  "diagnostic_package_omitted_files": {
+    "frozen-inputs.zip": {
+      "reason": "Previously delivered frozen source payload; full pin manifest is included",
+      "sha256": "24175c55097179d63491e59f56c1a859d29017a3d5e344ca95324afa6532033f"
+    }
+  },
+  "evidence_index_sha256": "0920f62b502d28a8055eb90611c20c9cec34273d22f2e8ce0079ca28e43a9beb",
+  "format": "stage12-pair-precision-git-return-v1",
+  "old_return_branch_replaced": false,
+  "parts": [
+    {
+      "bytes": 524289,
+      "name": "evidence.part-0000.b64",
+      "sha256": "18f6bb9d6e5192fdb154aa7b77925d963a79783355f74a554491435b6e1d3cbb"
+    },
+    {
+      "bytes": 524289,
+      "name": "evidence.part-0001.b64",
+      "sha256": "86fb42c8250e08a5e87b876222dee92f39eb2d756c1a4fd923b14e9b940b6526"
+    },
+    {
+      "bytes": 524289,
+      "name": "evidence.part-0002.b64",
+      "sha256": "ccbfdef549e42b53ec6791edbd223d6314cadefbb20c6e5cd6afd1c6f8ad25c1"
+    },
+    {
+      "bytes": 524289,
+      "name": "evidence.part-0003.b64",
+      "sha256": "c23c41c87a7f546328d12b9eea1a09cb7bea2c408ba69b35d1f15b38437194dc"
+    },
+    {
+      "bytes": 524289,
+      "name": "evidence.part-0004.b64",
+      "sha256": "a3dbae17ec3effae06bffaed0945f0d5ac0ca6efc3f3ac3401710c69fdb8082a"
+    },
+    {
+      "bytes": 524289,
+      "name": "evidence.part-0005.b64",
+      "sha256": "520e1babcbf57a976611d0724e36736941c164e571ccc217aa5d8421db6d9c41"
+    },
+    {
+      "bytes": 524289,
+      "name": "evidence.part-0006.b64",
+      "sha256": "86a81f24e1b2836c2ab43c982f480f60e7b125b65967684190de52f08176e82e"
+    },
+    {
+      "bytes": 524289,
+      "name": "evidence.part-0007.b64",
+      "sha256": "6fc67000b66754b9ed10c5e4894d266100e1fcb833a01f46f4dcf9a192b23530"
+    },
+    {
+      "bytes": 524289,
+      "name": "evidence.part-0008.b64",
+      "sha256": "42a9915af8f37111f73fb33ab04f772e6b37df654066a0712e9ab7113c418b3a"
+    },
+    {
+      "bytes": 524289,
+      "name": "evidence.part-0009.b64",
+      "sha256": "af7c533cb51fd288b2ef828d713934aeab585ebce451a90a6639ff9920320794"
+    },
+    {
+      "bytes": 524289,
+      "name": "evidence.part-0010.b64",
+      "sha256": "d8b3b34e57ae07fa4bbea547bb2c6c13cd7ad05eb6ee817a75870fa6cc540446"
+    },
+    {
+      "bytes": 524289,
+      "name": "evidence.part-0011.b64",
+      "sha256": "53591f764f1393526a257a99cc59a0342dec242ca8a4cde15dd9d4bada31ad2a"
+    },
+    {
+      "bytes": 524289,
+      "name": "evidence.part-0012.b64",
+      "sha256": "d1334f43df26a816a31f7b6d767c4e2d22e53214da646413560c71d4587e90f2"
+    },
+    {
+      "bytes": 524289,
+      "name": "evidence.part-0013.b64",
+      "sha256": "cd2afde19fef37839bbce56bf365b250d77c39c0e33a8f0dce608257bd177c5b"
+    },
+    {
+      "bytes": 524289,
+      "name": "evidence.part-0014.b64",
+      "sha256": "7cb808b710d593ff0d97d339fe967d134a3a6903a0419525ca682bbf61a9559e"
+    },
+    {
+      "bytes": 524289,
+      "name": "evidence.part-0015.b64",
+      "sha256": "940a469a521fb8dc717f513fc3e258640d77cf3670f807a5c61e813ae88f7100"
+    },
+    {
+      "bytes": 524289,
+      "name": "evidence.part-0016.b64",
+      "sha256": "7c4ca971d1c4c08523de973a0c720fbc4b9c112ead4113d3e76eedb04e502c80"
+    },
+    {
+      "bytes": 524289,
+      "name": "evidence.part-0017.b64",
+      "sha256": "213a3137200e56cffa45da3ae59d70cfd228ddbebfc22807a768159bc4de541f"
+    },
+    {
+      "bytes": 524289,
+      "name": "evidence.part-0018.b64",
+      "sha256": "08f753e0c689e30c638542e002694584940db4929cab37d92241ff873c6a42e2"
+    },
+    {
+      "bytes": 524289,
+      "name": "evidence.part-0019.b64",
+      "sha256": "402484c40e936701e9d095475234069bfcdcf5cb6359b589bf024b19b771897c"
+    },
+    {
+      "bytes": 59881,
+      "name": "evidence.part-0020.b64",
+      "sha256": "fc48172a6ae4e6cc02540d75ce0f2945488b44324154c0ecbbada5784b60346e"
+    }
+  ],
+  "result": {
+    "PPO": 0,
+    "automatic_power_actions": 0,
+    "automatic_push": false,
+    "cloud_training": 0,
+    "counts": {
+      "CPU_forward_attempted": 3,
+      "CPU_forward_completed": 3,
+      "CPU_kinematics_attempted": 1,
+      "CPU_kinematics_completed": 1,
+      "Model_expansion_attempted": 1,
+      "Model_expansion_completed": 1,
+      "Model_material_setup_attempted": 1,
+      "Model_material_setup_completed": 1,
+      "PPO": 0,
+      "Pair_module_load_attempted": 1,
+      "Pair_module_load_completed": 1,
+      "Pair_query_batch_attempted": 8,
+      "Pair_query_batch_completed": 8,
+      "Pair_query_slots_attempted": 560,
+      "Pair_query_slots_completed": 560,
+      "Scene_initialize_attempted": 1,
+      "Scene_initialize_completed": 1,
+      "Sensor_context_set_attempted": 1,
+      "Sensor_context_set_completed": 1,
+      "cloud_training": 0,
+      "context_create_attempted": 2,
+      "context_create_completed": 2,
+      "full_RL_environment_attempted": 1,
+      "full_RL_environment_completed": 1,
+      "full_RL_environment_constructed": 1,
+      "graph_setup_suppressed": 3,
+      "integrations_attempted": 0,
+      "integrations_completed": 0
+    },
+    "dynamic_repair_validated": false,
+    "forced_timeout": false,
+    "native_acceptance_credit": false,
+    "native_points_accepted": 2,
+    "native_points_total": 5,
+    "new_local_window": {
+      "deadline_reset": false,
+      "new_local_budget_seconds": 900,
+      "new_local_window_separately_authorized": true,
+      "new_window_scope": "Separate local pair query diagnostic only; does not extend or resume the old campaign",
+      "old_campaign_resume": false,
+      "original_campaign_expired": true,
+      "original_native_cutoff_utc": 1792207394.0,
+      "original_total_deadline_utc": 1792209194.0,
+      "started_utc": 1792290076.2784715,
+      "stop_utc": 1792290976.2784715
+    },
+    "no_automatic_retry": true,
+    "observation_count_is_final": true,
+    "observation_percent": 100.0,
+    "observations": 560,
+    "original_deadlines": {
+      "native": "2026-10-17T11:23:14+08:00",
+      "total": "2026-10-17T11:53:14+08:00"
+    },
+    "percentage_scope": "Saved geometry query records; final status/ledger/cleanup are required for collection completion",
+    "previous_counts_unchanged": {
+      "CPU_forward_attempted": 3,
+      "CPU_forward_completed": 3,
+      "CPU_kinematics_attempted": 1,
+      "CPU_kinematics_completed": 1,
+      "ContactGraph_allocation_attempted": 18,
+      "ContactGraph_allocation_completed": 18,
+      "ContactGraph_capture_begin_attempted": 1,
+      "ContactGraph_capture_begin_completed": 1,
+      "ContactGraph_capture_end_attempted": 1,
+      "ContactGraph_capture_end_completed": 1,
+      "ContactGraph_cleanup_sync_attempted": 1,
+      "ContactGraph_cleanup_sync_completed": 1,
+      "ContactGraph_copy_api_attempted": 16,
+      "ContactGraph_copy_api_completed": 16,
+      "ContactGraph_exec_destroy_attempted": 1,
+      "ContactGraph_exec_destroy_completed": 1,
+      "ContactGraph_graph_destroy_attempted": 1,
+      "ContactGraph_graph_destroy_completed": 1,
+      "ContactGraph_kernel_api_attempted": 33,
+      "ContactGraph_kernel_api_completed": 33,
+      "ContactGraph_launch_attempted": 140,
+      "ContactGraph_launch_completed": 140,
+      "ContactGraph_module_load_attempted": 1,
+      "ContactGraph_module_load_completed": 1,
+      "Contact_order_apply_attempted": 140,
+      "Contact_order_apply_completed": 140,
+      "Cost_override_copy_attempted": 362,
+      "Cost_override_copy_completed": 362,
+      "Cost_reduce_kernel_attempted": 362,
+      "Cost_reduce_kernel_completed": 362,
+      "Cost_rows_kernel_attempted": 362,
+      "Cost_rows_kernel_completed": 362,
+      "Data_restore_attempted": 140,
+      "Data_restore_completed": 140,
+      "GPU_forward_attempted": 140,
+      "GPU_forward_completed": 140,
+      "GPU_solver_attempted": 140,
+      "GPU_solver_completed": 140,
+      "Model_expansion_attempted": 1,
+      "Model_expansion_completed": 1,
+      "Model_material_setup_attempted": 1,
+      "Model_material_setup_completed": 1,
+      "Norm_kernel_attempted": 584,
+      "Norm_kernel_completed": 584,
+      "PPO": 0,
+      "Reduction_allocation_attempted": 2,
+      "Reduction_allocation_completed": 2,
+      "Reduction_module_load_attempted": 1,
+      "Reduction_module_load_completed": 1,
+      "Rigid_metadata_kernel_attempted": 140,
+      "Rigid_metadata_kernel_completed": 140,
+      "Rigid_module_load_attempted": 1,
+      "Rigid_module_load_completed": 1,
+      "Scene_initialize_attempted": 1,
+      "Scene_initialize_completed": 1,
+      "Sensor_context_set_attempted": 1,
+      "Sensor_context_set_completed": 1,
+      "SolverContext_create_attempted": 140,
+      "SolverContext_create_completed": 140,
+      "SolverOrder_kernel_attempted": 222,
+      "SolverOrder_kernel_completed": 222,
+      "SolverOrder_module_load_attempted": 1,
+      "SolverOrder_module_load_completed": 1,
+      "Solver_linesearch_attempted": 222,
+      "Solver_linesearch_completed": 222,
+      "Solver_solver_iteration_attempted": 222,
+      "Solver_solver_iteration_completed": 222,
+      "Solver_update_constraint_attempted": 362,
+      "Solver_update_constraint_completed": 362,
+      "Solver_update_gradient_attempted": 140,
+      "Solver_update_gradient_completed": 140,
+      "Solver_update_gradient_incremental_attempted": 222,
+      "Solver_update_gradient_incremental_completed": 222,
+      "Solverinit_context_attempted": 140,
+      "Solverinit_context_completed": 140,
+      "cloud_training": 0,
+      "context_create_attempted": 2,
+      "context_create_completed": 2,
+      "full_RL_environment_attempted": 1,
+      "full_RL_environment_completed": 1,
+      "full_RL_environment_constructed": 1,
+      "graph_setup_suppressed": 3,
+      "integrations_attempted": 0,
+      "integrations_completed": 0,
+      "model_option_write_attempted": 140,
+      "model_option_write_completed": 140
+    },
+    "returncode": 0,
+    "status": "PAIR_PRECISION_COMPLETE_REVIEW_REQUIRED",
+    "training_ready": false
+  },
+  "source_return_commit": "c609aa67f7fb510c7e543239d29659322cf5f6cd"
+}
