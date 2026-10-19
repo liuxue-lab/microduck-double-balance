@@ -1,0 +1,4666 @@
+{
+  "archive_limit_bytes": 51380224,
+  "archives": [
+    {
+      "archive_bytes": 22385598,
+      "archive_limit_bytes": 51380224,
+      "archive_sha256": "890ab7522739a66ae237084abbf2f9b260feabc8795afb6a982e2aabe270b58e",
+      "branch": "stage12-foot-ivp-v1-return-20261019t105848z-d020f3445f-vol000",
+      "commit": "94e14400691f3cf201f91d0f296cb9ea82618d54",
+      "directory": "volume-000",
+      "format": "stage12-full-path-segment-volume-v1",
+      "manifest_sha256": "877ea4307d8edd8b580987327d9545d71c7a3287b8134b0844742f5343773b66",
+      "number": 0,
+      "parts": [
+        {
+          "bytes": 524289,
+          "name": "part-0000.b64",
+          "sha256": "f2c90bdbd74a20a41c8c81a0967c05c81cdc13cbd12bb1e9417c386570573a03"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0001.b64",
+          "sha256": "58de514c8c6884d3308c8c14db3f4edb08f76175e5f56c2fd6e8200af1a6fb56"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0002.b64",
+          "sha256": "ffb38168ec94a92cdacc13473565f93224c78cdc930c2f3abda3c8c13dadac95"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0003.b64",
+          "sha256": "3f5990a81c131e931517cc33fea96af46a946694e9e8e7c32c85006169b990de"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0004.b64",
+          "sha256": "6bac8fdfb4fed715b2e196437c0655d9b5ef1a220e4656b1fc1639ae7f4163a4"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0005.b64",
+          "sha256": "1e0de46f48841d2f0030e2c8a5fa28349a34461807e81be8def6c89fab2f19e1"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0006.b64",
+          "sha256": "ba0a922afe92e1337e94466adf30a8442357951d3752e592c70ab4cdfe82ba34"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0007.b64",
+          "sha256": "3305d3c74737b80b453b5a8fcc0d2c51f0dbb3f9b750e8c1509fe9964cf2330c"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0008.b64",
+          "sha256": "7f4aed2a6f62107d9ff713c0ac5c4f06d52d93272d700464ee89f01f1bc002e2"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0009.b64",
+          "sha256": "77c834d8031bb81900d727e888d65fd8206937f7daffdbd24c2423589417c9dc"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0010.b64",
+          "sha256": "7951a897218070c9ef6c457e38902b46d561a90108e8e86dfd45f3bfa44ea3f8"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0011.b64",
+          "sha256": "0d1306bc2f9029783f6bb43407c0fb5fae90784cab57374905bb85e53f01abda"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0012.b64",
+          "sha256": "e7a34d1cca94e6798cfd2394a2822134fe3830f568c78dbb46b4fa4c9420da1f"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0013.b64",
+          "sha256": "113053077c773bcd4a79a9a9e813580cef8d9c2515c43ca21d41e43f113edfb4"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0014.b64",
+          "sha256": "18796cb5b2105c25995beeb79b359bb4f08f6d5106543f6b91ff7dcd30cc7791"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0015.b64",
+          "sha256": "3f9b2e03d241e04469fcab1c15420b4741dd46e9bfe5efe542c2ded74ac085f8"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0016.b64",
+          "sha256": "218e90db8b5b6de80f3aae04d4978161c1f722c020b9ddf1c8ff9f4ae7af5115"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0017.b64",
+          "sha256": "e0c4d07d6fb7a3bbe071d6ce7fa86aff79f4e05fdaa4afa9d8ef58017410025b"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0018.b64",
+          "sha256": "79b4356231a7108936307070ff433d76789a3985d839f2124189efbf1d103a97"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0019.b64",
+          "sha256": "303a7db2a9279e600663c9999cb622bfb9b42d5033cd5c1a7ac33778146a24b2"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0020.b64",
+          "sha256": "fd7abe1d47aee64c5a914aaf2da93ee73a2bb0573ccfe05cbf26ca68d369c7a8"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0021.b64",
+          "sha256": "7b45e4ffc7d30c650d9b7f726fc7926e96cec90291b04d6572b9578b1f92d7e9"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0022.b64",
+          "sha256": "46e65083d57c655deae30070054fa2c688f5692de62f14afdc6aff216cbea4a9"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0023.b64",
+          "sha256": "49c8f60b99125f5e579b22e5fbbd55489c590952959cedf3b5649cb3adb9e53f"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0024.b64",
+          "sha256": "b3e213f084cb1024b4e50e4986821710e66dfe22ea59bc2e724d31ca3b3f79eb"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0025.b64",
+          "sha256": "4cda8c51df69ff06571e9ff599e01c30016c5b5807ca20c1885324afc197f8c0"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0026.b64",
+          "sha256": "234030fcd4e064e4dfefe7546d078fe803a4ba75834a991846f8b7c82ce6df5f"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0027.b64",
+          "sha256": "0c75c3ab99d27eea3ff99db69e190d6788f507429aa81f08806a1a111449f77a"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0028.b64",
+          "sha256": "53fc055987c7540816f95ce1493076276a0d19a166e333b71fb698d67cfc5ca9"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0029.b64",
+          "sha256": "5a98b21c747ef836a2650d46179b9c911c6bfafc06d8f2f7fecb3ea477fdb472"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0030.b64",
+          "sha256": "fdef5c5bba20a0eacce41798dcd68cbcbae6870d85b7fda890c95f0140943460"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0031.b64",
+          "sha256": "dc2bf90fad9a519ae6270d350ef6c3b5baecab1ba22b704cba51d6d6cee743f0"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0032.b64",
+          "sha256": "03946f51c5858b8d4dc3650458773aadec6b762f328120b5bd015d0d6489e3b1"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0033.b64",
+          "sha256": "0b00b83af8febdcbdca4dc8ac29500a65c1571446c8631c2fb66c29e1e2f2f03"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0034.b64",
+          "sha256": "4139d1cb6d87729e4612986be420af887ac1951dfcd1e0d894146e9b23122446"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0035.b64",
+          "sha256": "b63d6c300640904a2f8af4221ae0ede64522c22a23b8f1310e6147da9ef86a0d"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0036.b64",
+          "sha256": "c4c6b23e3581a62a331b113ed4851a27287ee88b1333a3aaa668d693bf9d8e1a"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0037.b64",
+          "sha256": "78107b2ba10461969239c50fd74f567b171b223c06855fb79c41bc92ce4c9a38"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0038.b64",
+          "sha256": "9be2dcf018c65bae46b4a689c266b0864f0ac7197b836150ec21f683a0ddca68"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0039.b64",
+          "sha256": "d7f28273ff8bde75e7ff62c63c68ebcdc9f371b8d323f3440f234f2600723fbb"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0040.b64",
+          "sha256": "dd5bb84bf27af1066936ef3c2aca73068fd4a6850771e0b38a4fa9516cb9f482"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0041.b64",
+          "sha256": "9699c2f014f5cf5763730128a1d60562f8532b560e4c901f339f024b9f04ee42"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0042.b64",
+          "sha256": "a9757ac6f07aab9b6f8efbf8639a2a2a97609912e0807284ba17a66e87c0b9c6"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0043.b64",
+          "sha256": "0551d611452f7fc16d511740a8b0fe5cd0d4dc6aa60341d29c9d4969d8f9b627"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0044.b64",
+          "sha256": "880e83942a9977398af6969c9b6916b9067f8a8312b2b7f5f890b133b3d794a3"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0045.b64",
+          "sha256": "54463c4f633275645f3131bbdb3a218decfc8ff22828e4274352474e67e2417b"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0046.b64",
+          "sha256": "2b25fae018b61b77423328c970863ced96d7f564698a8019fd6040e0b0485f1e"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0047.b64",
+          "sha256": "ef95b590ab1b476e8264b24e8c248b91f78f58c04b63582179dc7c709c6676fc"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0048.b64",
+          "sha256": "128412a55d56b1e65287850b8fe73decfb556232671b20db9bb708652a5ddbb9"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0049.b64",
+          "sha256": "a9bb1a23ba767b5fdc63ffb0ccbc8fda324b1e9f46d544b34020ea0f7fc9cb3e"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0050.b64",
+          "sha256": "e577edb4c806bde55428c5667434e613df2539b50dec59f836741a1560338e0f"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0051.b64",
+          "sha256": "2c241368848acb2163d0686d021ba9ed40386c103cf4e04475bced9d12c276c1"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0052.b64",
+          "sha256": "88e3c8a3e9184adac76ea42efdd1d149937e7dd49d025332ca191f23987b41d2"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0053.b64",
+          "sha256": "dc8cda1f6ec77590d45b13b94f7ae3e0544359c4aedab58687ca421a23c9b160"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0054.b64",
+          "sha256": "e222c5073a39e6655772f580c4092d13a24ca238cbe852b219affa9fc4d5618b"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0055.b64",
+          "sha256": "8cc2b085c56f25c4b524476af474aa19d54e9d5a80206e5a967266f493f743a0"
+        },
+        {
+          "bytes": 487337,
+          "name": "part-0056.b64",
+          "sha256": "c868803fe24310a5f2d1310617510e2595dde51ceb6fc9553b83ca1ec4bf7ade"
+        }
+      ]
+    },
+    {
+      "archive_bytes": 72141,
+      "archive_limit_bytes": 51380224,
+      "archive_sha256": "64ea95ab242a456cb7ffee34b0a2b352a4d1e025119f6811b830075823720153",
+      "branch": "stage12-foot-ivp-v1-return-20261019t105848z-d020f3445f-vol001",
+      "commit": "b136d152cf6c12c6a55a1a14d706abd8b9691060",
+      "directory": "volume-001",
+      "format": "stage12-full-path-segment-volume-v1",
+      "manifest_sha256": "1fab0224585709075269bc2e11fa1cf9a1d9a669c5f26fa7ecc9f0133813b6c2",
+      "number": 1,
+      "parts": [
+        {
+          "bytes": 96189,
+          "name": "part-0000.b64",
+          "sha256": "0d124bcbf1ba80391c4138382a1e8cd02d42cb4913ef09f2ad813d81ede32a5c"
+        }
+      ]
+    }
+  ],
+  "automatic_push": false,
+  "branch": "stage12-foot-ivp-v1-return-20261019t105848z-d020f3445f",
+  "evidence_index_sha256": "d020f3445f871482fb553ad4f0b95d0d17a208ad7fcce3e7c16579a1b921f06c",
+  "format": "stage12-full-path-segmented-git-return-v1",
+  "omitted_frozen_inputs": {
+    "reason": "Already delivered derived frozen inputs; pinned archive required for reconstruction",
+    "sha256": "4bafbd2cf14f354eb29e0d0716415cf67c31b6f8eba59928d0c0f34b857f3323"
+  },
+  "original_evidence_unchanged": true,
+  "package_manifest_sha256": "de8af07eb36b8399226bbdfdb1b306821c46fb911125fcffd6bf386a0e7d9278",
+  "result": {
+    "PPO": 0,
+    "PPO_attempts_reserved": 0,
+    "PPO_completed": 0,
+    "automatic_power_actions": 0,
+    "automatic_retry": false,
+    "bootstrap": {
+      "PPO": 0,
+      "automatic_retry": false,
+      "cloud_training": 0,
+      "cwd": "/tmp/md12-g4j858wd/t",
+      "font": {
+        "actual": {
+          "bytes": 57651,
+          "git_blob_sha1": "a44d5bd76b9ae875053c6a26a16cdf3300d2693c",
+          "sha256": "119f931d556373a707f7a0709645c98e7866b385331e6246b09bba79a6acc576"
+        },
+        "expected": {
+          "bytes": 57651,
+          "git_blob_sha1": "a44d5bd76b9ae875053c6a26a16cdf3300d2693c",
+          "sha256": "119f931d556373a707f7a0709645c98e7866b385331e6246b09bba79a6acc576"
+        },
+        "external_processes_allowed": 0,
+        "graphics_backend": "Agg",
+        "graphics_contexts_created": false,
+        "installed_files_modified": false,
+        "optional_fontconfig_denials": [
+          {
+            "argv": [
+              "fc-list",
+              "--help"
+            ],
+            "exception": "FileNotFoundError",
+            "handling": "reviewed upstream except OSError -> []",
+            "spawned": false
+          }
+        ],
+        "source": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/matplotlib/font_manager.py",
+        "status": "OPTIONAL_FONTCONFIG_UNAVAILABLE_NATIVE_FONT_SCAN_FALLBACK",
+        "version": "3.10.9"
+      },
+      "git": {
+        "binary_identity": {
+          "bytes": 3710360,
+          "git_blob_sha1": "f6e43a237694d1f8967d0fed53615a7335b45faf",
+          "sha256": "587ef21868c948b883993e23209b86a72a6ddc06aab1545c697ffc31075acd4a"
+        },
+        "command": [
+          "/usr/bin/git",
+          "version"
+        ],
+        "completed_queries": 2,
+        "cwd": "/tmp/md12-g4j858wd/t",
+        "git_environment": {
+          "GIT_CONFIG_GLOBAL": "/dev/null",
+          "GIT_CONFIG_NOSYSTEM": "1",
+          "GIT_CONFIG_SYSTEM": "/dev/null",
+          "GIT_OPTIONAL_LOCKS": "0",
+          "GIT_PYTHON_GIT_EXECUTABLE": "/usr/bin/git",
+          "GIT_TERMINAL_PROMPT": "0"
+        },
+        "git_ok": true,
+        "installed_files_modified": false,
+        "maximum_queries": 2,
+        "network_commands": 0,
+        "null_device_write_opens": 0,
+        "permitted_queries": [
+          {
+            "argv": [
+              "/usr/bin/git",
+              "version"
+            ],
+            "audit_event": "subprocess.Popen",
+            "cwd": "/tmp/md12-g4j858wd/t"
+          },
+          {
+            "argv": [
+              "/usr/bin/git",
+              "version"
+            ],
+            "audit_event": "subprocess.Popen",
+            "cwd": "/tmp/md12-g4j858wd/t"
+          }
+        ],
+        "repository_commands": 0,
+        "reviewed_sources": [
+          {
+            "identity": {
+              "bytes": 8899,
+              "git_blob_sha1": "486010e17af37a8eefe18551cf88fb2ea51d72ca",
+              "sha256": "20509d015671fc8b903a1fc105db5291d22b647b0e49dd1c8f43b9d2df68aeca"
+            },
+            "path": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/git/__init__.py"
+          },
+          {
+            "identity": {
+              "bytes": 67472,
+              "git_blob_sha1": "15d7820df5dbbc0b4693b7367883ebb9eb7af23e",
+              "sha256": "cb4d7237c3f6245b853f9746cc7216f6f77eb814233f32bcc9f64c6486596f7e"
+            },
+            "path": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/git/cmd.py"
+          },
+          {
+            "identity": {
+              "bytes": 46786,
+              "git_blob_sha1": "20e42b4126ed23ca3962679388637ecb1e8222b9",
+              "sha256": "a589fd740973f90c2f34c5970f5339ee930f422b6d84e33ceaa4d12bf7294ea5"
+            },
+            "path": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/git/remote.py"
+          }
+        ],
+        "source_form": "release_version_stamp",
+        "status": "READ_ONLY_GITPYTHON_IMPORT_PASS",
+        "version": "3.1.46"
+      },
+      "headless": {
+        "MUJOCO_GL": "disable",
+        "PYGLFW_LIBRARY": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/glfw/x11/libglfw.so",
+        "graphics_contexts": 0,
+        "library_identity": {
+          "bytes": 378696,
+          "git_blob_sha1": "1b372f088da239ebea080a856907fe78e3e207cd",
+          "sha256": "9f283bef3d8c70a2e3a85fcb6ab5dfc23509d1983d0b14ad5f90d51cbd6d74c5"
+        },
+        "library_loaded_by_this_function": false,
+        "native_library_binding_expected": true,
+        "note": "Installed GLFW may bind its bundled DLL for mujoco.viewer imports; init/window/context/physics remain blocked.",
+        "reviewed_sources": [
+          {
+            "actual": {
+              "bytes": 1849,
+              "git_blob_sha1": "61b861ecea45dc9d3d2d44ab2e9b898ed4f2fa2a",
+              "sha256": "a3cac3b6d582c149a93e95e4742c7fd4ad2083d31a329ee5b675e59e5377ff75"
+            },
+            "expected": {
+              "bytes": 1849,
+              "git_blob_sha1": "61b861ecea45dc9d3d2d44ab2e9b898ed4f2fa2a",
+              "sha256": "a3cac3b6d582c149a93e95e4742c7fd4ad2083d31a329ee5b675e59e5377ff75"
+            },
+            "path": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mujoco/rendering/classic/gl_context.py"
+          },
+          {
+            "actual": {
+              "bytes": 9044,
+              "git_blob_sha1": "ee8b3064cc348e51ca7a80454ed0d62f5bd41283",
+              "sha256": "7aa425039fa57015c6674b0973385f178009e11efbc93a91bbc1df42fc8e9204"
+            },
+            "expected": {
+              "bytes": 9044,
+              "git_blob_sha1": "ee8b3064cc348e51ca7a80454ed0d62f5bd41283",
+              "sha256": "7aa425039fa57015c6674b0973385f178009e11efbc93a91bbc1df42fc8e9204"
+            },
+            "path": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/glfw/library.py"
+          }
+        ],
+        "status": "HEADLESS_DISCOVERY_CONFIGURED",
+        "subprocess_probes": 0
+      },
+      "installed_sources_modified": false,
+      "native_session_entered": true,
+      "original_cwd": "/root",
+      "processor": {
+        "compatibility": "Linux CPython 3.12; exact reviewed optional function source",
+        "external_processes_allowed": 0,
+        "function_sha256": "53e1da5ebc4b4a0848cbd2770311ada42e82eeae00e89966d859406d5a45f2fc",
+        "implementation": "cpython",
+        "installed_sources_modified": false,
+        "optional_processor_denials": [
+          {
+            "argv": [
+              "uname",
+              "-p"
+            ],
+            "exception": "FileNotFoundError",
+            "handling": "CPython except OSError -> empty label; Warp -> CPU",
+            "spawned": false
+          }
+        ],
+        "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+        "semantics": "Optional CPU display label only; CUDA device checks unchanged",
+        "source": "/root/miniconda3/lib/python3.12/platform.py",
+        "source_sha256": "e8d6ed5c7e295bcd2f28002e338d235440c74b42403f010560b32691c9d57571",
+        "status": "OPTIONAL_PROCESSOR_UNAVAILABLE_NATIVE_FALLBACK"
+      },
+      "runtime_paths": {
+        "automatic_cleanup": false,
+        "cache": "/tmp/md12-g4j858wd/x",
+        "cuda_cache": "/tmp/md12-g4j858wd/c",
+        "evidence_location": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/finite-trial-v1/foot-cloud-20261019-v1/native-bootstrap",
+        "format": "stage12-private-runtime-paths-v1",
+        "matplotlib": "/tmp/md12-g4j858wd/m",
+        "native_integrations": 0,
+        "output": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/finite-trial-v1/foot-cloud-20261019-v1/native",
+        "pid": 1409,
+        "short_root": "/tmp/md12-g4j858wd",
+        "short_root_mode": "0700",
+        "temp": "/tmp/md12-g4j858wd/t",
+        "torch": "/tmp/md12-g4j858wd/h",
+        "uid": 0,
+        "warp_cache": "/tmp/md12-g4j858wd/w"
+      },
+      "status": "GUARDED_BOOTSTRAP_CLOSED"
+    },
+    "canonical_after_interval": {
+      "attempted_lower": 882954,
+      "attempted_upper": 882954,
+      "completed_lower": 882952,
+      "completed_upper": 882953
+    },
+    "canonical_before": {
+      "attempted_lower": 882602,
+      "attempted_upper": 882602,
+      "completed_lower": 882600,
+      "completed_upper": 882601
+    },
+    "cloud_training": 0,
+    "error": null,
+    "full_dynamic_rollout_validated": false,
+    "independent_review_pending": true,
+    "long_training_ready": false,
+    "native_ledger": {
+      "attempts": {
+        "ContactGraph_allocation": 18,
+        "ContactGraph_capture_begin": 1,
+        "ContactGraph_capture_end": 1,
+        "ContactGraph_cleanup_sync": 1,
+        "ContactGraph_copy_api": 16,
+        "ContactGraph_exec_destroy": 1,
+        "ContactGraph_graph_destroy": 1,
+        "ContactGraph_kernel_api": 33,
+        "ContactGraph_module_load": 1,
+        "Data_boundary_restore": 2,
+        "Foot_allocation": 12,
+        "Foot_fixture_query": 32,
+        "Foot_pose_upload": 32,
+        "GPU_forward": 1413,
+        "Hull_allocation": 2,
+        "Hull_fixture_query": 5,
+        "Hull_fixture_upload": 5,
+        "Hull_module_load": 1,
+        "Hull_vertex_pin": 1,
+        "Kinematic_allocation": 2,
+        "Kinematic_model_capture": 1,
+        "Kinematic_module_load": 1,
+        "Model_boundary_restore": 1,
+        "Model_material_setup": 1,
+        "Oracle_readback_close": 1,
+        "Parallel_hull_allocation": 73,
+        "Precise_allocation": 4,
+        "Precise_module_load": 1,
+        "RK_readback_close": 1,
+        "RNG_bank_initialize": 1,
+        "Reduction_allocation": 2,
+        "Reduction_module_load": 1,
+        "Rigid_module_load": 1,
+        "SolverOrder_module_load": 1,
+        "endpoint_sensor_read": 6,
+        "full_RL_environment": 1,
+        "integrations": 352,
+        "model_option_write": 8,
+        "private_clock_write": 4,
+        "public_clock_write": 1,
+        "sense": 6,
+        "state_restore": 3,
+        "state_snapshot": 1
+      },
+      "checkpoint_sequence": 1288,
+      "completed": {
+        "ContactGraph_allocation": 18,
+        "ContactGraph_capture_begin": 1,
+        "ContactGraph_capture_end": 1,
+        "ContactGraph_cleanup_sync": 1,
+        "ContactGraph_copy_api": 16,
+        "ContactGraph_exec_destroy": 1,
+        "ContactGraph_graph_destroy": 1,
+        "ContactGraph_kernel_api": 33,
+        "ContactGraph_module_load": 1,
+        "Data_boundary_restore": 2,
+        "Foot_allocation": 12,
+        "Foot_fixture_query": 32,
+        "Foot_pose_upload": 32,
+        "GPU_forward": 1413,
+        "Hull_allocation": 2,
+        "Hull_fixture_query": 5,
+        "Hull_fixture_upload": 5,
+        "Hull_module_load": 1,
+        "Hull_vertex_pin": 1,
+        "Kinematic_allocation": 2,
+        "Kinematic_model_capture": 1,
+        "Kinematic_module_load": 1,
+        "Model_boundary_restore": 1,
+        "Model_material_setup": 1,
+        "Oracle_readback_close": 1,
+        "Parallel_hull_allocation": 73,
+        "Precise_allocation": 4,
+        "Precise_module_load": 1,
+        "RK_readback_close": 1,
+        "RNG_bank_initialize": 1,
+        "Reduction_allocation": 2,
+        "Reduction_module_load": 1,
+        "Rigid_module_load": 1,
+        "SolverOrder_module_load": 1,
+        "endpoint_sensor_read": 6,
+        "full_RL_environment": 1,
+        "integrations": 352,
+        "model_option_write": 8,
+        "private_clock_write": 4,
+        "public_clock_write": 1,
+        "sense": 6,
+        "state_restore": 3,
+        "state_snapshot": 1
+      },
+      "counter_intervals": {
+        "ActionManager": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Action_apply": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Action_apply_action": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Action_process_action": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Action_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "BAM_apply_delay": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "BAM_compute": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "BVH_refit": {
+          "attempted_lower": 6,
+          "attempted_upper": 6,
+          "completed_lower": 6,
+          "completed_upper": 6
+        },
+        "CPU_forward": {
+          "attempted_lower": 3,
+          "attempted_upper": 3,
+          "completed_lower": 3,
+          "completed_upper": 3
+        },
+        "CPU_forward_context": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "CPU_forward_simulation": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "CPU_kinematics": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "CUDA_graphs": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "CommandManager": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Command_compute": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Command_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "ContactGraph_allocation": {
+          "attempted_lower": 18,
+          "attempted_upper": 18,
+          "completed_lower": 18,
+          "completed_upper": 18
+        },
+        "ContactGraph_capture_begin": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "ContactGraph_capture_end": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "ContactGraph_cleanup_sync": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "ContactGraph_copy_api": {
+          "attempted_lower": 16,
+          "attempted_upper": 16,
+          "completed_lower": 16,
+          "completed_upper": 16
+        },
+        "ContactGraph_exec_destroy": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "ContactGraph_graph_destroy": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "ContactGraph_kernel_api": {
+          "attempted_lower": 33,
+          "attempted_upper": 33,
+          "completed_lower": 33,
+          "completed_upper": 33
+        },
+        "ContactGraph_launch": {
+          "attempted_lower": 1413,
+          "attempted_upper": 1413,
+          "completed_lower": 1413,
+          "completed_upper": 1413
+        },
+        "ContactGraph_module_load": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "Contact_order_apply": {
+          "attempted_lower": 1413,
+          "attempted_upper": 1413,
+          "completed_lower": 1413,
+          "completed_upper": 1413
+        },
+        "Cost_override_copy": {
+          "attempted_lower": 4035,
+          "attempted_upper": 4035,
+          "completed_lower": 4035,
+          "completed_upper": 4035
+        },
+        "Cost_reduce_kernel": {
+          "attempted_lower": 4035,
+          "attempted_upper": 4035,
+          "completed_lower": 4035,
+          "completed_upper": 4035
+        },
+        "Cost_rows_kernel": {
+          "attempted_lower": 4035,
+          "attempted_upper": 4035,
+          "completed_lower": 4035,
+          "completed_upper": 4035
+        },
+        "CurriculumManager": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Curriculum_compute": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Curriculum_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Data_boundary_restore": {
+          "attempted_lower": 2,
+          "attempted_upper": 2,
+          "completed_lower": 2,
+          "completed_upper": 2
+        },
+        "Data_restore": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Data_snapshots": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Env__reset_idx": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Env_substep_counter": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "EventManager": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Event_apply": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Event_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "External_Model_restore": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Foot_allocation": {
+          "attempted_lower": 12,
+          "attempted_upper": 12,
+          "completed_lower": 12,
+          "completed_upper": 12
+        },
+        "Foot_fixture_query": {
+          "attempted_lower": 32,
+          "attempted_upper": 32,
+          "completed_lower": 32,
+          "completed_upper": 32
+        },
+        "Foot_geometry_kernel": {
+          "attempted_lower": 2826,
+          "attempted_upper": 2826,
+          "completed_lower": 2826,
+          "completed_upper": 2826
+        },
+        "Foot_pose_upload": {
+          "attempted_lower": 2858,
+          "attempted_upper": 2858,
+          "completed_lower": 2858,
+          "completed_upper": 2858
+        },
+        "GPU_forward": {
+          "attempted_lower": 1413,
+          "attempted_upper": 1413,
+          "completed_lower": 1413,
+          "completed_upper": 1413
+        },
+        "GPU_reset_data": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "GPU_solver": {
+          "attempted_lower": 1413,
+          "attempted_upper": 1413,
+          "completed_lower": 1413,
+          "completed_upper": 1413
+        },
+        "Hull_allocation": {
+          "attempted_lower": 2,
+          "attempted_upper": 2,
+          "completed_lower": 2,
+          "completed_upper": 2
+        },
+        "Hull_fixture_query": {
+          "attempted_lower": 5,
+          "attempted_upper": 5,
+          "completed_lower": 5,
+          "completed_upper": 5
+        },
+        "Hull_fixture_upload": {
+          "attempted_lower": 5,
+          "attempted_upper": 5,
+          "completed_lower": 5,
+          "completed_upper": 5
+        },
+        "Hull_module_load": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "Hull_vertex_pin": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "Kinematic_allocation": {
+          "attempted_lower": 2,
+          "attempted_upper": 2,
+          "completed_lower": 2,
+          "completed_upper": 2
+        },
+        "Kinematic_model_capture": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "Kinematic_module_load": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "Kinematic_pose_compute": {
+          "attempted_lower": 1413,
+          "attempted_upper": 1413,
+          "completed_lower": 1413,
+          "completed_upper": 1413
+        },
+        "Kinematic_pose_upload": {
+          "attempted_lower": 1413,
+          "attempted_upper": 1413,
+          "completed_lower": 1413,
+          "completed_upper": 1413
+        },
+        "MetricsManager": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Metrics_compute": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Metrics_compute_substep": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Metrics_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Metrics_substep": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Model_boundary_restore": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "Model_expansion": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "Model_material_setup": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "Model_runtime_assignments": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Norm_kernel": {
+          "attempted_lower": 6657,
+          "attempted_upper": 6657,
+          "completed_lower": 6657,
+          "completed_upper": 6657
+        },
+        "ObservationManager": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Observation_compute": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Observation_delay": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Observation_noise": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Observation_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Oracle_readback_barrier": {
+          "attempted_lower": 21996,
+          "attempted_upper": 21996,
+          "completed_lower": 21996,
+          "completed_upper": 21996
+        },
+        "Oracle_readback_close": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "Oracle_readback_copy_enqueue": {
+          "attempted_lower": 268047,
+          "attempted_upper": 268047,
+          "completed_lower": 268047,
+          "completed_upper": 268047
+        },
+        "Oracle_readback_host_allocate": {
+          "attempted_lower": 95,
+          "attempted_upper": 95,
+          "completed_lower": 95,
+          "completed_upper": 95
+        },
+        "Oracle_readback_reference": {
+          "attempted_lower": 8,
+          "attempted_upper": 8,
+          "completed_lower": 8,
+          "completed_upper": 8
+        },
+        "Oracle_snapshot": {
+          "attempted_lower": 21996,
+          "attempted_upper": 21996,
+          "completed_lower": 21996,
+          "completed_upper": 21996
+        },
+        "Owner_restore": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Owner_snapshots": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "PPO": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Parallel_hull_allocation": {
+          "attempted_lower": 73,
+          "attempted_upper": 73,
+          "completed_lower": 73,
+          "completed_upper": 73
+        },
+        "Parallel_hull_kernel": {
+          "attempted_lower": 51312,
+          "attempted_upper": 51312,
+          "completed_lower": 51312,
+          "completed_upper": 51312
+        },
+        "Precise_allocation": {
+          "attempted_lower": 4,
+          "attempted_upper": 4,
+          "completed_lower": 4,
+          "completed_upper": 4
+        },
+        "Precise_contact_kernel": {
+          "attempted_lower": 4239,
+          "attempted_upper": 4239,
+          "completed_lower": 4239,
+          "completed_upper": 4239
+        },
+        "Precise_geometry_kernel": {
+          "attempted_lower": 1413,
+          "attempted_upper": 1413,
+          "completed_lower": 1413,
+          "completed_upper": 1413
+        },
+        "Precise_module_load": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "RK4_integrator": {
+          "attempted_lower": 352,
+          "attempted_upper": 352,
+          "completed_lower": 352,
+          "completed_upper": 352
+        },
+        "RK_readback_barrier": {
+          "attempted_lower": 1408,
+          "attempted_upper": 1408,
+          "completed_lower": 1408,
+          "completed_upper": 1408
+        },
+        "RK_readback_close": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "RK_readback_copy_enqueue": {
+          "attempted_lower": 133760,
+          "attempted_upper": 133760,
+          "completed_lower": 133760,
+          "completed_upper": 133760
+        },
+        "RK_readback_host_allocate": {
+          "attempted_lower": 114,
+          "attempted_upper": 114,
+          "completed_lower": 114,
+          "completed_upper": 114
+        },
+        "RK_readback_reference": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "RK_stage_readback": {
+          "attempted_lower": 1408,
+          "attempted_upper": 1408,
+          "completed_lower": 1408,
+          "completed_upper": 1408
+        },
+        "RNG_bank_initialize": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "RNG_restore": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "RNG_sample": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "RecorderManager": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Recorder_close": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Recorder_post_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Recorder_post_step": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Recorder_pre_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Recorder_record_post_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Recorder_record_post_step": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Recorder_record_pre_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Reduction_allocation": {
+          "attempted_lower": 2,
+          "attempted_upper": 2,
+          "completed_lower": 2,
+          "completed_upper": 2
+        },
+        "Reduction_device_bytes": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Reduction_module_load": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "RewardManager": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Reward_compute": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Reward_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Rigid_metadata_kernel": {
+          "attempted_lower": 1413,
+          "attempted_upper": 1413,
+          "completed_lower": 1413,
+          "completed_upper": 1413
+        },
+        "Rigid_module_load": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "Scene_initialize": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "Scene_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Scene_update": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Scene_write": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Sensor_context_set": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "Simulation_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "SolverContext_create": {
+          "attempted_lower": 1413,
+          "attempted_upper": 1413,
+          "completed_lower": 1413,
+          "completed_upper": 1413
+        },
+        "SolverOrder_kernel": {
+          "attempted_lower": 2622,
+          "attempted_upper": 2622,
+          "completed_lower": 2622,
+          "completed_upper": 2622
+        },
+        "SolverOrder_module_load": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "Solver_linesearch": {
+          "attempted_lower": 2622,
+          "attempted_upper": 2622,
+          "completed_lower": 2622,
+          "completed_upper": 2622
+        },
+        "Solver_solver_iteration": {
+          "attempted_lower": 2622,
+          "attempted_upper": 2622,
+          "completed_lower": 2622,
+          "completed_upper": 2622
+        },
+        "Solver_update_constraint": {
+          "attempted_lower": 4035,
+          "attempted_upper": 4035,
+          "completed_lower": 4035,
+          "completed_upper": 4035
+        },
+        "Solver_update_gradient": {
+          "attempted_lower": 1413,
+          "attempted_upper": 1413,
+          "completed_lower": 1413,
+          "completed_upper": 1413
+        },
+        "Solver_update_gradient_incremental": {
+          "attempted_lower": 2622,
+          "attempted_upper": 2622,
+          "completed_lower": 2622,
+          "completed_upper": 2622
+        },
+        "Solverinit_context": {
+          "attempted_lower": 1413,
+          "attempted_upper": 1413,
+          "completed_lower": 1413,
+          "completed_upper": 1413
+        },
+        "Startup_BAM_parameter_write": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "TerminationManager": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Termination_compute": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "Termination_reset": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "archive_MiB": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "cloud": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "context_create": {
+          "attempted_lower": 2,
+          "attempted_upper": 2,
+          "completed_lower": 2,
+          "completed_upper": 2
+        },
+        "endpoint_sensor_read": {
+          "attempted_lower": 6,
+          "attempted_upper": 6,
+          "completed_lower": 6,
+          "completed_upper": 6
+        },
+        "full_RL_environment": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "integrations": {
+          "attempted_lower": 352,
+          "attempted_upper": 352,
+          "completed_lower": 352,
+          "completed_upper": 352
+        },
+        "model_option_write": {
+          "attempted_lower": 8,
+          "attempted_upper": 8,
+          "completed_lower": 8,
+          "completed_upper": 8
+        },
+        "observation_action_reads": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "observation_height_reads": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "physical_worlds": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "position_write": {
+          "attempted_lower": 352,
+          "attempted_upper": 352,
+          "completed_lower": 352,
+          "completed_upper": 352
+        },
+        "private_clock_write": {
+          "attempted_lower": 4,
+          "attempted_upper": 4,
+          "completed_lower": 4,
+          "completed_upper": 4
+        },
+        "public_clock_write": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        },
+        "ray_batch": {
+          "attempted_lower": 6,
+          "attempted_upper": 6,
+          "completed_lower": 6,
+          "completed_upper": 6
+        },
+        "sense": {
+          "attempted_lower": 6,
+          "attempted_upper": 6,
+          "completed_lower": 6,
+          "completed_upper": 6
+        },
+        "sensor_data_reads": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "snapshot_bytes_each": {
+          "attempted_lower": 0,
+          "attempted_upper": 0,
+          "completed_lower": 0,
+          "completed_upper": 0
+        },
+        "state_restore": {
+          "attempted_lower": 3,
+          "attempted_upper": 3,
+          "completed_lower": 3,
+          "completed_upper": 3
+        },
+        "state_snapshot": {
+          "attempted_lower": 1,
+          "attempted_upper": 1,
+          "completed_lower": 1,
+          "completed_upper": 1
+        }
+      },
+      "counters_exact": true,
+      "counts": {
+        "BVH_refit_attempted": 6,
+        "BVH_refit_completed": 6,
+        "CPU_forward_attempted": 3,
+        "CPU_forward_completed": 3,
+        "CPU_kinematics_attempted": 1,
+        "CPU_kinematics_completed": 1,
+        "ContactGraph_allocation_attempted": 18,
+        "ContactGraph_allocation_completed": 18,
+        "ContactGraph_capture_begin_attempted": 1,
+        "ContactGraph_capture_begin_completed": 1,
+        "ContactGraph_capture_end_attempted": 1,
+        "ContactGraph_capture_end_completed": 1,
+        "ContactGraph_cleanup_sync_attempted": 1,
+        "ContactGraph_cleanup_sync_completed": 1,
+        "ContactGraph_copy_api_attempted": 16,
+        "ContactGraph_copy_api_completed": 16,
+        "ContactGraph_exec_destroy_attempted": 1,
+        "ContactGraph_exec_destroy_completed": 1,
+        "ContactGraph_graph_destroy_attempted": 1,
+        "ContactGraph_graph_destroy_completed": 1,
+        "ContactGraph_kernel_api_attempted": 33,
+        "ContactGraph_kernel_api_completed": 33,
+        "ContactGraph_launch_attempted": 1413,
+        "ContactGraph_launch_completed": 1413,
+        "ContactGraph_module_load_attempted": 1,
+        "ContactGraph_module_load_completed": 1,
+        "Contact_order_apply_attempted": 1413,
+        "Contact_order_apply_completed": 1413,
+        "Cost_override_copy_attempted": 4035,
+        "Cost_override_copy_completed": 4035,
+        "Cost_reduce_kernel_attempted": 4035,
+        "Cost_reduce_kernel_completed": 4035,
+        "Cost_rows_kernel_attempted": 4035,
+        "Cost_rows_kernel_completed": 4035,
+        "Data_boundary_restore_attempted": 2,
+        "Data_boundary_restore_completed": 2,
+        "Foot_allocation_attempted": 12,
+        "Foot_allocation_completed": 12,
+        "Foot_fixture_query_attempted": 32,
+        "Foot_fixture_query_completed": 32,
+        "Foot_geometry_kernel_attempted": 2826,
+        "Foot_geometry_kernel_completed": 2826,
+        "Foot_pose_upload_attempted": 2858,
+        "Foot_pose_upload_completed": 2858,
+        "GPU_forward_attempted": 1413,
+        "GPU_forward_completed": 1413,
+        "GPU_solver_attempted": 1413,
+        "GPU_solver_completed": 1413,
+        "Hull_allocation_attempted": 2,
+        "Hull_allocation_completed": 2,
+        "Hull_fixture_query_attempted": 5,
+        "Hull_fixture_query_completed": 5,
+        "Hull_fixture_upload_attempted": 5,
+        "Hull_fixture_upload_completed": 5,
+        "Hull_module_load_attempted": 1,
+        "Hull_module_load_completed": 1,
+        "Hull_vertex_pin_attempted": 1,
+        "Hull_vertex_pin_completed": 1,
+        "Kinematic_allocation_attempted": 2,
+        "Kinematic_allocation_completed": 2,
+        "Kinematic_model_capture_attempted": 1,
+        "Kinematic_model_capture_completed": 1,
+        "Kinematic_module_load_attempted": 1,
+        "Kinematic_module_load_completed": 1,
+        "Kinematic_pose_compute_attempted": 1413,
+        "Kinematic_pose_compute_completed": 1413,
+        "Kinematic_pose_upload_attempted": 1413,
+        "Kinematic_pose_upload_completed": 1413,
+        "Model_boundary_restore_attempted": 1,
+        "Model_boundary_restore_completed": 1,
+        "Model_expansion_attempted": 1,
+        "Model_expansion_completed": 1,
+        "Model_material_setup_attempted": 1,
+        "Model_material_setup_completed": 1,
+        "Norm_kernel_attempted": 6657,
+        "Norm_kernel_completed": 6657,
+        "Oracle_readback_barrier_attempted": 21996,
+        "Oracle_readback_barrier_completed": 21996,
+        "Oracle_readback_close_attempted": 1,
+        "Oracle_readback_close_completed": 1,
+        "Oracle_readback_copy_enqueue_attempted": 268047,
+        "Oracle_readback_copy_enqueue_completed": 268047,
+        "Oracle_readback_host_allocate_attempted": 95,
+        "Oracle_readback_host_allocate_completed": 95,
+        "Oracle_readback_reference_attempted": 8,
+        "Oracle_readback_reference_completed": 8,
+        "Oracle_snapshot_attempted": 21996,
+        "Oracle_snapshot_completed": 21996,
+        "PPO": 0,
+        "Parallel_hull_allocation_attempted": 73,
+        "Parallel_hull_allocation_completed": 73,
+        "Parallel_hull_kernel_attempted": 51312,
+        "Parallel_hull_kernel_completed": 51312,
+        "Precise_allocation_attempted": 4,
+        "Precise_allocation_completed": 4,
+        "Precise_contact_kernel_attempted": 4239,
+        "Precise_contact_kernel_completed": 4239,
+        "Precise_geometry_kernel_attempted": 1413,
+        "Precise_geometry_kernel_completed": 1413,
+        "Precise_module_load_attempted": 1,
+        "Precise_module_load_completed": 1,
+        "RK4_integrator_attempted": 352,
+        "RK4_integrator_completed": 352,
+        "RK_readback_barrier_attempted": 1408,
+        "RK_readback_barrier_completed": 1408,
+        "RK_readback_close_attempted": 1,
+        "RK_readback_close_completed": 1,
+        "RK_readback_copy_enqueue_attempted": 133760,
+        "RK_readback_copy_enqueue_completed": 133760,
+        "RK_readback_host_allocate_attempted": 114,
+        "RK_readback_host_allocate_completed": 114,
+        "RK_readback_reference_attempted": 1,
+        "RK_readback_reference_completed": 1,
+        "RK_stage_readback_attempted": 1408,
+        "RK_stage_readback_completed": 1408,
+        "RNG_bank_initialize_attempted": 1,
+        "RNG_bank_initialize_completed": 1,
+        "Reduction_allocation_attempted": 2,
+        "Reduction_allocation_completed": 2,
+        "Reduction_module_load_attempted": 1,
+        "Reduction_module_load_completed": 1,
+        "Rigid_metadata_kernel_attempted": 1413,
+        "Rigid_metadata_kernel_completed": 1413,
+        "Rigid_module_load_attempted": 1,
+        "Rigid_module_load_completed": 1,
+        "Scene_initialize_attempted": 1,
+        "Scene_initialize_completed": 1,
+        "Sensor_context_set_attempted": 1,
+        "Sensor_context_set_completed": 1,
+        "SolverContext_create_attempted": 1413,
+        "SolverContext_create_completed": 1413,
+        "SolverOrder_kernel_attempted": 2622,
+        "SolverOrder_kernel_completed": 2622,
+        "SolverOrder_module_load_attempted": 1,
+        "SolverOrder_module_load_completed": 1,
+        "Solver_linesearch_attempted": 2622,
+        "Solver_linesearch_completed": 2622,
+        "Solver_solver_iteration_attempted": 2622,
+        "Solver_solver_iteration_completed": 2622,
+        "Solver_update_constraint_attempted": 4035,
+        "Solver_update_constraint_completed": 4035,
+        "Solver_update_gradient_attempted": 1413,
+        "Solver_update_gradient_completed": 1413,
+        "Solver_update_gradient_incremental_attempted": 2622,
+        "Solver_update_gradient_incremental_completed": 2622,
+        "Solverinit_context_attempted": 1413,
+        "Solverinit_context_completed": 1413,
+        "cloud_training": 0,
+        "context_create_attempted": 2,
+        "context_create_completed": 2,
+        "endpoint_sensor_read_attempted": 6,
+        "endpoint_sensor_read_completed": 6,
+        "full_RL_environment_attempted": 1,
+        "full_RL_environment_completed": 1,
+        "full_RL_environment_constructed": 1,
+        "graph_setup_suppressed": 3,
+        "integrations_attempted": 352,
+        "integrations_completed": 352,
+        "model_option_write_attempted": 8,
+        "model_option_write_completed": 8,
+        "position_write_attempted": 352,
+        "position_write_completed": 352,
+        "private_clock_write_attempted": 4,
+        "private_clock_write_completed": 4,
+        "public_clock_write_attempted": 1,
+        "public_clock_write_completed": 1,
+        "ray_batch_attempted": 6,
+        "ray_batch_completed": 6,
+        "sense_attempted": 6,
+        "sense_completed": 6,
+        "state_restore_attempted": 3,
+        "state_restore_completed": 3,
+        "state_snapshot_attempted": 1,
+        "state_snapshot_completed": 1
+      },
+      "exact": true,
+      "format": "stage12-hierarchical-accounting-v1",
+      "incomplete_tail": false,
+      "integration_attempted_lower": 352,
+      "integration_attempted_upper": 352,
+      "integration_completed_lower": 352,
+      "integration_completed_upper": 352,
+      "nested_upper_bound_scope": "Whole-owner reserved caps; deliberately conservative after unsealed exit",
+      "pending": {},
+      "pending_nested": {},
+      "rows": 1288,
+      "wal_exact": true
+    },
+    "old_campaign_resume": false,
+    "original_v3_failure_preserved": true,
+    "previous_PPO_attempts_reserved": 1,
+    "returncode": 0,
+    "status": "FOOT_IVP_COMPLETE_REVIEW_REQUIRED",
+    "training_ready": false,
+    "worker_report": {
+      "PPO": 0,
+      "accepted_trials": 4,
+      "canonical_integrations_after": {
+        "attempted_lower": 882954,
+        "attempted_upper": 882954,
+        "completed_lower": 882952,
+        "completed_upper": 882953
+      },
+      "canonical_integrations_before": {
+        "attempted_lower": 882602,
+        "attempted_upper": 882602,
+        "completed_lower": 882600,
+        "completed_upper": 882601
+      },
+      "cloud_training": 0,
+      "configuration_preflight": {
+        "checks": [
+          {
+            "detail": true,
+            "name": "world_cadence",
+            "passed": true
+          },
+          {
+            "detail": true,
+            "name": "seed_manual_reset",
+            "passed": true
+          },
+          {
+            "detail": true,
+            "name": "unassisted_actions",
+            "passed": true
+          },
+          {
+            "detail": true,
+            "name": "null_curriculum",
+            "passed": true
+          },
+          {
+            "detail": true,
+            "name": "command_roster",
+            "passed": true
+          },
+          {
+            "detail": {
+              "final_standing_command_zero": true,
+              "forward": 0.2,
+              "forward_bucket_retained": true,
+              "heading": 0.0,
+              "heading_range": [
+                -3.141592653589793,
+                3.141592653589793
+              ],
+              "init_velocity": 0.0,
+              "resampling_s": [
+                3.0,
+                8.0
+              ],
+              "standing": 1.0,
+              "world": 0.0
+            },
+            "name": "inherited_command",
+            "passed": true
+          },
+          {
+            "detail": true,
+            "name": "event_roster",
+            "passed": true
+          },
+          {
+            "detail": true,
+            "name": "interval_timers",
+            "passed": true
+          },
+          {
+            "detail": true,
+            "name": "observation_groups",
+            "passed": true
+          },
+          {
+            "detail": true,
+            "name": "actor/concatenation_history",
+            "passed": true
+          },
+          {
+            "detail": true,
+            "name": "actor/noise_roster",
+            "passed": true
+          },
+          {
+            "detail": {
+              "n_max": 0.03,
+              "n_min": -0.03,
+              "operation": "add",
+              "term": "base_ang_vel",
+              "width": 3
+            },
+            "name": "actor/base_ang_vel/noise",
+            "passed": true
+          },
+          {
+            "detail": {
+              "n_max": 0.01,
+              "n_min": -0.01,
+              "operation": "add",
+              "term": "projected_gravity",
+              "width": 3
+            },
+            "name": "actor/projected_gravity/noise",
+            "passed": true
+          },
+          {
+            "detail": {
+              "n_max": 0.001,
+              "n_min": -0.001,
+              "operation": "add",
+              "term": "joint_pos",
+              "width": 14
+            },
+            "name": "actor/joint_pos/noise",
+            "passed": true
+          },
+          {
+            "detail": {
+              "n_max": 0.25,
+              "n_min": -0.25,
+              "operation": "add",
+              "term": "joint_vel",
+              "width": 14
+            },
+            "name": "actor/joint_vel/noise",
+            "passed": true
+          },
+          {
+            "detail": true,
+            "name": "actor/base_ang_vel/delay",
+            "passed": true
+          },
+          {
+            "detail": true,
+            "name": "actor/projected_gravity/delay",
+            "passed": true
+          },
+          {
+            "detail": true,
+            "name": "actor/joint_vel/delay",
+            "passed": true
+          },
+          {
+            "detail": true,
+            "name": "critic/concatenation_history",
+            "passed": true
+          },
+          {
+            "detail": true,
+            "name": "critic/noise_roster",
+            "passed": true
+          },
+          {
+            "detail": true,
+            "name": "deterministic_spawn",
+            "passed": true
+          }
+        ],
+        "config_mutations": 0,
+        "constructor_IMU_bias": "Native once-only lazy draw during shape probe; retained and snapshotted after constructor",
+        "inherited_noise_preserved": true,
+        "passed": 21,
+        "physical_integrations": 0,
+        "private_RNG_boundary": "After constructor and real mixed-event reset probe, before public reset/step",
+        "status": "PASS",
+        "total": 21
+      },
+      "contact": {
+        "array_assignment_cap": 96368,
+        "array_assignments": 0,
+        "call_cap": 6023,
+        "calls": 1413,
+        "comparator_unchanged": true,
+        "complete_simulation_graph_validated": false,
+        "full_contact_archive": {
+          "all_inner_raw_blobs_retained": false,
+          "digest": "259dd17698ec9d680b64ba357f650b758e534b26de6fdd5b9638494764733c0f",
+          "full_byte_checks_per_record": true,
+          "raw_samples": 4,
+          "records": 1413,
+          "scope": "G11 interface audit; G10 raw evidence reused"
+        },
+        "graph_close_attempted": true,
+        "graph_closed": true,
+        "graph_contains_only_sorting": true,
+        "graph_counts": {
+          "ContactGraph_allocation_attempted": 18,
+          "ContactGraph_allocation_completed": 18,
+          "ContactGraph_capture_begin_attempted": 1,
+          "ContactGraph_capture_begin_completed": 1,
+          "ContactGraph_capture_end_attempted": 1,
+          "ContactGraph_capture_end_completed": 1,
+          "ContactGraph_cleanup_sync_attempted": 1,
+          "ContactGraph_cleanup_sync_completed": 1,
+          "ContactGraph_copy_api_attempted": 16,
+          "ContactGraph_copy_api_completed": 16,
+          "ContactGraph_exec_destroy_attempted": 1,
+          "ContactGraph_exec_destroy_completed": 1,
+          "ContactGraph_graph_destroy_attempted": 1,
+          "ContactGraph_graph_destroy_completed": 1,
+          "ContactGraph_kernel_api_attempted": 33,
+          "ContactGraph_kernel_api_completed": 33,
+          "ContactGraph_launch_attempted": 1413,
+          "ContactGraph_launch_completed": 1413,
+          "ContactGraph_module_load_attempted": 1,
+          "ContactGraph_module_load_completed": 1
+        },
+        "graph_prepared": true,
+        "host_Contact_array_assignments": 0,
+        "implementation": "rigid-metadata-complete-sort-candidate-v1",
+        "installed_sources_modified": false,
+        "live_forward_calls": 1413,
+        "metadata_is_actual_kernel_write": true,
+        "opaque_native_contents_cloned": false,
+        "proof_stream_sha256": "10e798b25f1cbdc61386edc6daeae582f0b1383f0cb263062c32bfdefd6ba3cf",
+        "protocol": "live-preconstraint-contact-order-v1",
+        "rigid_active_metadata_value": 0
+      },
+      "contact_close": null,
+      "counts": {
+        "BVH_refit_attempted": 6,
+        "BVH_refit_completed": 6,
+        "CPU_forward_attempted": 3,
+        "CPU_forward_completed": 3,
+        "CPU_kinematics_attempted": 1,
+        "CPU_kinematics_completed": 1,
+        "ContactGraph_allocation_attempted": 18,
+        "ContactGraph_allocation_completed": 18,
+        "ContactGraph_capture_begin_attempted": 1,
+        "ContactGraph_capture_begin_completed": 1,
+        "ContactGraph_capture_end_attempted": 1,
+        "ContactGraph_capture_end_completed": 1,
+        "ContactGraph_cleanup_sync_attempted": 1,
+        "ContactGraph_cleanup_sync_completed": 1,
+        "ContactGraph_copy_api_attempted": 16,
+        "ContactGraph_copy_api_completed": 16,
+        "ContactGraph_exec_destroy_attempted": 1,
+        "ContactGraph_exec_destroy_completed": 1,
+        "ContactGraph_graph_destroy_attempted": 1,
+        "ContactGraph_graph_destroy_completed": 1,
+        "ContactGraph_kernel_api_attempted": 33,
+        "ContactGraph_kernel_api_completed": 33,
+        "ContactGraph_launch_attempted": 1413,
+        "ContactGraph_launch_completed": 1413,
+        "ContactGraph_module_load_attempted": 1,
+        "ContactGraph_module_load_completed": 1,
+        "Contact_order_apply_attempted": 1413,
+        "Contact_order_apply_completed": 1413,
+        "Cost_override_copy_attempted": 4035,
+        "Cost_override_copy_completed": 4035,
+        "Cost_reduce_kernel_attempted": 4035,
+        "Cost_reduce_kernel_completed": 4035,
+        "Cost_rows_kernel_attempted": 4035,
+        "Cost_rows_kernel_completed": 4035,
+        "Data_boundary_restore_attempted": 2,
+        "Data_boundary_restore_completed": 2,
+        "Foot_allocation_attempted": 12,
+        "Foot_allocation_completed": 12,
+        "Foot_fixture_query_attempted": 32,
+        "Foot_fixture_query_completed": 32,
+        "Foot_geometry_kernel_attempted": 2826,
+        "Foot_geometry_kernel_completed": 2826,
+        "Foot_pose_upload_attempted": 2858,
+        "Foot_pose_upload_completed": 2858,
+        "GPU_forward_attempted": 1413,
+        "GPU_forward_completed": 1413,
+        "GPU_solver_attempted": 1413,
+        "GPU_solver_completed": 1413,
+        "Hull_allocation_attempted": 2,
+        "Hull_allocation_completed": 2,
+        "Hull_fixture_query_attempted": 5,
+        "Hull_fixture_query_completed": 5,
+        "Hull_fixture_upload_attempted": 5,
+        "Hull_fixture_upload_completed": 5,
+        "Hull_module_load_attempted": 1,
+        "Hull_module_load_completed": 1,
+        "Hull_vertex_pin_attempted": 1,
+        "Hull_vertex_pin_completed": 1,
+        "Kinematic_allocation_attempted": 2,
+        "Kinematic_allocation_completed": 2,
+        "Kinematic_model_capture_attempted": 1,
+        "Kinematic_model_capture_completed": 1,
+        "Kinematic_module_load_attempted": 1,
+        "Kinematic_module_load_completed": 1,
+        "Kinematic_pose_compute_attempted": 1413,
+        "Kinematic_pose_compute_completed": 1413,
+        "Kinematic_pose_upload_attempted": 1413,
+        "Kinematic_pose_upload_completed": 1413,
+        "Model_boundary_restore_attempted": 1,
+        "Model_boundary_restore_completed": 1,
+        "Model_expansion_attempted": 1,
+        "Model_expansion_completed": 1,
+        "Model_material_setup_attempted": 1,
+        "Model_material_setup_completed": 1,
+        "Norm_kernel_attempted": 6657,
+        "Norm_kernel_completed": 6657,
+        "Oracle_readback_barrier_attempted": 21996,
+        "Oracle_readback_barrier_completed": 21996,
+        "Oracle_readback_close_attempted": 1,
+        "Oracle_readback_close_completed": 1,
+        "Oracle_readback_copy_enqueue_attempted": 268047,
+        "Oracle_readback_copy_enqueue_completed": 268047,
+        "Oracle_readback_host_allocate_attempted": 95,
+        "Oracle_readback_host_allocate_completed": 95,
+        "Oracle_readback_reference_attempted": 8,
+        "Oracle_readback_reference_completed": 8,
+        "Oracle_snapshot_attempted": 21996,
+        "Oracle_snapshot_completed": 21996,
+        "PPO": 0,
+        "Parallel_hull_allocation_attempted": 73,
+        "Parallel_hull_allocation_completed": 73,
+        "Parallel_hull_kernel_attempted": 51312,
+        "Parallel_hull_kernel_completed": 51312,
+        "Precise_allocation_attempted": 4,
+        "Precise_allocation_completed": 4,
+        "Precise_contact_kernel_attempted": 4239,
+        "Precise_contact_kernel_completed": 4239,
+        "Precise_geometry_kernel_attempted": 1413,
+        "Precise_geometry_kernel_completed": 1413,
+        "Precise_module_load_attempted": 1,
+        "Precise_module_load_completed": 1,
+        "RK4_integrator_attempted": 352,
+        "RK4_integrator_completed": 352,
+        "RK_readback_barrier_attempted": 1408,
+        "RK_readback_barrier_completed": 1408,
+        "RK_readback_close_attempted": 1,
+        "RK_readback_close_completed": 1,
+        "RK_readback_copy_enqueue_attempted": 133760,
+        "RK_readback_copy_enqueue_completed": 133760,
+        "RK_readback_host_allocate_attempted": 114,
+        "RK_readback_host_allocate_completed": 114,
+        "RK_readback_reference_attempted": 1,
+        "RK_readback_reference_completed": 1,
+        "RK_stage_readback_attempted": 1408,
+        "RK_stage_readback_completed": 1408,
+        "RNG_bank_initialize_attempted": 1,
+        "RNG_bank_initialize_completed": 1,
+        "Reduction_allocation_attempted": 2,
+        "Reduction_allocation_completed": 2,
+        "Reduction_module_load_attempted": 1,
+        "Reduction_module_load_completed": 1,
+        "Rigid_metadata_kernel_attempted": 1413,
+        "Rigid_metadata_kernel_completed": 1413,
+        "Rigid_module_load_attempted": 1,
+        "Rigid_module_load_completed": 1,
+        "Scene_initialize_attempted": 1,
+        "Scene_initialize_completed": 1,
+        "Sensor_context_set_attempted": 1,
+        "Sensor_context_set_completed": 1,
+        "SolverContext_create_attempted": 1413,
+        "SolverContext_create_completed": 1413,
+        "SolverOrder_kernel_attempted": 2622,
+        "SolverOrder_kernel_completed": 2622,
+        "SolverOrder_module_load_attempted": 1,
+        "SolverOrder_module_load_completed": 1,
+        "Solver_linesearch_attempted": 2622,
+        "Solver_linesearch_completed": 2622,
+        "Solver_solver_iteration_attempted": 2622,
+        "Solver_solver_iteration_completed": 2622,
+        "Solver_update_constraint_attempted": 4035,
+        "Solver_update_constraint_completed": 4035,
+        "Solver_update_gradient_attempted": 1413,
+        "Solver_update_gradient_completed": 1413,
+        "Solver_update_gradient_incremental_attempted": 2622,
+        "Solver_update_gradient_incremental_completed": 2622,
+        "Solverinit_context_attempted": 1413,
+        "Solverinit_context_completed": 1413,
+        "cloud_training": 0,
+        "context_create_attempted": 2,
+        "context_create_completed": 2,
+        "endpoint_sensor_read_attempted": 6,
+        "endpoint_sensor_read_completed": 6,
+        "full_RL_environment_attempted": 1,
+        "full_RL_environment_completed": 1,
+        "full_RL_environment_constructed": 1,
+        "graph_setup_suppressed": 3,
+        "integrations_attempted": 352,
+        "integrations_completed": 352,
+        "model_option_write_attempted": 8,
+        "model_option_write_completed": 8,
+        "position_write_attempted": 352,
+        "position_write_completed": 352,
+        "private_clock_write_attempted": 4,
+        "private_clock_write_completed": 4,
+        "public_clock_write_attempted": 1,
+        "public_clock_write_completed": 1,
+        "ray_batch_attempted": 6,
+        "ray_batch_completed": 6,
+        "sense_attempted": 6,
+        "sense_completed": 6,
+        "state_restore_attempted": 3,
+        "state_restore_completed": 3,
+        "state_snapshot_attempted": 1,
+        "state_snapshot_completed": 1
+      },
+      "device": {
+        "torch_name": "NVIDIA GeForce RTX 5090",
+        "warp_name": "NVIDIA GeForce RTX 5090"
+      },
+      "elapsed_s": 122.8781802400481,
+      "env_close": {
+        "closed": [
+          "env.close"
+        ],
+        "status": "FULL_ENV_CLOSE_RETURNED"
+      },
+      "errors": [],
+      "evidence_close": null,
+      "ivp_result": {
+        "accepted_integrals": [
+          {
+            "pairs": {
+              "left_foot_floor": {
+                "loaded_time_s": 0.0,
+                "normal_impulse_Ns": 0.0,
+                "peak_overlap_m": 0.0
+              },
+              "lower_floor": {
+                "loaded_time_s": 0.0020000000949949026,
+                "normal_impulse_Ns": 0.027753176154797186,
+                "peak_overlap_m": 1.7404556274414062e-05
+              },
+              "lower_left_foot": {
+                "loaded_time_s": 0.00036197918385975447,
+                "normal_impulse_Ns": 0.0033773721316015695,
+                "peak_overlap_m": 6.488071448984556e-07
+              },
+              "lower_right_foot": {
+                "loaded_time_s": 0.0020000000949949026,
+                "normal_impulse_Ns": 0.012846906917290199,
+                "peak_overlap_m": 3.271823879913427e-05
+              },
+              "right_foot_floor": {
+                "loaded_time_s": 0.0,
+                "normal_impulse_Ns": 0.0,
+                "peak_overlap_m": 0.0
+              },
+              "upper_floor": {
+                "loaded_time_s": 0.0,
+                "normal_impulse_Ns": 0.0,
+                "peak_overlap_m": 0.0
+              },
+              "upper_head": {
+                "loaded_time_s": 0.0,
+                "normal_impulse_Ns": 0.0,
+                "peak_overlap_m": 0.0
+              }
+            },
+            "quadrature_duration_s": 0.0020000000949949026,
+            "stages": 512
+          }
+        ],
+        "accepted_resolution": 128,
+        "accepted_stage_sha256": "85615ab34e8d8711c0ee9d00f8c5e136b711dac6427abb4906ab2efd8d092452",
+        "actual_integrations": 352,
+        "actual_native_evidence_required": true,
+        "actual_trial_count": 4,
+        "committed_endpoint_sha256": "078ff781c3610d653346257294c9571a68d308d2e0b9ebe855f130e7d40449d0",
+        "decision": {
+          "accepted": true,
+          "action": "commit_whole_cohort",
+          "rejected_worlds": [],
+          "row_splicing_permitted": false,
+          "simulator_publication_implemented": false,
+          "worlds": [
+            {
+              "accepted": true,
+              "floor_only_rejection": false,
+              "numerical_accepted": true,
+              "original": {
+                "accepted": true,
+                "event_agreement": {
+                  "checks": [
+                    {
+                      "coarse_events": 0,
+                      "fine_events": 0,
+                      "limit_s": 6.25e-05,
+                      "max_midpoint_difference_s": 0.0,
+                      "ordered_directions_equal": true,
+                      "pair": "upper_head",
+                      "passed": true
+                    },
+                    {
+                      "coarse_events": 0,
+                      "fine_events": 0,
+                      "limit_s": 6.25e-05,
+                      "max_midpoint_difference_s": 0.0,
+                      "ordered_directions_equal": true,
+                      "pair": "lower_floor",
+                      "passed": true
+                    },
+                    {
+                      "coarse_events": 1,
+                      "fine_events": 1,
+                      "limit_s": 6.25e-05,
+                      "max_midpoint_difference_s": 7.812500000000115e-06,
+                      "ordered_directions_equal": true,
+                      "pair": "lower_left_foot",
+                      "passed": true
+                    },
+                    {
+                      "coarse_events": 0,
+                      "fine_events": 0,
+                      "limit_s": 6.25e-05,
+                      "max_midpoint_difference_s": 0.0,
+                      "ordered_directions_equal": true,
+                      "pair": "lower_right_foot",
+                      "passed": true
+                    },
+                    {
+                      "coarse_events": 0,
+                      "fine_events": 0,
+                      "limit_s": 6.25e-05,
+                      "max_midpoint_difference_s": 0.0,
+                      "ordered_directions_equal": true,
+                      "pair": "upper_floor",
+                      "passed": true
+                    },
+                    {
+                      "coarse_events": 0,
+                      "fine_events": 0,
+                      "limit_s": 6.25e-05,
+                      "max_midpoint_difference_s": 0.0,
+                      "ordered_directions_equal": true,
+                      "pair": "left_foot_floor",
+                      "passed": true
+                    },
+                    {
+                      "coarse_events": 0,
+                      "fine_events": 0,
+                      "limit_s": 6.25e-05,
+                      "max_midpoint_difference_s": 0.0,
+                      "ordered_directions_equal": true,
+                      "pair": "right_foot_floor",
+                      "passed": true
+                    }
+                  ],
+                  "passed": true
+                },
+                "initial_and_final_occupancy_equal": true,
+                "max_bracket_width_s": 1.5625e-05,
+                "reasons": [],
+                "state_contact_comparison": {
+                  "checks": [
+                    {
+                      "component": "lower",
+                      "limit": 0.0001,
+                      "metric": "free_translation_m",
+                      "passed": true,
+                      "tick": 1,
+                      "value": 1.8053954307166882e-08
+                    },
+                    {
+                      "component": "upper",
+                      "limit": 0.001,
+                      "metric": "free_rotation_rad",
+                      "passed": true,
+                      "tick": 1,
+                      "value": 1.5951743184778926e-06
+                    },
+                    {
+                      "component": "qpos:8",
+                      "limit": 0.001,
+                      "metric": "hinge_position_rad",
+                      "passed": true,
+                      "tick": 1,
+                      "value": 6.668269634246826e-07
+                    },
+                    {
+                      "component": "robot",
+                      "limit": 0.005,
+                      "metric": "free_linear_velocity_m_s",
+                      "passed": true,
+                      "tick": 1,
+                      "value": 5.432863699721269e-05
+                    },
+                    {
+                      "component": "robot",
+                      "limit": 0.05,
+                      "metric": "angular_velocity_rad_s",
+                      "passed": true,
+                      "tick": 1,
+                      "value": 0.0018436532084627768
+                    },
+                    {
+                      "coarse": 0.0,
+                      "fine": 0.0,
+                      "limit": 1e-05,
+                      "metric": "peak_overlap_m",
+                      "pair": "upper_head",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.0,
+                      "fine": 0.0,
+                      "limit": 0.0001,
+                      "metric": "normal_impulse_Ns",
+                      "pair": "upper_head",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.0,
+                      "fine": 0.0,
+                      "limit": 0.001,
+                      "metric": "loaded_time_s",
+                      "pair": "upper_head",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 1.7404556274414062e-05,
+                      "fine": 1.7404556274414062e-05,
+                      "limit": 1e-05,
+                      "metric": "peak_overlap_m",
+                      "pair": "lower_floor",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.027787054863888515,
+                      "fine": 0.027753176154797186,
+                      "limit": 0.0003775317615479719,
+                      "metric": "normal_impulse_Ns",
+                      "pair": "lower_floor",
+                      "passed": true,
+                      "value": 3.3878709091328396e-05
+                    },
+                    {
+                      "coarse": 0.0020000000949949026,
+                      "fine": 0.0020000000949949026,
+                      "limit": 0.001,
+                      "metric": "loaded_time_s",
+                      "pair": "lower_floor",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 6.258844109652273e-07,
+                      "fine": 6.488071448984556e-07,
+                      "limit": 1e-05,
+                      "metric": "peak_overlap_m",
+                      "pair": "lower_left_foot",
+                      "passed": true,
+                      "value": 2.29227339332283e-08
+                    },
+                    {
+                      "coarse": 0.003443675310314414,
+                      "fine": 0.0033773721316015695,
+                      "limit": 0.00013377372131601571,
+                      "metric": "normal_impulse_Ns",
+                      "pair": "lower_left_foot",
+                      "passed": true,
+                      "value": 6.630317871284463e-05
+                    },
+                    {
+                      "coarse": 0.0003697916842308283,
+                      "fine": 0.00036197918385975447,
+                      "limit": 0.001,
+                      "metric": "loaded_time_s",
+                      "pair": "lower_left_foot",
+                      "passed": true,
+                      "value": 7.812500371073838e-06
+                    },
+                    {
+                      "coarse": 3.2692849345039576e-05,
+                      "fine": 3.271823879913427e-05,
+                      "limit": 1e-05,
+                      "metric": "peak_overlap_m",
+                      "pair": "lower_right_foot",
+                      "passed": true,
+                      "value": 2.5389454094693065e-08
+                    },
+                    {
+                      "coarse": 0.012837171980180247,
+                      "fine": 0.012846906917290199,
+                      "limit": 0.00022846906917290197,
+                      "metric": "normal_impulse_Ns",
+                      "pair": "lower_right_foot",
+                      "passed": true,
+                      "value": 9.734937109951228e-06
+                    },
+                    {
+                      "coarse": 0.0020000000949949026,
+                      "fine": 0.0020000000949949026,
+                      "limit": 0.001,
+                      "metric": "loaded_time_s",
+                      "pair": "lower_right_foot",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.0,
+                      "fine": 0.0,
+                      "limit": 1e-05,
+                      "metric": "peak_overlap_m",
+                      "pair": "upper_floor",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.0,
+                      "fine": 0.0,
+                      "limit": 0.0001,
+                      "metric": "normal_impulse_Ns",
+                      "pair": "upper_floor",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.0,
+                      "fine": 0.0,
+                      "limit": 0.001,
+                      "metric": "loaded_time_s",
+                      "pair": "upper_floor",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.0,
+                      "fine": 0.0,
+                      "limit": 1e-05,
+                      "metric": "peak_overlap_m",
+                      "pair": "left_foot_floor",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.0,
+                      "fine": 0.0,
+                      "limit": 0.0001,
+                      "metric": "normal_impulse_Ns",
+                      "pair": "left_foot_floor",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.0,
+                      "fine": 0.0,
+                      "limit": 0.001,
+                      "metric": "loaded_time_s",
+                      "pair": "left_foot_floor",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.0,
+                      "fine": 0.0,
+                      "limit": 1e-05,
+                      "metric": "peak_overlap_m",
+                      "pair": "right_foot_floor",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.0,
+                      "fine": 0.0,
+                      "limit": 0.0001,
+                      "metric": "normal_impulse_Ns",
+                      "pair": "right_foot_floor",
+                      "passed": true,
+                      "value": 0.0
+                    },
+                    {
+                      "coarse": 0.0,
+                      "fine": 0.0,
+                      "limit": 0.001,
+                      "metric": "loaded_time_s",
+                      "pair": "right_foot_floor",
+                      "passed": true,
+                      "value": 0.0
+                    }
+                  ],
+                  "compared_endpoints": 1,
+                  "failed_metrics": [],
+                  "interpretation": "Bounded numerical agreement only; no material calibration or RK order claim",
+                  "passed": true
+                },
+                "state_error": {
+                  "checks": [
+                    {
+                      "limit": 2.5e-05,
+                      "metric": "free_translation_m",
+                      "passed": true,
+                      "value": 1.8053954775609782e-08
+                    },
+                    {
+                      "limit": 0.00025,
+                      "metric": "free_rotation_rad",
+                      "passed": true,
+                      "value": 1.5951743184778926e-06
+                    },
+                    {
+                      "limit": 0.00025,
+                      "metric": "hinge_position_rad",
+                      "passed": true,
+                      "value": 6.668269634246826e-07
+                    },
+                    {
+                      "limit": 0.00125,
+                      "metric": "free_linear_velocity_m_s",
+                      "passed": true,
+                      "value": 5.432863690657541e-05
+                    },
+                    {
+                      "limit": 0.0125,
+                      "metric": "angular_velocity_rad_s",
+                      "passed": true,
+                      "value": 0.0018436532700434327
+                    }
+                  ],
+                  "passed": true
+                }
+              },
+              "resolution_floor": 0,
+              "resolution_floor_satisfied": true,
+              "world": 0
+            }
+          ]
+        },
+        "independent_corrected_IVP": true,
+        "mandatory_exact_replay": true,
+        "original_campaign_acceptance_credit": false,
+        "public_ticks": [
+          52
+        ],
+        "publication": [
+          {
+            "half_ulp_bound_s": 3.725290298461914e-09,
+            "nominal_nanoseconds": 104000000,
+            "published_time_s": 0.10400000214576721,
+            "rounding_error_s": 2.1457672166880215e-09,
+            "tick": 52
+          }
+        ],
+        "rejections": [
+          {
+            "accepted": false,
+            "action": "rollback_whole_cohort",
+            "rejected_worlds": [
+              0
+            ],
+            "row_splicing_permitted": false,
+            "simulator_publication_implemented": false,
+            "worlds": [
+              {
+                "accepted": false,
+                "floor_only_rejection": false,
+                "numerical_accepted": false,
+                "original": {
+                  "accepted": false,
+                  "event_agreement": {
+                    "checks": [
+                      {
+                        "coarse_events": 0,
+                        "fine_events": 0,
+                        "limit_s": 6.25e-05,
+                        "max_midpoint_difference_s": 0.0,
+                        "ordered_directions_equal": true,
+                        "pair": "upper_head",
+                        "passed": true
+                      },
+                      {
+                        "coarse_events": 0,
+                        "fine_events": 0,
+                        "limit_s": 6.25e-05,
+                        "max_midpoint_difference_s": 0.0,
+                        "ordered_directions_equal": true,
+                        "pair": "lower_floor",
+                        "passed": true
+                      },
+                      {
+                        "coarse_events": 1,
+                        "fine_events": 1,
+                        "limit_s": 6.25e-05,
+                        "max_midpoint_difference_s": 1.5625000000000122e-05,
+                        "ordered_directions_equal": true,
+                        "pair": "lower_left_foot",
+                        "passed": true
+                      },
+                      {
+                        "coarse_events": 0,
+                        "fine_events": 0,
+                        "limit_s": 6.25e-05,
+                        "max_midpoint_difference_s": 0.0,
+                        "ordered_directions_equal": true,
+                        "pair": "lower_right_foot",
+                        "passed": true
+                      },
+                      {
+                        "coarse_events": 0,
+                        "fine_events": 0,
+                        "limit_s": 6.25e-05,
+                        "max_midpoint_difference_s": 0.0,
+                        "ordered_directions_equal": true,
+                        "pair": "upper_floor",
+                        "passed": true
+                      },
+                      {
+                        "coarse_events": 0,
+                        "fine_events": 0,
+                        "limit_s": 6.25e-05,
+                        "max_midpoint_difference_s": 0.0,
+                        "ordered_directions_equal": true,
+                        "pair": "left_foot_floor",
+                        "passed": true
+                      },
+                      {
+                        "coarse_events": 0,
+                        "fine_events": 0,
+                        "limit_s": 6.25e-05,
+                        "max_midpoint_difference_s": 0.0,
+                        "ordered_directions_equal": true,
+                        "pair": "right_foot_floor",
+                        "passed": true
+                      }
+                    ],
+                    "passed": true
+                  },
+                  "initial_and_final_occupancy_equal": true,
+                  "max_bracket_width_s": 3.125e-05,
+                  "reasons": [
+                    "event_bracket_width"
+                  ],
+                  "state_contact_comparison": {
+                    "checks": [
+                      {
+                        "component": "lower",
+                        "limit": 0.0001,
+                        "metric": "free_translation_m",
+                        "passed": true,
+                        "tick": 1,
+                        "value": 1.231477266982047e-08
+                      },
+                      {
+                        "component": "robot",
+                        "limit": 0.001,
+                        "metric": "free_rotation_rad",
+                        "passed": true,
+                        "tick": 1,
+                        "value": 4.6819091356833607e-07
+                      },
+                      {
+                        "component": "qpos:8",
+                        "limit": 0.001,
+                        "metric": "hinge_position_rad",
+                        "passed": true,
+                        "tick": 1,
+                        "value": 4.544854164123535e-07
+                      },
+                      {
+                        "component": "robot",
+                        "limit": 0.005,
+                        "metric": "free_linear_velocity_m_s",
+                        "passed": true,
+                        "tick": 1,
+                        "value": 3.6246460397335597e-05
+                      },
+                      {
+                        "component": "robot",
+                        "limit": 0.05,
+                        "metric": "angular_velocity_rad_s",
+                        "passed": true,
+                        "tick": 1,
+                        "value": 0.001213670024269022
+                      },
+                      {
+                        "coarse": 0.0,
+                        "fine": 0.0,
+                        "limit": 1e-05,
+                        "metric": "peak_overlap_m",
+                        "pair": "upper_head",
+                        "passed": true,
+                        "value": 0.0
+                      },
+                      {
+                        "coarse": 0.0,
+                        "fine": 0.0,
+                        "limit": 0.0001,
+                        "metric": "normal_impulse_Ns",
+                        "pair": "upper_head",
+                        "passed": true,
+                        "value": 0.0
+                      },
+                      {
+                        "coarse": 0.0,
+                        "fine": 0.0,
+                        "limit": 0.001,
+                        "metric": "loaded_time_s",
+                        "pair": "upper_head",
+                        "passed": true,
+                        "value": 0.0
+                      },
+                      {
+                        "coarse": 1.7404556274414062e-05,
+                        "fine": 1.7404556274414062e-05,
+                        "limit": 1e-05,
+                        "metric": "peak_overlap_m",
+                        "pair": "lower_floor",
+                        "passed": true,
+                        "value": 0.0
+                      },
+                      {
+                        "coarse": 0.027764811401570808,
+                        "fine": 0.027787054863888515,
+                        "limit": 0.0003778705486388851,
+                        "metric": "normal_impulse_Ns",
+                        "pair": "lower_floor",
+                        "passed": true,
+                        "value": 2.2243462317706603e-05
+                      },
+                      {
+                        "coarse": 0.0020000000949949026,
+                        "fine": 0.0020000000949949026,
+                        "limit": 0.001,
+                        "metric": "loaded_time_s",
+                        "pair": "lower_floor",
+                        "passed": true,
+                        "value": 0.0
+                      },
+                      {
+                        "coarse": 6.577960220965906e-07,
+                        "fine": 6.258844109652273e-07,
+                        "limit": 1e-05,
+                        "metric": "peak_overlap_m",
+                        "pair": "lower_left_foot",
+                        "passed": true,
+                        "value": 3.1911611131363316e-08
+                      },
+                      {
+                        "coarse": 0.003399899482163475,
+                        "fine": 0.003443675310314414,
+                        "limit": 0.00013443675310314415,
+                        "metric": "normal_impulse_Ns",
+                        "pair": "lower_left_foot",
+                        "passed": true,
+                        "value": 4.377582815093912e-05
+                      },
+                      {
+                        "coarse": 0.00036458335065011244,
+                        "fine": 0.0003697916842308283,
+                        "limit": 0.001,
+                        "metric": "loaded_time_s",
+                        "pair": "lower_left_foot",
+                        "passed": true,
+                        "value": 5.208333580715874e-06
+                      },
+                      {
+                        "coarse": 3.2696392736397684e-05,
+                        "fine": 3.2692849345039576e-05,
+                        "limit": 1e-05,
+                        "metric": "peak_overlap_m",
+                        "pair": "lower_right_foot",
+                        "passed": true,
+                        "value": 3.5433913581073284e-09
+                      },
+                      {
+                        "coarse": 0.012842985108055795,
+                        "fine": 0.012837171980180247,
+                        "limit": 0.00022837171980180247,
+                        "metric": "normal_impulse_Ns",
+                        "pair": "lower_right_foot",
+                        "passed": true,
+                        "value": 5.813127875547303e-06
+                      },
+                      {
+                        "coarse": 0.0020000000949949026,
+                        "fine": 0.0020000000949949026,
+                        "limit": 0.001,
+                        "metric": "loaded_time_s",
+                        "pair": "lower_right_foot",
+                        "passed": true,
+                        "value": 0.0
+                      },
+                      {
+                        "coarse": 0.0,
+                        "fine": 0.0,
+                        "limit": 1e-05,
+                        "metric": "peak_overlap_m",
+                        "pair": "upper_floor",
+                        "passed": true,
+                        "value": 0.0
+                      },
+                      {
+                        "coarse": 0.0,
+                        "fine": 0.0,
+                        "limit": 0.0001,
+                        "metric": "normal_impulse_Ns",
+                        "pair": "upper_floor",
+                        "passed": true,
+                        "value": 0.0
+                      },
+                      {
+                        "coarse": 0.0,
+                        "fine": 0.0,
+                        "limit": 0.001,
+                        "metric": "loaded_time_s",
+                        "pair": "upper_floor",
+                        "passed": true,
+                        "value": 0.0
+                      },
+                      {
+                        "coarse": 0.0,
+                        "fine": 0.0,
+                        "limit": 1e-05,
+                        "metric": "peak_overlap_m",
+                        "pair": "left_foot_floor",
+                        "passed": true,
+                        "value": 0.0
+                      },
+                      {
+                        "coarse": 0.0,
+                        "fine": 0.0,
+                        "limit": 0.0001,
+                        "metric": "normal_impulse_Ns",
+                        "pair": "left_foot_floor",
+                        "passed": true,
+                        "value": 0.0
+                      },
+                      {
+                        "coarse": 0.0,
+                        "fine": 0.0,
+                        "limit": 0.001,
+                        "metric": "loaded_time_s",
+                        "pair": "left_foot_floor",
+                        "passed": true,
+                        "value": 0.0
+                      },
+                      {
+                        "coarse": 0.0,
+                        "fine": 0.0,
+                        "limit": 1e-05,
+                        "metric": "peak_overlap_m",
+                        "pair": "right_foot_floor",
+                        "passed": true,
+                        "value": 0.0
+                      },
+                      {
+                        "coarse": 0.0,
+                        "fine": 0.0,
+                        "limit": 0.0001,
+                        "metric": "normal_impulse_Ns",
+                        "pair": "right_foot_floor",
+                        "passed": true,
+                        "value": 0.0
+                      },
+                      {
+                        "coarse": 0.0,
+                        "fine": 0.0,
+                        "limit": 0.001,
+                        "metric": "loaded_time_s",
+                        "pair": "right_foot_floor",
+                        "passed": true,
+                        "value": 0.0
+                      }
+                    ],
+                    "compared_endpoints": 1,
+                    "failed_metrics": [],
+                    "interpretation": "Bounded numerical agreement only; no material calibration or RK order claim",
+                    "passed": true
+                  },
+                  "state_error": {
+                    "checks": [
+                      {
+                        "limit": 2.5e-05,
+                        "metric": "free_translation_m",
+                        "passed": true,
+                        "value": 1.2314772313004596e-08
+                      },
+                      {
+                        "limit": 0.00025,
+                        "metric": "free_rotation_rad",
+                        "passed": true,
+                        "value": 4.6819091356833607e-07
+                      },
+                      {
+                        "limit": 0.00025,
+                        "metric": "hinge_position_rad",
+                        "passed": true,
+                        "value": 4.544854164123535e-07
+                      },
+                      {
+                        "limit": 0.00125,
+                        "metric": "free_linear_velocity_m_s",
+                        "passed": true,
+                        "value": 3.6246459785616025e-05
+                      },
+                      {
+                        "limit": 0.0125,
+                        "metric": "angular_velocity_rad_s",
+                        "passed": true,
+                        "value": 0.0012136700097471476
+                      }
+                    ],
+                    "passed": true
+                  }
+                },
+                "resolution_floor": 0,
+                "resolution_floor_satisfied": true,
+                "world": 0
+              }
+            ]
+          }
+        ],
+        "replayed": true
+      },
+      "native_acceptance_credit": false,
+      "native_ledger": {
+        "attempts": {
+          "ContactGraph_allocation": 18,
+          "ContactGraph_capture_begin": 1,
+          "ContactGraph_capture_end": 1,
+          "ContactGraph_cleanup_sync": 1,
+          "ContactGraph_copy_api": 16,
+          "ContactGraph_exec_destroy": 1,
+          "ContactGraph_graph_destroy": 1,
+          "ContactGraph_kernel_api": 33,
+          "ContactGraph_module_load": 1,
+          "Data_boundary_restore": 2,
+          "Foot_allocation": 12,
+          "Foot_fixture_query": 32,
+          "Foot_pose_upload": 32,
+          "GPU_forward": 1413,
+          "Hull_allocation": 2,
+          "Hull_fixture_query": 5,
+          "Hull_fixture_upload": 5,
+          "Hull_module_load": 1,
+          "Hull_vertex_pin": 1,
+          "Kinematic_allocation": 2,
+          "Kinematic_model_capture": 1,
+          "Kinematic_module_load": 1,
+          "Model_boundary_restore": 1,
+          "Model_material_setup": 1,
+          "Oracle_readback_close": 1,
+          "Parallel_hull_allocation": 73,
+          "Precise_allocation": 4,
+          "Precise_module_load": 1,
+          "RK_readback_close": 1,
+          "RNG_bank_initialize": 1,
+          "Reduction_allocation": 2,
+          "Reduction_module_load": 1,
+          "Rigid_module_load": 1,
+          "SolverOrder_module_load": 1,
+          "endpoint_sensor_read": 6,
+          "full_RL_environment": 1,
+          "integrations": 352,
+          "model_option_write": 8,
+          "private_clock_write": 4,
+          "public_clock_write": 1,
+          "sense": 6,
+          "state_restore": 3,
+          "state_snapshot": 1
+        },
+        "checkpoint_sequence": 1288,
+        "completed": {
+          "ContactGraph_allocation": 18,
+          "ContactGraph_capture_begin": 1,
+          "ContactGraph_capture_end": 1,
+          "ContactGraph_cleanup_sync": 1,
+          "ContactGraph_copy_api": 16,
+          "ContactGraph_exec_destroy": 1,
+          "ContactGraph_graph_destroy": 1,
+          "ContactGraph_kernel_api": 33,
+          "ContactGraph_module_load": 1,
+          "Data_boundary_restore": 2,
+          "Foot_allocation": 12,
+          "Foot_fixture_query": 32,
+          "Foot_pose_upload": 32,
+          "GPU_forward": 1413,
+          "Hull_allocation": 2,
+          "Hull_fixture_query": 5,
+          "Hull_fixture_upload": 5,
+          "Hull_module_load": 1,
+          "Hull_vertex_pin": 1,
+          "Kinematic_allocation": 2,
+          "Kinematic_model_capture": 1,
+          "Kinematic_module_load": 1,
+          "Model_boundary_restore": 1,
+          "Model_material_setup": 1,
+          "Oracle_readback_close": 1,
+          "Parallel_hull_allocation": 73,
+          "Precise_allocation": 4,
+          "Precise_module_load": 1,
+          "RK_readback_close": 1,
+          "RNG_bank_initialize": 1,
+          "Reduction_allocation": 2,
+          "Reduction_module_load": 1,
+          "Rigid_module_load": 1,
+          "SolverOrder_module_load": 1,
+          "endpoint_sensor_read": 6,
+          "full_RL_environment": 1,
+          "integrations": 352,
+          "model_option_write": 8,
+          "private_clock_write": 4,
+          "public_clock_write": 1,
+          "sense": 6,
+          "state_restore": 3,
+          "state_snapshot": 1
+        },
+        "counter_intervals": {
+          "ActionManager": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Action_apply": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Action_apply_action": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Action_process_action": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Action_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "BAM_apply_delay": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "BAM_compute": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "BVH_refit": {
+            "attempted_lower": 6,
+            "attempted_upper": 6,
+            "completed_lower": 6,
+            "completed_upper": 6
+          },
+          "CPU_forward": {
+            "attempted_lower": 3,
+            "attempted_upper": 3,
+            "completed_lower": 3,
+            "completed_upper": 3
+          },
+          "CPU_forward_context": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "CPU_forward_simulation": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "CPU_kinematics": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "CUDA_graphs": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "CommandManager": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Command_compute": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Command_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "ContactGraph_allocation": {
+            "attempted_lower": 18,
+            "attempted_upper": 18,
+            "completed_lower": 18,
+            "completed_upper": 18
+          },
+          "ContactGraph_capture_begin": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "ContactGraph_capture_end": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "ContactGraph_cleanup_sync": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "ContactGraph_copy_api": {
+            "attempted_lower": 16,
+            "attempted_upper": 16,
+            "completed_lower": 16,
+            "completed_upper": 16
+          },
+          "ContactGraph_exec_destroy": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "ContactGraph_graph_destroy": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "ContactGraph_kernel_api": {
+            "attempted_lower": 33,
+            "attempted_upper": 33,
+            "completed_lower": 33,
+            "completed_upper": 33
+          },
+          "ContactGraph_launch": {
+            "attempted_lower": 1413,
+            "attempted_upper": 1413,
+            "completed_lower": 1413,
+            "completed_upper": 1413
+          },
+          "ContactGraph_module_load": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "Contact_order_apply": {
+            "attempted_lower": 1413,
+            "attempted_upper": 1413,
+            "completed_lower": 1413,
+            "completed_upper": 1413
+          },
+          "Cost_override_copy": {
+            "attempted_lower": 4035,
+            "attempted_upper": 4035,
+            "completed_lower": 4035,
+            "completed_upper": 4035
+          },
+          "Cost_reduce_kernel": {
+            "attempted_lower": 4035,
+            "attempted_upper": 4035,
+            "completed_lower": 4035,
+            "completed_upper": 4035
+          },
+          "Cost_rows_kernel": {
+            "attempted_lower": 4035,
+            "attempted_upper": 4035,
+            "completed_lower": 4035,
+            "completed_upper": 4035
+          },
+          "CurriculumManager": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Curriculum_compute": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Curriculum_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Data_boundary_restore": {
+            "attempted_lower": 2,
+            "attempted_upper": 2,
+            "completed_lower": 2,
+            "completed_upper": 2
+          },
+          "Data_restore": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Data_snapshots": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Env__reset_idx": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Env_substep_counter": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "EventManager": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Event_apply": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Event_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "External_Model_restore": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Foot_allocation": {
+            "attempted_lower": 12,
+            "attempted_upper": 12,
+            "completed_lower": 12,
+            "completed_upper": 12
+          },
+          "Foot_fixture_query": {
+            "attempted_lower": 32,
+            "attempted_upper": 32,
+            "completed_lower": 32,
+            "completed_upper": 32
+          },
+          "Foot_geometry_kernel": {
+            "attempted_lower": 2826,
+            "attempted_upper": 2826,
+            "completed_lower": 2826,
+            "completed_upper": 2826
+          },
+          "Foot_pose_upload": {
+            "attempted_lower": 2858,
+            "attempted_upper": 2858,
+            "completed_lower": 2858,
+            "completed_upper": 2858
+          },
+          "GPU_forward": {
+            "attempted_lower": 1413,
+            "attempted_upper": 1413,
+            "completed_lower": 1413,
+            "completed_upper": 1413
+          },
+          "GPU_reset_data": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "GPU_solver": {
+            "attempted_lower": 1413,
+            "attempted_upper": 1413,
+            "completed_lower": 1413,
+            "completed_upper": 1413
+          },
+          "Hull_allocation": {
+            "attempted_lower": 2,
+            "attempted_upper": 2,
+            "completed_lower": 2,
+            "completed_upper": 2
+          },
+          "Hull_fixture_query": {
+            "attempted_lower": 5,
+            "attempted_upper": 5,
+            "completed_lower": 5,
+            "completed_upper": 5
+          },
+          "Hull_fixture_upload": {
+            "attempted_lower": 5,
+            "attempted_upper": 5,
+            "completed_lower": 5,
+            "completed_upper": 5
+          },
+          "Hull_module_load": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "Hull_vertex_pin": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "Kinematic_allocation": {
+            "attempted_lower": 2,
+            "attempted_upper": 2,
+            "completed_lower": 2,
+            "completed_upper": 2
+          },
+          "Kinematic_model_capture": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "Kinematic_module_load": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "Kinematic_pose_compute": {
+            "attempted_lower": 1413,
+            "attempted_upper": 1413,
+            "completed_lower": 1413,
+            "completed_upper": 1413
+          },
+          "Kinematic_pose_upload": {
+            "attempted_lower": 1413,
+            "attempted_upper": 1413,
+            "completed_lower": 1413,
+            "completed_upper": 1413
+          },
+          "MetricsManager": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Metrics_compute": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Metrics_compute_substep": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Metrics_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Metrics_substep": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Model_boundary_restore": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "Model_expansion": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "Model_material_setup": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "Model_runtime_assignments": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Norm_kernel": {
+            "attempted_lower": 6657,
+            "attempted_upper": 6657,
+            "completed_lower": 6657,
+            "completed_upper": 6657
+          },
+          "ObservationManager": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Observation_compute": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Observation_delay": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Observation_noise": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Observation_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Oracle_readback_barrier": {
+            "attempted_lower": 21996,
+            "attempted_upper": 21996,
+            "completed_lower": 21996,
+            "completed_upper": 21996
+          },
+          "Oracle_readback_close": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "Oracle_readback_copy_enqueue": {
+            "attempted_lower": 268047,
+            "attempted_upper": 268047,
+            "completed_lower": 268047,
+            "completed_upper": 268047
+          },
+          "Oracle_readback_host_allocate": {
+            "attempted_lower": 95,
+            "attempted_upper": 95,
+            "completed_lower": 95,
+            "completed_upper": 95
+          },
+          "Oracle_readback_reference": {
+            "attempted_lower": 8,
+            "attempted_upper": 8,
+            "completed_lower": 8,
+            "completed_upper": 8
+          },
+          "Oracle_snapshot": {
+            "attempted_lower": 21996,
+            "attempted_upper": 21996,
+            "completed_lower": 21996,
+            "completed_upper": 21996
+          },
+          "Owner_restore": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Owner_snapshots": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "PPO": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Parallel_hull_allocation": {
+            "attempted_lower": 73,
+            "attempted_upper": 73,
+            "completed_lower": 73,
+            "completed_upper": 73
+          },
+          "Parallel_hull_kernel": {
+            "attempted_lower": 51312,
+            "attempted_upper": 51312,
+            "completed_lower": 51312,
+            "completed_upper": 51312
+          },
+          "Precise_allocation": {
+            "attempted_lower": 4,
+            "attempted_upper": 4,
+            "completed_lower": 4,
+            "completed_upper": 4
+          },
+          "Precise_contact_kernel": {
+            "attempted_lower": 4239,
+            "attempted_upper": 4239,
+            "completed_lower": 4239,
+            "completed_upper": 4239
+          },
+          "Precise_geometry_kernel": {
+            "attempted_lower": 1413,
+            "attempted_upper": 1413,
+            "completed_lower": 1413,
+            "completed_upper": 1413
+          },
+          "Precise_module_load": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "RK4_integrator": {
+            "attempted_lower": 352,
+            "attempted_upper": 352,
+            "completed_lower": 352,
+            "completed_upper": 352
+          },
+          "RK_readback_barrier": {
+            "attempted_lower": 1408,
+            "attempted_upper": 1408,
+            "completed_lower": 1408,
+            "completed_upper": 1408
+          },
+          "RK_readback_close": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "RK_readback_copy_enqueue": {
+            "attempted_lower": 133760,
+            "attempted_upper": 133760,
+            "completed_lower": 133760,
+            "completed_upper": 133760
+          },
+          "RK_readback_host_allocate": {
+            "attempted_lower": 114,
+            "attempted_upper": 114,
+            "completed_lower": 114,
+            "completed_upper": 114
+          },
+          "RK_readback_reference": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "RK_stage_readback": {
+            "attempted_lower": 1408,
+            "attempted_upper": 1408,
+            "completed_lower": 1408,
+            "completed_upper": 1408
+          },
+          "RNG_bank_initialize": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "RNG_restore": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "RNG_sample": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "RecorderManager": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Recorder_close": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Recorder_post_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Recorder_post_step": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Recorder_pre_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Recorder_record_post_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Recorder_record_post_step": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Recorder_record_pre_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Reduction_allocation": {
+            "attempted_lower": 2,
+            "attempted_upper": 2,
+            "completed_lower": 2,
+            "completed_upper": 2
+          },
+          "Reduction_device_bytes": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Reduction_module_load": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "RewardManager": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Reward_compute": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Reward_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Rigid_metadata_kernel": {
+            "attempted_lower": 1413,
+            "attempted_upper": 1413,
+            "completed_lower": 1413,
+            "completed_upper": 1413
+          },
+          "Rigid_module_load": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "Scene_initialize": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "Scene_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Scene_update": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Scene_write": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Sensor_context_set": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "Simulation_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "SolverContext_create": {
+            "attempted_lower": 1413,
+            "attempted_upper": 1413,
+            "completed_lower": 1413,
+            "completed_upper": 1413
+          },
+          "SolverOrder_kernel": {
+            "attempted_lower": 2622,
+            "attempted_upper": 2622,
+            "completed_lower": 2622,
+            "completed_upper": 2622
+          },
+          "SolverOrder_module_load": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "Solver_linesearch": {
+            "attempted_lower": 2622,
+            "attempted_upper": 2622,
+            "completed_lower": 2622,
+            "completed_upper": 2622
+          },
+          "Solver_solver_iteration": {
+            "attempted_lower": 2622,
+            "attempted_upper": 2622,
+            "completed_lower": 2622,
+            "completed_upper": 2622
+          },
+          "Solver_update_constraint": {
+            "attempted_lower": 4035,
+            "attempted_upper": 4035,
+            "completed_lower": 4035,
+            "completed_upper": 4035
+          },
+          "Solver_update_gradient": {
+            "attempted_lower": 1413,
+            "attempted_upper": 1413,
+            "completed_lower": 1413,
+            "completed_upper": 1413
+          },
+          "Solver_update_gradient_incremental": {
+            "attempted_lower": 2622,
+            "attempted_upper": 2622,
+            "completed_lower": 2622,
+            "completed_upper": 2622
+          },
+          "Solverinit_context": {
+            "attempted_lower": 1413,
+            "attempted_upper": 1413,
+            "completed_lower": 1413,
+            "completed_upper": 1413
+          },
+          "Startup_BAM_parameter_write": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "TerminationManager": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Termination_compute": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "Termination_reset": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "archive_MiB": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "cloud": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "context_create": {
+            "attempted_lower": 2,
+            "attempted_upper": 2,
+            "completed_lower": 2,
+            "completed_upper": 2
+          },
+          "endpoint_sensor_read": {
+            "attempted_lower": 6,
+            "attempted_upper": 6,
+            "completed_lower": 6,
+            "completed_upper": 6
+          },
+          "full_RL_environment": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "integrations": {
+            "attempted_lower": 352,
+            "attempted_upper": 352,
+            "completed_lower": 352,
+            "completed_upper": 352
+          },
+          "model_option_write": {
+            "attempted_lower": 8,
+            "attempted_upper": 8,
+            "completed_lower": 8,
+            "completed_upper": 8
+          },
+          "observation_action_reads": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "observation_height_reads": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "physical_worlds": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "position_write": {
+            "attempted_lower": 352,
+            "attempted_upper": 352,
+            "completed_lower": 352,
+            "completed_upper": 352
+          },
+          "private_clock_write": {
+            "attempted_lower": 4,
+            "attempted_upper": 4,
+            "completed_lower": 4,
+            "completed_upper": 4
+          },
+          "public_clock_write": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          },
+          "ray_batch": {
+            "attempted_lower": 6,
+            "attempted_upper": 6,
+            "completed_lower": 6,
+            "completed_upper": 6
+          },
+          "sense": {
+            "attempted_lower": 6,
+            "attempted_upper": 6,
+            "completed_lower": 6,
+            "completed_upper": 6
+          },
+          "sensor_data_reads": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "snapshot_bytes_each": {
+            "attempted_lower": 0,
+            "attempted_upper": 0,
+            "completed_lower": 0,
+            "completed_upper": 0
+          },
+          "state_restore": {
+            "attempted_lower": 3,
+            "attempted_upper": 3,
+            "completed_lower": 3,
+            "completed_upper": 3
+          },
+          "state_snapshot": {
+            "attempted_lower": 1,
+            "attempted_upper": 1,
+            "completed_lower": 1,
+            "completed_upper": 1
+          }
+        },
+        "counters_exact": true,
+        "counts": {
+          "BVH_refit_attempted": 6,
+          "BVH_refit_completed": 6,
+          "CPU_forward_attempted": 3,
+          "CPU_forward_completed": 3,
+          "CPU_kinematics_attempted": 1,
+          "CPU_kinematics_completed": 1,
+          "ContactGraph_allocation_attempted": 18,
+          "ContactGraph_allocation_completed": 18,
+          "ContactGraph_capture_begin_attempted": 1,
+          "ContactGraph_capture_begin_completed": 1,
+          "ContactGraph_capture_end_attempted": 1,
+          "ContactGraph_capture_end_completed": 1,
+          "ContactGraph_cleanup_sync_attempted": 1,
+          "ContactGraph_cleanup_sync_completed": 1,
+          "ContactGraph_copy_api_attempted": 16,
+          "ContactGraph_copy_api_completed": 16,
+          "ContactGraph_exec_destroy_attempted": 1,
+          "ContactGraph_exec_destroy_completed": 1,
+          "ContactGraph_graph_destroy_attempted": 1,
+          "ContactGraph_graph_destroy_completed": 1,
+          "ContactGraph_kernel_api_attempted": 33,
+          "ContactGraph_kernel_api_completed": 33,
+          "ContactGraph_launch_attempted": 1413,
+          "ContactGraph_launch_completed": 1413,
+          "ContactGraph_module_load_attempted": 1,
+          "ContactGraph_module_load_completed": 1,
+          "Contact_order_apply_attempted": 1413,
+          "Contact_order_apply_completed": 1413,
+          "Cost_override_copy_attempted": 4035,
+          "Cost_override_copy_completed": 4035,
+          "Cost_reduce_kernel_attempted": 4035,
+          "Cost_reduce_kernel_completed": 4035,
+          "Cost_rows_kernel_attempted": 4035,
+          "Cost_rows_kernel_completed": 4035,
+          "Data_boundary_restore_attempted": 2,
+          "Data_boundary_restore_completed": 2,
+          "Foot_allocation_attempted": 12,
+          "Foot_allocation_completed": 12,
+          "Foot_fixture_query_attempted": 32,
+          "Foot_fixture_query_completed": 32,
+          "Foot_geometry_kernel_attempted": 2826,
+          "Foot_geometry_kernel_completed": 2826,
+          "Foot_pose_upload_attempted": 2858,
+          "Foot_pose_upload_completed": 2858,
+          "GPU_forward_attempted": 1413,
+          "GPU_forward_completed": 1413,
+          "GPU_solver_attempted": 1413,
+          "GPU_solver_completed": 1413,
+          "Hull_allocation_attempted": 2,
+          "Hull_allocation_completed": 2,
+          "Hull_fixture_query_attempted": 5,
+          "Hull_fixture_query_completed": 5,
+          "Hull_fixture_upload_attempted": 5,
+          "Hull_fixture_upload_completed": 5,
+          "Hull_module_load_attempted": 1,
+          "Hull_module_load_completed": 1,
+          "Hull_vertex_pin_attempted": 1,
+          "Hull_vertex_pin_completed": 1,
+          "Kinematic_allocation_attempted": 2,
+          "Kinematic_allocation_completed": 2,
+          "Kinematic_model_capture_attempted": 1,
+          "Kinematic_model_capture_completed": 1,
+          "Kinematic_module_load_attempted": 1,
+          "Kinematic_module_load_completed": 1,
+          "Kinematic_pose_compute_attempted": 1413,
+          "Kinematic_pose_compute_completed": 1413,
+          "Kinematic_pose_upload_attempted": 1413,
+          "Kinematic_pose_upload_completed": 1413,
+          "Model_boundary_restore_attempted": 1,
+          "Model_boundary_restore_completed": 1,
+          "Model_expansion_attempted": 1,
+          "Model_expansion_completed": 1,
+          "Model_material_setup_attempted": 1,
+          "Model_material_setup_completed": 1,
+          "Norm_kernel_attempted": 6657,
+          "Norm_kernel_completed": 6657,
+          "Oracle_readback_barrier_attempted": 21996,
+          "Oracle_readback_barrier_completed": 21996,
+          "Oracle_readback_close_attempted": 1,
+          "Oracle_readback_close_completed": 1,
+          "Oracle_readback_copy_enqueue_attempted": 268047,
+          "Oracle_readback_copy_enqueue_completed": 268047,
+          "Oracle_readback_host_allocate_attempted": 95,
+          "Oracle_readback_host_allocate_completed": 95,
+          "Oracle_readback_reference_attempted": 8,
+          "Oracle_readback_reference_completed": 8,
+          "Oracle_snapshot_attempted": 21996,
+          "Oracle_snapshot_completed": 21996,
+          "PPO": 0,
+          "Parallel_hull_allocation_attempted": 73,
+          "Parallel_hull_allocation_completed": 73,
+          "Parallel_hull_kernel_attempted": 51312,
+          "Parallel_hull_kernel_completed": 51312,
+          "Precise_allocation_attempted": 4,
+          "Precise_allocation_completed": 4,
+          "Precise_contact_kernel_attempted": 4239,
+          "Precise_contact_kernel_completed": 4239,
+          "Precise_geometry_kernel_attempted": 1413,
+          "Precise_geometry_kernel_completed": 1413,
+          "Precise_module_load_attempted": 1,
+          "Precise_module_load_completed": 1,
+          "RK4_integrator_attempted": 352,
+          "RK4_integrator_completed": 352,
+          "RK_readback_barrier_attempted": 1408,
+          "RK_readback_barrier_completed": 1408,
+          "RK_readback_close_attempted": 1,
+          "RK_readback_close_completed": 1,
+          "RK_readback_copy_enqueue_attempted": 133760,
+          "RK_readback_copy_enqueue_completed": 133760,
+          "RK_readback_host_allocate_attempted": 114,
+          "RK_readback_host_allocate_completed": 114,
+          "RK_readback_reference_attempted": 1,
+          "RK_readback_reference_completed": 1,
+          "RK_stage_readback_attempted": 1408,
+          "RK_stage_readback_completed": 1408,
+          "RNG_bank_initialize_attempted": 1,
+          "RNG_bank_initialize_completed": 1,
+          "Reduction_allocation_attempted": 2,
+          "Reduction_allocation_completed": 2,
+          "Reduction_module_load_attempted": 1,
+          "Reduction_module_load_completed": 1,
+          "Rigid_metadata_kernel_attempted": 1413,
+          "Rigid_metadata_kernel_completed": 1413,
+          "Rigid_module_load_attempted": 1,
+          "Rigid_module_load_completed": 1,
+          "Scene_initialize_attempted": 1,
+          "Scene_initialize_completed": 1,
+          "Sensor_context_set_attempted": 1,
+          "Sensor_context_set_completed": 1,
+          "SolverContext_create_attempted": 1413,
+          "SolverContext_create_completed": 1413,
+          "SolverOrder_kernel_attempted": 2622,
+          "SolverOrder_kernel_completed": 2622,
+          "SolverOrder_module_load_attempted": 1,
+          "SolverOrder_module_load_completed": 1,
+          "Solver_linesearch_attempted": 2622,
+          "Solver_linesearch_completed": 2622,
+          "Solver_solver_iteration_attempted": 2622,
+          "Solver_solver_iteration_completed": 2622,
+          "Solver_update_constraint_attempted": 4035,
+          "Solver_update_constraint_completed": 4035,
+          "Solver_update_gradient_attempted": 1413,
+          "Solver_update_gradient_completed": 1413,
+          "Solver_update_gradient_incremental_attempted": 2622,
+          "Solver_update_gradient_incremental_completed": 2622,
+          "Solverinit_context_attempted": 1413,
+          "Solverinit_context_completed": 1413,
+          "cloud_training": 0,
+          "context_create_attempted": 2,
+          "context_create_completed": 2,
+          "endpoint_sensor_read_attempted": 6,
+          "endpoint_sensor_read_completed": 6,
+          "full_RL_environment_attempted": 1,
+          "full_RL_environment_completed": 1,
+          "full_RL_environment_constructed": 1,
+          "graph_setup_suppressed": 3,
+          "integrations_attempted": 352,
+          "integrations_completed": 352,
+          "model_option_write_attempted": 8,
+          "model_option_write_completed": 8,
+          "position_write_attempted": 352,
+          "position_write_completed": 352,
+          "private_clock_write_attempted": 4,
+          "private_clock_write_completed": 4,
+          "public_clock_write_attempted": 1,
+          "public_clock_write_completed": 1,
+          "ray_batch_attempted": 6,
+          "ray_batch_completed": 6,
+          "sense_attempted": 6,
+          "sense_completed": 6,
+          "state_restore_attempted": 3,
+          "state_restore_completed": 3,
+          "state_snapshot_attempted": 1,
+          "state_snapshot_completed": 1
+        },
+        "exact": true,
+        "format": "stage12-hierarchical-accounting-v1",
+        "incomplete_tail": false,
+        "integration_attempted_lower": 352,
+        "integration_attempted_upper": 352,
+        "integration_completed_lower": 352,
+        "integration_completed_upper": 352,
+        "nested_upper_bound_scope": "Whole-owner reserved caps; deliberately conservative after unsealed exit",
+        "pending": {},
+        "pending_nested": {},
+        "rows": 1288,
+        "wal_exact": true
+      },
+      "old_campaign_resume": false,
+      "oracle_close": {
+        "all_contact_and_solver_oracles_retained": true,
+        "closed": true,
+        "copies": 268047,
+        "enqueue_completion_means_device_completion": false,
+        "format": "stage12-oracle-readback-v1",
+        "groups": {
+          "precise_after": {
+            "copies": 76302,
+            "fields": 18,
+            "reference": {
+              "exact_bytes": true,
+              "fields": 18,
+              "hashes": {
+                "dim": "908fba1a08a3768937d0edab1ef4b0711588d23265374bd84c452cc0d3c771c6",
+                "dist": "52d69e2252379fcf29cb25048aad15a66045edad10a3ed0acfdcfbf7e43b11d7",
+                "efc_address": "e9d949cee05200174e01d695831affc2b919c2350dd0c162c3dfc5edd99ec8e7",
+                "flex": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+                "frame": "4d99f12a15e219e62891f53368f0b93a3b45016b7162c9489a2e38429630a172",
+                "friction": "a7dac08f5c2339f4b8a6dc0c215af9cd0d8d9cff8e10b0974cee318407ea9547",
+                "geom": "b52cf2f22d182207d7223efdf73b9fd13dfcfdb6ea0652f9843164d2479384dc",
+                "geomcollisionid": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "includemargin": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "nacon": "26b25d457597a7b0463f9620f666dd10aa2c4373a505967c7c8d70922a2d6ece",
+                "pos": "bf98aac07fb3dd5a00fa0f0728202e44ba2f7e76a97cb89aa6e08364a4d99e07",
+                "solimp": "409bb87f9dba7c64be6cf07b95bc589f51340d3dca16daa4905e83c43afc4d1e",
+                "solref": "2744a27670bdecb8202af519f46d55a88c1589e77287a565dfe42ce550e3dfab",
+                "solreffriction": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+                "status": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+                "type": "6bf10d9c1b7796ee385c1d0ee4582e8af661c60d7b9e1aeb988e1be7e5291a38",
+                "vert": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+                "worldid": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+              }
+            },
+            "snapshots": 4239
+          },
+          "precise_before": {
+            "copies": 96084,
+            "fields": 17,
+            "reference": {
+              "exact_bytes": true,
+              "fields": 17,
+              "hashes": {
+                "dim": "908fba1a08a3768937d0edab1ef4b0711588d23265374bd84c452cc0d3c771c6",
+                "dist": "52d69e2252379fcf29cb25048aad15a66045edad10a3ed0acfdcfbf7e43b11d7",
+                "efc_address": "e9d949cee05200174e01d695831affc2b919c2350dd0c162c3dfc5edd99ec8e7",
+                "flex": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+                "frame": "4d99f12a15e219e62891f53368f0b93a3b45016b7162c9489a2e38429630a172",
+                "friction": "a7dac08f5c2339f4b8a6dc0c215af9cd0d8d9cff8e10b0974cee318407ea9547",
+                "geom": "b52cf2f22d182207d7223efdf73b9fd13dfcfdb6ea0652f9843164d2479384dc",
+                "geomcollisionid": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "includemargin": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "nacon": "26b25d457597a7b0463f9620f666dd10aa2c4373a505967c7c8d70922a2d6ece",
+                "pos": "bf98aac07fb3dd5a00fa0f0728202e44ba2f7e76a97cb89aa6e08364a4d99e07",
+                "solimp": "409bb87f9dba7c64be6cf07b95bc589f51340d3dca16daa4905e83c43afc4d1e",
+                "solref": "2744a27670bdecb8202af519f46d55a88c1589e77287a565dfe42ce550e3dfab",
+                "solreffriction": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+                "type": "6bf10d9c1b7796ee385c1d0ee4582e8af661c60d7b9e1aeb988e1be7e5291a38",
+                "vert": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+                "worldid": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+              }
+            },
+            "snapshots": 5652
+          },
+          "solver_before": {
+            "copies": 7866,
+            "fields": 3,
+            "reference": {
+              "exact_bytes": true,
+              "fields": 3,
+              "hashes": {
+                "done": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+                "nefc": "3ef3bd3d6658c0dfdfdd7aa65e3d92bf1da9a04678a4ed2a5d84ed824ec91775",
+                "state": "d546aa15e8574913ff913426a1af603f78c322e5b320286e8e77427eb1cc5d21"
+              }
+            },
+            "snapshots": 2622
+          },
+          "solver_changed": {
+            "copies": 7866,
+            "fields": 3,
+            "reference": {
+              "exact_bytes": true,
+              "fields": 3,
+              "hashes": {
+                "count": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+                "ids": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+                "state": "d546aa15e8574913ff913426a1af603f78c322e5b320286e8e77427eb1cc5d21"
+              }
+            },
+            "snapshots": 2622
+          },
+          "solver_sorted": {
+            "copies": 7866,
+            "fields": 3,
+            "reference": {
+              "exact_bytes": true,
+              "fields": 3,
+              "hashes": {
+                "count": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+                "ids": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+                "state": "d546aa15e8574913ff913426a1af603f78c322e5b320286e8e77427eb1cc5d21"
+              }
+            },
+            "snapshots": 2622
+          },
+          "sort_after": {
+            "copies": 25434,
+            "fields": 18,
+            "reference": {
+              "exact_bytes": true,
+              "fields": 18,
+              "hashes": {
+                "dim": "908fba1a08a3768937d0edab1ef4b0711588d23265374bd84c452cc0d3c771c6",
+                "dist": "3d85fdf8a8c00020535e9978316feb920d15f784afc12d6de083c6e4be12f34b",
+                "efc_address": "e9d949cee05200174e01d695831affc2b919c2350dd0c162c3dfc5edd99ec8e7",
+                "flex": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+                "frame": "cef2a706e47a449ae0859f76509788157805a198ef874d1aa404f5ef9621c24b",
+                "friction": "a7dac08f5c2339f4b8a6dc0c215af9cd0d8d9cff8e10b0974cee318407ea9547",
+                "geom": "d420b1812c545b04a1c15042079bd1c325c5c3708c90f560f2d6205f493aa38d",
+                "geomcollisionid": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "includemargin": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "order": "8808405eec6fbe306fe3369f88daed79dd5613ddbb5e801f632b01d6218c5f08",
+                "pos": "0a2d4f76181cd7233cc4edf0d83968531a91e626917a98edcb3cb10c0e989f9b",
+                "solimp": "409bb87f9dba7c64be6cf07b95bc589f51340d3dca16daa4905e83c43afc4d1e",
+                "solref": "2744a27670bdecb8202af519f46d55a88c1589e77287a565dfe42ce550e3dfab",
+                "solreffriction": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+                "status": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+                "type": "6bf10d9c1b7796ee385c1d0ee4582e8af661c60d7b9e1aeb988e1be7e5291a38",
+                "vert": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+                "worldid": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+              }
+            },
+            "snapshots": 1413
+          },
+          "sort_before": {
+            "copies": 24021,
+            "fields": 17,
+            "reference": {
+              "exact_bytes": true,
+              "fields": 17,
+              "hashes": {
+                "dim": "908fba1a08a3768937d0edab1ef4b0711588d23265374bd84c452cc0d3c771c6",
+                "dist": "3d85fdf8a8c00020535e9978316feb920d15f784afc12d6de083c6e4be12f34b",
+                "efc_address": "e9d949cee05200174e01d695831affc2b919c2350dd0c162c3dfc5edd99ec8e7",
+                "flex": "0e056710926e5b34c5e12648f52a0bae52214b6ad981b86fecd9891ed27a2999",
+                "frame": "cef2a706e47a449ae0859f76509788157805a198ef874d1aa404f5ef9621c24b",
+                "friction": "a7dac08f5c2339f4b8a6dc0c215af9cd0d8d9cff8e10b0974cee318407ea9547",
+                "geom": "d420b1812c545b04a1c15042079bd1c325c5c3708c90f560f2d6205f493aa38d",
+                "geomcollisionid": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "includemargin": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "nacon": "26b25d457597a7b0463f9620f666dd10aa2c4373a505967c7c8d70922a2d6ece",
+                "pos": "0a2d4f76181cd7233cc4edf0d83968531a91e626917a98edcb3cb10c0e989f9b",
+                "solimp": "409bb87f9dba7c64be6cf07b95bc589f51340d3dca16daa4905e83c43afc4d1e",
+                "solref": "2744a27670bdecb8202af519f46d55a88c1589e77287a565dfe42ce550e3dfab",
+                "solreffriction": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+                "type": "6bf10d9c1b7796ee385c1d0ee4582e8af661c60d7b9e1aeb988e1be7e5291a38",
+                "vert": "0e056710926e5b34c5e12648f52a0bae52214b6ad981b86fecd9891ed27a2999",
+                "worldid": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+              }
+            },
+            "snapshots": 1413
+          },
+          "sort_metadata": {
+            "copies": 22608,
+            "fields": 16,
+            "reference": {
+              "exact_bytes": true,
+              "fields": 16,
+              "hashes": {
+                "dim": "908fba1a08a3768937d0edab1ef4b0711588d23265374bd84c452cc0d3c771c6",
+                "dist": "3d85fdf8a8c00020535e9978316feb920d15f784afc12d6de083c6e4be12f34b",
+                "efc_address": "e9d949cee05200174e01d695831affc2b919c2350dd0c162c3dfc5edd99ec8e7",
+                "flex": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+                "frame": "cef2a706e47a449ae0859f76509788157805a198ef874d1aa404f5ef9621c24b",
+                "friction": "a7dac08f5c2339f4b8a6dc0c215af9cd0d8d9cff8e10b0974cee318407ea9547",
+                "geom": "d420b1812c545b04a1c15042079bd1c325c5c3708c90f560f2d6205f493aa38d",
+                "geomcollisionid": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "includemargin": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "pos": "0a2d4f76181cd7233cc4edf0d83968531a91e626917a98edcb3cb10c0e989f9b",
+                "solimp": "409bb87f9dba7c64be6cf07b95bc589f51340d3dca16daa4905e83c43afc4d1e",
+                "solref": "2744a27670bdecb8202af519f46d55a88c1589e77287a565dfe42ce550e3dfab",
+                "solreffriction": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+                "type": "6bf10d9c1b7796ee385c1d0ee4582e8af661c60d7b9e1aeb988e1be7e5291a38",
+                "vert": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+                "worldid": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+              }
+            },
+            "snapshots": 1413
+          }
+        },
+        "host_allocations": 95,
+        "host_objects_released": true,
+        "host_read_after_completed_barrier": true,
+        "numerical_kernels_changed": 0,
+        "pending": false,
+        "pinned_host_bytes": 246817,
+        "poisoned": false,
+        "snapshot_seconds": 0.17313557851593941,
+        "snapshots": 21996,
+        "streams_changed": 0
+      },
+      "precise_close": {
+        "attempts": 1413,
+        "closed": true,
+        "completed": 1413,
+        "completed_macros": 0,
+        "corrected_pairs": [
+          [
+            84,
+            49
+          ],
+          [
+            82,
+            29
+          ],
+          [
+            82,
+            79
+          ]
+        ],
+        "external_forwards": 0,
+        "foot_fixture_verified": true,
+        "foot_references_released": true,
+        "gpu_fixture_verified": true,
+        "hull_facets": 7612,
+        "kinematic_trial_proofs": [
+          {
+            "forwards": 129,
+            "kinematic_sha256": "5a936a536b9b23c012931b6f49fd22e7679bf591e4103f7c064ae303efc51e02",
+            "macro_index": 51,
+            "resolution": 32,
+            "role": "estimate",
+            "trial": 1
+          },
+          {
+            "forwards": 257,
+            "kinematic_sha256": "8d0922a761c2963b848dca8846b8c9c2d83b5c689d9ba042e78668407ce76a34",
+            "macro_index": 51,
+            "resolution": 64,
+            "role": "candidate",
+            "trial": 2
+          },
+          {
+            "forwards": 513,
+            "kinematic_sha256": "20537ec5cc6a1a9904de44592a4e652ae3c62972cfb87e75329e453b98c390b3",
+            "macro_index": 51,
+            "resolution": 128,
+            "role": "retry",
+            "trial": 3
+          },
+          {
+            "forwards": 513,
+            "kinematic_sha256": "20537ec5cc6a1a9904de44592a4e652ae3c62972cfb87e75329e453b98c390b3",
+            "macro_index": 51,
+            "resolution": 128,
+            "role": "replay",
+            "trial": 4
+          }
+        ],
+        "parallel_capacity": 1,
+        "parallel_kernel_attempts": 51312,
+        "parallel_kernel_completions": 51312,
+        "parallel_scratch_references_released": true,
+        "per_kernel_WAL_and_sync": false,
+        "query_completion_barrier_retained": true,
+        "raw_bytes": 14829312,
+        "sha256": "95e333d6a0665f01816eadac6f6651622291e4f45640909d075e7c8f558f96b4",
+        "synchronization_preserved": false
+      },
+      "readback_close": {
+        "all_114_Data_values_read_each_stage": true,
+        "arrays": 114,
+        "closed": true,
+        "enqueue_completion_is_transfer_completion": false,
+        "format": "stage12-batched-readback-v1",
+        "host_objects_released": true,
+        "host_read_only_after_completed_barrier": true,
+        "nonempty_arrays": 95,
+        "original_forward_sync_retained": true,
+        "output_arrays_are_independent": true,
+        "pending": false,
+        "pinned_host_bytes": 245544,
+        "poisoned": false,
+        "reference": {
+          "arrays": 114,
+          "exact_bytes": true,
+          "hashes": {
+            "Data.act": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "Data.act_dot": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "Data.actuator_force": "e16cc470a9c13028faaa448ea712e590504551796b7ebb87035ac2b02c624ffa",
+            "Data.actuator_length": "5b9b6db2ad4adaf4b406c5bec7939d618acd25039d8c4b03db58a8ebf286b479",
+            "Data.actuator_moment": "6f91366959059ff671babcb62b4cf8b3dfd3c02bb5057674dd18ab30b9452d47",
+            "Data.actuator_velocity": "ba030a231411eab899e1c9dc43d7d45904efb2a6ead08e4276da15b131363c0c",
+            "Data.cacc": "c602ef763756c03bdcf2af1ba0fe9a3742575a9e74810201eaf72060d38137d1",
+            "Data.cam_xmat": "26d6215525dfcf0dc27ed1af5972d4cc4f26fb4ab2087d0e5ed01f6b8d3de7f5",
+            "Data.cam_xpos": "448433629a7be3ea3c386107e855b7550b2f94d0cdd50a094fa9714a155179bb",
+            "Data.cdof": "f4a4194393ee47467feb519ded511eb1504dfc53475413631730f6f67997ab8b",
+            "Data.cdof_dot": "50f0449d1360c3df0826ab2ba127db43750ac214ede6f6dbf37a70deef24820e",
+            "Data.cfrc_ext": "a16bb7262df9ccf7d92ab0b66faf14e062020a7814d5b83f377466faa84067b7",
+            "Data.cfrc_int": "12283c134c3d84707bdb52bf1f2b68ee8e1803c441a6b640b03d10e984ed5606",
+            "Data.cinert": "ae6a1919385abf7e694e9b90d7643f8cb3dc710295145f61356c6bb51eae0240",
+            "Data.contact.dim": "908fba1a08a3768937d0edab1ef4b0711588d23265374bd84c452cc0d3c771c6",
+            "Data.contact.dist": "3d85fdf8a8c00020535e9978316feb920d15f784afc12d6de083c6e4be12f34b",
+            "Data.contact.efc_address": "4a579764f0c020765d41d4d996f2b3f3ebba190eb08b4bdd2c3592a2ac09d3ee",
+            "Data.contact.flex": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+            "Data.contact.frame": "cef2a706e47a449ae0859f76509788157805a198ef874d1aa404f5ef9621c24b",
+            "Data.contact.friction": "a7dac08f5c2339f4b8a6dc0c215af9cd0d8d9cff8e10b0974cee318407ea9547",
+            "Data.contact.geom": "d420b1812c545b04a1c15042079bd1c325c5c3708c90f560f2d6205f493aa38d",
+            "Data.contact.geomcollisionid": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+            "Data.contact.includemargin": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+            "Data.contact.pos": "0a2d4f76181cd7233cc4edf0d83968531a91e626917a98edcb3cb10c0e989f9b",
+            "Data.contact.solimp": "409bb87f9dba7c64be6cf07b95bc589f51340d3dca16daa4905e83c43afc4d1e",
+            "Data.contact.solref": "2744a27670bdecb8202af519f46d55a88c1589e77287a565dfe42ce550e3dfab",
+            "Data.contact.solreffriction": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+            "Data.contact.type": "6bf10d9c1b7796ee385c1d0ee4582e8af661c60d7b9e1aeb988e1be7e5291a38",
+            "Data.contact.vert": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+            "Data.contact.worldid": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+            "Data.crb": "ad5af111676fbb83c5468553298624f05a4924393bc9c7b812b8d4da7f386747",
+            "Data.ctrl": "e16cc470a9c13028faaa448ea712e590504551796b7ebb87035ac2b02c624ffa",
+            "Data.cvel": "7dd47b636c07161ef7f70494d2f99f9615e1b08878c274062927a7737c74db89",
+            "Data.efc.D": "667ec9b6bda74a82257f722cd4b904ec42e641ed9ef14f4b3d49ddc474640c60",
+            "Data.efc.J": "328f4f2b6eeb5514e15a828de4bc95611d48054c89b7aa45937d3a9ba7d87ed5",
+            "Data.efc.J_colind": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "Data.efc.J_rowadr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "Data.efc.J_rownnz": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "Data.efc.Jqvel": "ebcd751dac6ac5bcd5459ba7b19d9d49d187a3fe19d7aefd33fb919420ca44d6",
+            "Data.efc.Ma": "4b10061914fc6097526dba7b6e995078eb08f04347ad7cc0e8a9472c9c4fba21",
+            "Data.efc.aref": "7a2a31236da7c07ade13115e60c462ac9d3b81897c3cdf9131dacecb3961b305",
+            "Data.efc.force": "2c0d5362bd377996d0c1bcb4b7944055b271776056b91969c3d3264604eeabaa",
+            "Data.efc.frictionloss": "66db0eba4e219eb844304c02f52cca1dc5a7b9097a137989aa8dbe935a9b2047",
+            "Data.efc.id": "3404e3aad1f856fe4af9d2a60748781a4b79bdb3b774e3315e99d417e82ef17f",
+            "Data.efc.margin": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+            "Data.efc.pos": "c394cb6ed7de6b1c513173dd7f9663d9494a6a99fdc46d1a93f845e5e0d013c5",
+            "Data.efc.state": "d546aa15e8574913ff913426a1af603f78c322e5b320286e8e77427eb1cc5d21",
+            "Data.efc.type": "eb810669951320266908545823690f588dff57796a553575da13199e4be31343",
+            "Data.efc.vel": "b3a671aae172976a9b924f968cc334d238e0f346fa357a26e47b44e87085fc2c",
+            "Data.energy": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+            "Data.eq_active": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "Data.flexedge_J": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "Data.flexedge_length": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "Data.flexedge_velocity": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "Data.flexvert_xpos": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "Data.geom_xmat": "a70c3aba4fd94ec59cf98b5286b9f0ac218e9faeeda137bcb1e3f49c840a24a5",
+            "Data.geom_xpos": "690f0fa101786f6dc5d6eb0bc34cd4bfa00498f7f20fae65587868e620ac9bf9",
+            "Data.light_xdir": "02f50cc13892e5a15486c38f5fcaa7dd69c7fb56b5b8d0e874feb3699835898f",
+            "Data.light_xpos": "1f94247adef7214caed83f8f57f72f6f7492fd053287a6c2220f0ad0f2452a4b",
+            "Data.mocap_pos": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "Data.mocap_quat": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "Data.moment_colind": "ed606d3ba370b14815deffe88a21a007d97f7fabfd0f7e71d0b9bcaa5ce1a58a",
+            "Data.moment_rowadr": "52ee959a5cbdb065f5048469055925e3224692b3967f737a8d49c744fd2b4502",
+            "Data.moment_rownnz": "4a4b9e277a609d0490bc50e559bafd976d5901c453d24126b75cf177399995dc",
+            "Data.nacon": "26b25d457597a7b0463f9620f666dd10aa2c4373a505967c7c8d70922a2d6ece",
+            "Data.ncollision": "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+            "Data.ne": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "Data.nefc": "3ef3bd3d6658c0dfdfdd7aa65e3d92bf1da9a04678a4ed2a5d84ed824ec91775",
+            "Data.nf": "01b4f6bd5d6a06a7b74a8565ceb4f845afe0ae96a0ac05cf5e86066bf7b538ec",
+            "Data.nisland": "67abdd721024f0ff4e0b3f4c2fc13bc5bad42d0b7851d456d88d203d15aaa450",
+            "Data.nl": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "Data.qLD": "72b4420d0912d9c0001b29eb7843815df4766fdb606aaf72a9729491803a74f3",
+            "Data.qLDiagInv": "c8c6b4f026069e5b1aa4c0c00af44c7ab7d94fd9e2036c90fbe8e8d2c9e985d9",
+            "Data.qM": "0a45e4aa32d788ca9319e1422586141af4800e792121e4c7998bce5d7e39ec9c",
+            "Data.qacc": "892def9c8a0bfb4a9a9dd9195e92e146a875a70d044cb5c2dafde1c4bc373001",
+            "Data.qacc_smooth": "8dbd4b25c65d541561be6c0d1906ea173805cba4c4472af3083bd8de5e474def",
+            "Data.qacc_warmstart": "d40ebf9176cfd63819f225a71831dcc5e400f668faa3f6a031a28302efe97a9a",
+            "Data.qfrc_actuator": "19bc4daec04bbee7e88700d56f9e15043caeef89c8c9141a3c8b8b2ddf1363ad",
+            "Data.qfrc_applied": "38723a2e5e8a17aa7950dc008209944e898f69a7bd10a23c839d341e935fd5ca",
+            "Data.qfrc_bias": "33b993359222dbf2995c7fc8aba87b2ec233c90c98170363e63c811600d824b2",
+            "Data.qfrc_constraint": "8d206fc77619cbed4cb473e2bab6bbeda9540455a239ca16b8a85299eef1fefb",
+            "Data.qfrc_damper": "789274c3b35d08dda6c9fdb422d7335b6ec629eee3cf4255f863bf3b2d313a2d",
+            "Data.qfrc_fluid": "38723a2e5e8a17aa7950dc008209944e898f69a7bd10a23c839d341e935fd5ca",
+            "Data.qfrc_gravcomp": "38723a2e5e8a17aa7950dc008209944e898f69a7bd10a23c839d341e935fd5ca",
+            "Data.qfrc_inverse": "38723a2e5e8a17aa7950dc008209944e898f69a7bd10a23c839d341e935fd5ca",
+            "Data.qfrc_passive": "789274c3b35d08dda6c9fdb422d7335b6ec629eee3cf4255f863bf3b2d313a2d",
+            "Data.qfrc_smooth": "e4183375dcf4e18b9f766391284abc4db2b1914de30a4e582853af2965b3ccdb",
+            "Data.qfrc_spring": "38723a2e5e8a17aa7950dc008209944e898f69a7bd10a23c839d341e935fd5ca",
+            "Data.qpos": "c58ab6e917c08666a8fb8cb2e42690bcab887df24fa0e407d4172398b6336c93",
+            "Data.qvel": "2b1e54870f870bada3547a6fd2e09d5da277fa03dbbe1c9b1240e4a76c876c2c",
+            "Data.sensordata": "79c03564d5d2e180d755c245247cb3550f98851e8ebd0c1cd11684a4c3010de0",
+            "Data.site_xmat": "b304f1bb52a13a5741d2fc5a483a2367509a88f873ef7df8d78b5ff2aa3b65b7",
+            "Data.site_xpos": "12461c560fc49d72c3dae9a793f85ffc2cafc3eca986e397d3c866813a156338",
+            "Data.solver_niter": "67abdd721024f0ff4e0b3f4c2fc13bc5bad42d0b7851d456d88d203d15aaa450",
+            "Data.subtree_angmom": "fbf7d447bbc6497aad654999bf92d361e53d1b587b6ba5e530cabcc4559ff486",
+            "Data.subtree_com": "533c943ed651d39827f7a51e65995ffe4ee2b7d409762aafbf058cedf86a3945",
+            "Data.subtree_linvel": "ebe357b5e69550a79569df5ac08d073dc638681a20ba5903d6e55ed076e34538",
+            "Data.ten_J": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "Data.ten_length": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "Data.ten_velocity": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "Data.ten_wrapadr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "Data.ten_wrapnum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "Data.time": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "Data.tree_island": "8c4a95f406e127070872385c098bdf99817a863af0d963a9ed0e65204f96171e",
+            "Data.wrap_obj": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "Data.wrap_xpos": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "Data.xanchor": "d63010cdab5ef951cb4ca63bafe72e93d15a1d51f2946275ccd6b82fe041da42",
+            "Data.xaxis": "809a4f195458173f87d4852045a5274fab0fda3b1dec751692da9ddb88ffc581",
+            "Data.xfrc_applied": "ef63d3c8391bc28bc45dbb1e6589ed187c7361f18fc8dcbdd59f702041630e3c",
+            "Data.ximat": "ee088ba822b8b86b04d63d70fa4b620ba67066c3a9902269844bed24c30d30e1",
+            "Data.xipos": "1e9fd86610d32dd1c93aee99007f5685a6207e890ffc4c33889885ab77a86790",
+            "Data.xmat": "96b39dcc0e724d76f8185e0a764af6c0a59addee09b7edb90ea41b5c24b02d98",
+            "Data.xpos": "5388b121b0ef00b14ceef4fdd83fb81b2fd2fc26c0a6f019f601a258f0c197b6",
+            "Data.xquat": "1cdd0acfc1c930ca936f168fb254811bb6efdacc713a69922b6590b02f716f80"
+          }
+        },
+        "snapshot_seconds": 0.08393290871754289,
+        "stages_completed": 1408
+      },
+      "reductions": {
+        "candidate_only": true,
+        "changed_constraint_order": {
+          "all_inner_raw_blobs_retained": false,
+          "all_live_oracle_checks_retained": true,
+          "pending": false,
+          "raw_samples": 1,
+          "records": 2622,
+          "reordered_lists": 0,
+          "sha256": "c74e3eeefa0f29296bd13ef8f767a59cc50ac04849e087a4d2d19e4150c3895a",
+          "tolerance_changes": 0
+        },
+        "counts": {
+          "Cost_override_copy_attempted": 4035,
+          "Cost_override_copy_completed": 4035,
+          "Cost_reduce_kernel_attempted": 4035,
+          "Cost_reduce_kernel_completed": 4035,
+          "Cost_rows_kernel_attempted": 4035,
+          "Cost_rows_kernel_completed": 4035,
+          "GPU_solver_attempted": 1413,
+          "GPU_solver_completed": 1413,
+          "Norm_kernel_attempted": 6657,
+          "Norm_kernel_completed": 6657,
+          "Reduction_allocation_attempted": 2,
+          "Reduction_allocation_completed": 2,
+          "Reduction_module_load_attempted": 1,
+          "Reduction_module_load_completed": 1,
+          "SolverContext_create_attempted": 1413,
+          "SolverContext_create_completed": 1413,
+          "SolverOrder_kernel_attempted": 2622,
+          "SolverOrder_kernel_completed": 2622,
+          "SolverOrder_module_load_attempted": 1,
+          "SolverOrder_module_load_completed": 1,
+          "Solver_linesearch_attempted": 2622,
+          "Solver_linesearch_completed": 2622,
+          "Solver_solver_iteration_attempted": 2622,
+          "Solver_solver_iteration_completed": 2622,
+          "Solver_update_constraint_attempted": 4035,
+          "Solver_update_constraint_completed": 4035,
+          "Solver_update_gradient_attempted": 1413,
+          "Solver_update_gradient_completed": 1413,
+          "Solver_update_gradient_incremental_attempted": 2622,
+          "Solver_update_gradient_incremental_completed": 2622,
+          "Solverinit_context_attempted": 1413,
+          "Solverinit_context_completed": 1413
+        },
+        "installed_sources_modified": false,
+        "prior_batch_causal_improvement_established": false,
+        "private_device_bytes": 4100,
+        "solver_tolerances_unchanged": true
+      },
+      "resource_close": {
+        "all_released": true,
+        "by_type": {
+          "Bvh": 1,
+          "Mesh": 39,
+          "Texture2D": 2
+        },
+        "scope": "all instantiated RenderContext mesh/hfield/flex/BVH/texture owners; allocator pools and driver context remain process-managed",
+        "targets": 42
+      },
+      "runtime_paths": {
+        "automatic_cleanup": false,
+        "cache": "/tmp/md12-g4j858wd/x",
+        "cuda_cache": "/tmp/md12-g4j858wd/c",
+        "evidence_location": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/finite-trial-v1/foot-cloud-20261019-v1/native-bootstrap",
+        "format": "stage12-private-runtime-paths-v1",
+        "matplotlib": "/tmp/md12-g4j858wd/m",
+        "native_integrations": 0,
+        "output": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/finite-trial-v1/foot-cloud-20261019-v1/native",
+        "pid": 1409,
+        "short_root": "/tmp/md12-g4j858wd",
+        "short_root_mode": "0700",
+        "temp": "/tmp/md12-g4j858wd/t",
+        "torch": "/tmp/md12-g4j858wd/h",
+        "uid": 0,
+        "warp_cache": "/tmp/md12-g4j858wd/w"
+      },
+      "status": "FOOT_IVP_COMPLETE_REVIEW_REQUIRED",
+      "training_ready": false,
+      "trials_completed": 4
+    }
+  }
+}
