@@ -1,0 +1,272 @@
+{
+  "archive_limit_bytes": 51380224,
+  "archives": [
+    {
+      "archive_bytes": 13494297,
+      "archive_limit_bytes": 51380224,
+      "archive_sha256": "1fa2e823d8ec665986be35b08fe0b8d624cce67f5a527bc1ce8207629c179716",
+      "branch": "stage12-finite-trial-v1-return-20261019t030021z-21d30cf0f7-vol000",
+      "commit": "7db56df0c0c9cec9fd36bec5998c0326ea563798",
+      "directory": "volume-000",
+      "format": "stage12-full-path-segment-volume-v1",
+      "manifest_sha256": "cdf6ef0a48712a1c3aac043715d50bc74d2cafb244fe9fb9d9ee95c784f11914",
+      "number": 0,
+      "parts": [
+        {
+          "bytes": 524289,
+          "name": "part-0000.b64",
+          "sha256": "3f64b479bde9e735f1d825ab098fb977f43541c4310ca109c6cdbec75ebafc52"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0001.b64",
+          "sha256": "eff9486702adca28637066d0eb253723fbbab3963801bc97a0554cfcc8ee6a8d"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0002.b64",
+          "sha256": "247e4c87738d117a0afb87256150ce1aed9b061cbfbb4afe302c832ddcaee570"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0003.b64",
+          "sha256": "2b050489a6dc8e2402538a25a01b54479c0686805342b2f2506ea4da9c333bf9"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0004.b64",
+          "sha256": "b351ec0bde3780eefc3f94ed34e9c264fc26641baa18462df61d05d66f6324ba"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0005.b64",
+          "sha256": "2889d6a8adf5f4562ff34ae407d2a8a8b31357a82cbd4e7ecc856f94381c8a1d"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0006.b64",
+          "sha256": "68658898caf177488e7a390ecb739e7db6ba18336e5c6f22acb203f47399c083"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0007.b64",
+          "sha256": "78020f164620b4bac7876c25d94eacbe8d9691a888944d33b1df4c49ab5e9ace"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0008.b64",
+          "sha256": "f11f3de94e83c77f8be64715375b5a53a957f03cc459c67ae633a9fcfe982c1a"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0009.b64",
+          "sha256": "4f79ff6569a7824cb1cd6299ee186b5284b9186582c3835a6670693d1368ca67"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0010.b64",
+          "sha256": "43587ba24a16c828a579ab937b71ded997f54cac8904c134932ed5cc0662020b"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0011.b64",
+          "sha256": "3de26ae580bd116285fcebb4600e64b25a27e948d22bd4362202cb0192f4cfe7"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0012.b64",
+          "sha256": "5b3cff634a7b0b66e04f0844abe19c580dce7db3ce4b015af5538da078b969ce"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0013.b64",
+          "sha256": "c3e9ac78f1500eb4e2e759a10b4b0cca9529f96616dd7de6b17fae31d43f0851"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0014.b64",
+          "sha256": "10b8128523849956c8c7288b097777779558cb5ad5ac4483aaa326aa42cb8ac7"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0015.b64",
+          "sha256": "cdb4bd86740b72abb7c679e7fb6806c2ce68cc6a68fe6e57164802c2705a8551"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0016.b64",
+          "sha256": "e593138f15d90fffdef630aa61a80585dbe96dccfb5f7911d8734dcab5c6a39e"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0017.b64",
+          "sha256": "fe90d0d50f90cb0b9a49db442e836cbeb74aa2b8f255c06dc197e99aec37fe27"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0018.b64",
+          "sha256": "123b09123ae1a82310e00cb3d990c52bc83f07a976537c3afea381cc6f6dc00f"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0019.b64",
+          "sha256": "4a990088a98bc7f305afa55c1b01e6ae9e58fca817edc7b6b51019d5c73fe4f9"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0020.b64",
+          "sha256": "48967cf24fcd510f3c9bcf1f32a3d7fe98d0fde767b1be6fe553e347c726afd9"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0021.b64",
+          "sha256": "4aad0f6e9d080f961413d5e697f76e350ab1c8246826607f220e0cda5b83d541"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0022.b64",
+          "sha256": "4698f25e77bb264c8708841d5dd309461c0eecdbee62174cfd21e4aaf1277709"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0023.b64",
+          "sha256": "467269e26af1f08d02bccbc2c669ef0cdb484e06ecab26d0c86f6029d49b1447"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0024.b64",
+          "sha256": "9985f2737a289bfbe97033439974779e3585ee4ca45e50a7e5fd23ac47833745"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0025.b64",
+          "sha256": "9ecbbe9158cb30aa394261a3a1c44b330048fd64b21680eed39018e960c584fe"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0026.b64",
+          "sha256": "cf5faf196c4a6ec0ebb5259e3ef9b7cd22874647a00523b4735494063f987a46"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0027.b64",
+          "sha256": "07b516d2da3b864abab98d1affeb53fa24919ffdf860f5259b383ad2524d3eab"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0028.b64",
+          "sha256": "4955f15de79fa7f4d79014e0775f22c872bd36055fabfe404889c6266fbef6a4"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0029.b64",
+          "sha256": "737393bd692af9a5f7ca6c564a0ba35c5e5c4dc27ca1522926b5ca281179ee6b"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0030.b64",
+          "sha256": "e6bc2b0c68f778f1d06055e523211b1a1455ca5eaa04dbd3eb0ef5fd594a4c48"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0031.b64",
+          "sha256": "d7339d6ce4babebcfd17d589882fc1d6ae871f4e8bbe8df9ae9ec5e86b56457a"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0032.b64",
+          "sha256": "ec7409ca4afed19fe088f15bc8fcb64d105d8c70b76cb76bd54f827e6eb4286e"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0033.b64",
+          "sha256": "1466b0c7a9b7f1db7d53caa21072fc950dddf7c92ed874edeeed4ef458df6733"
+        },
+        {
+          "bytes": 166605,
+          "name": "part-0034.b64",
+          "sha256": "6fa41494d558f90509b3aebc9d7b3d9ab4456533877c453f160f70e1bf1a9454"
+        }
+      ]
+    }
+  ],
+  "automatic_push": false,
+  "branch": "stage12-finite-trial-v1-return-20261019t030021z-21d30cf0f7",
+  "evidence_index_sha256": "21d30cf0f7177b7fa8a932f3cfa1bc4ec432dc04b47a940995b0045ec20e1fa1",
+  "format": "stage12-full-path-segmented-git-return-v1",
+  "omitted_frozen_inputs": {
+    "reason": "Already delivered derived frozen inputs; pinned archive required for reconstruction",
+    "sha256": "4bafbd2cf14f354eb29e0d0716415cf67c31b6f8eba59928d0c0f34b857f3323"
+  },
+  "original_evidence_unchanged": true,
+  "package_manifest_sha256": "c570af44df7b4cf00828cd3ac24ab1569cd2aa8dfcb49682899247208cb934cb",
+  "result": {
+    "PPO_attempts_reserved": 0,
+    "PPO_completed": 0,
+    "automatic_power_actions": 0,
+    "automatic_push": false,
+    "automatic_retry": false,
+    "canonical_after_interval": {
+      "attempted_lower": 855786,
+      "attempted_upper": 855786,
+      "completed_lower": 855784,
+      "completed_upper": 855785
+    },
+    "canonical_before": {
+      "attempted_lower": 855786,
+      "attempted_upper": 855786,
+      "completed_lower": 855784,
+      "completed_upper": 855785
+    },
+    "cloud_training": 1,
+    "error": null,
+    "full_episode_and_reset_accepted": false,
+    "long_training_ready": false,
+    "native_ledgers": [
+      {
+        "ledger": {
+          "counts": {},
+          "exact": true,
+          "integration_attempted_lower": 0,
+          "integration_attempted_upper": 0,
+          "integration_completed_lower": 0,
+          "integration_completed_upper": 0
+        },
+        "owner": 0,
+        "review_error": null,
+        "state": "NO_INTEGRATIONS_BEFORE_SESSION"
+      },
+      {
+        "ledger": {
+          "counts": {},
+          "exact": true,
+          "integration_attempted_lower": 0,
+          "integration_attempted_upper": 0,
+          "integration_completed_lower": 0,
+          "integration_completed_upper": 0
+        },
+        "owner": 1,
+        "review_error": null,
+        "state": "NO_INTEGRATIONS_BEFORE_SESSION"
+      }
+    ],
+    "returncode": 2,
+    "source_identity_sha256": "1b6eb565559e450f8e9dbe0fc4fd33cdd3dbd25f4ee76ec62fe77475f2167b48",
+    "status": "FINITE_TRIAL_STOPPED_PRESERVE",
+    "training_ready": false,
+    "trial_report": {
+      "PPO": 0,
+      "cloud_training": 1,
+      "elapsed_s": 2.078811649233103,
+      "errors": [
+        {
+          "error": "RuntimeError('Owner initialization failed: {\\'sequence\\': 0, \\'owner\\': 0, \\'ok\\': False, \\'error\\': \"RuntimeError(\\'Launcher must clear inherited Git environment variables\\')\"}')",
+          "traceback": "Traceback (most recent call last):\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/finite-trial-v1/launch-20261019-v1/package/trial_worker.py\", line 48, in execute\n    with OwnerProcesses(run/'inputs/project',run/'native',plan['owner_plans'],auth,torch,TensorDict,\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/finite-trial-v1/launch-20261019-v1/package/full_processes.py\", line 68, in __init__\n    require(r.get(\"sequence\") == 0 and r.get(\"owner\") == i and r.get(\"ok\") is True and r.get(\"ready\") is True,\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/finite-trial-v1/cloud-20261019-v1/inputs/candidate/integration/durable.py\", line 11, in require\n    raise RuntimeError(message)\nRuntimeError: Owner initialization failed: {'sequence': 0, 'owner': 0, 'ok': False, 'error': \"RuntimeError('Launcher must clear inherited Git environment variables')\"}\nOwner initialization cleanup: RuntimeError('Owner shutdown incomplete; inspect WAL and closeout; never retry')\n"
+        }
+      ],
+      "long_training_ready": false,
+      "status": "FINITE_TRIAL_STOPPED_PRESERVE"
+    },
+    "update_ledger": null
+  }
+}
