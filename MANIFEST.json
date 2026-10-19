@@ -1,0 +1,20 @@
+{
+  "PPO_updates_max": 1,
+  "base_commit": "bce2279d121431a558dc707a5008475cb1d4fbe7",
+  "base_payload_sha256": "d371eac7907fa36e3505408ded1bb01a5245a0cbeaa20ee0980758d72af1b796",
+  "cost_control": "USER_MANAGED",
+  "format": "stage12-finite-trial-time-policy-inputs-v1",
+  "max_minutes": 90,
+  "native_calls": 0,
+  "package_manifest_sha256": "c570af44df7b4cf00828cd3ac24ab1569cd2aa8dfcb49682899247208cb934cb",
+  "parts": [
+    {
+      "bytes": 127097,
+      "name": "part-0000.b64",
+      "sha256": "67d72107069f8181a0021e904cb242c1c7e160c36e956fb673c66abb045f1c55"
+    }
+  ],
+  "payload_bytes": 95321,
+  "payload_sha256": "cbcc0cf56079e9bbfc9a58310f16e6c8c47e62ffe83c0bc348fa39bdb248299d",
+  "user_cost_instruction": "价格你不需要管"
+}
