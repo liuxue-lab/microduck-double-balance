@@ -1,0 +1,25 @@
+{
+  "PPO_updates_max": 0,
+  "base_commit": "bce2279d121431a558dc707a5008475cb1d4fbe7",
+  "base_payload_sha256": "d371eac7907fa36e3505408ded1bb01a5245a0cbeaa20ee0980758d72af1b796",
+  "cost_control": "USER_MANAGED",
+  "format": "stage12-foot-ivp-inputs-v1",
+  "max_minutes": 90,
+  "native_calls": 0,
+  "package_manifest_sha256": "de8af07eb36b8399226bbdfdb1b306821c46fb911125fcffd6bf386a0e7d9278",
+  "parts": [
+    {
+      "bytes": 524289,
+      "name": "part-0000.b64",
+      "sha256": "56b4ed6d6ccaff1a89b1706003177b21296f43c9800502465c81a540eaf8e92c"
+    },
+    {
+      "bytes": 389201,
+      "name": "part-0001.b64",
+      "sha256": "df80f1db50b450b275c6b8123346f21ea7b2c4e8bc4a03499cd24e61fcbe3a89"
+    }
+  ],
+  "payload_bytes": 685115,
+  "payload_sha256": "527b10a9450edd16e4e851475edfd496255a9b939a85dd4ed88652aad671aea0",
+  "user_cost_instruction": "价格你不需要管"
+}
