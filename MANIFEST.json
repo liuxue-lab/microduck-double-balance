@@ -1,0 +1,272 @@
+{
+  "archive_limit_bytes": 51380224,
+  "archives": [
+    {
+      "archive_bytes": 13528510,
+      "archive_limit_bytes": 51380224,
+      "archive_sha256": "d6e2bec5ff9dbd83c0ff528fbb1c3a1a7e0545a5c81e71fcefd7cda57faa2352",
+      "branch": "stage12-finite-trial-v2-return-20261019t032556z-8d0b730333-vol000",
+      "commit": "48e5324646739842486c684e5750fce1977391b7",
+      "directory": "volume-000",
+      "format": "stage12-full-path-segment-volume-v1",
+      "manifest_sha256": "8d4eebc40db12b20996030bc9b13785aba4a71d643ff927e004c1f0087775c24",
+      "number": 0,
+      "parts": [
+        {
+          "bytes": 524289,
+          "name": "part-0000.b64",
+          "sha256": "cd223e9b0d720cd5651662cfb314df22260c0ec0cd441f46f28ad40cb5bb4091"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0001.b64",
+          "sha256": "e25240bc06d7323ffcd116448d20b4a8f177c7488f929533d26afc738236deaa"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0002.b64",
+          "sha256": "8069a438033eff65bf4675b30f37b76b6a5e26a64aa1f983d623da790524aba7"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0003.b64",
+          "sha256": "4a8b1abe87b7469e22a71cc0f9f67c1e8c526a263930a0e1abb2b37f67fc92b7"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0004.b64",
+          "sha256": "e54be947d8e5316e0083c8cb9c958a96fadac1230b8ae0faa5867038d994d96b"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0005.b64",
+          "sha256": "d0c113ef1d41bc6ac01e3c178a6e32dd10173c6b625ee38d1a33967b8750c048"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0006.b64",
+          "sha256": "7b99ead00fe3cbbb2a44eb3c51d2a356c7292993f86f4950cccca7f15b4296d3"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0007.b64",
+          "sha256": "04d6f2b1f9ee45924a49667d81fd1ba34af91f332b87273ae5eef4daa4d291a5"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0008.b64",
+          "sha256": "19d964e438ef8f64576e50b129644beca8b59a56e7d5f0b17c3fbfbf64716665"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0009.b64",
+          "sha256": "e9b8fdcc68ca4476688344b1fc4b4d435a3303bba95af59c1dcb07555bea6c50"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0010.b64",
+          "sha256": "3802c78dcbf9c07458399df90e5c164416cfdd73deab418c1bbf276f931e5f0a"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0011.b64",
+          "sha256": "f67ef41d63142a5966aeb117c1363a977b8dd1c63ccf7cf90408bc3b7f06907a"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0012.b64",
+          "sha256": "802199112b780224778a3b5dc37511b16c98bad831fe07e1367bca85d677dc76"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0013.b64",
+          "sha256": "3eb2f6252f6f5859b3b66909f1d47bec9c3d032d484bdd9451bc0cea85c3d7e3"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0014.b64",
+          "sha256": "cc946eeb0c9a787939b4e21e623f3df787de12c0b4d6673e7d3f6b0b9a8872dd"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0015.b64",
+          "sha256": "526b414f0cd18ccbdfcb4cde6b146cc5a3d6e1e18b94161bad7c7469328a00bb"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0016.b64",
+          "sha256": "85e7c2fef63c7c48705d3ea35db7da163c2425ef1cb8ec54ff9ea19df788d3de"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0017.b64",
+          "sha256": "a3789a44e00520c3a733cc338c585fca86a403ebd26970088d16c005579be2ea"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0018.b64",
+          "sha256": "56e420d8947f47c6a769919b927b75e57fff34f0c1aac627129f74a8211ae3d4"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0019.b64",
+          "sha256": "854e713eac256fea3202ff2be627ffa215c442dfbd5de00924c4ba2e1b0b265e"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0020.b64",
+          "sha256": "f3e6107dc04a20a3fcc91e491fcb8548c4325240c5206168b0ca4e3b22c8fcf1"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0021.b64",
+          "sha256": "4ec3d429bbb1b526476cec17c0755e7d9f31732f0f1d29ca9fa7e017c150f71b"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0022.b64",
+          "sha256": "b11123444318feede275fdec2089b0ed8a099cee0eba14687bfeb8f59016e104"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0023.b64",
+          "sha256": "f855631a12b1b419c2167492a1766140a94d99a29b7eebe6dfb00088c59b0730"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0024.b64",
+          "sha256": "0f2536a249aad70a66ad4e363796b9034d145e4582984bac7e9af0400aee59c3"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0025.b64",
+          "sha256": "9f306460ee0a800ba48c2894ba7bd287badd35dbde08890520fbd4672c1f647a"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0026.b64",
+          "sha256": "2dae63776cfb3ccf370504d39bf387d19038b20a961f656c564dea496ee2bf19"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0027.b64",
+          "sha256": "49a78ed34f377644423904e24b33258d868c8485abda23618876f3eae11c5756"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0028.b64",
+          "sha256": "a26361fc2d9078a2a927f7ec936b9918d666588c06b19e3f871ccf7d320b0730"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0029.b64",
+          "sha256": "f45ff4ddc1e7626cdf1d9fec0378d1297dea9bda23d9cc3f50b2457f5c05c1d7"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0030.b64",
+          "sha256": "c5671b9bb357176e58a717ada2fbcd71362be143e825585d751e0651cb717878"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0031.b64",
+          "sha256": "e39379f0696c6461be8c39598aad2aaada8fbf0519aa7e8bdee2f8c5d2979509"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0032.b64",
+          "sha256": "e9dea3ee93223f6542b21f681fd52e1285d364ca7e083fbd4ccb325748c85068"
+        },
+        {
+          "bytes": 524289,
+          "name": "part-0033.b64",
+          "sha256": "44afb13bc752452330856a2a079f57ae7ba4ceb041c63416975faab6afbf8c99"
+        },
+        {
+          "bytes": 212225,
+          "name": "part-0034.b64",
+          "sha256": "1ac9bbe3888563e52924596c87eb99a2843a8647898b3a51709be8e1b0688549"
+        }
+      ]
+    }
+  ],
+  "automatic_push": false,
+  "branch": "stage12-finite-trial-v2-return-20261019t032556z-8d0b730333",
+  "evidence_index_sha256": "8d0b730333dcf3114f2b61349035745644fc8e66a11334222f321b10b8586af3",
+  "format": "stage12-full-path-segmented-git-return-v1",
+  "omitted_frozen_inputs": {
+    "reason": "Already delivered derived frozen inputs; pinned archive required for reconstruction",
+    "sha256": "4bafbd2cf14f354eb29e0d0716415cf67c31b6f8eba59928d0c0f34b857f3323"
+  },
+  "original_evidence_unchanged": true,
+  "package_manifest_sha256": "6e5c365f66131fca7f0b001ed79fab552a093140234d1f92462cd478fa70d506",
+  "result": {
+    "PPO_attempts_reserved": 0,
+    "PPO_completed": 0,
+    "automatic_power_actions": 0,
+    "automatic_push": false,
+    "automatic_retry": false,
+    "canonical_after_interval": {
+      "attempted_lower": 855786,
+      "attempted_upper": 855786,
+      "completed_lower": 855784,
+      "completed_upper": 855785
+    },
+    "canonical_before": {
+      "attempted_lower": 855786,
+      "attempted_upper": 855786,
+      "completed_lower": 855784,
+      "completed_upper": 855785
+    },
+    "cloud_training": 1,
+    "error": null,
+    "full_episode_and_reset_accepted": false,
+    "long_training_ready": false,
+    "native_ledgers": [
+      {
+        "ledger": {
+          "counts": {},
+          "exact": true,
+          "integration_attempted_lower": 0,
+          "integration_attempted_upper": 0,
+          "integration_completed_lower": 0,
+          "integration_completed_upper": 0
+        },
+        "owner": 0,
+        "review_error": null,
+        "state": "NO_INTEGRATIONS_BEFORE_SESSION"
+      },
+      {
+        "ledger": {
+          "counts": {},
+          "exact": true,
+          "integration_attempted_lower": 0,
+          "integration_attempted_upper": 0,
+          "integration_completed_lower": 0,
+          "integration_completed_upper": 0
+        },
+        "owner": 1,
+        "review_error": null,
+        "state": "NO_INTEGRATIONS_BEFORE_SESSION"
+      }
+    ],
+    "returncode": 2,
+    "source_identity_sha256": "5d41c5f4b17ede0855e489ec8ca726af284a964b3accd5ac086b52d11e929c40",
+    "status": "FINITE_TRIAL_STOPPED_PRESERVE",
+    "training_ready": false,
+    "trial_report": {
+      "PPO": 0,
+      "cloud_training": 1,
+      "elapsed_s": 0.6588540226221085,
+      "errors": [
+        {
+          "error": "RuntimeError('Owner initialization failed: {\\'sequence\\': 0, \\'owner\\': 0, \\'ok\\': False, \\'error\\': \"RuntimeError(\\'Reviewed processor fallback requires the pinned Linux Python 3.12.14\\')\"}')",
+          "traceback": "Traceback (most recent call last):\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/finite-trial-v1/launch-20261019-v2/package/trial_worker.py\", line 49, in execute\n    with OwnerProcesses(run/'inputs/project',run/'native',plan['owner_plans'],auth,torch,TensorDict,\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/finite-trial-v1/launch-20261019-v2/package/full_processes.py\", line 68, in __init__\n    require(r.get(\"sequence\") == 0 and r.get(\"owner\") == i and r.get(\"ok\") is True and r.get(\"ready\") is True,\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/finite-trial-v1/cloud-20261019-v2/inputs/candidate/integration/durable.py\", line 11, in require\n    raise RuntimeError(message)\nRuntimeError: Owner initialization failed: {'sequence': 0, 'owner': 0, 'ok': False, 'error': \"RuntimeError('Reviewed processor fallback requires the pinned Linux Python 3.12.14')\"}\nOwner initialization cleanup: RuntimeError('Owner shutdown incomplete; inspect WAL and closeout; never retry')\n"
+        }
+      ],
+      "long_training_ready": false,
+      "status": "FINITE_TRIAL_STOPPED_PRESERVE"
+    },
+    "update_ledger": null
+  }
+}
