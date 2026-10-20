@@ -1,0 +1,301 @@
+{
+  "status": "REFINEMENT_COMPLETE",
+  "started": {
+    "automatic_retry": false,
+    "deadline_utc": 1792499926.9447694,
+    "evaluation_seeds": [
+      20261021,
+      20261022
+    ],
+    "executable": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/bin/python",
+    "learning_rate": 1e-05,
+    "max_seconds": 7200,
+    "max_segments": 4,
+    "max_updates": 1000,
+    "maximum_new_first_episodes": 1024,
+    "num_envs": 4096,
+    "origin_checkpoint_sha256": "df03202acf010680b63d3277ec879f63e2d4808e5d1286653923a314f125ac6a",
+    "package_identity": "40ed1cf6aa667d60680e3c76896c85d7f014486adc74604536a843c8a3e6d548",
+    "patience": 2,
+    "physical_trajectory_resume": false,
+    "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+    "reused_baseline_first_episodes": 256,
+    "rollout_steps": 24,
+    "segment_updates": 250,
+    "selection_rule": "Higher success count only; ties keep the earlier model; two consecutive non-improvements stop training",
+    "started_utc": 1792492726.9447694,
+    "train_seed": 20261023
+  },
+  "budget": {
+    "attempted_updates": 500,
+    "completed_updates": 500,
+    "deadline_utc": 1792499926.9447694,
+    "interrupted_attempts": 0,
+    "max_updates": 1000,
+    "pending": false,
+    "started_utc": 1792492726.9447694
+  },
+  "progress": {
+    "best_successes": 212,
+    "candidate_successes": 208,
+    "no_improvement": 2,
+    "phase": "candidate_compared",
+    "segment": 2,
+    "status": "SELECTING"
+  },
+  "session": {
+    "number": 1,
+    "original_deadline_utc": 1792499926.9447694,
+    "requested_utc": 1792492726.9447694,
+    "resume": false
+  },
+  "selection": {
+    "best": {
+      "checkpoint": {
+        "bytes": 10036060,
+        "completed_updates": 0,
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2/run/checkpoints/update_004500.pt",
+        "policy_updates": 4500,
+        "sha256": "df03202acf010680b63d3277ec879f63e2d4808e5d1286653923a314f125ac6a"
+      },
+      "model": "4500",
+      "reused_episodes": 256,
+      "summary": {
+        "episodes": 256,
+        "ever_5s_count": 212,
+        "gate_violation_fraction": {
+          "lower_ball_speed": 0.0105859375,
+          "lower_height_max": 0.0,
+          "lower_height_min": 0.0,
+          "lower_offset": 0.0,
+          "robot_tilt": 0.0,
+          "top_center": 0.0001796875,
+          "top_height": 0.0,
+          "top_speed": 0.0048515625,
+          "unassisted": 0.0
+        },
+        "longest_stable_seconds": {
+          "max": 10.0,
+          "median": 7.8,
+          "min": 1.76
+        },
+        "mean_survival_seconds": 10.0,
+        "physically_terminated_count": 0,
+        "run_break_counts": {
+          "lower_ball_speed": 705,
+          "lower_height_max": 0,
+          "lower_height_min": 0,
+          "lower_offset": 0,
+          "robot_tilt": 0,
+          "top_center": 4,
+          "top_height": 0,
+          "top_speed": 361,
+          "unassisted": 0
+        },
+        "stable_fraction_of_first_episode_steps": 0.984421875,
+        "success_fraction": 0.828125,
+        "success_wilson95": [
+          0.7771462145851933,
+          0.8694018796353287
+        ],
+        "successes": 212,
+        "termination_counts": {
+          "time_out": 256
+        },
+        "values_mean_over_first_episode_steps": {
+          "hold": 0.0,
+          "lower_ball_speed_m_s": 0.05974189031529956,
+          "lower_height_m": 0.2409064645387698,
+          "lower_offset_m": 0.004790947507428136,
+          "robot_tilt_rad": 0.018008871073159752,
+          "top_center_m": 0.002562196263810474,
+          "top_height_error_m": 4.231944063212723e-05,
+          "top_speed_m_s": 0.01632646713105305
+        }
+      },
+      "summary_audits": {
+        "20261021": {
+          "differences": [],
+          "exact_equal": true,
+          "executable": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/bin/python",
+          "float_abs_tolerance": 1e-12,
+          "float_rel_tolerance": 2e-12,
+          "invalid": [],
+          "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+          "scope": "Derived summary float values only; all episode decisions/counts and physical thresholds remain exact",
+          "valid": true
+        },
+        "20261022": {
+          "differences": [],
+          "exact_equal": true,
+          "executable": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/bin/python",
+          "float_abs_tolerance": 1e-12,
+          "float_rel_tolerance": 2e-12,
+          "invalid": [],
+          "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+          "scope": "Derived summary float values only; all episode decisions/counts and physical thresholds remain exact",
+          "valid": true
+        }
+      }
+    },
+    "early_stop": true,
+    "history": [
+      {
+        "checkpoint": {
+          "attempted_updates": 250,
+          "bytes": 10036252,
+          "completed_updates": 250,
+          "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-refine-4500-v1/run/checkpoints/refine_000250.pt",
+          "policy_updates": 4750,
+          "sha256": "914f137efd947d71fcad20e0d04fcf53cec4368b5e4cc4cc4a6c1a1af0d8534d"
+        },
+        "evaluation_path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-refine-4500-v1/evaluations/segment-01/evaluation-result.json",
+        "evaluation_sha256": "9850532b696d766751335285be888da77ff5c742e24631433a264b34c1074737",
+        "model": "4750",
+        "segment": 1,
+        "summary": {
+          "episodes": 256,
+          "ever_5s_count": 198,
+          "gate_violation_fraction": {
+            "lower_ball_speed": 0.0107578125,
+            "lower_height_max": 0.0,
+            "lower_height_min": 0.0,
+            "lower_offset": 0.0,
+            "robot_tilt": 0.0,
+            "top_center": 0.0004609375,
+            "top_height": 0.0,
+            "top_speed": 0.0054140625,
+            "unassisted": 0.0
+          },
+          "longest_stable_seconds": {
+            "max": 10.0,
+            "median": 7.620000000000001,
+            "min": 1.8800000000000001
+          },
+          "mean_survival_seconds": 10.0,
+          "physically_terminated_count": 0,
+          "run_break_counts": {
+            "lower_ball_speed": 765,
+            "lower_height_max": 0,
+            "lower_height_min": 0,
+            "lower_offset": 0,
+            "robot_tilt": 0,
+            "top_center": 5,
+            "top_height": 0,
+            "top_speed": 395,
+            "unassisted": 0
+          },
+          "stable_fraction_of_first_episode_steps": 0.983578125,
+          "success_fraction": 0.7734375,
+          "success_wilson95": [
+            0.7183367858970815,
+            0.8204532926200201
+          ],
+          "successes": 198,
+          "termination_counts": {
+            "time_out": 256
+          },
+          "values_mean_over_first_episode_steps": {
+            "hold": 0.0,
+            "lower_ball_speed_m_s": 0.059196373618663284,
+            "lower_height_m": 0.24046431350405328,
+            "lower_offset_m": 0.004829279454412926,
+            "robot_tilt_rad": 0.017867084620842206,
+            "top_center_m": 0.0026073700634323843,
+            "top_height_error_m": 4.4383792934240774e-05,
+            "top_speed_m_s": 0.015655910126307453
+          }
+        }
+      },
+      {
+        "checkpoint": {
+          "attempted_updates": 500,
+          "bytes": 10036252,
+          "completed_updates": 500,
+          "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-refine-4500-v1/run/checkpoints/refine_000500.pt",
+          "policy_updates": 5000,
+          "sha256": "ca4cab2288aecf2bf8af1d3b8a33ec105b93b4d43aaa0b798e62f923e46da516"
+        },
+        "evaluation_path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-refine-4500-v1/evaluations/segment-02/evaluation-result.json",
+        "evaluation_sha256": "b018ad0cf8920263e2a101900b6277905661ecf660a6d0fdae09d3416c6e8cf6",
+        "model": "5000",
+        "segment": 2,
+        "summary": {
+          "episodes": 256,
+          "ever_5s_count": 208,
+          "gate_violation_fraction": {
+            "lower_ball_speed": 0.010528956590593714,
+            "lower_height_max": 0.0,
+            "lower_height_min": 0.0,
+            "lower_offset": 3.135951330035358e-05,
+            "robot_tilt": 6.271902660070716e-05,
+            "top_center": 0.0006428700226572484,
+            "top_height": 4.703926995053037e-05,
+            "top_speed": 0.004978322736431131,
+            "unassisted": 0.0
+          },
+          "longest_stable_seconds": {
+            "max": 10.0,
+            "median": 7.470000000000001,
+            "min": 0.2
+          },
+          "mean_survival_seconds": 9.965078125,
+          "physically_terminated_count": 1,
+          "run_break_counts": {
+            "lower_ball_speed": 750,
+            "lower_height_max": 0,
+            "lower_height_min": 0,
+            "lower_offset": 0,
+            "robot_tilt": 0,
+            "top_center": 5,
+            "top_height": 0,
+            "top_speed": 389,
+            "unassisted": 0
+          },
+          "stable_fraction_of_first_episode_steps": 0.9840615273650953,
+          "success_fraction": 0.8125,
+          "success_wilson95": [
+            0.7601980554703877,
+            0.8555620342634428
+          ],
+          "successes": 208,
+          "termination_counts": {
+            "time_out": 255,
+            "top_ball_lost": 1
+          },
+          "values_mean_over_first_episode_steps": {
+            "hold": 0.0,
+            "lower_ball_speed_m_s": 0.05916855140636936,
+            "lower_height_m": 0.23977007698733968,
+            "lower_offset_m": 0.004920013494359978,
+            "robot_tilt_rad": 0.01857987941763153,
+            "top_center_m": 0.0024852959134878667,
+            "top_height_error_m": 4.327562275438416e-05,
+            "top_speed_m_s": 0.01570722499604861
+          }
+        }
+      }
+    ],
+    "no_improvement": 2
+  },
+  "processes_alive": {
+    "supervisor": false,
+    "child": false
+  },
+  "slot": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-refine-4500-v1",
+  "added_PPO_updates": 500,
+  "package_identity": "40ed1cf6aa667d60680e3c76896c85d7f014486adc74604536a843c8a3e6d548",
+  "exit": {
+    "added_PPO_updates": 500,
+    "automatic_retry": false,
+    "error": null,
+    "finished_utc": 1792494114.2006452,
+    "original_deadline_utc": 1792499926.9447694,
+    "original_training_and_evaluation_files_unchanged": true,
+    "reason": "TWO_CONSECUTIVE_NON_IMPROVEMENTS",
+    "session": 1,
+    "status": "REFINEMENT_COMPLETE"
+  },
+  "local_return_utc": "2026-10-20T11:02:06.395231+00:00",
+  "controller_package_identity": "40ed1cf6aa667d60680e3c76896c85d7f014486adc74604536a843c8a3e6d548"
+}

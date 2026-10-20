@@ -1,0 +1,19 @@
+{
+  "package_identity": "40ed1cf6aa667d60680e3c76896c85d7f014486adc74604536a843c8a3e6d548",
+  "controller": "/workspace/scratch/5d7345c481bf/microduck-stage12-refine-4500-v1-20261020.py",
+  "controller_bytes": 86630,
+  "controller_sha256": "5cf6a8c917c6a41f16c39561c5518fa10c7af8886f4521550670d3ea36fc913c",
+  "transport_bytes": 60325,
+  "origin_checkpoint": 4500,
+  "num_envs": 4096,
+  "learning_rate": 1e-05,
+  "maximum_new_PPO_attempts": 1000,
+  "maximum_wall_seconds": 7200,
+  "segment_updates": 250,
+  "maximum_evaluation_segments": 4,
+  "first_episodes_per_candidate": 256,
+  "reused_baseline_first_episodes": 256,
+  "consecutive_non_improvement_patience": 2,
+  "repeated_smoke_runs": 0,
+  "cloud_run_executed": false
+}

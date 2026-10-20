@@ -1,0 +1,39 @@
+{
+  "status": "REPORT_VERIFIED",
+  "report": "upload/microduck-stage12-native-eval-recovery-20261020T091955.991117Z-10680.json",
+  "report_sha256": "bbe39344b34ba568466bcdab8adbf0d70e947444e3069067c275fceb5beae321",
+  "checks": [
+    "returned report byte SHA256 matches user terminal",
+    "success, exit zero and both processes exited",
+    "original training and completed evaluation evidence unchanged",
+    "recovery reused 256 and added only 256 first episodes",
+    "zero additional PPO",
+    "original deadline retained and respected",
+    "all four expected model-seed groups",
+    "4500 counts match two completed groups",
+    "4500 success fraction consistent",
+    "4500 timeouts plus physical failures match denominator",
+    "6000 counts match two completed groups",
+    "6000 success fraction consistent",
+    "6000 timeouts plus physical failures match denominator",
+    "all 54 new initial fields finite",
+    "both retained aggregates match exactly without tolerance",
+    "no exact pairing claim",
+    "candidate remains 4500 without declaring final acceptance"
+  ],
+  "count": 17,
+  "selected_for_visual_review": "4500",
+  "success_fraction_difference": 0.18359375,
+  "failures_4500": {
+    "physical": 0,
+    "no_5s_hold": 44
+  },
+  "failures_6000": {
+    "top_ball_lost": 2,
+    "no_5s_hold": 89
+  },
+  "next_action": "Read-only return of selected model and existing evidence, then laptop visual review",
+  "new_training_authorized": false,
+  "future_formal_training_envs": 4096,
+  "root_cause_of_later_checkpoint_drop": "UNKNOWN"
+}

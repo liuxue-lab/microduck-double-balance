@@ -1,0 +1,1271 @@
+{
+  "status": "EVALUATION_COMPLETE",
+  "progress": {
+    "added_PPO_updates": 0,
+    "completed_first_episodes": 512,
+    "control_steps_in_group": 500,
+    "deadline_utc": 1792488197.1664722,
+    "elapsed_seconds": 1580.7623162269592,
+    "group": 4,
+    "model": "6000",
+    "new_first_episodes_required": 256,
+    "paired_comparison_allowed": false,
+    "phase": "finished",
+    "progress_percent": 100.0,
+    "reused_first_episodes": 256,
+    "seed": 20261022,
+    "started_utc": 1792486397.1664722,
+    "status": "EVALUATION_COMPLETE",
+    "total_first_episodes": 512
+  },
+  "processes_alive": {
+    "supervisor": false,
+    "child": false
+  },
+  "added_PPO_updates": 0,
+  "started": {
+    "checkpoints": {
+      "4500": "df03202acf010680b63d3277ec879f63e2d4808e5d1286653923a314f125ac6a",
+      "6000": "f89a16643e949bc0e79ae6be77c5e12635cd7538b5bfe0bdef9a1cb37c802ee3"
+    },
+    "deadline_utc": 1792488197.1664722,
+    "executable": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/bin/python",
+    "max_seconds": 1800,
+    "maximum_new_PPO_updates": 0,
+    "new_first_episodes": 256,
+    "num_envs": 128,
+    "package_identity": "e581533c5fe7cd02a83f6806ee952e18156230fc6855addbe8099368d4555dbb",
+    "prior_package_identity": "a00fb6bd3c06d6749c1882cb1256ccb8ea3a4dc4854f8a3ba242295c9725e16f",
+    "protocol": "independent configured-distribution comparison; exact pairing is not claimed",
+    "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+    "recovery_requested_utc": 1792487914.8575716,
+    "reused_first_episodes": 256,
+    "seeds": [
+      20261021,
+      20261022
+    ],
+    "started_utc": 1792486397.1664722,
+    "total_first_episodes": 512
+  },
+  "slot": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-evaluation-recovery-v2",
+  "retained_4500_groups": {
+    "20261021": {
+      "valid": true,
+      "summary": {
+        "episodes": 128,
+        "ever_5s_count": 107,
+        "gate_violation_fraction": {
+          "lower_ball_speed": 0.00946875,
+          "lower_height_max": 0.0,
+          "lower_height_min": 0.0,
+          "lower_offset": 0.0,
+          "robot_tilt": 0.0,
+          "top_center": 0.000328125,
+          "top_height": 0.0,
+          "top_speed": 0.004921875,
+          "unassisted": 0.0
+        },
+        "longest_stable_seconds": {
+          "max": 10.0,
+          "median": 7.82,
+          "min": 2.7
+        },
+        "mean_survival_seconds": 10.0,
+        "physically_terminated_count": 0,
+        "run_break_counts": {
+          "lower_ball_speed": 320,
+          "lower_height_max": 0,
+          "lower_height_min": 0,
+          "lower_offset": 0,
+          "robot_tilt": 0,
+          "top_center": 3,
+          "top_height": 0,
+          "top_speed": 181,
+          "unassisted": 0
+        },
+        "stable_fraction_of_first_episode_steps": 0.985328125,
+        "success_fraction": 0.8359375,
+        "success_wilson95": [
+          0.7621819239629298,
+          0.8901166835408066
+        ],
+        "successes": 107,
+        "termination_counts": {
+          "time_out": 128
+        },
+        "values_mean_over_first_episode_steps": {
+          "hold": 0.0,
+          "lower_ball_speed_m_s": 0.05967692661026229,
+          "lower_height_m": 0.24091497008316218,
+          "lower_offset_m": 0.00468575402058427,
+          "robot_tilt_rad": 0.017651782933622597,
+          "top_center_m": 0.002590846641545035,
+          "top_height_error_m": 4.264016821980476e-05,
+          "top_speed_m_s": 0.016382310451359218
+        }
+      },
+      "sha256": "7be7e52a27f9192626af8b9f2f7cf94ce06c99e3e86323e2f4055f4e1fdd48bf",
+      "reuse_audit": {
+        "valid": true,
+        "exact_equal": true,
+        "float_abs_tolerance": 1e-12,
+        "float_rel_tolerance": 2e-12,
+        "scope": "Derived summary float values only; all episode decisions/counts and physical thresholds remain exact",
+        "differences": [],
+        "invalid": [],
+        "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+        "executable": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/bin/python"
+      }
+    },
+    "20261022": {
+      "valid": true,
+      "summary": {
+        "episodes": 128,
+        "ever_5s_count": 105,
+        "gate_violation_fraction": {
+          "lower_ball_speed": 0.011703125,
+          "lower_height_max": 0.0,
+          "lower_height_min": 0.0,
+          "lower_offset": 0.0,
+          "robot_tilt": 0.0,
+          "top_center": 3.125e-05,
+          "top_height": 0.0,
+          "top_speed": 0.00478125,
+          "unassisted": 0.0
+        },
+        "longest_stable_seconds": {
+          "max": 10.0,
+          "median": 7.68,
+          "min": 1.76
+        },
+        "mean_survival_seconds": 10.0,
+        "physically_terminated_count": 0,
+        "run_break_counts": {
+          "lower_ball_speed": 385,
+          "lower_height_max": 0,
+          "lower_height_min": 0,
+          "lower_offset": 0,
+          "robot_tilt": 0,
+          "top_center": 1,
+          "top_height": 0,
+          "top_speed": 180,
+          "unassisted": 0
+        },
+        "stable_fraction_of_first_episode_steps": 0.983515625,
+        "success_fraction": 0.8203125,
+        "success_wilson95": [
+          0.7447837371324442,
+          0.8771754002548395
+        ],
+        "successes": 105,
+        "termination_counts": {
+          "time_out": 128
+        },
+        "values_mean_over_first_episode_steps": {
+          "hold": 0.0,
+          "lower_ball_speed_m_s": 0.05980685402033684,
+          "lower_height_m": 0.2408979589943774,
+          "lower_offset_m": 0.004896140994272003,
+          "robot_tilt_rad": 0.018365959212696906,
+          "top_center_m": 0.002533545886075913,
+          "top_height_error_m": 4.1998713044449684e-05,
+          "top_speed_m_s": 0.016270623810746884
+        }
+      },
+      "sha256": "5df8d19a0c50869bdd65a06ac18293d458da6f4e46304bebee732e240b9e2edc",
+      "reuse_audit": {
+        "valid": true,
+        "exact_equal": true,
+        "float_abs_tolerance": 1e-12,
+        "float_rel_tolerance": 2e-12,
+        "scope": "Derived summary float values only; all episode decisions/counts and physical thresholds remain exact",
+        "differences": [],
+        "invalid": [],
+        "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+        "executable": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/bin/python"
+      }
+    }
+  },
+  "exit": {
+    "added_PPO_updates": 0,
+    "automatic_retry": false,
+    "error": null,
+    "finished_utc": 1792487979.9406817,
+    "original_evaluation_evidence_unchanged": true,
+    "original_training_files_unchanged": true,
+    "returncode": 0,
+    "status": "EVALUATION_COMPLETE"
+  },
+  "evaluation": {
+    "added_PPO_updates": 0,
+    "all_environment_control_transitions": 256000,
+    "candidate_for_review": "4500",
+    "checkpoints": {
+      "4500": "df03202acf010680b63d3277ec879f63e2d4808e5d1286653923a314f125ac6a",
+      "6000": "f89a16643e949bc0e79ae6be77c5e12635cd7538b5bfe0bdef9a1cb37c802ee3"
+    },
+    "counted_first_episode_steps": 255358,
+    "difference_cause": "UNKNOWN; initial equality is not asserted and the original mismatch remains recorded",
+    "executable": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/bin/python",
+    "finished_utc": 1792487977.9279695,
+    "group_summaries": [
+      {
+        "initial": {
+          "fields": [
+            "ball/joint_pos",
+            "ball/joint_vel",
+            "ball/root_link_pose_w",
+            "ball/root_link_vel_w",
+            "obs/actor",
+            "obs/critic",
+            "randomized_model/body_inertia",
+            "randomized_model/body_invweight0",
+            "randomized_model/body_ipos",
+            "randomized_model/body_iquat",
+            "randomized_model/body_mass",
+            "randomized_model/body_subtreemass",
+            "randomized_model/dof_armature",
+            "randomized_model/dof_damping",
+            "randomized_model/dof_frictionloss",
+            "randomized_model/dof_invweight0",
+            "randomized_model/geom_friction",
+            "randomized_model/tendon_invweight0",
+            "randomized_model/tendon_length0",
+            "robot/joint_pos",
+            "robot/joint_vel",
+            "robot/root_link_pose_w",
+            "robot/root_link_vel_w",
+            "top_ball/joint_pos",
+            "top_ball/joint_vel",
+            "top_ball/root_link_pose_w",
+            "top_ball/root_link_vel_w"
+          ],
+          "scope": "initial physical states, initial observations, declared randomized model fields",
+          "sha256": "fcc64a456aeb308c64f7a7ec4765d499fdbd1bcc677d9d198ebfe13e825ca34a"
+        },
+        "model": "4500",
+        "seed": 20261021,
+        "summary": {
+          "episodes": 128,
+          "ever_5s_count": 107,
+          "gate_violation_fraction": {
+            "lower_ball_speed": 0.00946875,
+            "lower_height_max": 0.0,
+            "lower_height_min": 0.0,
+            "lower_offset": 0.0,
+            "robot_tilt": 0.0,
+            "top_center": 0.000328125,
+            "top_height": 0.0,
+            "top_speed": 0.004921875,
+            "unassisted": 0.0
+          },
+          "longest_stable_seconds": {
+            "max": 10.0,
+            "median": 7.82,
+            "min": 2.7
+          },
+          "mean_survival_seconds": 10.0,
+          "physically_terminated_count": 0,
+          "run_break_counts": {
+            "lower_ball_speed": 320,
+            "lower_height_max": 0,
+            "lower_height_min": 0,
+            "lower_offset": 0,
+            "robot_tilt": 0,
+            "top_center": 3,
+            "top_height": 0,
+            "top_speed": 181,
+            "unassisted": 0
+          },
+          "stable_fraction_of_first_episode_steps": 0.985328125,
+          "success_fraction": 0.8359375,
+          "success_wilson95": [
+            0.7621819239629298,
+            0.8901166835408066
+          ],
+          "successes": 107,
+          "termination_counts": {
+            "time_out": 128
+          },
+          "values_mean_over_first_episode_steps": {
+            "hold": 0.0,
+            "lower_ball_speed_m_s": 0.05967692661026229,
+            "lower_height_m": 0.24091497008316218,
+            "lower_offset_m": 0.00468575402058427,
+            "robot_tilt_rad": 0.017651782933622597,
+            "top_center_m": 0.002590846641545035,
+            "top_height_error_m": 4.264016821980476e-05,
+            "top_speed_m_s": 0.016382310451359218
+          }
+        },
+        "vector_steps_executed": 500
+      },
+      {
+        "initial": {
+          "fields": [
+            "ball/joint_pos",
+            "ball/joint_vel",
+            "ball/root_link_pose_w",
+            "ball/root_link_vel_w",
+            "obs/actor",
+            "obs/critic",
+            "randomized_model/body_inertia",
+            "randomized_model/body_invweight0",
+            "randomized_model/body_ipos",
+            "randomized_model/body_iquat",
+            "randomized_model/body_mass",
+            "randomized_model/body_subtreemass",
+            "randomized_model/dof_armature",
+            "randomized_model/dof_damping",
+            "randomized_model/dof_frictionloss",
+            "randomized_model/dof_invweight0",
+            "randomized_model/geom_friction",
+            "randomized_model/tendon_invweight0",
+            "randomized_model/tendon_length0",
+            "robot/joint_pos",
+            "robot/joint_vel",
+            "robot/root_link_pose_w",
+            "robot/root_link_vel_w",
+            "top_ball/joint_pos",
+            "top_ball/joint_vel",
+            "top_ball/root_link_pose_w",
+            "top_ball/root_link_vel_w"
+          ],
+          "scope": "initial physical states, initial observations, declared randomized model fields",
+          "sha256": "dccb884dbdd51ee46ca36993881348e07ea222b187b2c639e4e332d785151c12"
+        },
+        "model": "4500",
+        "seed": 20261022,
+        "summary": {
+          "episodes": 128,
+          "ever_5s_count": 105,
+          "gate_violation_fraction": {
+            "lower_ball_speed": 0.011703125,
+            "lower_height_max": 0.0,
+            "lower_height_min": 0.0,
+            "lower_offset": 0.0,
+            "robot_tilt": 0.0,
+            "top_center": 3.125e-05,
+            "top_height": 0.0,
+            "top_speed": 0.00478125,
+            "unassisted": 0.0
+          },
+          "longest_stable_seconds": {
+            "max": 10.0,
+            "median": 7.68,
+            "min": 1.76
+          },
+          "mean_survival_seconds": 10.0,
+          "physically_terminated_count": 0,
+          "run_break_counts": {
+            "lower_ball_speed": 385,
+            "lower_height_max": 0,
+            "lower_height_min": 0,
+            "lower_offset": 0,
+            "robot_tilt": 0,
+            "top_center": 1,
+            "top_height": 0,
+            "top_speed": 180,
+            "unassisted": 0
+          },
+          "stable_fraction_of_first_episode_steps": 0.983515625,
+          "success_fraction": 0.8203125,
+          "success_wilson95": [
+            0.7447837371324442,
+            0.8771754002548395
+          ],
+          "successes": 105,
+          "termination_counts": {
+            "time_out": 128
+          },
+          "values_mean_over_first_episode_steps": {
+            "hold": 0.0,
+            "lower_ball_speed_m_s": 0.05980685402033684,
+            "lower_height_m": 0.2408979589943774,
+            "lower_offset_m": 0.004896140994272003,
+            "robot_tilt_rad": 0.018365959212696906,
+            "top_center_m": 0.002533545886075913,
+            "top_height_error_m": 4.1998713044449684e-05,
+            "top_speed_m_s": 0.016270623810746884
+          }
+        },
+        "vector_steps_executed": 500
+      },
+      {
+        "initial": {
+          "difference_cause": "UNKNOWN: old evidence has only an aggregate fingerprint, not per-field values/hashes",
+          "field_diagnostics": {
+            "ball/joint_pos": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "802b2c95e0d4c70508cbef70a0854d1cda18b67f99dff7ab9ec7d3ab6526302d",
+              "shape": [
+                128,
+                0
+              ]
+            },
+            "ball/joint_vel": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "ddaae30a1ba2c0d8afaeee8eff44e1257872febdbccb92055e64b27174970835",
+              "shape": [
+                128,
+                0
+              ]
+            },
+            "ball/root_link_pose_w": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "621dd8ff405f251c13c6c8331417ec8b3904fdbf9ea90777bec748b29056e716",
+              "shape": [
+                128,
+                7
+              ]
+            },
+            "ball/root_link_vel_w": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "50d4d33732a9e8133c39ad593f1365130964db30cb9ed516a9ccb0d599714ead",
+              "shape": [
+                128,
+                6
+              ]
+            },
+            "obs/actor": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "e296e1f7541d55db81b2b6609a2e13b41e0a4e71a1b8b8928b780c71a7dd8cb2",
+              "shape": [
+                128,
+                61
+              ]
+            },
+            "obs/critic": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "874b1e83c64e137ea09f2ffc4ced458be08562d7a7d4ae771fc9b7fab3446271",
+              "shape": [
+                128,
+                85
+              ]
+            },
+            "randomized_model/body_inertia": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "a502d80eaf2c75e48767ec81afe70e5819ea54da1370ebfae1d36facb3455c8c",
+              "shape": [
+                128,
+                19,
+                3
+              ]
+            },
+            "randomized_model/body_invweight0": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "4c7cef58598ca7b79b837b86d68bd059677553c343fabbf1e47a05919ef82402",
+              "shape": [
+                128,
+                19,
+                2
+              ]
+            },
+            "randomized_model/body_ipos": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "762efb64c72b15345893f69ed4acc13c8799970f56a55679c9082a1d3db8f75e",
+              "shape": [
+                128,
+                19,
+                3
+              ]
+            },
+            "randomized_model/body_iquat": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "f232561ff24408392314fdac4db18cbe523e1bb68322e741f60f51b72bcc5ddb",
+              "shape": [
+                128,
+                19,
+                4
+              ]
+            },
+            "randomized_model/body_mass": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "05fa9447c5e11dc923e6b162b411f98d20f5b573ee3082daca6d9c196a3c21a2",
+              "shape": [
+                128,
+                19
+              ]
+            },
+            "randomized_model/body_subtreemass": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "9321f574d7769ca7b93e72337020b323bd74d6445641a4a19429baf964e7a936",
+              "shape": [
+                128,
+                19
+              ]
+            },
+            "randomized_model/dof_armature": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "9368971cce59f5971ed8dcee14115fc8c1b3b9523266ef0e67b60c090cdfecf1",
+              "shape": [
+                128,
+                32
+              ]
+            },
+            "randomized_model/dof_damping": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "d400d6e815ae5cfea22d192d02aa298819fad0253df117803e4b5421e80e381c",
+              "shape": [
+                128,
+                32
+              ]
+            },
+            "randomized_model/dof_frictionloss": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "7693bdf425dcac246e7e7f3945440c59add2bc35837d676db2fe809cdda0fe5b",
+              "shape": [
+                128,
+                32
+              ]
+            },
+            "randomized_model/dof_invweight0": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "15fcfff20bfffb46d17868b3ee3fbc611513a52260b36875b70bff141c724f93",
+              "shape": [
+                128,
+                32
+              ]
+            },
+            "randomized_model/geom_friction": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "931d47f88025817fe0f416cf3956b01c73e37964639eb7c93c43922b172527b8",
+              "shape": [
+                128,
+                85,
+                3
+              ]
+            },
+            "randomized_model/tendon_invweight0": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "28ae2acd5faa307c5f71434af5090ec1f62b3d7ec53a5816ef52194442d07ef3",
+              "shape": [
+                128,
+                0
+              ]
+            },
+            "randomized_model/tendon_length0": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "b26b9cd3fdf8a3a0c0d8beaec61fca6369e7392530e09615e82d0d3ffb079dfd",
+              "shape": [
+                128,
+                0
+              ]
+            },
+            "robot/joint_pos": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "2cc4f48f46c358a47cda56dc93201ba2dc42317e6adb6778adbe079ab421c6e3",
+              "shape": [
+                128,
+                14
+              ]
+            },
+            "robot/joint_vel": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "87971d2b08f97017cfd5aa84c6a8f6609ad289e82e80c01bdb803877e50ef1fc",
+              "shape": [
+                128,
+                14
+              ]
+            },
+            "robot/root_link_pose_w": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "356c6f9ce9bce23ce2a2765bcced3c707474af62e635b5b48611eddc303a45b2",
+              "shape": [
+                128,
+                7
+              ]
+            },
+            "robot/root_link_vel_w": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "d55afad74e806b807734b814701f17663687d092dc8567ba0c088aaee8a21621",
+              "shape": [
+                128,
+                6
+              ]
+            },
+            "top_ball/joint_pos": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "5a24c56b5af607f23fc7082ba6746183d05e3d77c47cd693576cb590ea38fb4c",
+              "shape": [
+                128,
+                0
+              ]
+            },
+            "top_ball/joint_vel": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "6d743ce9e39b0d396ec13e0f67626df8fb4568145df754077a9609cb453cb7f4",
+              "shape": [
+                128,
+                0
+              ]
+            },
+            "top_ball/root_link_pose_w": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "e74aa5d9cee733ceef11b19b017a6b9b0722a6e51d6337dc2f4eb244d481242d",
+              "shape": [
+                128,
+                7
+              ]
+            },
+            "top_ball/root_link_vel_w": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "e627a503d4b2b8b7ea4a726d2ba9102d7ae3bbb6a67971c9d87caeacac00e839",
+              "shape": [
+                128,
+                6
+              ]
+            }
+          },
+          "fields": [
+            "ball/joint_pos",
+            "ball/joint_vel",
+            "ball/root_link_pose_w",
+            "ball/root_link_vel_w",
+            "obs/actor",
+            "obs/critic",
+            "randomized_model/body_inertia",
+            "randomized_model/body_invweight0",
+            "randomized_model/body_ipos",
+            "randomized_model/body_iquat",
+            "randomized_model/body_mass",
+            "randomized_model/body_subtreemass",
+            "randomized_model/dof_armature",
+            "randomized_model/dof_damping",
+            "randomized_model/dof_frictionloss",
+            "randomized_model/dof_invweight0",
+            "randomized_model/geom_friction",
+            "randomized_model/tendon_invweight0",
+            "randomized_model/tendon_length0",
+            "robot/joint_pos",
+            "robot/joint_vel",
+            "robot/root_link_pose_w",
+            "robot/root_link_vel_w",
+            "top_ball/joint_pos",
+            "top_ball/joint_vel",
+            "top_ball/root_link_pose_w",
+            "top_ball/root_link_vel_w"
+          ],
+          "matches_prior_4500_exactly": false,
+          "paired_comparison_allowed": false,
+          "prior_4500_sha256": "fcc64a456aeb308c64f7a7ec4765d499fdbd1bcc677d9d198ebfe13e825ca34a",
+          "scope": "initial physical states, initial observations, declared randomized model fields",
+          "sha256": "86f909051ba38943b558f74ceeea3075f5b3def276ce3147967fe058a9d843e6"
+        },
+        "model": "6000",
+        "seed": 20261021,
+        "summary": {
+          "episodes": 128,
+          "ever_5s_count": 78,
+          "gate_violation_fraction": {
+            "lower_ball_speed": 0.013641512996412612,
+            "lower_height_max": 0.0,
+            "lower_height_min": 0.0,
+            "lower_offset": 0.0,
+            "robot_tilt": 0.0,
+            "top_center": 0.0010227201208383159,
+            "top_height": 9.440493423122915e-05,
+            "top_speed": 0.006466737994839197,
+            "unassisted": 0.0
+          },
+          "longest_stable_seconds": {
+            "max": 10.0,
+            "median": 5.64,
+            "min": 0.1
+          },
+          "mean_survival_seconds": 9.930625,
+          "physically_terminated_count": 1,
+          "run_break_counts": {
+            "lower_ball_speed": 536,
+            "lower_height_max": 0,
+            "lower_height_min": 0,
+            "lower_offset": 0,
+            "robot_tilt": 0,
+            "top_center": 3,
+            "top_height": 0,
+            "top_speed": 212,
+            "unassisted": 0
+          },
+          "stable_fraction_of_first_episode_steps": 0.9794669268047077,
+          "success_fraction": 0.609375,
+          "success_wilson95": [
+            0.5228464818201277,
+            0.6895298089950423
+          ],
+          "successes": 78,
+          "termination_counts": {
+            "time_out": 127,
+            "top_ball_lost": 1
+          },
+          "values_mean_over_first_episode_steps": {
+            "hold": 0.0,
+            "lower_ball_speed_m_s": 0.05994751539620481,
+            "lower_height_m": 0.23625948475891254,
+            "lower_offset_m": 0.005177744569311153,
+            "robot_tilt_rad": 0.0214439502670191,
+            "top_center_m": 0.002766581983472355,
+            "top_height_error_m": 5.0135192466176806e-05,
+            "top_speed_m_s": 0.01881230460294852
+          }
+        },
+        "vector_steps_executed": 500
+      },
+      {
+        "initial": {
+          "difference_cause": "UNKNOWN: old evidence has only an aggregate fingerprint, not per-field values/hashes",
+          "field_diagnostics": {
+            "ball/joint_pos": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "802b2c95e0d4c70508cbef70a0854d1cda18b67f99dff7ab9ec7d3ab6526302d",
+              "shape": [
+                128,
+                0
+              ]
+            },
+            "ball/joint_vel": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "ddaae30a1ba2c0d8afaeee8eff44e1257872febdbccb92055e64b27174970835",
+              "shape": [
+                128,
+                0
+              ]
+            },
+            "ball/root_link_pose_w": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "621dd8ff405f251c13c6c8331417ec8b3904fdbf9ea90777bec748b29056e716",
+              "shape": [
+                128,
+                7
+              ]
+            },
+            "ball/root_link_vel_w": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "50d4d33732a9e8133c39ad593f1365130964db30cb9ed516a9ccb0d599714ead",
+              "shape": [
+                128,
+                6
+              ]
+            },
+            "obs/actor": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "9bc3e3b5c5f4ef05daafffa711f00cea365ce564cac752788ef93e8405603107",
+              "shape": [
+                128,
+                61
+              ]
+            },
+            "obs/critic": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "85f67e140fcd552adf6e5e34e9db579363747ba185c0af46a6a1ab4836b3f4d5",
+              "shape": [
+                128,
+                85
+              ]
+            },
+            "randomized_model/body_inertia": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "a976bb4842b76efdf94ed4ae2a08be458a0355b8a84ae46d817f3a06262a5479",
+              "shape": [
+                128,
+                19,
+                3
+              ]
+            },
+            "randomized_model/body_invweight0": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "907bc66431ec3dc26ce1b7e50defdabc88129780b44417796e9f8a1f04546811",
+              "shape": [
+                128,
+                19,
+                2
+              ]
+            },
+            "randomized_model/body_ipos": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "4220bf1a001ee1602a1a384079c0480aaff8f1cb9f2e3c210945198cfb3ef180",
+              "shape": [
+                128,
+                19,
+                3
+              ]
+            },
+            "randomized_model/body_iquat": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "dfae8432cdf96ffe9f4709c7bc5b4446b6fc957bd2cf4299fe3553029d5f5edc",
+              "shape": [
+                128,
+                19,
+                4
+              ]
+            },
+            "randomized_model/body_mass": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "16c42abdc9f8981d23f5d51b6901dab7f7115b673784161359a712030629020d",
+              "shape": [
+                128,
+                19
+              ]
+            },
+            "randomized_model/body_subtreemass": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "8ace9cd00562115d2338645fb0a787e7f13f8739911d5198ef7bc71bcdb3c951",
+              "shape": [
+                128,
+                19
+              ]
+            },
+            "randomized_model/dof_armature": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "103f97c6a5a0ad10462f9eec412abdcaa3a50b650535d9a754963093a0ff966b",
+              "shape": [
+                128,
+                32
+              ]
+            },
+            "randomized_model/dof_damping": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "d400d6e815ae5cfea22d192d02aa298819fad0253df117803e4b5421e80e381c",
+              "shape": [
+                128,
+                32
+              ]
+            },
+            "randomized_model/dof_frictionloss": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "e65e1a46bf7d26019bd1888264441a26564da7fb2d8bca970a02e5082b65bc7c",
+              "shape": [
+                128,
+                32
+              ]
+            },
+            "randomized_model/dof_invweight0": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "d8639fc48b1194dc4961d566a9c2aa8543f633e2b7832cd608e4ac8162a514ca",
+              "shape": [
+                128,
+                32
+              ]
+            },
+            "randomized_model/geom_friction": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "2e9c898a4d1d7664f6236f5b3adef9c5ab4bb2ba3e59df27d1bb65089595868e",
+              "shape": [
+                128,
+                85,
+                3
+              ]
+            },
+            "randomized_model/tendon_invweight0": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "28ae2acd5faa307c5f71434af5090ec1f62b3d7ec53a5816ef52194442d07ef3",
+              "shape": [
+                128,
+                0
+              ]
+            },
+            "randomized_model/tendon_length0": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "b26b9cd3fdf8a3a0c0d8beaec61fca6369e7392530e09615e82d0d3ffb079dfd",
+              "shape": [
+                128,
+                0
+              ]
+            },
+            "robot/joint_pos": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "9f199583d3778b229732c0c981fe6f51eb903feabd1241ed4d2f611b39c9975d",
+              "shape": [
+                128,
+                14
+              ]
+            },
+            "robot/joint_vel": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "87971d2b08f97017cfd5aa84c6a8f6609ad289e82e80c01bdb803877e50ef1fc",
+              "shape": [
+                128,
+                14
+              ]
+            },
+            "robot/root_link_pose_w": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "e482e6f7373d5443dafd6e31f32939674aa110cc0b038624af143d16d510dbfa",
+              "shape": [
+                128,
+                7
+              ]
+            },
+            "robot/root_link_vel_w": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "d55afad74e806b807734b814701f17663687d092dc8567ba0c088aaee8a21621",
+              "shape": [
+                128,
+                6
+              ]
+            },
+            "top_ball/joint_pos": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "5a24c56b5af607f23fc7082ba6746183d05e3d77c47cd693576cb590ea38fb4c",
+              "shape": [
+                128,
+                0
+              ]
+            },
+            "top_ball/joint_vel": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "6d743ce9e39b0d396ec13e0f67626df8fb4568145df754077a9609cb453cb7f4",
+              "shape": [
+                128,
+                0
+              ]
+            },
+            "top_ball/root_link_pose_w": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "017e791510448c6432bfb5d7b99179b142bc62093a8d20b872de3ae8b72887c4",
+              "shape": [
+                128,
+                7
+              ]
+            },
+            "top_ball/root_link_vel_w": {
+              "dtype": "torch.float32",
+              "finite": true,
+              "sha256": "e627a503d4b2b8b7ea4a726d2ba9102d7ae3bbb6a67971c9d87caeacac00e839",
+              "shape": [
+                128,
+                6
+              ]
+            }
+          },
+          "fields": [
+            "ball/joint_pos",
+            "ball/joint_vel",
+            "ball/root_link_pose_w",
+            "ball/root_link_vel_w",
+            "obs/actor",
+            "obs/critic",
+            "randomized_model/body_inertia",
+            "randomized_model/body_invweight0",
+            "randomized_model/body_ipos",
+            "randomized_model/body_iquat",
+            "randomized_model/body_mass",
+            "randomized_model/body_subtreemass",
+            "randomized_model/dof_armature",
+            "randomized_model/dof_damping",
+            "randomized_model/dof_frictionloss",
+            "randomized_model/dof_invweight0",
+            "randomized_model/geom_friction",
+            "randomized_model/tendon_invweight0",
+            "randomized_model/tendon_length0",
+            "robot/joint_pos",
+            "robot/joint_vel",
+            "robot/root_link_pose_w",
+            "robot/root_link_vel_w",
+            "top_ball/joint_pos",
+            "top_ball/joint_vel",
+            "top_ball/root_link_pose_w",
+            "top_ball/root_link_vel_w"
+          ],
+          "matches_prior_4500_exactly": false,
+          "paired_comparison_allowed": false,
+          "prior_4500_sha256": "dccb884dbdd51ee46ca36993881348e07ea222b187b2c639e4e332d785151c12",
+          "scope": "initial physical states, initial observations, declared randomized model fields",
+          "sha256": "6cb6c93c97cf2563274e685edeca487fd6750a6086c9647252278d09a439ca42"
+        },
+        "model": "6000",
+        "seed": 20261022,
+        "summary": {
+          "episodes": 128,
+          "ever_5s_count": 87,
+          "gate_violation_fraction": {
+            "lower_ball_speed": 0.016331776433340647,
+            "lower_height_max": 0.0,
+            "lower_height_min": 0.0,
+            "lower_offset": 0.0,
+            "robot_tilt": 0.0,
+            "top_center": 0.0005955926146515784,
+            "top_height": 9.404093915551237e-05,
+            "top_speed": 0.006347763392997085,
+            "unassisted": 0.0
+          },
+          "longest_stable_seconds": {
+            "max": 9.96,
+            "median": 6.18,
+            "min": 1.6600000000000001
+          },
+          "mean_survival_seconds": 9.9690625,
+          "physically_terminated_count": 1,
+          "run_break_counts": {
+            "lower_ball_speed": 627,
+            "lower_height_max": 0,
+            "lower_height_min": 0,
+            "lower_offset": 0,
+            "robot_tilt": 0,
+            "top_center": 3,
+            "top_height": 0,
+            "top_speed": 223,
+            "unassisted": 0
+          },
+          "stable_fraction_of_first_episode_steps": 0.9770226638663365,
+          "success_fraction": 0.6796875,
+          "success_wilson95": [
+            0.5946341124452171,
+            0.7542697938939907
+          ],
+          "successes": 87,
+          "termination_counts": {
+            "time_out": 127,
+            "top_ball_lost": 1
+          },
+          "values_mean_over_first_episode_steps": {
+            "hold": 0.0,
+            "lower_ball_speed_m_s": 0.060800465681895545,
+            "lower_height_m": 0.23626210594437144,
+            "lower_offset_m": 0.0053963821647600866,
+            "robot_tilt_rad": 0.02139516841886912,
+            "top_center_m": 0.0027079286894242946,
+            "top_height_error_m": 4.867108742580388e-05,
+            "top_speed_m_s": 0.019006600872145177
+          }
+        },
+        "vector_steps_executed": 500
+      }
+    ],
+    "groups": 4,
+    "independent_of_training_rollouts": true,
+    "new_all_environment_control_transitions": 128000,
+    "new_first_episodes": 256,
+    "num_envs_per_group": 128,
+    "old_strict_physics_acceptance": false,
+    "original_deadline_utc": 1792488197.1664722,
+    "paired_comparison_allowed": false,
+    "pairing": "NOT PAIRED. Same configured task/reset/DR/noise distributions and seed labels; exact initial equality failed in the original run. No per-state paired wins/losses or causal superiority claim.",
+    "physics_substeps_per_control_step": 10,
+    "policy_mode": "deterministic; frozen model and normalization; existing observation noise and DR retained",
+    "prior_group_evidence": [
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-evaluation-v1/group-4500-20261021.json",
+        "sha256": "7be7e52a27f9192626af8b9f2f7cf94ce06c99e3e86323e2f4055f4e1fdd48bf"
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-evaluation-v1/group-4500-20261022.json",
+        "sha256": "5df8d19a0c50869bdd65a06ac18293d458da6f4e46304bebee732e240b9e2edc"
+      }
+    ],
+    "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+    "retained_summary_audits": {
+      "20261021": {
+        "differences": [],
+        "exact_equal": true,
+        "executable": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/bin/python",
+        "float_abs_tolerance": 1e-12,
+        "float_rel_tolerance": 2e-12,
+        "invalid": [],
+        "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+        "scope": "Derived summary float values only; all episode decisions/counts and physical thresholds remain exact",
+        "valid": true
+      },
+      "20261022": {
+        "differences": [],
+        "exact_equal": true,
+        "executable": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/bin/python",
+        "float_abs_tolerance": 1e-12,
+        "float_rel_tolerance": 2e-12,
+        "invalid": [],
+        "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+        "scope": "Derived summary float values only; all episode decisions/counts and physical thresholds remain exact",
+        "valid": true
+      }
+    },
+    "reused_first_episodes": 256,
+    "seeds": [
+      20261021,
+      20261022
+    ],
+    "selection_rule": "Descriptive independent-batch ranking only: success count, survival mean, median longest run, earlier checkpoint",
+    "selection_set_not_final_heldout_test": true,
+    "started_utc": 1792486397.1664722,
+    "status": "EVALUATION_COMPLETE",
+    "success_definition": "First episode: >=250 consecutive original metric ticks, and no physical termination before the episode ends; timeout allowed.",
+    "summaries": {
+      "4500": {
+        "episodes": 256,
+        "ever_5s_count": 212,
+        "gate_violation_fraction": {
+          "lower_ball_speed": 0.0105859375,
+          "lower_height_max": 0.0,
+          "lower_height_min": 0.0,
+          "lower_offset": 0.0,
+          "robot_tilt": 0.0,
+          "top_center": 0.0001796875,
+          "top_height": 0.0,
+          "top_speed": 0.0048515625,
+          "unassisted": 0.0
+        },
+        "longest_stable_seconds": {
+          "max": 10.0,
+          "median": 7.8,
+          "min": 1.76
+        },
+        "mean_survival_seconds": 10.0,
+        "physically_terminated_count": 0,
+        "run_break_counts": {
+          "lower_ball_speed": 705,
+          "lower_height_max": 0,
+          "lower_height_min": 0,
+          "lower_offset": 0,
+          "robot_tilt": 0,
+          "top_center": 4,
+          "top_height": 0,
+          "top_speed": 361,
+          "unassisted": 0
+        },
+        "stable_fraction_of_first_episode_steps": 0.984421875,
+        "success_fraction": 0.828125,
+        "success_wilson95": [
+          0.7771462145851933,
+          0.8694018796353287
+        ],
+        "successes": 212,
+        "termination_counts": {
+          "time_out": 256
+        },
+        "values_mean_over_first_episode_steps": {
+          "hold": 0.0,
+          "lower_ball_speed_m_s": 0.05974189031529956,
+          "lower_height_m": 0.2409064645387698,
+          "lower_offset_m": 0.004790947507428136,
+          "robot_tilt_rad": 0.018008871073159752,
+          "top_center_m": 0.002562196263810474,
+          "top_height_error_m": 4.231944063212723e-05,
+          "top_speed_m_s": 0.01632646713105305
+        }
+      },
+      "6000": {
+        "episodes": 256,
+        "ever_5s_count": 165,
+        "gate_violation_fraction": {
+          "lower_ball_speed": 0.014989242921528291,
+          "lower_height_max": 0.0,
+          "lower_height_min": 0.0,
+          "lower_offset": 0.0,
+          "robot_tilt": 0.0,
+          "top_center": 0.0008087438559022598,
+          "top_height": 9.422258515366133e-05,
+          "top_speed": 0.006407135790448971,
+          "unassisted": 0.0
+        },
+        "longest_stable_seconds": {
+          "max": 10.0,
+          "median": 5.77,
+          "min": 0.1
+        },
+        "mean_survival_seconds": 9.94984375,
+        "physically_terminated_count": 2,
+        "run_break_counts": {
+          "lower_ball_speed": 1163,
+          "lower_height_max": 0,
+          "lower_height_min": 0,
+          "lower_offset": 0,
+          "robot_tilt": 0,
+          "top_center": 6,
+          "top_height": 0,
+          "top_speed": 435,
+          "unassisted": 0
+        },
+        "stable_fraction_of_first_episode_steps": 0.9782424347116003,
+        "success_fraction": 0.64453125,
+        "success_wilson95": [
+          0.5841561693914309,
+          0.7006328721104657
+        ],
+        "successes": 165,
+        "termination_counts": {
+          "time_out": 254,
+          "top_ball_lost": 2
+        },
+        "values_mean_over_first_episode_steps": {
+          "hold": 0.0,
+          "lower_ball_speed_m_s": 0.060374814302654664,
+          "lower_height_m": 0.23626079788313442,
+          "lower_offset_m": 0.005287274523180033,
+          "robot_tilt_rad": 0.021419512230337737,
+          "top_center_m": 0.002737198690182147,
+          "top_height_error_m": 4.9401725940431476e-05,
+          "top_speed_m_s": 0.018909640385288737
+        }
+      }
+    },
+    "task_acceptance_claimed": false,
+    "thresholds": {
+      "consecutive_steps": 250,
+      "control_dt": 0.02,
+      "hold": 1e-06,
+      "horizon_seconds": 10.0,
+      "lower_ball_speed_m_s": 0.15,
+      "lower_height_max_m": 0.29,
+      "lower_height_min_m": 0.2,
+      "lower_offset_m": 0.06,
+      "robot_tilt_deg": 20.0,
+      "top_center_m": 0.012,
+      "top_height_error_m": 0.006,
+      "top_speed_m_s": 0.08
+    },
+    "video_review_done": false
+  },
+  "local_return_utc": "2026-10-20T09:19:55.990902+00:00",
+  "controller_package_identity": "e581533c5fe7cd02a83f6806ee952e18156230fc6855addbe8099368d4555dbb"
+}

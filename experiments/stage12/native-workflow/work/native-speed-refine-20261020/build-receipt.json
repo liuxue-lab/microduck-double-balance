@@ -1,0 +1,24 @@
+{
+  "package_identity": "340f064e33b61ed8968724084ebab8dc35563cb2239506ab20b1d01056581c10",
+  "controller": "/workspace/scratch/5d7345c481bf/microduck-stage12-speed-refine-v1-20261020.py",
+  "controller_bytes": 93895,
+  "controller_sha256": "8b7777d3ea42b9690cd4ef965e33106e35b567964c5fdf491eb9963c8fdc9742",
+  "transport_bytes": 65683,
+  "origin_checkpoint": 4500,
+  "num_envs": 4096,
+  "learning_rate": 1e-05,
+  "maximum_new_PPO_attempts": 1000,
+  "maximum_wall_seconds": 7200,
+  "segment_updates": 250,
+  "maximum_evaluation_segments": 4,
+  "first_episodes_per_candidate": 256,
+  "reused_baseline_first_episodes": 256,
+  "consecutive_non_improvement_patience": 2,
+  "repeated_smoke_runs": 0,
+  "cloud_run_executed": false,
+  "training_reward_change": {
+    "lower_speed_std": 0.15,
+    "upper_speed_std": 0.08
+  },
+  "evaluation_task_unchanged": true
+}

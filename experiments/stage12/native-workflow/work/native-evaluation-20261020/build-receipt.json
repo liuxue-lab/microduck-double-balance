@@ -1,0 +1,19 @@
+{
+  "package_identity": "a00fb6bd3c06d6749c1882cb1256ccb8ea3a4dc4854f8a3ba242295c9725e16f",
+  "controller": "/workspace/scratch/5d7345c481bf/microduck-stage12-evaluate-models-v1-20261020.py",
+  "controller_bytes": 29133,
+  "controller_sha256": "c472eacde86c8dbb6e7779e3dba81e72c77ba89fea2daa213f5821025977c671",
+  "transport_bytes": 16199,
+  "checkpoints": [
+    4500,
+    6000
+  ],
+  "seeds": [
+    20261021,
+    20261022
+  ],
+  "num_envs": 128,
+  "total_first_episodes": 512,
+  "max_seconds": 1800,
+  "added_PPO_updates": 0
+}

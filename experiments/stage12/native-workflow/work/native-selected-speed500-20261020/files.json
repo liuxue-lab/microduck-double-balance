@@ -1,0 +1,29 @@
+{
+  "evaluation": {
+    "remote": "native-speed-refine-v1/evaluations/segment-02/evaluation-result.json",
+    "local": "evaluation/evaluation-result.json",
+    "max_bytes": 131072,
+    "sha256": "0e9ff8b24f10929523f1a17e8cd791c6b73408b6f2905feb22e5524c36c92e81"
+  },
+  "model": {
+    "remote": "native-speed-refine-v1/run/checkpoints/refine_000500.pt",
+    "local": "checkpoints/refine_000500.pt",
+    "bytes": 10036828,
+    "max_bytes": 10036828,
+    "sha256": "51821a28880aba74b80e6d5a388dfd7a82098bd3dca04a1e8947b4b2a8d5539a"
+  },
+  "native_task.py": {
+    "remote": "native-speed-refine-v1/package/native_task.py",
+    "local": "task/native_task.py",
+    "bytes": 8816,
+    "max_bytes": 8816,
+    "sha256": "b6909b9cff864dcfce8203062a75282571ca2c7ef5d66b2aa58c05c4626a55af"
+  },
+  "source-pins.json": {
+    "remote": "native-speed-refine-v1/package/source-pins.json",
+    "local": "task/source-pins.json",
+    "bytes": 54309,
+    "max_bytes": 54309,
+    "sha256": "08c781088ecb4b2023c593ff8ffa45061bf6a57fad5902fcf79b50155daa969c"
+  }
+}

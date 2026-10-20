@@ -1,0 +1,173 @@
+{
+  "slot": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2",
+  "status": "TRAINING_BUDGET_COMPLETE",
+  "progress": {
+    "attempted_updates": 6000,
+    "campaign_phase": "formal",
+    "completed_updates": 6000,
+    "elapsed_seconds": 14339.905536651611,
+    "episode_metrics": {
+      "Episode_Metrics/native_joint_geometric_stable_fraction": 0.9153189733624458,
+      "Episode_Metrics/native_joint_geometric_success_5s": 0.010416666666666666,
+      "Episode_Metrics/native_lower_unassisted_fraction": 0.9391849388678869,
+      "Episode_Metrics/native_unassisted_env_fraction": 1.0,
+      "Episode_Metrics/top_ball_center_error_m": 0.003727007560276737,
+      "Episode_Reward/double_balance": 2.985004350543022,
+      "Episode_Termination/fell": 0.0,
+      "Episode_Termination/nan_state": 0.0,
+      "Episode_Termination/out_of_terrain_bounds": 0.0,
+      "Episode_Termination/time_out": 3.0833333333333335,
+      "Episode_Termination/top_ball_lost": 0.20833333333333334
+    },
+    "finished_utc": 1792485195.8652272,
+    "head_reward_scale": 1.0,
+    "historical_reserved_PPO": 4,
+    "joint_geometric_current_fraction": 0.9326171875,
+    "last_losses": {
+      "entropy": -5.2764139652252195,
+      "surrogate": -0.0037291508517228065,
+      "value": 0.07712585180997848
+    },
+    "latest_checkpoint": {
+      "bytes": 10036060,
+      "completed_updates": 6000,
+      "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2/run/checkpoints/update_006000.pt",
+      "policy_updates": 6000,
+      "sha256": "f89a16643e949bc0e79ae6be77c5e12635cd7538b5bfe0bdef9a1cb37c802ee3"
+    },
+    "learning_rate": 5e-05,
+    "logging_backend": "tensorboard",
+    "lower_unassisted_current_fraction": 0.95068359375,
+    "max_updates": 6000,
+    "mean_episode_length_steps": 484.21,
+    "mean_reward": 85.3719886302948,
+    "nan_resets_in_last_rollout": 0,
+    "num_envs": 2048,
+    "old_strict_audit_passed": false,
+    "phase": "formal_ppo",
+    "policy_updates": 6000,
+    "prior_validation_reservations_preserved": 4,
+    "progress_percent": 100.0,
+    "remaining_validation_runs": 0,
+    "rollout_steps": 24,
+    "session": 1,
+    "status": "TRAINING_BUDGET_COMPLETE",
+    "trained_successfully_not_yet_claimed": true,
+    "unassisted_env_fraction": 1.0,
+    "validation_runs_added": 1
+  },
+  "supervisor_alive": false,
+  "training_alive": false,
+  "new_training_budget": {
+    "attempted_updates": 6000,
+    "completed_updates": 6000,
+    "deadline_utc": 1792499655.8858402,
+    "historical_validation_reservations_preserved": 4,
+    "interrupted_attempts": 0,
+    "max_updates": 6000,
+    "pending": false,
+    "started_utc": 1792470855.8858402,
+    "validation_runs_added": 1
+  },
+  "latest_checkpoint": {
+    "bytes": 10036060,
+    "completed_updates": 6000,
+    "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2/run/checkpoints/update_006000.pt",
+    "policy_updates": 6000,
+    "sha256": "f89a16643e949bc0e79ae6be77c5e12635cd7538b5bfe0bdef9a1cb37c802ee3"
+  },
+  "initialization": {
+    "bytes": 10073500,
+    "kind": "stage08_selected_E",
+    "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+    "sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97"
+  },
+  "configuration": {
+    "additional_pretraining_validation_runs": 1,
+    "historical_validation_PPO_reservations": 4,
+    "intent": "one native smoke then formal joint finetuning; retained Stage08 E; no lower-only phase",
+    "max_hours": 8,
+    "max_updates": 6000,
+    "num_envs": 2048,
+    "package_identity": "dd6d1e1e697bcaa348dbdd92dd8c7b30ea31ae9c32599338106859ae7657523a",
+    "seed": 20261020,
+    "smoke_envs": 64,
+    "smoke_max_minutes": 30,
+    "smoke_updates": 5
+  },
+  "legacy_attached": false,
+  "campaign_exists": true,
+  "remaining_validation_runs": 0,
+  "historical_PPO_reservations_preserved": 4,
+  "automatic_power_actions": 0,
+  "power_state": "UNCONFIRMED",
+  "smoke": {
+    "checkpoint": {
+      "bytes": 10035996,
+      "completed_updates": 5,
+      "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2/run/checkpoints/update_000005.pt",
+      "policy_updates": 5,
+      "sha256": "1240b976c040f4b754ec24e3581a83784b1c3d59ee93f4f9ba3340a9443067ae"
+    },
+    "completed_updates": 5,
+    "finished_utc": 1792470963.1870499,
+    "num_envs": 64,
+    "physical_success_required": false,
+    "reload_verified": true,
+    "status": "SMOKE_PASSED",
+    "steps_per_env": 24,
+    "transitions": 7680
+  },
+  "small_receipts": {
+    "budget.json": {
+      "bytes": 271,
+      "sha256": "4c755c17202ba92f3fab85d2e5b85dbe4ee91b756520f25309c643dc68f4818a",
+      "text": "{\"attempted_updates\": 6000, \"completed_updates\": 6000, \"deadline_utc\": 1792499655.8858402, \"historical_validation_reservations_preserved\": 4, \"interrupted_attempts\": 0, \"max_updates\": 6000, \"pending\": false, \"started_utc\": 1792470855.8858402, \"validation_runs_added\": 1}\n"
+    },
+    "started.json": {
+      "bytes": 168,
+      "sha256": "f37ece54173f5cc44e0ec8d76a91d7f26d28d3172148fda07408da47e3513d12",
+      "text": "{\"mode\": \"ONE_SMOKE_THEN_NATIVE_FINETUNING\", \"package_identity\": \"dd6d1e1e697bcaa348dbdd92dd8c7b30ea31ae9c32599338106859ae7657523a\", \"started_utc\": 1792470855.8858402}\n"
+    },
+    "initialization.json": {
+      "bytes": 276,
+      "sha256": "6c45f5aed93705c4b90c709a9750d565bde77ffc53b19e7762e731267dba0be3",
+      "text": "{\"bytes\": 10073500, \"kind\": \"stage08_selected_E\", \"path\": \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260929/segment-001/checkpoints/update_004000.pt\", \"sha256\": \"86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97\"}\n"
+    },
+    "smoke-started.json": {
+      "bytes": 129,
+      "sha256": "0cb37d1b734cfe44743b2b3433a4b7c752ea6223078f50fe8bc51d4d85faf21f",
+      "text": "{\"max_minutes\": 30, \"maximum_attempts\": 1, \"num_envs\": 64, \"started_utc\": 1792470856.0113778, \"steps_per_env\": 24, \"updates\": 5}\n"
+    },
+    "run/smoke-result.json": {
+      "bytes": 502,
+      "sha256": "96bcb67b4120c63c13f2e18b1736ff5586462fb0a1044f2d8a86bd5f615c9c9c",
+      "text": "{\"checkpoint\": {\"bytes\": 10035996, \"completed_updates\": 5, \"path\": \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2/run/checkpoints/update_000005.pt\", \"policy_updates\": 5, \"sha256\": \"1240b976c040f4b754ec24e3581a83784b1c3d59ee93f4f9ba3340a9443067ae\"}, \"completed_updates\": 5, \"finished_utc\": 1792470963.1870499, \"num_envs\": 64, \"physical_success_required\": false, \"reload_verified\": true, \"status\": \"SMOKE_PASSED\", \"steps_per_env\": 24, \"transitions\": 7680}\n"
+    },
+    "run/transfer.json": {
+      "bytes": 892,
+      "sha256": "e6362cb17ec3d545368de517a96b93f4d6af142e5d0a8499525884a0dfc0c9b6",
+      "text": "{\"actor_columns_neutralized\": [55, 61], \"critic_columns_neutralized\": [76, 85], \"dedicated_lower_only_updates\": 0, \"direct_trajectory_resume\": false, \"inherited_performance_claimed\": false, \"initial_lower_assistance\": 0.0, \"normalization\": \"unchanged feature statistics frozen; new head features adapt\", \"normalizer_prior_count\": 10000, \"optimizer\": \"new Adam at fixed 5e-5; historical optimizer files untouched\", \"previous_learning_counters_restored\": false, \"recurrent_state\": \"fresh episode\", \"source\": {\"bytes\": 10073500, \"kind\": \"stage08_selected_E\", \"path\": \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260929/segment-001/checkpoints/update_004000.pt\", \"sha256\": \"86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97\"}, \"source_policy\": \"Stage08 E selected primary; earlier task performance is not claimed on the new head task\"}\n"
+    },
+    "run/latest.json": {
+      "bytes": 287,
+      "sha256": "1e1155acec5a87ad430fda65727126625d50e4c1475100e2eb1f44e7283a2566",
+      "text": "{\"bytes\": 10036060, \"completed_updates\": 6000, \"path\": \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2/run/checkpoints/update_006000.pt\", \"policy_updates\": 6000, \"sha256\": \"f89a16643e949bc0e79ae6be77c5e12635cd7538b5bfe0bdef9a1cb37c802ee3\"}\n"
+    },
+    "run/best-training-metric.json": {
+      "bytes": 627,
+      "sha256": "cc523d4baf3215c658f1bb763d535084e77d0f8954989d5cb6b9a68094542366",
+      "text": "{\"checkpoint\": {\"bytes\": 10036060, \"completed_updates\": 4500, \"path\": \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2/run/checkpoints/update_004500.pt\", \"policy_updates\": 4500, \"sha256\": \"df03202acf010680b63d3277ec879f63e2d4808e5d1286653923a314f125ac6a\"}, \"comparison\": \"lexicographic, rolling 100 logged batches\", \"held_out_evaluation\": false, \"metrics\": [\"native_joint_geometric_success_5s\", \"native_joint_geometric_stable_fraction\", \"native_lower_unassisted_fraction\"], \"score\": [0.1278020343898485, 0.9223515752516687, 0.9435975053037207], \"strict_physics_acceptance\": false}\n"
+    },
+    "run/formal-load.json": {
+      "bytes": 479,
+      "sha256": "33ec9547c4cdf3836f0af82203aab5b8411c9411ecac2c50d76ec10747ce0f68",
+      "text": "{\"new_episodes\": true, \"new_num_envs\": 2048, \"normalization_restored\": true, \"old_num_envs\": 64, \"optimizer_restored\": true, \"original_deadline\": 1792499655.8858402, \"policy_updates\": 5, \"source\": {\"bytes\": 10035996, \"completed_updates\": 5, \"path\": \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2/run/checkpoints/update_000005.pt\", \"policy_updates\": 5, \"sha256\": \"1240b976c040f4b754ec24e3581a83784b1c3d59ee93f4f9ba3340a9443067ae\"}}\n"
+    }
+  },
+  "log_tail": "ve_lower_unassisted_fraction\": 0.9434314469496409, \"Episode_Metrics/native_unassisted_env_fraction\": 1.0, \"Episode_Metrics/native_joint_geometric_stable_fraction\": 0.9195043295621872, \"Episode_Metrics/native_joint_geometric_success_5s\": 0.0764384934057792, \"Episode_Termination/time_out\": 4.75, \"Episode_Termination/out_of_terrain_bounds\": 0.0, \"Episode_Termination/nan_state\": 0.0, \"Episode_Termination/fell\": 0.041666666666666664, \"Episode_Termination/top_ball_lost\": 0.125}, \"learning_rate\": 5e-05, \"last_losses\": {\"value\": 0.13737855292856693, \"surrogate\": -0.004909605218563229, \"entropy\": -5.368269419670105}, \"prior_validation_reservations_preserved\": 4, \"validation_runs_added\": 1, \"latest_checkpoint\": {\"bytes\": 10036060, \"completed_updates\": 5950, \"path\": \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2/run/checkpoints/update_005950.pt\", \"policy_updates\": 5950, \"sha256\": \"9611e917e53535381f1613659d2720509b47bd7e0615e3b05f8f2f8d4accd070\"}}\n################################################################################\n\u001b[1m                          Learning iteration 5997/6000                          \u001b[0m \n\n                               Run name: native_training_v2\n                            Total steps: 294567936 \n                       Steps per second: 22419 \n                        Collection time: 2.008s \n                          Learning time: 0.185s \n                        Mean value loss: 0.0877\n                    Mean surrogate loss: -0.0033\n                      Mean entropy loss: -5.3339\n                            Mean reward: 85.13\n                    Mean episode length: 481.53\n                        Mean action std: 0.17\n   Episode_Reward/track_linear_velocity: 0.9143\n  Episode_Reward/track_angular_velocity: 0.3176\n                    Episode_Reward/pose: 0.5183\n            Episode_Reward/body_ang_vel: -0.0053\n        Episode_Reward/angular_momentum: -0.0000\n          Episode_Reward/dof_pos_limits: -0.0472\n          Episode_Reward/action_rate_l2: -0.6323\n         Episode_Reward/self_collisions: -0.0000\n                 Episode_Reward/upright: 0.9477\n                Episode_Reward/centered: 1.8518\n            Episode_Reward/feet_on_ball: 0.7678\n                  Episode_Reward/height: 0.8774\n              Episode_Reward/ball_speed: -0.0003\n          Episode_Reward/double_balance: 2.9489\n          Episode_Reward/top_ball_speed: -0.0002\nEpisode_Reward/head_surface_normal_tilt: -0.0002\n        Episode_Metrics/mean_action_acc: 0.4116\nEpisode_Metrics/top_ball_center_error_m: 0.0040\nEpisode_Metrics/top_ball_relative_speed_m_s: 0.0348\nEpisode_Metrics/native_lower_unassisted_fraction: 0.9412\nEpisode_Metrics/native_unassisted_env_fraction: 1.0000\nEpisode_Metrics/native_joint_geometric_stable_fraction: 0.9096\nEpisode_Metrics/native_joint_geometric_success_5s: 0.0642\n             Metrics/twist/error_vel_xy: 0.0637\n            Metrics/twist/error_vel_yaw: 0.4170\n           Episode_Termination/time_out: 4.0833\nEpisode_Termination/out_of_terrain_bounds: 0.0000\n          Episode_Termination/nan_state: 0.0000\n               Episode_Termination/fell: 0.0417\n      Episode_Termination/top_ball_lost: 0.1667\n          Metrics/angular_momentum_mean: 0.0021\n--------------------------------------------------------------------------------\n                         Iteration time: 2.19s\n                           Time elapsed: 03:51:33\n                                    ETA: 00:00:04\n\nNATIVE_TRAINING_PROGRESS={\"status\": \"TRAINING\", \"phase\": \"formal_ppo\", \"session\": 1, \"completed_updates\": 5998, \"max_updates\": 6000, \"remaining_validation_runs\": 0, \"historical_reserved_PPO\": 4, \"campaign_phase\": \"formal\", \"num_envs\": 2048, \"logging_backend\": \"tensorboard\", \"rollout_steps\": 24, \"attempted_updates\": 5998, \"policy_updates\": 5998, \"progress_percent\": 99.96666666666667, \"elapsed_seconds\": 14335.382742643356, \"head_reward_scale\": 1.0, \"unassisted_env_fraction\": 1.0, \"lower_unassisted_current_fraction\": 0.94384765625, \"joint_geometric_current_fraction\": 0.9267578125, \"mean_episode_length_steps\": 481.53, \"mean_reward\": 85.13341047286987, \"nan_resets_in_last_rollout\": 0, \"episode_metrics\": {\"Episode_Reward/double_balance\": 2.948890740672747, \"Episode_Metrics/top_ball_center_error_m\": 0.003999424981884658, \"Episode_Metrics/native_lower_unassisted_fraction\": 0.9412396724025408, \"Episode_Metrics/native_unassisted_env_fraction\": 1.0, \"Episode_Metrics/native_joint_geometric_stable_fraction\": 0.9096223836143812, \"Episode_Metrics/native_joint_geometric_success_5s\": 0.06423611131807168, \"Episode_Termination/time_out\": 4.083333333333333, \"Episode_Termination/out_of_terrain_bounds\": 0.0, \"Episode_Termination/nan_state\": 0.0, \"Episode_Termination/fell\": 0.041666666666666664, \"Episode_Termination/top_ball_lost\": 0.16666666666666666}, \"learning_rate\": 5e-05, \"last_losses\": {\"value\": 0.08770406246185303, \"surrogate\": -0.003335591370705515, \"entropy\": -5.3338603496551515}, \"prior_validation_reservations_preserved\": 4, \"validation_runs_added\": 1, \"latest_checkpoint\": {\"bytes\": 10036060, \"completed_updates\": 5950, \"path\": \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2/run/checkpoints/update_005950.pt\", \"policy_updates\": 5950, \"sha256\": \"9611e917e53535381f1613659d2720509b47bd7e0615e3b05f8f2f8d4accd070\"}}\n################################################################################\n\u001b[1m                          Learning iteration 5998/6000                          \u001b[0m \n\n                               Run name: native_training_v2\n                            Total steps: 294617088 \n                       Steps per second: 22717 \n                        Collection time: 1.949s \n                          Learning time: 0.215s \n                        Mean value loss: 0.0969\n                    Mean surrogate loss: -0.0056\n                      Mean entropy loss: -5.3026\n                            Mean reward: 84.06\n                    Mean episode length: 476.46\n                        Mean action std: 0.17\n   Episode_Reward/track_linear_velocity: 0.9207\n  Episode_Reward/track_angular_velocity: 0.3179\n                    Episode_Reward/pose: 0.5203\n            Episode_Reward/body_ang_vel: -0.0048\n        Episode_Reward/angular_momentum: -0.0000\n          Episode_Reward/dof_pos_limits: -0.0477\n          Episode_Reward/action_rate_l2: -0.6416\n         Episode_Reward/self_collisions: -0.0001\n                 Episode_Reward/upright: 0.9548\n                Episode_Reward/centered: 1.8708\n            Episode_Reward/feet_on_ball: 0.7736\n                  Episode_Reward/height: 0.8833\n              Episode_Reward/ball_speed: -0.0003\n          Episode_Reward/double_balance: 2.9768\n          Episode_Reward/top_ball_speed: -0.0002\nEpisode_Reward/head_surface_normal_tilt: -0.0002\n        Episode_Metrics/mean_action_acc: 0.4119\nEpisode_Metrics/top_ball_center_error_m: 0.0039\nEpisode_Metrics/top_ball_relative_speed_m_s: 0.0338\nEpisode_Metrics/native_lower_unassisted_fraction: 0.9462\nEpisode_Metrics/native_unassisted_env_fraction: 1.0000\nEpisode_Metrics/native_joint_geometric_stable_fraction: 0.9144\nEpisode_Metrics/native_joint_geometric_success_5s: 0.0278\n             Metrics/twist/error_vel_xy: 0.0649\n            Metrics/twist/error_vel_yaw: 0.4236\n           Episode_Termination/time_out: 4.3750\nEpisode_Termination/out_of_terrain_bounds: 0.0000\n          Episode_Termination/nan_state: 0.0000\n               Episode_Termination/fell: 0.0000\n      Episode_Termination/top_ball_lost: 0.2500\n          Metrics/angular_momentum_mean: 0.0021\n--------------------------------------------------------------------------------\n                         Iteration time: 2.16s\n                           Time elapsed: 03:51:35\n                                    ETA: 00:00:02\n\nNATIVE_TRAINING_PROGRESS={\"status\": \"TRAINING\", \"phase\": \"formal_ppo\", \"session\": 1, \"completed_updates\": 5999, \"max_updates\": 6000, \"remaining_validation_runs\": 0, \"historical_reserved_PPO\": 4, \"campaign_phase\": \"formal\", \"num_envs\": 2048, \"logging_backend\": \"tensorboard\", \"rollout_steps\": 24, \"attempted_updates\": 5999, \"policy_updates\": 5999, \"progress_percent\": 99.98333333333333, \"elapsed_seconds\": 14337.587512731552, \"head_reward_scale\": 1.0, \"unassisted_env_fraction\": 1.0, \"lower_unassisted_current_fraction\": 0.9482421875, \"joint_geometric_current_fraction\": 0.92236328125, \"mean_episode_length_steps\": 476.46, \"mean_reward\": 84.06031292438507, \"nan_resets_in_last_rollout\": 0, \"episode_metrics\": {\"Episode_Reward/double_balance\": 2.9767506817976632, \"Episode_Metrics/top_ball_center_error_m\": 0.0038791184779256582, \"Episode_Metrics/native_lower_unassisted_fraction\": 0.9462345913052559, \"Episode_Metrics/native_unassisted_env_fraction\": 1.0, \"Episode_Metrics/native_joint_geometric_stable_fraction\": 0.9144049535195032, \"Episode_Metrics/native_joint_geometric_success_5s\": 0.027777778295179207, \"Episode_Termination/time_out\": 4.375, \"Episode_Termination/out_of_terrain_bounds\": 0.0, \"Episode_Termination/nan_state\": 0.0, \"Episode_Termination/fell\": 0.0, \"Episode_Termination/top_ball_lost\": 0.25}, \"learning_rate\": 5e-05, \"last_losses\": {\"value\": 0.09692361690104008, \"surrogate\": -0.005645699164597317, \"entropy\": -5.302608323097229}, \"prior_validation_reservations_preserved\": 4, \"validation_runs_added\": 1, \"latest_checkpoint\": {\"bytes\": 10036060, \"completed_updates\": 5950, \"path\": \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2/run/checkpoints/update_005950.pt\", \"policy_updates\": 5950, \"sha256\": \"9611e917e53535381f1613659d2720509b47bd7e0615e3b05f8f2f8d4accd070\"}}\n################################################################################\n\u001b[1m                          Learning iteration 5999/6000                          \u001b[0m \n\n                               Run name: native_training_v2\n                            Total steps: 294666240 \n                       Steps per second: 21721 \n                        Collection time: 1.951s \n                          Learning time: 0.312s \n                        Mean value loss: 0.0771\n                    Mean surrogate loss: -0.0037\n                      Mean entropy loss: -5.2764\n                            Mean reward: 85.37\n                    Mean episode length: 484.21\n                        Mean action std: 0.17\n   Episode_Reward/track_linear_velocity: 0.9286\n  Episode_Reward/track_angular_velocity: 0.3148\n                    Episode_Reward/pose: 0.5166\n            Episode_Reward/body_ang_vel: -0.0054\n        Episode_Reward/angular_momentum: -0.0000\n          Episode_Reward/dof_pos_limits: -0.0479\n          Episode_Reward/action_rate_l2: -0.6482\n         Episode_Reward/self_collisions: -0.0000\n                 Episode_Reward/upright: 0.9634\n                Episode_Reward/centered: 1.8807\n            Episode_Reward/feet_on_ball: 0.7805\n                  Episode_Reward/height: 0.8928\n              Episode_Reward/ball_speed: -0.0003\n          Episode_Reward/double_balance: 2.9850\n          Episode_Reward/top_ball_speed: -0.0002\nEpisode_Reward/head_surface_normal_tilt: -0.0002\n        Episode_Metrics/mean_action_acc: 0.4126\nEpisode_Metrics/top_ball_center_error_m: 0.0037\nEpisode_Metrics/top_ball_relative_speed_m_s: 0.0334\nEpisode_Metrics/native_lower_unassisted_fraction: 0.9392\nEpisode_Metrics/native_unassisted_env_fraction: 1.0000\nEpisode_Metrics/native_joint_geometric_stable_fraction: 0.9153\nEpisode_Metrics/native_joint_geometric_success_5s: 0.0104\n             Metrics/twist/error_vel_xy: 0.0650\n            Metrics/twist/error_vel_yaw: 0.4423\n           Episode_Termination/time_out: 3.0833\nEpisode_Termination/out_of_terrain_bounds: 0.0000\n          Episode_Termination/nan_state: 0.0000\n               Episode_Termination/fell: 0.0000\n      Episode_Termination/top_ball_lost: 0.2083\n          Metrics/angular_momentum_mean: 0.0021\n--------------------------------------------------------------------------------\n                         Iteration time: 2.26s\n                           Time elapsed: 03:51:37\n                                    ETA: 00:00:00\n\nNATIVE_TRAINING_PROGRESS={\"status\": \"TRAINING\", \"phase\": \"formal_ppo\", \"session\": 1, \"completed_updates\": 6000, \"max_updates\": 6000, \"remaining_validation_runs\": 0, \"historical_reserved_PPO\": 4, \"campaign_phase\": \"formal\", \"num_envs\": 2048, \"logging_backend\": \"tensorboard\", \"rollout_steps\": 24, \"attempted_updates\": 6000, \"policy_updates\": 6000, \"progress_percent\": 100.0, \"elapsed_seconds\": 14339.905536651611, \"head_reward_scale\": 1.0, \"unassisted_env_fraction\": 1.0, \"lower_unassisted_current_fraction\": 0.95068359375, \"joint_geometric_current_fraction\": 0.9326171875, \"mean_episode_length_steps\": 484.21, \"mean_reward\": 85.3719886302948, \"nan_resets_in_last_rollout\": 0, \"episode_metrics\": {\"Episode_Reward/double_balance\": 2.985004350543022, \"Episode_Metrics/top_ball_center_error_m\": 0.003727007560276737, \"Episode_Metrics/native_lower_unassisted_fraction\": 0.9391849388678869, \"Episode_Metrics/native_unassisted_env_fraction\": 1.0, \"Episode_Metrics/native_joint_geometric_stable_fraction\": 0.9153189733624458, \"Episode_Metrics/native_joint_geometric_success_5s\": 0.010416666666666666, \"Episode_Termination/time_out\": 3.0833333333333335, \"Episode_Termination/out_of_terrain_bounds\": 0.0, \"Episode_Termination/nan_state\": 0.0, \"Episode_Termination/fell\": 0.0, \"Episode_Termination/top_ball_lost\": 0.20833333333333334}, \"learning_rate\": 5e-05, \"last_losses\": {\"value\": 0.07712585180997848, \"surrogate\": -0.0037291508517228065, \"entropy\": -5.2764139652252195}, \"prior_validation_reservations_preserved\": 4, \"validation_runs_added\": 1, \"latest_checkpoint\": {\"bytes\": 10036060, \"completed_updates\": 6000, \"path\": \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2/run/checkpoints/update_006000.pt\", \"policy_updates\": 6000, \"sha256\": \"f89a16643e949bc0e79ae6be77c5e12635cd7538b5bfe0bdef9a1cb37c802ee3\"}}\nNATIVE_TRAINING_RESULT={\"status\": \"TRAINING_BUDGET_COMPLETE\", \"phase\": \"formal_ppo\", \"session\": 1, \"completed_updates\": 6000, \"max_updates\": 6000, \"remaining_validation_runs\": 0, \"historical_reserved_PPO\": 4, \"campaign_phase\": \"formal\", \"num_envs\": 2048, \"logging_backend\": \"tensorboard\", \"rollout_steps\": 24, \"attempted_updates\": 6000, \"policy_updates\": 6000, \"progress_percent\": 100.0, \"elapsed_seconds\": 14339.905536651611, \"head_reward_scale\": 1.0, \"unassisted_env_fraction\": 1.0, \"lower_unassisted_current_fraction\": 0.95068359375, \"joint_geometric_current_fraction\": 0.9326171875, \"mean_episode_length_steps\": 484.21, \"mean_reward\": 85.3719886302948, \"nan_resets_in_last_rollout\": 0, \"episode_metrics\": {\"Episode_Reward/double_balance\": 2.985004350543022, \"Episode_Metrics/top_ball_center_error_m\": 0.003727007560276737, \"Episode_Metrics/native_lower_unassisted_fraction\": 0.9391849388678869, \"Episode_Metrics/native_unassisted_env_fraction\": 1.0, \"Episode_Metrics/native_joint_geometric_stable_fraction\": 0.9153189733624458, \"Episode_Metrics/native_joint_geometric_success_5s\": 0.010416666666666666, \"Episode_Termination/time_out\": 3.0833333333333335, \"Episode_Termination/out_of_terrain_bounds\": 0.0, \"Episode_Termination/nan_state\": 0.0, \"Episode_Termination/fell\": 0.0, \"Episode_Termination/top_ball_lost\": 0.20833333333333334}, \"learning_rate\": 5e-05, \"last_losses\": {\"value\": 0.07712585180997848, \"surrogate\": -0.0037291508517228065, \"entropy\": -5.2764139652252195}, \"prior_validation_reservations_preserved\": 4, \"validation_runs_added\": 1, \"latest_checkpoint\": {\"bytes\": 10036060, \"completed_updates\": 6000, \"path\": \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2/run/checkpoints/update_006000.pt\", \"policy_updates\": 6000, \"sha256\": \"f89a16643e949bc0e79ae6be77c5e12635cd7538b5bfe0bdef9a1cb37c802ee3\"}, \"finished_utc\": 1792485195.8652272, \"old_strict_audit_passed\": false, \"trained_successfully_not_yet_claimed\": true}\n",
+  "supervisor_tail": "MD12_NATIVE_STATE={\"slot\": \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2\", \"status\": \"TRAINING_BUDGET_COMPLETE\", \"progress\": {\"attempted_updates\": 6000, \"campaign_phase\": \"formal\", \"completed_updates\": 6000, \"elapsed_seconds\": 14339.905536651611, \"episode_metrics\": {\"Episode_Metrics/native_joint_geometric_stable_fraction\": 0.9153189733624458, \"Episode_Metrics/native_joint_geometric_success_5s\": 0.010416666666666666, \"Episode_Metrics/native_lower_unassisted_fraction\": 0.9391849388678869, \"Episode_Metrics/native_unassisted_env_fraction\": 1.0, \"Episode_Metrics/top_ball_center_error_m\": 0.003727007560276737, \"Episode_Reward/double_balance\": 2.985004350543022, \"Episode_Termination/fell\": 0.0, \"Episode_Termination/nan_state\": 0.0, \"Episode_Termination/out_of_terrain_bounds\": 0.0, \"Episode_Termination/time_out\": 3.0833333333333335, \"Episode_Termination/top_ball_lost\": 0.20833333333333334}, \"finished_utc\": 1792485195.8652272, \"head_reward_scale\": 1.0, \"historical_reserved_PPO\": 4, \"joint_geometric_current_fraction\": 0.9326171875, \"last_losses\": {\"entropy\": -5.2764139652252195, \"surrogate\": -0.0037291508517228065, \"value\": 0.07712585180997848}, \"latest_checkpoint\": {\"bytes\": 10036060, \"completed_updates\": 6000, \"path\": \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2/run/checkpoints/update_006000.pt\", \"policy_updates\": 6000, \"sha256\": \"f89a16643e949bc0e79ae6be77c5e12635cd7538b5bfe0bdef9a1cb37c802ee3\"}, \"learning_rate\": 5e-05, \"logging_backend\": \"tensorboard\", \"lower_unassisted_current_fraction\": 0.95068359375, \"max_updates\": 6000, \"mean_episode_length_steps\": 484.21, \"mean_reward\": 85.3719886302948, \"nan_resets_in_last_rollout\": 0, \"num_envs\": 2048, \"old_strict_audit_passed\": false, \"phase\": \"formal_ppo\", \"policy_updates\": 6000, \"prior_validation_reservations_preserved\": 4, \"progress_percent\": 100.0, \"remaining_validation_runs\": 0, \"rollout_steps\": 24, \"session\": 1, \"status\": \"TRAINING_BUDGET_COMPLETE\", \"trained_successfully_not_yet_claimed\": true, \"unassisted_env_fraction\": 1.0, \"validation_runs_added\": 1}, \"supervisor_alive\": true, \"training_alive\": false, \"new_training_budget\": {\"attempted_updates\": 6000, \"completed_updates\": 6000, \"deadline_utc\": 1792499655.8858402, \"historical_validation_reservations_preserved\": 4, \"interrupted_attempts\": 0, \"max_updates\": 6000, \"pending\": false, \"started_utc\": 1792470855.8858402, \"validation_runs_added\": 1}, \"latest_checkpoint\": {\"bytes\": 10036060, \"completed_updates\": 6000, \"path\": \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2/run/checkpoints/update_006000.pt\", \"policy_updates\": 6000, \"sha256\": \"f89a16643e949bc0e79ae6be77c5e12635cd7538b5bfe0bdef9a1cb37c802ee3\"}, \"initialization\": {\"bytes\": 10073500, \"kind\": \"stage08_selected_E\", \"path\": \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260929/segment-001/checkpoints/update_004000.pt\", \"sha256\": \"86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97\"}, \"configuration\": {\"additional_pretraining_validation_runs\": 1, \"historical_validation_PPO_reservations\": 4, \"intent\": \"one native smoke then formal joint finetuning; retained Stage08 E; no lower-only phase\", \"max_hours\": 8, \"max_updates\": 6000, \"num_envs\": 2048, \"package_identity\": \"dd6d1e1e697bcaa348dbdd92dd8c7b30ea31ae9c32599338106859ae7657523a\", \"seed\": 20261020, \"smoke_envs\": 64, \"smoke_max_minutes\": 30, \"smoke_updates\": 5}, \"legacy_attached\": false, \"campaign_exists\": true, \"remaining_validation_runs\": 0, \"historical_PPO_reservations_preserved\": 4, \"automatic_power_actions\": 0, \"power_state\": \"UNCONFIRMED\", \"smoke\": {\"checkpoint\": {\"bytes\": 10035996, \"completed_updates\": 5, \"path\": \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2/run/checkpoints/update_000005.pt\", \"policy_updates\": 5, \"sha256\": \"1240b976c040f4b754ec24e3581a83784b1c3d59ee93f4f9ba3340a9443067ae\"}, \"completed_updates\": 5, \"finished_utc\": 1792470963.1870499, \"num_envs\": 64, \"physical_success_required\": false, \"reload_verified\": true, \"status\": \"SMOKE_PASSED\", \"steps_per_env\": 24, \"transitions\": 7680}}\n",
+  "models_and_full_logs_retained_cloud_side": true,
+  "local_return_utc": "2026-10-20T08:33:28.718206+00:00",
+  "controller_package_identity": "dd6d1e1e697bcaa348dbdd92dd8c7b30ea31ae9c32599338106859ae7657523a"
+}

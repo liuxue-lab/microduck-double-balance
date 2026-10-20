@@ -1,0 +1,16 @@
+{
+  "controller": "/workspace/scratch/5d7345c481bf/microduck-stage12-selected-speed500-v1-20261020.py",
+  "bytes": 38160,
+  "sha256": "92010b8a4493a610d0bacdd0bf8651384e59f5bc64065052ff2c2363166aace4",
+  "source_bundle_sha256": "cc88c3fbc94c448f9884804bfebe9f9f3778a4d12ac78297370b508c4caa8df4",
+  "replay_package_identity": "c94a6eef7bb151a0780b0122c3a4ad99ef8cb634b52e697e888d4a1eafa1c7ac",
+  "checkpoint_sha256": "51821a28880aba74b80e6d5a388dfd7a82098bd3dca04a1e8947b4b2a8d5539a",
+  "evaluation_sha256": "0e9ff8b24f10929523f1a17e8cd791c6b73408b6f2905feb22e5524c36c92e81",
+  "selected_model": "speed-refine +500; cumulative policy 5000",
+  "maximum_local_control_steps": 1000,
+  "maximum_local_clips": 2,
+  "maximum_local_wall_seconds": 900,
+  "PPO": 0,
+  "cloud_GPU_jobs": 0,
+  "cloud_artifact_writes": 0
+}

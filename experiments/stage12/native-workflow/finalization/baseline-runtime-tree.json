@@ -1,0 +1,1689 @@
+{
+  "baseline_source_entries": {
+    "AGENTS.md": [
+      "100644",
+      "blob",
+      "70c833d14335b0a2ab19d5dc824c51395f0ae200"
+    ],
+    "LICENSE": [
+      "100644",
+      "blob",
+      "5babf660c98eac4418422e1a62a5d9fc51a4d63e"
+    ],
+    "LICENSE-HARDWARE": [
+      "100644",
+      "blob",
+      "567d8556ef01acc55a41abf26642de0bd50ce262"
+    ],
+    "NOTICE": [
+      "100644",
+      "blob",
+      "c28a9039326aaa61a46627999cc80e702d7b8bdf"
+    ],
+    "README.md": [
+      "100644",
+      "blob",
+      "50f72f878c5324a00398872a0d7246f39163fc57"
+    ],
+    "pyproject.toml": [
+      "100644",
+      "blob",
+      "0a1aa661b095008c4cf14ebfb5ff13c04f2e8450"
+    ],
+    "scripts/add_swing_angle_overlay.py": [
+      "100644",
+      "blob",
+      "d3d32a925b34de46bc5b56da3ea8e5b1486e214c"
+    ],
+    "scripts/analyze_head_contact_support.py": null,
+    "scripts/archive_stage08_results.py": [
+      "100644",
+      "blob",
+      "cc948e8cc52c53eff87cea44da8162267fe32a47"
+    ],
+    "scripts/audit_head_contact_bam_integration_sources.py": null,
+    "scripts/audit_head_contact_interface.py": null,
+    "scripts/audit_head_contact_reference.py": null,
+    "scripts/audit_head_contact_reset.py": null,
+    "scripts/audit_head_contact_tensor.py": null,
+    "scripts/audit_head_task_prototype.py": null,
+    "scripts/check_relative_links.py": [
+      "100644",
+      "blob",
+      "18f3d2a9bbd43afda5ce8acff2c77b0f88cc0c86"
+    ],
+    "scripts/collect_stage07_results.py": [
+      "100644",
+      "blob",
+      "1bd927e0c6c15e1e5e0d1d51aee4b3690113c827"
+    ],
+    "scripts/crouch_pose_editor.py": [
+      "100644",
+      "blob",
+      "1c8193f8d001c229a781d37463cc22efd69e600a"
+    ],
+    "scripts/diagnose_head_contact_candidate_runtime.py": null,
+    "scripts/diagnose_head_contact_cuda_center.py": null,
+    "scripts/diagnose_head_contact_cuda_friction.py": null,
+    "scripts/diagnose_head_contact_floor_cuda_events.py": null,
+    "scripts/diagnose_head_contact_floor_cuda_refinement.py": null,
+    "scripts/diagnose_head_contact_floor_cuda_schedule.py": null,
+    "scripts/diagnose_head_contact_floor_event_reference.py": null,
+    "scripts/diagnose_head_contact_floor_impact.py": null,
+    "scripts/diagnose_head_contact_floor_local_defect.py": null,
+    "scripts/diagnose_head_contact_floor_reference.py": null,
+    "scripts/diagnose_head_contact_floor_refinement.py": null,
+    "scripts/diagnose_head_contact_floor_rk_reference.py": null,
+    "scripts/diagnose_head_contact_floor_stiffness.py": null,
+    "scripts/diagnose_head_contact_friction.py": null,
+    "scripts/diagnose_head_contact_native_witness_runtime_v2.py": null,
+    "scripts/diagnose_stage07_local.py": [
+      "100644",
+      "blob",
+      "ec0fd857579fe381aa4933414972a80e38a87fe7"
+    ],
+    "scripts/download_stage08_wheels.py": [
+      "100644",
+      "blob",
+      "858e7b2501130a364036b12cda0e3c4c42b8b46d"
+    ],
+    "scripts/eval_basketball_checkpoint.py": [
+      "100644",
+      "blob",
+      "135b4bdfd15472a7952d0c59ca764554dc6cbc03"
+    ],
+    "scripts/eval_basketball_long.py": [
+      "100644",
+      "blob",
+      "b1f33fa97d7bce1970036d9296e067f75f2bacab"
+    ],
+    "scripts/evaluate_running_checkpoint.py": [
+      "100644",
+      "blob",
+      "d88cfee5fa806dab02a80a308605022d2e850221"
+    ],
+    "scripts/evaluate_stage08_batch.py": [
+      "100644",
+      "blob",
+      "f040cdbeb9fbea737571be0a2b7857efe3d72e56"
+    ],
+    "scripts/evaluate_swing_checkpoint.py": [
+      "100644",
+      "blob",
+      "0543c1112fbe518ae890d5bbc484e0eccf71efc9"
+    ],
+    "scripts/export.py": [
+      "100644",
+      "blob",
+      "333c0a34a995de9f3876ac33c85d819cc2c41516"
+    ],
+    "scripts/finalize_double_balance_stage06.py": [
+      "100644",
+      "blob",
+      "2c279eb3e7d4423765810139f3b58b148d2b4a61"
+    ],
+    "scripts/finetune_basketball.py": [
+      "100644",
+      "blob",
+      "997b1c102aee2dd8701847fa3c82669e32e94aa3"
+    ],
+    "scripts/freeze_stage08_selection.py": [
+      "100644",
+      "blob",
+      "374bbf69f7f6f761a128ef4b0bd27ade9c1aed22"
+    ],
+    "scripts/generate_swing_seat_collision_hulls.py": [
+      "100644",
+      "blob",
+      "4e45c70a0df6c5753712d2fcc2d36fc313f82b79"
+    ],
+    "scripts/head_contact_bounded_macro.py": null,
+    "scripts/head_contact_candidate_kernel.py": null,
+    "scripts/head_contact_candidate_runtime.py": null,
+    "scripts/head_contact_contact_macro.py": null,
+    "scripts/head_contact_data_commit.py": null,
+    "scripts/head_contact_data_commit_r3.py": null,
+    "scripts/head_contact_model_snapshot.py": null,
+    "scripts/head_contact_native_witness_kernel.py": null,
+    "scripts/head_contact_nominal_macro_state.py": null,
+    "scripts/head_contact_torch_state.py": null,
+    "scripts/head_contact_witness_kernel.py": null,
+    "scripts/hf/train_hf.py": [
+      "100644",
+      "blob",
+      "85b476e673472e869941376499d2cedd6253f3e3"
+    ],
+    "scripts/hf/uploader.py": [
+      "100644",
+      "blob",
+      "7c5f96621ed184ce9d60c7bc20edeecbb14d7833"
+    ],
+    "scripts/infer_policy.py": [
+      "100755",
+      "blob",
+      "f371b9d097273d5c0eae513e90cb386d8c72b60d"
+    ],
+    "scripts/interpolate_actor_checkpoints.py": [
+      "100644",
+      "blob",
+      "5fcfa2371411b7559ccbaa8b66746f286ca1db9b"
+    ],
+    "scripts/make_basketball_assets.py": [
+      "100644",
+      "blob",
+      "596787167adef712f8c066558ad5195ba963bc46"
+    ],
+    "scripts/measure_stage07_capacity.py": [
+      "100644",
+      "blob",
+      "d763440519f7126d7fdffb43c1286c2f31f220e0"
+    ],
+    "scripts/migrate_double_balance_checkpoint.py": [
+      "100644",
+      "blob",
+      "fbd1f09944f7d11f6bf2e8835f5be63f2653e520"
+    ],
+    "scripts/migrate_stage08_setup.py": [
+      "100644",
+      "blob",
+      "9d40c95c719926e91dce0d75d7c756f4615b305f"
+    ],
+    "scripts/play_latest.py": [
+      "100644",
+      "blob",
+      "0818d8b643bcc1a7c7646a2242740d74b05b412c"
+    ],
+    "scripts/plot_observations_comparison_plotly.py": [
+      "100755",
+      "blob",
+      "d3cb4b0ee272f1e2406bd05e2dcc59a5cc6bea2a"
+    ],
+    "scripts/plot_stage07_diagnostics.py": [
+      "100644",
+      "blob",
+      "e538a4ca113f1aad15c9a1b9cda1f71265ece0ac"
+    ],
+    "scripts/preflight_stage08_cloud.py": [
+      "100644",
+      "blob",
+      "3cd74cec8cbfa3a04baa2d306908e5f8c65037c3"
+    ],
+    "scripts/prepare_stage08_campaign.py": [
+      "100644",
+      "blob",
+      "990367cef43f30932dd3a531fdcc5b902a865c13"
+    ],
+    "scripts/probe_head_contact_bam_boundary.py": null,
+    "scripts/probe_head_contact_bam_boundary_r2.py": null,
+    "scripts/probe_head_contact_bam_boundary_r3.py": null,
+    "scripts/probe_head_contact_bam_macro_state.py": null,
+    "scripts/probe_head_contact_bam_macro_state_r2.py": null,
+    "scripts/probe_head_contact_contact_macro.py": null,
+    "scripts/probe_head_contact_cuda_normal.py": null,
+    "scripts/probe_head_contact_cuda_witness.py": null,
+    "scripts/probe_head_contact_dynamic_macro.py": null,
+    "scripts/probe_head_contact_dynamic_macro_r2.py": null,
+    "scripts/reconstruct_stilt_continuation.py": [
+      "100644",
+      "blob",
+      "115879336fff4f572be77d922521278eada538be"
+    ],
+    "scripts/recover_stage08_screening.py": [
+      "100644",
+      "blob",
+      "4623bf59aed0fa5ff26745a2e4e835479cbe3592"
+    ],
+    "scripts/render_checkpoint.py": [
+      "100644",
+      "blob",
+      "6a5d37bc5e2b6c8072bf5e100831ea03202fa507"
+    ],
+    "scripts/render_hardware_gallery.py": [
+      "100644",
+      "blob",
+      "4c8b6435be8ccad2dce0e4b04002872247aec3c9"
+    ],
+    "scripts/render_stage08_local.py": [
+      "100644",
+      "blob",
+      "916760798419ef951696f27d4a59acc0b37bf1a7"
+    ],
+    "scripts/retune_checkpoint_optimizer.py": [
+      "100644",
+      "blob",
+      "0dc9dcb905072e7b0f7d829f185454605887db31"
+    ],
+    "scripts/run_stage08_batch.py": [
+      "100644",
+      "blob",
+      "3ba26c7654ff3857414b7db8f4cec74b6028561c"
+    ],
+    "scripts/scale_actor_output_rows.py": [
+      "100644",
+      "blob",
+      "d741809f23db5a65df81c2f233523a1d43c76347"
+    ],
+    "scripts/stage09_cloud_launch.py": [
+      "100644",
+      "blob",
+      "549cad86b62caa26d91ab40f42f2488df4ea6522"
+    ],
+    "scripts/stage09_export_cloud.py": [
+      "100644",
+      "blob",
+      "43554a4a2308ff5d3630a803f78668d66367fecf"
+    ],
+    "scripts/stage09_finalize_local.py": [
+      "100644",
+      "blob",
+      "5799ba0edeced01a3fe0f93ed9b78521d8403ec2"
+    ],
+    "scripts/stage09_local_preflight.py": [
+      "100644",
+      "blob",
+      "d41a9c0abb7358a5d8b7088cac8148550ae558ad"
+    ],
+    "scripts/stage09_monitor.py": [
+      "100644",
+      "blob",
+      "3ea11c80b2027778e927201493895f8316a4c4f4"
+    ],
+    "scripts/stage09_recover_powerloss.py": [
+      "100644",
+      "blob",
+      "e4fdba46b80294b203fa4ef3e03b7ea639da337f"
+    ],
+    "scripts/stage10_ci_fix.py": [
+      "100644",
+      "blob",
+      "2826dee2ab121f2fe73c04dbc9c9023b082f1952"
+    ],
+    "scripts/stage10_diagnostics/analysis/inspect_constraints.py": [
+      "100644",
+      "blob",
+      "b0483f563d053445bad92c274b90b2516cc4958e"
+    ],
+    "scripts/stage10_diagnostics/analysis/review_batch_a.py": [
+      "100644",
+      "blob",
+      "baed0e5e27ae325a9080dd345a7a286cde0e8ff5"
+    ],
+    "scripts/stage10_diagnostics/analysis/review_geometry.py": [
+      "100644",
+      "blob",
+      "20557fc49d7dbb4f5574e35432add3634204bd7b"
+    ],
+    "scripts/stage10_diagnostics/analysis/review_initialization_c.py": [
+      "100644",
+      "blob",
+      "70d4a4ac989b9498c931c3c55c089b9fd0a26ee0"
+    ],
+    "scripts/stage10_diagnostics/analysis/review_substep_b.py": [
+      "100644",
+      "blob",
+      "84f9fac8db2fe0e3c8a8e1e66a0b297ff95e9c33"
+    ],
+    "scripts/stage10_diagnostics/analysis/roundoff_probe.py": [
+      "100644",
+      "blob",
+      "f6ac31227444980930f8a692da60e85817b18420"
+    ],
+    "scripts/stage10_diagnostics/finalization_checks/test_finalizer.py": [
+      "100644",
+      "blob",
+      "575ee34e8ae35e2068dd065e3f1e18a30826a6c4"
+    ],
+    "scripts/stage10_diagnostics/initialization_original/microduck-stage10-initialization.py": [
+      "100644",
+      "blob",
+      "74517a7aa752ed8e2d2aa1570c4867776232d7d6"
+    ],
+    "scripts/stage10_diagnostics/initialization_original/stage10_capture.py": [
+      "100644",
+      "blob",
+      "aa1d4c7b0118a774b18883a8d96db27abbe06a4c"
+    ],
+    "scripts/stage10_diagnostics/initialization_original/stage10_core.py": [
+      "100644",
+      "blob",
+      "7da63b04162b9147549e13341771c12d6fe2c777"
+    ],
+    "scripts/stage10_diagnostics/initialization_original/stage10_init_capture.py": [
+      "100644",
+      "blob",
+      "ce0a09159b267576b469602a11254f5543762ac7"
+    ],
+    "scripts/stage10_diagnostics/initialization_original/stage10_init_compare.py": [
+      "100644",
+      "blob",
+      "d5d50c29e1876ebfe1f952f463426f27c16c4a58"
+    ],
+    "scripts/stage10_diagnostics/initialization_original/stage10_runtime.py": [
+      "100644",
+      "blob",
+      "24365c7ef0c52e0d64f7cb5a9564eb4ab3e082f3"
+    ],
+    "scripts/stage10_diagnostics/initialization_original/stage10_trace.py": [
+      "100644",
+      "blob",
+      "7fccb42d53b70b61f5a528fa776c77ae01923678"
+    ],
+    "scripts/stage10_diagnostics/initialization_recovery/microduck-stage10-initialization-recovery.py": [
+      "100644",
+      "blob",
+      "7085a54f72f74f1cfb4d6a7c1d60bc7a910b55af"
+    ],
+    "scripts/stage10_diagnostics/initialization_recovery/stage10_capture.py": [
+      "100644",
+      "blob",
+      "aa1d4c7b0118a774b18883a8d96db27abbe06a4c"
+    ],
+    "scripts/stage10_diagnostics/initialization_recovery/stage10_core.py": [
+      "100644",
+      "blob",
+      "7da63b04162b9147549e13341771c12d6fe2c777"
+    ],
+    "scripts/stage10_diagnostics/initialization_recovery/stage10_init_capture.py": [
+      "100644",
+      "blob",
+      "ce0a09159b267576b469602a11254f5543762ac7"
+    ],
+    "scripts/stage10_diagnostics/initialization_recovery/stage10_init_compare.py": [
+      "100644",
+      "blob",
+      "36a1704d70cf7e96cc84d7577e166c367f40872d"
+    ],
+    "scripts/stage10_diagnostics/initialization_recovery/stage10_initialization_assistance.py": [
+      "100644",
+      "blob",
+      "89e27477f0154d13d292a0d7e201c16382b14760"
+    ],
+    "scripts/stage10_diagnostics/initialization_recovery/stage10_initialization_worker.py": [
+      "100644",
+      "blob",
+      "f6d2607e458409797f0941f07eedf53390468703"
+    ],
+    "scripts/stage10_diagnostics/initialization_recovery/stage10_recovery_common.py": [
+      "100644",
+      "blob",
+      "b6e3159c4d15df500f96cd00bd10c342f6778efa"
+    ],
+    "scripts/stage10_diagnostics/initialization_recovery/stage10_runtime.py": [
+      "100644",
+      "blob",
+      "24365c7ef0c52e0d64f7cb5a9564eb4ab3e082f3"
+    ],
+    "scripts/stage10_diagnostics/initialization_recovery/stage10_trace.py": [
+      "100644",
+      "blob",
+      "7fccb42d53b70b61f5a528fa776c77ae01923678"
+    ],
+    "scripts/stage10_diagnostics/initialization_recovery/test_recovery.py": [
+      "100644",
+      "blob",
+      "54dbf13170d5fd904f6e7555f06ac7ee6783061b"
+    ],
+    "scripts/stage10_diagnostics/repairs/rnn_reader_recovery.py": [
+      "100644",
+      "blob",
+      "c4f870babe45d3c4319c719bc3af8bb2e191e4c1"
+    ],
+    "scripts/stage10_diagnostics/repairs/runtime_check_fix.py": [
+      "100644",
+      "blob",
+      "730de667ce36401ab0985f06edfdb9023f7bc390"
+    ],
+    "scripts/stage10_diagnostics/repairs/tf32_fix.py": [
+      "100644",
+      "blob",
+      "a3c587828d1547ed28821f48ce58bbfa1c78f346"
+    ],
+    "scripts/stage10_diagnostics/replay/microduck-stage10-diagnostics.py": [
+      "100644",
+      "blob",
+      "8ad12760742bb9826d9b8183dadf6c1a42fcdc28"
+    ],
+    "scripts/stage10_diagnostics/replay/test_stage10_diagnostics.py": [
+      "100644",
+      "blob",
+      "78badab942736924ad2bd311ae365a6860d4c1e0"
+    ],
+    "scripts/stage10_diagnostics/source_audit.py": [
+      "100644",
+      "blob",
+      "84e9aebe6837cb8b95a62084da380e6d380e6d0e"
+    ],
+    "scripts/stage10_diagnostics/substep/microduck-stage10-substep.py": [
+      "100644",
+      "blob",
+      "651b7288b06d4f156b3f8cf785a8b4afa0577ecb"
+    ],
+    "scripts/stage10_diagnostics/substep/stage10_capture.py": [
+      "100644",
+      "blob",
+      "aa1d4c7b0118a774b18883a8d96db27abbe06a4c"
+    ],
+    "scripts/stage10_diagnostics/substep/stage10_core.py": [
+      "100644",
+      "blob",
+      "7da63b04162b9147549e13341771c12d6fe2c777"
+    ],
+    "scripts/stage10_diagnostics/substep/stage10_trace.py": [
+      "100644",
+      "blob",
+      "126228053ab2df75202da391097fa2892b438d31"
+    ],
+    "scripts/summarize_basketball_validation.py": [
+      "100644",
+      "blob",
+      "b2f9f45f1b1d48c6f2802278c2b05a0d580db6b5"
+    ],
+    "scripts/testbench_sim2real.py": [
+      "100644",
+      "blob",
+      "1ba3d58735767bd775142a84a8eaa67e52668f39"
+    ],
+    "scripts/validate_bam_testbench.py": [
+      "100644",
+      "blob",
+      "08455e7b3d854cee005e5ddfa7c42159493521a7"
+    ],
+    "scripts/validate_double_balance_checkpoint_migration.py": [
+      "100644",
+      "blob",
+      "244ca95db7b2bfd7f8d20dcd41547a8ee614c119"
+    ],
+    "scripts/validate_double_balance_physics.py": [
+      "100644",
+      "blob",
+      "e382fdc56cfa230e35ad7b3c0573f8904094d08a"
+    ],
+    "scripts/validate_double_balance_smoke.py": [
+      "100644",
+      "blob",
+      "fea756e0bae82ca5d941fbd115e24efa5168d7e5"
+    ],
+    "scripts/validate_double_balance_task_definition.py": [
+      "100644",
+      "blob",
+      "7c13fb2f60e0624c6e542cb753fb71e12f1fdbf3"
+    ],
+    "scripts/validate_head_contact_cuda_candidate.py": null,
+    "scripts/validate_head_contact_physics.py": null,
+    "scripts/verify_basketball_onnx_parity.py": [
+      "100644",
+      "blob",
+      "ecf36e7f1f6a4fe7fee9aa9ad16c63bb9702fe9a"
+    ],
+    "scripts/verify_stage07_local_archive.py": [
+      "100644",
+      "blob",
+      "a6385693b3296dc930d49fd66853267e4e82b2c3"
+    ],
+    "scripts/verify_stage08_local_archive.py": [
+      "100755",
+      "blob",
+      "01bcc5cf6cf212016294e53591a59ba39b99851f"
+    ],
+    "scripts/verify_swing_onnx_parity.py": [
+      "100644",
+      "blob",
+      "ef26892bc0d7399a1ce146875a64da2b222584e8"
+    ],
+    "scripts/view_slope_terrain.py": [
+      "100644",
+      "blob",
+      "fef271dd5974d27ef31483c4d322cc27257af954"
+    ],
+    "scripts/wandb_utils.py": [
+      "100644",
+      "blob",
+      "d55f7d425ba807211cb51745d6d60cdec5c54dd4"
+    ],
+    "src/mjlab_microduck/__init__.py": [
+      "100644",
+      "blob",
+      "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    ],
+    "src/mjlab_microduck/actuator/__init__.py": [
+      "100644",
+      "blob",
+      "170f7c0500c132c5cdb391c7693d8bcbc120b0b0"
+    ],
+    "src/mjlab_microduck/actuator/friction_dr_bam.py": [
+      "100644",
+      "blob",
+      "766bb4e9ac6de89acd5d621f8c3bcace4721060c"
+    ],
+    "src/mjlab_microduck/basketball_distillation.py": [
+      "100644",
+      "blob",
+      "8f32e67717b0d835e1642a16c3b8e3e406272694"
+    ],
+    "src/mjlab_microduck/basketball_finetune.py": [
+      "100644",
+      "blob",
+      "e296e3beb902eeec535809272cda4a9b15ac2b61"
+    ],
+    "src/mjlab_microduck/double_balance_checkpoint.py": [
+      "100644",
+      "blob",
+      "fdfb5b3e5b72004030d6f0343eebf07909d4f699"
+    ],
+    "src/mjlab_microduck/double_balance_checkpoint_validation.py": [
+      "100644",
+      "blob",
+      "8280167c5b76ba126208e9125c20fdfe75a7893c"
+    ],
+    "src/mjlab_microduck/double_balance_smoke.py": [
+      "100644",
+      "blob",
+      "62eb2a3ad9b2b8c3d2989376f6b1c4e4c0048ee9"
+    ],
+    "src/mjlab_microduck/double_balance_stage07.py": [
+      "100644",
+      "blob",
+      "0ff33a40504c4a07a442583320f5d944bff8370b"
+    ],
+    "src/mjlab_microduck/double_balance_stage08.py": [
+      "100644",
+      "blob",
+      "92848b6431e64a9637af2a6f0fb68cc7c17f3565"
+    ],
+    "src/mjlab_microduck/double_balance_stage08_budget.py": [
+      "100644",
+      "blob",
+      "f3f99564af6c417d895a2a20ced8d23b722fa19a"
+    ],
+    "src/mjlab_microduck/double_balance_stage08_evaluation.py": [
+      "100644",
+      "blob",
+      "e2e56813c00fb8ec3652628bf7f3bb469c27dc01"
+    ],
+    "src/mjlab_microduck/double_balance_stage08_plan.py": [
+      "100644",
+      "blob",
+      "930b4b798c00932a9ef4c36309bf8087bd05eb8a"
+    ],
+    "src/mjlab_microduck/double_balance_stage08_review.py": [
+      "100644",
+      "blob",
+      "dcab2015526d09ec7c3bc68cfd42c130f2046abb"
+    ],
+    "src/mjlab_microduck/double_balance_stage08_state.py": [
+      "100644",
+      "blob",
+      "dbdc4a0410b60d664b4dfefb354bea44aacf07fc"
+    ],
+    "src/mjlab_microduck/double_balance_stage09.py": [
+      "100644",
+      "blob",
+      "a2d475f697a9ff81c5fa9f4d803c61174a095fc2"
+    ],
+    "src/mjlab_microduck/double_balance_stage09_budget.py": [
+      "100644",
+      "blob",
+      "354de9d4a197afa659119c6729752cce16ea9b7e"
+    ],
+    "src/mjlab_microduck/double_balance_stage09_campaign.py": [
+      "100644",
+      "blob",
+      "e924741c9c33b970eaa8826cbb1c9f077a7ae561"
+    ],
+    "src/mjlab_microduck/double_balance_stage09_diagnostics.py": [
+      "100644",
+      "blob",
+      "b7bc47899328d9cf87b80ac893ae18b672b67f54"
+    ],
+    "src/mjlab_microduck/double_balance_stage09_evaluation.py": [
+      "100644",
+      "blob",
+      "4be866e274a53f6db0247c040477a83cf116fb7a"
+    ],
+    "src/mjlab_microduck/double_balance_stage09_plan.py": [
+      "100644",
+      "blob",
+      "f845b573b0111411ed5adf5018032fcd41e5aa56"
+    ],
+    "src/mjlab_microduck/double_balance_stage09_state.py": [
+      "100644",
+      "blob",
+      "1cdbfa84b69cb93f1e74c608a9b20b7c1e36f358"
+    ],
+    "src/mjlab_microduck/double_balance_training.py": [
+      "100644",
+      "blob",
+      "520d428b74f89428e1f8171ec43224b8a8eb885e"
+    ],
+    "src/mjlab_microduck/hf_jobs.py": [
+      "100644",
+      "blob",
+      "37fd23e09d7ac142d58275cb392519bf67de23b2"
+    ],
+    "src/mjlab_microduck/onnx_policy_contract.py": [
+      "100644",
+      "blob",
+      "3ba9b98a0cb38789c87e539df1bf4951401bb955"
+    ],
+    "src/mjlab_microduck/robot/__init__.py": [
+      "100644",
+      "blob",
+      "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    ],
+    "src/mjlab_microduck/robot/assets/basketball/basketball.obj": [
+      "100644",
+      "blob",
+      "f7d5f67c2c1d7b1eec597bace97184e8bc5095b8"
+    ],
+    "src/mjlab_microduck/robot/assets/basketball/basketball.png": [
+      "100644",
+      "blob",
+      "8755e6ccfdd39e6fc1b50850d8ced03d232bd8ba"
+    ],
+    "src/mjlab_microduck/robot/assets/basketball/basketball_preview.png": [
+      "100644",
+      "blob",
+      "9a881181886acea0155323e192e1f1fb35630fb8"
+    ],
+    "src/mjlab_microduck/robot/basketball.py": [
+      "100644",
+      "blob",
+      "c0136fc04e9f46e461d8691ef6fef18e30548725"
+    ],
+    "src/mjlab_microduck/robot/head_contact.py": null,
+    "src/mjlab_microduck/robot/head_reference.py": null,
+    "src/mjlab_microduck/robot/microduck/add_backlash.py": [
+      "100644",
+      "blob",
+      "aa35e16d3ce8b72b076d70a00f0b16a3944e2dca"
+    ],
+    "src/mjlab_microduck/robot/microduck/additional.xml": [
+      "100644",
+      "blob",
+      "25cc7d851fb54c25539486e88c50c2ffc69386ef"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/ankle_l_v1.stl": [
+      "100644",
+      "blob",
+      "1c6f20db7db4698e9e81c01b1a39814bd5b2c3d7"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/ankle_left.stl": [
+      "100644",
+      "blob",
+      "712488c2707191e5b0a35551eae10bc04c2e06df"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/ankle_r_v1.stl": [
+      "100644",
+      "blob",
+      "562399b378bf9f4a30c7724e8d94313c142d99e5"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/ankle_right.stl": [
+      "100644",
+      "blob",
+      "e60bbf205af71d224bcb89cefc3646117238c51f"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/banana_pcb_locker.stl": [
+      "100644",
+      "blob",
+      "b7b521560dd5c345fdae427e61dfb71158c1aa87"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/bearing_roll.stl": [
+      "100644",
+      "blob",
+      "a814312ea6b0921ab28e97238f1c7bee6cb646be"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/bottom_head_shell.stl": [
+      "100644",
+      "blob",
+      "643f11092df7f9f7c55e55c9c3e71d4e4c6cb27f"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/elec_rpi_robot_hat_pcb.stl": [
+      "100644",
+      "blob",
+      "09048bcf69bac09c72fb834b45161b9aaf2ec21f"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/face_part.stl": [
+      "100644",
+      "blob",
+      "0a27859ff2337baf9131c71f302667d8f6195da1"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/foot_left.stl": [
+      "100644",
+      "blob",
+      "43155ba3d9b1e40f6d8e6a4df7d30157ff202f75"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/foot_right.stl": [
+      "100644",
+      "blob",
+      "6971bbccdcfe1bf088f8ac618e772144d3a444fd"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/hip_l.stl": [
+      "100644",
+      "blob",
+      "516223995f17415282cade51e3383d058dc7fc8d"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/jaw.stl": [
+      "100644",
+      "blob",
+      "d7b0e12b5aae0b482a0bf7ca36e97f93f435637d"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/jaw_soft.stl": [
+      "100644",
+      "blob",
+      "3c8bb13ec4028a479378d8cf0bfd6c5e5283655d"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/left_shell.stl": [
+      "100644",
+      "blob",
+      "9cb1656883bf27581c93479865a57d2be4956982"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/left_upper_leg.stl": [
+      "100644",
+      "blob",
+      "b02cccbc748e925bbb33a98f9dfce7346581e730"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/leg.stl": [
+      "100644",
+      "blob",
+      "cc46130821755719727a27ebaea4e319b8303e01"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/lens.stl": [
+      "100644",
+      "blob",
+      "beff90540f3bebf4c43dfdfec8dba373e335e5ca"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/m12_lens_holder.stl": [
+      "100644",
+      "blob",
+      "23a01435a6bbd30ce4dd9d31a39402df4829d538"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/motor_support.stl": [
+      "100644",
+      "blob",
+      "810f089cf1ba3322678123a86dd648de83fd06b8"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/neck.stl": [
+      "100644",
+      "blob",
+      "ce34b0be3d7712548200dcf12111f709fd499aff"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/neck_pitch.stl": [
+      "100644",
+      "blob",
+      "1fd0ce0ec7e31e3f6cde20edf08f90a78554b8a9"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/noenoeil.stl": [
+      "100644",
+      "blob",
+      "40ef4d074244dd8e1eef792a76c075f6b4f725fc"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/np_f970.stl": [
+      "100644",
+      "blob",
+      "1ba95ee33747dc61cfcc17e54f8dc776cc342a1b"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/pcb__raspberry_pi_zero_2_w.stl": [
+      "100644",
+      "blob",
+      "83ad4e5343ac9ac4010f68634cca270b0247f86f"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/power_support.stl": [
+      "100644",
+      "blob",
+      "981bd2088b381691ac1b004c7b664d2af410ca63"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/right_shell.stl": [
+      "100644",
+      "blob",
+      "5879c3c7253fb9b2814227697ce6eb775d38df5a"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/right_upper_leg.stl": [
+      "100644",
+      "blob",
+      "d70b8403f19e14ee92fa67c841bf209951bf7174"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/rim.stl": [
+      "100644",
+      "blob",
+      "9a857697bd3079f145d980ed22bb140da824a933"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/roller_blade.stl": [
+      "100644",
+      "blob",
+      "12ceafecbf52995021621ba3a743ceb4cd515b08"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/seeed_bearing__configuration__22x16x4.stl": [
+      "100644",
+      "blob",
+      "56ab78aca4c937d65ce3effb9b6b71b6581b1671"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/seeed_bearing__configuration_default.stl": [
+      "100644",
+      "blob",
+      "4baeca23b342d5355fa43186f36ddba1be7ad597"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/soft_mouth_top.stl": [
+      "100644",
+      "blob",
+      "43e95157dc9527478d9ad5bea4571bdce18e4a8b"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/sole_left.stl": [
+      "100644",
+      "blob",
+      "1fe55aac746723d2f2181d5f7aaa5aa1bfedcb73"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/sole_right.stl": [
+      "100644",
+      "blob",
+      "7d22f5cddcb7af58dff8f6deb356279e00b68485"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/speaker.stl": [
+      "100644",
+      "blob",
+      "1f4de82900f5a13ef397d39a61b0b8985fb5c956"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_retention_buckle.stl": [
+      "100644",
+      "blob",
+      "5f645ec6812c0944b70a3da0db0566ad3523cb0c"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_retention_bumper_0.stl": [
+      "100644",
+      "blob",
+      "5abe5ae70e15fad219b55309192b160446da9e70"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_retention_bumper_1.stl": [
+      "100644",
+      "blob",
+      "709d8271f1c49cf1923c25f1aca3b949bad6c865"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_retention_bumper_2.stl": [
+      "100644",
+      "blob",
+      "662293c330a66e3a20fad271463e59ce491b2c02"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_retention_strap.stl": [
+      "100644",
+      "blob",
+      "6a845c9e54a87b9f649901e2d7055ce590acada7"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_00.stl": [
+      "100644",
+      "blob",
+      "5f3d131698f0829d1442b627431921181cfac257"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_01.stl": [
+      "100644",
+      "blob",
+      "5456fa94b9cb313e79294cb35aadb19b7f064b46"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_02.stl": [
+      "100644",
+      "blob",
+      "6ca5639b6401144f52df618bd5f52c4d26b76efe"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_03.stl": [
+      "100644",
+      "blob",
+      "ae0beb531f343b2044300d8596207435290c3d48"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_04.stl": [
+      "100644",
+      "blob",
+      "64f31c6090bc63d134d23c307d3773d4c1543c03"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_05.stl": [
+      "100644",
+      "blob",
+      "6b916f9a623ca5514e320957cece779173d08b8c"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_06.stl": [
+      "100644",
+      "blob",
+      "45bb2224a01c18ae06f2908cbf8dfed7221cecfa"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_07.stl": [
+      "100644",
+      "blob",
+      "bed5640658cd6de9b1831f1ec9ec4daf73fdc777"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_08.stl": [
+      "100644",
+      "blob",
+      "acd411c0571ec6beae7423038898a5bd738ce0d9"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_09.stl": [
+      "100644",
+      "blob",
+      "3522a231a1c5b3c0ccc177ab0bbedce290a6ad72"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_10.stl": [
+      "100644",
+      "blob",
+      "d652feaeaea50d63bdafefd441b96d1de10de677"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_11.stl": [
+      "100644",
+      "blob",
+      "f77e05a80572fe80f8f280568006fdecab1090ae"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_12.stl": [
+      "100644",
+      "blob",
+      "12504ed6afede6d8c1b0001138a85056e38c4364"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_13.stl": [
+      "100644",
+      "blob",
+      "e9eea5e9171efe203f5c3c333290c6a0eb2ee6d5"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_14.stl": [
+      "100644",
+      "blob",
+      "e923e1acec69b21ea24db71f4638ba38062bb641"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_15.stl": [
+      "100644",
+      "blob",
+      "66ed367ce9f438533b7149b22317a1448c99bb26"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_16.stl": [
+      "100644",
+      "blob",
+      "112b35557fd6fb2d5c3d96f116a29fca334defe9"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_17.stl": [
+      "100644",
+      "blob",
+      "a2f6536fd81373464eba050d778917c2c09ee9bc"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_18.stl": [
+      "100644",
+      "blob",
+      "e5d779b647f64abf5c54932672c67c56689947a8"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_19.stl": [
+      "100644",
+      "blob",
+      "4a0430fe47801a0910056ea5dff2089c6943bcbf"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_20.stl": [
+      "100644",
+      "blob",
+      "d7dd791b9c7875d2fbc30209cd5c44ce36e1e927"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_21.stl": [
+      "100644",
+      "blob",
+      "3beca07426a95e1b15e76c5e0f659c56e8e0fca2"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_22.stl": [
+      "100644",
+      "blob",
+      "2227a2192bf2dd58d94b0b2cb26e70458de10efa"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_23.stl": [
+      "100644",
+      "blob",
+      "7c0742b206aa630c6b30d7b5937587fdc4bc1ce3"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_24.stl": [
+      "100644",
+      "blob",
+      "c27a845d00f813b0d3243f6e49695fef6278af05"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_25.stl": [
+      "100644",
+      "blob",
+      "507c07b414d3a761631bfd382c4d478ca0238dd3"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_26.stl": [
+      "100644",
+      "blob",
+      "7a703f25d6d0ae4c070acf87a3d3cddf3189f4be"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_27.stl": [
+      "100644",
+      "blob",
+      "0f31d5d8a4bf902bef54cedaf0aeea497ff32b51"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_28.stl": [
+      "100644",
+      "blob",
+      "e7f9a767c8229320cb5a5c80998cd1798b39f97f"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_29.stl": [
+      "100644",
+      "blob",
+      "c2d3f4c4d7e5c1feb06a7fea5db6c3982956f514"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_30.stl": [
+      "100644",
+      "blob",
+      "34903c8189952696351fa5d42481d32bc5a8fa45"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_31.stl": [
+      "100644",
+      "blob",
+      "cafbfb678df6b6864978c2b5fa148cdb3a984bdb"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_32.stl": [
+      "100644",
+      "blob",
+      "b0e88739991ed7e4857d42d9b08719921f8a6b73"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_33.stl": [
+      "100644",
+      "blob",
+      "2910310c716d113932dcf8a15e35532bcec42828"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_34.stl": [
+      "100644",
+      "blob",
+      "568c047be5ee7769093be58c94a3023f55f70237"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_35.stl": [
+      "100644",
+      "blob",
+      "b88d60c73eb2bbe0ace49ae07735164c6339fc04"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_36.stl": [
+      "100644",
+      "blob",
+      "a18bf6084c704e43eec9d26c854c67ad4bbb9708"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_37.stl": [
+      "100644",
+      "blob",
+      "22dc4d35d42405121ff13ca04074eeb60266f3f1"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_38.stl": [
+      "100644",
+      "blob",
+      "1acf64ebcd4e9d48f380102ff5f85101c01d90ff"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_39.stl": [
+      "100644",
+      "blob",
+      "08899be47832b1cbce1ff4fbb4929ebc57250039"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_40.stl": [
+      "100644",
+      "blob",
+      "251b24dec939f01b4cdc7474c78802d3a44cdf33"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_41.stl": [
+      "100644",
+      "blob",
+      "9744b0ff25db0ab676848cf8339cc82f7a2dbfda"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_42.stl": [
+      "100644",
+      "blob",
+      "7dea081b1b3c18b8feb3ab9218dc26adec2b259d"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_43.stl": [
+      "100644",
+      "blob",
+      "228120b871e64fd1372bcfe8e9c909078166460c"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_44.stl": [
+      "100644",
+      "blob",
+      "925edad94f76fdfb4638cd5bea10bdc83a70ce25"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_45.stl": [
+      "100644",
+      "blob",
+      "cd326f740d64fda0be75ea22c61c888ad3971bcb"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_46.stl": [
+      "100644",
+      "blob",
+      "32bb139f502079a5db8a336be0c6cf1ced3eb438"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_47.stl": [
+      "100644",
+      "blob",
+      "e177d45522eb9411fd62dd4a69ca5fc8b4701877"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_48.stl": [
+      "100644",
+      "blob",
+      "602a95fc6b1f70b51262dddc95c0a5049ff896fb"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_49.stl": [
+      "100644",
+      "blob",
+      "05f73a519fb9dbd1313442a6ae8c86676b7d5a06"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_50.stl": [
+      "100644",
+      "blob",
+      "670a5db7230ef57fef40b67fa25f5a098cf9bf1f"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_51.stl": [
+      "100644",
+      "blob",
+      "c2af2b1ed6c18e226469bb1f914dd6597eddd9af"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_52.stl": [
+      "100644",
+      "blob",
+      "209036c471716ca60f2fafb08d62c1b270c006e5"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_53.stl": [
+      "100644",
+      "blob",
+      "b8c161ac5810d7e9f8d512d9d0feb8b699a93e59"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_54.stl": [
+      "100644",
+      "blob",
+      "b84edf8db133abc80e29e619b9f7ddb2764c9760"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_55.stl": [
+      "100644",
+      "blob",
+      "fd75e9b50bd1236c973ad895c07ada55b92fa138"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_56.stl": [
+      "100644",
+      "blob",
+      "639b39c98e2f9ae614866d4cb68594fc1eeb6e45"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_57.stl": [
+      "100644",
+      "blob",
+      "ecef6175b25d5d12a3980e9775ee81fc3186770e"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_58.stl": [
+      "100644",
+      "blob",
+      "b3eda5104d8ffb5d4f73a1681701b7cb5f7016be"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_59.stl": [
+      "100644",
+      "blob",
+      "12b3e9a2260dddcb8da3b33cbd981e738b0492b0"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_60.stl": [
+      "100644",
+      "blob",
+      "e2d864c3e478e587ef139b635271a8b369925182"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_61.stl": [
+      "100644",
+      "blob",
+      "5bdc3dccde2894d4a0c37be3f0c0561490912c4d"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_62.stl": [
+      "100644",
+      "blob",
+      "88e52669b98225c2d426368274289a1e9ed767be"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hull_63.stl": [
+      "100644",
+      "blob",
+      "6e81dda28fcaa08435718304c9c5a97614aebb19"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_collision_hulls.json": [
+      "100644",
+      "blob",
+      "71f8f563b77b584751b07adf2755ca7560a588c4"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/swing_seat_retained.stl": [
+      "100644",
+      "blob",
+      "7a6a70e8f04bf4b41314e85d43e930489ef65f81"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/tire.stl": [
+      "100644",
+      "blob",
+      "628feaa508354f055d2c0bcf95df4525c64e316c"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/top_head_shell.stl": [
+      "100644",
+      "blob",
+      "f446053309fc01ca0ddf866091995c173d9e1814"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/trunk_base.stl": [
+      "100644",
+      "blob",
+      "1fc5ea02be9583d292fc8c661095c9c76abbef87"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/trunk_shell_left.stl": [
+      "100644",
+      "blob",
+      "787f7107efcf90d6ce298249986a15037bed73f3"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/trunk_shell_right.stl": [
+      "100644",
+      "blob",
+      "eeac8d3f61282529846c4073e5d58f23812713e5"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/upper_leg_left.stl": [
+      "100644",
+      "blob",
+      "b02cccbc748e925bbb33a98f9dfce7346581e730"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/upper_leg_right.stl": [
+      "100644",
+      "blob",
+      "8427f7e7ac30e0f93d226ef5f87766e66eb6f868"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/upper_leg_rigidity_plate.stl": [
+      "100644",
+      "blob",
+      "8b00e8ed3e2c62909ca8c0dab30252e22e90179c"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/xl330.stl": [
+      "100644",
+      "blob",
+      "0ea8d4fa34037b0987a64a22a104bea0ff80a8b6"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/yaw2roll.stl": [
+      "100644",
+      "blob",
+      "4354d0ccc1acafe547b4fb9df34a8b612252521a"
+    ],
+    "src/mjlab_microduck/robot/microduck/assets/yaw_roll_motion.stl": [
+      "100644",
+      "blob",
+      "a69ce50c08ff5139171bddd80f6994b89d42cf66"
+    ],
+    "src/mjlab_microduck/robot/microduck/ball.xml": [
+      "100644",
+      "blob",
+      "42c3278eb5f5498e8204bc9696bf223c810e7d2e"
+    ],
+    "src/mjlab_microduck/robot/microduck/config_mjcf_allcollisions.json": [
+      "100644",
+      "blob",
+      "7e964fc6a07fa6fba2f7a8fbd5604fe7b72048c4"
+    ],
+    "src/mjlab_microduck/robot/microduck/config_mjcf_allcollisions_backlash.json": [
+      "100644",
+      "blob",
+      "1ec800b691d6c0de9ca59fb415db760574e590b3"
+    ],
+    "src/mjlab_microduck/robot/microduck/config_mjcf_allcollisions_rollers.json": [
+      "100644",
+      "blob",
+      "93bb0edb6a6db14ad71be1f137334dd02569b938"
+    ],
+    "src/mjlab_microduck/robot/microduck/config_mjcf_allcollisions_rollers_backlash.json": [
+      "100644",
+      "blob",
+      "c67f0cde11c1ea4ed79756542d42f39f335a00c7"
+    ],
+    "src/mjlab_microduck/robot/microduck/config_mjcf_walk.json": [
+      "100644",
+      "blob",
+      "43db1632f26ce5d421b03d1c4941b69ee2d8ee4c"
+    ],
+    "src/mjlab_microduck/robot/microduck/config_mjcf_walk_backlash.json": [
+      "100644",
+      "blob",
+      "fc1a83d27f945aa20ada665f2fc198e04ec7ddad"
+    ],
+    "src/mjlab_microduck/robot/microduck/joints_properties.xml": [
+      "100644",
+      "blob",
+      "ad2e7558204743c6532223e5f5d5f69c419250d4"
+    ],
+    "src/mjlab_microduck/robot/microduck/robot_allcollisions.xml": [
+      "100644",
+      "blob",
+      "7f296e3f85de71541cd5f5e3bda46ab2b463d547"
+    ],
+    "src/mjlab_microduck/robot/microduck/robot_allcollisions_backlash.xml": [
+      "100644",
+      "blob",
+      "c31684fb879cd3aef94a862e40e00c2919ba3341"
+    ],
+    "src/mjlab_microduck/robot/microduck/robot_allcollisions_rollers.xml": [
+      "100644",
+      "blob",
+      "f0eb02c44a0b8300fc873d51c710d881f6852f07"
+    ],
+    "src/mjlab_microduck/robot/microduck/robot_allcollisions_rollers_backlash.xml": [
+      "100644",
+      "blob",
+      "32e6dbce81f465f4b4f8fb72eea283c1d5e5b571"
+    ],
+    "src/mjlab_microduck/robot/microduck/robot_walk.xml": [
+      "100644",
+      "blob",
+      "2ee35d44e2177ce92416a91548669db3ae5453c3"
+    ],
+    "src/mjlab_microduck/robot/microduck/robot_walk_backlash.xml": [
+      "100644",
+      "blob",
+      "da94d438ab92196accc3e0045d531c3fbb7b204e"
+    ],
+    "src/mjlab_microduck/robot/microduck/scene.xml": [
+      "100644",
+      "blob",
+      "3ce5068fa88a9f9f9d1f9a2c3757f8f50a3e8dd6"
+    ],
+    "src/mjlab_microduck/robot/microduck/scene_backlash.xml": [
+      "100644",
+      "blob",
+      "1254e270be3ca68224de814d278d3b9782ecf8f9"
+    ],
+    "src/mjlab_microduck/robot/microduck/scene_ball.xml": [
+      "100644",
+      "blob",
+      "a7207f6aeb244aa810e12e21faab1d16f25787d2"
+    ],
+    "src/mjlab_microduck/robot/microduck/scene_rollers.xml": [
+      "100644",
+      "blob",
+      "5f15f9d0fb0ab327c5875abfe7a38f256f372ac9"
+    ],
+    "src/mjlab_microduck/robot/microduck/scene_walk.xml": [
+      "100644",
+      "blob",
+      "7aa25e52b609da73d759c7adc99233c7e63239bc"
+    ],
+    "src/mjlab_microduck/robot/microduck/scene_walk_backlash.xml": [
+      "100644",
+      "blob",
+      "0fba9a5e2fe909930058ebe6a26383b60240d05e"
+    ],
+    "src/mjlab_microduck/robot/microduck/sensors.xml": [
+      "100644",
+      "blob",
+      "a2be91b7ff8f47643fe0937eb2d89f91069827ba"
+    ],
+    "src/mjlab_microduck/robot/microduck_constants.py": [
+      "100644",
+      "blob",
+      "2d1a88115444484415cb2ee985358cf63d4fa98a"
+    ],
+    "src/mjlab_microduck/robot/stilt_constants.py": [
+      "100644",
+      "blob",
+      "47683279b578a2cde45f66ad230ec17bfec05cdd"
+    ],
+    "src/mjlab_microduck/robot/swing_geometry.py": [
+      "100644",
+      "blob",
+      "d1b22e530224129fca9113f5c2d6f5f9bb5e6f7f"
+    ],
+    "src/mjlab_microduck/robot/testbench_constants.py": [
+      "100644",
+      "blob",
+      "e676e5918a0f3b79630bba28667b8324e75cd258"
+    ],
+    "src/mjlab_microduck/robot/xl330_test_bench/assets/arm.stl": [
+      "100644",
+      "blob",
+      "a8dbbf40cc1925082c2554b550bee0a709df2200"
+    ],
+    "src/mjlab_microduck/robot/xl330_test_bench/assets/axis.stl": [
+      "100644",
+      "blob",
+      "7cd475fbbc17abd6c8953c03c9ab02c5d74b33e7"
+    ],
+    "src/mjlab_microduck/robot/xl330_test_bench/assets/bench_holder.stl": [
+      "100644",
+      "blob",
+      "32cfa186dccd172761f998cd5ec2b5566c058210"
+    ],
+    "src/mjlab_microduck/robot/xl330_test_bench/assets/part_1.stl": [
+      "100644",
+      "blob",
+      "a8dbbf40cc1925082c2554b550bee0a709df2200"
+    ],
+    "src/mjlab_microduck/robot/xl330_test_bench/assets/part_2.stl": [
+      "100644",
+      "blob",
+      "8219a169ad1351269a6bccd54f102a10f4332663"
+    ],
+    "src/mjlab_microduck/robot/xl330_test_bench/assets/part_3.stl": [
+      "100644",
+      "blob",
+      "32cfa186dccd172761f998cd5ec2b5566c058210"
+    ],
+    "src/mjlab_microduck/robot/xl330_test_bench/assets/part_4.stl": [
+      "100644",
+      "blob",
+      "b5590840b429965cf9f54fe299d25d8ae63cdff1"
+    ],
+    "src/mjlab_microduck/robot/xl330_test_bench/assets/part_5.stl": [
+      "100644",
+      "blob",
+      "7cd475fbbc17abd6c8953c03c9ab02c5d74b33e7"
+    ],
+    "src/mjlab_microduck/robot/xl330_test_bench/assets/spacer.stl": [
+      "100644",
+      "blob",
+      "8219a169ad1351269a6bccd54f102a10f4332663"
+    ],
+    "src/mjlab_microduck/robot/xl330_test_bench/assets/weight.stl": [
+      "100644",
+      "blob",
+      "b5590840b429965cf9f54fe299d25d8ae63cdff1"
+    ],
+    "src/mjlab_microduck/robot/xl330_test_bench/assets/xl330.stl": [
+      "100644",
+      "blob",
+      "0ea8d4fa34037b0987a64a22a104bea0ff80a8b6"
+    ],
+    "src/mjlab_microduck/robot/xl330_test_bench/config.json": [
+      "100644",
+      "blob",
+      "8d44975bcceb541ea54710ccf295cbfb1495c712"
+    ],
+    "src/mjlab_microduck/robot/xl330_test_bench/joints_properties.xml": [
+      "100644",
+      "blob",
+      "c0406a1cf62a96d05863c949e9c4e6ffa69cda6d"
+    ],
+    "src/mjlab_microduck/robot/xl330_test_bench/scene.xml": [
+      "100644",
+      "blob",
+      "4b9fa89bbdfb1106f9def3c284447f9acbb3bb4a"
+    ],
+    "src/mjlab_microduck/robot/xl330_test_bench/xl330_test_bench.xml": [
+      "100644",
+      "blob",
+      "14132ba3f49cd1a32be3672b8565fca3cfed9fca"
+    ],
+    "src/mjlab_microduck/tasks/__init__.py": [
+      "100644",
+      "blob",
+      "feb16d7b6cbadc505d0d07c8d06494cdd8b965b6"
+    ],
+    "src/mjlab_microduck/tasks/backlash.py": [
+      "100644",
+      "blob",
+      "44fdbb78a1236afa613199e9bf7fa6c3e34e4331"
+    ],
+    "src/mjlab_microduck/tasks/mdp.py": [
+      "100644",
+      "blob",
+      "6d7eef5673897b14ba44395bea999517469bc0c9"
+    ],
+    "src/mjlab_microduck/tasks/microduck_ball_kick_env_cfg.py": [
+      "100644",
+      "blob",
+      "34ea20cb1611a7e45c435b08e9ee5689700a5d3d"
+    ],
+    "src/mjlab_microduck/tasks/microduck_basketball_env_cfg.py": [
+      "100644",
+      "blob",
+      "59847c8afebc707be4711fbc99704256242f4958"
+    ],
+    "src/mjlab_microduck/tasks/microduck_double_balance_env_cfg.py": [
+      "100644",
+      "blob",
+      "011275c6302fc91dc10ae000457600c7818efe0a"
+    ],
+    "src/mjlab_microduck/tasks/microduck_ground_pick_env_cfg.py": [
+      "100644",
+      "blob",
+      "94df8b551a913fe22e3e21dace40cc7fbfee76d3"
+    ],
+    "src/mjlab_microduck/tasks/microduck_head_contact_env_cfg.py": null,
+    "src/mjlab_microduck/tasks/microduck_roller_crouch_env_cfg.py": [
+      "100644",
+      "blob",
+      "c37507d68ce9a99372994051b355141cda50d86e"
+    ],
+    "src/mjlab_microduck/tasks/microduck_roller_slope_env_cfg.py": [
+      "100644",
+      "blob",
+      "a39b601e14c6d080ce0b7c1ebae1329b1e7a13df"
+    ],
+    "src/mjlab_microduck/tasks/microduck_roller_standup_env_cfg.py": [
+      "100644",
+      "blob",
+      "872ad8c17cf6dfae3f8dea51a32518c25f75d7ad"
+    ],
+    "src/mjlab_microduck/tasks/microduck_roulade_env_cfg.py": [
+      "100644",
+      "blob",
+      "7ce9c51b1ca127df1f2cd90cd12ca51bef1590c0"
+    ],
+    "src/mjlab_microduck/tasks/microduck_running_env_cfg.py": [
+      "100644",
+      "blob",
+      "69919b4959541a555fa65487c6287f153e2282d1"
+    ],
+    "src/mjlab_microduck/tasks/microduck_sitstand_env_cfg.py": [
+      "100644",
+      "blob",
+      "fb8f8c6ceda9151dbb8e03aa2f0bec6c17b5247a"
+    ],
+    "src/mjlab_microduck/tasks/microduck_spin_env_cfg.py": [
+      "100644",
+      "blob",
+      "60cf32ef09064eba13a205e17cd05ce359d2b08a"
+    ],
+    "src/mjlab_microduck/tasks/microduck_standup_env_cfg.py": [
+      "100644",
+      "blob",
+      "358b567c75300551c3e1b0ccbcd378f481cb9f14"
+    ],
+    "src/mjlab_microduck/tasks/microduck_stilt_env_cfg.py": [
+      "100644",
+      "blob",
+      "2661a60b8067a03fe186fde79678d7e5a463e178"
+    ],
+    "src/mjlab_microduck/tasks/microduck_swing_env_cfg.py": [
+      "100644",
+      "blob",
+      "2b3d40ff4e0f74ca0d36a61a14bef90173442bd5"
+    ],
+    "src/mjlab_microduck/tasks/microduck_velocity_env_cfg.py": [
+      "100644",
+      "blob",
+      "45a1f6d5b7f5d81aa58dab777ed34f458a2f847c"
+    ],
+    "src/mjlab_microduck/tasks/microduck_velocity_rollers_env_cfg.py": [
+      "100644",
+      "blob",
+      "6967db9eb46e647a757408dad982025dc9d9cb66"
+    ],
+    "src/mjlab_microduck/tasks/microduck_velocity_swizzle_env_cfg.py": [
+      "100644",
+      "blob",
+      "104dfa1964699a045aea0981f6c9e471493d4acf"
+    ],
+    "src/mjlab_microduck/tasks/microduck_velstand_env_cfg.py": [
+      "100644",
+      "blob",
+      "3e1631243612c0c5b85e15b70b36f89de5480114"
+    ],
+    "src/mjlab_microduck/tasks/slope_terrain.py": [
+      "100644",
+      "blob",
+      "e4270fc6a211064f4137edd19a8e946275e1a83f"
+    ],
+    "src/mjlab_microduck/tasks/swing_planar_ppo.py": [
+      "100644",
+      "blob",
+      "02cd78843ca353f6b0ced4de46d26f914bbab06c"
+    ],
+    "src/mjlab_microduck/tasks/symmetry.py": [
+      "100644",
+      "blob",
+      "3c7b76832eabcc3fa9ba8c528c06daa67e165f5d"
+    ],
+    "src/mjlab_microduck/tasks/testbench_env_cfg.py": [
+      "100644",
+      "blob",
+      "7b6ebef8e75c20991a83c079ea2aebedef8e3103"
+    ],
+    "src/mjlab_microduck/train_cli.py": [
+      "100644",
+      "blob",
+      "0a6fd36fbd69525323cf22da0450d0bac5468ab4"
+    ],
+    "src/mjlab_microduck/video_effects.py": [
+      "100644",
+      "blob",
+      "77cf4cb8c4180593354a199a56fd6044720cec40"
+    ],
+    "uv.lock": [
+      "100644",
+      "blob",
+      "33f353bd46bf7907694381c4fda8c2290c1e7e15"
+    ]
+  },
+  "approved_runtime_changes": [
+    "scripts/analyze_head_contact_support.py",
+    "scripts/audit_head_contact_bam_integration_sources.py",
+    "scripts/audit_head_contact_interface.py",
+    "scripts/audit_head_contact_reference.py",
+    "scripts/audit_head_contact_reset.py",
+    "scripts/audit_head_contact_tensor.py",
+    "scripts/audit_head_task_prototype.py",
+    "scripts/diagnose_head_contact_candidate_runtime.py",
+    "scripts/diagnose_head_contact_cuda_center.py",
+    "scripts/diagnose_head_contact_cuda_friction.py",
+    "scripts/diagnose_head_contact_floor_cuda_events.py",
+    "scripts/diagnose_head_contact_floor_cuda_refinement.py",
+    "scripts/diagnose_head_contact_floor_cuda_schedule.py",
+    "scripts/diagnose_head_contact_floor_event_reference.py",
+    "scripts/diagnose_head_contact_floor_impact.py",
+    "scripts/diagnose_head_contact_floor_local_defect.py",
+    "scripts/diagnose_head_contact_floor_reference.py",
+    "scripts/diagnose_head_contact_floor_refinement.py",
+    "scripts/diagnose_head_contact_floor_rk_reference.py",
+    "scripts/diagnose_head_contact_floor_stiffness.py",
+    "scripts/diagnose_head_contact_friction.py",
+    "scripts/diagnose_head_contact_native_witness_runtime_v2.py",
+    "scripts/head_contact_bounded_macro.py",
+    "scripts/head_contact_candidate_kernel.py",
+    "scripts/head_contact_candidate_runtime.py",
+    "scripts/head_contact_contact_macro.py",
+    "scripts/head_contact_data_commit.py",
+    "scripts/head_contact_data_commit_r3.py",
+    "scripts/head_contact_model_snapshot.py",
+    "scripts/head_contact_native_witness_kernel.py",
+    "scripts/head_contact_nominal_macro_state.py",
+    "scripts/head_contact_torch_state.py",
+    "scripts/head_contact_witness_kernel.py",
+    "scripts/probe_head_contact_bam_boundary.py",
+    "scripts/probe_head_contact_bam_boundary_r2.py",
+    "scripts/probe_head_contact_bam_boundary_r3.py",
+    "scripts/probe_head_contact_bam_macro_state.py",
+    "scripts/probe_head_contact_bam_macro_state_r2.py",
+    "scripts/probe_head_contact_contact_macro.py",
+    "scripts/probe_head_contact_cuda_normal.py",
+    "scripts/probe_head_contact_cuda_witness.py",
+    "scripts/probe_head_contact_dynamic_macro.py",
+    "scripts/probe_head_contact_dynamic_macro_r2.py",
+    "scripts/validate_head_contact_cuda_candidate.py",
+    "scripts/validate_head_contact_physics.py",
+    "src/mjlab_microduck/robot/head_contact.py",
+    "src/mjlab_microduck/robot/head_reference.py",
+    "src/mjlab_microduck/tasks/mdp.py",
+    "src/mjlab_microduck/tasks/microduck_head_contact_env_cfg.py"
+  ],
+  "remote_base": "73ee01930a031d76a9d57419afdfd4464a547ab3"
+}

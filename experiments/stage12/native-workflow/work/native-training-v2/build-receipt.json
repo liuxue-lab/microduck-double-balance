@@ -1,0 +1,21 @@
+{
+  "package_identity": "dd6d1e1e697bcaa348dbdd92dd8c7b30ea31ae9c32599338106859ae7657523a",
+  "package_transport_bytes": 63613,
+  "bootstrap_bytes": 3191,
+  "controller": "/workspace/scratch/5d7345c481bf/microduck-stage12-native-train-v2-20261020.py",
+  "controller_bytes": 97242,
+  "controller_sha256": "5b57ef3a761757b9d2bd2c39e7faaa6713b1f4e29b54500f5e1ded13f33438cb",
+  "config": {
+    "package_identity": "dd6d1e1e697bcaa348dbdd92dd8c7b30ea31ae9c32599338106859ae7657523a",
+    "num_envs": 2048,
+    "max_updates": 6000,
+    "max_hours": 8,
+    "seed": 20261020,
+    "smoke_envs": 64,
+    "smoke_updates": 5,
+    "smoke_max_minutes": 30,
+    "historical_validation_PPO_reservations": 4,
+    "additional_pretraining_validation_runs": 1,
+    "intent": "one native smoke then formal joint finetuning; retained Stage08 E; no lower-only phase"
+  }
+}

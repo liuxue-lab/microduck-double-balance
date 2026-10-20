@@ -1,0 +1,13 @@
+{
+  "status": "OFFLINE_CANDIDATE_NOT_DEPLOYED",
+  "original_train_sha256": "9964065767bdfdcb0727ff74d6800843d6ed477f9664a4e3b42562d594e8b292",
+  "candidate_train_sha256": "8791db387abfc4cbc51a32a3ad18b240ac32e868298793fd581425d05b6c7dfa",
+  "controller_sha256": "22d02ae8b119b7fdae9a49b00bcd31c3749300bcb2a3bf8bb77fc3520da467fb",
+  "current_training_package_identity": "dd6d1e1e697bcaa348dbdd92dd8c7b30ea31ae9c32599338106859ae7657523a",
+  "original_controller_sha256": "5b57ef3a761757b9d2bd2c39e7faaa6713b1f4e29b54500f5e1ded13f33438cb",
+  "GPU_tested": false,
+  "speedup_measured": false,
+  "cloud_deployed": false,
+  "added_simulation_steps": 0,
+  "added_PPO_updates": 0
+}

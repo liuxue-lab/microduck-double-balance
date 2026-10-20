@@ -8828,3 +8828,247 @@ def stage09_head_margin_cost(env: ManagerBasedRlEnv, buffer_fraction: float = .0
     margin = torch.minimum(q-limits[..., 0], limits[..., 1]-q)
     buffer = buffer_fraction*width
     return torch.clamp((buffer-margin)/buffer, min=0.).square().sum(dim=-1)
+
+# --- Stage 11 head material reference: STATIC PROTOTYPE, NOT RELEASED ----------
+
+
+def stage11_head_release_block(env=None, env_ids=None, **kwargs):
+    """Fail closed until material convergence, crown and contact gates are defined."""
+    raise RuntimeError(
+        "STAGE11_STATIC_PROTOTYPE_ONLY: material/crown/contact acceptance is "
+        "unresolved; no environment stepping, policy loading or training release"
+    )
+
+
+def stage11_head_material_values(
+    ball_position, ball_velocity, ball_omega,
+    origin, origin_velocity, head_omega, rotation,
+):
+    """Batched rotating-frame position, its derivative, and relative spin.
+
+    rotation maps reference coordinates into world coordinates (N,3,3).
+    These rates are NOT contact-point slip. No invalid state is sanitized here.
+    """
+    offset = ball_position - origin
+    rate_world = ball_velocity - origin_velocity - torch.linalg.cross(
+        head_omega, offset, dim=-1
+    )
+    inverse = rotation.transpose(-1, -2)
+    rotate = lambda value: (inverse @ value.unsqueeze(-1)).squeeze(-1)
+    return rotate(offset), rotate(rate_world), rotate(ball_omega - head_omega)
+
+
+def _stage11_head_kinematics(env, reference_site="stage11_head_material_frame"):
+    robot, ball = env.scene["robot"], env.scene["top_ball"]
+    ids, _ = robot.find_sites("^" + reference_site + "$")
+    if len(ids) != 1:
+        raise ValueError("Expected one head material reference: " + reference_site)
+    site = ids[0]
+    pose = robot.data.site_pose_w[:, site]
+    return stage11_head_material_values(
+        ball.data.root_link_pos_w, ball.data.root_link_lin_vel_w,
+        ball.data.root_link_ang_vel_w, pose[:, :3],
+        robot.data.site_lin_vel_w[:, site], robot.data.site_ang_vel_w[:, site],
+        matrix_from_quat(pose[:, 3:7]),
+    )
+
+
+def stage11_head_features_from_values(position, rate, spin, privileged=False):
+    """6/9 values. Height is tangent-plane error, NOT true curved-surface gap."""
+    centered = position.clone()
+    centered[:, 2] -= 0.020
+    scale = centered.new_tensor((20., 25., 50.))
+    pieces = [centered * scale, rate * 2.]
+    if privileged:
+        pieces.append(spin * .2)
+    return torch.nan_to_num(torch.cat(pieces, dim=-1), nan=0., posinf=0., neginf=0.)
+
+
+def stage11_head_actor_state(env, reference_site="stage11_head_material_frame"):
+    return stage11_head_features_from_values(*_stage11_head_kinematics(env, reference_site))
+
+
+def stage11_head_critic_state(env, reference_site="stage11_head_material_frame"):
+    return stage11_head_features_from_values(
+        *_stage11_head_kinematics(env, reference_site), privileged=True
+    )
+
+
+def stage11_head_task_reward(env, reference_site="stage11_head_material_frame"):
+    position, rate, _ = _stage11_head_kinematics(env, reference_site)
+    score = double_balance_top_score_from_values(position, rate)
+    return torch.nan_to_num(score * double_balance_lower_score(env), nan=0., posinf=0., neginf=0.)
+
+
+def stage11_head_speed_l2(env, reference_site="stage11_head_material_frame"):
+    _, rate, _ = _stage11_head_kinematics(env, reference_site)
+    return torch.sum(rate.square(), dim=-1)
+
+
+def stage11_head_normal_tilt_l2(env, reference_site="stage11_head_material_frame"):
+    # Geometric reuse only: no tray exists in the derived Scene.
+    return double_balance_tray_tilt_l2(env, tray_site_name=reference_site)
+
+
+def stage11_head_center_error(env, reference_site="stage11_head_material_frame"):
+    position, _, _ = _stage11_head_kinematics(env, reference_site)
+    return torch.linalg.vector_norm(position[:, :2], dim=-1)
+
+
+def stage11_head_relative_speed(env, reference_site="stage11_head_material_frame"):
+    _, rate, _ = _stage11_head_kinematics(env, reference_site)
+    return torch.linalg.vector_norm(rate, dim=-1)
+
+
+def reset_stage11_head_reference(
+    env, env_ids, ball_radius=.12, root_height=.125, xy_noise=0.,
+    yaw_range=(0., 0.), tilt_noise_deg=0., joint_noise=0., ball_vel_noise=0.,
+):
+    """Nominal static-prototype reset; carry the audited material point/normal.
+
+    A noisy tangent-plane spawn is not a sphere/curved-mesh placement solver.
+    Reject it until explicitly designed. Free head joints remain unmodified.
+    """
+    if any(v != 0. for v in (xy_noise, *yaw_range, tilt_noise_deg, joint_noise, ball_vel_noise)):
+        raise ValueError("Stage11 prototype supports nominal reset only; no noise projection")
+    reset_basketball(
+        env, env_ids, ball_radius=ball_radius, root_height=root_height,
+        xy_noise=0., yaw_range=(0., 0.), tilt_noise_deg=0., joint_noise=0., ball_vel_noise=0.,
+    )
+    env.sim.forward()
+    robot, ball = env.scene["robot"], env.scene["top_ball"]
+    ids, _ = robot.find_sites("^stage11_head_material_frame$")
+    if len(ids) != 1:
+        raise ValueError("Expected one head material reference")
+    pose = robot.data.site_pose_w[env_ids, ids[0]]
+    local = torch.zeros(len(env_ids), 3, device=env.device)
+    local[:, 2] = .0205
+    position = pose[:, :3] + _quat_rotate(pose[:, 3:7], local)
+    quat = torch.zeros(len(env_ids), 4, device=env.device)
+    quat[:, 0] = 1.
+    ball.write_root_link_pose_to_sim(torch.cat((position, quat), dim=-1), env_ids=env_ids)
+    ball.write_root_link_velocity_to_sim(torch.zeros(len(env_ids), 6, device=env.device), env_ids=env_ids)
+
+
+# Stage 11: device-resident raw contact prototype; not connected to any task.
+def stage11_head_contact_tensor_values(state, contacts, ids, world_count):
+    """Read one already completed physics phase; no cache, timer or host copy.
+
+    All returned tensors own their storage. Invalid-data flags must be checked by
+    the diagnostic caller. This descriptive contact mask is not acceptance.
+    """
+    if world_count < 1:
+        raise ValueError("At least one world required")
+    position = state["xpos"][:, ids["ball_body"]]
+    origin = state["site_xpos"][:, ids["site"]]
+    rotation = state["site_xmat"][:, ids["site"]].reshape(world_count, 3, 3)
+    ball_cv = state["cvel"][:, ids["ball_body"]]
+    head_cv = state["cvel"][:, ids["head_body"]]
+    ball_com = state["subtree_com"][:, ids["ball_root"]]
+    head_com = state["subtree_com"][:, ids["head_root"]]
+    ball_velocity = ball_cv[:, 3:] + torch.cross(ball_cv[:, :3], position-ball_com, dim=-1)
+    origin_velocity = head_cv[:, 3:] + torch.cross(head_cv[:, :3], origin-head_com, dim=-1)
+    relative = ball_velocity-origin_velocity-torch.cross(head_cv[:, :3], position-origin, dim=-1)
+    inverse = rotation.transpose(-1, -2)
+    values = {
+        "ball_position": position, "ball_velocity": ball_velocity,
+        "ball_omega": ball_cv[:, :3], "head_omega": head_cv[:, :3],
+        "origin": origin, "rotation": rotation,
+        "position_material": (inverse@(position-origin).unsqueeze(-1)).squeeze(-1),
+        "rate_material": (inverse@relative.unsqueeze(-1)).squeeze(-1),
+    }
+    geom = contacts["geom"].long()
+    world = contacts["worldid"].long()
+    safe_world = world.clamp(0, world_count-1)
+    live = torch.arange(world.numel(), device=world.device) < contacts["nacon"].reshape(-1)[0]
+    in_world = (world >= 0) & (world < world_count)
+    first_ball, second_ball = geom[:, 0] == ids["ball_geom"], geom[:, 1] == ids["ball_geom"]
+    head = ((first_ball & (geom[:, 1] == ids["head_geom"])) | (second_ball & (geom[:, 0] == ids["head_geom"]))) & live
+    floor = ((first_ball & (geom[:, 1] == ids["floor_geom"])) | (second_ball & (geom[:, 0] == ids["floor_geom"]))) & live
+    target = (head | floor) & in_world
+    head = head & in_world
+    floor = floor & in_world
+    sign = torch.where(second_ball, 1., -1.).to(position.dtype)
+    normal = contacts["frame"][:, 0] * sign[:, None]
+    force = contacts["force_world"] * sign[:, None]
+    torque = contacts["torque_world"] * sign[:, None]
+    normal_force = (normal*force).sum(-1)
+    finite = torch.isfinite(torch.cat((contacts["pos"], normal, force, torque,
+                                     contacts["dist"][:, None]), dim=-1)).all(-1)
+    basis = contacts["frame"]
+    orthogonal = (basis@basis.transpose(-1, -2)-torch.eye(3, device=basis.device, dtype=basis.dtype)).abs().amax(dim=(-1,-2)) <= 2e-5
+    constraint = contacts["efc_address"].reshape(world.numel(), -1)[:, 0] >= 0
+    active = constraint & (contacts["dist"] <= 0) & (normal_force > 0) & finite & orthogonal
+    point = contacts["pos"]
+    v_ball_point = ball_velocity[safe_world] + torch.cross(ball_cv[safe_world, :3], point-position[safe_world], dim=-1)
+    v_head_point = head_cv[safe_world, 3:] + torch.cross(head_cv[safe_world, :3], point-head_com[safe_world], dim=-1)
+    relative_point = v_ball_point-v_head_point
+    slip = relative_point-(relative_point*normal).sum(-1, keepdim=True)*normal
+    values.update(contact_world=world, head_mask=head, floor_mask=floor,
+                  head_active_mask=head & active, floor_active_mask=floor & active,
+                  normal_to_ball=torch.where(target[:, None], normal, torch.zeros_like(normal)),
+                  force_on_ball=torch.where(target[:, None], force, torch.zeros_like(force)),
+                  torque_on_ball=torch.where(target[:, None], torque, torch.zeros_like(torque)),
+                  head_contact_slip=torch.where(head[:, None], slip, torch.zeros_like(slip)))
+    for name, mask in (("head", head), ("floor", floor)):
+        count=torch.zeros(world_count, dtype=torch.int64, device=world.device)
+        values[name+"_count"] = count.index_add(0, safe_world, mask.long())
+        values[name+"_active_count"] = count.index_add(0, safe_world, (mask & active).long())
+        total=torch.zeros(world_count, 3, dtype=force.dtype, device=force.device)
+        values[name+"_force_on_ball"] = total.index_add(0, safe_world, torch.where(mask[:, None], force, torch.zeros_like(force)))
+    invalid=torch.zeros(world_count, dtype=torch.int64, device=world.device)
+    invalid=invalid.index_add(0, safe_world, (target & ~(finite & orthogonal)).long())
+    derived_finite=torch.stack([torch.isfinite(values[k]).flatten(1).all(1) for k in
+                                ("ball_position","ball_velocity","ball_omega","head_omega","origin","rotation","position_material","rate_material")]).all(0)
+    values["valid_environment"] = derived_finite & (invalid == 0)
+    values["invalid_world_contacts"] = ((~in_world) & live).sum()
+    values["contact_capacity_ok"] = ((contacts["nacon"] >= 0) & (contacts["nacon"] < world.numel())).all()
+    return {name: value.clone() for name, value in values.items()}
+
+
+def stage11_head_contact_tensor_snapshot(sim, *, phase, revision, static_audit_only=False):
+    """Unregistered forward-only prototype. Full Manager integration is blocked.
+
+    Caller must complete a forward before capture. This function neither calls
+    forward/step nor invalidates sensors. data.time is not a contact timestamp.
+    """
+    if not static_audit_only or phase != "static_forward" or not isinstance(revision, int) or revision < 0:
+        raise RuntimeError("STATIC_INTERFACE_ONLY: runtime phases are not released")
+    import warp as wp
+    import mujoco_warp as mw
+    from contextlib import nullcontext
+    model, data = sim.mj_model, sim.wp_data
+    def unique(kind, count, suffix):
+        found=[i for i in range(count) if getattr(model,kind)(i).name.split("/")[-1]==suffix]
+        if len(found) != 1:
+            raise ValueError("Ambiguous contact identity: "+suffix)
+        return found[0]
+    hg=unique("geom",model.ngeom,"stage11_head_contact_surface")
+    bg=unique("geom",model.ngeom,"top_ball_sphere")
+    fg=unique("geom",model.ngeom,"terrain")
+    sid=unique("site",model.nsite,"stage11_head_material_frame")
+    hb,bb=int(model.geom_bodyid[hg]),int(model.geom_bodyid[bg])
+    ids=dict(head_geom=hg,ball_geom=bg,floor_geom=fg,site=sid,head_body=hb,ball_body=bb,
+             head_root=int(model.body_rootid[hb]),ball_root=int(model.body_rootid[bb]))
+    device=data.qpos.device
+    with wp.ScopedDevice(device):
+        # Order the current Torch stream after the producer's Warp stream.
+        if device.is_cuda:
+            stream=torch.cuda.current_stream(device.alias)
+            stream.wait_stream(torch.cuda.ExternalStream(wp.get_stream(device).cuda_stream, device=device.alias))
+            context=wp.ScopedStream(wp.stream_from_torch(stream), sync_exit=True)
+        else:
+            context=nullcontext()
+        with context:
+            capacity=data.naconmax
+            contact_ids=torch.arange(capacity, dtype=torch.int32, device=device.alias)
+            forces=wp.zeros(capacity, dtype=wp.spatial_vector, device=device)
+            mw.contact_force(sim.wp_model,data,wp.from_torch(contact_ids,dtype=wp.int32),True,forces)
+            ft=wp.to_torch(forces)
+            state={k:wp.to_torch(getattr(data,k)) for k in ("xpos","cvel","subtree_com","site_xpos","site_xmat")}
+            contacts={k:wp.to_torch(getattr(data.contact,k)) for k in ("worldid","geom","frame","pos","dist","efc_address")}
+            contacts.update(nacon=wp.to_torch(data.nacon),force_world=ft[:,:3],torque_world=ft[:,3:])
+            result=stage11_head_contact_tensor_values(state,contacts,ids,sim.num_envs)
+            result["data_time"]=wp.to_torch(data.time).clone()
+    return {"phase":phase,"revision":revision,"time_semantics":"data clock; NOT contact timestamp",
+            "tensors":result,"ids":ids}
