@@ -1,0 +1,140 @@
+{
+  "status": "CAMPAIGN_ERROR_PRESERVE",
+  "slot": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-headroom-constraint-v3",
+  "started": {
+    "approval": {
+      "automatic_extension": false,
+      "budget_origin": "Conservative implementation bounds disclosed in this conversation; running the explicit --train command starts this separate capped continuation.",
+      "cloud_power_actions_authorized": false,
+      "disturbance_training_in_this_budget": false,
+      "max_cleanup_seconds": 90,
+      "max_compute_seconds": 7200,
+      "max_formal_updates": 1500,
+      "max_heldout_episodes": 4,
+      "max_new_attempted_PPO_updates": 1505,
+      "max_selection_episodes": 6,
+      "old_budgets_frozen": true,
+      "parent_505_updates_remain_spent": true,
+      "power_preference": "Keep an already-running GPU available during this immediate preparation; user reports 2-hour restart delay.",
+      "schema": "stage12-headroom-v3-request-v1",
+      "smoke_updates_included": 5,
+      "source": "User: 修改好继续训练 5090关闭需要两个小时才能打开",
+      "status": "USER_REQUESTED_MODIFY_AND_CONTINUE",
+      "trajectory_training_authorized": false
+    },
+    "automatic_extension": false,
+    "automatic_retry": false,
+    "deadline_utc": 1792772878.2640696,
+    "disturbance_training": false,
+    "formal_environments": 4096,
+    "formal_updates": 1500,
+    "max_cleanup_seconds": 90,
+    "max_compute_seconds": 7200,
+    "max_evaluation_episodes": 10,
+    "max_updates": 1505,
+    "old_budgets_frozen": true,
+    "package_identity": "1516a70105dce20b5947df3644b54cf7a1b33f1b8d95e6553e4433c24f74f881",
+    "parent_policy_updates": 5505,
+    "parent_spent_updates": 505,
+    "smoke_environments": 64,
+    "smoke_updates": 5,
+    "source_checkpoint_sha256": "a3b2dda26bf99ee6676aef8a750e045b1d7243ef04d0d2272634395d0b9e5565",
+    "started_utc": 1792765678.2640696
+  },
+  "budget": {
+    "approval": "User requested modification and continuation; explicit v3 train command with disclosed caps",
+    "attempted_updates": 1,
+    "completed_updates": 1,
+    "deadline_utc": 1792772878.2640696,
+    "evaluations": {},
+    "max_evaluation_episodes": 10,
+    "max_updates": 1505,
+    "parent_spent_updates": 505,
+    "pending": null,
+    "phase_attempts": {
+      "segment-1": 0,
+      "segment-2": 0,
+      "segment-3": 0,
+      "smoke": 1
+    },
+    "phase_completed": {
+      "segment-1": 0,
+      "segment-2": 0,
+      "segment-3": 0,
+      "smoke": 1
+    },
+    "started_utc": 1792765678.2640696
+  },
+  "progress": {
+    "attempted_updates": 1,
+    "checked_baseline_goal_passed": false,
+    "completed_updates": 1,
+    "detail": "campaign_finished",
+    "elapsed_seconds": 14.41142463684082,
+    "error": "RuntimeError('Inplace update to inference tensor outside InferenceMode is not allowed.You can make a clone to get a normal tensor before doing inplace update.See https://github.com/pytorch/rfcs/pull/17 for more details.')",
+    "finished_utc": 1792765692.6754928,
+    "max_updates": 1505,
+    "num_envs": 64,
+    "original_deadline_utc": 1792772878.2640696,
+    "phase": "smoke",
+    "phase_target": 5,
+    "policy_updates": 5506,
+    "progress_percent": 0.0664451827242525,
+    "reason": null,
+    "rollout_steps": 24,
+    "status": "CAMPAIGN_ERROR_PRESERVE",
+    "traceback": "Traceback (most recent call last):\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-headroom-constraint-v3/package/train.py\", line 243, in main\n    boundary();runner.learn(remaining,init_at_random_ep_len=False);save_model()\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/rsl_rl/runners/on_policy_runner.py\", line 115, in learn\n    self.logger.log(\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-headroom-constraint-v3/package/train.py\", line 231, in log\n    joint_rollout=monitor.joint_stats.take_rollout(),\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-headroom-constraint-v3/package/joint_statistics.py\", line 89, in take_rollout\n    getattr(self, name).zero_()\nRuntimeError: Inplace update to inference tensor outside InferenceMode is not allowed.You can make a clone to get a normal tensor before doing inplace update.See https://github.com/pytorch/rfcs/pull/17 for more details.\n"
+  },
+  "session": {
+    "number": 1,
+    "original_deadline_utc": 1792772878.2640696,
+    "requested_utc": 1792765678.2640696,
+    "resume": false
+  },
+  "processes_alive": {
+    "supervisor": false,
+    "child": false
+  },
+  "selection": {
+    "candidate": null,
+    "history": []
+  },
+  "selected": null,
+  "added_PPO_updates": 1,
+  "package_identity": "1516a70105dce20b5947df3644b54cf7a1b33f1b8d95e6553e4433c24f74f881",
+  "power_state": "UNCONFIRMED",
+  "power_action": "NONE",
+  "exit": {
+    "added_PPO_updates": 1,
+    "automatic_retry": false,
+    "checked_baseline_goal_passed": false,
+    "disturbance_goal_passed": false,
+    "error": {
+      "error": "RuntimeError('WORKER_RETURN_train_smoke_2')",
+      "traceback": "Traceback (most recent call last):\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-headroom-constraint-v3/package/agent.py\", line 189, in supervise\n    training_phase('smoke')\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-headroom-constraint-v3/package/agent.py\", line 157, in training_phase\n    number=run_worker('train',phase,fd,deadline,stopped)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-headroom-constraint-v3/package/agent.py\", line 130, in run_worker\n    require(child.returncode==0,'WORKER_RETURN_%s_%s_%s'%(kind,phase,child.returncode))\n  File \"/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-headroom-constraint-v3/package/budget.py\", line 14, in require\n    raise RuntimeError(message)\nRuntimeError: WORKER_RETURN_train_smoke_2\n"
+    },
+    "finished_utc": 1792765694.28626,
+    "instance_power_state": "UNCONFIRMED",
+    "original_deadline_utc": 1792772878.2640696,
+    "original_inputs_and_records_unchanged": true,
+    "power_action": "NONE",
+    "reason": null,
+    "session": 1,
+    "status": "CAMPAIGN_ERROR_PRESERVE"
+  },
+  "log_tail": "src.smooth 95a0b8b load on device 'cuda:0' took 3.87 ms  (cached)\nModule mujoco_warp._src.collision_driver 88f7770 load on device 'cuda:0' took 0.48 ms  (cached)\nModule _nxn_broadphase__locals__kernel_e73b1315 e73b131 load on device 'cuda:0' took 0.49 ms  (cached)\nModule ccd_kernel_builder__locals__ccd_kernel_c1d0c893 c1d0c89 load on device 'cuda:0' took 2.20 ms  (cached)\nModule ccd_kernel_builder__locals__ccd_kernel_079dfa94 079dfa9 load on device 'cuda:0' took 2.75 ms  (cached)\nModule _primitive_narrowphase__locals__primitive_narrowphase_02484c54 02484c5 load on device 'cuda:0' took 0.84 ms  (cached)\nModule mujoco_warp._src.constraint 27c5750 load on device 'cuda:0' took 2.52 ms  (cached)\nModule _efc_contact_init__locals__kernel_fda71e14 fda71e1 load on device 'cuda:0' took 0.54 ms  (cached)\nModule _efc_contact_jac_dense__locals__kernel_7974b597 cc0fc30 load on device 'cuda:0' took 0.58 ms  (cached)\nModule _efc_contact_update__locals__kernel_90315d53 90315d5 load on device 'cuda:0' took 0.54 ms  (cached)\nModule mujoco_warp._src.sensor 7fc0378 load on device 'cuda:0' took 3.71 ms  (cached)\nModule mujoco_warp._src.forward f60f76d load on device 'cuda:0' took 1.99 ms  (cached)\nModule mujoco_warp._src.passive 1a5e55c load on device 'cuda:0' took 1.21 ms  (cached)\nModule mujoco_warp._src.forward 8ebfcb1 load on device 'cuda:0' took 2.40 ms  (cached)\nModule mujoco_warp._src.support dd3f924 load on device 'cuda:0' took 0.51 ms  (cached)\nModule _tile_cholesky_factorize_solve__locals__cholesky_factorize_solve_37ca3f47 b319ac8 load on device 'cuda:0' took 40.57 ms  (cached)\nModule _tile_cholesky_factorize_solve__locals__cholesky_factorize_solve_b16bf393 b7e5d5f load on device 'cuda:0' took 40.24 ms  (cached)\nModule mujoco_warp._src.solver b116efb load on device 'cuda:0' took 2.09 ms  (cached)\nModule solve_init_jaref__locals__kernel_f7b9551f f7b9551 load on device 'cuda:0' took 0.53 ms  (cached)\nModule mul_m_dense__locals___mul_m_dense_09448261 0944826 load on device 'cuda:0' took 0.51 ms  (cached)\nModule update_constraint_efc__locals__kernel_32935e9d 32935e9 load on device 'cuda:0' took 0.52 ms  (cached)\nModule update_constraint_gauss_cost__locals__kernel_b303498c b303498 load on device 'cuda:0' took 0.55 ms  (cached)\nModule update_gradient_JTDAJ_dense_tiled__locals__kernel_8d0ad4dc c104ab8 load on device 'cuda:0' took 0.86 ms  (cached)\nModule update_gradient_cholesky__locals__kernel_5daa9511 fff2fc4 load on device 'cuda:0' took 44.65 ms  (cached)\nModule linesearch_jv_fused__locals__kernel_0fd374d3 0fd374d load on device 'cuda:0' took 0.54 ms  (cached)\nModule linesearch_prepare_gauss__locals__kernel_536c55c0 536c55c load on device 'cuda:0' took 0.57 ms  (cached)\nModule update_constraint_efc__locals__kernel_3c1a9816 3c1a981 load on device 'cuda:0' took 0.53 ms  (cached)\nModule _contact_sort__locals__contact_sort_304c86df 6c97b35 load on device 'cuda:0' took 0.51 ms  (cached)\nModule mujoco_warp._src.derivative d0e2fd7 load on device 'cuda:0' took 1.04 ms  (cached)\nModule reset_data__locals__reset_xfrc_applied_e7898c5c e7898c5 load on device 'cuda:0' took 0.47 ms  (cached)\nModule reset_data__locals__reset_qM_10d3c793 10d3c79 load on device 'cuda:0' took 0.39 ms  (cached)\nModule reset_data__locals__reset_mocap_ff71f630 ff71f63 load on device 'cuda:0' took 0.40 ms  (cached)\nModule reset_data__locals__reset_contact_df686d47 df686d4 load on device 'cuda:0' took 0.39 ms  (cached)\nModule reset_data__locals__reset_nworld_6e0d904e 6e0d904 load on device 'cuda:0' took 0.59 ms  (cached)\n[BamActuator] model='m6' joints=14 kt=0.3660 R=2.8114 vin=range=(6.5, 8.2) drop_gain_range=(0.0, 0.2) force_limit=±1.07Nm friction_base=0.0048 friction_viscous=0.0054 envs=64 device=cuda:0\nModule mujoco_warp._src.render_util 94fd13e load on device 'cuda:0' took 0.76 ms  (cached)\nModule mujoco_warp._src.bvh 08f985a load on device 'cuda:0' took 1.15 ms  (cached)\nModule mujoco_warp._src.ray c8f2bb3 load on device 'cuda:0' took 1.15 ms  (cached)\n\n+-------------------------------------+\n|           Base Environment          |\n+------------------------+------------+\n| Property               | Value      |\n+------------------------+------------+\n| Number of environments | 64         |\n| Environment device     | cuda:0     |\n| Environment seed       | 2026102400 |\n| Physics step-size      | 0.002      |\n| Environment step-size  | 0.02       |\n+------------------------+------------+\n\n[INFO] <EventManager> contains 2 active terms.\n+---------------------------------------+\n| Active Event Terms in Mode: 'startup' |\n+-------+-------------------------------+\n| Index | Name                          |\n+-------+-------------------------------+\n|   0   | native_head_geometry          |\n|   1   | foot_friction                 |\n|   2   | encoder_bias                  |\n|   3   | base_com                      |\n|   4   | expand_bam_friction_fields    |\n|   5   | randomize_mass_inertia        |\n+-------+-------------------------------+\n+-------------------------------------+\n| Active Event Terms in Mode: 'reset' |\n+-------+-----------------------------+\n| Index | Name                        |\n+-------+-----------------------------+\n|   0   | reset_native_head           |\n|   1   | reset_action_history        |\n|   2   | randomize_com               |\n|   3   | randomize_head_com          |\n|   4   | randomize_joint_friction    |\n|   5   | randomize_armature          |\n+-------+-----------------------------+\n+-----------------------------+\n| Domain Randomization Fields |\n+-------+---------------------+\n| Index | Field Name          |\n+-------+---------------------+\n|   0   | geom_friction       |\n|   1   | body_ipos           |\n|   2   | body_subtreemass    |\n|   3   | dof_invweight0      |\n|   4   | body_invweight0     |\n|   5   | tendon_length0      |\n|   6   | tendon_invweight0   |\n|   7   | dof_frictionloss    |\n|   8   | dof_damping         |\n|   9   | body_mass           |\n|   10  | body_inertia        |\n|   11  | body_iquat          |\n|   12  | dof_armature        |\n+-------+---------------------+\n\nModule repeat_array_kernel_39317a34 b712927 load on device 'cuda:0' took 0.47 ms  (cached)\nModule repeat_array_kernel_39317a34 18fcc7e load on device 'cuda:0' took 0.47 ms  (cached)\nModule repeat_array_kernel_39317a34 5cde7e8 load on device 'cuda:0' took 0.53 ms  (cached)\nModule repeat_array_kernel_39317a34 0fe3117 load on device 'cuda:0' took 0.57 ms  (cached)\n[INFO] <CommandManager> contains 1 active terms.\n+--------------------------------------------+\n|            Active Command Terms            |\n+-------+-------+----------------------------+\n| Index | Name  |            Type            |\n+-------+-------+----------------------------+\n|   0   | twist | VelocityCommandCommandOnly |\n+-------+-------+----------------------------+\n\n[INFO] <ActionManager> contains 2 active terms.\n+---------------------------------+\n| Active Action Terms (shape: 14) |\n+-------+-----------+-------------+\n| Index | Name      |   Dimension |\n+-------+-----------+-------------+\n|   0   | joint_pos |          14 |\n|   1   | ball_hold |           0 |\n+-------+-----------+-------------+\n\n[INFO] <ObservationManager> contains 2 groups.\n+-----------------------------------------------------------+\n| Active Observation Terms in Group: 'actor' (shape: (61,)) |\n+-----------+----------------------------------+------------+\n|   Index   | Name                             |   Shape    |\n+-----------+----------------------------------+------------+\n|     0     | base_ang_vel                     |    (3,)    |\n|     1     | projected_gravity                |    (3,)    |\n|     2     | joint_pos                        |   (14,)    |\n|     3     | joint_vel                        |   (14,)    |\n|     4     | actions                          |   (14,)    |\n|     5     | command                          |    (3,)    |\n|     6     | head_command                     |    (4,)    |\n|     7     | body_command                     |    (6,)    |\n+-----------+----------------------------------+------------+\n+------------------------------------------------------------+\n| Active Observation Terms in Group: 'critic' (shape: (85,)) |\n+----------+------------------------------------+------------+\n|  Index   | Name                               |   Shape    |\n+----------+------------------------------------+------------+\n|    0     | base_lin_vel                       |    (3,)    |\n|    1     | base_ang_vel                       |    (3,)    |\n|    2     | projected_gravity                  |    (3,)    |\n|    3     | joint_pos                          |   (14,)    |\n|    4     | joint_vel                          |   (14,)    |\n|    5     | actions                            |   (14,)    |\n|    6     | command                            |    (3,)    |\n|    7     | foot_height                        |    (2,)    |\n|    8     | foot_air_time                      |    (2,)    |\n|    9     | foot_contact                       |    (2,)    |\n|    10    | foot_contact_forces                |    (6,)    |\n|    11    | head_command                       |    (4,)    |\n|    12    | body_command                       |    (6,)    |\n|    13    | top_ball_state                     |    (9,)    |\n+----------+------------------------------------+------------+\n\n[INFO] <TerminationManager> contains 5 active terms.\n+------------------------------------------+\n|         Active Termination Terms         |\n+-------+-----------------------+----------+\n| Index | Name                  | Time Out |\n+-------+-----------------------+----------+\n|   0   | time_out              |   True   |\n|   1   | out_of_terrain_bounds |   True   |\n|   2   | nan_state             |  False   |\n|   3   | fell                  |  False   |\n|   4   | top_ball_lost         |  False   |\n+-------+-----------------------+----------+\n\n[INFO] <RewardManager> contains 18 active terms.\n+-------------------------------------------+\n|            Active Reward Terms            |\n+-------+--------------------------+--------+\n| Index | Name                     | Weight |\n+-------+--------------------------+--------+\n|   0   | track_linear_velocity    |    1.0 |\n|   1   | track_angular_velocity   |    0.5 |\n|   2   | pose                     |    1.0 |\n|   3   | body_ang_vel             |  -0.05 |\n|   4   | angular_momentum         |  -0.02 |\n|   5   | dof_pos_limits           |   -1.0 |\n|   6   | action_rate_l2           |   -0.4 |\n|   7   | self_collisions          |   -1.0 |\n|   8   | upright                  |    1.0 |\n|   9   | centered                 |    2.0 |\n|   10  | feet_on_ball             |    1.0 |\n|   11  | height                   |    1.0 |\n|   12  | ball_speed               |  -0.05 |\n|   13  | double_balance           |    4.0 |\n|   14  | top_ball_speed           |   -0.1 |\n|   15  | head_surface_normal_tilt |   -0.1 |\n|   16  | head_roll_margin         |   -6.0 |\n|   17  | head_roll_outward        |   -0.5 |\n+-------+--------------------------+--------+\n\n[INFO] <NullCurriculumManager> (inactive)\n[INFO] <MetricsManager> contains 7 active terms.\n+------------------------------------------------+\n|              Active Metrics Terms              |\n+-------+----------------------------------------+\n| Index | Name                                   |\n+-------+----------------------------------------+\n|   0   | mean_action_acc                        |\n|   1   | top_ball_center_error_m                |\n|   2   | top_ball_relative_speed_m_s            |\n|   3   | native_lower_unassisted_fraction       |\n|   4   | native_unassisted_env_fraction         |\n|   5   | native_joint_geometric_stable_fraction |\n|   6   | native_joint_geometric_success_5s      |\n+-------+----------------------------------------+\n\n[INFO] <NullRecorderManager> (inactive)\nModule mujoco_warp._src.io 4b387a0 load on device 'cuda:0' took 2.81 ms  (cached)\nModule _tile_cholesky_factorize__locals__cholesky_factorize_68698e2e e5a5250 load on device 'cuda:0' took 31.51 ms  (cached)\nModule _tile_cholesky_factorize__locals__cholesky_factorize_a02b7349 3d3b894 load on device 'cuda:0' took 29.85 ms  (cached)\nModule _tile_cholesky_solve__locals__cholesky_solve_8f106300 2c9154f load on device 'cuda:0' took 33.44 ms  (cached)\nModule _tile_cholesky_solve__locals__cholesky_solve_8c82e9f1 95f6085 load on device 'cuda:0' took 29.72 ms  (cached)\n--------------------------------------------------------------------------------\nResolved observation sets: \n\t actor :  ('actor',)\n\t critic :  ('critic',)\n--------------------------------------------------------------------------------\nActor Model: RNNModel(\n  (obs_normalizer): EmpiricalNormalization()\n  (distribution): GaussianDistribution()\n  (mlp): MLP(\n    (0): Linear(in_features=256, out_features=512, bias=True)\n    (1): ELU(alpha=1.0)\n    (2): Linear(in_features=512, out_features=256, bias=True)\n    (3): ELU(alpha=1.0)\n    (4): Linear(in_features=256, out_features=128, bias=True)\n    (5): ELU(alpha=1.0)\n    (6): Linear(in_features=128, out_features=14, bias=True)\n  )\n  (rnn): RNN(\n    (rnn): LSTM(61, 256)\n  )\n)\nCritic Model: MLPModel(\n  (obs_normalizer): EmpiricalNormalization()\n  (mlp): MLP(\n    (0): Linear(in_features=85, out_features=512, bias=True)\n    (1): ELU(alpha=1.0)\n    (2): Linear(in_features=512, out_features=256, bias=True)\n    (3): ELU(alpha=1.0)\n    (4): Linear(in_features=256, out_features=128, bias=True)\n    (5): ELU(alpha=1.0)\n    (6): Linear(in_features=128, out_features=1, bias=True)\n  )\n)\nSetting seed: 2026102400\n################################################################################\n\u001b[1m                          Learning iteration 5505/5510                          \u001b[0m \n\n                               Run name: smoke\n                            Total steps: 1536 \n                       Steps per second: 817 \n                        Collection time: 1.529s \n                          Learning time: 0.350s \n                        Mean value loss: 3.0013\n                    Mean surrogate loss: 0.0277\n                      Mean entropy loss: -11.9467\n                        Mean action std: 0.11\n   Episode_Reward/track_linear_velocity: 0.0000\n  Episode_Reward/track_angular_velocity: 0.0000\n                    Episode_Reward/pose: 0.0000\n            Episode_Reward/body_ang_vel: 0.0000\n        Episode_Reward/angular_momentum: 0.0000\n          Episode_Reward/dof_pos_limits: 0.0000\n          Episode_Reward/action_rate_l2: 0.0000\n         Episode_Reward/self_collisions: 0.0000\n                 Episode_Reward/upright: 0.0000\n                Episode_Reward/centered: 0.0000\n            Episode_Reward/feet_on_ball: 0.0000\n                  Episode_Reward/height: 0.0000\n              Episode_Reward/ball_speed: 0.0000\n          Episode_Reward/double_balance: 0.0000\n          Episode_Reward/top_ball_speed: 0.0000\nEpisode_Reward/head_surface_normal_tilt: 0.0000\n        Episode_Reward/head_roll_margin: 0.0000\n       Episode_Reward/head_roll_outward: 0.0000\n        Episode_Metrics/mean_action_acc: 0.0000\nEpisode_Metrics/top_ball_center_error_m: 0.0000\nEpisode_Metrics/top_ball_relative_speed_m_s: 0.0000\nEpisode_Metrics/native_lower_unassisted_fraction: 0.0000\nEpisode_Metrics/native_unassisted_env_fraction: 0.0000\nEpisode_Metrics/native_joint_geometric_stable_fraction: 0.0000\nEpisode_Metrics/native_joint_geometric_success_5s: 0.0000\n             Metrics/twist/error_vel_xy: 0.0002\n            Metrics/twist/error_vel_yaw: 0.0000\n           Episode_Termination/time_out: 0.0000\nEpisode_Termination/out_of_terrain_bounds: 0.0000\n          Episode_Termination/nan_state: 0.0000\n               Episode_Termination/fell: 0.0000\n      Episode_Termination/top_ball_lost: 0.0000\n          Metrics/angular_momentum_mean: 0.0024\n--------------------------------------------------------------------------------\n                         Iteration time: 1.88s\n                           Time elapsed: 00:00:01\n                                    ETA: 00:00:07\n\n",
+  "local_return": {
+    "status": "LOCAL_RETURN_VERIFIED",
+    "branch": "stage12-headroom-v3-return-20261023t142758z-1516a701-s001",
+    "commit": "4895ca7d3bfbd55991a159381482a2112944e7e7",
+    "verified_files": 49,
+    "verified_utc": 1792765711.3119109,
+    "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-headroom-constraint-v3-client/returned/4895ca7d3bfbd55991a159381482a2112944e7e7",
+    "cloud_power_state": "UNCONFIRMED",
+    "original_entire_cloud_storage_backed_up": false,
+    "index_sha256": "accec437b9cd646e8c6db729690fd210a44033658becc392d8f16222ee0f83cd"
+  },
+  "local_report_utc": 1792765711.317964,
+  "controller_sha256": "510555b7f55720c8e81321c7e2b6f87bd09a7fc225ec492501417e8f2a0509a2",
+  "controller_package_identity": "1516a70105dce20b5947df3644b54cf7a1b33f1b8d95e6553e4433c24f74f881"
+}
