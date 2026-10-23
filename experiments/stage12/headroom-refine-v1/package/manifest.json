@@ -1,0 +1,97 @@
+{
+  "identity": "c0c233531214edfa72602540f979f9ab3c58b5f7008c52f07fefe0a744d27ec6",
+  "files": {
+    "agent.py": {
+      "bytes": 14991,
+      "sha256": "51422f0937aaaab57dda0675c446a6ebe907c89e512467395d77aabf42c50b8a"
+    },
+    "approval.json": {
+      "bytes": 641,
+      "sha256": "1dccfcb10c799a5776a0528b2f78842ae2583dc7c88550fff3d7fae819e16239"
+    },
+    "baseline.py": {
+      "bytes": 8571,
+      "sha256": "d31cd308dd3b766507b1e8af7f01a0a75930f26023e47b53bfb1841203eeed40"
+    },
+    "baseline_runtime.py": {
+      "bytes": 7039,
+      "sha256": "b8c7efda15ac84117363e1de79f95d4a7fa0669e80b664e08f178178c8445ee3"
+    },
+    "budget.py": {
+      "bytes": 3439,
+      "sha256": "344487e2dc055107b8af78d514cd3f47dd93b0ffdba83366d3f1c48e7a07802c"
+    },
+    "common.py": {
+      "bytes": 6144,
+      "sha256": "62ef2f7749185f87aee1b9a25869d552c43491d3dba35af56eddbea859ec0777"
+    },
+    "criteria.py": {
+      "bytes": 3210,
+      "sha256": "6c32a09c2b1deb7329bb9f2dad095e67e1e73aa9104c470c59f84a1930440f71"
+    },
+    "demo_common.py": {
+      "bytes": 138,
+      "sha256": "e5b6b583dcac93102909fff799ab3aaec2a632791bf0a6e27e6fc4d821192b73"
+    },
+    "evaluate.py": {
+      "bytes": 9810,
+      "sha256": "e51bf61d16dc1612cdef1d71e88ffd8bef76f8559055124af32ded101a9575ae"
+    },
+    "fingerprint.py": {
+      "bytes": 396,
+      "sha256": "061f496c53b8982c94aa9c9dba57d76b1745d80ebbd099c3ab96807784a6abb4"
+    },
+    "headroom_costs.py": {
+      "bytes": 1870,
+      "sha256": "feca948d5097617193d75cab19a9c49fb0f37bbe6fac881f18b24d17872ced29"
+    },
+    "headroom_task.py": {
+      "bytes": 2650,
+      "sha256": "75795ba306dd02d110a90bf2aed023178c7f2d5f7b6ae97aa7074222b070c0ca"
+    },
+    "model_limits.py": {
+      "bytes": 12831,
+      "sha256": "d318cdb3b14b078797e69dc89da15f4106f79779fbb764eb59d137708cfdd275"
+    },
+    "model_limits_runtime.py": {
+      "bytes": 9833,
+      "sha256": "da093a8ebc84500d7c194282cb569cbbea7f730fe976a2c26260c059ab871397"
+    },
+    "native_task.py": {
+      "bytes": 8816,
+      "sha256": "b6909b9cff864dcfce8203062a75282571ca2c7ef5d66b2aa58c05c4626a55af"
+    },
+    "normalization.py": {
+      "bytes": 1337,
+      "sha256": "fe55048ae4efae1b51824933888de45290086dc1151ad89d66e89557b2e71661"
+    },
+    "reward-spec.json": {
+      "bytes": 424,
+      "sha256": "afb283ada7daf0497c256cc8beb85951bce75301f0753feb804eb1e08a03acc9"
+    },
+    "runtime_helpers.py": {
+      "bytes": 2054,
+      "sha256": "92217deb4b2f4f8b39b836eb91bb3f0413cb4dc683eba5f65a5a77756dee486f"
+    },
+    "source-pins.json": {
+      "bytes": 54309,
+      "sha256": "08c781088ecb4b2023c593ff8ffa45061bf6a57fad5902fcf79b50155daa969c"
+    },
+    "speed_task.py": {
+      "bytes": 872,
+      "sha256": "0683e8de9d1c1534bd336c943af64db59d0aa76498a33c3aa49fa5d00464ac1d"
+    },
+    "train.py": {
+      "bytes": 17410,
+      "sha256": "6c50cdd0038aec7502e6ddabf98019e47f0b91947e09664226f006f2a3c0f483"
+    },
+    "train_motor_monitor.py": {
+      "bytes": 3565,
+      "sha256": "662cac8ce889f6c965397a9c0725b57ded6f230a6b7335692706bbbc5a86bd86"
+    },
+    "transfer.py": {
+      "bytes": 8026,
+      "sha256": "8ad3a06ee0de6cc1e13c0a16817feafd618781dc0b88ad1b852ed5207513f57f"
+    }
+  }
+}
