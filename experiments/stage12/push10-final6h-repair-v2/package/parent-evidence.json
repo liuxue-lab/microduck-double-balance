@@ -1,0 +1,31 @@
+{
+  "schema": "stage12-final6h-parent-v1",
+  "parent_slot": "native-headroom-constraint-v3",
+  "model_sha256": "ca2a82acbe939169367272ffb50242bbfc1b4a39c06ed186bfc4cf3009ed4130",
+  "files": {
+    "budget.json": {
+      "bytes": 2297,
+      "sha256": "6a13069f1f970df8ccb063653d3559550689a2c47049dae6676d1dcbbf592cde"
+    },
+    "exit.json": {
+      "bytes": 491,
+      "sha256": "495a53342eee6f451c0c137083b711d072dd780d6826c874d61525082a825a80"
+    },
+    "selected.json": {
+      "bytes": 9666,
+      "sha256": "fd476e2bac55b48e18ac1d106db37b6f379c549798cee2929db074396944f5ed"
+    },
+    "source-commit.json": {
+      "bytes": 216,
+      "sha256": "cc8a674e57848dc8ddc4b891e49104d4c21fa2e9ff12b3b26c10c2dd20a7e8d3"
+    },
+    "started.json": {
+      "bytes": 1558,
+      "sha256": "98bf40ed2251f3bb06b68b85b06efc9b7a3c233b2258d87c7cff790b2d1010c7"
+    },
+    "run/checkpoints/headroom_000506.json": {
+      "bytes": 325,
+      "sha256": "1e76998dac5dc0af2f0548ad5aa3bdebe124b82337a3066e08ca79248aae1569"
+    }
+  }
+}
