@@ -1,0 +1,198 @@
+{
+  "allowed_error": "ModuleNotFoundError(\"No module named 'reward_spec'\")",
+  "attempted_updates": 0,
+  "clock_extension_authorized": false,
+  "completed_updates": 0,
+  "max_updates": 505,
+  "original_commit": "cb6d279a875de7d9e0e88720ba591e0e1ff098d1",
+  "original_deadline_utc": 1792764538.5239706,
+  "original_package_identity": "c0c233531214edfa72602540f979f9ab3c58b5f7008c52f07fefe0a744d27ec6",
+  "original_source_path": "experiments/stage12/headroom-refine-v1/package",
+  "original_started_utc": 1792757338.5239706,
+  "preserved_files": {
+    "active-worker.json": {
+      "bytes": 259,
+      "sha256": "1b28cd25b8f51796a62a8d5f93e99afd5d56fdaf21d549617dac86e24d65e444"
+    },
+    "bootstrap-fetch/1792756132891539265.json": {
+      "bytes": 988,
+      "sha256": "430405426fa861cde4295cd25dea7991bedc1a5ebca6000c6396e315e85b23d8"
+    },
+    "bootstrap-source/1792757337462921565.json": {
+      "bytes": 933,
+      "sha256": "f9fa7a7376786de4572b6da4e7045646fa43f3d8e13a5e9a8f5437d0ceca15dd"
+    },
+    "budget.json": {
+      "bytes": 375,
+      "sha256": "3ec31061eaa51cdc9b234c38c99166728767f4727771907ca256e05daa6e7cf7"
+    },
+    "child.json": {
+      "bytes": 66,
+      "sha256": "1621d948e73aaa2c4f7e7d32f7aba5831ac193f17cab8c1200f6e7f68434137e"
+    },
+    "exit-session-001.json": {
+      "bytes": 1432,
+      "sha256": "83ff016d984025ef9220c06983fef88096f2881c4e8ef26d565dda533d2655c1"
+    },
+    "exit.json": {
+      "bytes": 1432,
+      "sha256": "83ff016d984025ef9220c06983fef88096f2881c4e8ef26d565dda533d2655c1"
+    },
+    "logs/001-train-smoke.log": {
+      "bytes": 111,
+      "sha256": "e2642c36f5d1549a3b29364d061d0023eb7697e0ea6983eb48608be73b6ae269"
+    },
+    "logs/supervisor-001.log": {
+      "bytes": 4917,
+      "sha256": "e719712aef8c7e563950d4f61f1dec22e36fb8e5d5a30a9a0d91d11a3ad28be5"
+    },
+    "package/agent.py": {
+      "bytes": 14991,
+      "sha256": "51422f0937aaaab57dda0675c446a6ebe907c89e512467395d77aabf42c50b8a"
+    },
+    "package/approval.json": {
+      "bytes": 641,
+      "sha256": "1dccfcb10c799a5776a0528b2f78842ae2583dc7c88550fff3d7fae819e16239"
+    },
+    "package/baseline.py": {
+      "bytes": 8571,
+      "sha256": "d31cd308dd3b766507b1e8af7f01a0a75930f26023e47b53bfb1841203eeed40"
+    },
+    "package/baseline_runtime.py": {
+      "bytes": 7039,
+      "sha256": "b8c7efda15ac84117363e1de79f95d4a7fa0669e80b664e08f178178c8445ee3"
+    },
+    "package/budget.py": {
+      "bytes": 3439,
+      "sha256": "344487e2dc055107b8af78d514cd3f47dd93b0ffdba83366d3f1c48e7a07802c"
+    },
+    "package/common.py": {
+      "bytes": 6144,
+      "sha256": "62ef2f7749185f87aee1b9a25869d552c43491d3dba35af56eddbea859ec0777"
+    },
+    "package/criteria.py": {
+      "bytes": 3210,
+      "sha256": "6c32a09c2b1deb7329bb9f2dad095e67e1e73aa9104c470c59f84a1930440f71"
+    },
+    "package/demo_common.py": {
+      "bytes": 138,
+      "sha256": "e5b6b583dcac93102909fff799ab3aaec2a632791bf0a6e27e6fc4d821192b73"
+    },
+    "package/evaluate.py": {
+      "bytes": 9810,
+      "sha256": "e51bf61d16dc1612cdef1d71e88ffd8bef76f8559055124af32ded101a9575ae"
+    },
+    "package/fingerprint.py": {
+      "bytes": 396,
+      "sha256": "061f496c53b8982c94aa9c9dba57d76b1745d80ebbd099c3ab96807784a6abb4"
+    },
+    "package/headroom_costs.py": {
+      "bytes": 1870,
+      "sha256": "feca948d5097617193d75cab19a9c49fb0f37bbe6fac881f18b24d17872ced29"
+    },
+    "package/headroom_task.py": {
+      "bytes": 2650,
+      "sha256": "75795ba306dd02d110a90bf2aed023178c7f2d5f7b6ae97aa7074222b070c0ca"
+    },
+    "package/manifest.json": {
+      "bytes": 3208,
+      "sha256": "faa3f470d504ec5aedbe819940fdb2d03fc124493ef9297013147fe3e6ff6f71"
+    },
+    "package/model_limits.py": {
+      "bytes": 12831,
+      "sha256": "d318cdb3b14b078797e69dc89da15f4106f79779fbb764eb59d137708cfdd275"
+    },
+    "package/model_limits_runtime.py": {
+      "bytes": 9833,
+      "sha256": "da093a8ebc84500d7c194282cb569cbbea7f730fe976a2c26260c059ab871397"
+    },
+    "package/native_task.py": {
+      "bytes": 8816,
+      "sha256": "b6909b9cff864dcfce8203062a75282571ca2c7ef5d66b2aa58c05c4626a55af"
+    },
+    "package/normalization.py": {
+      "bytes": 1337,
+      "sha256": "fe55048ae4efae1b51824933888de45290086dc1151ad89d66e89557b2e71661"
+    },
+    "package/reward-spec.json": {
+      "bytes": 424,
+      "sha256": "afb283ada7daf0497c256cc8beb85951bce75301f0753feb804eb1e08a03acc9"
+    },
+    "package/runtime_helpers.py": {
+      "bytes": 2054,
+      "sha256": "92217deb4b2f4f8b39b836eb91bb3f0413cb4dc683eba5f65a5a77756dee486f"
+    },
+    "package/source-pins.json": {
+      "bytes": 54309,
+      "sha256": "08c781088ecb4b2023c593ff8ffa45061bf6a57fad5902fcf79b50155daa969c"
+    },
+    "package/speed_task.py": {
+      "bytes": 872,
+      "sha256": "0683e8de9d1c1534bd336c943af64db59d0aa76498a33c3aa49fa5d00464ac1d"
+    },
+    "package/train.py": {
+      "bytes": 17410,
+      "sha256": "6c50cdd0038aec7502e6ddabf98019e47f0b91947e09664226f006f2a3c0f483"
+    },
+    "package/train_motor_monitor.py": {
+      "bytes": 3565,
+      "sha256": "662cac8ce889f6c965397a9c0725b57ded6f230a6b7335692706bbbc5a86bd86"
+    },
+    "package/transfer.py": {
+      "bytes": 8026,
+      "sha256": "8ad3a06ee0de6cc1e13c0a16817feafd618781dc0b88ad1b852ed5207513f57f"
+    },
+    "preflight.json": {
+      "bytes": 34090,
+      "sha256": "c421d1102d003848a35b049ebcb83e8c6c8f0dac2e2fdd9fe1d28d63d57631c2"
+    },
+    "progress.json": {
+      "bytes": 1156,
+      "sha256": "30b8933d270b300c5eab57d7ed0b7b746af19ba3e7aea5a739c7fa46453bd4a5"
+    },
+    "protected-records.json": {
+      "bytes": 33536,
+      "sha256": "e81c74e93caf1e9e66d4b6666d146a0262e603663ef490b8e124db6eed38bd83"
+    },
+    "run/session-001/result.json": {
+      "bytes": 1156,
+      "sha256": "30b8933d270b300c5eab57d7ed0b7b746af19ba3e7aea5a739c7fa46453bd4a5"
+    },
+    "selection.json": {
+      "bytes": 35,
+      "sha256": "f9ba4855a28839e57753a90c8661fb49ea62a9f46b5c4911dd9d17f87f16805d"
+    },
+    "session-001.json": {
+      "bytes": 113,
+      "sha256": "ba815609adbf5942f71b9ece5a8f1cd7634a7e20891758cba72fa7c368b8975c"
+    },
+    "session.json": {
+      "bytes": 113,
+      "sha256": "ba815609adbf5942f71b9ece5a8f1cd7634a7e20891758cba72fa7c368b8975c"
+    },
+    "source-commit.json": {
+      "bytes": 208,
+      "sha256": "fbe3838e5da38dc598f44ce9f29d3542d6ad5bb316bc7bafb8cf83f1b5c62cf3"
+    },
+    "started.json": {
+      "bytes": 1195,
+      "sha256": "bad574c1b2f05c1416956f406ab907536515bdfb47c83cd4fc0e4656ab88adba"
+    },
+    "supervisor.json": {
+      "bytes": 66,
+      "sha256": "7c20be14ddabee8d6e4cb73b1832150e8ad15490719bbf41d3b77992a4476b3a"
+    },
+    "worker-counter.json": {
+      "bytes": 14,
+      "sha256": "28e66ed96c96ed5774d08e22f9f5d57b3475d91caa4bf6aed6c87a03fe5bbf49"
+    }
+  },
+  "repair_id": "missing-reward-spec-v2",
+  "repair_source_path": "experiments/stage12/headroom-repair-v2/package",
+  "returned_archive_sha256": "cd54372ea2632bb66ddc2418a89202c8d8997dd0d4acbc37e14a361d43a999d7",
+  "returned_branch": "stage12-headroom-v1-return-20261023t120858z-c0c23353",
+  "returned_commit": "4823151e3a856eeec82a7bcef6396bfdbe05d0d7",
+  "reward_spec_git_blob": "56321d96901a12b7fe88f798eb10dc99511e22e0",
+  "reward_spec_sha256": "1c1b070b59ddf2cc764f2e29bedaeabafe3ca5affefae4e35fcc798c67766b16",
+  "schema": "headroom-missing-reward-spec-repair-v2"
+}
