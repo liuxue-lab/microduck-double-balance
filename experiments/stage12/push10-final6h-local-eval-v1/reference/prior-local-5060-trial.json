@@ -1,0 +1,3453 @@
+{
+  "status": "TRIAL_PASSED",
+  "run_dir": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-headroom-push10-once-v1/run",
+  "started": {
+    "schema": "stage12-headroom-push10-one-attempt-v1",
+    "started_utc": 1792776393.5981646,
+    "deadline_utc": 1792777293.5981646,
+    "seed": 2026102407,
+    "force_seed": 2026102410,
+    "checkpoint_sha256": "ca2a82acbe939169367272ffb50242bbfc1b4a39c06ed186bfc4cf3009ed4130",
+    "maximum_control_steps": 3000,
+    "maximum_physics_steps": 30000,
+    "maximum_episodes": 1,
+    "maximum_attempts": 1,
+    "package_identity": "e65e7686d94dff585f7e4b8d5706e8d42206016210efd36f246f88b6a5fea46e",
+    "added_PPO_updates": 0,
+    "force_weight_fraction": 0.1,
+    "pulse_period_seconds": 2.0,
+    "pulse_duration_seconds": 0.1,
+    "episode_seconds": 60.0,
+    "automatic_retry": false,
+    "training_started": false
+  },
+  "preflight": {
+    "inputs": {
+      "checkpoint_sha256": "ca2a82acbe939169367272ffb50242bbfc1b4a39c06ed186bfc4cf3009ed4130",
+      "task_sha256": "b6909b9cff864dcfce8203062a75282571ca2c7ef5d66b2aa58c05c4626a55af",
+      "source_pins_sha256": "08c781088ecb4b2023c593ff8ffa45061bf6a57fad5902fcf79b50155daa969c",
+      "source_files_verified": 365,
+      "return_commit": "67842a986fb33309334379a883dfcc533a4ddd4e",
+      "checkpoint_policy_updates": 6010
+    },
+    "runtime": {
+      "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+      "packages": {
+        "mjlab": "1.3.0",
+        "mujoco": "3.10.0",
+        "mujoco-warp": "3.8.1",
+        "warp-lang": "1.12.0",
+        "rsl-rl-lib": "5.0.1",
+        "torch": "2.9.1"
+      }
+    },
+    "heavy_modules_imported": false,
+    "GPU_initialized": false,
+    "display_session_required": false
+  },
+  "finished": {
+    "worker_exit_code": 0,
+    "worker_alive": false,
+    "parent_stop_reason": null,
+    "finished_utc": 1792776513.5100355
+  },
+  "last_progress": {
+    "phase": "TRIAL_PASSED",
+    "completed_control_steps": 3000,
+    "attempted_control_steps": 3000,
+    "checked_physics_steps": 30000,
+    "simulation_seconds": 60.0,
+    "elapsed_seconds": 118.46075415611267,
+    "deadline_utc": 1792777293.5981646,
+    "added_PPO_updates": 0,
+    "disturbance": {
+      "planned_pulses": 29,
+      "applied_pulses": 29,
+      "completed_pulses": 29,
+      "applied_physics_steps": 1450,
+      "checked_physics_steps": 30000,
+      "schedule_verified": true,
+      "force_fraction": 0.1,
+      "period_seconds": 2.0,
+      "duration_seconds": 0.1,
+      "horizon_seconds": 60.0,
+      "force_seed": 2026102410,
+      "robot_mass_kg": 0.7288332581520081,
+      "force_newtons": 0.7149854262471199,
+      "gravity_m_s2": 9.81,
+      "pulses": [
+        {
+          "pulse": 1,
+          "start_physics_step": 1000,
+          "end_physics_step_exclusive": 1050,
+          "start_seconds": 2.0,
+          "end_seconds": 2.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 48.068657097052764,
+          "unit_force_world": [
+            0.6682396213728434,
+            0.7439461058621645,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 2.0,
+          "actual_end_seconds": 2.1,
+          "applied_impulse_N_s": 0.0714985409595318,
+          "applied_impulse_world_N_s": [
+            0.04777815937995905,
+            0.053191059827804525,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.47778159379959106,
+            0.5319105982780457,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854095953189,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 2,
+          "start_physics_step": 2000,
+          "end_physics_step_exclusive": 2050,
+          "start_seconds": 4.0,
+          "end_seconds": 4.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 7.364928384201598,
+          "unit_force_world": [
+            0.9917498143344804,
+            0.1281885555247569,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 4.0,
+          "actual_end_seconds": 4.1,
+          "applied_impulse_N_s": 0.07149854195445007,
+          "applied_impulse_world_N_s": [
+            0.07090866565704346,
+            0.009165295213460923,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.7090866565704346,
+            0.09165295213460922,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854195445011,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 3,
+          "start_physics_step": 3000,
+          "end_physics_step_exclusive": 3050,
+          "start_seconds": 6.0,
+          "end_seconds": 6.1000000000000005,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 110.35860079176945,
+          "unit_force_world": [
+            -0.34789472095253693,
+            0.9375336064021152,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 6.0,
+          "actual_end_seconds": 6.1000000000000005,
+          "applied_impulse_N_s": 0.07149853998999786,
+          "applied_impulse_world_N_s": [
+            -0.024873965978622403,
+            0.06703228354454044,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            -0.24873965978622437,
+            0.670322835445404,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.714985399899979,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 4,
+          "start_physics_step": 4000,
+          "end_physics_step_exclusive": 4050,
+          "start_seconds": 8.0,
+          "end_seconds": 8.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 72.4453000974631,
+          "unit_force_world": [
+            0.30161616960654775,
+            0.9534294343221601,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 8.0,
+          "actual_end_seconds": 8.1,
+          "applied_impulse_N_s": 0.07149854077679044,
+          "applied_impulse_world_N_s": [
+            0.02156511694192885,
+            0.06816881299018868,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.21565116941928864,
+            0.681688129901886,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.714985407767905,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 5,
+          "start_physics_step": 5000,
+          "end_physics_step_exclusive": 5050,
+          "start_seconds": 10.0,
+          "end_seconds": 10.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 339.42110137823215,
+          "unit_force_world": [
+            0.9361890514965323,
+            -0.3514968845637514,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 10.0,
+          "actual_end_seconds": 10.1,
+          "applied_impulse_N_s": 0.07149854286060918,
+          "applied_impulse_world_N_s": [
+            0.06693615317344662,
+            -0.025131514668464677,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.6693615317344666,
+            -0.2513151466846466,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854286060917,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 6,
+          "start_physics_step": 6000,
+          "end_physics_step_exclusive": 6050,
+          "start_seconds": 12.0,
+          "end_seconds": 12.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 232.85850262401928,
+          "unit_force_world": [
+            -0.6037854922807088,
+            -0.7971468367316916,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 12.0,
+          "actual_end_seconds": 12.1,
+          "applied_impulse_N_s": 0.07149854225537942,
+          "applied_impulse_world_N_s": [
+            -0.0431697815656662,
+            -0.056994837522506704,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            -0.431697815656662,
+            -0.5699483752250671,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854225537939,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 7,
+          "start_physics_step": 7000,
+          "end_physics_step_exclusive": 7050,
+          "start_seconds": 14.0,
+          "end_seconds": 14.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 348.16368817003104,
+          "unit_force_world": [
+            0.9787375905675145,
+            -0.20511637869779265,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 14.0,
+          "actual_end_seconds": 14.1,
+          "applied_impulse_N_s": 0.07149853992615976,
+          "applied_impulse_world_N_s": [
+            0.06997830867767338,
+            -0.014665521681308738,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.6997830867767334,
+            -0.14665521681308746,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149853992615981,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 8,
+          "start_physics_step": 8000,
+          "end_physics_step_exclusive": 8050,
+          "start_seconds": 16.0,
+          "end_seconds": 16.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 295.814723442363,
+          "unit_force_world": [
+            0.4354624422068769,
+            -0.9002068992332942,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 16.0,
+          "actual_end_seconds": 16.1,
+          "applied_impulse_N_s": 0.07149854117334119,
+          "applied_impulse_world_N_s": [
+            0.03113493025302884,
+            -0.06436347961425787,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.3113493025302887,
+            -0.6436347961425781,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.714985411733411,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 9,
+          "start_physics_step": 9000,
+          "end_physics_step_exclusive": 9050,
+          "start_seconds": 18.0,
+          "end_seconds": 18.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 125.31408854512924,
+          "unit_force_world": [
+            -0.5780582882077644,
+            0.8159954751310262,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 18.0,
+          "actual_end_seconds": 18.1,
+          "applied_impulse_N_s": 0.07149854235919127,
+          "applied_impulse_world_N_s": [
+            -0.04133032560348509,
+            0.05834248661994932,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            -0.4133032560348511,
+            0.5834248661994934,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854235919124,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 10,
+          "start_physics_step": 10000,
+          "end_physics_step_exclusive": 10050,
+          "start_seconds": 20.0,
+          "end_seconds": 20.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 58.10102334558651,
+          "unit_force_world": [
+            0.5284231713671006,
+            0.8489811257986457,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 20.0,
+          "actual_end_seconds": 20.1,
+          "applied_impulse_N_s": 0.07149854060472664,
+          "applied_impulse_world_N_s": [
+            0.03778148591518404,
+            0.06070091128349308,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.3778148591518402,
+            0.6070091128349304,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854060472662,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 11,
+          "start_physics_step": 11000,
+          "end_physics_step_exclusive": 11050,
+          "start_seconds": 22.0,
+          "end_seconds": 22.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 43.41281565805477,
+          "unit_force_world": [
+            0.7264209682030914,
+            0.6872500105164664,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 22.0,
+          "actual_end_seconds": 22.1,
+          "applied_impulse_N_s": 0.07149854194341898,
+          "applied_impulse_world_N_s": [
+            0.05193803906440733,
+            0.04913737475872038,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.5193803906440735,
+            0.491373747587204,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854194341894,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 12,
+          "start_physics_step": 12000,
+          "end_physics_step_exclusive": 12050,
+          "start_seconds": 24.0,
+          "end_seconds": 24.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 9.916400441444617,
+          "unit_force_world": [
+            0.9850600725200334,
+            0.17221107260227655,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 24.0,
+          "actual_end_seconds": 24.1,
+          "applied_impulse_N_s": 0.07149854521917721,
+          "applied_impulse_world_N_s": [
+            0.0704303622245789,
+            0.012312840670347222,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.7043036222457886,
+            0.12312840670347214,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854521917729,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 13,
+          "start_physics_step": 13000,
+          "end_physics_step_exclusive": 13050,
+          "start_seconds": 26.0,
+          "end_seconds": 26.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 20.50876477197173,
+          "unit_force_world": [
+            0.9366186056198841,
+            0.3503506637736885,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 26.0,
+          "actual_end_seconds": 26.1,
+          "applied_impulse_N_s": 0.07149854442627382,
+          "applied_impulse_world_N_s": [
+            0.06696686744689936,
+            0.02504956126213076,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.6696686744689941,
+            0.2504956126213074,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854442627372,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 14,
+          "start_physics_step": 14000,
+          "end_physics_step_exclusive": 14050,
+          "start_seconds": 28.0,
+          "end_seconds": 28.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 47.569385010536216,
+          "unit_force_world": [
+            0.6746968718943385,
+            0.7380949336338751,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 28.0,
+          "actual_end_seconds": 28.1,
+          "applied_impulse_N_s": 0.07149854242022503,
+          "applied_impulse_world_N_s": [
+            0.048239842057228054,
+            0.05277271270751955,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.4823984205722809,
+            0.5277271270751953,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854242022494,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 15,
+          "start_physics_step": 15000,
+          "end_physics_step_exclusive": 15050,
+          "start_seconds": 30.0,
+          "end_seconds": 30.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 318.61098793923645,
+          "unit_force_world": [
+            0.7502378793935036,
+            -0.6611680000749723,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 30.0,
+          "actual_end_seconds": 30.1,
+          "applied_impulse_N_s": 0.0714985416127338,
+          "applied_impulse_world_N_s": [
+            0.053640913963317834,
+            -0.04727254807949067,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.5364091396331787,
+            -0.4727254807949066,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.714985416127338,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 16,
+          "start_physics_step": 16000,
+          "end_physics_step_exclusive": 16050,
+          "start_seconds": 32.0,
+          "end_seconds": 32.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 279.0961306936508,
+          "unit_force_world": [
+            0.15809138473083464,
+            -0.9874244852513469,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 32.0,
+          "actual_end_seconds": 32.1,
+          "applied_impulse_N_s": 0.0714985438447682,
+          "applied_impulse_world_N_s": [
+            0.011303303390741355,
+            -0.0705994129180908,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.11303303390741348,
+            -0.7059941291809082,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854384476815,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 17,
+          "start_physics_step": 17000,
+          "end_physics_step_exclusive": 17050,
+          "start_seconds": 34.0,
+          "end_seconds": 34.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 342.9778826362015,
+          "unit_force_world": [
+            0.9561918231501177,
+            -0.2927408364763173,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 34.0,
+          "actual_end_seconds": 34.1,
+          "applied_impulse_N_s": 0.07149853997473063,
+          "applied_impulse_world_N_s": [
+            0.06836631894111637,
+            -0.020930543541908264,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.6836631894111633,
+            -0.20930543541908264,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149853997473067,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 18,
+          "start_physics_step": 18000,
+          "end_physics_step_exclusive": 18050,
+          "start_seconds": 36.0,
+          "end_seconds": 36.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 279.0564922170448,
+          "unit_force_world": [
+            0.1574082250422706,
+            -0.9875336200297395,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 36.0,
+          "actual_end_seconds": 36.1,
+          "applied_impulse_N_s": 0.07149854318843006,
+          "applied_impulse_world_N_s": [
+            0.011254458874464045,
+            -0.0706072151660919,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.11254458874464035,
+            -0.7060721516609192,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854318843009,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 19,
+          "start_physics_step": 19000,
+          "end_physics_step_exclusive": 19050,
+          "start_seconds": 38.0,
+          "end_seconds": 38.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 101.60793104952529,
+          "unit_force_world": [
+            -0.20121351489272815,
+            0.9795474064201865,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 38.0,
+          "actual_end_seconds": 38.1,
+          "applied_impulse_N_s": 0.07149854527637516,
+          "applied_impulse_world_N_s": [
+            -0.014386473596096025,
+            0.07003621459007257,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            -0.1438647359609604,
+            0.7003621459007263,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854527637518,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 20,
+          "start_physics_step": 20000,
+          "end_physics_step_exclusive": 20050,
+          "start_seconds": 40.0,
+          "end_seconds": 40.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 353.8925391283271,
+          "unit_force_world": [
+            0.9943240983382948,
+            -0.10639354991604077,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 40.0,
+          "actual_end_seconds": 40.1,
+          "applied_impulse_N_s": 0.07149854350973514,
+          "applied_impulse_world_N_s": [
+            0.07109272480010988,
+            -0.007606983929872503,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.7109272480010986,
+            -0.07606983929872513,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854350973518,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 21,
+          "start_physics_step": 21000,
+          "end_physics_step_exclusive": 21050,
+          "start_seconds": 42.0,
+          "end_seconds": 42.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 215.68853651263177,
+          "unit_force_world": [
+            -0.8122002629940923,
+            -0.5833787215800105,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 42.0,
+          "actual_end_seconds": 42.1,
+          "applied_impulse_N_s": 0.07149854373123544,
+          "applied_impulse_world_N_s": [
+            -0.0580711364746093,
+            -0.04171072840690611,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            -0.5807113647460938,
+            -0.4171072840690613,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854373123549,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 22,
+          "start_physics_step": 22000,
+          "end_physics_step_exclusive": 22050,
+          "start_seconds": 44.0,
+          "end_seconds": 44.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 311.5975949728742,
+          "unit_force_world": [
+            0.6638948227624533,
+            -0.7478259585687105,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 44.0,
+          "actual_end_seconds": 44.1,
+          "applied_impulse_N_s": 0.07149854208858825,
+          "applied_impulse_world_N_s": [
+            0.04746751189231878,
+            -0.053468465805053746,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.47467511892318726,
+            -0.5346846580505371,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854208858819,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 23,
+          "start_physics_step": 23000,
+          "end_physics_step_exclusive": 23050,
+          "start_seconds": 46.0,
+          "end_seconds": 46.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 106.26795076948864,
+          "unit_force_world": [
+            -0.28012978394148597,
+            0.9599621368308734,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 46.0,
+          "actual_end_seconds": 46.1,
+          "applied_impulse_N_s": 0.07149854177015523,
+          "applied_impulse_world_N_s": [
+            -0.020028871297836308,
+            0.06863589286804198,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            -0.20028871297836304,
+            0.6863589286804199,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.714985417701552,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 24,
+          "start_physics_step": 24000,
+          "end_physics_step_exclusive": 24050,
+          "start_seconds": 48.0,
+          "end_seconds": 48.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 159.50174032028883,
+          "unit_force_world": [
+            -0.9366828261270518,
+            0.35017893031797226,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 48.0,
+          "actual_end_seconds": 48.1,
+          "applied_impulse_N_s": 0.07149854249267865,
+          "applied_impulse_world_N_s": [
+            -0.06697145700454711,
+            0.025037282705307015,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            -0.6697145700454712,
+            0.25037282705307007,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854249267861,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 25,
+          "start_physics_step": 25000,
+          "end_physics_step_exclusive": 25050,
+          "start_seconds": 50.0,
+          "end_seconds": 50.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 78.2110264505728,
+          "unit_force_world": [
+            0.20430766711473633,
+            0.9789067254637359,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 50.0,
+          "actual_end_seconds": 50.1,
+          "applied_impulse_N_s": 0.07149854093916054,
+          "applied_impulse_world_N_s": [
+            0.014607700705528245,
+            0.06999040246009824,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.1460770070552826,
+            0.6999040246009827,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854093916057,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 26,
+          "start_physics_step": 26000,
+          "end_physics_step_exclusive": 26050,
+          "start_seconds": 52.0,
+          "end_seconds": 52.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 157.5464961967133,
+          "unit_force_world": [
+            -0.9241897803574904,
+            0.38193356736842804,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 52.0,
+          "actual_end_seconds": 52.1,
+          "applied_impulse_N_s": 0.0714985415769962,
+          "applied_impulse_world_N_s": [
+            -0.06607822179794315,
+            0.027307692170143113,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            -0.6607822179794312,
+            0.2730769217014313,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854157699624,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 27,
+          "start_physics_step": 27000,
+          "end_physics_step_exclusive": 27050,
+          "start_seconds": 54.0,
+          "end_seconds": 54.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 128.02431780283894,
+          "unit_force_world": [
+            -0.6159958719003545,
+            0.7877493800706682,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 54.0,
+          "actual_end_seconds": 54.1,
+          "applied_impulse_N_s": 0.07149854276091441,
+          "applied_impulse_world_N_s": [
+            -0.04404280781745914,
+            0.05632293224334715,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            -0.44042807817459106,
+            0.5632293224334717,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854276091445,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 28,
+          "start_physics_step": 28000,
+          "end_physics_step_exclusive": 28050,
+          "start_seconds": 56.0,
+          "end_seconds": 56.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 37.192042619341024,
+          "unit_force_world": [
+            0.7966138785739886,
+            0.6044884849716382,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 56.0,
+          "actual_end_seconds": 56.1,
+          "applied_impulse_N_s": 0.07149854363221349,
+          "applied_impulse_world_N_s": [
+            0.05695673227310187,
+            0.043220046162605295,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.5695673227310181,
+            0.43220046162605286,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854363221344,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 29,
+          "start_physics_step": 29000,
+          "end_physics_step_exclusive": 29050,
+          "start_seconds": 58.0,
+          "end_seconds": 58.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 206.7644852267263,
+          "unit_force_world": [
+            -0.892865123282775,
+            -0.4503241850325552,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 58.0,
+          "actual_end_seconds": 58.1,
+          "applied_impulse_N_s": 0.07149854123502485,
+          "applied_impulse_world_N_s": [
+            -0.06383855342864989,
+            -0.032197523117065426,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            -0.638385534286499,
+            -0.3219752311706543,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854123502486,
+          "nominal_impulse_N_s": 0.07149854262471199
+        }
+      ],
+      "frame": "world",
+      "force_body": "trunk_base",
+      "application_point": "inertial COM",
+      "force_schedule_path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-headroom-push10-once-v1/run/planned-force-schedule.json",
+      "unknown_wrenches_cleared": false
+    },
+    "trial": {
+      "episode": 1,
+      "seed": 2026102407,
+      "phase": "ENDED",
+      "outcome": "COMPLETED_60S_NO_PHYSICAL_TERMINATION",
+      "goal_60s_no_physical_termination_met": true,
+      "goal": "60-second dual-ball retention under fixed 10%-weight horizontal pulses; translation allowed",
+      "geometric_stability_summary": "COMPLETED_60S_WITH_STABILITY_BREAKS",
+      "geometric_thresholds_are_secondary": true,
+      "displacement_is_failure_criterion": false,
+      "original_drop_termination_triggered": false,
+      "control_steps": 3000,
+      "duration_seconds": 60.0,
+      "completed_60_seconds": true,
+      "stable_control_steps": 2605,
+      "stable_fraction": 0.8683333333333333,
+      "longest_continuous_stable_seconds": 3.4,
+      "final_continuous_stable_seconds": 1.0,
+      "longest_continuous_unstable_seconds": 0.28,
+      "first_stable_sample_seconds": 0.02,
+      "first_2s_stability_confirmed_at_seconds": 26.38,
+      "post_settle_observed_seconds": 33.62,
+      "post_settle_unstable_steps": 193,
+      "post_settle_stable_fraction": 0.8851873884592505,
+      "stability_breaks_after_settle": 62,
+      "first_unstable_after_settle_seconds": 26.7,
+      "last_unstable_sample_seconds": 59.0,
+      "violation_steps_by_gate": {
+        "top_center": 105,
+        "top_height": 0,
+        "top_speed": 91,
+        "lower_offset": 0,
+        "lower_height": 0,
+        "robot_tilt": 0,
+        "lower_ball_speed": 261,
+        "assistance": 0
+      },
+      "violation_steps_by_gate_after_settle": {
+        "top_center": 43,
+        "top_height": 0,
+        "top_speed": 50,
+        "lower_offset": 0,
+        "lower_height": 0,
+        "robot_tilt": 0,
+        "lower_ball_speed": 135,
+        "assistance": 0
+      },
+      "minimum_values": {
+        "top_center_m": 8.170220826286823e-05,
+        "top_height_error_m": 1.4901161193847656e-07,
+        "top_speed_m_s": 0.0004886225797235966,
+        "lower_offset_m": 2.677099655556958e-05,
+        "lower_height_m": 0.22962920367717743,
+        "robot_tilt_rad": 0.0009765625,
+        "lower_ball_speed_m_s": 3.4276463611870867e-11,
+        "hold": 0.0
+      },
+      "maximum_values": {
+        "top_center_m": 0.016962779685854912,
+        "top_height_error_m": 0.0007087942212820053,
+        "top_speed_m_s": 0.12739859521389008,
+        "lower_offset_m": 0.023944014683365822,
+        "lower_height_m": 0.2467057704925537,
+        "robot_tilt_rad": 0.07775144279003143,
+        "lower_ball_speed_m_s": 0.25491106510162354,
+        "hold": 0.0
+      },
+      "reset_root_xy_m": [
+        -0.003360297065228224,
+        0.003808354027569294
+      ],
+      "first_settled_root_xy_m": [
+        -0.4038107991218567,
+        -0.2491605281829834
+      ],
+      "max_root_drift_from_reset_m": 1.295844325749754,
+      "final_root_drift_from_reset_m": 1.2955804248593605,
+      "max_root_drift_from_first_settle_m": 0.822275244944762,
+      "final_root_drift_from_first_settle_m": 0.8220115666051673,
+      "final_sample": {
+        "stable": true,
+        "values": {
+          "top_center_m": 0.004311356693506241,
+          "top_height_error_m": 8.269958198070526e-05,
+          "top_speed_m_s": 0.00925558339804411,
+          "lower_offset_m": 0.009621872566640377,
+          "lower_height_m": 0.23534458875656128,
+          "robot_tilt_rad": 0.028283344581723213,
+          "lower_ball_speed_m_s": 0.03190620243549347,
+          "hold": 0.0
+        },
+        "root_xy": [
+          -1.1093757152557373,
+          -0.6709201335906982
+        ]
+      },
+      "end_reason": "time_out",
+      "physically_terminated": false,
+      "terminations": [
+        "time_out"
+      ],
+      "applied_disturbance_pulses": 29,
+      "formal_acceptance": false,
+      "measurement_convention": "50-Hz original pre-forward geometric gate; run duration = sample count x 0.02s; drift is descriptive, not a position-return acceptance",
+      "disturbance_enabled": true
+    },
+    "model_bounds_status": "OBSERVED_WITHIN_CHECKED_MODEL_BOUNDS"
+  },
+  "result": {
+    "status": "TRIAL_PASSED",
+    "seed": 2026102407,
+    "force_seed": 2026102410,
+    "checkpoint_sha256": "ca2a82acbe939169367272ffb50242bbfc1b4a39c06ed186bfc4cf3009ed4130",
+    "policy_updates": 6010,
+    "added_PPO_updates": 0,
+    "cloud_connections": 0,
+    "training_started": false,
+    "maximum_episodes": 1,
+    "maximum_control_steps": 3000,
+    "policy_and_normalizer_unchanged": true,
+    "checkpoint_unchanged": true,
+    "frozen_inputs_unchanged": true,
+    "external_body_wrench_zero_at_close": true,
+    "package_identity": "e65e7686d94dff585f7e4b8d5706e8d42206016210efd36f246f88b6a5fea46e",
+    "population_success_rate_claimed": false,
+    "power_action": "NONE",
+    "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "checkpoint_metadata": {
+      "package_identity": "0bb3633f91cea2c119e0c63eb4d5f06f17a80819636500015dafdd8368d12857",
+      "origin_checkpoint_sha256": "a3b2dda26bf99ee6676aef8a750e045b1d7243ef04d0d2272634395d0b9e5565",
+      "policy_updates": 6010,
+      "headroom_updates": 505,
+      "charged_unsaved_updates": 1,
+      "campaign_completed_updates": 506,
+      "campaign_attempted_updates": 506,
+      "num_envs": 4096,
+      "lower_assistance": 0.0
+    },
+    "execution_completed": true,
+    "trial": {
+      "episode": 1,
+      "seed": 2026102407,
+      "phase": "ENDED",
+      "outcome": "COMPLETED_60S_NO_PHYSICAL_TERMINATION",
+      "goal_60s_no_physical_termination_met": true,
+      "goal": "60-second dual-ball retention under fixed 10%-weight horizontal pulses; translation allowed",
+      "geometric_stability_summary": "COMPLETED_60S_WITH_STABILITY_BREAKS",
+      "geometric_thresholds_are_secondary": true,
+      "displacement_is_failure_criterion": false,
+      "original_drop_termination_triggered": false,
+      "control_steps": 3000,
+      "duration_seconds": 60.0,
+      "completed_60_seconds": true,
+      "stable_control_steps": 2605,
+      "stable_fraction": 0.8683333333333333,
+      "longest_continuous_stable_seconds": 3.4,
+      "final_continuous_stable_seconds": 1.0,
+      "longest_continuous_unstable_seconds": 0.28,
+      "first_stable_sample_seconds": 0.02,
+      "first_2s_stability_confirmed_at_seconds": 26.38,
+      "post_settle_observed_seconds": 33.62,
+      "post_settle_unstable_steps": 193,
+      "post_settle_stable_fraction": 0.8851873884592505,
+      "stability_breaks_after_settle": 62,
+      "first_unstable_after_settle_seconds": 26.7,
+      "last_unstable_sample_seconds": 59.0,
+      "violation_steps_by_gate": {
+        "top_center": 105,
+        "top_height": 0,
+        "top_speed": 91,
+        "lower_offset": 0,
+        "lower_height": 0,
+        "robot_tilt": 0,
+        "lower_ball_speed": 261,
+        "assistance": 0
+      },
+      "violation_steps_by_gate_after_settle": {
+        "top_center": 43,
+        "top_height": 0,
+        "top_speed": 50,
+        "lower_offset": 0,
+        "lower_height": 0,
+        "robot_tilt": 0,
+        "lower_ball_speed": 135,
+        "assistance": 0
+      },
+      "minimum_values": {
+        "top_center_m": 8.170220826286823e-05,
+        "top_height_error_m": 1.4901161193847656e-07,
+        "top_speed_m_s": 0.0004886225797235966,
+        "lower_offset_m": 2.677099655556958e-05,
+        "lower_height_m": 0.22962920367717743,
+        "robot_tilt_rad": 0.0009765625,
+        "lower_ball_speed_m_s": 3.4276463611870867e-11,
+        "hold": 0.0
+      },
+      "maximum_values": {
+        "top_center_m": 0.016962779685854912,
+        "top_height_error_m": 0.0007087942212820053,
+        "top_speed_m_s": 0.12739859521389008,
+        "lower_offset_m": 0.023944014683365822,
+        "lower_height_m": 0.2467057704925537,
+        "robot_tilt_rad": 0.07775144279003143,
+        "lower_ball_speed_m_s": 0.25491106510162354,
+        "hold": 0.0
+      },
+      "reset_root_xy_m": [
+        -0.003360297065228224,
+        0.003808354027569294
+      ],
+      "first_settled_root_xy_m": [
+        -0.4038107991218567,
+        -0.2491605281829834
+      ],
+      "max_root_drift_from_reset_m": 1.295844325749754,
+      "final_root_drift_from_reset_m": 1.2955804248593605,
+      "max_root_drift_from_first_settle_m": 0.822275244944762,
+      "final_root_drift_from_first_settle_m": 0.8220115666051673,
+      "final_sample": {
+        "stable": true,
+        "values": {
+          "top_center_m": 0.004311356693506241,
+          "top_height_error_m": 8.269958198070526e-05,
+          "top_speed_m_s": 0.00925558339804411,
+          "lower_offset_m": 0.009621872566640377,
+          "lower_height_m": 0.23534458875656128,
+          "robot_tilt_rad": 0.028283344581723213,
+          "lower_ball_speed_m_s": 0.03190620243549347,
+          "hold": 0.0
+        },
+        "root_xy": [
+          -1.1093757152557373,
+          -0.6709201335906982
+        ]
+      },
+      "end_reason": "time_out",
+      "physically_terminated": false,
+      "terminations": [
+        "time_out"
+      ],
+      "applied_disturbance_pulses": 29,
+      "formal_acceptance": false,
+      "measurement_convention": "50-Hz original pre-forward geometric gate; run duration = sample count x 0.02s; drift is descriptive, not a position-return acceptance",
+      "disturbance_enabled": true
+    },
+    "model_limits": {
+      "status": "OBSERVED_WITHIN_CHECKED_MODEL_BOUNDS",
+      "first_limit_event": null,
+      "stopping_limit_event": null,
+      "joint_violation_handling": "record_and_continue_simulation",
+      "any_model_bound_violation_observed": false,
+      "joint_violations_permanently_fail_acceptance": true,
+      "completed_physics_steps": 30000,
+      "simulated_seconds": 60.0,
+      "motor_checks_before_integration": 30000,
+      "joint_state_checks": 30001,
+      "joints": [
+        {
+          "name": "left_hip_yaw",
+          "min_q_rad": -0.2275620549917221,
+          "max_q_rad": 0.1229218915104866,
+          "peak_speed_rad_s": 4.159373760223389,
+          "peak_nominal_excursion_rad": 0.0,
+          "minimum_hard_margin_rad": 0.2087702602148056,
+          "soft_limit_samples": 0,
+          "current_soft_run": 0,
+          "longest_soft_run": 0,
+          "limit_violation_samples": 0,
+          "violation_episodes": 0,
+          "initial_limit_violation": false,
+          "current_violation_run": 0,
+          "longest_violation_run": 0,
+          "outside_at_last_sample": false,
+          "first_violation_seconds": null,
+          "last_violation_seconds": null,
+          "last_reentry_seconds": null,
+          "first_violation_context": null,
+          "last_q_rad": 0.0002905671135522425,
+          "last_speed_rad_s": 0.3626261353492737,
+          "longest_soft_limit_seconds": 0.0,
+          "sampled_limit_violation_seconds": 0.0,
+          "longest_limit_violation_seconds": 0.0,
+          "peak_nominal_excursion_deg": 0.0
+        },
+        {
+          "name": "left_hip_roll",
+          "min_q_rad": -0.2925548255443573,
+          "max_q_rad": 0.012770453467965126,
+          "peak_speed_rad_s": 5.83717155456543,
+          "peak_nominal_excursion_rad": 0.0,
+          "minimum_hard_margin_rad": 0.09141761064529419,
+          "soft_limit_samples": 0,
+          "current_soft_run": 0,
+          "longest_soft_run": 0,
+          "limit_violation_samples": 0,
+          "violation_episodes": 0,
+          "initial_limit_violation": false,
+          "current_violation_run": 0,
+          "longest_violation_run": 0,
+          "outside_at_last_sample": false,
+          "first_violation_seconds": null,
+          "last_violation_seconds": null,
+          "last_reentry_seconds": null,
+          "first_violation_context": null,
+          "last_q_rad": -0.10840639472007751,
+          "last_speed_rad_s": 0.0999145433306694,
+          "longest_soft_limit_seconds": 0.0,
+          "sampled_limit_violation_seconds": 0.0,
+          "longest_limit_violation_seconds": 0.0,
+          "peak_nominal_excursion_deg": 0.0
+        },
+        {
+          "name": "left_hip_pitch",
+          "min_q_rad": -0.6919279098510742,
+          "max_q_rad": -0.2804671823978424,
+          "peak_speed_rad_s": 5.436642169952393,
+          "peak_nominal_excursion_rad": 0.0,
+          "minimum_hard_margin_rad": 0.8788684606552124,
+          "soft_limit_samples": 0,
+          "current_soft_run": 0,
+          "longest_soft_run": 0,
+          "limit_violation_samples": 0,
+          "violation_episodes": 0,
+          "initial_limit_violation": false,
+          "current_violation_run": 0,
+          "longest_violation_run": 0,
+          "outside_at_last_sample": false,
+          "first_violation_seconds": null,
+          "last_violation_seconds": null,
+          "last_reentry_seconds": null,
+          "first_violation_context": null,
+          "last_q_rad": -0.44077563285827637,
+          "last_speed_rad_s": 0.2600840628147125,
+          "longest_soft_limit_seconds": 0.0,
+          "sampled_limit_violation_seconds": 0.0,
+          "longest_limit_violation_seconds": 0.0,
+          "peak_nominal_excursion_deg": 0.0
+        },
+        {
+          "name": "left_knee",
+          "min_q_rad": -0.4926831126213074,
+          "max_q_rad": 0.21237650513648987,
+          "peak_speed_rad_s": 4.41217565536499,
+          "peak_nominal_excursion_rad": 0.0,
+          "minimum_hard_margin_rad": 1.0781132578849792,
+          "soft_limit_samples": 0,
+          "current_soft_run": 0,
+          "longest_soft_run": 0,
+          "limit_violation_samples": 0,
+          "violation_episodes": 0,
+          "initial_limit_violation": false,
+          "current_violation_run": 0,
+          "longest_violation_run": 0,
+          "outside_at_last_sample": false,
+          "first_violation_seconds": null,
+          "last_violation_seconds": null,
+          "last_reentry_seconds": null,
+          "first_violation_context": null,
+          "last_q_rad": -0.0961572676897049,
+          "last_speed_rad_s": 0.779391884803772,
+          "longest_soft_limit_seconds": 0.0,
+          "sampled_limit_violation_seconds": 0.0,
+          "longest_limit_violation_seconds": 0.0,
+          "peak_nominal_excursion_deg": 0.0
+        },
+        {
+          "name": "left_ankle",
+          "min_q_rad": 0.11280640959739685,
+          "max_q_rad": 0.5921075344085693,
+          "peak_speed_rad_s": 4.891273498535156,
+          "peak_nominal_excursion_rad": 0.0,
+          "minimum_hard_margin_rad": 0.9786888360977173,
+          "soft_limit_samples": 0,
+          "current_soft_run": 0,
+          "longest_soft_run": 0,
+          "limit_violation_samples": 0,
+          "violation_episodes": 0,
+          "initial_limit_violation": false,
+          "current_violation_run": 0,
+          "longest_violation_run": 0,
+          "outside_at_last_sample": false,
+          "first_violation_seconds": null,
+          "last_violation_seconds": null,
+          "last_reentry_seconds": null,
+          "first_violation_context": null,
+          "last_q_rad": 0.3955225944519043,
+          "last_speed_rad_s": 0.49190083146095276,
+          "longest_soft_limit_seconds": 0.0,
+          "sampled_limit_violation_seconds": 0.0,
+          "longest_limit_violation_seconds": 0.0,
+          "peak_nominal_excursion_deg": 0.0
+        },
+        {
+          "name": "neck_pitch",
+          "min_q_rad": -0.5211482644081116,
+          "max_q_rad": 1.011732578277588,
+          "peak_speed_rad_s": 5.990158557891846,
+          "peak_nominal_excursion_rad": 0.0,
+          "minimum_hard_margin_rad": 0.03546500205993652,
+          "soft_limit_samples": 299,
+          "current_soft_run": 0,
+          "longest_soft_run": 149,
+          "limit_violation_samples": 0,
+          "violation_episodes": 0,
+          "initial_limit_violation": false,
+          "current_violation_run": 0,
+          "longest_violation_run": 0,
+          "outside_at_last_sample": false,
+          "first_violation_seconds": null,
+          "last_violation_seconds": null,
+          "last_reentry_seconds": null,
+          "first_violation_context": null,
+          "last_q_rad": 0.6717767715454102,
+          "last_speed_rad_s": 0.16893300414085388,
+          "longest_soft_limit_seconds": 0.298,
+          "sampled_limit_violation_seconds": 0.0,
+          "longest_limit_violation_seconds": 0.0,
+          "peak_nominal_excursion_deg": 0.0
+        },
+        {
+          "name": "head_pitch",
+          "min_q_rad": -0.33736106753349304,
+          "max_q_rad": 1.4721430540084839,
+          "peak_speed_rad_s": 8.002891540527344,
+          "peak_nominal_excursion_rad": 0.0,
+          "minimum_hard_margin_rad": 0.09865331649780273,
+          "soft_limit_samples": 117,
+          "current_soft_run": 0,
+          "longest_soft_run": 103,
+          "limit_violation_samples": 0,
+          "violation_episodes": 0,
+          "initial_limit_violation": false,
+          "current_violation_run": 0,
+          "longest_violation_run": 0,
+          "outside_at_last_sample": false,
+          "first_violation_seconds": null,
+          "last_violation_seconds": null,
+          "last_reentry_seconds": null,
+          "first_violation_context": null,
+          "last_q_rad": 1.0202704668045044,
+          "last_speed_rad_s": 0.18833868205547333,
+          "longest_soft_limit_seconds": 0.20600000000000002,
+          "sampled_limit_violation_seconds": 0.0,
+          "longest_limit_violation_seconds": 0.0,
+          "peak_nominal_excursion_deg": 0.0
+        },
+        {
+          "name": "head_yaw",
+          "min_q_rad": 1.4605020624003373e-05,
+          "max_q_rad": 1.5707067251205444,
+          "peak_speed_rad_s": 12.700002670288086,
+          "peak_nominal_excursion_rad": 0.0,
+          "minimum_hard_margin_rad": 1.3963528871536255,
+          "soft_limit_samples": 0,
+          "current_soft_run": 0,
+          "longest_soft_run": 0,
+          "limit_violation_samples": 0,
+          "violation_episodes": 0,
+          "initial_limit_violation": false,
+          "current_violation_run": 0,
+          "longest_violation_run": 0,
+          "outside_at_last_sample": false,
+          "first_violation_seconds": null,
+          "last_violation_seconds": null,
+          "last_reentry_seconds": null,
+          "first_violation_context": null,
+          "last_q_rad": 1.2636269330978394,
+          "last_speed_rad_s": -0.4073364734649658,
+          "longest_soft_limit_seconds": 0.0,
+          "sampled_limit_violation_seconds": 0.0,
+          "longest_limit_violation_seconds": 0.0,
+          "peak_nominal_excursion_deg": 0.0
+        },
+        {
+          "name": "head_roll",
+          "min_q_rad": -0.016653960570693016,
+          "max_q_rad": 0.38212335109710693,
+          "peak_speed_rad_s": 3.2732441425323486,
+          "peak_nominal_excursion_rad": 0.0,
+          "minimum_hard_margin_rad": 0.054208964109420776,
+          "soft_limit_samples": 0,
+          "current_soft_run": 0,
+          "longest_soft_run": 0,
+          "limit_violation_samples": 0,
+          "violation_episodes": 0,
+          "initial_limit_violation": false,
+          "current_violation_run": 0,
+          "longest_violation_run": 0,
+          "outside_at_last_sample": false,
+          "first_violation_seconds": null,
+          "last_violation_seconds": null,
+          "last_reentry_seconds": null,
+          "first_violation_context": null,
+          "last_q_rad": 0.2919391393661499,
+          "last_speed_rad_s": -0.0011318559991195798,
+          "longest_soft_limit_seconds": 0.0,
+          "sampled_limit_violation_seconds": 0.0,
+          "longest_limit_violation_seconds": 0.0,
+          "peak_nominal_excursion_deg": 0.0
+        },
+        {
+          "name": "right_hip_yaw",
+          "min_q_rad": -0.29500389099121094,
+          "max_q_rad": 0.33110833168029785,
+          "peak_speed_rad_s": 3.9394640922546387,
+          "peak_nominal_excursion_rad": 0.0,
+          "minimum_hard_margin_rad": 0.10522398352622986,
+          "soft_limit_samples": 0,
+          "current_soft_run": 0,
+          "longest_soft_run": 0,
+          "limit_violation_samples": 0,
+          "violation_episodes": 0,
+          "initial_limit_violation": false,
+          "current_violation_run": 0,
+          "longest_violation_run": 0,
+          "outside_at_last_sample": false,
+          "first_violation_seconds": null,
+          "last_violation_seconds": null,
+          "last_reentry_seconds": null,
+          "first_violation_context": null,
+          "last_q_rad": 0.01750831864774227,
+          "last_speed_rad_s": 0.44846072793006897,
+          "longest_soft_limit_seconds": 0.0,
+          "sampled_limit_violation_seconds": 0.0,
+          "longest_limit_violation_seconds": 0.0,
+          "peak_nominal_excursion_deg": 0.0
+        },
+        {
+          "name": "right_hip_roll",
+          "min_q_rad": -0.04172176495194435,
+          "max_q_rad": 0.2139579802751541,
+          "peak_speed_rad_s": 5.003098011016846,
+          "peak_nominal_excursion_rad": 0.0,
+          "minimum_hard_margin_rad": 0.17001445591449738,
+          "soft_limit_samples": 0,
+          "current_soft_run": 0,
+          "longest_soft_run": 0,
+          "limit_violation_samples": 0,
+          "violation_episodes": 0,
+          "initial_limit_violation": false,
+          "current_violation_run": 0,
+          "longest_violation_run": 0,
+          "outside_at_last_sample": false,
+          "first_violation_seconds": null,
+          "last_violation_seconds": null,
+          "last_reentry_seconds": null,
+          "first_violation_context": null,
+          "last_q_rad": 0.15389014780521393,
+          "last_speed_rad_s": 0.4777336120605469,
+          "longest_soft_limit_seconds": 0.0,
+          "sampled_limit_violation_seconds": 0.0,
+          "longest_limit_violation_seconds": 0.0,
+          "peak_nominal_excursion_deg": 0.0
+        },
+        {
+          "name": "right_hip_pitch",
+          "min_q_rad": 0.21614786982536316,
+          "max_q_rad": 0.7249513268470764,
+          "peak_speed_rad_s": 5.527522563934326,
+          "peak_nominal_excursion_rad": 0.0,
+          "minimum_hard_margin_rad": 0.8458450436592102,
+          "soft_limit_samples": 0,
+          "current_soft_run": 0,
+          "longest_soft_run": 0,
+          "limit_violation_samples": 0,
+          "violation_episodes": 0,
+          "initial_limit_violation": false,
+          "current_violation_run": 0,
+          "longest_violation_run": 0,
+          "outside_at_last_sample": false,
+          "first_violation_seconds": null,
+          "last_violation_seconds": null,
+          "last_reentry_seconds": null,
+          "first_violation_context": null,
+          "last_q_rad": 0.3937288224697113,
+          "last_speed_rad_s": 0.5613653063774109,
+          "longest_soft_limit_seconds": 0.0,
+          "sampled_limit_violation_seconds": 0.0,
+          "longest_limit_violation_seconds": 0.0,
+          "peak_nominal_excursion_deg": 0.0
+        },
+        {
+          "name": "right_knee",
+          "min_q_rad": -0.23743660748004913,
+          "max_q_rad": 0.4764387309551239,
+          "peak_speed_rad_s": 5.138294696807861,
+          "peak_nominal_excursion_rad": 0.0,
+          "minimum_hard_margin_rad": 1.0943576395511627,
+          "soft_limit_samples": 0,
+          "current_soft_run": 0,
+          "longest_soft_run": 0,
+          "limit_violation_samples": 0,
+          "violation_episodes": 0,
+          "initial_limit_violation": false,
+          "current_violation_run": 0,
+          "longest_violation_run": 0,
+          "outside_at_last_sample": false,
+          "first_violation_seconds": null,
+          "last_violation_seconds": null,
+          "last_reentry_seconds": null,
+          "first_violation_context": null,
+          "last_q_rad": 0.06445012986660004,
+          "last_speed_rad_s": 0.5268070101737976,
+          "longest_soft_limit_seconds": 0.0,
+          "sampled_limit_violation_seconds": 0.0,
+          "longest_limit_violation_seconds": 0.0,
+          "peak_nominal_excursion_deg": 0.0
+        },
+        {
+          "name": "right_ankle",
+          "min_q_rad": -0.6692793369293213,
+          "max_q_rad": -0.1767331212759018,
+          "peak_speed_rad_s": 4.798748016357422,
+          "peak_nominal_excursion_rad": 0.0,
+          "minimum_hard_margin_rad": 0.9015170335769653,
+          "soft_limit_samples": 0,
+          "current_soft_run": 0,
+          "longest_soft_run": 0,
+          "limit_violation_samples": 0,
+          "violation_episodes": 0,
+          "initial_limit_violation": false,
+          "current_violation_run": 0,
+          "longest_violation_run": 0,
+          "outside_at_last_sample": false,
+          "first_violation_seconds": null,
+          "last_violation_seconds": null,
+          "last_reentry_seconds": null,
+          "first_violation_context": null,
+          "last_q_rad": -0.37665852904319763,
+          "last_speed_rad_s": -0.504948079586029,
+          "longest_soft_limit_seconds": 0.0,
+          "sampled_limit_violation_seconds": 0.0,
+          "longest_limit_violation_seconds": 0.0,
+          "peak_nominal_excursion_deg": 0.0
+        }
+      ],
+      "motors": [
+        {
+          "name": "left_hip_yaw",
+          "peak_modeled_torque_Nm": 0.4165242314338684,
+          "peak_applied_torque_Nm": 0.4165242314338684,
+          "peak_modeled_current_A": 1.138002382352655,
+          "peak_speed_rad_s": 4.159373760223389,
+          "peak_pwm_fraction": 0.5235682129859924,
+          "pwm_saturated_samples": 0,
+          "current_pwm_run": 0,
+          "longest_pwm_run": 0,
+          "force_saturated_samples": 0,
+          "current_force_run": 0,
+          "longest_force_run": 0,
+          "target_outside_joint_range_samples": 1577,
+          "longest_pwm_saturation_seconds": 0.0,
+          "longest_force_saturation_seconds": 0.0
+        },
+        {
+          "name": "left_hip_roll",
+          "peak_modeled_torque_Nm": 0.6405237317085266,
+          "peak_applied_torque_Nm": 0.6405237317085266,
+          "peak_modeled_current_A": 1.750000306413017,
+          "peak_speed_rad_s": 5.83717155456543,
+          "peak_pwm_fraction": 0.890153706073761,
+          "pwm_saturated_samples": 0,
+          "current_pwm_run": 0,
+          "longest_pwm_run": 0,
+          "force_saturated_samples": 0,
+          "current_force_run": 0,
+          "longest_force_run": 0,
+          "target_outside_joint_range_samples": 12392,
+          "longest_pwm_saturation_seconds": 0.0,
+          "longest_force_saturation_seconds": 0.0
+        },
+        {
+          "name": "left_hip_pitch",
+          "peak_modeled_torque_Nm": 0.6405236721038818,
+          "peak_applied_torque_Nm": 0.6405236721038818,
+          "peak_modeled_current_A": 1.7500001435648016,
+          "peak_speed_rad_s": 5.436642169952393,
+          "peak_pwm_fraction": 0.7778636813163757,
+          "pwm_saturated_samples": 0,
+          "current_pwm_run": 0,
+          "longest_pwm_run": 0,
+          "force_saturated_samples": 0,
+          "current_force_run": 0,
+          "longest_force_run": 0,
+          "target_outside_joint_range_samples": 0,
+          "longest_pwm_saturation_seconds": 0.0,
+          "longest_force_saturation_seconds": 0.0
+        },
+        {
+          "name": "left_knee",
+          "peak_modeled_torque_Nm": 0.6405236721038818,
+          "peak_applied_torque_Nm": 0.6405236721038818,
+          "peak_modeled_current_A": 1.7500001435648016,
+          "peak_speed_rad_s": 4.41217565536499,
+          "peak_pwm_fraction": 0.6514386534690857,
+          "pwm_saturated_samples": 0,
+          "current_pwm_run": 0,
+          "longest_pwm_run": 0,
+          "force_saturated_samples": 0,
+          "current_force_run": 0,
+          "longest_force_run": 0,
+          "target_outside_joint_range_samples": 0,
+          "longest_pwm_saturation_seconds": 0.0,
+          "longest_force_saturation_seconds": 0.0
+        },
+        {
+          "name": "left_ankle",
+          "peak_modeled_torque_Nm": 0.49549007415771484,
+          "peak_applied_torque_Nm": 0.49549007415771484,
+          "peak_modeled_current_A": 1.3537480949967222,
+          "peak_speed_rad_s": 4.891273498535156,
+          "peak_pwm_fraction": 0.4791499376296997,
+          "pwm_saturated_samples": 0,
+          "current_pwm_run": 0,
+          "longest_pwm_run": 0,
+          "force_saturated_samples": 0,
+          "current_force_run": 0,
+          "longest_force_run": 0,
+          "target_outside_joint_range_samples": 0,
+          "longest_pwm_saturation_seconds": 0.0,
+          "longest_force_saturation_seconds": 0.0
+        },
+        {
+          "name": "neck_pitch",
+          "peak_modeled_torque_Nm": 0.5666884779930115,
+          "peak_applied_torque_Nm": 0.5666884779930115,
+          "peak_modeled_current_A": 1.5482720796046576,
+          "peak_speed_rad_s": 5.990158557891846,
+          "peak_pwm_fraction": 0.7593513131141663,
+          "pwm_saturated_samples": 0,
+          "current_pwm_run": 0,
+          "longest_pwm_run": 0,
+          "force_saturated_samples": 0,
+          "current_force_run": 0,
+          "longest_force_run": 0,
+          "target_outside_joint_range_samples": 163,
+          "longest_pwm_saturation_seconds": 0.0,
+          "longest_force_saturation_seconds": 0.0
+        },
+        {
+          "name": "head_pitch",
+          "peak_modeled_torque_Nm": 0.43529844284057617,
+          "peak_applied_torque_Nm": 0.43529844284057617,
+          "peak_modeled_current_A": 1.1892961503864554,
+          "peak_speed_rad_s": 8.002891540527344,
+          "peak_pwm_fraction": 0.7199797630310059,
+          "pwm_saturated_samples": 0,
+          "current_pwm_run": 0,
+          "longest_pwm_run": 0,
+          "force_saturated_samples": 0,
+          "current_force_run": 0,
+          "longest_force_run": 0,
+          "target_outside_joint_range_samples": 102,
+          "longest_pwm_saturation_seconds": 0.0,
+          "longest_force_saturation_seconds": 0.0
+        },
+        {
+          "name": "head_yaw",
+          "peak_modeled_torque_Nm": 0.5456108450889587,
+          "peak_applied_torque_Nm": 0.5456108450889587,
+          "peak_modeled_current_A": 1.4906850422872981,
+          "peak_speed_rad_s": 12.700002670288086,
+          "peak_pwm_fraction": 1.0,
+          "pwm_saturated_samples": 18,
+          "current_pwm_run": 0,
+          "longest_pwm_run": 14,
+          "force_saturated_samples": 0,
+          "current_force_run": 0,
+          "longest_force_run": 0,
+          "target_outside_joint_range_samples": 0,
+          "longest_pwm_saturation_seconds": 0.028,
+          "longest_force_saturation_seconds": 0.0
+        },
+        {
+          "name": "head_roll",
+          "peak_modeled_torque_Nm": 0.24451163411140442,
+          "peak_applied_torque_Nm": 0.24451163411140442,
+          "peak_modeled_current_A": 0.668039938934255,
+          "peak_speed_rad_s": 3.2732441425323486,
+          "peak_pwm_fraction": 0.3243892788887024,
+          "pwm_saturated_samples": 0,
+          "current_pwm_run": 0,
+          "longest_pwm_run": 0,
+          "force_saturated_samples": 0,
+          "current_force_run": 0,
+          "longest_force_run": 0,
+          "target_outside_joint_range_samples": 188,
+          "longest_pwm_saturation_seconds": 0.0,
+          "longest_force_saturation_seconds": 0.0
+        },
+        {
+          "name": "right_hip_yaw",
+          "peak_modeled_torque_Nm": 0.3908138871192932,
+          "peak_applied_torque_Nm": 0.3908138871192932,
+          "peak_modeled_current_A": 1.0677581303426997,
+          "peak_speed_rad_s": 3.9394640922546387,
+          "peak_pwm_fraction": 0.49509432911872864,
+          "pwm_saturated_samples": 0,
+          "current_pwm_run": 0,
+          "longest_pwm_run": 0,
+          "force_saturated_samples": 0,
+          "current_force_run": 0,
+          "longest_force_run": 0,
+          "target_outside_joint_range_samples": 1544,
+          "longest_pwm_saturation_seconds": 0.0,
+          "longest_force_saturation_seconds": 0.0
+        },
+        {
+          "name": "right_hip_roll",
+          "peak_modeled_torque_Nm": 0.6405236721038818,
+          "peak_applied_torque_Nm": 0.6405236721038818,
+          "peak_modeled_current_A": 1.7500001435648016,
+          "peak_speed_rad_s": 5.003098011016846,
+          "peak_pwm_fraction": 0.8635435700416565,
+          "pwm_saturated_samples": 0,
+          "current_pwm_run": 0,
+          "longest_pwm_run": 0,
+          "force_saturated_samples": 0,
+          "current_force_run": 0,
+          "longest_force_run": 0,
+          "target_outside_joint_range_samples": 11481,
+          "longest_pwm_saturation_seconds": 0.0,
+          "longest_force_saturation_seconds": 0.0
+        },
+        {
+          "name": "right_hip_pitch",
+          "peak_modeled_torque_Nm": 0.6300479769706726,
+          "peak_applied_torque_Nm": 0.6300479769706726,
+          "peak_modeled_current_A": 1.7213790811662146,
+          "peak_speed_rad_s": 5.527522563934326,
+          "peak_pwm_fraction": 0.7586585879325867,
+          "pwm_saturated_samples": 0,
+          "current_pwm_run": 0,
+          "longest_pwm_run": 0,
+          "force_saturated_samples": 0,
+          "current_force_run": 0,
+          "longest_force_run": 0,
+          "target_outside_joint_range_samples": 0,
+          "longest_pwm_saturation_seconds": 0.0,
+          "longest_force_saturation_seconds": 0.0
+        },
+        {
+          "name": "right_knee",
+          "peak_modeled_torque_Nm": 0.6405236721038818,
+          "peak_applied_torque_Nm": 0.6405236721038818,
+          "peak_modeled_current_A": 1.7500001435648016,
+          "peak_speed_rad_s": 5.138294696807861,
+          "peak_pwm_fraction": 0.8883257508277893,
+          "pwm_saturated_samples": 0,
+          "current_pwm_run": 0,
+          "longest_pwm_run": 0,
+          "force_saturated_samples": 0,
+          "current_force_run": 0,
+          "longest_force_run": 0,
+          "target_outside_joint_range_samples": 21,
+          "longest_pwm_saturation_seconds": 0.0,
+          "longest_force_saturation_seconds": 0.0
+        },
+        {
+          "name": "right_ankle",
+          "peak_modeled_torque_Nm": 0.415313184261322,
+          "peak_applied_torque_Nm": 0.415313184261322,
+          "peak_modeled_current_A": 1.1346936323124595,
+          "peak_speed_rad_s": 4.798748016357422,
+          "peak_pwm_fraction": 0.5022557377815247,
+          "pwm_saturated_samples": 0,
+          "current_pwm_run": 0,
+          "longest_pwm_run": 0,
+          "force_saturated_samples": 0,
+          "current_force_run": 0,
+          "longest_force_run": 0,
+          "target_outside_joint_range_samples": 0,
+          "longest_pwm_saturation_seconds": 0.0,
+          "longest_force_saturation_seconds": 0.0
+        }
+      ],
+      "standalone_speed_limit_verified": false,
+      "thermal_and_continuous_ratings_verified": false,
+      "real_hardware_limits_verified": false,
+      "notes": [
+        "Speed is evaluated jointly with modeled voltage/current/torque; no-load speed is not a hard speed cap.",
+        "Soft-limit proximity and saturation are recorded, not silently promoted to hardware ratings.",
+        "Actual joint positions are checked; wide servo position targets are separately recorded.",
+        "32 float32 epsilons at the value scale are numerical tolerance only."
+      ],
+      "boundaries": {
+        "schema": "stage12-model-boundaries-v3",
+        "source_checks": {
+          "bam.dynamixel.actuator": {
+            "path": "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/bam/dynamixel/actuator.py",
+            "sha256": "8d3ed39d68758981204901dd18dcce11dcb107b842067e036d2b8ac7b1411cec"
+          },
+          "bam.mjlab": {
+            "path": "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/bam/mjlab.py",
+            "sha256": "af3de252939ca868712423979c2ab52e198d382d7aca613b5b33c77d74baa440"
+          },
+          "bam.actuator": {
+            "path": "/home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/bam/actuator.py",
+            "sha256": "6927d7b2341cbaca0e5d872fae4ddce6200056885310d9ee5acaba1f34e09c13"
+          },
+          "mjlab_microduck.actuator.friction_dr_bam": {
+            "path": "/home/lx/microduck-double-balance/workspace/src/mjlab_microduck/actuator/friction_dr_bam.py",
+            "sha256": "75cb3e993cd8fdc9d90081129f793deb1eb22fc1ad921f75a97511fa98d38fb7"
+          }
+        },
+        "joints": [
+          {
+            "name": "left_hip_yaw",
+            "global_joint_id": 1,
+            "lower_rad": -0.4363323152065277,
+            "upper_rad": 0.5235987901687622,
+            "soft_lower_rad": -0.3883357644081116,
+            "soft_upper_rad": 0.4756022095680237,
+            "solver_solref": [
+              0.02,
+              1.0
+            ],
+            "solver_solimp": [
+              0.9,
+              0.95,
+              0.001,
+              0.5,
+              2.0
+            ],
+            "solver_margin_rad": 0.0
+          },
+          {
+            "name": "left_hip_roll",
+            "global_joint_id": 2,
+            "lower_rad": -0.3839724361896515,
+            "upper_rad": 0.3839724361896515,
+            "soft_lower_rad": -0.3455751836299896,
+            "soft_upper_rad": 0.3455751836299896,
+            "solver_solref": [
+              0.02,
+              1.0
+            ],
+            "solver_solimp": [
+              0.9,
+              0.95,
+              0.001,
+              0.5,
+              2.0
+            ],
+            "solver_margin_rad": 0.0
+          },
+          {
+            "name": "left_hip_pitch",
+            "global_joint_id": 3,
+            "lower_rad": -1.5707963705062866,
+            "upper_rad": 1.5707963705062866,
+            "soft_lower_rad": -1.4137166738510132,
+            "soft_upper_rad": 1.4137166738510132,
+            "solver_solref": [
+              0.02,
+              1.0
+            ],
+            "solver_solimp": [
+              0.9,
+              0.95,
+              0.001,
+              0.5,
+              2.0
+            ],
+            "solver_margin_rad": 0.0
+          },
+          {
+            "name": "left_knee",
+            "global_joint_id": 4,
+            "lower_rad": -1.5707963705062866,
+            "upper_rad": 1.5707963705062866,
+            "soft_lower_rad": -1.4137166738510132,
+            "soft_upper_rad": 1.4137166738510132,
+            "solver_solref": [
+              0.02,
+              1.0
+            ],
+            "solver_solimp": [
+              0.9,
+              0.95,
+              0.001,
+              0.5,
+              2.0
+            ],
+            "solver_margin_rad": 0.0
+          },
+          {
+            "name": "left_ankle",
+            "global_joint_id": 5,
+            "lower_rad": -1.5707963705062866,
+            "upper_rad": 1.5707963705062866,
+            "soft_lower_rad": -1.4137166738510132,
+            "soft_upper_rad": 1.4137166738510132,
+            "solver_solref": [
+              0.02,
+              1.0
+            ],
+            "solver_solimp": [
+              0.9,
+              0.95,
+              0.001,
+              0.5,
+              2.0
+            ],
+            "solver_margin_rad": 0.0
+          },
+          {
+            "name": "neck_pitch",
+            "global_joint_id": 6,
+            "lower_rad": -1.5707963705062866,
+            "upper_rad": 1.0471975803375244,
+            "soft_lower_rad": -1.439896583557129,
+            "soft_upper_rad": 0.9162978529930115,
+            "solver_solref": [
+              0.02,
+              1.0
+            ],
+            "solver_solimp": [
+              0.9,
+              0.95,
+              0.001,
+              0.5,
+              2.0
+            ],
+            "solver_margin_rad": 0.0
+          },
+          {
+            "name": "head_pitch",
+            "global_joint_id": 7,
+            "lower_rad": -1.5707963705062866,
+            "upper_rad": 1.5707963705062866,
+            "soft_lower_rad": -1.4137166738510132,
+            "soft_upper_rad": 1.4137166738510132,
+            "solver_solref": [
+              0.02,
+              1.0
+            ],
+            "solver_solimp": [
+              0.9,
+              0.95,
+              0.001,
+              0.5,
+              2.0
+            ],
+            "solver_margin_rad": 0.0
+          },
+          {
+            "name": "head_yaw",
+            "global_joint_id": 8,
+            "lower_rad": -2.96705961227417,
+            "upper_rad": 2.96705961227417,
+            "soft_lower_rad": -2.670353651046753,
+            "soft_upper_rad": 2.670353651046753,
+            "solver_solref": [
+              0.02,
+              1.0
+            ],
+            "solver_solimp": [
+              0.9,
+              0.95,
+              0.001,
+              0.5,
+              2.0
+            ],
+            "solver_margin_rad": 0.0
+          },
+          {
+            "name": "head_roll",
+            "global_joint_id": 9,
+            "lower_rad": -0.4363323152065277,
+            "upper_rad": 0.4363323152065277,
+            "soft_lower_rad": -0.39269906282424927,
+            "soft_upper_rad": 0.39269906282424927,
+            "solver_solref": [
+              0.02,
+              1.0
+            ],
+            "solver_solimp": [
+              0.9,
+              0.95,
+              0.001,
+              0.5,
+              2.0
+            ],
+            "solver_margin_rad": 0.0
+          },
+          {
+            "name": "right_hip_yaw",
+            "global_joint_id": 10,
+            "lower_rad": -0.5235987901687622,
+            "upper_rad": 0.4363323152065277,
+            "soft_lower_rad": -0.4756022095680237,
+            "soft_upper_rad": 0.3883357644081116,
+            "solver_solref": [
+              0.02,
+              1.0
+            ],
+            "solver_solimp": [
+              0.9,
+              0.95,
+              0.001,
+              0.5,
+              2.0
+            ],
+            "solver_margin_rad": 0.0
+          },
+          {
+            "name": "right_hip_roll",
+            "global_joint_id": 11,
+            "lower_rad": -0.3839724361896515,
+            "upper_rad": 0.3839724361896515,
+            "soft_lower_rad": -0.3455751836299896,
+            "soft_upper_rad": 0.3455751836299896,
+            "solver_solref": [
+              0.02,
+              1.0
+            ],
+            "solver_solimp": [
+              0.9,
+              0.95,
+              0.001,
+              0.5,
+              2.0
+            ],
+            "solver_margin_rad": 0.0
+          },
+          {
+            "name": "right_hip_pitch",
+            "global_joint_id": 12,
+            "lower_rad": -1.5707963705062866,
+            "upper_rad": 1.5707963705062866,
+            "soft_lower_rad": -1.4137166738510132,
+            "soft_upper_rad": 1.4137166738510132,
+            "solver_solref": [
+              0.02,
+              1.0
+            ],
+            "solver_solimp": [
+              0.9,
+              0.95,
+              0.001,
+              0.5,
+              2.0
+            ],
+            "solver_margin_rad": 0.0
+          },
+          {
+            "name": "right_knee",
+            "global_joint_id": 13,
+            "lower_rad": -1.5707963705062866,
+            "upper_rad": 1.5707963705062866,
+            "soft_lower_rad": -1.4137166738510132,
+            "soft_upper_rad": 1.4137166738510132,
+            "solver_solref": [
+              0.02,
+              1.0
+            ],
+            "solver_solimp": [
+              0.9,
+              0.95,
+              0.001,
+              0.5,
+              2.0
+            ],
+            "solver_margin_rad": 0.0
+          },
+          {
+            "name": "right_ankle",
+            "global_joint_id": 14,
+            "lower_rad": -1.5707963705062866,
+            "upper_rad": 1.5707963705062866,
+            "soft_lower_rad": -1.4137166738510132,
+            "soft_upper_rad": 1.4137166738510132,
+            "solver_solref": [
+              0.02,
+              1.0
+            ],
+            "solver_solimp": [
+              0.9,
+              0.95,
+              0.001,
+              0.5,
+              2.0
+            ],
+            "solver_margin_rad": 0.0
+          }
+        ],
+        "motors": [
+          {
+            "name": "left_hip_yaw",
+            "local_joint_id": 0,
+            "global_ctrl_id": 0,
+            "kt": 0.36601349688984386,
+            "resistance_ohm": 2.8113923539223227,
+            "max_pwm": 1.0,
+            "max_current_A": 1.75,
+            "force_lower_Nm": -1.067553162574768,
+            "force_upper_Nm": 1.067553162574768,
+            "independent_speed_limit_rad_s": null
+          },
+          {
+            "name": "left_hip_roll",
+            "local_joint_id": 1,
+            "global_ctrl_id": 1,
+            "kt": 0.36601349688984386,
+            "resistance_ohm": 2.8113923539223227,
+            "max_pwm": 1.0,
+            "max_current_A": 1.75,
+            "force_lower_Nm": -1.067553162574768,
+            "force_upper_Nm": 1.067553162574768,
+            "independent_speed_limit_rad_s": null
+          },
+          {
+            "name": "left_hip_pitch",
+            "local_joint_id": 2,
+            "global_ctrl_id": 2,
+            "kt": 0.36601349688984386,
+            "resistance_ohm": 2.8113923539223227,
+            "max_pwm": 1.0,
+            "max_current_A": 1.75,
+            "force_lower_Nm": -1.067553162574768,
+            "force_upper_Nm": 1.067553162574768,
+            "independent_speed_limit_rad_s": null
+          },
+          {
+            "name": "left_knee",
+            "local_joint_id": 3,
+            "global_ctrl_id": 3,
+            "kt": 0.36601349688984386,
+            "resistance_ohm": 2.8113923539223227,
+            "max_pwm": 1.0,
+            "max_current_A": 1.75,
+            "force_lower_Nm": -1.067553162574768,
+            "force_upper_Nm": 1.067553162574768,
+            "independent_speed_limit_rad_s": null
+          },
+          {
+            "name": "left_ankle",
+            "local_joint_id": 4,
+            "global_ctrl_id": 4,
+            "kt": 0.36601349688984386,
+            "resistance_ohm": 2.8113923539223227,
+            "max_pwm": 1.0,
+            "max_current_A": 1.75,
+            "force_lower_Nm": -1.067553162574768,
+            "force_upper_Nm": 1.067553162574768,
+            "independent_speed_limit_rad_s": null
+          },
+          {
+            "name": "neck_pitch",
+            "local_joint_id": 5,
+            "global_ctrl_id": 5,
+            "kt": 0.36601349688984386,
+            "resistance_ohm": 2.8113923539223227,
+            "max_pwm": 1.0,
+            "max_current_A": 1.75,
+            "force_lower_Nm": -1.067553162574768,
+            "force_upper_Nm": 1.067553162574768,
+            "independent_speed_limit_rad_s": null
+          },
+          {
+            "name": "head_pitch",
+            "local_joint_id": 6,
+            "global_ctrl_id": 6,
+            "kt": 0.36601349688984386,
+            "resistance_ohm": 2.8113923539223227,
+            "max_pwm": 1.0,
+            "max_current_A": 1.75,
+            "force_lower_Nm": -1.067553162574768,
+            "force_upper_Nm": 1.067553162574768,
+            "independent_speed_limit_rad_s": null
+          },
+          {
+            "name": "head_yaw",
+            "local_joint_id": 7,
+            "global_ctrl_id": 7,
+            "kt": 0.36601349688984386,
+            "resistance_ohm": 2.8113923539223227,
+            "max_pwm": 1.0,
+            "max_current_A": 1.75,
+            "force_lower_Nm": -1.067553162574768,
+            "force_upper_Nm": 1.067553162574768,
+            "independent_speed_limit_rad_s": null
+          },
+          {
+            "name": "head_roll",
+            "local_joint_id": 8,
+            "global_ctrl_id": 8,
+            "kt": 0.36601349688984386,
+            "resistance_ohm": 2.8113923539223227,
+            "max_pwm": 1.0,
+            "max_current_A": 1.75,
+            "force_lower_Nm": -1.067553162574768,
+            "force_upper_Nm": 1.067553162574768,
+            "independent_speed_limit_rad_s": null
+          },
+          {
+            "name": "right_hip_yaw",
+            "local_joint_id": 9,
+            "global_ctrl_id": 9,
+            "kt": 0.36601349688984386,
+            "resistance_ohm": 2.8113923539223227,
+            "max_pwm": 1.0,
+            "max_current_A": 1.75,
+            "force_lower_Nm": -1.067553162574768,
+            "force_upper_Nm": 1.067553162574768,
+            "independent_speed_limit_rad_s": null
+          },
+          {
+            "name": "right_hip_roll",
+            "local_joint_id": 10,
+            "global_ctrl_id": 10,
+            "kt": 0.36601349688984386,
+            "resistance_ohm": 2.8113923539223227,
+            "max_pwm": 1.0,
+            "max_current_A": 1.75,
+            "force_lower_Nm": -1.067553162574768,
+            "force_upper_Nm": 1.067553162574768,
+            "independent_speed_limit_rad_s": null
+          },
+          {
+            "name": "right_hip_pitch",
+            "local_joint_id": 11,
+            "global_ctrl_id": 11,
+            "kt": 0.36601349688984386,
+            "resistance_ohm": 2.8113923539223227,
+            "max_pwm": 1.0,
+            "max_current_A": 1.75,
+            "force_lower_Nm": -1.067553162574768,
+            "force_upper_Nm": 1.067553162574768,
+            "independent_speed_limit_rad_s": null
+          },
+          {
+            "name": "right_knee",
+            "local_joint_id": 12,
+            "global_ctrl_id": 12,
+            "kt": 0.36601349688984386,
+            "resistance_ohm": 2.8113923539223227,
+            "max_pwm": 1.0,
+            "max_current_A": 1.75,
+            "force_lower_Nm": -1.067553162574768,
+            "force_upper_Nm": 1.067553162574768,
+            "independent_speed_limit_rad_s": null
+          },
+          {
+            "name": "right_ankle",
+            "local_joint_id": 13,
+            "global_ctrl_id": 13,
+            "kt": 0.36601349688984386,
+            "resistance_ohm": 2.8113923539223227,
+            "max_pwm": 1.0,
+            "max_current_A": 1.75,
+            "force_lower_Nm": -1.067553162574768,
+            "force_upper_Nm": 1.067553162574768,
+            "independent_speed_limit_rad_s": null
+          }
+        ],
+        "physics_hz": 500,
+        "comparison": "actual joint states and actual motor outputs; targets recorded separately",
+        "joint_violation_handling": "record_and_continue_simulation",
+        "joint_violations_permanently_fail_acceptance": true,
+        "observation_only": true,
+        "hardware_control": false,
+        "hard_stop_on": [
+          "modeled current beyond configured limit",
+          "PWM beyond configured limit",
+          "applied torque outside compiled motor force range",
+          "nonfinite state"
+        ],
+        "unknown_limits": [
+          "independent rated maximum joint speed",
+          "continuous/thermal motor ratings",
+          "certified recoverable whole-body tilt envelope"
+        ],
+        "original_fall_termination_retained": true,
+        "real_hardware_validation": false,
+        "current_is_model_estimate": true,
+        "additional_physics_steps": 0,
+        "changes_to_control_law": false
+      }
+    },
+    "observed_physics_steps": 30000,
+    "physics_hz": 500,
+    "physics_state_source": "direct current qpos/qvel using named-joint address mapping",
+    "disturbance": {
+      "planned_pulses": 29,
+      "applied_pulses": 29,
+      "completed_pulses": 29,
+      "applied_physics_steps": 1450,
+      "checked_physics_steps": 30000,
+      "schedule_verified": true,
+      "force_fraction": 0.1,
+      "period_seconds": 2.0,
+      "duration_seconds": 0.1,
+      "horizon_seconds": 60.0,
+      "force_seed": 2026102410,
+      "robot_mass_kg": 0.7288332581520081,
+      "force_newtons": 0.7149854262471199,
+      "gravity_m_s2": 9.81,
+      "pulses": [
+        {
+          "pulse": 1,
+          "start_physics_step": 1000,
+          "end_physics_step_exclusive": 1050,
+          "start_seconds": 2.0,
+          "end_seconds": 2.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 48.068657097052764,
+          "unit_force_world": [
+            0.6682396213728434,
+            0.7439461058621645,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 2.0,
+          "actual_end_seconds": 2.1,
+          "applied_impulse_N_s": 0.0714985409595318,
+          "applied_impulse_world_N_s": [
+            0.04777815937995905,
+            0.053191059827804525,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.47778159379959106,
+            0.5319105982780457,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854095953189,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 2,
+          "start_physics_step": 2000,
+          "end_physics_step_exclusive": 2050,
+          "start_seconds": 4.0,
+          "end_seconds": 4.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 7.364928384201598,
+          "unit_force_world": [
+            0.9917498143344804,
+            0.1281885555247569,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 4.0,
+          "actual_end_seconds": 4.1,
+          "applied_impulse_N_s": 0.07149854195445007,
+          "applied_impulse_world_N_s": [
+            0.07090866565704346,
+            0.009165295213460923,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.7090866565704346,
+            0.09165295213460922,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854195445011,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 3,
+          "start_physics_step": 3000,
+          "end_physics_step_exclusive": 3050,
+          "start_seconds": 6.0,
+          "end_seconds": 6.1000000000000005,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 110.35860079176945,
+          "unit_force_world": [
+            -0.34789472095253693,
+            0.9375336064021152,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 6.0,
+          "actual_end_seconds": 6.1000000000000005,
+          "applied_impulse_N_s": 0.07149853998999786,
+          "applied_impulse_world_N_s": [
+            -0.024873965978622403,
+            0.06703228354454044,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            -0.24873965978622437,
+            0.670322835445404,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.714985399899979,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 4,
+          "start_physics_step": 4000,
+          "end_physics_step_exclusive": 4050,
+          "start_seconds": 8.0,
+          "end_seconds": 8.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 72.4453000974631,
+          "unit_force_world": [
+            0.30161616960654775,
+            0.9534294343221601,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 8.0,
+          "actual_end_seconds": 8.1,
+          "applied_impulse_N_s": 0.07149854077679044,
+          "applied_impulse_world_N_s": [
+            0.02156511694192885,
+            0.06816881299018868,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.21565116941928864,
+            0.681688129901886,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.714985407767905,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 5,
+          "start_physics_step": 5000,
+          "end_physics_step_exclusive": 5050,
+          "start_seconds": 10.0,
+          "end_seconds": 10.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 339.42110137823215,
+          "unit_force_world": [
+            0.9361890514965323,
+            -0.3514968845637514,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 10.0,
+          "actual_end_seconds": 10.1,
+          "applied_impulse_N_s": 0.07149854286060918,
+          "applied_impulse_world_N_s": [
+            0.06693615317344662,
+            -0.025131514668464677,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.6693615317344666,
+            -0.2513151466846466,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854286060917,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 6,
+          "start_physics_step": 6000,
+          "end_physics_step_exclusive": 6050,
+          "start_seconds": 12.0,
+          "end_seconds": 12.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 232.85850262401928,
+          "unit_force_world": [
+            -0.6037854922807088,
+            -0.7971468367316916,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 12.0,
+          "actual_end_seconds": 12.1,
+          "applied_impulse_N_s": 0.07149854225537942,
+          "applied_impulse_world_N_s": [
+            -0.0431697815656662,
+            -0.056994837522506704,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            -0.431697815656662,
+            -0.5699483752250671,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854225537939,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 7,
+          "start_physics_step": 7000,
+          "end_physics_step_exclusive": 7050,
+          "start_seconds": 14.0,
+          "end_seconds": 14.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 348.16368817003104,
+          "unit_force_world": [
+            0.9787375905675145,
+            -0.20511637869779265,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 14.0,
+          "actual_end_seconds": 14.1,
+          "applied_impulse_N_s": 0.07149853992615976,
+          "applied_impulse_world_N_s": [
+            0.06997830867767338,
+            -0.014665521681308738,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.6997830867767334,
+            -0.14665521681308746,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149853992615981,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 8,
+          "start_physics_step": 8000,
+          "end_physics_step_exclusive": 8050,
+          "start_seconds": 16.0,
+          "end_seconds": 16.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 295.814723442363,
+          "unit_force_world": [
+            0.4354624422068769,
+            -0.9002068992332942,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 16.0,
+          "actual_end_seconds": 16.1,
+          "applied_impulse_N_s": 0.07149854117334119,
+          "applied_impulse_world_N_s": [
+            0.03113493025302884,
+            -0.06436347961425787,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.3113493025302887,
+            -0.6436347961425781,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.714985411733411,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 9,
+          "start_physics_step": 9000,
+          "end_physics_step_exclusive": 9050,
+          "start_seconds": 18.0,
+          "end_seconds": 18.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 125.31408854512924,
+          "unit_force_world": [
+            -0.5780582882077644,
+            0.8159954751310262,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 18.0,
+          "actual_end_seconds": 18.1,
+          "applied_impulse_N_s": 0.07149854235919127,
+          "applied_impulse_world_N_s": [
+            -0.04133032560348509,
+            0.05834248661994932,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            -0.4133032560348511,
+            0.5834248661994934,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854235919124,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 10,
+          "start_physics_step": 10000,
+          "end_physics_step_exclusive": 10050,
+          "start_seconds": 20.0,
+          "end_seconds": 20.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 58.10102334558651,
+          "unit_force_world": [
+            0.5284231713671006,
+            0.8489811257986457,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 20.0,
+          "actual_end_seconds": 20.1,
+          "applied_impulse_N_s": 0.07149854060472664,
+          "applied_impulse_world_N_s": [
+            0.03778148591518404,
+            0.06070091128349308,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.3778148591518402,
+            0.6070091128349304,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854060472662,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 11,
+          "start_physics_step": 11000,
+          "end_physics_step_exclusive": 11050,
+          "start_seconds": 22.0,
+          "end_seconds": 22.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 43.41281565805477,
+          "unit_force_world": [
+            0.7264209682030914,
+            0.6872500105164664,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 22.0,
+          "actual_end_seconds": 22.1,
+          "applied_impulse_N_s": 0.07149854194341898,
+          "applied_impulse_world_N_s": [
+            0.05193803906440733,
+            0.04913737475872038,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.5193803906440735,
+            0.491373747587204,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854194341894,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 12,
+          "start_physics_step": 12000,
+          "end_physics_step_exclusive": 12050,
+          "start_seconds": 24.0,
+          "end_seconds": 24.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 9.916400441444617,
+          "unit_force_world": [
+            0.9850600725200334,
+            0.17221107260227655,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 24.0,
+          "actual_end_seconds": 24.1,
+          "applied_impulse_N_s": 0.07149854521917721,
+          "applied_impulse_world_N_s": [
+            0.0704303622245789,
+            0.012312840670347222,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.7043036222457886,
+            0.12312840670347214,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854521917729,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 13,
+          "start_physics_step": 13000,
+          "end_physics_step_exclusive": 13050,
+          "start_seconds": 26.0,
+          "end_seconds": 26.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 20.50876477197173,
+          "unit_force_world": [
+            0.9366186056198841,
+            0.3503506637736885,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 26.0,
+          "actual_end_seconds": 26.1,
+          "applied_impulse_N_s": 0.07149854442627382,
+          "applied_impulse_world_N_s": [
+            0.06696686744689936,
+            0.02504956126213076,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.6696686744689941,
+            0.2504956126213074,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854442627372,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 14,
+          "start_physics_step": 14000,
+          "end_physics_step_exclusive": 14050,
+          "start_seconds": 28.0,
+          "end_seconds": 28.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 47.569385010536216,
+          "unit_force_world": [
+            0.6746968718943385,
+            0.7380949336338751,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 28.0,
+          "actual_end_seconds": 28.1,
+          "applied_impulse_N_s": 0.07149854242022503,
+          "applied_impulse_world_N_s": [
+            0.048239842057228054,
+            0.05277271270751955,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.4823984205722809,
+            0.5277271270751953,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854242022494,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 15,
+          "start_physics_step": 15000,
+          "end_physics_step_exclusive": 15050,
+          "start_seconds": 30.0,
+          "end_seconds": 30.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 318.61098793923645,
+          "unit_force_world": [
+            0.7502378793935036,
+            -0.6611680000749723,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 30.0,
+          "actual_end_seconds": 30.1,
+          "applied_impulse_N_s": 0.0714985416127338,
+          "applied_impulse_world_N_s": [
+            0.053640913963317834,
+            -0.04727254807949067,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.5364091396331787,
+            -0.4727254807949066,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.714985416127338,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 16,
+          "start_physics_step": 16000,
+          "end_physics_step_exclusive": 16050,
+          "start_seconds": 32.0,
+          "end_seconds": 32.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 279.0961306936508,
+          "unit_force_world": [
+            0.15809138473083464,
+            -0.9874244852513469,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 32.0,
+          "actual_end_seconds": 32.1,
+          "applied_impulse_N_s": 0.0714985438447682,
+          "applied_impulse_world_N_s": [
+            0.011303303390741355,
+            -0.0705994129180908,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.11303303390741348,
+            -0.7059941291809082,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854384476815,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 17,
+          "start_physics_step": 17000,
+          "end_physics_step_exclusive": 17050,
+          "start_seconds": 34.0,
+          "end_seconds": 34.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 342.9778826362015,
+          "unit_force_world": [
+            0.9561918231501177,
+            -0.2927408364763173,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 34.0,
+          "actual_end_seconds": 34.1,
+          "applied_impulse_N_s": 0.07149853997473063,
+          "applied_impulse_world_N_s": [
+            0.06836631894111637,
+            -0.020930543541908264,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.6836631894111633,
+            -0.20930543541908264,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149853997473067,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 18,
+          "start_physics_step": 18000,
+          "end_physics_step_exclusive": 18050,
+          "start_seconds": 36.0,
+          "end_seconds": 36.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 279.0564922170448,
+          "unit_force_world": [
+            0.1574082250422706,
+            -0.9875336200297395,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 36.0,
+          "actual_end_seconds": 36.1,
+          "applied_impulse_N_s": 0.07149854318843006,
+          "applied_impulse_world_N_s": [
+            0.011254458874464045,
+            -0.0706072151660919,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.11254458874464035,
+            -0.7060721516609192,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854318843009,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 19,
+          "start_physics_step": 19000,
+          "end_physics_step_exclusive": 19050,
+          "start_seconds": 38.0,
+          "end_seconds": 38.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 101.60793104952529,
+          "unit_force_world": [
+            -0.20121351489272815,
+            0.9795474064201865,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 38.0,
+          "actual_end_seconds": 38.1,
+          "applied_impulse_N_s": 0.07149854527637516,
+          "applied_impulse_world_N_s": [
+            -0.014386473596096025,
+            0.07003621459007257,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            -0.1438647359609604,
+            0.7003621459007263,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854527637518,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 20,
+          "start_physics_step": 20000,
+          "end_physics_step_exclusive": 20050,
+          "start_seconds": 40.0,
+          "end_seconds": 40.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 353.8925391283271,
+          "unit_force_world": [
+            0.9943240983382948,
+            -0.10639354991604077,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 40.0,
+          "actual_end_seconds": 40.1,
+          "applied_impulse_N_s": 0.07149854350973514,
+          "applied_impulse_world_N_s": [
+            0.07109272480010988,
+            -0.007606983929872503,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.7109272480010986,
+            -0.07606983929872513,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854350973518,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 21,
+          "start_physics_step": 21000,
+          "end_physics_step_exclusive": 21050,
+          "start_seconds": 42.0,
+          "end_seconds": 42.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 215.68853651263177,
+          "unit_force_world": [
+            -0.8122002629940923,
+            -0.5833787215800105,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 42.0,
+          "actual_end_seconds": 42.1,
+          "applied_impulse_N_s": 0.07149854373123544,
+          "applied_impulse_world_N_s": [
+            -0.0580711364746093,
+            -0.04171072840690611,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            -0.5807113647460938,
+            -0.4171072840690613,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854373123549,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 22,
+          "start_physics_step": 22000,
+          "end_physics_step_exclusive": 22050,
+          "start_seconds": 44.0,
+          "end_seconds": 44.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 311.5975949728742,
+          "unit_force_world": [
+            0.6638948227624533,
+            -0.7478259585687105,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 44.0,
+          "actual_end_seconds": 44.1,
+          "applied_impulse_N_s": 0.07149854208858825,
+          "applied_impulse_world_N_s": [
+            0.04746751189231878,
+            -0.053468465805053746,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.47467511892318726,
+            -0.5346846580505371,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854208858819,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 23,
+          "start_physics_step": 23000,
+          "end_physics_step_exclusive": 23050,
+          "start_seconds": 46.0,
+          "end_seconds": 46.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 106.26795076948864,
+          "unit_force_world": [
+            -0.28012978394148597,
+            0.9599621368308734,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 46.0,
+          "actual_end_seconds": 46.1,
+          "applied_impulse_N_s": 0.07149854177015523,
+          "applied_impulse_world_N_s": [
+            -0.020028871297836308,
+            0.06863589286804198,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            -0.20028871297836304,
+            0.6863589286804199,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.714985417701552,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 24,
+          "start_physics_step": 24000,
+          "end_physics_step_exclusive": 24050,
+          "start_seconds": 48.0,
+          "end_seconds": 48.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 159.50174032028883,
+          "unit_force_world": [
+            -0.9366828261270518,
+            0.35017893031797226,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 48.0,
+          "actual_end_seconds": 48.1,
+          "applied_impulse_N_s": 0.07149854249267865,
+          "applied_impulse_world_N_s": [
+            -0.06697145700454711,
+            0.025037282705307015,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            -0.6697145700454712,
+            0.25037282705307007,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854249267861,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 25,
+          "start_physics_step": 25000,
+          "end_physics_step_exclusive": 25050,
+          "start_seconds": 50.0,
+          "end_seconds": 50.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 78.2110264505728,
+          "unit_force_world": [
+            0.20430766711473633,
+            0.9789067254637359,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 50.0,
+          "actual_end_seconds": 50.1,
+          "applied_impulse_N_s": 0.07149854093916054,
+          "applied_impulse_world_N_s": [
+            0.014607700705528245,
+            0.06999040246009824,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.1460770070552826,
+            0.6999040246009827,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854093916057,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 26,
+          "start_physics_step": 26000,
+          "end_physics_step_exclusive": 26050,
+          "start_seconds": 52.0,
+          "end_seconds": 52.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 157.5464961967133,
+          "unit_force_world": [
+            -0.9241897803574904,
+            0.38193356736842804,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 52.0,
+          "actual_end_seconds": 52.1,
+          "applied_impulse_N_s": 0.0714985415769962,
+          "applied_impulse_world_N_s": [
+            -0.06607822179794315,
+            0.027307692170143113,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            -0.6607822179794312,
+            0.2730769217014313,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854157699624,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 27,
+          "start_physics_step": 27000,
+          "end_physics_step_exclusive": 27050,
+          "start_seconds": 54.0,
+          "end_seconds": 54.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 128.02431780283894,
+          "unit_force_world": [
+            -0.6159958719003545,
+            0.7877493800706682,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 54.0,
+          "actual_end_seconds": 54.1,
+          "applied_impulse_N_s": 0.07149854276091441,
+          "applied_impulse_world_N_s": [
+            -0.04404280781745914,
+            0.05632293224334715,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            -0.44042807817459106,
+            0.5632293224334717,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854276091445,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 28,
+          "start_physics_step": 28000,
+          "end_physics_step_exclusive": 28050,
+          "start_seconds": 56.0,
+          "end_seconds": 56.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 37.192042619341024,
+          "unit_force_world": [
+            0.7966138785739886,
+            0.6044884849716382,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 56.0,
+          "actual_end_seconds": 56.1,
+          "applied_impulse_N_s": 0.07149854363221349,
+          "applied_impulse_world_N_s": [
+            0.05695673227310187,
+            0.043220046162605295,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            0.5695673227310181,
+            0.43220046162605286,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854363221344,
+          "nominal_impulse_N_s": 0.07149854262471199
+        },
+        {
+          "pulse": 29,
+          "start_physics_step": 29000,
+          "end_physics_step_exclusive": 29050,
+          "start_seconds": 58.0,
+          "end_seconds": 58.1,
+          "expected_physics_steps": 50,
+          "direction_angle_world_degrees": 206.7644852267263,
+          "unit_force_world": [
+            -0.892865123282775,
+            -0.4503241850325552,
+            0.0
+          ],
+          "applied_physics_steps": 50,
+          "force_write_attempts": 50,
+          "actual_start_seconds": 58.0,
+          "actual_end_seconds": 58.1,
+          "applied_impulse_N_s": 0.07149854123502485,
+          "applied_impulse_world_N_s": [
+            -0.06383855342864989,
+            -0.032197523117065426,
+            0.0
+          ],
+          "complete": true,
+          "force_world_N": [
+            -0.638385534286499,
+            -0.3219752311706543,
+            0.0
+          ],
+          "nominal_force_N": 0.7149854262471199,
+          "actual_force_N": 0.7149854123502486,
+          "nominal_impulse_N_s": 0.07149854262471199
+        }
+      ],
+      "frame": "world",
+      "force_body": "trunk_base",
+      "application_point": "inertial COM",
+      "force_schedule_path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-headroom-push10-once-v1/run/planned-force-schedule.json",
+      "unknown_wrenches_cleared": false
+    },
+    "perturbation_trace_path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-headroom-push10-once-v1/run/push10-trace.jsonl",
+    "additional_PPO_updates": 0,
+    "full_hardware_limits_verified": false,
+    "position_drift_allowed": true,
+    "strict_contact_acceptance": false,
+    "attempted_control_steps": 3000,
+    "completed_control_steps": 3000,
+    "checked_physics_steps": 30000,
+    "simulation_seconds": 60.0,
+    "finished_utc": 1792776512.052969,
+    "elapsed_seconds": 118.45480537414551,
+    "acceptance": {
+      "passed": true,
+      "conditions": {
+        "execution": true,
+        "duration": true,
+        "retention": true,
+        "physics": true,
+        "audit_counts": true,
+        "no_model_event": true,
+        "complete_joint_rows": true,
+        "complete_motor_rows": true,
+        "no_joint_excursion": true,
+        "exact_disturbance": true,
+        "cleared": true,
+        "unchanged": true,
+        "no_error": true,
+        "no_training": true
+      },
+      "retention_met": true,
+      "checked_model_boundaries_met": true,
+      "position_drift_allowed": true,
+      "auxiliary_geometric_gates_are_descriptive": true,
+      "trial_count": 1,
+      "population_success_rate_claimed": false,
+      "hardware_acceptance": false,
+      "strict_contact_acceptance": false
+    }
+  },
+  "controller_package_identity": "e65e7686d94dff585f7e4b8d5706e8d42206016210efd36f246f88b6a5fea46e",
+  "local_return_utc": "2026-10-23T17:28:33.518535+00:00",
+  "added_PPO_updates": 0,
+  "cloud_connections": 0,
+  "power_action": "NONE",
+  "accepted_evidence_files_written": 0,
+  "population_success_rate_claimed": false
+}
