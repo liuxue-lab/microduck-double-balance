@@ -1,0 +1,53 @@
+{
+  "identity": "a292097988b7f02a5be99998af6c5b5ca43f31d862d0e79c91fde608e0d8e5a1",
+  "files": {
+    "budget.py": {
+      "bytes": 2045,
+      "sha256": "a83fc03a3eed7f4bb6fa65ddc9abc676956eaa54ad2ddbb10274edab972761f0"
+    },
+    "common.py": {
+      "bytes": 9101,
+      "sha256": "9ee386a51be9f09180772f56a0695077df64aed4aa8e4290e7585552656a05ef"
+    },
+    "deploy_contract.py": {
+      "bytes": 5982,
+      "sha256": "0eded8bf91612f8fb736307db5d999cce264b5cdba8a550f785a82a45ff60bdd"
+    },
+    "export_final.py": {
+      "bytes": 11435,
+      "sha256": "fdf99cc6ee0bb667370617003868db9124f111e7a2b31aca146fa7b55df7b4f6"
+    },
+    "fingerprint.py": {
+      "bytes": 396,
+      "sha256": "061f496c53b8982c94aa9c9dba57d76b1745d80ebbd099c3ab96807784a6abb4"
+    },
+    "native_task.py": {
+      "bytes": 8816,
+      "sha256": "b6909b9cff864dcfce8203062a75282571ca2c7ef5d66b2aa58c05c4626a55af"
+    },
+    "prepare.py": {
+      "bytes": 12836,
+      "sha256": "9056b255ee6780e5abc5e926f560b57699f1a8282c56f78172c82c03d68e2507"
+    },
+    "probe.py": {
+      "bytes": 5941,
+      "sha256": "6cb5c9e2372607291f22578349f9825165fb6a4ea754c65fc1c5e0208c833b0b"
+    },
+    "return-pins.json": {
+      "bytes": 3430,
+      "sha256": "0c3699df146cb56c26f005e845c2e929acd249ceae14691d942b03c02bb72086"
+    },
+    "ros_check.py": {
+      "bytes": 8769,
+      "sha256": "eb79f4bb4727148ed211e7e218c81035d9cfd77db47d7e7f6cf91fc5c138b099"
+    },
+    "shared_ssh.py": {
+      "bytes": 3330,
+      "sha256": "d11c65d9d15aec0f99fc7e6e1fe263f0189cede1ea6aaaf0d144b4fab16f21f0"
+    },
+    "source-pins.json": {
+      "bytes": 54309,
+      "sha256": "08c781088ecb4b2023c593ff8ffa45061bf6a57fad5902fcf79b50155daa969c"
+    }
+  }
+}
