@@ -1,0 +1,77 @@
+{
+  "identity": "50b02eb752d6fb9f0faceb9113edcbc9ff64cb52a0bfb02ea862f7ef3f91bf8f",
+  "files": {
+    "apt_scope.py": {
+      "bytes": 6677,
+      "sha256": "3f616eb0f4d70f04bc24c4b2185dc6e49ccc661634acdef92c59f55bfb3a9fb3"
+    },
+    "budget.py": {
+      "bytes": 2045,
+      "sha256": "a83fc03a3eed7f4bb6fa65ddc9abc676956eaa54ad2ddbb10274edab972761f0"
+    },
+    "common.py": {
+      "bytes": 9101,
+      "sha256": "9ee386a51be9f09180772f56a0695077df64aed4aa8e4290e7585552656a05ef"
+    },
+    "deploy_contract.py": {
+      "bytes": 5982,
+      "sha256": "0eded8bf91612f8fb736307db5d999cce264b5cdba8a550f785a82a45ff60bdd"
+    },
+    "fingerprint.py": {
+      "bytes": 396,
+      "sha256": "061f496c53b8982c94aa9c9dba57d76b1745d80ebbd099c3ab96807784a6abb4"
+    },
+    "host_setup.py": {
+      "bytes": 18083,
+      "sha256": "0919de303e818f98ea382e3a513110b2d642f2cb9c86194e894845b16a9528ae"
+    },
+    "link_ops.py": {
+      "bytes": 6678,
+      "sha256": "3ceaf6a6fe752f3eb4b4220e657d6ee0fe71d9ef3baf0dec270b56abe888fa0b"
+    },
+    "live_progress.py": {
+      "bytes": 5034,
+      "sha256": "d7c2a40376ac004eeba17255b6d9e43717bafd6fe9170c2f8f5e5bdd890bcf3e"
+    },
+    "native_task.py": {
+      "bytes": 8816,
+      "sha256": "b6909b9cff864dcfce8203062a75282571ca2c7ef5d66b2aa58c05c4626a55af"
+    },
+    "network_check.py": {
+      "bytes": 4661,
+      "sha256": "cb942be41a20097b36bb76bab7b19da050f00a66418d143131288177a55f0df1"
+    },
+    "operation_guard.py": {
+      "bytes": 2619,
+      "sha256": "95a2dd3848fe212875f51c3f366f37ab74ad5ae263a89a1f609e4afa0b8a5f58"
+    },
+    "probe.py": {
+      "bytes": 6031,
+      "sha256": "63628d0e8965b860c26ac88f24463d7fcc04409a3e809f4453bf5657943dc48c"
+    },
+    "repair.py": {
+      "bytes": 8932,
+      "sha256": "54428992a246992dd32924628cacbbfa129dded495635ad43841aa58b2058520"
+    },
+    "return-pins.json": {
+      "bytes": 3430,
+      "sha256": "0c3699df146cb56c26f005e845c2e929acd249ceae14691d942b03c02bb72086"
+    },
+    "ros2-apt-source_1.3.0.jammy_all.deb": {
+      "bytes": 4538,
+      "sha256": "110b9a462d55252decb8b7c816f61c2ba0d9890ce5fb93ac504e97cae5860d76"
+    },
+    "ros_check.py": {
+      "bytes": 8769,
+      "sha256": "eb79f4bb4727148ed211e7e218c81035d9cfd77db47d7e7f6cf91fc5c138b099"
+    },
+    "shared_ssh.py": {
+      "bytes": 5957,
+      "sha256": "a4936dd2de7e10073b74e0e7bac0dedf9c09885ba6a8c0d03a795cf98f0f0030"
+    },
+    "source-pins.json": {
+      "bytes": 54309,
+      "sha256": "08c781088ecb4b2023c593ff8ffa45061bf6a57fad5902fcf79b50155daa969c"
+    }
+  }
+}
