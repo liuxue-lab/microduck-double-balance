@@ -1,0 +1,69 @@
+{
+  "schema": "stage12-optimization-review-v1",
+  "report_sha256": "7186dcaf36345244e1d01792bd4af769538fc2030669db69b9c5d95d2da8960a",
+  "status": "REVIEW_PASSED",
+  "cloud_power": {
+    "state": "OFF_USER_CONFIRMED",
+    "evidence": "用户消息：5090已关机",
+    "confirmation_date": "2026-10-24",
+    "timezone": "Asia/Shanghai",
+    "exact_shutdown_time": null,
+    "platform_verified": false,
+    "no_power_command_sent": true
+  },
+  "original_records_unchanged": true,
+  "all_workers_exited": true,
+  "PPO_added": 0,
+  "selected": "json-fp32",
+  "buffered_p95_reduction_fraction": 0.03636859197700215,
+  "int8_mean_reduction_fraction": 0.16784134908349857,
+  "int8_action_max_error": 0.04030264914035797,
+  "int8_outside_tolerance": 83141,
+  "int8_action_comparisons": 84000,
+  "replay": {
+    "json-fp32": {
+      "count": 6000,
+      "max": 3.722953002579743,
+      "mean": 2.5936784022366433,
+      "over_20ms": 0,
+      "p95": 3.052528998523485,
+      "p99": 3.156430000672117
+    },
+    "binary-fp32": {
+      "count": 6000,
+      "max": 10.540997001953656,
+      "mean": 2.7626979990679197,
+      "over_20ms": 0,
+      "p95": 2.952425002149539,
+      "p99": 3.273470003477996
+    }
+  },
+  "fault_cases": [
+    {
+      "name": "fault-delay",
+      "passed": true,
+      "detection_ms": 20.023911998578114
+    },
+    {
+      "name": "fault-silence",
+      "passed": true,
+      "detection_ms": 20.846723000431666
+    },
+    {
+      "name": "fault-duplicate",
+      "passed": true,
+      "detection_ms": 2.8980450006201863
+    }
+  ],
+  "pc_control_step_ms": {
+    "count": 100,
+    "max": 45.325845,
+    "mean": 34.89736233,
+    "over_20ms": 100,
+    "p95": 36.087328,
+    "p99": 36.398404
+  },
+  "new_PC_cache_actual_run": false,
+  "full_control_loop_realtime_passed": false,
+  "hardware_acceptance": false
+}
