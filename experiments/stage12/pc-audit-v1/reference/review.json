@@ -1,0 +1,111 @@
+{
+  "status": "GRAPH_V2_MEASUREMENT_REVIEWED",
+  "report_sha256": "430e9c17573ae07f670d3b8975b21fe537eec3575bf56352533941e3dece50ca",
+  "prior_package_identity": "419bc1798075290669cd2660f955a1a820ed6bea9ba8efc0e7295f15b42d5c6f",
+  "prior_commit": "f7a95ee1b89f5c123c3e3281bc23f69660213669",
+  "prior_status": "PC_GRAPH_MEASURED",
+  "comparison": {
+    "atol": 2e-05,
+    "compared_steps": 160,
+    "comparison_scope": "One 3.2-second matched-seed trajectory with one full 10%-weight pulse; not 60-second acceptance",
+    "max_absolute_error_by_field": {
+      "actions": 0.0,
+      "actor": 0.0,
+      "actuator_force": 0.0,
+      "bam_0_duty_applied": 0.0,
+      "bam_0_duty_current_limited": 0.0,
+      "bam_0_duty_unclipped": 0.0,
+      "bam_0_effective_vin": 0.0,
+      "bam_0_joint_velocity": 0.0,
+      "bam_0_motor_torque": 0.0,
+      "bam_0_position_error": 0.0,
+      "bam_0_previous_torque": 0.0,
+      "counters": 0.0,
+      "critic": 0.0,
+      "ctrl": 0.0,
+      "damping": 0.0,
+      "dones": 0.0,
+      "external_wrench": 0.0,
+      "frictionloss": 0.0,
+      "metric_values": 0.0,
+      "qpos": 0.0,
+      "qvel": 0.0,
+      "rewards": 0.0,
+      "stable_ticks": 0.0,
+      "success_ever": 0.0
+    },
+    "passed": true,
+    "rtol": 0.0002,
+    "scalar_comparisons": 87200,
+    "values_outside_tolerance": 0
+  },
+  "recommendation": {
+    "candidate_environment_p95_below_20ms": false,
+    "choice": "BAM_GRAPH_CANDIDATE",
+    "full_loop_realtime_acceptance": false,
+    "hardware_acceptance": false,
+    "mean_reduction_fraction": 0.13193270829111947,
+    "next_step": "Review parity and phase times before any full ROS/plant test; keep accepted FP32 model",
+    "p95_reduction_fraction": 0.1253972101170161,
+    "production_activated": false,
+    "scope": "One matched pair; PC environment-step time excludes policy inference, network and comparison-trace recording"
+  },
+  "timing_ms": {
+    "bam-graph": {
+      "count": 150,
+      "max": 30.318152,
+      "mean": 28.426303880000003,
+      "over_20ms": 150,
+      "p95": 29.737554,
+      "p99": 30.112746
+    },
+    "phase-cache": {
+      "count": 150,
+      "max": 34.376403,
+      "mean": 32.746659333333334,
+      "over_20ms": 150,
+      "p95": 34.001211,
+      "p99": 34.265983
+    }
+  },
+  "candidate_host_phase_ms": {
+    "apply_action": 1.6628063800000001,
+    "commands": 0.95724702,
+    "forward": 0.02582814,
+    "metrics_and_probe": 2.2499350066666666,
+    "metrics_substep": 0.01691531333333333,
+    "observations": 2.0598216533333336,
+    "physics_with_force_and_bounds": 10.272702466666667,
+    "process_action": 0.29209594,
+    "reward": 2.86456972,
+    "scene_update": 1.4067101066666667,
+    "scene_write": 4.0911161599999994,
+    "sense": 0.7684002466666666,
+    "termination": 1.4469521266666667
+  },
+  "original_records_unchanged": true,
+  "workers_exited": true,
+  "next_candidate": "Pack full Cartesian wrenches with model audit inputs before/after every integration",
+  "unchanged_original_modules": [
+    "bam_graph.py",
+    "phase_cache.py",
+    "eval_runtime.py",
+    "model_limits.py",
+    "model_limits_runtime.py",
+    "native_task.py"
+  ],
+  "CPU_tests": 33,
+  "actual_new_GPU_physics_steps": 0,
+  "actual_new_candidate_speed_measured": false,
+  "cloud_power": {
+    "confirmation_date": "2026-10-24",
+    "evidence": "用户消息：5090已关机",
+    "exact_shutdown_time": null,
+    "platform_verified": false,
+    "state": "OFF_USER_CONFIRMED",
+    "timezone": "Asia/Shanghai"
+  },
+  "PPO_added": 0,
+  "hardware_acceptance": false,
+  "full_loop_realtime_acceptance": false
+}
