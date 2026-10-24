@@ -1,0 +1,30 @@
+{
+  "entity_data": {
+    "url": "https://github.com/mujocolab/mjlab/blob/v1.3.0/src/mjlab/entity/data.py",
+    "git_blob_sha1": "b20f930517b0d9f8da11ed9db259cd75fe65e544",
+    "bytes": 22836,
+    "sha256": "fd1116692f82278bda721d44c015d27e253d2e866608c8e12824df039dfb4657"
+  },
+  "original_joint_pos_property": "self.data.qpos[:, self.indexing.joint_q_adr]",
+  "property_unchanged": true,
+  "capture_scope": "Read-only indexing, expand, stack, cat; separate before/after graphs. Never an integrator or actuator write.",
+  "live_storage_guards": "Data, BAM diagnostic fields, index tensors, output. No silent recapture.",
+  "force_lifecycle": "Original PackedChecks.physics_step retained; zero before write, full exact pre/post wrench checks, subtract only owned force",
+  "audit": "Original CPU Audit before/after every substep; no reduced frequency or deferred rejection",
+  "same_input_checks_per_graph": 40,
+  "comparison": "Exact FP32 bit equality; identical NaNs preserve original Audit fault order",
+  "retained_baseline": "Accepted InferenceOnly, original PhaseCache and BAM Graph v2",
+  "CPU_fixed_output_address_emulation_only": true,
+  "actual_GPU_capture_tested": false,
+  "sim_data": {
+    "url": "https://github.com/mujocolab/mjlab/blob/v1.3.0/src/mjlab/sim/sim_data.py",
+    "git_blob_sha1": "0f000fe5e17c18968bd0e7bfd3a09e75443751c9",
+    "bytes": 7633,
+    "sha256": "bc73da4811fc44336f9016d826ef1b2044b8cb0830f2ad01a06b9b84ffa8b4c6"
+  },
+  "live_field_type": "TorchArray, not a subclass of torch.Tensor",
+  "conversion": "Original __getitem__(Ellipsis) returns a shared-storage Tensor view; original wrapper retains Warp array owner.",
+  "regression": "Original v1 constructor reproduces Unexpected captured input type: qpos before CUDA/physics. v2 real constructor validated with original proxy methods.",
+  "CPU_fixture_scope": "Entire original sim_data.py AST with only imports removed; CPU Warp storage transport stub. CUDA capture/replay emulated; no actual CUDA test.",
+  "CPU_tests": 67
+}
