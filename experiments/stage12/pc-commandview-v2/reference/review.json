@@ -1,0 +1,52 @@
+{
+  "status": "COMMANDVIEW_V1_INDEX_DTYPE_FAILURE_REVIEWED",
+  "report_sha256": "f813c60aaccdd991285e24970d77282847a34634a15c5be695302c410b2020dc",
+  "prior_status": "PC_COMMANDVIEW_FAILED_PRESERVE",
+  "prior_commit": "f6fc8323f9168f0462d27339cb5857ab591f8107",
+  "prior_package_identity": "92025f2837aa998cb5a9f544c5d643b8787b2747fa02a454b2e4bd86445166df",
+  "baseline": {
+    "status": "COMMANDVIEW_ARM_COMPLETE",
+    "control_steps": 160,
+    "physics_steps": 1600,
+    "full_environment_step_ms": {
+      "count": 150,
+      "max": 26.408316,
+      "mean": 24.785181166666668,
+      "over_20ms": 150,
+      "p95": 25.998691,
+      "p99": 26.335889
+    }
+  },
+  "candidate": {
+    "status": "COMMANDVIEW_ARM_FAILED_PRESERVE",
+    "control_steps": 0,
+    "physics_steps": 0,
+    "error": "RuntimeError('Unexpected joint address type')",
+    "failed_before_first_physics_integration": true
+  },
+  "root_cause": "v1 required torch.long for all indices; original Entity._compute_indexing uses torch.int32 while Actuator.initialize uses torch.int64. CPU fixture omitted original index constructors.",
+  "fix": "Accept one-dimensional int32/int64 separately; retain original dtype, storage and mapping values; report per-field schema.",
+  "CPU_tests": 80,
+  "CPU_fixture": "Original EntityIndexing dataclass, Entity._compute_indexing and Actuator.initialize methods; compiled MuJoCo metadata substituted on CPU. All command-view plant/worker fixtures now use original mixed types.",
+  "original_records_unchanged": true,
+  "worker_exited": true,
+  "runtime_bindings_restored": {
+    "command-views": true,
+    "inference-only": true
+  },
+  "candidate_cleanup": {
+    "checkpoint_unchanged": true,
+    "frozen_inputs_unchanged": true,
+    "policy_and_normalizer_unchanged": true,
+    "external_body_wrench_zero_at_close": true,
+    "cleanup_error": null,
+    "environment_close_error": null
+  },
+  "retained_baseline": "InferenceOnly + PhaseCache + BAM Graph v2 + BatchedAuditReads",
+  "actual_new_GPU_physics_steps": 0,
+  "actual_candidate_speed_measured": false,
+  "cloud_power": "OFF_USER_CONFIRMED",
+  "added_PPO_updates": 0,
+  "hardware_acceptance": false,
+  "full_loop_realtime_acceptance": false
+}

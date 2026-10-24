@@ -1,0 +1,52 @@
+{
+  "status": "READGRAPH_V1_PROXY_TYPE_FAILURE_REVIEWED",
+  "report_sha256": "4cb22947ae8bf47f9d19e14c527e8584a36a6e9b40702051dbf5537ca0a831b5",
+  "prior_status": "PC_READGRAPH_FAILED_PRESERVE",
+  "prior_commit": "40f61ae05ce8591e77705b19911836096d69179d",
+  "prior_package_identity": "ccb719c5e35920694d5e787b79dfc04016b8d1546c51d805bfd35eee72d55701",
+  "baseline": {
+    "status": "READGRAPH_ARM_COMPLETE",
+    "control_steps": 160,
+    "physics_steps": 1600,
+    "full_environment_step_ms": {
+      "count": 150,
+      "max": 26.575727,
+      "mean": 24.758078673333333,
+      "over_20ms": 150,
+      "p95": 25.891833,
+      "p99": 26.453434
+    }
+  },
+  "candidate": {
+    "status": "READGRAPH_ARM_FAILED_PRESERVE",
+    "control_steps": 0,
+    "physics_steps": 0,
+    "error": "RuntimeError('Unexpected captured input type: qpos')",
+    "failed_before_first_physics_integration": true
+  },
+  "root_cause": "v1 assumed whole simulator fields were torch.Tensor; mjlab wraps them in TorchArray. CPU fixtures did not cover the proxy.",
+  "fix": "Verified original TorchArray[...] shared-storage views for signatures, retaining original Warp owners; no physics, formula, force or per-substep audit changes.",
+  "original_records_unchanged": true,
+  "workers_exited": true,
+  "runtime_bindings_restored": {
+    "graph-reads": true,
+    "inference-only": true
+  },
+  "candidate_cleanup": {
+    "checkpoint_unchanged": true,
+    "frozen_inputs_unchanged": true,
+    "policy_and_normalizer_unchanged": true,
+    "external_body_wrench_zero_at_close": true,
+    "cleanup_error": null,
+    "environment_close_error": null
+  },
+  "retained_baseline": "InferenceOnly + PhaseCache + BAM Graph v2 + BatchedAuditReads",
+  "CPU_tests": 67,
+  "CPU_graph_scope": "Original TorchArray and WarpBridge methods; CPU storage transport and CUDA capture/replay substituted. Real ReadGraph constructor retained.",
+  "actual_new_GPU_physics_steps": 0,
+  "actual_candidate_speed_measured": false,
+  "cloud_power": "OFF_USER_CONFIRMED",
+  "added_PPO_updates": 0,
+  "hardware_acceptance": false,
+  "full_loop_realtime_acceptance": false
+}
