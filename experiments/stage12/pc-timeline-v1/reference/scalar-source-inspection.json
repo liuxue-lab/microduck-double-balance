@@ -1,0 +1,20 @@
+{
+  "original_audit_sha256": "d318cdb3b14b078797e69dc89da15f4106f79779fbb764eb59d137708cfdd275",
+  "original_packed_checks_sha256": "dccbfd6805d848f8b4ba72514af7d6a24792c63155e2c063d9edff98b860d4bd",
+  "bytecode_cloned": [
+    "Audit.observe_joints",
+    "Audit.before_integration",
+    "Audit.after_integration"
+  ],
+  "private_helper_replacements": [
+    "tolerance",
+    "excursion"
+  ],
+  "global_or_class_patches": false,
+  "original_empty_or_all_nonfinite_tolerance_error_retained": true,
+  "first_40_pre_and_post_calls_compared_bitwise": true,
+  "original_Audit_source_modified": false,
+  "original_PackedChecks_source_modified": false,
+  "no_training": true,
+  "no_motor_io": true
+}
