@@ -1,0 +1,6 @@
+User-supplied command-003.log excerpt, 2026-10-24:
+Err:1 https://packages.microsoft.com/repos/code stable InRelease
+  Could not handshake: Error in the pull function. [IP: 2620:1ec:46::74 443]
+Fetched 8316 kB in 4min 19s (32.1 kB/s)
+E: Failed to fetch https://packages.microsoft.com/repos/code/dists/stable/InRelease  Could not handshake: Error in the pull function. [IP: 2620:1ec:46::74 443]
+E: Some index files failed to download. They have been ignored, or old ones used instead.
