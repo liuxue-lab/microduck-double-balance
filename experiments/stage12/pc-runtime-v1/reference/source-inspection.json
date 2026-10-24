@@ -1,0 +1,48 @@
+{
+  "runtime_source_pins": {
+    "mjlab.managers.observation_manager": {
+      "sha256": "db9feb383786b4b144efc8cc71c9a9804b6611b3d148b6ceed283cd66eef53a8",
+      "fixture": "observation_manager.py"
+    },
+    "mjlab.managers.reward_manager": {
+      "sha256": "8d1679cc4b0581dc0000493e0a661f3976c5f9c54f800bd825aee340a685f2a7",
+      "fixture": "reward_manager.py"
+    },
+    "mjlab.tasks.velocity.mdp.rewards": {
+      "sha256": "5149776c24c8499c05c1f4941a295647779867efd645f78be02408fd85c96dfb",
+      "fixture": "velocity_rewards.py"
+    },
+    "mjlab.envs.mdp.rewards": {
+      "sha256": "02e42a1e15dc1a27a0cce4e3d2863a165094914118789a1ec4cfbf6ed97a9c60",
+      "fixture": "base_rewards.py"
+    },
+    "mjlab.tasks.velocity.mdp.observations": {
+      "sha256": "4e56cefa6481c42e641902cc124cfdd02c3c92b45d8b294253aad0fc87ec9134",
+      "fixture": "velocity_observations.py"
+    },
+    "mjlab.envs.mdp.observations": {
+      "sha256": "493aab813b211cd25e173ef7072637b9a7e988eaed7ce4ec31130ee4497ff09f",
+      "fixture": "base_observations.py"
+    },
+    "mjlab_microduck.tasks.mdp": {
+      "sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76",
+      "fixture": "mdp-reviewed.py"
+    },
+    "native_task": {
+      "sha256": "b6909b9cff864dcfce8203062a75282571ca2c7ef5d66b2aa58c05c4626a55af",
+      "fixture": "native_task.py"
+    }
+  },
+  "new_primary_source_receipts": "runtime-primary-sources.json",
+  "original_actor_compute_group_unchanged": true,
+  "critic_noise_delay_history_must_be_absent": true,
+  "reward_functions_whitelisted": true,
+  "known_skipped_log_side_effect": "Metrics/angular_momentum_mean",
+  "reviewed_reward_state_side_effects": "Reward accumulators and optional angular-momentum log; no plant, command or random-state writes in the active reviewed call path",
+  "before_activation": "Full actor/critic reset and strict checkpoint load; policy.obs_groups must be actor only",
+  "retained": "physics, command updates, sensors, all seven task metrics, terminations, 500Hz force and model checks",
+  "compare": "22 shared state fields plus full Audit, Trial and disturbance content; no claimed reward/critic parity",
+  "after_close": "Restore all hooks, invalidate observation cache; close environment",
+  "GPU_test_run_here": false,
+  "production_activated": false
+}
