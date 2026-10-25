@@ -1,0 +1,145 @@
+{
+  "stage": 10,
+  "status": "CI_FIX_PUSH_VERIFIED_AND_REMOTE_CI_SUCCESS",
+  "checked_at_utc": "2026-10-02T12:06:43.035946+00:00",
+  "checked_via": "Read-only GitHub Actions run, job steps and job logs; no repeated full remote verification",
+  "branch": "double-balance",
+  "verified_pushed_commit": "293900b9ca73ef90fd8152e215f3676cbc401db6",
+  "push_evidence": "User SSH output: 1a11f30..293900b double-balance -> double-balance; earlier explicitly requested remote branch check confirmed full SHA",
+  "annotated_tag": "stage-10-complete",
+  "tag_target": "1a11f30cc7264d00dec7bce8f11449ded9164169",
+  "tag_moved": false,
+  "run": {
+    "id": 36892445739,
+    "head_sha": "293900b9ca73ef90fd8152e215f3676cbc401db6",
+    "head_branch": "double-balance",
+    "event": "push",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-01T16:29:58Z",
+    "updated_at": "2026-10-01T16:39:08Z",
+    "html_url": "https://github.com/liuxue-lab/microduck-double-balance/actions/runs/36892445739",
+    "run_attempt": 1
+  },
+  "jobs": [
+    {
+      "id": 110471132738,
+      "name": "verify",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 36892445739,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run astral-sh/setup-uv@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Install frozen environment",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Run CPU tests",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Build wheel and source distribution",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Check task-specific CLI discovery",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Export swing policy with its deployment contract",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Check checkpoint-to-ONNX rollout parity",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9
+        },
+        {
+          "name": "Smoke-test stilt generation",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10
+        },
+        {
+          "name": "Generate and verify the retained swing seat",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        },
+        {
+          "name": "Check relative documentation links",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 24
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 25
+        }
+      ]
+    }
+  ],
+  "log_summary": [
+    "2026-10-01T16:33:12.7659447Z 416 passed, 6 skipped, 3 warnings, 17 subtests passed in 157.98s (0:02:37)",
+    "2026-10-01T16:39:02.9373364Z PASS: 136 relative Markdown/HTML links resolve"
+  ],
+  "earlier_ci_failure": "Recovery JSON dependencies omitted during Stage 10 archive; fixed by 293900b. Preserve original failures and earlier snapshots.",
+  "technical_stage_complete": true,
+  "policy_goal_complete": false,
+  "new_ppo_updates": 0,
+  "no_new_experiment_or_cloud_session_for_this_followup": true,
+  "ci_existing_simulation_checks_note": "The successful existing workflow includes ONNX parity and structural checks; these are not new double-balance PPO or policy acceptance.",
+  "historical_B1_C1_postcheck_gaps_preserved": true,
+  "full_root_cause_proven": false,
+  "cloud_status": "OFF_CONFIRMED_BY_USER",
+  "stage09_cloud_raw_traces_fully_returned": false,
+  "cloud_data_must_be_preserved": true,
+  "new_documentation_commit": "PENDING_LOCAL_APPLICATION; derive SHA from actual local script output, user SSH push required; no claimed CI result for this later commit",
+  "next_stage": 11,
+  "next_action": "Review and propose independent true-head-contact zero-PPO physics validation; wait for user confirmation before physics/task/reward/acceptance edits",
+  "physics_task_or_training_authorized": false
+}

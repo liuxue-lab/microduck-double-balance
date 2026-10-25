@@ -1,0 +1,431 @@
+{
+  "status": "RETURN_VERIFIED_READY_TO_SHUTDOWN",
+  "created_utc": "2026-09-30T09:43:02.790533+00:00",
+  "stage": 8,
+  "stage08_complete": false,
+  "necessary_files_returned_and_sha256_verified": true,
+  "ready_to_shutdown": true,
+  "no_remaining_cloud_work": true,
+  "shutdown_confirmed_by_user": false,
+  "reminder_sent": true,
+  "new_ppo_updates": 0,
+  "shutdown_performed": false,
+  "archive": "/home/lx/下载/microduck-stage08-necessary-5d998fc322345102.tar.gz",
+  "archive_receipt": {
+    "path": "/root/autodl-tmp/microduck-double-balance/artifacts/stage08-return-20260930T083316Z-kf_2ctjw/microduck-stage08-necessary.tar.gz",
+    "sha256": "5d998fc3223451029d627bf0e0100b17df1ee77b711fc0d423ea18e29281bbd7",
+    "size_bytes": 716127658,
+    "manifest_sha256": "5b2fc6dd178f57a8e124675d2182d830267eb7e1a7c4961806328138c9d9639c",
+    "uncompressed_bytes": 1472168917,
+    "member_count": 1353,
+    "review_sha256": "4d3ab6fd0ddd029fabb5bb1c7735f03d779788ba61a2e4dcf010fba5053d233a",
+    "created_utc": "2026-09-30T08:33:50.497935+00:00",
+    "git_head": "61060f0684aabb460727a0d226b8d17225ee7954",
+    "campaign_id": "08b6a999-c815-4afc-a99a-b6ac07fd587f",
+    "retention": "source 1000, reference 6000, each segment endpoint, development best and frozen selection; other periodic models remain on cloud",
+    "omitted_checkpoint_count": 216
+  },
+  "extracted_directory": "/home/lx/microduck-double-balance/artifacts/double-balance-stage08/returned/5d998fc322345102/evidence-20260930T093645-8955",
+  "verification": {
+    "identity": "PASS",
+    "models": [
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260928/segment-001/checkpoints/update_002750.pt",
+        "sha256": "42e759a80626859aa6756bec81e3fd07e53845a4ec7ef1a56f5054fd3dfacd1f",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260928,
+        "experiment_completed_updates": 2750,
+        "rank": [
+          0.75,
+          0.734375,
+          10.0,
+          8.4,
+          8.42,
+          -0.018859375075408025,
+          -2750
+        ],
+        "returned_checkpoint": "/home/lx/microduck-double-balance/artifacts/double-balance-stage08/returned/5d998fc322345102/evidence-20260930T093645-8955/extension/E-20260928/segment-001/checkpoints/update_002750.pt"
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+        "sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260929,
+        "experiment_completed_updates": 4000,
+        "rank": [
+          0.8828125,
+          0.828125,
+          10.0,
+          9.030000000000001,
+          9.030000000000001,
+          -0.010875000114538125,
+          -4000
+        ],
+        "returned_checkpoint": "/home/lx/microduck-double-balance/artifacts/double-balance-stage08/returned/5d998fc322345102/evidence-20260930T093645-8955/extension/E-20260929/segment-001/checkpoints/update_004000.pt"
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260930/segment-001/checkpoints/update_003250.pt",
+        "sha256": "89c7cedb9567f144228deb4d98465a9b0aad08be9f7c3ad391aa6a12ade8431c",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260930,
+        "experiment_completed_updates": 3250,
+        "rank": [
+          0.796875,
+          0.640625,
+          10.0,
+          8.55,
+          8.55,
+          -0.019546875069863745,
+          -3250
+        ],
+        "returned_checkpoint": "/home/lx/microduck-double-balance/artifacts/double-balance-stage08/returned/5d998fc322345102/evidence-20260930T093645-8955/extension/E-20260930/segment-001/checkpoints/update_003250.pt"
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/references/update_001000.pt",
+        "sha256": "c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7",
+        "role": "source-1000",
+        "returned_checkpoint": "/home/lx/microduck-double-balance/artifacts/double-balance-stage08/returned/5d998fc322345102/evidence-20260930T093645-8955/references/update_001000.pt"
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/references/update_006000.pt",
+        "sha256": "a5ad0aedb500555b649c5d4b11aded833cbc0f932c1fff1a747e1492534c495c",
+        "role": "reference-6000",
+        "returned_checkpoint": "/home/lx/microduck-double-balance/artifacts/double-balance-stage08/returned/5d998fc322345102/evidence-20260930T093645-8955/references/update_006000.pt"
+      }
+    ],
+    "protocols": 25,
+    "physical_termination_episodes": [
+      {
+        "model": {
+          "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+          "sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+          "role": "candidate",
+          "profile": "E",
+          "seed": 20260929,
+          "experiment_completed_updates": 4000,
+          "rank": [
+            0.8828125,
+            0.828125,
+            10.0,
+            9.030000000000001,
+            9.030000000000001,
+            -0.010875000114538125,
+            -4000
+          ]
+        },
+        "protocol": "test-8202",
+        "episode": {
+          "env_id": 219,
+          "steps": 89,
+          "seconds": 1.78,
+          "terminated": true,
+          "success": false,
+          "termination_terms": [
+            "fell"
+          ],
+          "mean_action_acc": 0.33635228872299194,
+          "top_ball_center_error_m": 0.013126634992659092,
+          "top_ball_relative_speed_m_s": 0.11514299362897873,
+          "double_balance_stable_fraction": 0.24719101190567017,
+          "initial_state_id": "06439a1432fc484c4aa58cdd61249d6fa4e5930b4b1d0e8048ec4603cb120f24",
+          "terminal_stable_seconds": 0.0,
+          "longest_stable_seconds": 0.26,
+          "official_timer_seconds": 0.0,
+          "lower_ball_speed_quantiles_m_s": {
+            "p50": 0.13597089052200317,
+            "p95": 0.28705283999443054,
+            "p99": 0.302945613861084
+          },
+          "lower_ball_speed_max_m_s": 0.30342888832092285,
+          "lower_speed_violation_fraction": 0.43820226192474365,
+          "violation_fractions": {
+            "top_center": 0.4606741666793823,
+            "top_height": 0.0,
+            "top_speed": 0.5393258333206177,
+            "lower_offset": 0.11235955357551575,
+            "lower_height_min": 0.02247191034257412,
+            "lower_height_max": 0.0,
+            "robot_tilt": 0.06741572916507721,
+            "lower_ball_speed": 0.43820226192474365,
+            "unassisted": 0.0
+          },
+          "co_violation_counts": [
+            [
+              41,
+              0,
+              29,
+              10,
+              2,
+              0,
+              6,
+              22,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              29,
+              0,
+              48,
+              9,
+              1,
+              0,
+              5,
+              24,
+              0
+            ],
+            [
+              10,
+              0,
+              9,
+              10,
+              2,
+              0,
+              6,
+              2,
+              0
+            ],
+            [
+              2,
+              0,
+              1,
+              2,
+              2,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              6,
+              0,
+              5,
+              6,
+              2,
+              0,
+              6,
+              1,
+              0
+            ],
+            [
+              22,
+              0,
+              24,
+              2,
+              0,
+              0,
+              1,
+              39,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "mean_action_delta_l2": 2.703636646270752
+        }
+      },
+      {
+        "model": {
+          "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/references/update_006000.pt",
+          "sha256": "a5ad0aedb500555b649c5d4b11aded833cbc0f932c1fff1a747e1492534c495c",
+          "role": "reference-6000"
+        },
+        "protocol": "test-8203",
+        "episode": {
+          "env_id": 13,
+          "steps": 76,
+          "seconds": 1.52,
+          "terminated": true,
+          "success": false,
+          "termination_terms": [
+            "fell"
+          ],
+          "mean_action_acc": 0.24927528202533722,
+          "top_ball_center_error_m": 0.017051473259925842,
+          "top_ball_relative_speed_m_s": 0.1024780198931694,
+          "double_balance_stable_fraction": 0.22368420660495758,
+          "initial_state_id": "28bd39616755825f63817c6d0eff49694136533f8e65418bc7667979ba9943a4",
+          "terminal_stable_seconds": 0.0,
+          "longest_stable_seconds": 0.12,
+          "official_timer_seconds": 0.0,
+          "lower_ball_speed_quantiles_m_s": {
+            "p50": 0.23621590435504913,
+            "p95": 0.5617207884788513,
+            "p99": 0.5809916257858276
+          },
+          "lower_ball_speed_max_m_s": 0.6078792810440063,
+          "lower_speed_violation_fraction": 0.6184210777282715,
+          "violation_fractions": {
+            "top_center": 0.46052631735801697,
+            "top_height": 0.0,
+            "top_speed": 0.5921052694320679,
+            "lower_offset": 0.1184210553765297,
+            "lower_height_min": 0.03947368264198303,
+            "lower_height_max": 0.0,
+            "robot_tilt": 0.0,
+            "lower_ball_speed": 0.6184210777282715,
+            "unassisted": 0.0
+          },
+          "co_violation_counts": [
+            [
+              35,
+              0,
+              28,
+              9,
+              3,
+              0,
+              0,
+              31,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              28,
+              0,
+              45,
+              9,
+              3,
+              0,
+              0,
+              35,
+              0
+            ],
+            [
+              9,
+              0,
+              9,
+              9,
+              3,
+              0,
+              0,
+              9,
+              0
+            ],
+            [
+              3,
+              0,
+              3,
+              3,
+              3,
+              0,
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              31,
+              0,
+              35,
+              9,
+              3,
+              0,
+              0,
+              47,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "mean_action_delta_l2": 1.595119833946228
+        }
+      }
+    ],
+    "selection_sha256": "a921801927750f705075ebcb2048323b01413bd122b31d1472dc77f86e1eb031",
+    "batch_sha256": "59237398490517b63f5dee95a1e87ddf1dba19cfee8ee098fed2c6bc74288a4e",
+    "campaign_id": "08b6a999-c815-4afc-a99a-b6ac07fd587f"
+  },
+  "remaining_local_work": [
+    "final-model videos",
+    "failure analysis",
+    "handoff and local Git/SSH push"
+  ],
+  "cloud_observation": {
+    "checked_utc": "2026-09-30T09:43:02.561454+00:00",
+    "stage08_python_processes": [],
+    "gpu_compute_processes": [],
+    "gpu_query_ok": true,
+    "no_remaining_cloud_work": true,
+    "archive_sha256": "5d998fc3223451029d627bf0e0100b17df1ee77b711fc0d423ea18e29281bbd7",
+    "campaign_id": "08b6a999-c815-4afc-a99a-b6ac07fd587f",
+    "shutdown_performed": false,
+    "new_ppo_updates": 0
+  },
+  "cloud_instance": {
+    "host": "connect.bjb1.seetacloud.com",
+    "port": 41381,
+    "gpu": "RTX 5090"
+  }
+}

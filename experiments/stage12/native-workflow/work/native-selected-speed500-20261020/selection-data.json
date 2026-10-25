@@ -1,0 +1,79 @@
+{
+  "checkpoint": {
+    "attempted_updates": 500,
+    "bytes": 10036828,
+    "completed_updates": 500,
+    "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-speed-refine-v1/run/checkpoints/refine_000500.pt",
+    "policy_updates": 5000,
+    "sha256": "51821a28880aba74b80e6d5a388dfd7a82098bd3dca04a1e8947b4b2a8d5539a"
+  },
+  "evaluation_sha256": "0e9ff8b24f10929523f1a17e8cd791c6b73408b6f2905feb22e5524c36c92e81",
+  "summary": {
+    "episodes": 256,
+    "ever_5s_count": 253,
+    "gate_violation_fraction": {
+      "lower_ball_speed": 0.0041015625,
+      "lower_height_max": 0.0,
+      "lower_height_min": 0.0,
+      "lower_offset": 0.0,
+      "robot_tilt": 0.0,
+      "top_center": 0.000859375,
+      "top_height": 0.0,
+      "top_speed": 0.00690625,
+      "unassisted": 0.0
+    },
+    "longest_stable_seconds": {
+      "max": 9.96,
+      "median": 9.48,
+      "min": 3.8200000000000003
+    },
+    "mean_survival_seconds": 10.0,
+    "physically_terminated_count": 0,
+    "run_break_counts": {
+      "lower_ball_speed": 282,
+      "lower_height_max": 0,
+      "lower_height_min": 0,
+      "lower_offset": 0,
+      "robot_tilt": 0,
+      "top_center": 13,
+      "top_height": 0,
+      "top_speed": 487,
+      "unassisted": 0
+    },
+    "stable_fraction_of_first_episode_steps": 0.988390625,
+    "success_fraction": 0.98828125,
+    "success_wilson95": [
+      0.9661184273321177,
+      0.9960067128769923
+    ],
+    "successes": 253,
+    "termination_counts": {
+      "time_out": 256
+    },
+    "values_mean_over_first_episode_steps": {
+      "hold": 0.0,
+      "lower_ball_speed_m_s": 0.04651901207828306,
+      "lower_height_m": 0.238564351670444,
+      "lower_offset_m": 0.005000768174363259,
+      "robot_tilt_rad": 0.02312812716455255,
+      "top_center_m": 0.003164434338137127,
+      "top_height_error_m": 5.5590958858374504e-05,
+      "top_speed_m_s": 0.015979220203086526
+    }
+  },
+  "package_identity": "340f064e33b61ed8968724084ebab8dc35563cb2239506ab20b1d01056581c10",
+  "reward_spec": {
+    "changed_term": "double_balance",
+    "consecutive_success_bonus": false,
+    "evaluation_uses_original_task": true,
+    "formula": "original position/height/upright factors * exp(-upper_speed^2/0.08^2) * exp(-lower_xy_speed^2/0.15^2)",
+    "lower_horizontal_speed_std_m_s": 0.15,
+    "observation_and_physics_unchanged": true,
+    "original_upper_speed_std_m_s": 0.12,
+    "other_rewards_unchanged": true,
+    "smooth_dense_reward": true,
+    "upper_speed_std_m_s": 0.08,
+    "version": "speed_alignment_v1",
+    "weight": 4.0
+  }
+}

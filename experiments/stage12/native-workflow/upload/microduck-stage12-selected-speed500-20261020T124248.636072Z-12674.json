@@ -1,0 +1,484 @@
+{
+  "status": "LOCAL_VIDEO_COMPLETE",
+  "selected_model": "speed_refine_+500",
+  "policy_updates": 5000,
+  "selected_checkpoint_sha256": "51821a28880aba74b80e6d5a388dfd7a82098bd3dca04a1e8947b4b2a8d5539a",
+  "fetch": {
+    "status": "SELECTED_MODEL_RETURN_VERIFIED",
+    "files": {
+      "evaluation": {
+        "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-selected-speed500-v1/evaluation/evaluation-result.json",
+        "bytes": 5714,
+        "sha256": "0e9ff8b24f10929523f1a17e8cd791c6b73408b6f2905feb22e5524c36c92e81"
+      },
+      "model": {
+        "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-selected-speed500-v1/checkpoints/refine_000500.pt",
+        "bytes": 10036828,
+        "sha256": "51821a28880aba74b80e6d5a388dfd7a82098bd3dca04a1e8947b4b2a8d5539a"
+      },
+      "native_task.py": {
+        "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-selected-speed500-v1/task/native_task.py",
+        "bytes": 8816,
+        "sha256": "b6909b9cff864dcfce8203062a75282571ca2c7ef5d66b2aa58c05c4626a55af"
+      },
+      "source-pins.json": {
+        "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-selected-speed500-v1/task/source-pins.json",
+        "bytes": 54309,
+        "sha256": "08c781088ecb4b2023c593ff8ffa45061bf6a57fad5902fcf79b50155daa969c"
+      },
+      "group_20261021": {
+        "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-selected-speed500-v1/evaluation/group-20261021.json",
+        "bytes": 64103,
+        "sha256": "8689ff617cfff1d55460989fb472a9c2af81f9d50001e2d466f4e3f288168ff9"
+      },
+      "group_20261022": {
+        "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-selected-speed500-v1/evaluation/group-20261022.json",
+        "bytes": 64103,
+        "sha256": "4544f0b5f276de87d2b2369066cd86759621ab2b37eb6ea2fc3f607a953afcd5"
+      }
+    },
+    "local_replay_inventory": {
+      "project": "/home/lx/microduck-double-balance/workspace",
+      "frozen_source_count": 365,
+      "matching_files": 365,
+      "missing_count": 0,
+      "different_count": 0,
+      "missing": [],
+      "different": [],
+      "existing_python": "/home/lx/microduck-double-balance/workspace/.venv/bin/python",
+      "runtime_metadata": {
+        "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+        "executable": "/home/lx/microduck-double-balance/workspace/.venv/bin/python",
+        "packages": {
+          "mjlab": "1.3.0",
+          "mujoco": "3.10.0",
+          "mujoco-warp": "3.8.1",
+          "warp-lang": "1.12.0",
+          "rsl-rl-lib": "5.0.1",
+          "torch": "2.9.1"
+        }
+      },
+      "modifications": 0,
+      "dependency_installations": 0,
+      "simulation_steps": 0,
+      "PPO_updates": 0,
+      "meaning": "Read-only preparation inventory, not an inference or physical validation result"
+    },
+    "evidence_audit": {
+      "status": "RETAINED_EVIDENCE_VERIFIED",
+      "summary": {
+        "episodes": 256,
+        "successes": 253,
+        "success_fraction": 0.98828125,
+        "success_wilson95": [
+          0.9661184273321177,
+          0.9960067128769923
+        ],
+        "ever_5s_count": 253,
+        "physically_terminated_count": 0,
+        "mean_survival_seconds": 10.0,
+        "longest_stable_seconds": {
+          "median": 9.48,
+          "min": 3.8200000000000003,
+          "max": 9.96
+        },
+        "stable_fraction_of_first_episode_steps": 0.988390625,
+        "gate_violation_fraction": {
+          "top_center": 0.000859375,
+          "top_height": 0.0,
+          "top_speed": 0.00690625,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.0041015625,
+          "unassisted": 0.0
+        },
+        "run_break_counts": {
+          "top_center": 13,
+          "top_height": 0,
+          "top_speed": 487,
+          "lower_offset": 0,
+          "lower_height_min": 0,
+          "lower_height_max": 0,
+          "robot_tilt": 0,
+          "lower_ball_speed": 282,
+          "unassisted": 0
+        },
+        "values_mean_over_first_episode_steps": {
+          "top_center_m": 0.003164434338137127,
+          "top_height_error_m": 5.5590958858374504e-05,
+          "top_speed_m_s": 0.015979220203086526,
+          "lower_offset_m": 0.005000768174363259,
+          "lower_height_m": 0.238564351670444,
+          "robot_tilt_rad": 0.02312812716455255,
+          "lower_ball_speed_m_s": 0.04651901207828306,
+          "hold": 0.0
+        },
+        "termination_counts": {
+          "time_out": 256
+        }
+      },
+      "groups": [
+        {
+          "seed": 20261021,
+          "episodes": 128,
+          "successes": 127,
+          "longest_stable_seconds": {
+            "median": 9.64,
+            "min": 4.48,
+            "max": 9.96
+          },
+          "physically_terminated_count": 0
+        },
+        {
+          "seed": 20261022,
+          "episodes": 128,
+          "successes": 126,
+          "longest_stable_seconds": {
+            "median": 9.200000000000001,
+            "min": 3.8200000000000003,
+            "max": 9.94
+          },
+          "physically_terminated_count": 0
+        }
+      ],
+      "summary_audits": [
+        {
+          "seed": 20261021,
+          "source": "group",
+          "valid": true,
+          "exact_equal": true,
+          "float_abs_tolerance": 1e-12,
+          "float_rel_tolerance": 2e-12,
+          "scope": "Derived summary float values only; all episode decisions/counts and physical thresholds remain exact",
+          "differences": [],
+          "invalid": [],
+          "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+          "executable": "/home/lx/microduck-double-balance/workspace/.venv/bin/python"
+        },
+        {
+          "seed": 20261021,
+          "source": "evaluation_manifest",
+          "valid": true,
+          "exact_equal": true,
+          "float_abs_tolerance": 1e-12,
+          "float_rel_tolerance": 2e-12,
+          "scope": "Derived summary float values only; all episode decisions/counts and physical thresholds remain exact",
+          "differences": [],
+          "invalid": [],
+          "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+          "executable": "/home/lx/microduck-double-balance/workspace/.venv/bin/python"
+        },
+        {
+          "seed": 20261022,
+          "source": "group",
+          "valid": true,
+          "exact_equal": true,
+          "float_abs_tolerance": 1e-12,
+          "float_rel_tolerance": 2e-12,
+          "scope": "Derived summary float values only; all episode decisions/counts and physical thresholds remain exact",
+          "differences": [],
+          "invalid": [],
+          "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+          "executable": "/home/lx/microduck-double-balance/workspace/.venv/bin/python"
+        },
+        {
+          "seed": 20261022,
+          "source": "evaluation_manifest",
+          "valid": true,
+          "exact_equal": true,
+          "float_abs_tolerance": 1e-12,
+          "float_rel_tolerance": 2e-12,
+          "scope": "Derived summary float values only; all episode decisions/counts and physical thresholds remain exact",
+          "differences": [],
+          "invalid": [],
+          "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+          "executable": "/home/lx/microduck-double-balance/workspace/.venv/bin/python"
+        },
+        {
+          "source": "combined",
+          "valid": true,
+          "exact_equal": true,
+          "float_abs_tolerance": 1e-12,
+          "float_rel_tolerance": 2e-12,
+          "scope": "Derived summary float values only; all episode decisions/counts and physical thresholds remain exact",
+          "differences": [],
+          "invalid": [],
+          "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+          "executable": "/home/lx/microduck-double-balance/workspace/.venv/bin/python"
+        }
+      ],
+      "physical_thresholds_changed": false,
+      "selection_set_not_final_heldout_test": true,
+      "paired_comparison_allowed": false,
+      "added_PPO_updates": 0,
+      "added_simulation_steps": 0
+    },
+    "added_PPO_updates": 0,
+    "added_simulation_steps": 0,
+    "remote_artifact_writes": 0
+  },
+  "local_replay": {
+    "added_PPO_updates": 0,
+    "clip": 2,
+    "completed_clips": 2,
+    "completed_control_steps": 1000,
+    "control_steps_in_clip": 500,
+    "deadline_utc": 1792501022.567456,
+    "elapsed_seconds": 44.676268100738525,
+    "maximum_clips": 2,
+    "maximum_control_steps": 1000,
+    "phase": "finished",
+    "progress_percent": 100.0,
+    "seed": 20261022,
+    "status": "LOCAL_VIDEO_COMPLETE",
+    "started": {
+      "added_PPO_updates": 0,
+      "deadline_utc": 1792501022.567456,
+      "maximum_clips": 2,
+      "maximum_control_steps": 1000,
+      "package_identity": "c94a6eef7bb151a0780b0122c3a4ad99ef8cb634b52e697e888d4a1eafa1c7ac",
+      "seeds": [
+        20261021,
+        20261022
+      ],
+      "started_utc": 1792500122.567456
+    },
+    "worker": {
+      "group": 12718,
+      "pid": 12718,
+      "start": "3510350",
+      "state": "R"
+    },
+    "worker_alive": false,
+    "result": {
+      "added_PPO_updates": 0,
+      "benchmark_success_rate_recomputed": false,
+      "checkpoint_metadata": {
+        "policy_updates": 5000,
+        "refine_updates": 500,
+        "reward_spec": {
+          "changed_term": "double_balance",
+          "consecutive_success_bonus": false,
+          "evaluation_uses_original_task": true,
+          "formula": "original position/height/upright factors * exp(-upper_speed^2/0.08^2) * exp(-lower_xy_speed^2/0.15^2)",
+          "lower_horizontal_speed_std_m_s": 0.15,
+          "observation_and_physics_unchanged": true,
+          "original_upper_speed_std_m_s": 0.12,
+          "other_rewards_unchanged": true,
+          "smooth_dense_reward": true,
+          "upper_speed_std_m_s": 0.08,
+          "version": "speed_alignment_v1",
+          "weight": 4.0
+        },
+        "training_package_identity": "340f064e33b61ed8968724084ebab8dc35563cb2239506ab20b1d01056581c10"
+      },
+      "clips": [
+        {
+          "benchmark_success_rate_recomputed": false,
+          "episode": {
+            "env_id": 0,
+            "ever_5s": true,
+            "gate_failure_counts": [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "longest_stable_steps": 492,
+            "run_break_counts": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "seed": 20261021,
+            "stable_steps": 498,
+            "steps": 500,
+            "success": true,
+            "terminated": false,
+            "terminations": [
+              "time_out"
+            ],
+            "value_sums": [
+              1.5017926055224962,
+              0.027359075844287872,
+              7.117650977859739,
+              2.16180278165848,
+              119.25324562191963,
+              13.373796716099605,
+              20.68094269109954,
+              0.0
+            ]
+          },
+          "initial_frame": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-replay-speed500-v1/speed500-seed-20261021-initial.png",
+          "not_exact_replay_of_cloud_batch": true,
+          "policy_and_normalizer_unchanged": true,
+          "seed": 20261021,
+          "video": {
+            "bytes": 636044,
+            "decode_verified": true,
+            "fps": 25,
+            "frames": 250,
+            "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-replay-speed500-v1/speed500-seed-20261021-whole-head.mp4",
+            "sha256": "e7adb6fcb400e02f6e8a3c7ccb4ff1104e258880d931fd6e2a71ae3219ceb404"
+          },
+          "views": [
+            {
+              "azimuth": 135.0,
+              "distance": 1.0,
+              "elevation": -15.0,
+              "lookat": [
+                -0.0041641779243946075,
+                -0.006038921885192394,
+                0.3194698095321655
+              ]
+            },
+            {
+              "azimuth": 45.0,
+              "distance": 0.3,
+              "elevation": -12.0,
+              "lookat": [
+                -0.008328355848789215,
+                -0.012077843770384789,
+                0.5379396080970764
+              ]
+            }
+          ]
+        },
+        {
+          "benchmark_success_rate_recomputed": false,
+          "episode": {
+            "env_id": 0,
+            "ever_5s": true,
+            "gate_failure_counts": [
+              0,
+              0,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "longest_stable_steps": 492,
+            "run_break_counts": [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "seed": 20261022,
+            "stable_steps": 497,
+            "steps": 500,
+            "success": true,
+            "terminated": false,
+            "terminations": [
+              "time_out"
+            ],
+            "value_sums": [
+              1.4846089092025068,
+              0.029214685782790184,
+              6.3782382606877945,
+              1.99541128744022,
+              119.25916250050068,
+              11.453702001366764,
+              18.114763816500215,
+              0.0
+            ]
+          },
+          "initial_frame": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-replay-speed500-v1/speed500-seed-20261022-initial.png",
+          "not_exact_replay_of_cloud_batch": true,
+          "policy_and_normalizer_unchanged": true,
+          "seed": 20261022,
+          "video": {
+            "bytes": 619583,
+            "decode_verified": true,
+            "fps": 25,
+            "frames": 250,
+            "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-replay-speed500-v1/speed500-seed-20261022-whole-head.mp4",
+            "sha256": "e5c48082836cd01ca1bc709f4b44515d32d140b7ace2f4878e87b8c90cd1f523"
+          },
+          "views": [
+            {
+              "azimuth": 135.0,
+              "distance": 1.0,
+              "elevation": -15.0,
+              "lookat": [
+                -0.006316368002444506,
+                0.003684830851852894,
+                0.31979572772979736
+              ]
+            },
+            {
+              "azimuth": 45.0,
+              "distance": 0.3,
+              "elevation": -12.0,
+              "lookat": [
+                -0.012632736004889011,
+                0.007369661703705788,
+                0.5385914444923401
+              ]
+            }
+          ]
+        }
+      ],
+      "cloud_connections": 0,
+      "control_steps": 1000,
+      "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+      "finished_utc": 1792500167.2384572,
+      "index": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-replay-speed500-v1/index.html",
+      "inputs": {
+        "checkpoint_sha256": "51821a28880aba74b80e6d5a388dfd7a82098bd3dca04a1e8947b4b2a8d5539a",
+        "source_files_verified": 365,
+        "source_pins_sha256": "08c781088ecb4b2023c593ff8ffa45061bf6a57fad5902fcf79b50155daa969c",
+        "task_sha256": "b6909b9cff864dcfce8203062a75282571ca2c7ef5d66b2aa58c05c4626a55af"
+      },
+      "maximum_control_steps": 1000,
+      "original_inputs_unchanged": true,
+      "physics_substeps_per_control": 10,
+      "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+      "status": "LOCAL_VIDEO_COMPLETE",
+      "task_acceptance_claimed": false,
+      "torch": "2.9.1+cu128"
+    },
+    "finished": {
+      "worker_exit_code": 0,
+      "worker_alive": false,
+      "finished_utc": 1792500168.6303356
+    },
+    "controller_package_identity": "c94a6eef7bb151a0780b0122c3a4ad99ef8cb634b52e697e888d4a1eafa1c7ac",
+    "local_return_utc": "20261020T124248.635735Z",
+    "cloud_connections": 0,
+    "power_action": "NONE",
+    "log_tails": {
+      "worker.log": "or config matched 14 joint(s) but the same expressions also match 8 site(s): imu, left_foot, head_camera, tof, head_imu, mouth_tip, stage11_head_material_frame, right_foot. Add a separate config with transmission_type=TransmissionType.SITE if those should be actuated too.\n  self._add_actuators()\n[BamActuator] model='m6' joints=14 kt=0.3660 R=2.8114 vin=range=(6.5, 8.2) drop_gain_range=(0.0, 0.2) force_limit=±1.07Nm friction_base=0.0048 friction_viscous=0.0054 envs=1 device=cuda:0\n\n+-----------------------------------+\n|          Base Environment         |\n+------------------------+----------+\n| Property               | Value    |\n+------------------------+----------+\n| Number of environments | 1        |\n| Environment device     | cuda:0   |\n| Environment seed       | 20261022 |\n| Physics step-size      | 0.002    |\n| Environment step-size  | 0.02     |\n+------------------------+----------+\n\n[INFO] <EventManager> contains 2 active terms.\n+---------------------------------------+\n| Active Event Terms in Mode: 'startup' |\n+-------+-------------------------------+\n| Index | Name                          |\n+-------+-------------------------------+\n|   0   | native_head_geometry          |\n|   1   | foot_friction                 |\n|   2   | encoder_bias                  |\n|   3   | base_com                      |\n|   4   | expand_bam_friction_fields    |\n|   5   | randomize_mass_inertia        |\n+-------+-------------------------------+\n+-------------------------------------+\n| Active Event Terms in Mode: 'reset' |\n+-------+-----------------------------+\n| Index | Name                        |\n+-------+-----------------------------+\n|   0   | reset_native_head           |\n|   1   | reset_action_history        |\n|   2   | randomize_com               |\n|   3   | randomize_head_com          |\n|   4   | randomize_joint_friction    |\n|   5   | randomize_armature          |\n+-------+-----------------------------+\n+-----------------------------+\n| Domain Randomization Fields |\n+-------+---------------------+\n| Index | Field Name          |\n+-------+---------------------+\n|   0   | geom_friction       |\n|   1   | body_ipos           |\n|   2   | body_subtreemass    |\n|   3   | dof_invweight0      |\n|   4   | body_invweight0     |\n|   5   | tendon_length0      |\n|   6   | tendon_invweight0   |\n|   7   | dof_frictionloss    |\n|   8   | dof_damping         |\n|   9   | body_mass           |\n|   10  | body_inertia        |\n|   11  | body_iquat          |\n|   12  | dof_armature        |\n+-------+---------------------+\n\n[INFO] <CommandManager> contains 1 active terms.\n+--------------------------------------------+\n|            Active Command Terms            |\n+-------+-------+----------------------------+\n| Index | Name  |            Type            |\n+-------+-------+----------------------------+\n|   0   | twist | VelocityCommandCommandOnly |\n+-------+-------+----------------------------+\n\n[INFO] <ActionManager> contains 2 active terms.\n+---------------------------------+\n| Active Action Terms (shape: 14) |\n+-------+-----------+-------------+\n| Index | Name      |   Dimension |\n+-------+-----------+-------------+\n|   0   | joint_pos |          14 |\n|   1   | ball_hold |           0 |\n+-------+-----------+-------------+\n\n[INFO] <ObservationManager> contains 2 groups.\n+-----------------------------------------------------------+\n| Active Observation Terms in Group: 'actor' (shape: (61,)) |\n+-----------+----------------------------------+------------+\n|   Index   | Name                             |   Shape    |\n+-----------+----------------------------------+------------+\n|     0     | base_ang_vel                     |    (3,)    |\n|     1     | projected_gravity                |    (3,)    |\n|     2     | joint_pos                        |   (14,)    |\n|     3     | joint_vel                        |   (14,)    |\n|     4     | actions                          |   (14,)    |\n|     5     | command                          |    (3,)    |\n|     6     | head_command                     |    (4,)    |\n|     7     | body_command                     |    (6,)    |\n+-----------+----------------------------------+------------+\n+------------------------------------------------------------+\n| Active Observation Terms in Group: 'critic' (shape: (85,)) |\n+----------+------------------------------------+------------+\n|  Index   | Name                               |   Shape    |\n+----------+------------------------------------+------------+\n|    0     | base_lin_vel                       |    (3,)    |\n|    1     | base_ang_vel                       |    (3,)    |\n|    2     | projected_gravity                  |    (3,)    |\n|    3     | joint_pos                          |   (14,)    |\n|    4     | joint_vel                          |   (14,)    |\n|    5     | actions                            |   (14,)    |\n|    6     | command                            |    (3,)    |\n|    7     | foot_height                        |    (2,)    |\n|    8     | foot_air_time                      |    (2,)    |\n|    9     | foot_contact                       |    (2,)    |\n|    10    | foot_contact_forces                |    (6,)    |\n|    11    | head_command                       |    (4,)    |\n|    12    | body_command                       |    (6,)    |\n|    13    | top_ball_state                     |    (9,)    |\n+----------+------------------------------------+------------+\n\n[INFO] <TerminationManager> contains 5 active terms.\n+------------------------------------------+\n|         Active Termination Terms         |\n+-------+-----------------------+----------+\n| Index | Name                  | Time Out |\n+-------+-----------------------+----------+\n|   0   | time_out              |   True   |\n|   1   | out_of_terrain_bounds |   True   |\n|   2   | nan_state             |  False   |\n|   3   | fell                  |  False   |\n|   4   | top_ball_lost         |  False   |\n+-------+-----------------------+----------+\n\n[INFO] <RewardManager> contains 16 active terms.\n+-------------------------------------------+\n|            Active Reward Terms            |\n+-------+--------------------------+--------+\n| Index | Name                     | Weight |\n+-------+--------------------------+--------+\n|   0   | track_linear_velocity    |    1.0 |\n|   1   | track_angular_velocity   |    0.5 |\n|   2   | pose                     |    1.0 |\n|   3   | body_ang_vel             |  -0.05 |\n|   4   | angular_momentum         |  -0.02 |\n|   5   | dof_pos_limits           |   -1.0 |\n|   6   | action_rate_l2           |   -0.4 |\n|   7   | self_collisions          |   -1.0 |\n|   8   | upright                  |    1.0 |\n|   9   | centered                 |    2.0 |\n|   10  | feet_on_ball             |    1.0 |\n|   11  | height                   |    1.0 |\n|   12  | ball_speed               |  -0.05 |\n|   13  | double_balance           |    4.0 |\n|   14  | top_ball_speed           |   -0.1 |\n|   15  | head_surface_normal_tilt |   -0.1 |\n+-------+--------------------------+--------+\n\n[INFO] <NullCurriculumManager> (inactive)\n[INFO] <MetricsManager> contains 7 active terms.\n+------------------------------------------------+\n|              Active Metrics Terms              |\n+-------+----------------------------------------+\n| Index | Name                                   |\n+-------+----------------------------------------+\n|   0   | mean_action_acc                        |\n|   1   | top_ball_center_error_m                |\n|   2   | top_ball_relative_speed_m_s            |\n|   3   | native_lower_unassisted_fraction       |\n|   4   | native_unassisted_env_fraction         |\n|   5   | native_joint_geometric_stable_fraction |\n|   6   | native_joint_geometric_success_5s      |\n+-------+----------------------------------------+\n\n[INFO] <NullRecorderManager> (inactive)\n--------------------------------------------------------------------------------\nResolved observation sets: \n\t actor :  ('actor',)\n\t critic :  ('critic',)\n--------------------------------------------------------------------------------\nActor Model: RNNModel(\n  (obs_normalizer): EmpiricalNormalization()\n  (distribution): GaussianDistribution()\n  (mlp): MLP(\n    (0): Linear(in_features=256, out_features=512, bias=True)\n    (1): ELU(alpha=1.0)\n    (2): Linear(in_features=512, out_features=256, bias=True)\n    (3): ELU(alpha=1.0)\n    (4): Linear(in_features=256, out_features=128, bias=True)\n    (5): ELU(alpha=1.0)\n    (6): Linear(in_features=128, out_features=14, bias=True)\n  )\n  (rnn): RNN(\n    (rnn): LSTM(61, 256)\n  )\n)\nCritic Model: MLPModel(\n  (obs_normalizer): EmpiricalNormalization()\n  (mlp): MLP(\n    (0): Linear(in_features=85, out_features=512, bias=True)\n    (1): ELU(alpha=1.0)\n    (2): Linear(in_features=512, out_features=256, bias=True)\n    (3): ELU(alpha=1.0)\n    (4): Linear(in_features=256, out_features=128, bias=True)\n    (5): ELU(alpha=1.0)\n    (6): Linear(in_features=128, out_features=1, bias=True)\n  )\n)\nSetting seed: 20261022\n",
+      "ffmpeg-20261021.log": "",
+      "ffmpeg-20261022.log": ""
+    }
+  },
+  "added_PPO_updates": 0,
+  "ssh_read_requests": 17,
+  "cloud_GPU_jobs_started": 0,
+  "cloud_artifact_writes": 0,
+  "power_action": "NONE",
+  "source_bundle_sha256": "cc88c3fbc94c448f9884804bfebe9f9f3778a4d12ac78297370b508c4caa8df4",
+  "local_return_utc": "20261020T124248.636072Z"
+}

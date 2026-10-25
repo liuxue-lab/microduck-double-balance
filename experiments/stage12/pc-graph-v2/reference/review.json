@@ -1,0 +1,51 @@
+{
+  "status": "FAILURE_REVIEWED_AND_REPRODUCED",
+  "report_sha256": "8541d58f365f6390e2abe119f2e985ad4751c1d08c8eaf7b90ae37c339ba0080",
+  "prior_package_identity": "4a0aa87114967b4ae29fbe42d80620706b8d93b3eaf8abf086880d6ced69d01b",
+  "prior_commit": "868a3f9c8b125186f9f217fabc77c597c3f77ca0",
+  "reference_complete": true,
+  "reference_control_steps": 160,
+  "reference_physics_steps": 1600,
+  "reference_timing_ms": {
+    "count": 150,
+    "max": 34.286167,
+    "mean": 32.737517000000004,
+    "over_20ms": 150,
+    "p95": 33.895539,
+    "p99": 34.282605
+  },
+  "failed_arm_completed_control_steps": 0,
+  "failed_arm_completed_physics_steps": 5,
+  "failed_arm_applied_force_steps": 0,
+  "failure_field": "effective_vin",
+  "failure_at_attempted_replay": 6,
+  "prior_failed_comparison_values_not_recorded": true,
+  "accepted_comparisons_before_failure": 5,
+  "prior_partial_maximum_error": 0.0003418922424316406,
+  "root_cause": "Graph output overwrote the live previous-torque alias before the reference read it",
+  "reproduction": "Exact legacy source with fixed-address CPU output overwrites fails effective_vin on replay 2",
+  "fixes": [
+    "Reference reads the pre-replay input snapshot",
+    "Separate committed recurrent state from reusable graph output",
+    "Guard distinct storage",
+    "Include detailed failing comparison in reports",
+    "Show underlying worker error"
+  ],
+  "unchanged_atol": 2e-05,
+  "unchanged_rtol": 0.0002,
+  "CPU_tests": 25,
+  "actual_new_CUDA_capture_tested": false,
+  "actual_new_candidate_speed_measured": false,
+  "original_records_unchanged": true,
+  "workers_exited": true,
+  "cloud_power": {
+    "confirmation_date": "2026-10-24",
+    "evidence": "用户消息：5090已关机",
+    "exact_shutdown_time": null,
+    "platform_verified": false,
+    "state": "OFF_USER_CONFIRMED",
+    "timezone": "Asia/Shanghai"
+  },
+  "PPO_added": 0,
+  "hardware_acceptance": false
+}

@@ -1,0 +1,5943 @@
+{
+  "status": "INITIALIZATION_C_REVIEWED_WITH_FIRST_RUN_POSTCHECK_GAP",
+  "manifest_files": 84,
+  "original_files_retained": 28,
+  "total_events": 99,
+  "sum_run_unique_arrays": 1521,
+  "global_unique_arrays": 605,
+  "returned_comparison_independently_reproduced": true,
+  "per_run": [
+    {
+      "job": "01-initialization/attempt-772ee431",
+      "events": 33,
+      "array_references": 30476,
+      "unique_arrays": 507,
+      "raw_array_bytes": 61295000,
+      "npy_array_bytes": 61359896,
+      "nonfinite_fields_and_counts": {},
+      "zero_fields_at_all_events": {
+        "context/assistance_hold": 33,
+        "physical/xfrc_applied": 33,
+        "physical/qfrc_applied": 33,
+        "physical/time": 33
+      },
+      "recorded_nefc_values": [
+        0,
+        14
+      ],
+      "contact_counts": [
+        0
+      ],
+      "bootstrap_calls": {
+        "phase": "observed_final_reset",
+        "python_entry_counts": {
+          "construction:mjwarp.step": 3,
+          "construction:mjwarp.forward": 3,
+          "construction:mjwarp.reset_data": 3,
+          "construction:env.reset": 1,
+          "construction:sim.reset": 1,
+          "construction:sim.forward": 2,
+          "construction:sim.sense": 1,
+          "observed_final_reset:env.reset": 1,
+          "observed_final_reset:sim.reset": 1,
+          "observed_final_reset:sim.forward": 2,
+          "observed_final_reset:sim.sense": 1
+        },
+        "rollout_calls": 0,
+        "counts_are_not_gpu_kernel_or_graph_launch_counts": true
+      },
+      "original_status": "FAILED_REVIEW_REQUIRED",
+      "postchecks_complete": false
+    },
+    {
+      "job": "02-initialization/attempt-8181eb75",
+      "events": 33,
+      "array_references": 30476,
+      "unique_arrays": 507,
+      "raw_array_bytes": 61295000,
+      "npy_array_bytes": 61359896,
+      "nonfinite_fields_and_counts": {},
+      "zero_fields_at_all_events": {
+        "context/assistance_hold": 33,
+        "physical/xfrc_applied": 33,
+        "physical/qfrc_applied": 33,
+        "physical/time": 33
+      },
+      "recorded_nefc_values": [
+        0,
+        14
+      ],
+      "contact_counts": [
+        0
+      ],
+      "bootstrap_calls": {
+        "phase": "complete",
+        "python_entry_counts": {
+          "construction:mjwarp.step": 3,
+          "construction:mjwarp.forward": 3,
+          "construction:mjwarp.reset_data": 3,
+          "construction:env.reset": 1,
+          "construction:sim.reset": 1,
+          "construction:sim.forward": 2,
+          "construction:sim.sense": 1,
+          "observed_final_reset:env.reset": 1,
+          "observed_final_reset:sim.reset": 1,
+          "observed_final_reset:sim.forward": 2,
+          "observed_final_reset:sim.sense": 1
+        },
+        "rollout_calls": 0,
+        "counts_are_not_gpu_kernel_or_graph_launch_counts": true
+      },
+      "original_status": "INITIALIZATION_TRACE_COMPLETE_REVIEW_REQUIRED",
+      "postchecks_complete": true
+    },
+    {
+      "job": "03-initialization/attempt-41fdfd96",
+      "events": 33,
+      "array_references": 30476,
+      "unique_arrays": 507,
+      "raw_array_bytes": 61295000,
+      "npy_array_bytes": 61359896,
+      "nonfinite_fields_and_counts": {},
+      "zero_fields_at_all_events": {
+        "context/assistance_hold": 33,
+        "physical/xfrc_applied": 33,
+        "physical/qfrc_applied": 33,
+        "physical/time": 33
+      },
+      "recorded_nefc_values": [
+        0,
+        14
+      ],
+      "contact_counts": [
+        0
+      ],
+      "bootstrap_calls": {
+        "phase": "complete",
+        "python_entry_counts": {
+          "construction:mjwarp.step": 3,
+          "construction:mjwarp.forward": 3,
+          "construction:mjwarp.reset_data": 3,
+          "construction:env.reset": 1,
+          "construction:sim.reset": 1,
+          "construction:sim.forward": 2,
+          "construction:sim.sense": 1,
+          "observed_final_reset:env.reset": 1,
+          "observed_final_reset:sim.reset": 1,
+          "observed_final_reset:sim.forward": 2,
+          "observed_final_reset:sim.sense": 1
+        },
+        "rollout_calls": 0,
+        "counts_are_not_gpu_kernel_or_graph_launch_counts": true
+      },
+      "original_status": "INITIALIZATION_TRACE_COMPLETE_REVIEW_REQUIRED",
+      "postchecks_complete": true
+    }
+  ],
+  "pairs": [
+    {
+      "left": "01-initialization/attempt-772ee431",
+      "right": "02-initialization/attempt-8181eb75",
+      "first_differences": {
+        "physical/cacc": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 6.0617923736572266e-05,
+          "numeric_changed_elements": 450,
+          "shape": [
+            128,
+            20,
+            6
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            74,
+            106,
+            117
+          ]
+        },
+        "physical/cdof": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 9.536743341698184e-07,
+          "numeric_changed_elements": 117,
+          "shape": [
+            128,
+            32,
+            6
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            21,
+            42,
+            117
+          ]
+        },
+        "physical/cdof_dot": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 0.0,
+          "numeric_changed_elements": 0,
+          "shape": [
+            128,
+            32,
+            6
+          ],
+          "dtype": "<f4",
+          "env_ids": []
+        },
+        "physical/cfrc_int": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 7.115304470062256e-07,
+          "numeric_changed_elements": 553,
+          "shape": [
+            128,
+            20,
+            6
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            74,
+            106,
+            117
+          ]
+        },
+        "physical/cinert": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 1.8998980522155762e-07,
+          "numeric_changed_elements": 288,
+          "shape": [
+            128,
+            20,
+            10
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            21,
+            42,
+            117
+          ]
+        },
+        "physical/crb": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 7.203780114650726e-07,
+          "numeric_changed_elements": 294,
+          "shape": [
+            128,
+            20,
+            10
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            106,
+            117
+          ]
+        },
+        "physical/qLD": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 5.960464477539063e-08,
+          "numeric_changed_elements": 659,
+          "shape": [
+            128,
+            32,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            106,
+            117
+          ]
+        },
+        "physical/qM": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 5.960464477539063e-08,
+          "numeric_changed_elements": 605,
+          "shape": [
+            128,
+            32,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            106,
+            117
+          ]
+        },
+        "physical/qacc": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 3.0517578125e-05,
+          "numeric_changed_elements": 78,
+          "shape": [
+            128,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            74,
+            106,
+            117
+          ]
+        },
+        "physical/qacc_smooth": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 3.0517578125e-05,
+          "numeric_changed_elements": 78,
+          "shape": [
+            128,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            74,
+            106,
+            117
+          ]
+        },
+        "physical/qfrc_bias": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 4.76837158203125e-07,
+          "numeric_changed_elements": 38,
+          "shape": [
+            128,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            74,
+            117
+          ]
+        },
+        "physical/qfrc_constraint": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 1.1641532182693481e-08,
+          "numeric_changed_elements": 5,
+          "shape": [
+            128,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            74,
+            117
+          ]
+        },
+        "physical/qfrc_smooth": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 4.76837158203125e-07,
+          "numeric_changed_elements": 24,
+          "shape": [
+            128,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            74,
+            117
+          ]
+        },
+        "physical/sensordata": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 1.1920928955078125e-06,
+          "numeric_changed_elements": 13,
+          "shape": [
+            128,
+            28
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            74,
+            106,
+            117
+          ]
+        },
+        "physical/subtree_com": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 9.5367431640625e-07,
+          "numeric_changed_elements": 6,
+          "shape": [
+            128,
+            20,
+            3
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            21,
+            42,
+            117
+          ]
+        },
+        "workspace/efc/Ma": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 4.76837158203125e-07,
+          "numeric_changed_elements": 58,
+          "shape": [
+            128,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            74,
+            106,
+            117
+          ]
+        },
+        "workspace/efc/force": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 1.1641532182693481e-08,
+          "numeric_changed_elements": 5,
+          "shape": [
+            128,
+            1500
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            74,
+            117
+          ]
+        },
+        "model/wp/dof_frictionloss": {
+          "index": 14,
+          "phase": "bam.compute#1.after",
+          "max_abs": 9.313225746154785e-10,
+          "numeric_changed_elements": 1,
+          "shape": [
+            128,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            74
+          ]
+        },
+        "workspace/efc/frictionloss": {
+          "index": 17,
+          "phase": "sim.forward#2.after",
+          "max_abs": 9.313225746154785e-10,
+          "numeric_changed_elements": 1,
+          "shape": [
+            128,
+            1500
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            74
+          ]
+        }
+      },
+      "phases": [
+        {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cdof_dot",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 1,
+          "phase": "raw.reset#1.before",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cdof_dot",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 2,
+          "phase": "raw._reset_idx#1.before",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cdof_dot",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 3,
+          "phase": "sim.reset#1.before",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cdof_dot",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 4,
+          "phase": "sim.reset#1.after",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cdof_dot",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 5,
+          "phase": "scene.reset#1.before",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cdof_dot",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 6,
+          "phase": "scene.reset#1.after",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cdof_dot",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 7,
+          "phase": "event.apply#1.before",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cdof_dot",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 8,
+          "phase": "sim.forward#1.before",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cdof_dot",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 9,
+          "phase": "sim.forward#1.after",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 10,
+          "phase": "event.apply#1.after",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 11,
+          "phase": "raw._reset_idx#1.after",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 12,
+          "phase": "scene.write_data_to_sim#1.before",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 13,
+          "phase": "bam.compute#1.before",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 14,
+          "phase": "bam.compute#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 15,
+          "phase": "scene.write_data_to_sim#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 16,
+          "phase": "sim.forward#2.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 17,
+          "phase": "sim.forward#2.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 18,
+          "phase": "command.compute#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 19,
+          "phase": "command.compute#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 20,
+          "phase": "sim.sense#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 21,
+          "phase": "sim.sense#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 22,
+          "phase": "observation.compute#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 23,
+          "phase": "observation.compute#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 24,
+          "phase": "raw.reset#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 25,
+          "phase": "policy.reset#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 26,
+          "phase": "policy.reset#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 27,
+          "phase": "before_initial_state_seal",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 28,
+          "phase": "after_initial_state_seal",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 29,
+          "phase": "observation.compute#2.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 30,
+          "phase": "observation.compute#2.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 31,
+          "phase": "after_wrapper_get_observations",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 32,
+          "phase": "reset_ready_after_original_observer_setup",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        }
+      ],
+      "boundaries": [
+        {
+          "phase": "sim.forward#1.before",
+          "different_inputs": [],
+          "different_model_fields": [],
+          "different_derived_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cdof_dot",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/subtree_com"
+          ],
+          "details": {
+            "physical/qfrc_bias": {
+              "max_abs": 4.76837158203125e-07,
+              "numeric_changed_elements": 38,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                74,
+                117
+              ]
+            },
+            "physical/qfrc_constraint": {
+              "max_abs": 1.1641532182693481e-08,
+              "numeric_changed_elements": 5,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                74,
+                117
+              ]
+            },
+            "physical/subtree_com": {
+              "max_abs": 9.5367431640625e-07,
+              "numeric_changed_elements": 6,
+              "shape": [
+                128,
+                20,
+                3
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                21,
+                42,
+                117
+              ]
+            },
+            "workspace/efc/force": {
+              "max_abs": 1.1641532182693481e-08,
+              "numeric_changed_elements": 5,
+              "shape": [
+                128,
+                1500
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                74,
+                117
+              ]
+            }
+          }
+        },
+        {
+          "phase": "sim.forward#1.after",
+          "different_inputs": [],
+          "different_model_fields": [],
+          "different_derived_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com"
+          ],
+          "details": {
+            "physical/qacc": {
+              "max_abs": 9.5367431640625e-07,
+              "numeric_changed_elements": 135,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qfrc_bias": {
+              "max_abs": 4.76837158203125e-07,
+              "numeric_changed_elements": 35,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qfrc_constraint": {
+              "max_abs": 4.8685979692209e-09,
+              "numeric_changed_elements": 98,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qM": {
+              "max_abs": 5.960464477539063e-08,
+              "numeric_changed_elements": 270,
+              "shape": [
+                128,
+                32,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                74,
+                117
+              ]
+            },
+            "physical/subtree_com": {
+              "max_abs": 9.5367431640625e-07,
+              "numeric_changed_elements": 3,
+              "shape": [
+                128,
+                20,
+                3
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74
+              ]
+            },
+            "workspace/efc/force": {
+              "max_abs": 4.8685979692209e-09,
+              "numeric_changed_elements": 98,
+              "shape": [
+                128,
+                1500
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            }
+          }
+        },
+        {
+          "phase": "bam.compute#1.before",
+          "different_inputs": [],
+          "different_model_fields": [],
+          "different_derived_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com"
+          ],
+          "details": {
+            "physical/qacc": {
+              "max_abs": 9.5367431640625e-07,
+              "numeric_changed_elements": 135,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qfrc_bias": {
+              "max_abs": 4.76837158203125e-07,
+              "numeric_changed_elements": 35,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qfrc_constraint": {
+              "max_abs": 4.8685979692209e-09,
+              "numeric_changed_elements": 98,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qM": {
+              "max_abs": 5.960464477539063e-08,
+              "numeric_changed_elements": 270,
+              "shape": [
+                128,
+                32,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                74,
+                117
+              ]
+            },
+            "physical/subtree_com": {
+              "max_abs": 9.5367431640625e-07,
+              "numeric_changed_elements": 3,
+              "shape": [
+                128,
+                20,
+                3
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74
+              ]
+            },
+            "workspace/efc/force": {
+              "max_abs": 4.8685979692209e-09,
+              "numeric_changed_elements": 98,
+              "shape": [
+                128,
+                1500
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            }
+          }
+        },
+        {
+          "phase": "bam.compute#1.after",
+          "different_inputs": [],
+          "different_model_fields": [
+            "model/wp/dof_frictionloss"
+          ],
+          "different_derived_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com"
+          ],
+          "details": {
+            "physical/qacc": {
+              "max_abs": 9.5367431640625e-07,
+              "numeric_changed_elements": 135,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qfrc_bias": {
+              "max_abs": 4.76837158203125e-07,
+              "numeric_changed_elements": 35,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qfrc_constraint": {
+              "max_abs": 4.8685979692209e-09,
+              "numeric_changed_elements": 98,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qM": {
+              "max_abs": 5.960464477539063e-08,
+              "numeric_changed_elements": 270,
+              "shape": [
+                128,
+                32,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                74,
+                117
+              ]
+            },
+            "physical/subtree_com": {
+              "max_abs": 9.5367431640625e-07,
+              "numeric_changed_elements": 3,
+              "shape": [
+                128,
+                20,
+                3
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74
+              ]
+            },
+            "model/wp/dof_frictionloss": {
+              "max_abs": 9.313225746154785e-10,
+              "numeric_changed_elements": 1,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74
+              ]
+            },
+            "workspace/efc/force": {
+              "max_abs": 4.8685979692209e-09,
+              "numeric_changed_elements": 98,
+              "shape": [
+                128,
+                1500
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            }
+          }
+        },
+        {
+          "phase": "sim.forward#2.before",
+          "different_inputs": [],
+          "different_model_fields": [
+            "model/wp/dof_frictionloss"
+          ],
+          "different_derived_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com"
+          ],
+          "details": {
+            "physical/qacc": {
+              "max_abs": 9.5367431640625e-07,
+              "numeric_changed_elements": 135,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qfrc_bias": {
+              "max_abs": 4.76837158203125e-07,
+              "numeric_changed_elements": 35,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qfrc_constraint": {
+              "max_abs": 4.8685979692209e-09,
+              "numeric_changed_elements": 98,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qM": {
+              "max_abs": 5.960464477539063e-08,
+              "numeric_changed_elements": 270,
+              "shape": [
+                128,
+                32,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                74,
+                117
+              ]
+            },
+            "physical/subtree_com": {
+              "max_abs": 9.5367431640625e-07,
+              "numeric_changed_elements": 3,
+              "shape": [
+                128,
+                20,
+                3
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74
+              ]
+            },
+            "model/wp/dof_frictionloss": {
+              "max_abs": 9.313225746154785e-10,
+              "numeric_changed_elements": 1,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74
+              ]
+            },
+            "workspace/efc/force": {
+              "max_abs": 4.8685979692209e-09,
+              "numeric_changed_elements": 98,
+              "shape": [
+                128,
+                1500
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            }
+          }
+        },
+        {
+          "phase": "sim.forward#2.after",
+          "different_inputs": [],
+          "different_model_fields": [
+            "model/wp/dof_frictionloss"
+          ],
+          "different_derived_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com"
+          ],
+          "details": {
+            "physical/qacc": {
+              "max_abs": 1.52587890625e-05,
+              "numeric_changed_elements": 43,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                21,
+                42,
+                74,
+                106
+              ]
+            },
+            "physical/qfrc_bias": {
+              "max_abs": 4.76837158203125e-07,
+              "numeric_changed_elements": 17,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                21,
+                42,
+                74
+              ]
+            },
+            "physical/qfrc_constraint": {
+              "max_abs": 9.313225746154785e-10,
+              "numeric_changed_elements": 5,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                21,
+                74,
+                106
+              ]
+            },
+            "physical/qM": {
+              "max_abs": 2.7939677238464355e-09,
+              "numeric_changed_elements": 192,
+              "shape": [
+                128,
+                32,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                106
+              ]
+            },
+            "physical/subtree_com": {
+              "max_abs": 9.5367431640625e-07,
+              "numeric_changed_elements": 1,
+              "shape": [
+                128,
+                20,
+                3
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42
+              ]
+            },
+            "model/wp/dof_frictionloss": {
+              "max_abs": 9.313225746154785e-10,
+              "numeric_changed_elements": 1,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74
+              ]
+            },
+            "workspace/efc/force": {
+              "max_abs": 9.313225746154785e-10,
+              "numeric_changed_elements": 5,
+              "shape": [
+                128,
+                1500
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                21,
+                74,
+                106
+              ]
+            }
+          }
+        },
+        {
+          "phase": "reset_ready_after_original_observer_setup",
+          "different_inputs": [],
+          "different_model_fields": [
+            "model/wp/dof_frictionloss"
+          ],
+          "different_derived_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com"
+          ],
+          "details": {
+            "physical/qacc": {
+              "max_abs": 1.52587890625e-05,
+              "numeric_changed_elements": 43,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                21,
+                42,
+                74,
+                106
+              ]
+            },
+            "physical/qfrc_bias": {
+              "max_abs": 4.76837158203125e-07,
+              "numeric_changed_elements": 17,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                21,
+                42,
+                74
+              ]
+            },
+            "physical/qfrc_constraint": {
+              "max_abs": 9.313225746154785e-10,
+              "numeric_changed_elements": 5,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                21,
+                74,
+                106
+              ]
+            },
+            "physical/qM": {
+              "max_abs": 2.7939677238464355e-09,
+              "numeric_changed_elements": 192,
+              "shape": [
+                128,
+                32,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                106
+              ]
+            },
+            "physical/subtree_com": {
+              "max_abs": 9.5367431640625e-07,
+              "numeric_changed_elements": 1,
+              "shape": [
+                128,
+                20,
+                3
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42
+              ]
+            },
+            "model/wp/dof_frictionloss": {
+              "max_abs": 9.313225746154785e-10,
+              "numeric_changed_elements": 1,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74
+              ]
+            },
+            "workspace/efc/force": {
+              "max_abs": 9.313225746154785e-10,
+              "numeric_changed_elements": 5,
+              "shape": [
+                128,
+                1500
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                21,
+                74,
+                106
+              ]
+            }
+          }
+        }
+      ],
+      "all_recorded_integrator_inputs_equal_at_all_events": true,
+      "captured_observations_equal": true,
+      "captured_rng_equal": true,
+      "captured_bam_state_and_arguments_equal": true,
+      "contact_prefixes_equal": true
+    },
+    {
+      "left": "01-initialization/attempt-772ee431",
+      "right": "03-initialization/attempt-41fdfd96",
+      "first_differences": {
+        "model/wp/dof_frictionloss": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 9.313225746154785e-10,
+          "numeric_changed_elements": 4,
+          "shape": [
+            128,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42
+          ]
+        },
+        "physical/cacc": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 0.00045013427734375,
+          "numeric_changed_elements": 545,
+          "shape": [
+            128,
+            20,
+            6
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            74,
+            106,
+            117
+          ]
+        },
+        "physical/cdof": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 1.9068829715251923e-06,
+          "numeric_changed_elements": 152,
+          "shape": [
+            128,
+            32,
+            6
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            106
+          ]
+        },
+        "physical/cdof_dot": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 0.0,
+          "numeric_changed_elements": 0,
+          "shape": [
+            128,
+            32,
+            6
+          ],
+          "dtype": "<f4",
+          "env_ids": []
+        },
+        "physical/cfrc_int": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 1.2088567160617458e-06,
+          "numeric_changed_elements": 657,
+          "shape": [
+            128,
+            20,
+            6
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            74,
+            106,
+            117
+          ]
+        },
+        "physical/cinert": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 3.7997961044311523e-07,
+          "numeric_changed_elements": 368,
+          "shape": [
+            128,
+            20,
+            10
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            106
+          ]
+        },
+        "physical/crb": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 1.4405231922864914e-06,
+          "numeric_changed_elements": 367,
+          "shape": [
+            128,
+            20,
+            10
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            106,
+            117
+          ]
+        },
+        "physical/qLD": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 5.960464477539063e-08,
+          "numeric_changed_elements": 914,
+          "shape": [
+            128,
+            32,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            106,
+            117
+          ]
+        },
+        "physical/qM": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 5.960464477539063e-08,
+          "numeric_changed_elements": 785,
+          "shape": [
+            128,
+            32,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            106,
+            117
+          ]
+        },
+        "physical/qacc": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 0.0004176385700702667,
+          "numeric_changed_elements": 103,
+          "shape": [
+            128,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            74,
+            106,
+            117
+          ]
+        },
+        "physical/qacc_smooth": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 5.340576171875e-05,
+          "numeric_changed_elements": 95,
+          "shape": [
+            128,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            74,
+            106,
+            117
+          ]
+        },
+        "physical/qfrc_bias": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 4.76837158203125e-07,
+          "numeric_changed_elements": 47,
+          "shape": [
+            128,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            74,
+            117
+          ]
+        },
+        "physical/qfrc_constraint": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 7.830746471881866e-05,
+          "numeric_changed_elements": 13,
+          "shape": [
+            128,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            74,
+            106,
+            117
+          ]
+        },
+        "physical/qfrc_smooth": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 4.76837158203125e-07,
+          "numeric_changed_elements": 26,
+          "shape": [
+            128,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            74,
+            117
+          ]
+        },
+        "physical/sensordata": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 2.384185791015625e-06,
+          "numeric_changed_elements": 17,
+          "shape": [
+            128,
+            28
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            74,
+            106,
+            117
+          ]
+        },
+        "physical/subtree_com": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 1.9073486328125e-06,
+          "numeric_changed_elements": 8,
+          "shape": [
+            128,
+            20,
+            3
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            106
+          ]
+        },
+        "workspace/efc/Ma": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 8.01868736743927e-07,
+          "numeric_changed_elements": 85,
+          "shape": [
+            128,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            74,
+            106,
+            117
+          ]
+        },
+        "workspace/efc/force": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 7.830746471881866e-05,
+          "numeric_changed_elements": 13,
+          "shape": [
+            128,
+            1500
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            74,
+            106,
+            117
+          ]
+        },
+        "workspace/efc/frictionloss": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 9.313225746154785e-10,
+          "numeric_changed_elements": 4,
+          "shape": [
+            128,
+            1500
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42
+          ]
+        }
+      },
+      "phases": [
+        {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cdof_dot",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 1,
+          "phase": "raw.reset#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cdof_dot",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 2,
+          "phase": "raw._reset_idx#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cdof_dot",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 3,
+          "phase": "sim.reset#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cdof_dot",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 4,
+          "phase": "sim.reset#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cdof_dot",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 5,
+          "phase": "scene.reset#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cdof_dot",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 6,
+          "phase": "scene.reset#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cdof_dot",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 7,
+          "phase": "event.apply#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cdof_dot",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 8,
+          "phase": "sim.forward#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cdof_dot",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 9,
+          "phase": "sim.forward#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 10,
+          "phase": "event.apply#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 11,
+          "phase": "raw._reset_idx#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 12,
+          "phase": "scene.write_data_to_sim#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 13,
+          "phase": "bam.compute#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 14,
+          "phase": "bam.compute#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 15,
+          "phase": "scene.write_data_to_sim#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 16,
+          "phase": "sim.forward#2.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 17,
+          "phase": "sim.forward#2.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 18,
+          "phase": "command.compute#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 19,
+          "phase": "command.compute#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 20,
+          "phase": "sim.sense#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 21,
+          "phase": "sim.sense#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 22,
+          "phase": "observation.compute#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 23,
+          "phase": "observation.compute#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 24,
+          "phase": "raw.reset#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 25,
+          "phase": "policy.reset#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 26,
+          "phase": "policy.reset#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 27,
+          "phase": "before_initial_state_seal",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 28,
+          "phase": "after_initial_state_seal",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 29,
+          "phase": "observation.compute#2.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 30,
+          "phase": "observation.compute#2.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 31,
+          "phase": "after_wrapper_get_observations",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 32,
+          "phase": "reset_ready_after_original_observer_setup",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        }
+      ],
+      "boundaries": [
+        {
+          "phase": "sim.forward#1.before",
+          "different_inputs": [],
+          "different_model_fields": [
+            "model/wp/dof_frictionloss"
+          ],
+          "different_derived_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cdof_dot",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/subtree_com"
+          ],
+          "details": {
+            "physical/qfrc_bias": {
+              "max_abs": 4.76837158203125e-07,
+              "numeric_changed_elements": 47,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                74,
+                117
+              ]
+            },
+            "physical/qfrc_constraint": {
+              "max_abs": 7.830746471881866e-05,
+              "numeric_changed_elements": 13,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/subtree_com": {
+              "max_abs": 1.9073486328125e-06,
+              "numeric_changed_elements": 8,
+              "shape": [
+                128,
+                20,
+                3
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                106
+              ]
+            },
+            "model/wp/dof_frictionloss": {
+              "max_abs": 9.313225746154785e-10,
+              "numeric_changed_elements": 4,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42
+              ]
+            },
+            "workspace/efc/force": {
+              "max_abs": 7.830746471881866e-05,
+              "numeric_changed_elements": 13,
+              "shape": [
+                128,
+                1500
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            }
+          }
+        },
+        {
+          "phase": "sim.forward#1.after",
+          "different_inputs": [],
+          "different_model_fields": [
+            "model/wp/dof_frictionloss"
+          ],
+          "different_derived_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com"
+          ],
+          "details": {
+            "physical/qacc": {
+              "max_abs": 8.404313973642275e-07,
+              "numeric_changed_elements": 114,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                117
+              ]
+            },
+            "physical/qfrc_bias": {
+              "max_abs": 5.122274160385132e-09,
+              "numeric_changed_elements": 30,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                117
+              ]
+            },
+            "physical/qfrc_constraint": {
+              "max_abs": 4.8685979692209e-09,
+              "numeric_changed_elements": 84,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                117
+              ]
+            },
+            "physical/qM": {
+              "max_abs": 5.960464477539063e-08,
+              "numeric_changed_elements": 247,
+              "shape": [
+                128,
+                32,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                74
+              ]
+            },
+            "physical/subtree_com": {
+              "max_abs": 9.5367431640625e-07,
+              "numeric_changed_elements": 3,
+              "shape": [
+                128,
+                20,
+                3
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74
+              ]
+            },
+            "model/wp/dof_frictionloss": {
+              "max_abs": 9.313225746154785e-10,
+              "numeric_changed_elements": 4,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42
+              ]
+            },
+            "workspace/efc/force": {
+              "max_abs": 4.8685979692209e-09,
+              "numeric_changed_elements": 84,
+              "shape": [
+                128,
+                1500
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                117
+              ]
+            }
+          }
+        },
+        {
+          "phase": "bam.compute#1.before",
+          "different_inputs": [],
+          "different_model_fields": [
+            "model/wp/dof_frictionloss"
+          ],
+          "different_derived_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com"
+          ],
+          "details": {
+            "physical/qacc": {
+              "max_abs": 8.404313973642275e-07,
+              "numeric_changed_elements": 114,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                117
+              ]
+            },
+            "physical/qfrc_bias": {
+              "max_abs": 5.122274160385132e-09,
+              "numeric_changed_elements": 30,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                117
+              ]
+            },
+            "physical/qfrc_constraint": {
+              "max_abs": 4.8685979692209e-09,
+              "numeric_changed_elements": 84,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                117
+              ]
+            },
+            "physical/qM": {
+              "max_abs": 5.960464477539063e-08,
+              "numeric_changed_elements": 247,
+              "shape": [
+                128,
+                32,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                74
+              ]
+            },
+            "physical/subtree_com": {
+              "max_abs": 9.5367431640625e-07,
+              "numeric_changed_elements": 3,
+              "shape": [
+                128,
+                20,
+                3
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74
+              ]
+            },
+            "model/wp/dof_frictionloss": {
+              "max_abs": 9.313225746154785e-10,
+              "numeric_changed_elements": 4,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42
+              ]
+            },
+            "workspace/efc/force": {
+              "max_abs": 4.8685979692209e-09,
+              "numeric_changed_elements": 84,
+              "shape": [
+                128,
+                1500
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                117
+              ]
+            }
+          }
+        },
+        {
+          "phase": "bam.compute#1.after",
+          "different_inputs": [],
+          "different_model_fields": [
+            "model/wp/dof_frictionloss"
+          ],
+          "different_derived_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com"
+          ],
+          "details": {
+            "physical/qacc": {
+              "max_abs": 8.404313973642275e-07,
+              "numeric_changed_elements": 114,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                117
+              ]
+            },
+            "physical/qfrc_bias": {
+              "max_abs": 5.122274160385132e-09,
+              "numeric_changed_elements": 30,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                117
+              ]
+            },
+            "physical/qfrc_constraint": {
+              "max_abs": 4.8685979692209e-09,
+              "numeric_changed_elements": 84,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                117
+              ]
+            },
+            "physical/qM": {
+              "max_abs": 5.960464477539063e-08,
+              "numeric_changed_elements": 247,
+              "shape": [
+                128,
+                32,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                74
+              ]
+            },
+            "physical/subtree_com": {
+              "max_abs": 9.5367431640625e-07,
+              "numeric_changed_elements": 3,
+              "shape": [
+                128,
+                20,
+                3
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74
+              ]
+            },
+            "model/wp/dof_frictionloss": {
+              "max_abs": 9.313225746154785e-10,
+              "numeric_changed_elements": 1,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74
+              ]
+            },
+            "workspace/efc/force": {
+              "max_abs": 4.8685979692209e-09,
+              "numeric_changed_elements": 84,
+              "shape": [
+                128,
+                1500
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                117
+              ]
+            }
+          }
+        },
+        {
+          "phase": "sim.forward#2.before",
+          "different_inputs": [],
+          "different_model_fields": [
+            "model/wp/dof_frictionloss"
+          ],
+          "different_derived_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com"
+          ],
+          "details": {
+            "physical/qacc": {
+              "max_abs": 8.404313973642275e-07,
+              "numeric_changed_elements": 114,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                117
+              ]
+            },
+            "physical/qfrc_bias": {
+              "max_abs": 5.122274160385132e-09,
+              "numeric_changed_elements": 30,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                117
+              ]
+            },
+            "physical/qfrc_constraint": {
+              "max_abs": 4.8685979692209e-09,
+              "numeric_changed_elements": 84,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                117
+              ]
+            },
+            "physical/qM": {
+              "max_abs": 5.960464477539063e-08,
+              "numeric_changed_elements": 247,
+              "shape": [
+                128,
+                32,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                74
+              ]
+            },
+            "physical/subtree_com": {
+              "max_abs": 9.5367431640625e-07,
+              "numeric_changed_elements": 3,
+              "shape": [
+                128,
+                20,
+                3
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74
+              ]
+            },
+            "model/wp/dof_frictionloss": {
+              "max_abs": 9.313225746154785e-10,
+              "numeric_changed_elements": 1,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74
+              ]
+            },
+            "workspace/efc/force": {
+              "max_abs": 4.8685979692209e-09,
+              "numeric_changed_elements": 84,
+              "shape": [
+                128,
+                1500
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                117
+              ]
+            }
+          }
+        },
+        {
+          "phase": "sim.forward#2.after",
+          "different_inputs": [],
+          "different_model_fields": [
+            "model/wp/dof_frictionloss"
+          ],
+          "different_derived_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com"
+          ],
+          "details": {
+            "physical/qacc": {
+              "max_abs": 1.52587890625e-05,
+              "numeric_changed_elements": 42,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                42,
+                53,
+                106,
+                117
+              ]
+            },
+            "physical/qfrc_bias": {
+              "max_abs": 4.76837158203125e-07,
+              "numeric_changed_elements": 36,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                42,
+                53,
+                106,
+                117
+              ]
+            },
+            "physical/qfrc_constraint": {
+              "max_abs": 4.6566128730773926e-09,
+              "numeric_changed_elements": 5,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74,
+                106
+              ]
+            },
+            "physical/qM": {
+              "max_abs": 2.7939677238464355e-09,
+              "numeric_changed_elements": 376,
+              "shape": [
+                128,
+                32,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                106
+              ]
+            },
+            "physical/subtree_com": {
+              "max_abs": 9.5367431640625e-07,
+              "numeric_changed_elements": 2,
+              "shape": [
+                128,
+                20,
+                3
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                106
+              ]
+            },
+            "model/wp/dof_frictionloss": {
+              "max_abs": 9.313225746154785e-10,
+              "numeric_changed_elements": 1,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74
+              ]
+            },
+            "workspace/efc/force": {
+              "max_abs": 4.6566128730773926e-09,
+              "numeric_changed_elements": 5,
+              "shape": [
+                128,
+                1500
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74,
+                106
+              ]
+            }
+          }
+        },
+        {
+          "phase": "reset_ready_after_original_observer_setup",
+          "different_inputs": [],
+          "different_model_fields": [
+            "model/wp/dof_frictionloss"
+          ],
+          "different_derived_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com"
+          ],
+          "details": {
+            "physical/qacc": {
+              "max_abs": 1.52587890625e-05,
+              "numeric_changed_elements": 42,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                42,
+                53,
+                106,
+                117
+              ]
+            },
+            "physical/qfrc_bias": {
+              "max_abs": 4.76837158203125e-07,
+              "numeric_changed_elements": 36,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                42,
+                53,
+                106,
+                117
+              ]
+            },
+            "physical/qfrc_constraint": {
+              "max_abs": 4.6566128730773926e-09,
+              "numeric_changed_elements": 5,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74,
+                106
+              ]
+            },
+            "physical/qM": {
+              "max_abs": 2.7939677238464355e-09,
+              "numeric_changed_elements": 376,
+              "shape": [
+                128,
+                32,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                106
+              ]
+            },
+            "physical/subtree_com": {
+              "max_abs": 9.5367431640625e-07,
+              "numeric_changed_elements": 2,
+              "shape": [
+                128,
+                20,
+                3
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                106
+              ]
+            },
+            "model/wp/dof_frictionloss": {
+              "max_abs": 9.313225746154785e-10,
+              "numeric_changed_elements": 1,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74
+              ]
+            },
+            "workspace/efc/force": {
+              "max_abs": 4.6566128730773926e-09,
+              "numeric_changed_elements": 5,
+              "shape": [
+                128,
+                1500
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74,
+                106
+              ]
+            }
+          }
+        }
+      ],
+      "all_recorded_integrator_inputs_equal_at_all_events": true,
+      "captured_observations_equal": true,
+      "captured_rng_equal": true,
+      "captured_bam_state_and_arguments_equal": true,
+      "contact_prefixes_equal": true
+    },
+    {
+      "left": "02-initialization/attempt-8181eb75",
+      "right": "03-initialization/attempt-41fdfd96",
+      "first_differences": {
+        "model/wp/dof_frictionloss": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 9.313225746154785e-10,
+          "numeric_changed_elements": 4,
+          "shape": [
+            128,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42
+          ]
+        },
+        "physical/cacc": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 0.00045013427734375,
+          "numeric_changed_elements": 511,
+          "shape": [
+            128,
+            20,
+            6
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            106,
+            117
+          ]
+        },
+        "physical/cdof": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 1.9068829715251923e-06,
+          "numeric_changed_elements": 150,
+          "shape": [
+            128,
+            32,
+            6
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            106,
+            117
+          ]
+        },
+        "physical/cfrc_int": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 1.391395926475525e-06,
+          "numeric_changed_elements": 572,
+          "shape": [
+            128,
+            20,
+            6
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            74,
+            106,
+            117
+          ]
+        },
+        "physical/cinert": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 3.7997961044311523e-07,
+          "numeric_changed_elements": 368,
+          "shape": [
+            128,
+            20,
+            10
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            106,
+            117
+          ]
+        },
+        "physical/crb": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 1.4405231922864914e-06,
+          "numeric_changed_elements": 370,
+          "shape": [
+            128,
+            20,
+            10
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            106,
+            117
+          ]
+        },
+        "physical/qLD": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 5.960464477539063e-08,
+          "numeric_changed_elements": 972,
+          "shape": [
+            128,
+            32,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            106,
+            117
+          ]
+        },
+        "physical/qM": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 5.960464477539063e-08,
+          "numeric_changed_elements": 822,
+          "shape": [
+            128,
+            32,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            106,
+            117
+          ]
+        },
+        "physical/qacc": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 0.0004176385700702667,
+          "numeric_changed_elements": 93,
+          "shape": [
+            128,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            106,
+            117
+          ]
+        },
+        "physical/qacc_smooth": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 5.340576171875e-05,
+          "numeric_changed_elements": 91,
+          "shape": [
+            128,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            106,
+            117
+          ]
+        },
+        "physical/qfrc_bias": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 4.76837158203125e-07,
+          "numeric_changed_elements": 27,
+          "shape": [
+            128,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42
+          ]
+        },
+        "physical/qfrc_constraint": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 7.830746471881866e-05,
+          "numeric_changed_elements": 11,
+          "shape": [
+            128,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            106,
+            117
+          ]
+        },
+        "physical/qfrc_smooth": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 4.76837158203125e-07,
+          "numeric_changed_elements": 17,
+          "shape": [
+            128,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42
+          ]
+        },
+        "physical/sensordata": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 1.6689300537109375e-06,
+          "numeric_changed_elements": 18,
+          "shape": [
+            128,
+            28
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            106,
+            117
+          ]
+        },
+        "physical/subtree_com": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 1.9073486328125e-06,
+          "numeric_changed_elements": 6,
+          "shape": [
+            128,
+            20,
+            3
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            106,
+            117
+          ]
+        },
+        "workspace/efc/Ma": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 8.01868736743927e-07,
+          "numeric_changed_elements": 71,
+          "shape": [
+            128,
+            32
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            106,
+            117
+          ]
+        },
+        "workspace/efc/force": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 7.830746471881866e-05,
+          "numeric_changed_elements": 11,
+          "shape": [
+            128,
+            1500
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42,
+            53,
+            106,
+            117
+          ]
+        },
+        "workspace/efc/frictionloss": {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "max_abs": 9.313225746154785e-10,
+          "numeric_changed_elements": 4,
+          "shape": [
+            128,
+            1500
+          ],
+          "dtype": "<f4",
+          "env_ids": [
+            10,
+            21,
+            42
+          ]
+        }
+      },
+      "phases": [
+        {
+          "index": 0,
+          "phase": "loaded_before_eval_counter_reset",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 1,
+          "phase": "raw.reset#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 2,
+          "phase": "raw._reset_idx#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 3,
+          "phase": "sim.reset#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 4,
+          "phase": "sim.reset#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 5,
+          "phase": "scene.reset#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 6,
+          "phase": "scene.reset#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 7,
+          "phase": "event.apply#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 8,
+          "phase": "sim.forward#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 9,
+          "phase": "sim.forward#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cfrc_int",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 10,
+          "phase": "event.apply#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cfrc_int",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 11,
+          "phase": "raw._reset_idx#1.after",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cfrc_int",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 12,
+          "phase": "scene.write_data_to_sim#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cfrc_int",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 13,
+          "phase": "bam.compute#1.before",
+          "changed_fields": [
+            "model/wp/dof_frictionloss",
+            "physical/cacc",
+            "physical/cfrc_int",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 14,
+          "phase": "bam.compute#1.after",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cfrc_int",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 15,
+          "phase": "scene.write_data_to_sim#1.after",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cfrc_int",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 16,
+          "phase": "sim.forward#2.before",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cfrc_int",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "workspace/efc/Ma",
+            "workspace/efc/force",
+            "workspace/efc/frictionloss"
+          ]
+        },
+        {
+          "index": 17,
+          "phase": "sim.forward#2.after",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 18,
+          "phase": "command.compute#1.before",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 19,
+          "phase": "command.compute#1.after",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 20,
+          "phase": "sim.sense#1.before",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 21,
+          "phase": "sim.sense#1.after",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 22,
+          "phase": "observation.compute#1.before",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 23,
+          "phase": "observation.compute#1.after",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 24,
+          "phase": "raw.reset#1.after",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 25,
+          "phase": "policy.reset#1.before",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 26,
+          "phase": "policy.reset#1.after",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 27,
+          "phase": "before_initial_state_seal",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 28,
+          "phase": "after_initial_state_seal",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 29,
+          "phase": "observation.compute#2.before",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 30,
+          "phase": "observation.compute#2.after",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 31,
+          "phase": "after_wrapper_get_observations",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        },
+        {
+          "index": 32,
+          "phase": "reset_ready_after_original_observer_setup",
+          "changed_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com",
+            "workspace/efc/Ma",
+            "workspace/efc/force"
+          ]
+        }
+      ],
+      "boundaries": [
+        {
+          "phase": "sim.forward#1.before",
+          "different_inputs": [],
+          "different_model_fields": [
+            "model/wp/dof_frictionloss"
+          ],
+          "different_derived_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/subtree_com"
+          ],
+          "details": {
+            "physical/qfrc_bias": {
+              "max_abs": 4.76837158203125e-07,
+              "numeric_changed_elements": 27,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42
+              ]
+            },
+            "physical/qfrc_constraint": {
+              "max_abs": 7.830746471881866e-05,
+              "numeric_changed_elements": 11,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                106,
+                117
+              ]
+            },
+            "physical/subtree_com": {
+              "max_abs": 1.9073486328125e-06,
+              "numeric_changed_elements": 6,
+              "shape": [
+                128,
+                20,
+                3
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                106,
+                117
+              ]
+            },
+            "model/wp/dof_frictionloss": {
+              "max_abs": 9.313225746154785e-10,
+              "numeric_changed_elements": 4,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42
+              ]
+            },
+            "workspace/efc/force": {
+              "max_abs": 7.830746471881866e-05,
+              "numeric_changed_elements": 11,
+              "shape": [
+                128,
+                1500
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                106,
+                117
+              ]
+            }
+          }
+        },
+        {
+          "phase": "sim.forward#1.after",
+          "different_inputs": [],
+          "different_model_fields": [
+            "model/wp/dof_frictionloss"
+          ],
+          "different_derived_fields": [
+            "physical/cacc",
+            "physical/cfrc_int",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata"
+          ],
+          "details": {
+            "physical/qacc": {
+              "max_abs": 9.5367431640625e-07,
+              "numeric_changed_elements": 64,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qfrc_bias": {
+              "max_abs": 4.76837158203125e-07,
+              "numeric_changed_elements": 6,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                106
+              ]
+            },
+            "physical/qfrc_constraint": {
+              "max_abs": 4.220978344626758e-09,
+              "numeric_changed_elements": 46,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qM": {
+              "max_abs": 5.960464477539063e-08,
+              "numeric_changed_elements": 29,
+              "shape": [
+                128,
+                32,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74,
+                117
+              ]
+            },
+            "model/wp/dof_frictionloss": {
+              "max_abs": 9.313225746154785e-10,
+              "numeric_changed_elements": 4,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42
+              ]
+            },
+            "workspace/efc/force": {
+              "max_abs": 4.220978344626758e-09,
+              "numeric_changed_elements": 46,
+              "shape": [
+                128,
+                1500
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                74,
+                106,
+                117
+              ]
+            }
+          }
+        },
+        {
+          "phase": "bam.compute#1.before",
+          "different_inputs": [],
+          "different_model_fields": [
+            "model/wp/dof_frictionloss"
+          ],
+          "different_derived_fields": [
+            "physical/cacc",
+            "physical/cfrc_int",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata"
+          ],
+          "details": {
+            "physical/qacc": {
+              "max_abs": 9.5367431640625e-07,
+              "numeric_changed_elements": 64,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qfrc_bias": {
+              "max_abs": 4.76837158203125e-07,
+              "numeric_changed_elements": 6,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                106
+              ]
+            },
+            "physical/qfrc_constraint": {
+              "max_abs": 4.220978344626758e-09,
+              "numeric_changed_elements": 46,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qM": {
+              "max_abs": 5.960464477539063e-08,
+              "numeric_changed_elements": 29,
+              "shape": [
+                128,
+                32,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74,
+                117
+              ]
+            },
+            "model/wp/dof_frictionloss": {
+              "max_abs": 9.313225746154785e-10,
+              "numeric_changed_elements": 4,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42
+              ]
+            },
+            "workspace/efc/force": {
+              "max_abs": 4.220978344626758e-09,
+              "numeric_changed_elements": 46,
+              "shape": [
+                128,
+                1500
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                74,
+                106,
+                117
+              ]
+            }
+          }
+        },
+        {
+          "phase": "bam.compute#1.after",
+          "different_inputs": [],
+          "different_model_fields": [],
+          "different_derived_fields": [
+            "physical/cacc",
+            "physical/cfrc_int",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata"
+          ],
+          "details": {
+            "physical/qacc": {
+              "max_abs": 9.5367431640625e-07,
+              "numeric_changed_elements": 64,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qfrc_bias": {
+              "max_abs": 4.76837158203125e-07,
+              "numeric_changed_elements": 6,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                106
+              ]
+            },
+            "physical/qfrc_constraint": {
+              "max_abs": 4.220978344626758e-09,
+              "numeric_changed_elements": 46,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qM": {
+              "max_abs": 5.960464477539063e-08,
+              "numeric_changed_elements": 29,
+              "shape": [
+                128,
+                32,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74,
+                117
+              ]
+            },
+            "workspace/efc/force": {
+              "max_abs": 4.220978344626758e-09,
+              "numeric_changed_elements": 46,
+              "shape": [
+                128,
+                1500
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                74,
+                106,
+                117
+              ]
+            }
+          }
+        },
+        {
+          "phase": "sim.forward#2.before",
+          "different_inputs": [],
+          "different_model_fields": [],
+          "different_derived_fields": [
+            "physical/cacc",
+            "physical/cfrc_int",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata"
+          ],
+          "details": {
+            "physical/qacc": {
+              "max_abs": 9.5367431640625e-07,
+              "numeric_changed_elements": 64,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qfrc_bias": {
+              "max_abs": 4.76837158203125e-07,
+              "numeric_changed_elements": 6,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                106
+              ]
+            },
+            "physical/qfrc_constraint": {
+              "max_abs": 4.220978344626758e-09,
+              "numeric_changed_elements": 46,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qM": {
+              "max_abs": 5.960464477539063e-08,
+              "numeric_changed_elements": 29,
+              "shape": [
+                128,
+                32,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                74,
+                117
+              ]
+            },
+            "workspace/efc/force": {
+              "max_abs": 4.220978344626758e-09,
+              "numeric_changed_elements": 46,
+              "shape": [
+                128,
+                1500
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                74,
+                106,
+                117
+              ]
+            }
+          }
+        },
+        {
+          "phase": "sim.forward#2.after",
+          "different_inputs": [],
+          "different_model_fields": [],
+          "different_derived_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com"
+          ],
+          "details": {
+            "physical/qacc": {
+              "max_abs": 2.288818359375e-05,
+              "numeric_changed_elements": 57,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qfrc_bias": {
+              "max_abs": 4.76837158203125e-07,
+              "numeric_changed_elements": 30,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qfrc_constraint": {
+              "max_abs": 4.6566128730773926e-09,
+              "numeric_changed_elements": 7,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                21,
+                74,
+                106
+              ]
+            },
+            "physical/qM": {
+              "max_abs": 9.313225746154785e-10,
+              "numeric_changed_elements": 200,
+              "shape": [
+                128,
+                32,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                106
+              ]
+            },
+            "physical/subtree_com": {
+              "max_abs": 4.76837158203125e-07,
+              "numeric_changed_elements": 1,
+              "shape": [
+                128,
+                20,
+                3
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                106
+              ]
+            },
+            "workspace/efc/force": {
+              "max_abs": 4.6566128730773926e-09,
+              "numeric_changed_elements": 7,
+              "shape": [
+                128,
+                1500
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                21,
+                74,
+                106
+              ]
+            }
+          }
+        },
+        {
+          "phase": "reset_ready_after_original_observer_setup",
+          "different_inputs": [],
+          "different_model_fields": [],
+          "different_derived_fields": [
+            "physical/cacc",
+            "physical/cdof",
+            "physical/cfrc_int",
+            "physical/cinert",
+            "physical/crb",
+            "physical/qLD",
+            "physical/qM",
+            "physical/qacc",
+            "physical/qacc_smooth",
+            "physical/qfrc_bias",
+            "physical/qfrc_constraint",
+            "physical/qfrc_smooth",
+            "physical/sensordata",
+            "physical/subtree_com"
+          ],
+          "details": {
+            "physical/qacc": {
+              "max_abs": 2.288818359375e-05,
+              "numeric_changed_elements": 57,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qfrc_bias": {
+              "max_abs": 4.76837158203125e-07,
+              "numeric_changed_elements": 30,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                10,
+                21,
+                42,
+                53,
+                74,
+                106,
+                117
+              ]
+            },
+            "physical/qfrc_constraint": {
+              "max_abs": 4.6566128730773926e-09,
+              "numeric_changed_elements": 7,
+              "shape": [
+                128,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                21,
+                74,
+                106
+              ]
+            },
+            "physical/qM": {
+              "max_abs": 9.313225746154785e-10,
+              "numeric_changed_elements": 200,
+              "shape": [
+                128,
+                32,
+                32
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                42,
+                106
+              ]
+            },
+            "physical/subtree_com": {
+              "max_abs": 4.76837158203125e-07,
+              "numeric_changed_elements": 1,
+              "shape": [
+                128,
+                20,
+                3
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                106
+              ]
+            },
+            "workspace/efc/force": {
+              "max_abs": 4.6566128730773926e-09,
+              "numeric_changed_elements": 7,
+              "shape": [
+                128,
+                1500
+              ],
+              "dtype": "<f4",
+              "env_ids": [
+                21,
+                74,
+                106
+              ]
+            }
+          }
+        }
+      ],
+      "all_recorded_integrator_inputs_equal_at_all_events": true,
+      "captured_observations_equal": true,
+      "captured_rng_equal": true,
+      "captured_bam_state_and_arguments_equal": true,
+      "contact_prefixes_equal": true
+    }
+  ],
+  "new_ppo_updates": 0,
+  "rollout_physics_steps": 0,
+  "stage10_complete": false,
+  "root_kernel_identified": false
+}

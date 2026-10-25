@@ -1,0 +1,218 @@
+{
+  "status": "G11_HOST_CONTRACTS_PASS",
+  "checks_passed": 29,
+  "checks_total": 29,
+  "checks": [
+    {
+      "name": "reproduce_class_subset_resets_wrong_timer",
+      "passed": true
+    },
+    {
+      "name": "reproduce_global_before_class_index_error",
+      "passed": true
+    },
+    {
+      "name": "patch_resets_all_local_terms_at_their_actual_indices",
+      "passed": true
+    },
+    {
+      "name": "patch_preserves_global_timer_and_unselected_world",
+      "passed": true
+    },
+    {
+      "name": "patch_handles_function_only_all_and_empty_resets",
+      "passed": true
+    },
+    {
+      "name": "real_apply_fires_global_once_local_selected_and_recomputes_once",
+      "passed": true
+    },
+    {
+      "name": "real_apply_nonexpired_timers_do_not_fire_or_resample",
+      "passed": true
+    },
+    {
+      "name": "real_apply_rejects_missing_dt_and_explicit_interval_ids",
+      "passed": true
+    },
+    {
+      "name": "real_apply_reset_minimum_steps_and_first_trigger_are_per_world",
+      "passed": true
+    },
+    {
+      "name": "outer_hook_preserves_real_step_control_flow_in_six_reset_cases",
+      "passed": true
+    },
+    {
+      "name": "outer_clock_actions_history_and_events_commit_at_the_correct_cadence",
+      "passed": true
+    },
+    {
+      "name": "auto_reset_preserves_terminal_signals_and_resets_only_selected_world",
+      "passed": true
+    },
+    {
+      "name": "manual_reset_pending_rejects_before_actions_and_explicit_reset_recovers",
+      "passed": true
+    },
+    {
+      "name": "real_reset_uses_zero_command_dt_and_ordered_manager_resets",
+      "passed": true
+    },
+    {
+      "name": "source_step_without_optional_event_modes_calls_no_events",
+      "passed": true
+    },
+    {
+      "name": "adaptive_endpoint_freshness_is_a_measured_host_semantic_difference",
+      "passed": true
+    },
+    {
+      "name": "failed_macro_stops_before_reward_events_or_formal_counter_commit",
+      "passed": true
+    },
+    {
+      "name": "hook_rejects_missing_clock_ownership_and_undeclared_freshness",
+      "passed": true
+    },
+    {
+      "name": "migration_preserves_tensor_identity_metadata_and_input_mapping",
+      "passed": true
+    },
+    {
+      "name": "migration_is_idempotent_for_current_format",
+      "passed": true
+    },
+    {
+      "name": "migration_rejects_unknown_legacy_keys_without_partial_mutation",
+      "passed": true
+    },
+    {
+      "name": "migration_rejects_mixed_legacy_and_current_dictionaries",
+      "passed": true
+    },
+    {
+      "name": "migration_rejects_std_overwrite_and_ambiguous_parameterization",
+      "passed": true
+    },
+    {
+      "name": "migration_changes_only_the_leading_namespace",
+      "passed": true
+    },
+    {
+      "name": "original_runner_demonstrates_lossy_and_overwriting_paths",
+      "passed": true
+    },
+    {
+      "name": "semantic_manifest_requires_complete_fields_and_provenance",
+      "passed": true
+    },
+    {
+      "name": "equal_dimensions_do_not_hide_observation_history_normalizer_or_action_changes",
+      "passed": true
+    },
+    {
+      "name": "original_formal_task_release_guards_remain_present_and_unmodified",
+      "passed": true
+    },
+    {
+      "name": "all_pinned_sources_are_exact_and_no_native_runtime_was_imported",
+      "passed": true
+    }
+  ],
+  "evidence": {
+    "original_wrong_timer": [
+      [
+        0.2,
+        0.02
+      ],
+      [
+        0.03,
+        0.04
+      ]
+    ],
+    "original_global_index_error": "index 1 is out of bounds for axis 0 with size 1",
+    "patched_local_timers": [
+      [
+        0.1,
+        0.02
+      ],
+      [
+        0.2,
+        0.04
+      ]
+    ],
+    "interval_expiry_trace": [
+      [
+        "fire",
+        "global",
+        null
+      ],
+      [
+        "fire",
+        "local",
+        [
+          0
+        ]
+      ],
+      [
+        "recompute",
+        2
+      ]
+    ],
+    "outer_control_flow_cases": 6,
+    "reward_freshness_witness": {
+      "units": "synthetic macro generation, not physical values",
+      "stock": [
+        9,
+        9
+      ],
+      "accepted_endpoint": [
+        10,
+        10
+      ]
+    },
+    "original_runner_witness": {
+      "unknown_legacy_key_dropped": true,
+      "current_actor_dictionary_overwritten": true,
+      "real_checkpoint_deserialization": false
+    },
+    "semantic_counterexamples": 7
+  },
+  "source_pins": {
+    "manager_based_rl_env.py": {
+      "sha256": "a381027e336d6313cd338d541230b36864657edac89708a33e7e60c0c6fb74d2",
+      "bytes": 22061
+    },
+    "event_manager.py": {
+      "sha256": "81baff0a6c12a1532d7bb26d9b125266ac0e9dc42f75d25a32aa373f77fa95b0",
+      "bytes": 15028
+    },
+    "runner.py": {
+      "sha256": "61e9200bf304e3df71096cd69f28f4d5973157e61cdc549fc21b6f156326f77e",
+      "bytes": 5156
+    },
+    "microduck_head_contact_env_cfg.py": {
+      "sha256": "e4b1b6e27680e4d2a7410bcff295a78988b0274fa21555bf1e4944dfe6b86a47",
+      "bytes": 2828
+    },
+    "mdp.py": {
+      "sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76",
+      "bytes": 381890
+    }
+  },
+  "method_body_execution": "pinned source AST, with explicit NumPy-based stand-ins",
+  "real_environment_executed": false,
+  "GPU_acceptance": false,
+  "checkpoint_loaded": false,
+  "installed_sources_modified": false,
+  "release_guards_changed": false,
+  "native_integrations": 0,
+  "PPO": 0,
+  "cloud_training": 0,
+  "canonical_completed": 667608,
+  "canonical_attempted": 667609,
+  "G10": "OPEN",
+  "G11": "OPEN",
+  "Stage11_gate_percent": 81.81818181818181
+}

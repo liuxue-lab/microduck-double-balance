@@ -1,0 +1,20 @@
+{
+  "schema": "stage12-headroom-v3-request-v1",
+  "status": "USER_REQUESTED_MODIFY_AND_CONTINUE",
+  "source": "User: 修改好继续训练 5090关闭需要两个小时才能打开",
+  "budget_origin": "Conservative implementation bounds disclosed in this conversation; running the explicit --train command starts this separate capped continuation.",
+  "max_new_attempted_PPO_updates": 1505,
+  "max_compute_seconds": 7200,
+  "max_cleanup_seconds": 90,
+  "smoke_updates_included": 5,
+  "max_formal_updates": 1500,
+  "max_selection_episodes": 6,
+  "max_heldout_episodes": 4,
+  "parent_505_updates_remain_spent": true,
+  "old_budgets_frozen": true,
+  "disturbance_training_in_this_budget": false,
+  "trajectory_training_authorized": false,
+  "automatic_extension": false,
+  "cloud_power_actions_authorized": false,
+  "power_preference": "Keep an already-running GPU available during this immediate preparation; user reports 2-hour restart delay."
+}

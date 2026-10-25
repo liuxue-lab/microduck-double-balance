@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: >-
+  If you use this double-ball balance extension or its HIL results, please
+  cite this repository and the relevant upstream work listed below.
+type: software
+title: Microduck Double Balance
+abstract: >-
+  A double-ball balancing extension of Microduck Playground, with PPO
+  training and measured 50 Hz PC-Jetson simulation hardware-in-the-loop
+  execution using native MuJoCo and a frozen FP32 ONNX policy.
+authors:
+  - name: liuxue-lab
+repository-code: https://github.com/liuxue-lab/microduck-double-balance
+url: https://github.com/liuxue-lab/microduck-double-balance/tree/double-balance
+license: Apache-2.0
+keywords:
+  - Microduck
+  - robotics
+  - reinforcement learning
+  - hardware-in-the-loop
+  - MuJoCo
+  - ONNX
+references:
+  - type: software
+    title: Microduck Playground
+    authors:
+      - family-names: von Essen
+        given-names: Hannes
+    repository-code: https://github.com/Vottivott/microduck-playground
+  - type: software
+    title: microduck_rl
+    authors:
+      - name: Pollen Robotics
+    repository-code: https://github.com/pollen-robotics/microduck_rl

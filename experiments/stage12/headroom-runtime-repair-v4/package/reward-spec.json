@@ -1,0 +1,18 @@
+{
+  "schema": "head_roll_constraint_v3",
+  "parent_package": "5d3188f21db852c81c07980ec9c801f92b57770370f2538dd286508795f0b5ac",
+  "margin_degrees": 5,
+  "unchanged_model_soft_margin_degrees": 2.5,
+  "position_cost": "p^2 + 4*max(p-1,0), p = normalized measured qpos proximity",
+  "position_weight": -6,
+  "predictive_cost": "max(proximity(q+0.08*qdot)^2-proximity(q)^2,0)",
+  "predictive_weight": -0.5,
+  "retention_multiplier": "(1-clip(p,0,1))^2; original speed-aligned task term retained",
+  "learning_rate": 3e-05,
+  "episode_seconds": 60,
+  "initial_policy_updates": 5505,
+  "statistics": "direct qpos after every 2ms physics substep, before autoreset",
+  "nominal_bounds_unchanged": true,
+  "observation_action_physics_unchanged": true,
+  "hard_constraint_guarantee_claimed": false
+}

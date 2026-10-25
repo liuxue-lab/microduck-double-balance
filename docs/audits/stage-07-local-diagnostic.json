@@ -1,0 +1,2548 @@
+{
+  "best_nominal": {
+    "status": "PASS",
+    "stage07_complete": false,
+    "role": "best_nominal",
+    "protocol": "stage04-frozen-play-10s-metric-phase-diagnostic-v1",
+    "completed_updates": 1000,
+    "checkpoint_sha256": "c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7",
+    "git_head": "2d10af503945f26f1d7364f19e4152eb540fb4d2",
+    "device": "cuda:0",
+    "torch_version": "2.9.1+cu128",
+    "versions": {
+      "mjlab": "1.3.0",
+      "mujoco": "3.10.0",
+      "mujoco-warp": "3.8.1",
+      "warp-lang": "1.12.0",
+      "rsl-rl-lib": "5.0.1"
+    },
+    "seed": 20260921,
+    "num_envs": 64,
+    "horizon_seconds": 10.0,
+    "thresholds": {
+      "ball_radius": 0.02,
+      "top_center_radius": 0.012,
+      "top_height_tolerance": 0.006,
+      "top_speed_limit": 0.08,
+      "lower_offset_limit": 0.06,
+      "lower_height_min": 0.2,
+      "lower_height_max": 0.29,
+      "robot_tilt_limit_deg": 20.0,
+      "lower_ball_speed_limit": 0.15
+    },
+    "observation_phase": "Immediately after original MetricsManager.compute, before forward/reset",
+    "official_success": "Read cached metric once; never call stateful success function again",
+    "comparison_scope": "Local diagnostic replay; hardware/renderer differ from cloud, original cloud evaluation retained",
+    "created_utc": "2026-09-27T19:19:13.446459+00:00",
+    "failure_fraction_per_condition": {
+      "top_center": 0.00084375,
+      "top_height": 0.0,
+      "top_speed": 0.0311875,
+      "lower_offset": 0.0,
+      "lower_height_min": 0.0,
+      "lower_height_max": 0.0,
+      "robot_tilt": 0.0,
+      "lower_ball_speed": 0.085375,
+      "unassisted": 0.0
+    },
+    "sole_failure_fraction_per_condition": {
+      "top_center": 0.00053125,
+      "top_height": 0.0,
+      "top_speed": 0.01325,
+      "lower_offset": 0.0,
+      "lower_height_min": 0.0,
+      "lower_height_max": 0.0,
+      "robot_tilt": 0.0,
+      "lower_ball_speed": 0.06725,
+      "unassisted": 0.0
+    },
+    "value_statistics": {
+      "top_center_m": {
+        "mean": 0.0035445246698538996,
+        "min": 3.306355938548222e-05,
+        "max": 0.016113342717289925,
+        "p95": 0.00710722494404763
+      },
+      "top_height_error_m": {
+        "mean": 2.7925799950025976e-06,
+        "min": 0.0,
+        "max": 0.0004281606525182724,
+        "p95": 2.0582228899002075e-06
+      },
+      "top_speed_m_s": {
+        "mean": 0.03211267238294931,
+        "min": 0.0005589773063547909,
+        "max": 0.20357197523117065,
+        "p95": 0.06982775256037711
+      },
+      "lower_offset_m": {
+        "mean": 0.0048592908507495165,
+        "min": 3.343305070302449e-05,
+        "max": 0.020697519183158875,
+        "p95": 0.009006532095372676
+      },
+      "lower_height_m": {
+        "mean": 0.2415991954333149,
+        "min": 0.23253753781318665,
+        "max": 0.24673956632614136,
+        "p95": 0.24292127937078475
+      },
+      "robot_tilt_deg": {
+        "mean": 1.8496621727980673,
+        "min": 0.0,
+        "max": 5.124838352203369,
+        "p95": 3.227863001823425
+      },
+      "lower_ball_speed_m_s": {
+        "mean": 0.06998873889569492,
+        "min": 5.635475419651925e-11,
+        "max": 0.3500208854675293,
+        "p95": 0.16542722359299658
+      },
+      "hold": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "p95": 0.0
+      }
+    },
+    "finite_checks": "PASS",
+    "episodes": [
+      {
+        "env_id": 0,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21982793509960175,
+        "top_ball_center_error_m": 0.0035602347925305367,
+        "top_ball_relative_speed_m_s": 0.03236674144864082,
+        "double_balance_stable_fraction": 0.8940000534057617,
+        "longest_stable_streak_s": 1.74,
+        "final_stable_streak_s": 0.24,
+        "official_final_timer_s": 0.23999996483325958,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 1,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.2273915410041809,
+        "top_ball_center_error_m": 0.003670415608212352,
+        "top_ball_relative_speed_m_s": 0.03273499757051468,
+        "double_balance_stable_fraction": 0.8540000319480896,
+        "longest_stable_streak_s": 0.9,
+        "final_stable_streak_s": 0.12,
+        "official_final_timer_s": 0.11999998986721039,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 2,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.19932976365089417,
+        "top_ball_center_error_m": 0.00393980648368597,
+        "top_ball_relative_speed_m_s": 0.03230694681406021,
+        "double_balance_stable_fraction": 0.8660000562667847,
+        "longest_stable_streak_s": 0.9400000000000001,
+        "final_stable_streak_s": 0.16,
+        "official_final_timer_s": 0.15999998152256012,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 3,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.2192596197128296,
+        "top_ball_center_error_m": 0.0037779645062983036,
+        "top_ball_relative_speed_m_s": 0.03279556334018707,
+        "double_balance_stable_fraction": 0.9080000519752502,
+        "longest_stable_streak_s": 1.12,
+        "final_stable_streak_s": 0.26,
+        "official_final_timer_s": 0.25999996066093445,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 4,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1973773092031479,
+        "top_ball_center_error_m": 0.003623207565397024,
+        "top_ball_relative_speed_m_s": 0.03278627246618271,
+        "double_balance_stable_fraction": 0.89000004529953,
+        "longest_stable_streak_s": 1.08,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 5,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.2016185075044632,
+        "top_ball_center_error_m": 0.0035935011692345142,
+        "top_ball_relative_speed_m_s": 0.032909128814935684,
+        "double_balance_stable_fraction": 0.9140000343322754,
+        "longest_stable_streak_s": 2.3000000000000003,
+        "final_stable_streak_s": 0.14,
+        "official_final_timer_s": 0.13999998569488525,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 6,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.2040310502052307,
+        "top_ball_center_error_m": 0.0031714430078864098,
+        "top_ball_relative_speed_m_s": 0.030435262247920036,
+        "double_balance_stable_fraction": 0.9200000166893005,
+        "longest_stable_streak_s": 0.9400000000000001,
+        "final_stable_streak_s": 0.32,
+        "official_final_timer_s": 0.3199999928474426,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 7,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21887464821338654,
+        "top_ball_center_error_m": 0.00340232253074646,
+        "top_ball_relative_speed_m_s": 0.032055459916591644,
+        "double_balance_stable_fraction": 0.862000048160553,
+        "longest_stable_streak_s": 1.26,
+        "final_stable_streak_s": 0.02,
+        "official_final_timer_s": 0.019999999552965164,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 8,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21249620616436005,
+        "top_ball_center_error_m": 0.0030633306596428156,
+        "top_ball_relative_speed_m_s": 0.03103315457701683,
+        "double_balance_stable_fraction": 0.9280000329017639,
+        "longest_stable_streak_s": 1.2,
+        "final_stable_streak_s": 0.02,
+        "official_final_timer_s": 0.019999999552965164,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 9,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.2129037231206894,
+        "top_ball_center_error_m": 0.0033285156823694706,
+        "top_ball_relative_speed_m_s": 0.02987608313560486,
+        "double_balance_stable_fraction": 0.9040000438690186,
+        "longest_stable_streak_s": 2.02,
+        "final_stable_streak_s": 0.02,
+        "official_final_timer_s": 0.019999999552965164,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 10,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21019691228866577,
+        "top_ball_center_error_m": 0.0035582631826400757,
+        "top_ball_relative_speed_m_s": 0.03157972916960716,
+        "double_balance_stable_fraction": 0.9020000696182251,
+        "longest_stable_streak_s": 1.1400000000000001,
+        "final_stable_streak_s": 0.26,
+        "official_final_timer_s": 0.25999996066093445,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 11,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21319495141506195,
+        "top_ball_center_error_m": 0.0033617038279771805,
+        "top_ball_relative_speed_m_s": 0.03253072127699852,
+        "double_balance_stable_fraction": 0.8980000615119934,
+        "longest_stable_streak_s": 1.68,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 12,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21573959290981293,
+        "top_ball_center_error_m": 0.0030574300326406956,
+        "top_ball_relative_speed_m_s": 0.03266730532050133,
+        "double_balance_stable_fraction": 0.9020000696182251,
+        "longest_stable_streak_s": 1.92,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 13,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.22139893472194672,
+        "top_ball_center_error_m": 0.0038130406755954027,
+        "top_ball_relative_speed_m_s": 0.03378578647971153,
+        "double_balance_stable_fraction": 0.9000000357627869,
+        "longest_stable_streak_s": 1.2,
+        "final_stable_streak_s": 0.4,
+        "official_final_timer_s": 0.40000003576278687,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 14,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.20238739252090454,
+        "top_ball_center_error_m": 0.0029444710817188025,
+        "top_ball_relative_speed_m_s": 0.029240185394883156,
+        "double_balance_stable_fraction": 0.9020000696182251,
+        "longest_stable_streak_s": 0.74,
+        "final_stable_streak_s": 0.72,
+        "official_final_timer_s": 0.7199998497962952,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 15,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21388939023017883,
+        "top_ball_center_error_m": 0.003414359875023365,
+        "top_ball_relative_speed_m_s": 0.0314747616648674,
+        "double_balance_stable_fraction": 0.8980000615119934,
+        "longest_stable_streak_s": 2.3000000000000003,
+        "final_stable_streak_s": 0.02,
+        "official_final_timer_s": 0.019999999552965164,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 16,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21619702875614166,
+        "top_ball_center_error_m": 0.0033406922593712807,
+        "top_ball_relative_speed_m_s": 0.033072080463171005,
+        "double_balance_stable_fraction": 0.8940000534057617,
+        "longest_stable_streak_s": 1.1,
+        "final_stable_streak_s": 0.06,
+        "official_final_timer_s": 0.05999999865889549,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 17,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.19607152044773102,
+        "top_ball_center_error_m": 0.0035965819843113422,
+        "top_ball_relative_speed_m_s": 0.03341998904943466,
+        "double_balance_stable_fraction": 0.9120000600814819,
+        "longest_stable_streak_s": 1.54,
+        "final_stable_streak_s": 0.3,
+        "official_final_timer_s": 0.29999998211860657,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 18,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.20910057425498962,
+        "top_ball_center_error_m": 0.0036626840010285378,
+        "top_ball_relative_speed_m_s": 0.032723553478717804,
+        "double_balance_stable_fraction": 0.9380000233650208,
+        "longest_stable_streak_s": 1.1400000000000001,
+        "final_stable_streak_s": 0.22,
+        "official_final_timer_s": 0.21999996900558472,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 19,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21697501838207245,
+        "top_ball_center_error_m": 0.0036266231909394264,
+        "top_ball_relative_speed_m_s": 0.0327313132584095,
+        "double_balance_stable_fraction": 0.8940000534057617,
+        "longest_stable_streak_s": 1.72,
+        "final_stable_streak_s": 0.08,
+        "official_final_timer_s": 0.07999999821186066,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 20,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21939383447170258,
+        "top_ball_center_error_m": 0.0036339506041258574,
+        "top_ball_relative_speed_m_s": 0.029266584664583206,
+        "double_balance_stable_fraction": 0.9100000262260437,
+        "longest_stable_streak_s": 1.42,
+        "final_stable_streak_s": 0.14,
+        "official_final_timer_s": 0.13999998569488525,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 21,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21429584920406342,
+        "top_ball_center_error_m": 0.003386273980140686,
+        "top_ball_relative_speed_m_s": 0.031221698969602585,
+        "double_balance_stable_fraction": 0.8800000548362732,
+        "longest_stable_streak_s": 0.8,
+        "final_stable_streak_s": 0.42,
+        "official_final_timer_s": 0.4200000464916229,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 22,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21350207924842834,
+        "top_ball_center_error_m": 0.0034195033367723227,
+        "top_ball_relative_speed_m_s": 0.03191487863659859,
+        "double_balance_stable_fraction": 0.8720000386238098,
+        "longest_stable_streak_s": 0.9400000000000001,
+        "final_stable_streak_s": 0.24,
+        "official_final_timer_s": 0.23999996483325958,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 23,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21027876436710358,
+        "top_ball_center_error_m": 0.0033799931406974792,
+        "top_ball_relative_speed_m_s": 0.03281858190894127,
+        "double_balance_stable_fraction": 0.9160000681877136,
+        "longest_stable_streak_s": 1.06,
+        "final_stable_streak_s": 0.12,
+        "official_final_timer_s": 0.11999998986721039,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 24,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.2122483104467392,
+        "top_ball_center_error_m": 0.003393951104953885,
+        "top_ball_relative_speed_m_s": 0.03316189721226692,
+        "double_balance_stable_fraction": 0.9200000166893005,
+        "longest_stable_streak_s": 0.84,
+        "final_stable_streak_s": 0.16,
+        "official_final_timer_s": 0.15999998152256012,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 25,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21621371805667877,
+        "top_ball_center_error_m": 0.0032984998542815447,
+        "top_ball_relative_speed_m_s": 0.030125336721539497,
+        "double_balance_stable_fraction": 0.9200000166893005,
+        "longest_stable_streak_s": 1.06,
+        "final_stable_streak_s": 1.04,
+        "official_final_timer_s": 1.0399996042251587,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 26,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.20542319118976593,
+        "top_ball_center_error_m": 0.003666078904643655,
+        "top_ball_relative_speed_m_s": 0.030648980289697647,
+        "double_balance_stable_fraction": 0.9220000505447388,
+        "longest_stable_streak_s": 1.86,
+        "final_stable_streak_s": 0.12,
+        "official_final_timer_s": 0.11999998986721039,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 27,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.20952442288398743,
+        "top_ball_center_error_m": 0.0032747492659837008,
+        "top_ball_relative_speed_m_s": 0.03331564739346504,
+        "double_balance_stable_fraction": 0.9120000600814819,
+        "longest_stable_streak_s": 1.1,
+        "final_stable_streak_s": 0.06,
+        "official_final_timer_s": 0.05999999865889549,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 28,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21617482602596283,
+        "top_ball_center_error_m": 0.003271097782999277,
+        "top_ball_relative_speed_m_s": 0.0319373793900013,
+        "double_balance_stable_fraction": 0.8880000710487366,
+        "longest_stable_streak_s": 0.9400000000000001,
+        "final_stable_streak_s": 0.38,
+        "official_final_timer_s": 0.3800000250339508,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 29,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.2244291603565216,
+        "top_ball_center_error_m": 0.003491942072287202,
+        "top_ball_relative_speed_m_s": 0.0330297127366066,
+        "double_balance_stable_fraction": 0.8800000548362732,
+        "longest_stable_streak_s": 1.04,
+        "final_stable_streak_s": 0.04,
+        "official_final_timer_s": 0.03999999910593033,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 30,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.2068742960691452,
+        "top_ball_center_error_m": 0.002762199379503727,
+        "top_ball_relative_speed_m_s": 0.031376127153635025,
+        "double_balance_stable_fraction": 0.8920000195503235,
+        "longest_stable_streak_s": 1.72,
+        "final_stable_streak_s": 0.06,
+        "official_final_timer_s": 0.05999999865889549,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 31,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.2257833182811737,
+        "top_ball_center_error_m": 0.004202876705676317,
+        "top_ball_relative_speed_m_s": 0.03407937288284302,
+        "double_balance_stable_fraction": 0.8720000386238098,
+        "longest_stable_streak_s": 1.22,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 32,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.20201651751995087,
+        "top_ball_center_error_m": 0.0037972943391650915,
+        "top_ball_relative_speed_m_s": 0.03162968158721924,
+        "double_balance_stable_fraction": 0.9160000681877136,
+        "longest_stable_streak_s": 2.34,
+        "final_stable_streak_s": 0.2,
+        "official_final_timer_s": 0.19999997317790985,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 33,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.22049713134765625,
+        "top_ball_center_error_m": 0.003029871266335249,
+        "top_ball_relative_speed_m_s": 0.03240744024515152,
+        "double_balance_stable_fraction": 0.8860000371932983,
+        "longest_stable_streak_s": 1.4000000000000001,
+        "final_stable_streak_s": 0.24,
+        "official_final_timer_s": 0.23999996483325958,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 34,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21118035912513733,
+        "top_ball_center_error_m": 0.0033306346740573645,
+        "top_ball_relative_speed_m_s": 0.031819503754377365,
+        "double_balance_stable_fraction": 0.9040000438690186,
+        "longest_stable_streak_s": 0.92,
+        "final_stable_streak_s": 0.1,
+        "official_final_timer_s": 0.09999999403953552,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 35,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21029818058013916,
+        "top_ball_center_error_m": 0.0033329338766634464,
+        "top_ball_relative_speed_m_s": 0.031329162418842316,
+        "double_balance_stable_fraction": 0.8940000534057617,
+        "longest_stable_streak_s": 0.72,
+        "final_stable_streak_s": 0.2,
+        "official_final_timer_s": 0.19999997317790985,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 36,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.22804896533489227,
+        "top_ball_center_error_m": 0.005222383886575699,
+        "top_ball_relative_speed_m_s": 0.03557360917329788,
+        "double_balance_stable_fraction": 0.8640000224113464,
+        "longest_stable_streak_s": 1.0,
+        "final_stable_streak_s": 0.02,
+        "official_final_timer_s": 0.019999999552965164,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 37,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.2221958339214325,
+        "top_ball_center_error_m": 0.0031388229690492153,
+        "top_ball_relative_speed_m_s": 0.03216391056776047,
+        "double_balance_stable_fraction": 0.862000048160553,
+        "longest_stable_streak_s": 0.9,
+        "final_stable_streak_s": 0.04,
+        "official_final_timer_s": 0.03999999910593033,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 38,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.204213947057724,
+        "top_ball_center_error_m": 0.0030652089044451714,
+        "top_ball_relative_speed_m_s": 0.02929571084678173,
+        "double_balance_stable_fraction": 0.9240000247955322,
+        "longest_stable_streak_s": 0.88,
+        "final_stable_streak_s": 0.06,
+        "official_final_timer_s": 0.05999999865889549,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 39,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.19943174719810486,
+        "top_ball_center_error_m": 0.003144467482343316,
+        "top_ball_relative_speed_m_s": 0.03196905925869942,
+        "double_balance_stable_fraction": 0.9140000343322754,
+        "longest_stable_streak_s": 1.76,
+        "final_stable_streak_s": 0.46,
+        "official_final_timer_s": 0.46000006794929504,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 40,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.20564889907836914,
+        "top_ball_center_error_m": 0.0028923123609274626,
+        "top_ball_relative_speed_m_s": 0.030551346018910408,
+        "double_balance_stable_fraction": 0.9000000357627869,
+        "longest_stable_streak_s": 1.06,
+        "final_stable_streak_s": 0.06,
+        "official_final_timer_s": 0.05999999865889549,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 41,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21400442719459534,
+        "top_ball_center_error_m": 0.003782187821343541,
+        "top_ball_relative_speed_m_s": 0.03417655825614929,
+        "double_balance_stable_fraction": 0.9040000438690186,
+        "longest_stable_streak_s": 0.86,
+        "final_stable_streak_s": 0.46,
+        "official_final_timer_s": 0.46000006794929504,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 42,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.2210405319929123,
+        "top_ball_center_error_m": 0.0033240041229873896,
+        "top_ball_relative_speed_m_s": 0.03366192802786827,
+        "double_balance_stable_fraction": 0.8680000305175781,
+        "longest_stable_streak_s": 0.76,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 43,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.22452034056186676,
+        "top_ball_center_error_m": 0.003658149391412735,
+        "top_ball_relative_speed_m_s": 0.0300128273665905,
+        "double_balance_stable_fraction": 0.906000018119812,
+        "longest_stable_streak_s": 0.76,
+        "final_stable_streak_s": 0.04,
+        "official_final_timer_s": 0.03999999910593033,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 44,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.20796675980091095,
+        "top_ball_center_error_m": 0.003821436082944274,
+        "top_ball_relative_speed_m_s": 0.032959599047899246,
+        "double_balance_stable_fraction": 0.9200000166893005,
+        "longest_stable_streak_s": 1.3800000000000001,
+        "final_stable_streak_s": 0.04,
+        "official_final_timer_s": 0.03999999910593033,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 45,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.20770522952079773,
+        "top_ball_center_error_m": 0.0030285397078841925,
+        "top_ball_relative_speed_m_s": 0.03232923150062561,
+        "double_balance_stable_fraction": 0.9160000681877136,
+        "longest_stable_streak_s": 1.2,
+        "final_stable_streak_s": 0.2,
+        "official_final_timer_s": 0.19999997317790985,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 46,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21507631242275238,
+        "top_ball_center_error_m": 0.003282577730715275,
+        "top_ball_relative_speed_m_s": 0.032543864101171494,
+        "double_balance_stable_fraction": 0.906000018119812,
+        "longest_stable_streak_s": 0.7000000000000001,
+        "final_stable_streak_s": 0.14,
+        "official_final_timer_s": 0.13999998569488525,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 47,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.2122485190629959,
+        "top_ball_center_error_m": 0.0036191940307617188,
+        "top_ball_relative_speed_m_s": 0.03312036022543907,
+        "double_balance_stable_fraction": 0.8980000615119934,
+        "longest_stable_streak_s": 1.9000000000000001,
+        "final_stable_streak_s": 0.1,
+        "official_final_timer_s": 0.09999999403953552,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 48,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21902363002300262,
+        "top_ball_center_error_m": 0.003760552266612649,
+        "top_ball_relative_speed_m_s": 0.03309868276119232,
+        "double_balance_stable_fraction": 0.8800000548362732,
+        "longest_stable_streak_s": 1.62,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 49,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21280041337013245,
+        "top_ball_center_error_m": 0.004455181770026684,
+        "top_ball_relative_speed_m_s": 0.029448434710502625,
+        "double_balance_stable_fraction": 0.9200000166893005,
+        "longest_stable_streak_s": 1.92,
+        "final_stable_streak_s": 0.16,
+        "official_final_timer_s": 0.15999998152256012,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 50,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.20474191009998322,
+        "top_ball_center_error_m": 0.0036809982266277075,
+        "top_ball_relative_speed_m_s": 0.03267280012369156,
+        "double_balance_stable_fraction": 0.8980000615119934,
+        "longest_stable_streak_s": 1.2,
+        "final_stable_streak_s": 0.2,
+        "official_final_timer_s": 0.19999997317790985,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 51,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1916588842868805,
+        "top_ball_center_error_m": 0.0035585653968155384,
+        "top_ball_relative_speed_m_s": 0.033009108155965805,
+        "double_balance_stable_fraction": 0.9360000491142273,
+        "longest_stable_streak_s": 1.28,
+        "final_stable_streak_s": 0.06,
+        "official_final_timer_s": 0.05999999865889549,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 52,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.23069925606250763,
+        "top_ball_center_error_m": 0.003684595925733447,
+        "top_ball_relative_speed_m_s": 0.03397030383348465,
+        "double_balance_stable_fraction": 0.8660000562667847,
+        "longest_stable_streak_s": 1.7,
+        "final_stable_streak_s": 0.18,
+        "official_final_timer_s": 0.17999997735023499,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 53,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1941772699356079,
+        "top_ball_center_error_m": 0.004654973745346069,
+        "top_ball_relative_speed_m_s": 0.03382507711648941,
+        "double_balance_stable_fraction": 0.9320000410079956,
+        "longest_stable_streak_s": 1.08,
+        "final_stable_streak_s": 0.16,
+        "official_final_timer_s": 0.15999998152256012,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 54,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.2105618119239807,
+        "top_ball_center_error_m": 0.002665857784450054,
+        "top_ball_relative_speed_m_s": 0.02816159836947918,
+        "double_balance_stable_fraction": 0.9040000438690186,
+        "longest_stable_streak_s": 0.62,
+        "final_stable_streak_s": 0.22,
+        "official_final_timer_s": 0.21999996900558472,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 55,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1959572583436966,
+        "top_ball_center_error_m": 0.003444280009716749,
+        "top_ball_relative_speed_m_s": 0.031112536787986755,
+        "double_balance_stable_fraction": 0.9380000233650208,
+        "longest_stable_streak_s": 1.54,
+        "final_stable_streak_s": 0.5,
+        "official_final_timer_s": 0.5000000596046448,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 56,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21012164652347565,
+        "top_ball_center_error_m": 0.003630352672189474,
+        "top_ball_relative_speed_m_s": 0.029082417488098145,
+        "double_balance_stable_fraction": 0.8960000276565552,
+        "longest_stable_streak_s": 1.28,
+        "final_stable_streak_s": 0.6,
+        "official_final_timer_s": 0.5999999642372131,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 57,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21420443058013916,
+        "top_ball_center_error_m": 0.0030978454742580652,
+        "top_ball_relative_speed_m_s": 0.03118216060101986,
+        "double_balance_stable_fraction": 0.9080000519752502,
+        "longest_stable_streak_s": 1.6600000000000001,
+        "final_stable_streak_s": 0.3,
+        "official_final_timer_s": 0.29999998211860657,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 58,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.19951075315475464,
+        "top_ball_center_error_m": 0.004367174580693245,
+        "top_ball_relative_speed_m_s": 0.03040905110538006,
+        "double_balance_stable_fraction": 0.9420000314712524,
+        "longest_stable_streak_s": 2.3000000000000003,
+        "final_stable_streak_s": 0.28,
+        "official_final_timer_s": 0.2799999713897705,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 59,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.204773411154747,
+        "top_ball_center_error_m": 0.00339200790040195,
+        "top_ball_relative_speed_m_s": 0.02977103553712368,
+        "double_balance_stable_fraction": 0.9180000424385071,
+        "longest_stable_streak_s": 1.2,
+        "final_stable_streak_s": 0.18,
+        "official_final_timer_s": 0.17999997735023499,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 60,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.19652985036373138,
+        "top_ball_center_error_m": 0.0039933170191943645,
+        "top_ball_relative_speed_m_s": 0.03280564025044441,
+        "double_balance_stable_fraction": 0.9120000600814819,
+        "longest_stable_streak_s": 1.98,
+        "final_stable_streak_s": 0.18,
+        "official_final_timer_s": 0.17999997735023499,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 61,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.24178695678710938,
+        "top_ball_center_error_m": 0.005407458171248436,
+        "top_ball_relative_speed_m_s": 0.03640441223978996,
+        "double_balance_stable_fraction": 0.8420000672340393,
+        "longest_stable_streak_s": 1.9000000000000001,
+        "final_stable_streak_s": 0.52,
+        "official_final_timer_s": 0.5200000405311584,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 62,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.21563105285167694,
+        "top_ball_center_error_m": 0.0036859363317489624,
+        "top_ball_relative_speed_m_s": 0.03464099392294884,
+        "double_balance_stable_fraction": 0.9120000600814819,
+        "longest_stable_streak_s": 1.3800000000000001,
+        "final_stable_streak_s": 0.12,
+        "official_final_timer_s": 0.11999998986721039,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 63,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.2134411334991455,
+        "top_ball_center_error_m": 0.003212760668247938,
+        "top_ball_relative_speed_m_s": 0.03465181216597557,
+        "double_balance_stable_fraction": 0.9020000696182251,
+        "longest_stable_streak_s": 0.78,
+        "final_stable_streak_s": 0.28,
+        "official_final_timer_s": 0.2799999713897705,
+        "success_reached_at_any_step": false
+      }
+    ],
+    "video_frames": 250,
+    "trace_rows": 32000,
+    "cached_metric_parity": "PASS",
+    "success_fraction": 0,
+    "success_at_any_step_fraction": 0,
+    "mean_stable_fraction": 0.9008125448599458,
+    "mean_survival_seconds": 10.0,
+    "longest_stable_streak_s": 2.34,
+    "checkpoint_unchanged": true,
+    "finished_utc": "2026-09-27T19:19:36.319268+00:00"
+  },
+  "final_state": {
+    "status": "PASS",
+    "stage07_complete": false,
+    "role": "final_state",
+    "protocol": "stage04-frozen-play-10s-metric-phase-diagnostic-v1",
+    "completed_updates": 6000,
+    "checkpoint_sha256": "a5ad0aedb500555b649c5d4b11aded833cbc0f932c1fff1a747e1492534c495c",
+    "git_head": "2d10af503945f26f1d7364f19e4152eb540fb4d2",
+    "device": "cuda:0",
+    "torch_version": "2.9.1+cu128",
+    "versions": {
+      "mjlab": "1.3.0",
+      "mujoco": "3.10.0",
+      "mujoco-warp": "3.8.1",
+      "warp-lang": "1.12.0",
+      "rsl-rl-lib": "5.0.1"
+    },
+    "seed": 20260921,
+    "num_envs": 64,
+    "horizon_seconds": 10.0,
+    "thresholds": {
+      "ball_radius": 0.02,
+      "top_center_radius": 0.012,
+      "top_height_tolerance": 0.006,
+      "top_speed_limit": 0.08,
+      "lower_offset_limit": 0.06,
+      "lower_height_min": 0.2,
+      "lower_height_max": 0.29,
+      "robot_tilt_limit_deg": 20.0,
+      "lower_ball_speed_limit": 0.15
+    },
+    "observation_phase": "Immediately after original MetricsManager.compute, before forward/reset",
+    "official_success": "Read cached metric once; never call stateful success function again",
+    "comparison_scope": "Local diagnostic replay; hardware/renderer differ from cloud, original cloud evaluation retained",
+    "created_utc": "2026-09-27T19:19:43.704665+00:00",
+    "failure_fraction_per_condition": {
+      "top_center": 0.02346875,
+      "top_height": 0.0,
+      "top_speed": 0.03578125,
+      "lower_offset": 0.0,
+      "lower_height_min": 0.0,
+      "lower_height_max": 0.0,
+      "robot_tilt": 0.0,
+      "lower_ball_speed": 0.62346875,
+      "unassisted": 0.0
+    },
+    "sole_failure_fraction_per_condition": {
+      "top_center": 0.00684375,
+      "top_height": 0.0,
+      "top_speed": 0.01234375,
+      "lower_offset": 0.0,
+      "lower_height_min": 0.0,
+      "lower_height_max": 0.0,
+      "robot_tilt": 0.0,
+      "lower_ball_speed": 0.5996875,
+      "unassisted": 0.0
+    },
+    "value_statistics": {
+      "top_center_m": {
+        "mean": 0.003826928645814803,
+        "min": 1.5419125702464953e-05,
+        "max": 0.024204470217227936,
+        "p95": 0.008263896498829125
+      },
+      "top_height_error_m": {
+        "mean": 4.457218048628419e-06,
+        "min": 0.0,
+        "max": 0.0004145130515098572,
+        "p95": 1.8725544214248652e-05
+      },
+      "top_speed_m_s": {
+        "mean": 0.031294830506072686,
+        "min": 0.0004451019922271371,
+        "max": 0.26346921920776367,
+        "p95": 0.07031304910778997
+      },
+      "lower_offset_m": {
+        "mean": 0.01009468075023608,
+        "min": 9.775161743164062e-06,
+        "max": 0.028782663866877556,
+        "p95": 0.01863672137260437
+      },
+      "lower_height_m": {
+        "mean": 0.24339939390821383,
+        "min": 0.2321666032075882,
+        "max": 0.24676352739334106,
+        "p95": 0.24542856439948083
+      },
+      "robot_tilt_deg": {
+        "mean": 1.9227823311974643,
+        "min": 0.0,
+        "max": 14.749537467956543,
+        "p95": 8.632839918136595
+      },
+      "lower_ball_speed_m_s": {
+        "mean": 0.17217947750069423,
+        "min": 5.252973620320511e-13,
+        "max": 0.3678015470504761,
+        "p95": 0.274749331176281
+      },
+      "hold": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "p95": 0.0
+      }
+    },
+    "finite_checks": "PASS",
+    "episodes": [
+      {
+        "env_id": 0,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.18190427124500275,
+        "top_ball_center_error_m": 0.0038277425337582827,
+        "top_ball_relative_speed_m_s": 0.03291882574558258,
+        "double_balance_stable_fraction": 0.34800001978874207,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 1,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17883047461509705,
+        "top_ball_center_error_m": 0.005467122886329889,
+        "top_ball_relative_speed_m_s": 0.03457555174827576,
+        "double_balance_stable_fraction": 0.3320000171661377,
+        "longest_stable_streak_s": 0.12,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 2,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.169810488820076,
+        "top_ball_center_error_m": 0.005919874180108309,
+        "top_ball_relative_speed_m_s": 0.03570179641246796,
+        "double_balance_stable_fraction": 0.38200002908706665,
+        "longest_stable_streak_s": 0.2,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 3,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.18268990516662598,
+        "top_ball_center_error_m": 0.004795426037162542,
+        "top_ball_relative_speed_m_s": 0.03342067077755928,
+        "double_balance_stable_fraction": 0.32600000500679016,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 4,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1783261001110077,
+        "top_ball_center_error_m": 0.004054801072925329,
+        "top_ball_relative_speed_m_s": 0.0329657718539238,
+        "double_balance_stable_fraction": 0.3500000238418579,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.04,
+        "official_final_timer_s": 0.03999999910593033,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 5,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17684803903102875,
+        "top_ball_center_error_m": 0.0032683159224689007,
+        "top_ball_relative_speed_m_s": 0.03241577371954918,
+        "double_balance_stable_fraction": 0.34200000762939453,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 6,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.16704390943050385,
+        "top_ball_center_error_m": 0.0040931361727416515,
+        "top_ball_relative_speed_m_s": 0.030306292697787285,
+        "double_balance_stable_fraction": 0.38200002908706665,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 7,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.18264059722423553,
+        "top_ball_center_error_m": 0.004511140286922455,
+        "top_ball_relative_speed_m_s": 0.032655343413352966,
+        "double_balance_stable_fraction": 0.3680000305175781,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 8,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.18044482171535492,
+        "top_ball_center_error_m": 0.0030515959952026606,
+        "top_ball_relative_speed_m_s": 0.030374709516763687,
+        "double_balance_stable_fraction": 0.3700000047683716,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.06,
+        "official_final_timer_s": 0.05999999865889549,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 9,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.18102721869945526,
+        "top_ball_center_error_m": 0.0034172977320849895,
+        "top_ball_relative_speed_m_s": 0.030530521646142006,
+        "double_balance_stable_fraction": 0.3620000183582306,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 10,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17566034197807312,
+        "top_ball_center_error_m": 0.003548330394551158,
+        "top_ball_relative_speed_m_s": 0.030236179009079933,
+        "double_balance_stable_fraction": 0.36400002241134644,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.06,
+        "official_final_timer_s": 0.05999999865889549,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 11,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17685231566429138,
+        "top_ball_center_error_m": 0.0029798541218042374,
+        "top_ball_relative_speed_m_s": 0.029966799542307854,
+        "double_balance_stable_fraction": 0.3800000250339508,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 12,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1810643970966339,
+        "top_ball_center_error_m": 0.0030568509828299284,
+        "top_ball_relative_speed_m_s": 0.028329603374004364,
+        "double_balance_stable_fraction": 0.33800002932548523,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.06,
+        "official_final_timer_s": 0.05999999865889549,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 13,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.18297798931598663,
+        "top_ball_center_error_m": 0.0032507488504052162,
+        "top_ball_relative_speed_m_s": 0.03071524016559124,
+        "double_balance_stable_fraction": 0.31200000643730164,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 14,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17770835757255554,
+        "top_ball_center_error_m": 0.0036275561433285475,
+        "top_ball_relative_speed_m_s": 0.030480163171887398,
+        "double_balance_stable_fraction": 0.328000009059906,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 15,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1745571792125702,
+        "top_ball_center_error_m": 0.004671450704336166,
+        "top_ball_relative_speed_m_s": 0.03240548446774483,
+        "double_balance_stable_fraction": 0.36400002241134644,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.08,
+        "official_final_timer_s": 0.07999999821186066,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 16,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1790817379951477,
+        "top_ball_center_error_m": 0.003045186633244157,
+        "top_ball_relative_speed_m_s": 0.031253326684236526,
+        "double_balance_stable_fraction": 0.34200000762939453,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 17,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1759154200553894,
+        "top_ball_center_error_m": 0.0036389685701578856,
+        "top_ball_relative_speed_m_s": 0.031759779900312424,
+        "double_balance_stable_fraction": 0.3440000116825104,
+        "longest_stable_streak_s": 0.2,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 18,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17892612516880035,
+        "top_ball_center_error_m": 0.003506465582177043,
+        "top_ball_relative_speed_m_s": 0.03084988333284855,
+        "double_balance_stable_fraction": 0.320000022649765,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.06,
+        "official_final_timer_s": 0.05999999865889549,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 19,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.18412508070468903,
+        "top_ball_center_error_m": 0.002899607876315713,
+        "top_ball_relative_speed_m_s": 0.030855223536491394,
+        "double_balance_stable_fraction": 0.34200000762939453,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.04,
+        "official_final_timer_s": 0.03999999910593033,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 20,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17576752603054047,
+        "top_ball_center_error_m": 0.003905897494405508,
+        "top_ball_relative_speed_m_s": 0.031169600784778595,
+        "double_balance_stable_fraction": 0.34200000762939453,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 21,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17241798341274261,
+        "top_ball_center_error_m": 0.004069194197654724,
+        "top_ball_relative_speed_m_s": 0.028457127511501312,
+        "double_balance_stable_fraction": 0.48000001907348633,
+        "longest_stable_streak_s": 0.24,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 22,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1785973310470581,
+        "top_ball_center_error_m": 0.0033974158577620983,
+        "top_ball_relative_speed_m_s": 0.031412094831466675,
+        "double_balance_stable_fraction": 0.33800002932548523,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 23,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1816868782043457,
+        "top_ball_center_error_m": 0.0031996630132198334,
+        "top_ball_relative_speed_m_s": 0.03189966082572937,
+        "double_balance_stable_fraction": 0.3700000047683716,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 24,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17999579012393951,
+        "top_ball_center_error_m": 0.0034163459204137325,
+        "top_ball_relative_speed_m_s": 0.030996890738606453,
+        "double_balance_stable_fraction": 0.32200002670288086,
+        "longest_stable_streak_s": 0.2,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 25,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1794433742761612,
+        "top_ball_center_error_m": 0.00306659284979105,
+        "top_ball_relative_speed_m_s": 0.027463218197226524,
+        "double_balance_stable_fraction": 0.3440000116825104,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 26,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17480909824371338,
+        "top_ball_center_error_m": 0.003587638260796666,
+        "top_ball_relative_speed_m_s": 0.029566846787929535,
+        "double_balance_stable_fraction": 0.3460000157356262,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 27,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17961916327476501,
+        "top_ball_center_error_m": 0.0031821811571717262,
+        "top_ball_relative_speed_m_s": 0.02972857654094696,
+        "double_balance_stable_fraction": 0.3500000238418579,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 28,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1778498888015747,
+        "top_ball_center_error_m": 0.003030291059985757,
+        "top_ball_relative_speed_m_s": 0.03094872646033764,
+        "double_balance_stable_fraction": 0.3580000102519989,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 29,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17955538630485535,
+        "top_ball_center_error_m": 0.003097113221883774,
+        "top_ball_relative_speed_m_s": 0.02967730537056923,
+        "double_balance_stable_fraction": 0.3680000305175781,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 30,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17643947899341583,
+        "top_ball_center_error_m": 0.003023190889507532,
+        "top_ball_relative_speed_m_s": 0.030208367854356766,
+        "double_balance_stable_fraction": 0.3460000157356262,
+        "longest_stable_streak_s": 0.14,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 31,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17626073956489563,
+        "top_ball_center_error_m": 0.00312436674721539,
+        "top_ball_relative_speed_m_s": 0.029401745647192,
+        "double_balance_stable_fraction": 0.35600000619888306,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 32,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17240212857723236,
+        "top_ball_center_error_m": 0.004888719413429499,
+        "top_ball_relative_speed_m_s": 0.03309916332364082,
+        "double_balance_stable_fraction": 0.3320000171661377,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.02,
+        "official_final_timer_s": 0.019999999552965164,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 33,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1847333014011383,
+        "top_ball_center_error_m": 0.0035901081282645464,
+        "top_ball_relative_speed_m_s": 0.030647551640868187,
+        "double_balance_stable_fraction": 0.35600000619888306,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.1,
+        "official_final_timer_s": 0.09999999403953552,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 34,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1719483584165573,
+        "top_ball_center_error_m": 0.00431393226608634,
+        "top_ball_relative_speed_m_s": 0.030142027884721756,
+        "double_balance_stable_fraction": 0.3720000088214874,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 35,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17680583894252777,
+        "top_ball_center_error_m": 0.0031228051520884037,
+        "top_ball_relative_speed_m_s": 0.03081352822482586,
+        "double_balance_stable_fraction": 0.33800002932548523,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.08,
+        "official_final_timer_s": 0.07999999821186066,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 36,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.180045485496521,
+        "top_ball_center_error_m": 0.004657532554119825,
+        "top_ball_relative_speed_m_s": 0.03502187132835388,
+        "double_balance_stable_fraction": 0.3620000183582306,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 37,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1780591458082199,
+        "top_ball_center_error_m": 0.003952744882553816,
+        "top_ball_relative_speed_m_s": 0.030625542625784874,
+        "double_balance_stable_fraction": 0.3800000250339508,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 38,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17870989441871643,
+        "top_ball_center_error_m": 0.003485841443762183,
+        "top_ball_relative_speed_m_s": 0.030102036893367767,
+        "double_balance_stable_fraction": 0.33400002121925354,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.04,
+        "official_final_timer_s": 0.03999999910593033,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 39,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17504490911960602,
+        "top_ball_center_error_m": 0.004382656887173653,
+        "top_ball_relative_speed_m_s": 0.033272575587034225,
+        "double_balance_stable_fraction": 0.3160000145435333,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 40,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1761731654405594,
+        "top_ball_center_error_m": 0.004115478601306677,
+        "top_ball_relative_speed_m_s": 0.030934438109397888,
+        "double_balance_stable_fraction": 0.3960000276565552,
+        "longest_stable_streak_s": 0.14,
+        "final_stable_streak_s": 0.04,
+        "official_final_timer_s": 0.03999999910593033,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 41,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1794891059398651,
+        "top_ball_center_error_m": 0.003151136916130781,
+        "top_ball_relative_speed_m_s": 0.03221263736486435,
+        "double_balance_stable_fraction": 0.32200002670288086,
+        "longest_stable_streak_s": 0.2,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 42,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.18244536221027374,
+        "top_ball_center_error_m": 0.003684894647449255,
+        "top_ball_relative_speed_m_s": 0.033886805176734924,
+        "double_balance_stable_fraction": 0.39000001549720764,
+        "longest_stable_streak_s": 0.42,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 43,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.18373814225196838,
+        "top_ball_center_error_m": 0.00296831876039505,
+        "top_ball_relative_speed_m_s": 0.02825428545475006,
+        "double_balance_stable_fraction": 0.3460000157356262,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.02,
+        "official_final_timer_s": 0.019999999552965164,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 44,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17329677939414978,
+        "top_ball_center_error_m": 0.003899300703778863,
+        "top_ball_relative_speed_m_s": 0.029446573927998543,
+        "double_balance_stable_fraction": 0.32600000500679016,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.04,
+        "official_final_timer_s": 0.03999999910593033,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 45,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17991366982460022,
+        "top_ball_center_error_m": 0.003235731041058898,
+        "top_ball_relative_speed_m_s": 0.030844038352370262,
+        "double_balance_stable_fraction": 0.34800001978874207,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 46,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.18126095831394196,
+        "top_ball_center_error_m": 0.002958152676001191,
+        "top_ball_relative_speed_m_s": 0.03022884391248226,
+        "double_balance_stable_fraction": 0.3500000238418579,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.08,
+        "official_final_timer_s": 0.07999999821186066,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 47,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17753532528877258,
+        "top_ball_center_error_m": 0.0026988391764461994,
+        "top_ball_relative_speed_m_s": 0.029918886721134186,
+        "double_balance_stable_fraction": 0.3620000183582306,
+        "longest_stable_streak_s": 0.2,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 48,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17686820030212402,
+        "top_ball_center_error_m": 0.003588915802538395,
+        "top_ball_relative_speed_m_s": 0.030638916417956352,
+        "double_balance_stable_fraction": 0.3660000264644623,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 49,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17110440135002136,
+        "top_ball_center_error_m": 0.00558685977011919,
+        "top_ball_relative_speed_m_s": 0.03311891853809357,
+        "double_balance_stable_fraction": 0.3800000250339508,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 50,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1770656257867813,
+        "top_ball_center_error_m": 0.004388331435620785,
+        "top_ball_relative_speed_m_s": 0.03210143744945526,
+        "double_balance_stable_fraction": 0.406000018119812,
+        "longest_stable_streak_s": 0.42,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 51,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17684626579284668,
+        "top_ball_center_error_m": 0.00382528780028224,
+        "top_ball_relative_speed_m_s": 0.03235507756471634,
+        "double_balance_stable_fraction": 0.3020000159740448,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 52,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17974527180194855,
+        "top_ball_center_error_m": 0.003177810925990343,
+        "top_ball_relative_speed_m_s": 0.030874591320753098,
+        "double_balance_stable_fraction": 0.3540000021457672,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 53,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1789574921131134,
+        "top_ball_center_error_m": 0.003876376897096634,
+        "top_ball_relative_speed_m_s": 0.033204786479473114,
+        "double_balance_stable_fraction": 0.26200002431869507,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 54,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17479053139686584,
+        "top_ball_center_error_m": 0.004956513177603483,
+        "top_ball_relative_speed_m_s": 0.03135687857866287,
+        "double_balance_stable_fraction": 0.3020000159740448,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 55,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1766061633825302,
+        "top_ball_center_error_m": 0.0036747842095792294,
+        "top_ball_relative_speed_m_s": 0.03167995437979698,
+        "double_balance_stable_fraction": 0.33800002932548523,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 56,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17264613509178162,
+        "top_ball_center_error_m": 0.007392013445496559,
+        "top_ball_relative_speed_m_s": 0.0372350700199604,
+        "double_balance_stable_fraction": 0.3680000305175781,
+        "longest_stable_streak_s": 0.2,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 57,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1791945993900299,
+        "top_ball_center_error_m": 0.0035281535238027573,
+        "top_ball_relative_speed_m_s": 0.028533024713397026,
+        "double_balance_stable_fraction": 0.3400000035762787,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.08,
+        "official_final_timer_s": 0.07999999821186066,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 58,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17945405840873718,
+        "top_ball_center_error_m": 0.004184952471405268,
+        "top_ball_relative_speed_m_s": 0.030933190137147903,
+        "double_balance_stable_fraction": 0.25,
+        "longest_stable_streak_s": 0.12,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 59,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17525579035282135,
+        "top_ball_center_error_m": 0.0041335877031087875,
+        "top_ball_relative_speed_m_s": 0.027892764657735825,
+        "double_balance_stable_fraction": 0.33400002121925354,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 60,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17401127517223358,
+        "top_ball_center_error_m": 0.004645428154617548,
+        "top_ball_relative_speed_m_s": 0.03416416421532631,
+        "double_balance_stable_fraction": 0.35600000619888306,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.06,
+        "official_final_timer_s": 0.05999999865889549,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 61,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1734580397605896,
+        "top_ball_center_error_m": 0.004932733252644539,
+        "top_ball_relative_speed_m_s": 0.03184128925204277,
+        "double_balance_stable_fraction": 0.40800002217292786,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 62,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17937126755714417,
+        "top_ball_center_error_m": 0.0034723635762929916,
+        "top_ball_relative_speed_m_s": 0.031849056482315063,
+        "double_balance_stable_fraction": 0.3140000104904175,
+        "longest_stable_streak_s": 0.16,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      },
+      {
+        "env_id": 63,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.17821502685546875,
+        "top_ball_center_error_m": 0.003721759421750903,
+        "top_ball_relative_speed_m_s": 0.031992167234420776,
+        "double_balance_stable_fraction": 0.39400002360343933,
+        "longest_stable_streak_s": 0.18,
+        "final_stable_streak_s": 0.0,
+        "official_final_timer_s": 0.0,
+        "success_reached_at_any_step": false
+      }
+    ],
+    "video_frames": 250,
+    "trace_rows": 32000,
+    "cached_metric_parity": "PASS",
+    "success_fraction": 0,
+    "success_at_any_step_fraction": 0,
+    "mean_stable_fraction": 0.35031251749023795,
+    "mean_survival_seconds": 10.0,
+    "longest_stable_streak_s": 0.42,
+    "checkpoint_unchanged": true,
+    "finished_utc": "2026-09-27T19:20:05.698086+00:00"
+  }
+}

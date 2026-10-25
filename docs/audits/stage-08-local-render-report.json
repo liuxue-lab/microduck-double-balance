@@ -1,0 +1,2851 @@
+{
+  "status": "LOCAL_RENDER_AND_CLOUD_TRACE_ANALYSIS_COMPLETE",
+  "created_utc": "2026-09-30T10:01:58.341773+00:00",
+  "new_ppo_updates": 0,
+  "new_cloud_evaluations": 0,
+  "stage08_complete": false,
+  "human_video_review": "PENDING",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "git_head": "61060f0684aabb460727a0d226b8d17225ee7954",
+  "return_receipt_sha256": "69fd4ffff732cf3cf35fa1d160b0233bf754b322172ed6a3c47132b243ea7240",
+  "source_review_sha256": "4d3ab6fd0ddd029fabb5bb1c7735f03d779788ba61a2e4dcf010fba5053d233a",
+  "selection_sha256": "a921801927750f705075ebcb2048323b01413bd122b31d1472dc77f86e1eb031",
+  "output_directory": "/home/lx/microduck-double-balance/artifacts/double-balance-stage08/local-final-review/20260930T100148Z-vn_5n9kx",
+  "videos": [
+    {
+      "id": "E-20260929-u004000-nominal-env000",
+      "model": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+        "sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260929,
+        "experiment_completed_updates": 4000,
+        "rank": [
+          0.8828125,
+          0.828125,
+          10.0,
+          9.030000000000001,
+          9.030000000000001,
+          -0.010875000114538125,
+          -4000
+        ]
+      },
+      "protocol": "nominal",
+      "env_id": 0,
+      "categories": [
+        "fixed"
+      ],
+      "cloud_episode": {
+        "env_id": 0,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.11541697382926941,
+        "top_ball_center_error_m": 0.0016177990473806858,
+        "top_ball_relative_speed_m_s": 0.012819664552807808,
+        "double_balance_stable_fraction": 0.9920000433921814,
+        "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+        "terminal_stable_seconds": 2.7,
+        "longest_stable_seconds": 6.88,
+        "official_timer_seconds": 2.699998140335083,
+        "lower_ball_speed_quantiles_m_s": {
+          "p50": 0.04827287793159485,
+          "p95": 0.10139010846614838,
+          "p99": 0.13317690789699554
+        },
+        "lower_ball_speed_max_m_s": 0.16639535129070282,
+        "lower_speed_violation_fraction": 0.006000000052154064,
+        "violation_fractions": {
+          "top_center": 0.0,
+          "top_height": 0.0,
+          "top_speed": 0.0020000000949949026,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.006000000052154064,
+          "unassisted": 0.0
+        },
+        "co_violation_counts": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "mean_action_delta_l2": 0.3296879231929779
+      },
+      "local_episode": {
+        "env_id": 0,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.11401845514774323,
+        "top_ball_center_error_m": 0.001686825300566852,
+        "top_ball_relative_speed_m_s": 0.013216459192335606,
+        "double_balance_stable_fraction": 0.9940000176429749,
+        "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+        "terminal_stable_seconds": 2.44,
+        "longest_stable_seconds": 6.94,
+        "official_timer_seconds": 2.4399983882904053,
+        "lower_ball_speed_quantiles_m_s": {
+          "p50": 0.04864581301808357,
+          "p95": 0.10221672058105469,
+          "p99": 0.13200996816158295
+        },
+        "lower_ball_speed_max_m_s": 0.16353179514408112,
+        "lower_speed_violation_fraction": 0.004000000189989805,
+        "violation_fractions": {
+          "top_center": 0.0,
+          "top_height": 0.0,
+          "top_speed": 0.0020000000949949026,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.004000000189989805,
+          "unassisted": 0.0
+        },
+        "co_violation_counts": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "mean_action_delta_l2": 0.3252154588699341
+      },
+      "video_relative": "videos/E-20260929-u004000-nominal-env000/run/env-0.mp4",
+      "video_sha256": "65ca5f124bd83f9a6ec4d9490d51efa98ec6f576ea64bbc73b462a48493f81fb",
+      "evaluation_relative": "videos/E-20260929-u004000-nominal-env000/run/evaluation.json",
+      "evaluation_sha256": "32ce5ab711b5a75d04d9cf84f84fd3c6c901b440f380bdba849a03844ab19479",
+      "contact_sheet_relative": "videos/E-20260929-u004000-nominal-env000/contact-sheet.jpg",
+      "frames": 250,
+      "sampled_frame_indices": [
+        0,
+        50,
+        100,
+        149,
+        199,
+        249
+      ]
+    },
+    {
+      "id": "E-20260929-u004000-nominal-env003",
+      "model": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+        "sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260929,
+        "experiment_completed_updates": 4000,
+        "rank": [
+          0.8828125,
+          0.828125,
+          10.0,
+          9.030000000000001,
+          9.030000000000001,
+          -0.010875000114538125,
+          -4000
+        ]
+      },
+      "protocol": "nominal",
+      "env_id": 3,
+      "categories": [
+        "typical"
+      ],
+      "cloud_episode": {
+        "env_id": 3,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": true,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.110930435359478,
+        "top_ball_center_error_m": 0.0016915763262659311,
+        "top_ball_relative_speed_m_s": 0.013644818216562271,
+        "double_balance_stable_fraction": 0.9980000257492065,
+        "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+        "terminal_stable_seconds": 9.82,
+        "longest_stable_seconds": 9.82,
+        "official_timer_seconds": 9.820034980773926,
+        "lower_ball_speed_quantiles_m_s": {
+          "p50": 0.04574394226074219,
+          "p95": 0.10226332396268845,
+          "p99": 0.12249705195426941
+        },
+        "lower_ball_speed_max_m_s": 0.13113315403461456,
+        "lower_speed_violation_fraction": 0.0,
+        "violation_fractions": {
+          "top_center": 0.0,
+          "top_height": 0.0,
+          "top_speed": 0.0020000000949949026,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.0,
+          "unassisted": 0.0
+        },
+        "co_violation_counts": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "mean_action_delta_l2": 0.29715830087661743
+      },
+      "local_episode": {
+        "env_id": 3,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": true,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.11399077624082565,
+        "top_ball_center_error_m": 0.0017455442575737834,
+        "top_ball_relative_speed_m_s": 0.013949314132332802,
+        "double_balance_stable_fraction": 0.9980000257492065,
+        "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+        "terminal_stable_seconds": 9.82,
+        "longest_stable_seconds": 9.82,
+        "official_timer_seconds": 9.820034980773926,
+        "lower_ball_speed_quantiles_m_s": {
+          "p50": 0.04808638244867325,
+          "p95": 0.09905903786420822,
+          "p99": 0.12286784499883652
+        },
+        "lower_ball_speed_max_m_s": 0.13796156644821167,
+        "lower_speed_violation_fraction": 0.0,
+        "violation_fractions": {
+          "top_center": 0.0,
+          "top_height": 0.0,
+          "top_speed": 0.0020000000949949026,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.0,
+          "unassisted": 0.0
+        },
+        "co_violation_counts": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "mean_action_delta_l2": 0.3102104663848877
+      },
+      "video_relative": "videos/E-20260929-u004000-nominal-env003/run/env-3.mp4",
+      "video_sha256": "6027b06dcfa62083cca8d051d0e7f257078fcaac1edee31d2d56b1f566efa916",
+      "evaluation_relative": "videos/E-20260929-u004000-nominal-env003/run/evaluation.json",
+      "evaluation_sha256": "5ace13a3b3167bfc092ea1e476655db448b439ab911fbbd4f8df9c9d5f2257ab",
+      "contact_sheet_relative": "videos/E-20260929-u004000-nominal-env003/contact-sheet.jpg",
+      "frames": 250,
+      "sampled_frame_indices": [
+        0,
+        50,
+        100,
+        149,
+        199,
+        249
+      ]
+    },
+    {
+      "id": "E-20260929-u004000-nominal-env061",
+      "model": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+        "sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260929,
+        "experiment_completed_updates": 4000,
+        "rank": [
+          0.8828125,
+          0.828125,
+          10.0,
+          9.030000000000001,
+          9.030000000000001,
+          -0.010875000114538125,
+          -4000
+        ]
+      },
+      "protocol": "nominal",
+      "env_id": 61,
+      "categories": [
+        "worst_lower_speed"
+      ],
+      "cloud_episode": {
+        "env_id": 61,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": true,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.11098024994134903,
+        "top_ball_center_error_m": 0.0016452681738883257,
+        "top_ball_relative_speed_m_s": 0.014553887769579887,
+        "double_balance_stable_fraction": 0.984000027179718,
+        "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+        "terminal_stable_seconds": 7.18,
+        "longest_stable_seconds": 7.18,
+        "official_timer_seconds": 7.179994106292725,
+        "lower_ball_speed_quantiles_m_s": {
+          "p50": 0.04647020623087883,
+          "p95": 0.10353030264377594,
+          "p99": 0.15011757612228394
+        },
+        "lower_ball_speed_max_m_s": 0.17864519357681274,
+        "lower_speed_violation_fraction": 0.012000000104308128,
+        "violation_fractions": {
+          "top_center": 0.0,
+          "top_height": 0.0,
+          "top_speed": 0.004000000189989805,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.012000000104308128,
+          "unassisted": 0.0
+        },
+        "co_violation_counts": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "mean_action_delta_l2": 0.3045588731765747
+      },
+      "local_episode": {
+        "env_id": 61,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": true,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.11230531334877014,
+        "top_ball_center_error_m": 0.0016305490862578154,
+        "top_ball_relative_speed_m_s": 0.014445158652961254,
+        "double_balance_stable_fraction": 0.9820000529289246,
+        "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+        "terminal_stable_seconds": 7.18,
+        "longest_stable_seconds": 7.18,
+        "official_timer_seconds": 7.179994106292725,
+        "lower_ball_speed_quantiles_m_s": {
+          "p50": 0.04692918807268143,
+          "p95": 0.10646697878837585,
+          "p99": 0.15772759914398193
+        },
+        "lower_ball_speed_max_m_s": 0.17548002302646637,
+        "lower_speed_violation_fraction": 0.014000000432133675,
+        "violation_fractions": {
+          "top_center": 0.0,
+          "top_height": 0.0,
+          "top_speed": 0.004000000189989805,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.014000000432133675,
+          "unassisted": 0.0
+        },
+        "co_violation_counts": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            7,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "mean_action_delta_l2": 0.31336209177970886
+      },
+      "video_relative": "videos/E-20260929-u004000-nominal-env061/run/env-61.mp4",
+      "video_sha256": "45a7f72d66ab3a530d331617d8de006d9f6017e63c6d8e13b794b954e0f842a5",
+      "evaluation_relative": "videos/E-20260929-u004000-nominal-env061/run/evaluation.json",
+      "evaluation_sha256": "e58b1ec4d591c316fe9d3af1d2df377686c1ee9df7f0a88aa6a341b997e19365",
+      "contact_sheet_relative": "videos/E-20260929-u004000-nominal-env061/contact-sheet.jpg",
+      "frames": 250,
+      "sampled_frame_indices": [
+        0,
+        50,
+        100,
+        149,
+        199,
+        249
+      ]
+    },
+    {
+      "id": "E-20260929-u004000-nominal-env030",
+      "model": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+        "sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260929,
+        "experiment_completed_updates": 4000,
+        "rank": [
+          0.8828125,
+          0.828125,
+          10.0,
+          9.030000000000001,
+          9.030000000000001,
+          -0.010875000114538125,
+          -4000
+        ]
+      },
+      "protocol": "nominal",
+      "env_id": 30,
+      "categories": [
+        "typical_failure"
+      ],
+      "cloud_episode": {
+        "env_id": 30,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.11154153943061829,
+        "top_ball_center_error_m": 0.001540591474622488,
+        "top_ball_relative_speed_m_s": 0.013549389317631721,
+        "double_balance_stable_fraction": 0.9980000257492065,
+        "initial_state_id": "6106c8115df219a21d1c46601f0c3e59d95c8bc83a5166ef27be4130202c19f6",
+        "terminal_stable_seconds": 1.58,
+        "longest_stable_seconds": 8.4,
+        "official_timer_seconds": 1.5799990892410278,
+        "lower_ball_speed_quantiles_m_s": {
+          "p50": 0.05014664679765701,
+          "p95": 0.10751675069332123,
+          "p99": 0.13316962122917175
+        },
+        "lower_ball_speed_max_m_s": 0.1615305244922638,
+        "lower_speed_violation_fraction": 0.0020000000949949026,
+        "violation_fractions": {
+          "top_center": 0.0,
+          "top_height": 0.0,
+          "top_speed": 0.0,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.0020000000949949026,
+          "unassisted": 0.0
+        },
+        "co_violation_counts": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "mean_action_delta_l2": 0.3045782148838043
+      },
+      "local_episode": {
+        "env_id": 30,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": true,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.1101328507065773,
+        "top_ball_center_error_m": 0.0015991565305739641,
+        "top_ball_relative_speed_m_s": 0.013353894464671612,
+        "double_balance_stable_fraction": 1.0,
+        "initial_state_id": "6106c8115df219a21d1c46601f0c3e59d95c8bc83a5166ef27be4130202c19f6",
+        "terminal_stable_seconds": 10.0,
+        "longest_stable_seconds": 10.0,
+        "official_timer_seconds": 10.000039100646973,
+        "lower_ball_speed_quantiles_m_s": {
+          "p50": 0.048629216849803925,
+          "p95": 0.10471049696207047,
+          "p99": 0.12981975078582764
+        },
+        "lower_ball_speed_max_m_s": 0.14252521097660065,
+        "lower_speed_violation_fraction": 0.0,
+        "violation_fractions": {
+          "top_center": 0.0,
+          "top_height": 0.0,
+          "top_speed": 0.0,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.0,
+          "unassisted": 0.0
+        },
+        "co_violation_counts": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "mean_action_delta_l2": 0.2990626394748688
+      },
+      "video_relative": "videos/E-20260929-u004000-nominal-env030/run/env-30.mp4",
+      "video_sha256": "c19c76a61a3fa83aaa7e3f7bca95836184582c29bef42d9d3d01fcb65d048ee2",
+      "evaluation_relative": "videos/E-20260929-u004000-nominal-env030/run/evaluation.json",
+      "evaluation_sha256": "1c9b10ae5f6f1174a63429f14a47725c2036bdafea5f115f0b51279327979b9b",
+      "contact_sheet_relative": "videos/E-20260929-u004000-nominal-env030/contact-sheet.jpg",
+      "frames": 250,
+      "sampled_frame_indices": [
+        0,
+        50,
+        100,
+        149,
+        199,
+        249
+      ]
+    },
+    {
+      "id": "E-20260929-u004000-nominal-env002",
+      "model": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+        "sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260929,
+        "experiment_completed_updates": 4000,
+        "rank": [
+          0.8828125,
+          0.828125,
+          10.0,
+          9.030000000000001,
+          9.030000000000001,
+          -0.010875000114538125,
+          -4000
+        ]
+      },
+      "protocol": "nominal",
+      "env_id": 2,
+      "categories": [
+        "success"
+      ],
+      "cloud_episode": {
+        "env_id": 2,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": true,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.10436432808637619,
+        "top_ball_center_error_m": 0.0017928523011505604,
+        "top_ball_relative_speed_m_s": 0.012843472883105278,
+        "double_balance_stable_fraction": 1.0,
+        "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+        "terminal_stable_seconds": 10.0,
+        "longest_stable_seconds": 10.0,
+        "official_timer_seconds": 10.000039100646973,
+        "lower_ball_speed_quantiles_m_s": {
+          "p50": 0.050209760665893555,
+          "p95": 0.09248107671737671,
+          "p99": 0.11015576124191284
+        },
+        "lower_ball_speed_max_m_s": 0.12496413290500641,
+        "lower_speed_violation_fraction": 0.0,
+        "violation_fractions": {
+          "top_center": 0.0,
+          "top_height": 0.0,
+          "top_speed": 0.0,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.0,
+          "unassisted": 0.0
+        },
+        "co_violation_counts": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "mean_action_delta_l2": 0.24972282350063324
+      },
+      "local_episode": {
+        "env_id": 2,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": true,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.10260193794965744,
+        "top_ball_center_error_m": 0.0018933876417577267,
+        "top_ball_relative_speed_m_s": 0.012891680002212524,
+        "double_balance_stable_fraction": 1.0,
+        "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+        "terminal_stable_seconds": 10.0,
+        "longest_stable_seconds": 10.0,
+        "official_timer_seconds": 10.000039100646973,
+        "lower_ball_speed_quantiles_m_s": {
+          "p50": 0.04850675165653229,
+          "p95": 0.08973245322704315,
+          "p99": 0.10887165367603302
+        },
+        "lower_ball_speed_max_m_s": 0.12128328531980515,
+        "lower_speed_violation_fraction": 0.0,
+        "violation_fractions": {
+          "top_center": 0.0,
+          "top_height": 0.0,
+          "top_speed": 0.0,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.0,
+          "unassisted": 0.0
+        },
+        "co_violation_counts": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "mean_action_delta_l2": 0.24153771996498108
+      },
+      "video_relative": "videos/E-20260929-u004000-nominal-env002/run/env-2.mp4",
+      "video_sha256": "2d3507dd3d6ef7a73fee050bfb9108e576533961b43f33cbce3fbbefe145740c",
+      "evaluation_relative": "videos/E-20260929-u004000-nominal-env002/run/evaluation.json",
+      "evaluation_sha256": "d94c843ab4fa5f0b0463246e9317358a2db3bbb0d2a2e86f8f7ed4dba4ca2a31",
+      "contact_sheet_relative": "videos/E-20260929-u004000-nominal-env002/contact-sheet.jpg",
+      "frames": 250,
+      "sampled_frame_indices": [
+        0,
+        50,
+        100,
+        149,
+        199,
+        249
+      ]
+    },
+    {
+      "id": "E-20260928-u002750-nominal-env000",
+      "model": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260928/segment-001/checkpoints/update_002750.pt",
+        "sha256": "42e759a80626859aa6756bec81e3fd07e53845a4ec7ef1a56f5054fd3dfacd1f",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260928,
+        "experiment_completed_updates": 2750,
+        "rank": [
+          0.75,
+          0.734375,
+          10.0,
+          8.4,
+          8.42,
+          -0.018859375075408025,
+          -2750
+        ]
+      },
+      "protocol": "nominal",
+      "env_id": 0,
+      "categories": [
+        "fixed"
+      ],
+      "cloud_episode": {
+        "env_id": 0,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.13002395629882812,
+        "top_ball_center_error_m": 0.0016926986863836646,
+        "top_ball_relative_speed_m_s": 0.01520619262009859,
+        "double_balance_stable_fraction": 0.9940000176429749,
+        "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+        "terminal_stable_seconds": 2.96,
+        "longest_stable_seconds": 6.78,
+        "official_timer_seconds": 2.9599978923797607,
+        "lower_ball_speed_quantiles_m_s": {
+          "p50": 0.04502945765852928,
+          "p95": 0.10764633864164352,
+          "p99": 0.1380724161863327
+        },
+        "lower_ball_speed_max_m_s": 0.16465777158737183,
+        "lower_speed_violation_fraction": 0.004000000189989805,
+        "violation_fractions": {
+          "top_center": 0.0,
+          "top_height": 0.0,
+          "top_speed": 0.0020000000949949026,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.004000000189989805,
+          "unassisted": 0.0
+        },
+        "co_violation_counts": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "mean_action_delta_l2": 0.40000244975090027
+      },
+      "local_episode": {
+        "env_id": 0,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.12811999022960663,
+        "top_ball_center_error_m": 0.0017638016724959016,
+        "top_ball_relative_speed_m_s": 0.015975337475538254,
+        "double_balance_stable_fraction": 0.9960000514984131,
+        "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+        "terminal_stable_seconds": 4.48,
+        "longest_stable_seconds": 5.28,
+        "official_timer_seconds": 4.479996681213379,
+        "lower_ball_speed_quantiles_m_s": {
+          "p50": 0.04671809822320938,
+          "p95": 0.10237862169742584,
+          "p99": 0.13501866161823273
+        },
+        "lower_ball_speed_max_m_s": 0.15062230825424194,
+        "lower_speed_violation_fraction": 0.0020000000949949026,
+        "violation_fractions": {
+          "top_center": 0.0,
+          "top_height": 0.0,
+          "top_speed": 0.0020000000949949026,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.0020000000949949026,
+          "unassisted": 0.0
+        },
+        "co_violation_counts": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "mean_action_delta_l2": 0.40075981616973877
+      },
+      "video_relative": "videos/E-20260928-u002750-nominal-env000/run/env-0.mp4",
+      "video_sha256": "f89466aec3bd4e048172012a59917dd21bca707dde2814866f8369e01b54461c",
+      "evaluation_relative": "videos/E-20260928-u002750-nominal-env000/run/evaluation.json",
+      "evaluation_sha256": "97bf14cbcc39258296a474f919fcc7014a8fe101554c59289b1bd7ce4f759ac8",
+      "contact_sheet_relative": "videos/E-20260928-u002750-nominal-env000/contact-sheet.jpg",
+      "frames": 250,
+      "sampled_frame_indices": [
+        0,
+        50,
+        100,
+        149,
+        199,
+        249
+      ]
+    },
+    {
+      "id": "E-20260930-u003250-nominal-env000",
+      "model": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260930/segment-001/checkpoints/update_003250.pt",
+        "sha256": "89c7cedb9567f144228deb4d98465a9b0aad08be9f7c3ad391aa6a12ade8431c",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260930,
+        "experiment_completed_updates": 3250,
+        "rank": [
+          0.796875,
+          0.640625,
+          10.0,
+          8.55,
+          8.55,
+          -0.019546875069863745,
+          -3250
+        ]
+      },
+      "protocol": "nominal",
+      "env_id": 0,
+      "categories": [
+        "fixed"
+      ],
+      "cloud_episode": {
+        "env_id": 0,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": true,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.11187530308961868,
+        "top_ball_center_error_m": 0.002007551258429885,
+        "top_ball_relative_speed_m_s": 0.014819260686635971,
+        "double_balance_stable_fraction": 0.9960000514984131,
+        "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+        "terminal_stable_seconds": 8.6,
+        "longest_stable_seconds": 8.6,
+        "official_timer_seconds": 8.600007057189941,
+        "lower_ball_speed_quantiles_m_s": {
+          "p50": 0.04478757083415985,
+          "p95": 0.10503384470939636,
+          "p99": 0.1370299905538559
+        },
+        "lower_ball_speed_max_m_s": 0.15587987005710602,
+        "lower_speed_violation_fraction": 0.004000000189989805,
+        "violation_fractions": {
+          "top_center": 0.0,
+          "top_height": 0.0,
+          "top_speed": 0.0,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.004000000189989805,
+          "unassisted": 0.0
+        },
+        "co_violation_counts": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "mean_action_delta_l2": 0.31990140676498413
+      },
+      "local_episode": {
+        "env_id": 0,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": true,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.11475488543510437,
+        "top_ball_center_error_m": 0.0019458585884422064,
+        "top_ball_relative_speed_m_s": 0.015384668484330177,
+        "double_balance_stable_fraction": 0.9980000257492065,
+        "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+        "terminal_stable_seconds": 8.82,
+        "longest_stable_seconds": 8.82,
+        "official_timer_seconds": 8.820012092590332,
+        "lower_ball_speed_quantiles_m_s": {
+          "p50": 0.046868205070495605,
+          "p95": 0.10378581285476685,
+          "p99": 0.13552536070346832
+        },
+        "lower_ball_speed_max_m_s": 0.15275029838085175,
+        "lower_speed_violation_fraction": 0.0020000000949949026,
+        "violation_fractions": {
+          "top_center": 0.0,
+          "top_height": 0.0,
+          "top_speed": 0.0,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.0020000000949949026,
+          "unassisted": 0.0
+        },
+        "co_violation_counts": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "mean_action_delta_l2": 0.3242252767086029
+      },
+      "video_relative": "videos/E-20260930-u003250-nominal-env000/run/env-0.mp4",
+      "video_sha256": "f20fa0a0bf216b0a1c1232a4e1db5b8ec0d39ae6936c3354f0e524bcafd8d232",
+      "evaluation_relative": "videos/E-20260930-u003250-nominal-env000/run/evaluation.json",
+      "evaluation_sha256": "a238cfee0817d047da2ce04872ac13f813e24da48fe1e51d2c59a56fa2992f08",
+      "contact_sheet_relative": "videos/E-20260930-u003250-nominal-env000/contact-sheet.jpg",
+      "frames": 250,
+      "sampled_frame_indices": [
+        0,
+        50,
+        100,
+        149,
+        199,
+        249
+      ]
+    },
+    {
+      "id": "source-1000-nominal-env000",
+      "model": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/references/update_001000.pt",
+        "sha256": "c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7",
+        "role": "source-1000"
+      },
+      "protocol": "nominal",
+      "env_id": 0,
+      "categories": [
+        "fixed"
+      ],
+      "cloud_episode": {
+        "env_id": 0,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.2296876311302185,
+        "top_ball_center_error_m": 0.0035439191851764917,
+        "top_ball_relative_speed_m_s": 0.03176548331975937,
+        "double_balance_stable_fraction": 0.8860000371932983,
+        "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+        "terminal_stable_seconds": 0.02,
+        "longest_stable_seconds": 1.92,
+        "official_timer_seconds": 0.019999999552965164,
+        "lower_ball_speed_quantiles_m_s": {
+          "p50": 0.06461106985807419,
+          "p95": 0.17281465232372284,
+          "p99": 0.19997906684875488
+        },
+        "lower_ball_speed_max_m_s": 0.21904633939266205,
+        "lower_speed_violation_fraction": 0.10199999809265137,
+        "violation_fractions": {
+          "top_center": 0.0,
+          "top_height": 0.0,
+          "top_speed": 0.029999999329447746,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.10199999809265137,
+          "unassisted": 0.0
+        },
+        "co_violation_counts": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            15,
+            0,
+            0,
+            0,
+            0,
+            9,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            9,
+            0,
+            0,
+            0,
+            0,
+            51,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "mean_action_delta_l2": 1.2052005529403687
+      },
+      "local_episode": {
+        "env_id": 0,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.22654902935028076,
+        "top_ball_center_error_m": 0.0034825264010578394,
+        "top_ball_relative_speed_m_s": 0.032588277012109756,
+        "double_balance_stable_fraction": 0.8820000290870667,
+        "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+        "terminal_stable_seconds": 0.02,
+        "longest_stable_seconds": 2.18,
+        "official_timer_seconds": 0.019999999552965164,
+        "lower_ball_speed_quantiles_m_s": {
+          "p50": 0.06448361277580261,
+          "p95": 0.18018563091754913,
+          "p99": 0.21730230748653412
+        },
+        "lower_ball_speed_max_m_s": 0.22837957739830017,
+        "lower_speed_violation_fraction": 0.10999999940395355,
+        "violation_fractions": {
+          "top_center": 0.0,
+          "top_height": 0.0,
+          "top_speed": 0.03400000184774399,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.10999999940395355,
+          "unassisted": 0.0
+        },
+        "co_violation_counts": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            17,
+            0,
+            0,
+            0,
+            0,
+            13,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            13,
+            0,
+            0,
+            0,
+            0,
+            55,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "mean_action_delta_l2": 1.176156997680664
+      },
+      "video_relative": "videos/source-1000-nominal-env000/run/env-0.mp4",
+      "video_sha256": "2fbdc765e16c7ef7ad7ab5b03501e6e5457cb5e6b249f9806473ea8f4c6acd9c",
+      "evaluation_relative": "videos/source-1000-nominal-env000/run/evaluation.json",
+      "evaluation_sha256": "a756fe5bfc18e71b54ef686db1a50f8e3ed852b9dd926174e9847770ba8b82a8",
+      "contact_sheet_relative": "videos/source-1000-nominal-env000/contact-sheet.jpg",
+      "frames": 250,
+      "sampled_frame_indices": [
+        0,
+        50,
+        100,
+        149,
+        199,
+        249
+      ]
+    },
+    {
+      "id": "reference-6000-nominal-env000",
+      "model": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/references/update_006000.pt",
+        "sha256": "a5ad0aedb500555b649c5d4b11aded833cbc0f932c1fff1a747e1492534c495c",
+        "role": "reference-6000"
+      },
+      "protocol": "nominal",
+      "env_id": 0,
+      "categories": [
+        "fixed"
+      ],
+      "cloud_episode": {
+        "env_id": 0,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.18139293789863586,
+        "top_ball_center_error_m": 0.003903741715475917,
+        "top_ball_relative_speed_m_s": 0.031163619831204414,
+        "double_balance_stable_fraction": 0.3680000305175781,
+        "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+        "terminal_stable_seconds": 0.0,
+        "longest_stable_seconds": 0.16,
+        "official_timer_seconds": 0.0,
+        "lower_ball_speed_quantiles_m_s": {
+          "p50": 0.17192643880844116,
+          "p95": 0.27732720971107483,
+          "p99": 0.30396273732185364
+        },
+        "lower_ball_speed_max_m_s": 0.33148840069770813,
+        "lower_speed_violation_fraction": 0.6060000061988831,
+        "violation_fractions": {
+          "top_center": 0.02199999988079071,
+          "top_height": 0.0,
+          "top_speed": 0.03999999910593033,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.6060000061988831,
+          "unassisted": 0.0
+        },
+        "co_violation_counts": [
+          [
+            11,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            20,
+            0,
+            0,
+            0,
+            0,
+            11,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            11,
+            0,
+            0,
+            0,
+            0,
+            303,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "mean_action_delta_l2": 0.9164975881576538
+      },
+      "local_episode": {
+        "env_id": 0,
+        "steps": 500,
+        "seconds": 10.0,
+        "terminated": false,
+        "success": false,
+        "termination_terms": [
+          "time_out"
+        ],
+        "mean_action_acc": 0.18175828456878662,
+        "top_ball_center_error_m": 0.0036617424339056015,
+        "top_ball_relative_speed_m_s": 0.030485399067401886,
+        "double_balance_stable_fraction": 0.3540000021457672,
+        "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+        "terminal_stable_seconds": 0.0,
+        "longest_stable_seconds": 0.16,
+        "official_timer_seconds": 0.0,
+        "lower_ball_speed_quantiles_m_s": {
+          "p50": 0.1755782961845398,
+          "p95": 0.2795119285583496,
+          "p99": 0.3128589391708374
+        },
+        "lower_ball_speed_max_m_s": 0.33007946610450745,
+        "lower_speed_violation_fraction": 0.6200000047683716,
+        "violation_fractions": {
+          "top_center": 0.02199999988079071,
+          "top_height": 0.0,
+          "top_speed": 0.03999999910593033,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.6200000047683716,
+          "unassisted": 0.0
+        },
+        "co_violation_counts": [
+          [
+            11,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            20,
+            0,
+            0,
+            0,
+            0,
+            11,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            11,
+            0,
+            0,
+            0,
+            0,
+            310,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "mean_action_delta_l2": 0.907501757144928
+      },
+      "video_relative": "videos/reference-6000-nominal-env000/run/env-0.mp4",
+      "video_sha256": "c6adbe0f174086d28b0857662114b016cf0eee9905870519a64a3384b6aab77f",
+      "evaluation_relative": "videos/reference-6000-nominal-env000/run/evaluation.json",
+      "evaluation_sha256": "b775a4d4a7f881d38da14528b00eda621d13d1850bc8d9a497aa940c372cfa6d",
+      "contact_sheet_relative": "videos/reference-6000-nominal-env000/contact-sheet.jpg",
+      "frames": 250,
+      "sampled_frame_indices": [
+        0,
+        50,
+        100,
+        149,
+        199,
+        249
+      ]
+    }
+  ],
+  "video_count": 9,
+  "warning": "Local GPU trajectories can differ. Cloud success/failure labels select examples; they are not promises about local replay.",
+  "cloud_analysis": {
+    "status": "PASS",
+    "created_utc": "2026-09-30T10:02:00.726730+00:00",
+    "source_review_sha256": "4d3ab6fd0ddd029fabb5bb1c7735f03d779788ba61a2e4dcf010fba5053d233a",
+    "new_ppo_updates": 0,
+    "new_cloud_evaluations": 0,
+    "plots": [
+      "cloud-traces/E-20260928-u002750-nominal-env000.png",
+      "cloud-traces/E-20260929-u004000-nominal-env000.png",
+      "cloud-traces/E-20260929-u004000-nominal-env002.png",
+      "cloud-traces/E-20260929-u004000-nominal-env003.png",
+      "cloud-traces/E-20260929-u004000-nominal-env030.png",
+      "cloud-traces/E-20260929-u004000-nominal-env061.png",
+      "cloud-traces/E-20260929-u004000-test-8202-env219.png",
+      "cloud-traces/E-20260930-u003250-nominal-env000.png",
+      "cloud-traces/source-1000-nominal-env000.png",
+      "cloud-traces/reference-6000-nominal-env000.png",
+      "cloud-traces/reference-6000-test-8203-env013.png"
+    ],
+    "interpretation": "Counts describe observed metric-gate breaches and may overlap. They do not identify reward/physics causes. The strict success definition is unchanged terminal continuous 5 seconds."
+  },
+  "finished_utc": "2026-09-30T10:06:36.202137+00:00"
+}

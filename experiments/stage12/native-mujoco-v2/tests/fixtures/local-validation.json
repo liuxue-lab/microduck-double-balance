@@ -1,0 +1,690 @@
+{
+  "schema": "native-mujoco-v2-local-validation-v1",
+  "scope": "cloud CPU, native physics, exact frozen checkpoint, 4.5ms emulated RPC; no Orin or physical robot",
+  "unit_and_integration_tests": {
+    "run": 37,
+    "passed": 37,
+    "skipped": 0,
+    "includes_real_frozen_policy": true,
+    "includes_6000_packet_transport": true,
+    "includes_dependency_free_actual_report_review": true
+  },
+  "checkpoint_sha256": "cf7ce9297672943687019afe071d94918d3eb2620c18a1e8fe689512f8c08111",
+  "native_physics_passed": true,
+  "local_paced_deadlines_passed": false,
+  "actual_PC_Orin_realtime_verified": false,
+  "all_periods_counted": 6000,
+  "no_omitted_first_ticks": true,
+  "no_schedule_rebases": true,
+  "all_physics_steps_checked": 24000,
+  "cases": [
+    {
+      "case_id": "quiet-2407",
+      "status": "EPISODE_COMPLETE",
+      "acceptance": {
+        "passed": true,
+        "conditions": {
+          "identity": true,
+          "execution": true,
+          "duration": true,
+          "retention": true,
+          "physics": true,
+          "audit_counts": true,
+          "no_model_event": true,
+          "complete_joint_rows": true,
+          "complete_motor_rows": true,
+          "no_joint_excursion": true,
+          "exact_force": true,
+          "cleared": true,
+          "unchanged": true,
+          "no_error": true,
+          "no_training": true
+        },
+        "force_checks": {
+          "plan_identity": true,
+          "exact_totals": true,
+          "schedule": true,
+          "complete_pulse_records": true,
+          "directions": true,
+          "timing": true,
+          "vectors": true,
+          "impulses": true,
+          "current_robot_mass": true
+        },
+        "checked_model_boundaries_met": true,
+        "retention_met": true,
+        "position_drift_allowed": true,
+        "strict_contact_acceptance": false,
+        "hardware_acceptance": false,
+        "population_success_rate_claimed": false
+      },
+      "completed_control_steps": 3000,
+      "same_as_original_native_trajectory": {
+        "qpos": true,
+        "qvel": true,
+        "ctrl": true
+      },
+      "timing": {
+        "completed_ticks": 3000,
+        "incomplete_tick": false,
+        "all_steps": {
+          "release_lateness_ms": {
+            "count": 3000,
+            "mean": 0.22447993766666666,
+            "p95": 0.04722,
+            "p99": 9.038577,
+            "max": 36.964925,
+            "over_20ms": 8
+          },
+          "obs_copy_ms": {
+            "count": 3000,
+            "mean": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "max": 0.0,
+            "over_20ms": 0
+          },
+          "request_call_ms": {
+            "count": 3000,
+            "mean": 4.590709143333333,
+            "p95": 4.607915,
+            "p99": 4.668044,
+            "max": 5.915049,
+            "over_20ms": 0
+          },
+          "ipc_roundtrip_ms": {
+            "count": 3000,
+            "mean": 4.590709143333333,
+            "p95": 4.607915,
+            "p99": 4.668044,
+            "max": 5.915049,
+            "over_20ms": 0
+          },
+          "ros_roundtrip_ms": {
+            "count": 3000,
+            "mean": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "max": 0.0,
+            "over_20ms": 0
+          },
+          "orin_inference_ms": {
+            "count": 3000,
+            "mean": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "max": 0.0,
+            "over_20ms": 0
+          },
+          "reference_compare_ms": {
+            "count": 3000,
+            "mean": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "max": 0.0,
+            "over_20ms": 0
+          },
+          "action_to_cpu_ms": {
+            "count": 3000,
+            "mean": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "max": 0.0,
+            "over_20ms": 0
+          },
+          "reference_inference_ms": {
+            "count": 3000,
+            "mean": 0.933406971,
+            "p95": 1.248795,
+            "p99": 1.621608,
+            "max": 3.932507,
+            "over_20ms": 0
+          },
+          "pre_environment_checks_ms": {
+            "count": 3000,
+            "mean": 0.074580685,
+            "p95": 0.123532,
+            "p99": 0.192745,
+            "max": 2.457086,
+            "over_20ms": 0
+          },
+          "environment_ms": {
+            "count": 3000,
+            "mean": 10.296804760333334,
+            "p95": 13.108978,
+            "p99": 16.435437,
+            "max": 51.934904,
+            "over_20ms": 10
+          },
+          "state_capture_ms": {
+            "count": 3000,
+            "mean": 0.031781291,
+            "p95": 0.05369,
+            "p99": 0.106928,
+            "max": 0.366648,
+            "over_20ms": 0
+          },
+          "post_environment_checks_ms": {
+            "count": 3000,
+            "mean": 0.06481052733333333,
+            "p95": 0.109582,
+            "p99": 0.175009,
+            "max": 2.281103,
+            "over_20ms": 0
+          },
+          "progress_emit_ms": {
+            "count": 3000,
+            "mean": 0.001185101,
+            "p95": 0.000892,
+            "p99": 0.004227,
+            "max": 0.192354,
+            "over_20ms": 0
+          },
+          "control_thread_cpu_ms": {
+            "count": 3000,
+            "mean": 11.457343908666667,
+            "p95": 14.495039,
+            "p99": 17.87768,
+            "max": 53.293505,
+            "over_20ms": 18
+          },
+          "non_cpu_cycle_ms": {
+            "count": 3000,
+            "mean": 3.6333693179999997,
+            "p95": 3.8157,
+            "p99": 3.86372,
+            "max": 4.827381,
+            "over_20ms": 0
+          },
+          "active_cycle_ms": {
+            "count": 3000,
+            "mean": 15.090713226666667,
+            "p95": 17.958357,
+            "p99": 21.431143,
+            "max": 56.944022,
+            "over_20ms": 57
+          },
+          "release_to_finish_ms": {
+            "count": 3000,
+            "mean": 15.315193164333332,
+            "p95": 18.809722,
+            "p99": 29.022724,
+            "max": 56.947199,
+            "over_20ms": 101
+          },
+          "deadline_overrun_ms": {
+            "count": 3000,
+            "mean": 0.21909355166666666,
+            "p95": 0.0,
+            "p99": 9.022724,
+            "max": 36.947199,
+            "over_20ms": 8
+          },
+          "start_to_start_ms": {
+            "count": 2999,
+            "mean": 20.000008715238412,
+            "p95": 20.023491,
+            "p99": 21.839132,
+            "max": 56.961748,
+            "over_20ms": 1487
+          }
+        },
+        "deadline_misses": 101,
+        "release_schedule_anchored": true,
+        "nominal_period_ms": 20.0,
+        "realtime_acceptance": false,
+        "first_tick_included": true,
+        "dropped_ticks": 0,
+        "schedule_rebases": 0,
+        "csv_path": "/workspace/scratch/50e4fb3af985/work/native-mujoco-v2/offline-runs/1792866287751426978/quiet-2407/timing.csv",
+        "notes": [
+          "Deadlines include Orin RPC, reference comparison, physics, all bounds/force checks, state capture and live progress emission.",
+          "The supervisor persists progress files; the control process never fsyncs live display updates.",
+          "All 3000 ticks count, including the first; no late ticks are skipped or hidden.",
+          "Inference, ROS and IPC intervals are nested and must not be summed.",
+          "The unchanged local reference inference overlaps the Orin request; reference_compare_ms measures the subsequent parity check.",
+          "This measures scheduled PC-Orin HIL only; no physical robot acceptance."
+        ]
+      },
+      "adapter_checks": {
+        "native_physics": true,
+        "cpu_only": true,
+        "native_refresh": true,
+        "original_delay_clock": true,
+        "actor_preserved": true,
+        "states": true,
+        "cleanup": true
+      },
+      "runtime_gc": {
+        "cyclic_gc_paused": true,
+        "reference_counting_unchanged": true,
+        "collections_before": [
+          1171,
+          106,
+          9
+        ],
+        "collections_after": [
+          1171,
+          106,
+          9
+        ],
+        "control_interval_collections": [
+          0,
+          0,
+          0
+        ],
+        "original_enabled": true,
+        "restored": true,
+        "major_page_faults": 0,
+        "minor_page_faults": 1780,
+        "involuntary_context_switches": 105,
+        "peak_process_RSS_MiB": 1566.984375
+      },
+      "published_properties": {
+        "original_property_computations": 54002,
+        "cache_hits": 144002,
+        "same_publication_comparisons": 36,
+        "sources": {
+          "mjlab.entity.data": {
+            "path": "/workspace/scratch/50e4fb3af985/work/native-mujoco-v1/deps/mjlab/entity/data.py",
+            "sha256": "fd1116692f82278bda721d44c015d27e253d2e866608c8e12824df039dfb4657"
+          }
+        },
+        "fields": [
+          "root_link_pose_w",
+          "root_link_vel_w",
+          "site_pose_w",
+          "site_vel_w",
+          "projected_gravity_b"
+        ],
+        "arithmetic_unchanged": true,
+        "returned_values_are_copies": true,
+        "invalidation": "every native data pull, including step, forward and reset",
+        "closed": true
+      },
+      "trace_export": {
+        "path": "/workspace/scratch/50e4fb3af985/work/native-mujoco-v2/offline-runs/1792866287751426978/quiet-2407/push10-trace.jsonl",
+        "rows": 3000,
+        "bytes": 1568802,
+        "capacity_bytes": 4194304,
+        "flush_requests": 121,
+        "closed": true,
+        "durable": true,
+        "dropped_records": 0,
+        "control_interval_disk_writes": 0
+      },
+      "policy_and_normalizer_unchanged": true,
+      "frozen_inputs_unchanged": true,
+      "exports": {
+        "timing.csv": {
+          "sha256": "9906317533c2ec9da19b28abf525576c3f4d85548e069f17fc3ccc498e5458fa",
+          "bytes": 758703
+        },
+        "state-data.npz": {
+          "sha256": "fc61254a62cac638de3416764a4b1d6161b3350987d068492be9f566f821c8ba",
+          "bytes": 1733352
+        },
+        "native-model.mjb": {
+          "sha256": "b5c7269173f53e184fce2fad3f8f6847d47934b17ff9a017b1640abd967f79a7",
+          "bytes": 116664245
+        },
+        "push10-trace.jsonl": {
+          "sha256": "338e4b3474f1f536a5483c418690b1ee6b9a89e767726ca3e4dcbc3c884768d5",
+          "bytes": 1568802
+        }
+      }
+    },
+    {
+      "case_id": "regression-2500",
+      "status": "EPISODE_COMPLETE",
+      "acceptance": {
+        "passed": true,
+        "conditions": {
+          "identity": true,
+          "execution": true,
+          "duration": true,
+          "retention": true,
+          "physics": true,
+          "audit_counts": true,
+          "no_model_event": true,
+          "complete_joint_rows": true,
+          "complete_motor_rows": true,
+          "no_joint_excursion": true,
+          "exact_force": true,
+          "cleared": true,
+          "unchanged": true,
+          "no_error": true,
+          "no_training": true
+        },
+        "force_checks": {
+          "plan_identity": true,
+          "exact_totals": true,
+          "schedule": true,
+          "complete_pulse_records": true,
+          "directions": true,
+          "timing": true,
+          "vectors": true,
+          "impulses": true,
+          "current_robot_mass": true
+        },
+        "checked_model_boundaries_met": true,
+        "retention_met": true,
+        "position_drift_allowed": true,
+        "strict_contact_acceptance": false,
+        "hardware_acceptance": false,
+        "population_success_rate_claimed": false
+      },
+      "completed_control_steps": 3000,
+      "same_as_original_native_trajectory": {
+        "qpos": true,
+        "qvel": true,
+        "ctrl": true
+      },
+      "timing": {
+        "completed_ticks": 3000,
+        "incomplete_tick": false,
+        "all_steps": {
+          "release_lateness_ms": {
+            "count": 3000,
+            "mean": 0.41905814733333335,
+            "p95": 0.08858,
+            "p99": 12.592592,
+            "max": 63.429239,
+            "over_20ms": 18
+          },
+          "obs_copy_ms": {
+            "count": 3000,
+            "mean": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "max": 0.0,
+            "over_20ms": 0
+          },
+          "request_call_ms": {
+            "count": 3000,
+            "mean": 4.609511499666667,
+            "p95": 4.613793,
+            "p99": 4.673289,
+            "max": 38.50759,
+            "over_20ms": 1
+          },
+          "ipc_roundtrip_ms": {
+            "count": 3000,
+            "mean": 4.609511499666667,
+            "p95": 4.613793,
+            "p99": 4.673289,
+            "max": 38.50759,
+            "over_20ms": 1
+          },
+          "ros_roundtrip_ms": {
+            "count": 3000,
+            "mean": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "max": 0.0,
+            "over_20ms": 0
+          },
+          "orin_inference_ms": {
+            "count": 3000,
+            "mean": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "max": 0.0,
+            "over_20ms": 0
+          },
+          "reference_compare_ms": {
+            "count": 3000,
+            "mean": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "max": 0.0,
+            "over_20ms": 0
+          },
+          "action_to_cpu_ms": {
+            "count": 3000,
+            "mean": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "max": 0.0,
+            "over_20ms": 0
+          },
+          "reference_inference_ms": {
+            "count": 3000,
+            "mean": 0.9624876736666667,
+            "p95": 1.247915,
+            "p99": 2.338328,
+            "max": 38.411908,
+            "over_20ms": 1
+          },
+          "pre_environment_checks_ms": {
+            "count": 3000,
+            "mean": 0.07313164366666666,
+            "p95": 0.126026,
+            "p99": 0.208468,
+            "max": 1.405708,
+            "over_20ms": 0
+          },
+          "environment_ms": {
+            "count": 3000,
+            "mean": 10.432285173666667,
+            "p95": 13.413228,
+            "p99": 17.293774,
+            "max": 43.485853,
+            "over_20ms": 15
+          },
+          "state_capture_ms": {
+            "count": 3000,
+            "mean": 0.03233349866666667,
+            "p95": 0.054741,
+            "p99": 0.117374,
+            "max": 1.508711,
+            "over_20ms": 0
+          },
+          "post_environment_checks_ms": {
+            "count": 3000,
+            "mean": 0.06404436599999999,
+            "p95": 0.113428,
+            "p99": 0.184073,
+            "max": 0.863186,
+            "over_20ms": 0
+          },
+          "progress_emit_ms": {
+            "count": 3000,
+            "mean": 0.0012051136666666666,
+            "p95": 0.000942,
+            "p99": 0.004397,
+            "max": 0.20929,
+            "over_20ms": 0
+          },
+          "control_thread_cpu_ms": {
+            "count": 3000,
+            "mean": 11.622996272,
+            "p95": 14.965365,
+            "p99": 18.955226,
+            "max": 49.351057,
+            "over_20ms": 23
+          },
+          "non_cpu_cycle_ms": {
+            "count": 3000,
+            "mean": 3.620821524333333,
+            "p95": 3.825351,
+            "p99": 3.86597,
+            "max": 5.872172,
+            "over_20ms": 0
+          },
+          "active_cycle_ms": {
+            "count": 3000,
+            "mean": 15.243817796333333,
+            "p95": 18.359203,
+            "p99": 22.248405,
+            "max": 49.427437,
+            "over_20ms": 68
+          },
+          "release_to_finish_ms": {
+            "count": 3000,
+            "mean": 15.662875943666666,
+            "p95": 19.426547,
+            "p99": 32.576859,
+            "max": 83.413706,
+            "over_20ms": 123
+          },
+          "deadline_overrun_ms": {
+            "count": 3000,
+            "mean": 0.41231168166666665,
+            "p95": 0.0,
+            "p99": 12.576859,
+            "max": 63.413706,
+            "over_20ms": 18
+          },
+          "start_to_start_ms": {
+            "count": 2999,
+            "mean": 19.999999453151048,
+            "p95": 20.029845,
+            "p99": 22.280618,
+            "max": 49.441458,
+            "over_20ms": 1475
+          }
+        },
+        "deadline_misses": 123,
+        "release_schedule_anchored": true,
+        "nominal_period_ms": 20.0,
+        "realtime_acceptance": false,
+        "first_tick_included": true,
+        "dropped_ticks": 0,
+        "schedule_rebases": 0,
+        "csv_path": "/workspace/scratch/50e4fb3af985/work/native-mujoco-v2/offline-runs/1792866287751426978/regression-2500/timing.csv",
+        "notes": [
+          "Deadlines include Orin RPC, reference comparison, physics, all bounds/force checks, state capture and live progress emission.",
+          "The supervisor persists progress files; the control process never fsyncs live display updates.",
+          "All 3000 ticks count, including the first; no late ticks are skipped or hidden.",
+          "Inference, ROS and IPC intervals are nested and must not be summed.",
+          "The unchanged local reference inference overlaps the Orin request; reference_compare_ms measures the subsequent parity check.",
+          "This measures scheduled PC-Orin HIL only; no physical robot acceptance."
+        ]
+      },
+      "adapter_checks": {
+        "native_physics": true,
+        "cpu_only": true,
+        "native_refresh": true,
+        "original_delay_clock": true,
+        "actor_preserved": true,
+        "states": true,
+        "cleanup": true
+      },
+      "runtime_gc": {
+        "cyclic_gc_paused": true,
+        "reference_counting_unchanged": true,
+        "collections_before": [
+          1178,
+          106,
+          10
+        ],
+        "collections_after": [
+          1178,
+          106,
+          10
+        ],
+        "control_interval_collections": [
+          0,
+          0,
+          0
+        ],
+        "original_enabled": true,
+        "restored": true,
+        "major_page_faults": 0,
+        "minor_page_faults": 72,
+        "involuntary_context_switches": 142,
+        "peak_process_RSS_MiB": 2146.41796875
+      },
+      "published_properties": {
+        "original_property_computations": 54002,
+        "cache_hits": 144002,
+        "same_publication_comparisons": 36,
+        "sources": {
+          "mjlab.entity.data": {
+            "path": "/workspace/scratch/50e4fb3af985/work/native-mujoco-v1/deps/mjlab/entity/data.py",
+            "sha256": "fd1116692f82278bda721d44c015d27e253d2e866608c8e12824df039dfb4657"
+          }
+        },
+        "fields": [
+          "root_link_pose_w",
+          "root_link_vel_w",
+          "site_pose_w",
+          "site_vel_w",
+          "projected_gravity_b"
+        ],
+        "arithmetic_unchanged": true,
+        "returned_values_are_copies": true,
+        "invalidation": "every native data pull, including step, forward and reset",
+        "closed": true
+      },
+      "trace_export": {
+        "path": "/workspace/scratch/50e4fb3af985/work/native-mujoco-v2/offline-runs/1792866287751426978/regression-2500/push10-trace.jsonl",
+        "rows": 3000,
+        "bytes": 1573465,
+        "capacity_bytes": 4194304,
+        "flush_requests": 121,
+        "closed": true,
+        "durable": true,
+        "dropped_records": 0,
+        "control_interval_disk_writes": 0
+      },
+      "policy_and_normalizer_unchanged": true,
+      "frozen_inputs_unchanged": true,
+      "exports": {
+        "timing.csv": {
+          "sha256": "72a62ce9c9ef8899c9f0d524155fe1d41e24a77d7d9514a2e6afa5b434267778",
+          "bytes": 759353
+        },
+        "state-data.npz": {
+          "sha256": "977dc53db6576aee5b82398b33cd6a03ef096c9dca9f6a02428bf2424ceddced",
+          "bytes": 1734841
+        },
+        "native-model.mjb": {
+          "sha256": "b5c7269173f53e184fce2fad3f8f6847d47934b17ff9a017b1640abd967f79a7",
+          "bytes": 116664245
+        },
+        "push10-trace.jsonl": {
+          "sha256": "1afbb279504dd69467c54208635a9469866b4190af08b5fb78dd16017b70f028",
+          "bytes": 1573465
+        }
+      }
+    }
+  ],
+  "physical_timestep_seconds": 0.005,
+  "control_period_seconds": 0.02,
+  "original_actuator_delay_clock_seconds": 0.002,
+  "code_sha256": {
+    "bootstrap.py": "d61d2e88121e773c4a427f121c28310a1739e791696c67cb5de5eaff206d67bf",
+    "cpu_placement.py": "5718b458da2a27cc96663f662b85491dd2e95ecf348085ae7fe3a199d3b4c9d3",
+    "deploy_contract.py": "0eded8bf91612f8fb736307db5d999cce264b5cdba8a550f785a82a45ff60bdd",
+    "live_progress.py": "18c75d27608ade0b0e7c707258c88d733e6f5796fd62773801a7119bc5a4e27c",
+    "loop_contract.py": "24415f66d55eb7e32eac2c0f980a9d73b2b1c7ef2dc1439f51a95f29d760b299",
+    "loop_evidence.py": "ec2e1ca960933b6ef21e48f8d42ca39215d556c47d08397eef09cdb1db54a3b0",
+    "loop_ops.py": "2b57b03232570f44566245ff6360a72b9a0b7590ba33f24821fa2158b37ff78c",
+    "loop_ros.py": "25a6c3fc804e88693f9884a9d293b186641c123219dae0106894698dfff28b09",
+    "loop_sim.py": "cd7584eac14cebb6dfbb46f8d23392c468a419a0e438c15e9de4d18a725566ab",
+    "native_backend.py": "925a8cbfe59727aa718f2611babb93a23f21fb01335573f1224fbe7856a0cd3b",
+    "native_checks.py": "ac1a4f3963fddfc73372d1f49309faf8ab09b76e4d714cf737124aa665ce0594",
+    "native_criteria.py": "d5618631b30af4d8eb89215f1b1ddebe920a7acfff995d699c30b917e7731e90",
+    "native_delay.py": "e13caaf8a5eab4763997f395cf124a0d34f88ca349e3d72d5366303f03a25639",
+    "native_evaluate.py": "25a46cd8fd5c320aeded26685471e6683737b00825958c1f5e25572f0b895f71",
+    "native_guard.py": "1a085f281ea81b1f53da6f379f2fc5ffa3fde0d1b60239234c78cc26384dcb0b",
+    "native_inference.py": "923e69d48eca1027ebeb64dfe9cf6dbf85813053fec2ea3245b45f6c44c92e5c",
+    "native_model_limits.py": "788e0153da0c11497f025bc07784d0b5c10c486201b3a45ef05919c123b7c879",
+    "native_plan.py": "a012f5d9d71f76878836e8b4bde9601216909a92fa47200d5c86c8da6503d551",
+    "native_preflight.py": "27d1ed6440eb4a4673e6cea90434e49d0fd5d44e91cdfb2f23c725261971fde5",
+    "native_properties.py": "74156459bfa6edfd752ce156f8cebb06db2305c366df57f5db4ec9e1916dc52a",
+    "native_ring.py": "14d4616374ae91511da98d3fd6e1bf253cfa411226081c88dea831b5d0bda5e9",
+    "native_runtime.py": "7d32ec29cae84da7c6a189f7be0e1bafb28817509cdea25f95aed2d79a1b0f49",
+    "native_session.py": "296e676237c8c67ab46333f8ca6335a5e87274718b5f8d8c694ee316eb969c62",
+    "probe.py": "63628d0e8965b860c26ac88f24463d7fcc04409a3e809f4453bf5657943dc48c",
+    "realtime_io.py": "c8fb719944ccbc56bf7f25b896adba42be7325f94081626d13228bb49289327b",
+    "recover_prior.py": "47fe39f3585871453fa73812eab2e9a1eea4215c046f5cee368d9e9c0ba3e1bf",
+    "reference_overlap.py": "2dd5f245bb9b82bf44cf0c1624c91a4d691c69cd5a8ae8102b2b9acdc4ac3bc6",
+    "shared_ssh.py": "a4936dd2de7e10073b74e0e7bac0dedf9c09885ba6a8c0d03a795cf98f0f0030",
+    "static_math.py": "c04e656254a3b577d40a1a8854ec2d09734bdfdba059fd1fb30237745fb2583d",
+    "sync_adapters.py": "1d15631748159ad3d74073c50e48975db9f2164c8a784a623cf6001a40360452",
+    "telemetry.py": "27e1ed73f4ab34d86c0824970037e8cae7688a8230ba564b2fd93a47704e49c2"
+  }
+}

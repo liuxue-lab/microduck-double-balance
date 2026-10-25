@@ -1,0 +1,1679 @@
+{
+  "schema": "microduck-stage12-closure-expected-assets-v1",
+  "date": "2026-10-25",
+  "timezone": "Asia/Shanghai",
+  "project_root": "/home/lx/microduck-double-balance",
+  "baseline_commit": "056657aa36158fb81dca6fd2092e525222d6e632",
+  "assets": [
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/runs/20261025T044453Z-d194fd47/report.json",
+      "roles": [
+        "accepted_report"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json"
+      ],
+      "sha256": "513c9add8b0029dfb039efba38fc1d1390a97ed310766b8c184d42d87abfd079",
+      "bytes": 198420
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/runs/20261025T044453Z-d194fd47/case-01/native-model.mjb",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json"
+      ],
+      "sha256": "2e481a6dfa1508d2345de0821897278d403b80535d7d0514b571724d6091c645",
+      "bytes": 116664189
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/runs/20261025T044453Z-d194fd47/case-01/push10-trace.jsonl",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json"
+      ],
+      "sha256": "04e5788947e075b54aa5416a19ad8b3828289ade9a9dd9ad9a805488bca12c82",
+      "bytes": 1568454
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/runs/20261025T044453Z-d194fd47/case-01/state-data.json",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json"
+      ],
+      "sha256": "953248be6ee929b8bde6515278c58f1be61b551f504c38bc6046972ccd60667d",
+      "bytes": 654
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/runs/20261025T044453Z-d194fd47/case-01/state-data.npz",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json"
+      ],
+      "sha256": "1b1ed120de56301b5bc70202cf7df56678e0f24008c24575b809536f56715de9",
+      "bytes": 1733188
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/runs/20261025T044453Z-d194fd47/case-01/timing.csv",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json"
+      ],
+      "sha256": "eade9c80f8f633e6815492e75d1f017e4fadd8234db5aa9403782f3a379c33fc",
+      "bytes": 918506
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/runs/20261025T044453Z-d194fd47/case-02/native-model.mjb",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json"
+      ],
+      "sha256": "2e481a6dfa1508d2345de0821897278d403b80535d7d0514b571724d6091c645",
+      "bytes": 116664189
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/runs/20261025T044453Z-d194fd47/case-02/push10-trace.jsonl",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json"
+      ],
+      "sha256": "ee6e265b5c7f3bbce0cb6501ab2c56b66619ea0622e87de382a81e1619b1aa33",
+      "bytes": 1574597
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/runs/20261025T044453Z-d194fd47/case-02/state-data.json",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json"
+      ],
+      "sha256": "dd020ca247c54dc17ac0e4278470ab8620b1de46f2c03b118bf471020919df9b",
+      "bytes": 654
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/runs/20261025T044453Z-d194fd47/case-02/state-data.npz",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json"
+      ],
+      "sha256": "fc9588cf35de248ef31d35dac2000e7c0476c44d8c3fff8dd3df1aaec64c603a",
+      "bytes": 1735342
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/runs/20261025T044453Z-d194fd47/case-02/timing.csv",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json"
+      ],
+      "sha256": "e4d2440a929df6da63dd53deef3fcc6ce64de701a5eb748a66b0209f308e790b",
+      "bytes": 918744
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/runs/20261025T044453Z-d194fd47/loop-transcript.jsonl",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json"
+      ],
+      "sha256": "1d3313bbdb0715f3ae988753e404bb61d2ce33f5ba36b0d88c57600474e99ba1",
+      "bytes": 12775875
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d/report.json",
+      "roles": [
+        "accepted_report"
+      ],
+      "evidence": [
+        "reports/hil-replay-v1-report.json"
+      ],
+      "sha256": "539f3b3d277018a9c0d391b2b46ef7f1eca4595c16871a9b1281ecaadae24e7a",
+      "bytes": 7627
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d/quiet-2407-middle.png",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/hil-replay-v1-report.json"
+      ],
+      "sha256": "235f2090c20d0226ec82ed3c1b54eb1413c8a86a6cfe58362a9b9948cef472b9",
+      "bytes": 212908
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d/index.html",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/hil-replay-v1-report.json"
+      ],
+      "sha256": "1d542fae691d31373479239c09cd205af822e7edacc3d88c3c9c38ade9d3e1ea",
+      "bytes": 1269019
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d/quiet-2407-recorded-hil.mp4",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/hil-replay-v1-report.json"
+      ],
+      "sha256": "5feb95b1011441723ee74495c9ba5e29f6be967ce84fe638c7597f9931c3ea77",
+      "bytes": 4617084
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d/quiet-2407-initial.png",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/hil-replay-v1-report.json"
+      ],
+      "sha256": "1d9ca057dd60b6fa9872bd099726481a544a44b4dbd9312cbaf4920129544457",
+      "bytes": 218800
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d/regression-2500-initial.png",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/hil-replay-v1-report.json"
+      ],
+      "sha256": "1d9ca057dd60b6fa9872bd099726481a544a44b4dbd9312cbaf4920129544457",
+      "bytes": 218800
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d/regression-2500-middle.png",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/hil-replay-v1-report.json"
+      ],
+      "sha256": "4a5eeb83bb77606d32b7290591cb27c5b48208862905de10f5096e931588b57b",
+      "bytes": 223914
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d/regression-2500-recorded-hil.mp4",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/hil-replay-v1-report.json"
+      ],
+      "sha256": "b93968c13e3492fcac34585d8c2b58d14a0360a237c2b9ef4a0a39a3ccac1c8f",
+      "bytes": 5563728
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d/quiet-2407-final.png",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/hil-replay-v1-report.json"
+      ],
+      "sha256": "9638b84a9fe00ffda63393bb78416b83c4cb159aa33600d2c377d0d443c309d9",
+      "bytes": 213398
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d/regression-2500-final.png",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/hil-replay-v1-report.json"
+      ],
+      "sha256": "a76e6cdfddfd13d59adda6aacbb84f7fab9eb8ca5ab8d8d37fad943a91958657",
+      "bytes": 220306
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/runs/20261025T065835Z-f9fbf65e/report.json",
+      "roles": [
+        "accepted_report"
+      ],
+      "evidence": [
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "6df130f52cda849c2bef3b294cd02cb7c8795ac71e53585c8041b905b46d1f4f",
+      "bytes": 201671
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/runs/20261025T065835Z-f9fbf65e/case-01/native-model.mjb",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "2e481a6dfa1508d2345de0821897278d403b80535d7d0514b571724d6091c645",
+      "bytes": 116664189
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/runs/20261025T065835Z-f9fbf65e/case-01/push10-trace.jsonl",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "04e5788947e075b54aa5416a19ad8b3828289ade9a9dd9ad9a805488bca12c82",
+      "bytes": 1568454
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/runs/20261025T065835Z-f9fbf65e/case-01/state-data.json",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "07d49d8b08da16e7a4c3b8edbbcfcf5135ca6e4180e014c2f066214aa7480343",
+      "bytes": 1005
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/runs/20261025T065835Z-f9fbf65e/case-01/state-data.npz",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "1b1ed120de56301b5bc70202cf7df56678e0f24008c24575b809536f56715de9",
+      "bytes": 1733188
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/runs/20261025T065835Z-f9fbf65e/case-01/timing.csv",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "a2a55b43c991284921853b27dc63be3b31ca07f45d9f6a105c2602c517666ac0",
+      "bytes": 932991
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/runs/20261025T065835Z-f9fbf65e/case-02/native-model.mjb",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "2e481a6dfa1508d2345de0821897278d403b80535d7d0514b571724d6091c645",
+      "bytes": 116664189
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/runs/20261025T065835Z-f9fbf65e/case-02/push10-trace.jsonl",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "ee6e265b5c7f3bbce0cb6501ab2c56b66619ea0622e87de382a81e1619b1aa33",
+      "bytes": 1574597
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/runs/20261025T065835Z-f9fbf65e/case-02/state-data.json",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "834679d61e4a24dcb9eb5104b999ce3412b957175c580225592538c758848b28",
+      "bytes": 1005
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/runs/20261025T065835Z-f9fbf65e/case-02/state-data.npz",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "fc9588cf35de248ef31d35dac2000e7c0476c44d8c3fff8dd3df1aaec64c603a",
+      "bytes": 1735342
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/runs/20261025T065835Z-f9fbf65e/case-02/timing.csv",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "24cb79a85cc30509a92de9444c18916858b4b548a70a6f91cd83b4e0b2066925",
+      "bytes": 934050
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/runs/20261025T065835Z-f9fbf65e/loop-transcript.jsonl",
+      "roles": [
+        "run_asset"
+      ],
+      "evidence": [
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "c66914a26102c858dd7ae7b0fb259b4c4ca692eeb5381170bf5d84bbd576c4cf",
+      "bytes": 12776087
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-ros2-humble-v1/frozen-export/contract.json",
+      "roles": [
+        "frozen_export"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json/frozen_export",
+        "reports/native-live-v1-report.json/frozen_export"
+      ],
+      "sha256": "e0283bf7f00c8e2c7b57128b91ca3ced3abb4698e8f4c4aa11e74a745ad84929",
+      "bytes": 4041
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-ros2-humble-v1/frozen-export/final6h_005304.onnx",
+      "roles": [
+        "frozen_export"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json/frozen_export",
+        "reports/native-live-v1-report.json/frozen_export"
+      ],
+      "sha256": "8c1c1250b9b88d9a91e3eb095fea8bce21daa73c251b43f3cd8adc1327f03c4e",
+      "bytes": 2501039
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-ros2-humble-v1/frozen-export/golden.json",
+      "roles": [
+        "frozen_export"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json/frozen_export",
+        "reports/native-live-v1-report.json/frozen_export"
+      ],
+      "sha256": "b7ebe914c3933477d35bc0cc70c6b1bb4c1c83e67bd61dc22cd8f0775b1609e7",
+      "bytes": 1606400
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-cumulative-loop-v1/report.json",
+      "roles": [
+        "required_historical_report"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json/historical_report_sha256",
+        "reports/native-live-v1-report.json/historical_report_sha256"
+      ],
+      "sha256": "efc271222eced2901c3574ee6e8421dbe1245933b5d03bd111e359b5416bfee5"
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v1/report.json",
+      "roles": [
+        "required_historical_report"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json/historical_report_sha256",
+        "reports/native-live-v1-report.json/historical_report_sha256"
+      ],
+      "sha256": "b6572964f074840b5a00ce495f9ffa575c63f0408b96f3977266ac2198cd5e2e"
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-pc-actiongraph-v1/report.json",
+      "roles": [
+        "required_historical_report"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json/historical_report_sha256",
+        "reports/native-live-v1-report.json/historical_report_sha256"
+      ],
+      "sha256": "a48093e63cce12fa50052f00b425e8eb28542e16aed78210c374e7655505a3c7"
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-pc-sync-v1/report.json",
+      "roles": [
+        "required_historical_report"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json/historical_report_sha256",
+        "reports/native-live-v1-report.json/historical_report_sha256"
+      ],
+      "sha256": "afe6ba189a35733df2470d8e95f4f7600070e5752eab99669e851cccdd8a167a"
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-pc-timeline-fixed-v2/fix-report.json",
+      "roles": [
+        "required_historical_report"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json/historical_report_sha256",
+        "reports/native-live-v1-report.json/historical_report_sha256"
+      ],
+      "sha256": "6ac542b326f60ff9cc65fc699add96e9074b73864fb403c9791ad2e8023171ea"
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-ros2-humble-loop-v1/report.json",
+      "roles": [
+        "required_historical_report"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json/historical_report_sha256",
+        "reports/native-live-v1-report.json/historical_report_sha256"
+      ],
+      "sha256": "615d9b29e1c85433eebec2a988031ba01f14fc53ffeebf9906ae9355e6ac28e5"
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-ros2-humble-v4/report.json",
+      "roles": [
+        "required_historical_report",
+        "report_pinned_dependency"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json/historical_report_sha256",
+        "reports/native-mujoco-v3-report.json",
+        "reports/native-live-v1-report.json/historical_report_sha256",
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "1a7a0a02596bdc4a797a509c37cc5ed9c9e12cc986d37d1b7d00c2b047ccbecb"
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/recovered-v1.json",
+      "roles": [
+        "report_pinned_dependency"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json"
+      ],
+      "sha256": "933a1b97a3338b07869ea0d9ac5d554d8522b91b8fcaf892be45a8e119ac7bef"
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/reviewed-v2.json",
+      "roles": [
+        "report_pinned_dependency"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json"
+      ],
+      "sha256": "cd41b450ff7b72ceeabbcbd9334b77777bc0acf061bef8518d769592e20d0cd5"
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-push10-final6h-v1-client/returned/0cbee30e5a83904371076ca09a8cfb4afd1fa3f4/files/run/checkpoints/final6h_005304.pt",
+      "roles": [
+        "report_pinned_dependency"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json",
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "cf7ce9297672943687019afe071d94918d3eb2620c18a1e8fe689512f8c08111",
+      "bytes": 10041821
+    },
+    {
+      "path": "workspace/.venv/lib/python3.12/site-packages/bam/actuator.py",
+      "roles": [
+        "report_pinned_dependency"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json",
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "6927d7b2341cbaca0e5d872fae4ddce6200056885310d9ee5acaba1f34e09c13"
+    },
+    {
+      "path": "workspace/.venv/lib/python3.12/site-packages/bam/dynamixel/actuator.py",
+      "roles": [
+        "report_pinned_dependency"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json",
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "8d3ed39d68758981204901dd18dcce11dcb107b842067e036d2b8ac7b1411cec"
+    },
+    {
+      "path": "workspace/.venv/lib/python3.12/site-packages/bam/mjlab.py",
+      "roles": [
+        "report_pinned_dependency"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json",
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "af3de252939ca868712423979c2ab52e198d382d7aca613b5b33c77d74baa440"
+    },
+    {
+      "path": "workspace/src/mjlab_microduck/actuator/friction_dr_bam.py",
+      "roles": [
+        "report_pinned_dependency"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json",
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "75cb3e993cd8fdc9d90081129f793deb1eb22fc1ad921f75a97511fa98d38fb7"
+    },
+    {
+      "path": "workspace/.venv/lib/python3.12/site-packages/mjlab/envs/mdp/observations.py",
+      "roles": [
+        "report_pinned_dependency"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json",
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "493aab813b211cd25e173ef7072637b9a7e988eaed7ce4ec31130ee4497ff09f"
+    },
+    {
+      "path": "workspace/.venv/lib/python3.12/site-packages/mjlab/envs/mdp/rewards.py",
+      "roles": [
+        "report_pinned_dependency"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json",
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "02e42a1e15dc1a27a0cce4e3d2863a165094914118789a1ec4cfbf6ed97a9c60"
+    },
+    {
+      "path": "workspace/.venv/lib/python3.12/site-packages/mjlab/managers/observation_manager.py",
+      "roles": [
+        "report_pinned_dependency"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json",
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "db9feb383786b4b144efc8cc71c9a9804b6611b3d148b6ceed283cd66eef53a8"
+    },
+    {
+      "path": "workspace/.venv/lib/python3.12/site-packages/mjlab/managers/reward_manager.py",
+      "roles": [
+        "report_pinned_dependency"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json",
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "8d1679cc4b0581dc0000493e0a661f3976c5f9c54f800bd825aee340a685f2a7"
+    },
+    {
+      "path": "workspace/.venv/lib/python3.12/site-packages/mjlab/tasks/velocity/mdp/observations.py",
+      "roles": [
+        "report_pinned_dependency"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json",
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "4e56cefa6481c42e641902cc124cfdd02c3c92b45d8b294253aad0fc87ec9134"
+    },
+    {
+      "path": "workspace/.venv/lib/python3.12/site-packages/mjlab/tasks/velocity/mdp/rewards.py",
+      "roles": [
+        "report_pinned_dependency"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json",
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "5149776c24c8499c05c1f4941a295647779867efd645f78be02408fd85c96dfb"
+    },
+    {
+      "path": "workspace/src/mjlab_microduck/tasks/mdp.py",
+      "roles": [
+        "report_pinned_dependency"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json",
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-pc-timeline-v1/package/native_task.py",
+      "roles": [
+        "report_pinned_dependency"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json",
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "b6909b9cff864dcfce8203062a75282571ca2c7ef5d66b2aa58c05c4626a55af"
+    },
+    {
+      "path": "workspace/.venv/lib/python3.12/site-packages/mjlab/entity/data.py",
+      "roles": [
+        "report_pinned_dependency"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json",
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "fd1116692f82278bda721d44c015d27e253d2e866608c8e12824df039dfb4657"
+    },
+    {
+      "path": "workspace/.venv/lib/python3.12/site-packages/mjlab/utils/lab_api/math.py",
+      "roles": [
+        "report_pinned_dependency"
+      ],
+      "evidence": [
+        "reports/native-mujoco-v3-report.json",
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "47757748386173cc4ded5fb5dc5619336393ee6296769fa8b985738ebe50d436"
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/recovered-v1.json",
+      "roles": [
+        "report_pinned_dependency"
+      ],
+      "evidence": [
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "933a1b97a3338b07869ea0d9ac5d554d8522b91b8fcaf892be45a8e119ac7bef"
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/reviewed-v2.json",
+      "roles": [
+        "report_pinned_dependency"
+      ],
+      "evidence": [
+        "reports/native-live-v1-report.json"
+      ],
+      "sha256": "cd41b450ff7b72ceeabbcbd9334b77777bc0acf061bef8518d769592e20d0cd5"
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/microduck-stage12-native-mujoco-v3.py",
+      "roles": [
+        "installed_launcher"
+      ],
+      "evidence": [
+        "handoff-state.json/releases/native-mujoco-v3"
+      ],
+      "sha256": "aeea88c228a81704e7d456127e369fc033fff05885e9dc268e8d9556c9441b89",
+      "bytes": 189177
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/native_guard.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/native_guard.py"
+      ],
+      "sha256": "1a085f281ea81b1f53da6f379f2fc5ffa3fde0d1b60239234c78cc26384dcb0b",
+      "bytes": 9949
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/native_evaluate.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/native_evaluate.py"
+      ],
+      "sha256": "98aea7db42cb5eaa9b8a0472f3046ad7ed5223fd693dd27cda68a666bcf77259",
+      "bytes": 9598
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/loop_contract.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/loop_contract.py"
+      ],
+      "sha256": "24415f66d55eb7e32eac2c0f980a9d73b2b1c7ef2dc1439f51a95f29d760b299",
+      "bytes": 8177
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/telemetry.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/telemetry.py"
+      ],
+      "sha256": "57d5c4aad8456af7c63f1c9ee4633d67d03e9bd2d1203ff47837b6e1db5508b3",
+      "bytes": 8879
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/static_math.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/static_math.py"
+      ],
+      "sha256": "c04e656254a3b577d40a1a8854ec2d09734bdfdba059fd1fb30237745fb2583d",
+      "bytes": 1952
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/native_model_limits.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/native_model_limits.py"
+      ],
+      "sha256": "788e0153da0c11497f025bc07784d0b5c10c486201b3a45ef05919c123b7c879",
+      "bytes": 13053
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/bootstrap.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/bootstrap.py"
+      ],
+      "sha256": "d61d2e88121e773c4a427f121c28310a1739e791696c67cb5de5eaff206d67bf",
+      "bytes": 1919
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/reference_overlap.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/reference_overlap.py"
+      ],
+      "sha256": "2dd5f245bb9b82bf44cf0c1624c91a4d691c69cd5a8ae8102b2b9acdc4ac3bc6",
+      "bytes": 1108
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/policy_prepare.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/policy_prepare.py"
+      ],
+      "sha256": "b2542c5b99498c6499b17bcd3318fe21fc5d0fd4a0e02473e96941b0022235a7",
+      "bytes": 3504
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/live_progress.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/live_progress.py"
+      ],
+      "sha256": "18c75d27608ade0b0e7c707258c88d733e6f5796fd62773801a7119bc5a4e27c",
+      "bytes": 2276
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/deploy_contract.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/deploy_contract.py"
+      ],
+      "sha256": "0eded8bf91612f8fb736307db5d999cce264b5cdba8a550f785a82a45ff60bdd",
+      "bytes": 5982
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/sync_adapters.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/sync_adapters.py"
+      ],
+      "sha256": "1d15631748159ad3d74073c50e48975db9f2164c8a784a623cf6001a40360452",
+      "bytes": 2818
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/native_plan.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/native_plan.py"
+      ],
+      "sha256": "a012f5d9d71f76878836e8b4bde9601216909a92fa47200d5c86c8da6503d551",
+      "bytes": 4172
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/native_delay.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/native_delay.py"
+      ],
+      "sha256": "e13caaf8a5eab4763997f395cf124a0d34f88ca349e3d72d5366303f03a25639",
+      "bytes": 3794
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/cpu_placement.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/cpu_placement.py"
+      ],
+      "sha256": "5718b458da2a27cc96663f662b85491dd2e95ecf348085ae7fe3a199d3b4c9d3",
+      "bytes": 2279
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/manifest.json",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/manifest.json"
+      ],
+      "sha256": "35cab5a2b4763a1d3286eca2e9ce170b294a0ac13a13416571878b38b4e6d48e",
+      "bytes": 4752
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/native_runtime.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/native_runtime.py"
+      ],
+      "sha256": "4c4d03524fab8006da88856a095700fd1af92896fe8c03cac45fd6671b7e0458",
+      "bytes": 4201
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/realtime_io.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/realtime_io.py"
+      ],
+      "sha256": "c8fb719944ccbc56bf7f25b896adba42be7325f94081626d13228bb49289327b",
+      "bytes": 3778
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/native_checks.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/native_checks.py"
+      ],
+      "sha256": "ac1a4f3963fddfc73372d1f49309faf8ab09b76e4d714cf737124aa665ce0594",
+      "bytes": 1391
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/native_properties.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/native_properties.py"
+      ],
+      "sha256": "74156459bfa6edfd752ce156f8cebb06db2305c366df57f5db4ec9e1916dc52a",
+      "bytes": 2866
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/recover_prior.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/recover_prior.py"
+      ],
+      "sha256": "47fe39f3585871453fa73812eab2e9a1eea4215c046f5cee368d9e9c0ba3e1bf",
+      "bytes": 3241
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/loop_ros.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/loop_ros.py"
+      ],
+      "sha256": "25a6c3fc804e88693f9884a9d293b186641c123219dae0106894698dfff28b09",
+      "bytes": 9831
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/native_backend.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/native_backend.py"
+      ],
+      "sha256": "925a8cbfe59727aa718f2611babb93a23f21fb01335573f1224fbe7856a0cd3b",
+      "bytes": 11256
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/native_session.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/native_session.py"
+      ],
+      "sha256": "296e676237c8c67ab46333f8ca6335a5e87274718b5f8d8c694ee316eb969c62",
+      "bytes": 14435
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/loop_sim.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/loop_sim.py"
+      ],
+      "sha256": "21a282670d6818d5736aba9ecc31c03d5ba423a28728cb403114bada9421d70a",
+      "bytes": 15106
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/native_ring.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/native_ring.py"
+      ],
+      "sha256": "14d4616374ae91511da98d3fd6e1bf253cfa411226081c88dea831b5d0bda5e9",
+      "bytes": 1633
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/shared_ssh.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/shared_ssh.py"
+      ],
+      "sha256": "a4936dd2de7e10073b74e0e7bac0dedf9c09885ba6a8c0d03a795cf98f0f0030",
+      "bytes": 5957
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/native_criteria.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/native_criteria.py"
+      ],
+      "sha256": "d5618631b30af4d8eb89215f1b1ddebe920a7acfff995d699c30b917e7731e90",
+      "bytes": 8486
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/network_diagnostics.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/network_diagnostics.py"
+      ],
+      "sha256": "0ba912dd240b4703bccb399ecfe1ef71ac077fbd9730424eedf36077ef744653",
+      "bytes": 1098
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/loop_evidence.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/loop_evidence.py"
+      ],
+      "sha256": "b29728c6fb14fed3690b900ceee619b51b735e074889b7a616e02d33e3ddfb14",
+      "bytes": 7803
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/review_v2.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/review_v2.py"
+      ],
+      "sha256": "3d477e9a248d23f831b1a038c0296fae4d32859bb02c3cb08bcf68a3102ae651",
+      "bytes": 5053
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/native_inference.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/native_inference.py"
+      ],
+      "sha256": "923e69d48eca1027ebeb64dfe9cf6dbf85813053fec2ea3245b45f6c44c92e5c",
+      "bytes": 7995
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/probe.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/probe.py"
+      ],
+      "sha256": "63628d0e8965b860c26ac88f24463d7fcc04409a3e809f4453bf5657943dc48c",
+      "bytes": 6031
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/native_preflight.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/native_preflight.py"
+      ],
+      "sha256": "27d1ed6440eb4a4673e6cea90434e49d0fd5d44e91cdfb2f23c725261971fde5",
+      "bytes": 736
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v3/package/loop_ops.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f:experiments/stage12/native-mujoco-v3/package/loop_ops.py"
+      ],
+      "sha256": "05f44f79e78c865682e54671cae5f57cf8e58c202ade48be31aaa3f3e0ff84cf",
+      "bytes": 26725
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-hil-replay-v1/microduck-stage12-hil-replay-v1.py",
+      "roles": [
+        "installed_launcher"
+      ],
+      "evidence": [
+        "handoff-state.json/releases/hil-replay-v1"
+      ],
+      "sha256": "78e87cc7bea477575f9a9c97aceb3d88a694c7cf317e168bd8ed50dd5de40cff",
+      "bytes": 99226
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-hil-replay-v1/package/replay_ops.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "7692be80b0baa66300b78a7e2b136f42e808b21c:experiments/stage12/hil-replay-v1/package/replay_ops.py"
+      ],
+      "sha256": "d0b18c0a0d60e4e3d4273e96053104c4572a1a561a7d595cbcc07aea0c46c793",
+      "bytes": 11130
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-hil-replay-v1/package/manifest.json",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "7692be80b0baa66300b78a7e2b136f42e808b21c:experiments/stage12/hil-replay-v1/package/manifest.json"
+      ],
+      "sha256": "327269a310006c99c7a02a018e61869b6cde49b094623a579fe0154bfca6b798",
+      "bytes": 921
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-hil-replay-v1/package/replay_common.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "7692be80b0baa66300b78a7e2b136f42e808b21c:experiments/stage12/hil-replay-v1/package/replay_common.py"
+      ],
+      "sha256": "62849ce0d8c7ae7a3d86eca5f41f3763a780f49bdfdcd38454be5f11bf78bfe3",
+      "bytes": 4822
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-hil-replay-v1/package/replay_page.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "7692be80b0baa66300b78a7e2b136f42e808b21c:experiments/stage12/hil-replay-v1/package/replay_page.py"
+      ],
+      "sha256": "b2bfc113e60cfe729d3bc3ccb72123f8ba49f4468e4ed3cd9cea6d6214c077e5",
+      "bytes": 9334
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-hil-replay-v1/package/replay_media.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "7692be80b0baa66300b78a7e2b136f42e808b21c:experiments/stage12/hil-replay-v1/package/replay_media.py"
+      ],
+      "sha256": "0ca0586aa856b0544d36e3ca2cf2c575ffcdaf24d673c1d51dc8e61f3c8b61f1",
+      "bytes": 5996
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-hil-replay-v1/package/replay_render.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "7692be80b0baa66300b78a7e2b136f42e808b21c:experiments/stage12/hil-replay-v1/package/replay_render.py"
+      ],
+      "sha256": "fc00205df66a8bb415cc6c01bcc41b1eb1b0e1b46def1d72ee74a9a3759ccda8",
+      "bytes": 7566
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-hil-replay-v1/package/replay_evidence.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "7692be80b0baa66300b78a7e2b136f42e808b21c:experiments/stage12/hil-replay-v1/package/replay_evidence.py"
+      ],
+      "sha256": "afa0130adfb5fabae4339066ee55e12db8067fec3115f71c621065dbfb2e8088",
+      "bytes": 5091
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/microduck-stage12-native-live-v1.py",
+      "roles": [
+        "installed_launcher"
+      ],
+      "evidence": [
+        "handoff-state.json/releases/native-live-v1"
+      ],
+      "sha256": "6a8e1bcca9e85790f671567ba905c5a68992e153ca63b43759af2f16844dd7ad",
+      "bytes": 150544
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/native_guard.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/native_guard.py"
+      ],
+      "sha256": "1a085f281ea81b1f53da6f379f2fc5ffa3fde0d1b60239234c78cc26384dcb0b",
+      "bytes": 9949
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/native_evaluate.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/native_evaluate.py"
+      ],
+      "sha256": "98aea7db42cb5eaa9b8a0472f3046ad7ed5223fd693dd27cda68a666bcf77259",
+      "bytes": 9598
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/loop_contract.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/loop_contract.py"
+      ],
+      "sha256": "24415f66d55eb7e32eac2c0f980a9d73b2b1c7ef2dc1439f51a95f29d760b299",
+      "bytes": 8177
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/telemetry.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/telemetry.py"
+      ],
+      "sha256": "ead225ea2b36fc2d82a73f8cae8e4d8393c1a3a44d9b887244e167984ff4f1b4",
+      "bytes": 9505
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/static_math.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/static_math.py"
+      ],
+      "sha256": "c04e656254a3b577d40a1a8854ec2d09734bdfdba059fd1fb30237745fb2583d",
+      "bytes": 1952
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/native_model_limits.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/native_model_limits.py"
+      ],
+      "sha256": "788e0153da0c11497f025bc07784d0b5c10c486201b3a45ef05919c123b7c879",
+      "bytes": 13053
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/bootstrap.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/bootstrap.py"
+      ],
+      "sha256": "d61d2e88121e773c4a427f121c28310a1739e791696c67cb5de5eaff206d67bf",
+      "bytes": 1919
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/reference_overlap.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/reference_overlap.py"
+      ],
+      "sha256": "2dd5f245bb9b82bf44cf0c1624c91a4d691c69cd5a8ae8102b2b9acdc4ac3bc6",
+      "bytes": 1108
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/policy_prepare.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/policy_prepare.py"
+      ],
+      "sha256": "b2542c5b99498c6499b17bcd3318fe21fc5d0fd4a0e02473e96941b0022235a7",
+      "bytes": 3504
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/live_progress.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/live_progress.py"
+      ],
+      "sha256": "18c75d27608ade0b0e7c707258c88d733e6f5796fd62773801a7119bc5a4e27c",
+      "bytes": 2276
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/live_viewer.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/live_viewer.py"
+      ],
+      "sha256": "c33278218808d6d38c51f2af67c15557f69b14ea6dfe8d2ef5ed48de1cff4846",
+      "bytes": 11801
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/deploy_contract.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/deploy_contract.py"
+      ],
+      "sha256": "0eded8bf91612f8fb736307db5d999cce264b5cdba8a550f785a82a45ff60bdd",
+      "bytes": 5982
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/sync_adapters.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/sync_adapters.py"
+      ],
+      "sha256": "1d15631748159ad3d74073c50e48975db9f2164c8a784a623cf6001a40360452",
+      "bytes": 2818
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/native_plan.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/native_plan.py"
+      ],
+      "sha256": "a012f5d9d71f76878836e8b4bde9601216909a92fa47200d5c86c8da6503d551",
+      "bytes": 4172
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/native_delay.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/native_delay.py"
+      ],
+      "sha256": "e13caaf8a5eab4763997f395cf124a0d34f88ca349e3d72d5366303f03a25639",
+      "bytes": 3794
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/cpu_placement.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/cpu_placement.py"
+      ],
+      "sha256": "5718b458da2a27cc96663f662b85491dd2e95ecf348085ae7fe3a199d3b4c9d3",
+      "bytes": 2279
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/manifest.json",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/manifest.json"
+      ],
+      "sha256": "7d84316f7434ec4650accdf5d00f607c0387f5a5c0097b13c1973562f4e6edc6",
+      "bytes": 5159
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/native_runtime.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/native_runtime.py"
+      ],
+      "sha256": "36f0e9975fe7cecb06b5f6940d418a1ec60f560baee6a27e8cbc58ba59efc565",
+      "bytes": 4217
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/realtime_io.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/realtime_io.py"
+      ],
+      "sha256": "c8fb719944ccbc56bf7f25b896adba42be7325f94081626d13228bb49289327b",
+      "bytes": 3778
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/native_checks.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/native_checks.py"
+      ],
+      "sha256": "ac1a4f3963fddfc73372d1f49309faf8ab09b76e4d714cf737124aa665ce0594",
+      "bytes": 1391
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/live_support.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/live_support.py"
+      ],
+      "sha256": "46cbcd002339fc9b66fae29aca6eb14029f3eb9fcee357dc1fc65f8c6b1afcd6",
+      "bytes": 4560
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/native_properties.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/native_properties.py"
+      ],
+      "sha256": "74156459bfa6edfd752ce156f8cebb06db2305c366df57f5db4ec9e1916dc52a",
+      "bytes": 2866
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/recover_prior.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/recover_prior.py"
+      ],
+      "sha256": "47fe39f3585871453fa73812eab2e9a1eea4215c046f5cee368d9e9c0ba3e1bf",
+      "bytes": 3241
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/loop_ros.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/loop_ros.py"
+      ],
+      "sha256": "25a6c3fc804e88693f9884a9d293b186641c123219dae0106894698dfff28b09",
+      "bytes": 9831
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/native_backend.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/native_backend.py"
+      ],
+      "sha256": "925a8cbfe59727aa718f2611babb93a23f21fb01335573f1224fbe7856a0cd3b",
+      "bytes": 11256
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/native_session.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/native_session.py"
+      ],
+      "sha256": "296e676237c8c67ab46333f8ca6335a5e87274718b5f8d8c694ee316eb969c62",
+      "bytes": 14435
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/loop_sim.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/loop_sim.py"
+      ],
+      "sha256": "0a8a78fdf1ab193f0adfb8eeb9ca1f546ecadd6307fccd8ae1c5f001d4e9799c",
+      "bytes": 15376
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/native_ring.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/native_ring.py"
+      ],
+      "sha256": "14d4616374ae91511da98d3fd6e1bf253cfa411226081c88dea831b5d0bda5e9",
+      "bytes": 1633
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/shared_ssh.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/shared_ssh.py"
+      ],
+      "sha256": "a4936dd2de7e10073b74e0e7bac0dedf9c09885ba6a8c0d03a795cf98f0f0030",
+      "bytes": 5957
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/live_stream.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/live_stream.py"
+      ],
+      "sha256": "e1eb7f9d7daf320d6ff814b9830998ffb5118dd6624d186871e89af248a0f304",
+      "bytes": 3846
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/native_criteria.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/native_criteria.py"
+      ],
+      "sha256": "d5618631b30af4d8eb89215f1b1ddebe920a7acfff995d699c30b917e7731e90",
+      "bytes": 8486
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/network_diagnostics.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/network_diagnostics.py"
+      ],
+      "sha256": "0ba912dd240b4703bccb399ecfe1ef71ac077fbd9730424eedf36077ef744653",
+      "bytes": 1098
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/loop_evidence.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/loop_evidence.py"
+      ],
+      "sha256": "b29728c6fb14fed3690b900ceee619b51b735e074889b7a616e02d33e3ddfb14",
+      "bytes": 7803
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/review_v2.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/review_v2.py"
+      ],
+      "sha256": "3d477e9a248d23f831b1a038c0296fae4d32859bb02c3cb08bcf68a3102ae651",
+      "bytes": 5053
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/native_inference.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/native_inference.py"
+      ],
+      "sha256": "923e69d48eca1027ebeb64dfe9cf6dbf85813053fec2ea3245b45f6c44c92e5c",
+      "bytes": 7995
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/probe.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/probe.py"
+      ],
+      "sha256": "63628d0e8965b860c26ac88f24463d7fcc04409a3e809f4453bf5657943dc48c",
+      "bytes": 6031
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/native_preflight.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/native_preflight.py"
+      ],
+      "sha256": "27d1ed6440eb4a4673e6cea90434e49d0fd5d44e91cdfb2f23c725261971fde5",
+      "bytes": 736
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-live-v1/package/loop_ops.py",
+      "roles": [
+        "installed_package_source"
+      ],
+      "evidence": [
+        "056657aa36158fb81dca6fd2092e525222d6e632:experiments/stage12/native-live-v1/package/loop_ops.py"
+      ],
+      "sha256": "b0618b8313494feda62080bcc6d92f2e16f4ad61f5c5efe47c1fb08284fdfab3",
+      "bytes": 30928
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-pc-timeline-v1/package/manifest.json",
+      "roles": [
+        "baseline_manifest"
+      ],
+      "evidence": [
+        "inspected-code/native-live-v1/bootstrap.py"
+      ],
+      "sha256": "c320743d583532893a7d7069770f94cfaa6a0818afcc6dbcaa161dc9a61a3bc1"
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v2/runs/20261025T041428Z-9b2774b5/report.json",
+      "roles": [
+        "required_historical_report"
+      ],
+      "evidence": [
+        "inspected-code/native-live-v1/review_v2.py"
+      ],
+      "sha256": "39b91caa9b165ba3522ac7eef27f890824baed5a65a0fc52a71e4ff025efc6bd"
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-ros2-humble-v1/frozen-export/export-report.json",
+      "roles": [
+        "frozen_export"
+      ],
+      "evidence": [
+        "reports/native-live-v1-report.json/transfer"
+      ],
+      "sha256": "ccb2d23b52129b5fed70f24cf15970a5f5d08adc0cd7b5decebf3bf4f3dd4458"
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-push10-final6h-v1-client/returned/0cbee30e5a83904371076ca09a8cfb4afd1fa3f4/files/run/candidates/candidate-final.json",
+      "sha256": "7553870f3759addbf6aa3d3452cdfdefc731979f82d56f12a73ae10b79f57866",
+      "roles": [
+        "training_candidate_receipt"
+      ],
+      "evidence": [
+        "reports/native-live-v1-report.json/simulator/cases/0/checkpoint"
+      ]
+    }
+  ],
+  "read_only_scope": "SHA expectations from prior evidence; local current presence and backup coverage remain to collect",
+  "package_manifests": [
+    {
+      "path": "artifacts/double-balance-stage12/native-pc-timeline-v1/package/manifest.json",
+      "identity": "ba0b16e7acde7bc8484d9c9519c490110a3556fe528d9276f0cf611732456b54"
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v1/package/manifest.json",
+      "identity": "53f61712913533b880bf74cb8cdf7f21dc0ecb16a5a7e51fe82ac2c6903b2216"
+    }
+  ],
+  "historical_expansions": [
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v1/report.json",
+      "mode": "all_exports"
+    },
+    {
+      "path": "artifacts/double-balance-stage12/native-mujoco-v2/runs/20261025T041428Z-9b2774b5/report.json",
+      "mode": "timing_and_state"
+    }
+  ]
+}

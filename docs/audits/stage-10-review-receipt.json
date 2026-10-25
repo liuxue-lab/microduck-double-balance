@@ -1,0 +1,43 @@
+{
+  "status": "BATCH_A_REVIEW_COMPLETE_STAGE10_OPEN",
+  "reviewed_local_output": "/home/lx/microduck-double-balance/artifacts/double-balance-stage10/replay/20260930T221521Z-e410f3f1",
+  "source_zip_sha256": "fa051a71e2a0329cdf80cb125001fffe1b02cc30375e4c2b0db7e55be69103eb",
+  "returned_review_zip": "review-20261001T061125Z-75b299-part01.zip",
+  "returned_review_zip_sha256": "8c5ae3d437f22b685f8b4f528bcaf9939e85c94253ff2b16b54dc629336524f4",
+  "returned_manifest_verified": 117,
+  "source_frozen_files_rechecked": 101,
+  "evaluations_verified": 6,
+  "metric_samples_rechecked": 384000,
+  "pairwise_comparisons_verified": 15,
+  "float32_timers_reproduced_exactly": true,
+  "tf32_repair_plan_only_changed_script_sha": true,
+  "raw_full_trajectories_received": false,
+  "raw_full_trajectories_retained_on_laptop": true,
+  "primary_checkpoint_retained": true,
+  "new_ppo_updates": 0,
+  "cloud_gpu_hours": 0,
+  "cloud_contacted": false,
+  "cloud_manual_shutdown_status": "OFF_CONFIRMED_BY_USER",
+  "stage09_cloud_data_must_be_preserved": true,
+  "stage10_complete": false,
+  "local_commit_created_this_review": false,
+  "remote_push_performed": false,
+  "prohibited_changes_not_performed": [
+    "Stage 03 physics",
+    "Stage 04 task and acceptance",
+    "reward or constraints",
+    "tray removal",
+    "cloud power operations"
+  ],
+  "open_questions": [
+    "First 2 ms divergence source",
+    "Full reset/BAM/solver/observation/RNN state equivalence",
+    "Dynamic head-shell contact and support geometry",
+    "Migration observation normalization and reward/acceptance frame semantics"
+  ],
+  "official_documentation": {
+    "mesh_collision_hull": "https://mujoco.readthedocs.io/en/stable/XMLreference.html#asset-mesh",
+    "contact_parameters": "https://mujoco.readthedocs.io/en/stable/modeling.html#contact-parameters",
+    "contact_dimensions": "https://mujoco.readthedocs.io/en/stable/computation/index.html#condim"
+  }
+}

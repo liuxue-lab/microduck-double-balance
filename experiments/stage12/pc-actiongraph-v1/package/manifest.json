@@ -1,0 +1,37 @@
+{
+  "identity": "5c7513b74ecfef83be357883e921508a5c61fb402d3dde45fdde2d996c108cca",
+  "files": {
+    "action_contract.py": {
+      "bytes": 4149,
+      "sha256": "90d27dc933a2922bca7a7ce9eb8297362160ff3aa50f0645abee3b2a5c62ec92"
+    },
+    "action_graph.py": {
+      "bytes": 15363,
+      "sha256": "0ec286545773ceed9f26ca129a796a067c051941aa5e5030ef307ebc57ada387"
+    },
+    "action_ops.py": {
+      "bytes": 13732,
+      "sha256": "7bda8e9878e37bf9b28d7de5daaf041a5e1f9e0d55000d6e3c7e267d6966530e"
+    },
+    "action_worker.py": {
+      "bytes": 14149,
+      "sha256": "e7403411e9f05fc51e4f7f1a082f2bda312a0b9c541669b698a1fd94b56f40e5"
+    },
+    "auxiliary.py": {
+      "bytes": 3286,
+      "sha256": "7daf70cb370b42c7cb1f0b04e2134f5668a6315d18a0ab2a2912e3b0d2d241f7"
+    },
+    "bootstrap.py": {
+      "bytes": 1836,
+      "sha256": "1002d11aa8aaed4732c91ec1ab8921daa08362debbc4ba165a155c57c1ad7851"
+    },
+    "static_math.py": {
+      "bytes": 1952,
+      "sha256": "c04e656254a3b577d40a1a8854ec2d09734bdfdba059fd1fb30237745fb2583d"
+    },
+    "sync_adapters.py": {
+      "bytes": 2818,
+      "sha256": "1d15631748159ad3d74073c50e48975db9f2164c8a784a623cf6001a40360452"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "checks": [
+    "249 steps not enough",
+    "250th step passes only uninterrupted environment",
+    "single instability resets consecutive counter",
+    "manager snapshot survives event clearing private success",
+    "episode success latches after achieving 250 stable steps",
+    "dead workers allow finished read",
+    "all source bytes preserved",
+    "both model receipts verified",
+    "history grouped and positive successes retained",
+    "collector does not claim evaluation",
+    "completed run requires exhausted declared budget",
+    "early complete label does not falsely confirm exhausted run",
+    "active task collection only returns snapshot",
+    "unknown task preserved",
+    "corrupted model receipt rejected",
+    "outside checkpoint path rejected",
+    "symlink model rejected",
+    "live process identity parser checked with fixture",
+    "recycled PID identity rejected with fixture",
+    "missing process pin is unknown",
+    "watch only polls then collects once",
+    "collect during training returns immediate read-only status",
+    "original running controller unchanged"
+  ],
+  "scope": "Offline logical checks only; no Torch, GPU, simulator, evaluation or PPO",
+  "metric_counter_reset_bug_found": false,
+  "cloud_changes": 0,
+  "PPO_updates": 0,
+  "simulation_steps": 0
+}

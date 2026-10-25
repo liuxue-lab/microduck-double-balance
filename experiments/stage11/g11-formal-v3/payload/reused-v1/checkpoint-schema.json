@@ -1,0 +1,1504 @@
+{
+  "checkpoint": {
+    "keys": [
+      "actor_state_dict",
+      "critic_state_dict",
+      "optimizer_state_dict",
+      "iter",
+      "infos"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.actor_state_dict": {
+    "keys": [
+      "obs_normalizer._mean",
+      "obs_normalizer._var",
+      "obs_normalizer._std",
+      "obs_normalizer.count",
+      "distribution.std_param",
+      "mlp.0.weight",
+      "mlp.0.bias",
+      "mlp.2.weight",
+      "mlp.2.bias",
+      "mlp.4.weight",
+      "mlp.4.bias",
+      "mlp.6.weight",
+      "mlp.6.bias",
+      "rnn.rnn.weight_ih_l0",
+      "rnn.rnn.weight_hh_l0",
+      "rnn.rnn.bias_ih_l0",
+      "rnn.rnn.bias_hh_l0"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.actor_state_dict.distribution.std_param": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "030cfa42b09b0bf0c3ddd6557a28abede5db6c74126ef274ed7de6aa939154be",
+    "shape": [
+      14
+    ]
+  },
+  "checkpoint.actor_state_dict.mlp.0.bias": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "450ce5f2155eac9e71017a9461ad7e49f14c6f1b1fec2991cbbbf74efd584880",
+    "shape": [
+      512
+    ]
+  },
+  "checkpoint.actor_state_dict.mlp.0.weight": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "932b452aed6786336466eae0c00451012bea87675632af715c5aa4fcdf64f2c0",
+    "shape": [
+      512,
+      256
+    ]
+  },
+  "checkpoint.actor_state_dict.mlp.2.bias": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "715d108bc611a927bbc94d260d8fdc8b227f1854f082ab2c8b336543357b730f",
+    "shape": [
+      256
+    ]
+  },
+  "checkpoint.actor_state_dict.mlp.2.weight": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "fc021bea72f951d9f13bfae60a959072d29ef994f308d207b64ef3e593339553",
+    "shape": [
+      256,
+      512
+    ]
+  },
+  "checkpoint.actor_state_dict.mlp.4.bias": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "5fbdab249bec51f89e1fc03536b02d6e32221b8477e1441e5b99ba6a4263b295",
+    "shape": [
+      128
+    ]
+  },
+  "checkpoint.actor_state_dict.mlp.4.weight": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "cf0bb6e86f929e5de40cdb2ccb325fca2cc4800a045879ed157f21efef7b3170",
+    "shape": [
+      128,
+      256
+    ]
+  },
+  "checkpoint.actor_state_dict.mlp.6.bias": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "af51a8df16882207380603e1deba7479fba5bed475612dfb39f57e336fcdae17",
+    "shape": [
+      14
+    ]
+  },
+  "checkpoint.actor_state_dict.mlp.6.weight": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "e7f512a5b3aad0b82df0d5854247e24ef22e9d3d0cd05e1b6827d9fb690838a3",
+    "shape": [
+      14,
+      128
+    ]
+  },
+  "checkpoint.actor_state_dict.obs_normalizer._mean": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "fd9d015e6b3ecc0b07c2122a7f19c0e63e78060426192f28ecdf3232b63338b2",
+    "shape": [
+      1,
+      61
+    ]
+  },
+  "checkpoint.actor_state_dict.obs_normalizer._std": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "01d0de394ef29b50877f9c355f3bd76b27c47f6b82a2dc7d157b3081e501abb3",
+    "shape": [
+      1,
+      61
+    ]
+  },
+  "checkpoint.actor_state_dict.obs_normalizer._var": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "c4efeed930cbe6b178052b4aab1a6bc0a4e54df27c38205797221124d1fca962",
+    "shape": [
+      1,
+      61
+    ]
+  },
+  "checkpoint.actor_state_dict.obs_normalizer.count": {
+    "dtype": "torch.int64",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "5a9acb1cb7e073331b18689d0b362c702438cad3187add751e70edc61fe1b67c",
+    "shape": []
+  },
+  "checkpoint.actor_state_dict.rnn.rnn.bias_hh_l0": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "51119319539f2cffc1a34570bedef5948b03563722ab07c07ea9292e1b693687",
+    "shape": [
+      1024
+    ]
+  },
+  "checkpoint.actor_state_dict.rnn.rnn.bias_ih_l0": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "92a797f1bd3b5a1832b9a5b2e852c136beb5d1beaf75132f75bc1321defc7656",
+    "shape": [
+      1024
+    ]
+  },
+  "checkpoint.actor_state_dict.rnn.rnn.weight_hh_l0": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "cfb035fb0db98bcc46c02b0b06536649d681197842a1f5607b676f291b4cb9fe",
+    "shape": [
+      1024,
+      256
+    ]
+  },
+  "checkpoint.actor_state_dict.rnn.rnn.weight_ih_l0": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "f74f13b7abf9fa0f021c95250aa9b948ae2799cc437e0b3cfb3345d0978385cb",
+    "shape": [
+      1024,
+      61
+    ]
+  },
+  "checkpoint.critic_state_dict": {
+    "keys": [
+      "obs_normalizer._mean",
+      "obs_normalizer._var",
+      "obs_normalizer._std",
+      "obs_normalizer.count",
+      "mlp.0.weight",
+      "mlp.0.bias",
+      "mlp.2.weight",
+      "mlp.2.bias",
+      "mlp.4.weight",
+      "mlp.4.bias",
+      "mlp.6.weight",
+      "mlp.6.bias"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.critic_state_dict.mlp.0.bias": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "5cf7d0f33405fa430fafcc102d08b1486f7555da8d10ab6a4a6f43ce69748436",
+    "shape": [
+      512
+    ]
+  },
+  "checkpoint.critic_state_dict.mlp.0.weight": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "de449fcf0f1945da588159acaabf6b4ffe0be6eaa463bd7cd94583f3cd93be92",
+    "shape": [
+      512,
+      85
+    ]
+  },
+  "checkpoint.critic_state_dict.mlp.2.bias": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "98f665bb7975d9969abf252a3be64249aee28f1edcd2d17045d9f3073f5f321f",
+    "shape": [
+      256
+    ]
+  },
+  "checkpoint.critic_state_dict.mlp.2.weight": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "43998e5e996f1abc2de2df9c33394e8a2d6877689ed5fec494370e3d1d8c2e24",
+    "shape": [
+      256,
+      512
+    ]
+  },
+  "checkpoint.critic_state_dict.mlp.4.bias": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "f5b07bb988845f34b11510679bc2515b89ab8d50d385244e60c9e70215501941",
+    "shape": [
+      128
+    ]
+  },
+  "checkpoint.critic_state_dict.mlp.4.weight": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "9c61a299876911d8a50259b66202b9e31d0f8a8299d37882dd338a7f51a52330",
+    "shape": [
+      128,
+      256
+    ]
+  },
+  "checkpoint.critic_state_dict.mlp.6.bias": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "f28d63502c87b5cb7f2fea1314325c2f5ed5e74102065a7e35973956f3383d4c",
+    "shape": [
+      1
+    ]
+  },
+  "checkpoint.critic_state_dict.mlp.6.weight": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "252429cc7e192e2e00529e6994a2528045a175334f4d49cbeb3ba4238b3959c5",
+    "shape": [
+      1,
+      128
+    ]
+  },
+  "checkpoint.critic_state_dict.obs_normalizer._mean": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "56ad099d7fba9f319456a79c67357c180219cf87736949d230772a1f0278c1bb",
+    "shape": [
+      1,
+      85
+    ]
+  },
+  "checkpoint.critic_state_dict.obs_normalizer._std": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "d3d199d131916192797c4f528353d741845e1fe496c5a0f988e78f9db89c5839",
+    "shape": [
+      1,
+      85
+    ]
+  },
+  "checkpoint.critic_state_dict.obs_normalizer._var": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "eaf072d627308247c4d62e157504451406a4e996ff366f01c5706b26103bf744",
+    "shape": [
+      1,
+      85
+    ]
+  },
+  "checkpoint.critic_state_dict.obs_normalizer.count": {
+    "dtype": "torch.int64",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "5a9acb1cb7e073331b18689d0b362c702438cad3187add751e70edc61fe1b67c",
+    "shape": []
+  },
+  "checkpoint.infos": {
+    "keys": [
+      "stage08",
+      "env_state"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.infos.env_state": {
+    "keys": [
+      "common_step_counter"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.infos.env_state.common_step_counter": {
+    "kind": "int",
+    "value": 120000
+  },
+  "checkpoint.infos.stage08": {
+    "keys": [
+      "schema_version",
+      "task_id",
+      "baseline_commit",
+      "source_sha256",
+      "git_head",
+      "purpose",
+      "campaign_id",
+      "profile",
+      "profile_record",
+      "seed",
+      "num_envs",
+      "source_completed_updates",
+      "experiment_completed_updates",
+      "lineage_completed_updates",
+      "last_completed_iteration",
+      "next_iteration",
+      "common_step_counter",
+      "sim_step_counter",
+      "expected_adam_steps",
+      "experiment_transitions",
+      "learning_rate",
+      "hold_levels",
+      "level",
+      "hold",
+      "exact_trajectory_resume",
+      "resume_rule",
+      "live_profile"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.infos.stage08.baseline_commit": {
+    "kind": "str",
+    "value": "1fe5f54dc467205b846a807f2bd494c46f3e2c40"
+  },
+  "checkpoint.infos.stage08.campaign_id": {
+    "kind": "str",
+    "value": "08b6a999-c815-4afc-a99a-b6ac07fd587f"
+  },
+  "checkpoint.infos.stage08.common_step_counter": {
+    "kind": "int",
+    "value": 120000
+  },
+  "checkpoint.infos.stage08.exact_trajectory_resume": {
+    "kind": "bool",
+    "value": false
+  },
+  "checkpoint.infos.stage08.expected_adam_steps": {
+    "kind": "int",
+    "value": 100000
+  },
+  "checkpoint.infos.stage08.experiment_completed_updates": {
+    "kind": "int",
+    "value": 4000
+  },
+  "checkpoint.infos.stage08.experiment_transitions": {
+    "kind": "int",
+    "value": 393216000
+  },
+  "checkpoint.infos.stage08.git_head": {
+    "kind": "str",
+    "value": "61060f0684aabb460727a0d226b8d17225ee7954"
+  },
+  "checkpoint.infos.stage08.hold": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+    "shape": [
+      4096
+    ]
+  },
+  "checkpoint.infos.stage08.hold_levels": {
+    "kind": "list",
+    "length": 6
+  },
+  "checkpoint.infos.stage08.hold_levels.0": {
+    "kind": "float",
+    "value": 1.0
+  },
+  "checkpoint.infos.stage08.hold_levels.1": {
+    "kind": "float",
+    "value": 0.5
+  },
+  "checkpoint.infos.stage08.hold_levels.2": {
+    "kind": "float",
+    "value": 0.25
+  },
+  "checkpoint.infos.stage08.hold_levels.3": {
+    "kind": "float",
+    "value": 0.1
+  },
+  "checkpoint.infos.stage08.hold_levels.4": {
+    "kind": "float",
+    "value": 0.03
+  },
+  "checkpoint.infos.stage08.hold_levels.5": {
+    "kind": "float",
+    "value": 0.0
+  },
+  "checkpoint.infos.stage08.last_completed_iteration": {
+    "kind": "int",
+    "value": 4999
+  },
+  "checkpoint.infos.stage08.learning_rate": {
+    "kind": "float",
+    "value": 5.062500000000001e-05
+  },
+  "checkpoint.infos.stage08.level": {
+    "dtype": "torch.int64",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "cff4b8a6f075e18dfb2f0cccbb00642144c033948f8017b4f1be40dc4b175b1a",
+    "shape": [
+      4096
+    ]
+  },
+  "checkpoint.infos.stage08.lineage_completed_updates": {
+    "kind": "int",
+    "value": 5000
+  },
+  "checkpoint.infos.stage08.live_profile": {
+    "keys": [
+      "curricula",
+      "zero_command_fraction",
+      "action_rate_weight",
+      "com_range",
+      "head_com_range",
+      "standing_fraction_setting"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.infos.stage08.live_profile.action_rate_weight": {
+    "kind": "float",
+    "value": -0.4
+  },
+  "checkpoint.infos.stage08.live_profile.com_range": {
+    "kind": "list",
+    "length": 2
+  },
+  "checkpoint.infos.stage08.live_profile.com_range.0": {
+    "kind": "float",
+    "value": -0.005
+  },
+  "checkpoint.infos.stage08.live_profile.com_range.1": {
+    "kind": "float",
+    "value": 0.005
+  },
+  "checkpoint.infos.stage08.live_profile.curricula": {
+    "kind": "list",
+    "length": 0
+  },
+  "checkpoint.infos.stage08.live_profile.head_com_range": {
+    "kind": "list",
+    "length": 2
+  },
+  "checkpoint.infos.stage08.live_profile.head_com_range.0": {
+    "kind": "float",
+    "value": -0.005
+  },
+  "checkpoint.infos.stage08.live_profile.head_com_range.1": {
+    "kind": "float",
+    "value": 0.005
+  },
+  "checkpoint.infos.stage08.live_profile.standing_fraction_setting": {
+    "kind": "float",
+    "value": 1.0
+  },
+  "checkpoint.infos.stage08.live_profile.zero_command_fraction": {
+    "kind": "float",
+    "value": 1.0
+  },
+  "checkpoint.infos.stage08.next_iteration": {
+    "kind": "int",
+    "value": 5000
+  },
+  "checkpoint.infos.stage08.num_envs": {
+    "kind": "int",
+    "value": 4096
+  },
+  "checkpoint.infos.stage08.profile": {
+    "kind": "str",
+    "value": "E"
+  },
+  "checkpoint.infos.stage08.profile_record": {
+    "keys": [
+      "schema_version",
+      "name",
+      "zero_command",
+      "fixed_action_rate",
+      "fixed_com",
+      "zero_assistance"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.infos.stage08.profile_record.fixed_action_rate": {
+    "kind": "bool",
+    "value": true
+  },
+  "checkpoint.infos.stage08.profile_record.fixed_com": {
+    "kind": "bool",
+    "value": true
+  },
+  "checkpoint.infos.stage08.profile_record.name": {
+    "kind": "str",
+    "value": "E"
+  },
+  "checkpoint.infos.stage08.profile_record.schema_version": {
+    "kind": "int",
+    "value": 1
+  },
+  "checkpoint.infos.stage08.profile_record.zero_assistance": {
+    "kind": "bool",
+    "value": true
+  },
+  "checkpoint.infos.stage08.profile_record.zero_command": {
+    "kind": "bool",
+    "value": true
+  },
+  "checkpoint.infos.stage08.purpose": {
+    "kind": "str",
+    "value": "formal"
+  },
+  "checkpoint.infos.stage08.resume_rule": {
+    "kind": "str",
+    "value": "new episodes/RNG/hidden state; retain optimizer/LR/progress/assistance"
+  },
+  "checkpoint.infos.stage08.schema_version": {
+    "kind": "int",
+    "value": 1
+  },
+  "checkpoint.infos.stage08.seed": {
+    "kind": "int",
+    "value": 20260929
+  },
+  "checkpoint.infos.stage08.sim_step_counter": {
+    "kind": "int",
+    "value": 1200000
+  },
+  "checkpoint.infos.stage08.source_completed_updates": {
+    "kind": "int",
+    "value": 1000
+  },
+  "checkpoint.infos.stage08.source_sha256": {
+    "kind": "str",
+    "value": "c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7"
+  },
+  "checkpoint.infos.stage08.task_id": {
+    "kind": "str",
+    "value": "Mjlab-DoubleBalance-MicroDuck"
+  },
+  "checkpoint.iter": {
+    "kind": "int",
+    "value": 4999
+  },
+  "checkpoint.optimizer_state_dict": {
+    "keys": [
+      "state",
+      "param_groups"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.param_groups": {
+    "kind": "list",
+    "length": 1
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0": {
+    "keys": [
+      "lr",
+      "betas",
+      "eps",
+      "weight_decay",
+      "amsgrad",
+      "maximize",
+      "foreach",
+      "capturable",
+      "differentiable",
+      "fused",
+      "decoupled_weight_decay",
+      "params"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.amsgrad": {
+    "kind": "bool",
+    "value": false
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.betas": {
+    "kind": "tuple",
+    "length": 2
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.betas.0": {
+    "kind": "float",
+    "value": 0.9
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.betas.1": {
+    "kind": "float",
+    "value": 0.999
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.capturable": {
+    "kind": "bool",
+    "value": false
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.decoupled_weight_decay": {
+    "kind": "bool",
+    "value": false
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.differentiable": {
+    "kind": "bool",
+    "value": false
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.eps": {
+    "kind": "float",
+    "value": 1e-08
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.foreach": {
+    "kind": "NoneType",
+    "value": null
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.fused": {
+    "kind": "NoneType",
+    "value": null
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.lr": {
+    "kind": "float",
+    "value": 5.062500000000001e-05
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.maximize": {
+    "kind": "bool",
+    "value": false
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params": {
+    "kind": "list",
+    "length": 21
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params.0": {
+    "kind": "int",
+    "value": 0
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params.1": {
+    "kind": "int",
+    "value": 1
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params.10": {
+    "kind": "int",
+    "value": 10
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params.11": {
+    "kind": "int",
+    "value": 11
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params.12": {
+    "kind": "int",
+    "value": 12
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params.13": {
+    "kind": "int",
+    "value": 13
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params.14": {
+    "kind": "int",
+    "value": 14
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params.15": {
+    "kind": "int",
+    "value": 15
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params.16": {
+    "kind": "int",
+    "value": 16
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params.17": {
+    "kind": "int",
+    "value": 17
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params.18": {
+    "kind": "int",
+    "value": 18
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params.19": {
+    "kind": "int",
+    "value": 19
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params.2": {
+    "kind": "int",
+    "value": 2
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params.20": {
+    "kind": "int",
+    "value": 20
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params.3": {
+    "kind": "int",
+    "value": 3
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params.4": {
+    "kind": "int",
+    "value": 4
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params.5": {
+    "kind": "int",
+    "value": 5
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params.6": {
+    "kind": "int",
+    "value": 6
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params.7": {
+    "kind": "int",
+    "value": 7
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params.8": {
+    "kind": "int",
+    "value": 8
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.params.9": {
+    "kind": "int",
+    "value": 9
+  },
+  "checkpoint.optimizer_state_dict.param_groups.0.weight_decay": {
+    "kind": "int",
+    "value": 0
+  },
+  "checkpoint.optimizer_state_dict.state": {
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.0": {
+    "keys": [
+      "step",
+      "exp_avg",
+      "exp_avg_sq"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.0.exp_avg": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "36bdef38855343a702c6d169360298c5b149cd4073fe5f8b5b7128de0c1875b8",
+    "shape": [
+      14
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.0.exp_avg_sq": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "cdb0a5b9979a33918b4a1015ae0ec6335db86b8d65da32a93bdb813221a719ef",
+    "shape": [
+      14
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.0.step": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "79570bd9722fc4a8f0f0b8db6aa3c9ed1b4e3b0f9e28e7b6a0aecc641249c31a",
+    "shape": []
+  },
+  "checkpoint.optimizer_state_dict.state.1": {
+    "keys": [
+      "step",
+      "exp_avg",
+      "exp_avg_sq"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.1.exp_avg": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "3796b9b05d60913fba08f20a61b4067531a7516e94701cbf4f88a3f9eb92a79b",
+    "shape": [
+      512,
+      256
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.1.exp_avg_sq": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "598fec6ce84692b50e59838ddc069da0c78b46af2528b68d713526ff4dd4744c",
+    "shape": [
+      512,
+      256
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.1.step": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "79570bd9722fc4a8f0f0b8db6aa3c9ed1b4e3b0f9e28e7b6a0aecc641249c31a",
+    "shape": []
+  },
+  "checkpoint.optimizer_state_dict.state.10": {
+    "keys": [
+      "step",
+      "exp_avg",
+      "exp_avg_sq"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.10.exp_avg": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "17366ae67e3f05999290c76495e7430898ffdb2f6d07df6c0658cfb7c262b8fc",
+    "shape": [
+      1024,
+      256
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.10.exp_avg_sq": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "360fcccbea855934ad628e2889a2c314249715b3a2171d1a20cc02241e1d261a",
+    "shape": [
+      1024,
+      256
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.10.step": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "79570bd9722fc4a8f0f0b8db6aa3c9ed1b4e3b0f9e28e7b6a0aecc641249c31a",
+    "shape": []
+  },
+  "checkpoint.optimizer_state_dict.state.11": {
+    "keys": [
+      "step",
+      "exp_avg",
+      "exp_avg_sq"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.11.exp_avg": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "fd55a392d32c6a9fa9380b492d732e278b3ca7f24de98a02aaee1f2f0f889af6",
+    "shape": [
+      1024
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.11.exp_avg_sq": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "7b4be1a95dd10fb222c320e8cefa29d9098efcce192d1cc8019824f206bf86f2",
+    "shape": [
+      1024
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.11.step": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "79570bd9722fc4a8f0f0b8db6aa3c9ed1b4e3b0f9e28e7b6a0aecc641249c31a",
+    "shape": []
+  },
+  "checkpoint.optimizer_state_dict.state.12": {
+    "keys": [
+      "step",
+      "exp_avg",
+      "exp_avg_sq"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.12.exp_avg": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "fd55a392d32c6a9fa9380b492d732e278b3ca7f24de98a02aaee1f2f0f889af6",
+    "shape": [
+      1024
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.12.exp_avg_sq": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "7b4be1a95dd10fb222c320e8cefa29d9098efcce192d1cc8019824f206bf86f2",
+    "shape": [
+      1024
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.12.step": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "79570bd9722fc4a8f0f0b8db6aa3c9ed1b4e3b0f9e28e7b6a0aecc641249c31a",
+    "shape": []
+  },
+  "checkpoint.optimizer_state_dict.state.13": {
+    "keys": [
+      "step",
+      "exp_avg",
+      "exp_avg_sq"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.13.exp_avg": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "552d2141e97a2ef624641ea61d856dfc7c9525e5f47a90c9217d6b7611f72d88",
+    "shape": [
+      512,
+      85
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.13.exp_avg_sq": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "72200487e748de68991ca00ab4fd48cb905446d149b4ce553c765cd601dd3d8d",
+    "shape": [
+      512,
+      85
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.13.step": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "79570bd9722fc4a8f0f0b8db6aa3c9ed1b4e3b0f9e28e7b6a0aecc641249c31a",
+    "shape": []
+  },
+  "checkpoint.optimizer_state_dict.state.14": {
+    "keys": [
+      "step",
+      "exp_avg",
+      "exp_avg_sq"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.14.exp_avg": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "300e0f475b02f091b284e8998b85126629759a044a71927773b8ee1f36b8d641",
+    "shape": [
+      512
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.14.exp_avg_sq": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "c26915354f8fd0d83d146c67b297bc481e466e58a43c06b9c97235ddf635cf78",
+    "shape": [
+      512
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.14.step": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "79570bd9722fc4a8f0f0b8db6aa3c9ed1b4e3b0f9e28e7b6a0aecc641249c31a",
+    "shape": []
+  },
+  "checkpoint.optimizer_state_dict.state.15": {
+    "keys": [
+      "step",
+      "exp_avg",
+      "exp_avg_sq"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.15.exp_avg": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "9246886cd606a1692f019e3c9bd5a65d960a909e72b891a816e2ca956e3b7dc7",
+    "shape": [
+      256,
+      512
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.15.exp_avg_sq": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "c23723eaf424afaa0e2a46fa233ed0fdf76d48574e29e3fabe4e1a4b3291aaec",
+    "shape": [
+      256,
+      512
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.15.step": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "79570bd9722fc4a8f0f0b8db6aa3c9ed1b4e3b0f9e28e7b6a0aecc641249c31a",
+    "shape": []
+  },
+  "checkpoint.optimizer_state_dict.state.16": {
+    "keys": [
+      "step",
+      "exp_avg",
+      "exp_avg_sq"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.16.exp_avg": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "e595924ca1932253df4e54ede4fb156d9fac2b8d8957ee2cd3e2890d29608429",
+    "shape": [
+      256
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.16.exp_avg_sq": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "966ca41cd4c54ff92741ca36ac339b4d141003c55aab5b0c8fe4e3ba148ee500",
+    "shape": [
+      256
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.16.step": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "79570bd9722fc4a8f0f0b8db6aa3c9ed1b4e3b0f9e28e7b6a0aecc641249c31a",
+    "shape": []
+  },
+  "checkpoint.optimizer_state_dict.state.17": {
+    "keys": [
+      "step",
+      "exp_avg",
+      "exp_avg_sq"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.17.exp_avg": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "95e21ba55c615a7876c246241500292622a8403f241ac4d817c3f37ee336dfad",
+    "shape": [
+      128,
+      256
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.17.exp_avg_sq": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "0f0548a3ed2f73e32ccbc5c0fdeacfc17d3ff8d4aec923f2ebae38e2d5abc78f",
+    "shape": [
+      128,
+      256
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.17.step": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "79570bd9722fc4a8f0f0b8db6aa3c9ed1b4e3b0f9e28e7b6a0aecc641249c31a",
+    "shape": []
+  },
+  "checkpoint.optimizer_state_dict.state.18": {
+    "keys": [
+      "step",
+      "exp_avg",
+      "exp_avg_sq"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.18.exp_avg": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "3537166d11272613dd4acfbbd3bcffe7735c8441803cc4c301c894f3d2244f1f",
+    "shape": [
+      128
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.18.exp_avg_sq": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "d7865dab83243dd565c14c3df1df429e1a2654dc2a4c7f87f400ff145734b3f3",
+    "shape": [
+      128
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.18.step": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "79570bd9722fc4a8f0f0b8db6aa3c9ed1b4e3b0f9e28e7b6a0aecc641249c31a",
+    "shape": []
+  },
+  "checkpoint.optimizer_state_dict.state.19": {
+    "keys": [
+      "step",
+      "exp_avg",
+      "exp_avg_sq"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.19.exp_avg": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "b4c2be850f2ba5cc1dd5b401e5e484739a57fa35105cb9122400eae5288efce3",
+    "shape": [
+      1,
+      128
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.19.exp_avg_sq": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "74d6c63bc6cc6452cad93e2ae6fa7feef5ae7630eed7cbb5efd91fdc1076a525",
+    "shape": [
+      1,
+      128
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.19.step": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "79570bd9722fc4a8f0f0b8db6aa3c9ed1b4e3b0f9e28e7b6a0aecc641249c31a",
+    "shape": []
+  },
+  "checkpoint.optimizer_state_dict.state.2": {
+    "keys": [
+      "step",
+      "exp_avg",
+      "exp_avg_sq"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.2.exp_avg": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "d8f784e7b4c6d453889043e418ca8de79ffc4b94ddc8c9d7713cde3efa583e1c",
+    "shape": [
+      512
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.2.exp_avg_sq": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "14c32334e681415f15a052cf13a6f083105075653931da6c3df54f2e2e3c10b1",
+    "shape": [
+      512
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.2.step": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "79570bd9722fc4a8f0f0b8db6aa3c9ed1b4e3b0f9e28e7b6a0aecc641249c31a",
+    "shape": []
+  },
+  "checkpoint.optimizer_state_dict.state.20": {
+    "keys": [
+      "step",
+      "exp_avg",
+      "exp_avg_sq"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.20.exp_avg": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "cc66d663b03f963d61436ea0950e9067b8205f89128314e227f0d5ac5d9b9c8e",
+    "shape": [
+      1
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.20.exp_avg_sq": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "8df1024a9420615fadbeb4a4d025746a5b84219a9427f39604bf5e0975f80e26",
+    "shape": [
+      1
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.20.step": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "79570bd9722fc4a8f0f0b8db6aa3c9ed1b4e3b0f9e28e7b6a0aecc641249c31a",
+    "shape": []
+  },
+  "checkpoint.optimizer_state_dict.state.3": {
+    "keys": [
+      "step",
+      "exp_avg",
+      "exp_avg_sq"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.3.exp_avg": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "12f481df823c675ea2bc87e884dbf8a044e6bfccdb44fdca2ac4b594de1943b8",
+    "shape": [
+      256,
+      512
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.3.exp_avg_sq": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "216810b8ffd7c67c135bba5965c0672bcf6c3c3293349a555c84afeafbdaa459",
+    "shape": [
+      256,
+      512
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.3.step": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "79570bd9722fc4a8f0f0b8db6aa3c9ed1b4e3b0f9e28e7b6a0aecc641249c31a",
+    "shape": []
+  },
+  "checkpoint.optimizer_state_dict.state.4": {
+    "keys": [
+      "step",
+      "exp_avg",
+      "exp_avg_sq"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.4.exp_avg": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "6c485256a5fe47fed7fe42c5a7240c25f6418befad1de320d6f7e2d62280a473",
+    "shape": [
+      256
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.4.exp_avg_sq": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "d59a34d6380eac2069d8983259ad4461b5990bb337aa977187e7cf25d387783b",
+    "shape": [
+      256
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.4.step": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "79570bd9722fc4a8f0f0b8db6aa3c9ed1b4e3b0f9e28e7b6a0aecc641249c31a",
+    "shape": []
+  },
+  "checkpoint.optimizer_state_dict.state.5": {
+    "keys": [
+      "step",
+      "exp_avg",
+      "exp_avg_sq"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.5.exp_avg": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "eb09b3d79c18529c2fc53c604647da027a08e3dd62c3e3a012aa8c4029b4f011",
+    "shape": [
+      128,
+      256
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.5.exp_avg_sq": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "379dd6d10e947476e57f804662018500557a91f3756933c4783abae14a347510",
+    "shape": [
+      128,
+      256
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.5.step": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "79570bd9722fc4a8f0f0b8db6aa3c9ed1b4e3b0f9e28e7b6a0aecc641249c31a",
+    "shape": []
+  },
+  "checkpoint.optimizer_state_dict.state.6": {
+    "keys": [
+      "step",
+      "exp_avg",
+      "exp_avg_sq"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.6.exp_avg": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "77f5c2b6332b62162d42751df852764c07635dfa0ce8976787123be653cdf62b",
+    "shape": [
+      128
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.6.exp_avg_sq": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "3ed3ddf7a3b17cc96e5e9dd1a1bf5427c83737322add8be36ee2f63eca016544",
+    "shape": [
+      128
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.6.step": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "79570bd9722fc4a8f0f0b8db6aa3c9ed1b4e3b0f9e28e7b6a0aecc641249c31a",
+    "shape": []
+  },
+  "checkpoint.optimizer_state_dict.state.7": {
+    "keys": [
+      "step",
+      "exp_avg",
+      "exp_avg_sq"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.7.exp_avg": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "2fa4071b7608e60f2b1f2e36175a3231cd33cd50f362e46173de6fa68307c574",
+    "shape": [
+      14,
+      128
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.7.exp_avg_sq": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "2cd021ec57dd23519d45adab9b0f99b933979b62b72968325c505404e9adb367",
+    "shape": [
+      14,
+      128
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.7.step": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "79570bd9722fc4a8f0f0b8db6aa3c9ed1b4e3b0f9e28e7b6a0aecc641249c31a",
+    "shape": []
+  },
+  "checkpoint.optimizer_state_dict.state.8": {
+    "keys": [
+      "step",
+      "exp_avg",
+      "exp_avg_sq"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.8.exp_avg": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "103f09e7f05c8dddf5300bbcf929e29210f3f1cb35ee3b0182a52c53405876cc",
+    "shape": [
+      14
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.8.exp_avg_sq": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "ab349f5d5dccb2e95fadd1f65f6ef662eb874ac3e20058907453d073f9a84b02",
+    "shape": [
+      14
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.8.step": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "79570bd9722fc4a8f0f0b8db6aa3c9ed1b4e3b0f9e28e7b6a0aecc641249c31a",
+    "shape": []
+  },
+  "checkpoint.optimizer_state_dict.state.9": {
+    "keys": [
+      "step",
+      "exp_avg",
+      "exp_avg_sq"
+    ],
+    "kind": "mapping"
+  },
+  "checkpoint.optimizer_state_dict.state.9.exp_avg": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "e5a952314b547907c9600d39852bd0c3b53d212d3d7632b3a41e148a3e8dc526",
+    "shape": [
+      1024,
+      61
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.9.exp_avg_sq": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "144f7dc038d9868197de969d4fca54462b53d44022a8e0f4da8d0e66d8d6db01",
+    "shape": [
+      1024,
+      61
+    ]
+  },
+  "checkpoint.optimizer_state_dict.state.9.step": {
+    "dtype": "torch.float32",
+    "finite": true,
+    "kind": "tensor",
+    "sha256": "79570bd9722fc4a8f0f0b8db6aa3c9ed1b4e3b0f9e28e7b6a0aecc641249c31a",
+    "shape": []
+  }
+}

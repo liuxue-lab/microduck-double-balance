@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "stage": 8,
+  "status": "LOCAL_REPRODUCTION_AND_FIX_PASS_CLOUD_RETRY_PENDING",
+  "evidence_time": "2026-09-29T19:26:21+08:00",
+  "source": "User-provided cloud traceback plus installed locked dependency source",
+  "observed_cloud": {
+    "host": "connect.bjb1.seetacloud.com:41381",
+    "clone_deployment_transferred": true,
+    "reference_checkpoint_hashes_pass": true,
+    "formal_training_started": false,
+    "capacity_pass": false,
+    "failure_site": "train_worker capacity post-training runner.load(final_checkpoint)",
+    "buffer": "RNNModel.obs_normalizer._std",
+    "actor_shape": [1, 61],
+    "error": "Inplace update to inference tensor outside InferenceMode is not allowed",
+    "failed_profile": "Not identified by the provided traceback",
+    "throughput_and_memory": "Await complete cloud training.json/gpu-samples.jsonl"
+  },
+  "cause": {
+    "rsl_rl_version": "5.0.1",
+    "runner_rollout_uses_inference_mode": true,
+    "normalization_update_replaces_std_with_sqrt_var": true,
+    "same_runner_strict_reload_mutates_inference_buffer": true,
+    "official_reference": "https://github.com/pytorch/rfcs/blob/3a382f1ab6e5ee0c31204c3eed99e4b69a80d3e1/RFC-0011-InferenceMode.md"
+  },
+  "fix": {
+    "clone_only_inference_normalizer_buffers_outside_inference_mode": true,
+    "strict_registered_runner_load_retained": true,
+    "model_parameter_identity_preserved": true,
+    "optimizer_loaded_outside_inference_mode": true,
+    "checkpoint_keys_or_values_changed": false,
+    "physics_task_reward_dependencies_changed": false,
+    "stage06_smoke_rerun": false,
+    "existing_cloud_budget_reused": true,
+    "old_failed_capacity_directory_preserved": true,
+    "retry_from_capacity_checkpoint": false,
+    "source_checkpoint": "Stage 07 update 1000",
+    "formal_training_autostart": false
+  },
+  "validation": {
+    "torch": "2.9.1+cpu",
+    "rsl_rl": "5.0.1",
+    "mjlab": "1.3.0",
+    "real_registered_loader_reproduces_original_failure": true,
+    "new_regressions": 4,
+    "combined_test_result": "23 passed in 11.53s",
+    "cpu_ppo_rollout_executed": false,
+    "cloud_retry_pass_observed": false,
+    "checks": [
+      "normal and nested inference caller contexts",
+      "strict actor/critic keys",
+      "exact actor/critic weights and normalization buffers",
+      "exact Adam moments, step, learning rate and parameter identity",
+      "saved iteration and common_step_counter",
+      "subsequent synthetic Adam step"
+    ]
+  }
+}

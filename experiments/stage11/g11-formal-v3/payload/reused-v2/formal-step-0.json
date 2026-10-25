@@ -1,0 +1,3011 @@
+{
+  "actual_calls": {
+    "Action_apply_attempted": 10,
+    "Action_apply_completed": 10,
+    "Action_process_action_attempted": 1,
+    "Action_process_action_completed": 1,
+    "Action_reset_attempted": 0,
+    "Action_reset_completed": 0,
+    "BAM_apply_delay_attempted": 10,
+    "BAM_apply_delay_completed": 10,
+    "BAM_compute_attempted": 10,
+    "BAM_compute_completed": 10,
+    "BVH_refit_attempted": 42,
+    "BVH_refit_completed": 42,
+    "CPU_forward_attempted": 0,
+    "CPU_forward_completed": 0,
+    "CPU_kinematics_attempted": 0,
+    "CPU_kinematics_completed": 0,
+    "Command_compute_attempted": 1,
+    "Command_compute_completed": 1,
+    "Command_reset_attempted": 0,
+    "Command_reset_completed": 0,
+    "ContactGraph_allocation_attempted": 0,
+    "ContactGraph_allocation_completed": 0,
+    "ContactGraph_capture_begin_attempted": 0,
+    "ContactGraph_capture_begin_completed": 0,
+    "ContactGraph_capture_end_attempted": 0,
+    "ContactGraph_capture_end_completed": 0,
+    "ContactGraph_copy_api_attempted": 0,
+    "ContactGraph_copy_api_completed": 0,
+    "ContactGraph_kernel_api_attempted": 0,
+    "ContactGraph_kernel_api_completed": 0,
+    "ContactGraph_launch_attempted": 7210,
+    "ContactGraph_launch_completed": 7210,
+    "ContactGraph_module_load_attempted": 0,
+    "ContactGraph_module_load_completed": 0,
+    "Contact_order_apply_attempted": 7210,
+    "Contact_order_apply_completed": 7210,
+    "Cost_override_copy_attempted": 15279,
+    "Cost_override_copy_completed": 15279,
+    "Cost_reduce_kernel_attempted": 15279,
+    "Cost_reduce_kernel_completed": 15279,
+    "Cost_rows_kernel_attempted": 15279,
+    "Cost_rows_kernel_completed": 15279,
+    "Curriculum_compute_attempted": 0,
+    "Curriculum_compute_completed": 0,
+    "Curriculum_reset_attempted": 0,
+    "Curriculum_reset_completed": 0,
+    "Env_substep_counter_attempted": 10,
+    "Env_substep_counter_completed": 10,
+    "Event_apply_attempted": 2,
+    "Event_apply_completed": 2,
+    "Event_reset_attempted": 0,
+    "Event_reset_completed": 0,
+    "GPU_forward_attempted": 7210,
+    "GPU_forward_completed": 7210,
+    "GPU_reset_data_attempted": 0,
+    "GPU_reset_data_completed": 0,
+    "GPU_solver_attempted": 7210,
+    "GPU_solver_completed": 7210,
+    "Metrics_compute_attempted": 1,
+    "Metrics_compute_completed": 1,
+    "Metrics_reset_attempted": 0,
+    "Metrics_reset_completed": 0,
+    "Metrics_substep_attempted": 10,
+    "Metrics_substep_completed": 10,
+    "Model_expansion_attempted": 0,
+    "Model_expansion_completed": 0,
+    "Model_material_setup_attempted": 0,
+    "Model_material_setup_completed": 0,
+    "Norm_kernel_attempted": 23348,
+    "Norm_kernel_completed": 23348,
+    "Observation_compute_attempted": 1,
+    "Observation_compute_completed": 1,
+    "Observation_noise_attempted": 4,
+    "Observation_noise_completed": 4,
+    "Observation_reset_attempted": 0,
+    "Observation_reset_completed": 0,
+    "PPO": 0,
+    "RK4_integrator_attempted": 1792,
+    "RK4_integrator_completed": 1792,
+    "RNG_sample_attempted": 18,
+    "RNG_sample_completed": 18,
+    "Recorder_post_reset_attempted": 0,
+    "Recorder_post_reset_completed": 0,
+    "Recorder_post_step_attempted": 1,
+    "Recorder_post_step_completed": 1,
+    "Reduction_allocation_attempted": 0,
+    "Reduction_allocation_completed": 0,
+    "Reduction_module_load_attempted": 0,
+    "Reduction_module_load_completed": 0,
+    "Reward_compute_attempted": 1,
+    "Reward_compute_completed": 1,
+    "Reward_reset_attempted": 0,
+    "Reward_reset_completed": 0,
+    "Rigid_metadata_kernel_attempted": 7210,
+    "Rigid_metadata_kernel_completed": 7210,
+    "Rigid_module_load_attempted": 0,
+    "Rigid_module_load_completed": 0,
+    "Scene_initialize_attempted": 0,
+    "Scene_initialize_completed": 0,
+    "Scene_reset_attempted": 0,
+    "Scene_reset_completed": 0,
+    "Scene_update_attempted": 10,
+    "Scene_update_completed": 10,
+    "Scene_write_attempted": 10,
+    "Scene_write_completed": 10,
+    "Sensor_context_set_attempted": 0,
+    "Sensor_context_set_completed": 0,
+    "Simulation_reset_attempted": 0,
+    "Simulation_reset_completed": 0,
+    "SolverContext_create_attempted": 7210,
+    "SolverContext_create_completed": 7210,
+    "SolverOrder_kernel_attempted": 8069,
+    "SolverOrder_kernel_completed": 8069,
+    "SolverOrder_module_load_attempted": 0,
+    "SolverOrder_module_load_completed": 0,
+    "Solver_linesearch_attempted": 8069,
+    "Solver_linesearch_completed": 8069,
+    "Solver_solver_iteration_attempted": 8069,
+    "Solver_solver_iteration_completed": 8069,
+    "Solver_update_constraint_attempted": 15279,
+    "Solver_update_constraint_completed": 15279,
+    "Solver_update_gradient_attempted": 7210,
+    "Solver_update_gradient_completed": 7210,
+    "Solver_update_gradient_incremental_attempted": 8069,
+    "Solver_update_gradient_incremental_completed": 8069,
+    "Solverinit_context_attempted": 7210,
+    "Solverinit_context_completed": 7210,
+    "Termination_compute_attempted": 1,
+    "Termination_compute_completed": 1,
+    "Termination_reset_attempted": 0,
+    "Termination_reset_completed": 0,
+    "cloud": 0,
+    "context_create_attempted": 0,
+    "context_create_completed": 0,
+    "endpoint_sensor_read_attempted": 41,
+    "endpoint_sensor_read_completed": 41,
+    "full_RL_environment_constructed": 0,
+    "graph_setup_suppressed": 0,
+    "integrations_attempted": 1792,
+    "integrations_completed": 1792,
+    "model_option_write_attempted": 62,
+    "model_option_write_completed": 62,
+    "position_write_attempted": 1792,
+    "position_write_completed": 1792,
+    "private_clock_write_attempted": 31,
+    "private_clock_write_completed": 31,
+    "public_clock_write_attempted": 10,
+    "public_clock_write_completed": 10,
+    "ray_batch_attempted": 42,
+    "ray_batch_completed": 42,
+    "sense_attempted": 42,
+    "sense_completed": 42,
+    "state_restore_attempted": 21,
+    "state_restore_completed": 21,
+    "state_snapshot_attempted": 10,
+    "state_snapshot_completed": 10
+  },
+  "case": "normal",
+  "numerical_thresholds_changed": false,
+  "observation_history_checked": true,
+  "reward": [
+    0.22047458589076996
+  ],
+  "state": {
+    "bam_pushes": [
+      11
+    ],
+    "control_counter": 1,
+    "episode": [
+      1
+    ],
+    "events": [
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ]
+    ],
+    "history": {
+      "delay/actor/base_ang_vel": [
+        2
+      ],
+      "delay/actor/joint_vel": [
+        2
+      ],
+      "delay/actor/projected_gravity": [
+        2
+      ]
+    },
+    "pending": [
+      false
+    ],
+    "sim_counter": 10,
+    "tick": 10,
+    "time": [
+      0.019999999552965164
+    ]
+  },
+  "terminal_fault_is_test_injection": false,
+  "terminated": [
+    false
+  ],
+  "timed_out": [
+    false
+  ],
+  "trace": [
+    {
+      "after": {
+        "bam_pushes": [
+          1
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 0,
+        "tick": 0,
+        "time": [
+          0.0
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          1
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 0,
+        "tick": 0,
+        "time": [
+          0.0
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Action_process_action",
+      "sequence": 27,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          1
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 1,
+        "tick": 0,
+        "time": [
+          0.0
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          1
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 1,
+        "tick": 0,
+        "time": [
+          0.0
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Action_apply",
+      "sequence": 28,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          2
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 1,
+        "tick": 1,
+        "time": [
+          0.0020000000949949026
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          2
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 1,
+        "tick": 1,
+        "time": [
+          0.0020000000949949026
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Metrics_substep",
+      "sequence": 29,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          2
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 2,
+        "tick": 1,
+        "time": [
+          0.0020000000949949026
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          2
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 2,
+        "tick": 1,
+        "time": [
+          0.0020000000949949026
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Action_apply",
+      "sequence": 30,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          3
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 2,
+        "tick": 2,
+        "time": [
+          0.004000000189989805
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          3
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 2,
+        "tick": 2,
+        "time": [
+          0.004000000189989805
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Metrics_substep",
+      "sequence": 31,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          3
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 3,
+        "tick": 2,
+        "time": [
+          0.004000000189989805
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          3
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 3,
+        "tick": 2,
+        "time": [
+          0.004000000189989805
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Action_apply",
+      "sequence": 32,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          4
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 3,
+        "tick": 3,
+        "time": [
+          0.006000000052154064
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          4
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 3,
+        "tick": 3,
+        "time": [
+          0.006000000052154064
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Metrics_substep",
+      "sequence": 33,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          4
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 4,
+        "tick": 3,
+        "time": [
+          0.006000000052154064
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          4
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 4,
+        "tick": 3,
+        "time": [
+          0.006000000052154064
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Action_apply",
+      "sequence": 34,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          5
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 4,
+        "tick": 4,
+        "time": [
+          0.00800000037997961
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          5
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 4,
+        "tick": 4,
+        "time": [
+          0.00800000037997961
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Metrics_substep",
+      "sequence": 35,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          5
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 5,
+        "tick": 4,
+        "time": [
+          0.00800000037997961
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          5
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 5,
+        "tick": 4,
+        "time": [
+          0.00800000037997961
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Action_apply",
+      "sequence": 36,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          6
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 5,
+        "tick": 5,
+        "time": [
+          0.009999999776482582
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          6
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 5,
+        "tick": 5,
+        "time": [
+          0.009999999776482582
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Metrics_substep",
+      "sequence": 37,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          6
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 6,
+        "tick": 5,
+        "time": [
+          0.009999999776482582
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          6
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 6,
+        "tick": 5,
+        "time": [
+          0.009999999776482582
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Action_apply",
+      "sequence": 38,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          7
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 6,
+        "tick": 6,
+        "time": [
+          0.012000000104308128
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          7
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 6,
+        "tick": 6,
+        "time": [
+          0.012000000104308128
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Metrics_substep",
+      "sequence": 39,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          7
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 7,
+        "tick": 6,
+        "time": [
+          0.012000000104308128
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          7
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 7,
+        "tick": 6,
+        "time": [
+          0.012000000104308128
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Action_apply",
+      "sequence": 40,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          8
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 7,
+        "tick": 7,
+        "time": [
+          0.014000000432133675
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          8
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 7,
+        "tick": 7,
+        "time": [
+          0.014000000432133675
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Metrics_substep",
+      "sequence": 41,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          8
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 8,
+        "tick": 7,
+        "time": [
+          0.014000000432133675
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          8
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 8,
+        "tick": 7,
+        "time": [
+          0.014000000432133675
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Action_apply",
+      "sequence": 42,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          9
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 8,
+        "tick": 8,
+        "time": [
+          0.01600000075995922
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          9
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 8,
+        "tick": 8,
+        "time": [
+          0.01600000075995922
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Metrics_substep",
+      "sequence": 43,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          9
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 9,
+        "tick": 8,
+        "time": [
+          0.01600000075995922
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          9
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 9,
+        "tick": 8,
+        "time": [
+          0.01600000075995922
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Action_apply",
+      "sequence": 44,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          10
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 9,
+        "tick": 9,
+        "time": [
+          0.017999999225139618
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          10
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 9,
+        "tick": 9,
+        "time": [
+          0.017999999225139618
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Metrics_substep",
+      "sequence": 45,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          10
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 10,
+        "tick": 9,
+        "time": [
+          0.017999999225139618
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          10
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 10,
+        "tick": 9,
+        "time": [
+          0.017999999225139618
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Action_apply",
+      "sequence": 46,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          11
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 10,
+        "tick": 10,
+        "time": [
+          0.019999999552965164
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          11
+        ],
+        "control_counter": 0,
+        "episode": [
+          0
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 10,
+        "tick": 10,
+        "time": [
+          0.019999999552965164
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Metrics_substep",
+      "sequence": 47,
+      "update_history": null
+    },
+    {
+      "accepted_derived_endpoint_hashes": {
+        "cvel": "f1fd25aa4be09c0fe0e7ee9bc040bfd4841121cc7ac9935a5c3b06171963a388",
+        "qpos": "7ddf121587adfe255927ba1c3de8f2769c449246dc715dfa225725734acb7ca6",
+        "qvel": "e8e3e42781c911203c3a977d1fb1ac6f547f11c9706fae29c7b1f3f60e29b5c8",
+        "sensordata": "5f6565c9d95be9ba3ba2a1edc886c0ca81740d3318254a79f42bb0a378e88add",
+        "site_xmat": "42fbecd90bd1b7ea0a71f8a5ae04cb3e0e801b7acd0706007a77bd52d342b8e1",
+        "site_xpos": "4c41c248e568bb0d9dc994ca2a45fcc4a2858bec5e17a627eef9744815ecac95",
+        "time": "8b35fe1a9b331dc0217e0419be35288af59676e9c57022a334110ab0e4799df4",
+        "xpos": "1cec8cf6cae2c748b585f7870c37db1b0e8a9c396177c8d81909606e76670362",
+        "xquat": "71029b23a0a0971e95d44a04760d4b714b9c7c9177d7a1bd77038504c4bce50c"
+      },
+      "after": {
+        "bam_pushes": [
+          11
+        ],
+        "control_counter": 1,
+        "episode": [
+          1
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 10,
+        "tick": 10,
+        "time": [
+          0.019999999552965164
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          11
+        ],
+        "control_counter": 1,
+        "episode": [
+          1
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 10,
+        "tick": 10,
+        "time": [
+          0.019999999552965164
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "endpoint_qpos": [
+        [
+          6.834902160335332e-05,
+          -1.5223042737488868e-07,
+          0.3659408390522003,
+          0.999997615814209,
+          -3.0146431981847854e-06,
+          -0.002191554754972458,
+          -2.2205601908353856e-06,
+          2.680281170341914e-07,
+          -0.08625127375125885,
+          -0.4467003047466278,
+          -0.0048983534798026085,
+          0.4412685036659241,
+          0.3401878774166107,
+          0.3410525321960449,
+          -2.99341951226495e-09,
+          6.928438978093254e-08,
+          -2.691819815936469e-07,
+          0.08625461906194687,
+          0.4467012584209442,
+          0.004898353014141321,
+          -0.4412685036659241,
+          -5.903699024870784e-14,
+          5.903699024870784e-14,
+          0.11990141868591309,
+          1.0,
+          3.811720904189908e-12,
+          3.811720904189908e-12,
+          1.0179021254358434e-13,
+          0.013839997351169586,
+          -1.770394386646501e-09,
+          0.5367027521133423,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "endpoint_surface": [
+        {
+          "lost": false,
+          "nearest_face": 2303,
+          "nearest_point": [
+            0.00017273018602281549,
+            2.693134026868924e-16,
+            1.905425416671408e-17
+          ],
+          "projected_distance_m": 4.931507455367387e-19,
+          "surface_distance_m": 0.020375339330594638,
+          "surface_gap_m": 0.0003753393305946373,
+          "upper_height_m": -2.0767769216926144e-08,
+          "valid": true
+        }
+      ],
+      "method": "Termination_compute",
+      "sequence": 48,
+      "update_history": null
+    },
+    {
+      "accepted_derived_endpoint_hashes": {
+        "cvel": "f1fd25aa4be09c0fe0e7ee9bc040bfd4841121cc7ac9935a5c3b06171963a388",
+        "qpos": "7ddf121587adfe255927ba1c3de8f2769c449246dc715dfa225725734acb7ca6",
+        "qvel": "e8e3e42781c911203c3a977d1fb1ac6f547f11c9706fae29c7b1f3f60e29b5c8",
+        "sensordata": "5f6565c9d95be9ba3ba2a1edc886c0ca81740d3318254a79f42bb0a378e88add",
+        "site_xmat": "42fbecd90bd1b7ea0a71f8a5ae04cb3e0e801b7acd0706007a77bd52d342b8e1",
+        "site_xpos": "4c41c248e568bb0d9dc994ca2a45fcc4a2858bec5e17a627eef9744815ecac95",
+        "time": "8b35fe1a9b331dc0217e0419be35288af59676e9c57022a334110ab0e4799df4",
+        "xpos": "1cec8cf6cae2c748b585f7870c37db1b0e8a9c396177c8d81909606e76670362",
+        "xquat": "71029b23a0a0971e95d44a04760d4b714b9c7c9177d7a1bd77038504c4bce50c"
+      },
+      "after": {
+        "bam_pushes": [
+          11
+        ],
+        "control_counter": 1,
+        "episode": [
+          1
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 10,
+        "tick": 10,
+        "time": [
+          0.019999999552965164
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          11
+        ],
+        "control_counter": 1,
+        "episode": [
+          1
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 10,
+        "tick": 10,
+        "time": [
+          0.019999999552965164
+        ]
+      },
+      "completed": true,
+      "dt": 0.02,
+      "endpoint_qpos": [
+        [
+          6.834902160335332e-05,
+          -1.5223042737488868e-07,
+          0.3659408390522003,
+          0.999997615814209,
+          -3.0146431981847854e-06,
+          -0.002191554754972458,
+          -2.2205601908353856e-06,
+          2.680281170341914e-07,
+          -0.08625127375125885,
+          -0.4467003047466278,
+          -0.0048983534798026085,
+          0.4412685036659241,
+          0.3401878774166107,
+          0.3410525321960449,
+          -2.99341951226495e-09,
+          6.928438978093254e-08,
+          -2.691819815936469e-07,
+          0.08625461906194687,
+          0.4467012584209442,
+          0.004898353014141321,
+          -0.4412685036659241,
+          -5.903699024870784e-14,
+          5.903699024870784e-14,
+          0.11990141868591309,
+          1.0,
+          3.811720904189908e-12,
+          3.811720904189908e-12,
+          1.0179021254358434e-13,
+          0.013839997351169586,
+          -1.770394386646501e-09,
+          0.5367027521133423,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "endpoint_surface": [
+        {
+          "lost": false,
+          "nearest_face": 2303,
+          "nearest_point": [
+            0.00017273018602281549,
+            2.693134026868924e-16,
+            1.905425416671408e-17
+          ],
+          "projected_distance_m": 4.931507455367387e-19,
+          "surface_distance_m": 0.020375339330594638,
+          "surface_gap_m": 0.0003753393305946373,
+          "upper_height_m": -2.0767769216926144e-08,
+          "valid": true
+        }
+      ],
+      "method": "Reward_compute",
+      "reward": [
+        0.22047458589076996
+      ],
+      "sequence": 49,
+      "update_history": null,
+      "weighted_terms": [
+        [
+          0.6679259538650513,
+          0.454656183719635,
+          0.9960526823997498,
+          -0.002376662567257881,
+          -1.3610062737550697e-19,
+          -0.0,
+          -0.0,
+          -0.0,
+          0.9997864961624146,
+          1.999994158744812,
+          0.9676289558410645,
+          0.9988003373146057,
+          -9.784617305247095e-23,
+          3.944478988647461,
+          -1.2344842616585083e-05,
+          -0.0032054507173597813
+        ]
+      ]
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          11
+        ],
+        "control_counter": 1,
+        "episode": [
+          1
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 10,
+        "tick": 10,
+        "time": [
+          0.019999999552965164
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          11
+        ],
+        "control_counter": 1,
+        "episode": [
+          1
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 10,
+        "tick": 10,
+        "time": [
+          0.019999999552965164
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Metrics_compute",
+      "sequence": 50,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          11
+        ],
+        "control_counter": 1,
+        "episode": [
+          1
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 10,
+        "tick": 10,
+        "time": [
+          0.019999999552965164
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          11
+        ],
+        "control_counter": 1,
+        "episode": [
+          1
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 10,
+        "tick": 10,
+        "time": [
+          0.019999999552965164
+        ]
+      },
+      "completed": true,
+      "dt": 0.02,
+      "method": "Command_compute",
+      "sequence": 51,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          11
+        ],
+        "control_counter": 1,
+        "episode": [
+          1
+        ],
+        "events": [
+          [
+            1
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 10,
+        "tick": 10,
+        "time": [
+          0.019999999552965164
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          11
+        ],
+        "control_counter": 1,
+        "episode": [
+          1
+        ],
+        "events": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 10,
+        "tick": 10,
+        "time": [
+          0.019999999552965164
+        ]
+      },
+      "completed": true,
+      "dt": 0.02,
+      "method": "Event_apply",
+      "sequence": 52,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          11
+        ],
+        "control_counter": 1,
+        "episode": [
+          1
+        ],
+        "events": [
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 10,
+        "tick": 10,
+        "time": [
+          0.019999999552965164
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          11
+        ],
+        "control_counter": 1,
+        "episode": [
+          1
+        ],
+        "events": [
+          [
+            1
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 10,
+        "tick": 10,
+        "time": [
+          0.019999999552965164
+        ]
+      },
+      "completed": true,
+      "dt": 0.02,
+      "method": "Event_apply",
+      "sequence": 53,
+      "update_history": null
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          11
+        ],
+        "control_counter": 1,
+        "episode": [
+          1
+        ],
+        "events": [
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            2
+          ],
+          "delay/actor/joint_vel": [
+            2
+          ],
+          "delay/actor/projected_gravity": [
+            2
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 10,
+        "tick": 10,
+        "time": [
+          0.019999999552965164
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          11
+        ],
+        "control_counter": 1,
+        "episode": [
+          1
+        ],
+        "events": [
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            1
+          ],
+          "delay/actor/joint_vel": [
+            1
+          ],
+          "delay/actor/projected_gravity": [
+            1
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 10,
+        "tick": 10,
+        "time": [
+          0.019999999552965164
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Observation_compute",
+      "sequence": 54,
+      "update_history": true
+    },
+    {
+      "after": {
+        "bam_pushes": [
+          11
+        ],
+        "control_counter": 1,
+        "episode": [
+          1
+        ],
+        "events": [
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            2
+          ],
+          "delay/actor/joint_vel": [
+            2
+          ],
+          "delay/actor/projected_gravity": [
+            2
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 10,
+        "tick": 10,
+        "time": [
+          0.019999999552965164
+        ]
+      },
+      "before": {
+        "bam_pushes": [
+          11
+        ],
+        "control_counter": 1,
+        "episode": [
+          1
+        ],
+        "events": [
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        "history": {
+          "delay/actor/base_ang_vel": [
+            2
+          ],
+          "delay/actor/joint_vel": [
+            2
+          ],
+          "delay/actor/projected_gravity": [
+            2
+          ]
+        },
+        "pending": [
+          false
+        ],
+        "sim_counter": 10,
+        "tick": 10,
+        "time": [
+          0.019999999552965164
+        ]
+      },
+      "completed": true,
+      "dt": null,
+      "method": "Recorder_post_step",
+      "sequence": 55,
+      "update_history": null
+    }
+  ]
+}

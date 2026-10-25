@@ -1,0 +1,209 @@
+{
+  "stage": 7,
+  "status": "TECHNICAL_WORK_COMPLETE_POLICY_OBJECTIVE_UNMET",
+  "technical_work_complete": true,
+  "policy_objective_passed": false,
+  "evidence_review_date_local": "2026-09-28",
+  "user_timezone": "Asia/Shanghai",
+  "publication_state_at_delivery": "LOCAL_IMPORT_ANNOTATED_TAG_AND_SSH_PUSH_REQUIRED",
+  "stage06_baseline_commit": "e3f26e3cbf633c70c75d4d073dbeb8c47c4f5bd1",
+  "runtime_git_head": "2d10af503945f26f1d7364f19e4152eb540fb4d2",
+  "frozen_physics_task_dependencies_changed": false,
+  "stage06_smoke_repeated": false,
+  "formal_training": {
+    "hardware": "NVIDIA A800-SXM4-80GB",
+    "cloud_only": true,
+    "num_envs": 4096,
+    "steps_per_env_per_update": 24,
+    "completed_updates": 6000,
+    "finite_checks": "PASS",
+    "status": "TRAINING_COMPLETE",
+    "retained_lineage_transitions": 589824000,
+    "actual_logged_updates_including_discarded": 6087,
+    "actual_logged_transitions_including_discarded": 598376448,
+    "updates_discarded_after_power_loss": 87,
+    "recorded_segment_elapsed_hours": 8.206236810237169,
+    "sampled_peak_training_gpu_used_mib": 23663,
+    "max_wall_clock_timeout": null,
+    "initialization_sha256": "548758afc546e11d8f3f446a4bcc846283a669ff20f4048da7a3a7bb1332b98e",
+    "first_segment": "train-20260927T103517Z-3844",
+    "resume_segment": "train-20260927T144559Z-1633",
+    "resume_from_completed_updates": 3000
+  },
+  "nominal_evaluations": {
+    "count": 14,
+    "process_status_all": "PASS",
+    "all_success_fractions": 0.0,
+    "best_completed_updates": 1000,
+    "best_stable_fraction": 0.9017500448971987,
+    "final_stable_fraction": 0.35162501549348235,
+    "sampling_scope": "64 deterministic nominal initial-state copies per checkpoint; not independent randomized trials or a robustness test"
+  },
+  "selected_checkpoints": {
+    "best_nominal": {
+      "path": "train-20260927T103517Z-3844/checkpoints/update_001000.pt",
+      "sha256": "c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7",
+      "completed_updates": 1000,
+      "evaluation": "train-20260927T103517Z-3844/evaluations/update_001000/evaluation.json",
+      "rank": [
+        0.0,
+        10.0,
+        0.9017500448971987,
+        -0.0035159966500941664
+      ]
+    },
+    "final_state": {
+      "path": "train-20260927T144559Z-1633/checkpoints/update_006000.pt",
+      "sha256": "a5ad0aedb500555b649c5d4b11aded833cbc0f932c1fff1a747e1492534c495c",
+      "completed_updates": 6000,
+      "evaluation": "train-20260927T144559Z-1633/evaluations/update_006000/evaluation.json",
+      "rank": [
+        0.0,
+        10.0,
+        0.35162501549348235,
+        -0.0038135496506583877
+      ]
+    }
+  },
+  "archives": {
+    "training": {
+      "filename": "microduck-stage07-results-20260927T190458Z-77jlku82.tar.gz",
+      "sha256": "d4ef897f3dee5df531c6f2b9fb18e7c17aaf73f02b2fd762274d6d115a57bdec",
+      "verified_file_count": 124,
+      "local_directory": "/home/lx/microduck-double-balance/artifacts/double-balance-stage07/microduck-stage07-results-20260927T190458Z-77jlku82"
+    },
+    "diagnostic": {
+      "filename": "microduck-stage07-diagnostic-qlekpq8r.tar.gz",
+      "sha256": "96cf6d62644316fe880e5dd060b387b03172698917dc2127449f315c0d59b195",
+      "local_directory": "/home/lx/microduck-double-balance/artifacts/double-balance-stage07/diagnostic-qlekpq8r"
+    }
+  },
+  "local_diagnostic": {
+    "hardware_from_logs": "NVIDIA GeForce RTX 5060 Laptop GPU (8 GiB)",
+    "purpose": "MuJoCo inference and rendering only",
+    "ppo_updates": 0,
+    "cloud_gpu_used": false,
+    "case_status_all": "PASS",
+    "cached_metric_parity_all": "PASS",
+    "trace_rows_per_case": 32000,
+    "trace_rows_independently_recomputed": 64000,
+    "cases": {
+      "best_nominal": {
+        "completed_updates": 1000,
+        "checkpoint_sha256": "c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7",
+        "success_fraction": 0,
+        "success_at_any_step_fraction": 0,
+        "mean_stable_fraction": 0.9008125448599458,
+        "mean_survival_seconds": 10.0,
+        "longest_stable_streak_s": 2.34,
+        "failure_fraction_per_condition": {
+          "top_center": 0.00084375,
+          "top_height": 0.0,
+          "top_speed": 0.0311875,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.085375,
+          "unassisted": 0.0
+        },
+        "sole_failure_fraction_per_condition": {
+          "top_center": 0.00053125,
+          "top_height": 0.0,
+          "top_speed": 0.01325,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.06725,
+          "unassisted": 0.0
+        },
+        "checkpoint_unchanged": true
+      },
+      "final_state": {
+        "completed_updates": 6000,
+        "checkpoint_sha256": "a5ad0aedb500555b649c5d4b11aded833cbc0f932c1fff1a747e1492534c495c",
+        "success_fraction": 0,
+        "success_at_any_step_fraction": 0,
+        "mean_stable_fraction": 0.35031251749023795,
+        "mean_survival_seconds": 10.0,
+        "longest_stable_streak_s": 0.42,
+        "failure_fraction_per_condition": {
+          "top_center": 0.02346875,
+          "top_height": 0.0,
+          "top_speed": 0.03578125,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.62346875,
+          "unassisted": 0.0
+        },
+        "sole_failure_fraction_per_condition": {
+          "top_center": 0.00684375,
+          "top_height": 0.0,
+          "top_speed": 0.01234375,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.5996875,
+          "unassisted": 0.0
+        },
+        "checkpoint_unchanged": true
+      }
+    }
+  },
+  "video_review": {
+    "method": "ffprobe metadata plus frames at 0, 2, 4, 6, 8, 9.96 seconds, cross-checked against full first-episode traces",
+    "observed": "Duck feet remain over the lower ball and the top ball remains on its tray in sampled env0 frames. Rolling/reorientation is visible. All 64 episodes in each diagnostic reach time_out without physical termination. The video does not establish speed-threshold compliance.",
+    "files": {
+      "best_nominal": {
+        "relative_path": "best_nominal/env0.mp4",
+        "sha256": "d07bb3fdba027289ce63979488b7daae69275cf578fa956ef11b4235d8d1a3d5",
+        "duration_seconds": 10.0,
+        "width": 1280,
+        "height": 720,
+        "frames": 250,
+        "fps": 25
+      },
+      "final_state": {
+        "relative_path": "final_state/env0.mp4",
+        "sha256": "81238159fbde3a26f3602b35d537e92b2b559fa9ee735867614e51da86a83ce2",
+        "duration_seconds": 10.0,
+        "width": 1280,
+        "height": 720,
+        "frames": 250,
+        "fps": 25
+      }
+    }
+  },
+  "conclusion": {
+    "direct_failure_condition": "Lower-ball planar speed above the unchanged 0.15 m/s bound is the dominant observed violation, especially at update 6000. Top-ball speed and centering also cause some interruptions.",
+    "continuous_stability": "No diagnostic environment reaches the five-second condition even at an intermediate step; this is not merely an episode-end reporting issue.",
+    "causal_limit": "This identifies the violated state condition, not the causal contribution of individual reward/curriculum settings; no ablation was run.",
+    "decision": "Close Stage 07 as a completed training experiment with unmet strict policy objective; retain best and final models. No unreviewed extension or Stage 03/04 changes."
+  },
+  "cloud_power": {
+    "shutdown_reminder_delivered": true,
+    "shutdown_confirmed_by_user": false,
+    "guidance": "Keep cloud powered off; preserve instance/data disk. No further cloud job is required for this stage handoff."
+  },
+  "delivery_protocol": {
+    "local_repository": "/home/lx/microduck-double-balance/workspace",
+    "download_directory": "/home/lx/下载",
+    "branch": "double-balance",
+    "annotated_tag": "stage-07-complete",
+    "tag_created_on": "user laptop only",
+    "origin_ssh": "git@github.com:liuxue-lab/microduck-double-balance.git",
+    "repeat_full_remote_verification_after_normal_push": false
+  },
+  "validation_scope": {
+    "formal_tool_cpu_tests": 19,
+    "collector_standard_library_tests": 6,
+    "diagnostic_summary_tests": 3,
+    "cloud_runtime": "actual 6000-update training, periodic strict reload/evaluations, and explicit resume",
+    "local_runtime": "two actual diagnostic rollouts with videos",
+    "onnx": "Automatic exports occurred during saves; a Stage 07 ONNX runtime parity/deployment acceptance was not performed. Archived .pt policies are the accepted research artifacts."
+  }
+}

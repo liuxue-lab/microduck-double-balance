@@ -1,0 +1,78 @@
+{
+  "sources": [
+    {
+      "name": "mdp-reviewed.py",
+      "url": "https://github.com/liuxue-lab/microduck-double-balance/blob/23b00b7b5a77135467b2124823c1fab54bd1eed9/src/mjlab_microduck/tasks/mdp.py",
+      "bytes": 381890,
+      "sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+    },
+    {
+      "name": "friction-dr-bam-reviewed.py",
+      "url": "https://github.com/liuxue-lab/microduck-double-balance/blob/23b00b7b5a77135467b2124823c1fab54bd1eed9/src/mjlab_microduck/actuator/friction_dr_bam.py",
+      "bytes": 7730,
+      "sha256": "75cb3e993cd8fdc9d90081129f793deb1eb22fc1ad921f75a97511fa98d38fb7"
+    },
+    {
+      "name": "mjlab-manager-based-env-v1.3.0.py",
+      "url": "https://github.com/mujocolab/mjlab/blob/v1.3.0/src/mjlab/envs/manager_based_rl_env.py",
+      "bytes": 22061,
+      "sha256": "a381027e336d6313cd338d541230b36864657edac89708a33e7e60c0c6fb74d2"
+    }
+  ],
+  "mdp_and_BAM_match_frozen_source_pins": true,
+  "cache_scope": "One manager compute call; never across physics/forward/reset/scene-write barriers",
+  "direct_head_helper_callers": [
+    "stage11_head_actor_state",
+    "stage11_head_critic_state",
+    "stage11_head_task_reward",
+    "stage11_head_speed_l2",
+    "stage11_head_center_error",
+    "stage11_head_relative_speed"
+  ],
+  "head_feature_position_cloned_before_inplace_centering": true,
+  "independent_stability_probe_outside_metrics_cache": true,
+  "new_sources": [
+    {
+      "path": "bam/mjlab.py",
+      "url": "https://github.com/Rhoban/bam/blob/62bd8ce12154340be97e06f7f41a0ca8f116d967/bam/mjlab.py",
+      "sha256": "af3de252939ca868712423979c2ab52e198d382d7aca613b5b33c77d74baa440",
+      "bytes": 45267
+    },
+    {
+      "path": "bam/actuator.py",
+      "url": "https://github.com/Rhoban/bam/blob/62bd8ce12154340be97e06f7f41a0ca8f116d967/bam/actuator.py",
+      "sha256": "6927d7b2341cbaca0e5d872fae4ddce6200056885310d9ee5acaba1f34e09c13",
+      "bytes": 16049
+    },
+    {
+      "path": "bam/dynamixel/actuator.py",
+      "url": "https://github.com/Rhoban/bam/blob/62bd8ce12154340be97e06f7f41a0ca8f116d967/bam/dynamixel/actuator.py",
+      "sha256": "8d3ed39d68758981204901dd18dcce11dcb107b842067e036d2b8ac7b1411cec",
+      "bytes": 4228
+    }
+  ],
+  "new_sources_match_original_runtime_pins": true,
+  "cuda_reference": "https://docs.pytorch.org/docs/2.9/notes/cuda.html#cuda-graphs",
+  "capture_scope": "Original FrictionDRBamActuator.compute on isolated shadow; live model writes outside graph",
+  "capture_storage": "Strong references and every-call address/shape/stride/dtype guards; no automatic recapture",
+  "batching_scope": "Post-integration qpos/qvel/actuator_force only; same Audit every physics substep",
+  "v2_repair": {
+    "legacy_bam_graph_sha256": "efc7f48e833788b892398f50793ccd7a281bece54ea220d08748e3d18d2935eb",
+    "fix": "Read pre-replay snapshot; isolate committed recurrence from reusable output",
+    "original_math_unchanged": true,
+    "actual_GPU_v2_test": false
+  },
+  "head_kinematics_capture": {
+    "original_mdp_sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76",
+    "math_source": "https://github.com/mujocolab/mjlab/blob/v1.3.0/src/mjlab/utils/lab_api/math.py",
+    "math_sha256": "47757748386173cc4ded5fb5dc5619336393ee6296769fa8b985738ebe50d436",
+    "original_math_called_unchanged": true,
+    "isolated_shadow_scene": true,
+    "live_inputs_copied_each_call": true,
+    "input_FP32_scalars": 22,
+    "output_FP32_scalars": 9,
+    "output_snapshot_cloned_each_call": true,
+    "capture_scope": "Only inside existing manager-phase cache; independent geometric probe remains original eager calculation",
+    "actual_GPU_capture_tested": false
+  }
+}

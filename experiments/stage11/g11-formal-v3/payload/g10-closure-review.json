@@ -1,0 +1,446 @@
+{
+  "status": "G10_ORIGINAL_SCOPE_CLOSURE_REVIEW_PASS",
+  "decision": "CLOSED_SCOPED",
+  "basis": "Original handoff A1/A2/A3: declared capturable device segments with host decisions preserved, explicit process-boundary logical recovery and actual instantiated native resources.",
+  "transport": {
+    "status": "G10_BLOCKS_TRANSPORT_VERIFIED",
+    "commit": "65d20e39f4681202829906091e07da70674f2eb5",
+    "tree": "7ce45d51531ee280f8b2846b9c1e2a2e0595c98d",
+    "github_plugin_blob_identity_verified": true,
+    "parts": 732,
+    "archive_bytes": 383766428,
+    "sha256": "5fbdf069378fb9bddfd5a849af54768cde701f828b682583c7d362258ab3e6bf",
+    "members": 11662,
+    "uncompressed_bytes": 915091494,
+    "program_files": 92,
+    "launcher_sha256": "20f9281ceb3028f1aceee3802a876823dc1dcdfdff2865ac1947740fbd2ac129",
+    "bundle_sha256": "ef5f34eed3b8342da5db34d0ead07c00a46a4b9a2a2893e4910ae142f865ac17",
+    "scope": "Stage11 G10 expanded native RK4 device blocks and post-accepted-macro cross-process recovery; fixed128 continuation; immutable prior evidence; independent archive branch; never merge",
+    "auditor_native_calls": 0
+  },
+  "raw_comparisons": {
+    "passed": 10,
+    "total": 10,
+    "endpoint_fields": 636,
+    "numeric_fields_exempted": [],
+    "adaptive_trial_schedule": [
+      32,
+      64,
+      128,
+      128
+    ],
+    "actual_reject_accept": [
+      false,
+      true
+    ],
+    "rollbacks_per_adaptive_trajectory": 3,
+    "exact_replays_per_adaptive_trajectory": 1,
+    "pairs": [
+      {
+        "world": 0,
+        "left": "world0-producer/eager",
+        "right": "world0-producer/adaptive-graph",
+        "endpoint": {
+          "passed": true,
+          "fields": 636,
+          "missing": [],
+          "different": [],
+          "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+        },
+        "schema_exact": true,
+        "trajectory": {
+          "passed": true,
+          "microsteps": 352,
+          "solved_stages": 1408,
+          "raw_snapshots": 26,
+          "differences": [],
+          "difference_count": 0,
+          "numeric_fields_exempted": []
+        },
+        "passed": true
+      },
+      {
+        "world": 0,
+        "left": "world0-producer/graph",
+        "right": "world0-producer/adaptive-graph",
+        "endpoint": {
+          "passed": true,
+          "fields": 636,
+          "missing": [],
+          "different": [],
+          "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+        },
+        "schema_exact": true,
+        "trajectory": {
+          "passed": true,
+          "microsteps": 352,
+          "solved_stages": 1408,
+          "raw_snapshots": 26,
+          "differences": [],
+          "difference_count": 0,
+          "numeric_fields_exempted": []
+        },
+        "passed": true
+      },
+      {
+        "world": 0,
+        "left": "world0-producer/fixed-eager",
+        "right": "world0-producer/fixed-graph",
+        "endpoint": {
+          "passed": true,
+          "fields": 636,
+          "missing": [],
+          "different": [],
+          "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+        },
+        "schema_exact": true,
+        "trajectory": {
+          "passed": true,
+          "microsteps": 128,
+          "solved_stages": 512,
+          "raw_snapshots": 8,
+          "differences": [],
+          "difference_count": 0,
+          "numeric_fields_exempted": []
+        },
+        "passed": true
+      },
+      {
+        "world": 0,
+        "left": "world0-producer/fixed-eager",
+        "right": "world0-consumer/restored-fixed-graph",
+        "endpoint": {
+          "passed": true,
+          "fields": 636,
+          "missing": [],
+          "different": [],
+          "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+        },
+        "schema_exact": true,
+        "trajectory": {
+          "passed": true,
+          "microsteps": 128,
+          "solved_stages": 512,
+          "raw_snapshots": 8,
+          "differences": [],
+          "difference_count": 0,
+          "numeric_fields_exempted": []
+        },
+        "passed": true
+      },
+      {
+        "world": 0,
+        "left": "world0-producer/fixed-graph",
+        "right": "world0-consumer/restored-fixed-graph",
+        "endpoint": {
+          "passed": true,
+          "fields": 636,
+          "missing": [],
+          "different": [],
+          "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+        },
+        "schema_exact": true,
+        "trajectory": {
+          "passed": true,
+          "microsteps": 128,
+          "solved_stages": 512,
+          "raw_snapshots": 8,
+          "differences": [],
+          "difference_count": 0,
+          "numeric_fields_exempted": []
+        },
+        "passed": true
+      },
+      {
+        "world": 1,
+        "left": "world1-producer/eager",
+        "right": "world1-producer/adaptive-graph",
+        "endpoint": {
+          "passed": true,
+          "fields": 636,
+          "missing": [],
+          "different": [],
+          "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+        },
+        "schema_exact": true,
+        "trajectory": {
+          "passed": true,
+          "microsteps": 352,
+          "solved_stages": 1408,
+          "raw_snapshots": 26,
+          "differences": [],
+          "difference_count": 0,
+          "numeric_fields_exempted": []
+        },
+        "passed": true
+      },
+      {
+        "world": 1,
+        "left": "world1-producer/graph",
+        "right": "world1-producer/adaptive-graph",
+        "endpoint": {
+          "passed": true,
+          "fields": 636,
+          "missing": [],
+          "different": [],
+          "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+        },
+        "schema_exact": true,
+        "trajectory": {
+          "passed": true,
+          "microsteps": 352,
+          "solved_stages": 1408,
+          "raw_snapshots": 26,
+          "differences": [],
+          "difference_count": 0,
+          "numeric_fields_exempted": []
+        },
+        "passed": true
+      },
+      {
+        "world": 1,
+        "left": "world1-producer/fixed-eager",
+        "right": "world1-producer/fixed-graph",
+        "endpoint": {
+          "passed": true,
+          "fields": 636,
+          "missing": [],
+          "different": [],
+          "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+        },
+        "schema_exact": true,
+        "trajectory": {
+          "passed": true,
+          "microsteps": 128,
+          "solved_stages": 512,
+          "raw_snapshots": 8,
+          "differences": [],
+          "difference_count": 0,
+          "numeric_fields_exempted": []
+        },
+        "passed": true
+      },
+      {
+        "world": 1,
+        "left": "world1-producer/fixed-eager",
+        "right": "world1-consumer/restored-fixed-graph",
+        "endpoint": {
+          "passed": true,
+          "fields": 636,
+          "missing": [],
+          "different": [],
+          "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+        },
+        "schema_exact": true,
+        "trajectory": {
+          "passed": true,
+          "microsteps": 128,
+          "solved_stages": 512,
+          "raw_snapshots": 8,
+          "differences": [],
+          "difference_count": 0,
+          "numeric_fields_exempted": []
+        },
+        "passed": true
+      },
+      {
+        "world": 1,
+        "left": "world1-producer/fixed-graph",
+        "right": "world1-consumer/restored-fixed-graph",
+        "endpoint": {
+          "passed": true,
+          "fields": 636,
+          "missing": [],
+          "different": [],
+          "criterion": "dtype_shape_and_every_byte; no numeric exemptions"
+        },
+        "schema_exact": true,
+        "trajectory": {
+          "passed": true,
+          "microsteps": 128,
+          "solved_stages": 512,
+          "raw_snapshots": 8,
+          "differences": [],
+          "difference_count": 0,
+          "numeric_fields_exempted": []
+        },
+        "passed": true
+      }
+    ]
+  },
+  "scope_checks": [
+    {
+      "id": "A1",
+      "status": "PASS",
+      "coverage": "20 native blocks plus six original primitives and remaining declared device operations; two accepted adaptive baseline paths per world; complete endpoint numeric bytes/schema and declared trajectory records exact; four actual Data.qpos stale-binding challenges rejected before dispatch."
+    },
+    {
+      "id": "A2",
+      "status": "PASS",
+      "coverage": "Two old producer processes exit before new consumer start. Accepted-macro endpoint restored with 636 exact numeric fields/schema, 19 nested Model arrays, live BAM/firmware state and sensor alias/cache refresh. Fixed128 continuation exact against producer eager and graph references. All recorded graph/exec and instantiated BVH/Mesh/Texture2D releases verified."
+    },
+    {
+      "id": "A3",
+      "status": "PASS",
+      "coverage": "Original scope matched. Monolithic capture, arbitrary private-trial resume, vectorized adaptive batch and formal RL integration are not claimed by this G10 closure."
+    }
+  ],
+  "processes": [
+    {
+      "process": "world0-producer",
+      "integrations": 608,
+      "GPU_forward": 2443,
+      "CPU_forward": 2,
+      "elapsed_s": 1846.8022876539908,
+      "cold_state_fields": {
+        "data": 114,
+        "owners": 207,
+        "mutable-model": 3,
+        "rng": 2
+      },
+      "source_pins": 219,
+      "resources": {
+        "Bvh": 1,
+        "Mesh": 39,
+        "Texture2D": 2
+      },
+      "contact_graph_release_verified": true
+    },
+    {
+      "process": "world0-consumer",
+      "integrations": 128,
+      "GPU_forward": 516,
+      "CPU_forward": 2,
+      "elapsed_s": 507.3427133120131,
+      "cold_state_fields": {
+        "data": 114,
+        "owners": 207,
+        "mutable-model": 3,
+        "rng": 2
+      },
+      "source_pins": 219,
+      "resources": {
+        "Bvh": 1,
+        "Mesh": 39,
+        "Texture2D": 2
+      },
+      "contact_graph_release_verified": true
+    },
+    {
+      "process": "world1-producer",
+      "integrations": 608,
+      "GPU_forward": 2443,
+      "CPU_forward": 2,
+      "elapsed_s": 2335.862619760999,
+      "cold_state_fields": {
+        "data": 114,
+        "owners": 207,
+        "mutable-model": 3,
+        "rng": 2
+      },
+      "source_pins": 219,
+      "resources": {
+        "Bvh": 1,
+        "Mesh": 39,
+        "Texture2D": 2
+      },
+      "contact_graph_release_verified": true
+    },
+    {
+      "process": "world1-consumer",
+      "integrations": 128,
+      "GPU_forward": 516,
+      "CPU_forward": 2,
+      "elapsed_s": 595.0885208649997,
+      "cold_state_fields": {
+        "data": 114,
+        "owners": 207,
+        "mutable-model": 3,
+        "rng": 2
+      },
+      "source_pins": 219,
+      "resources": {
+        "Bvh": 1,
+        "Mesh": 39,
+        "Texture2D": 2
+      },
+      "contact_graph_release_verified": true
+    }
+  ],
+  "ledger": {
+    "before_completed": 667608,
+    "before_attempted": 667609,
+    "new_completed": 1472,
+    "new_attempted": 1472,
+    "completed": 669080,
+    "attempted": 669081,
+    "historical_failed_attempts": 1,
+    "GPU_forward": 5918,
+    "CPU_forward": 8,
+    "segment_captures": 163588,
+    "segment_launches": 267343,
+    "segment_releases": 163588,
+    "contact_graph_captures": 4,
+    "contact_graph_launches": 5918,
+    "contact_graph_releases": 4,
+    "resources_total": 168,
+    "PPO": 0,
+    "cloud_training": 0,
+    "independent_auditor_native_calls": 0
+  },
+  "integrity": {
+    "program_files": 92,
+    "unchanged_physical_helpers": 58,
+    "source_pin_roster": 219,
+    "project_git_state_unchanged": true,
+    "old_evidence_unchanged": true,
+    "original_producer_reports_unchanged": true
+  },
+  "timing": {
+    "worker_elapsed_s": 5285.096141592003,
+    "worker_elapsed_minutes": 88.08493569320005,
+    "excludes_parent_audit_packaging_and_upload": true,
+    "graph_counter_progress_saves": 1189038,
+    "overhead_assessment": "Source-derived: each counted graph capture-begin/capture-end/launch saves durable JSON before and after, with fsync; launches synchronize. Binding serialization and full raw contact audit also run on host. No profiler attribution or training-throughput measurement was performed."
+  },
+  "limitations": [
+    "Two independently owned native nworld=1 contexts; no native nworld=2 adaptive batch claim.",
+    "Host adaptive decisions, CPU correction and evidence reads remain outside capture; full_native_RK4_graph=False denotes no monolithic capture.",
+    "Recovery at the declared accepted-macro endpoint; no arbitrary private-trial or full formal-rollout checkpoint claim.",
+    "Raw contact blobs and solver active-index bytes verified. Full constraint before/after arrays were not archived for every inner solver iteration; no such claim is made.",
+    "Native allocator pools and CUDA driver context remain process-managed; no global VRAM leak-free benchmark claim.",
+    "Zero formal ManagerBasedRlEnv steps, zero actual policy checkpoint loads and zero PPO/cloud training in this return."
+  ],
+  "stage11": {
+    "G01_to_G09": "CLOSED_SCOPED",
+    "G10": "CLOSED_SCOPED",
+    "G11": "OPEN",
+    "gates_closed": 10,
+    "gates_total": 11,
+    "gate_percent": 90.9090909090909,
+    "complete": false,
+    "note": "Gate count only; not whole-project completion percentage."
+  },
+  "G11_next": {
+    "host_contract_checks": {
+      "passed": 29,
+      "total": 29,
+      "local_validation_available": true,
+      "user_run_reported": "20261015T104453Z-kxmk8oup",
+      "user_return_archive_not_received": true
+    },
+    "ready_candidates": [
+      "EventManager.reset interval-index fix",
+      "outer-step owned macro hook",
+      "strict checkpoint key migration and semantic manifest comparison"
+    ],
+    "remaining": [
+      "Implement and review the real head task termination/reset semantics from accepted crown/contact geometry; preserve existing release guards until a separate formal candidate is ready.",
+      "Bind the accepted physical macro owner into real ManagerBasedRlEnv at 0.002 s x 10 = 0.020 s and verify accepted-endpoint reward/termination semantics.",
+      "Run real reward/termination/history/BAM delay/recorder/automatic reset/global-event regressions, reusing accepted G09/G10 evidence.",
+      "Read the actual target policy checkpoint and its task provenance; verify feature order/history/normalizer/action mapping/timing before any migration compatibility claim.",
+      "Finish Stage11 formal acceptance, then separately plan training-scale throughput and later cloud PPO."
+    ],
+    "performance_direction": "Reuse accepted graph correctness evidence. Profile a separate next runtime; optimize audit persistence and transient capture churn only with explicit failure-accounting preservation and targeted equivalence checks. Do not rerun the completed G10 batch."
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "baseline.py": {
+    "origin": "final6h-local-eval-v1/package/baseline.py",
+    "sha256": "d31cd308dd3b766507b1e8af7f01a0a75930f26023e47b53bfb1841203eeed40"
+  },
+  "baseline_runtime.py": {
+    "origin": "final6h-local-eval-v1/package/baseline_runtime.py",
+    "sha256": "b8c7efda15ac84117363e1de79f95d4a7fa0669e80b664e08f178178c8445ee3"
+  },
+  "budget.py": {
+    "origin": "ros2-humble-v4/package/budget.py",
+    "sha256": "a83fc03a3eed7f4bb6fa65ddc9abc676956eaa54ad2ddbb10274edab972761f0"
+  },
+  "common.py": {
+    "origin": "ros2-humble-v4/package/common.py",
+    "sha256": "9ee386a51be9f09180772f56a0695077df64aed4aa8e4290e7585552656a05ef"
+  },
+  "demo_common.py": {
+    "origin": "final6h-local-eval-v1/package/demo_common.py",
+    "sha256": "e5b6b583dcac93102909fff799ab3aaec2a632791bf0a6e27e6fc4d821192b73"
+  },
+  "deploy_contract.py": {
+    "origin": "ros2-humble-v4/package/deploy_contract.py",
+    "sha256": "0eded8bf91612f8fb736307db5d999cce264b5cdba8a550f785a82a45ff60bdd"
+  },
+  "eval_criteria.py": {
+    "origin": "final6h-local-eval-v1/package/eval_criteria.py",
+    "sha256": "0d61642c120d00a42ece9f578ef0d589b1799850c9f278faf8b925008258e723"
+  },
+  "eval_plan.py": {
+    "origin": "final6h-local-eval-v1/package/eval_plan.py",
+    "sha256": "06dc3c9861a114d880a481ffab299ec1bcaa118dc093ec9bc8ee03f7fb3088a7"
+  },
+  "eval_runtime.py": {
+    "origin": "final6h-local-eval-v1/package/eval_runtime.py",
+    "sha256": "c0837f81618183beaf083113c34f75e7e7fe86a4ebee1040a6b2919b288d2b35"
+  },
+  "evaluate.py": {
+    "origin": "final6h-local-eval-v1/package/evaluate.py",
+    "sha256": "d3230bea80cc16def2c31c25a8b918790cec4596d7325f3b61d5652ea4a71ccf"
+  },
+  "fingerprint.py": {
+    "origin": "ros2-humble-v4/package/fingerprint.py",
+    "sha256": "061f496c53b8982c94aa9c9dba57d76b1745d80ebbd099c3ab96807784a6abb4"
+  },
+  "model_limits.py": {
+    "origin": "final6h-local-eval-v1/package/model_limits.py",
+    "sha256": "d318cdb3b14b078797e69dc89da15f4106f79779fbb764eb59d137708cfdd275"
+  },
+  "model_limits_runtime.py": {
+    "origin": "final6h-local-eval-v1/package/model_limits_runtime.py",
+    "sha256": "da093a8ebc84500d7c194282cb569cbbea7f730fe976a2c26260c059ab871397"
+  },
+  "native_task.py": {
+    "origin": "ros2-humble-v4/package/native_task.py",
+    "sha256": "b6909b9cff864dcfce8203062a75282571ca2c7ef5d66b2aa58c05c4626a55af"
+  },
+  "operation_guard.py": {
+    "origin": "ros2-humble-v4/package/operation_guard.py",
+    "sha256": "95a2dd3848fe212875f51c3f366f37ab74ad5ae263a89a1f609e4afa0b8a5f58"
+  },
+  "probe.py": {
+    "origin": "ros2-humble-v4/package/probe.py",
+    "sha256": "63628d0e8965b860c26ac88f24463d7fcc04409a3e809f4453bf5657943dc48c"
+  },
+  "return-pins.json": {
+    "origin": "ros2-humble-v4/package/return-pins.json",
+    "sha256": "0c3699df146cb56c26f005e845c2e929acd249ceae14691d942b03c02bb72086"
+  },
+  "shared_ssh.py": {
+    "origin": "ros2-humble-v4/package/shared_ssh.py",
+    "sha256": "a4936dd2de7e10073b74e0e7bac0dedf9c09885ba6a8c0d03a795cf98f0f0030"
+  },
+  "source-pins.json": {
+    "origin": "ros2-humble-v4/package/source-pins.json",
+    "sha256": "08c781088ecb4b2023c593ff8ffa45061bf6a57fad5902fcf79b50155daa969c"
+  }
+}

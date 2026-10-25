@@ -1,0 +1,145 @@
+{
+  "actor_new_columns_max_abs": 0.004580249544233084,
+  "automatic_onnx_files": [
+    "/home/lx/microduck-double-balance/artifacts/double-balance-stage06/smoke-20260921-125127/logs/logs.onnx"
+  ],
+  "checkpoint": {
+    "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage06/smoke-20260921-125127/logs/model_7003.pt",
+    "sha256": "ba124dd0385f3697521d2c53f2e3261394290c2f2a83c2a149a69b1c3db51d23",
+    "size_bytes": 10020981
+  },
+  "cloud_preflight": {
+    "capacity_status": "NOT_MEASURED_ON_CLOUD_GPU",
+    "configuration_status": "PASS",
+    "control_dt": 0.02,
+    "exclusions": [
+      "simulation_and_contacts",
+      "gradient_activations",
+      "CUDA_and_Warp_allocations"
+    ],
+    "known_rollout_and_lstm_buffer_bytes": 277315584,
+    "long_training_started": false,
+    "physics_dt": 0.002,
+    "steps_per_env": 24,
+    "target_num_envs": 4096,
+    "transitions_per_iteration": 98304
+  },
+  "completed_iterations": 5,
+  "created_utc": "2026-09-21T04:52:10.556809+00:00",
+  "critic_new_columns_max_abs": 0.005422936752438545,
+  "final_common_step_counter": 168168,
+  "final_iteration": 7003,
+  "formal_success_rate": null,
+  "formal_training_started": false,
+  "git_head": "06ec7241766d4e6ef67b90580855344dfa9748d3",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "input_checkpoint": "/home/lx/microduck-double-balance/artifacts/double-balance-stage05/checkpoint.pt",
+  "input_sha256": "548758afc546e11d8f3f446a4bcc846283a669ff20f4048da7a3a7bb1332b98e",
+  "input_size_bytes": 3342581,
+  "input_unmodified": true,
+  "load": {
+    "action_dimension": 14,
+    "actor_dimension": 61,
+    "common_step_counter": 168048,
+    "critic_dimension": 85,
+    "inherited_ball_hold_levels": [
+      1.0,
+      0.5,
+      0.25,
+      0.1,
+      0.03,
+      0.0
+    ],
+    "iteration": 6999,
+    "learning_rate": 0.001,
+    "optimizer_state_entries": 0,
+    "per_environment_curriculum_state_restored": false,
+    "restored_environment_state_keys": [
+      "common_step_counter"
+    ],
+    "runner_class": "mjlab_microduck.tasks.MicroduckOnPolicyRunner",
+    "status": "PASS"
+  },
+  "mode": "smoke",
+  "num_envs": 64,
+  "onnx_deployment_validated": false,
+  "peak_torch_allocated_bytes": 66189824,
+  "peak_torch_reserved_bytes": 94371840,
+  "reload": {
+    "exact_simulator_or_rng_resume": false,
+    "recurrent_action_hidden_and_value_equality": true,
+    "scheduler_learning_rate": 1e-05,
+    "status": "PASS",
+    "strict_model_and_optimizer_equality": true
+  },
+  "seed": 20260921,
+  "smoke": {
+    "iterations": [
+      {
+        "common_step_counter": 168072,
+        "learning_rate": 1e-05,
+        "losses": {
+          "entropy": 2.693805968761444,
+          "surrogate": 0.3587448074482381,
+          "value": 29.778485774993896
+        },
+        "update": 1
+      },
+      {
+        "common_step_counter": 168096,
+        "learning_rate": 1.0000000000000003e-05,
+        "losses": {
+          "entropy": 2.7195390343666075,
+          "surrogate": -0.03519781709183008,
+          "value": 36.27836513519287
+        },
+        "update": 2
+      },
+      {
+        "common_step_counter": 168120,
+        "learning_rate": 1e-05,
+        "losses": {
+          "entropy": 2.7223127484321594,
+          "surrogate": -0.0328609534073621,
+          "value": 28.503646087646484
+        },
+        "update": 3
+      },
+      {
+        "common_step_counter": 168144,
+        "learning_rate": 1e-05,
+        "losses": {
+          "entropy": 2.7215487480163576,
+          "surrogate": -0.03130838293582201,
+          "value": 25.223400592803955
+        },
+        "update": 4
+      },
+      {
+        "common_step_counter": 168168,
+        "learning_rate": 1e-05,
+        "losses": {
+          "entropy": 2.720019853115082,
+          "surrogate": -0.030817888397723436,
+          "value": 22.344596195220948
+        },
+        "update": 5
+      }
+    ],
+    "nan_terminations": 0,
+    "optimizer_steps": 100,
+    "return_passes": 5,
+    "vector_steps": 120
+  },
+  "smoke_seconds": 6.089963644999898,
+  "status": "PASS",
+  "task_id": "Mjlab-DoubleBalance-MicroDuck",
+  "transitions": 7680,
+  "versions": {
+    "mjlab": "1.3.0",
+    "mujoco": "3.10.0",
+    "rsl-rl-lib": "5.0.1",
+    "torch": "2.9.1",
+    "warp-lang": "1.12.0"
+  }
+}

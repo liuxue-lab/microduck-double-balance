@@ -1,0 +1,149 @@
+{
+  "stage": 9,
+  "status": "ANALYSIS_COMPLETE_CAUSALITY_UNRESOLVED",
+  "direct_violation_summary": {
+    "cloud_physical_terminations_all18": 0,
+    "failed_episodes_across_repeated_protocols": 700,
+    "failures_with_lower_speed_event_after_5s": 699,
+    "limit_m_s": 0.15,
+    "do_not_interpret_as_independent_population_sample": true,
+    "co_violations_not_excluded": true
+  },
+  "findings": [
+    {
+      "id": "F09-01",
+      "finding": "All four final500 arms lose old development successes versus baseline; unchanged-reward F0 also regresses.",
+      "evidence": "baseline107/128; F0=59, F1=88, F2=65, F3=81",
+      "causal_claim": "New head penalties are not established as the sole or main cause of general regression."
+    },
+    {
+      "id": "F09-02",
+      "finding": "No evaluated node meets supplemental posture success; sustained relative yaw remains about 88-89 degrees.",
+      "evidence": "All18 posture success counts zero; tail margin-bad fraction1.0.",
+      "causal_claim": "No proof that sideways heading is a counterweight strategy."
+    },
+    {
+      "id": "F09-03",
+      "finding": "Head yaw is far from its +/-170 degree hard bounds; head_roll settles near25.3-25.4 degrees, slightly beyond nominal +25.",
+      "evidence": "Baseline dev median of per-episode head_roll medians25.37258 degrees; about98.36% of full-episode samples outside that joint hard range. Relative head pitch/roll remain small because the multi-joint orientation is coupled.",
+      "causal_claim": "Nominal bound penetration and actuation require follow-up; no physical limit or action change performed."
+    },
+    {
+      "id": "F09-04",
+      "finding": "One F2@250 dev failure is a frozen floating-timer boundary case.",
+      "evidence": {
+        "old_success": false,
+        "terminal_stable_seconds_from_sample_count": 5.0,
+        "official_float32_timer_seconds": 4.999996185302734,
+        "conclusion": "The frozen cached success remains false at this numerical boundary. No acceptance/metric modification or relabeling performed."
+      },
+      "disposition": "Keep old false success label; propose any metric fix separately, with versioned results."
+    },
+    {
+      "id": "F09-05",
+      "finding": "Replays differ even on the same RTX5060 and same initial states/checkpoint.",
+      "evidence": [
+        {
+          "model": "baseline",
+          "same_gpu": "RTX 5060",
+          "same_checkpoint_sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+          "same_initial_states_sha256": "253123669696a953830caeaf587e1300e023c12293d608e38e655a38cdc00f58",
+          "different_rendered_env_ids": [
+            99,
+            43
+          ],
+          "success_counts": [
+            100,
+            105
+          ],
+          "label_disagreements": 21,
+          "interpretation": "These are repeated development replays, not independent new trials. The cause of divergence is not established; it cannot be attributed solely to GPU model differences."
+        },
+        {
+          "model": "F0-u000500",
+          "same_gpu": "RTX 5060",
+          "same_checkpoint_sha256": "5d3eb0d03995013b402182569832b49c7b214f8b70daf459a2ea628077457667",
+          "same_initial_states_sha256": "253123669696a953830caeaf587e1300e023c12293d608e38e655a38cdc00f58",
+          "different_rendered_env_ids": [
+            99,
+            0
+          ],
+          "success_counts": [
+            54,
+            57
+          ],
+          "label_disagreements": 33,
+          "interpretation": "These are repeated development replays, not independent new trials. The cause of divergence is not established; it cannot be attributed solely to GPU model differences."
+        },
+        {
+          "model": "F1-u000500",
+          "same_gpu": "RTX 5060",
+          "same_checkpoint_sha256": "62191ee139deb6af1cd932824a73d555d508617da2d33bb38efa187f134be5f8",
+          "same_initial_states_sha256": "253123669696a953830caeaf587e1300e023c12293d608e38e655a38cdc00f58",
+          "different_rendered_env_ids": [
+            0,
+            100
+          ],
+          "success_counts": [
+            85,
+            79
+          ],
+          "label_disagreements": 36,
+          "interpretation": "These are repeated development replays, not independent new trials. The cause of divergence is not established; it cannot be attributed solely to GPU model differences."
+        },
+        {
+          "model": "F2-u000500",
+          "same_gpu": "RTX 5060",
+          "same_checkpoint_sha256": "68170de33ccfeca28c15baa6741874eadc7a908ce830099c2bc38065058d37d1",
+          "same_initial_states_sha256": "253123669696a953830caeaf587e1300e023c12293d608e38e655a38cdc00f58",
+          "different_rendered_env_ids": [
+            0,
+            99
+          ],
+          "success_counts": [
+            65,
+            66
+          ],
+          "label_disagreements": 21,
+          "interpretation": "These are repeated development replays, not independent new trials. The cause of divergence is not established; it cannot be attributed solely to GPU model differences."
+        },
+        {
+          "model": "F3-u000500",
+          "same_gpu": "RTX 5060",
+          "same_checkpoint_sha256": "878e6b023df71d0de4b671dbf605eea5e58662fdc28634586650b2b9e8c63cf6",
+          "same_initial_states_sha256": "253123669696a953830caeaf587e1300e023c12293d608e38e655a38cdc00f58",
+          "different_rendered_env_ids": [
+            0,
+            100
+          ],
+          "success_counts": [
+            76,
+            80
+          ],
+          "label_disagreements": 26,
+          "interpretation": "These are repeated development replays, not independent new trials. The cause of divergence is not established; it cannot be attributed solely to GPU model differences."
+        }
+      ],
+      "disposition": "Preserve cloud results and local runs separately. Do not inflate sample size or claim bitwise replay."
+    },
+    {
+      "id": "F09-06",
+      "finding": "Finalizer budget did not cover the entire later transfer interval.",
+      "evidence": "Retained deployment clock began00:40:22+08; planned4h deadline04:40:22; checkpoint Git SSH upload was still pending in the user04:44:55 message and was confirmed with local return at04:53:32.",
+      "disposition": "Training/evaluation campaign finished at03:38:51 within budget; later CPU/network archival extended past the planned wall deadline. Actual billable GPU-on time unknown."
+    }
+  ],
+  "training_attribution_limitations": [
+    "Single training seed",
+    "Adaptive learning-rate paths differ among arms",
+    "F2 suffered power loss and resumed saved150 after175 charged;25 lost updates repeated with explicit approval",
+    "No eligible candidate and no new heldout benchmark",
+    "Reward magnitudes/violation timing do not establish a reward-causal explanation"
+  ],
+  "next_balance_work_proposed_only": [
+    "Audit repeatability and first-episode success labels without changing the frozen definition.",
+    "Inspect unchanged-reward continuation degradation and source optimizer/LR behavior before more PPO.",
+    "Use Stage08 primary as retained reference; do not substitute any Stage09 pilot model."
+  ],
+  "user_priority": "Pause head correction; prioritize unassisted double-ball balance. Head may turn transiently and return later; no new reward implemented."
+}

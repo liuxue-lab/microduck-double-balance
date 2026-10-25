@@ -1,0 +1,89 @@
+{
+  "schema": "microduck-public-demos-v1",
+  "source_kind": "recorded HIL trajectory rendering",
+  "source_run": "20261025T051929Z-dc4ca58d",
+  "source_report": "../../../docs/double-balance/evidence/reports/hil-replay-v1-report.json",
+  "source_dimensions": [
+    1280,
+    480
+  ],
+  "source_frames_per_second": 50,
+  "start_seconds": 6,
+  "duration_seconds": 12,
+  "playback_speed": 1,
+  "crops_xywh": {
+    "whole_body": [
+      80,
+      96,
+      480,
+      320
+    ],
+    "head_detail": [
+      720,
+      144,
+      480,
+      320
+    ]
+  },
+  "spatial_resampling": false,
+  "webp_quality": 90,
+  "webp_compression_level": 6,
+  "h264_crf": 15,
+  "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+  "demos": [
+    {
+      "name": "balance",
+      "case_id": "quiet-2407",
+      "source": {
+        "file": "quiet-2407-recorded-hil.mp4",
+        "bytes": 4617084,
+        "sha256": "5feb95b1011441723ee74495c9ba5e29f6be967ce84fe638c7597f9931c3ea77"
+      },
+      "outputs": [
+        {
+          "file": "balance-demo.webp",
+          "bytes": 4810458,
+          "sha256": "9bd3c081ff1a973fbef3cff0bb5e2253a7f7a0763af2649bb682f2b0f800d476",
+          "frames_per_second": 20,
+          "width": 960,
+          "height": 320
+        },
+        {
+          "file": "balance-demo.mp4",
+          "bytes": 1615323,
+          "sha256": "c3832faf50f1beb490c57a3c49cf58b088d48059c4ce89f3423f5d7b01bcbe34",
+          "frames_per_second": 50,
+          "width": 960,
+          "height": 320
+        }
+      ]
+    },
+    {
+      "name": "disturbance",
+      "case_id": "regression-2500",
+      "source": {
+        "file": "regression-2500-recorded-hil.mp4",
+        "bytes": 5563728,
+        "sha256": "b93968c13e3492fcac34585d8c2b58d14a0360a237c2b9ef4a0a39a3ccac1c8f"
+      },
+      "outputs": [
+        {
+          "file": "disturbance-demo.webp",
+          "bytes": 5256756,
+          "sha256": "43503b5b69ef7e7e537f4f38a0f119d50c5becce906e43bfe3bf17d4e55de667",
+          "frames_per_second": 20,
+          "width": 960,
+          "height": 320
+        },
+        {
+          "file": "disturbance-demo.mp4",
+          "bytes": 1929135,
+          "sha256": "1d9dad33838c522c3ad4238dac66117d42041e7b97ec49cd05659ba1b6c64a68",
+          "frames_per_second": 50,
+          "width": 960,
+          "height": 320
+        }
+      ]
+    }
+  ]
+}

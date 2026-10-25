@@ -1,0 +1,21 @@
+{
+  "package_identity": "e581533c5fe7cd02a83f6806ee952e18156230fc6855addbe8099368d4555dbb",
+  "controller": "/workspace/scratch/5d7345c481bf/microduck-stage12-evaluate-recovery-v2-20261020.py",
+  "controller_bytes": 36405,
+  "controller_sha256": "ba426d5d65f30bb05143d39bd04289049dda8d3342eeeb6ee8c65d828a81ba6a",
+  "transport_bytes": 20675,
+  "checkpoints": [
+    4500,
+    6000
+  ],
+  "seeds": [
+    20261021,
+    20261022
+  ],
+  "num_envs": 128,
+  "total_first_episodes": 512,
+  "reused_first_episodes": 256,
+  "new_first_episodes": 256,
+  "original_deadline_preserved": true,
+  "added_PPO_updates": 0
+}

@@ -1,0 +1,87 @@
+{
+  "expected_attempted_updates": 5305,
+  "expected_completed_updates": 5304,
+  "expected_prior_evaluations": 0,
+  "files": {
+    "budget.json": {
+      "bytes": 669,
+      "sha256": "58a0136344aa87ef6fdf1927cf68dec84ad03cc67d432a57755858121185d516"
+    },
+    "exit.json": {
+      "bytes": 1586,
+      "sha256": "8b3bebc41d0fc4081ed8dc2d164f328181fc1115f2a296c13f9ebe8137c305a6"
+    },
+    "package/manifest.json": {
+      "bytes": 4871,
+      "sha256": "fbb447dece83efa2e7c24b0cfab0bb53b9d34ee24f4697cb5161f2971fad10d9"
+    },
+    "package/native_task.py": {
+      "bytes": 8816,
+      "sha256": "b6909b9cff864dcfce8203062a75282571ca2c7ef5d66b2aa58c05c4626a55af"
+    },
+    "package/source-pins.json": {
+      "bytes": 54309,
+      "sha256": "08c781088ecb4b2023c593ff8ffa45061bf6a57fad5902fcf79b50155daa969c"
+    },
+    "run/candidates/candidate-01.json": {
+      "bytes": 525,
+      "sha256": "aa20bb94b9ebba7288f976e3cfe6ad62b1fb85f66d2e29f782eeb806385c7ca6"
+    },
+    "run/candidates/candidate-02.json": {
+      "bytes": 526,
+      "sha256": "78033b7aad5853f9c902d5ba21e8a5ab4338db0cd70f59831eac3a35615d6a99"
+    },
+    "run/candidates/candidate-final.json": {
+      "bytes": 596,
+      "sha256": "7553870f3759addbf6aa3d3452cdfdefc731979f82d56f12a73ae10b79f57866"
+    },
+    "run/checkpoints/final6h_001553.json": {
+      "bytes": 409,
+      "sha256": "7b62ce6bc43ff06f211f14f34dfabbee42dd3c5e3a20d52b9823e75f3449e591"
+    },
+    "run/checkpoints/final6h_001553.pt": {
+      "bytes": 10041821,
+      "sha256": "2ba6f78bc907236bb546d6929b0dbfd8841379dd4c34231133dd488f268f8e50"
+    },
+    "run/checkpoints/final6h_003428.json": {
+      "bytes": 409,
+      "sha256": "bb89382b519e5a7a6e42aa0031745867c5679fcd9ab2fccc485a839228254689"
+    },
+    "run/checkpoints/final6h_003428.pt": {
+      "bytes": 10041821,
+      "sha256": "89d3afa6ec96576ee0c5a2d95304f6c42317501b53af0122d87d40f55ed0bcdf"
+    },
+    "run/checkpoints/final6h_005304.json": {
+      "bytes": 410,
+      "sha256": "057ac3f955c49f5e116cd7076e0eec363b0b1b6dbf027401c10505286737ef99"
+    },
+    "run/checkpoints/final6h_005304.pt": {
+      "bytes": 10041821,
+      "sha256": "cf7ce9297672943687019afe071d94918d3eb2620c18a1e8fe689512f8c08111"
+    },
+    "run/latest.json": {
+      "bytes": 410,
+      "sha256": "057ac3f955c49f5e116cd7076e0eec363b0b1b6dbf027401c10505286737ef99"
+    },
+    "run/session-004/result.json": {
+      "bytes": 8227,
+      "sha256": "b14d05c96a4081fcdf1e0bb3847ce84b3f2918b0f4ec2c03f69d8308ae780980"
+    },
+    "source-commit.json": {
+      "bytes": 214,
+      "sha256": "53404f9b964a54cf028061815678eeaa2035bfa68cc58c36e87bc1c80d8ff006"
+    },
+    "started.json": {
+      "bytes": 642,
+      "sha256": "1655d83308ad4eda99e27d4ea1dc160814ecd1e479c354116b8ce83f58a4b71e"
+    }
+  },
+  "index_sha256": "1e006b5e706d5c5767ff1cc6033013ef6c3fbfec3c8205c8862f42405c08f64b",
+  "local_index_serialization": "repair-v2 controller.write: json.dumps(ensure_ascii=False, indent=2, allow_nan=False) + newline",
+  "local_index_sha256": "4519472a91b4b583b3602975e6184d96ba2a954e73beaaad02aa06254dbe8288",
+  "return_branch": "stage12-push10-final6h-return-20261023t181130z-1b79efbd-s002",
+  "return_commit": "0cbee30e5a83904371076ca09a8cfb4afd1fa3f4",
+  "schema": "final6h-return-pins-v1",
+  "training_commit": "8270763ce09f842e3ed6a6d2eab19ed2545670ec",
+  "training_package_identity": "1b79efbd0afbbcdaacde1bd94014c2ecbe257d4479c877b6fc2b649914a61b39"
+}

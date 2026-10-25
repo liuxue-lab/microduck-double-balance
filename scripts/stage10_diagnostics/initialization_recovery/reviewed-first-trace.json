@@ -1,0 +1,550 @@
+{
+  "status": "TRACE_REVIEWED_ORIGINAL_POSTCHECKS_INCOMPLETE",
+  "input_zip_sha256": "6d285fb6c6a627d27dcfc334f730892460bd18db86c11792fb8985576394fc4a",
+  "manifest_files_verified": 28,
+  "trace_events": 33,
+  "array_references": 30476,
+  "unique_arrays_verified": 507,
+  "raw_numeric_bytes": 61295000,
+  "array_archive_entries_verified": 507,
+  "physical_and_observation_arrays_finite": true,
+  "assistance_at_all_snapshots": [
+    {
+      "index": 0,
+      "phase": "loaded_before_eval_counter_reset",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 1,
+      "phase": "raw.reset#1.before",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 2,
+      "phase": "raw._reset_idx#1.before",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 3,
+      "phase": "sim.reset#1.before",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 4,
+      "phase": "sim.reset#1.after",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 5,
+      "phase": "scene.reset#1.before",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 6,
+      "phase": "scene.reset#1.after",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 7,
+      "phase": "event.apply#1.before",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 8,
+      "phase": "sim.forward#1.before",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 9,
+      "phase": "sim.forward#1.after",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 10,
+      "phase": "event.apply#1.after",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 11,
+      "phase": "raw._reset_idx#1.after",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 12,
+      "phase": "scene.write_data_to_sim#1.before",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 13,
+      "phase": "bam.compute#1.before",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 14,
+      "phase": "bam.compute#1.after",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 15,
+      "phase": "scene.write_data_to_sim#1.after",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 16,
+      "phase": "sim.forward#2.before",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 17,
+      "phase": "sim.forward#2.after",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 18,
+      "phase": "command.compute#1.before",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 19,
+      "phase": "command.compute#1.after",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 20,
+      "phase": "sim.sense#1.before",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 21,
+      "phase": "sim.sense#1.after",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 22,
+      "phase": "observation.compute#1.before",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 23,
+      "phase": "observation.compute#1.after",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 24,
+      "phase": "raw.reset#1.after",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 25,
+      "phase": "policy.reset#1.before",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 26,
+      "phase": "policy.reset#1.after",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 27,
+      "phase": "before_initial_state_seal",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 28,
+      "phase": "after_initial_state_seal",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 29,
+      "phase": "observation.compute#2.before",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 30,
+      "phase": "observation.compute#2.after",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 31,
+      "phase": "after_wrapper_get_observations",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    },
+    {
+      "index": 32,
+      "phase": "reset_ready_after_original_observer_setup",
+      "zero_fields": [
+        "context/assistance_hold",
+        "physical/xfrc_applied",
+        "physical/qfrc_applied",
+        "physical/time"
+      ],
+      "force_cache": "None",
+      "other_three_caches": "ABSENT"
+    }
+  ],
+  "boundary_counts": {
+    "raw.reset": 1,
+    "raw._reset_idx": 1,
+    "sim.reset": 1,
+    "scene.reset": 1,
+    "event.apply": 1,
+    "sim.forward": 2,
+    "scene.write_data_to_sim": 1,
+    "bam.compute": 1,
+    "command.compute": 1,
+    "sim.sense": 1,
+    "observation.compute": 2,
+    "policy.reset": 1
+  },
+  "bootstrap": {
+    "phase": "observed_final_reset",
+    "python_entry_counts": {
+      "construction:mjwarp.step": 3,
+      "construction:mjwarp.forward": 3,
+      "construction:mjwarp.reset_data": 3,
+      "construction:env.reset": 1,
+      "construction:sim.reset": 1,
+      "construction:sim.forward": 2,
+      "construction:sim.sense": 1,
+      "observed_final_reset:env.reset": 1,
+      "observed_final_reset:sim.reset": 1,
+      "observed_final_reset:sim.forward": 2,
+      "observed_final_reset:sim.sense": 1
+    },
+    "rollout_calls": 0,
+    "counts_are_not_gpu_kernel_or_graph_launch_counts": true
+  },
+  "frozen_source_files_verified": 101,
+  "root_cause": "Initialization-only diagnostic called a post-action assertion before BallHoldAction.process_actions initializes its caches.",
+  "original_result_preserved": "FAILED_REVIEW_REQUIRED",
+  "first_trace_must_not_be_repeated": true,
+  "missing_original_postchecks": [
+    "zero twist command live assertion",
+    "observer.rows empty assertion",
+    "actor/critic parameters and complete state_dict equality",
+    "Adam final equality",
+    "LR/iteration final assertion",
+    "backend_after live snapshot/equality",
+    "final source/plan recheck"
+  ],
+  "observed_model_gaps": {
+    "model/wp/callback": {
+      "status": "UNENUMERATED_OBJECT",
+      "type": "mujoco_warp._src.types.Callback"
+    },
+    "model/wp/has_sdf_geom": {
+      "status": "UNENUMERATED_OBJECT",
+      "type": "numpy.bool"
+    },
+    "model/wp/block_dim": {
+      "status": "UNENUMERATED_OBJECT",
+      "type": "mujoco_warp._src.types.BlockDim"
+    },
+    "model/wp/body_tree": {
+      "status": "UNENUMERATED_OBJECT",
+      "type": "builtins.tuple"
+    },
+    "model/wp/geom_pair_type_count": {
+      "status": "UNENUMERATED_OBJECT",
+      "type": "builtins.tuple"
+    },
+    "model/wp/sensor_e_potential": {
+      "status": "UNENUMERATED_OBJECT",
+      "type": "numpy.bool"
+    },
+    "model/wp/sensor_e_kinetic": {
+      "status": "UNENUMERATED_OBJECT",
+      "type": "numpy.bool"
+    },
+    "model/wp/sensor_subtree_vel": {
+      "status": "UNENUMERATED_OBJECT",
+      "type": "numpy.bool"
+    },
+    "model/wp/sensor_rne_postconstraint": {
+      "status": "UNENUMERATED_OBJECT",
+      "type": "numpy.bool"
+    },
+    "model/wp/qM_tiles": {
+      "status": "UNENUMERATED_OBJECT",
+      "type": "builtins.tuple"
+    },
+    "model/wp/qLD_updates": {
+      "status": "UNENUMERATED_OBJECT",
+      "type": "builtins.tuple"
+    },
+    "model/cpu/bvh_aabb": {
+      "status": "ARRAY_TOO_LARGE_OR_OBJECT",
+      "shape": [
+        1181879,
+        6
+      ],
+      "bytes": 56730192
+    },
+    "model/cpu/bvh_child": {
+      "status": "ARRAY_TOO_LARGE_OR_OBJECT",
+      "shape": [
+        1181879,
+        2
+      ],
+      "bytes": 9455032
+    },
+    "model/cpu/vis": {
+      "status": "UNENUMERATED_OBJECT",
+      "type": "mujoco._structs.MjVisual"
+    },
+    "workspace/efc/J": {
+      "status": "ARRAY_EXCEEDS_8_MIB",
+      "shape": [
+        128,
+        1504,
+        32
+      ],
+      "bytes": 24641536
+    }
+  },
+  "limits": [
+    "Only one initialization trace; no cross-process root-cause conclusion.",
+    "Zero at recorded readbacks does not prove continuous or hidden-state equality.",
+    "Python bootstrap entries are not GPU kernel or graph launch counts.",
+    "No retrospective reconstruction of missing first-run live checks."
+  ],
+  "recovery_scope": {
+    "reuse_exact_first_trace": true,
+    "additional_fresh_processes": 2,
+    "environments_each": 128,
+    "explicit_final_resets_each": 1,
+    "original_forwards_each": 2,
+    "rollout_steps": 0,
+    "policy_inference_calls_after_load": 0,
+    "new_ppo_updates": 0,
+    "cloud_gpu_hours": 0,
+    "source_physics_rewards_acceptance_changed": false
+  },
+  "stage10_complete": false,
+  "policy_success_assessed": false,
+  "cloud_status": "OFF_CONFIRMED_BY_USER"
+}

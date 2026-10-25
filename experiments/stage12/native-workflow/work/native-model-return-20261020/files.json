@@ -1,0 +1,35 @@
+{
+  "model": {
+    "remote": "native-training-v2/run/checkpoints/update_004500.pt",
+    "local": "checkpoints/update_004500.pt",
+    "bytes": 10036060,
+    "max_bytes": 10036060,
+    "sha256": "df03202acf010680b63d3277ec879f63e2d4808e5d1286653923a314f125ac6a"
+  },
+  "group_20261021": {
+    "remote": "native-evaluation-v1/group-4500-20261021.json",
+    "local": "evaluation/group-4500-20261021.json",
+    "max_bytes": 2097152,
+    "sha256": "7be7e52a27f9192626af8b9f2f7cf94ce06c99e3e86323e2f4055f4e1fdd48bf"
+  },
+  "group_20261022": {
+    "remote": "native-evaluation-v1/group-4500-20261022.json",
+    "local": "evaluation/group-4500-20261022.json",
+    "max_bytes": 2097152,
+    "sha256": "5df8d19a0c50869bdd65a06ac18293d458da6f4e46304bebee732e240b9e2edc"
+  },
+  "native_task.py": {
+    "remote": "native-training-v2/package/native_task.py",
+    "local": "task/native_task.py",
+    "bytes": 8816,
+    "max_bytes": 8816,
+    "sha256": "b6909b9cff864dcfce8203062a75282571ca2c7ef5d66b2aa58c05c4626a55af"
+  },
+  "source-pins.json": {
+    "remote": "native-training-v2/package/source-pins.json",
+    "local": "task/source-pins.json",
+    "bytes": 54309,
+    "max_bytes": 54309,
+    "sha256": "08c781088ecb4b2023c593ff8ffa45061bf6a57fad5902fcf79b50155daa969c"
+  }
+}

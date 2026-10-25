@@ -1,0 +1,52 @@
+{
+  "stage": 8,
+  "date_utc": "2026-09-30",
+  "status": "FIX_VALIDATED_LOCALLY_AWAITING_USER_SSH_PUSH_AND_REMOTE_CI",
+  "affected_commit": "a76019399a4d6a2946ccb6a5713095ec7dbca717",
+  "runs": [
+    {
+      "ref": "stage-08-complete",
+      "run_id": 36703221141,
+      "job_id": 109847290121,
+      "url": "https://github.com/liuxue-lab/microduck-double-balance/actions/runs/36703221141",
+      "test_summary": "1 failed, 373 passed, 1 skipped, 3 warnings in 96.44s"
+    },
+    {
+      "ref": "double-balance",
+      "run_id": 36703217453,
+      "job_id": 109847278738,
+      "url": "https://github.com/liuxue-lab/microduck-double-balance/actions/runs/36703217453",
+      "test_summary": "1 failed, 373 passed, 1 skipped, 3 warnings in 166.24s"
+    }
+  ],
+  "evidence_source": "GitHub Actions job steps and complete job logs fetched through read-only repository API",
+  "failed_step": "Run CPU tests",
+  "failed_test": "tests/test_stage08_range_download.py::test_registry_seed_is_accepted_by_offline_locked_sync",
+  "error": "PermissionError: [Errno 13] Permission denied: '/root/autodl-tmp/microduck-double-balance/tools/bootstrap/bin/uv'",
+  "root_cause": "The test probes a root-owned cloud path with Path.is_file before falling back to PATH; Python 3.12 raises on EACCES for the non-root GitHub runner.",
+  "fix": "Resolve uv with shutil.which('uv'); retain the real offline locked-sync and wheel hash assertions.",
+  "validation": {
+    "python": "3.12.14",
+    "pytest": "9.1.1",
+    "uv": "0.12.18",
+    "before_permission_fault_injection": "1 failed with the same PermissionError",
+    "after_permission_fault_injection": "6 passed in 3.60s",
+    "normal_range_and_archive_tests": "10 passed in 3.25s",
+    "relative_documentation_links": "PASS: 118 relative Markdown/HTML links resolve",
+    "git_diff_check": "PASS",
+    "real_non_root_execution": "NOT_RUN: runuser could not set groups in this workspace; used temporary Path.stat fault injection for /root/autodl-tmp instead",
+    "full_repository_ci": "NOT_RUN_LOCALLY: simulation dependencies are absent",
+    "remote_fix_ci": "PENDING_USER_SSH_PUSH",
+    "later_original_ci_steps": "SKIPPED_AFTER_CPU_TEST_FAILURE; not certified by this targeted fix"
+  },
+  "new_ppo_updates": 0,
+  "cloud_operations": 0,
+  "stage06_smoke_executed": false,
+  "training_evaluation_and_physics_changed": false,
+  "checkpoint_and_archive_changed": false,
+  "publication": {
+    "method": "Existing incremental bundle, local fast-forward, user SSH push of double-balance only",
+    "existing_stage08_tag_policy": "Retain stage-08-complete at a760193; do not move or recreate",
+    "remote_full_ref_verification_repeated": false
+  }
+}

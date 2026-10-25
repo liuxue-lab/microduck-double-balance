@@ -1,0 +1,34 @@
+{
+  "schema": "stage12-hil-replay-offline-validation-v1",
+  "tests_passed": 12,
+  "tests_skipped": 0,
+  "tests_failed": 0,
+  "tests": {
+    "recorded_evidence_and_media": 7,
+    "accepted_report_and_worker_lifecycle": 2,
+    "real_incremental_bundle_installation": 3
+  },
+  "evidence": {
+    "actual_v3_report_revalidated": true,
+    "formal_hil_ticks_in_source": 6000,
+    "actual_source_deadline_misses": 0,
+    "synthetic_MJB_dimensions": [
+      35,
+      32,
+      14
+    ],
+    "all_3001_synthetic_states_restored_without_integration": true,
+    "real_mujoco_renderer": "3.10.0 EGL",
+    "synthetic_video_frames": 25,
+    "synthetic_video_full_decode": true,
+    "first_tick_overrun_rejected": true,
+    "nonfinite_states_time_gaps_modified_exports_rejected": true,
+    "interrupted_encoder_and_supervisor_cleaned_up": true,
+    "duplicate_launch_and_implicit_retry_prevented": true,
+    "staged_unstaged_untracked_and_ignored_user_files_preserved": true,
+    "divergent_commit_preserved": true,
+    "replay_page_javascript_syntax": "node --check passed"
+  },
+  "scope": "No new physics integrations, model inference, training, SSH, HIL runs, or Git push. Actual laptop MJB and NPZ are not available here; actual two 60-second recordings await user execution.",
+  "accepted_source_report_sha256": "513c9add8b0029dfb039efba38fc1d1390a97ed310766b8c184d42d87abfd079"
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "microduck-stage12-public-documentation-provenance-v1",
+  "historical_handoff_claims": {
+    "date": "2026-10-25",
+    "timezone": "Asia/Shanghai",
+    "current_code_commit": "056657aa36158fb81dca6fd2092e525222d6e632",
+    "branch": "double-balance",
+    "git_remote": "git@github.com:liuxue-lab/microduck-double-balance.git",
+    "push_status": "USER_CONFIRMED_SUCCESS",
+    "cloud_gpu_state": "OFF_USER_CONFIRMED",
+    "remaining_cloud_work": [],
+    "project_scope": "PC native MuJoCo + wired ROS2 Humble + Orin Nano Super FP32 HIL; foot on basketball, upper ball on original head shell",
+    "excluded_scope": [
+      "physical robot sensor/servo integration",
+      "physical robot acceptance and demo",
+      "Stage13/14 ground trajectory project"
+    ],
+    "frozen": {
+      "checkpoint_sha256": "cf7ce9297672943687019afe071d94918d3eb2620c18a1e8fe689512f8c08111",
+      "onnx_sha256": "8c1c1250b9b88d9a91e3eb095fea8bce21daa73c251b43f3cd8adc1327f03c4e",
+      "contract_sha256": "e0283bf7f00c8e2c7b57128b91ca3ced3abb4698e8f4c4aa11e74a745ad84929",
+      "golden_sha256": "b7ebe914c3933477d35bc0cc70c6b1bb4c1c83e67bd61dc22cd8f0775b1609e7"
+    }
+  },
+  "historical_claims_scope": "Statements retained from the 2026-10-25 user handoff; no new remote/power verification.",
+  "source_handoff_sha256": "12c895b25da2208c782256bac71071f8fc1ab12ccbb6c6e4fdf0d1d0d12203bf",
+  "source_handoff_txt_sha256": "4a0a21f4c4bed741ca5ce02f62d41068ca8f4ef201f7ac569fda324a0f100990",
+  "source_archive_inventory_zip_sha256": "5fd447696e39c7f3d08fe1f43690f3bf6a7147c7009d719b444f00bf2ea411ac",
+  "original_handoff_and_inventory_zip_in_source_branch": false,
+  "full_backup_verified": false,
+  "reports": [
+    {
+      "role": "native-mujoco-v3",
+      "path": "reports/native-mujoco-v3-report.json",
+      "bytes": 198420,
+      "sha256": "513c9add8b0029dfb039efba38fc1d1390a97ed310766b8c184d42d87abfd079",
+      "laptop_run": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-mujoco-v3/runs/20261025T044453Z-d194fd47"
+    },
+    {
+      "role": "hil-replay-v1",
+      "path": "reports/hil-replay-v1-report.json",
+      "bytes": 7627,
+      "sha256": "539f3b3d277018a9c0d391b2b46ef7f1eca4595c16871a9b1281ecaadae24e7a",
+      "laptop_run": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d"
+    },
+    {
+      "role": "native-live-v1",
+      "path": "reports/native-live-v1-report.json",
+      "bytes": 201671,
+      "sha256": "6df130f52cda849c2bef3b294cd02cb7c8795ac71e53585c8041b905b46d1f4f",
+      "laptop_run": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-live-v1/runs/20261025T065835Z-f9fbf65e"
+    }
+  ]
+}

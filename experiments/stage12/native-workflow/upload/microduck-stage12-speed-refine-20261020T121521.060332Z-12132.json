@@ -1,0 +1,1827 @@
+{
+  "status": "REFINEMENT_COMPLETE",
+  "started": {
+    "automatic_retry": false,
+    "deadline_utc": 1792502922.6209888,
+    "evaluation_seeds": [
+      20261021,
+      20261022
+    ],
+    "executable": "/root/autodl-tmp/microduck-double-balance/workspace/.venv/bin/python",
+    "learning_rate": 1e-05,
+    "max_seconds": 7200,
+    "max_segments": 4,
+    "max_updates": 1000,
+    "maximum_new_first_episodes": 1024,
+    "num_envs": 4096,
+    "origin_checkpoint_sha256": "df03202acf010680b63d3277ec879f63e2d4808e5d1286653923a314f125ac6a",
+    "package_identity": "340f064e33b61ed8968724084ebab8dc35563cb2239506ab20b1d01056581c10",
+    "patience": 2,
+    "physical_trajectory_resume": false,
+    "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+    "reused_baseline_first_episodes": 256,
+    "reward_spec": {
+      "changed_term": "double_balance",
+      "consecutive_success_bonus": false,
+      "evaluation_uses_original_task": true,
+      "formula": "original position/height/upright factors * exp(-upper_speed^2/0.08^2) * exp(-lower_xy_speed^2/0.15^2)",
+      "lower_horizontal_speed_std_m_s": 0.15,
+      "observation_and_physics_unchanged": true,
+      "original_upper_speed_std_m_s": 0.12,
+      "other_rewards_unchanged": true,
+      "smooth_dense_reward": true,
+      "upper_speed_std_m_s": 0.08,
+      "version": "speed_alignment_v1",
+      "weight": 4.0
+    },
+    "rollout_steps": 24,
+    "segment_updates": 250,
+    "selection_rule": "Higher success count only; ties keep the earlier model; two consecutive non-improvements stop training",
+    "started_utc": 1792495722.6209888,
+    "train_seed": 20261023
+  },
+  "budget": {
+    "attempted_updates": 1000,
+    "completed_updates": 1000,
+    "deadline_utc": 1792502922.6209888,
+    "interrupted_attempts": 0,
+    "max_updates": 1000,
+    "pending": false,
+    "started_utc": 1792495722.6209888
+  },
+  "progress": {
+    "best_successes": 253,
+    "candidate_successes": 250,
+    "no_improvement": 2,
+    "phase": "candidate_compared",
+    "segment": 4,
+    "status": "SELECTING"
+  },
+  "session": {
+    "number": 1,
+    "original_deadline_utc": 1792502922.6209888,
+    "requested_utc": 1792495722.6209888,
+    "resume": false
+  },
+  "selection": {
+    "best": {
+      "checkpoint": {
+        "attempted_updates": 500,
+        "bytes": 10036828,
+        "completed_updates": 500,
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-speed-refine-v1/run/checkpoints/refine_000500.pt",
+        "policy_updates": 5000,
+        "sha256": "51821a28880aba74b80e6d5a388dfd7a82098bd3dca04a1e8947b4b2a8d5539a"
+      },
+      "evaluation_path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-speed-refine-v1/evaluations/segment-02/evaluation-result.json",
+      "evaluation_sha256": "0e9ff8b24f10929523f1a17e8cd791c6b73408b6f2905feb22e5524c36c92e81",
+      "model": "5000",
+      "segment": 2,
+      "summary": {
+        "episodes": 256,
+        "ever_5s_count": 253,
+        "gate_violation_fraction": {
+          "lower_ball_speed": 0.0041015625,
+          "lower_height_max": 0.0,
+          "lower_height_min": 0.0,
+          "lower_offset": 0.0,
+          "robot_tilt": 0.0,
+          "top_center": 0.000859375,
+          "top_height": 0.0,
+          "top_speed": 0.00690625,
+          "unassisted": 0.0
+        },
+        "longest_stable_seconds": {
+          "max": 9.96,
+          "median": 9.48,
+          "min": 3.8200000000000003
+        },
+        "mean_survival_seconds": 10.0,
+        "physically_terminated_count": 0,
+        "run_break_counts": {
+          "lower_ball_speed": 282,
+          "lower_height_max": 0,
+          "lower_height_min": 0,
+          "lower_offset": 0,
+          "robot_tilt": 0,
+          "top_center": 13,
+          "top_height": 0,
+          "top_speed": 487,
+          "unassisted": 0
+        },
+        "stable_fraction_of_first_episode_steps": 0.988390625,
+        "success_fraction": 0.98828125,
+        "success_wilson95": [
+          0.9661184273321177,
+          0.9960067128769923
+        ],
+        "successes": 253,
+        "termination_counts": {
+          "time_out": 256
+        },
+        "values_mean_over_first_episode_steps": {
+          "hold": 0.0,
+          "lower_ball_speed_m_s": 0.04651901207828306,
+          "lower_height_m": 0.238564351670444,
+          "lower_offset_m": 0.005000768174363259,
+          "robot_tilt_rad": 0.02312812716455255,
+          "top_center_m": 0.003164434338137127,
+          "top_height_error_m": 5.5590958858374504e-05,
+          "top_speed_m_s": 0.015979220203086526
+        }
+      }
+    },
+    "early_stop": true,
+    "history": [
+      {
+        "checkpoint": {
+          "attempted_updates": 250,
+          "bytes": 10036828,
+          "completed_updates": 250,
+          "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-speed-refine-v1/run/checkpoints/refine_000250.pt",
+          "policy_updates": 4750,
+          "sha256": "42d6e1d7b429ff2735837e5de8f74ff52bc77be8843186e7410634ff2a16d0d0"
+        },
+        "evaluation_path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-speed-refine-v1/evaluations/segment-01/evaluation-result.json",
+        "evaluation_sha256": "ac09f33588826194e56854cbc39a11f767a867a40a95b680af0a7f80ed76a15b",
+        "model": "4750",
+        "segment": 1,
+        "summary": {
+          "episodes": 256,
+          "ever_5s_count": 246,
+          "gate_violation_fraction": {
+            "lower_ball_speed": 0.00378125,
+            "lower_height_max": 0.0,
+            "lower_height_min": 0.0,
+            "lower_offset": 0.0,
+            "robot_tilt": 0.0,
+            "top_center": 0.0008515625,
+            "top_height": 0.0,
+            "top_speed": 0.0067421875,
+            "unassisted": 0.0
+          },
+          "longest_stable_seconds": {
+            "max": 10.0,
+            "median": 9.44,
+            "min": 3.58
+          },
+          "mean_survival_seconds": 10.0,
+          "physically_terminated_count": 0,
+          "run_break_counts": {
+            "lower_ball_speed": 271,
+            "lower_height_max": 0,
+            "lower_height_min": 0,
+            "lower_offset": 0,
+            "robot_tilt": 0,
+            "top_center": 6,
+            "top_height": 0,
+            "top_speed": 446,
+            "unassisted": 0
+          },
+          "stable_fraction_of_first_episode_steps": 0.98909375,
+          "success_fraction": 0.9609375,
+          "success_wilson95": [
+            0.9296001682001327,
+            0.9786459641572671
+          ],
+          "successes": 246,
+          "termination_counts": {
+            "time_out": 256
+          },
+          "values_mean_over_first_episode_steps": {
+            "hold": 0.0,
+            "lower_ball_speed_m_s": 0.04723439317229826,
+            "lower_height_m": 0.23969831703894307,
+            "lower_offset_m": 0.0050749059432060335,
+            "robot_tilt_rad": 0.022351365094994663,
+            "top_center_m": 0.0029284911372634355,
+            "top_height_error_m": 5.1314339711098e-05,
+            "top_speed_m_s": 0.01577662973981566
+          }
+        }
+      },
+      {
+        "checkpoint": {
+          "attempted_updates": 500,
+          "bytes": 10036828,
+          "completed_updates": 500,
+          "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-speed-refine-v1/run/checkpoints/refine_000500.pt",
+          "policy_updates": 5000,
+          "sha256": "51821a28880aba74b80e6d5a388dfd7a82098bd3dca04a1e8947b4b2a8d5539a"
+        },
+        "evaluation_path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-speed-refine-v1/evaluations/segment-02/evaluation-result.json",
+        "evaluation_sha256": "0e9ff8b24f10929523f1a17e8cd791c6b73408b6f2905feb22e5524c36c92e81",
+        "model": "5000",
+        "segment": 2,
+        "summary": {
+          "episodes": 256,
+          "ever_5s_count": 253,
+          "gate_violation_fraction": {
+            "lower_ball_speed": 0.0041015625,
+            "lower_height_max": 0.0,
+            "lower_height_min": 0.0,
+            "lower_offset": 0.0,
+            "robot_tilt": 0.0,
+            "top_center": 0.000859375,
+            "top_height": 0.0,
+            "top_speed": 0.00690625,
+            "unassisted": 0.0
+          },
+          "longest_stable_seconds": {
+            "max": 9.96,
+            "median": 9.48,
+            "min": 3.8200000000000003
+          },
+          "mean_survival_seconds": 10.0,
+          "physically_terminated_count": 0,
+          "run_break_counts": {
+            "lower_ball_speed": 282,
+            "lower_height_max": 0,
+            "lower_height_min": 0,
+            "lower_offset": 0,
+            "robot_tilt": 0,
+            "top_center": 13,
+            "top_height": 0,
+            "top_speed": 487,
+            "unassisted": 0
+          },
+          "stable_fraction_of_first_episode_steps": 0.988390625,
+          "success_fraction": 0.98828125,
+          "success_wilson95": [
+            0.9661184273321177,
+            0.9960067128769923
+          ],
+          "successes": 253,
+          "termination_counts": {
+            "time_out": 256
+          },
+          "values_mean_over_first_episode_steps": {
+            "hold": 0.0,
+            "lower_ball_speed_m_s": 0.04651901207828306,
+            "lower_height_m": 0.238564351670444,
+            "lower_offset_m": 0.005000768174363259,
+            "robot_tilt_rad": 0.02312812716455255,
+            "top_center_m": 0.003164434338137127,
+            "top_height_error_m": 5.5590958858374504e-05,
+            "top_speed_m_s": 0.015979220203086526
+          }
+        }
+      },
+      {
+        "checkpoint": {
+          "attempted_updates": 750,
+          "bytes": 10036828,
+          "completed_updates": 750,
+          "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-speed-refine-v1/run/checkpoints/refine_000750.pt",
+          "policy_updates": 5250,
+          "sha256": "d1192f367848d44efed3d48b92c56d86d0555b8d0ff82a5f8eb2d6ed29e7d30a"
+        },
+        "evaluation_path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-speed-refine-v1/evaluations/segment-03/evaluation-result.json",
+        "evaluation_sha256": "7145cde690cd29e05c0537c3fd778f1b235792871b7e899775bed13648d8299b",
+        "model": "5250",
+        "segment": 3,
+        "summary": {
+          "episodes": 256,
+          "ever_5s_count": 245,
+          "gate_violation_fraction": {
+            "lower_ball_speed": 0.0055,
+            "lower_height_max": 0.0,
+            "lower_height_min": 0.0,
+            "lower_offset": 0.0,
+            "robot_tilt": 0.0,
+            "top_center": 0.0009296875,
+            "top_height": 0.0,
+            "top_speed": 0.0065859375,
+            "unassisted": 0.0
+          },
+          "longest_stable_seconds": {
+            "max": 10.0,
+            "median": 9.27,
+            "min": 3.04
+          },
+          "mean_survival_seconds": 10.0,
+          "physically_terminated_count": 0,
+          "run_break_counts": {
+            "lower_ball_speed": 340,
+            "lower_height_max": 0,
+            "lower_height_min": 0,
+            "lower_offset": 0,
+            "robot_tilt": 0,
+            "top_center": 6,
+            "top_height": 0,
+            "top_speed": 462,
+            "unassisted": 0
+          },
+          "stable_fraction_of_first_episode_steps": 0.9874453125,
+          "success_fraction": 0.95703125,
+          "success_wilson95": [
+            0.9247089445363343,
+            0.9758401866993924
+          ],
+          "successes": 245,
+          "termination_counts": {
+            "time_out": 256
+          },
+          "values_mean_over_first_episode_steps": {
+            "hold": 0.0,
+            "lower_ball_speed_m_s": 0.04642411300429918,
+            "lower_height_m": 0.23781277043547017,
+            "lower_offset_m": 0.005046317287734752,
+            "robot_tilt_rad": 0.022161989798967625,
+            "top_center_m": 0.0031896255804484,
+            "top_height_error_m": 5.5835369988926686e-05,
+            "top_speed_m_s": 0.016013657943744306
+          }
+        }
+      },
+      {
+        "checkpoint": {
+          "attempted_updates": 1000,
+          "bytes": 10036828,
+          "completed_updates": 1000,
+          "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-speed-refine-v1/run/checkpoints/refine_001000.pt",
+          "policy_updates": 5500,
+          "sha256": "fbe5d242b401cd86131f0acbbb6b68ccd700a91884adb8509844d94277de2b0d"
+        },
+        "evaluation_path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-speed-refine-v1/evaluations/segment-04/evaluation-result.json",
+        "evaluation_sha256": "a94e41aa01ed4b8a9ee494c1835ee08a5755eedcf13eb601b9cb828929f476f3",
+        "model": "5500",
+        "segment": 4,
+        "summary": {
+          "episodes": 256,
+          "ever_5s_count": 250,
+          "gate_violation_fraction": {
+            "lower_ball_speed": 0.0037578125,
+            "lower_height_max": 0.0,
+            "lower_height_min": 0.0,
+            "lower_offset": 0.0,
+            "robot_tilt": 0.0,
+            "top_center": 0.00053125,
+            "top_height": 0.0,
+            "top_speed": 0.00746875,
+            "unassisted": 0.0
+          },
+          "longest_stable_seconds": {
+            "max": 10.0,
+            "median": 9.31,
+            "min": 2.7600000000000002
+          },
+          "mean_survival_seconds": 10.0,
+          "physically_terminated_count": 0,
+          "run_break_counts": {
+            "lower_ball_speed": 292,
+            "lower_height_max": 0,
+            "lower_height_min": 0,
+            "lower_offset": 0,
+            "robot_tilt": 0,
+            "top_center": 6,
+            "top_height": 0,
+            "top_speed": 530,
+            "unassisted": 0
+          },
+          "stable_fraction_of_first_episode_steps": 0.9884609375,
+          "success_fraction": 0.9765625,
+          "success_wilson95": [
+            0.9498190043999489,
+            0.9892151324441424
+          ],
+          "successes": 250,
+          "termination_counts": {
+            "time_out": 256
+          },
+          "values_mean_over_first_episode_steps": {
+            "hold": 0.0,
+            "lower_ball_speed_m_s": 0.04630424528407914,
+            "lower_height_m": 0.237143583549303,
+            "lower_offset_m": 0.005144522252438655,
+            "robot_tilt_rad": 0.02321644876861865,
+            "top_center_m": 0.0030484665830057905,
+            "top_height_error_m": 5.2836170099908483e-05,
+            "top_speed_m_s": 0.016744138893320267
+          }
+        }
+      }
+    ],
+    "no_improvement": 2
+  },
+  "processes_alive": {
+    "supervisor": false,
+    "child": false
+  },
+  "slot": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-speed-refine-v1",
+  "added_PPO_updates": 1000,
+  "package_identity": "340f064e33b61ed8968724084ebab8dc35563cb2239506ab20b1d01056581c10",
+  "exit": {
+    "added_PPO_updates": 1000,
+    "automatic_retry": false,
+    "error": null,
+    "finished_utc": 1792498507.7846618,
+    "original_deadline_utc": 1792502922.6209888,
+    "original_training_and_evaluation_files_unchanged": true,
+    "reason": "ATTEMPT_BUDGET_EXHAUSTED",
+    "session": 1,
+    "status": "REFINEMENT_COMPLETE"
+  },
+  "run_diagnostics": {
+    "added_PPO_updates": 0,
+    "added_simulation_steps": 0,
+    "available": true,
+    "invalid_lines": 0,
+    "parsed_rows": 1000,
+    "read_only": true,
+    "segments": [
+      {
+        "collection_seconds": {
+          "maximum": 2.5177643299102783,
+          "mean": 2.1403911685943604,
+          "median": 2.0991551876068115,
+          "minimum": 1.9409191608428955,
+          "samples": 50
+        },
+        "environment_transitions_per_logged_compute_second": {
+          "maximum": 43509.5777744901,
+          "mean": 39922.682961246006,
+          "median": 40740.77946224275,
+          "minimum": 34265.636364134996,
+          "samples": 50
+        },
+        "first_update": 201,
+        "last_update": 250,
+        "learning_seconds": {
+          "maximum": 0.6546359062194824,
+          "mean": 0.3302563142776489,
+          "median": 0.3252072334289551,
+          "minimum": 0.2604358196258545,
+          "samples": 50
+        },
+        "printed_reward_window": {
+          "contributions": {
+            "Episode_Reward/action_rate_l2": {
+              "maximum": -0.4401,
+              "mean": -0.55258,
+              "median": -0.5563,
+              "minimum": -0.6212,
+              "samples": 50
+            },
+            "Episode_Reward/angular_momentum": {
+              "maximum": -0.0,
+              "mean": 0.0,
+              "median": -0.0,
+              "minimum": -0.0,
+              "samples": 50
+            },
+            "Episode_Reward/ball_speed": {
+              "maximum": -0.0002,
+              "mean": -0.000218,
+              "median": -0.0002,
+              "minimum": -0.0004,
+              "samples": 50
+            },
+            "Episode_Reward/body_ang_vel": {
+              "maximum": -0.0029,
+              "mean": -0.003382,
+              "median": -0.0033,
+              "minimum": -0.0043,
+              "samples": 50
+            },
+            "Episode_Reward/centered": {
+              "maximum": 1.957,
+              "mean": 1.8655519999999999,
+              "median": 1.8995,
+              "minimum": 1.3714,
+              "samples": 50
+            },
+            "Episode_Reward/dof_pos_limits": {
+              "maximum": -0.0366,
+              "mean": -0.047466,
+              "median": -0.0479,
+              "minimum": -0.0526,
+              "samples": 50
+            },
+            "Episode_Reward/double_balance": {
+              "maximum": 2.7621,
+              "mean": 2.55007,
+              "median": 2.59305,
+              "minimum": 1.7821,
+              "samples": 50
+            },
+            "Episode_Reward/feet_on_ball": {
+              "maximum": 0.7633,
+              "mean": 0.7242379999999999,
+              "median": 0.7384999999999999,
+              "minimum": 0.5363,
+              "samples": 50
+            },
+            "Episode_Reward/head_surface_normal_tilt": {
+              "maximum": -0.0001,
+              "mean": -0.000126,
+              "median": -0.0001,
+              "minimum": -0.0002,
+              "samples": 50
+            },
+            "Episode_Reward/height": {
+              "maximum": 0.9734,
+              "mean": 0.930344,
+              "median": 0.9461999999999999,
+              "minimum": 0.687,
+              "samples": 50
+            },
+            "Episode_Reward/pose": {
+              "maximum": 0.15,
+              "mean": 0.111334,
+              "median": 0.1105,
+              "minimum": 0.0839,
+              "samples": 50
+            },
+            "Episode_Reward/self_collisions": {
+              "maximum": 0.0,
+              "mean": -8e-06,
+              "median": 0.0,
+              "minimum": -0.0002,
+              "samples": 50
+            },
+            "Episode_Reward/top_ball_speed": {
+              "maximum": -0.0001,
+              "mean": -0.000122,
+              "median": -0.0001,
+              "minimum": -0.0003,
+              "samples": 50
+            },
+            "Episode_Reward/track_angular_velocity": {
+              "maximum": 0.3658,
+              "mean": 0.34319,
+              "median": 0.34909999999999997,
+              "minimum": 0.2483,
+              "samples": 50
+            },
+            "Episode_Reward/track_linear_velocity": {
+              "maximum": 0.9739,
+              "mean": 0.92845,
+              "median": 0.9459,
+              "minimum": 0.6752,
+              "samples": 50
+            },
+            "Episode_Reward/upright": {
+              "maximum": 0.9939,
+              "mean": 0.951238,
+              "median": 0.9683,
+              "minimum": 0.7031,
+              "samples": 50
+            }
+          },
+          "first_iteration": 4700,
+          "last_iteration": 4749,
+          "samples": 50,
+          "scope": "Existing upstream printed Episode_Reward values, already weighted; four-decimal log precision; no simulator or reward recomputation"
+        },
+        "segment": 1,
+        "wall_seconds_between_updates": {
+          "maximum": 2.9257192611694336,
+          "mean": 2.530235918200746,
+          "median": 2.472400426864624,
+          "minimum": 2.283315896987915,
+          "samples": 49
+        },
+        "weighted_reward_metrics": {
+          "Episode_Reward/action_rate_l2": {
+            "maximum": -0.44006517343223095,
+            "mean": -0.5525751544845601,
+            "median": -0.5562802006800969,
+            "minimum": -0.6212425703803698,
+            "samples": 50
+          },
+          "Episode_Reward/angular_momentum": {
+            "maximum": -6.731822591958074e-08,
+            "mean": -7.985004791599693e-08,
+            "median": -7.90286982521593e-08,
+            "minimum": -1.106751419399643e-07,
+            "samples": 50
+          },
+          "Episode_Reward/ball_speed": {
+            "maximum": -0.0001611414418600058,
+            "mean": -0.0002273440387928834,
+            "median": -0.0002202484400110431,
+            "minimum": -0.00039086897898717626,
+            "samples": 50
+          },
+          "Episode_Reward/body_ang_vel": {
+            "maximum": -0.002926377288531512,
+            "mean": -0.003387498201142686,
+            "median": -0.003284775351251786,
+            "minimum": -0.0043256979358072085,
+            "samples": 50
+          },
+          "Episode_Reward/centered": {
+            "maximum": 1.9570388893286388,
+            "mean": 1.8655530109753211,
+            "median": 1.8995043858885765,
+            "minimum": 1.3713629599660635,
+            "samples": 50
+          },
+          "Episode_Reward/dof_pos_limits": {
+            "maximum": -0.03657304778850327,
+            "mean": -0.047472305248181024,
+            "median": -0.04788322118110955,
+            "minimum": -0.05258484153697888,
+            "samples": 50
+          },
+          "Episode_Reward/double_balance": {
+            "maximum": 2.7620879411697388,
+            "mean": 2.550076664251586,
+            "median": 2.593040777059893,
+            "minimum": 1.7821291144937277,
+            "samples": 50
+          },
+          "Episode_Reward/feet_on_ball": {
+            "maximum": 0.7633373066782951,
+            "mean": 0.7242481539274256,
+            "median": 0.7385439816862345,
+            "minimum": 0.5362845519557595,
+            "samples": 50
+          },
+          "Episode_Reward/head_surface_normal_tilt": {
+            "maximum": -0.00011520597005680126,
+            "mean": -0.0001412048986321679,
+            "median": -0.00013558363980337163,
+            "minimum": -0.00020452907422926123,
+            "samples": 50
+          },
+          "Episode_Reward/height": {
+            "maximum": 0.9734090392788252,
+            "mean": 0.9303463296964765,
+            "median": 0.9461870603263378,
+            "minimum": 0.6869520998249451,
+            "samples": 50
+          },
+          "Episode_Reward/pose": {
+            "maximum": 0.14996027573943138,
+            "mean": 0.11133615797424379,
+            "median": 0.11047613341361284,
+            "minimum": 0.08391791163012385,
+            "samples": 50
+          },
+          "Episode_Reward/self_collisions": {
+            "maximum": 0.0,
+            "mean": -9.295696716359694e-06,
+            "median": 0.0,
+            "minimum": -0.00016666667458290854,
+            "samples": 50
+          },
+          "Episode_Reward/top_ball_speed": {
+            "maximum": -8.66379268700257e-05,
+            "mean": -0.00012806445551783932,
+            "median": -0.00011303014177125685,
+            "minimum": -0.00031323257492961903,
+            "samples": 50
+          },
+          "Episode_Reward/track_angular_velocity": {
+            "maximum": 0.3658388778567314,
+            "mean": 0.3431904307985678,
+            "median": 0.3490740209041784,
+            "minimum": 0.2483259808116903,
+            "samples": 50
+          },
+          "Episode_Reward/track_linear_velocity": {
+            "maximum": 0.9738651936252912,
+            "mean": 0.9284514696585635,
+            "median": 0.945864058410128,
+            "minimum": 0.6751521239057183,
+            "samples": 50
+          },
+          "Episode_Reward/upright": {
+            "maximum": 0.9938623855511347,
+            "mean": 0.9512356136739254,
+            "median": 0.9682750099649032,
+            "minimum": 0.7030882006511092,
+            "samples": 50
+          }
+        }
+      },
+      {
+        "collection_seconds": {
+          "maximum": 2.4087893962860107,
+          "mean": 2.073921031951904,
+          "median": 2.009813904762268,
+          "minimum": 1.9061861038208008,
+          "samples": 50
+        },
+        "environment_transitions_per_logged_compute_second": {
+          "maximum": 46085.28193929845,
+          "mean": 41252.20880368336,
+          "median": 41965.40861791046,
+          "minimum": 35908.70525505852,
+          "samples": 50
+        },
+        "first_update": 451,
+        "last_update": 500,
+        "learning_seconds": {
+          "maximum": 0.3865039348602295,
+          "mean": 0.31737905025482177,
+          "median": 0.32379138469696045,
+          "minimum": 0.20011281967163086,
+          "samples": 50
+        },
+        "printed_reward_window": {
+          "contributions": {
+            "Episode_Reward/action_rate_l2": {
+              "maximum": -0.3484,
+              "mean": -0.487432,
+              "median": -0.4937,
+              "minimum": -0.5647,
+              "samples": 50
+            },
+            "Episode_Reward/angular_momentum": {
+              "maximum": -0.0,
+              "mean": 0.0,
+              "median": -0.0,
+              "minimum": -0.0,
+              "samples": 50
+            },
+            "Episode_Reward/ball_speed": {
+              "maximum": -0.0001,
+              "mean": -0.000226,
+              "median": -0.0002,
+              "minimum": -0.0005,
+              "samples": 50
+            },
+            "Episode_Reward/body_ang_vel": {
+              "maximum": -0.002,
+              "mean": -0.002992,
+              "median": -0.0028,
+              "minimum": -0.0048,
+              "samples": 50
+            },
+            "Episode_Reward/centered": {
+              "maximum": 1.9641,
+              "mean": 1.833498,
+              "median": 1.8814000000000002,
+              "minimum": 1.0555,
+              "samples": 50
+            },
+            "Episode_Reward/dof_pos_limits": {
+              "maximum": -0.0346,
+              "mean": -0.046434,
+              "median": -0.0479,
+              "minimum": -0.0494,
+              "samples": 50
+            },
+            "Episode_Reward/double_balance": {
+              "maximum": 2.8585,
+              "mean": 2.524636,
+              "median": 2.6246,
+              "minimum": 1.2358,
+              "samples": 50
+            },
+            "Episode_Reward/feet_on_ball": {
+              "maximum": 0.7712,
+              "mean": 0.71459,
+              "median": 0.73335,
+              "minimum": 0.4268,
+              "samples": 50
+            },
+            "Episode_Reward/head_surface_normal_tilt": {
+              "maximum": -0.0001,
+              "mean": -0.000146,
+              "median": -0.0001,
+              "minimum": -0.0003,
+              "samples": 50
+            },
+            "Episode_Reward/height": {
+              "maximum": 0.9577,
+              "mean": 0.899208,
+              "median": 0.92275,
+              "minimum": 0.5338,
+              "samples": 50
+            },
+            "Episode_Reward/pose": {
+              "maximum": 0.2805,
+              "mean": 0.210736,
+              "median": 0.20975,
+              "minimum": 0.0956,
+              "samples": 50
+            },
+            "Episode_Reward/self_collisions": {
+              "maximum": 0.0,
+              "mean": -6.8e-05,
+              "median": 0.0,
+              "minimum": -0.003,
+              "samples": 50
+            },
+            "Episode_Reward/top_ball_speed": {
+              "maximum": -0.0001,
+              "mean": -0.000146,
+              "median": -0.0001,
+              "minimum": -0.0006,
+              "samples": 50
+            },
+            "Episode_Reward/track_angular_velocity": {
+              "maximum": 0.3907,
+              "mean": 0.353002,
+              "median": 0.36515,
+              "minimum": 0.1846,
+              "samples": 50
+            },
+            "Episode_Reward/track_linear_velocity": {
+              "maximum": 0.9796,
+              "mean": 0.911246,
+              "median": 0.938,
+              "minimum": 0.5303,
+              "samples": 50
+            },
+            "Episode_Reward/upright": {
+              "maximum": 0.9926,
+              "mean": 0.933388,
+              "median": 0.9581,
+              "minimum": 0.5485,
+              "samples": 50
+            }
+          },
+          "first_iteration": 4950,
+          "last_iteration": 4999,
+          "samples": 50,
+          "scope": "Existing upstream printed Episode_Reward values, already weighted; four-decimal log precision; no simulator or reward recomputation"
+        },
+        "segment": 2,
+        "wall_seconds_between_updates": {
+          "maximum": 2.7963924407958984,
+          "mean": 2.448903366011016,
+          "median": 2.397189140319824,
+          "minimum": 2.1771187782287598,
+          "samples": 49
+        },
+        "weighted_reward_metrics": {
+          "Episode_Reward/action_rate_l2": {
+            "maximum": -0.34841568147142726,
+            "mean": -0.48743520601963003,
+            "median": -0.4936917871236801,
+            "minimum": -0.5647292522092661,
+            "samples": 50
+          },
+          "Episode_Reward/angular_momentum": {
+            "maximum": -5.434333990213721e-08,
+            "mean": -7.538003404583549e-08,
+            "median": -7.344597648580493e-08,
+            "minimum": -9.827025682085377e-08,
+            "samples": 50
+          },
+          "Episode_Reward/ball_speed": {
+            "maximum": -0.0001342553659924306,
+            "mean": -0.00022085067867616697,
+            "median": -0.00019919659492491823,
+            "minimum": -0.000507258750682619,
+            "samples": 50
+          },
+          "Episode_Reward/body_ang_vel": {
+            "maximum": -0.0020284967564900094,
+            "mean": -0.0029926857486134396,
+            "median": -0.00283295813035996,
+            "minimum": -0.00480053061619401,
+            "samples": 50
+          },
+          "Episode_Reward/centered": {
+            "maximum": 1.964109018445015,
+            "mean": 1.8335020132983724,
+            "median": 1.8813834165533385,
+            "minimum": 1.0554767002662022,
+            "samples": 50
+          },
+          "Episode_Reward/dof_pos_limits": {
+            "maximum": -0.03458100697025657,
+            "mean": -0.046439447269464536,
+            "median": -0.04788448360826199,
+            "minimum": -0.049449068338920675,
+            "samples": 50
+          },
+          "Episode_Reward/double_balance": {
+            "maximum": 2.858489920695623,
+            "mean": 2.5246276617298524,
+            "median": 2.6245814710855484,
+            "minimum": 1.235846479733785,
+            "samples": 50
+          },
+          "Episode_Reward/feet_on_ball": {
+            "maximum": 0.77116958796978,
+            "mean": 0.7145865866417687,
+            "median": 0.7333458792418242,
+            "minimum": 0.42675458639860153,
+            "samples": 50
+          },
+          "Episode_Reward/head_surface_normal_tilt": {
+            "maximum": -9.102950646896109e-05,
+            "mean": -0.00015088963090420293,
+            "median": -0.00012905184621558874,
+            "minimum": -0.0003252399019402219,
+            "samples": 50
+          },
+          "Episode_Reward/height": {
+            "maximum": 0.9577440644303957,
+            "mean": 0.8992143702569108,
+            "median": 0.922725286334753,
+            "minimum": 0.5338264505068461,
+            "samples": 50
+          },
+          "Episode_Reward/pose": {
+            "maximum": 0.28053932326535386,
+            "mean": 0.21073974192608147,
+            "median": 0.20974930779387552,
+            "minimum": 0.09559268038719893,
+            "samples": 50
+          },
+          "Episode_Reward/self_collisions": {
+            "maximum": 0.0,
+            "mean": -6.984078304678102e-05,
+            "median": 0.0,
+            "minimum": -0.003000000142492354,
+            "samples": 50
+          },
+          "Episode_Reward/top_ball_speed": {
+            "maximum": -7.156285179614012e-05,
+            "mean": -0.00014074437038895363,
+            "median": -0.00010252630075531974,
+            "minimum": -0.0005810759151548458,
+            "samples": 50
+          },
+          "Episode_Reward/track_angular_velocity": {
+            "maximum": 0.3907237723469734,
+            "mean": 0.35300281102613856,
+            "median": 0.36513863783329725,
+            "minimum": 0.1846229868630568,
+            "samples": 50
+          },
+          "Episode_Reward/track_linear_velocity": {
+            "maximum": 0.979592797656854,
+            "mean": 0.9112414935976267,
+            "median": 0.9379650789002577,
+            "minimum": 0.530314177274704,
+            "samples": 50
+          },
+          "Episode_Reward/upright": {
+            "maximum": 0.992582472662131,
+            "mean": 0.9333861782463888,
+            "median": 0.9581217852731545,
+            "minimum": 0.5484836176037788,
+            "samples": 50
+          }
+        }
+      },
+      {
+        "collection_seconds": {
+          "maximum": 2.4201955795288086,
+          "mean": 2.0700272274017335,
+          "median": 2.005650281906128,
+          "minimum": 1.8758056163787842,
+          "samples": 50
+        },
+        "environment_transitions_per_logged_compute_second": {
+          "maximum": 46814.46554565575,
+          "mean": 41532.55752591855,
+          "median": 42291.51267030361,
+          "minimum": 35808.83539856088,
+          "samples": 50
+        },
+        "first_update": 701,
+        "last_update": 750,
+        "learning_seconds": {
+          "maximum": 0.3836960792541504,
+          "mean": 0.30893847465515134,
+          "median": 0.3196154832839966,
+          "minimum": 0.22048616409301758,
+          "samples": 50
+        },
+        "printed_reward_window": {
+          "contributions": {
+            "Episode_Reward/action_rate_l2": {
+              "maximum": -0.2485,
+              "mean": -0.44018799999999997,
+              "median": -0.45185,
+              "minimum": -0.5243,
+              "samples": 50
+            },
+            "Episode_Reward/angular_momentum": {
+              "maximum": -0.0,
+              "mean": 0.0,
+              "median": -0.0,
+              "minimum": -0.0,
+              "samples": 50
+            },
+            "Episode_Reward/ball_speed": {
+              "maximum": -0.0001,
+              "mean": -0.000238,
+              "median": -0.0002,
+              "minimum": -0.0006,
+              "samples": 50
+            },
+            "Episode_Reward/body_ang_vel": {
+              "maximum": -0.0022,
+              "mean": -0.00453,
+              "median": -0.00295,
+              "minimum": -0.0272,
+              "samples": 50
+            },
+            "Episode_Reward/centered": {
+              "maximum": 1.9704,
+              "mean": 1.714464,
+              "median": 1.84295,
+              "minimum": 0.4245,
+              "samples": 50
+            },
+            "Episode_Reward/dof_pos_limits": {
+              "maximum": -0.0107,
+              "mean": -0.044302,
+              "median": -0.0471,
+              "minimum": -0.0607,
+              "samples": 50
+            },
+            "Episode_Reward/double_balance": {
+              "maximum": 2.7851,
+              "mean": 2.274268,
+              "median": 2.4785000000000004,
+              "minimum": 0.1428,
+              "samples": 50
+            },
+            "Episode_Reward/feet_on_ball": {
+              "maximum": 0.7818,
+              "mean": 0.679082,
+              "median": 0.7306,
+              "minimum": 0.1959,
+              "samples": 50
+            },
+            "Episode_Reward/head_surface_normal_tilt": {
+              "maximum": -0.0001,
+              "mean": -0.000206,
+              "median": -0.0001,
+              "minimum": -0.0014,
+              "samples": 50
+            },
+            "Episode_Reward/height": {
+              "maximum": 0.9472,
+              "mean": 0.83353,
+              "median": 0.89345,
+              "minimum": 0.2381,
+              "samples": 50
+            },
+            "Episode_Reward/pose": {
+              "maximum": 0.3743,
+              "mean": 0.265312,
+              "median": 0.28135,
+              "minimum": 0.0157,
+              "samples": 50
+            },
+            "Episode_Reward/self_collisions": {
+              "maximum": 0.0,
+              "mean": -9.999999999999999e-06,
+              "median": 0.0,
+              "minimum": -0.0003,
+              "samples": 50
+            },
+            "Episode_Reward/top_ball_speed": {
+              "maximum": -0.0001,
+              "mean": -0.000214,
+              "median": -0.0001,
+              "minimum": -0.001,
+              "samples": 50
+            },
+            "Episode_Reward/track_angular_velocity": {
+              "maximum": 0.397,
+              "mean": 0.328478,
+              "median": 0.35650000000000004,
+              "minimum": 0.0406,
+              "samples": 50
+            },
+            "Episode_Reward/track_linear_velocity": {
+              "maximum": 0.9807,
+              "mean": 0.85139,
+              "median": 0.9168499999999999,
+              "minimum": 0.1823,
+              "samples": 50
+            },
+            "Episode_Reward/upright": {
+              "maximum": 0.9939,
+              "mean": 0.874234,
+              "median": 0.93835,
+              "minimum": 0.2332,
+              "samples": 50
+            }
+          },
+          "first_iteration": 5200,
+          "last_iteration": 5249,
+          "samples": 50,
+          "scope": "Existing upstream printed Episode_Reward values, already weighted; four-decimal log precision; no simulator or reward recomputation"
+        },
+        "segment": 3,
+        "wall_seconds_between_updates": {
+          "maximum": 2.806699275970459,
+          "mean": 2.4369066102164134,
+          "median": 2.385056257247925,
+          "minimum": 2.1361539363861084,
+          "samples": 49
+        },
+        "weighted_reward_metrics": {
+          "Episode_Reward/action_rate_l2": {
+            "maximum": -0.24845393002033234,
+            "mean": -0.4401864603844782,
+            "median": -0.4518459774553776,
+            "minimum": -0.5242626667022705,
+            "samples": 50
+          },
+          "Episode_Reward/angular_momentum": {
+            "maximum": -5.9401230600997224e-08,
+            "mean": -9.613417454238752e-08,
+            "median": -7.9657415034499e-08,
+            "minimum": -4.425162956067652e-07,
+            "samples": 50
+          },
+          "Episode_Reward/ball_speed": {
+            "maximum": -0.00011139082016597968,
+            "mean": -0.000238795880162949,
+            "median": -0.00021655134363148437,
+            "minimum": -0.0005667876685038209,
+            "samples": 50
+          },
+          "Episode_Reward/body_ang_vel": {
+            "maximum": -0.002180814835204122,
+            "mean": -0.0045283867647716155,
+            "median": -0.0029347142165837186,
+            "minimum": -0.02721916971495375,
+            "samples": 50
+          },
+          "Episode_Reward/centered": {
+            "maximum": 1.9704051961501439,
+            "mean": 1.7144624710393448,
+            "median": 1.8429197339961927,
+            "minimum": 0.4244740903377533,
+            "samples": 50
+          },
+          "Episode_Reward/dof_pos_limits": {
+            "maximum": -0.01071446668356657,
+            "mean": -0.04429660510504618,
+            "median": -0.04708585992921144,
+            "minimum": -0.06065260246396065,
+            "samples": 50
+          },
+          "Episode_Reward/double_balance": {
+            "maximum": 2.7851441502571106,
+            "mean": 2.2742735168399912,
+            "median": 2.478497891376416,
+            "minimum": 0.14276209473609924,
+            "samples": 50
+          },
+          "Episode_Reward/feet_on_ball": {
+            "maximum": 0.781805694103241,
+            "mean": 0.6790849050413817,
+            "median": 0.7306118377794821,
+            "minimum": 0.19594986736774445,
+            "samples": 50
+          },
+          "Episode_Reward/head_surface_normal_tilt": {
+            "maximum": -0.00010179055789194535,
+            "mean": -0.00021694251548979082,
+            "median": -0.00013205051830785428,
+            "minimum": -0.001366599346511066,
+            "samples": 50
+          },
+          "Episode_Reward/height": {
+            "maximum": 0.9471502378582954,
+            "mean": 0.8335221977873395,
+            "median": 0.8934506460403403,
+            "minimum": 0.23810164630413055,
+            "samples": 50
+          },
+          "Episode_Reward/pose": {
+            "maximum": 0.37426575769980747,
+            "mean": 0.2653180432032483,
+            "median": 0.2813711740115347,
+            "minimum": 0.015710173174738884,
+            "samples": 50
+          },
+          "Episode_Reward/self_collisions": {
+            "maximum": 0.0,
+            "mean": -1.1416667208929235e-05,
+            "median": 0.0,
+            "minimum": -0.0003333333491658171,
+            "samples": 50
+          },
+          "Episode_Reward/top_ball_speed": {
+            "maximum": -7.444121729349717e-05,
+            "mean": -0.00021323434298210487,
+            "median": -0.00013583105237557902,
+            "minimum": -0.0010401370818726718,
+            "samples": 50
+          },
+          "Episode_Reward/track_angular_velocity": {
+            "maximum": 0.39699702709913254,
+            "mean": 0.3284753476696399,
+            "median": 0.3565279020306965,
+            "minimum": 0.04064827784895897,
+            "samples": 50
+          },
+          "Episode_Reward/track_linear_velocity": {
+            "maximum": 0.9807306528091431,
+            "mean": 0.851394491509224,
+            "median": 0.916833340190351,
+            "minimum": 0.18231183290481567,
+            "samples": 50
+          },
+          "Episode_Reward/upright": {
+            "maximum": 0.9938916638493538,
+            "mean": 0.8742294486674169,
+            "median": 0.93832719946901,
+            "minimum": 0.23321692645549774,
+            "samples": 50
+          }
+        }
+      },
+      {
+        "collection_seconds": {
+          "maximum": 2.5098583698272705,
+          "mean": 2.126768960952759,
+          "median": 2.07628071308136,
+          "minimum": 1.9047305583953857,
+          "samples": 50
+        },
+        "environment_transitions_per_logged_compute_second": {
+          "maximum": 43791.15652526337,
+          "mean": 40294.531210162946,
+          "median": 40956.24386495454,
+          "minimum": 34529.50266786657,
+          "samples": 50
+        },
+        "first_update": 951,
+        "last_update": 1000,
+        "learning_seconds": {
+          "maximum": 0.3783092498779297,
+          "mean": 0.32308231353759764,
+          "median": 0.32856428623199463,
+          "minimum": 0.24358463287353516,
+          "samples": 50
+        },
+        "printed_reward_window": {
+          "contributions": {
+            "Episode_Reward/action_rate_l2": {
+              "maximum": -0.2776,
+              "mean": -0.460094,
+              "median": -0.46340000000000003,
+              "minimum": -0.5458,
+              "samples": 50
+            },
+            "Episode_Reward/angular_momentum": {
+              "maximum": -0.0,
+              "mean": 0.0,
+              "median": -0.0,
+              "minimum": -0.0,
+              "samples": 50
+            },
+            "Episode_Reward/ball_speed": {
+              "maximum": -0.0001,
+              "mean": -0.000218,
+              "median": -0.0002,
+              "minimum": -0.0004,
+              "samples": 50
+            },
+            "Episode_Reward/body_ang_vel": {
+              "maximum": -0.0022,
+              "mean": -0.003106,
+              "median": -0.0027,
+              "minimum": -0.0088,
+              "samples": 50
+            },
+            "Episode_Reward/centered": {
+              "maximum": 1.9632,
+              "mean": 1.820232,
+              "median": 1.9108,
+              "minimum": 0.7196,
+              "samples": 50
+            },
+            "Episode_Reward/dof_pos_limits": {
+              "maximum": -0.0219,
+              "mean": -0.045842,
+              "median": -0.0475,
+              "minimum": -0.0506,
+              "samples": 50
+            },
+            "Episode_Reward/double_balance": {
+              "maximum": 2.7524,
+              "mean": 2.461974,
+              "median": 2.58745,
+              "minimum": 0.8668,
+              "samples": 50
+            },
+            "Episode_Reward/feet_on_ball": {
+              "maximum": 0.7806,
+              "mean": 0.724854,
+              "median": 0.7563,
+              "minimum": 0.3018,
+              "samples": 50
+            },
+            "Episode_Reward/head_surface_normal_tilt": {
+              "maximum": -0.0001,
+              "mean": -0.000138,
+              "median": -0.0001,
+              "minimum": -0.0005,
+              "samples": 50
+            },
+            "Episode_Reward/height": {
+              "maximum": 0.9396,
+              "mean": 0.874738,
+              "median": 0.9155,
+              "minimum": 0.3517,
+              "samples": 50
+            },
+            "Episode_Reward/pose": {
+              "maximum": 0.4285,
+              "mean": 0.35307,
+              "median": 0.3617,
+              "minimum": 0.1205,
+              "samples": 50
+            },
+            "Episode_Reward/self_collisions": {
+              "maximum": 0.0,
+              "mean": -0.000134,
+              "median": 0.0,
+              "minimum": -0.0043,
+              "samples": 50
+            },
+            "Episode_Reward/top_ball_speed": {
+              "maximum": -0.0001,
+              "mean": -0.00015000000000000001,
+              "median": -0.0001,
+              "minimum": -0.0006,
+              "samples": 50
+            },
+            "Episode_Reward/track_angular_velocity": {
+              "maximum": 0.3956,
+              "mean": 0.356078,
+              "median": 0.37165000000000004,
+              "minimum": 0.1303,
+              "samples": 50
+            },
+            "Episode_Reward/track_linear_velocity": {
+              "maximum": 0.9752,
+              "mean": 0.906268,
+              "median": 0.9521999999999999,
+              "minimum": 0.3488,
+              "samples": 50
+            },
+            "Episode_Reward/upright": {
+              "maximum": 0.9941,
+              "mean": 0.928262,
+              "median": 0.9723999999999999,
+              "minimum": 0.3743,
+              "samples": 50
+            }
+          },
+          "first_iteration": 5450,
+          "last_iteration": 5499,
+          "samples": 50,
+          "scope": "Existing upstream printed Episode_Reward values, already weighted; four-decimal log precision; no simulator or reward recomputation"
+        },
+        "segment": 4,
+        "wall_seconds_between_updates": {
+          "maximum": 2.9061875343322754,
+          "mean": 2.5086470672062466,
+          "median": 2.4675238132476807,
+          "minimum": 2.2907426357269287,
+          "samples": 49
+        },
+        "weighted_reward_metrics": {
+          "Episode_Reward/action_rate_l2": {
+            "maximum": -0.27762036708494026,
+            "mean": -0.46009235623292627,
+            "median": -0.4634285122156143,
+            "minimum": -0.5457840462525686,
+            "samples": 50
+          },
+          "Episode_Reward/angular_momentum": {
+            "maximum": -5.512986097263214e-08,
+            "mean": -7.765182879519254e-08,
+            "median": -7.453757892387594e-08,
+            "minimum": -1.538044334855234e-07,
+            "samples": 50
+          },
+          "Episode_Reward/ball_speed": {
+            "maximum": -0.0001495441253306732,
+            "mean": -0.00021340103211211196,
+            "median": -0.00020262671356855813,
+            "minimum": -0.0003542156973708188,
+            "samples": 50
+          },
+          "Episode_Reward/body_ang_vel": {
+            "maximum": -0.002243538649054244,
+            "mean": -0.0031102036197747413,
+            "median": -0.0027397609179994715,
+            "minimum": -0.00884325416215385,
+            "samples": 50
+          },
+          "Episode_Reward/centered": {
+            "maximum": 1.9631919860839844,
+            "mean": 1.8202297917318842,
+            "median": 1.910815879702568,
+            "minimum": 0.7196341287344694,
+            "samples": 50
+          },
+          "Episode_Reward/dof_pos_limits": {
+            "maximum": -0.021948852382289868,
+            "mean": -0.0458424514074189,
+            "median": -0.04748054725738863,
+            "minimum": -0.050592718025048576,
+            "samples": 50
+          },
+          "Episode_Reward/double_balance": {
+            "maximum": 2.7523996829986572,
+            "mean": 2.4619710178735357,
+            "median": 2.5874435951312384,
+            "minimum": 0.8667721748352051,
+            "samples": 50
+          },
+          "Episode_Reward/feet_on_ball": {
+            "maximum": 0.7806167080998421,
+            "mean": 0.7248577316943556,
+            "median": 0.7563342743863662,
+            "minimum": 0.3017652627701561,
+            "samples": 50
+          },
+          "Episode_Reward/head_surface_normal_tilt": {
+            "maximum": -0.00010743707935034763,
+            "mean": -0.00015629153326699453,
+            "median": -0.00013144859864648123,
+            "minimum": -0.0005192929414382282,
+            "samples": 50
+          },
+          "Episode_Reward/height": {
+            "maximum": 0.9395918324589729,
+            "mean": 0.8747476736580332,
+            "median": 0.9155276374270518,
+            "minimum": 0.3517302085335056,
+            "samples": 50
+          },
+          "Episode_Reward/pose": {
+            "maximum": 0.4285355508327484,
+            "mean": 0.35306524312744536,
+            "median": 0.3617208582970003,
+            "minimum": 0.12048832408618182,
+            "samples": 50
+          },
+          "Episode_Reward/self_collisions": {
+            "maximum": 0.0,
+            "mean": -0.0001326477612644794,
+            "median": 0.0,
+            "minimum": -0.004250182485407095,
+            "samples": 50
+          },
+          "Episode_Reward/top_ball_speed": {
+            "maximum": -6.478394880105043e-05,
+            "mean": -0.00015019968523423207,
+            "median": -0.00010472232800869583,
+            "minimum": -0.0006204776567149869,
+            "samples": 50
+          },
+          "Episode_Reward/track_angular_velocity": {
+            "maximum": 0.3955768210192521,
+            "mean": 0.35607576903906496,
+            "median": 0.3716458572695653,
+            "minimum": 0.1302621440651516,
+            "samples": 50
+          },
+          "Episode_Reward/track_linear_velocity": {
+            "maximum": 0.9752260595560074,
+            "mean": 0.9062753339949995,
+            "median": 0.9522081824640434,
+            "minimum": 0.34881735499948263,
+            "samples": 50
+          },
+          "Episode_Reward/upright": {
+            "maximum": 0.9940530732274055,
+            "mean": 0.9282564017456025,
+            "median": 0.9724103286862373,
+            "minimum": 0.3743341614802678,
+            "samples": 50
+          }
+        }
+      }
+    ],
+    "slot": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-speed-refine-v1",
+    "timing_scope": "Existing runner collection/learning wall timers; excludes initialization and evaluation; not CUDA kernel timings"
+  },
+  "previous_run_diagnostics": {
+    "added_PPO_updates": 0,
+    "added_simulation_steps": 0,
+    "available": true,
+    "invalid_lines": 0,
+    "parsed_rows": 500,
+    "read_only": true,
+    "segments": [
+      {
+        "collection_seconds": {
+          "maximum": 2.508176326751709,
+          "mean": 2.1267186641693114,
+          "median": 2.049384117126465,
+          "minimum": 1.9181182384490967,
+          "samples": 50
+        },
+        "environment_transitions_per_logged_compute_second": {
+          "maximum": 44870.382396467976,
+          "mean": 41292.626530269685,
+          "median": 41883.11609930248,
+          "minimum": 35937.18618161439,
+          "samples": 50
+        },
+        "first_update": 201,
+        "last_update": 250,
+        "learning_seconds": {
+          "maximum": 0.32872533798217773,
+          "mean": 0.26340388298034667,
+          "median": 0.23715806007385254,
+          "minimum": 0.20066332817077637,
+          "samples": 50
+        },
+        "printed_reward_window": {
+          "contributions": {
+            "Episode_Reward/action_rate_l2": {
+              "maximum": -0.3977,
+              "mean": -0.488758,
+              "median": -0.4884,
+              "minimum": -0.5647,
+              "samples": 50
+            },
+            "Episode_Reward/angular_momentum": {
+              "maximum": -0.0,
+              "mean": 0.0,
+              "median": -0.0,
+              "minimum": -0.0,
+              "samples": 50
+            },
+            "Episode_Reward/ball_speed": {
+              "maximum": -0.0002,
+              "mean": -0.000326,
+              "median": -0.0003,
+              "minimum": -0.0005,
+              "samples": 50
+            },
+            "Episode_Reward/body_ang_vel": {
+              "maximum": -0.0028,
+              "mean": -0.004092,
+              "median": -0.0035,
+              "minimum": -0.0156,
+              "samples": 50
+            },
+            "Episode_Reward/centered": {
+              "maximum": 1.9616,
+              "mean": 1.858666,
+              "median": 1.8921999999999999,
+              "minimum": 1.4581,
+              "samples": 50
+            },
+            "Episode_Reward/dof_pos_limits": {
+              "maximum": -0.0403,
+              "mean": -0.048368,
+              "median": -0.0488,
+              "minimum": -0.0598,
+              "samples": 50
+            },
+            "Episode_Reward/double_balance": {
+              "maximum": 3.4845,
+              "mean": 3.2413980000000002,
+              "median": 3.29925,
+              "minimum": 2.4782,
+              "samples": 50
+            },
+            "Episode_Reward/feet_on_ball": {
+              "maximum": 0.7671,
+              "mean": 0.726502,
+              "median": 0.74265,
+              "minimum": 0.5774,
+              "samples": 50
+            },
+            "Episode_Reward/head_surface_normal_tilt": {
+              "maximum": -0.0001,
+              "mean": -0.000142,
+              "median": -0.0001,
+              "minimum": -0.0004,
+              "samples": 50
+            },
+            "Episode_Reward/height": {
+              "maximum": 0.9764,
+              "mean": 0.93196,
+              "median": 0.9494499999999999,
+              "minimum": 0.7323,
+              "samples": 50
+            },
+            "Episode_Reward/pose": {
+              "maximum": 0.1068,
+              "mean": 0.072012,
+              "median": 0.07015,
+              "minimum": 0.0513,
+              "samples": 50
+            },
+            "Episode_Reward/self_collisions": {
+              "maximum": 0.0,
+              "mean": -7.8e-05,
+              "median": 0.0,
+              "minimum": -0.0015,
+              "samples": 50
+            },
+            "Episode_Reward/top_ball_speed": {
+              "maximum": -0.0001,
+              "mean": -0.00014000000000000001,
+              "median": -0.0001,
+              "minimum": -0.0003,
+              "samples": 50
+            },
+            "Episode_Reward/track_angular_velocity": {
+              "maximum": 0.3817,
+              "mean": 0.347524,
+              "median": 0.3518,
+              "minimum": 0.2709,
+              "samples": 50
+            },
+            "Episode_Reward/track_linear_velocity": {
+              "maximum": 0.9688,
+              "mean": 0.912114,
+              "median": 0.9255,
+              "minimum": 0.7056,
+              "samples": 50
+            },
+            "Episode_Reward/upright": {
+              "maximum": 0.9953,
+              "mean": 0.948572,
+              "median": 0.96425,
+              "minimum": 0.7489,
+              "samples": 50
+            }
+          },
+          "first_iteration": 4700,
+          "last_iteration": 4749,
+          "samples": 50,
+          "scope": "Existing upstream printed Episode_Reward values, already weighted; four-decimal log precision; no simulator or reward recomputation"
+        },
+        "segment": 1,
+        "wall_seconds_between_updates": {
+          "maximum": 2.7723300457000732,
+          "mean": 2.433689375312961,
+          "median": 2.398192882537842,
+          "minimum": 2.2235939502716064,
+          "samples": 49
+        },
+        "weighted_reward_metrics": {}
+      },
+      {
+        "collection_seconds": {
+          "maximum": 2.467663288116455,
+          "mean": 2.0975705194473266,
+          "median": 2.04383647441864,
+          "minimum": 1.9197580814361572,
+          "samples": 50
+        },
+        "environment_transitions_per_logged_compute_second": {
+          "maximum": 45758.33886554146,
+          "mean": 40738.20263982134,
+          "median": 41567.92331468618,
+          "minimum": 35065.743276697205,
+          "samples": 50
+        },
+        "first_update": 451,
+        "last_update": 500,
+        "learning_seconds": {
+          "maximum": 0.38648223876953125,
+          "mean": 0.32479878902435305,
+          "median": 0.32480335235595703,
+          "minimum": 0.19426226615905762,
+          "samples": 50
+        },
+        "printed_reward_window": {
+          "contributions": {
+            "Episode_Reward/action_rate_l2": {
+              "maximum": -0.1669,
+              "mean": -0.40221,
+              "median": -0.41485,
+              "minimum": -0.4691,
+              "samples": 50
+            },
+            "Episode_Reward/angular_momentum": {
+              "maximum": -0.0,
+              "mean": 0.0,
+              "median": -0.0,
+              "minimum": -0.0,
+              "samples": 50
+            },
+            "Episode_Reward/ball_speed": {
+              "maximum": -0.0002,
+              "mean": -0.00031999999999999997,
+              "median": -0.0003,
+              "minimum": -0.0005,
+              "samples": 50
+            },
+            "Episode_Reward/body_ang_vel": {
+              "maximum": -0.0024,
+              "mean": -0.003224,
+              "median": -0.0029,
+              "minimum": -0.0095,
+              "samples": 50
+            },
+            "Episode_Reward/centered": {
+              "maximum": 1.9615,
+              "mean": 1.788,
+              "median": 1.89195,
+              "minimum": 0.5744,
+              "samples": 50
+            },
+            "Episode_Reward/dof_pos_limits": {
+              "maximum": -0.0272,
+              "mean": -0.0467,
+              "median": -0.0483,
+              "minimum": -0.0524,
+              "samples": 50
+            },
+            "Episode_Reward/double_balance": {
+              "maximum": 3.4724,
+              "mean": 3.120566,
+              "median": 3.29875,
+              "minimum": 0.8695,
+              "samples": 50
+            },
+            "Episode_Reward/feet_on_ball": {
+              "maximum": 0.7733,
+              "mean": 0.704526,
+              "median": 0.7419,
+              "minimum": 0.2352,
+              "samples": 50
+            },
+            "Episode_Reward/head_surface_normal_tilt": {
+              "maximum": -0.0001,
+              "mean": -0.000142,
+              "median": -0.0001,
+              "minimum": -0.0003,
+              "samples": 50
+            },
+            "Episode_Reward/height": {
+              "maximum": 0.9706,
+              "mean": 0.889034,
+              "median": 0.94015,
+              "minimum": 0.2911,
+              "samples": 50
+            },
+            "Episode_Reward/pose": {
+              "maximum": 0.1657,
+              "mean": 0.128392,
+              "median": 0.13395,
+              "minimum": 0.0362,
+              "samples": 50
+            },
+            "Episode_Reward/self_collisions": {
+              "maximum": 0.0,
+              "mean": -8.4e-05,
+              "median": 0.0,
+              "minimum": -0.0007,
+              "samples": 50
+            },
+            "Episode_Reward/top_ball_speed": {
+              "maximum": -0.0001,
+              "mean": -0.000162,
+              "median": -0.0001,
+              "minimum": -0.0005,
+              "samples": 50
+            },
+            "Episode_Reward/track_angular_velocity": {
+              "maximum": 0.3957,
+              "mean": 0.352768,
+              "median": 0.37424999999999997,
+              "minimum": 0.0931,
+              "samples": 50
+            },
+            "Episode_Reward/track_linear_velocity": {
+              "maximum": 0.9657,
+              "mean": 0.876798,
+              "median": 0.9228000000000001,
+              "minimum": 0.274,
+              "samples": 50
+            },
+            "Episode_Reward/upright": {
+              "maximum": 0.9954,
+              "mean": 0.912852,
+              "median": 0.96475,
+              "minimum": 0.2964,
+              "samples": 50
+            }
+          },
+          "first_iteration": 4950,
+          "last_iteration": 4999,
+          "samples": 50,
+          "scope": "Existing upstream printed Episode_Reward values, already weighted; four-decimal log precision; no simulator or reward recomputation"
+        },
+        "segment": 2,
+        "wall_seconds_between_updates": {
+          "maximum": 2.862138032913208,
+          "mean": 2.4756541495420494,
+          "median": 2.418917417526245,
+          "minimum": 2.1779980659484863,
+          "samples": 49
+        },
+        "weighted_reward_metrics": {}
+      }
+    ],
+    "slot": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-refine-4500-v1",
+    "timing_scope": "Existing runner collection/learning wall timers; excludes initialization and evaluation; not CUDA kernel timings"
+  },
+  "local_return_utc": "2026-10-20T12:15:21.060159+00:00",
+  "controller_package_identity": "340f064e33b61ed8968724084ebab8dc35563cb2239506ab20b1d01056581c10"
+}

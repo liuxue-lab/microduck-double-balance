@@ -1,0 +1,14 @@
+Stage 07: first assisted cloud training experiment archived
+
+A800 80GB, 4096 environments, 6000 cumulative PPO updates from the Stage 05
+migrated checkpoint. Explicit resume at update 3000; finite checks passed.
+Raw training/evaluation archives, selected update 1000 and final update 6000
+checkpoints, local diagnostic traces and videos were verified.
+
+Policy objective remains UNMET: strict five-second success is 0% in all
+scheduled nominal evaluations. Local diagnosis identifies lower-ball planar
+speed above 0.15 m/s as the dominant violation. No physics, task definition,
+success threshold, or unreviewed training extension was introduced.
+
+This tag closes the Stage 07 experiment and handoff; it does not certify
+a successful double-balance policy or hardware deployment.

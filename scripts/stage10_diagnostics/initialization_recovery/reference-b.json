@@ -1,0 +1,38 @@
+{
+  "batch_directory": "20261001T071355Z-6050d852",
+  "files": [
+    {
+      "path": "plan.json",
+      "sha256": "46b80900b0815fb78b048d9d4738d9cd176819bdd0abedcfc324c80c3d08d84e",
+      "size_bytes": 1740
+    },
+    {
+      "path": "comparison.json",
+      "sha256": "be1379f9487deb11d5ca3e37fd55bfcdf45ccfe8e791f869449addba2c3d122e",
+      "size_bytes": 99241
+    },
+    {
+      "path": "run.json",
+      "sha256": "05ee3f60ccc3f224530f45d97ff578b983678375f93e6a529912d58bf7dc3fa3",
+      "size_bytes": 853
+    },
+    {
+      "path": "02-substep/attempt-1f7e6b65/result.json",
+      "sha256": "efe2a5743e3995b4c34964bdafedc8fdbcfa569822d75c254a1eba6eb73dea0b",
+      "size_bytes": 23572
+    },
+    {
+      "path": "03-substep/attempt-fb88b06c/result.json",
+      "sha256": "9f2dbbea024726b47a88e6e3400dd90d5c6c32ae10b33c5f3f0ea2dfa7b30874",
+      "size_bytes": 23572
+    },
+    {
+      "path": "rnn-reader-recovery-v1/precision-probe-31341e22.json",
+      "sha256": "e7d430641ea13ff16f794a5f775cc653c66e99b340b9ae521428ab1ad840abac",
+      "size_bytes": 4244
+    }
+  ],
+  "review_status": "REVIEWED_WITH_FIRST_RUN_POSTCHECK_GAP",
+  "no_replay_of_batch_b": true,
+  "task_config_sha256": "305196a185e1f6493b6857ce49638617dddf823567b58bafdd43aee738d3f48a"
+}

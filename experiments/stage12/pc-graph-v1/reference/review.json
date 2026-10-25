@@ -1,0 +1,75 @@
+{
+  "status": "REVIEW_PASSED",
+  "report_sha256": "8e48c09c82c7d8b17dbb0823f6e3f3f005c18c3052d77afacbe0f43e1e028002",
+  "prior_package_identity": "70e196cd67be34dc8d4ae846ccdf5570037e1706f03ad7aef68f5dcc4858ece8",
+  "paired_steps": 160,
+  "comparison": {
+    "atol": 2e-05,
+    "compared_steps": 160,
+    "comparison_scope": "One 3.2-second matched-seed trajectory with one full 10%-weight pulse; not 60-second acceptance",
+    "max_absolute_error_by_field": {
+      "actions": 0.0,
+      "actor": 0.0,
+      "actuator_force": 0.0,
+      "counters": 0.0,
+      "critic": 0.0,
+      "ctrl": 0.0,
+      "dones": 0.0,
+      "external_wrench": 0.0,
+      "metric_values": 0.0,
+      "qpos": 0.0,
+      "qvel": 0.0,
+      "rewards": 0.0,
+      "stable_ticks": 0.0,
+      "success_ever": 0.0
+    },
+    "passed": true,
+    "rtol": 0.0002,
+    "scalar_comparisons": 61120,
+    "values_outside_tolerance": 0
+  },
+  "baseline_ms": {
+    "count": 150,
+    "max": 36.876894,
+    "mean": 35.109492386666666,
+    "over_20ms": 150,
+    "p95": 36.388906,
+    "p99": 36.863833
+  },
+  "phase_cache_ms": {
+    "count": 150,
+    "max": 34.540252,
+    "mean": 32.813133306666664,
+    "over_20ms": 150,
+    "p95": 34.027331,
+    "p99": 34.453578
+  },
+  "reduction": {
+    "candidate_environment_p95_below_20ms": false,
+    "choice": "PHASE_CACHE_CANDIDATE",
+    "full_loop_realtime_acceptance": false,
+    "hardware_acceptance": false,
+    "mean_reduction_fraction": 0.0654056474160839,
+    "next_step": "Review parity and phase times before any full ROS/plant test; keep accepted FP32 model",
+    "p95_reduction_fraction": 0.0648982137577866,
+    "production_activated": false,
+    "scope": "One matched pair; PC environment-step time excludes policy inference, network and comparison-trace recording"
+  },
+  "cloud_power": {
+    "confirmation_date": "2026-10-24",
+    "evidence": "用户消息：5090已关机",
+    "exact_shutdown_time": null,
+    "platform_verified": false,
+    "state": "OFF_USER_CONFIRMED",
+    "timezone": "Asia/Shanghai"
+  },
+  "all_worker_exit_codes_zero": true,
+  "original_records_unchanged": true,
+  "one_completed_disturbance_pulse_per_arm": true,
+  "model_bounds_passed": true,
+  "original_FP32_JSON_retained": true,
+  "new_graph_actual_GPU_run": false,
+  "next_candidate": "original BAM kernels in a CUDA graph plus batched post-integration audit reads",
+  "full_control_loop_realtime_acceptance": false,
+  "hardware_acceptance": false
+}

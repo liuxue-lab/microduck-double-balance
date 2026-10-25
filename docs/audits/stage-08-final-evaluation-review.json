@@ -1,0 +1,2403 @@
+{
+  "created_utc": "2026-09-30T08:12:06.247280+00:00",
+  "status": "PASS",
+  "launch": {
+    "status": "PASS",
+    "created_utc": "2026-09-30T07:56:55.236895+00:00",
+    "updated_utc": "2026-09-30T08:11:58.951353+00:00",
+    "review_sha256": "261550bd5673bdb9184cf40009c4f618d32651ceda64a8a5617173b68055076f",
+    "selection_sha256": "a921801927750f705075ebcb2048323b01413bd122b31d1472dc77f86e1eb031",
+    "campaign_id": "08b6a999-c815-4afc-a99a-b6ac07fd587f",
+    "git_head": "61060f0684aabb460727a0d226b8d17225ee7954",
+    "new_ppo_updates": 0,
+    "model_count": 5,
+    "protocol_count": 25,
+    "estimated_hours_with_margin": 1.1,
+    "remaining_hours_at_start": 36.00048431396485,
+    "primary_demonstration_seed_selected_using_dev": 20260929,
+    "automatic_shutdown_enabled": false,
+    "stage08_complete": false,
+    "pid": 130797,
+    "finished_utc": "2026-09-30T08:11:58.951340+00:00",
+    "batch_summary_sha256": "59237398490517b63f5dee95a1e87ddf1dba19cfee8ee098fed2c6bc74288a4e"
+  },
+  "completed_protocols": 25,
+  "total_protocols": 25,
+  "progress": [
+    {
+      "model": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260928/segment-001/checkpoints/update_002750.pt",
+        "sha256": "42e759a80626859aa6756bec81e3fd07e53845a4ec7ef1a56f5054fd3dfacd1f",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260928,
+        "experiment_completed_updates": 2750,
+        "rank": [
+          0.75,
+          0.734375,
+          10.0,
+          8.4,
+          8.42,
+          -0.018859375075408025,
+          -2750
+        ]
+      },
+      "protocols": {
+        "nominal": "PASS",
+        "dev": "PASS",
+        "test-8201": "PASS",
+        "test-8202": "PASS",
+        "test-8203": "PASS"
+      }
+    },
+    {
+      "model": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+        "sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260929,
+        "experiment_completed_updates": 4000,
+        "rank": [
+          0.8828125,
+          0.828125,
+          10.0,
+          9.030000000000001,
+          9.030000000000001,
+          -0.010875000114538125,
+          -4000
+        ]
+      },
+      "protocols": {
+        "nominal": "PASS",
+        "dev": "PASS",
+        "test-8201": "PASS",
+        "test-8202": "PASS",
+        "test-8203": "PASS"
+      }
+    },
+    {
+      "model": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260930/segment-001/checkpoints/update_003250.pt",
+        "sha256": "89c7cedb9567f144228deb4d98465a9b0aad08be9f7c3ad391aa6a12ade8431c",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260930,
+        "experiment_completed_updates": 3250,
+        "rank": [
+          0.796875,
+          0.640625,
+          10.0,
+          8.55,
+          8.55,
+          -0.019546875069863745,
+          -3250
+        ]
+      },
+      "protocols": {
+        "nominal": "PASS",
+        "dev": "PASS",
+        "test-8201": "PASS",
+        "test-8202": "PASS",
+        "test-8203": "PASS"
+      }
+    },
+    {
+      "model": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/references/update_001000.pt",
+        "sha256": "c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7",
+        "role": "source-1000"
+      },
+      "protocols": {
+        "nominal": "PASS",
+        "dev": "PASS",
+        "test-8201": "PASS",
+        "test-8202": "PASS",
+        "test-8203": "PASS"
+      }
+    },
+    {
+      "model": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/references/update_006000.pt",
+        "sha256": "a5ad0aedb500555b649c5d4b11aded833cbc0f932c1fff1a747e1492534c495c",
+        "role": "reference-6000"
+      },
+      "protocols": {
+        "nominal": "PASS",
+        "dev": "PASS",
+        "test-8201": "PASS",
+        "test-8202": "PASS",
+        "test-8203": "PASS"
+      }
+    }
+  ],
+  "new_ppo_updates": 0,
+  "stage08_complete": false,
+  "required_archive_returned_and_verified": false,
+  "automatic_shutdown_enabled": false,
+  "selection": {
+    "schema_version": 1,
+    "protocol_version": "stage08-first-episode-metric-phase-v1",
+    "selection_locked": true,
+    "created_utc": "2026-09-30T07:56:54.918064+00:00",
+    "campaign_id": "08b6a999-c815-4afc-a99a-b6ac07fd587f",
+    "checkpoints": [
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260928/segment-001/checkpoints/update_002750.pt",
+        "sha256": "42e759a80626859aa6756bec81e3fd07e53845a4ec7ef1a56f5054fd3dfacd1f",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260928,
+        "experiment_completed_updates": 2750,
+        "rank": [
+          0.75,
+          0.734375,
+          10.0,
+          8.4,
+          8.42,
+          -0.018859375075408025,
+          -2750
+        ]
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+        "sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260929,
+        "experiment_completed_updates": 4000,
+        "rank": [
+          0.8828125,
+          0.828125,
+          10.0,
+          9.030000000000001,
+          9.030000000000001,
+          -0.010875000114538125,
+          -4000
+        ]
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260930/segment-001/checkpoints/update_003250.pt",
+        "sha256": "89c7cedb9567f144228deb4d98465a9b0aad08be9f7c3ad391aa6a12ade8431c",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260930,
+        "experiment_completed_updates": 3250,
+        "rank": [
+          0.796875,
+          0.640625,
+          10.0,
+          8.55,
+          8.55,
+          -0.019546875069863745,
+          -3250
+        ]
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/references/update_001000.pt",
+        "sha256": "c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7",
+        "role": "source-1000"
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/references/update_006000.pt",
+        "sha256": "a5ad0aedb500555b649c5d4b11aded833cbc0f932c1fff1a747e1492534c495c",
+        "role": "reference-6000"
+      }
+    ],
+    "development_reports": [
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260928/segment-001/evaluations/update_002750/nominal/evaluation.json",
+        "sha256": "45ffd025d941d93daf8b28049c40f12a8ea304a42e9b790ad49a6326b36f1868"
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260928/segment-001/evaluations/update_002750/dev/evaluation.json",
+        "sha256": "5c3db24ecb48561672928fe4d76c3c535077833e52821a2681c5f23de67a548f"
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260929/segment-001/evaluations/update_004000/nominal/evaluation.json",
+        "sha256": "dc1079cb72b05ba740b0a72a9963c97309913495f172edf463d7683c28b0fe2a"
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260929/segment-001/evaluations/update_004000/dev/evaluation.json",
+        "sha256": "0c1f3560a03cf23889ebd73efd4f51e25c91da3cc874e46d5845bc42f7337cf2"
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260930/segment-001/evaluations/update_003250/nominal/evaluation.json",
+        "sha256": "b50e7dc8116f968d84e7b357fefb35166ac2b40a9c2b6c8c0b7109e45b3bdfd9"
+      },
+      {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260930/segment-001/evaluations/update_003250/dev/evaluation.json",
+        "sha256": "456d51b44d0ee7af4269f61116d591b111ac96615440004ef554df2902fa8814"
+      }
+    ],
+    "held_out_used_for_selection": false,
+    "stage08_complete": false,
+    "training_seeds": [
+      20260928,
+      20260929,
+      20260930
+    ],
+    "screening_only": false,
+    "stop_reason": null
+  },
+  "selection_sha256": "a921801927750f705075ebcb2048323b01413bd122b31d1472dc77f86e1eb031",
+  "batch_reference": {
+    "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/batch-evaluation.json",
+    "sha256": "59237398490517b63f5dee95a1e87ddf1dba19cfee8ee098fed2c6bc74288a4e"
+  },
+  "models": [
+    {
+      "identity": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260928/segment-001/checkpoints/update_002750.pt",
+        "sha256": "42e759a80626859aa6756bec81e3fd07e53845a4ec7ef1a56f5054fd3dfacd1f",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260928,
+        "experiment_completed_updates": 2750,
+        "rank": [
+          0.75,
+          0.734375,
+          10.0,
+          8.4,
+          8.42,
+          -0.018859375075408025,
+          -2750
+        ]
+      },
+      "protocols": {
+        "nominal": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/42e759a80626859aa6756bec81e3fd07e53845a4ec7ef1a56f5054fd3dfacd1f/nominal/evaluation.json",
+            "sha256": "41d531627ddc6c1fb5cf7fda8f5d5809e73a4cca71e06ead8835fedaa1c62a88"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/nominal.pt",
+            "sha256": "5a2421201d3d4bca5bcfba790b42b6753ebcf5b080b4055dbb0494e8bf41df38"
+          },
+          "failure_summary": {
+            "episodes": 64,
+            "successes": 48,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.9952187798917294,
+            "mean_lower_speed_violation_fraction": 0.002906250098021701,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 9.48,
+            "median_longest_stable_seconds": 9.48,
+            "failed_despite_any_5s_streak": 10,
+            "mean_violation_fractions": {
+              "top_center": 0.0,
+              "top_height": 0.0,
+              "top_speed": 0.0018750000890577212,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.002906250098021701,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+              "success": false,
+              "terminal_stable_seconds": 2.96,
+              "longest_stable_seconds": 6.78,
+              "lower_speed_violation_fraction": 0.004000000189989805
+            },
+            "typical": {
+              "env_id": 7,
+              "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+              "success": true,
+              "terminal_stable_seconds": 9.72,
+              "longest_stable_seconds": 9.72,
+              "lower_speed_violation_fraction": 0.0
+            },
+            "worst_lower_speed": {
+              "env_id": 21,
+              "initial_state_id": "1a8209b156f12a5084935947eef3cbbddde8e5455ea613d61cdebc5a45e43779",
+              "success": false,
+              "terminal_stable_seconds": 1.4000000000000001,
+              "longest_stable_seconds": 6.16,
+              "lower_speed_violation_fraction": 0.03400000184774399
+            },
+            "typical_failure": {
+              "env_id": 0,
+              "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+              "success": false,
+              "terminal_stable_seconds": 2.96,
+              "longest_stable_seconds": 6.78,
+              "lower_speed_violation_fraction": 0.004000000189989805
+            },
+            "success": {
+              "env_id": 1,
+              "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+              "success": true,
+              "terminal_stable_seconds": 10.0,
+              "longest_stable_seconds": 10.0,
+              "lower_speed_violation_fraction": 0.0
+            }
+          },
+          "success_fraction": 0.75,
+          "success_wilson95": null
+        },
+        "dev": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/42e759a80626859aa6756bec81e3fd07e53845a4ec7ef1a56f5054fd3dfacd1f/dev/evaluation.json",
+            "sha256": "35600ae12f88c70ad76ab7596ae0524233737cce81fc612b914734dbc851c332"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/dev.pt",
+            "sha256": "253123669696a953830caeaf587e1300e023c12293d608e38e655a38cdc00f58"
+          },
+          "failure_summary": {
+            "episodes": 128,
+            "successes": 95,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.9708437961526215,
+            "mean_lower_speed_violation_fraction": 0.01893750008821371,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 8.27,
+            "median_longest_stable_seconds": 8.370000000000001,
+            "failed_despite_any_5s_streak": 17,
+            "mean_violation_fractions": {
+              "top_center": 0.00546875003783498,
+              "top_height": 0.0,
+              "top_speed": 0.007140625106330845,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.01893750008821371,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "2b89c22e657103c2eb87c22835866c499f2bc83160cf5dec670746a98ff00ecb",
+              "success": true,
+              "terminal_stable_seconds": 8.6,
+              "longest_stable_seconds": 8.6,
+              "lower_speed_violation_fraction": 0.02199999988079071
+            },
+            "typical": {
+              "env_id": 60,
+              "initial_state_id": "3d8648162ad11c797edfea45fcfaec119bea66e34178d51f76ec7efeb9467ac9",
+              "success": true,
+              "terminal_stable_seconds": 8.16,
+              "longest_stable_seconds": 8.16,
+              "lower_speed_violation_fraction": 0.05999999865889549
+            },
+            "worst_lower_speed": {
+              "env_id": 108,
+              "initial_state_id": "a0769be758a21d8b2c2fd8d695f47178f3f7be3e58f666c1b0fbfbb58f2c3abb",
+              "success": false,
+              "terminal_stable_seconds": 2.7,
+              "longest_stable_seconds": 5.5,
+              "lower_speed_violation_fraction": 0.10400000214576721
+            },
+            "typical_failure": {
+              "env_id": 23,
+              "initial_state_id": "62ae509124a8d5241c15106159006e8e7d2c0227637df0bc1fe6ba0547fe3656",
+              "success": false,
+              "terminal_stable_seconds": 1.3,
+              "longest_stable_seconds": 4.3,
+              "lower_speed_violation_fraction": 0.01600000075995922
+            },
+            "success": {
+              "env_id": 0,
+              "initial_state_id": "2b89c22e657103c2eb87c22835866c499f2bc83160cf5dec670746a98ff00ecb",
+              "success": true,
+              "terminal_stable_seconds": 8.6,
+              "longest_stable_seconds": 8.6,
+              "lower_speed_violation_fraction": 0.02199999988079071
+            }
+          },
+          "success_fraction": 0.7421875,
+          "success_wilson95": [
+            0.6601308077044309,
+            0.8101309791005885
+          ]
+        },
+        "test-8201": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/42e759a80626859aa6756bec81e3fd07e53845a4ec7ef1a56f5054fd3dfacd1f/test-8201/evaluation.json",
+            "sha256": "233a9323169decebacd7b8f6e409c9a3c59511f281d4fb3f7d751e0982ac889b"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/test-8201.pt",
+            "sha256": "455ad7bca7c077072aa10abd337d40a72d6248e3b4af02e7ca6589a6884c74a0"
+          },
+          "failure_summary": {
+            "episodes": 256,
+            "successes": 204,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.9716406688094139,
+            "mean_lower_speed_violation_fraction": 0.017742187644216756,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 8.45,
+            "median_longest_stable_seconds": 8.530000000000001,
+            "failed_despite_any_5s_streak": 25,
+            "mean_violation_fractions": {
+              "top_center": 0.005406250056694262,
+              "top_height": 0.0,
+              "top_speed": 0.007812500119143806,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.017742187644216756,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "058ccec14b113bc75c8988d15b6170807e690bad86a2736ff5c63b752bcdacd5",
+              "success": true,
+              "terminal_stable_seconds": 7.16,
+              "longest_stable_seconds": 7.16,
+              "lower_speed_violation_fraction": 0.03999999910593033
+            },
+            "typical": {
+              "env_id": 86,
+              "initial_state_id": "677511a0f8814c9cedaf9b4281624efca85e981611c437ed593d59a3259874ba",
+              "success": true,
+              "terminal_stable_seconds": 8.44,
+              "longest_stable_seconds": 8.44,
+              "lower_speed_violation_fraction": 0.019999999552965164
+            },
+            "worst_lower_speed": {
+              "env_id": 216,
+              "initial_state_id": "c008628c1fba0769996f6d931b0ec3afb25530f982388d379cf93c579ca8ea4e",
+              "success": true,
+              "terminal_stable_seconds": 6.2,
+              "longest_stable_seconds": 6.2,
+              "lower_speed_violation_fraction": 0.0820000022649765
+            },
+            "typical_failure": {
+              "env_id": 92,
+              "initial_state_id": "a967a131b42281d8e37c06288dafba60ff22bb4e38071cac36bcc265b0814d2a",
+              "success": false,
+              "terminal_stable_seconds": 1.98,
+              "longest_stable_seconds": 6.62,
+              "lower_speed_violation_fraction": 0.029999999329447746
+            },
+            "success": {
+              "env_id": 0,
+              "initial_state_id": "058ccec14b113bc75c8988d15b6170807e690bad86a2736ff5c63b752bcdacd5",
+              "success": true,
+              "terminal_stable_seconds": 7.16,
+              "longest_stable_seconds": 7.16,
+              "lower_speed_violation_fraction": 0.03999999910593033
+            }
+          },
+          "success_fraction": 0.796875,
+          "success_wilson95": [
+            0.7433713265784556,
+            0.8416007586686831
+          ]
+        },
+        "test-8202": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/42e759a80626859aa6756bec81e3fd07e53845a4ec7ef1a56f5054fd3dfacd1f/test-8202/evaluation.json",
+            "sha256": "1f12f3f5828ff0c03956e363cf8e3990beaf6f6fa0822046547e5221b26dee38"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/test-8202.pt",
+            "sha256": "cf8657d9f1bb96933bd1aaa86b1d4619a6d2cec82a19652421b26885aa435f4a"
+          },
+          "failure_summary": {
+            "episodes": 256,
+            "successes": 177,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.9663828564807773,
+            "mean_lower_speed_violation_fraction": 0.021734375182859367,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 7.45,
+            "median_longest_stable_seconds": 7.83,
+            "failed_despite_any_5s_streak": 43,
+            "mean_violation_fractions": {
+              "top_center": 0.006812500045271008,
+              "top_height": 0.0,
+              "top_speed": 0.008273437608295353,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.021734375182859367,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "f589a7acf44c4a031f791feb085aabe171d4d05b34aa7ab588e2e44ca1c98e56",
+              "success": true,
+              "terminal_stable_seconds": 9.76,
+              "longest_stable_seconds": 9.76,
+              "lower_speed_violation_fraction": 0.0020000000949949026
+            },
+            "typical": {
+              "env_id": 69,
+              "initial_state_id": "5be526baf7c9bce34a0045a188f5fef86f14e9efe51c4a87595f73f5f30a852b",
+              "success": true,
+              "terminal_stable_seconds": 7.5,
+              "longest_stable_seconds": 7.5,
+              "lower_speed_violation_fraction": 0.0020000000949949026
+            },
+            "worst_lower_speed": {
+              "env_id": 255,
+              "initial_state_id": "d5fac6d7717cdafda94a0bc92728a4df4bf3e70dacf4f542a55b8a5eb04b4eda",
+              "success": true,
+              "terminal_stable_seconds": 7.62,
+              "longest_stable_seconds": 7.62,
+              "lower_speed_violation_fraction": 0.164000004529953
+            },
+            "typical_failure": {
+              "env_id": 177,
+              "initial_state_id": "6a4ed5bfa9208d941e23699fcf743b9f5a025c66fdb3a61df2647dff530cf934",
+              "success": false,
+              "terminal_stable_seconds": 2.2800000000000002,
+              "longest_stable_seconds": 7.34,
+              "lower_speed_violation_fraction": 0.006000000052154064
+            },
+            "success": {
+              "env_id": 0,
+              "initial_state_id": "f589a7acf44c4a031f791feb085aabe171d4d05b34aa7ab588e2e44ca1c98e56",
+              "success": true,
+              "terminal_stable_seconds": 9.76,
+              "longest_stable_seconds": 9.76,
+              "lower_speed_violation_fraction": 0.0020000000949949026
+            }
+          },
+          "success_fraction": 0.69140625,
+          "success_wilson95": [
+            0.6323417974638745,
+            0.7448112574980965
+          ]
+        },
+        "test-8203": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/42e759a80626859aa6756bec81e3fd07e53845a4ec7ef1a56f5054fd3dfacd1f/test-8203/evaluation.json",
+            "sha256": "f5cf456e71bf0ca0c32c92b5391412a53b32c40ae915a88f976d01b80ccb2485"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/test-8203.pt",
+            "sha256": "f24746ac1cf396f0a60c67a623d3932e9d7e990b18c387a12fad0ace44f9862e"
+          },
+          "failure_summary": {
+            "episodes": 256,
+            "successes": 196,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.9688828564248979,
+            "mean_lower_speed_violation_fraction": 0.019460937568510417,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 8.129999999999999,
+            "median_longest_stable_seconds": 8.36,
+            "failed_despite_any_5s_streak": 31,
+            "mean_violation_fractions": {
+              "top_center": 0.006226562557458237,
+              "top_height": 0.0,
+              "top_speed": 0.008695312580130121,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.019460937568510417,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "3022619cb365a518929b3e7753f98e4fe601733033ce4933f8492db7fd9b7145",
+              "success": true,
+              "terminal_stable_seconds": 6.5600000000000005,
+              "longest_stable_seconds": 6.5600000000000005,
+              "lower_speed_violation_fraction": 0.029999999329447746
+            },
+            "typical": {
+              "env_id": 39,
+              "initial_state_id": "c188609977457658919748f7902a47d8739c1cbac3cd829b92998be20fac0795",
+              "success": true,
+              "terminal_stable_seconds": 8.1,
+              "longest_stable_seconds": 8.1,
+              "lower_speed_violation_fraction": 0.07000000029802322
+            },
+            "worst_lower_speed": {
+              "env_id": 189,
+              "initial_state_id": "72d9f4e30640135663de4b53efe7a77dfe9127fbc153c168f47b56001052defa",
+              "success": false,
+              "terminal_stable_seconds": 4.0600000000000005,
+              "longest_stable_seconds": 4.0600000000000005,
+              "lower_speed_violation_fraction": 0.24400000274181366
+            },
+            "typical_failure": {
+              "env_id": 16,
+              "initial_state_id": "a542c75587d60432684f839654d13c08d0b0f3bbe1d5827f48fa6c51067e8a4b",
+              "success": false,
+              "terminal_stable_seconds": 1.18,
+              "longest_stable_seconds": 5.72,
+              "lower_speed_violation_fraction": 0.00800000037997961
+            },
+            "success": {
+              "env_id": 0,
+              "initial_state_id": "3022619cb365a518929b3e7753f98e4fe601733033ce4933f8492db7fd9b7145",
+              "success": true,
+              "terminal_stable_seconds": 6.5600000000000005,
+              "longest_stable_seconds": 6.5600000000000005,
+              "lower_speed_violation_fraction": 0.029999999329447746
+            }
+          },
+          "success_fraction": 0.765625,
+          "success_wilson95": [
+            0.71004258449401,
+            0.8133534917797457
+          ]
+        }
+      },
+      "held_out": {
+        "episodes": 768,
+        "successes": 577,
+        "success_fraction": 0.7513020833333334,
+        "wilson95": [
+          0.7195307995635748,
+          0.7805719036389379
+        ],
+        "scope": "one checkpoint, 768 randomized initial states"
+      },
+      "paired_vs_source_1000": {
+        "paired_episodes": 768,
+        "candidate_only_success": 577,
+        "reference_only_success": 0,
+        "paired_success_fraction_difference": 0.7513020833333334
+      },
+      "held_out_failure_summary": {
+        "episodes": 768,
+        "successes": 577,
+        "mean_seconds": 10.0,
+        "mean_double_balance_stable_fraction": 0.9689687939050297,
+        "mean_lower_speed_violation_fraction": 0.019645833465195512,
+        "mean_terminated": 0,
+        "median_terminal_stable_seconds": 8.24,
+        "median_longest_stable_seconds": 8.39,
+        "failed_despite_any_5s_streak": 99,
+        "mean_violation_fractions": {
+          "top_center": 0.006148437553141169,
+          "top_height": 0.0,
+          "top_speed": 0.00826041676918976,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.019645833465195512,
+          "unassisted": 0.0
+        }
+      }
+    },
+    {
+      "identity": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+        "sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260929,
+        "experiment_completed_updates": 4000,
+        "rank": [
+          0.8828125,
+          0.828125,
+          10.0,
+          9.030000000000001,
+          9.030000000000001,
+          -0.010875000114538125,
+          -4000
+        ]
+      },
+      "protocols": {
+        "nominal": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97/nominal/evaluation.json",
+            "sha256": "91a8888a76e90e6039fabafdf1c7c647f7ec9d46e445161c7791bafac5c5fef3"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/nominal.pt",
+            "sha256": "5a2421201d3d4bca5bcfba790b42b6753ebcf5b080b4055dbb0494e8bf41df38"
+          },
+          "failure_summary": {
+            "episodes": 64,
+            "successes": 49,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.9971875241026282,
+            "mean_lower_speed_violation_fraction": 0.0014375000209838618,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 9.82,
+            "median_longest_stable_seconds": 9.82,
+            "failed_despite_any_5s_streak": 13,
+            "mean_violation_fractions": {
+              "top_center": 0.0,
+              "top_height": 0.0,
+              "top_speed": 0.0013750000653089955,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.0014375000209838618,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+              "success": false,
+              "terminal_stable_seconds": 2.7,
+              "longest_stable_seconds": 6.88,
+              "lower_speed_violation_fraction": 0.006000000052154064
+            },
+            "typical": {
+              "env_id": 3,
+              "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+              "success": true,
+              "terminal_stable_seconds": 9.82,
+              "longest_stable_seconds": 9.82,
+              "lower_speed_violation_fraction": 0.0
+            },
+            "worst_lower_speed": {
+              "env_id": 61,
+              "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+              "success": true,
+              "terminal_stable_seconds": 7.18,
+              "longest_stable_seconds": 7.18,
+              "lower_speed_violation_fraction": 0.012000000104308128
+            },
+            "typical_failure": {
+              "env_id": 30,
+              "initial_state_id": "6106c8115df219a21d1c46601f0c3e59d95c8bc83a5166ef27be4130202c19f6",
+              "success": false,
+              "terminal_stable_seconds": 1.58,
+              "longest_stable_seconds": 8.4,
+              "lower_speed_violation_fraction": 0.0020000000949949026
+            },
+            "success": {
+              "env_id": 2,
+              "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+              "success": true,
+              "terminal_stable_seconds": 10.0,
+              "longest_stable_seconds": 10.0,
+              "lower_speed_violation_fraction": 0.0
+            }
+          },
+          "success_fraction": 0.765625,
+          "success_wilson95": null
+        },
+        "dev": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97/dev/evaluation.json",
+            "sha256": "844d84753a4e2e942763d91fb3e3193c2c9101f1f743ac7aa512c54eb6409ab5"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/dev.pt",
+            "sha256": "253123669696a953830caeaf587e1300e023c12293d608e38e655a38cdc00f58"
+          },
+          "failure_summary": {
+            "episodes": 128,
+            "successes": 109,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.982203166000545,
+            "mean_lower_speed_violation_fraction": 0.01104687512088276,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 9.030000000000001,
+            "median_longest_stable_seconds": 9.040000000000001,
+            "failed_despite_any_5s_streak": 14,
+            "mean_violation_fractions": {
+              "top_center": 0.0025000000150612323,
+              "top_height": 0.0,
+              "top_speed": 0.004984375122148776,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.01104687512088276,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "2b89c22e657103c2eb87c22835866c499f2bc83160cf5dec670746a98ff00ecb",
+              "success": true,
+              "terminal_stable_seconds": 9.34,
+              "longest_stable_seconds": 9.34,
+              "lower_speed_violation_fraction": 0.01600000075995922
+            },
+            "typical": {
+              "env_id": 51,
+              "initial_state_id": "e2bdb460f29ec3dcdea85329efa4b194a6924724821372617c4e3024e49f965f",
+              "success": true,
+              "terminal_stable_seconds": 9.040000000000001,
+              "longest_stable_seconds": 9.040000000000001,
+              "lower_speed_violation_fraction": 0.014000000432133675
+            },
+            "worst_lower_speed": {
+              "env_id": 25,
+              "initial_state_id": "3a7d6f497dccd4e0d4f02e0f40af6b220440d770b1f594885228099b793b6eaa",
+              "success": true,
+              "terminal_stable_seconds": 8.38,
+              "longest_stable_seconds": 8.38,
+              "lower_speed_violation_fraction": 0.06199999898672104
+            },
+            "typical_failure": {
+              "env_id": 73,
+              "initial_state_id": "02baba365bcda4be6364dc56ccb3ab79aeccd2289c6ea664bf254bd75aa7578f",
+              "success": false,
+              "terminal_stable_seconds": 2.5,
+              "longest_stable_seconds": 7.2,
+              "lower_speed_violation_fraction": 0.004000000189989805
+            },
+            "success": {
+              "env_id": 0,
+              "initial_state_id": "2b89c22e657103c2eb87c22835866c499f2bc83160cf5dec670746a98ff00ecb",
+              "success": true,
+              "terminal_stable_seconds": 9.34,
+              "longest_stable_seconds": 9.34,
+              "lower_speed_violation_fraction": 0.01600000075995922
+            }
+          },
+          "success_fraction": 0.8515625,
+          "success_wilson95": [
+            0.7797727087736895,
+            0.9028653688464999
+          ]
+        },
+        "test-8201": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97/test-8201/evaluation.json",
+            "sha256": "829b1b67f1b6d2abbc9ae5ede4ed2d7e53b0b8e09245301f8f9841b3619d5778"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/test-8201.pt",
+            "sha256": "455ad7bca7c077072aa10abd337d40a72d6248e3b4af02e7ca6589a6884c74a0"
+          },
+          "failure_summary": {
+            "episodes": 256,
+            "successes": 215,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.9806406674906611,
+            "mean_lower_speed_violation_fraction": 0.01239843760322401,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 8.89,
+            "median_longest_stable_seconds": 8.9,
+            "failed_despite_any_5s_streak": 27,
+            "mean_violation_fractions": {
+              "top_center": 0.002445312517011189,
+              "top_height": 0.0,
+              "top_speed": 0.005351562614123395,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.01239843760322401,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "058ccec14b113bc75c8988d15b6170807e690bad86a2736ff5c63b752bcdacd5",
+              "success": true,
+              "terminal_stable_seconds": 8.76,
+              "longest_stable_seconds": 8.76,
+              "lower_speed_violation_fraction": 0.04399999976158142
+            },
+            "typical": {
+              "env_id": 6,
+              "initial_state_id": "d475449b69fcd13a1f46674721e4389da59e1343247b2dd815ba0646c5cd5443",
+              "success": true,
+              "terminal_stable_seconds": 8.88,
+              "longest_stable_seconds": 8.88,
+              "lower_speed_violation_fraction": 0.01600000075995922
+            },
+            "worst_lower_speed": {
+              "env_id": 161,
+              "initial_state_id": "d29002c362d8da26b0cd549a09dc39ddf1976e4b5f771198b5b235b6df94d65e",
+              "success": true,
+              "terminal_stable_seconds": 8.32,
+              "longest_stable_seconds": 8.32,
+              "lower_speed_violation_fraction": 0.07000000029802322
+            },
+            "typical_failure": {
+              "env_id": 28,
+              "initial_state_id": "abc36448d0900b55e3c43f3e837386534e19371b6526dcded948e884723dbbf9",
+              "success": false,
+              "terminal_stable_seconds": 1.76,
+              "longest_stable_seconds": 7.6000000000000005,
+              "lower_speed_violation_fraction": 0.00800000037997961
+            },
+            "success": {
+              "env_id": 0,
+              "initial_state_id": "058ccec14b113bc75c8988d15b6170807e690bad86a2736ff5c63b752bcdacd5",
+              "success": true,
+              "terminal_stable_seconds": 8.76,
+              "longest_stable_seconds": 8.76,
+              "lower_speed_violation_fraction": 0.04399999976158142
+            }
+          },
+          "success_fraction": 0.83984375,
+          "success_wilson95": [
+            0.7899445744170772,
+            0.8796945231684632
+          ]
+        },
+        "test-8202": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97/test-8202/evaluation.json",
+            "sha256": "f153977059b0d59fe379e3760ed36dadfac7e3741f64c46fb6de4977f0df4f11"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/test-8202.pt",
+            "sha256": "cf8657d9f1bb96933bd1aaa86b1d4619a6d2cec82a19652421b26885aa435f4a"
+          },
+          "failure_summary": {
+            "episodes": 256,
+            "successes": 217,
+            "mean_seconds": 9.967890625,
+            "mean_double_balance_stable_fraction": 0.9749109437689185,
+            "mean_lower_speed_violation_fraction": 0.016157040226062236,
+            "mean_terminated": 0.00390625,
+            "median_terminal_stable_seconds": 8.82,
+            "median_longest_stable_seconds": 8.850000000000001,
+            "failed_despite_any_5s_streak": 16,
+            "mean_violation_fractions": {
+              "top_center": 0.005010446002415847,
+              "top_height": 0.0,
+              "top_speed": 0.00810674163949443,
+              "lower_offset": 0.0004389045061543584,
+              "lower_height_min": 8.778089977568015e-05,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.00026334269205108285,
+              "lower_ball_speed": 0.016157040226062236,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "f589a7acf44c4a031f791feb085aabe171d4d05b34aa7ab588e2e44ca1c98e56",
+              "success": true,
+              "terminal_stable_seconds": 8.98,
+              "longest_stable_seconds": 8.98,
+              "lower_speed_violation_fraction": 0.0020000000949949026
+            },
+            "typical": {
+              "env_id": 22,
+              "initial_state_id": "45210c794ef83b61967087a436203cfa1f4704deba080b494b87ca5c7e1dfa03",
+              "success": true,
+              "terminal_stable_seconds": 8.82,
+              "longest_stable_seconds": 8.82,
+              "lower_speed_violation_fraction": 0.012000000104308128
+            },
+            "worst_lower_speed": {
+              "env_id": 219,
+              "initial_state_id": "06439a1432fc484c4aa58cdd61249d6fa4e5930b4b1d0e8048ec4603cb120f24",
+              "success": false,
+              "terminal_stable_seconds": 0.0,
+              "longest_stable_seconds": 0.26,
+              "lower_speed_violation_fraction": 0.43820226192474365
+            },
+            "typical_failure": {
+              "env_id": 1,
+              "initial_state_id": "5be86340f20d1ad671d0d97e261d56bfd89c05cf0040969f3107522ba0ed2de1",
+              "success": false,
+              "terminal_stable_seconds": 3.02,
+              "longest_stable_seconds": 6.7,
+              "lower_speed_violation_fraction": 0.0020000000949949026
+            },
+            "success": {
+              "env_id": 0,
+              "initial_state_id": "f589a7acf44c4a031f791feb085aabe171d4d05b34aa7ab588e2e44ca1c98e56",
+              "success": true,
+              "terminal_stable_seconds": 8.98,
+              "longest_stable_seconds": 8.98,
+              "lower_speed_violation_fraction": 0.0020000000949949026
+            }
+          },
+          "success_fraction": 0.84765625,
+          "success_wilson95": [
+            0.7985218710820212,
+            0.886511228746865
+          ]
+        },
+        "test-8203": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97/test-8203/evaluation.json",
+            "sha256": "06cb89c294300a0ad51e9fd126060508ee15868c84018e1773ce063db7d596ad"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/test-8203.pt",
+            "sha256": "f24746ac1cf396f0a60c67a623d3932e9d7e990b18c387a12fad0ace44f9862e"
+          },
+          "failure_summary": {
+            "episodes": 256,
+            "successes": 220,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.979906290769577,
+            "mean_lower_speed_violation_fraction": 0.01229687514842226,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 8.96,
+            "median_longest_stable_seconds": 8.97,
+            "failed_despite_any_5s_streak": 27,
+            "mean_violation_fractions": {
+              "top_center": 0.0030312500302898115,
+              "top_height": 0.0,
+              "top_speed": 0.005757812623414793,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.01229687514842226,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "3022619cb365a518929b3e7753f98e4fe601733033ce4933f8492db7fd9b7145",
+              "success": true,
+              "terminal_stable_seconds": 9.32,
+              "longest_stable_seconds": 9.32,
+              "lower_speed_violation_fraction": 0.009999999776482582
+            },
+            "typical": {
+              "env_id": 1,
+              "initial_state_id": "9ebb8123a8263aeb9ba2adae7bfa67892223ba45ee04f95b506e416330092fe9",
+              "success": true,
+              "terminal_stable_seconds": 8.96,
+              "longest_stable_seconds": 8.96,
+              "lower_speed_violation_fraction": 0.006000000052154064
+            },
+            "worst_lower_speed": {
+              "env_id": 127,
+              "initial_state_id": "37b5cdbb0d5da1de1f92f638da85e7dfba63b0b938bb89af6fa7df85f4afffa1",
+              "success": true,
+              "terminal_stable_seconds": 5.24,
+              "longest_stable_seconds": 5.24,
+              "lower_speed_violation_fraction": 0.10400000214576721
+            },
+            "typical_failure": {
+              "env_id": 210,
+              "initial_state_id": "ece23dd1910ab5312a60816136590f2d03d88e52a3aefab1318b247057df5272",
+              "success": false,
+              "terminal_stable_seconds": 2.16,
+              "longest_stable_seconds": 6.5600000000000005,
+              "lower_speed_violation_fraction": 0.035999998450279236
+            },
+            "success": {
+              "env_id": 0,
+              "initial_state_id": "3022619cb365a518929b3e7753f98e4fe601733033ce4933f8492db7fd9b7145",
+              "success": true,
+              "terminal_stable_seconds": 9.32,
+              "longest_stable_seconds": 9.32,
+              "lower_speed_violation_fraction": 0.009999999776482582
+            }
+          },
+          "success_fraction": 0.859375,
+          "success_wilson95": [
+            0.8114609871166358,
+            0.8966631160772691
+          ]
+        }
+      },
+      "held_out": {
+        "episodes": 768,
+        "successes": 652,
+        "success_fraction": 0.8489583333333334,
+        "wilson95": [
+          0.8218994774213815,
+          0.8725436544867708
+        ],
+        "scope": "one checkpoint, 768 randomized initial states"
+      },
+      "paired_vs_source_1000": {
+        "paired_episodes": 768,
+        "candidate_only_success": 652,
+        "reference_only_success": 0,
+        "paired_success_fraction_difference": 0.8489583333333334
+      },
+      "held_out_failure_summary": {
+        "episodes": 768,
+        "successes": 652,
+        "mean_seconds": 9.989296875,
+        "mean_double_balance_stable_fraction": 0.9784859673430523,
+        "mean_lower_speed_violation_fraction": 0.013617450992569502,
+        "mean_terminated": 0.0013020833333333333,
+        "median_terminal_stable_seconds": 8.91,
+        "median_longest_stable_seconds": 8.92,
+        "failed_despite_any_5s_streak": 70,
+        "mean_violation_fractions": {
+          "top_center": 0.0034956695165722826,
+          "top_height": 0.0,
+          "top_speed": 0.0064053722923442065,
+          "lower_offset": 0.0001463015020514528,
+          "lower_height_min": 2.9260299925226718e-05,
+          "lower_height_max": 0.0,
+          "robot_tilt": 8.778089735036095e-05,
+          "lower_ball_speed": 0.013617450992569502,
+          "unassisted": 0.0
+        }
+      }
+    },
+    {
+      "identity": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260930/segment-001/checkpoints/update_003250.pt",
+        "sha256": "89c7cedb9567f144228deb4d98465a9b0aad08be9f7c3ad391aa6a12ade8431c",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260930,
+        "experiment_completed_updates": 3250,
+        "rank": [
+          0.796875,
+          0.640625,
+          10.0,
+          8.55,
+          8.55,
+          -0.019546875069863745,
+          -3250
+        ]
+      },
+      "protocols": {
+        "nominal": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/89c7cedb9567f144228deb4d98465a9b0aad08be9f7c3ad391aa6a12ade8431c/nominal/evaluation.json",
+            "sha256": "db9356929c2b8bca8095e0dd3e4a195275cc9f9c063b0dcc0a0ad6af9e8f5c91"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/nominal.pt",
+            "sha256": "5a2421201d3d4bca5bcfba790b42b6753ebcf5b080b4055dbb0494e8bf41df38"
+          },
+          "failure_summary": {
+            "episodes": 64,
+            "successes": 49,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.9964062720537186,
+            "mean_lower_speed_violation_fraction": 0.003187500060448656,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 9.34,
+            "median_longest_stable_seconds": 9.350000000000001,
+            "failed_despite_any_5s_streak": 9,
+            "mean_violation_fractions": {
+              "top_center": 0.0,
+              "top_height": 0.0,
+              "top_speed": 0.0004062500192958396,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.003187500060448656,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+              "success": true,
+              "terminal_stable_seconds": 8.6,
+              "longest_stable_seconds": 8.6,
+              "lower_speed_violation_fraction": 0.004000000189989805
+            },
+            "typical": {
+              "env_id": 33,
+              "initial_state_id": "6106c8115df219a21d1c46601f0c3e59d95c8bc83a5166ef27be4130202c19f6",
+              "success": true,
+              "terminal_stable_seconds": 9.22,
+              "longest_stable_seconds": 9.22,
+              "lower_speed_violation_fraction": 0.004000000189989805
+            },
+            "worst_lower_speed": {
+              "env_id": 21,
+              "initial_state_id": "1a8209b156f12a5084935947eef3cbbddde8e5455ea613d61cdebc5a45e43779",
+              "success": false,
+              "terminal_stable_seconds": 0.88,
+              "longest_stable_seconds": 7.0600000000000005,
+              "lower_speed_violation_fraction": 0.017999999225139618
+            },
+            "typical_failure": {
+              "env_id": 24,
+              "initial_state_id": "2e2bb5140cd6a83b9f68cdb6fa0643b1e5dc5e9101d156e5ae3c3f6fede1270d",
+              "success": false,
+              "terminal_stable_seconds": 1.58,
+              "longest_stable_seconds": 8.22,
+              "lower_speed_violation_fraction": 0.0020000000949949026
+            },
+            "success": {
+              "env_id": 0,
+              "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+              "success": true,
+              "terminal_stable_seconds": 8.6,
+              "longest_stable_seconds": 8.6,
+              "lower_speed_violation_fraction": 0.004000000189989805
+            }
+          },
+          "success_fraction": 0.765625,
+          "success_wilson95": null
+        },
+        "dev": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/89c7cedb9567f144228deb4d98465a9b0aad08be9f7c3ad391aa6a12ade8431c/dev/evaluation.json",
+            "sha256": "d4af0ae34f77fbc621e8bc3e6c5ec66e3591f33a828af0e7e0bdf671d5098b63"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/dev.pt",
+            "sha256": "253123669696a953830caeaf587e1300e023c12293d608e38e655a38cdc00f58"
+          },
+          "failure_summary": {
+            "episodes": 128,
+            "successes": 102,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.9733437928371131,
+            "mean_lower_speed_violation_fraction": 0.019031250038096914,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 8.540000000000001,
+            "median_longest_stable_seconds": 8.540000000000001,
+            "failed_despite_any_5s_streak": 12,
+            "mean_violation_fractions": {
+              "top_center": 0.0032187500182772055,
+              "top_height": 0.0,
+              "top_speed": 0.005484375064042979,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.019031250038096914,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "2b89c22e657103c2eb87c22835866c499f2bc83160cf5dec670746a98ff00ecb",
+              "success": true,
+              "terminal_stable_seconds": 8.56,
+              "longest_stable_seconds": 8.56,
+              "lower_speed_violation_fraction": 0.017999999225139618
+            },
+            "typical": {
+              "env_id": 3,
+              "initial_state_id": "66b1771fb9342fac831ec1ff7b1a84aed698950c961a9f2a67b6a33cfac8f44b",
+              "success": true,
+              "terminal_stable_seconds": 8.540000000000001,
+              "longest_stable_seconds": 8.540000000000001,
+              "lower_speed_violation_fraction": 0.029999999329447746
+            },
+            "worst_lower_speed": {
+              "env_id": 25,
+              "initial_state_id": "3a7d6f497dccd4e0d4f02e0f40af6b220440d770b1f594885228099b793b6eaa",
+              "success": true,
+              "terminal_stable_seconds": 7.74,
+              "longest_stable_seconds": 7.74,
+              "lower_speed_violation_fraction": 0.10999999940395355
+            },
+            "typical_failure": {
+              "env_id": 119,
+              "initial_state_id": "a0b9a4866abeaf1ba9964d8c0843a2eafbe2eb047c6282966aa4b329a8032dc6",
+              "success": false,
+              "terminal_stable_seconds": 2.46,
+              "longest_stable_seconds": 5.86,
+              "lower_speed_violation_fraction": 0.02199999988079071
+            },
+            "success": {
+              "env_id": 0,
+              "initial_state_id": "2b89c22e657103c2eb87c22835866c499f2bc83160cf5dec670746a98ff00ecb",
+              "success": true,
+              "terminal_stable_seconds": 8.56,
+              "longest_stable_seconds": 8.56,
+              "lower_speed_violation_fraction": 0.017999999225139618
+            }
+          },
+          "success_fraction": 0.796875,
+          "success_wilson95": [
+            0.7190073141485271,
+            0.8574426180640773
+          ]
+        },
+        "test-8201": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/89c7cedb9567f144228deb4d98465a9b0aad08be9f7c3ad391aa6a12ade8431c/test-8201/evaluation.json",
+            "sha256": "f1038e2fe4f890c3cd856f986cc4927684ba61c0eef4e0c8f1dc5fc08e859e9a"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/test-8201.pt",
+            "sha256": "455ad7bca7c077072aa10abd337d40a72d6248e3b4af02e7ca6589a6884c74a0"
+          },
+          "failure_summary": {
+            "episodes": 256,
+            "successes": 199,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.9740937924943864,
+            "mean_lower_speed_violation_fraction": 0.018296875094165443,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 8.620000000000001,
+            "median_longest_stable_seconds": 8.620000000000001,
+            "failed_despite_any_5s_streak": 35,
+            "mean_violation_fractions": {
+              "top_center": 0.0030234375217332854,
+              "top_height": 0.0,
+              "top_speed": 0.00573437515868136,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.018296875094165443,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "058ccec14b113bc75c8988d15b6170807e690bad86a2736ff5c63b752bcdacd5",
+              "success": true,
+              "terminal_stable_seconds": 6.82,
+              "longest_stable_seconds": 6.82,
+              "lower_speed_violation_fraction": 0.04800000041723251
+            },
+            "typical": {
+              "env_id": 32,
+              "initial_state_id": "30bbe43f0de6738b66fe9fd6d3e9d4a9546cc27efa0578e7683045ee143e1b97",
+              "success": true,
+              "terminal_stable_seconds": 8.620000000000001,
+              "longest_stable_seconds": 8.620000000000001,
+              "lower_speed_violation_fraction": 0.03799999877810478
+            },
+            "worst_lower_speed": {
+              "env_id": 216,
+              "initial_state_id": "c008628c1fba0769996f6d931b0ec3afb25530f982388d379cf93c579ca8ea4e",
+              "success": true,
+              "terminal_stable_seconds": 7.92,
+              "longest_stable_seconds": 7.92,
+              "lower_speed_violation_fraction": 0.09399999678134918
+            },
+            "typical_failure": {
+              "env_id": 235,
+              "initial_state_id": "354526e83d086c859fcb7b05e48c9ba694a62ce893531c819a9468409a6ff946",
+              "success": false,
+              "terminal_stable_seconds": 1.94,
+              "longest_stable_seconds": 6.0,
+              "lower_speed_violation_fraction": 0.04600000008940697
+            },
+            "success": {
+              "env_id": 0,
+              "initial_state_id": "058ccec14b113bc75c8988d15b6170807e690bad86a2736ff5c63b752bcdacd5",
+              "success": true,
+              "terminal_stable_seconds": 6.82,
+              "longest_stable_seconds": 6.82,
+              "lower_speed_violation_fraction": 0.04800000041723251
+            }
+          },
+          "success_fraction": 0.77734375,
+          "success_wilson95": [
+            0.7224930899424281,
+            0.8239939896963463
+          ]
+        },
+        "test-8202": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/89c7cedb9567f144228deb4d98465a9b0aad08be9f7c3ad391aa6a12ade8431c/test-8202/evaluation.json",
+            "sha256": "ef9790b90c4a54aba6907e6689ea82b69d0f836d5618dc9ff3845f77b076c5c0"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/test-8202.pt",
+            "sha256": "cf8657d9f1bb96933bd1aaa86b1d4619a6d2cec82a19652421b26885aa435f4a"
+          },
+          "failure_summary": {
+            "episodes": 256,
+            "successes": 191,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.9716484814416617,
+            "mean_lower_speed_violation_fraction": 0.01969531264694524,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 8.36,
+            "median_longest_stable_seconds": 8.4,
+            "failed_despite_any_5s_streak": 35,
+            "mean_violation_fractions": {
+              "top_center": 0.003781250032261596,
+              "top_height": 0.0,
+              "top_speed": 0.006218750087100489,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.01969531264694524,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "f589a7acf44c4a031f791feb085aabe171d4d05b34aa7ab588e2e44ca1c98e56",
+              "success": false,
+              "terminal_stable_seconds": 0.54,
+              "longest_stable_seconds": 9.24,
+              "lower_speed_violation_fraction": 0.0020000000949949026
+            },
+            "typical": {
+              "env_id": 43,
+              "initial_state_id": "a3a17c220ab93e65a60be2689bd4256c083c431cf8bb5ca862a5ef81b4d4b9fa",
+              "success": true,
+              "terminal_stable_seconds": 8.36,
+              "longest_stable_seconds": 8.36,
+              "lower_speed_violation_fraction": 0.03200000151991844
+            },
+            "worst_lower_speed": {
+              "env_id": 202,
+              "initial_state_id": "c0840e6f4784d91c643acf6c06f50a361c808221d1bbb25424d66aa864886c27",
+              "success": true,
+              "terminal_stable_seconds": 6.5200000000000005,
+              "longest_stable_seconds": 6.5200000000000005,
+              "lower_speed_violation_fraction": 0.12600000202655792
+            },
+            "typical_failure": {
+              "env_id": 198,
+              "initial_state_id": "fed09f79f788a225bb35d4ba52f670cdd2212d6ed161fd94cac86ea8d03065a7",
+              "success": false,
+              "terminal_stable_seconds": 1.96,
+              "longest_stable_seconds": 6.76,
+              "lower_speed_violation_fraction": 0.01600000075995922
+            },
+            "success": {
+              "env_id": 1,
+              "initial_state_id": "5be86340f20d1ad671d0d97e261d56bfd89c05cf0040969f3107522ba0ed2de1",
+              "success": true,
+              "terminal_stable_seconds": 8.76,
+              "longest_stable_seconds": 8.76,
+              "lower_speed_violation_fraction": 0.004000000189989805
+            }
+          },
+          "success_fraction": 0.74609375,
+          "success_wilson95": [
+            0.6894097171973202,
+            0.7955013534680712
+          ]
+        },
+        "test-8203": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/89c7cedb9567f144228deb4d98465a9b0aad08be9f7c3ad391aa6a12ade8431c/test-8203/evaluation.json",
+            "sha256": "6ccf526fcafe13ee0ad0246b494dd5518e65d52a2157241f9b1c4cba4cd177b7"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/test-8203.pt",
+            "sha256": "f24746ac1cf396f0a60c67a623d3932e9d7e990b18c387a12fad0ace44f9862e"
+          },
+          "failure_summary": {
+            "episodes": 256,
+            "successes": 196,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.9717578564304858,
+            "mean_lower_speed_violation_fraction": 0.019609375084655767,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 8.36,
+            "median_longest_stable_seconds": 8.5,
+            "failed_despite_any_5s_streak": 40,
+            "mean_violation_fractions": {
+              "top_center": 0.003554687541509338,
+              "top_height": 0.0,
+              "top_speed": 0.006414062640942575,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.019609375084655767,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "3022619cb365a518929b3e7753f98e4fe601733033ce4933f8492db7fd9b7145",
+              "success": true,
+              "terminal_stable_seconds": 8.22,
+              "longest_stable_seconds": 8.22,
+              "lower_speed_violation_fraction": 0.026000000536441803
+            },
+            "typical": {
+              "env_id": 4,
+              "initial_state_id": "6184999e036fc4aa03002142dbce47de244063326fe3e10923f4db5fe05d80b3",
+              "success": true,
+              "terminal_stable_seconds": 8.36,
+              "longest_stable_seconds": 8.36,
+              "lower_speed_violation_fraction": 0.017999999225139618
+            },
+            "worst_lower_speed": {
+              "env_id": 189,
+              "initial_state_id": "72d9f4e30640135663de4b53efe7a77dfe9127fbc153c168f47b56001052defa",
+              "success": false,
+              "terminal_stable_seconds": 2.9,
+              "longest_stable_seconds": 2.9,
+              "lower_speed_violation_fraction": 0.14800000190734863
+            },
+            "typical_failure": {
+              "env_id": 61,
+              "initial_state_id": "5d1a3cfba75b25ed36e22ea19763a08abc65730547ce4b186c497bea983b2c95",
+              "success": false,
+              "terminal_stable_seconds": 1.78,
+              "longest_stable_seconds": 4.22,
+              "lower_speed_violation_fraction": 0.04800000041723251
+            },
+            "success": {
+              "env_id": 0,
+              "initial_state_id": "3022619cb365a518929b3e7753f98e4fe601733033ce4933f8492db7fd9b7145",
+              "success": true,
+              "terminal_stable_seconds": 8.22,
+              "longest_stable_seconds": 8.22,
+              "lower_speed_violation_fraction": 0.026000000536441803
+            }
+          },
+          "success_fraction": 0.765625,
+          "success_wilson95": [
+            0.71004258449401,
+            0.8133534917797457
+          ]
+        }
+      },
+      "held_out": {
+        "episodes": 768,
+        "successes": 586,
+        "success_fraction": 0.7630208333333334,
+        "wilson95": [
+          0.7316841919751783,
+          0.7917393626720112
+        ],
+        "scope": "one checkpoint, 768 randomized initial states"
+      },
+      "paired_vs_source_1000": {
+        "paired_episodes": 768,
+        "candidate_only_success": 586,
+        "reference_only_success": 0,
+        "paired_success_fraction_difference": 0.7630208333333334
+      },
+      "held_out_failure_summary": {
+        "episodes": 768,
+        "successes": 586,
+        "mean_seconds": 10.0,
+        "mean_double_balance_stable_fraction": 0.9725000434555113,
+        "mean_lower_speed_violation_fraction": 0.01920052094192215,
+        "mean_terminated": 0,
+        "median_terminal_stable_seconds": 8.51,
+        "median_longest_stable_seconds": 8.540000000000001,
+        "failed_despite_any_5s_streak": 110,
+        "mean_violation_fractions": {
+          "top_center": 0.0034531250318347397,
+          "top_height": 0.0,
+          "top_speed": 0.006122395962241474,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.01920052094192215,
+          "unassisted": 0.0
+        }
+      }
+    },
+    {
+      "identity": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/references/update_001000.pt",
+        "sha256": "c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7",
+        "role": "source-1000"
+      },
+      "protocols": {
+        "nominal": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7/nominal/evaluation.json",
+            "sha256": "5f863cd585f6339b533dd35b4dfa5ffca10b5fb3f74eb2c742a339166962abbc"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/nominal.pt",
+            "sha256": "5a2421201d3d4bca5bcfba790b42b6753ebcf5b080b4055dbb0494e8bf41df38"
+          },
+          "failure_summary": {
+            "episodes": 64,
+            "successes": 0,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.9021250400692225,
+            "mean_lower_speed_violation_fraction": 0.08381250000093132,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 0.12,
+            "median_longest_stable_seconds": 1.12,
+            "failed_despite_any_5s_streak": 0,
+            "mean_violation_fractions": {
+              "top_center": 0.0007187500013969839,
+              "top_height": 0.0,
+              "top_speed": 0.029250000312458724,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.08381250000093132,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+              "success": false,
+              "terminal_stable_seconds": 0.02,
+              "longest_stable_seconds": 1.92,
+              "lower_speed_violation_fraction": 0.10199999809265137
+            },
+            "typical": {
+              "env_id": 21,
+              "initial_state_id": "1a8209b156f12a5084935947eef3cbbddde8e5455ea613d61cdebc5a45e43779",
+              "success": false,
+              "terminal_stable_seconds": 0.12,
+              "longest_stable_seconds": 0.54,
+              "lower_speed_violation_fraction": 0.11599999666213989
+            },
+            "worst_lower_speed": {
+              "env_id": 42,
+              "initial_state_id": "9d42d1f1f3c6dc4e1fb8e5d4969c716f239ca4b08445df5224ba643e5993df1a",
+              "success": false,
+              "terminal_stable_seconds": 0.02,
+              "longest_stable_seconds": 1.04,
+              "lower_speed_violation_fraction": 0.13600000739097595
+            },
+            "typical_failure": {
+              "env_id": 21,
+              "initial_state_id": "1a8209b156f12a5084935947eef3cbbddde8e5455ea613d61cdebc5a45e43779",
+              "success": false,
+              "terminal_stable_seconds": 0.12,
+              "longest_stable_seconds": 0.54,
+              "lower_speed_violation_fraction": 0.11599999666213989
+            }
+          },
+          "success_fraction": 0.0,
+          "success_wilson95": null
+        },
+        "dev": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7/dev/evaluation.json",
+            "sha256": "38287044b1bed85f26418574950dc28e0b8f823bb8118b01f8f2d94195948a28"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/dev.pt",
+            "sha256": "253123669696a953830caeaf587e1300e023c12293d608e38e655a38cdc00f58"
+          },
+          "failure_summary": {
+            "episodes": 128,
+            "successes": 0,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.862640667706728,
+            "mean_lower_speed_violation_fraction": 0.10075000024517067,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 0.14,
+            "median_longest_stable_seconds": 1.12,
+            "failed_despite_any_5s_streak": 0,
+            "mean_violation_fractions": {
+              "top_center": 0.019296875103464117,
+              "top_height": 0.0,
+              "top_speed": 0.04467187507543713,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.10075000024517067,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "2b89c22e657103c2eb87c22835866c499f2bc83160cf5dec670746a98ff00ecb",
+              "success": false,
+              "terminal_stable_seconds": 0.42,
+              "longest_stable_seconds": 0.92,
+              "lower_speed_violation_fraction": 0.10599999874830246
+            },
+            "typical": {
+              "env_id": 55,
+              "initial_state_id": "e7709cb96b31def95dd5636a5e25d8ae7e5ccf8052322296d52f4c5d069434ed",
+              "success": false,
+              "terminal_stable_seconds": 0.14,
+              "longest_stable_seconds": 1.3800000000000001,
+              "lower_speed_violation_fraction": 0.07199999690055847
+            },
+            "worst_lower_speed": {
+              "env_id": 75,
+              "initial_state_id": "8c4977be1444dc7c39cbb2c66143766b095ea111dc73e33756f4afc3f9df4fec",
+              "success": false,
+              "terminal_stable_seconds": 0.2,
+              "longest_stable_seconds": 1.52,
+              "lower_speed_violation_fraction": 0.23000000417232513
+            },
+            "typical_failure": {
+              "env_id": 55,
+              "initial_state_id": "e7709cb96b31def95dd5636a5e25d8ae7e5ccf8052322296d52f4c5d069434ed",
+              "success": false,
+              "terminal_stable_seconds": 0.14,
+              "longest_stable_seconds": 1.3800000000000001,
+              "lower_speed_violation_fraction": 0.07199999690055847
+            }
+          },
+          "success_fraction": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.029136956273508416
+          ]
+        },
+        "test-8201": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7/test-8201/evaluation.json",
+            "sha256": "920c7f12dc35042f37bb6eecff872edfc6a1988ee2367b151b4addcb05a99573"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/test-8201.pt",
+            "sha256": "455ad7bca7c077072aa10abd337d40a72d6248e3b4af02e7ca6589a6884c74a0"
+          },
+          "failure_summary": {
+            "episodes": 256,
+            "successes": 0,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.8651094168890268,
+            "mean_lower_speed_violation_fraction": 0.09698437529732473,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 0.16,
+            "median_longest_stable_seconds": 1.11,
+            "failed_despite_any_5s_streak": 0,
+            "mean_violation_fractions": {
+              "top_center": 0.01983593758995994,
+              "top_height": 0.0,
+              "top_speed": 0.044468750013038516,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.09698437529732473,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "058ccec14b113bc75c8988d15b6170807e690bad86a2736ff5c63b752bcdacd5",
+              "success": false,
+              "terminal_stable_seconds": 0.08,
+              "longest_stable_seconds": 2.08,
+              "lower_speed_violation_fraction": 0.10599999874830246
+            },
+            "typical": {
+              "env_id": 3,
+              "initial_state_id": "610e3d5cabed51c25c7715248d8b0c52c07058210b724e6a76bc8e5e97f27177",
+              "success": false,
+              "terminal_stable_seconds": 0.16,
+              "longest_stable_seconds": 1.9000000000000001,
+              "lower_speed_violation_fraction": 0.08399999886751175
+            },
+            "worst_lower_speed": {
+              "env_id": 246,
+              "initial_state_id": "9350bdeaa3cb6ea327ca004fcd49e04bb9d9dc5d03b6df8085a6f1108944e334",
+              "success": false,
+              "terminal_stable_seconds": 0.0,
+              "longest_stable_seconds": 0.92,
+              "lower_speed_violation_fraction": 0.24199999868869781
+            },
+            "typical_failure": {
+              "env_id": 3,
+              "initial_state_id": "610e3d5cabed51c25c7715248d8b0c52c07058210b724e6a76bc8e5e97f27177",
+              "success": false,
+              "terminal_stable_seconds": 0.16,
+              "longest_stable_seconds": 1.9000000000000001,
+              "lower_speed_violation_fraction": 0.08399999886751175
+            }
+          },
+          "success_fraction": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "test-8202": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7/test-8202/evaluation.json",
+            "sha256": "969f96b491eec91f31e78f3954494cdf8e671efc84a6b5e36c1b3e5a6de5d0bd"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/test-8202.pt",
+            "sha256": "cf8657d9f1bb96933bd1aaa86b1d4619a6d2cec82a19652421b26885aa435f4a"
+          },
+          "failure_summary": {
+            "episodes": 256,
+            "successes": 0,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.8587187908124179,
+            "mean_lower_speed_violation_fraction": 0.1005546877568122,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 0.14,
+            "median_longest_stable_seconds": 1.12,
+            "failed_despite_any_5s_streak": 0,
+            "mean_violation_fractions": {
+              "top_center": 0.024078125102278136,
+              "top_height": 0.0,
+              "top_speed": 0.045820312516298145,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.1005546877568122,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "f589a7acf44c4a031f791feb085aabe171d4d05b34aa7ab588e2e44ca1c98e56",
+              "success": false,
+              "terminal_stable_seconds": 0.16,
+              "longest_stable_seconds": 0.76,
+              "lower_speed_violation_fraction": 0.12200000137090683
+            },
+            "typical": {
+              "env_id": 3,
+              "initial_state_id": "0f1e39d72d2229738b1c845c4845375236c148c01ccce571639860657781323f",
+              "success": false,
+              "terminal_stable_seconds": 0.14,
+              "longest_stable_seconds": 1.52,
+              "lower_speed_violation_fraction": 0.1379999965429306
+            },
+            "worst_lower_speed": {
+              "env_id": 255,
+              "initial_state_id": "d5fac6d7717cdafda94a0bc92728a4df4bf3e70dacf4f542a55b8a5eb04b4eda",
+              "success": false,
+              "terminal_stable_seconds": 0.0,
+              "longest_stable_seconds": 1.0,
+              "lower_speed_violation_fraction": 0.33399999141693115
+            },
+            "typical_failure": {
+              "env_id": 3,
+              "initial_state_id": "0f1e39d72d2229738b1c845c4845375236c148c01ccce571639860657781323f",
+              "success": false,
+              "terminal_stable_seconds": 0.14,
+              "longest_stable_seconds": 1.52,
+              "lower_speed_violation_fraction": 0.1379999965429306
+            }
+          },
+          "success_fraction": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "test-8203": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7/test-8203/evaluation.json",
+            "sha256": "a202008f5f9ca64c6182315782dae23207b842fbcfc59972377a040c3ceb6fcc"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/test-8203.pt",
+            "sha256": "f24746ac1cf396f0a60c67a623d3932e9d7e990b18c387a12fad0ace44f9862e"
+          },
+          "failure_summary": {
+            "episodes": 256,
+            "successes": 0,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.8605547277256846,
+            "mean_lower_speed_violation_fraction": 0.09937500041269232,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 0.14,
+            "median_longest_stable_seconds": 1.08,
+            "failed_despite_any_5s_streak": 0,
+            "mean_violation_fractions": {
+              "top_center": 0.022281250020569132,
+              "top_height": 0.0,
+              "top_speed": 0.04588281247561099,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.09937500041269232,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "3022619cb365a518929b3e7753f98e4fe601733033ce4933f8492db7fd9b7145",
+              "success": false,
+              "terminal_stable_seconds": 0.2,
+              "longest_stable_seconds": 0.78,
+              "lower_speed_violation_fraction": 0.10400000214576721
+            },
+            "typical": {
+              "env_id": 35,
+              "initial_state_id": "cbd2b59d7b2a6ed605cf35fa26e832d73102982f33b9b04c9d0e1cb7a5f72814",
+              "success": false,
+              "terminal_stable_seconds": 0.14,
+              "longest_stable_seconds": 0.58,
+              "lower_speed_violation_fraction": 0.10999999940395355
+            },
+            "worst_lower_speed": {
+              "env_id": 87,
+              "initial_state_id": "635926ac5a073db28f14e058513356bc7add5bf2741c9b7dd6683ea6c9154d37",
+              "success": false,
+              "terminal_stable_seconds": 0.18,
+              "longest_stable_seconds": 1.04,
+              "lower_speed_violation_fraction": 0.25999999046325684
+            },
+            "typical_failure": {
+              "env_id": 35,
+              "initial_state_id": "cbd2b59d7b2a6ed605cf35fa26e832d73102982f33b9b04c9d0e1cb7a5f72814",
+              "success": false,
+              "terminal_stable_seconds": 0.14,
+              "longest_stable_seconds": 0.58,
+              "lower_speed_violation_fraction": 0.10999999940395355
+            }
+          },
+          "success_fraction": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        }
+      },
+      "held_out": {
+        "episodes": 768,
+        "successes": 0,
+        "success_fraction": 0.0,
+        "wilson95": [
+          4.336808689942018e-19,
+          0.004977005027125048
+        ],
+        "scope": "one checkpoint, 768 randomized initial states"
+      },
+      "paired_vs_source_1000": {
+        "paired_episodes": 768,
+        "candidate_only_success": 0,
+        "reference_only_success": 0,
+        "paired_success_fraction_difference": 0.0
+      },
+      "held_out_failure_summary": {
+        "episodes": 768,
+        "successes": 0,
+        "mean_seconds": 10.0,
+        "mean_double_balance_stable_fraction": 0.8614609784757098,
+        "mean_lower_speed_violation_fraction": 0.09897135448894308,
+        "mean_terminated": 0,
+        "median_terminal_stable_seconds": 0.14,
+        "median_longest_stable_seconds": 1.1,
+        "failed_despite_any_5s_streak": 0,
+        "mean_violation_fractions": {
+          "top_center": 0.0220651042376024,
+          "top_height": 0.0,
+          "top_speed": 0.04539062500164922,
+          "lower_offset": 0.0,
+          "lower_height_min": 0.0,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.09897135448894308,
+          "unassisted": 0.0
+        }
+      }
+    },
+    {
+      "identity": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/references/update_006000.pt",
+        "sha256": "a5ad0aedb500555b649c5d4b11aded833cbc0f932c1fff1a747e1492534c495c",
+        "role": "reference-6000"
+      },
+      "protocols": {
+        "nominal": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/a5ad0aedb500555b649c5d4b11aded833cbc0f932c1fff1a747e1492534c495c/nominal/evaluation.json",
+            "sha256": "a2a9d3700d54b9985885f32c47eae4604ea0fdc8a3b8c0584a43df42dbc9cba2"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/nominal.pt",
+            "sha256": "5a2421201d3d4bca5bcfba790b42b6753ebcf5b080b4055dbb0494e8bf41df38"
+          },
+          "failure_summary": {
+            "episodes": 64,
+            "successes": 0,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.3504687650129199,
+            "mean_lower_speed_violation_fraction": 0.6227500028908253,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 0.0,
+            "median_longest_stable_seconds": 0.18,
+            "failed_despite_any_5s_streak": 0,
+            "mean_violation_fractions": {
+              "top_center": 0.02353124981164001,
+              "top_height": 0.0,
+              "top_speed": 0.036937500088242814,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.6227500028908253,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+              "success": false,
+              "terminal_stable_seconds": 0.0,
+              "longest_stable_seconds": 0.16,
+              "lower_speed_violation_fraction": 0.6060000061988831
+            },
+            "typical": {
+              "env_id": 0,
+              "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+              "success": false,
+              "terminal_stable_seconds": 0.0,
+              "longest_stable_seconds": 0.16,
+              "lower_speed_violation_fraction": 0.6060000061988831
+            },
+            "worst_lower_speed": {
+              "env_id": 58,
+              "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+              "success": false,
+              "terminal_stable_seconds": 0.0,
+              "longest_stable_seconds": 0.16,
+              "lower_speed_violation_fraction": 0.7200000286102295
+            },
+            "typical_failure": {
+              "env_id": 0,
+              "initial_state_id": "709ac37d87189f47498c40cc808b3650b4d0d949ab87d9196933ef1fb89b78af",
+              "success": false,
+              "terminal_stable_seconds": 0.0,
+              "longest_stable_seconds": 0.16,
+              "lower_speed_violation_fraction": 0.6060000061988831
+            }
+          },
+          "success_fraction": 0.0,
+          "success_wilson95": null
+        },
+        "dev": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/a5ad0aedb500555b649c5d4b11aded833cbc0f932c1fff1a747e1492534c495c/dev/evaluation.json",
+            "sha256": "0c737bab6b66a017bf1e7a9b6b6d8edf24a72dba0dc230316829b0a218d3ec3a"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/dev.pt",
+            "sha256": "253123669696a953830caeaf587e1300e023c12293d608e38e655a38cdc00f58"
+          },
+          "failure_summary": {
+            "episodes": 128,
+            "successes": 0,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.3616718912962824,
+            "mean_lower_speed_violation_fraction": 0.6139843757264316,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 0.0,
+            "median_longest_stable_seconds": 0.18,
+            "failed_despite_any_5s_streak": 0,
+            "mean_violation_fractions": {
+              "top_center": 0.027109375147119863,
+              "top_height": 0.0,
+              "top_speed": 0.04228124997462146,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.6139843757264316,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "2b89c22e657103c2eb87c22835866c499f2bc83160cf5dec670746a98ff00ecb",
+              "success": false,
+              "terminal_stable_seconds": 0.06,
+              "longest_stable_seconds": 0.12,
+              "lower_speed_violation_fraction": 0.6539999842643738
+            },
+            "typical": {
+              "env_id": 1,
+              "initial_state_id": "0e44224ccf7fe03f23771e9d5deb6ccec1c8945f368d6b866e7289b21ded5133",
+              "success": false,
+              "terminal_stable_seconds": 0.0,
+              "longest_stable_seconds": 0.18,
+              "lower_speed_violation_fraction": 0.6100000143051147
+            },
+            "worst_lower_speed": {
+              "env_id": 55,
+              "initial_state_id": "e7709cb96b31def95dd5636a5e25d8ae7e5ccf8052322296d52f4c5d069434ed",
+              "success": false,
+              "terminal_stable_seconds": 0.02,
+              "longest_stable_seconds": 0.14,
+              "lower_speed_violation_fraction": 0.7279999852180481
+            },
+            "typical_failure": {
+              "env_id": 1,
+              "initial_state_id": "0e44224ccf7fe03f23771e9d5deb6ccec1c8945f368d6b866e7289b21ded5133",
+              "success": false,
+              "terminal_stable_seconds": 0.0,
+              "longest_stable_seconds": 0.18,
+              "lower_speed_violation_fraction": 0.6100000143051147
+            }
+          },
+          "success_fraction": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.029136956273508416
+          ]
+        },
+        "test-8201": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/a5ad0aedb500555b649c5d4b11aded833cbc0f932c1fff1a747e1492534c495c/test-8201/evaluation.json",
+            "sha256": "c85f0868522d892cd37755a6e4c6d72d8eea8f5a02c20fa79d69b5e73a863298"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/test-8201.pt",
+            "sha256": "455ad7bca7c077072aa10abd337d40a72d6248e3b4af02e7ca6589a6884c74a0"
+          },
+          "failure_summary": {
+            "episodes": 256,
+            "successes": 0,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.35349220351781696,
+            "mean_lower_speed_violation_fraction": 0.6208125008270144,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 0.0,
+            "median_longest_stable_seconds": 0.18,
+            "failed_despite_any_5s_streak": 0,
+            "mean_violation_fractions": {
+              "top_center": 0.027375000119718607,
+              "top_height": 0.0,
+              "top_speed": 0.04366406245389953,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.6208125008270144,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "058ccec14b113bc75c8988d15b6170807e690bad86a2736ff5c63b752bcdacd5",
+              "success": false,
+              "terminal_stable_seconds": 0.0,
+              "longest_stable_seconds": 0.12,
+              "lower_speed_violation_fraction": 0.7099999785423279
+            },
+            "typical": {
+              "env_id": 0,
+              "initial_state_id": "058ccec14b113bc75c8988d15b6170807e690bad86a2736ff5c63b752bcdacd5",
+              "success": false,
+              "terminal_stable_seconds": 0.0,
+              "longest_stable_seconds": 0.12,
+              "lower_speed_violation_fraction": 0.7099999785423279
+            },
+            "worst_lower_speed": {
+              "env_id": 0,
+              "initial_state_id": "058ccec14b113bc75c8988d15b6170807e690bad86a2736ff5c63b752bcdacd5",
+              "success": false,
+              "terminal_stable_seconds": 0.0,
+              "longest_stable_seconds": 0.12,
+              "lower_speed_violation_fraction": 0.7099999785423279
+            },
+            "typical_failure": {
+              "env_id": 0,
+              "initial_state_id": "058ccec14b113bc75c8988d15b6170807e690bad86a2736ff5c63b752bcdacd5",
+              "success": false,
+              "terminal_stable_seconds": 0.0,
+              "longest_stable_seconds": 0.12,
+              "lower_speed_violation_fraction": 0.7099999785423279
+            }
+          },
+          "success_fraction": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "test-8202": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/a5ad0aedb500555b649c5d4b11aded833cbc0f932c1fff1a747e1492534c495c/test-8202/evaluation.json",
+            "sha256": "aecedb3a7fcecf5b0744234a4d5f3a375fd94faa8272f537b640094a88ba6c1e"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/test-8202.pt",
+            "sha256": "cf8657d9f1bb96933bd1aaa86b1d4619a6d2cec82a19652421b26885aa435f4a"
+          },
+          "failure_summary": {
+            "episodes": 256,
+            "successes": 0,
+            "mean_seconds": 10.0,
+            "mean_double_balance_stable_fraction": 0.35575001616962254,
+            "mean_lower_speed_violation_fraction": 0.61787500011269,
+            "mean_terminated": 0,
+            "median_terminal_stable_seconds": 0.0,
+            "median_longest_stable_seconds": 0.18,
+            "failed_despite_any_5s_streak": 0,
+            "mean_violation_fractions": {
+              "top_center": 0.028648437571064278,
+              "top_height": 0.0,
+              "top_speed": 0.045109375118045136,
+              "lower_offset": 0.0,
+              "lower_height_min": 0.0,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.61787500011269,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "f589a7acf44c4a031f791feb085aabe171d4d05b34aa7ab588e2e44ca1c98e56",
+              "success": false,
+              "terminal_stable_seconds": 0.04,
+              "longest_stable_seconds": 0.18,
+              "lower_speed_violation_fraction": 0.5759999752044678
+            },
+            "typical": {
+              "env_id": 4,
+              "initial_state_id": "13f4ea06ef4eb1f14a278138d6cd1e5e4daa6c9ae2efcedab636fd52692032c1",
+              "success": false,
+              "terminal_stable_seconds": 0.0,
+              "longest_stable_seconds": 0.24,
+              "lower_speed_violation_fraction": 0.4740000069141388
+            },
+            "worst_lower_speed": {
+              "env_id": 44,
+              "initial_state_id": "e73a844c5a610f07c068f39eda4c6844be76e0151b1c413737e90d93871b9632",
+              "success": false,
+              "terminal_stable_seconds": 0.02,
+              "longest_stable_seconds": 0.16,
+              "lower_speed_violation_fraction": 0.734000027179718
+            },
+            "typical_failure": {
+              "env_id": 4,
+              "initial_state_id": "13f4ea06ef4eb1f14a278138d6cd1e5e4daa6c9ae2efcedab636fd52692032c1",
+              "success": false,
+              "terminal_stable_seconds": 0.0,
+              "longest_stable_seconds": 0.24,
+              "lower_speed_violation_fraction": 0.4740000069141388
+            }
+          },
+          "success_fraction": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "test-8203": {
+          "report_reference": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/final-evaluation/a5ad0aedb500555b649c5d4b11aded833cbc0f932c1fff1a747e1492534c495c/test-8203/evaluation.json",
+            "sha256": "9c82c2956b1f9dce56ab38d8182ab539af058c00cf4e8c42462349ea4122eced"
+          },
+          "initial_states": {
+            "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/initial-states/test-8203.pt",
+            "sha256": "f24746ac1cf396f0a60c67a623d3932e9d7e990b18c387a12fad0ace44f9862e"
+          },
+          "failure_summary": {
+            "episodes": 256,
+            "successes": 0,
+            "mean_seconds": 9.966875,
+            "mean_double_balance_stable_fraction": 0.34577222034567967,
+            "mean_lower_speed_violation_fraction": 0.6275953955482692,
+            "mean_terminated": 0.00390625,
+            "median_terminal_stable_seconds": 0.0,
+            "median_longest_stable_seconds": 0.18,
+            "failed_despite_any_5s_streak": 0,
+            "mean_violation_fractions": {
+              "top_center": 0.029970806102937786,
+              "top_height": 0.0,
+              "top_speed": 0.04650822381518083,
+              "lower_offset": 0.0004625822475645691,
+              "lower_height_min": 0.00015419407282024622,
+              "lower_height_max": 0.0,
+              "robot_tilt": 0.0,
+              "lower_ball_speed": 0.6275953955482692,
+              "unassisted": 0.0
+            }
+          },
+          "video_cases": {
+            "fixed": {
+              "env_id": 0,
+              "initial_state_id": "3022619cb365a518929b3e7753f98e4fe601733033ce4933f8492db7fd9b7145",
+              "success": false,
+              "terminal_stable_seconds": 0.0,
+              "longest_stable_seconds": 0.12,
+              "lower_speed_violation_fraction": 0.6840000152587891
+            },
+            "typical": {
+              "env_id": 0,
+              "initial_state_id": "3022619cb365a518929b3e7753f98e4fe601733033ce4933f8492db7fd9b7145",
+              "success": false,
+              "terminal_stable_seconds": 0.0,
+              "longest_stable_seconds": 0.12,
+              "lower_speed_violation_fraction": 0.6840000152587891
+            },
+            "worst_lower_speed": {
+              "env_id": 247,
+              "initial_state_id": "e64b8ed1b0fa978014a96439a32eb625a9f5c64c8c2e25b4b2499eb0ef3d213f",
+              "success": false,
+              "terminal_stable_seconds": 0.0,
+              "longest_stable_seconds": 0.14,
+              "lower_speed_violation_fraction": 0.7419999837875366
+            },
+            "typical_failure": {
+              "env_id": 0,
+              "initial_state_id": "3022619cb365a518929b3e7753f98e4fe601733033ce4933f8492db7fd9b7145",
+              "success": false,
+              "terminal_stable_seconds": 0.0,
+              "longest_stable_seconds": 0.12,
+              "lower_speed_violation_fraction": 0.6840000152587891
+            }
+          },
+          "success_fraction": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        }
+      },
+      "held_out": {
+        "episodes": 768,
+        "successes": 0,
+        "success_fraction": 0.0,
+        "wilson95": [
+          4.336808689942018e-19,
+          0.004977005027125048
+        ],
+        "scope": "one checkpoint, 768 randomized initial states"
+      },
+      "paired_vs_source_1000": {
+        "paired_episodes": 768,
+        "candidate_only_success": 0,
+        "reference_only_success": 0,
+        "paired_success_fraction_difference": 0.0
+      },
+      "held_out_failure_summary": {
+        "episodes": 768,
+        "successes": 0,
+        "mean_seconds": 9.988958333333333,
+        "mean_double_balance_stable_fraction": 0.3516714800110397,
+        "mean_lower_speed_violation_fraction": 0.6220942988293245,
+        "mean_terminated": 0.0013020833333333333,
+        "median_terminal_stable_seconds": 0.0,
+        "median_longest_stable_seconds": 0.18,
+        "failed_despite_any_5s_streak": 0,
+        "mean_violation_fractions": {
+          "top_center": 0.028664747931240225,
+          "top_height": 0.0,
+          "top_speed": 0.04509388712904183,
+          "lower_offset": 0.00015419408252152303,
+          "lower_height_min": 5.139802427341541e-05,
+          "lower_height_max": 0.0,
+          "robot_tilt": 0.0,
+          "lower_ball_speed": 0.6220942988293245,
+          "unassisted": 0.0
+        }
+      }
+    }
+  ],
+  "checkpoint_and_evaluation_identity": "PASS",
+  "note": "Independent test completed; inspect failures/videos, then return and verify the required archive before shutdown reminder."
+}

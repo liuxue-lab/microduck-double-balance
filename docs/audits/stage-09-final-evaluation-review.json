@@ -1,0 +1,592 @@
+{
+  "stage": 9,
+  "status": "REVIEW_COMPLETE_NO_ELIGIBLE_CANDIDATE",
+  "campaign_id": "7850e189-9b30-4d41-8a37-8ca6f241b3b0",
+  "source_sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+  "pilot_zip_sha256": "5fe9295b66131be7a067d3380b8fbe05a8bac1cd025415bd9fbfaec4044bbe62",
+  "manifest_files_verified": 341,
+  "cloud_report_count": 18,
+  "all_program_reports_pass": true,
+  "program_pass_is_policy_success": false,
+  "episodes_per_nominal": 64,
+  "episodes_per_dev": 128,
+  "sampling_note": "Same frozen initial states reused across arms/milestones; nominal copies and repeated cases are not independent trials. No pooled success rate.",
+  "success_definition": "Unchanged Stage 04 10s first episode; terminal continuous stability >=5s; zero assistance; physical termination is failure.",
+  "supplemental_head_definition": "Separate terminal 5s old stability with abs(yaw)<=15, abs(pitch/roll)<=5 degrees and all head/neck joints retaining >=5% hard-range margin. Does not replace old labels.",
+  "selection_rule": {
+    "milestone": 500,
+    "minimum_dev_old_successes": 103,
+    "same_gpu_baseline_old_successes": 107,
+    "also_require": "yaw and head-joint margin improvement",
+    "eligible_profiles": []
+  },
+  "fresh_heldout_930901_930902_930903_run": false,
+  "heldout_skip_reason": "Approved no-eligible-candidate stop rule; no model selected, no extra training.",
+  "retained_primary": {
+    "stage": 8,
+    "path": "E/20260929/update_004000.pt",
+    "sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+    "historical_independent_old_successes": 652,
+    "historical_independent_episodes": 768
+  },
+  "reports": [
+    {
+      "key": "baseline/nominal",
+      "old_successes": 51,
+      "n": 64,
+      "physical_terminations": 0,
+      "termination_terms": {},
+      "failures_with_tail_lower_speed_event": 13,
+      "failures": 13,
+      "yaw_deg": 88.36215505595683,
+      "margin_bad_fraction": 1.0,
+      "posture_successes": 0,
+      "mean_lower_speed_violation_fraction": 0.0015625000560248736,
+      "median_terminal_stable_seconds": 9.82,
+      "joint_medians_of_full_episode_medians_deg": {
+        "neck_pitch": 23.55930519104004,
+        "head_pitch": 48.81223106384277,
+        "head_yaw": 87.99221801757812,
+        "head_roll": 25.37257957458496
+      },
+      "joint_outside_hard_limits_episode_mean_fraction": {
+        "neck_pitch": 0.0,
+        "head_pitch": 0.0,
+        "head_yaw": 0.0,
+        "head_roll": 0.98378125
+      },
+      "initial_states_sha256": "5a2421201d3d4bca5bcfba790b42b6753ebcf5b080b4055dbb0494e8bf41df38",
+      "report_reference": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/baseline/nominal-c61be379/evaluation.json",
+        "sha256": "8a498b3b1a690d7415341345aed4b3a037ef3e41632e50203f8e209d94780d1f"
+      }
+    },
+    {
+      "key": "baseline/dev",
+      "old_successes": 107,
+      "n": 128,
+      "physical_terminations": 0,
+      "termination_terms": {},
+      "failures_with_tail_lower_speed_event": 21,
+      "failures": 21,
+      "yaw_deg": 88.39062369003123,
+      "margin_bad_fraction": 1.0,
+      "posture_successes": 0,
+      "mean_lower_speed_violation_fraction": 0.010609375118292519,
+      "median_terminal_stable_seconds": 9.02,
+      "joint_medians_of_full_episode_medians_deg": {
+        "neck_pitch": 23.49254608154297,
+        "head_pitch": 48.868865966796875,
+        "head_yaw": 88.05657958984375,
+        "head_roll": 25.372577667236328
+      },
+      "joint_outside_hard_limits_episode_mean_fraction": {
+        "neck_pitch": 0.0,
+        "head_pitch": 0.0,
+        "head_yaw": 0.0,
+        "head_roll": 0.9835937499999999
+      },
+      "initial_states_sha256": "253123669696a953830caeaf587e1300e023c12293d608e38e655a38cdc00f58",
+      "report_reference": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/baseline/dev-19ffbfd7/evaluation.json",
+        "sha256": "dd829deca4e28cbd1e3857fa1ffd56debda8811c985a024cdb30e2ebaa5e72e8"
+      }
+    },
+    {
+      "key": "F0-u000250/nominal",
+      "old_successes": 46,
+      "n": 64,
+      "physical_terminations": 0,
+      "termination_terms": {},
+      "failures_with_tail_lower_speed_event": 18,
+      "failures": 18,
+      "yaw_deg": 88.47014273952217,
+      "margin_bad_fraction": 1.0,
+      "posture_successes": 0,
+      "mean_lower_speed_violation_fraction": 0.0025000000714499038,
+      "median_terminal_stable_seconds": 8.25,
+      "joint_medians_of_full_episode_medians_deg": {
+        "neck_pitch": 25.964250564575195,
+        "head_pitch": 51.38902282714844,
+        "head_yaw": 87.87701416015625,
+        "head_roll": 25.37258529663086
+      },
+      "joint_outside_hard_limits_episode_mean_fraction": {
+        "neck_pitch": 0.0,
+        "head_pitch": 0.0,
+        "head_yaw": 0.0,
+        "head_roll": 0.9833437500000001
+      },
+      "initial_states_sha256": "5a2421201d3d4bca5bcfba790b42b6753ebcf5b080b4055dbb0494e8bf41df38",
+      "report_reference": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F0-u000250/nominal-088eb11e/evaluation.json",
+        "sha256": "6a62f0a1822186af0d2550fe470a84bec6b66972de5e69406356bb18bf04ba16"
+      }
+    },
+    {
+      "key": "F0-u000250/dev",
+      "old_successes": 101,
+      "n": 128,
+      "physical_terminations": 0,
+      "termination_terms": {},
+      "failures_with_tail_lower_speed_event": 27,
+      "failures": 27,
+      "yaw_deg": 88.49673028483801,
+      "margin_bad_fraction": 1.0,
+      "posture_successes": 0,
+      "mean_lower_speed_violation_fraction": 0.014656250072221155,
+      "median_terminal_stable_seconds": 8.219999999999999,
+      "joint_medians_of_full_episode_medians_deg": {
+        "neck_pitch": 25.712329864501953,
+        "head_pitch": 51.229190826416016,
+        "head_yaw": 88.00224685668945,
+        "head_roll": 25.37259292602539
+      },
+      "joint_outside_hard_limits_episode_mean_fraction": {
+        "neck_pitch": 0.0,
+        "head_pitch": 0.0,
+        "head_yaw": 0.0,
+        "head_roll": 0.98315625
+      },
+      "initial_states_sha256": "253123669696a953830caeaf587e1300e023c12293d608e38e655a38cdc00f58",
+      "report_reference": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F0-u000250/dev-2485a43d/evaluation.json",
+        "sha256": "c47f75ded9012dc09224df4c41b2c3ca2397306a15e43420fffce09cc10fbf67"
+      }
+    },
+    {
+      "key": "F0-u000500/nominal",
+      "old_successes": 34,
+      "n": 64,
+      "physical_terminations": 0,
+      "termination_terms": {},
+      "failures_with_tail_lower_speed_event": 30,
+      "failures": 30,
+      "yaw_deg": 88.77515845921374,
+      "margin_bad_fraction": 1.0,
+      "posture_successes": 0,
+      "mean_lower_speed_violation_fraction": 0.0051562501466833055,
+      "median_terminal_stable_seconds": 5.76,
+      "joint_medians_of_full_episode_medians_deg": {
+        "neck_pitch": 24.407679557800293,
+        "head_pitch": 49.66965866088867,
+        "head_yaw": 88.41793823242188,
+        "head_roll": 25.3725528717041
+      },
+      "joint_outside_hard_limits_episode_mean_fraction": {
+        "neck_pitch": 0.0,
+        "head_pitch": 0.0,
+        "head_yaw": 0.0,
+        "head_roll": 0.983625
+      },
+      "initial_states_sha256": "5a2421201d3d4bca5bcfba790b42b6753ebcf5b080b4055dbb0494e8bf41df38",
+      "report_reference": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F0-u000500/nominal-11c4e67d/evaluation.json",
+        "sha256": "010cc7c063577e50e56dfe3590e74fc7c83a8ededa8938b96187f1867f2c86ff"
+      }
+    },
+    {
+      "key": "F0-u000500/dev",
+      "old_successes": 59,
+      "n": 128,
+      "physical_terminations": 0,
+      "termination_terms": {},
+      "failures_with_tail_lower_speed_event": 69,
+      "failures": 69,
+      "yaw_deg": 88.85981755433019,
+      "margin_bad_fraction": 1.0,
+      "posture_successes": 0,
+      "mean_lower_speed_violation_fraction": 0.019921875042200554,
+      "median_terminal_stable_seconds": 4.71,
+      "joint_medians_of_full_episode_medians_deg": {
+        "neck_pitch": 24.338950157165527,
+        "head_pitch": 49.69833755493164,
+        "head_yaw": 88.5217399597168,
+        "head_roll": 25.372562408447266
+      },
+      "joint_outside_hard_limits_episode_mean_fraction": {
+        "neck_pitch": 0.0,
+        "head_pitch": 0.0,
+        "head_yaw": 0.0,
+        "head_roll": 0.983453125
+      },
+      "initial_states_sha256": "253123669696a953830caeaf587e1300e023c12293d608e38e655a38cdc00f58",
+      "report_reference": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F0-u000500/dev-b78118fb/evaluation.json",
+        "sha256": "c522d1088e9f27eb5a5ba78ecb6e952282162096502351a670dbf04b162f639f"
+      }
+    },
+    {
+      "key": "F1-u000250/nominal",
+      "old_successes": 40,
+      "n": 64,
+      "physical_terminations": 0,
+      "termination_terms": {},
+      "failures_with_tail_lower_speed_event": 24,
+      "failures": 24,
+      "yaw_deg": 88.01643785347622,
+      "margin_bad_fraction": 1.0,
+      "posture_successes": 0,
+      "mean_lower_speed_violation_fraction": 0.008781250005995389,
+      "median_terminal_stable_seconds": 7.04,
+      "joint_medians_of_full_episode_medians_deg": {
+        "neck_pitch": 23.927831649780273,
+        "head_pitch": 49.60672569274902,
+        "head_yaw": 87.44868850708008,
+        "head_roll": 25.37259578704834
+      },
+      "joint_outside_hard_limits_episode_mean_fraction": {
+        "neck_pitch": 0.0,
+        "head_pitch": 0.0,
+        "head_yaw": 0.0,
+        "head_roll": 0.983875
+      },
+      "initial_states_sha256": "5a2421201d3d4bca5bcfba790b42b6753ebcf5b080b4055dbb0494e8bf41df38",
+      "report_reference": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F1-u000250/nominal-13971ddf/evaluation.json",
+        "sha256": "f47a07367aa9f837b3c2fbb733ea2841bcee95d6fd4acfa45c5a08cf475e70c1"
+      }
+    },
+    {
+      "key": "F1-u000250/dev",
+      "old_successes": 87,
+      "n": 128,
+      "physical_terminations": 0,
+      "termination_terms": {},
+      "failures_with_tail_lower_speed_event": 41,
+      "failures": 41,
+      "yaw_deg": 88.08221837397963,
+      "margin_bad_fraction": 1.0,
+      "posture_successes": 0,
+      "mean_lower_speed_violation_fraction": 0.015656250097890734,
+      "median_terminal_stable_seconds": 7.040000000000001,
+      "joint_medians_of_full_episode_medians_deg": {
+        "neck_pitch": 23.86215591430664,
+        "head_pitch": 49.4825439453125,
+        "head_yaw": 87.54960250854492,
+        "head_roll": 25.372596740722656
+      },
+      "joint_outside_hard_limits_episode_mean_fraction": {
+        "neck_pitch": 0.0,
+        "head_pitch": 0.0,
+        "head_yaw": 0.0,
+        "head_roll": 0.9838906249999999
+      },
+      "initial_states_sha256": "253123669696a953830caeaf587e1300e023c12293d608e38e655a38cdc00f58",
+      "report_reference": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F1-u000250/dev-288dd8f8/evaluation.json",
+        "sha256": "db5cdcc2d49f5690209045ef70e04c3ad7fea68200c5248678263e396b2239fb"
+      }
+    },
+    {
+      "key": "F1-u000500/nominal",
+      "old_successes": 41,
+      "n": 64,
+      "physical_terminations": 0,
+      "termination_terms": {},
+      "failures_with_tail_lower_speed_event": 23,
+      "failures": 23,
+      "yaw_deg": 88.01552067699254,
+      "margin_bad_fraction": 1.0,
+      "posture_successes": 0,
+      "mean_lower_speed_violation_fraction": 0.004437500123458449,
+      "median_terminal_stable_seconds": 7.120000000000001,
+      "joint_medians_of_full_episode_medians_deg": {
+        "neck_pitch": 24.12090301513672,
+        "head_pitch": 49.752676010131836,
+        "head_yaw": 87.51030349731445,
+        "head_roll": 25.37256145477295
+      },
+      "joint_outside_hard_limits_episode_mean_fraction": {
+        "neck_pitch": 0.0,
+        "head_pitch": 0.0,
+        "head_yaw": 0.0,
+        "head_roll": 0.9835312500000001
+      },
+      "initial_states_sha256": "5a2421201d3d4bca5bcfba790b42b6753ebcf5b080b4055dbb0494e8bf41df38",
+      "report_reference": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F1-u000500/nominal-500d2324/evaluation.json",
+        "sha256": "a71a6cffc2722fed6cd1d689c6f2ae057830828f2ce5b81034cfa60b05bc139e"
+      }
+    },
+    {
+      "key": "F1-u000500/dev",
+      "old_successes": 88,
+      "n": 128,
+      "physical_terminations": 0,
+      "termination_terms": {},
+      "failures_with_tail_lower_speed_event": 40,
+      "failures": 40,
+      "yaw_deg": 88.0604015636639,
+      "margin_bad_fraction": 1.0,
+      "posture_successes": 0,
+      "mean_lower_speed_violation_fraction": 0.019312500104206265,
+      "median_terminal_stable_seconds": 7.220000000000001,
+      "joint_medians_of_full_episode_medians_deg": {
+        "neck_pitch": 24.13224506378174,
+        "head_pitch": 49.67790222167969,
+        "head_yaw": 87.66876220703125,
+        "head_roll": 25.372562408447266
+      },
+      "joint_outside_hard_limits_episode_mean_fraction": {
+        "neck_pitch": 0.0,
+        "head_pitch": 0.0,
+        "head_yaw": 0.0,
+        "head_roll": 0.983203125
+      },
+      "initial_states_sha256": "253123669696a953830caeaf587e1300e023c12293d608e38e655a38cdc00f58",
+      "report_reference": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F1-u000500/dev-e0a5f54d/evaluation.json",
+        "sha256": "c4ad5235cdcd5b848f80e4286a362a34164e998986c169ad90973925ffa18160"
+      }
+    },
+    {
+      "key": "F2-u000250/nominal",
+      "old_successes": 18,
+      "n": 64,
+      "physical_terminations": 0,
+      "termination_terms": {},
+      "failures_with_tail_lower_speed_event": 46,
+      "failures": 46,
+      "yaw_deg": 88.88836496386736,
+      "margin_bad_fraction": 1.0,
+      "posture_successes": 0,
+      "mean_lower_speed_violation_fraction": 0.018000000021856977,
+      "median_terminal_stable_seconds": 4.1,
+      "joint_medians_of_full_episode_medians_deg": {
+        "neck_pitch": 24.37659454345703,
+        "head_pitch": 50.19906044006348,
+        "head_yaw": 88.56925201416016,
+        "head_roll": 25.372468948364258
+      },
+      "joint_outside_hard_limits_episode_mean_fraction": {
+        "neck_pitch": 0.0,
+        "head_pitch": 0.0,
+        "head_yaw": 0.0,
+        "head_roll": 0.9836875
+      },
+      "initial_states_sha256": "5a2421201d3d4bca5bcfba790b42b6753ebcf5b080b4055dbb0494e8bf41df38",
+      "report_reference": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F2-u000250/nominal-4f7b3246/evaluation.json",
+        "sha256": "c835d810d3955c1f2c1dbc89bc6237663a55e5c37ed8abe8d7c172253709cf4e"
+      }
+    },
+    {
+      "key": "F2-u000250/dev",
+      "old_successes": 24,
+      "n": 128,
+      "physical_terminations": 0,
+      "termination_terms": {},
+      "failures_with_tail_lower_speed_event": 103,
+      "failures": 104,
+      "yaw_deg": 88.97230686650514,
+      "margin_bad_fraction": 1.0,
+      "posture_successes": 0,
+      "mean_lower_speed_violation_fraction": 0.02856250002514571,
+      "median_terminal_stable_seconds": 1.75,
+      "joint_medians_of_full_episode_medians_deg": {
+        "neck_pitch": 24.19418716430664,
+        "head_pitch": 49.872440338134766,
+        "head_yaw": 88.65151977539062,
+        "head_roll": 25.372490882873535
+      },
+      "joint_outside_hard_limits_episode_mean_fraction": {
+        "neck_pitch": 0.0,
+        "head_pitch": 0.0,
+        "head_yaw": 0.0,
+        "head_roll": 0.9833749999999999
+      },
+      "initial_states_sha256": "253123669696a953830caeaf587e1300e023c12293d608e38e655a38cdc00f58",
+      "report_reference": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F2-u000250/dev-89a791c2/evaluation.json",
+        "sha256": "b8a2794a77383800922391f6b523860a3538b8a0ae81d30f4eea3b4ca4e915a8"
+      }
+    },
+    {
+      "key": "F2-u000500/nominal",
+      "old_successes": 33,
+      "n": 64,
+      "physical_terminations": 0,
+      "termination_terms": {},
+      "failures_with_tail_lower_speed_event": 31,
+      "failures": 31,
+      "yaw_deg": 89.33888262190911,
+      "margin_bad_fraction": 1.0,
+      "posture_successes": 0,
+      "mean_lower_speed_violation_fraction": 0.0071250000000873115,
+      "median_terminal_stable_seconds": 5.17,
+      "joint_medians_of_full_episode_medians_deg": {
+        "neck_pitch": 24.87482452392578,
+        "head_pitch": 49.94425964355469,
+        "head_yaw": 88.84551620483398,
+        "head_roll": 25.31746768951416
+      },
+      "joint_outside_hard_limits_episode_mean_fraction": {
+        "neck_pitch": 0.0,
+        "head_pitch": 0.0,
+        "head_yaw": 0.0,
+        "head_roll": 0.98378125
+      },
+      "initial_states_sha256": "5a2421201d3d4bca5bcfba790b42b6753ebcf5b080b4055dbb0494e8bf41df38",
+      "report_reference": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F2-u000500/nominal-a78bba62/evaluation.json",
+        "sha256": "03f71274521ef2fac2cb013f13bf27b9aa871e583bb8822ba5c9664523b750b5"
+      }
+    },
+    {
+      "key": "F2-u000500/dev",
+      "old_successes": 65,
+      "n": 128,
+      "physical_terminations": 0,
+      "termination_terms": {},
+      "failures_with_tail_lower_speed_event": 63,
+      "failures": 63,
+      "yaw_deg": 89.29815837255728,
+      "margin_bad_fraction": 1.0,
+      "posture_successes": 0,
+      "mean_lower_speed_violation_fraction": 0.017359375186060788,
+      "median_terminal_stable_seconds": 5.17,
+      "joint_medians_of_full_episode_medians_deg": {
+        "neck_pitch": 24.597800254821777,
+        "head_pitch": 49.839080810546875,
+        "head_yaw": 88.94025421142578,
+        "head_roll": 25.32282257080078
+      },
+      "joint_outside_hard_limits_episode_mean_fraction": {
+        "neck_pitch": 0.0,
+        "head_pitch": 0.0,
+        "head_yaw": 0.0,
+        "head_roll": 0.9837968749999999
+      },
+      "initial_states_sha256": "253123669696a953830caeaf587e1300e023c12293d608e38e655a38cdc00f58",
+      "report_reference": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F2-u000500/dev-41732ecb/evaluation.json",
+        "sha256": "27576f049f4c1625e42a28eb2810a5db372667b17b7b0c43ddb4e33a5a581b2b"
+      }
+    },
+    {
+      "key": "F3-u000250/nominal",
+      "old_successes": 34,
+      "n": 64,
+      "physical_terminations": 0,
+      "termination_terms": {},
+      "failures_with_tail_lower_speed_event": 30,
+      "failures": 30,
+      "yaw_deg": 88.00564860603585,
+      "margin_bad_fraction": 1.0,
+      "posture_successes": 0,
+      "mean_lower_speed_violation_fraction": 0.004875000086030923,
+      "median_terminal_stable_seconds": 6.48,
+      "joint_medians_of_full_episode_medians_deg": {
+        "neck_pitch": 25.147425651550293,
+        "head_pitch": 50.58409118652344,
+        "head_yaw": 87.5293960571289,
+        "head_roll": 25.372589111328125
+      },
+      "joint_outside_hard_limits_episode_mean_fraction": {
+        "neck_pitch": 0.0,
+        "head_pitch": 0.0,
+        "head_yaw": 0.0,
+        "head_roll": 0.98378125
+      },
+      "initial_states_sha256": "5a2421201d3d4bca5bcfba790b42b6753ebcf5b080b4055dbb0494e8bf41df38",
+      "report_reference": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F3-u000250/nominal-99e70c87/evaluation.json",
+        "sha256": "131fe847f8c4c372ae8b803b8a646c8587465c81011751d7871c5fde61e1b77d"
+      }
+    },
+    {
+      "key": "F3-u000250/dev",
+      "old_successes": 77,
+      "n": 128,
+      "physical_terminations": 0,
+      "termination_terms": {},
+      "failures_with_tail_lower_speed_event": 51,
+      "failures": 51,
+      "yaw_deg": 88.10432342881302,
+      "margin_bad_fraction": 1.0,
+      "posture_successes": 0,
+      "mean_lower_speed_violation_fraction": 0.01820312510790245,
+      "median_terminal_stable_seconds": 6.9399999999999995,
+      "joint_medians_of_full_episode_medians_deg": {
+        "neck_pitch": 24.95534038543701,
+        "head_pitch": 50.32248306274414,
+        "head_yaw": 87.68544006347656,
+        "head_roll": 25.372587203979492
+      },
+      "joint_outside_hard_limits_episode_mean_fraction": {
+        "neck_pitch": 0.0,
+        "head_pitch": 0.0,
+        "head_yaw": 0.0,
+        "head_roll": 0.98353125
+      },
+      "initial_states_sha256": "253123669696a953830caeaf587e1300e023c12293d608e38e655a38cdc00f58",
+      "report_reference": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F3-u000250/dev-2fb89735/evaluation.json",
+        "sha256": "c443feae96b03da7d5be436c0cb5ba6481e264c1ce61d0c5580599489e84560c"
+      }
+    },
+    {
+      "key": "F3-u000500/nominal",
+      "old_successes": 42,
+      "n": 64,
+      "physical_terminations": 0,
+      "termination_terms": {},
+      "failures_with_tail_lower_speed_event": 22,
+      "failures": 22,
+      "yaw_deg": 88.42514393952948,
+      "margin_bad_fraction": 1.0,
+      "posture_successes": 0,
+      "mean_lower_speed_violation_fraction": 0.0038437500697909854,
+      "median_terminal_stable_seconds": 7.45,
+      "joint_medians_of_full_episode_medians_deg": {
+        "neck_pitch": 24.241779327392578,
+        "head_pitch": 49.44159126281738,
+        "head_yaw": 88.0403060913086,
+        "head_roll": 25.372482299804688
+      },
+      "joint_outside_hard_limits_episode_mean_fraction": {
+        "neck_pitch": 0.0,
+        "head_pitch": 0.0,
+        "head_yaw": 0.0,
+        "head_roll": 0.9840312499999999
+      },
+      "initial_states_sha256": "5a2421201d3d4bca5bcfba790b42b6753ebcf5b080b4055dbb0494e8bf41df38",
+      "report_reference": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F3-u000500/nominal-b783761d/evaluation.json",
+        "sha256": "4d473341a8435a1c38adb0e7806ebe9ececfcafff128a694aa8653638896e583"
+      }
+    },
+    {
+      "key": "F3-u000500/dev",
+      "old_successes": 81,
+      "n": 128,
+      "physical_terminations": 0,
+      "termination_terms": {},
+      "failures_with_tail_lower_speed_event": 47,
+      "failures": 47,
+      "yaw_deg": 88.51023010373035,
+      "margin_bad_fraction": 1.0,
+      "posture_successes": 0,
+      "mean_lower_speed_violation_fraction": 0.019515625106578227,
+      "median_terminal_stable_seconds": 7.09,
+      "joint_medians_of_full_episode_medians_deg": {
+        "neck_pitch": 24.108036041259766,
+        "head_pitch": 49.356332778930664,
+        "head_yaw": 88.092529296875,
+        "head_roll": 25.37242031097412
+      },
+      "joint_outside_hard_limits_episode_mean_fraction": {
+        "neck_pitch": 0.0,
+        "head_pitch": 0.0,
+        "head_yaw": 0.0,
+        "head_roll": 0.984125
+      },
+      "initial_states_sha256": "253123669696a953830caeaf587e1300e023c12293d608e38e655a38cdc00f58",
+      "report_reference": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage09/pilot/evaluations/F3-u000500/dev-81822f72/evaluation.json",
+        "sha256": "08d77913283e3df9412be942adfcf449669a39cc865d7fb8b115734c6821f1fb"
+      }
+    }
+  ]
+}

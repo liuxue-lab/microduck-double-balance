@@ -1,0 +1,43 @@
+{
+  "schema": "microduck-double-balance-preview-v1",
+  "source_kind": "offline replay of recorded native-mujoco-v3 HIL states",
+  "source_run": "20261025T051929Z-dc4ca58d",
+  "source_report": "../../../docs/double-balance/evidence/reports/hil-replay-v1-report.json",
+  "live_window_capture": false,
+  "new_physics_steps": 0,
+  "new_policy_inferences": 0,
+  "new_training_updates": 0,
+  "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+  "previews": [
+    {
+      "case_id": "quiet-2407",
+      "source_file": "quiet-2407-recorded-hil.mp4",
+      "source_sha256": "5feb95b1011441723ee74495c9ba5e29f6be967ce84fe638c7597f9931c3ea77",
+      "source_bytes": 4617084,
+      "preview_file": "quiet-2407-preview.webp",
+      "preview_sha256": "2106bef6669bb7bfa366ceb23887688d3b300c807f01c656356f3c3c55d97a9e",
+      "preview_bytes": 563296,
+      "start_seconds": 6,
+      "duration_seconds": 8,
+      "playback_speed": 1,
+      "frames_per_second": 12,
+      "width": 768,
+      "height": 288
+    },
+    {
+      "case_id": "regression-2500",
+      "source_file": "regression-2500-recorded-hil.mp4",
+      "source_sha256": "b93968c13e3492fcac34585d8c2b58d14a0360a237c2b9ef4a0a39a3ccac1c8f",
+      "source_bytes": 5563728,
+      "preview_file": "regression-2500-preview.webp",
+      "preview_sha256": "f1016157ad5ca1bd3cad04bd6fe0259743d1368bcd469500563441e969c0a142",
+      "preview_bytes": 626344,
+      "start_seconds": 6,
+      "duration_seconds": 8,
+      "playback_speed": 1,
+      "frames_per_second": 12,
+      "width": 768,
+      "height": 288
+    }
+  ]
+}

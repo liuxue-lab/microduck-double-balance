@@ -1,0 +1,191 @@
+{
+  "schema": "stage12-hil-replay-supervisor-v1",
+  "status": "HIL_REPLAY_COMPLETE",
+  "directory": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d",
+  "controller": {
+    "pid": 5200,
+    "start": "407550",
+    "state": "R",
+    "group": 5200
+  },
+  "source_report_sha256": "513c9add8b0029dfb039efba38fc1d1390a97ed310766b8c184d42d87abfd079",
+  "source_run": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-mujoco-v3/runs/20261025T044453Z-d194fd47",
+  "package_identity": "8fddc9974c36f27f62db18dfdd870372a8728891e9cc855d36bedd41f2868e53",
+  "new_control_ticks": 0,
+  "new_physics_steps": 0,
+  "policy_inferences": 0,
+  "Orin_requests": 0,
+  "PPO_updates": 0,
+  "cloud_connections": 0,
+  "motor_io": false,
+  "errors": [],
+  "backend_attempts": [
+    {
+      "backend": "egl",
+      "returncode": 0,
+      "log_tail": "{\"status\": \"RENDER_BACKEND_READY\", \"backend\": \"egl\", \"mujoco\": \"3.10.0\", \"nq\": 35, \"nv\": 32, \"nu\": 14}\n"
+    }
+  ],
+  "phase": "finished",
+  "worker": {
+    "pid": 5261,
+    "start": "407677",
+    "state": "R",
+    "group": 5261
+  },
+  "backend": "egl",
+  "result": {
+    "schema": "stage12-recorded-hil-replay-v1",
+    "status": "HIL_REPLAY_COMPLETE",
+    "source_report_sha256": "513c9add8b0029dfb039efba38fc1d1390a97ed310766b8c184d42d87abfd079",
+    "source_run": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-mujoco-v3/runs/20261025T044453Z-d194fd47",
+    "new_control_ticks": 0,
+    "new_physics_steps": 0,
+    "policy_inferences": 0,
+    "Orin_requests": 0,
+    "PPO_updates": 0,
+    "cloud_connections": 0,
+    "motor_io": false,
+    "automatic_retry": false,
+    "source_hil_realtime_acceptance": true,
+    "new_realtime_acceptance_performed": false,
+    "backend": "egl",
+    "clips": [
+      {
+        "case_id": "quiet-2407",
+        "video": {
+          "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d/quiet-2407-recorded-hil.mp4",
+          "bytes": 4617084,
+          "sha256": "5feb95b1011441723ee74495c9ba5e29f6be967ce84fe638c7597f9931c3ea77",
+          "frames": 3000,
+          "fps": 50,
+          "duration_seconds": 60.0,
+          "codec": "H.264",
+          "pixel_format": "yuv420p",
+          "width": 1280,
+          "height": 480,
+          "full_decode_verified": true,
+          "decoded_frames": 3000
+        },
+        "snapshots": {
+          "initial": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d/quiet-2407-initial.png",
+          "middle": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d/quiet-2407-middle.png",
+          "final": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d/quiet-2407-final.png"
+        },
+        "timing_statistics": {
+          "count": 3000,
+          "mean": 11.344907850333334,
+          "p95": 13.279225,
+          "p99": 13.897925,
+          "max": 14.518736,
+          "over_20ms": 0
+        },
+        "timing_csv_recomputed": true,
+        "state_samples": 3001,
+        "frame_control_steps": {
+          "first": 1,
+          "last": 3000,
+          "count": 3000
+        },
+        "initial_state_saved_separately": true,
+        "all_formal_samples_rendered": true,
+        "cameras": "whole body and head, tracking the recorded positions",
+        "perturbation_pulses": 0
+      },
+      {
+        "case_id": "regression-2500",
+        "video": {
+          "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d/regression-2500-recorded-hil.mp4",
+          "bytes": 5563728,
+          "sha256": "b93968c13e3492fcac34585d8c2b58d14a0360a237c2b9ef4a0a39a3ccac1c8f",
+          "frames": 3000,
+          "fps": 50,
+          "duration_seconds": 60.0,
+          "codec": "H.264",
+          "pixel_format": "yuv420p",
+          "width": 1280,
+          "height": 480,
+          "full_decode_verified": true,
+          "decoded_frames": 3000
+        },
+        "snapshots": {
+          "initial": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d/regression-2500-initial.png",
+          "middle": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d/regression-2500-middle.png",
+          "final": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d/regression-2500-final.png"
+        },
+        "timing_statistics": {
+          "count": 3000,
+          "mean": 11.316455951666665,
+          "p95": 13.307834,
+          "p99": 13.947867,
+          "max": 14.471036,
+          "over_20ms": 0
+        },
+        "timing_csv_recomputed": true,
+        "state_samples": 3001,
+        "frame_control_steps": {
+          "first": 1,
+          "last": 3000,
+          "count": 3000
+        },
+        "initial_state_saved_separately": true,
+        "all_formal_samples_rendered": true,
+        "cameras": "whole body and head, tracking the recorded positions",
+        "perturbation_pulses": 29
+      }
+    ],
+    "package_identity": "8fddc9974c36f27f62db18dfdd870372a8728891e9cc855d36bedd41f2868e53",
+    "original_inputs_unchanged": true,
+    "completed_frames": 6000,
+    "index": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d/index.html",
+    "finished_utc": 1792905588.904357
+  },
+  "index": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d/index.html",
+  "worker_exit_code": 0,
+  "owned_worker_exited": true,
+  "log_tails": {
+    "render.log": "",
+    "regression-2500-recorded-hil.ffmpeg.log": "",
+    "probe-egl.log": "{\"status\": \"RENDER_BACKEND_READY\", \"backend\": \"egl\", \"mujoco\": \"3.10.0\", \"nq\": 35, \"nv\": 32, \"nu\": 14}\n",
+    "quiet-2407-recorded-hil.ffmpeg.log": ""
+  },
+  "finished_utc": 1792905589.1023352,
+  "outputs": {
+    "quiet-2407-middle.png": {
+      "bytes": 212908,
+      "sha256": "235f2090c20d0226ec82ed3c1b54eb1413c8a86a6cfe58362a9b9948cef472b9"
+    },
+    "index.html": {
+      "bytes": 1269019,
+      "sha256": "1d542fae691d31373479239c09cd205af822e7edacc3d88c3c9c38ade9d3e1ea"
+    },
+    "quiet-2407-recorded-hil.mp4": {
+      "bytes": 4617084,
+      "sha256": "5feb95b1011441723ee74495c9ba5e29f6be967ce84fe638c7597f9931c3ea77"
+    },
+    "quiet-2407-initial.png": {
+      "bytes": 218800,
+      "sha256": "1d9ca057dd60b6fa9872bd099726481a544a44b4dbd9312cbaf4920129544457"
+    },
+    "regression-2500-initial.png": {
+      "bytes": 218800,
+      "sha256": "1d9ca057dd60b6fa9872bd099726481a544a44b4dbd9312cbaf4920129544457"
+    },
+    "regression-2500-middle.png": {
+      "bytes": 223914,
+      "sha256": "4a5eeb83bb77606d32b7290591cb27c5b48208862905de10f5096e931588b57b"
+    },
+    "regression-2500-recorded-hil.mp4": {
+      "bytes": 5563728,
+      "sha256": "b93968c13e3492fcac34585d8c2b58d14a0360a237c2b9ef4a0a39a3ccac1c8f"
+    },
+    "quiet-2407-final.png": {
+      "bytes": 213398,
+      "sha256": "9638b84a9fe00ffda63393bb78416b83c4cb159aa33600d2c377d0d443c309d9"
+    },
+    "regression-2500-final.png": {
+      "bytes": 220306,
+      "sha256": "a76e6cdfddfd13d59adda6aacbb84f7fab9eb8ca5ab8d8d37fad943a91958657"
+    }
+  }
+}

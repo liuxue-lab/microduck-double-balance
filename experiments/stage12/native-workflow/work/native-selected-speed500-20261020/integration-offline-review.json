@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "count": 22,
+  "checks": [
+    "new_checkpoint_lineage_is_accepted",
+    "checkpoint_rejects_wrong_package_identity",
+    "checkpoint_rejects_wrong_refine_updates",
+    "checkpoint_rejects_wrong_origin_checkpoint_sha256",
+    "group_pins_derived_from_selected_manifest",
+    "manifest_cannot_escape_selected_group_directory",
+    "duplicate_group_seed_rejected",
+    "success_threshold_relaxation_rejected",
+    "two_phase_download_fetches_all_six_hash_verified_files",
+    "dynamic_groups_work_in_fresh_remote_interpreters",
+    "no_remote_fixture_artifact_changes",
+    "retained_episode_audit_uses_existing_python_without_gpu",
+    "complete_repeat_performs_no_ssh_reads",
+    "episode_hash_corruption_detected",
+    "wrong_success_decision_rejected_even_with_matching_fixture_hash",
+    "summary_roundoff_is_recorded_without_changing_decisions",
+    "count_differences_never_use_float_tolerance",
+    "one_command_launches_replay_only_after_fetch_and_evidence_audit",
+    "download_only_does_not_launch_replay",
+    "failed_local_integrity_blocks_replay_and_preserves_file",
+    "existing_replay_dispatches_to_duplicate_guard_without_fetch",
+    "watch_uses_local_state_only"
+  ],
+  "real_network_requests": 0,
+  "real_model_loaded": false,
+  "real_simulation_steps": 0,
+  "PPO": 0,
+  "scope": "Isolated transfer, first-episode JSON, lineage and orchestration fixtures; actual GPU replay pending user run"
+}

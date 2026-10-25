@@ -1,0 +1,13 @@
+.....s.................................................................. [ 28%]
+.................................s...................................... [ 56%]
+........................................................................ [ 84%]
+........................................                                 [100%]
+=============================== warnings summary ===============================
+tests/test_double_balance_cfg.py::test_tray_is_explicit_fixed_child_with_full_dimensions
+tests/test_double_balance_cfg.py::test_offset_and_tangential_velocity_naturally_roll_off_at_all_audited_steps
+tests/test_double_balance_task_definition.py::test_real_manager_resolves_frozen_dimensions_and_finite_terms
+  /home/lx/microduck-double-balance/workspace/.venv/lib/python3.12/site-packages/mjlab/entity/entity.py:149: UserWarning: Actuator config matched 14 joint(s) but the same expressions also match 8 site(s): imu, left_foot, head_camera, tof, head_imu, mouth_tip, double_balance_tray_frame, right_foot. Add a separate config with transmission_type=TransmissionType.SITE if those should be actuated too.
+    self._add_actuators()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+254 passed, 2 skipped, 3 warnings in 19.95s

@@ -1,0 +1,14 @@
+{
+  "schema": "head_roll_margin_v1",
+  "origin": "Stage12 speed-aligned reward retained",
+  "added_position_cost_weight": -2.0,
+  "added_outward_cost_weight": -0.25,
+  "margin_degrees": 2.5,
+  "outward_shaping_scale_seconds": 0.1,
+  "physical_nominal_range_unchanged": true,
+  "position_targets_unchanged": true,
+  "episode_seconds": 60,
+  "actor_dim": 61,
+  "critic_dim": 85,
+  "hard_constraint_guarantee_claimed": false
+}

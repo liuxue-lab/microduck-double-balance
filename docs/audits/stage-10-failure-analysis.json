@@ -1,0 +1,53 @@
+{
+  "status": "REVIEW_COMPLETE_UNRESOLVED_CAUSALITY_PRESERVED",
+  "findings": [
+    "Same RTX 5060, checkpoint and development initial states produce differing labels; differences also occur within headless repeats. GPU model and rendering alone do not explain the observation.",
+    "Batch A first policy action is bitwise equal; recorded qvel diverges at 0.02 s. Batch B narrows qvel divergence to first 2 ms physics step; BAM/ctrl diverge before physics step 2; policy actions diverge at control 2/2/3.",
+    "Batch B already differs in qacc, qfrc_bias and qfrc_constraint at reset_ready; captured qpos, qvel, warmstart, observation, policy initial action and RNG match.",
+    "Batch C finds derived-field differences before the first final-reset forward. All 11 captured explicit state inputs and recorded RNG remain equal at aligned events. The startup point before construction is not isolated.",
+    "At relevant C boundaries there are 14 active DOF-friction constraints and zero contacts; nefc is not contact count.",
+    "BAM friction budget can differ despite equal returned motor torque; compiled_model category contains mutable per-world fields. This is a coupling observation, not a sole-cause attribution.",
+    "Lower-ball speed over 0.15 m/s remains the principal direct stability gate violation; the reward cause of Stage 09 degradation including F0 remains unknown.",
+    "Env 63 can have 250 stable samples but float32 timer 4.999996185302734. Preserve original official failure; shadow count is diagnostic only."
+  ],
+  "original_failures": [
+    {
+      "batch": "A",
+      "failure": "Mixed new/legacy TF32 status APIs in diagnostic probe",
+      "resolution": "Diagnostic reader corrected; no backend precision change. Original failure retained."
+    },
+    {
+      "batch": "B",
+      "failure": "torch metadata 2.9.1 vs torch.__version__ 2.9.1+cu128",
+      "resolution": "Canonical runtime version check corrected before simulation."
+    },
+    {
+      "batch": "B1",
+      "failure": "Postcheck cudnn.rnn precision-reader shadowing after complete trace",
+      "resolution": "Original trace reused without replay; missing backend_after and final source/plan postchecks remain missing. B2/B3 full checks passed."
+    },
+    {
+      "batch": "C1",
+      "failure": "Post-action assistance-cache tensor assertion applied before any action",
+      "resolution": "Original 33-event trace reused; initialization-only guard recognizes _force=None and absent unused caches while verifying zero assistance. No fake completed receipt."
+    }
+  ],
+  "C1_postcheck_gap": [
+    "final twist command",
+    "observer.rows",
+    "final parameters/full state_dict",
+    "Adam state",
+    "learning rate/iteration",
+    "backend_after",
+    "final source/plan checks"
+  ],
+  "uncaptured_state": [
+    "15 model/workspace fields including BVHs and EFC Jacobian storage",
+    "14 BAM _mjs_actuator objects",
+    "BAM Parameter object values not fully enumerated"
+  ],
+  "full_root_cause_established": false,
+  "subtree_roundoff_mechanism_consistent": true,
+  "no_repeat_diagnostic_gpu_batch_required_for_stage10_closure": true,
+  "no_physics_reward_acceptance_or_head_lock_change": true
+}

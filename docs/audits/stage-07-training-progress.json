@@ -1,0 +1,368 @@
+{
+  "stage": 7,
+  "status": "READY_FOR_LOCAL_FINALIZATION_POLICY_OBJECTIVE_UNMET",
+  "formal_training_started": true,
+  "stage07_complete": false,
+  "completed_updates_confirmed": 6000,
+  "target_updates": 6000,
+  "num_envs": 4096,
+  "ssh_host": "connect.bjb1.seetacloud.com",
+  "ssh_port": 26497,
+  "runtime_git_head_user_reported": "2d10af503945f26f1d7364f19e4152eb540fb4d2",
+  "stage05_initialization_sha256": "548758afc546e11d8f3f446a4bcc846283a669ff20f4048da7a3a7bb1332b98e",
+  "current_run_directory": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage07/train-20260927T144559Z-1633",
+  "evaluation_in_progress_at_last_observation": null,
+  "checkpoint_receipt": {
+    "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage07/train-20260927T144559Z-1633/checkpoints/update_003000.pt",
+    "sha256": "2f1115d039b1abd6e8131fa8b0a72953b8757a3d4433c2316213065dfe6cdb33",
+    "size_bytes": 10072796,
+    "completed_updates": 3000,
+    "created_utc": "2026-09-27T14:46:17.723931+00:00",
+    "git_head": "2d10af503945f26f1d7364f19e4152eb540fb4d2"
+  },
+  "observations": [
+    {
+      "evidence_source": {
+        "type": "user-provided monitor screenshot; transcribed visible values",
+        "filename": "image(10).png",
+        "sha256": "e77d1545548ba443136c098f378117af0a13357b0a6ff065aaa56f51b0b38ee9",
+        "received_at": "2026-09-27T18:58:35+08:00",
+        "displayed_cloud_time": "2026-09-27 18:58:21",
+        "displayed_cloud_timezone": "not independently verified",
+        "scope": "Runtime observation, not complete training.json or checkpoint readback"
+      },
+      "task_status": "RUNNING",
+      "completed_updates": 293,
+      "target_updates": 6000,
+      "num_envs": 4096,
+      "latest_iteration_seconds_displayed": 4.49,
+      "learning_rate": 3.375e-05,
+      "assistance_strengths": [
+        1.0,
+        0.5,
+        0.25,
+        0.1,
+        0.03,
+        0.0
+      ],
+      "hold_level_counts": [
+        9,
+        229,
+        3349,
+        509,
+        0,
+        0
+      ],
+      "gpu_sample": {
+        "name": "NVIDIA A800-SXM4-80GB",
+        "utilization_percent": 81,
+        "memory_used_mib": 23661,
+        "memory_total_mib": 81920,
+        "temperature_c": 44,
+        "power_draw_w": 169.7,
+        "scope": "single whole-GPU instantaneous sample; not a peak or time average"
+      },
+      "latest_completed_evaluation": {
+        "completed_updates": 0,
+        "status": "PASS",
+        "success_fraction_displayed": 0.0,
+        "mean_survival_seconds_displayed": 0.28,
+        "interpretation": "Unassisted pre-training nominal baseline; not an evaluation of update 293",
+        "sampling_scope": "Configured protocol uses 64 deterministic nominal copies, not independent randomized trials"
+      },
+      "kind": "historical_monitor_screenshot"
+    },
+    {
+      "received_at": "2026-09-27T22:43:20+08:00",
+      "event": "User reports automatic instance shutdown due to expired balance, then recharge and power-on",
+      "last_console_output": {
+        "iteration_seconds": 4.67,
+        "time_elapsed": "03:54:44",
+        "eta": "03:41:31"
+      },
+      "persisted_checkpoint_completed_updates": null,
+      "resume_status": "SUBSEQUENT_INITIALIZATION_PASS_AT_UPDATE_3000",
+      "resume_target_completed_updates": 6000,
+      "earlier_screenshot_fields": "Historical observation at update 293; not the progress at shutdown",
+      "kind": "user_reported_power_interruption"
+    },
+    {
+      "kind": "resume_initialization",
+      "evidence_source": "User-pasted cloud log; checkpoint bytes and complete reports not downloaded yet",
+      "received_at": "2026-09-27T22:46:42+08:00",
+      "checkpoint_receipt": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage07/train-20260927T144559Z-1633/checkpoints/update_003000.pt",
+        "sha256": "2f1115d039b1abd6e8131fa8b0a72953b8757a3d4433c2316213065dfe6cdb33",
+        "size_bytes": 10072796,
+        "completed_updates": 3000,
+        "created_utc": "2026-09-27T14:46:17.723931+00:00",
+        "git_head": "2d10af503945f26f1d7364f19e4152eb540fb4d2"
+      },
+      "markers": [
+        "Stage07Initialization=PASS",
+        "Stage07EvaluationStart=3000"
+      ],
+      "interpretation": "Strict resume initialization and validated save passed; evaluation and updates beyond 3000 not yet observed",
+      "onnx_warning": "PyTorch LSTM variable-batch export UserWarning; execution continued to checkpoint receipt and initialization PASS; ONNX runtime validation pending"
+    },
+    {
+      "kind": "resumed_training_monitor_screenshot",
+      "evidence_source": {
+        "type": "user-provided screenshot; transcribed visible values",
+        "filename": "image(20260927-145109).png",
+        "sha256": "0d092c8061ddb4521a9fdd6371b6162fb4164de5ca73b10cbb4c3cd6bbc9e3e5",
+        "received_at": "2026-09-27T22:51:17+08:00",
+        "displayed_cloud_time": "2026-09-27 22:50:58",
+        "displayed_cloud_timezone": "not independently verified"
+      },
+      "task_status": "RUNNING",
+      "completed_updates": 3049,
+      "target_updates": 6000,
+      "num_envs": 4096,
+      "latest_iteration_seconds_displayed": 4.7,
+      "learning_rate": 1.5e-05,
+      "assistance_strengths": [
+        1.0,
+        0.5,
+        0.25,
+        0.1,
+        0.03,
+        0.0
+      ],
+      "hold_level_counts": [
+        4,
+        3,
+        41,
+        79,
+        434,
+        3535
+      ],
+      "gpu_sample": {
+        "name": "NVIDIA A800-SXM4-80GB",
+        "utilization_percent": 83,
+        "memory_used_mib": 23353,
+        "memory_total_mib": 81920,
+        "temperature_c": 42,
+        "power_draw_w": 106.45,
+        "scope": "single whole-GPU instantaneous sample; not a peak or time average"
+      },
+      "latest_completed_evaluation": {
+        "completed_updates": 3000,
+        "status": "PASS",
+        "success_fraction_displayed": 0.0,
+        "mean_survival_seconds_displayed": 10.0,
+        "mean_stable_fraction": null,
+        "mean_top_center_error_m": null,
+        "interpretation": "Nominal unassisted survival reaches displayed 10-second horizon, but strict final continuous 5-second success is not achieved; detailed metrics pending",
+        "sampling_scope": "64 deterministic nominal copies under the fixed protocol, not independent randomized trials"
+      }
+    },
+    {
+      "kind": "last_visible_monitor_before_ssh_disconnect",
+      "evidence_source": {
+        "type": "user-provided screenshots; visible values transcribed",
+        "files": [
+          {
+            "filename": "image(20260927-170141).png",
+            "sha256": "4cb163dd5c6402774e89f4832e4e31d8d3ff5b1300cc8f350aebc9b6cc8de25c"
+          },
+          {
+            "filename": "image(20260927-170144).png",
+            "sha256": "8bfdbca4c5ca451381c10a8389f0b9d40d5990b1780bc391baf6cdea1f643c14"
+          }
+        ],
+        "received_at": "2026-09-28T01:01:47+08:00",
+        "displayed_cloud_time": "2026-09-28 00:53:02",
+        "displayed_cloud_timezone": "not independently verified"
+      },
+      "last_visible_task_status": "RUNNING",
+      "completed_updates": 4537,
+      "target_updates": 6000,
+      "num_envs": 4096,
+      "latest_iteration_seconds_displayed": 4.76,
+      "learning_rate": 3.375e-05,
+      "assistance_strengths": [
+        1.0,
+        0.5,
+        0.25,
+        0.1,
+        0.03,
+        0.0
+      ],
+      "hold_level_counts": [
+        0,
+        0,
+        22,
+        184,
+        466,
+        3424
+      ],
+      "gpu_sample": {
+        "utilization_percent": 85,
+        "memory_used_mib": 23355,
+        "memory_total_mib": 81920,
+        "temperature_c": 43,
+        "power_draw_w": 132.13
+      },
+      "latest_completed_evaluation": {
+        "completed_updates": 4500,
+        "status": "PASS",
+        "success_fraction_displayed": 0.0,
+        "mean_survival_seconds_displayed": 10.0,
+        "mean_stable_fraction": null,
+        "mean_top_center_error_m": null
+      },
+      "training_episode_metrics_from_companion_screenshot": {
+        "scope": "Training rollout summaries with commands/randomization/assistance; not nominal evaluation metrics. Exact update number absent from this screenshot.",
+        "Episode_Reward/action_rate_l2": -1.7311,
+        "Episode_Reward/double_balance": 1.0182,
+        "Episode_Metrics/top_ball_center_error_m": 0.0119,
+        "Episode_Metrics/top_ball_relative_speed_m_s": 0.0842,
+        "Episode_Metrics/double_balance_stable_fraction": 0.1236,
+        "Episode_Metrics/double_balance_success": 0.0,
+        "Curriculum/action_rate_weight": -1.0,
+        "Curriculum/standing_envs": 0.25,
+        "Curriculum/com_range": 0.015,
+        "Curriculum/head_com_range": 0.01,
+        "Curriculum/basketball_hold": 4.7788,
+        "Episode_Termination/nan_state": 0.0,
+        "iteration_seconds": 4.76,
+        "elapsed_text": "02:01:05",
+        "eta_text": "01:55:15"
+      },
+      "connection_evidence": "Both clients report connection closed by remote host; one reports Exit status -1",
+      "inference_limit": "SSH closure alone does not prove instance shutdown or training exit. Live tmux/process/report state and latest persisted checkpoint need rechecking.",
+      "planned_recovery": "Check tmux and training/evaluation processes first; keep a running job, otherwise validate the last Stage 07 checkpoint and resume toward cumulative 6000 updates."
+    },
+    {
+      "kind": "training_log_after_reconnect",
+      "evidence_source": {
+        "type": "user-provided screenshot; visible values transcribed",
+        "filename": "image(20260927-170846).png",
+        "sha256": "ae9bbadbb4199e8d777410403e355b802f352767ebd864a8a877a16497a63f95",
+        "received_at": "2026-09-28T01:08:49+08:00"
+      },
+      "completed_updates": null,
+      "iteration_seconds": 4.73,
+      "elapsed_text": "02:16:22",
+      "eta_text": "01:40:07",
+      "training_episode_metrics": {
+        "scope": "Training rollout summaries with commands/randomization/assistance; not nominal evaluation metrics",
+        "Episode_Reward/action_rate_l2": -1.7842,
+        "Episode_Reward/double_balance": 1.172,
+        "Episode_Metrics/top_ball_center_error_m": 0.0113,
+        "Episode_Metrics/top_ball_relative_speed_m_s": 0.0836,
+        "Episode_Metrics/double_balance_stable_fraction": 0.1347,
+        "Episode_Metrics/double_balance_success": 0.0,
+        "Curriculum/action_rate_weight": -1.0,
+        "Curriculum/standing_envs": 0.25,
+        "Curriculum/com_range": 0.015,
+        "Curriculum/head_com_range": 0.01,
+        "Curriculum/basketball_hold": 4.8342,
+        "Episode_Termination/nan_state": 0.0
+      },
+      "interpretation": "Visible elapsed time advances from 02:01:05 to 02:16:22 and ETA decreases. This supports continued training activity after the earlier SSH disconnect; no duplicate launch is needed while logs continue advancing.",
+      "inference_limit": "Screenshot omits the exact update number, run directory, GPU utilization and process list. It does not establish whether a new process was launched or prove uninterrupted execution. The latest exact update observation remains 4537."
+    },
+    {
+      "kind": "target_updates_reached_monitor_text",
+      "evidence_source": "User-pasted monitor output; complete reports and checkpoint readback pending",
+      "received_at": "2026-09-28T02:54:15+08:00",
+      "task_status": "RUNNING",
+      "completed_updates": 6000,
+      "target_updates": 6000,
+      "num_envs": 4096,
+      "latest_iteration_seconds_displayed": 4.59,
+      "learning_rate": 3.375e-05,
+      "assistance_strengths": [
+        1.0,
+        0.5,
+        0.25,
+        0.1,
+        0.03,
+        0.0
+      ],
+      "hold_level_counts": [
+        1,
+        0,
+        16,
+        68,
+        234,
+        3777
+      ],
+      "unassisted_environment_fraction": 0.922119140625,
+      "latest_completed_evaluation": {
+        "completed_updates": 5500,
+        "status": "PASS",
+        "success_fraction_displayed": 0.0,
+        "mean_survival_seconds_displayed": 10.0,
+        "mean_stable_fraction": null,
+        "mean_top_center_error_m": null
+      },
+      "interpretation": "Target PPO update count reached. RUNNING and last evaluation at 5500 are consistent with pending final save/evaluation/checks, but do not independently prove which finalization step is active. Await update-6000 evaluation and TRAINING_COMPLETE.",
+      "inference_limit": "Assistance-level counts measure curriculum state, not task success. No final checkpoint receipt, final evaluation or finite-check acceptance received yet."
+    },
+    {
+      "kind": "completed_segment_and_all_nominal_summaries",
+      "received_at": "2026-09-28T02:56:57+08:00",
+      "evidence_source": "User-pasted read-only training.json projection and 14 evaluation summaries; raw files pending",
+      "run": "train-20260927T144559Z-1633",
+      "task_status": "TRAINING_COMPLETE",
+      "completed_updates": 6000,
+      "target_updates": 6000,
+      "finite_checks": "PASS",
+      "latest_checkpoint": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage07/train-20260927T144559Z-1633/checkpoints/update_006000.pt",
+      "error": null,
+      "evaluation_summary_archive": "docs/audits/stage-07-nominal-evaluation-progress.json",
+      "stage07_complete": false
+    }
+  ],
+  "pending": [
+    "Import final bundle, verify local archive, create annotated stage-07-complete tag and SSH-push on laptop; normal push output is sufficient"
+  ],
+  "latest_completed_evaluation_observed": {
+    "run": "train-20260927T144559Z-1633",
+    "completed_updates": 6000,
+    "status": "PASS",
+    "success_fraction": 0.0,
+    "mean_survival_seconds": 10.0,
+    "mean_stable_fraction": 0.35162501549348235,
+    "mean_top_center_error_m": 0.0038135496506583877
+  },
+  "evaluation_summary_archive": "docs/audits/stage-07-nominal-evaluation-progress.json",
+  "current_quality_review": "All 14 scheduled nominal summaries including the repeated resume evaluation are PASS with zero strict success. Stable fraction peaks at update 1000 (90.175%), falls to 31.2375% at 4500, then reaches 35.1625% at 6000. Most evaluations survive the full 10-second horizon. Causes require full logs and per-condition/video diagnostics; existing aggregate metrics do not identify them.",
+  "current_training_decision": "6000-update segment is complete. Select original update 1000 as the best nominal candidate across all received segments; retain update 6000 as the final resumable state. Retrieve raw evidence and diagnose before any additional training; do not change frozen definitions.",
+  "best_candidate_completed_updates_among_received_evaluations": 1000,
+  "finite_checks_user_reported": "PASS",
+  "latest_checkpoint_user_reported": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage07/train-20260927T144559Z-1633/checkpoints/update_006000.pt",
+  "archive_review": "docs/audits/stage-07-archive-review.json",
+  "selected_checkpoints_verified": {
+    "best_nominal": {
+      "path": "train-20260927T103517Z-3844/checkpoints/update_001000.pt",
+      "sha256": "c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7",
+      "completed_updates": 1000,
+      "evaluation": "train-20260927T103517Z-3844/evaluations/update_001000/evaluation.json",
+      "rank": [
+        0.0,
+        10.0,
+        0.9017500448971987,
+        -0.0035159966500941664
+      ]
+    },
+    "final_state": {
+      "path": "train-20260927T144559Z-1633/checkpoints/update_006000.pt",
+      "sha256": "a5ad0aedb500555b649c5d4b11aded833cbc0f932c1fff1a747e1492534c495c",
+      "completed_updates": 6000,
+      "evaluation": "train-20260927T144559Z-1633/evaluations/update_006000/evaluation.json",
+      "rank": [
+        0.0,
+        10.0,
+        0.35162501549348235,
+        -0.0038135496506583877
+      ]
+    }
+  },
+  "technical_work_complete": true,
+  "policy_objective_passed": false,
+  "final_acceptance": "docs/audits/stage-07-final-acceptance.json"
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "headroom-v3-parent-evidence-v1",
+  "parent_slot": "native-headroom-refine-v1",
+  "parent_package_identity": "5d3188f21db852c81c07980ec9c801f92b57770370f2538dd286508795f0b5ac",
+  "parent_source_commit": "88bd1890d33243eb8d94cfde42882771aefd20b3",
+  "parent_completed_updates": 505,
+  "parent_policy_updates": 5505,
+  "files": {
+    "budget.json": {
+      "bytes": 1593,
+      "sha256": "4438756d50f3fae0181ff300c00d2c0b206df9d87fb982d1e3e8c3eacb6c87e8"
+    },
+    "started.json": {
+      "bytes": 1195,
+      "sha256": "bad574c1b2f05c1416956f406ab907536515bdfb47c83cd4fc0e4656ab88adba"
+    },
+    "exit.json": {
+      "bytes": 424,
+      "sha256": "60fcc756b0f600d6dfff2e7faeb2ba6b82a4553cfcb9ab2fb8a0379ebfdbdebb"
+    },
+    "source-commit.json": {
+      "bytes": 208,
+      "sha256": "1a43fdc5af7cbfb685a7d5101691cc43eb0879f46bdc835d1a38677c326ba1be"
+    },
+    "selection.json": {
+      "bytes": 3147,
+      "sha256": "ddcf7aa7964df7271acd3c4c06c91280401e4c4b1a9b20bf2021e99e25df6b31"
+    },
+    "run/latest.json": {
+      "bytes": 321,
+      "sha256": "a61d8bfe6935a5ca0747c7e4397ba2cb92724235b006cd5f4353974e5cb42b8c"
+    },
+    "run/checkpoints/headroom_000505.json": {
+      "bytes": 321,
+      "sha256": "a61d8bfe6935a5ca0747c7e4397ba2cb92724235b006cd5f4353974e5cb42b8c"
+    }
+  }
+}

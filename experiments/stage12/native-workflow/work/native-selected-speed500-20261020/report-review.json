@@ -1,0 +1,82 @@
+{
+  "status": "REPORT_CONSISTENCY_PASS",
+  "checks": 20,
+  "passed": [
+    "report_size_and_hash",
+    "training_package_identity_matches",
+    "completed_without_reported_error",
+    "all_1000_attempts_completed",
+    "recorded_processes_exited",
+    "original_files_reported_unchanged",
+    "within_original_two_hour_deadline",
+    "4096_environment_training_restored",
+    "all_four_candidates_completed",
+    "best_is_the_second_candidate",
+    "selected_checkpoint_identity",
+    "two_following_candidates_did_not_improve",
+    "all_candidate_episodes_survived_ten_seconds",
+    "success_rates_match_exact_counts",
+    "original_task_used_for_evaluation",
+    "diagnostics_cover_1000_valid_rows",
+    "four_last_50_windows",
+    "timings_match_user_terminal",
+    "original_baseline_preserved_as_separate_checkpoint",
+    "baseline_212_of_256_confirmed"
+  ],
+  "report_sha256": "48b261c65e6fd92241b480fcb797346bb62353f5513e8b2d185757f40e3f74b6",
+  "started_beijing": "2026-10-20T19:28:42.620989+08:00",
+  "finished_beijing": "2026-10-20T20:15:07.784662+08:00",
+  "wall_minutes": 46.419394548734026,
+  "selected_checkpoint": {
+    "attempted_updates": 500,
+    "bytes": 10036828,
+    "completed_updates": 500,
+    "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-speed-refine-v1/run/checkpoints/refine_000500.pt",
+    "policy_updates": 5000,
+    "sha256": "51821a28880aba74b80e6d5a388dfd7a82098bd3dca04a1e8947b4b2a8d5539a"
+  },
+  "success_gain_episodes": 41,
+  "success_gain_percentage_points": 16.015625,
+  "longest_stable_median_gain_seconds": 1.6800000000000006,
+  "lower_speed_gate_fraction_before": 0.0105859375,
+  "lower_speed_gate_fraction_after": 0.0041015625,
+  "upper_speed_gate_fraction_before": 0.0048515625,
+  "upper_speed_gate_fraction_after": 0.00690625,
+  "timing": [
+    {
+      "segment": 1,
+      "collection_median": 2.0991551876068115,
+      "PPO_median": 0.3252072334289551,
+      "logged_compute_transitions_per_second_median": 40740.77946224275,
+      "sampling_fraction_of_mean_logged_compute": 0.8663280307825453,
+      "between_update_wall_median": 2.472400426864624
+    },
+    {
+      "segment": 2,
+      "collection_median": 2.009813904762268,
+      "PPO_median": 0.32379138469696045,
+      "logged_compute_transitions_per_second_median": 41965.40861791046,
+      "sampling_fraction_of_mean_logged_compute": 0.8672776149608376,
+      "between_update_wall_median": 2.397189140319824
+    },
+    {
+      "segment": 3,
+      "collection_median": 2.005650281906128,
+      "PPO_median": 0.3196154832839966,
+      "logged_compute_transitions_per_second_median": 42291.51267030361,
+      "sampling_fraction_of_mean_logged_compute": 0.870137482693408,
+      "between_update_wall_median": 2.385056257247925
+    },
+    {
+      "segment": 4,
+      "collection_median": 2.07628071308136,
+      "PPO_median": 0.32856428623199463,
+      "logged_compute_transitions_per_second_median": 40956.24386495454,
+      "sampling_fraction_of_mean_logged_compute": 0.8681216623630312,
+      "between_update_wall_median": 2.4675238132476807
+    }
+  ],
+  "scope": "Checks only the uploaded report and retained source identity. Per-episode cloud files are not yet downloaded to this assistant. Selection-set comparison is not a final held-out evaluation or an exactly paired comparison.",
+  "new_PPO_updates": 0,
+  "new_simulation_steps": 0
+}

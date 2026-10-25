@@ -1,0 +1,1535 @@
+[
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/robot/basketball.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/robot/basketball.py",
+    "bytes": 1521,
+    "sha256": "efe049adc8e1e9af0f3bcd4fb64445ac3ed6b4c543e39dc25aac854b83b4c821"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/robot/microduck_constants.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/robot/microduck_constants.py",
+    "bytes": 17425,
+    "sha256": "dbbee3175c1eb3c48caf5ba10864ef7095076e471d566d1c8644904b56e0fcc8"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/microduck_velocity_env_cfg.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/microduck_velocity_env_cfg.py",
+    "bytes": 44971,
+    "sha256": "75a0430b814ac7495eb237ab806fbd4dd10309b9fd3027ac3eee3c2e3c5a944a"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/microduck_double_balance_env_cfg.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/microduck_double_balance_env_cfg.py",
+    "bytes": 16315,
+    "sha256": "a46641f12b7a21f7c147cc4909d752b8a203b0090afc3a56c98f313cb1a1f5fb"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/microduck_basketball_env_cfg.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/microduck_basketball_env_cfg.py",
+    "bytes": 13302,
+    "sha256": "de7455ab48cf0484c045208906c25800a0e16f270be8a13f4c885e37cbfe5003"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/actuator/friction_dr_bam.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/actuator/friction_dr_bam.py",
+    "bytes": 7730,
+    "sha256": "75cb3e993cd8fdc9d90081129f793deb1eb22fc1ad921f75a97511fa98d38fb7"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/robot/head_contact.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/robot/head_contact.py",
+    "bytes": 10737,
+    "sha256": "8a2446aa27d8e420e6e26e5e9985ab24cb774036936f393de680857edfd0af64"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/microduck_head_contact_env_cfg.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/microduck_head_contact_env_cfg.py",
+    "bytes": 2828,
+    "sha256": "e4b1b6e27680e4d2a7410bcff295a78988b0274fa21555bf1e4944dfe6b86a47"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/mdp.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/mdp.py",
+    "bytes": 381890,
+    "sha256": "9f970ae07c6912873fc44ee1850b20629fabc82cb20d3a95cf08f5cbd3f81e76"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/robot/head_reference.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/robot/head_reference.py",
+    "bytes": 1425,
+    "sha256": "375250301733debee431dbd460f4dc197a9adfcb1b599c30465168ab9a070a4a"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/__init__.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/__init__.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/__init__.py",
+    "bytes": 14569,
+    "sha256": "db21d7b327361a891a83513a56d034430c5bd87ef13fba1c894f50745ed55b3b"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/manager_based_rl_env.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/manager_based_rl_env.py",
+    "bytes": 22061,
+    "sha256": "a381027e336d6313cd338d541230b36864657edac89708a33e7e60c0c6fb74d2"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/entity/entity.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/entity/entity.py",
+    "bytes": 44342,
+    "sha256": "817896ec3ce69c8ef18cb3d8e2519b85d1db25f70126af5e643c34a0b054e572"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/scene/scene.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/scene/scene.py",
+    "bytes": 8719,
+    "sha256": "f9ffeed16bb741a259fedfbb3b9cd6f3609a0b0cf98da3556dd16db51ec6e30c"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/sim/sim.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/sim/sim.py",
+    "bytes": 15218,
+    "sha256": "2a8561e52d019b202cf105a6512abfdd8068701dafe321f43bbae96e346b2c68"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/sim/sim_data.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/sim/sim_data.py",
+    "bytes": 7633,
+    "sha256": "bc73da4811fc44336f9016d826ef1b2044b8cb0830f2ad01a06b9b84ffa8b4c6"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/actuator/actuator.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/actuator/actuator.py",
+    "bytes": 13443,
+    "sha256": "ed57149b527c529b37b6322f20cac3eeed89b7355847ad712c5d44b13549f1ab"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/utils/buffers/delay_buffer.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/utils/buffers/delay_buffer.py",
+    "bytes": 10201,
+    "sha256": "845e68da9e681adee1e93f90b4b1937c282a27f82a147f1fe3c19d83204049b5"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/utils/buffers/circular_buffer.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/utils/buffers/circular_buffer.py",
+    "bytes": 8021,
+    "sha256": "6a96cb79afbfb2d1234c3ee8e7531db371262673ddc509da7f3e66410ef2ae13"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/entity/data.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/entity/data.py",
+    "bytes": 22836,
+    "sha256": "fd1116692f82278bda721d44c015d27e253d2e866608c8e12824df039dfb4657"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/actuator/builtin_group.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/actuator/builtin_group.py",
+    "bytes": 6682,
+    "sha256": "f4429b846fc645c443734e45435618958d9f24502b2c627156e7d5a69cbbd9e3"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/sensor/sensor.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/sensor/sensor.py",
+    "bytes": 4597,
+    "sha256": "c700983150dbd74fbceec7486b842af4dc8917a251af0277436aee09a69dd077"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/sensor/builtin_sensor.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/sensor/builtin_sensor.py",
+    "bytes": 10467,
+    "sha256": "401e495124fa96a89c87cd510da8f43c693db3f9110b93000dcb515171e57adf"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/sim/randomization.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/sim/randomization.py",
+    "bytes": 1577,
+    "sha256": "35d0bddcd6ef3b0317cb89987e0c42bbf1862fcd4beb795c1327ade814c2a64c"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/sensor/sensor_context.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/sensor/sensor_context.py",
+    "bytes": 12523,
+    "sha256": "85505ce5cbbea83c95ae8b42949c4cacfa94112692eabc0331cecb7a1a5ea17e"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/sensor/raycast_sensor.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/sensor/raycast_sensor.py",
+    "bytes": 29974,
+    "sha256": "f8f4a02d87d9befe04586f217ca9f578f0514559cc775bb9873d09288d8055df"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/sensor/terrain_height_sensor.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/sensor/terrain_height_sensor.py",
+    "bytes": 3204,
+    "sha256": "18a7b190a01fe57cf1e2dcf597dedc3da410eef1d571f4ae000edb6a68e5d692"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/sensor/contact_sensor.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/sensor/contact_sensor.py",
+    "bytes": 20557,
+    "sha256": "7b9df6a56df48ca93749abb627177e0670c35fe111fd5fe47bdf287cea86068d"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/sensor/camera_sensor.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/sensor/camera_sensor.py",
+    "bytes": 6774,
+    "sha256": "55ddda4fab874d8568ff835573653794b1d7d310e9a80da6d5bd650b33ccfe54"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/terrains/terrain_entity.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/terrains/terrain_entity.py",
+    "bytes": 13225,
+    "sha256": "49c4657d2415ae2af08d6c67f51a40b6c980970b1d7613005b8ad42197c79cd1"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/managers/action_manager.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/managers/action_manager.py",
+    "bytes": 6733,
+    "sha256": "fec79f933fd9437dc9fcb784e4f214b9bae4aad2252c2d2d1387b11b605a5332"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/managers/command_manager.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/managers/command_manager.py",
+    "bytes": 10092,
+    "sha256": "2d4c81aa5f62172cb0dacf6b534341f4b09b017180ddd7c1987cb0730dd21fd0"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/managers/curriculum_manager.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/managers/curriculum_manager.py",
+    "bytes": 5054,
+    "sha256": "e26e168f87a33c04018b02a2ef80a1b7c84d8ae5821feecde94117b6a2d8e875"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/managers/event_manager.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/managers/event_manager.py",
+    "bytes": 15028,
+    "sha256": "81baff0a6c12a1532d7bb26d9b125266ac0e9dc42f75d25a32aa373f77fa95b0"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/managers/metrics_manager.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/managers/metrics_manager.py",
+    "bytes": 6869,
+    "sha256": "c78b9a58d6e5457f841847ee9e48592d2634d294d583585adeedbb030c879d85"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/managers/observation_manager.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/managers/observation_manager.py",
+    "bytes": 19549,
+    "sha256": "db9feb383786b4b144efc8cc71c9a9804b6611b3d148b6ceed283cd66eef53a8"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/managers/recorder_manager.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/managers/recorder_manager.py",
+    "bytes": 8478,
+    "sha256": "29ed529ffa77d8a70108d44ae9235ba8f2fd20ea309e0c522e52f76a8523d2b6"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/managers/reward_manager.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/managers/reward_manager.py",
+    "bytes": 5903,
+    "sha256": "8d1679cc4b0581dc0000493e0a661f3976c5f9c54f800bd825aee340a685f2a7"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/managers/termination_manager.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/managers/termination_manager.py",
+    "bytes": 4392,
+    "sha256": "05a8bff570cb9eafb5e5a733e54c18a9cd0750165446132e6ffa5138225dae66"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/managers/scene_entity_config.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/managers/scene_entity_config.py",
+    "bytes": 8559,
+    "sha256": "694c0ec06365e12d42f44159b53fbef7d555cf7d97c4ad58a59b3b0547c54f42"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/actions/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/actions/__init__.py",
+    "bytes": 1693,
+    "sha256": "af023e77e5e624d86121742acab67a3eae2d67a7d2f1c595c9a59ba168386859"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/tasks/velocity/mdp/velocity_command.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/tasks/velocity/mdp/velocity_command.py",
+    "bytes": 11815,
+    "sha256": "b4c60a2c061946fbfafb324e4c6d3d035411a34d2b3b22a0202ea8ab2d20acaf"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/tasks/velocity/mdp/observations.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/tasks/velocity/mdp/observations.py",
+    "bytes": 1504,
+    "sha256": "4e56cefa6481c42e641902cc124cfdd02c3c92b45d8b294253aad0fc87ec9134"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/utils/noise/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/utils/noise/__init__.py",
+    "bytes": 644,
+    "sha256": "cd43d801881ad37bc9d34c5263cf1f0c4aaad12355b1a565dfba5d2a722fd958"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/utils/random.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/utils/random.py",
+    "bytes": 707,
+    "sha256": "5ba445435efa5f064aac4b572d035c6a6e98ca3ce459faf1f00dc6f73cbabbc8"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/tasks/velocity/velocity_env_cfg.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/tasks/velocity/velocity_env_cfg.py",
+    "bytes": 12250,
+    "sha256": "c8cdc30ab335d51b37ecd28c35a97b8dc5d86ba282f4efdde285394260be321f"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/managers/manager_base.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/managers/manager_base.py",
+    "bytes": 3743,
+    "sha256": "9b789cf774fd489b09e8e7a354621f276325abe4835e8952abd24066b8bcb2f8"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/utils/buffers/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/utils/buffers/__init__.py",
+    "bytes": 178,
+    "sha256": "bfe46ad1bdc8c29555f2f6d675e703d91b4698d1cc735d90ffb86d23b120a929"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/utils/noise/noise_cfg.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/utils/noise/noise_cfg.py",
+    "bytes": 4227,
+    "sha256": "1132aa0bc88f498e5641504e9d79a26545513b123a526c91f61d5823693d54c8"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/utils/noise/noise_model.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/utils/noise/noise_model.py",
+    "bytes": 2884,
+    "sha256": "57b706914f33ecd425c947420bb9629b1df8fa703e72fce998e577e48ac9c4eb"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/actions/actions.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/actions/actions.py",
+    "bytes": 11816,
+    "sha256": "9cae83a2b0006320a8e15e040a0edbf5b4ae76d023832563f1ac36630f3b28d1"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/actions/differential_ik.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/actions/differential_ik.py",
+    "bytes": 10896,
+    "sha256": "b8b9654921afb7a46abb57719e2429c2274653296ea345469df7b92bc101124d"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/__init__.py",
+    "bytes": 295,
+    "sha256": "69d5a26435e69f8636093ef71a977bcb4f45ded4a4277c80c60defda41be1da9"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/dr/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/dr/__init__.py",
+    "bytes": 2584,
+    "sha256": "8f5ca9eee81b81d4dc8d94e7a5643dd451527f3e5adc2c8d242b26eb2dcf156f"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/tasks/velocity/mdp/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/tasks/velocity/mdp/__init__.py",
+    "bytes": 258,
+    "sha256": "231f35d88929e89ae17dbf403b6d049dd9f1f8bba21bfaf74a087bb9435e7dfe"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/curriculums.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/curriculums.py",
+    "bytes": 5680,
+    "sha256": "844336b87cf71dfc6d6e60ba8001fdae42736deb9c8cd3e2cb81c1af0f7cb652"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/events.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/events.py",
+    "bytes": 21084,
+    "sha256": "fde5dae70acef17af1a22177c6e0fa44426873ccab79f56bb545cf53ebbb2ef3"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/metrics.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/metrics.py",
+    "bytes": 616,
+    "sha256": "5a0d5582aa7fe8c2d530dc5afdf151eace17d529429176a2fbff003d7d60e1ba"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/observations.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/observations.py",
+    "bytes": 3900,
+    "sha256": "493aab813b211cd25e173ef7072637b9a7e988eaed7ce4ec31130ee4497ff09f"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/rewards.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/rewards.py",
+    "bytes": 5473,
+    "sha256": "02e42a1e15dc1a27a0cce4e3d2863a165094914118789a1ec4cfbf6ed97a9c60"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/terminations.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/terminations.py",
+    "bytes": 1449,
+    "sha256": "9078759b36a6dd39ba6fece317bbe8068b209f85bdccf4be20e068c05353a65d"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/dr/_types.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/dr/_types.py",
+    "bytes": 4956,
+    "sha256": "31f775ac89c7fefb05ff3eb13d99b02cea5a27b38b546ce03d564f9e241b52a1"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/dr/actuator.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/dr/actuator.py",
+    "bytes": 7255,
+    "sha256": "7b515cd964aca4b60c48f438166a4d83c1abd4c4d72aa3c9b77ad081d6e18336"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/dr/body.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/dr/body.py",
+    "bytes": 18113,
+    "sha256": "e8661e6af128070e7af18e4c61760a99751adef3d9e0be851d5b207aca0457b1"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/dr/_core.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/dr/_core.py",
+    "bytes": 10863,
+    "sha256": "8c7142f7a319a4f9fdcf0c08797b4852b616fad94339dc00fc560f10a6c72baa"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/dr/camera.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/dr/camera.py",
+    "bytes": 3300,
+    "sha256": "ee102f4a08fe984765cd6744c44b9a9a50f99229abc498002338b992835b38db"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/dr/geom.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/dr/geom.py",
+    "bytes": 9187,
+    "sha256": "269867ec70262ef785db43b85dbdbb5c4ede3c0973c4a7aa151988480cc5a1c5"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/dr/joint.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/dr/joint.py",
+    "bytes": 5972,
+    "sha256": "8ca0f9626b5c8b5fedb57013d3ed229ca00fa397378cfde329ebbfe1b2617e19"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/dr/light.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/dr/light.py",
+    "bytes": 1751,
+    "sha256": "9f1cbbda891bc0255bc90bda112cc277af8fcfb3cedddc5a0f05a81d401feda8"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/dr/material.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/dr/material.py",
+    "bytes": 2129,
+    "sha256": "ca69c803f5c22a59f760147b47fbf2d90f26a95f76492789202a21bbc157ffa0"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/dr/pair.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/dr/pair.py",
+    "bytes": 3261,
+    "sha256": "28ff3598286786919ba5e4636a86301e8d81e711e0dcf41f8647c35e41a413ce"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/dr/site.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/dr/site.py",
+    "bytes": 1983,
+    "sha256": "a3ed4a1d072a7417653d37f5ddcd8474278901b57f5309d0955d335985bec694"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/mdp/dr/tendon.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/mdp/dr/tendon.py",
+    "bytes": 3166,
+    "sha256": "eaf357196128be8c06af0e79715981509bd08ae427c367cdb0c6564c8f5ce42e"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/tasks/velocity/mdp/curriculums.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/tasks/velocity/mdp/curriculums.py",
+    "bytes": 3468,
+    "sha256": "a4f652b450def3a24cdea48117d598afc439d1c05e1e518128d006bfefa52c2c"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/tasks/velocity/mdp/rewards.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/tasks/velocity/mdp/rewards.py",
+    "bytes": 17110,
+    "sha256": "5149776c24c8499c05c1f4941a295647779867efd645f78be02408fd85c96dfb"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/tasks/velocity/mdp/terminations.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/tasks/velocity/mdp/terminations.py",
+    "bytes": 3050,
+    "sha256": "755e0b92d19faad7c3514e87bed45a07648a143c601bf51b025939eabedab825"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/entity/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/entity/__init__.py",
+    "bytes": 311,
+    "sha256": "916b1cd90e393c4986a3b8f28f70ebd57b8b99aa50034ce196fb4f5fc503b1ef"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/__init__.py",
+    "bytes": 290,
+    "sha256": "5c41a9f8cfb59196dbd322e81a54df719d74fd30ff4e1e1958b5778ebc9831a1"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/utils/lab_api/math.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/utils/lab_api/math.py",
+    "bytes": 73279,
+    "sha256": "47757748386173cc4ded5fb5dc5619336393ee6296769fa8b985738ebe50d436"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/sensor/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/sensor/__init__.py",
+    "bytes": 1627,
+    "sha256": "7961da9847ef0fe23e107bccf0b795cda90008e456e7dc85dfed000f86bfb332"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/tasks/velocity/mdp/terrain_utils.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/tasks/velocity/mdp/terrain_utils.py",
+    "bytes": 3439,
+    "sha256": "357f10ee84e850351314730d03295f3e029a28630ffe99f424954b4d46f55b20"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/utils/lab_api/string.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/utils/lab_api/string.py",
+    "bytes": 15126,
+    "sha256": "d0edaedbb1c0a6fed7dd4a72e1b0d8e7f2aa149bbc1ebc52547405e6f669371d"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/viewer/debug_visualizer.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/viewer/debug_visualizer.py",
+    "bytes": 6347,
+    "sha256": "7f48e6940834225f57f8015905da3b781cb54696cb5caf47f927a8bcb654ef67"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/envs/types.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/envs/types.py",
+    "bytes": 185,
+    "sha256": "9508db1d92998c2465bd24ff24b6966f5634a7b0ad7ecb0fcdb9df6e6fdf93d0"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/__init__.py",
+    "bytes": 1894,
+    "sha256": "866b4b673f8bf2a779fd18c97d875833d55520c7e99157edf3b5a759fd8632cc"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/tasks/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/tasks/__init__.py",
+    "bytes": 144,
+    "sha256": "310ff3bbeed45f4792394e36ff98eb4b5b70e0657c2e5ef67dd363d510133d9b"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/utils/lab_api/tasks/importer.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/utils/lab_api/tasks/importer.py",
+    "bytes": 2666,
+    "sha256": "350f36e86224bcbec60bf427cb53c5fa1de111b34e3c489f3ab67ba766c7839d"
+  },
+  {
+    "distribution": "better-actuator-models",
+    "relative_path": "bam/mjlab.py",
+    "bundle_path": "pinned-source/better-actuator-models/bam/mjlab.py",
+    "bytes": 45267,
+    "sha256": "af3de252939ca868712423979c2ab52e198d382d7aca613b5b33c77d74baa440"
+  },
+  {
+    "distribution": "better-actuator-models",
+    "relative_path": "bam/actuator.py",
+    "bundle_path": "pinned-source/better-actuator-models/bam/actuator.py",
+    "bytes": 16049,
+    "sha256": "6927d7b2341cbaca0e5d872fae4ddce6200056885310d9ee5acaba1f34e09c13"
+  },
+  {
+    "distribution": "better-actuator-models",
+    "relative_path": "bam/model.py",
+    "bundle_path": "pinned-source/better-actuator-models/bam/model.py",
+    "bytes": 12544,
+    "sha256": "fed54ebf5ccdb1e15d1094e1a1b426a93c29a7dad5944e6861ff0cd023d900ed"
+  },
+  {
+    "distribution": "better-actuator-models",
+    "relative_path": "bam/params/xl330/m6.json",
+    "bundle_path": "pinned-source/better-actuator-models/bam/params/xl330/m6.json",
+    "bytes": 719,
+    "sha256": "61c699362fb3fabdde93eeba5e1ad3bf4ef9ca2f71d03e316b1924ff005b20d3"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/__init__.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/__init__.py",
+    "bytes": 6044,
+    "sha256": "3d6b9e6f8375ab70873eea89f25897ffad3acf2644d5f33a47358ce21329228b"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/forward.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/forward.py",
+    "bytes": 38272,
+    "sha256": "c764b6da0b55c05f97b9368f7c77d4826cbafafe93a15f682a878eef7f9e3de3"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/support.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/support.py",
+    "bytes": 24481,
+    "sha256": "3ac8475d5e41318d8289601ad41493245d95d2138023d47e0462f04b6c67b94a"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/types.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/types.py",
+    "bytes": 85998,
+    "sha256": "8f0b19d7b2bc039a419fa547ba6b732837327c0735f688ad34ace5afc4843e50"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/io.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/io.py",
+    "bytes": 112043,
+    "sha256": "731a31f254274c6e04d9843b11bdcb0502cf9d49abf26aa1c82e52e1a13fa75a"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/smooth.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/smooth.py",
+    "bytes": 110312,
+    "sha256": "63b2d4093745762309bb335826a1f741a1baab26d93277ba92859fea1495880f"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/collision_driver.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/collision_driver.py",
+    "bytes": 25152,
+    "sha256": "dcc32d3781e3201ff3c79e714f7b6bd854f36045c16068c8ac26a101eb652b8e"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/collision_convex.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/collision_convex.py",
+    "bytes": 40785,
+    "sha256": "1932c52be6867bed6ae3265ae683102f54099ae278ea93c3dcd25ff1f5e9c8bf"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/collision_core.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/collision_core.py",
+    "bytes": 11724,
+    "sha256": "3c12b154998af28e257ff80437ca4250546947a6b3bf2af7fa3f1210fdff7d74"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/collision_gjk.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/collision_gjk.py",
+    "bytes": 66662,
+    "sha256": "b91673337448db07a7e4ccda665d652a4eb84c2b9a770ed3b59d72c8818360b7"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/math.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/math.py",
+    "bytes": 9382,
+    "sha256": "4c58d5e3864f7b841633d403d78e7702bb547359ee846d43810e3b31c63966c2"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/constraint.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/constraint.py",
+    "bytes": 84093,
+    "sha256": "b69f15e5c7206b30bfe1af12b5ca6c0bdf3e37398116846643df73a2e8f8ef53"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/solver.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/solver.py",
+    "bytes": 102688,
+    "sha256": "bba0c67182ade84f5375d6a066048e111edd3371b33d46a6f1246349f22bb30a"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/sensor.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/sensor.py",
+    "bytes": 86472,
+    "sha256": "2ba411f182ba5fb7d88e85050c55ef4055fafefe2d26555f429ecd4e0d80c19e"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/derivative.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/derivative.py",
+    "bytes": 21616,
+    "sha256": "fa09d9cc39d6ccb9447dda4daa107f64791e489709f92e39dc46c1cfe39f3e99"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/collision_primitive.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/collision_primitive.py",
+    "bytes": 41507,
+    "sha256": "e515350dc6405494cdcf32b90ce32788fe7a5749c42439c877a426fce2bf9a72"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/collision_primitive_core.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/collision_primitive_core.py",
+    "bytes": 56150,
+    "sha256": "4c2b67303f7b658479ea1ed0f67312dbe6861fc1599081ef1639867d2b000bb1"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/ray.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/ray.py",
+    "bytes": 36701,
+    "sha256": "6815ed1057217fc2e3655b3e6add04c32e88ff8b0b3a536824d503fb6d44ccfa"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/warp_util.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/warp_util.py",
+    "bytes": 4848,
+    "sha256": "b0d156ddbced4848cd6cbcd70977f1e96c230fce0d746a6acfa911549afb447c"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/bvh.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/bvh.py",
+    "bytes": 31817,
+    "sha256": "e644964cf8608cc0d0cd9470ace2c19ac3ea6ab2e19857cc73c3790c966d1b00"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/__init__.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/__init__.py",
+    "bytes": 666,
+    "sha256": "c702fc4ff8377d7ce5b729bef0b7cd457ecd8b12c009d9cf02a9cc5c4776cff9"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/block_cholesky.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/block_cholesky.py",
+    "bytes": 4497,
+    "sha256": "3220513e1a90f7499e0284180e2869af782989c9ff6e99c6bbd96e7e1386c5be"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/collision_flex.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/collision_flex.py",
+    "bytes": 26733,
+    "sha256": "da1edd73918b81425aaedd85a973a13e1c403f200b3332544d1b77b02805d0af"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/collision_sdf.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/collision_sdf.py",
+    "bytes": 27531,
+    "sha256": "d57b4b5844e4cb128afd4375c064aa50cee04ec75a4c9335bebf7232ad2b13d8"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/inverse.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/inverse.py",
+    "bytes": 5080,
+    "sha256": "fed92968cde3548192dde2439b4905324056c5ba47e3e981837f794600a935bf"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/island.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/island.py",
+    "bytes": 6640,
+    "sha256": "11a535e684482e98061b0d08b4028f5673aec319e0ef4aad4a067ebf8869067c"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/passive.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/passive.py",
+    "bytes": 27970,
+    "sha256": "4928d125d85deb57607d738fd40e2653ed4e4a9e690b88665d649adee8936ffb"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/render.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/render.py",
+    "bytes": 27148,
+    "sha256": "f06e0df52854f2f3d01777b85dbcaf5f233a3a6c481b7c1bd8c41960ec2e70dc"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/render_util.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/render_util.py",
+    "bytes": 7972,
+    "sha256": "84725d11a10c6213f7cd3bd972c0c72f1530d8732d9a155e5d3326fdf667c927"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/util_misc.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/util_misc.py",
+    "bytes": 20866,
+    "sha256": "56879150a16a8d6f42b538a2d3e81ee8f292c3b0e4ec48188a624414ffda15a4"
+  },
+  {
+    "distribution": "mujoco-warp",
+    "relative_path": "mujoco_warp/_src/util_pkg.py",
+    "bundle_path": "pinned-source/mujoco-warp/mujoco_warp/_src/util_pkg.py",
+    "bytes": 3264,
+    "sha256": "35c49d4a0fb46c72616ded975f3b7e630b239d2c614e6bc2c7c79acf2eb33f3c"
+  },
+  {
+    "distribution": "warp-lang",
+    "relative_path": "warp/_src/context.py",
+    "bundle_path": "pinned-source/warp-lang/warp/_src/context.py",
+    "bytes": 408818,
+    "sha256": "eb099d908c50effc3cacbf7ecc408be4187ca9a6a6f72e1e85c70676961524ee"
+  },
+  {
+    "distribution": "warp-lang",
+    "relative_path": "warp/_src/types.py",
+    "bundle_path": "pinned-source/warp-lang/warp/_src/types.py",
+    "bytes": 256907,
+    "sha256": "9224fb234ff61f4a1c3338b7171d545171ab051fb625679568ea80a6af8321bd"
+  },
+  {
+    "distribution": "warp-lang",
+    "relative_path": "warp/_src/utils.py",
+    "bundle_path": "pinned-source/warp-lang/warp/_src/utils.py",
+    "bytes": 73773,
+    "sha256": "01bd20f279f5762881c50cf8b6d766734fe21bd5f9b1ec286b34b1f3fcb27f24"
+  },
+  {
+    "distribution": "warp-lang",
+    "relative_path": "warp/config.py",
+    "bundle_path": "pinned-source/warp-lang/warp/config.py",
+    "bytes": 9377,
+    "sha256": "e4b95ce936aa6d57aa11f5046879fe04ebdb8793107c88137c9ba0bd6b0b6cf5"
+  },
+  {
+    "distribution": "warp-lang",
+    "relative_path": "warp/native/warp.cu",
+    "bundle_path": "pinned-source/warp-lang/warp/native/warp.cu",
+    "bytes": 169618,
+    "sha256": "7c7e6e7a02db7b285ca1800d0ec52e28d2cf8a704435d925c70a8c5ccd8f176b"
+  },
+  {
+    "distribution": "warp-lang",
+    "relative_path": "warp/native/warp.h",
+    "bundle_path": "pinned-source/warp-lang/warp/native/warp.h",
+    "bytes": 30919,
+    "sha256": "0bb164157668ad83ce5fe78d3a583c68258ee333ce37d97e746b5d85a2e94511"
+  },
+  {
+    "distribution": "torch",
+    "relative_path": "torch/cuda/graphs.py",
+    "bundle_path": "pinned-source/torch/torch/cuda/graphs.py",
+    "bytes": 27873,
+    "sha256": "5154431e245a22f4f321257f6a98f901d144e673b60a1a9aa8a22561ca4008e8"
+  },
+  {
+    "distribution": "torch",
+    "relative_path": "torch/cuda/streams.py",
+    "bundle_path": "pinned-source/torch/torch/cuda/streams.py",
+    "bytes": 9547,
+    "sha256": "cdad950977c5eb5a0fe744eaff8c7f9194817de40f380b40fdbc29032bad3fef"
+  },
+  {
+    "distribution": "torch",
+    "relative_path": "torch/cuda/memory.py",
+    "bundle_path": "pinned-source/torch/torch/cuda/memory.py",
+    "bytes": 46306,
+    "sha256": "38f5d4bcb7ae3f8a912dd6cfe4870dfcc6ddd64736f8986284d119c429338bf9"
+  },
+  {
+    "distribution": "torch",
+    "relative_path": "torch/cuda/__init__.py",
+    "bundle_path": "pinned-source/torch/torch/cuda/__init__.py",
+    "bytes": 64667,
+    "sha256": "9ba786aee9b5aac710f49c3beade1722610a0d6d8ec406fad9a9793df1316e99"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/robot/__init__.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/robot/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/actuator/__init__.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/actuator/__init__.py",
+    "bytes": 328,
+    "sha256": "181bfbec32115818720695915322f6e2c860fe87767570662a029f8e2d01f12d"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/scene/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/scene/__init__.py",
+    "bytes": 96,
+    "sha256": "ff411f5da07d192bd797040453398eb68f5577c35e41b1e8f41aef58a02b9610"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/sim/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/sim/__init__.py",
+    "bytes": 269,
+    "sha256": "6c7e8c6d5bd848c06b243d54522ca446a94e023235c0c8cb8dd53e13551cf3e2"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/actuator/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/actuator/__init__.py",
+    "bytes": 1828,
+    "sha256": "38a73bd74850a761c97c90b9e1ee6e675760dc844199649799541dbb22214a1d"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/utils/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/utils/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/terrains/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/terrains/__init__.py",
+    "bytes": 2197,
+    "sha256": "76c3c30dcc3027e9f8fc7929d9f473db22022eb2fc6cf68dcda556b74e30389a"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/managers/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/managers/__init__.py",
+    "bytes": 2474,
+    "sha256": "6fd6c581b1f283290e1e03d8a9feb5516a4e505763885e870ea47af38ddf20ae"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/tasks/velocity/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/tasks/velocity/__init__.py",
+    "bytes": 56,
+    "sha256": "479a0ae48d56e95521d9cfd6ccb3bbcebc2bf985355d96879ce3a50d20a142ea"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/utils/lab_api/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/utils/lab_api/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/viewer/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/viewer/__init__.py",
+    "bytes": 580,
+    "sha256": "6215875f50dd7fd1459682b707ce82da953f70dbcaedf0d363d55a49679b7d1f"
+  },
+  {
+    "distribution": "better-actuator-models",
+    "relative_path": "bam/__init__.py",
+    "bundle_path": "pinned-source/better-actuator-models/bam/__init__.py",
+    "bytes": 281,
+    "sha256": "def3c0cf098a3aa9003a8c746efc7ad0305525df42ba6f380589f64ae415ac09"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/utils/spec_config.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/utils/spec_config.py",
+    "bytes": 13254,
+    "sha256": "f18af4689534ede7578dc03f913c7d62ec5137a7a4bb446b1acf1f3e1e0fcc7f"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/terrains/terrain_generator.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/terrains/terrain_generator.py",
+    "bytes": 14506,
+    "sha256": "7c1f1cc7eba1c60a245123acf97aa30791f3fb2d69757143c0106a87d142ab5a"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/rl/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/rl/__init__.py",
+    "bytes": 426,
+    "sha256": "d67a01c3df70b1d481498bf8f258c3c7f589e9d163605a7dc70fee83e9189597"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/symmetry.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/symmetry.py",
+    "bytes": 7618,
+    "sha256": "bee6b50d3540a61903188f69cfe2e0e1ffdfa6b78a9898f3f0e113c8664da455"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/rl/exporter_utils.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/rl/exporter_utils.py",
+    "bytes": 2817,
+    "sha256": "0f10f954a60058b28ee850faac93b7f170e22bb7ffee8cd6c2330b0216a606d5"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/tasks/velocity/rl/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/tasks/velocity/rl/__init__.py",
+    "bytes": 99,
+    "sha256": "998d67bb2c79979ed2999b14c74231e39a6d018f97c5429405b2991c36cdffa5"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/tasks/registry.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/tasks/registry.py",
+    "bytes": 2015,
+    "sha256": "f1c82c8f1ff5d24263787f4cfc2805b7b4103253fe59c054bf649d24c7cc9476"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/microduck_running_env_cfg.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/microduck_running_env_cfg.py",
+    "bytes": 15923,
+    "sha256": "45628d6f60cfe120045aa76a111c11354eb350224e433645131f88e4d7bfbbc3"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/microduck_stilt_env_cfg.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/microduck_stilt_env_cfg.py",
+    "bytes": 5232,
+    "sha256": "2471e3cf0d8a73821b28a4ddd48e49be8325fb81a2a4df3119784f870d9455ba"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/microduck_standup_env_cfg.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/microduck_standup_env_cfg.py",
+    "bytes": 58592,
+    "sha256": "b20b8f3fac5a374dd602f371f0b500955b4dbcb4d3f7330bddfa15b327826873"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/microduck_velstand_env_cfg.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/microduck_velstand_env_cfg.py",
+    "bytes": 21298,
+    "sha256": "0ccb20f3334d47afcb59dcdb9cda54fdd417b86f535fec8c73f5db6fe0d1c666"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/microduck_ground_pick_env_cfg.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/microduck_ground_pick_env_cfg.py",
+    "bytes": 32917,
+    "sha256": "9b68951e2c84fdccb5894701efa97e060438eb56c956a34c65e844ba3fa6185e"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/microduck_ball_kick_env_cfg.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/microduck_ball_kick_env_cfg.py",
+    "bytes": 29653,
+    "sha256": "313180628c0d0364ea6d0f1843e7e3e10b76585491b90b0c1f0e301d9e5fd30c"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/microduck_sitstand_env_cfg.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/microduck_sitstand_env_cfg.py",
+    "bytes": 43897,
+    "sha256": "4cb26df53b53beea7e98f995a13dfe3de31c8c0f46b963818a6e337c4a256ac2"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/microduck_velocity_rollers_env_cfg.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/microduck_velocity_rollers_env_cfg.py",
+    "bytes": 30194,
+    "sha256": "c134f914a516dad7c34f31aecb073b2973c44cf02017ee8bef66ebd046c587fe"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/microduck_velocity_swizzle_env_cfg.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/microduck_velocity_swizzle_env_cfg.py",
+    "bytes": 9544,
+    "sha256": "75197c956afd77586f60e4b773033ace15e088179bb5912a88328862b0a10f49"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/microduck_roller_crouch_env_cfg.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/microduck_roller_crouch_env_cfg.py",
+    "bytes": 19507,
+    "sha256": "745142fab9ffc4c43a6b7d367d6be37f5675f5fbf255ac4341a9e2a21a4062ee"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/microduck_roller_slope_env_cfg.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/microduck_roller_slope_env_cfg.py",
+    "bytes": 12134,
+    "sha256": "92738df650e3527c8cbe194169f60fb2a232933b1eabbbaf7d4b7d2aa67e2b42"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/microduck_roller_standup_env_cfg.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/microduck_roller_standup_env_cfg.py",
+    "bytes": 27733,
+    "sha256": "146e417c082823039b87d2ff350e96e84007df80c268d53984d7c160f25cdeee"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/microduck_spin_env_cfg.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/microduck_spin_env_cfg.py",
+    "bytes": 19856,
+    "sha256": "ba85e26407a29a208f871aa229bb2c7971eca6087f0740e7de6f898adbc5b395"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/microduck_roulade_env_cfg.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/microduck_roulade_env_cfg.py",
+    "bytes": 35052,
+    "sha256": "7075e079849a9961dbe8d35dc680848c9651e8a98897f08538c48b29f715fc10"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/microduck_swing_env_cfg.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/microduck_swing_env_cfg.py",
+    "bytes": 17185,
+    "sha256": "91b07c0accf4645ed923d03e3cb5861a35814a8a727eaa740c686db51722ca3b"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/backlash.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/backlash.py",
+    "bytes": 4344,
+    "sha256": "c2fc78e42576c40f7a6ac8eac034630e780bd1881a843666274e64d424e8dcb4"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/utils/logging.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/utils/logging.py",
+    "bytes": 583,
+    "sha256": "cbd7d5dceb22b84edc27a782925d080a0df2ee776df69d9df3d30c99af1a2200"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/utils/spaces.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/utils/spaces.py",
+    "bytes": 2152,
+    "sha256": "42eb28b6a48b06886df1c6b385243d340b14f89e71c0e407fda54e0907a53a60"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/viewer/offscreen_renderer.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/viewer/offscreen_renderer.py",
+    "bytes": 7528,
+    "sha256": "9ef4501a2cff21c1b20d2428553a9610293031ad32680ba248eff6e64ab8ecaf"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/viewer/viewer_config.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/viewer/viewer_config.py",
+    "bytes": 1059,
+    "sha256": "d0de6393bc7b7313269292ef3e4301845ef27a27dbb3e0e3f9a7009eed01cde8"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/actuator/xml_actuator.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/actuator/xml_actuator.py",
+    "bytes": 4876,
+    "sha256": "a8df6bbf07dda9e182d5ef248b0022816d1aa211ba321fa00ab676286b9c9548"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/utils/mujoco.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/utils/mujoco.py",
+    "bytes": 3071,
+    "sha256": "879b8109e03c4a32143899be4648ef02aa57125a40b36658d1fb361dd74216de"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/utils/spec.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/utils/spec.py",
+    "bytes": 14420,
+    "sha256": "b002c3bb39a10ac5252a90c8d393b66318ac300d47e4961b26d5204d17dc335e"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/utils/string.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/utils/string.py",
+    "bytes": 1034,
+    "sha256": "702c5ee5bc6b9a3fc5b27a1419daa0653301494bda9f7e5981eda898a601f8bc"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/utils/xml.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/utils/xml.py",
+    "bytes": 3339,
+    "sha256": "5976ce00b501a39b42ac5605c2ed9bd05ea4feb5fbf1a2d778a1656ec0caaa3b"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/utils/nan_guard.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/utils/nan_guard.py",
+    "bytes": 6494,
+    "sha256": "b3ba9d2c3f34c5e8f1c5249e28699141bd389971eed41cf8d05e0bf5f3199943"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/actuator/builtin_actuator.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/actuator/builtin_actuator.py",
+    "bytes": 9079,
+    "sha256": "9af14734dc2b04743a3d437330bc8ee7f13d3891c3befbb9cecd3fbcfe0dea24"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/terrains/config.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/terrains/config.py",
+    "bytes": 8891,
+    "sha256": "3005acad2ae9420be19c0c3c6a8954a190d70cbf19952e86e51c1ce7ba5d06ab"
+  },
+  {
+    "distribution": "better-actuator-models",
+    "relative_path": "bam/testbench_mujoco.py",
+    "bundle_path": "pinned-source/better-actuator-models/bam/testbench_mujoco.py",
+    "bytes": 8108,
+    "sha256": "68ba1b5ffcd9e5f3c53730dd7333c95c483f14afe62028d9b4a99b1436c7944e"
+  },
+  {
+    "distribution": "better-actuator-models",
+    "relative_path": "bam/testbench.py",
+    "bundle_path": "pinned-source/better-actuator-models/bam/testbench.py",
+    "bytes": 2402,
+    "sha256": "bd1c211ab4c9e428112d6a0e96664d5a122c90a78f8c00930c0f672a2114928f"
+  },
+  {
+    "distribution": "better-actuator-models",
+    "relative_path": "bam/parameter.py",
+    "bundle_path": "pinned-source/better-actuator-models/bam/parameter.py",
+    "bytes": 994,
+    "sha256": "6bd9f2c37d4ed82131925bbb1e885948a4dcdfc71542ec35362bc35ccd55bf7f"
+  },
+  {
+    "distribution": "better-actuator-models",
+    "relative_path": "bam/message.py",
+    "bundle_path": "pinned-source/better-actuator-models/bam/message.py",
+    "bytes": 1171,
+    "sha256": "91149c92e0c229de7dc96fc5f6c8b7135934c1e16ea01cc582685db5a83cfd5c"
+  },
+  {
+    "distribution": "better-actuator-models",
+    "relative_path": "bam/actuators.py",
+    "bundle_path": "pinned-source/better-actuator-models/bam/actuators.py",
+    "bytes": 1173,
+    "sha256": "adb8b5c87b880d2c9931a8d70981f20526b1cc0a54d31d074460e29cf27a9db2"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/actuator/dc_actuator.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/actuator/dc_actuator.py",
+    "bytes": 5442,
+    "sha256": "cc459481704b0df987ab73cb75a21da12e969b7d13374127105b73d98ac384e0"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/actuator/learned_actuator.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/actuator/learned_actuator.py",
+    "bytes": 6921,
+    "sha256": "aefb27cc12881e67c87171cb94e38a5aee0171299ffd952e07053fbbd7fac487"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/actuator/pd_actuator.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/actuator/pd_actuator.py",
+    "bytes": 4713,
+    "sha256": "1ede2f9eae487e61f23156ec6c0097417f11ba63c86d35dc1e331ccb7251aac3"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/terrains/heightfield_terrains.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/terrains/heightfield_terrains.py",
+    "bytes": 30848,
+    "sha256": "b2657a2a6018e7198e5158e4f6216a4415a18423e608bfd553c14875d2c89976"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/terrains/primitive_terrains.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/terrains/primitive_terrains.py",
+    "bytes": 53549,
+    "sha256": "ac22ed775de43124a75f4f5d84b46d48736f0b01d5ed052b17304cba80719a5b"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/viewer/base.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/viewer/base.py",
+    "bytes": 14139,
+    "sha256": "7adae70e7a029d5acfe03bf66e2a75e7d4d558cd1b7394fa529eaf5cd7ab853b"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/viewer/native/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/viewer/native/__init__.py",
+    "bytes": 233,
+    "sha256": "1cc4c390f38e36f2f708330fb39695a789d6ff5557503e5af64862ab2c29f928"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/viewer/viser/__init__.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/viewer/viser/__init__.py",
+    "bytes": 1234,
+    "sha256": "ea76203023f96327501a320fe3012632d0bee61174152beb98fe3cb556ed71c0"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/terrains/utils.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/terrains/utils.py",
+    "bytes": 6406,
+    "sha256": "dab53f1a277ef3a3249a358e4db44ec402eece9ff56de1929215337abeb7f357"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/utils/color.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/utils/color.py",
+    "bytes": 5493,
+    "sha256": "ac8c048df0c21ba48558f048d31a4298595105d02fefa1940b226d86f2188ef9"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/rl/config.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/rl/config.py",
+    "bytes": 5334,
+    "sha256": "fa85e75e2c4365df0d5ae553f6f016e3d18f5ba9b1374cfbd516fe0ade5ae242"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/rl/runner.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/rl/runner.py",
+    "bytes": 5156,
+    "sha256": "61e9200bf304e3df71096cd69f28f4d5973157e61cdc549fc21b6f156326f77e"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/rl/vecenv_wrapper.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/rl/vecenv_wrapper.py",
+    "bytes": 3053,
+    "sha256": "d458aa421d72c979d0269a24e51a4b49a02e4ec8cb5a9d10e47290aa5d86a3e2"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/tasks/velocity/rl/runner.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/tasks/velocity/rl/runner.py",
+    "bytes": 979,
+    "sha256": "fd5ab5b61c60516213724b65954e7eabc1a3ca2d4101019d0c53e33fac1285c4"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/robot/stilt_constants.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/robot/stilt_constants.py",
+    "bytes": 6906,
+    "sha256": "7e2cd3bf121162c4ccba8e6600f7e5d3b5355157f2405f4aa02c53f600e32f34"
+  },
+  {
+    "distribution": "project",
+    "relative_path": "src/mjlab_microduck/tasks/slope_terrain.py",
+    "bundle_path": "pinned-source/project/src/mjlab_microduck/tasks/slope_terrain.py",
+    "bytes": 5004,
+    "sha256": "1ce48eef8b4bd82cde94d7c9f50f19d2992f4dc8d3b5b5d314b7381bc572b8a0"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/viewer/native/visualizer.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/viewer/native/visualizer.py",
+    "bytes": 6897,
+    "sha256": "30d6ec41b06ebb54c0ce57ecad446b6d3e2d248a20e0cb185b10b08110d4dfe7"
+  },
+  {
+    "distribution": "better-actuator-models",
+    "relative_path": "bam/erob/actuator.py",
+    "bundle_path": "pinned-source/better-actuator-models/bam/erob/actuator.py",
+    "bytes": 2853,
+    "sha256": "6520cbff0364f14618f7b80f9db30a7c452208eda7734d37f285bd6cec80e8ba"
+  },
+  {
+    "distribution": "better-actuator-models",
+    "relative_path": "bam/erob/__init__.py",
+    "bundle_path": "pinned-source/better-actuator-models/bam/erob/__init__.py",
+    "bytes": 281,
+    "sha256": "def3c0cf098a3aa9003a8c746efc7ad0305525df42ba6f380589f64ae415ac09"
+  },
+  {
+    "distribution": "better-actuator-models",
+    "relative_path": "bam/dynamixel/actuator.py",
+    "bundle_path": "pinned-source/better-actuator-models/bam/dynamixel/actuator.py",
+    "bytes": 4228,
+    "sha256": "8d3ed39d68758981204901dd18dcce11dcb107b842067e036d2b8ac7b1411cec"
+  },
+  {
+    "distribution": "better-actuator-models",
+    "relative_path": "bam/dynamixel/__init__.py",
+    "bundle_path": "pinned-source/better-actuator-models/bam/dynamixel/__init__.py",
+    "bytes": 281,
+    "sha256": "def3c0cf098a3aa9003a8c746efc7ad0305525df42ba6f380589f64ae415ac09"
+  },
+  {
+    "distribution": "better-actuator-models",
+    "relative_path": "bam/feetech/actuator.py",
+    "bundle_path": "pinned-source/better-actuator-models/bam/feetech/actuator.py",
+    "bytes": 3085,
+    "sha256": "ae099a23194795baee76842995b39814c950f76a7dbd0cc1f56f0301eb773805"
+  },
+  {
+    "distribution": "better-actuator-models",
+    "relative_path": "bam/feetech/__init__.py",
+    "bundle_path": "pinned-source/better-actuator-models/bam/feetech/__init__.py",
+    "bytes": 281,
+    "sha256": "def3c0cf098a3aa9003a8c746efc7ad0305525df42ba6f380589f64ae415ac09"
+  },
+  {
+    "distribution": "better-actuator-models",
+    "relative_path": "bam/unitree/actuator.py",
+    "bundle_path": "pinned-source/better-actuator-models/bam/unitree/actuator.py",
+    "bytes": 2693,
+    "sha256": "8986329ca7cf34561235e07a0da83c94c5f903e472407c0c9da9518324124aa2"
+  },
+  {
+    "distribution": "better-actuator-models",
+    "relative_path": "bam/unitree/__init__.py",
+    "bundle_path": "pinned-source/better-actuator-models/bam/unitree/__init__.py",
+    "bytes": 281,
+    "sha256": "def3c0cf098a3aa9003a8c746efc7ad0305525df42ba6f380589f64ae415ac09"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/viewer/native/viewer.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/viewer/native/viewer.py",
+    "bytes": 25766,
+    "sha256": "e7d7c7a5b98c681b9fb4d20a0965c59047b95d5720f153fa4499a259935834d2"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/viewer/viser/reward_bar_panel.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/viewer/viser/reward_bar_panel.py",
+    "bytes": 4342,
+    "sha256": "f6b88c9aa09cfa423a64bd017303b3cff188c636c08dd171f32e7c80e981c3ce"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/viewer/viser/scene.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/viewer/viser/scene.py",
+    "bytes": 21675,
+    "sha256": "f0d5e013cbd3aa97d566dee64d43aa9bd5d59a7230d57f716d9c2286e26f882a"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/viewer/viser/term_plotter.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/viewer/viser/term_plotter.py",
+    "bytes": 6881,
+    "sha256": "a25c3ad0c1e83f086035870456bd72c854ce26a6b4bfbb4e9ddebc0421c8c31c"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/viewer/viser/viewer.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/viewer/viser/viewer.py",
+    "bytes": 19539,
+    "sha256": "e15ab0d5f1916be51ff32c15012ef9233daddb62096ce04ff4f3cd721cf6ecd6"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/viewer/native/keys.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/viewer/native/keys.py",
+    "bytes": 1614,
+    "sha256": "30cf4d7872f7af74d9c8238289d22c6ffca82a56767debe54f4074ec41db9cf9"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/viewer/viser/overlays.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/viewer/viser/overlays.py",
+    "bytes": 6728,
+    "sha256": "a424ee8af242465ebf292b03a3ef996bfd64620cb78f725476ede1db6668dd5f"
+  },
+  {
+    "distribution": "mjlab",
+    "relative_path": "mjlab/viewer/viser/camera_viewer.py",
+    "bundle_path": "pinned-source/mjlab/mjlab/viewer/viser/camera_viewer.py",
+    "bytes": 6512,
+    "sha256": "37a093f6262e207e3c6c2186b927cf5ca3a364152e63e2cb951423b3ce4416e8"
+  },
+  {
+    "distribution": "warp-lang",
+    "relative_path": "warp/_src/texture.py",
+    "bundle_path": "pinned-source/warp-lang/warp/_src/texture.py",
+    "bytes": 44704,
+    "sha256": "304c8f6739b28be639922b2e4019bfe2f3b5938bee65e53c38da20a5e97f7835"
+  }
+]

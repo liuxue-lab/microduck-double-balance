@@ -1,0 +1,173 @@
+{
+  "status": "V3_REMAINING_MATRIX_INDEPENDENT_AUDIT_PASS",
+  "commit": "4fc857853b988ebac7d87742925ffcb919748003",
+  "tree": "bb2ab4db70f99c5a962a6c64969b82cc2aa833cc",
+  "archive_sha256": "8b7bfce5389308ea02e1260a161f550df34a06dde0110ce405f99eff4229de06",
+  "archive_bytes": 9405967,
+  "members": 1033,
+  "checks": [
+    "1033 ZIP members CRC, SHA256, extracted bytes",
+    "149 delivered program members exact, including 92 accepted helpers",
+    "219 pinned sources unchanged, HEAD/branch/SSH/status/diff unchanged",
+    "7352 WAL records paired; 3584 completed/attempted integrations; all native counters paired",
+    "20 macros: original decisions recomputed, full endpoint records and replay raw microtrajectories exact",
+    "All 40 macro boundary Data/owner NPZ archives match per-array metadata",
+    "Six public Data/owner boundaries hashed; original tuple-key cache owner, typed key and site ID preserved",
+    "Both real manager traces, 61D/85D finite outputs, event/history counts, reward/termination at accepted endpoints",
+    "Raw recorder terminal input/old observation and reset output matched; manual pending refusal evidenced by pinned guard and no extra counted action; final explicit reset clears pending",
+    "21 raw full-Contact samples independently permuted; active rows and inactive tails exact",
+    "21 raw changed-constraint samples match quadratic transitions, sorted IDs and untouched tails; live all-call proofs retained as digests",
+    "42 native resources matched actual releases; sorting graph destroyed; v1 checkpoint and v2 normal/reset proofs reused unchanged"
+  ],
+  "per_array_hashes_checked": 19326,
+  "macro_results": [
+    {
+      "index": 0,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 15.874034396998468
+    },
+    {
+      "index": 1,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 15.804007658007322
+    },
+    {
+      "index": 2,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 16.283422310007154
+    },
+    {
+      "index": 3,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 16.0373165350029
+    },
+    {
+      "index": 4,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 16.080446994004888
+    },
+    {
+      "index": 5,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 15.905891285990947
+    },
+    {
+      "index": 6,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 15.881749580003088
+    },
+    {
+      "index": 7,
+      "resolution": 128,
+      "integrations": 352,
+      "elapsed_s": 34.09178048999456
+    },
+    {
+      "index": 8,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 16.010780012002215
+    },
+    {
+      "index": 9,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 16.080405437998706
+    },
+    {
+      "index": 10,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 16.119921706005698
+    },
+    {
+      "index": 11,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 16.37594394700136
+    },
+    {
+      "index": 12,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 15.954129580000881
+    },
+    {
+      "index": 13,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 15.831482162000611
+    },
+    {
+      "index": 14,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 15.79002225700242
+    },
+    {
+      "index": 15,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 15.807497180998325
+    },
+    {
+      "index": 16,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 15.803651462993002
+    },
+    {
+      "index": 17,
+      "resolution": 128,
+      "integrations": 352,
+      "elapsed_s": 34.73189605399966
+    },
+    {
+      "index": 18,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 16.1469034729962
+    },
+    {
+      "index": 19,
+      "resolution": 64,
+      "integrations": 160,
+      "elapsed_s": 16.375795532992925
+    }
+  ],
+  "canonical_before": {
+    "completed": 670872,
+    "attempted": 670873
+  },
+  "added": {
+    "completed": 3584,
+    "attempted": 3584
+  },
+  "canonical_after": {
+    "completed": 674456,
+    "attempted": 674457,
+    "historical_failed_native_attempts": 1
+  },
+  "elapsed_s": 388.9766125870083,
+  "WAL_seconds": 17.254216241984977,
+  "WAL_wall_fraction": 0.04435797856130866,
+  "cross_run_speedup_claimed": false,
+  "normal_case_reexecuted": false,
+  "contiguous_three_case_run": false,
+  "v2_missing_owner_boundary_recovered": false,
+  "inner_contact_solver_raw_scope": "21 samples each plus live all-call byte checks/digests; G10 exhaustive raw evidence reused",
+  "pending_refusal_scope": "Pinned worker guard succeeded; two counted action processes; no standalone post-refusal full boundary saved",
+  "runtime_default_RNG_scope": "Pinned worker equality guards passed; only initial digest independently archived",
+  "G11_review": "PASS_FOR_COMBINED_SCOPED_CLOSURE",
+  "producer_report_preserved": true,
+  "PPO": 0,
+  "cloud_training": 0,
+  "auditor_native_calls": 0
+}

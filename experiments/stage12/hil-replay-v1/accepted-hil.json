@@ -1,0 +1,76 @@
+{
+  "schema": "stage12-hil-accepted-baseline-v1",
+  "source_commit": "38e7ee84ad7c83b023bb8dcf46b9252d60f3552f",
+  "report_sha256": "513c9add8b0029dfb039efba38fc1d1390a97ed310766b8c184d42d87abfd079",
+  "run": "/home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-mujoco-v3/runs/20261025T044453Z-d194fd47",
+  "package_identity": "a057b01ab6a3bdf2b33a825331fdc631ab39b094010d7df296858a54bb0b8ce4",
+  "checkpoint_sha256": "cf7ce9297672943687019afe071d94918d3eb2620c18a1e8fe689512f8c08111",
+  "onnx_sha256": "8c1c1250b9b88d9a91e3eb095fea8bce21daa73c251b43f3cd8adc1327f03c4e",
+  "physics_dt": 0.005,
+  "control_dt": 0.02,
+  "mujoco": "3.10.0",
+  "status": "NATIVE_MUJOCO_REALTIME_PASSED",
+  "hardware_in_loop": "PC native MuJoCo + ROS2 Humble + Orin FP32",
+  "physical_robot_in_scope": false,
+  "all_state_values_bit_identical_to_v2": true,
+  "cases": [
+    {
+      "case_id": "quiet-2407",
+      "steps": 3000,
+      "physics_steps": 12000,
+      "deadline_misses": 0,
+      "max_release_to_finish_ms": 14.518736,
+      "source_exports": {
+        "case-01/native-model.mjb": {
+          "bytes": 116664189,
+          "sha256": "2e481a6dfa1508d2345de0821897278d403b80535d7d0514b571724d6091c645"
+        },
+        "case-01/push10-trace.jsonl": {
+          "bytes": 1568454,
+          "sha256": "04e5788947e075b54aa5416a19ad8b3828289ade9a9dd9ad9a805488bca12c82"
+        },
+        "case-01/state-data.json": {
+          "bytes": 654,
+          "sha256": "953248be6ee929b8bde6515278c58f1be61b551f504c38bc6046972ccd60667d"
+        },
+        "case-01/state-data.npz": {
+          "bytes": 1733188,
+          "sha256": "1b1ed120de56301b5bc70202cf7df56678e0f24008c24575b809536f56715de9"
+        },
+        "case-01/timing.csv": {
+          "bytes": 918506,
+          "sha256": "eade9c80f8f633e6815492e75d1f017e4fadd8234db5aa9403782f3a379c33fc"
+        }
+      }
+    },
+    {
+      "case_id": "regression-2500",
+      "steps": 3000,
+      "physics_steps": 12000,
+      "deadline_misses": 0,
+      "max_release_to_finish_ms": 14.471036,
+      "source_exports": {
+        "case-02/native-model.mjb": {
+          "bytes": 116664189,
+          "sha256": "2e481a6dfa1508d2345de0821897278d403b80535d7d0514b571724d6091c645"
+        },
+        "case-02/push10-trace.jsonl": {
+          "bytes": 1574597,
+          "sha256": "ee6e265b5c7f3bbce0cb6501ab2c56b66619ea0622e87de382a81e1619b1aa33"
+        },
+        "case-02/state-data.json": {
+          "bytes": 654,
+          "sha256": "dd020ca247c54dc17ac0e4278470ab8620b1de46f2c03b118bf471020919df9b"
+        },
+        "case-02/state-data.npz": {
+          "bytes": 1735342,
+          "sha256": "fc9588cf35de248ef31d35dac2000e7c0476c44d8c3fff8dd3df1aaec64c603a"
+        },
+        "case-02/timing.csv": {
+          "bytes": 918744,
+          "sha256": "e4d2440a929df6da63dd53deef3fcc6ce64de701a5eb748a66b0209f308e790b"
+        }
+      }
+    }
+  ]
+}

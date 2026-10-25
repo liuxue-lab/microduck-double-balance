@@ -1,0 +1,22 @@
+{
+  "status": "LOCAL_ARCHIVE_AND_FROZEN_RUNTIME_VERIFIED",
+  "source_head": "66ff9c3055ec6b9caa99c308b5aa5170655c6f5c",
+  "frozen_runtime_files": 101,
+  "runtime_manifest_sha256": "b61850afbd6fa0deccb3a23a098a910aae74bc0e9b01cca2ee0634c2d1f6ecfd",
+  "necessary_checkpoints": 13,
+  "cloud_evaluation_reports": 18,
+  "pilot_review_files": 341,
+  "local_video_review_files": 175,
+  "local_videos": 10,
+  "video_archive_sha256": "8c342528ded3581441983eeff3caebdb69e496715caac38519f55a6c3e733369",
+  "original_primary_sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+  "checkpoint_return_receipt_sha256": "c5d6d326dfa0fe94b440d34d5c1de010265bb8e491415111f917e5fcf1e40111",
+  "full_cloud_traces_returned": false,
+  "new_ppo_updates": 0,
+  "simulation_or_training_launched": false,
+  "network_used": false,
+  "manual_shutdown_confirmed": false,
+  "cloud_power_state": "UNCONFIRMED",
+  "publication": "Local validation record created before commit; user SSH push pending",
+  "stage09_policy_objective": "UNMET_NO_ELIGIBLE_CANDIDATE"
+}

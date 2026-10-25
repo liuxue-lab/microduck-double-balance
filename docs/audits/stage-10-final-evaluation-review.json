@@ -1,0 +1,103 @@
+{
+  "status": "DEVELOPMENT_REPLAY_AND_DIAGNOSTICS_REVIEWED",
+  "retained_primary": {
+    "profile": "E",
+    "seed": 20260929,
+    "checkpoint": "update_004000.pt",
+    "sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+    "historical_independent_successes": 652,
+    "historical_independent_episodes": 768,
+    "historical_percent_rounded": 84.9
+  },
+  "replay_jobs": [
+    {
+      "name": "01-headless-1",
+      "successes": 109,
+      "episodes": 128,
+      "percent": 85.15625,
+      "physical_terminations": 0
+    },
+    {
+      "name": "02-video99-1",
+      "successes": 110,
+      "episodes": 128,
+      "percent": 85.9375,
+      "physical_terminations": 0
+    },
+    {
+      "name": "03-headless-2",
+      "successes": 112,
+      "episodes": 128,
+      "percent": 87.5,
+      "physical_terminations": 0
+    },
+    {
+      "name": "04-video99-2",
+      "successes": 110,
+      "episodes": 128,
+      "percent": 85.9375,
+      "physical_terminations": 0
+    },
+    {
+      "name": "05-headless-3",
+      "successes": 109,
+      "episodes": 128,
+      "percent": 85.15625,
+      "physical_terminations": 0
+    },
+    {
+      "name": "06-video99-3",
+      "successes": 105,
+      "episodes": 128,
+      "percent": 82.03125,
+      "physical_terminations": 0
+    }
+  ],
+  "distinct_development_initial_states": 128,
+  "repeated_development_executions": 768,
+  "pooled_success_rate_allowed": false,
+  "mixed_label_initial_states": 41,
+  "new_independent_evaluation": false,
+  "new_candidate": false,
+  "scope_B": {
+    "processes": 3,
+    "environments_each": 128,
+    "controls_each": 10,
+    "physics_steps_each": 100,
+    "seconds_each": 0.2,
+    "environment_physics_steps": 38400,
+    "events": 1683,
+    "success_assessment": false
+  },
+  "scope_C": {
+    "processes": 3,
+    "environments_each": 128,
+    "events_each": 33,
+    "total_events": 99,
+    "rollout_steps": 0,
+    "policy_inference_after_load": 0,
+    "success_assessment": false,
+    "construction_internal_calls_counted_separately": true
+  },
+  "scope_D": {
+    "installed_source_files": 133,
+    "environment_construction": 0,
+    "cuda_initialized": false
+  },
+  "acceptance": {
+    "episode_seconds": 10,
+    "terminal_continuous_stability_seconds": 5,
+    "assistance": 0,
+    "lower_ball_speed_m_s_max": 0.15,
+    "unchanged": true
+  },
+  "training": {
+    "stage10_new_ppo_updates": 0,
+    "cloud_gpu_hours": 0,
+    "stage06_smoke": false,
+    "stage09_retained_updates": 2000,
+    "stage09_attempted_updates": 2025
+  },
+  "model_task_reward_acceptance_unchanged": true,
+  "policy_objective": "UNMET_NO_NEW_QUALIFIED_POLICY"
+}

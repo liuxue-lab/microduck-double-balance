@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "checks": [
+    "embedded SSH source matches original shared session helper",
+    "model pin matches completed evaluation",
+    "remote only opens artifact files in read mode",
+    "remote imports no GPU, process execution or training modules",
+    "inventory reads fixed bytes and verifies every source hash",
+    "real chunk protocol validates length and checksum",
+    "unknown or traversal artifact key rejected",
+    "disconnect preserves only fully verified chunks",
+    "corrupted partial prefix is rejected without truncation",
+    "resumption starts at preserved byte offset",
+    "verified files publish with full SHA256 and no partial remains",
+    "remote source bytes remain unchanged",
+    "completed repeat requires no SSH and no redownload",
+    "existing mismatched destination preserved",
+    "invalid transport checksum fails before local write"
+  ],
+  "count": 15,
+  "scope": "Offline actual client/remote read functions with isolated files and an SSH subprocess substitute; no real network, GPU, simulation or PPO."
+}

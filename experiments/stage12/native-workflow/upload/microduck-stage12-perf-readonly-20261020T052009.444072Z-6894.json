@@ -1,0 +1,361 @@
+{
+  "slot": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2",
+  "read_only": true,
+  "snapshot_is_atomic": false,
+  "files": {
+    "budget.json": {
+      "attempted_updates": 1089,
+      "completed_updates": 1088,
+      "deadline_utc": 1792499655.8858402,
+      "historical_validation_reservations_preserved": 4,
+      "interrupted_attempts": 0,
+      "max_updates": 6000,
+      "pending": true,
+      "started_utc": 1792470855.8858402,
+      "validation_runs_added": 1
+    },
+    "run/progress.json": {
+      "attempted_updates": 1088,
+      "campaign_phase": "formal",
+      "completed_updates": 1088,
+      "elapsed_seconds": 2751.47607421875,
+      "episode_metrics": {
+        "Episode_Metrics/native_joint_geometric_stable_fraction": 0.7642537951469421,
+        "Episode_Metrics/native_joint_geometric_success_5s": 0.0,
+        "Episode_Metrics/native_lower_unassisted_fraction": 0.9029331977168719,
+        "Episode_Metrics/native_unassisted_env_fraction": 1.0,
+        "Episode_Metrics/top_ball_center_error_m": 0.005406395726216336,
+        "Episode_Reward/double_balance": 2.7683949967225394,
+        "Episode_Termination/fell": 0.0,
+        "Episode_Termination/nan_state": 0.0,
+        "Episode_Termination/out_of_terrain_bounds": 0.0,
+        "Episode_Termination/time_out": 3.4166666666666665,
+        "Episode_Termination/top_ball_lost": 0.25
+      },
+      "head_reward_scale": 1.0,
+      "historical_reserved_PPO": 4,
+      "joint_geometric_current_fraction": 0.8017578125,
+      "last_losses": {
+        "entropy": -2.670295310020447,
+        "surrogate": -0.0034688977058976887,
+        "value": 0.09279730543494225
+      },
+      "latest_checkpoint": {
+        "bytes": 10036060,
+        "completed_updates": 1050,
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2/run/checkpoints/update_001050.pt",
+        "policy_updates": 1050,
+        "sha256": "55d9d2c8b56def26ae55b5ae116a6f096d6cea5404988d832d6ccee95b1b09d0"
+      },
+      "learning_rate": 5e-05,
+      "logging_backend": "tensorboard",
+      "lower_unassisted_current_fraction": 0.90673828125,
+      "max_updates": 6000,
+      "mean_episode_length_steps": 484.43,
+      "mean_reward": 75.10054138898849,
+      "nan_resets_in_last_rollout": 0,
+      "num_envs": 2048,
+      "phase": "formal_ppo",
+      "policy_updates": 1088,
+      "prior_validation_reservations_preserved": 4,
+      "progress_percent": 18.133333333333333,
+      "remaining_validation_runs": 0,
+      "rollout_steps": 24,
+      "session": 1,
+      "status": "TRAINING",
+      "unassisted_env_fraction": 1.0,
+      "validation_runs_added": 1
+    },
+    "run/latest.json": {
+      "bytes": 10036060,
+      "completed_updates": 1050,
+      "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2/run/checkpoints/update_001050.pt",
+      "policy_updates": 1050,
+      "sha256": "55d9d2c8b56def26ae55b5ae116a6f096d6cea5404988d832d6ccee95b1b09d0"
+    },
+    "run/smoke-result.json": {
+      "checkpoint": {
+        "bytes": 10035996,
+        "completed_updates": 5,
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2/run/checkpoints/update_000005.pt",
+        "policy_updates": 5,
+        "sha256": "1240b976c040f4b754ec24e3581a83784b1c3d59ee93f4f9ba3340a9443067ae"
+      },
+      "completed_updates": 5,
+      "finished_utc": 1792470963.1870499,
+      "num_envs": 64,
+      "physical_success_required": false,
+      "reload_verified": true,
+      "status": "SMOKE_PASSED",
+      "steps_per_env": 24,
+      "transitions": 7680
+    },
+    "started.json": {
+      "mode": "ONE_SMOKE_THEN_NATIVE_FINETUNING",
+      "package_identity": "dd6d1e1e697bcaa348dbdd92dd8c7b30ea31ae9c32599338106859ae7657523a",
+      "started_utc": 1792470855.8858402
+    },
+    "supervisor.json": {
+      "group": 1439,
+      "pid": 1439,
+      "start": "344718592",
+      "state": "R"
+    },
+    "child.json": {
+      "group": 1562,
+      "pid": 1562,
+      "start": "344729498",
+      "state": "R"
+    }
+  },
+  "added_PPO_updates": 0,
+  "added_simulation_steps": 0,
+  "task_restart": false,
+  "log_path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2/run/train-01-formal.log",
+  "log": {
+    "recent_iterations": [
+      {
+        "iteration": 1058,
+        "collection_seconds": 2.073,
+        "learning_seconds": 0.3
+      },
+      {
+        "iteration": 1059,
+        "collection_seconds": 2.129,
+        "learning_seconds": 0.305
+      },
+      {
+        "iteration": 1060,
+        "collection_seconds": 2.107,
+        "learning_seconds": 0.299
+      },
+      {
+        "iteration": 1061,
+        "collection_seconds": 2.059,
+        "learning_seconds": 0.295
+      },
+      {
+        "iteration": 1062,
+        "collection_seconds": 1.994,
+        "learning_seconds": 0.295
+      },
+      {
+        "iteration": 1063,
+        "collection_seconds": 2.019,
+        "learning_seconds": 0.298
+      },
+      {
+        "iteration": 1064,
+        "collection_seconds": 2.116,
+        "learning_seconds": 0.302
+      },
+      {
+        "iteration": 1065,
+        "collection_seconds": 2.061,
+        "learning_seconds": 0.302
+      },
+      {
+        "iteration": 1066,
+        "collection_seconds": 2.081,
+        "learning_seconds": 0.306
+      },
+      {
+        "iteration": 1067,
+        "collection_seconds": 1.982,
+        "learning_seconds": 0.297
+      },
+      {
+        "iteration": 1068,
+        "collection_seconds": 2.02,
+        "learning_seconds": 0.204
+      },
+      {
+        "iteration": 1069,
+        "collection_seconds": 2.059,
+        "learning_seconds": 0.213
+      },
+      {
+        "iteration": 1070,
+        "collection_seconds": 1.984,
+        "learning_seconds": 0.295
+      },
+      {
+        "iteration": 1071,
+        "collection_seconds": 1.999,
+        "learning_seconds": 0.297
+      },
+      {
+        "iteration": 1072,
+        "collection_seconds": 1.973,
+        "learning_seconds": 0.294
+      },
+      {
+        "iteration": 1073,
+        "collection_seconds": 2.011,
+        "learning_seconds": 0.35
+      },
+      {
+        "iteration": 1074,
+        "collection_seconds": 2.059,
+        "learning_seconds": 0.282
+      },
+      {
+        "iteration": 1075,
+        "collection_seconds": 2.004,
+        "learning_seconds": 0.3
+      },
+      {
+        "iteration": 1076,
+        "collection_seconds": 2.075,
+        "learning_seconds": 0.305
+      },
+      {
+        "iteration": 1077,
+        "collection_seconds": 2.016,
+        "learning_seconds": 0.298
+      },
+      {
+        "iteration": 1078,
+        "collection_seconds": 2.053,
+        "learning_seconds": 0.172
+      },
+      {
+        "iteration": 1079,
+        "collection_seconds": 2.023,
+        "learning_seconds": 0.292
+      },
+      {
+        "iteration": 1080,
+        "collection_seconds": 2.013,
+        "learning_seconds": 0.222
+      },
+      {
+        "iteration": 1081,
+        "collection_seconds": 2.026,
+        "learning_seconds": 0.296
+      },
+      {
+        "iteration": 1082,
+        "collection_seconds": 2.04,
+        "learning_seconds": 0.297
+      },
+      {
+        "iteration": 1083,
+        "collection_seconds": 2.066,
+        "learning_seconds": 0.341
+      },
+      {
+        "iteration": 1084,
+        "collection_seconds": 2.041,
+        "learning_seconds": 0.299
+      },
+      {
+        "iteration": 1085,
+        "collection_seconds": 2.05,
+        "learning_seconds": 0.299
+      },
+      {
+        "iteration": 1086,
+        "collection_seconds": 2.017,
+        "learning_seconds": 0.215
+      },
+      {
+        "iteration": 1087,
+        "collection_seconds": 2.026,
+        "learning_seconds": 0.29
+      }
+    ],
+    "collection_seconds": {
+      "samples": 30,
+      "mean": 2.0392,
+      "median": 2.033,
+      "minimum": 1.973,
+      "maximum": 2.129
+    },
+    "learning_seconds": {
+      "samples": 30,
+      "mean": 0.2853333333333333,
+      "median": 0.297,
+      "minimum": 0.172,
+      "maximum": 0.35
+    },
+    "collection_fraction_of_logged_compute": 0.8772513479408053,
+    "learning_fraction_of_logged_compute": 0.12274865205919468,
+    "timing_scope": "Existing runner wall timers; exclude logger/checkpoint overhead; not CUDA kernel timings."
+  },
+  "metrics": {
+    "wall_seconds_per_update": {
+      "samples": 30,
+      "mean": 2.373976985613505,
+      "median": 2.367884039878845,
+      "minimum": 2.2607345581054688,
+      "maximum": 2.4872002601623535
+    },
+    "window_first_update": 1058,
+    "window_last_update": 1088,
+    "last_state": {
+      "status": "TRAINING",
+      "phase": "formal_ppo",
+      "session": 1,
+      "completed_updates": 1088,
+      "max_updates": 6000,
+      "remaining_validation_runs": 0,
+      "historical_reserved_PPO": 4,
+      "campaign_phase": "formal",
+      "num_envs": 2048,
+      "logging_backend": "tensorboard",
+      "rollout_steps": 24,
+      "attempted_updates": 1088,
+      "policy_updates": 1088,
+      "progress_percent": 18.133333333333333,
+      "elapsed_seconds": 2751.47607421875,
+      "head_reward_scale": 1.0,
+      "unassisted_env_fraction": 1.0,
+      "lower_unassisted_current_fraction": 0.90673828125,
+      "joint_geometric_current_fraction": 0.8017578125,
+      "mean_episode_length_steps": 484.43,
+      "mean_reward": 75.10054138898849,
+      "nan_resets_in_last_rollout": 0,
+      "episode_metrics": {
+        "Episode_Reward/double_balance": 2.7683949967225394,
+        "Episode_Metrics/top_ball_center_error_m": 0.005406395726216336,
+        "Episode_Metrics/native_lower_unassisted_fraction": 0.9029331977168719,
+        "Episode_Metrics/native_unassisted_env_fraction": 1.0,
+        "Episode_Metrics/native_joint_geometric_stable_fraction": 0.7642537951469421,
+        "Episode_Metrics/native_joint_geometric_success_5s": 0.0,
+        "Episode_Termination/time_out": 3.4166666666666665,
+        "Episode_Termination/out_of_terrain_bounds": 0.0,
+        "Episode_Termination/nan_state": 0.0,
+        "Episode_Termination/fell": 0.0,
+        "Episode_Termination/top_ball_lost": 0.25
+      },
+      "learning_rate": 5e-05,
+      "last_losses": {
+        "value": 0.09279730543494225,
+        "surrogate": -0.0034688977058976887,
+        "entropy": -2.670295310020447
+      },
+      "prior_validation_reservations_preserved": 4,
+      "validation_runs_added": 1,
+      "latest_checkpoint": {
+        "bytes": 10036060,
+        "completed_updates": 1050,
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage12/native-training-v2/run/checkpoints/update_001050.pt",
+        "policy_updates": 1050,
+        "sha256": "55d9d2c8b56def26ae55b5ae116a6f096d6cea5404988d832d6ccee95b1b09d0"
+      }
+    },
+    "timing_scope": "Differences between existing elapsed_seconds records, including intervening logging and checkpoint work."
+  },
+  "processes": {
+    "supervisor": {
+      "pid": 1439,
+      "alive": true
+    },
+    "child": {
+      "pid": 1562,
+      "alive": true
+    }
+  },
+  "local_return_utc": "2026-10-20T05:20:09.443963+00:00"
+}

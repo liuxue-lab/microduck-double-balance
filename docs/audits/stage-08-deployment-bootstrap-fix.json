@@ -1,0 +1,48 @@
+{
+  "stage": 8,
+  "status": "BOOTSTRAP_FIX_CPU_VALIDATED_AWAITING_CLOUD_RETRY",
+  "base_commit": "0fc3dbfca6c2322e84bcf389169d6e8fc27a9dbb",
+  "user_reported_cloud_target": {
+    "host": "connect.bjb2.seetacloud.com",
+    "port": 45743,
+    "requested_gpu": "5090",
+    "hardware_identity_verified": false
+  },
+  "user_reported_error": "bash: line 1: python3: command not found",
+  "failed_preflight_path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage08/preflight-20260929T154045.json",
+  "evidence": "The first SSH Python command failed before source transfer or installation.",
+  "hypothesis_not_yet_verified": "Python may exist outside the non-interactive SSH PATH, including Conda locations.",
+  "changes": [
+    "Resolve an executable Python >=3.10 without importing CUDA; use its absolute path throughout remote bootstrap.",
+    "Automatically persist the deployment budget start locally; retries reuse it, and cloud ledgers remain unchanged.",
+    "Use deployment-start terminology; actual platform power-on time is unknown."
+  ],
+  "targeted_verification": {
+    "passed": 11,
+    "failed": 0,
+    "new_cases": 3,
+    "seconds": 11.64,
+    "command": "PYTHONPATH=src python -m pytest -q tests/test_stage08_tools.py tests/test_stage08_budget.py",
+    "shell_syntax": "PASS",
+    "cli_help": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "formal_training_started": false,
+  "cuda_capacity_executed": false,
+  "stage06_smoke_rerun": false,
+  "stage03_physics_modified": false,
+  "stage04_original_definition_modified": false,
+  "dependency_lock_modified": false,
+  "cloud_retry_verified": false,
+  "stage08_complete": false,
+  "code_sha256": {
+    "scripts/stage08_bootstrap.sh": "b5a94ae2ecfb06617a78e39ad1aa091fdbe62790c1c15c431c67be04cade84f6",
+    "scripts/deploy_stage08_local.sh": "b36f7695be13a855754766f9c547bd54b5879185ce99100445f4552c3b2c6882",
+    "scripts/setup_stage08_autodl.sh": "676e2e60e678943db162c835960c3a31efd8899633bb56b6a45be7d50c1fa65c",
+    "scripts/preflight_stage08_cloud.py": "274b12c1132212e9c794aed832af77d389228724185cf67b8d0596e1529aa536",
+    "src/mjlab_microduck/double_balance_stage08.py": "6883eb08cbb148b6b77c3979e1196db189adee16c864f189342916a1731aefd8",
+    "src/mjlab_microduck/double_balance_stage08_budget.py": "e36870e3fccecda8d238e4721b94caff7e2729f47daed34c5786b79ab0d482e3",
+    "tests/test_stage08_tools.py": "0d5612f2c0adc91180d18f305bc3d475c40881cda9a379bd03cd506c4659ce76"
+  },
+  "next": "Import the updated bundle on the laptop and rerun deployment with HOST PORT 5090 only. Inspect the actual selected Python and preflight before capacity/PPO."
+}

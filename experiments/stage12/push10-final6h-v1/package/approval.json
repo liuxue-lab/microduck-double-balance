@@ -1,0 +1,32 @@
+{
+  "schema": "stage12-push10-final6h-authorization-v1",
+  "status": "USER_AUTHORIZED_NEW_FINAL_CAMPAIGN",
+  "user_request": "那就继续训练 4个小时 这是最后一次训练 奖励调好 开始训练后 我就去睡了",
+  "latest_user_amendment": "6小时吧",
+  "max_compute_seconds": 21600,
+  "training_window_seconds": 17100,
+  "selection_and_heldout_window_seconds": 4500,
+  "max_cleanup_seconds": 90,
+  "max_attempted_PPO_updates": 10005,
+  "smoke_updates_included": 5,
+  "max_formal_updates": 10000,
+  "max_selection_episodes": 9,
+  "max_heldout_episodes": 18,
+  "source_model_policy_updates": 6010,
+  "source_model_sha256": "ca2a82acbe939169367272ffb50242bbfc1b4a39c06ed186bfc4cf3009ed4130",
+  "source_model_kept": true,
+  "old_budgets_frozen": true,
+  "disturbance_training_authorized": true,
+  "trajectory_training_authorized": false,
+  "automatic_extension": false,
+  "automatic_retry": false,
+  "automatic_instance_power_actions": false,
+  "last_training_request": true,
+  "training_success_guaranteed": false,
+  "current_ssh": {
+    "host": "root@connect.bjb2.seetacloud.com",
+    "port": 32185,
+    "source": "User supplied cloned RTX5090 endpoint during preparation"
+  },
+  "evaluation_reserve_basis": "Prior cloud evaluation reservations were approximately 150 seconds per 60s case; up to 27 cases require about 67.5 minutes."
+}

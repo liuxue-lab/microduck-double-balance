@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "checks": [
+    "completed first episodes are loaded without mutation",
+    "duplicate retained environment identifiers rejected",
+    "retained physical failure cannot become success",
+    "retained summaries must match original episode rows",
+    "expired original deadline forbids launch and any new budget",
+    "repeated recovery attaches without rerunning groups",
+    "metric observer and all success thresholds are unchanged",
+    "new simulation only evaluates the 6000 candidate",
+    "no paired-result calculation remains in recovery",
+    "exact-pairing failure remains explicit in returned results",
+    "deterministic inference and zero PPO remain",
+    "start inherits the prior deadline, never starts a fresh 30 minutes",
+    "old evaluation directory participates in inherited GPU locks",
+    "embedded recovery files equal reviewed files",
+    "all executable sources parse",
+    "old evaluation controller remains immutable",
+    "old training controller remains immutable"
+  ],
+  "count": 17,
+  "scope": "Offline standard-library recovery checks only; no Torch/CUDA/physics run.",
+  "reused_prior_observer_checks": 28,
+  "additional_PPO_updates": 0,
+  "additional_simulation_steps": 0,
+  "cloud_connections": 0
+}

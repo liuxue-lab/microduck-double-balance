@@ -1,0 +1,124 @@
+{
+  "schema": "microduck-stage12-archive-review-v1",
+  "date": "2026-10-25",
+  "timezone": "Asia/Shanghai",
+  "source_zip": "evidence/archive-inventory-received.zip",
+  "source_zip_sha256": "5fd447696e39c7f3d08fe1f43690f3bf6a7147c7009d719b444f00bf2ea411ac",
+  "collection_time_local": "2026-10-25T16:32:55.418664+08:00",
+  "collection_time_utc": "2026-10-25T08:32:55.418664+00:00",
+  "collector_script_sha256": "d8e3a6981498bf8076cd36cb4f10ad3dd5fb84b2cb81b7d9f67773b6b1be61a7",
+  "collector_matches_delivered_script": true,
+  "expected_spec_sha256": "5d47ef18cd3070002fa5dc08e7e91fdbd6c38c3a92666432ac254a6f9d962ebd",
+  "base_expectations_match_delivered_spec": true,
+  "expected_and_observed_path_sets_equal": true,
+  "all_observations_match_expanded_expectations": true,
+  "fixed_asset_count": 229,
+  "verified_count": 229,
+  "unresolved_count": 0,
+  "logical_file_bytes": 799495198,
+  "unique_content_count": 169,
+  "unique_content_bytes": 199014762,
+  "verified_groups": {
+    "artifacts/double-balance-stage12/native-mujoco-v3": {
+      "files": 50,
+      "bytes": 255177206
+    },
+    "artifacts/double-balance-stage12/native-hil-replay-v1": {
+      "files": 18,
+      "bytes": 12909670
+    },
+    "artifacts/double-balance-stage12/native-live-v1": {
+      "files": 53,
+      "bytes": 255198258
+    },
+    "artifacts/double-balance-stage12/native-ros2-humble-v1": {
+      "files": 4,
+      "bytes": 4112499
+    },
+    "artifacts/double-balance-stage12/native-cumulative-loop-v1": {
+      "files": 1,
+      "bytes": 180005
+    },
+    "artifacts/double-balance-stage12/native-mujoco-v1": {
+      "files": 33,
+      "bytes": 254490793
+    },
+    "artifacts/double-balance-stage12/native-pc-actiongraph-v1": {
+      "files": 1,
+      "bytes": 420071
+    },
+    "artifacts/double-balance-stage12/native-pc-sync-v1": {
+      "files": 1,
+      "bytes": 329148
+    },
+    "artifacts/double-balance-stage12/native-pc-timeline-fixed-v2": {
+      "files": 1,
+      "bytes": 36530
+    },
+    "artifacts/double-balance-stage12/native-ros2-humble-loop-v1": {
+      "files": 1,
+      "bytes": 129954
+    },
+    "artifacts/double-balance-stage12/native-ros2-humble-v4": {
+      "files": 1,
+      "bytes": 50390
+    },
+    "artifacts/double-balance-stage12/native-push10-final6h-v1-client": {
+      "files": 2,
+      "bytes": 10042417
+    },
+    "workspace/.venv": {
+      "files": 11,
+      "bytes": 215098
+    },
+    "workspace/src": {
+      "files": 2,
+      "bytes": 389620
+    },
+    "artifacts/double-balance-stage12/native-pc-timeline-v1": {
+      "files": 45,
+      "bytes": 393526
+    },
+    "artifacts/double-balance-stage12/native-mujoco-v2": {
+      "files": 5,
+      "bytes": 5420013
+    }
+  },
+  "repository_head": "056657aa36158fb81dca6fd2092e525222d6e632",
+  "repository_branch": "double-balance",
+  "tracked_file_count": 3041,
+  "tracked_changes_observed": false,
+  "worktree_clean": false,
+  "untracked_status_entries": 132,
+  "untracked_directories_collapsed": [
+    "tests/fixtures/"
+  ],
+  "untracked_contents_hashed": false,
+  "untracked_backup_confirmed": false,
+  "python_distribution_metadata_count": 145,
+  "dependency_environment_fully_backed_up": false,
+  "historical_metadata_scan": {
+    "file_entries": 50000,
+    "listed_bytes": 6394966031,
+    "complete": false,
+    "stop_reason": "METADATA_SCAN_LIMIT_REACHED",
+    "error_count": 0,
+    "total_project_size_known": false,
+    "note": "Listed bytes are a partial logical total, not the whole project size or physical disk usage."
+  },
+  "full_backup_verified": false,
+  "new_backup_created": false,
+  "new_git_commit_created": false,
+  "new_git_push": false,
+  "new_PPO_updates": 0,
+  "new_physics_steps": 0,
+  "new_Orin_requests": 0,
+  "conclusion": "FIXED_ASSETS_VERIFIED_ARCHIVE_SCOPE_REVIEWED_WITH_EXPLICIT_GAPS",
+  "no_repeat_HIL_or_inventory_requested": true,
+  "remaining_scope_gaps": [
+    "Full historical directory enumeration reached 50000-file cap",
+    "132 untracked status entries are not part of the current tracked commit; contents and backups unverified",
+    "Complete off-device recovery backup and all cloud raw trajectories are not established"
+  ],
+  "current_materials_complete": true
+}

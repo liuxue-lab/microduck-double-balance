@@ -1,0 +1,130 @@
+{
+  "schema": "microduck-closure-evidence-review-v1",
+  "status": "PASSED",
+  "checks": [
+    {
+      "name": "all_18_handoff_members_match",
+      "passed": true
+    },
+    {
+      "name": "separate_handoff_txt_equals_zip_member",
+      "passed": true
+    },
+    {
+      "name": "native-mujoco-v3_acceptance",
+      "passed": true
+    },
+    {
+      "name": "native-mujoco-v3_hardware_scope",
+      "passed": true
+    },
+    {
+      "name": "native-mujoco-v3_worker_exit",
+      "passed": true
+    },
+    {
+      "name": "native-mujoco-v3_requests_and_chain",
+      "passed": true
+    },
+    {
+      "name": "native-mujoco-v3_quiet-2407_all_ticks",
+      "passed": true
+    },
+    {
+      "name": "native-mujoco-v3_quiet-2407_parity",
+      "passed": true
+    },
+    {
+      "name": "native-mujoco-v3_quiet-2407_retention_scope",
+      "passed": true
+    },
+    {
+      "name": "native-mujoco-v3_regression-2500_all_ticks",
+      "passed": true
+    },
+    {
+      "name": "native-mujoco-v3_regression-2500_parity",
+      "passed": true
+    },
+    {
+      "name": "native-mujoco-v3_regression-2500_retention_scope",
+      "passed": true
+    },
+    {
+      "name": "native-live-v1_acceptance",
+      "passed": true
+    },
+    {
+      "name": "native-live-v1_hardware_scope",
+      "passed": true
+    },
+    {
+      "name": "native-live-v1_worker_exit",
+      "passed": true
+    },
+    {
+      "name": "native-live-v1_requests_and_chain",
+      "passed": true
+    },
+    {
+      "name": "native-live-v1_quiet-2407_all_ticks",
+      "passed": true
+    },
+    {
+      "name": "native-live-v1_quiet-2407_parity",
+      "passed": true
+    },
+    {
+      "name": "native-live-v1_quiet-2407_retention_scope",
+      "passed": true
+    },
+    {
+      "name": "native-live-v1_regression-2500_all_ticks",
+      "passed": true
+    },
+    {
+      "name": "native-live-v1_regression-2500_parity",
+      "passed": true
+    },
+    {
+      "name": "native-live-v1_regression-2500_retention_scope",
+      "passed": true
+    },
+    {
+      "name": "live_all_state_fields_equal_v3",
+      "passed": true
+    },
+    {
+      "name": "live_display_complete",
+      "passed": true
+    },
+    {
+      "name": "replay_pinned_to_v3_report",
+      "passed": true
+    },
+    {
+      "name": "replay_no_new_execution",
+      "passed": true
+    },
+    {
+      "name": "replay_frames_decoded",
+      "passed": true
+    },
+    {
+      "name": "native-mujoco-v3_published_package_members_match",
+      "passed": true
+    },
+    {
+      "name": "native-live-v1_published_package_members_match",
+      "passed": true
+    },
+    {
+      "name": "hil-replay-v1_published_package_members_match",
+      "passed": true
+    }
+  ],
+  "new_physics_steps": 0,
+  "new_PPO_updates": 0,
+  "new_hardware_execution": false,
+  "note": "核对已有报告、代码包和交接身份；未重算原始CSV或重新执行仿真。"
+}

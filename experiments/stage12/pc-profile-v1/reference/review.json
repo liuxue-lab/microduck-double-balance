@@ -1,0 +1,111 @@
+{
+  "status": "COMMANDVIEW_V2_MEASURED_KEEP_ACCEPTED_PIPELINE",
+  "report_sha256": "718f8f83319b8fcd22158b51b045508b3c220f55b7505119ee22abeb2497a0cf",
+  "prior_status": "PC_COMMANDVIEW_MEASURED",
+  "prior_commit": "3168d7d0ec94b9495c9ef61d5a044c3beae15390",
+  "prior_package_identity": "e1fb1455ec38ede197349bfb983cb2c94b7de7f5879b074e93135219006cbc43",
+  "arms": {
+    "command-views": {
+      "status": "COMMANDVIEW_ARM_COMPLETE",
+      "control_steps": 160,
+      "physics_steps": 1600,
+      "full_environment_step_ms": {
+        "count": 150,
+        "max": 26.68971,
+        "mean": 24.874879006666667,
+        "over_20ms": 150,
+        "p95": 26.033123,
+        "p99": 26.485491
+      },
+      "runtime_bindings_restored": true
+    },
+    "inference-only": {
+      "status": "COMMANDVIEW_ARM_COMPLETE",
+      "control_steps": 160,
+      "physics_steps": 1600,
+      "full_environment_step_ms": {
+        "count": 150,
+        "max": 26.404753,
+        "mean": 24.599919993333334,
+        "over_20ms": 150,
+        "p95": 25.83959,
+        "p99": 26.231405
+      },
+      "runtime_bindings_restored": true
+    }
+  },
+  "comparison": {
+    "atol": 2e-05,
+    "compared_steps": 160,
+    "comparison_scope": "One 3.2-second matched-seed trajectory with one full 10%-weight pulse; not 60-second acceptance",
+    "disturbance_equal": true,
+    "excluded_fields": [
+      "critic",
+      "rewards"
+    ],
+    "full_audit_equal": true,
+    "max_absolute_error_by_field": {
+      "actions": 0.0,
+      "actor": 0.0,
+      "actuator_force": 0.0,
+      "bam_0_duty_applied": 0.0,
+      "bam_0_duty_current_limited": 0.0,
+      "bam_0_duty_unclipped": 0.0,
+      "bam_0_effective_vin": 0.0,
+      "bam_0_joint_velocity": 0.0,
+      "bam_0_motor_torque": 0.0,
+      "bam_0_position_error": 0.0,
+      "bam_0_previous_torque": 0.0,
+      "counters": 0.0,
+      "ctrl": 0.0,
+      "damping": 0.0,
+      "dones": 0.0,
+      "external_wrench": 0.0,
+      "frictionloss": 0.0,
+      "metric_values": 0.0,
+      "qpos": 0.0,
+      "qvel": 0.0,
+      "stable_ticks": 0.0,
+      "success_ever": 0.0
+    },
+    "passed": true,
+    "rtol": 0.0002,
+    "scalar_comparisons": 73440,
+    "trial_equal": true,
+    "values_outside_tolerance": 0
+  },
+  "recommendation": {
+    "candidate_environment_p95_below_20ms": false,
+    "choice": "KEEP_INFERENCE_ONLY",
+    "full_loop_realtime_acceptance": false,
+    "hardware_acceptance": false,
+    "mean_reduction_fraction": -0.01117723201570775,
+    "next_step": "Review parity and phase times before any full ROS/plant test; keep accepted FP32 model",
+    "p95_reduction_fraction": -0.007489786022146561,
+    "production_activated": false,
+    "scope": "One matched pair; PC environment-step time excludes policy inference, network and comparison-trace recording"
+  },
+  "baseline_host_phase_ms_per_control": {
+    "apply_action": 1.6287147133333333,
+    "commands": 0.9246511933333333,
+    "forward": 0.025432366666666668,
+    "metrics_and_probe": 2.2509560733333336,
+    "metrics_substep": 0.0171606,
+    "observations": 1.3805495133333332,
+    "physics_with_force_and_bounds": 10.195558433333334,
+    "process_action": 0.2843308666666667,
+    "reward": 0.004931373333333333,
+    "scene_update": 1.3867156933333333,
+    "scene_write": 4.030634119999999,
+    "sense": 0.7485086999999999,
+    "termination": 1.4212901933333335
+  },
+  "original_records_unchanged": true,
+  "worker_exited": true,
+  "next_step": "Profile the unchanged accepted inference-only pipeline; no optimization adoption or PPO",
+  "diagnostic_scope": "Nested host-wall scopes and cProfile call graph in report.json. No tensor operations or global Torch patches added.",
+  "cloud_power": "OFF_USER_CONFIRMED",
+  "cloud_connections": 0,
+  "orin_connections": 0,
+  "hardware_acceptance": false
+}

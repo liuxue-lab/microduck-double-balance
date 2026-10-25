@@ -1,0 +1,304 @@
+{
+  "schema": "microduck-stage12-github-ci-closure-v1",
+  "checked_at_utc": "2026-10-25T11:13:53.037562+00:00",
+  "commit": "33e40060921c8da45143ac4daaded345acead4df",
+  "tag": "stage-12-hil-ci-fix-v2-20261025",
+  "push_succeeded": true,
+  "full_fixed_GitHub_CI_passed": true,
+  "runs": [
+    {
+      "run_id": 40187224532,
+      "job_id": 121150474228,
+      "ref": "stage-12-hil-ci-fix-v2-20261025",
+      "url": "https://github.com/liuxue-lab/microduck-double-balance/actions/runs/40187224532",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-25T11:02:37Z",
+      "updated_at": "2026-10-25T11:12:18Z",
+      "cpu_test_summary": "2026-10-25T11:06:08.3431642Z 392 passed, 1 skipped, 3 warnings, 4 subtests passed in 178.34s (0:02:58)",
+      "offline_importer_tests": 20,
+      "relative_document_links": 349,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-25T11:02:41Z",
+          "completed_at": "2026-10-25T11:02:42Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-25T11:02:42Z",
+          "completed_at": "2026-10-25T11:02:45Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-25T11:02:45Z",
+          "completed_at": "2026-10-25T11:02:47Z"
+        },
+        {
+          "name": "Install frozen environment",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-25T11:02:47Z",
+          "completed_at": "2026-10-25T11:03:08Z"
+        },
+        {
+          "name": "Run CPU tests",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-25T11:03:08Z",
+          "completed_at": "2026-10-25T11:06:10Z"
+        },
+        {
+          "name": "Test offline documentation importer",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-25T11:06:10Z",
+          "completed_at": "2026-10-25T11:06:12Z"
+        },
+        {
+          "name": "Build wheel and source distribution",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-25T11:06:12Z",
+          "completed_at": "2026-10-25T11:06:14Z"
+        },
+        {
+          "name": "Check task-specific CLI discovery",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-25T11:06:14Z",
+          "completed_at": "2026-10-25T11:06:29Z"
+        },
+        {
+          "name": "Export swing policy with its deployment contract",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-10-25T11:06:29Z",
+          "completed_at": "2026-10-25T11:07:00Z"
+        },
+        {
+          "name": "Check checkpoint-to-ONNX rollout parity",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-10-25T11:07:00Z",
+          "completed_at": "2026-10-25T11:07:13Z"
+        },
+        {
+          "name": "Smoke-test stilt generation",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-10-25T11:07:13Z",
+          "completed_at": "2026-10-25T11:07:37Z"
+        },
+        {
+          "name": "Generate and verify the retained swing seat",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-10-25T11:07:37Z",
+          "completed_at": "2026-10-25T11:12:12Z"
+        },
+        {
+          "name": "Check relative documentation links",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-10-25T11:12:12Z",
+          "completed_at": "2026-10-25T11:12:13Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 25,
+          "started_at": "2026-10-25T11:12:13Z",
+          "completed_at": "2026-10-25T11:12:16Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 26,
+          "started_at": "2026-10-25T11:12:16Z",
+          "completed_at": "2026-10-25T11:12:16Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 27,
+          "started_at": "2026-10-25T11:12:16Z",
+          "completed_at": "2026-10-25T11:12:16Z"
+        }
+      ],
+      "log_sha256": "5cc05c6cc13a2f9ea487e8bc6e7922407533fb62ff4e18ffe0525f89f962b66f"
+    },
+    {
+      "run_id": 40187216971,
+      "job_id": 121150453705,
+      "ref": "double-balance",
+      "url": "https://github.com/liuxue-lab/microduck-double-balance/actions/runs/40187216971",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-25T11:02:31Z",
+      "updated_at": "2026-10-25T11:12:33Z",
+      "cpu_test_summary": "2026-10-25T11:06:30.5334564Z 392 passed, 1 skipped, 3 warnings, 4 subtests passed in 199.15s (0:03:19)",
+      "offline_importer_tests": 20,
+      "relative_document_links": 349,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-25T11:02:35Z",
+          "completed_at": "2026-10-25T11:02:37Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-25T11:02:37Z",
+          "completed_at": "2026-10-25T11:02:43Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-25T11:02:43Z",
+          "completed_at": "2026-10-25T11:02:46Z"
+        },
+        {
+          "name": "Install frozen environment",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-25T11:02:46Z",
+          "completed_at": "2026-10-25T11:03:09Z"
+        },
+        {
+          "name": "Run CPU tests",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-25T11:03:09Z",
+          "completed_at": "2026-10-25T11:06:32Z"
+        },
+        {
+          "name": "Test offline documentation importer",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-25T11:06:32Z",
+          "completed_at": "2026-10-25T11:06:34Z"
+        },
+        {
+          "name": "Build wheel and source distribution",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-25T11:06:34Z",
+          "completed_at": "2026-10-25T11:06:36Z"
+        },
+        {
+          "name": "Check task-specific CLI discovery",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-25T11:06:36Z",
+          "completed_at": "2026-10-25T11:06:50Z"
+        },
+        {
+          "name": "Export swing policy with its deployment contract",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-10-25T11:06:50Z",
+          "completed_at": "2026-10-25T11:07:20Z"
+        },
+        {
+          "name": "Check checkpoint-to-ONNX rollout parity",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-10-25T11:07:20Z",
+          "completed_at": "2026-10-25T11:07:33Z"
+        },
+        {
+          "name": "Smoke-test stilt generation",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-10-25T11:07:33Z",
+          "completed_at": "2026-10-25T11:07:57Z"
+        },
+        {
+          "name": "Generate and verify the retained swing seat",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-10-25T11:07:57Z",
+          "completed_at": "2026-10-25T11:12:29Z"
+        },
+        {
+          "name": "Check relative documentation links",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-10-25T11:12:29Z",
+          "completed_at": "2026-10-25T11:12:30Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 25,
+          "started_at": "2026-10-25T11:12:30Z",
+          "completed_at": "2026-10-25T11:12:30Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 26,
+          "started_at": "2026-10-25T11:12:30Z",
+          "completed_at": "2026-10-25T11:12:30Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 27,
+          "started_at": "2026-10-25T11:12:30Z",
+          "completed_at": "2026-10-25T11:12:30Z"
+        }
+      ],
+      "log_sha256": "0b66a4dcaca8e468211d26d58871746a11d322ca362e6e5c85ac64b3779b6a0d"
+    }
+  ],
+  "frozen_contract_preserved": true,
+  "new_source_commit_created": false,
+  "additional_user_commands_required": false,
+  "HIL_or_training_repeated": false,
+  "cloud_5090_shutdown": "USER_CONFIRMED_OFF",
+  "note": "Existing historical source snapshots and their original validation remain unchanged."
+}

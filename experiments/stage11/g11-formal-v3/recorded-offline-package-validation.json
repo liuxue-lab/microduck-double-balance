@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "script": "g11-v3-build/offline_setup.py",
+      "returncode": 0
+    },
+    {
+      "script": "g11-v2-return/audit.py",
+      "returncode": 0
+    },
+    {
+      "script": "g11-v3-build/validate_v3.py",
+      "returncode": 0
+    },
+    {
+      "script": "g11-v3-build/validate_delivery.py",
+      "returncode": 0
+    },
+    {
+      "script": "g11-v3-build/build_delivery.py",
+      "returncode": 0
+    }
+  ],
+  "source_ZIP_self_contained": true,
+  "rebuilt_launcher_byte_identical": true,
+  "native_calls": 0,
+  "pushes": 0
+}

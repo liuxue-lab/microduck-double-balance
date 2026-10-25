@@ -1,0 +1,24 @@
+{
+  "all_tensors_finite": true,
+  "bytes": 10073500,
+  "direct_resume": "BLOCKED_TASK_AND_TIMING_DIFFER",
+  "expected_sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+  "future_transfer_requires": "Explicit feature/normalizer/recurrent/optimizer/counter policy; no automatic warm start",
+  "inherited_performance_is_new_task_performance": false,
+  "key_mapping": {
+    "actual_checkpoint_read": true,
+    "changes": [],
+    "checkpoint_loaded": false,
+    "semantic_compatibility": "UNVERIFIED",
+    "status": "KEY_MAPPING_ONLY"
+  },
+  "observed_sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+  "optimizer_loaded": false,
+  "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage08/returned/5d998fc322345102/evidence-20260930T093645-8955/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+  "provenance": "Fixed 056eaf2 handoff, immutable copy included",
+  "runner_loaded": false,
+  "saved_or_converted": false,
+  "source_task": "Stage08 E retained tray double-balance policy",
+  "status": "PINNED_CHECKPOINT_INSPECTED_DIRECT_RESUME_REJECTED",
+  "tensors": 94
+}

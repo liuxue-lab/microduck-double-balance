@@ -1,0 +1,18 @@
+{
+  "schema": "stage12-headroom-approval-v1",
+  "status": "APPROVED",
+  "source": "User message: 批准, following the explicit 505-attempt / 2-hour proposal",
+  "approved_date_Asia_Shanghai": "2026-10-23",
+  "max_new_attempted_PPO_updates": 505,
+  "smoke_updates_included": 5,
+  "max_formal_updates": 500,
+  "max_compute_seconds": 7200,
+  "max_cleanup_seconds": 90,
+  "max_selection_episodes": 4,
+  "max_heldout_episodes": 4,
+  "old_budgets_frozen": true,
+  "trajectory_training_authorized": false,
+  "disturbance_training_in_this_budget": false,
+  "cloud_power_actions_authorized": false,
+  "current_cloud_ssh_required_at_runtime": true
+}

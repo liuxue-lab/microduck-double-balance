@@ -1,0 +1,589 @@
+{
+  "G11": "OPEN",
+  "PPO": 0,
+  "canonical_before": {
+    "attempted": 669081,
+    "completed": 669080
+  },
+  "checkpoint": {
+    "all_tensors_finite": true,
+    "bytes": 10073500,
+    "direct_resume": "BLOCKED_TASK_AND_TIMING_DIFFER",
+    "inherited_performance_is_new_task_performance": false,
+    "key_mapping": {
+      "actual_checkpoint_read": true,
+      "changes": [],
+      "checkpoint_loaded": false,
+      "semantic_compatibility": "UNVERIFIED",
+      "status": "KEY_MAPPING_ONLY"
+    },
+    "observed_sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+    "optimizer_loaded": false,
+    "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage08/returned/5d998fc322345102/evidence-20260930T093645-8955/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+    "runner_loaded": false,
+    "saved_or_converted": false,
+    "source_commit": "5f01cdacd565c0be9c93ccbf592821b1224f47b3",
+    "source_schema_sha256": "e740e6ca4ad74c53a0eaaa9c95dcae9b69fd5b0edf122593743cd015dcb388a7",
+    "status": "REUSED_VERIFIED_V1_CHECKPOINT_INSPECTION",
+    "tensor_inspection_repeated": false,
+    "tensors": 94,
+    "torch_load_calls_this_batch": 0
+  },
+  "cloud_training": 0,
+  "configuration_preflight": {
+    "checks": [
+      {
+        "detail": true,
+        "name": "world_cadence",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "seed_manual_reset",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "unassisted_actions",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "null_curriculum",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "command_roster",
+        "passed": true
+      },
+      {
+        "detail": {
+          "final_standing_command_zero": true,
+          "forward": 0.2,
+          "forward_bucket_retained": true,
+          "heading": 0.0,
+          "heading_range": [
+            -3.141592653589793,
+            3.141592653589793
+          ],
+          "init_velocity": 0.0,
+          "resampling_s": [
+            3.0,
+            8.0
+          ],
+          "standing": 1.0,
+          "world": 0.0
+        },
+        "name": "inherited_command",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "event_roster",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "interval_timers",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "observation_groups",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "actor/concatenation_history",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "actor/noise_roster",
+        "passed": true
+      },
+      {
+        "detail": {
+          "n_max": 0.03,
+          "n_min": -0.03,
+          "operation": "add",
+          "term": "base_ang_vel",
+          "width": 3
+        },
+        "name": "actor/base_ang_vel/noise",
+        "passed": true
+      },
+      {
+        "detail": {
+          "n_max": 0.01,
+          "n_min": -0.01,
+          "operation": "add",
+          "term": "projected_gravity",
+          "width": 3
+        },
+        "name": "actor/projected_gravity/noise",
+        "passed": true
+      },
+      {
+        "detail": {
+          "n_max": 0.001,
+          "n_min": -0.001,
+          "operation": "add",
+          "term": "joint_pos",
+          "width": 14
+        },
+        "name": "actor/joint_pos/noise",
+        "passed": true
+      },
+      {
+        "detail": {
+          "n_max": 0.25,
+          "n_min": -0.25,
+          "operation": "add",
+          "term": "joint_vel",
+          "width": 14
+        },
+        "name": "actor/joint_vel/noise",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "actor/base_ang_vel/delay",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "actor/projected_gravity/delay",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "actor/joint_vel/delay",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "critic/concatenation_history",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "critic/noise_roster",
+        "passed": true
+      },
+      {
+        "detail": true,
+        "name": "deterministic_spawn",
+        "passed": true
+      }
+    ],
+    "config_mutations": 0,
+    "constructor_IMU_bias": "Native once-only lazy draw during shape probe; retained and snapshotted after constructor",
+    "inherited_noise_preserved": true,
+    "passed": 21,
+    "physical_integrations": 0,
+    "private_RNG_boundary": "After constructor and real mixed-event reset probe, before public reset/step",
+    "status": "PASS",
+    "total": 21
+  },
+  "contact": {
+    "array_assignment_cap": 679520,
+    "array_assignments": 0,
+    "call_cap": 42470,
+    "calls": 7214,
+    "comparator_unchanged": true,
+    "complete_simulation_graph_validated": false,
+    "full_contact_archive": {
+      "all_inner_raw_blobs_retained": false,
+      "digest": "2cc793d729ecabd3162416eafbf3c2ba71a92757b482571d3dcc076e218c2a87",
+      "full_byte_checks_per_record": true,
+      "raw_samples": 11,
+      "records": 7214,
+      "scope": "G11 interface audit; G10 raw evidence reused"
+    },
+    "graph_close_attempted": true,
+    "graph_closed": true,
+    "graph_contains_only_sorting": true,
+    "graph_counts": {
+      "ContactGraph_allocation_attempted": 18,
+      "ContactGraph_allocation_completed": 18,
+      "ContactGraph_capture_begin_attempted": 1,
+      "ContactGraph_capture_begin_completed": 1,
+      "ContactGraph_capture_end_attempted": 1,
+      "ContactGraph_capture_end_completed": 1,
+      "ContactGraph_cleanup_sync_attempted": 1,
+      "ContactGraph_cleanup_sync_completed": 1,
+      "ContactGraph_copy_api_attempted": 16,
+      "ContactGraph_copy_api_completed": 16,
+      "ContactGraph_exec_destroy_attempted": 1,
+      "ContactGraph_exec_destroy_completed": 1,
+      "ContactGraph_graph_destroy_attempted": 1,
+      "ContactGraph_graph_destroy_completed": 1,
+      "ContactGraph_kernel_api_attempted": 33,
+      "ContactGraph_kernel_api_completed": 33,
+      "ContactGraph_launch_attempted": 7214,
+      "ContactGraph_launch_completed": 7214,
+      "ContactGraph_module_load_attempted": 1,
+      "ContactGraph_module_load_completed": 1
+    },
+    "graph_prepared": true,
+    "host_Contact_array_assignments": 0,
+    "implementation": "rigid-metadata-complete-sort-candidate-v1",
+    "installed_sources_modified": false,
+    "live_forward_calls": 7214,
+    "metadata_is_actual_kernel_write": true,
+    "opaque_native_contents_cloned": false,
+    "proof_stream_sha256": "df828841861aff944927bce056f92fe0aa40d7a166c4a8f0b148c10fef0d7e4b",
+    "protocol": "live-preconstraint-contact-order-v1",
+    "rigid_active_metadata_value": 0
+  },
+  "contact_close": null,
+  "counts": {
+    "Action_apply_attempted": 10,
+    "Action_apply_completed": 10,
+    "Action_process_action_attempted": 1,
+    "Action_process_action_completed": 1,
+    "Action_reset_attempted": 2,
+    "Action_reset_completed": 2,
+    "BAM_apply_delay_attempted": 12,
+    "BAM_apply_delay_completed": 12,
+    "BAM_compute_attempted": 12,
+    "BAM_compute_completed": 12,
+    "BVH_refit_attempted": 44,
+    "BVH_refit_completed": 44,
+    "CPU_forward_attempted": 3,
+    "CPU_forward_completed": 3,
+    "CPU_kinematics_attempted": 1,
+    "CPU_kinematics_completed": 1,
+    "Command_compute_attempted": 3,
+    "Command_compute_completed": 3,
+    "Command_reset_attempted": 2,
+    "Command_reset_completed": 2,
+    "ContactGraph_allocation_attempted": 18,
+    "ContactGraph_allocation_completed": 18,
+    "ContactGraph_capture_begin_attempted": 1,
+    "ContactGraph_capture_begin_completed": 1,
+    "ContactGraph_capture_end_attempted": 1,
+    "ContactGraph_capture_end_completed": 1,
+    "ContactGraph_cleanup_sync_attempted": 1,
+    "ContactGraph_cleanup_sync_completed": 1,
+    "ContactGraph_copy_api_attempted": 16,
+    "ContactGraph_copy_api_completed": 16,
+    "ContactGraph_exec_destroy_attempted": 1,
+    "ContactGraph_exec_destroy_completed": 1,
+    "ContactGraph_graph_destroy_attempted": 1,
+    "ContactGraph_graph_destroy_completed": 1,
+    "ContactGraph_kernel_api_attempted": 33,
+    "ContactGraph_kernel_api_completed": 33,
+    "ContactGraph_launch_attempted": 7214,
+    "ContactGraph_launch_completed": 7214,
+    "ContactGraph_module_load_attempted": 1,
+    "ContactGraph_module_load_completed": 1,
+    "Contact_order_apply_attempted": 7214,
+    "Contact_order_apply_completed": 7214,
+    "Cost_override_copy_attempted": 15289,
+    "Cost_override_copy_completed": 15289,
+    "Cost_reduce_kernel_attempted": 15289,
+    "Cost_reduce_kernel_completed": 15289,
+    "Cost_rows_kernel_attempted": 15289,
+    "Cost_rows_kernel_completed": 15289,
+    "Curriculum_compute_attempted": 2,
+    "Curriculum_compute_completed": 2,
+    "Curriculum_reset_attempted": 2,
+    "Curriculum_reset_completed": 2,
+    "Env_substep_counter_attempted": 10,
+    "Env_substep_counter_completed": 10,
+    "Event_apply_attempted": 4,
+    "Event_apply_completed": 4,
+    "Event_reset_attempted": 2,
+    "Event_reset_completed": 2,
+    "GPU_forward_attempted": 7214,
+    "GPU_forward_completed": 7214,
+    "GPU_reset_data_attempted": 2,
+    "GPU_reset_data_completed": 2,
+    "GPU_solver_attempted": 7214,
+    "GPU_solver_completed": 7214,
+    "Metrics_compute_attempted": 1,
+    "Metrics_compute_completed": 1,
+    "Metrics_reset_attempted": 2,
+    "Metrics_reset_completed": 2,
+    "Metrics_substep_attempted": 10,
+    "Metrics_substep_completed": 10,
+    "Model_expansion_attempted": 1,
+    "Model_expansion_completed": 1,
+    "Model_material_setup_attempted": 1,
+    "Model_material_setup_completed": 1,
+    "Norm_kernel_attempted": 23364,
+    "Norm_kernel_completed": 23364,
+    "Observation_compute_attempted": 3,
+    "Observation_compute_completed": 3,
+    "Observation_noise_attempted": 12,
+    "Observation_noise_completed": 12,
+    "Observation_reset_attempted": 2,
+    "Observation_reset_completed": 2,
+    "PPO": 0,
+    "RK4_integrator_attempted": 1792,
+    "RK4_integrator_completed": 1792,
+    "RNG_sample_attempted": 58,
+    "RNG_sample_completed": 58,
+    "Recorder_close_attempted": 1,
+    "Recorder_close_completed": 1,
+    "Recorder_post_reset_attempted": 2,
+    "Recorder_post_reset_completed": 2,
+    "Recorder_post_step_attempted": 1,
+    "Recorder_post_step_completed": 1,
+    "Reduction_allocation_attempted": 2,
+    "Reduction_allocation_completed": 2,
+    "Reduction_module_load_attempted": 1,
+    "Reduction_module_load_completed": 1,
+    "Reward_compute_attempted": 1,
+    "Reward_compute_completed": 1,
+    "Reward_reset_attempted": 2,
+    "Reward_reset_completed": 2,
+    "Rigid_metadata_kernel_attempted": 7214,
+    "Rigid_metadata_kernel_completed": 7214,
+    "Rigid_module_load_attempted": 1,
+    "Rigid_module_load_completed": 1,
+    "Scene_initialize_attempted": 1,
+    "Scene_initialize_completed": 1,
+    "Scene_reset_attempted": 2,
+    "Scene_reset_completed": 2,
+    "Scene_update_attempted": 10,
+    "Scene_update_completed": 10,
+    "Scene_write_attempted": 12,
+    "Scene_write_completed": 12,
+    "Sensor_context_set_attempted": 1,
+    "Sensor_context_set_completed": 1,
+    "Simulation_reset_attempted": 2,
+    "Simulation_reset_completed": 2,
+    "SolverContext_create_attempted": 7214,
+    "SolverContext_create_completed": 7214,
+    "SolverOrder_kernel_attempted": 8075,
+    "SolverOrder_kernel_completed": 8075,
+    "SolverOrder_module_load_attempted": 1,
+    "SolverOrder_module_load_completed": 1,
+    "Solver_linesearch_attempted": 8075,
+    "Solver_linesearch_completed": 8075,
+    "Solver_solver_iteration_attempted": 8075,
+    "Solver_solver_iteration_completed": 8075,
+    "Solver_update_constraint_attempted": 15289,
+    "Solver_update_constraint_completed": 15289,
+    "Solver_update_gradient_attempted": 7214,
+    "Solver_update_gradient_completed": 7214,
+    "Solver_update_gradient_incremental_attempted": 8075,
+    "Solver_update_gradient_incremental_completed": 8075,
+    "Solverinit_context_attempted": 7214,
+    "Solverinit_context_completed": 7214,
+    "Termination_compute_attempted": 1,
+    "Termination_compute_completed": 1,
+    "Termination_reset_attempted": 2,
+    "Termination_reset_completed": 2,
+    "cloud": 0,
+    "context_create_attempted": 2,
+    "context_create_completed": 2,
+    "endpoint_sensor_read_attempted": 41,
+    "endpoint_sensor_read_completed": 41,
+    "full_RL_environment_constructed": 1,
+    "graph_setup_suppressed": 3,
+    "integrations_attempted": 1792,
+    "integrations_completed": 1792,
+    "model_option_write_attempted": 62,
+    "model_option_write_completed": 62,
+    "position_write_attempted": 1792,
+    "position_write_completed": 1792,
+    "private_clock_write_attempted": 31,
+    "private_clock_write_completed": 31,
+    "public_clock_write_attempted": 10,
+    "public_clock_write_completed": 10,
+    "ray_batch_attempted": 44,
+    "ray_batch_completed": 44,
+    "sense_attempted": 44,
+    "sense_completed": 44,
+    "state_restore_attempted": 21,
+    "state_restore_completed": 21,
+    "state_snapshot_attempted": 10,
+    "state_snapshot_completed": 10
+  },
+  "cumulative_attempted": 670873,
+  "cumulative_completed": 670872,
+  "elapsed_s": 239.65113693200692,
+  "env_close": null,
+  "errors": [
+    {
+      "error": "RuntimeError('Unclassified G11 state owner env._double_balance_tray_site_ids: dict')",
+      "stage": "worker",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/lx/microduck-double-balance/artifacts/double-balance-stage11/g11-formal-environment-v2/20261015T141720Z-e3e8fb/program/worker_g11.py\", line 342, in run\n    boundary('step-%d-after'%index)\n  File \"/home/lx/microduck-double-balance/artifacts/double-balance-stage11/g11-formal-environment-v2/20261015T141720Z-e3e8fb/program/worker_g11.py\", line 205, in boundary\n    sync(); roots, roster = roots_for(env, bank, torch, wp)\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/lx/microduck-double-balance/artifacts/double-balance-stage11/g11-formal-environment-v2/20261015T141720Z-e3e8fb/program/formal_owners.py\", line 111, in roots_for\n    numeric_owner('env', env, excluded=(\n  File \"/home/lx/microduck-double-balance/artifacts/double-balance-stage11/g11-formal-environment-v2/20261015T141720Z-e3e8fb/program/formal_owners.py\", line 107, in numeric_owner\n    raise RuntimeError('Unclassified G11 state owner '+label+'.'+n+': '+type(v).__name__)\nRuntimeError: Unclassified G11 state owner env._double_balance_tray_site_ids: dict\n"
+    }
+  ],
+  "full_matrix_completed": false,
+  "gate_completed": 10,
+  "gate_total": 11,
+  "macro_completed": 10,
+  "manager_counter_scope": "Public real reset/step/close after construction; constructor shape probes/startup precede this manager trace; native CPU/GPU entry points counted before environment construction",
+  "native_ledger": {
+    "attempts": {
+      "CPU_forward": 3,
+      "GPU_forward": 7214,
+      "integrations": 1792
+    },
+    "completed": {
+      "CPU_forward": 3,
+      "GPU_forward": 7214,
+      "integrations": 1792
+    },
+    "exact": true,
+    "incomplete_tail": false,
+    "integration_attempted_lower": 1792,
+    "integration_attempted_upper": 1792,
+    "integration_completed_lower": 1792,
+    "integration_completed_upper": 1792,
+    "pending": {},
+    "rows": 3682
+  },
+  "no_automatic_gate_closure": true,
+  "no_automatic_retry": true,
+  "real_environment_constructed": true,
+  "reductions": {
+    "candidate_only": true,
+    "changed_constraint_order": {
+      "all_inner_raw_blobs_retained": false,
+      "all_live_oracle_checks_retained": true,
+      "pending": false,
+      "raw_samples": 11,
+      "records": 8075,
+      "reordered_lists": 0,
+      "sha256": "cac44c8ead290d29496e6b56c6781394a740d6cd7bc1b361b4d8ab172cf4dc9a",
+      "tolerance_changes": 0
+    },
+    "counts": {
+      "Cost_override_copy_attempted": 15289,
+      "Cost_override_copy_completed": 15289,
+      "Cost_reduce_kernel_attempted": 15289,
+      "Cost_reduce_kernel_completed": 15289,
+      "Cost_rows_kernel_attempted": 15289,
+      "Cost_rows_kernel_completed": 15289,
+      "GPU_solver_attempted": 7214,
+      "GPU_solver_completed": 7214,
+      "Norm_kernel_attempted": 23364,
+      "Norm_kernel_completed": 23364,
+      "Reduction_allocation_attempted": 2,
+      "Reduction_allocation_completed": 2,
+      "Reduction_module_load_attempted": 1,
+      "Reduction_module_load_completed": 1,
+      "SolverContext_create_attempted": 7214,
+      "SolverContext_create_completed": 7214,
+      "SolverOrder_kernel_attempted": 8075,
+      "SolverOrder_kernel_completed": 8075,
+      "SolverOrder_module_load_attempted": 1,
+      "SolverOrder_module_load_completed": 1,
+      "Solver_linesearch_attempted": 8075,
+      "Solver_linesearch_completed": 8075,
+      "Solver_solver_iteration_attempted": 8075,
+      "Solver_solver_iteration_completed": 8075,
+      "Solver_update_constraint_attempted": 15289,
+      "Solver_update_constraint_completed": 15289,
+      "Solver_update_gradient_attempted": 7214,
+      "Solver_update_gradient_completed": 7214,
+      "Solver_update_gradient_incremental_attempted": 8075,
+      "Solver_update_gradient_incremental_completed": 8075,
+      "Solverinit_context_attempted": 7214,
+      "Solverinit_context_completed": 7214
+    },
+    "installed_sources_modified": false,
+    "prior_batch_causal_improvement_established": false,
+    "private_device_bytes": 4100,
+    "solver_tolerances_unchanged": true
+  },
+  "reset_checks": {
+    "empty_exact": true,
+    "full": true,
+    "global_phase_preserved": true,
+    "invalid_before_mutation": 4,
+    "selective": true
+  },
+  "resource_close": {
+    "all_released": true,
+    "by_type": {
+      "Bvh": 1,
+      "Mesh": 39,
+      "Texture2D": 2
+    },
+    "scope": "all instantiated RenderContext mesh/hfield/flex/BVH/texture owners; allocator pools and driver context remain process-managed",
+    "targets": 42
+  },
+  "resource_scope": "Final context only; constructor transient context contents are not cloned",
+  "rng_policy": {
+    "command_policy": {
+      "final_standing_command_zero": true,
+      "forward": 0.2,
+      "forward_bucket_retained": true,
+      "heading": 0.0,
+      "heading_range": [
+        -3.141592653589793,
+        3.141592653589793
+      ],
+      "init_velocity": 0.0,
+      "resampling_s": [
+        3.0,
+        8.0
+      ],
+      "standing": 1.0,
+      "world": 0.0
+    },
+    "command_sampling": "Pinned native base method with private uniform draws; turn-in-place extension is natively a no-op at p=0",
+    "delay_buffers": 4,
+    "interval_policy": "G09 reset_event/apply_interval, local0/local1/global2 streams",
+    "observation_noise": {
+      "amplitudes_changed": false,
+      "default_RNG_used": false,
+      "group_flags_changed": false,
+      "original_formula_order": true,
+      "stream": "obs_noise/0",
+      "terms": [
+        {
+          "n_max": 0.03,
+          "n_min": -0.03,
+          "operation": "add",
+          "term": "base_ang_vel",
+          "width": 3
+        },
+        {
+          "n_max": 0.01,
+          "n_min": -0.01,
+          "operation": "add",
+          "term": "projected_gravity",
+          "width": 3
+        },
+        {
+          "n_max": 0.001,
+          "n_min": -0.001,
+          "operation": "add",
+          "term": "joint_pos",
+          "width": 14
+        },
+        {
+          "n_max": 0.25,
+          "n_min": -0.25,
+          "operation": "add",
+          "term": "joint_vel",
+          "width": 14
+        }
+      ]
+    },
+    "random_training_not_released": true,
+    "spawn_reset_rng_draws": 0,
+    "streams": [
+      "bam_lag/0",
+      "command_time/0",
+      "command_value/0",
+      "event_global_2/0",
+      "event_local_0/0",
+      "event_local_1/0",
+      "obs_lag/0",
+      "obs_noise/0",
+      "obs_phase/0"
+    ]
+  },
+  "status": "G11_STOPPED_PRESERVE_NO_RETRY"
+}

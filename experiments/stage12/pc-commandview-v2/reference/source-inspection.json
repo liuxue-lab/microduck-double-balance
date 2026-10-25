@@ -1,0 +1,46 @@
+{
+  "primary_sources": {
+    "actuator-v1.3.0.py": {
+      "url": "https://github.com/mujocolab/mjlab/blob/v1.3.0/src/mjlab/actuator/actuator.py",
+      "git_blob_sha1": "cb9df5cceaee2dc38d86688c33e0ea5d508e30d9",
+      "bytes": 13443,
+      "sha256": "ed57149b527c529b37b6322f20cac3eeed89b7355847ad712c5d44b13549f1ab"
+    },
+    "entity-v1.3.0.py": {
+      "url": "https://github.com/mujocolab/mjlab/blob/v1.3.0/src/mjlab/entity/entity.py",
+      "git_blob_sha1": "d9880f0aa9940d05a7f79683fedd431675e52ffc",
+      "bytes": 44342,
+      "sha256": "817896ec3ce69c8ef18cb3d8e2519b85d1db25f70126af5e643c34a0b054e572"
+    },
+    "delay-buffer-v1.3.0.py": {
+      "url": "https://github.com/mujocolab/mjlab/blob/v1.3.0/src/mjlab/utils/buffers/delay_buffer.py",
+      "git_blob_sha1": "642be6f8bd47c8e7ea2c0594bf519a8801915e45",
+      "bytes": 10201,
+      "sha256": "845e68da9e681adee1e93f90b4b1937c282a27f82a147f1fe3c19d83204049b5"
+    },
+    "circular-buffer-v1.3.0.py": {
+      "url": "https://github.com/mujocolab/mjlab/blob/v1.3.0/src/mjlab/utils/buffers/circular_buffer.py",
+      "git_blob_sha1": "1031944031db96a8f2924349f1a0e9a2e8741bf3",
+      "bytes": 8021,
+      "sha256": "6a96cb79afbfb2d1234c3ee8e7531db371262673ddc509da7f3e66410ef2ae13"
+    }
+  },
+  "original_sources_executed_in_CPU_tests": true,
+  "replacement_scope": "Only get_command basic slices for proven contiguous mappings; otherwise original advanced indexing",
+  "delay_and_random_state_unchanged": true,
+  "BAM_input_staging_copies_retained": true,
+  "read_graph_candidate_enabled": false,
+  "original_500Hz_audit_and_force_lifecycle": true,
+  "CPU_tests": 80,
+  "actual_GPU_tested": false,
+  "actual_speed_measured": false,
+  "original_index_builders_executed": true,
+  "index_dtype_declarations": {
+    "entity_joint_q_adr": "torch.int / int32",
+    "entity_joint_v_adr": "torch.int / int32",
+    "actuator_target_ids": "torch.long / int64"
+  },
+  "original_index_arrays_cast_or_replaced": false,
+  "integer_dtype_combinations_tested": 8,
+  "old_failure_reproduced": true
+}

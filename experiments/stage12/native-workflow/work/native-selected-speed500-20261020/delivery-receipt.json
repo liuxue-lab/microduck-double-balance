@@ -1,0 +1,65 @@
+{
+  "created": [
+    {
+      "operation": "create_library_file",
+      "status": "succeeded",
+      "path": "/microduck-stage12-selected-speed500-v1-20261020.py",
+      "file_id": "file_00000000d16081f587629571fa4605a4",
+      "library_file_id": "libfile_aaad5644945c8191a953e97b0343d033",
+      "file_name": "microduck-stage12-selected-speed500-v1-20261020.py",
+      "current_version_number": 0,
+      "restored_from_version_number": null,
+      "xattrs": [
+        {
+          "name": "user.library-file-version",
+          "value": "0"
+        }
+      ],
+      "directory_id": "libdir_267eed6c65e48191a7320f2555efee68",
+      "mime_type": "text/x-python",
+      "library_artifact_type": "other",
+      "file_size_bytes": 38160
+    },
+    {
+      "operation": "create_library_file",
+      "status": "succeeded",
+      "path": "/microduck-stage12-selected-speed500-v1-review-20261020.zip",
+      "file_id": "file_00000000f48881fb9a4b6bb62e31f29c",
+      "library_file_id": "libfile_35b38c9f9e3081918988fae2ab8e2d97",
+      "file_name": "microduck-stage12-selected-speed500-v1-review-20261020.zip",
+      "current_version_number": 0,
+      "restored_from_version_number": null,
+      "xattrs": [
+        {
+          "name": "user.library-file-version",
+          "value": "0"
+        }
+      ],
+      "directory_id": "libdir_267eed6c65e48191a7320f2555efee68",
+      "mime_type": "application/zip",
+      "library_artifact_type": "other",
+      "file_size_bytes": 210123
+    }
+  ],
+  "guide": {
+    "operation": "replace_library_file",
+    "status": "succeeded",
+    "path": "/microduck-stage12-native-v2-guide-20261020.txt",
+    "file_id": "file_0000000096c881fb99e6317702c39128",
+    "library_file_id": "libfile_da068ab94a3481919a9d82393f6ff454",
+    "file_name": "microduck-stage12-native-v2-guide-20261020.txt",
+    "current_version_number": 14,
+    "restored_from_version_number": null,
+    "xattrs": [
+      {
+        "name": "user.library-file-version",
+        "value": "14"
+      }
+    ],
+    "directory_id": "libdir_267eed6c65e48191a7320f2555efee68",
+    "mime_type": "text/plain",
+    "library_artifact_type": "report",
+    "file_size_bytes": 50815,
+    "external_connectors_accessed": false
+  }
+}

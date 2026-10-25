@@ -1,0 +1,45 @@
+{
+  "status": "LOCAL_EVIDENCE_VERIFIED_BEFORE_COMMIT",
+  "source_head": "00e34c2038771c5d4ad49fe45dff828c0232e60c",
+  "frozen_runtime_files": 101,
+  "runtime_manifest_sha256": "b61850afbd6fa0deccb3a23a098a910aae74bc0e9b01cca2ee0634c2d1f6ecfd",
+  "evidence_manifest_counts": [
+    {
+      "batch": "A",
+      "files": 117,
+      "manifest_sha256": "f61c721638ae811caf9204056c18b172578c090694185d32262a43f057e47222"
+    },
+    {
+      "batch": "B",
+      "files": 68,
+      "manifest_sha256": "a6783f53534a0bbc33e640914bbebee52ec1b7d76eedcdcd2ddc3955482ee59b"
+    },
+    {
+      "batch": "C",
+      "files": 84,
+      "manifest_sha256": "d6868a526bd84633f7c28517b97ad5e5afa92fae64eb7cd1526d5c6787410dac"
+    },
+    {
+      "batch": "D",
+      "files": 142,
+      "manifest_sha256": "1893c10f275cd07793e1883dfdfde86fbb464f5c148165cf17e8bbfc50c4385d"
+    }
+  ],
+  "review_files": 411,
+  "review_archives": 6,
+  "replay_raw_files": 80,
+  "retained_primary_sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+  "evidence_inventory_sha256": "533a0f4f6a464dd7d25372ed16bc9a832adbcbc1726899bcefaada155d635b23",
+  "new_ppo_updates": 0,
+  "simulation_launched": false,
+  "network_used": false,
+  "push_performed": false,
+  "cloud_status": "OFF_CONFIRMED_BY_USER",
+  "cloud_status_basis": "User confirmation of prior manual shutdown; no cloud query or action performed by this tool.",
+  "cloud_data_must_be_preserved": true,
+  "full_stage09_cloud_trajectories_returned": false,
+  "B1_and_C1_original_postcheck_gaps_preserved": true,
+  "policy_objective": "UNMET_NO_NEW_QUALIFIED_POLICY",
+  "root_cause": "NOT_FULLY_ESTABLISHED",
+  "publication": "COMMIT_TAG_AND_USER_SSH_PUSH_PENDING_AT_CREATION_OF_THIS_RECORD"
+}

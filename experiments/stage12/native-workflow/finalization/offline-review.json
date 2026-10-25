@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "count": 23,
+  "checks": [
+    "read_only_preflight_writes_nothing",
+    "one_commit_annotated_tag_and_incremental_bundle",
+    "completed_rerun_is_idempotent",
+    "bundle_import_fast_forward_matches_commit_and_tag",
+    "partial_install_and_owned_staging_resume_unrelated_file_preserved",
+    "wrong_branch_stops_before_archival_write",
+    "wrong_origin_stops_before_archival_write",
+    "wrong_model_stops_before_archival_write",
+    "source_modified_stops_before_archival_write",
+    "conflicting_lightweight_tag_stops_before_archival_write",
+    "merge_in_progress_stops_before_archival_write",
+    "unrelated_index_is_not_changed_or_committed",
+    "conflicting_target_is_not_overwritten",
+    "symlink_target_cannot_escape_repo",
+    "matching_worktree_cannot_hide_different_committed_runtime",
+    "descendant_with_identical_runtime_is_preserved",
+    "known_missing_and_modified_runtime_committed_without_rewriting_bytes",
+    "runtime_integration_rerun_preserves_same_commit",
+    "approved_path_does_not_allow_unknown_committed_source_overwrite",
+    "resume_after_commit_before_tag",
+    "resume_after_tag_before_bundle",
+    "git_hook_failure_preserves_index_for_exact_retry",
+    "concurrent_finalizer_cannot_mutate_repo"
+  ],
+  "engine_sha256": "3521a378692afe2b94888bb782edae4614bbc15ff3428abc69c79447897b526d",
+  "scope": "Real disposable Git fixtures; synthetic model bytes; no user repository, cloud, Torch, CUDA, PPO or simulation accessed"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "stage09-f2-powerloss-20261001",
+  "authorization_utc": "2026-09-30T18:36:08+00:00",
+  "authorization": "User approved F2 +25 attempts; total 2025; original four-hour start/reserve retained",
+  "original_runtime_manifest_sha256": "3bb06abec7d30ad3028f20f436111b26ea4d50f87cc1e25e117f59c48ae8216c",
+  "changed_runtime_files": {
+    "src/mjlab_microduck/double_balance_stage09.py": {
+      "before": "dc908ef26ccfd8c48201bb5a9c4b168195cc83f0bfcfc7cc093559aeb6dbb680",
+      "after": "44e86930e27d28725e0917c59cb43ad295ddfbb8d47fc90797a0327a36ed74f6"
+    },
+    "src/mjlab_microduck/double_balance_stage09_budget.py": {
+      "before": "201ff0aee9e82d6ffd0123736e32edd108b31b9e035887069977bfc4f09768b8",
+      "after": "649d655adc116d5bb3edd6593b64c180efc8da872b43d5bfb2431ad67c237a77"
+    },
+    "src/mjlab_microduck/double_balance_stage09_campaign.py": {
+      "before": "464916664585d474a554b1d833113247958a925a692658d6409571388a7bb117",
+      "after": "cbd3f3594d3001ed96cd724db4385b68c9bc19e221915441cbd4c9b49de69440"
+    }
+  },
+  "added_runtime_files": [
+    "docs/audits/stage-09-runtime-before-powerloss.json",
+    "docs/audits/stage-09-recovery-20261001.json",
+    "docs/handoffs/microduck-stage-09-powerloss-recovery.md",
+    "scripts/stage09_recover_powerloss.py",
+    "scripts/stage09_monitor.py",
+    "tests/test_stage09_recovery.py"
+  ],
+  "attempts_before": {
+    "F0": 500,
+    "F1": 500,
+    "F2": 175,
+    "F3": 0
+  },
+  "saved_F2_updates": 150,
+  "lost_F2_updates": 25,
+  "authorized_attempt_caps": {
+    "F0": 500,
+    "F1": 500,
+    "F2": 525,
+    "F3": 500
+  },
+  "authorized_total_attempts": 2025,
+  "model_updates_per_profile": 500,
+  "maximum_cloud_hours": 4,
+  "finalization_reserve_hours": 0.75,
+  "reset_budget": false,
+  "reset_attempts": false,
+  "exact_trajectory_resume": false,
+  "unchanged": [
+    "reward functions and weights",
+    "Stage 03 physics",
+    "Stage 04 old success metrics",
+    "actor/critic and normalizer restore",
+    "Adam/LR/progress restore",
+    "episode/RNG/RNN/delay reset",
+    "zero assistance",
+    "candidate selection and held-out protocols"
+  ],
+  "stage09_complete": false
+}

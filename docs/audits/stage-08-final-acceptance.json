@@ -1,0 +1,391 @@
+{
+  "stage": 8,
+  "status": "TECHNICAL_REVIEW_COMPLETE_STRICT_SUCCESSES_OBSERVED_RESIDUAL_FAILURES_AND_HEAD_POSTURE_OPEN",
+  "technical_work_complete": true,
+  "review_date_local": "2026-09-30",
+  "timezone": "Asia/Shanghai",
+  "publication_state_at_delivery": "LOCAL_IMPORT_ANNOTATED_TAG_AND_SSH_PUSH_REQUIRED",
+  "baseline_commit": "1fe5f54dc467205b846a807f2bd494c46f3e2c40",
+  "training_runtime_git_head": "61060f0684aabb460727a0d226b8d17225ee7954",
+  "campaign_id": "08b6a999-c815-4afc-a99a-b6ac07fd587f",
+  "policy_objective_status": "STRICT_SUCCESSES_OBSERVED_WITH_RESIDUAL_FAILURES",
+  "all_evaluated_episodes_successful": false,
+  "overall_required_success_rate_specified": false,
+  "head_forward_objective_satisfied": "NOT_DEFINED_OR_VERIFIED; visible head-turning remains unresolved",
+  "frozen_physics_task_dependencies_changed": false,
+  "stage06_smoke_repeated": false,
+  "formal_training": {
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "cloud_only": true,
+    "num_envs": 4096,
+    "rollout_steps": 24,
+    "updates_by_phase": {
+      "screening": 2500,
+      "replication": 8000,
+      "extension": 7500
+    },
+    "total_new_updates": 18000,
+    "total_new_formal_transitions": 1769472000,
+    "capacity_updates_counted_as_formal": false,
+    "source_checkpoint_sha256": "c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7",
+    "stage07_final_6000_used_for_training": false,
+    "new_training_planned": false
+  },
+  "final_evaluation": {
+    "status": "PASS",
+    "models": [
+      {
+        "identity": {
+          "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260928/segment-001/checkpoints/update_002750.pt",
+          "sha256": "42e759a80626859aa6756bec81e3fd07e53845a4ec7ef1a56f5054fd3dfacd1f",
+          "role": "candidate",
+          "profile": "E",
+          "seed": 20260928,
+          "experiment_completed_updates": 2750,
+          "rank": [
+            0.75,
+            0.734375,
+            10.0,
+            8.4,
+            8.42,
+            -0.018859375075408025,
+            -2750
+          ]
+        },
+        "held_out": {
+          "episodes": 768,
+          "successes": 577,
+          "success_fraction": 0.7513020833333334,
+          "wilson95": [
+            0.7195307995635748,
+            0.7805719036389379
+          ],
+          "scope": "one checkpoint, 768 randomized initial states"
+        },
+        "failure_summary": {
+          "episodes": 768,
+          "successes": 577,
+          "mean_seconds": 10.0,
+          "mean_double_balance_stable_fraction": 0.9689687939050297,
+          "mean_lower_speed_violation_fraction": 0.019645833465195512,
+          "mean_terminated": 0,
+          "median_terminal_stable_seconds": 8.24,
+          "median_longest_stable_seconds": 8.39,
+          "failed_despite_any_5s_streak": 99,
+          "mean_violation_fractions": {
+            "top_center": 0.006148437553141169,
+            "top_height": 0.0,
+            "top_speed": 0.00826041676918976,
+            "lower_offset": 0.0,
+            "lower_height_min": 0.0,
+            "lower_height_max": 0.0,
+            "robot_tilt": 0.0,
+            "lower_ball_speed": 0.019645833465195512,
+            "unassisted": 0.0
+          }
+        }
+      },
+      {
+        "identity": {
+          "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+          "sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+          "role": "candidate",
+          "profile": "E",
+          "seed": 20260929,
+          "experiment_completed_updates": 4000,
+          "rank": [
+            0.8828125,
+            0.828125,
+            10.0,
+            9.030000000000001,
+            9.030000000000001,
+            -0.010875000114538125,
+            -4000
+          ]
+        },
+        "held_out": {
+          "episodes": 768,
+          "successes": 652,
+          "success_fraction": 0.8489583333333334,
+          "wilson95": [
+            0.8218994774213815,
+            0.8725436544867708
+          ],
+          "scope": "one checkpoint, 768 randomized initial states"
+        },
+        "failure_summary": {
+          "episodes": 768,
+          "successes": 652,
+          "mean_seconds": 9.989296875,
+          "mean_double_balance_stable_fraction": 0.9784859673430523,
+          "mean_lower_speed_violation_fraction": 0.013617450992569502,
+          "mean_terminated": 0.0013020833333333333,
+          "median_terminal_stable_seconds": 8.91,
+          "median_longest_stable_seconds": 8.92,
+          "failed_despite_any_5s_streak": 70,
+          "mean_violation_fractions": {
+            "top_center": 0.0034956695165722826,
+            "top_height": 0.0,
+            "top_speed": 0.0064053722923442065,
+            "lower_offset": 0.0001463015020514528,
+            "lower_height_min": 2.9260299925226718e-05,
+            "lower_height_max": 0.0,
+            "robot_tilt": 8.778089735036095e-05,
+            "lower_ball_speed": 0.013617450992569502,
+            "unassisted": 0.0
+          }
+        }
+      },
+      {
+        "identity": {
+          "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260930/segment-001/checkpoints/update_003250.pt",
+          "sha256": "89c7cedb9567f144228deb4d98465a9b0aad08be9f7c3ad391aa6a12ade8431c",
+          "role": "candidate",
+          "profile": "E",
+          "seed": 20260930,
+          "experiment_completed_updates": 3250,
+          "rank": [
+            0.796875,
+            0.640625,
+            10.0,
+            8.55,
+            8.55,
+            -0.019546875069863745,
+            -3250
+          ]
+        },
+        "held_out": {
+          "episodes": 768,
+          "successes": 586,
+          "success_fraction": 0.7630208333333334,
+          "wilson95": [
+            0.7316841919751783,
+            0.7917393626720112
+          ],
+          "scope": "one checkpoint, 768 randomized initial states"
+        },
+        "failure_summary": {
+          "episodes": 768,
+          "successes": 586,
+          "mean_seconds": 10.0,
+          "mean_double_balance_stable_fraction": 0.9725000434555113,
+          "mean_lower_speed_violation_fraction": 0.01920052094192215,
+          "mean_terminated": 0,
+          "median_terminal_stable_seconds": 8.51,
+          "median_longest_stable_seconds": 8.540000000000001,
+          "failed_despite_any_5s_streak": 110,
+          "mean_violation_fractions": {
+            "top_center": 0.0034531250318347397,
+            "top_height": 0.0,
+            "top_speed": 0.006122395962241474,
+            "lower_offset": 0.0,
+            "lower_height_min": 0.0,
+            "lower_height_max": 0.0,
+            "robot_tilt": 0.0,
+            "lower_ball_speed": 0.01920052094192215,
+            "unassisted": 0.0
+          }
+        }
+      },
+      {
+        "identity": {
+          "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/references/update_001000.pt",
+          "sha256": "c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7",
+          "role": "source-1000"
+        },
+        "held_out": {
+          "episodes": 768,
+          "successes": 0,
+          "success_fraction": 0.0,
+          "wilson95": [
+            4.336808689942018e-19,
+            0.004977005027125048
+          ],
+          "scope": "one checkpoint, 768 randomized initial states"
+        },
+        "failure_summary": {
+          "episodes": 768,
+          "successes": 0,
+          "mean_seconds": 10.0,
+          "mean_double_balance_stable_fraction": 0.8614609784757098,
+          "mean_lower_speed_violation_fraction": 0.09897135448894308,
+          "mean_terminated": 0,
+          "median_terminal_stable_seconds": 0.14,
+          "median_longest_stable_seconds": 1.1,
+          "failed_despite_any_5s_streak": 0,
+          "mean_violation_fractions": {
+            "top_center": 0.0220651042376024,
+            "top_height": 0.0,
+            "top_speed": 0.04539062500164922,
+            "lower_offset": 0.0,
+            "lower_height_min": 0.0,
+            "lower_height_max": 0.0,
+            "robot_tilt": 0.0,
+            "lower_ball_speed": 0.09897135448894308,
+            "unassisted": 0.0
+          }
+        }
+      },
+      {
+        "identity": {
+          "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/references/update_006000.pt",
+          "sha256": "a5ad0aedb500555b649c5d4b11aded833cbc0f932c1fff1a747e1492534c495c",
+          "role": "reference-6000"
+        },
+        "held_out": {
+          "episodes": 768,
+          "successes": 0,
+          "success_fraction": 0.0,
+          "wilson95": [
+            4.336808689942018e-19,
+            0.004977005027125048
+          ],
+          "scope": "one checkpoint, 768 randomized initial states"
+        },
+        "failure_summary": {
+          "episodes": 768,
+          "successes": 0,
+          "mean_seconds": 9.988958333333333,
+          "mean_double_balance_stable_fraction": 0.3516714800110397,
+          "mean_lower_speed_violation_fraction": 0.6220942988293245,
+          "mean_terminated": 0.0013020833333333333,
+          "median_terminal_stable_seconds": 0.0,
+          "median_longest_stable_seconds": 0.18,
+          "failed_despite_any_5s_streak": 0,
+          "mean_violation_fractions": {
+            "top_center": 0.028664747931240225,
+            "top_height": 0.0,
+            "top_speed": 0.04509388712904183,
+            "lower_offset": 0.00015419408252152303,
+            "lower_height_min": 5.139802427341541e-05,
+            "lower_height_max": 0.0,
+            "robot_tilt": 0.0,
+            "lower_ball_speed": 0.6220942988293245,
+            "unassisted": 0.0
+          }
+        }
+      }
+    ],
+    "protocols": 25,
+    "held_out_initial_states_per_model": 768,
+    "nominal_count": 64,
+    "dev_count": 128,
+    "held_out_seeds": [
+      8201,
+      8202,
+      8203
+    ],
+    "scope": "Randomized initial states only, no physics DR, pushes or real hardware",
+    "selection_locked_before_test": true,
+    "selection_sha256": "a921801927750f705075ebcb2048323b01413bd122b31d1472dc77f86e1eb031",
+    "primary_demonstration_seed_selected_using_dev": 20260929,
+    "primary": {
+      "identity": {
+        "path": "/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/extension/E-20260929/segment-001/checkpoints/update_004000.pt",
+        "sha256": "86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97",
+        "role": "candidate",
+        "profile": "E",
+        "seed": 20260929,
+        "experiment_completed_updates": 4000,
+        "rank": [
+          0.8828125,
+          0.828125,
+          10.0,
+          9.030000000000001,
+          9.030000000000001,
+          -0.010875000114538125,
+          -4000
+        ]
+      },
+      "held_out": {
+        "episodes": 768,
+        "successes": 652,
+        "success_fraction": 0.8489583333333334,
+        "wilson95": [
+          0.8218994774213815,
+          0.8725436544867708
+        ],
+        "scope": "one checkpoint, 768 randomized initial states"
+      }
+    }
+  },
+  "local_video_review": {
+    "status": "SAMPLED_VISUAL_REVIEW_COMPLETE_WITH_OPEN_POSTURE_FINDING",
+    "videos": 9,
+    "archive_sha256": "e84aca26ad2f1d0f17f84590710ed6291b317f166e24993a9111a48f517c04cd",
+    "path": "/home/lx/microduck-double-balance/artifacts/double-balance-stage08/local-final-review/20260930T100148Z-vn_5n9kx/microduck-stage08-local-review.zip",
+    "new_ppo_updates": 0,
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "head_posture_finding": "OBSERVED_UNRESOLVED"
+  },
+  "archive_return": {
+    "path": "/root/autodl-tmp/microduck-double-balance/artifacts/stage08-return-20260930T083316Z-kf_2ctjw/microduck-stage08-necessary.tar.gz",
+    "sha256": "5d998fc3223451029d627bf0e0100b17df1ee77b711fc0d423ea18e29281bbd7",
+    "size_bytes": 716127658,
+    "manifest_sha256": "5b2fc6dd178f57a8e124675d2182d830267eb7e1a7c4961806328138c9d9639c",
+    "uncompressed_bytes": 1472168917,
+    "member_count": 1353,
+    "review_sha256": "4d3ab6fd0ddd029fabb5bb1c7735f03d779788ba61a2e4dcf010fba5053d233a",
+    "created_utc": "2026-09-30T08:33:50.497935+00:00",
+    "git_head": "61060f0684aabb460727a0d226b8d17225ee7954",
+    "campaign_id": "08b6a999-c815-4afc-a99a-b6ac07fd587f",
+    "retention": "source 1000, reference 6000, each segment endpoint, development best and frozen selection; other periodic models remain on cloud",
+    "omitted_checkpoint_count": 216
+  },
+  "return_receipt_sha256": "69fd4ffff732cf3cf35fa1d160b0233bf754b322172ed6a3c47132b243ea7240",
+  "extracted_directory": "/home/lx/microduck-double-balance/artifacts/double-balance-stage08/returned/5d998fc322345102/evidence-20260930T093645-8955",
+  "shutdown": {
+    "ready_to_shutdown": true,
+    "necessary_files_returned_and_sha256_verified": true,
+    "no_remaining_cloud_work": true,
+    "reminder_sent": true,
+    "reminder_paused": true,
+    "shutdown_confirmed_by_user": false,
+    "automatic_guard_further_execution_authorized": false
+  },
+  "open_findings": [
+    "Head remains turned relative to trunk; head-facing-forward target is absent. No head-angle telemetry in existing trace.",
+    "Primary held-out success 652/768; 116 failures including one fell termination.",
+    "Residual lower-ball speed bursts interrupt terminal stability; causal reward attribution remains unproven.",
+    "Results are simulation and initial-state generalization only; robustness and real deployment untested."
+  ],
+  "local_publication_protocol": "docs/handoffs/microduck-local-ssh-push-protocol.md",
+  "evidence_files": [
+    {
+      "path": "docs/audits/stage-08-extension-review.json",
+      "sha256": "261550bd5673bdb9184cf40009c4f618d32651ceda64a8a5617173b68055076f"
+    },
+    {
+      "path": "docs/audits/stage-08-final-evaluation-review.json",
+      "sha256": "4d3ab6fd0ddd029fabb5bb1c7735f03d779788ba61a2e4dcf010fba5053d233a"
+    },
+    {
+      "path": "docs/audits/stage-08-return-verified.json",
+      "sha256": "69fd4ffff732cf3cf35fa1d160b0233bf754b322172ed6a3c47132b243ea7240"
+    },
+    {
+      "path": "docs/audits/stage-08-local-render-report.json",
+      "sha256": "723d9ce041cd9fa4fdd055ca9c382db0c9c1365055c877595a44ac75f43bfeae"
+    },
+    {
+      "path": "docs/audits/stage-08-video-review.json",
+      "sha256": "606caaea3fc1cef9078fd2f1e97b3adbb6b3afa11a588237873b41605319a3e9"
+    },
+    {
+      "path": "docs/audits/stage-08-failure-analysis.json",
+      "sha256": "dcb713efe47c6d4f6269fabf9d3235be21fd82a952cf8918451236e53df31358"
+    },
+    {
+      "path": "docs/audits/stage-08-operations-review.json",
+      "sha256": "f95faf15bfa7dffd2c83036606dd666609e18c9f735090efc0ca3e1f4b7a801d"
+    }
+  ],
+  "finalization_validation": {
+    "cpu_fixture_tests": 4,
+    "test_record": "docs/audits/stage-08-finalization-tests.txt",
+    "shell_syntax": "PASS",
+    "frozen_source_diff": "EMPTY",
+    "gpu_or_smoke_executed": false,
+    "actual_laptop_tag_or_push_performed_here": false
+  }
+}

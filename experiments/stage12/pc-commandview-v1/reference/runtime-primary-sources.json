@@ -1,0 +1,80 @@
+[
+  {
+    "key": "deploy_source_0",
+    "git_blob_sha1": "f4682f51b331ecc31c02a965b683ec5e03d01d4b",
+    "url": "https://github.com/mujocolab/mjlab/blob/v1.3.0/src/mjlab/managers/observation_manager.py",
+    "utf8_bytes": 19549
+  },
+  {
+    "key": "deploy_source_1",
+    "git_blob_sha1": "9642f3524f96afe2bc53a9f9e83bf301978c95ea",
+    "url": "https://github.com/mujocolab/mjlab/blob/v1.3.0/src/mjlab/managers/reward_manager.py",
+    "utf8_bytes": 5903
+  },
+  {
+    "key": "deploy_source_2",
+    "git_blob_sha1": "28c207bcbaf6ce55913c95a9fe7d162d0125cbff",
+    "url": "https://github.com/mujocolab/mjlab/blob/v1.3.0/src/mjlab/rl/vecenv_wrapper.py",
+    "utf8_bytes": 3053
+  },
+  {
+    "key": "deploy_source_3",
+    "git_blob_sha1": "011275c6302fc91dc10ae000457600c7818efe0a",
+    "url": "https://github.com/liuxue-lab/microduck-double-balance/blob/23b00b7b5a77135467b2124823c1fab54bd1eed9/src/mjlab_microduck/tasks/microduck_double_balance_env_cfg.py",
+    "utf8_bytes": 16315
+  },
+  {
+    "key": "deploy_source_4",
+    "git_blob_sha1": "59847c8afebc707be4711fbc99704256242f4958",
+    "url": "https://github.com/liuxue-lab/microduck-double-balance/blob/23b00b7b5a77135467b2124823c1fab54bd1eed9/src/mjlab_microduck/tasks/microduck_basketball_env_cfg.py",
+    "utf8_bytes": 13302
+  },
+  {
+    "key": "deploy_velocity",
+    "git_blob_sha1": "45a1f6d5b7f5d81aa58dab777ed34f458a2f847c",
+    "url": "https://github.com/liuxue-lab/microduck-double-balance/blob/23b00b7b5a77135467b2124823c1fab54bd1eed9/src/mjlab_microduck/tasks/microduck_velocity_env_cfg.py",
+    "utf8_bytes": 44971
+  },
+  {
+    "key": "velocity_rewards",
+    "git_blob_sha1": "12fc9d9ad9365c0264a746e8fc5a88322ca42690",
+    "url": "https://github.com/mujocolab/mjlab/blob/v1.3.0/src/mjlab/tasks/velocity/mdp/rewards.py",
+    "utf8_bytes": 17110
+  },
+  {
+    "key": "slim_source_0",
+    "git_blob_sha1": "27d66340ad939cab483078646421092295bb8454",
+    "url": "https://github.com/mujocolab/mjlab/blob/v1.3.0/src/mjlab/tasks/velocity/velocity_env_cfg.py",
+    "utf8_bytes": 12250
+  },
+  {
+    "key": "slim_source_1",
+    "git_blob_sha1": "8712d837bb5aedecbd42f8e107b946483bfb5715",
+    "url": "https://github.com/mujocolab/mjlab/blob/v1.3.0/src/mjlab/envs/mdp/rewards.py",
+    "utf8_bytes": 5473
+  },
+  {
+    "key": "slim_source_2",
+    "git_blob_sha1": "89ad4a40633e6d7e4d3201d05eb76a50ae658e15",
+    "url": "https://github.com/mujocolab/mjlab/blob/v1.3.0/src/mjlab/envs/mdp/observations.py",
+    "utf8_bytes": 3900
+  },
+  {
+    "key": "slim_source_3",
+    "git_blob_sha1": "6275d43938f4f9ebb8098186fddd97fdd1ac095c",
+    "url": "https://github.com/mujocolab/mjlab/blob/v1.3.0/src/mjlab/tasks/velocity/mdp/observations.py",
+    "utf8_bytes": 1504
+  },
+  {
+    "key": "runtime_rsl_0",
+    "git_blob_sha1": "2ce9fda66144ae301f304279adfce53cf7830047",
+    "url": "https://github.com/leggedrobotics/rsl_rl/blob/v5.0.1/rsl_rl/runners/on_policy_runner.py",
+    "utf8_bytes": 10316
+  },
+  {
+    "key": "runtime_rsl_1",
+    "git_blob_sha1": "86078c26b9aad3f7c3e6ee6c66120c3e5ea49cab",
+    "url": "https://github.com/leggedrobotics/rsl_rl/blob/v5.0.1/rsl_rl/models/mlp_model.py",
+    "utf8_bytes": 10334
+  }
+]
