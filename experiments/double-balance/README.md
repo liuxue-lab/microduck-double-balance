@@ -46,7 +46,7 @@ from 2 s to 58 s, lasting 0.1 s, with randomized horizontal direction and a nomi
 The recordings and their previews show recorded HIL trajectories. The table reports the separate evaluation
 with the live viewer enabled; their exact source mapping is in the [media notes](media/README.md).
 
-[Raw evaluation report](../../docs/double-balance/evidence/reports/native-live-v1-report.json) ·
+[Raw evaluation report](../../docs/double-balance/evidence/reports/live-control-report.json) ·
 [Detailed technical report (中文)](../../docs/double-balance/project-report.md) ·
 [Supporting data (中文)](../../docs/double-balance/evidence/README.md)
 

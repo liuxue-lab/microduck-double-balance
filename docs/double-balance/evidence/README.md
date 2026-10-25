@@ -6,9 +6,9 @@
 
 | 原始报告 | 主要用途 |
 | --- | --- |
-| [native-mujoco-v3-report.json](reports/native-mujoco-v3-report.json) | 无窗口的 200 Hz 原生物理、完整周期时间和动作对照 |
-| [native-live-v1-report.json](reports/native-live-v1-report.json) | 两组有窗口运行、期限与显示统计、状态一致性、进程退出 |
-| [hil-replay-v1-report.json](reports/hil-replay-v1-report.json) | v3 记录回放来源、视频解码核对和 CSV 统计重算 |
+| [native-mujoco-v3-report.json](reports/headless-control-report.json) | 无窗口的 200 Hz 原生物理、完整周期时间和动作对照 |
+| [native-live-v1-report.json](reports/live-control-report.json) | 两组有窗口运行、期限与显示统计、状态一致性、进程退出 |
+| [hil-replay-v1-report.json](reports/recording-replay-report.json) | 无窗口控制记录回放来源、视频解码核对和 CSV 统计重算 |
 
 ## 本机资产核对
 
@@ -44,4 +44,4 @@ JSON 内的 `evidence/archive-inventory-received.zip` 是此前材料包中的�
 本次验证范围见 [验证说明](../validation/README.md)。
 
 源码中的 JSON 和清单可用于阅读、核对身份及追溯结论。
-权重、原始 MJB/NPZ/CSV、视频、全部日志和环境镜像仍需独立资料副本，清单本身不是备份。
+两段完整原始 MP4 已随源码发布。权重、原始 MJB/NPZ/CSV、全部日志和环境镜像仍需独立资料副本，清单本身不是备份。

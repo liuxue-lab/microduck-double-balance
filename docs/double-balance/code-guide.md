@@ -10,17 +10,17 @@ to the simulated robot.
 
 | Component | Source |
 | --- | --- |
-| Runtime entry and package loading | [bootstrap.py](../../experiments/stage12/native-live-v1/package/bootstrap.py) |
-| Native MuJoCo dynamics | [native_backend.py](../../experiments/stage12/native-live-v1/package/native_backend.py) |
-| Control loop and session | [native_runtime.py](../../experiments/stage12/native-live-v1/package/native_runtime.py) · [native_session.py](../../experiments/stage12/native-live-v1/package/native_session.py) |
-| ROS2 observations and action replies | [loop_ros.py](../../experiments/stage12/native-live-v1/package/loop_ros.py) · [loop_contract.py](../../experiments/stage12/native-live-v1/package/loop_contract.py) |
-| Policy inference and PyTorch reference | [native_inference.py](../../experiments/stage12/native-live-v1/package/native_inference.py) · [reference_overlap.py](../../experiments/stage12/native-live-v1/package/reference_overlap.py) |
-| Task criteria and model limits | [native_criteria.py](../../experiments/stage12/native-live-v1/package/native_criteria.py) · [native_model_limits.py](../../experiments/stage12/native-live-v1/package/native_model_limits.py) |
-| State stream and interactive viewer | [live_stream.py](../../experiments/stage12/native-live-v1/package/live_stream.py) · [live_viewer.py](../../experiments/stage12/native-live-v1/package/live_viewer.py) |
-| Recording playback and visualization | [Replay package](../../experiments/stage12/hil-replay-v1/package/) |
+| Runtime entry and package loading | [bootstrap.py](../../experiments/hil/live-viewer/package/bootstrap.py) |
+| Native MuJoCo dynamics | [native_backend.py](../../experiments/hil/live-viewer/package/native_backend.py) |
+| Control loop and session | [native_runtime.py](../../experiments/hil/live-viewer/package/native_runtime.py) · [native_session.py](../../experiments/hil/live-viewer/package/native_session.py) |
+| ROS2 observations and action replies | [loop_ros.py](../../experiments/hil/live-viewer/package/loop_ros.py) · [loop_contract.py](../../experiments/hil/live-viewer/package/loop_contract.py) |
+| Policy inference and PyTorch reference | [native_inference.py](../../experiments/hil/live-viewer/package/native_inference.py) · [reference_overlap.py](../../experiments/hil/live-viewer/package/reference_overlap.py) |
+| Task criteria and model limits | [native_criteria.py](../../experiments/hil/live-viewer/package/native_criteria.py) · [native_model_limits.py](../../experiments/hil/live-viewer/package/native_model_limits.py) |
+| State stream and interactive viewer | [live_stream.py](../../experiments/hil/live-viewer/package/live_stream.py) · [live_viewer.py](../../experiments/hil/live-viewer/package/live_viewer.py) |
+| Recording playback and visualization | [Replay package](../../experiments/hil/recorded-state-replay/package/) |
 
-The runtime is retained in versioned packages so that reports and model identities
-continue to point to their original implementation. `bootstrap.py` resolves the
+The runtime is organized by function, with package manifests linking the source
+and the recorded model identities. `bootstrap.py` resolves the
 associated modules and assets; the [dependency map — Chinese](reproduction-guide.md#3-必须保留的依赖链)
 describes that setup.
 
@@ -30,7 +30,7 @@ describes that setup.
 | --- | --- |
 | [Task definitions](../../src/mjlab_microduck/tasks/) | Environment configuration, observations, rewards, terminations and randomization |
 | [Double-balance training](../../src/mjlab_microduck/double_balance_training.py) | Training utilities in the project source stack |
-| [Native training workflow](../../experiments/stage12/native-workflow/README.md) | Native-workflow entry point and the archived training progression |
+| [Native training workflow](../../experiments/training/model-selection/README.md) | Native-workflow entry point and the archived training progression |
 | [BAM actuator model](../../src/mjlab_microduck/actuator/) | Actuator dynamics used by the robot |
 | [Robot assets](../../src/mjlab_microduck/robot/) | MJCF, joint layout, collisions and hardware geometry |
 | [CPU regression tests](../../tests/) | Configuration checks and behavioral invariants |

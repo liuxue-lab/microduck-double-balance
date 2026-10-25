@@ -1,6 +1,6 @@
 # Experiments
 
-[Home](../README.md) · [Documentation](../docs/README.md)
+[Home](../README.md) · [Documentation](../docs/README.md) · **English** · [简体中文](README.zh-CN.md)
 
 ## Double balance
 
@@ -26,8 +26,15 @@ The original experiments by Hannes von Essen / Vottivott remain part of this cod
 
 [Upstream overview and hardware galleries](../docs/upstream/README.md)
 
-## Implementation history
+## Implementation
 
-The [code guide](../docs/double-balance/code-guide.md) identifies the final control,
-inference and visualization modules. Versioned development packages remain in
-[Stage11](stage11/) and [Stage12](stage12/).
+| Area | What to explore |
+| --- | --- |
+| [Training](training/README.md) | PPO workflows, reward design and model selection |
+| [Deployment](deployment/README.md) | ONNX export, numerical parity and ROS2 setup |
+| [Hardware in the loop](hil/README.md) | Native control, live visualization and recorded-state replay |
+| [Evaluation](evaluation/README.md) | Candidate selection and independent policy checks |
+| [Runtime benchmarks](benchmarks/README.md) | Profiling and focused performance comparisons |
+| [Native physics integration](physics-validation/README.md) | Contact, state ownership, reset and recovery |
+
+The [code guide](../docs/double-balance/code-guide.md) connects these components to the project source.

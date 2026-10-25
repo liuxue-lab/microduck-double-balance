@@ -1,4 +1,4 @@
-"""Stage 07 cloud training, explicit curriculum resume, and frozen nominal evaluation.
+"""Training cloud training, explicit curriculum resume, and frozen nominal evaluation.
 
 The registered runner still owns rollout and PPO. This module owns provenance,
 completed-update checkpoint names, and evaluation at update boundaries.
@@ -25,7 +25,7 @@ import torch
 
 from mjlab_microduck.double_balance_checkpoint import file_sha256
 from mjlab_microduck.double_balance_smoke import resume_agent_config
-from mjlab_microduck.double_balance_stage07 import (
+from mjlab_microduck.double_balance_capacity import (
     BASELINE_COMMIT, HOLD_LEVELS, MIGRATED_SHA256, SEED, STEPS_PER_ENV, TASK_ID,
     check_loaded_runner, check_observations, check_optimizer, monitor_updates,
     progress_after_updates, require, require_equal, require_finite,
@@ -366,7 +366,7 @@ def train(args):
               "git_head": head, "stage06_baseline": BASELINE_COMMIT, "hostname": socket.gethostname(),
               "gpu": torch.cuda.get_device_name(0), "versions": {**VERSIONS, "torch": torch.__version__},
               "source_sha256": {p.name: file_sha256(p) for p in (
-                  Path(__file__), Path(__file__).with_name("double_balance_stage07.py"))},
+                  Path(__file__), Path(__file__).with_name("double_balance_capacity.py"))},
               "created_utc": utc_now(), "input_checkpoint": str(args.checkpoint), "input_sha256": checksum,
               "initialization_sha256": MIGRATED_SHA256, "resume": args.resume,
               "start_completed_updates": start, "completed_updates": start,

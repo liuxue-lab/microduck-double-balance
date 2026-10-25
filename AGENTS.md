@@ -25,24 +25,29 @@ Never launch a long run without one.
 
 ## Local Git handoff and push convention
 
-- The canonical local checkout is
-  `/home/lx/microduck-double-balance/workspace`; the canonical download
-  directory is `/home/lx/下载`.
-- Stage-end code, tests, documentation, commits, and annotated tags are created
-  locally. Stop before pushing: the user pushes with the existing SSH remote
-  `git@github.com:liuxue-lab/microduck-double-balance.git`.
-- Never switch this repository to HTTPS authentication or ask for a GitHub
-  password/PAT merely to publish a stage.
-- When work was produced in an isolated web/cloud workspace, export an
-  incremental Git bundle. The user downloads it to `/home/lx/下载`, imports it
-  into the canonical checkout, and then performs the same SSH push.
-- A normal successful `git push` result is sufficient. Do not repeatedly ask
-  the user to run the full remote verification block. Verify remotely only
-  after an error, a non-fast-forward/mismatch, an uncertain imported ref, or an
-  explicit user request.
-- Every stage handoff must retain a reference to
-  `docs/handoffs/microduck-local-ssh-push-protocol.md` and must not replace its
-  conventions with a new ad-hoc upload procedure.
+- Public release checkout: `/home/lx/microduck-double-balance/public-workspace`.
+  Its SSH origin is `git@github.com:liuxue-lab/microduck-double-balance.git`
+  and its source branch is `double-balance`.
+- The historical checkout `/home/lx/microduck-double-balance/workspace` uses
+  `git@github.com:liuxue-lab/microduck-double-balance-history.git` and remains
+  separate from the public checkout. Keep its untracked work and old references.
+- Download directory: `/home/lx/下载`. Large model and execution assets remain in
+  `/home/lx/microduck-double-balance/artifacts`, outside both source checkouts.
+- Create code, tests, documentation, commits and annotated release tags locally.
+  The user publishes through the existing SSH identity. Do not replace this with
+  GitHub API commits, web-created tags, HTTPS authentication, passwords or PATs.
+- For work produced in an isolated workspace, export an incremental Git bundle
+  based on the current public commit. Import it only into the public checkout
+  with a fast-forward merge, then let the user push the explicit branch/tag.
+- Never merge old history into the public repository or use mirror, all-branch,
+  all-tag or force pushes. Development archives and transfer references belong
+  to the private history repository when separately authorized.
+- A normal successful push output is sufficient. Do not request a repeated full
+  verification block; inspect remote state when publication needs it or an
+  error, mismatch or uncertain import requires diagnosis.
+- Retain the procedures in
+  `docs/handoffs/microduck-local-ssh-push-protocol.md` and
+  `docs/handoffs/microduck-cloud-gpu-and-transfer-protocol.md` in maintenance handoffs.
 
 ## Cloud GPU reminders and file transfer (standing user instruction)
 
@@ -61,10 +66,11 @@ Never launch a long run without one.
 - Laptop RTX 5060 is for development, MuJoCo inference/simulation and video;
   formal PPO uses an explicitly budgeted cloud GPU. Do not rerun Stage 06 smoke.
 - Default future repository/artifact upload and retrieval scripts to the
-  established GitHub SSH identity. Keep code on `double-balance`; package
-  approved transferable artifacts on a separate stage-specific transfer branch.
-  Retrieve through an isolated Git SSH checkout/cache outside the canonical
-  source checkout; verify the pinned commit and per-file SHA256. Never merge
+  established GitHub SSH identity. Keep public code on `double-balance`; package
+  separately approved transferable artifacts in the private history repository,
+  on an explicit transfer branch.
+  Retrieve through an isolated Git SSH checkout/cache outside both
+  source checkouts; verify the pinned commit and per-file SHA256. Never merge
   artifact branches or put model archives into the source branch.
 - The successful Stage 09 return used SSH upload and HTTPS download; retain
   that fact in historical evidence. The latest instruction defaults future

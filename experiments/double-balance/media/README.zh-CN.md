@@ -19,9 +19,9 @@ SHA256 的对应关系见 [original-videos.json](original-videos.json)。
 ## 来源
 
 录像呈现 PC–Jetson HIL 运行中保存的状态，来源见
-[录像报告](../../../docs/double-balance/evidence/reports/hil-replay-v1-report.json)。
+[录像报告](../../../docs/double-balance/evidence/reports/recording-replay-report.json)。
 性能表使用另一轮带实时查看器的
-[计时报告](../../../docs/double-balance/evidence/reports/native-live-v1-report.json)。
+[计时报告](../../../docs/double-balance/evidence/reports/live-control-report.json)。
 
 [demo-provenance.json](demo-provenance.json) 记录预览的裁剪、时间区间、编码设置及输出哈希。
 使用原始文件名、Python 3 和 FFmpeg 可重新生成预览：

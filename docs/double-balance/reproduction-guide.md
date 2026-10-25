@@ -1,8 +1,8 @@
-# Microduck Stage12 统一复现说明
+# Microduck 原生训练与部署 统一复现说明
 
 适用日期：2026 年 10 月 25 日（Asia/Shanghai）
 
-本说明适用于已经完成 Stage12 安装的原笔记本与 Orin。当前结果均已通过，默认只查看保存结果。仅当用户明确要求新一次演示时，才使用本说明中的重新运行入口。现有单文件发布脚本是增量安装器，不能在空白电脑上单独还原全部环境。
+本说明适用于已经配置完成的原笔记本与 Orin。当前结果均已通过，默认只查看保存结果。仅当用户明确要求新一次演示时，才使用本说明中的重新运行入口。现有单文件发布脚本是增量安装器，不能在空白电脑上单独还原全部环境。
 
 ## 1 固定目录与版本
 
@@ -77,7 +77,7 @@ python3 /home/lx/microduck-double-balance/artifacts/double-balance-stage12/nativ
 /home/lx/microduck-double-balance/artifacts/double-balance-stage12/native-hil-replay-v1/runs/20261025T051929Z-dc4ca58d
 ```
 
-其中 `index.html` 是浏览入口，`quiet-2407-recorded-hil.mp4` 和 `regression-2500-recorded-hil.mp4` 是两段 v3 记录回放视频。视频已经生成并通过人工审查，无需重生成。
+其中 `index.html` 是浏览入口，`quiet-2407-recorded-hil.mp4` 和 `regression-2500-recorded-hil.mp4` 是两段无窗口控制记录的回放视频。视频已经生成并通过人工审查，无需重生成。
 
 ## 5 有明确新演示需求时再运行
 

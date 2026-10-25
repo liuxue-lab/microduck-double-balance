@@ -46,8 +46,10 @@ PC 以 200 Hz 运行原生 MuJoCo；真实 Jetson Orin Nano Super 执行循环 F
 HIL 环境使用固定检查点、ONNX 导出、部署合同、ROS2 配置及配套运行包。
 [原环境运行指南](reproduction-guide.md)列出了这些文件的位置，以及查看录像和运行既有系统的命令。
 
-完整策略权重与原始 60 秒视频属于外部资产，目前尚未提供本双球策略的公共下载。
-仓库包含源码、演示预览、结果报告和资产哈希；新建 HIL 环境前，可先查阅
+仓库已包含源码、预览、结果报告，以及两段完整的原始 60 秒录像：
+[自然平衡](../../experiments/double-balance/media/balance.mp4)和
+[抗扰恢复](../../experiments/double-balance/media/disturbance-recovery.mp4)。
+策略权重单独分发，当前获取状态和部署所需资产见
 [模型可获取范围（英文）](model-card.md#artifacts-and-availability)。
 
 原工作站可利用已有资产目录[查看完整录像](reproduction-guide.md#4-只查看已完成结果)。

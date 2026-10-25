@@ -43,7 +43,7 @@ PC–Jetson 硬件在环系统结合原生 MuJoCo 动力学与 Jetson Orin Nano 
 录像及其预览展示所记录的 HIL 轨迹，表格采用另一次开启实时窗口的测试数据。
 媒体与测试记录的对应关系见[媒体说明](media/README.zh-CN.md)。
 
-[原始测试报告](../../docs/double-balance/evidence/reports/native-live-v1-report.json) ·
+[原始测试报告](../../docs/double-balance/evidence/reports/live-control-report.json) ·
 [详细技术报告](../../docs/double-balance/project-report.md) ·
 [数据索引](../../docs/double-balance/evidence/README.md)
 

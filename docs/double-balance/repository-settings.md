@@ -11,7 +11,7 @@ The repository's **Code → About → Edit repository details** panel can use:
 
 | Field | Value |
 | --- | --- |
-| Description | `Recurrent PPO for Microduck double-ball balance, with real-time PC-Jetson hardware-in-the-loop control.` |
+| Description | `Learning whole-body control for Microduck to balance on a basketball while keeping a second ball on its head, with real-time Jetson hardware-in-the-loop validation.` |
 | Website | `https://github.com/liuxue-lab/microduck-double-balance/tree/double-balance/experiments/double-balance` |
 | Topics | `microduck` `robotics` `reinforcement-learning` `ppo` `mujoco` `robot-learning` `hardware-in-the-loop` `jetson` `ros2` `onnx` |
 
@@ -24,7 +24,6 @@ Continue development on `double-balance`, preserving the existing SSH remote.
 The [local SSH workflow](../handoffs/microduck-local-ssh-push-protocol.md) records
 the maintainer's checkout, incremental bundle import and publication procedure.
 
-The [CI workflow](../../.github/workflows/ci.yml) checks the exact pushed commit.
-The presentation baseline `575e7b4` passed both its
-[branch run](https://github.com/liuxue-lab/microduck-double-balance/actions/runs/40190552481)
-and [tag run](https://github.com/liuxue-lab/microduck-double-balance/actions/runs/40190558697).
+The [CI workflow](../../.github/workflows/ci.yml) checks each pushed commit.
+Use the current [Actions page](https://github.com/liuxue-lab/microduck-double-balance/actions)
+for release validation. Earlier CI records belong to the private history repository.

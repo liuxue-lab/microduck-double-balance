@@ -27,6 +27,6 @@ Explore the double-balance task, its learning pipeline and the PC–Jetson contr
 [Contributing](../CONTRIBUTING.md) · [CI history (Chinese)](double-balance/ci-followup.md) · [Citation](../CITATION.cff)
 
 The [upstream overview](upstream/README.md) introduces the original Microduck Playground experiments and hardware.
-Versioned development records remain in [audits/](audits/) and [handoffs/](handoffs/).
+Research records are grouped by method and subsystem in [audits/](audits/) and [handoffs/](handoffs/).
 Maintainer procedures are documented in the [local SSH workflow (Chinese)](handoffs/microduck-local-ssh-push-protocol.md)
 and [compute and transfer guide (Chinese)](handoffs/microduck-cloud-gpu-and-transfer-protocol.md).

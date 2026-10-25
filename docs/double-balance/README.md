@@ -20,7 +20,7 @@ Use this page to move from the demonstrations to the implementation and recorded
 
 ## Read the measurements
 
-- [Live-viewer evaluation](evidence/reports/native-live-v1-report.json): complete-cycle timing, action checks and visualization statistics.
+- [Live-viewer evaluation](evidence/reports/live-control-report.json): complete-cycle timing, action checks and visualization statistics.
 - [Data index (Chinese)](evidence/README.md): reports, model identities and their source records.
 - [Media notes](../../experiments/double-balance/media/README.md): demonstration sources and rendering details.
 - [Asset records (Chinese)](archive-scope.md): the checkpoint, runtime packages and inventory.
@@ -31,6 +31,6 @@ Use this page to move from the demonstrations to the implementation and recorded
 [Repository settings](repository-settings.md) · [Upstream contribution notes (Chinese)](upstream-contribution.md)
 
 Publication and development history are preserved in the [publication record (Chinese)](publication.md),
-[validation records (Chinese)](validation/README.md) and [stage handoffs](../handoffs/).
+[validation records (Chinese)](validation/README.md) and [research and maintenance records](../handoffs/).
 The maintainer workflow follows the [local SSH (Chinese)](../handoffs/microduck-local-ssh-push-protocol.md)
 and [compute/transfer (Chinese)](../handoffs/microduck-cloud-gpu-and-transfer-protocol.md) guides.

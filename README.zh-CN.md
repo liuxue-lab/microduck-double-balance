@@ -55,7 +55,7 @@ Jetson Orin Nano Super 通过有线 ROS2 Humble 链路返回控制动作。
 
 抗扰工况采用相当于机器人自重 10% 的水平力脉冲，两组测试均完成 60 秒双球保持。
 [实验设置](experiments/double-balance/README.zh-CN.md#实验设置) ·
-[原始计时数据](docs/double-balance/evidence/reports/native-live-v1-report.json)
+[原始计时数据](docs/double-balance/evidence/reports/live-control-report.json)
 
 ## 开始使用
 

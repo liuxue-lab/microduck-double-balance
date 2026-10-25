@@ -27,7 +27,7 @@ jobs:
         run: uv run --frozen python -m pytest tests/ -q
 
       - name: Test offline documentation importer
-        run: python3 -m unittest discover -s experiments/stage12/github-publication-v1 -p "test_install.py" -v
+        run: python3 -m unittest discover -s experiments/publication/documentation -p "test_install.py" -v
 
       - name: Build wheel and source distribution
         run: uv build

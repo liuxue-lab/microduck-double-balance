@@ -1,0 +1,54 @@
+原生物理系统 CI 文档链接修复补充交接 — 2026-10-15 UTC
+
+本文件补充 microduck-stage-11-closed-handoff.txt，不替换原交接和归档。
+阶段技术范围仍为 G01–G11 CLOSED_SCOPED，11/11=100%；累计674456 completed /674457 attempted，历史失败1次保留。新增物理积分0、PPO=0、云训练=0。当前没有待执行的G11物理脚本。
+
+1. 真实失败与原因
+原收尾提交：6ba0dc2de381321576f32310e1995a8e2e11e566。
+分支CI：https://github.com/liuxue-lab/microduck-double-balance/actions/runs/38760966434
+标签CI：https://github.com/liuxue-lab/microduck-double-balance/actions/runs/38760986531
+两次CI的CPU测试均为416 passed、6 skipped、3 warnings、17 subtests passed；构建、CLI、ONNX/parity与结构生成检查通过，只在最后的Check relative documentation links退出1。
+历史交接副本被放入payload/provenance后，3个相对链接目标没有随副本归档。这是交付打包遗漏。邮件的“所有jobs失败”对应唯一verify job的最终状态，不表示此前所有检查都失败。Node action弃用警告不是本次失败根因。
+
+2. 修复范围
+补入3份文档依赖，与docs/已有原件字节相同：
+experiments/stage11/g11-formal-v3/payload/audits/stage-10-publication-confirmation.json
+experiments/stage11/g11-formal-v3/payload/provenance/microduck-stage-10-ci-followup.md
+experiments/stage11/g11-formal-v3/payload/provenance/microduck-stage-11-opening-prompt.txt
+这3份仅供历史文档导航；其中旧命令不是当前执行指令。原149份已执行程序、原payload-inventory、全部回传ZIP、旧started标记、账本、阈值、G09/G10与29/29主机证据保持不变。更新外层README说明149份原程序与3份导航文档的区别。未改CI检查器、工作流、生产任务或测试跳过规则。
+
+3. 已完成验证与边界
+原149份payload文件对原收尾提交逐字节一致；3份补入文档对docs原件一致。
+全仓库69份Markdown的159个相对链接均在Git树中存在；原CI检查器在完整落地的experiments/stage11子目录检查14个链接PASS。审查环境是稀疏检出，全仓库目标存在性以Git树核验，没有用占位文件代替资产。为减少重复开销，不重跑仿真、29项主机检查、旧批次、完整CPU测试或原始大归档审计。
+上述为本次局部修复验证，不能提前写成新提交的远端CI通过。用户导入、运行完整文档链接检查并SSH推送后，再检查新提交对应的CI。
+原stage-11-complete注释标签保留在6ba0dc2；标签对象bd1b219be55c813811d4f7cfa25d245b37166688。不移动、不重建、不重复推送旧标签。旧标签对应的红色CI作为历史失败保留；补充修复由后续代码分支提交承接。
+
+4. 固定路径和手动导入/推送
+仓库：/home/lx/microduck-double-balance/workspace
+下载：/home/lx/下载
+证据：/home/lx/microduck-double-balance/artifacts/double-balance-stage11
+分支：double-balance
+SSH origin：git@github.com:liuxue-lab/microduck-double-balance.git
+本补充bundle为microduck-stage-11-ci-followup.bundle，前置提交6ba0dc2。确切新提交与bundle SHA见随下载的补充交接末尾。
+按既有SSH/bundle规范导入到refs/remotes/stage11-ci/double-balance，再由用户执行ff-only；助手未自动合并或推送。下载bundle后运行：
+
+cd /home/lx/microduck-double-balance/workspace &&
+test "$(git branch --show-current)" = double-balance &&
+test "$(git remote get-url origin)" = git@github.com:liuxue-lab/microduck-double-balance.git &&
+test "$(git rev-parse refs/tags/stage-11-complete)" = bd1b219be55c813811d4f7cfa25d245b37166688 &&
+git bundle verify /home/lx/下载/microduck-stage-11-ci-followup.bundle &&
+git fetch /home/lx/下载/microduck-stage-11-ci-followup.bundle refs/heads/double-balance:refs/remotes/stage11-ci/double-balance &&
+git merge --ff-only refs/remotes/stage11-ci/double-balance &&
+python3 -I -S scripts/check_relative_links.py &&
+git push origin double-balance
+
+导入保留已有mdp.py未提交修改和无关未跟踪文件；不reset、clean、stash或force。若Stage12已产生分歧提交，ff-only会停止，保留两边提交并回传错误；不要退回旧HEAD或覆盖Stage12工作。普通SSH推送成功后无需重复整套远端标签检查；仅跟进本次修复提交的CI即可。
+若链接检查仍失败，复制具体Missing relative links行；不要重跑物理脚本。找不到bundle时核对下载目录和文件名；不要把浏览器加“(1)”的旧文件误当新文件。非快进、标签不符、SSH权限错误均保留现场，按长期协议处理。
+
+5. 后续交接保留事项
+完整长期规则：docs/handoffs/microduck-local-ssh-push-protocol.md
+以及docs/handoffs/microduck-cloud-gpu-and-transfer-protocol.md。
+本机仅开发、仿真、推理/视频；未来正式训练需另行确认模型/Adam/LR/进度/辅助恢复规则与云预算。本修复不启动Stage12任务、不重跑Stage06 smoke。
+旧Stage08主模型仍为E/20260929/update_004000.pt，SHA256为86d55c3703c18fcf4817db49c6e4dcf839b3f5195d68ae2c559db7e222bded97；不因CI补记恢复训练。原归档与回传证据路径、所有限制见原Stage11收尾交接。
+剩余云任务0；旧5090已由用户确认OFF，本次无新实例、无新关机事件；不自动启停实例。未来云计算及必要回传SHA核验完成后立即提醒手动关机，提醒和实际确认分开记录。Stage09完整云原始轨迹未全回传，继续保留云端数据。
+尚待事项只有本补充提交的本机导入、用户SSH推送及新CI结果确认；Stage11物理验收不因此重新开放。

@@ -2,16 +2,16 @@
 
 The active branch is `double-balance`. Start with the [code guide](docs/double-balance/code-guide.md)
 and [getting-started guide](docs/double-balance/getting-started.md).
-The completed scope is simulation HIL; the repository does not claim physical robot validation.
+The demonstrated system combines simulated robot dynamics with real Jetson inference and wired ROS2 communication.
 
 ## Changes and verification
 
 - Explain the concrete behavior or documentation problem and keep each change focused.
-- Preserve the Stage09 frozen contract, including byte-level hashes of `pyproject.toml` and the original MDP prefix. A dependency or runtime change needs an explicit new baseline and appropriate validation.
-- Run `uv run --frozen python -m pytest tests/ -q` for runtime changes in the supported environment. Archived stage tests require their own pinned packages and must not be collected indiscriminately.
+- Preserve the deployment contract, locked dependencies and original MDP behavior. A dependency or runtime change needs an explicit new baseline and appropriate validation.
+- Run `uv run --frozen python -m pytest tests/ -q` for runtime changes in the supported environment. Research packages have separate pinned environments and test entry points.
 - For documentation changes, run `python3 scripts/check_relative_links.py .`, check rendered pages, and keep English and Chinese entry points consistent.
 - Label simulation, recorded replay, live HIL and physical robot evidence accurately. Cite the raw report for every new result; do not generalize fixed-seed measurements into success rates.
-- Keep large checkpoints, full recordings, credentials and machine-specific generated files out of the source change. Include hashes and availability notes for external artifacts.
+- Keep model checkpoints, credentials and machine-specific generated files outside the source tree. The two published original demonstration recordings are versioned media assets; preserve their bytes and provenance. Include hashes and availability notes for external model assets.
 
 The CI workflow additionally checks packaging, CLI entry points, ONNX export/parity and inherited hardware generators.
 An existing green run validates its exact commit; a later commit receives its own check.

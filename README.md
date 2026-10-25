@@ -56,7 +56,7 @@ Complete-cycle timing from the two 60-second runs with the live viewer enabled:
 The disturbance case applies horizontal force pulses equal to 10% of body weight.
 Both runs retained the two balls for the full 60 seconds.
 [Experiment details](experiments/double-balance/README.md#evaluation) ·
-[Timing data](docs/double-balance/evidence/reports/native-live-v1-report.json)
+[Timing data](docs/double-balance/evidence/reports/live-control-report.json)
 
 ## Getting started
 

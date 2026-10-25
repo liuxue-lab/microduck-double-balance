@@ -39,7 +39,7 @@ drift. Physical-robot deployment and broader seed-based success statistics are
 outside these two demonstrations.
 
 [Results](../../experiments/double-balance/README.md) ·
-[Raw measurements](evidence/reports/native-live-v1-report.json) ·
+[Raw measurements](evidence/reports/live-control-report.json) ·
 [Test conditions and drift — Chinese](project-report.md#6-保球几何稳定与漂移)
 
 ## Artifacts and availability

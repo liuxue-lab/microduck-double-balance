@@ -1,4 +1,4 @@
-# Stage12 文档发布后的 CI 修复记录
+# 原生训练与部署 文档发布后的 CI 修复记录
 
 日期：2026-10-25（Asia/Shanghai）
 
@@ -18,10 +18,10 @@ CI 是推送后的自动检查，负责测试、构建、导出验证和文档�
 对应报错包括 `Pinned baseline package missing`、`import file mismatch` 和 `eglQueryString`。
 
 首次修复已经解决收集问题，但将 `testpaths` 写入 `pyproject.toml`，
-触发了 [Stage09 冻结契约](../audits/stage-09-approved-plan.json)：该契约校验整个文件的 SHA256，
+触发了 [Stage09 冻结契约](../audits/head-balance/approved-plan.json)：该契约校验整个文件的 SHA256，
 即使只添加测试配置也会失败。这是上一版修复遗漏的约束。
 
-失败用例为 [test_frozen_mdp_prefix_and_old_factories](../../tests/test_stage09_contract.py)。
+失败用例为 [test_frozen_mdp_prefix_and_old_factories](../../tests/test_posture_contract.py)。
 期望的 `pyproject.toml` SHA256 是
 `5965e21013e1670884f79fbed14068e63864973a2bcd503821eada88b413783d`，
 首次修复后的值为 `fe02f799540be36cba83e321bdabcf21104d0b948e93bf8f7dfe8260938b6394`。

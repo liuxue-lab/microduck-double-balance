@@ -22,9 +22,9 @@ remain available as [balance-demo.mp4](balance-demo.mp4) and
 ## Provenance
 
 The recordings visualize saved states from the PC–Jetson HIL run identified in the
-[replay report](../../../docs/double-balance/evidence/reports/hil-replay-v1-report.json).
+[replay report](../../../docs/double-balance/evidence/reports/recording-replay-report.json).
 The performance table uses the separate
-[live-viewer timing report](../../../docs/double-balance/evidence/reports/native-live-v1-report.json).
+[live-viewer timing report](../../../docs/double-balance/evidence/reports/live-control-report.json).
 
 [demo-provenance.json](demo-provenance.json) records the preview crops, time interval,
 encoding settings and output hashes. To reproduce those previews from the original

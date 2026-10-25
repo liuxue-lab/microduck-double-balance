@@ -18,7 +18,7 @@ for the current project. Original source, hardware media and licenses remain at 
 
 [![CI](https://github.com/Vottivott/microduck-playground/actions/workflows/ci.yml/badge.svg)](https://github.com/Vottivott/microduck-playground/actions/workflows/ci.yml)
 
-<img src="../../docs/media/playground.png" align="right" width="320" alt="Watercolor illustration of Microduck pumping on its swing">
+<img src="../media/playground.png" align="right" width="320" alt="Watercolor illustration of Microduck pumping on its swing">
 
 Reproducible reinforcement-learning experiments, policy demonstrations, and
 printable hardware add-ons for

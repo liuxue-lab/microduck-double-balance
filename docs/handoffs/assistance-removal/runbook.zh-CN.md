@@ -1,0 +1,307 @@
+# 辅助撤除与评估 运行入口与云端操作交接
+
+更新：2026-09-29（北京时间）
+
+状态：用户回报新克隆 41381 的 CUDA、保存重载与 D/E 容量验证已通过（提交 c63fa4a，4096 环境，峰值 22837/32607 MiB）。首轮已启动，A 组完成新增 500 次与 0/250/500 的 N/R-dev 评估，但 GPU 监控单次 5 秒超时导致收尾 `FAIL`，批次停于 `NEEDS_REVIEW`。当前入口为第 6.1 节，先核验原始记录，再从 A 终点恢复，随后继续 B–E。监控修复已完成本地测试，云端恢复结果待回传。保留克隆的 Python 3.12.3 与原环境。本文件不是 Stage 08 最终交接。
+
+完整依据见 `docs/audits/stage-08-execution-plan.md`。固定下载与 SSH 推送规范继续沿用 `docs/handoffs/microduck-local-ssh-push-protocol.md`。
+
+## 1. 本轮实现
+
+| 入口 | 用途 |
+|---|---|
+| `scripts/deploy_stage08_local.sh` | 本机只读预检、传送已提交源码及两个已知检查点、启动后台环境准备 |
+| `scripts/setup_stage08_autodl.sh` | 重用锁定依赖、建立或重用累计预算、运行 CPU 检查；不启动 PPO |
+| `scripts/adopt_stage08_clone_local.sh` | 回传旧安装证据、保留原预算、差量更新新克隆并启动容量验证 |
+| `python -m mjlab_microduck.double_balance_stage08 capacity` | 只针对新 5090 的 4096 环境验证，D/E 各 3 次预热＋12 次测量 |
+| `scripts/run_stage08_batch.py` | 串行执行首轮、三种子复核或条件扩训；遇到暂停/失败停止批次 |
+| `scripts/recover_stage08_screening_local.sh` | 差量部署监控修复、核验 A500、更新容量证据并自动恢复 B–E |
+| `python -m mjlab_microduck.double_balance_stage08_review` | 用开发评估生成带证据哈希的扩训决定 |
+| `scripts/freeze_stage08_selection.py` | 仅按 N/R-dev 固定每种子的候选，加入第 1000/6000 次参照 |
+| `scripts/evaluate_stage08_batch.py` | 固定模型表的 N、R-dev、三个 R-test 初态集批量评估与配对比较 |
+| `scripts/render_stage08_local.py` | 本机推理/视频，固定 env0、稳定时长中位、最差速度及成功回合 |
+| `scripts/archive_stage08_results.py` | 归档必要模型和证据，回传后逐文件核验并提醒关机 |
+
+Stage 03/04、依赖文件及复用的 Stage 07 训练/恢复实现未改写。B–E 是独立的 Stage 08 训练覆盖。没有增加下球速度奖励，没有放宽严格标准。
+
+## 2. 恢复与计数
+
+所有新分支来源是第 1000 次，SHA-256 为 `c667f96607b68383047f23956ba58805920434465245ef8e32d1148b17fc65b7`。第 6000 次 SHA 为 `a5ad0aedb500555b649c5d4b11aded833cbc0f932c1fff1a747e1492534c495c`，仅用于评估。
+
+- 恢复 actor/critic、归一化统计、Adam 一二阶矩和 step；源学习率为 `2.2500000000000008e-5`，之后续训恢复各自实际 adaptive LR。
+- 完成 Stage 08 新增 k 次后，实验计数为 k，累计计数为 1000+k，下一迭代为 1000+k，保存的末次迭代为 999+k；common counter 为 `(1000+k)×24`，sim counter 再乘 10，Adam step 为 `(1000+k)×20`。
+- 新 episode 的年龄与 LSTM 隐状态清零，重新初始化 RNG，不声称逐轨迹恢复。
+- reset 会计算课程。A–D 在 reset 后恢复源逐环境 hold/level；E 在 reset 后设 level=5、hold=0，并重新计算/覆盖篮球和鸭身两套缓存及实际施加的外力/力矩。
+- 原全局课程使用 `>`，在之后发生 reset 的课程计算中生效；不会改成 `>=`。零命令组每个控制步检查实际命令；E 同时检查缓存和仿真外力，运行中每次更新记录 live manager 状态。
+- 恢复不能跨实验组、种子或预算 campaign；容量验证模型标记为 `capacity`，正式恢复入口拒绝使用它们。
+
+## 3. 本机先导入代码
+
+下载最新版 `microduck-stage-08-from-stage-07.bundle` 到 `/home/lx/下载`。此前已导入准备提交 `c7f7c4c` 的本机同样可以快进；本包包含从 Stage 07 开始的全部 Stage 08 提交。工作区有未提交修改时先处理差异，不重置。
+
+```bash
+cd /home/lx/microduck-double-balance/workspace
+git status --short
+git bundle verify /home/lx/下载/microduck-stage-08-from-stage-07.bundle
+git fetch /home/lx/下载/microduck-stage-08-from-stage-07.bundle \
+  refs/heads/double-balance:refs/remotes/stage08/double-balance
+git switch double-balance
+git merge --ff-only refs/remotes/stage08/double-balance
+```
+
+现在不创建 `stage-08-complete` 标签。无需为部署先向 GitHub 推送；克隆接续只传相对其已有提交的代码增量。
+
+## 4. 选定云机后部署
+
+以下第 4 至 5 节保留部署和容量验证经过，当前不重跑安装或克隆接续。当前故障恢复入口是第 6.1 节。预算仍为标准 RTX 5090 60 小时或 A800 24 小时二选一。
+
+用户已明确无需手动记录时间：本机执行下列命令即可，首次修复版部署自动生成时间起点并保存在仓库外。相同目标重试复用该起点，云端已有预算也不归零。部署前的真实开机时间未知，不把自动起点称为平台开机时间。
+
+```bash
+cd /home/lx/microduck-double-balance/workspace
+bash scripts/deploy_stage08_local.sh connect.bjb2.seetacloud.com 45743 5090
+```
+
+脚本先读取云机硬件和已有文件；拒绝型号不符、已有 GPU 计算进程、脏工作区、非快进或检查点哈希冲突。源码在隔离的 incoming 目录传送；已有 Stage 07 模型可在云盘复制复用，目标已存在且哈希正确时不重复上传。没有密码或私钥写入配置。
+
+预检之前先通过纯 Bash 查找 Python >=3.10，检查 PATH、系统和常见 Conda 路径，使用选中的绝对路径贯穿预检、模型处理及预算初始化，不依赖交互式 Conda 激活。查找不安装软件、不导入 CUDA；若所有候选均不可用，退出并输出 `Stage08Bootstrap=NO_USABLE_PYTHON`，此时先检查镜像实际环境，不绕过预检。此旧新建实例路径安装 Python 3.12.14；克隆路径保留满足项目版本范围的 Python 3.12.3。
+
+环境准备在 `microduck-stage08-setup` tmux 会话中运行，SSH 断开不会中断准备。日志位于：
+
+```text
+/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/setup/latest.log
+```
+
+准备成功只说明源码、依赖与 CPU 检查通过。5090 的真实仿真/PPO 路径仍须下一步验证。A800 不重跑 Stage 06 smoke 或容量扫描。
+
+### 4.1 已传输实例的依赖下载恢复（2026-09-29）
+
+用户已提供 `Stage08Deployment=TRANSFERRED`、`FormalTrainingStarted=False` 和后续下载日志，不能再重传完整源码、两个检查点或重新部署实例。17:56（北京时间）的同一 Torch wheel 片段测试：学术代理配置 100614 B/s、HTTP 206、收到 1207296 字节；直连 1764635 B/s、HTTP 206、收到 8388608 字节。直连此次约快 17.54 倍；这是短时 curl 路径对照，不保证后续 uv 持续吞吐或精确剩余时间。
+
+安装脚本现在在加载 `/etc/network_turbo` 后，把 `pypi.org` 和 `files.pythonhosted.org` 加入两种大小写的代理绕过列表，保留已有绕过规则及 GitHub 代理。锁文件、依赖版本和实验定义不变。
+
+将更新后的同名增量 bundle 按第 3 节导入本机，再运行：
+
+```bash
+cd /home/lx/microduck-double-balance/workspace
+bash scripts/recover_stage08_setup_local.sh connect.bjb2.seetacloud.com 45743
+```
+
+该脚本只上传相对 `d78d1e6` 的小型代码增量。云端验证 SHA、干净分支、快进关系、无 GPU 计算作业及预算作业锁，再仅向匹配项目、bootstrap 环境、`uv sync` 和 setup worker 父进程的安装器发 SIGTERM；不批量杀 Python、不强杀 tmux、不清缓存。等待旧安装锁释放后导入提交，在 tmux 中重新运行 setup，复用原预算起点、已下载的完整缓存和检查点。未完成的下载可能需要重传。若已进入其他准备步骤，只等待其完成，超时退出供检查，不强行中断。
+
+日志中的 `Stage08PyPIDownload=DIRECT` 表示新配置已应用；只有随后 `Stage08Setup=PASS` 与本次 `status.txt` 的 `ExitCode=0` 才表示安装检查通过。恢复步骤不启动容量测试或正式 PPO。
+
+所有恢复 SSH/SCP 复用本机 `~/.ssh/microduck-stage08-%C`，保留 12h 空闲连接并启用心跳，不在脚本退出时主动关闭。网络断开后仍可能需要重新认证，不能把连接复用称为永久免密。需要恢复时使用 `ssh -M -S ~/.ssh/microduck-stage08-%C -o ControlPersist=12h -o ServerAliveInterval=30 -o ServerAliveCountMax=3 -p 45743 root@connect.bjb2.seetacloud.com`；云端 tmux 任务不依赖这个客户端连接。
+
+### 4.2 分段下载恢复（后续证据，2026-09-29 18:19 北京时间）
+
+用户已确认上一轮 `Stage08Recovery=STARTED`，但正式安装接收速度只有 0.07 MiB/s；`/proc/net/dev` 与 `/sys/class/net/eth0` 两种读数一致，运行中 uv 的 `NO_PROXY`、`no_proxy` 都包含两个 PyPI 域名。相同 Torch URL、相同 IP `151.101.128.223` 下，8 MiB Range 请求 HTTP 206 为 1634284 B/s，而完整 GET 的 10 秒采样 HTTP 200 只有 74234 B/s（到时退出 28）。因此此前“直连配置已生效”标志不能当作实际吞吐改善或每个连接路由的证明；新证据直接支持比较请求形式，不把具体 CDN、运营商或协议机制写成已证实原因。
+
+剩余 8 包共 3340.338 MiB：Torch、cuBLAS、cuDNN、cuSPARSE、cuSOLVER、cuSPARSELt、NCCL、Warp。使用 `--range-download` 恢复：
+
+```bash
+bash scripts/recover_stage08_setup_local.sh connect.bjb2.seetacloud.com 45743 --range-download
+```
+
+恢复沿用前述进程识别、安装锁、Git 增量和原预算；只增加仓库外 `setup/download-mode.txt` 标记。`scripts/download_stage08_wheels.py` 从原 `uv.lock` 精确选择 CPython 3.12/Linux x86_64 的 8 个 wheel，原始 HTTPS URL 不变。每个文件使用 4 个并发连接、8 MiB Range 请求，逐一验证 HTTP 206、Content-Range 和片段长度。失败片段最多尝试 3 次；完整片段可续传，未完成片段最多重传 8 MiB/连接。单轮最多 30 分钟并受剩余累计预算限制，超时保留片段、退出供恢复，不开始 PPO。
+
+每个 wheel 拼接后必须满足锁文件大小和 SHA-256；任何失败均禁止进入安装。哈希通过的 wheel 保存在 `cache/stage08-wheels`。用 `uv pip install --no-deps --no-index --find-links ... --require-hashes` 按锁定名称与版本预装，随后仍执行原 `uv sync --locked --python 3.12.14` 及环境/测试检查。`pyproject.toml`、`uv.lock`、Stage 03/04 与训练实验定义不变。没有改写 uv 私有缓存，也没有关闭哈希校验。
+
+日志现在每约 5 秒输出 `Stage08Download=百分比`：统计完整片段和下载中的片段字节，不再只数已完成的大包；`SHA256通过 N/8` 单独表示完整文件验证。有效写入速度是进度增量，含重试时可能下降，不是 GPU 利用率。断点状态与 `range-progress.json` 都在仓库外。最终仍需 `Stage08Setup=PASS` 和本轮 `ExitCode=0` 后才进入容量验证。
+
+本地新增验收包括真实本地 HTTPS Range、完整片段续传、错误 HTTP/Content-Range 拒绝、损坏片段最终 SHA 拒绝，以及离线 `uv sync --locked` 接受按注册表名称预装且不改变锁文件。运行版本为 uv 0.12.18；云端 uv 0.12.15 的相同集成测试会在 setup 阶段执行，当前尚未声称云端通过。证据见 `docs/audits/stage-08-range-download-fix.json`。
+
+### 4.3 克隆接续（当前路线，2026-09-29）
+
+19:11（北京时间）后续：旧 `45743` SSH 返回 `Connection refused`，上一版在回传步骤退出，未更新新实例或启动验证，因此新实例没有 `clone-validation/latest.log`。这不证明旧云盘已丢失。当前使用下面的离线路径，不要求为失败安装日志重新启动旧实例：
+
+```bash
+bash scripts/adopt_stage08_clone_local.sh --clone-only \
+  connect.bjb1.seetacloud.com 41381
+```
+
+此模式不连接旧主机，读取本机既存的 `artifacts/double-balance-stage08/deployment-start-connect.bjb2.seetacloud.com-45743-5090.txt`。按该原起点计入全部已用时间，原预算额度不变。旧云端 ledger/日志/UUID 未取回，明确记录为 `UNAVAILABLE`；仅在本机生成并持久保留一个标为 `RECONSTRUCTED` 的接续 UUID，不能称为原 UUID 已恢复。此处的重建只适用于尚未正式训练的安装失败，不可拿来续接其他 campaign 的训练检查点。原起点文件缺失或冲突时退出，不以当前时间代替。若后续能访问旧云盘，再补收原始证据。
+
+下文的默认命令仍适用于旧实例在线、有原始预算可完整回传的情况。
+
+新目标 `connect.bjb1.seetacloud.com:41381` 为标准 RTX 5090，32607 MiB，驱动 595.71.05。原仓库干净，HEAD 为 `2d10af503945f26f1d7364f19e4152eb540fb4d2`；原环境为 Python 3.12.3、Torch 2.9.1、mjlab 1.3.0、MuJoCo 3.10.0、mujoco-warp 3.8.1、Warp 1.12.0、rsl-rl-lib 5.0.1。两个源模型与第 2 节哈希一致。CPU affinity 208 不等于可用 208 核：cgroup 配额为 25 核，内存配额 120 GiB，数据盘剩余约 33.54 GiB。
+
+这些是元数据证据，不能据此声称 CUDA、恢复路径、显存余量或训练通过。分段安装只给出了取消异常，首个片段失败原因未提供，不能断言根因。该路线停止继续尝试下载。
+
+本机导入最新 bundle 后执行：
+
+```bash
+bash scripts/adopt_stage08_clone_local.sh \
+  connect.bjb2.seetacloud.com 45743 connect.bjb1.seetacloud.com 41381
+```
+
+脚本先对旧实例取得预算作业锁与安装锁，要求没有 GPU 作业或额外 Stage 08 训练结果。只回传原 `budget.json`、安装日志及下载诊断，整包和每个文件验证后保留在 `/home/lx/下载` 与本机 artifacts。已验证后明确提醒可以关闭旧 45743 实例，不自动关机、不删除云盘。下载 wheel/缓存可重建，两个 Stage 07 模型已有本机归档且克隆哈希匹配，不再回传一遍。
+
+接着只上传从 `2d10af5` 到当前提交的 Git 增量与小型证据归档。云端验证干净工作区、快进、标签、包哈希和检查点哈希，保留原 `campaign_id`、`started_at`、累计计时；有冲突退出，不生成新预算。不会运行 `setup_stage08_autodl.sh`、apt、pip、uv sync，也不会替换 `.venv`。Python 3.12.3 满足项目 `>=3.12,<3.13`，无需为补丁版本重新下载依赖。
+
+`microduck-stage08-clone` tmux 会话运行 `validate_stage08_clone.sh`：先限时检查依赖导入、冻结源码、GPU 身份及一个 Torch CUDA 运算，再调用既有 4096 环境 D/E 容量入口。D/E 各 3 次预热＋12 次测量，每组上限 900 秒，检查真实 MuJoCo/Warp、源检查点恢复、保存重载、驻留开发评估与至少 15% 显存余量。容量优化结果不用于正式训练；失败即停，不重跑 Stage 06 smoke、不自动降环境数。
+
+```bash
+ssh -S ~/.ssh/microduck-stage08-%C -p 41381 root@connect.bjb1.seetacloud.com \
+  'tail -n 30 -F /root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08/clone-validation/latest.log'
+```
+
+退出 tail 可按 Ctrl+C，不影响 tmux。仅当本轮 `Stage08CloneValidation=PASS`、`Stage08Capacity=PASS` 和 `clone-validation/status.txt` 的 `ExitCode=0` 齐全，才进入第 6 节正式五组筛选。按实际吞吐与剩余预算调整实验可容纳量，不能把 A800 吞吐直接当成 5090 实测。
+
+SSH/SCP 全程复用 `~/.ssh/microduck-stage08-%C`，保持连接 12 小时，不主动关闭已有主连接，不写入密码。旧、新主机是两条不同连接，首次连接或网络中断后仍可能要求认证。
+
+### 4.4 容量测试训练后重载修复（2026-09-29 19:26 北京时间）
+
+用户已确认克隆代码传输、预算接续和两份参考模型哈希验证完成，随后容量 worker 在 `runner.load(final_checkpoint)` 报错：`obs_normalizer._std` 为 inference tensor，不能在 InferenceMode 外原地复制。这是训练后保存重载检查的失败，不是显存不足证据；不能记容量 PASS。按该调用前的计数检查，失败 worker 已经过 15 次容量更新，正式 Stage 08 训练仍未启动。具体 D/E 组别、耗时、峰值显存待收集完整云端报告，不由局部栈追踪推定。
+
+锁定版本 rsl-rl 5.0.1 在 inference_mode rollout 中更新归一化统计，`EmpiricalNormalization.update` 用 `torch.sqrt(_var)` 替换 `_std`，由此生成 inference tensor。Stage 08 新增 `load_runner_checkpoint`：在关闭 inference_mode 的 no_grad 上下文中，只克隆 actor/critic 中带 inference 标记的归一化缓冲区，再调用原 mjlab 严格加载。值、dtype、device 保持，模型 Parameter 对象不替换；Adam 在普通张量模式加载。三个 Stage 08 训练加载点统一走此函数。Stage 03/04、Stage 07 实现、PPO 算法、奖励、依赖文件和实验定义不变。
+
+本地用真实 RNNModel、PPO.load、MjlabOnPolicyRunner.load 复现原异常，并检查修复后严格键校验、两套归一化统计、Adam 状态/步数、LR、计数、参数身份及后续合成 Adam 更新。未执行本地 PPO rollout。4 项新测试和 19 项原 Stage 08 恢复测试共 23 项通过；CUDA 重试结果待云端验证。
+
+导入修复 bundle 后，本机只执行：
+
+```bash
+bash scripts/adopt_stage08_clone_local.sh --retry-capacity \
+  connect.bjb1.seetacloud.com 41381
+```
+
+此入口仅传相对 `b8e991c` 的代码差量，不连接旧实例、不再创建或复制预算、不安装依赖。保留云端已有 `budget.json`、缓存、两份模型、初态数据和失败记录；拒绝脏工作区、非快进、占用中的预算/安装锁或活动 GPU 作业。新的 `validate_stage08_clone.sh` 若发现原 `capacity-5090` 已存在，会创建独立 `capacity-retry-XXXXXX/run`，不移动或覆盖旧目录，因此旧报告中的绝对路径继续有效。
+
+日志开头及成功结尾输出 `CapacitySummary=<实际新目录>/capacity-summary.json`。首轮训练必须使用这个通过的报告，不能误用旧失败报告；源码提交必须与报告一致。容量仍从第 1000 次源模型开始，D/E 各 15 次，结果弃用。仅有新日志的两项 PASS 与本次 ExitCode=0 后才进入正式筛选。
+
+## 5. 预算与云端容量
+
+预算文件固定为 `artifacts/double-balance-stage08/budget.json`。计时起点为自动保留的部署开始时间。新实验、进程重启和安装重试都重用它；起点后的空闲以及离线间隔也保守计入，不通过重建文件归零。
+
+父进程监督器与训练进程分别检查预算。A800 在累计 20h、5090 在累计 52h 停止训练工作，分别留 4h/8h 收尾。训练在更新边界保存；监督器会对挂住的进程先发 SIGTERM，再在宽限期后终止进程组，此时只能保留之前已验证的检查点。总额度前保留退出裕量，绝不保证被强杀的未完成更新能恢复。
+
+在云端进入项目环境，建议用独立 tmux 会话执行后续长任务：
+
+```bash
+cd /root/autodl-tmp/microduck-double-balance/workspace
+export MUJOCO_GL=egl
+stage08_artifacts=/root/autodl-tmp/microduck-double-balance/artifacts/double-balance-stage08
+```
+
+5090 路线：
+
+```bash
+.venv/bin/python -m mjlab_microduck.double_balance_stage08 capacity \
+  --gpu 5090 --ledger "$stage08_artifacts/budget.json" \
+  --checkpoint "$stage08_artifacts/references/update_001000.pt" \
+  --datasets "$stage08_artifacts/initial-states" \
+  --output "$stage08_artifacts/capacity-5090"
+stage08_capacity="$stage08_artifacts/capacity-5090/capacity-summary.json"
+```
+
+若经过第 4.4 节重试，将 `stage08_capacity` 改为本轮成功日志打印的 `CapacitySummary` 路径；旧失败报告保留用于诊断。
+
+两个路径均须通过数值、保存重载和至少 15% 实测总显存余量检查。容量测试也覆盖训练环境仍驻留时的 N/R-dev 子进程，避免正式评估时额外占用显存才暴露 OOM。单个路径最多 15 分钟，加有限退出宽限；两个路径均从第 1000 次重新开始，优化结果弃用。
+
+A800 路线直接使用仓库已归档证据：
+
+```bash
+stage08_capacity="$PWD/docs/audits/stage-07-cloud-capacity-summary.json"
+```
+
+若 5090 未通过，不自动降成 2048、不使用容量模型续训；先检查失败原因，再决定 A800 回退或另行讨论统一批量调整。不能将两条路线的机时自动相加。
+
+## 6. 首轮五组
+
+下面示例为 5090；A800 把 `--gpu` 改为 `A800`，使用上述已有容量文件。
+
+```bash
+.venv/bin/python scripts/run_stage08_batch.py screening \
+  --gpu 5090 --ledger "$stage08_artifacts/budget.json" \
+  --source "$stage08_artifacts/references/update_001000.pt" \
+  --capacity-summary "$stage08_capacity" \
+  --datasets "$stage08_artifacts/initial-states" \
+  --output "$stage08_artifacts/screening"
+```
+
+A–E 各新增 500 次，共 2500 次；种子为 20260928。每 100 次保存，并额外保存 250 次；在 0/250/500 运行 N/R-dev。先评估保存/加载路径才运行第一轮 PPO。每个段的 `training.json`、`iterations.jsonl`、`gpu-samples.jsonl` 与 `watchdog.json` 保留实际状态。
+
+暂停后用同一命令增加 `--resume-batch`，会从相应段最后已验证检查点继续；有异常先看日志处理原因，不自动循环重试。新段启动新的 episode/RNG/LSTM 状态，保留 Adam/LR、课程和辅助。
+
+选择采用固定排序：R-dev 成功率 → N 成功率 → 存活时间 → 末尾稳定时长中位数 → 最长稳定时长中位数 → 较低下球越界率 → 较早检查点。同训练量比较必须另看各组 500 次终点，不能用各自最佳点代替因果对照。
+
+### 6.1 A500 监控超时恢复（2026-09-29）
+
+具体证据、限制见 `docs/audits/stage-08-gpu-monitor-recovery.json`。旧实现遇到一次查询超时就退出采样线程，训练仍继续，最终 `sampler.close()` 把已完成的训练状态覆盖为 `FAIL`。这说明记录链故障，不证明训练发散、GPU 损坏或任何奖励因果关系。
+
+新实现每 2 秒采样，记录每次超时并重试；连续三次超时、命令非零退出、UUID/总显存变化仍为失败。持续采样失败会在下一个 PPO 更新边界保存后退出，收尾还必须有一次成功的实时查询。正常训练允许明确标记 `RECOVERED_WITH_GAPS`；有缺口的采样不能作为新容量认证依据，15% 余量规则没有放宽。
+
+本机导入新 bundle 后执行一次：
+
+```bash
+bash scripts/recover_stage08_screening_local.sh connect.bjb1.seetacloud.com 41381
+```
+
+该入口只传 Git 增量，不安装依赖，不连接旧 45743，不重建 budget。后台 tmux 名为 `microduck-stage08-recovery`，日志和状态链接分别为 artifacts 下 `screening-recovery-latest.log`、`screening-recovery-latest.json`。
+
+1. 检查旧批次确实只有 A 的一个失败段且 B–E 未开始；核验七个模型及回执、六份评估与对应模型哈希、watchdog 和 A500 全状态。
+2. 保留原失败段与 `batch-before.json`。源码提交改变后，按现有同提交容量门槛执行 D/E 各 15 次有界测试（优化结果弃用，约 4 分钟），不重跑 Stage 06 smoke。
+3. 新容量通过且剩余 2000 更新、13 次评估块与保存开销加 20% 余量满足原预算后，才替换批次合同中的容量哈希；保存前后合同及报告路径。其他合同字段必须完全一致。
+4. A 创建 segment-002，从自己的 update_000500.pt 严格恢复模型、归一化、Adam step=30000、实际 LR 和课程计数 36000。重新保存、重载并评估，新增 PPO 更新为 0。原 A 段的 `FAIL` 不改写。
+5. B、C、D、E 各从 Stage 07 第 1000 次源模型开始新增 500 次。恢复入口会把批次状态更新为 `RUNNING`，避免旧 `NEEDS_REVIEW` 残留。遇到失败停止，不无限自动重试。
+
+初始化验证失败、文件损坏、预算不足或新容量不通过时停止并保留证据。技术 PASS 不等于连续 5 秒严格无辅助成功；必须读取实际 success_fraction、失败分布和视频。
+
+## 7. 复核与条件扩训
+
+超过 500 次，入口要求提供带原始报告哈希的 `decision.json`。生成器不启动训练：
+
+```text
+python -m mjlab_microduck.double_balance_stage08_review
+  --kind replication
+  --campaign-id <budget.json 中的 campaign_id>
+  --profiles D E
+  --baseline <源第 1000 次或实验第 0 次的 dev/evaluation.json>
+  --reports <候选 250 次 dev 报告> <候选 500 次 dev 报告>
+  --output <replication-decision.json>
+```
+
+门槛：最新点出现高于源模型的严格成功，且物理终止比例增加不超过 5 个百分点；或两个相邻点的末尾/最长稳定时长均提高，下球超限比例降低至少 25%，存活均不低于 9.5s。这些是预算筛选规则，不是统计显著性或新成功定义。
+
+使用 `run_stage08_batch.py replication`，除首轮通用参数外传入 `--decision` 和 `--previous-batch "$stage08_artifacts/screening/batch.json"`，输出新目录 `replication`。两配置各三种子；种子 20260928 恢复自己 500 次终点并续至新增 1500，另两种子各从源训练新增 1500。核心总新增量最多 10500 次。首轮全部无改善则先分析，不强行生成复核决定。
+
+5090 条件扩训要求同一配置三个种子在 1250/1500 点均通过改善门槛。用 `--kind extension`、一个 profile 和六份报告生成新决定；`run_stage08_batch.py extension` 从复核三条 1500 次终点续到最多各新增 4000，总量最多 18000。A800 入口拒绝该扩训路线。
+
+复核/扩训出现连续两个评估点退化时保存暂停。后备的新奖励、弱辅助门控或优化器重置不在本实现中，仍须明确提出内容、理由和影响后由用户确认。
+
+## 8. 固定候选与最终批量评估
+
+`freeze_stage08_selection.py --profile <胜出组> --runs <相关运行根目录...> --source <第1000次> --stage07-final <第6000次> --output <final-selection.json>` 会按预定排序固定三个种子各自最佳点，并加入两个参照。只读 N/R-dev，不用 R-test 选优。
+
+若首轮无改善而停止，可用 `--screening-only --stop-reason '具体原因'` 固定单个训练种子的最好候选，明确没有完成多种子复核，仍完成最终推理评估；不能把这种情况记为策略目标达成。
+
+```bash
+.venv/bin/python scripts/evaluate_stage08_batch.py \
+  --gpu 5090 --ledger "$stage08_artifacts/budget.json" \
+  --selection "$stage08_artifacts/final-selection.json" \
+  --datasets "$stage08_artifacts/initial-states" \
+  --output "$stage08_artifacts/final-evaluation"
+```
+
+名义 64 个确定性副本单独报告，不作为独立试验计算区间。R-dev 为 seed 8101、128 回合；R-test 为 8201/8202/8203，各 256 回合。实际初态张量及哈希保存一次，之后所有模型必须逐位复现同一初态；开发与留出集禁止重复。若换硬件引起初态差异，明确报错，不偷偷新建一批。
+
+每模型的 768 回合分别给出成功数/总数、Wilson 区间和相对源模型的配对成功差。不同训练种子不直接混成一个独立样本池。逐回合报告包含速度分位数、独立/共现违例、终止原因、末尾及最长稳定时长、动作差分；`trace.pt` 保存指标计算时刻的完整轨迹。技术 PASS 与策略表现分开。
+
+## 9. 回传、视频与关机
+
+云端任务停止后，用 `archive_stage08_results.py pack --root <Stage08目录> --source <第1000次> --stage07-final <第6000次> --output <目录外的结果.tar.gz>` 生成归档与哈希回执。保留源、各段终点、开发最佳、最终候选、配置、逐步日志和初态；未选中的周期模型逐项列入 `MANIFEST.json`，继续留在云盘。若最终评估尚未完成，必须提供 `--partial-reason`，只生成部分归档，不伪造完工状态。
+
+通过已有 SSH/scp 下载归档和回执到 `/home/lx/下载`，再在本机运行：
+
+```text
+.venv/bin/python scripts/archive_stage08_results.py verify
+  --archive /home/lx/下载/<结果.tar.gz>
+  --sha256 <云端回执中的 SHA-256>
+  --output /home/lx/microduck-double-balance/artifacts/double-balance-stage08/<新归档目录>
+```
+
+检查归档总哈希、成员清单、每个文件哈希与解包后哈希；拒绝路径穿越、链接、重复成员和覆盖已有目录。校验成功后提醒用户关闭云机，不自动关机、不删除云盘。若仍有其他任务或必要文件尚未回传，先处理后再关机。
+
+本机视频命令为 `render_stage08_local.py --checkpoint <本机模型> --reference-report <对应 N 或 R-dev 报告> --datasets <已回传初态目录> --output <新视频目录> --device cuda:0`。只运行推理，RTX 5060 不运行 PPO。视频保留完整 10 秒或物理终止前回合，叠加下球速度、阈值、顶球偏移与连续稳定时间；视频生成不等于已经目视检查。
+
+完成失败分析、视频检查、归档与结果汇总后，再生成最终阶段交接和 final-acceptance。若严格目标仍未达到，明确记 `PolicyObjective=UNMET`。最终注释标签在本机创建，分支与标签沿用 SSH 推送；正常推送成功后不再完整远端核验。

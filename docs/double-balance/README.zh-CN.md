@@ -20,7 +20,7 @@ Jetson Orin Nano Super 执行 ONNX 策略推理。
 
 ## 阅读数据
 
-- [实时窗口测试](evidence/reports/native-live-v1-report.json)：完整周期耗时、动作对照及显示统计。
+- [实时窗口测试](evidence/reports/live-control-report.json)：完整周期耗时、动作对照及显示统计。
 - [数据索引](evidence/README.md)：报告、模型身份与来源记录。
 - [媒体说明](../../experiments/double-balance/media/README.zh-CN.md)：演示来源与画面处理方法。
 - [资产记录](archive-scope.md)：检查点、运行包与文件清单。
@@ -31,6 +31,6 @@ Jetson Orin Nano Super 执行 ONNX 策略推理。
 [仓库页面设置](repository-settings.md) · [上游贡献说明](upstream-contribution.md)
 
 发布与开发历史保留在[发布记录](publication.md)、[验证记录](validation/README.md)
-和[阶段交接](../handoffs/)中。维护操作沿用
+和[研究与维护记录](../handoffs/)中。维护操作沿用
 [本地 SSH 流程](../handoffs/microduck-local-ssh-push-protocol.md)
 和[计算与资料传输规范](../handoffs/microduck-cloud-gpu-and-transfer-protocol.md)。

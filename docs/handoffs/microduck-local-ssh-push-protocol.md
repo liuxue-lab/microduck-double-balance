@@ -1,5 +1,21 @@
 # Microduck 本地提交与 SSH 推送固定规范
 
+## 当前发布目录（2026-10-25 更新）
+
+| 用途 | 本机目录 | SSH 远端 |
+| --- | --- | --- |
+| 公开源码与正式版本 | `/home/lx/microduck-double-balance/public-workspace` | `git@github.com:liuxue-lab/microduck-double-balance.git` |
+| 私有开发历史 | `/home/lx/microduck-double-balance/workspace` | `git@github.com:liuxue-lab/microduck-double-balance-history.git` |
+
+当前发布只在公开源码目录导入增量 bundle、创建提交和正式版本标签，再由用户使用
+既有 SSH 身份推送明确指定的分支或标签。私有历史目录及其未跟踪材料保持独立，
+不向公开仓库执行 mirror、`--all`、`--tags` 或 force push。
+下载目录仍为 `/home/lx/下载`，模型和运行资料仍位于源码仓库外的 `artifacts/`。
+
+下文是此前开发过程的完整操作记录。涉及旧 checkout、阶段标签和传输分支的命令
+用于理解历史操作；当前发布采用上表的公开源码目录和正式版本标签。
+
+
 状态：长期有效，后续所有阶段沿用
 
 本规范用于 Microduck 双重平衡项目的阶段封口。除非用户明确修改，后续 Codex
