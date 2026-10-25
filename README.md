@@ -14,12 +14,12 @@
 </p>
 
 <p align="center">
-  <a href="experiments/double-balance/media/balance.mp4">
+  <a href="https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/balance.mp4">
     <img src="experiments/double-balance/media/balance-demo.webp" alt="Microduck maintaining balance on a basketball while supporting a second ball directly on its head">
   </a>
 </p>
 
-<p align="center"><sub>12-second preview · <a href="experiments/double-balance/media/balance.mp4">Original recording · 60 s · 50 fps</a></sub></p>
+<p align="center"><sub>12-second preview · <a href="https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/balance.mp4">Download original MP4 · 60 s · 50 fps</a></sub></p>
 
 <p align="center"><strong>50 Hz control</strong> &nbsp;·&nbsp; <strong>200 Hz physics</strong> &nbsp;·&nbsp; <strong>6,000 measured control cycles</strong></p>
 

@@ -9,8 +9,8 @@ Video rendering from saved native states, with synchronized timing data.
 Each recording contains **60 seconds**, **3,000 frames**, **1280 × 480** pixels and
 **50 fps**. The paired camera views show the whole robot and the upper ball.
 
-- [Balance — original MP4](../../double-balance/media/balance.mp4)
-- [Disturbance recovery — original MP4](../../double-balance/media/disturbance-recovery.mp4)
+- [Balance — original MP4](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/balance.mp4)
+- [Disturbance recovery — original MP4](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/disturbance-recovery.mp4)
 
 The renderer reads the recorded native model and state arrays, updates geometry,
 and aligns the video with the saved control timing. It replays an existing run;

@@ -9,8 +9,8 @@
 每段录像为 **60 秒、3,000 帧、1280 × 480、50 fps**。
 并排画面分别展示全身与上方小球。
 
-- [自然平衡：原始 MP4](../../double-balance/media/balance.mp4)
-- [抗扰恢复：原始 MP4](../../double-balance/media/disturbance-recovery.mp4)
+- [自然平衡：原始 MP4](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/balance.mp4)
+- [抗扰恢复：原始 MP4](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/disturbance-recovery.mp4)
 
 渲染器读取已保存的原生模型与状态数组，更新几何位置，并让视频与周期计时对应。
 回放使用既有运行记录，不推进物理积分，也不请求新的策略动作。

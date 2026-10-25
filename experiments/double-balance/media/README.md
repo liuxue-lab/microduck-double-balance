@@ -5,19 +5,19 @@
 The complete recordings show two synchronized views: the whole robot and a close-up
 of the head and upper ball. Each MP4 is 60 seconds at 1280×480 and 50 frames per second.
 
-| Demonstration | Complete original recording | Inline preview |
+| Demonstration | Download original MP4 | Inline preview |
 | --- | --- | --- |
-| Balance | [balance.mp4](balance.mp4) | [12-second WebP](balance-demo.webp) |
-| Disturbance recovery | [disturbance-recovery.mp4](disturbance-recovery.mp4) | [12-second WebP](disturbance-demo.webp) |
+| Balance | [balance.mp4](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/balance.mp4) | [12-second WebP](balance-demo.webp) |
+| Disturbance recovery | [disturbance-recovery.mp4](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/disturbance-recovery.mp4) | [12-second WebP](disturbance-demo.webp) |
 
 The complete MP4 files retain the exact bytes of the original recordings, including
 the original framing. Their descriptive filenames are mapped to the source filenames
 and SHA256 hashes in [original-videos.json](original-videos.json).
 
 The inline animations are cropped 960×320, 20 fps excerpts covering seconds 6–18.
-Click a preview to open the complete recording. The earlier 12-second MP4 excerpts
-remain available as [balance-demo.mp4](balance-demo.mp4) and
-[disturbance-demo.mp4](disturbance-demo.mp4).
+Use the original MP4 links above to download the full recordings for your video player. The earlier 12-second MP4 excerpts
+remain available as [balance-demo.mp4](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/balance-demo.mp4) and
+[disturbance-demo.mp4](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/disturbance-demo.mp4).
 
 ## Provenance
 

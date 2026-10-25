@@ -14,12 +14,12 @@
 </p>
 
 <p align="center">
-  <a href="experiments/double-balance/media/balance.mp4">
+  <a href="https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/balance.mp4">
     <img src="experiments/double-balance/media/balance-demo.webp" alt="Microduck 脚踩篮球，通过全身协调保持头顶小球平衡">
   </a>
 </p>
 
-<p align="center"><sub>12 秒预览 · <a href="experiments/double-balance/media/balance.mp4">原始录像 · 60 秒 · 50 fps</a></sub></p>
+<p align="center"><sub>12 秒预览 · <a href="https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/balance.mp4">下载原始 MP4 · 60 秒 · 50 fps</a></sub></p>
 
 <p align="center"><strong>50 Hz 控制</strong> &nbsp;·&nbsp; <strong>200 Hz 物理</strong> &nbsp;·&nbsp; <strong>6,000 个实测控制周期</strong></p>
 

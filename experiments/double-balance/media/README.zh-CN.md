@@ -4,17 +4,17 @@
 
 完整录像包含同步的全身视角和头顶球近景，规格均为 **60 秒、1280×480、50 fps**。
 
-| 演示 | 完整原始录像 | 页面预览 |
+| 演示 | 下载原始 MP4 | 页面预览 |
 | --- | --- | --- |
-| 平衡 | [balance.mp4](balance.mp4) | [12 秒 WebP](balance-demo.webp) |
-| 扰动恢复 | [disturbance-recovery.mp4](disturbance-recovery.mp4) | [12 秒 WebP](disturbance-demo.webp) |
+| 平衡 | [balance.mp4](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/balance.mp4) | [12 秒 WebP](balance-demo.webp) |
+| 扰动恢复 | [disturbance-recovery.mp4](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/disturbance-recovery.mp4) | [12 秒 WebP](disturbance-demo.webp) |
 
 完整 MP4 与原始录像的文件字节完全一致，保留原始构图。公开文件名与来源文件名、
 SHA256 的对应关系见 [original-videos.json](original-videos.json)。
 
-页面动图为第 6–18 秒的裁边预览，规格为 960×320、20 fps。点击预览即可打开完整录像。
-此前制作的 12 秒 MP4 片段仍可通过 [balance-demo.mp4](balance-demo.mp4) 和
-[disturbance-demo.mp4](disturbance-demo.mp4) 访问。
+页面动图为第 6–18 秒的裁边预览，规格为 960×320、20 fps。通过上方 MP4 链接下载原始录像，在视频播放器中观看。
+此前制作的 12 秒 MP4 片段仍可通过 [balance-demo.mp4](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/balance-demo.mp4) 和
+[disturbance-demo.mp4](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/disturbance-demo.mp4) 访问。
 
 ## 来源
 

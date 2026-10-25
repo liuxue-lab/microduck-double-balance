@@ -47,8 +47,8 @@ HIL 环境使用固定检查点、ONNX 导出、部署合同、ROS2 配置及配
 [原环境运行指南](reproduction-guide.md)列出了这些文件的位置，以及查看录像和运行既有系统的命令。
 
 仓库已包含源码、预览、结果报告，以及两段完整的原始 60 秒录像：
-[自然平衡](../../experiments/double-balance/media/balance.mp4)和
-[抗扰恢复](../../experiments/double-balance/media/disturbance-recovery.mp4)。
+[自然平衡](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/balance.mp4)和
+[抗扰恢复](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/disturbance-recovery.mp4)。
 策略权重单独分发，当前获取状态和部署所需资产见
 [模型可获取范围（英文）](model-card.md#artifacts-and-availability)。
 
