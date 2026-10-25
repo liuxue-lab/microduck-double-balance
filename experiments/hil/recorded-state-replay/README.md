@@ -4,6 +4,8 @@
 
 Video rendering from saved native states, with synchronized timing data.
 
+Current presentation: [1440p videos and native stills](../../double-balance/media/README.md).
+
 ## Original demonstrations
 
 Each recording contains **60 seconds**, **3,000 frames**, **1280 × 480** pixels and

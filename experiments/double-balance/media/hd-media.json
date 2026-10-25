@@ -1,0 +1,69 @@
+{
+  "schema": "microduck-presentation-media-v1",
+  "resolution": [
+    2560,
+    1440
+  ],
+  "source_kind": "native rendering of recorded HIL states",
+  "source_hil_run": "20261025T044453Z-d194fd47",
+  "source_report": "../../../docs/double-balance/evidence/reports/headless-control-report.json",
+  "source_report_sha256": "513c9add8b0029dfb039efba38fc1d1390a97ed310766b8c184d42d87abfd079",
+  "export_report": "hd-export-report.json",
+  "exporter_sha256": "464aa9c4dec56d204170c7629720611ccae3d5bf55cf5ae36ebe8224773c4e8c",
+  "full_video_bytes_copied_without_transcoding": true,
+  "poster_control_step": 500,
+  "poster_simulation_time_seconds": 10.0,
+  "files": {
+    "balance.mp4": {
+      "sha256": "706c2a829d094e5597169f61950468246c473f2ab34c3c0189c16793ae74e7a6",
+      "bytes": 55228831
+    },
+    "disturbance-recovery.mp4": {
+      "sha256": "479b382fe1861492169950e25dcc8b40054db8e95a98dc5d85c94dd7108337d2",
+      "bytes": 60279524
+    },
+    "balance-poster.png": {
+      "sha256": "31ce015d4bc8533c3118335122fe19587e6d76ddb56026d6c0d3408bdb65e07e",
+      "bytes": 881976
+    },
+    "disturbance-recovery-poster.png": {
+      "sha256": "df022023bd1607d720e8e089e264269fb0d20bdfe4ea214574cf5fd8f1c9c846",
+      "bytes": 868654
+    }
+  },
+  "videos": [
+    {
+      "filename": "balance.mp4",
+      "sha256": "706c2a829d094e5597169f61950468246c473f2ab34c3c0189c16793ae74e7a6",
+      "bytes": 55228831,
+      "frames": 3000,
+      "fps": 50,
+      "duration_seconds": 60.0,
+      "width": 2560,
+      "height": 1440,
+      "codec": "H.264",
+      "pixel_format": "yuv420p",
+      "full_decode_verified": true,
+      "first_frame_timestamp_seconds": 0,
+      "last_frame_timestamp_seconds": 59.98
+    },
+    {
+      "filename": "disturbance-recovery.mp4",
+      "sha256": "479b382fe1861492169950e25dcc8b40054db8e95a98dc5d85c94dd7108337d2",
+      "bytes": 60279524,
+      "frames": 3000,
+      "fps": 50,
+      "duration_seconds": 60.0,
+      "width": 2560,
+      "height": 1440,
+      "codec": "H.264",
+      "pixel_format": "yuv420p",
+      "full_decode_verified": true,
+      "first_frame_timestamp_seconds": 0,
+      "last_frame_timestamp_seconds": 59.98
+    }
+  ],
+  "original_480p_recording_manifest": "original-videos.json",
+  "original_480p_source_commit": "81e50d8f933cde8ae02fcaba3fb35d1a519d07e1",
+  "inline_webp_previews": "Retained unchanged; source and crop in demo-provenance.json"
+}

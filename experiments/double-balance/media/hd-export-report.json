@@ -1,0 +1,424 @@
+{
+  "schema": "microduck-hd-media-v1",
+  "status": "complete",
+  "started_utc": "2026-10-25T17:35:43+00:00",
+  "mode": "render",
+  "preview_only": false,
+  "width": 2560,
+  "height": 1440,
+  "fps": 50,
+  "frames_per_clip": 3000,
+  "source_report_sha256": "513c9add8b0029dfb039efba38fc1d1390a97ed310766b8c184d42d87abfd079",
+  "clips": [
+    {
+      "slug": "balance",
+      "title": "Double balance",
+      "source_case": "quiet-2407",
+      "timing_statistics": {
+        "count": 3000,
+        "mean": 11.344907850333334,
+        "p95": 13.279225,
+        "p99": 13.897925,
+        "max": 14.518736,
+        "over_20ms": 0
+      },
+      "state_samples": 3001,
+      "snapshots": {
+        "initial": "balance-initial.png",
+        "middle": "balance-middle.png",
+        "final": "balance-final.png"
+      },
+      "border_measurements": {
+        "initial": {
+          "near_black_threshold_rgb": 3,
+          "outer_edge_near_black_fractions": {
+            "top": 0.0,
+            "bottom": 0.0,
+            "left": 0.0,
+            "right": 0.0
+          },
+          "fully_black_outer_rows": 0,
+          "fully_black_outer_columns": 0
+        },
+        "poster": {
+          "near_black_threshold_rgb": 3,
+          "outer_edge_near_black_fractions": {
+            "top": 0.0,
+            "bottom": 0.0,
+            "left": 0.0,
+            "right": 0.0
+          },
+          "fully_black_outer_rows": 0,
+          "fully_black_outer_columns": 0
+        },
+        "middle": {
+          "near_black_threshold_rgb": 3,
+          "outer_edge_near_black_fractions": {
+            "top": 0.0,
+            "bottom": 0.0,
+            "left": 0.0,
+            "right": 0.0
+          },
+          "fully_black_outer_rows": 0,
+          "fully_black_outer_columns": 0
+        },
+        "final": {
+          "near_black_threshold_rgb": 3,
+          "outer_edge_near_black_fractions": {
+            "top": 0.0,
+            "bottom": 0.0,
+            "left": 0.0,
+            "right": 0.0
+          },
+          "fully_black_outer_rows": 0,
+          "fully_black_outer_columns": 0
+        }
+      },
+      "frame_edge_quality": {
+        "strip_width_pixels": 2,
+        "near_black_threshold_rgb": 3,
+        "failure_fraction": 0.95,
+        "evaluated_frames": 3001,
+        "near_black_border_detected": false,
+        "maximum_edge_near_black_fractions": {
+          "whole": {
+            "top": 0.0,
+            "bottom": 0.0,
+            "left": 0.0,
+            "right": 0.0
+          },
+          "detail": {
+            "top": 0.0,
+            "bottom": 0.0,
+            "left": 0.0,
+            "right": 0.0
+          }
+        }
+      },
+      "camera_plan": [
+        {
+          "name": "whole",
+          "azimuth_degrees": 135.0,
+          "elevation_degrees": -30.0,
+          "vertical_fov_degrees": 32.0,
+          "fixed_distance_m": 1.3701548002340462,
+          "geometry_count": 72,
+          "scanned_states": 3001,
+          "minimum_horizontal_edge_margin_fraction": 0.21186896399752891,
+          "minimum_vertical_edge_margin_fraction": 0.08622166274263382,
+          "minimum_geometry_depth_m": 1.1481048750360354,
+          "fit": "transformed local geom_aabb corners over every recorded state"
+        },
+        {
+          "name": "detail",
+          "azimuth_degrees": 45.0,
+          "elevation_degrees": -30.0,
+          "vertical_fov_degrees": 32.0,
+          "fixed_distance_m": 0.3905373892093558,
+          "geometry_count": 17,
+          "scanned_states": 3001,
+          "minimum_horizontal_edge_margin_fraction": 0.08643826920189479,
+          "minimum_vertical_edge_margin_fraction": 0.11199001246481094,
+          "minimum_geometry_depth_m": 0.3155388145832656,
+          "fit": "transformed local geom_aabb corners over every recorded state"
+        }
+      ],
+      "poster": "balance-poster.png",
+      "video_metadata": {
+        "filename": "balance.mp4",
+        "sha256": "706c2a829d094e5597169f61950468246c473f2ab34c3c0189c16793ae74e7a6",
+        "bytes": 55228831,
+        "frames": 3000,
+        "fps": 50,
+        "duration_seconds": 60.0,
+        "width": 2560,
+        "height": 1440,
+        "codec": "H.264",
+        "pixel_format": "yuv420p",
+        "full_decode_verified": true,
+        "first_frame_timestamp_seconds": 0,
+        "last_frame_timestamp_seconds": 59.98
+      },
+      "video": "balance.mp4",
+      "frame_control_steps": {
+        "first": 1,
+        "last": 3000,
+        "count": 3000
+      }
+    },
+    {
+      "slug": "disturbance-recovery",
+      "title": "Disturbance recovery",
+      "source_case": "regression-2500",
+      "timing_statistics": {
+        "count": 3000,
+        "mean": 11.316455951666665,
+        "p95": 13.307834,
+        "p99": 13.947867,
+        "max": 14.471036,
+        "over_20ms": 0
+      },
+      "state_samples": 3001,
+      "snapshots": {
+        "initial": "disturbance-recovery-initial.png",
+        "middle": "disturbance-recovery-middle.png",
+        "final": "disturbance-recovery-final.png"
+      },
+      "border_measurements": {
+        "initial": {
+          "near_black_threshold_rgb": 3,
+          "outer_edge_near_black_fractions": {
+            "top": 0.0,
+            "bottom": 0.0,
+            "left": 0.0,
+            "right": 0.0
+          },
+          "fully_black_outer_rows": 0,
+          "fully_black_outer_columns": 0
+        },
+        "poster": {
+          "near_black_threshold_rgb": 3,
+          "outer_edge_near_black_fractions": {
+            "top": 0.0,
+            "bottom": 0.0,
+            "left": 0.0,
+            "right": 0.0
+          },
+          "fully_black_outer_rows": 0,
+          "fully_black_outer_columns": 0
+        },
+        "middle": {
+          "near_black_threshold_rgb": 3,
+          "outer_edge_near_black_fractions": {
+            "top": 0.0,
+            "bottom": 0.0,
+            "left": 0.0,
+            "right": 0.0
+          },
+          "fully_black_outer_rows": 0,
+          "fully_black_outer_columns": 0
+        },
+        "final": {
+          "near_black_threshold_rgb": 3,
+          "outer_edge_near_black_fractions": {
+            "top": 0.0,
+            "bottom": 0.0,
+            "left": 0.0,
+            "right": 0.0
+          },
+          "fully_black_outer_rows": 0,
+          "fully_black_outer_columns": 0
+        }
+      },
+      "frame_edge_quality": {
+        "strip_width_pixels": 2,
+        "near_black_threshold_rgb": 3,
+        "failure_fraction": 0.95,
+        "evaluated_frames": 3001,
+        "near_black_border_detected": false,
+        "maximum_edge_near_black_fractions": {
+          "whole": {
+            "top": 0.0,
+            "bottom": 0.0,
+            "left": 0.0,
+            "right": 0.0
+          },
+          "detail": {
+            "top": 0.0,
+            "bottom": 0.0,
+            "left": 0.0,
+            "right": 0.0
+          }
+        }
+      },
+      "camera_plan": [
+        {
+          "name": "whole",
+          "azimuth_degrees": 135.0,
+          "elevation_degrees": -30.0,
+          "vertical_fov_degrees": 32.0,
+          "fixed_distance_m": 1.3820457876438281,
+          "geometry_count": 72,
+          "scanned_states": 3001,
+          "minimum_horizontal_edge_margin_fraction": 0.21122401307864624,
+          "minimum_vertical_edge_margin_fraction": 0.08625898944646743,
+          "minimum_geometry_depth_m": 1.1597893193447975,
+          "fit": "transformed local geom_aabb corners over every recorded state"
+        },
+        {
+          "name": "detail",
+          "azimuth_degrees": 45.0,
+          "elevation_degrees": -30.0,
+          "vertical_fov_degrees": 32.0,
+          "fixed_distance_m": 0.3916487230487438,
+          "geometry_count": 17,
+          "scanned_states": 3001,
+          "minimum_horizontal_edge_margin_fraction": 0.08641851754031332,
+          "minimum_vertical_edge_margin_fraction": 0.09686382001748078,
+          "minimum_geometry_depth_m": 0.3155824885194484,
+          "fit": "transformed local geom_aabb corners over every recorded state"
+        }
+      ],
+      "poster": "disturbance-recovery-poster.png",
+      "video_metadata": {
+        "filename": "disturbance-recovery.mp4",
+        "sha256": "479b382fe1861492169950e25dcc8b40054db8e95a98dc5d85c94dd7108337d2",
+        "bytes": 60279524,
+        "frames": 3000,
+        "fps": 50,
+        "duration_seconds": 60.0,
+        "width": 2560,
+        "height": 1440,
+        "codec": "H.264",
+        "pixel_format": "yuv420p",
+        "full_decode_verified": true,
+        "first_frame_timestamp_seconds": 0,
+        "last_frame_timestamp_seconds": 59.98
+      },
+      "video": "disturbance-recovery.mp4",
+      "frame_control_steps": {
+        "first": 1,
+        "last": 3000,
+        "count": 3000
+      }
+    }
+  ],
+  "backend": "egl",
+  "configuration": {
+    "panel_width": 1280,
+    "panel_height": 1440,
+    "vertical_fov_degrees": 32.0,
+    "elevation_degrees": -30.0,
+    "requested_edge_margin_fraction": 0.08,
+    "multisample_count": 4,
+    "native_render": true,
+    "video_crf": 16,
+    "video_preset": "medium",
+    "video_threads": 4,
+    "pixel_format": "yuv420p",
+    "faststart": true,
+    "geometry_and_colors": "original model",
+    "shadows": false,
+    "reflections": false,
+    "camera_zoom": "fixed after complete state scan",
+    "maximum_minutes": 60.0
+  },
+  "execution": {
+    "physics_steps": 0,
+    "policy_inferences": 0,
+    "training_updates": 0,
+    "hardware_requests": 0,
+    "remote_connections": 0
+  },
+  "source_hashes_before": {
+    "report.json": {
+      "sha256": "513c9add8b0029dfb039efba38fc1d1390a97ed310766b8c184d42d87abfd079",
+      "bytes": 198420
+    },
+    "case-01/native-model.mjb": {
+      "sha256": "2e481a6dfa1508d2345de0821897278d403b80535d7d0514b571724d6091c645",
+      "bytes": 116664189
+    },
+    "case-01/state-data.npz": {
+      "sha256": "1b1ed120de56301b5bc70202cf7df56678e0f24008c24575b809536f56715de9",
+      "bytes": 1733188
+    },
+    "case-01/timing.csv": {
+      "sha256": "eade9c80f8f633e6815492e75d1f017e4fadd8234db5aa9403782f3a379c33fc",
+      "bytes": 918506
+    },
+    "case-02/native-model.mjb": {
+      "sha256": "2e481a6dfa1508d2345de0821897278d403b80535d7d0514b571724d6091c645",
+      "bytes": 116664189
+    },
+    "case-02/state-data.npz": {
+      "sha256": "fc9588cf35de248ef31d35dac2000e7c0476c44d8c3fff8dd3df1aaec64c603a",
+      "bytes": 1735342
+    },
+    "case-02/timing.csv": {
+      "sha256": "e4d2440a929df6da63dd53deef3fcc6ce64de701a5eb748a66b0209f308e790b",
+      "bytes": 918744
+    }
+  },
+  "mujoco_version": "3.10.0",
+  "source_hashes_after": {
+    "report.json": {
+      "sha256": "513c9add8b0029dfb039efba38fc1d1390a97ed310766b8c184d42d87abfd079",
+      "bytes": 198420
+    },
+    "case-01/native-model.mjb": {
+      "sha256": "2e481a6dfa1508d2345de0821897278d403b80535d7d0514b571724d6091c645",
+      "bytes": 116664189
+    },
+    "case-01/state-data.npz": {
+      "sha256": "1b1ed120de56301b5bc70202cf7df56678e0f24008c24575b809536f56715de9",
+      "bytes": 1733188
+    },
+    "case-01/timing.csv": {
+      "sha256": "eade9c80f8f633e6815492e75d1f017e4fadd8234db5aa9403782f3a379c33fc",
+      "bytes": 918506
+    },
+    "case-02/native-model.mjb": {
+      "sha256": "2e481a6dfa1508d2345de0821897278d403b80535d7d0514b571724d6091c645",
+      "bytes": 116664189
+    },
+    "case-02/state-data.npz": {
+      "sha256": "fc9588cf35de248ef31d35dac2000e7c0476c44d8c3fff8dd3df1aaec64c603a",
+      "bytes": 1735342
+    },
+    "case-02/timing.csv": {
+      "sha256": "e4d2440a929df6da63dd53deef3fcc6ce64de701a5eb748a66b0209f308e790b",
+      "bytes": 918744
+    }
+  },
+  "original_inputs_unchanged": true,
+  "finished_utc": "2026-10-25T17:38:39+00:00",
+  "elapsed_seconds": 175.77,
+  "output_hashes": {
+    "balance-poster.png": {
+      "sha256": "31ce015d4bc8533c3118335122fe19587e6d76ddb56026d6c0d3408bdb65e07e",
+      "bytes": 881976
+    },
+    "balance-initial.png": {
+      "sha256": "8962ccb16786ebac78fdf0eabfef0cf7d68ad41157c2482a2cb0785fc0f6a1eb",
+      "bytes": 860078
+    },
+    "balance-middle.png": {
+      "sha256": "6989da50a56978e00625caffe787a21a8fe0b893430b7bf776aaf492030692a4",
+      "bytes": 841789
+    },
+    "balance-final.png": {
+      "sha256": "c9489d40019a90234e4e54083b0751223531ed4bd6b4d1a89193e29f86f3a1d3",
+      "bytes": 879357
+    },
+    "balance.mp4": {
+      "sha256": "706c2a829d094e5597169f61950468246c473f2ab34c3c0189c16793ae74e7a6",
+      "bytes": 55228831
+    },
+    "disturbance-recovery-poster.png": {
+      "sha256": "df022023bd1607d720e8e089e264269fb0d20bdfe4ea214574cf5fd8f1c9c846",
+      "bytes": 868654
+    },
+    "disturbance-recovery-initial.png": {
+      "sha256": "cf77bdfaa9ccc3ff6388670f5611ef5f272467b277fb92d7312b1f6f65329950",
+      "bytes": 857191
+    },
+    "disturbance-recovery-middle.png": {
+      "sha256": "8de2c02437e804380879524885155805a4e0efe6918d382e04865c75754db7dc",
+      "bytes": 917134
+    },
+    "disturbance-recovery-final.png": {
+      "sha256": "3c16ccb5baece5115d4d5b39c3cd1ee88ac3633d9c353b4e3451ce3708d2ef39",
+      "bytes": 887320
+    },
+    "disturbance-recovery.mp4": {
+      "sha256": "479b382fe1861492169950e25dcc8b40054db8e95a98dc5d85c94dd7108337d2",
+      "bytes": 60279524
+    },
+    "index.html": {
+      "sha256": "39d34e601eabbb1c20ef3489c3783cd11ad490128d902a2dfe2c7ad79c52d214",
+      "bytes": 8685
+    }
+  },
+  "exporter_sha256": "464aa9c4dec56d204170c7629720611ccae3d5bf55cf5ae36ebe8224773c4e8c"
+}

@@ -9,22 +9,30 @@ FP32 ONNX inference on a Jetson Orin Nano Super.
 
 ## Balance
 
-[![Microduck maintaining double-ball balance](media/balance-demo.webp)](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/balance.mp4)
+[![Microduck maintaining double-ball balance](media/balance-demo.webp)](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/refs/heads/double-balance/experiments/double-balance/media/balance.mp4)
 
-12-second preview · [Download original MP4 · 60 s · 50 fps](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/balance.mp4)
+12-second preview · [Download 1440p MP4 · 60 s · 50 fps](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/refs/heads/double-balance/experiments/double-balance/media/balance.mp4)
 
 Whole-body coordination keeps the robot and upper ball balanced as the lower basketball moves.
 
 ## Disturbance recovery
 
-[![Microduck maintaining balance under repeated horizontal disturbances](media/disturbance-demo.webp)](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/disturbance-recovery.mp4)
+[![Microduck maintaining balance under repeated horizontal disturbances](media/disturbance-demo.webp)](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/refs/heads/double-balance/experiments/double-balance/media/disturbance-recovery.mp4)
 
-12-second preview · [Download original MP4 · 60 s · 50 fps](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/disturbance-recovery.mp4)
+12-second preview · [Download 1440p MP4 · 60 s · 50 fps](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/refs/heads/double-balance/experiments/double-balance/media/disturbance-recovery.mp4)
 
 Repeated horizontal force pulses test the policy's response to changes in support and body motion.
 Each pulse is equivalent to 10% of the robot's body weight.
 
 [Media details](media/README.md) · [Model card](../../docs/double-balance/model-card.md)
+
+## Native-resolution stills
+
+| Balance · 10 s | Disturbance recovery · 10 s |
+| --- | --- |
+| [![Whole-body and head detail during balance](media/balance-poster.png)](media/balance-poster.png) | [![Whole-body and head detail in the disturbance case](media/disturbance-recovery-poster.png)](media/disturbance-recovery-poster.png) |
+
+Open either image for the full 2560 × 1440 PNG.
 
 ## Evaluation
 

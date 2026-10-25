@@ -21,16 +21,16 @@
       "sha256": "b39ecb52dc87ff353d4d1a3120c3ac5409de7c819012474f7ed5c943e961ca33"
     },
     "README.md": {
-      "bytes": 5354,
+      "bytes": 5321,
       "original_sha256": "53b1cc2eb22b1d71c97abeb64ebb40f63814c4d28c230be0c6cc0e4c12bc3111",
       "path": "README.md",
-      "sha256": "ad4e1a9f421520d9966ae112b75b38d604e5cebfe4ff6a6a2bbf14d2b4935f4a"
+      "sha256": "9b786ec7581d97cc5811c206284691979df92b0fd5c35b6ca2a752eeb87c1f78"
     },
     "README.zh-CN.md": {
-      "bytes": 4903,
+      "bytes": 4882,
       "original_sha256": "8fdea47d4db48c4bb2c6e4b1fd5250eaf05eee23fc22785c1213b7e6fae66af7",
       "path": "README.zh-CN.md",
-      "sha256": "946cf16d167b7bdea5209d5c6dd41448e9e8909609f9371b90ab80bf17b6dc3d"
+      "sha256": "bf145abfa8f62b734077eefa2976fd8ca00d1d8a8d8a455a19c926fe6acb1426"
     },
     "configs/stage08/campaign-5090.json": {
       "bytes": 3623,
@@ -741,16 +741,16 @@
       "sha256": "513c9add8b0029dfb039efba38fc1d1390a97ed310766b8c184d42d87abfd079"
     },
     "docs/double-balance/getting-started.md": {
-      "bytes": 3138,
+      "bytes": 3110,
       "original_sha256": "43869714421cfeb8f0a07bf2a104919042eea9f946f6b2baec651a347b2b191f",
       "path": "docs/double-balance/getting-started.md",
-      "sha256": "7ca0b7e15cdd782329b6c4a84532016e4292c6a6816608dcb09bc123a2a4b872"
+      "sha256": "586793161435050facff9c10c3dab19ae87a2a714ba170df3e15676d0ccede9f"
     },
     "docs/double-balance/getting-started.zh-CN.md": {
-      "bytes": 2844,
+      "bytes": 2822,
       "original_sha256": "a562c6ef604e7051308ff1d2a437d04c9d2ed315a774f486ed6d6f404dac0daa",
       "path": "docs/double-balance/getting-started.zh-CN.md",
-      "sha256": "045e39d4704594dea89a4eb7484b5508bb36c7a0cda4f02a11017d85d5911de7"
+      "sha256": "0678f7f97c212b4bbd3d8a1189aad0d1c088fc524acba49b7e9a8a175dec4825"
     },
     "docs/double-balance/model-card.md": {
       "bytes": 3566,
@@ -957,28 +957,40 @@
       "sha256": "b3dcab4b776ac9dbee4b44593abc25cda17f0aaeac8b0a532fc505492ba180c4"
     },
     "experiments/double-balance/README.md": {
-      "bytes": 4706,
+      "bytes": 5024,
       "original_sha256": "18d425df65233764dbae5eff9a78f464f4ee4a104816cd28a724869764689149",
       "path": "experiments/double-balance/README.md",
-      "sha256": "d8bc76db87378dc0bd9ec4c407af4d86566603b1b2d1f969626cbc8b5da74406"
+      "sha256": "240c61e7793d462acb9b166071b9fec2a0a19fcc92a47122ce0fdf1f995a2e53"
     },
     "experiments/double-balance/README.zh-CN.md": {
-      "bytes": 4330,
+      "bytes": 4645,
       "original_sha256": "574fd4e649f1645fb2ae3543f49fa472dd0c5a0e5e05cac27b4d7c107e861717",
       "path": "experiments/double-balance/README.zh-CN.md",
-      "sha256": "7895f9a966437fb6a1dbe25a0a288a84c60cd857b767498b56b89bde474619cb"
+      "sha256": "7c57e71795584814a14e7325b05dbc03631502e984469cbc64d94692fbd228e8"
     },
     "experiments/double-balance/media/README.md": {
-      "bytes": 2477,
+      "bytes": 2812,
       "original_sha256": "a2192d45c0e29794cf9ab3db9531ec306957cf8be9d93a86c7d9cdb2c02d41c9",
       "path": "experiments/double-balance/media/README.md",
-      "sha256": "7ad7b76e04a53cd36af6b46ed6daf55004e8952bb947e91cdbc729a8c6153735"
+      "sha256": "0e635ad9ed4ae3af2a0ea5a73fd582a0c39ad758181d0f52b153e4b8f7231e28"
     },
     "experiments/double-balance/media/README.zh-CN.md": {
-      "bytes": 2224,
+      "bytes": 2657,
       "original_sha256": "7b807e3be4c7b5483c4b7a3e5f83b3afa8f57ec7b8350d70b8c8d9d5716af5bf",
       "path": "experiments/double-balance/media/README.zh-CN.md",
-      "sha256": "c8dc46f5e5e87fac649f7583c5a78f539d6b13f28241594755a080a031a9fb68"
+      "sha256": "8febbd89401dbece28b8a06f6312c9ae617cd4da0a267748589044766d60a00a"
+    },
+    "experiments/double-balance/media/balance.mp4": {
+      "bytes": 55228831,
+      "original_sha256": "5feb95b1011441723ee74495c9ba5e29f6be967ce84fe638c7597f9931c3ea77",
+      "path": "experiments/double-balance/media/balance.mp4",
+      "sha256": "706c2a829d094e5597169f61950468246c473f2ab34c3c0189c16793ae74e7a6"
+    },
+    "experiments/double-balance/media/disturbance-recovery.mp4": {
+      "bytes": 60279524,
+      "original_sha256": "b93968c13e3492fcac34585d8c2b58d14a0360a237c2b9ef4a0a39a3ccac1c8f",
+      "path": "experiments/double-balance/media/disturbance-recovery.mp4",
+      "sha256": "479b382fe1861492169950e25dcc8b40054db8e95a98dc5d85c94dd7108337d2"
     },
     "experiments/stage11/g11-formal-v3/README.txt": {
       "bytes": 1898,

@@ -7,22 +7,30 @@ PC–Jetson 硬件在环系统结合原生 MuJoCo 动力学与 Jetson Orin Nano 
 
 ## 自然平衡
 
-[![Microduck 自然平衡演示](media/balance-demo.webp)](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/balance.mp4)
+[![Microduck 自然平衡演示](media/balance-demo.webp)](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/refs/heads/double-balance/experiments/double-balance/media/balance.mp4)
 
-12 秒预览 · [下载原始 MP4 · 60 秒 · 50 fps](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/balance.mp4)
+12 秒预览 · [下载高清 MP4 · 1440p · 60 秒 · 50 fps](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/refs/heads/double-balance/experiments/double-balance/media/balance.mp4)
 
 下方篮球自由滚动，机器人通过全身协调维持自身与头顶小球的平衡。
 
 ## 抗扰恢复
 
-[![Microduck 面对重复水平扰动的平衡演示](media/disturbance-demo.webp)](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/disturbance-recovery.mp4)
+[![Microduck 面对重复水平扰动的平衡演示](media/disturbance-demo.webp)](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/refs/heads/double-balance/experiments/double-balance/media/disturbance-recovery.mp4)
 
-12 秒预览 · [下载原始 MP4 · 60 秒 · 50 fps](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/disturbance-recovery.mp4)
+12 秒预览 · [下载高清 MP4 · 1440p · 60 秒 · 50 fps](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/refs/heads/double-balance/experiments/double-balance/media/disturbance-recovery.mp4)
 
 重复水平力脉冲改变机器人与支撑的运动状态，考察策略的平衡恢复能力。
 每次扰动力相当于机器人自重的 10%。
 
 [媒体说明](media/README.zh-CN.md) · [模型说明](../../docs/double-balance/model-card.md)
+
+## 高清画面
+
+| 自然平衡 · 10 秒 | 抗扰恢复 · 10 秒 |
+| --- | --- |
+| [![自然平衡的全身与头部细节](media/balance-poster.png)](media/balance-poster.png) | [![抗扰工况的全身与头部细节](media/disturbance-recovery-poster.png)](media/disturbance-recovery-poster.png) |
+
+点击图片查看完整 2560 × 1440 PNG 原图。
 
 ## 实验设置
 

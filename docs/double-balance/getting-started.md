@@ -51,9 +51,9 @@ configuration and associated runtime packages. The
 [existing-environment guide — Chinese](reproduction-guide.md) gives their locations
 and the commands for viewing recordings or running the installed system.
 
-The repository includes source, previews, result reports and both complete original
-60-second recordings: [balance](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/balance.mp4)
-and [disturbance recovery](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/81e50d8f933cde8ae02fcaba3fb35d1a519d07e1/experiments/double-balance/media/disturbance-recovery.mp4).
+The repository includes source, previews, result reports and both complete
+1440p, 60-second demonstrations: [balance](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/refs/heads/double-balance/experiments/double-balance/media/balance.mp4)
+and [disturbance recovery](https://raw.githubusercontent.com/liuxue-lab/microduck-double-balance/refs/heads/double-balance/experiments/double-balance/media/disturbance-recovery.mp4).
 The policy weights are distributed separately; see
 [model availability](model-card.md#artifacts-and-availability) for their current status
 and the required deployment assets.
